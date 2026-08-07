@@ -22,7 +22,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq xvfb x11vnc novnc websockify > /dev/null
 
 echo "=== Python依存関係をインストール中... ==="
-pip install --quiet --user playwright
+pip install --quiet --user playwright playwright-stealth
 export PATH="$HOME/.local/bin:$PATH"
 python3 -m playwright install chromium
 python3 -m playwright install-deps chromium

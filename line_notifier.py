@@ -32,14 +32,17 @@ def _headers() -> dict:
 
 def build_message(post: dict) -> str:
     genre = post.get("genre", "その他")
-    impressions = post.get("impressions", 0)
+    likes = post.get("likes", 0)
+    quotes = post.get("quotes", 0)
+    bookmarks = post.get("bookmarks", 0)
     hours = post.get("elapsed_hours", "?")
     url = post.get("url", "")
     author = post.get("author_handle", "")
 
     return (
         f"🔥 急上昇検知 [{genre}]\n"
-        f"{author} の投稿が{hours}時間で{impressions:,}インプレッション\n"
+        f"{author} の投稿が{hours}時間で"
+        f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}\n"
         f"{url}"
     )
 

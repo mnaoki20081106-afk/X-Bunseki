@@ -1,0 +1,210 @@
+"""
+playwright_collector.py
+ログイン済みセッション(storage_state.json)を使って、X検索結果から
+投稿データ(いいね・引用・ブックマーク・返信数)を取得する。
+
+★重要な注意(必ず読むこと):
+  この実装はXの現在(2026年8月時点)の画面構造(DOM)を前提にして書かれています。
+  Xは頻繁にHTML構造やクラス名を変更するため、実際に動かした時にセレクタが
+  合わずデータが取れない可能性があります。その場合はエラーメッセージや
+  「0件しか取れない」といった症状が出るので、教えてもらえれば調整します。
+  これは一度作って終わりではなく、育てていくタイプのコードです。
+
+事前準備:
+  pip install playwright
+  playwright install chromium
+  環境変数 X_SESSION_STATE_PATH に storage_state.json のパスを設定
+  (GitHub Actionsでは、Secretから復元したファイルのパスを渡す)
+"""
+
+import os
+import re
+import time
+from datetime import datetime, timezone
+from urllib.parse import quote
+
+from playwright.sync_api import sync_playwright
+
+# 監視対象の検索クエリ。ジャンルを横断して拾いたいので、
+# 特定ジャンルに偏らない広めの条件にしてある。
+# Xの検索演算子(min_faves, min_replies等)はログイン状態でも通常通り使える。
+SEARCH_QUERIES = [
+    "lang:ja min_faves:500 min_replies:20 -filter:retweets",
+]
+
+MAX_SCROLLS = 5           # 検索結果を何回スクロールして読み込むか(増やすほど件数は増えるが時間もかかる)
+SCROLL_WAIT_SECONDS = 2.0  # スクロール後の読み込み待機時間
+
+
+def _session_path() -> str:
+    path = os.environ.get("X_SESSION_STATE_PATH", "storage_state.json")
+    if not os.path.exists(path):
+        raise RuntimeError(
+            f"セッションファイルが見つかりません: {path}\n"
+            "login_helper.py を実行してログイン状態を作成し、"
+            "GitHub Secretsの X_SESSION_STATE に登録してください。"
+        )
+    return path
+
+
+def _parse_count(text: str) -> int:
+    """
+    Xの表示上の数値("1.2万", "3,500", "12" など)を整数に変換する。
+    Xの表示形式は変わることがあるので、複数パターンに対応。
+    """
+    if not text:
+        return 0
+    text = text.strip().replace(",", "")
+    if not text:
+        return 0
+
+    multiplier = 1
+    if text.endswith("万"):
+        multiplier = 10_000
+        text = text[:-1]
+    elif text.endswith("億"):
+        multiplier = 100_000_000
+        text = text[:-1]
+    elif text.upper().endswith("K"):
+        multiplier = 1_000
+        text = text[:-1]
+    elif text.upper().endswith("M"):
+        multiplier = 1_000_000
+        text = text[:-1]
+
+    try:
+        value = float(text)
+        return int(value * multiplier)
+    except ValueError:
+        return 0
+
+
+def _extract_tweet_id(url: str) -> str:
+    match = re.search(r"/status/(\d+)", url or "")
+    return match.group(1) if match else ""
+
+
+def _extract_tweet_data(article) -> dict | None:
+    """
+    検索結果ページの1投稿分(<article>要素)から必要なデータを抜き出す。
+    ★DOM構造はXの仕様変更で壊れやすい箇所。動かなければここを調整する。
+    """
+    try:
+        # 投稿URL・IDの取得(時刻リンクの href から辿る)
+        time_el = article.query_selector("time")
+        if not time_el:
+            return None
+        link_el = time_el.evaluate_handle("el => el.closest('a')")
+        href = link_el.as_element().get_attribute("href") if link_el else None
+        if not href:
+            return None
+        post_id = _extract_tweet_id(href)
+        if not post_id:
+            return None
+        url = f"https://x.com{href}" if href.startswith("/") else href
+
+        posted_at_raw = time_el.get_attribute("datetime")  # ISO8601形式で取得できる
+
+        # 投稿者ハンドル
+        author_handle = ""
+        user_link = article.query_selector('a[role="link"][href^="/"]')
+        if user_link:
+            href_user = user_link.get_attribute("href") or ""
+            author_handle = href_user.strip("/").split("/")[0]
+
+        # 本文
+        text_el = article.query_selector('[data-testid="tweetText"]')
+        text_snippet = text_el.inner_text()[:200] if text_el else ""
+
+        # エンゲージメント数値(返信・RT・いいね・ブックマーク)
+        def _count_by_testid(testid: str) -> int:
+            el = article.query_selector(f'[data-testid="{testid}"]')
+            if not el:
+                return 0
+            label = el.get_attribute("aria-label") or el.inner_text()
+            m = re.search(r"[\d,\.]+[万億KkMm]?", label)
+            return _parse_count(m.group(0)) if m else 0
+
+        replies = _count_by_testid("reply")
+        retweets = _count_by_testid("retweet")
+        likes = _count_by_testid("like")
+        bookmarks = _count_by_testid("bookmark")
+
+        # 引用数は専用のdata-testidがない場合があるため、
+        # 「グループ全体のaria-label」から正規表現で拾うフォールバックを用意
+        quotes = 0
+        group_el = article.query_selector('[role="group"]')
+        if group_el:
+            group_label = group_el.get_attribute("aria-label") or ""
+            m = re.search(r"([\d,\.]+[万億KkMm]?)\s*(?:件の引用|quotes?)", group_label, re.IGNORECASE)
+            if m:
+                quotes = _parse_count(m.group(1))
+
+        return {
+            "post_id": post_id,
+            "author_handle": author_handle,
+            "url": url,
+            "posted_at": posted_at_raw or datetime.now(timezone.utc).isoformat(),
+            "text_snippet": text_snippet,
+            "likes": likes,
+            "retweets": retweets,
+            "replies": replies,
+            "quotes": quotes,
+            "bookmarks": bookmarks,
+        }
+    except Exception as e:  # noqa: BLE001
+        print(f"  [警告] 投稿1件の解析に失敗: {e}")
+        return None
+
+
+def _search_one_query(page, query: str) -> list[dict]:
+    search_url = f"https://x.com/search?q={quote(query)}&src=typed_query&f=live"
+    print(f"  検索実行: {query}")
+    page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
+    page.wait_for_timeout(3000)
+
+    posts_by_id = {}
+    for _ in range(MAX_SCROLLS):
+        articles = page.query_selector_all('article[data-testid="tweet"]')
+        for article in articles:
+            data = _extract_tweet_data(article)
+            if data:
+                posts_by_id[data["post_id"]] = data
+
+        page.mouse.wheel(0, 3000)
+        page.wait_for_timeout(int(SCROLL_WAIT_SECONDS * 1000))
+
+    return list(posts_by_id.values())
+
+
+def fetch_posts() -> list[dict]:
+    """
+    全ての検索クエリを実行し、正規化済みの投稿リストを返す。
+    """
+    session_path = _session_path()
+    all_posts = {}
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(storage_state=session_path)
+        page = context.new_page()
+
+        for query in SEARCH_QUERIES:
+            try:
+                posts = _search_one_query(page, query)
+                for post in posts:
+                    all_posts[post["post_id"]] = post
+                print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
+            except Exception as e:  # noqa: BLE001
+                print(f"  [ERROR] 検索クエリ失敗 '{query}': {e}")
+
+        browser.close()
+
+    return list(all_posts.values())
+
+
+if __name__ == "__main__":
+    results = fetch_posts()
+    print(f"\n合計 {len(results)} 件取得")
+    for p in results[:5]:
+        print(p)

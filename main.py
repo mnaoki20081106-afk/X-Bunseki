@@ -18,7 +18,7 @@ import db
 import detector
 import genre_classifier
 import line_notifier
-from apify_collector import fetch_posts
+from playwright_collector import fetch_posts
 
 
 def run_once():

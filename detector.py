@@ -1,20 +1,36 @@
 """
 detector.py
-「超短時間爆発」の判定ロジック。
+「超短時間爆発」の判定ロジック(v2: 引用・ブックマーク優先版)
 
-一次フィルタ(絶対値): 投稿からTHRESHOLD_HOURS時間以内に
-                       IMPRESSION_THRESHOLD インプレッションに到達
-二次スコア(相対値):   同じ条件を満たした投稿の中で、伸び速度(imp/時間)でランキング
+インプレッション数は無料では技術的に取得できないため、
+公開データだけで取れる以下の指標を使う。
+
+判定基準(投稿後 THRESHOLD_HOURS 以内に、以下をすべて満たす):
+  - 引用(quotes)    >= QUOTE_THRESHOLD
+  - ブックマーク数   >= BOOKMARK_THRESHOLD
+  - いいね数         >= LIKE_THRESHOLD
+
+ランキング優先順位(以下の順で重み付けしたスコア):
+  1. 引用の伸び速度(1時間あたり)
+  2. ブックマークの伸び速度(1時間あたり)
+  3. いいねの絶対数
 """
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-# ── 設定値(必要に応じて調整) ─────────────────────────────
-IMPRESSION_THRESHOLD = 5_000_000   # 500万インプレッション
-THRESHOLD_HOURS = 6.0              # 「数時間」の目安。まずは6時間で運用し様子見
-MIN_VELOCITY_FOR_ALERT = None      # 二次フィルタを追加したくなったらここに閾値を入れる
-# ──────────────────────────────────────────────────────
+# ── 設定値(投稿後1時間の目安値。運用しながら調整すること) ──────────
+THRESHOLD_HOURS = 1.0
+
+QUOTE_THRESHOLD = 50        # 引用: 50〜100以上 → 下限の50を採用(緩め側)
+BOOKMARK_THRESHOLD = 100     # ブックマーク: 100〜300以上 → 下限の100を採用
+LIKE_THRESHOLD = 500         # いいね: 500〜1000以上 → 下限の500を採用
+
+# ランキングスコアの重み(優先順位 引用 > ブックマーク > いいね を反映)
+WEIGHT_QUOTE_VELOCITY = 3.0
+WEIGHT_BOOKMARK_VELOCITY = 2.0
+WEIGHT_LIKE_COUNT = 1.0
+# ──────────────────────────────────────────────────────────
 
 
 @dataclass
@@ -24,10 +40,11 @@ class PostMetrics:
     author_handle: str
     text_snippet: str
     posted_at: datetime
-    impressions: int
     likes: int
     retweets: int
     replies: int
+    quotes: int
+    bookmarks: int
 
 
 def _parse_dt(value) -> datetime:
@@ -45,39 +62,55 @@ def elapsed_hours(posted_at, now=None) -> float:
     return delta.total_seconds() / 3600.0
 
 
-def velocity(impressions: int, hours: float) -> float:
-    """1時間あたりのインプレッション増加速度(概算)"""
-    if hours <= 0:
-        return float(impressions)
-    return impressions / hours
+def _velocity(count: int, hours: float) -> float:
+    """1時間あたりの増加速度(概算)。経過時間が短すぎる場合は過大評価を避けるため下限を設ける。"""
+    safe_hours = max(hours, 0.25)  # 15分未満は15分として計算(初動のブレを抑える)
+    return count / safe_hours
 
 
 def is_explosive(post: dict, now=None) -> bool:
     """
-    一次フィルタ: 投稿後 THRESHOLD_HOURS 以内に IMPRESSION_THRESHOLD 到達したか
+    一次フィルタ: 投稿後 THRESHOLD_HOURS 以内に、
+    引用・ブックマーク・いいねの全ての閾値を満たしたか
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     if hours > THRESHOLD_HOURS:
         return False
-    if post.get("impressions", 0) < IMPRESSION_THRESHOLD:
+    if post.get("quotes", 0) < QUOTE_THRESHOLD:
+        return False
+    if post.get("bookmarks", 0) < BOOKMARK_THRESHOLD:
+        return False
+    if post.get("likes", 0) < LIKE_THRESHOLD:
         return False
     return True
 
 
 def rank_candidates(posts: list[dict], now=None) -> list[dict]:
     """
-    爆発候補を伸び速度でランキング(降順)。
-    各要素に velocity_per_hour を付与して返す。
+    爆発候補を「引用速度 > ブックマーク速度 > いいね数」の優先順位でスコアリングし、
+    降順にランキングする。
     """
     ranked = []
     for post in posts:
         hours = elapsed_hours(post["posted_at"], now=now)
-        v = velocity(post.get("impressions", 0), hours)
+        quote_v = _velocity(post.get("quotes", 0), hours)
+        bookmark_v = _velocity(post.get("bookmarks", 0), hours)
+        likes = post.get("likes", 0)
+
+        score = (
+            WEIGHT_QUOTE_VELOCITY * quote_v
+            + WEIGHT_BOOKMARK_VELOCITY * bookmark_v
+            + WEIGHT_LIKE_COUNT * likes
+        )
+
         enriched = dict(post)
         enriched["elapsed_hours"] = round(hours, 2)
-        enriched["velocity_per_hour"] = round(v, 0)
+        enriched["quote_velocity_per_hour"] = round(quote_v, 1)
+        enriched["bookmark_velocity_per_hour"] = round(bookmark_v, 1)
+        enriched["buzz_score"] = round(score, 1)
         ranked.append(enriched)
-    ranked.sort(key=lambda p: p["velocity_per_hour"], reverse=True)
+
+    ranked.sort(key=lambda p: p["buzz_score"], reverse=True)
     return ranked
 
 

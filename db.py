@@ -19,10 +19,11 @@ CREATE TABLE IF NOT EXISTS posts (
     url             TEXT,
     posted_at       TEXT,                  -- 投稿時刻 (ISO8601)
     text_snippet    TEXT,                  -- 本文の先頭一部(ジャンル分類用)
-    impressions     INTEGER,
     likes           INTEGER,
     retweets        INTEGER,
     replies         INTEGER,
+    quotes          INTEGER,
+    bookmarks       INTEGER,
     genre           TEXT,                  -- Groqで分類したジャンル
     detected_at     TEXT,                  -- 「爆発」判定された時刻
     notified        INTEGER DEFAULT 0,     -- 0/1 通知済みフラグ
@@ -74,13 +75,14 @@ def upsert_post(post: dict):
             """
             INSERT INTO posts (
                 post_id, author_handle, url, posted_at, text_snippet,
-                impressions, likes, retweets, replies, genre, detected_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                likes, retweets, replies, quotes, bookmarks, genre, detected_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(post_id) DO UPDATE SET
-                impressions = excluded.impressions,
                 likes = excluded.likes,
                 retweets = excluded.retweets,
                 replies = excluded.replies,
+                quotes = excluded.quotes,
+                bookmarks = excluded.bookmarks,
                 genre = excluded.genre
             """,
             (
@@ -89,10 +91,11 @@ def upsert_post(post: dict):
                 post.get("url"),
                 post.get("posted_at"),
                 post.get("text_snippet"),
-                post.get("impressions"),
                 post.get("likes"),
                 post.get("retweets"),
                 post.get("replies"),
+                post.get("quotes"),
+                post.get("bookmarks"),
                 post.get("genre"),
                 datetime.now(timezone.utc).isoformat(),
             ),

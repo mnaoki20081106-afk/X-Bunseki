@@ -19,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Playwright browser
+        run: playwright install --with-deps chromium
+
       - name: Restore DB (重複通知防止用)
         uses: actions/cache@v4
         with:
@@ -27,10 +30,17 @@ jobs:
           restore-keys: |
             monitor-db-
 
+      - name: Restore X login session
+        run: echo "${{ secrets.X_SESSION_STATE }}" | base64 -d > storage_state.json
+
       - name: Run monitor
         env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          X_SESSION_STATE_PATH: storage_state.json
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
         run: python main.py
+
+      - name: Clean up session file
+        if: always()
+        run: rm -f storage_state.json

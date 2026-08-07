@@ -28,8 +28,30 @@ def main():
         # Codespaces + Xvfb環境では DISPLAY が設定されているのでheadless=Falseで
         # 仮想ディスプレイ上にブラウザが描画される(→ noVNC経由で見える)。
         # ローカルPC実行時も同様にheadless=Falseで実ブラウザが立ち上がる。
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context()
+        #
+        # --disable-blink-features=AutomationControlled 等は、Xが行う
+        # 「自動操作ブラウザかどうか」の検知を避けるための設定。
+        # これが無いと、ログインボタンを押しても反応が無い(検知され静かに
+        # ブロックされる)ことがある。
+        browser = p.chromium.launch(
+            headless=False,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--disable-features=IsolateOrigins,site-per-process",
+            ],
+        )
+        context = browser.new_context(
+            viewport={"width": 1280, "height": 800},
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+            ),
+            locale="ja-JP",
+        )
+        # navigator.webdriver フラグ(自動操作の目印になる)を隠す
+        context.add_init_script(
+            "Object.defineProperty(navigator, 'webdriver', { get: () => undefined });"
+        )
         page = context.new_page()
 
         print("ブラウザが起動しました。X (twitter.com) のログイン画面に移動します...")

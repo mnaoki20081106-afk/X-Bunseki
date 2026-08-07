@@ -1,0 +1,36 @@
+name: SNS Buzz Monitor
+
+on:
+  schedule:
+    # 毎時0分に実行 (UTC基準。日本時間は+9時間)
+    - cron: "0 * * * *"
+  workflow_dispatch: {}  # 手動実行ボタンもGitHub上に出る
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore DB (重複通知防止用)
+        uses: actions/cache@v4
+        with:
+          path: data/monitor.db
+          key: monitor-db-${{ github.run_id }}
+          restore-keys: |
+            monitor-db-
+
+      - name: Run monitor
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python main.py

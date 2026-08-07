@@ -22,9 +22,10 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get update -qq
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq xvfb x11vnc novnc websockify > /dev/null
 
 echo "=== Python依存関係をインストール中... ==="
-pip install --quiet playwright
-playwright install chromium
-playwright install-deps chromium
+pip install --quiet --user playwright
+export PATH="$HOME/.local/bin:$PATH"
+python3 -m playwright install chromium
+python3 -m playwright install-deps chromium
 
 echo "=== 仮想ディスプレイを起動中... ==="
 Xvfb :99 -screen 0 1280x800x24 &

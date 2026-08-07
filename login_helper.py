@@ -20,6 +20,12 @@ import os
 
 from playwright.sync_api import sync_playwright
 
+try:
+    from playwright_stealth import stealth_sync
+    HAS_STEALTH = True
+except ImportError:
+    HAS_STEALTH = False
+
 OUTPUT_PATH = "storage_state.json"
 
 
@@ -53,6 +59,10 @@ def main():
             "Object.defineProperty(navigator, 'webdriver', { get: () => undefined });"
         )
         page = context.new_page()
+
+        if HAS_STEALTH:
+            stealth_sync(page)
+            print("(ステルス化を適用しました)")
 
         print("ブラウザが起動しました。X (twitter.com) のログイン画面に移動します...")
         page.goto("https://x.com/login")

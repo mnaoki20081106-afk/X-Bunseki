@@ -6,7 +6,7 @@ main.py
   1. Playwrightで投稿収集(ログインセッションが切れていたら専用エラー)
   2. 「爆発」判定(引用・ブックマーク・いいねの閾値 × 経過時間)
   3. 未通知の候補だけをGroqでジャンル分類
-  4. LINEに即時通知
+  4. LINE + ntfy の二刀流で即時通知(片方失敗してももう片方が届けば通知済み扱い)
   5. DBに記録(重複通知防止)
 """
 
@@ -18,6 +18,7 @@ import db
 import detector
 import genre_classifier
 import line_notifier
+import ntfy_notifier
 from playwright_collector import SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24  # セッション切れ通知は1日1回まで
@@ -27,7 +28,7 @@ ZERO_POSTS_ALERT_COOLDOWN_HOURS = 24  # DOM構造変化アラートも1日1回�
 
 def _notify_session_expired():
     """
-    セッション切れをLINEで知らせる。ただし1日1回まで(毎時失敗し続けて
+    セッション切れをLINE+ntfyで知らせる。ただし1日1回まで(毎時失敗し続けて
     通知が埋まるのを防ぐため)。
     """
     last_alert = db.get_meta("session_expired_alert_at")
@@ -39,24 +40,30 @@ def _notify_session_expired():
             print("(セッション切れ通知はクールダウン中のためスキップ)")
             return
 
+    system_post = {
+        "genre": "システム通知",
+        "likes": 0, "quotes": 0, "bookmarks": 0, "elapsed_hours": "-",
+        "url": "https://x.com/login",
+        "author_handle": "⚠️ ログインセッションが切れました。codespace_login.sh を再実行してください",
+    }
     try:
-        line_notifier.send_notification({
-            "genre": "システム通知",
-            "likes": 0, "quotes": 0, "bookmarks": 0, "elapsed_hours": "-",
-            "url": "https://x.com/login",
-            "author_handle": "⚠️ ログインセッションが切れました。codespace_login.sh を再実行してください",
-        })
-        db.set_meta("session_expired_alert_at", now.isoformat())
-        print("セッション切れ通知をLINEに送信しました")
+        line_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
-        print(f"[ERROR] セッション切れ通知の送信にも失敗: {e}")
+        print(f"[ERROR] セッション切れ通知(LINE)の送信に失敗: {e}")
+    try:
+        ntfy_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] セッション切れ通知(ntfy)の送信に失敗: {e}")
+
+    db.set_meta("session_expired_alert_at", now.isoformat())
+    print("セッション切れ通知を送信しました")
 
 
 def _check_zero_posts_streak(posts_count: int):
     """
     取得件数が0件の実行が連続していないかチェックする。
     連続していたら、Xのページ構造が変わってデータが取れなくなっている
-    可能性が高いのでLINEで知らせる(セッション切れとは別原因の壊れ方)。
+    可能性が高いのでLINE+ntfyで知らせる(セッション切れとは別原因の壊れ方)。
     """
     now = datetime.now(timezone.utc)
 
@@ -79,20 +86,26 @@ def _check_zero_posts_streak(posts_count: int):
             print("(0件連続アラートはクールダウン中のためスキップ)")
             return
 
+    system_post = {
+        "genre": "システム通知",
+        "likes": 0, "quotes": 0, "bookmarks": 0, "elapsed_hours": "-",
+        "url": "https://x.com",
+        "author_handle": (
+            f"⚠️ {streak}回連続で投稿を0件しか取得できていません。"
+            "Xのページ構造が変わった可能性があります(要確認)"
+        ),
+    }
     try:
-        line_notifier.send_notification({
-            "genre": "システム通知",
-            "likes": 0, "quotes": 0, "bookmarks": 0, "elapsed_hours": "-",
-            "url": "https://x.com",
-            "author_handle": (
-                f"⚠️ {streak}回連続で投稿を0件しか取得できていません。"
-                "Xのページ構造が変わった可能性があります(要確認)"
-            ),
-        })
-        db.set_meta("zero_posts_alert_at", now.isoformat())
-        print("0件連続アラートをLINEに送信しました")
+        line_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
-        print(f"[ERROR] 0件連続アラートの送信にも失敗: {e}")
+        print(f"[ERROR] 0件連続アラート(LINE)の送信に失敗: {e}")
+    try:
+        ntfy_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] 0件連続アラート(ntfy)の送信に失敗: {e}")
+
+    db.set_meta("zero_posts_alert_at", now.isoformat())
+    print("0件連続アラートを送信しました")
 
 
 def run_once():
@@ -130,15 +143,27 @@ def run_once():
         db.upsert_post(post)
 
         try:
-            success = line_notifier.send_notification(post)
+            line_success = line_notifier.send_notification(post)
         except Exception as e:  # noqa: BLE001
             print(f"[ERROR] LINE通知に失敗しました (post_id={post['post_id']}): {e}")
-            success = False
+            line_success = False
 
+        try:
+            ntfy_success = ntfy_notifier.send_notification(post)
+        except Exception as e:  # noqa: BLE001
+            print(f"[ERROR] ntfy通知に失敗しました (post_id={post['post_id']}): {e}")
+            ntfy_success = False
+
+        success = line_success or ntfy_success
         if success:
             db.mark_notified(post["post_id"])
             notified_count += 1
-            print(f"  → 通知送信: [{post['genre']}] {post['url']}")
+            channels = []
+            if line_success:
+                channels.append("LINE")
+            if ntfy_success:
+                channels.append("ntfy")
+            print(f"  → 通知送信({'/'.join(channels)}): [{post['genre']}] {post['url']}")
 
     finished_at = datetime.now(timezone.utc).isoformat()
     db.log_run(started_at, finished_at, len(posts), len(new_candidates), "success")

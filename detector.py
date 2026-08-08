@@ -14,12 +14,6 @@ detector.py
   1. 引用の伸び速度(1時間あたり)
   2. ブックマークの伸び速度(1時間あたり)
   3. いいねの絶対数
-
-「激アツ」判定:
-  上記の絶対値条件を満たした投稿のうち、さらに
-  - 引用 ÷ いいね が10%以上
-  - ブックマーク ÷ いいね が20%以上
-  の両方を満たすものは、特別に目立つ通知(🔥🔥🔥)にする。
 """
 
 from dataclasses import dataclass
@@ -62,7 +56,6 @@ class PostMetrics:
 def _parse_dt(value) -> datetime:
     if isinstance(value, datetime):
         return value if value.tzinfo else value.replace(tzinfo=timezone.utc)
-    # ISO8601文字列を想定。Apify Actorの出力形式に応じて調整すること。
     dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     return dt
 
@@ -76,7 +69,7 @@ def elapsed_hours(posted_at, now=None) -> float:
 
 def _velocity(count: int, hours: float) -> float:
     """1時間あたりの増加速度(概算)。経過時間が短すぎる場合は過大評価を避けるため下限を設ける。"""
-    safe_hours = max(hours, 0.25)  # 15分未満は15分として計算(初動のブレを抑える)
+    safe_hours = max(hours, 0.25)
     return count / safe_hours
 
 

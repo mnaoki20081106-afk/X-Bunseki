@@ -25,6 +25,8 @@ from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright
 
+import detector
+
 # 監視対象の検索クエリ。ジャンルを横断して拾いたいので、
 # 特定ジャンルに偏らない広めの条件にしてある。
 # Xの検索演算子(min_faves, min_replies等)はログイン状態でも通常通り使える。
@@ -131,38 +133,12 @@ def _extract_tweet_data(article) -> dict | None:
         retweets = _count_by_testid("retweet")
         likes = _count_by_testid("like")
 
-        # 投稿全体のテキスト(ボタンのaria-labelを含む)を1回だけ取得し、
-        # ブックマーク・引用の両方をここから探す。
-        # 理由: ブックマーク数は data-testid="bookmark" ボタンに乗っている
-        # ことが多いが、引用数は専用ボタンが無く「142件の引用」のような
-        # テキストリンクとして、アクションバーの外(投稿の別の場所)に
-        # 表示されることがある。ボタン列(role="group")の中だけを見ていると
-        # これを取りこぼすため、記事全体を対象に正規表現で探す。
-        full_text = article.inner_text()
-
-        # ブックマーク: 専用ボタンを優先し、無ければ全体テキストからも探す
-        bookmarks = _count_by_testid("bookmark")
-        if bookmarks == 0:
-            m = re.search(
-                r"([\d,\.]+[万億KkMm]?)\s*(?:件のブックマーク|ブックマーク|bookmarks?)",
-                full_text,
-                re.IGNORECASE,
-            )
-            if m:
-                bookmarks = _parse_count(m.group(1))
-
-        # 引用: 専用ボタンが無いことが多いので、全体テキストから
-        # 「◯件の引用」「◯ Quotes」のようなパターンを探す
+        # 引用・ブックマーク・表示回数(インプレッション)は、検索結果一覧の
+        # カードには表示されないことが実際の運用で確認された。
+        # これらは _fetch_detail_stats() で個別の投稿ページから別途取得し、
+        # fetch_posts() 内で上書きする。ここではひとまず0を入れておく。
         quotes = 0
-        for pattern in (
-            r"([\d,\.]+[万億KkMm]?)\s*件の引用",
-            r"([\d,\.]+[万億KkMm]?)\s*Quotes?",
-            r"引用[\s\u3000]*([\d,\.]+[万億KkMm]?)",
-        ):
-            m = re.search(pattern, full_text, re.IGNORECASE)
-            if m:
-                quotes = _parse_count(m.group(1))
-                break
+        bookmarks = 0
 
         return {
             "post_id": post_id,
@@ -184,6 +160,43 @@ def _extract_tweet_data(article) -> dict | None:
 class SessionExpiredError(Exception):
     """ログインセッションが切れて、ログイン画面に飛ばされた場合の専用エラー"""
     pass
+
+
+def _fetch_detail_stats(page, url: str) -> dict:
+    """
+    投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
+    (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
+    候補に絞ってからここで1件ずつ取得する。
+    """
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=20000)
+        page.wait_for_timeout(2000)
+        full_text = page.inner_text("body")
+    except Exception as e:  # noqa: BLE001
+        print(f"  [警告] 詳細ページの取得に失敗 {url}: {e}")
+        return {"quotes": 0, "bookmarks": 0, "impressions": 0}
+
+    def _find(patterns) -> int:
+        for pattern in patterns:
+            m = re.search(pattern, full_text, re.IGNORECASE)
+            if m:
+                return _parse_count(m.group(1))
+        return 0
+
+    quotes = _find([
+        r"([\d,\.]+[万億KkMm]?)\s*件の引用",
+        r"([\d,\.]+[万億KkMm]?)\s*Quotes?",
+    ])
+    bookmarks = _find([
+        r"([\d,\.]+[万億KkMm]?)\s*件のブックマーク",
+        r"([\d,\.]+[万億KkMm]?)\s*Bookmarks?",
+    ])
+    impressions = _find([
+        r"([\d,\.]+[万億KkMm]?)\s*件の表示",
+        r"([\d,\.]+[万億KkMm]?)\s*Views?",
+    ])
+
+    return {"quotes": quotes, "bookmarks": bookmarks, "impressions": impressions}
 
 
 def _search_one_query(page, query: str) -> list[dict]:
@@ -217,6 +230,13 @@ def _search_one_query(page, query: str) -> list[dict]:
 def fetch_posts() -> list[dict]:
     """
     全ての検索クエリを実行し、正規化済みの投稿リストを返す。
+
+    2段階方式:
+      1段階目(検索): 広く投稿を集める。いいね・RT・返信は取れるが、
+                     引用・ブックマーク・表示回数はここでは取れない。
+      2段階目(詳細ページ): 1段階目のうち「いいねが閾値以上、かつ
+                     投稿から時間内」の候補だけ、個別ページを開いて
+                     引用・ブックマーク・表示回数を取得する。
     """
     session_path = _session_path()
     all_posts = {}
@@ -237,6 +257,20 @@ def fetch_posts() -> list[dict]:
                 raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
             except Exception as e:  # noqa: BLE001
                 print(f"  [ERROR] 検索クエリ失敗 '{query}': {e}")
+
+        # 2段階目: いいねが閾値以上、かつ投稿から時間内の候補だけ詳細ページを見る
+        candidates = [
+            p for p in all_posts.values()
+            if p.get("likes", 0) >= detector.LIKE_THRESHOLD
+            and detector.elapsed_hours(p["posted_at"]) <= detector.THRESHOLD_HOURS
+        ]
+        print(f"  [2段階目] 詳細ページ取得の対象: {len(candidates)}件")
+
+        for post in candidates:
+            stats = _fetch_detail_stats(page, post["url"])
+            post["quotes"] = stats["quotes"]
+            post["bookmarks"] = stats["bookmarks"]
+            post["impressions"] = stats["impressions"]
 
         browser.close()
 

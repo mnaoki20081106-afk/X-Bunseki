@@ -14,6 +14,12 @@ detector.py
   1. 引用の伸び速度(1時間あたり)
   2. ブックマークの伸び速度(1時間あたり)
   3. いいねの絶対数
+
+「激アツ」判定:
+  上記の絶対値条件を満たした投稿のうち、さらに
+  - 引用 ÷ いいね が10%以上
+  - ブックマーク ÷ いいね が20%以上
+  の両方を満たすものは、特別に目立つ通知(🔥🔥🔥)にする。
 """
 
 from dataclasses import dataclass
@@ -30,6 +36,12 @@ LIKE_THRESHOLD = 500         # いいね: 500〜1000以上 → 下限の500を�
 WEIGHT_QUOTE_VELOCITY = 3.0
 WEIGHT_BOOKMARK_VELOCITY = 2.0
 WEIGHT_LIKE_COUNT = 1.0
+
+# 「激アツ」判定: 絶対値の条件を満たした上で、さらに比率が高い投稿を特別扱いする
+# - 引用 ÷ いいね が10%を超える → 「意見を付け加えたい」熱量が強いサイン
+# - ブックマーク ÷ いいね が20%を超える → 「保存してでも残したい」心理が強いサイン
+GEKIATSU_QUOTE_LIKE_RATIO = 0.10
+GEKIATSU_BOOKMARK_LIKE_RATIO = 0.20
 # ──────────────────────────────────────────────────────────
 
 
@@ -85,10 +97,35 @@ def is_explosive(post: dict, now=None) -> bool:
     return True
 
 
+def _compute_ratios(post: dict) -> tuple[float, float]:
+    """
+    (引用÷いいね, ブックマーク÷いいね) の比率を計算する。
+    いいねが0の場合はゼロ除算を避けて0.0を返す。
+    """
+    likes = post.get("likes", 0)
+    if likes <= 0:
+        return 0.0, 0.0
+    quote_ratio = post.get("quotes", 0) / likes
+    bookmark_ratio = post.get("bookmarks", 0) / likes
+    return quote_ratio, bookmark_ratio
+
+
+def is_gekiatsu(post: dict) -> bool:
+    """
+    「激アツ」判定: 引用÷いいね と ブックマーク÷いいね の両方が
+    閾値を超えているか(絶対値の閾値は is_explosive 側で別途チェック済み前提)
+    """
+    quote_ratio, bookmark_ratio = _compute_ratios(post)
+    return (
+        quote_ratio >= GEKIATSU_QUOTE_LIKE_RATIO
+        and bookmark_ratio >= GEKIATSU_BOOKMARK_LIKE_RATIO
+    )
+
+
 def rank_candidates(posts: list[dict], now=None) -> list[dict]:
     """
     爆発候補を「引用速度 > ブックマーク速度 > いいね数」の優先順位でスコアリングし、
-    降順にランキングする。
+    降順にランキングする。あわせて「激アツ」判定・比率も付与する。
     """
     ranked = []
     for post in posts:
@@ -96,6 +133,7 @@ def rank_candidates(posts: list[dict], now=None) -> list[dict]:
         quote_v = _velocity(post.get("quotes", 0), hours)
         bookmark_v = _velocity(post.get("bookmarks", 0), hours)
         likes = post.get("likes", 0)
+        quote_ratio, bookmark_ratio = _compute_ratios(post)
 
         score = (
             WEIGHT_QUOTE_VELOCITY * quote_v
@@ -108,6 +146,9 @@ def rank_candidates(posts: list[dict], now=None) -> list[dict]:
         enriched["quote_velocity_per_hour"] = round(quote_v, 1)
         enriched["bookmark_velocity_per_hour"] = round(bookmark_v, 1)
         enriched["buzz_score"] = round(score, 1)
+        enriched["quote_like_ratio"] = round(quote_ratio, 3)
+        enriched["bookmark_like_ratio"] = round(bookmark_ratio, 3)
+        enriched["is_gekiatsu"] = is_gekiatsu(post)
         ranked.append(enriched)
 
     ranked.sort(key=lambda p: p["buzz_score"], reverse=True)

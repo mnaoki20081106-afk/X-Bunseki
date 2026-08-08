@@ -39,6 +39,11 @@ CREATE TABLE IF NOT EXISTS collection_runs (
     status          TEXT,                  -- success / error
     error_message   TEXT
 );
+
+CREATE TABLE IF NOT EXISTS meta (
+    key             TEXT PRIMARY KEY,
+    value           TEXT
+);
 """
 
 
@@ -133,6 +138,23 @@ def recent_flagged(limit=20):
             (limit,),
         ).fetchall()
         return [dict(r) for r in rows]
+
+
+def get_meta(key: str) -> str | None:
+    with get_conn() as conn:
+        row = conn.execute("SELECT value FROM meta WHERE key = ?", (key,)).fetchone()
+        return row["value"] if row else None
+
+
+def set_meta(key: str, value: str):
+    with get_conn() as conn:
+        conn.execute(
+            """
+            INSERT INTO meta (key, value) VALUES (?, ?)
+            ON CONFLICT(key) DO UPDATE SET value = excluded.value
+            """,
+            (key, value),
+        )
 
 
 if __name__ == "__main__":

@@ -116,7 +116,9 @@ def _extract_tweet_data(article) -> dict | None:
         text_el = article.query_selector('[data-testid="tweetText"]')
         text_snippet = text_el.inner_text()[:200] if text_el else ""
 
-        # エンゲージメント数値(返信・RT・いいね・ブックマーク)
+        # エンゲージメント数値(返信・RT・いいね)
+        # 標準的なアクションバーのボタンには data-testid が振られており、
+        # aria-label に「返信 12件」のような形式で件数が入っている
         def _count_by_testid(testid: str) -> int:
             el = article.query_selector(f'[data-testid="{testid}"]')
             if not el:
@@ -128,17 +130,39 @@ def _extract_tweet_data(article) -> dict | None:
         replies = _count_by_testid("reply")
         retweets = _count_by_testid("retweet")
         likes = _count_by_testid("like")
-        bookmarks = _count_by_testid("bookmark")
 
-        # 引用数は専用のdata-testidがない場合があるため、
-        # 「グループ全体のaria-label」から正規表現で拾うフォールバックを用意
+        # 投稿全体のテキスト(ボタンのaria-labelを含む)を1回だけ取得し、
+        # ブックマーク・引用の両方をここから探す。
+        # 理由: ブックマーク数は data-testid="bookmark" ボタンに乗っている
+        # ことが多いが、引用数は専用ボタンが無く「142件の引用」のような
+        # テキストリンクとして、アクションバーの外(投稿の別の場所)に
+        # 表示されることがある。ボタン列(role="group")の中だけを見ていると
+        # これを取りこぼすため、記事全体を対象に正規表現で探す。
+        full_text = article.inner_text()
+
+        # ブックマーク: 専用ボタンを優先し、無ければ全体テキストからも探す
+        bookmarks = _count_by_testid("bookmark")
+        if bookmarks == 0:
+            m = re.search(
+                r"([\d,\.]+[万億KkMm]?)\s*(?:件のブックマーク|ブックマーク|bookmarks?)",
+                full_text,
+                re.IGNORECASE,
+            )
+            if m:
+                bookmarks = _parse_count(m.group(1))
+
+        # 引用: 専用ボタンが無いことが多いので、全体テキストから
+        # 「◯件の引用」「◯ Quotes」のようなパターンを探す
         quotes = 0
-        group_el = article.query_selector('[role="group"]')
-        if group_el:
-            group_label = group_el.get_attribute("aria-label") or ""
-            m = re.search(r"([\d,\.]+[万億KkMm]?)\s*(?:件の引用|quotes?)", group_label, re.IGNORECASE)
+        for pattern in (
+            r"([\d,\.]+[万億KkMm]?)\s*件の引用",
+            r"([\d,\.]+[万億KkMm]?)\s*Quotes?",
+            r"引用[\s\u3000]*([\d,\.]+[万億KkMm]?)",
+        ):
+            m = re.search(pattern, full_text, re.IGNORECASE)
             if m:
                 quotes = _parse_count(m.group(1))
+                break
 
         return {
             "post_id": post_id,
@@ -216,7 +240,23 @@ def fetch_posts() -> list[dict]:
 
         browser.close()
 
-    return list(all_posts.values())
+    result = list(all_posts.values())
+
+    # ★診断用ログ: いいね数上位5件の全指標を出力する。
+    # 「引用・ブックマークがいつも0」になっていないかをここで確認できる。
+    # (Xの画面構造の変化でセレクタが合わなくなった時の切り分けに使う)
+    top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
+    print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
+    for p in top5:
+        print(
+            f"  [{p['post_id']}] {p['author_handle']}: "
+            f"likes={p['likes']}, quotes={p['quotes']}, "
+            f"bookmarks={p['bookmarks']}, retweets={p['retweets']}, "
+            f"replies={p['replies']}, posted_at={p['posted_at']}"
+        )
+    print("--- 診断ログここまで ---\n")
+
+    return result
 
 
 if __name__ == "__main__":

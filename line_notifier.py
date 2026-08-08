@@ -39,12 +39,23 @@ def build_message(post: dict) -> str:
     url = post.get("url", "")
     author = post.get("author_handle", "")
 
-    return (
-        f"🔥 急上昇検知 [{genre}]\n"
-        f"{author} の投稿が{hours}時間で"
-        f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}\n"
-        f"{url}"
-    )
+    if post.get("is_gekiatsu"):
+        header = f"🔥🔥🔥 激アツ投稿 [{genre}]"
+        quote_ratio = post.get("quote_like_ratio", 0) * 100
+        bookmark_ratio = post.get("bookmark_like_ratio", 0) * 100
+        detail = (
+            f"{author} の投稿が{hours}時間で"
+            f"いいね{likes:,}・引用{quotes:,}({quote_ratio:.0f}%)"
+            f"・ブックマーク{bookmarks:,}({bookmark_ratio:.0f}%)"
+        )
+    else:
+        header = f"🔥 急上昇検知 [{genre}]"
+        detail = (
+            f"{author} の投稿が{hours}時間で"
+            f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"
+        )
+
+    return f"{header}\n{detail}\n{url}"
 
 
 def send_notification(post: dict) -> bool:

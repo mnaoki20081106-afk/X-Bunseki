@@ -157,11 +157,24 @@ def _extract_tweet_data(article) -> dict | None:
         return None
 
 
+class SessionExpiredError(Exception):
+    """ログインセッションが切れて、ログイン画面に飛ばされた場合の専用エラー"""
+    pass
+
+
 def _search_one_query(page, query: str) -> list[dict]:
     search_url = f"https://x.com/search?q={quote(query)}&src=typed_query&f=live"
     print(f"  検索実行: {query}")
     page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
+
+    # セッション切れの検知: ログイン画面にリダイレクトされていないか確認
+    current_url = page.url
+    if "/login" in current_url or "/i/flow/login" in current_url:
+        raise SessionExpiredError(
+            "Xのログインセッションが切れているようです(ログイン画面にリダイレクトされました)。"
+            "codespace_login.sh を再実行してセッションを更新してください。"
+        )
 
     posts_by_id = {}
     for _ in range(MAX_SCROLLS):
@@ -195,6 +208,9 @@ def fetch_posts() -> list[dict]:
                 for post in posts:
                     all_posts[post["post_id"]] = post
                 print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
+            except SessionExpiredError:
+                browser.close()
+                raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
             except Exception as e:  # noqa: BLE001
                 print(f"  [ERROR] 検索クエリ失敗 '{query}': {e}")
 

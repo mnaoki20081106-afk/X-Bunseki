@@ -47,10 +47,14 @@ def send_notification(post: dict) -> bool:
         f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"
     )
 
+    is_gekiatsu = post.get("is_gekiatsu", False)
+    title = f"激アツ投稿 [{genre}]" if is_gekiatsu else f"急上昇検知 [{genre}]"
+    tags = "fire,fire,fire" if is_gekiatsu else "fire"
+
     headers = {
-        "Title": f"急上昇検知 [{genre}]".encode("utf-8"),
+        "Title": title.encode("utf-8"),
         "Priority": "5",  # urgent(最大値)。他の通知より目立つ音・バイブレーションになる
-        "Tags": "fire",   # 🔥 絵文字がタイトルに付く
+        "Tags": tags,      # 激アツは🔥3連にして通常の急上昇と見分けられるようにする
         "Click": url,      # 通知をタップすると投稿ページが開く
     }
 

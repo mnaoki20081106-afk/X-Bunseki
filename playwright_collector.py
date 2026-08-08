@@ -167,18 +167,32 @@ def _fetch_detail_stats(page, url: str) -> dict:
     投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
     (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
     候補に絞ってからここで1件ずつ取得する。
+
+    ★ページ全体のテキストを対象に検索すると、サイドバーの「おすすめ
+    アカウント」のフォロワー数や、トレンドの投稿数など無関係な数字を
+    誤って拾ってしまうことがある(実際に発生した不具合)。
+    そのため、詳細ページの「本体の投稿」(最初のarticle要素)の中だけを
+    対象に検索するようにしている。
     """
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
         page.wait_for_timeout(2000)
-        full_text = page.inner_text("body")
+
+        # 詳細ページでは、最初の <article data-testid="tweet"> が
+        # 本体の投稿(2番目以降はリプライなど別の投稿)
+        main_article = page.query_selector('article[data-testid="tweet"]')
+        if not main_article:
+            print(f"  [警告] 詳細ページで投稿本体が見つからない {url}")
+            return {"quotes": 0, "bookmarks": 0, "impressions": 0}
+
+        scoped_text = main_article.inner_text()
     except Exception as e:  # noqa: BLE001
         print(f"  [警告] 詳細ページの取得に失敗 {url}: {e}")
         return {"quotes": 0, "bookmarks": 0, "impressions": 0}
 
     def _find(patterns) -> int:
         for pattern in patterns:
-            m = re.search(pattern, full_text, re.IGNORECASE)
+            m = re.search(pattern, scoped_text, re.IGNORECASE)
             if m:
                 return _parse_count(m.group(1))
         return 0
@@ -195,6 +209,14 @@ def _fetch_detail_stats(page, url: str) -> dict:
         r"([\d,\.]+[万億KkMm]?)\s*件の表示",
         r"([\d,\.]+[万億KkMm]?)\s*Views?",
     ])
+
+    # ★診断: 引用・ブックマークどちらも0だった場合、本体テキストの末尾
+    # (通常、統計情報は投稿の一番下に固まっている)を出力しておく。
+    # 「本当に0件」なのか「パターンが違って取れていない」のかを、
+    # 次回このログを見て切り分けられるようにするため。
+    if quotes == 0 and bookmarks == 0:
+        tail = scoped_text[-300:].replace("\n", " | ")
+        print(f"      [デバッグ] 投稿本体テキスト末尾300字: {tail}")
 
     return {"quotes": quotes, "bookmarks": bookmarks, "impressions": impressions}
 
@@ -271,6 +293,11 @@ def fetch_posts() -> list[dict]:
             post["quotes"] = stats["quotes"]
             post["bookmarks"] = stats["bookmarks"]
             post["impressions"] = stats["impressions"]
+            print(
+                f"    [詳細] {post['post_id']}: "
+                f"quotes={stats['quotes']}, bookmarks={stats['bookmarks']}, "
+                f"impressions={stats['impressions']}"
+            )
 
         browser.close()
 

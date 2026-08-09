@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T14:37:09.122550+00:00",
+  "updated_at": "2026-08-09T15:33:49.507751+00:00",
   "status": "success",
-  "started_at": "2026-08-09T14:32:05.834756+00:00",
-  "finished_at": "2026-08-09T14:37:09.120191+00:00",
+  "started_at": "2026-08-09T15:28:39.391759+00:00",
+  "finished_at": "2026-08-09T15:33:49.505948+00:00",
   "posts_scanned": 34,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "nino_honmono",
-      "likes": 19375,
-      "quotes": 32,
-      "bookmarks": 198
-    },
-    {
-      "author": "Kitami_Coolguy",
-      "likes": 3420,
-      "quotes": 0,
-      "bookmarks": 59
-    },
-    {
-      "author": "houshoumarine",
-      "likes": 2897,
-      "quotes": 3,
-      "bookmarks": 31
-    },
-    {
-      "author": "mtor_info",
-      "likes": 2053,
-      "quotes": 18,
-      "bookmarks": 26
-    },
-    {
       "author": "t_miyata_kmf2",
-      "likes": 1893,
-      "quotes": 33,
-      "bookmarks": 21
+      "likes": 8152,
+      "quotes": 31,
+      "bookmarks": 129
+    },
+    {
+      "author": "KMF2_0810MENT",
+      "likes": 5884,
+      "quotes": 34,
+      "bookmarks": 304
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 5279,
+      "quotes": 31,
+      "bookmarks": 5500
+    },
+    {
+      "author": "boc_official_",
+      "likes": 3845,
+      "quotes": 18,
+      "bookmarks": 56
+    },
+    {
+      "author": "boc_chama",
+      "likes": 3285,
+      "quotes": 18,
+      "bookmarks": 3400
     }
   ],
   "top5_by_progress": [
     {
-      "author": "nino_honmono",
-      "likes": 19375,
-      "quotes": 32,
-      "bookmarks": 198,
-      "progress_percent": 64
-    },
-    {
-      "author": "sakuraihi_na",
-      "likes": 1578,
-      "quotes": 18,
-      "bookmarks": 138,
-      "progress_percent": 36
-    },
-    {
-      "author": "mtor_info",
-      "likes": 2053,
-      "quotes": 18,
-      "bookmarks": 26,
-      "progress_percent": 26
+      "author": "KMF2_0810MENT",
+      "likes": 5884,
+      "quotes": 34,
+      "bookmarks": 304,
+      "progress_percent": 68
     },
     {
       "author": "t_miyata_kmf2",
-      "likes": 1893,
-      "quotes": 33,
-      "bookmarks": 21,
-      "progress_percent": 21
+      "likes": 8152,
+      "quotes": 31,
+      "bookmarks": 129,
+      "progress_percent": 62
     },
     {
-      "author": "0927_yuina",
-      "likes": 795,
-      "quotes": 9,
-      "bookmarks": 25,
-      "progress_percent": 18
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 5279,
+      "quotes": 31,
+      "bookmarks": 5500,
+      "progress_percent": 62
+    },
+    {
+      "author": "mtor_info",
+      "likes": 2159,
+      "quotes": 18,
+      "bookmarks": 55,
+      "progress_percent": 36
+    },
+    {
+      "author": "AZKi_VDiVA",
+      "likes": 2119,
+      "quotes": 18,
+      "bookmarks": 174,
+      "progress_percent": 36
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T16:36:38.421126+00:00",
+  "updated_at": "2026-08-09T17:30:45.037863+00:00",
   "status": "success",
-  "started_at": "2026-08-09T16:32:38.893682+00:00",
-  "finished_at": "2026-08-09T16:36:38.283953+00:00",
-  "posts_scanned": 46,
+  "started_at": "2026-08-09T17:29:09.129873+00:00",
+  "finished_at": "2026-08-09T17:30:45.035800+00:00",
+  "posts_scanned": 45,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "unkochan1234567",
-      "likes": 11248,
-      "quotes": 32,
-      "bookmarks": 88
-    },
-    {
-      "author": "Halli_4",
-      "likes": 9494,
-      "quotes": 30,
-      "bookmarks": 217
-    },
-    {
       "author": "MotokiOhmoriMGA",
-      "likes": 8026,
-      "quotes": 31,
-      "bookmarks": 199
-    },
-    {
-      "author": "kirizaki_ei",
-      "likes": 6358,
+      "likes": 12016,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "aichan_nel",
-      "likes": 5873,
-      "quotes": 18,
-      "bookmarks": 94
+      "author": "kirizaki_ei",
+      "likes": 7679,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "taijich0324",
+      "likes": 6110,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "indegnasen210",
+      "likes": 5562,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "natsuiromatsuri",
+      "likes": 3928,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "MotokiOhmoriMGA",
-      "likes": 8026,
-      "quotes": 31,
-      "bookmarks": 199,
-      "progress_percent": 62
+      "author": "hinatazaka46",
+      "likes": 2374,
+      "quotes": 19,
+      "bookmarks": 70,
+      "progress_percent": 38
     },
     {
-      "author": "nogizaka46",
-      "likes": 2305,
-      "quotes": 17,
-      "bookmarks": 85,
-      "progress_percent": 34
+      "author": "Vau875",
+      "likes": 739,
+      "quotes": 15,
+      "bookmarks": 16,
+      "progress_percent": 16
     },
     {
-      "author": "indegnasen210",
-      "likes": 4401,
-      "quotes": 17,
-      "bookmarks": 29,
-      "progress_percent": 29
+      "author": "ado1024imokenp",
+      "likes": 2002,
+      "quotes": 6,
+      "bookmarks": 42,
+      "progress_percent": 12
     },
     {
-      "author": "kirizaki_ei",
-      "likes": 4536,
-      "quotes": 14,
-      "bookmarks": 75,
-      "progress_percent": 28
+      "author": "iLiFE_koguma",
+      "likes": 665,
+      "quotes": 1,
+      "bookmarks": 3,
+      "progress_percent": 2
     },
     {
-      "author": "taijich0324",
-      "likes": 4423,
-      "quotes": 11,
-      "bookmarks": 37,
-      "progress_percent": 22
+      "author": "Kanae_2434",
+      "likes": 1049,
+      "quotes": 0,
+      "bookmarks": 4,
+      "progress_percent": 0
     }
   ]
 }

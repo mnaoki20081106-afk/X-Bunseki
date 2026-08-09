@@ -56,8 +56,6 @@ export default {
 
 async function buildStatusReply(env) {
   try {
-    // GitHubのraw URLはCDNキャッシュされることがあるため、
-    // キャッシュを回避するためのダミーパラメータを付与する
     const url = `${env.STATUS_JSON_URL}?t=${Date.now()}`;
     const resp = await fetch(url, { cf: { cacheTtl: 0 } });
 
@@ -97,10 +95,20 @@ function formatStatus(status) {
 
     if (status.top5_by_likes && status.top5_by_likes.length > 0) {
       lines.push("");
-      lines.push("直近のいいね数上位:");
+      lines.push("【いいね数 上位】");
       for (const p of status.top5_by_likes) {
         lines.push(
           `・@${p.author} いいね${p.likes} 引用${p.quotes} BM${p.bookmarks}`
+        );
+      }
+    }
+
+    if (status.top5_by_progress && status.top5_by_progress.length > 0) {
+      lines.push("");
+      lines.push("【通知条件への到達度 上位】");
+      for (const p of status.top5_by_progress) {
+        lines.push(
+          `・@${p.author} 達成度${p.progress_percent}% (いいね${p.likes} 引用${p.quotes} BM${p.bookmarks})`
         );
       }
     }

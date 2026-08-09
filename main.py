@@ -206,15 +206,32 @@ def run_once():
     db.log_run(started_at, finished_at, len(posts), len(new_candidates), "success")
     print(f"完了。通知送信数: {notified_count}")
 
-    top5 = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
-    top5_summary = [
+    # 「動作確認」用に、2種類のランキングを記録しておく。
+    # - top5_by_likes: 単純にいいね数が多い順(何が話題になっているかの全体像)
+    # - top5_by_progress: 通知条件(引用・ブックマーク・いいね)への
+    #   「達成度」が高い順(まだ通知はされていないが、条件に一番近い投稿。
+    #   早期発見の目安になる)
+    top5_likes = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
+    top5_by_likes = [
         {
             "author": p.get("author_handle"),
             "likes": p.get("likes", 0),
             "quotes": p.get("quotes", 0),
             "bookmarks": p.get("bookmarks", 0),
         }
-        for p in top5
+        for p in top5_likes
+    ]
+
+    top5_progress = detector.rank_by_progress(posts, limit=5)
+    top5_by_progress = [
+        {
+            "author": p.get("author_handle"),
+            "likes": p.get("likes", 0),
+            "quotes": p.get("quotes", 0),
+            "bookmarks": p.get("bookmarks", 0),
+            "progress_percent": round(p.get("progress", 0) * 100),
+        }
+        for p in top5_progress
     ]
 
     _write_status(
@@ -224,7 +241,8 @@ def run_once():
         posts_scanned=len(posts),
         posts_flagged=len(new_candidates),
         notified_count=notified_count,
-        top5_by_likes=top5_summary,
+        top5_by_likes=top5_by_likes,
+        top5_by_progress=top5_by_progress,
     )
 
 

@@ -4,7 +4,12 @@ on:
   schedule:
     # 毎時0分に実行 (UTC基準。日本時間は+9時間)
     - cron: "0 * * * *"
-  workflow_dispatch: {}  # 手動実行ボタンもGitHub上に出る
+  workflow_dispatch:
+    inputs:
+      test_notification:
+        description: "trueにすると、実際のX検索をせずテスト通知だけ送る(「通知確認」機能用)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write  # status.json をリポジトリにcommit&pushするために必要
@@ -23,6 +28,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install Playwright browser
+        if: github.event.inputs.test_notification != 'true'
         run: playwright install --with-deps chromium
 
       - name: Restore DB (重複通知防止用)
@@ -34,11 +40,13 @@ jobs:
             monitor-db-
 
       - name: Restore X login session
+        if: github.event.inputs.test_notification != 'true'
         run: echo "${{ secrets.X_SESSION_STATE }}" | base64 -d > storage_state.json
 
       - name: Run monitor
         env:
           X_SESSION_STATE_PATH: storage_state.json
+          TEST_NOTIFICATION: ${{ github.event.inputs.test_notification }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}

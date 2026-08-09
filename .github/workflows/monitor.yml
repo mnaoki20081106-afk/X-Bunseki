@@ -6,6 +6,9 @@ on:
     - cron: "0 * * * *"
   workflow_dispatch: {}  # 手動実行ボタンもGitHub上に出る
 
+permissions:
+  contents: write  # status.json をリポジトリにcommit&pushするために必要
+
 jobs:
   run-monitor:
     runs-on: ubuntu-latest
@@ -45,3 +48,12 @@ jobs:
       - name: Clean up session file
         if: always()
         run: rm -f storage_state.json
+
+      - name: Commit status.json (動作確認用)
+        if: always()
+        run: |
+          git config user.name "sns-monitor-bot"
+          git config user.email "actions@github.com"
+          git add status.json
+          git diff --staged --quiet || git commit -m "Update status.json"
+          git push

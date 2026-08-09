@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T15:33:49.507751+00:00",
+  "updated_at": "2026-08-09T16:36:38.421126+00:00",
   "status": "success",
-  "started_at": "2026-08-09T15:28:39.391759+00:00",
-  "finished_at": "2026-08-09T15:33:49.505948+00:00",
-  "posts_scanned": 34,
+  "started_at": "2026-08-09T16:32:38.893682+00:00",
+  "finished_at": "2026-08-09T16:36:38.283953+00:00",
+  "posts_scanned": 46,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "t_miyata_kmf2",
-      "likes": 8152,
+      "author": "unkochan1234567",
+      "likes": 11248,
+      "quotes": 32,
+      "bookmarks": 88
+    },
+    {
+      "author": "Halli_4",
+      "likes": 9494,
+      "quotes": 30,
+      "bookmarks": 217
+    },
+    {
+      "author": "MotokiOhmoriMGA",
+      "likes": 8026,
       "quotes": 31,
-      "bookmarks": 129
+      "bookmarks": 199
     },
     {
-      "author": "KMF2_0810MENT",
-      "likes": 5884,
-      "quotes": 34,
-      "bookmarks": 304
+      "author": "kirizaki_ei",
+      "likes": 6358,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 5279,
-      "quotes": 31,
-      "bookmarks": 5500
-    },
-    {
-      "author": "boc_official_",
-      "likes": 3845,
+      "author": "aichan_nel",
+      "likes": 5873,
       "quotes": 18,
-      "bookmarks": 56
-    },
-    {
-      "author": "boc_chama",
-      "likes": 3285,
-      "quotes": 18,
-      "bookmarks": 3400
+      "bookmarks": 94
     }
   ],
   "top5_by_progress": [
     {
-      "author": "KMF2_0810MENT",
-      "likes": 5884,
-      "quotes": 34,
-      "bookmarks": 304,
-      "progress_percent": 68
-    },
-    {
-      "author": "t_miyata_kmf2",
-      "likes": 8152,
+      "author": "MotokiOhmoriMGA",
+      "likes": 8026,
       "quotes": 31,
-      "bookmarks": 129,
+      "bookmarks": 199,
       "progress_percent": 62
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 5279,
-      "quotes": 31,
-      "bookmarks": 5500,
-      "progress_percent": 62
+      "author": "nogizaka46",
+      "likes": 2305,
+      "quotes": 17,
+      "bookmarks": 85,
+      "progress_percent": 34
     },
     {
-      "author": "mtor_info",
-      "likes": 2159,
-      "quotes": 18,
-      "bookmarks": 55,
-      "progress_percent": 36
+      "author": "indegnasen210",
+      "likes": 4401,
+      "quotes": 17,
+      "bookmarks": 29,
+      "progress_percent": 29
     },
     {
-      "author": "AZKi_VDiVA",
-      "likes": 2119,
-      "quotes": 18,
-      "bookmarks": 174,
-      "progress_percent": 36
+      "author": "kirizaki_ei",
+      "likes": 4536,
+      "quotes": 14,
+      "bookmarks": 75,
+      "progress_percent": 28
+    },
+    {
+      "author": "taijich0324",
+      "likes": 4423,
+      "quotes": 11,
+      "bookmarks": 37,
+      "progress_percent": 22
     }
   ]
 }

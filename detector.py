@@ -77,6 +77,11 @@ def is_explosive(post: dict, now=None) -> bool:
     """
     一次フィルタ: 投稿後 THRESHOLD_HOURS 以内に、
     引用・ブックマーク・いいねの全ての閾値を満たしたか
+
+    ★引用数は、Xが数字として公開していないため、実際に「View quotes」
+    リンク先の一覧を開いて件数を数える近似値(playwright_collector.pyの
+    _count_quote_tweets参照)。スクロールで確認できた範囲の件数なので、
+    非常に多くの引用がある投稿では実際より少なく出ることがある。
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     if hours > THRESHOLD_HOURS:

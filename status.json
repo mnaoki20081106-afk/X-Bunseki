@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T22:30:28.981379+00:00",
+  "updated_at": "2026-08-09T23:32:06.038788+00:00",
   "status": "success",
-  "started_at": "2026-08-09T22:28:44.907393+00:00",
-  "finished_at": "2026-08-09T22:30:28.976855+00:00",
-  "posts_scanned": 36,
+  "started_at": "2026-08-09T23:28:42.646361+00:00",
+  "finished_at": "2026-08-09T23:32:06.036488+00:00",
+  "posts_scanned": 33,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "karaage_rutsubo",
-      "likes": 3194,
+      "author": "sena_asumi",
+      "likes": 1650,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "truckmeimei",
-      "likes": 2053,
-      "quotes": 7,
-      "bookmarks": 2
+      "author": "ookamimio",
+      "likes": 1631,
+      "quotes": 1,
+      "bookmarks": 7
     },
     {
-      "author": "chanbaekkailu1",
-      "likes": 2005,
+      "author": "Milan_Kestrel",
+      "likes": 1503,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "crg_movie",
-      "likes": 1680,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "Blue_ArchiveJP",
+      "likes": 1499,
+      "quotes": 17,
+      "bookmarks": 79
     },
     {
-      "author": "Suzuna_Nanase",
-      "likes": 1627,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "Kaisei_2434",
+      "likes": 1469,
+      "quotes": 6,
+      "bookmarks": 13
     }
   ],
   "top5_by_progress": [
     {
-      "author": "mayumi_ss1227",
-      "likes": 684,
+      "author": "Blue_ArchiveJP",
+      "likes": 1499,
+      "quotes": 17,
+      "bookmarks": 79,
+      "progress_percent": 34
+    },
+    {
+      "author": "aida_jurii",
+      "likes": 890,
       "quotes": 15,
-      "bookmarks": 18,
-      "progress_percent": 18
+      "bookmarks": 35,
+      "progress_percent": 30
     },
     {
-      "author": "mayumi_ss1227",
-      "likes": 670,
-      "quotes": 8,
-      "bookmarks": 11,
-      "progress_percent": 11
+      "author": "HANON_INWS",
+      "likes": 505,
+      "quotes": 13,
+      "bookmarks": 20,
+      "progress_percent": 20
     },
     {
-      "author": "ok_nobuhiko",
-      "likes": 823,
-      "quotes": 3,
-      "bookmarks": 8,
-      "progress_percent": 6
+      "author": "_takemoto_yui",
+      "likes": 1379,
+      "quotes": 14,
+      "bookmarks": 15,
+      "progress_percent": 15
     },
     {
-      "author": "Patra_HNST",
-      "likes": 858,
-      "quotes": 1,
-      "bookmarks": 14,
-      "progress_percent": 2
-    },
-    {
-      "author": "truckmeimei",
-      "likes": 2053,
-      "quotes": 7,
-      "bookmarks": 2,
-      "progress_percent": 2
+      "author": "Kaisei_2434",
+      "likes": 1469,
+      "quotes": 6,
+      "bookmarks": 13,
+      "progress_percent": 12
     }
   ]
 }

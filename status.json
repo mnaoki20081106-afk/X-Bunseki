@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T11:13:05.398398+00:00",
+  "updated_at": "2026-08-09T11:29:59.462406+00:00",
   "status": "success",
-  "started_at": "2026-08-09T11:08:36.641006+00:00",
-  "finished_at": "2026-08-09T11:13:05.395732+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-09T11:26:33.060370+00:00",
+  "finished_at": "2026-08-09T11:29:59.460060+00:00",
+  "posts_scanned": 24,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
+      "author": "nogizaka46",
+      "likes": 3081,
+      "quotes": 16,
+      "bookmarks": 142
+    },
+    {
+      "author": "nogizaka46",
+      "likes": 2892,
+      "quotes": 18,
+      "bookmarks": 259
+    },
+    {
       "author": "SAK_SAK_SAKUMA",
-      "likes": 11928,
-      "quotes": 33,
-      "bookmarks": 157
+      "likes": 2782,
+      "quotes": 30,
+      "bookmarks": 22
     },
     {
-      "author": "SerAph_DazZ",
-      "likes": 2964,
-      "quotes": 1,
-      "bookmarks": 34
+      "author": "hezuruy",
+      "likes": 2670,
+      "quotes": 10,
+      "bookmarks": 18
     },
     {
-      "author": "k4sen",
-      "likes": 2063,
-      "quotes": 21,
-      "bookmarks": 21
-    },
-    {
-      "author": "StPri_info",
-      "likes": 1983,
-      "quotes": 15,
-      "bookmarks": 17
-    },
-    {
-      "author": "HAWKS_official",
-      "likes": 1612,
-      "quotes": 13,
-      "bookmarks": 13
+      "author": "tanizaki_saya",
+      "likes": 2169,
+      "quotes": 14,
+      "bookmarks": 74
     }
   ],
   "top5_by_progress": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 11928,
-      "quotes": 33,
-      "bookmarks": 157,
-      "progress_percent": 66
+      "author": "nogizaka46",
+      "likes": 2892,
+      "quotes": 18,
+      "bookmarks": 259,
+      "progress_percent": 36
     },
     {
-      "author": "kana_cs1111",
-      "likes": 667,
-      "quotes": 11,
-      "bookmarks": 26,
+      "author": "nogizaka46",
+      "likes": 3081,
+      "quotes": 16,
+      "bookmarks": 142,
+      "progress_percent": 32
+    },
+    {
+      "author": "tanizaki_saya",
+      "likes": 2169,
+      "quotes": 14,
+      "bookmarks": 74,
+      "progress_percent": 28
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 2782,
+      "quotes": 30,
+      "bookmarks": 22,
       "progress_percent": 22
     },
     {
-      "author": "k4sen",
-      "likes": 2063,
-      "quotes": 21,
+      "author": "kirara_tamako",
+      "likes": 842,
+      "quotes": 14,
       "bookmarks": 21,
       "progress_percent": 21
-    },
-    {
-      "author": "Colon56Nsab",
-      "likes": 1410,
-      "quotes": 12,
-      "bookmarks": 20,
-      "progress_percent": 20
-    },
-    {
-      "author": "sixfonia_info",
-      "likes": 1428,
-      "quotes": 15,
-      "bookmarks": 17,
-      "progress_percent": 17
     }
   ]
 }

@@ -11,6 +11,7 @@ main.py
 """
 
 import json
+import os
 import sys
 import traceback
 from datetime import datetime, timedelta, timezone
@@ -96,7 +97,6 @@ def _check_zero_posts_streak(posts_count: int):
     now = datetime.now(timezone.utc)
 
     if posts_count > 0:
-        # 正常に取れているなら連続カウントをリセット
         db.set_meta("zero_posts_streak", "0")
         return
 
@@ -259,5 +259,69 @@ def run_once():
     )
 
 
+def run_test_notification():
+    """
+    「通知確認」用のテストモード。実際にXを検索せず、テスト用の
+    ダミー投稿データでLINE・ntfy・メールの3ルート全部に送信を試みる。
+    「通知条件の判定ロジックは正しいが、通知の送信自体が失敗している」
+    ケースを、実際にX検索を待たずすぐに確認できるようにするため。
+    """
+    print("=== テスト通知モード ===")
+
+    test_post = {
+        "genre": "テスト",
+        "likes": 12345,
+        "quotes": 100,
+        "bookmarks": 300,
+        "elapsed_hours": 0.5,
+        "url": "https://x.com/example/status/000000000",
+        "author_handle": "test_account",
+        "is_gekiatsu": True,
+        "quote_like_ratio": 0.15,
+        "bookmark_like_ratio": 0.25,
+    }
+
+    results = {}
+
+    try:
+        results["LINE"] = line_notifier.send_notification(test_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] LINEテスト通知に失敗: {e}")
+        results["LINE"] = False
+
+    try:
+        results["ntfy"] = ntfy_notifier.send_notification(test_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] ntfyテスト通知に失敗: {e}")
+        results["ntfy"] = False
+
+    try:
+        results["メール"] = email_notifier.send_notification(test_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] メールテスト通知に失敗: {e}")
+        results["メール"] = False
+
+    print(f"テスト通知結果: {results}")
+
+    summary_lines = ["📋 通知確認テスト結果"]
+    for channel, success in results.items():
+        mark = "✅" if success else "❌"
+        summary_lines.append(f"{mark} {channel}")
+    summary_text = "\n".join(summary_lines)
+
+    try:
+        line_notifier.send_notification({
+            "genre": "システム通知",
+            "likes": 0, "quotes": 0, "bookmarks": 0, "elapsed_hours": "-",
+            "url": "",
+            "author_handle": summary_text,
+        })
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] テスト結果サマリーの送信に失敗: {e}")
+
+
 if __name__ == "__main__":
-    run_once()
+    if os.environ.get("TEST_NOTIFICATION") == "true":
+        run_test_notification()
+    else:
+        run_once()

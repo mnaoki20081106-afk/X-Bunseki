@@ -1,77 +1,77 @@
 {
-  "updated_at": "2026-08-09T17:30:45.037863+00:00",
+  "updated_at": "2026-08-09T18:37:35.944476+00:00",
   "status": "success",
-  "started_at": "2026-08-09T17:29:09.129873+00:00",
-  "finished_at": "2026-08-09T17:30:45.035800+00:00",
-  "posts_scanned": 45,
+  "started_at": "2026-08-09T18:36:50.122366+00:00",
+  "finished_at": "2026-08-09T18:37:35.941952+00:00",
+  "posts_scanned": 46,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "MotokiOhmoriMGA",
-      "likes": 12016,
+      "likes": 13590,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "kirizaki_ei",
-      "likes": 7679,
+      "likes": 8732,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "taijich0324",
-      "likes": 6110,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "indegnasen210",
-      "likes": 5562,
+      "author": "ado1024imokenp",
+      "likes": 7252,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "natsuiromatsuri",
-      "likes": 3928,
+      "likes": 5554,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "KKeiko_official",
+      "likes": 4620,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hinatazaka46",
-      "likes": 2374,
-      "quotes": 19,
-      "bookmarks": 70,
-      "progress_percent": 38
-    },
-    {
-      "author": "Vau875",
-      "likes": 739,
-      "quotes": 15,
-      "bookmarks": 16,
-      "progress_percent": 16
-    },
-    {
-      "author": "ado1024imokenp",
-      "likes": 2002,
-      "quotes": 6,
-      "bookmarks": 42,
-      "progress_percent": 12
-    },
-    {
-      "author": "iLiFE_koguma",
-      "likes": 665,
+      "author": "fuu_tan_sub",
+      "likes": 509,
       "quotes": 1,
       "bookmarks": 3,
       "progress_percent": 2
     },
     {
-      "author": "Kanae_2434",
-      "likes": 1049,
+      "author": "lanlan_sub",
+      "likes": 574,
       "quotes": 0,
-      "bookmarks": 4,
+      "bookmarks": 9,
+      "progress_percent": 0
+    },
+    {
+      "author": "daiquiri_ch",
+      "likes": 529,
+      "quotes": 0,
+      "bookmarks": 14,
+      "progress_percent": 0
+    },
+    {
+      "author": "mumu_mumu09",
+      "likes": 587,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "osusi0303",
+      "likes": 604,
+      "quotes": 0,
+      "bookmarks": 0,
       "progress_percent": 0
     }
   ]

@@ -6,7 +6,7 @@ main.py
   1. Playwrightで投稿収集(ログインセッションが切れていたら専用エラー)
   2. 「爆発」判定(引用・ブックマーク・いいねの閾値 × 経過時間)
   3. 未通知の候補だけをGroqでジャンル分類
-  4. LINEに即時通知
+  4. LINE + ntfy + メール の3ルートで即時通知(いずれか1つでも届けば通知済み扱い)
   5. DBに記録(重複通知防止)
 """
 
@@ -21,6 +21,7 @@ import detector
 import genre_classifier
 import line_notifier
 import ntfy_notifier
+import email_notifier
 from playwright_collector import SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24  # セッション切れ通知は1日1回まで
@@ -51,8 +52,8 @@ def _write_status(**kwargs):
 
 def _notify_session_expired():
     """
-    セッション切れをLINEで知らせる。ただし1日1回まで(毎時失敗し続けて
-    通知が埋まるのを防ぐため)。
+    セッション切れをLINE+ntfy+メールで知らせる。ただし1日1回まで
+    (毎時失敗し続けて通知が埋まるのを防ぐため)。
     """
     last_alert = db.get_meta("session_expired_alert_at")
     now = datetime.now(timezone.utc)
@@ -77,6 +78,10 @@ def _notify_session_expired():
         ntfy_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] セッション切れ通知(ntfy)の送信に失敗: {e}")
+    try:
+        email_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] セッション切れ通知(メール)の送信に失敗: {e}")
 
     db.set_meta("session_expired_alert_at", now.isoformat())
     print("セッション切れ通知を送信しました")
@@ -86,11 +91,12 @@ def _check_zero_posts_streak(posts_count: int):
     """
     取得件数が0件の実行が連続していないかチェックする。
     連続していたら、Xのページ構造が変わってデータが取れなくなっている
-    可能性が高いのでLINEで知らせる(セッション切れとは別原因の壊れ方)。
+    可能性が高いのでLINE+ntfy+メールで知らせる(セッション切れとは別原因の壊れ方)。
     """
     now = datetime.now(timezone.utc)
 
     if posts_count > 0:
+        # 正常に取れているなら連続カウントをリセット
         db.set_meta("zero_posts_streak", "0")
         return
 
@@ -125,6 +131,10 @@ def _check_zero_posts_streak(posts_count: int):
         ntfy_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] 0件連続アラート(ntfy)の送信に失敗: {e}")
+    try:
+        email_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] 0件連続アラート(メール)の送信に失敗: {e}")
 
     db.set_meta("zero_posts_alert_at", now.isoformat())
     print("0件連続アラートを送信しました")
@@ -191,7 +201,13 @@ def run_once():
             print(f"[ERROR] ntfy通知に失敗しました (post_id={post['post_id']}): {e}")
             ntfy_success = False
 
-        success = line_success or ntfy_success
+        try:
+            email_success = email_notifier.send_notification(post)
+        except Exception as e:  # noqa: BLE001
+            print(f"[ERROR] メール通知に失敗しました (post_id={post['post_id']}): {e}")
+            email_success = False
+
+        success = line_success or ntfy_success or email_success
         if success:
             db.mark_notified(post["post_id"])
             notified_count += 1
@@ -200,17 +216,14 @@ def run_once():
                 channels.append("LINE")
             if ntfy_success:
                 channels.append("ntfy")
+            if email_success:
+                channels.append("メール")
             print(f"  → 通知送信({'/'.join(channels)}): [{post['genre']}] {post['url']}")
 
     finished_at = datetime.now(timezone.utc).isoformat()
     db.log_run(started_at, finished_at, len(posts), len(new_candidates), "success")
     print(f"完了。通知送信数: {notified_count}")
 
-    # 「動作確認」用に、2種類のランキングを記録しておく。
-    # - top5_by_likes: 単純にいいね数が多い順(何が話題になっているかの全体像)
-    # - top5_by_progress: 通知条件(引用・ブックマーク・いいね)への
-    #   「達成度」が高い順(まだ通知はされていないが、条件に一番近い投稿。
-    #   早期発見の目安になる)
     top5_likes = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     top5_by_likes = [
         {

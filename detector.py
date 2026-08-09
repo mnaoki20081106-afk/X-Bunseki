@@ -157,3 +157,42 @@ def filter_explosive(posts: list[dict], now=None) -> list[dict]:
     """収集した投稿群から、爆発条件を満たすものだけ抽出してランキング付きで返す"""
     candidates = [p for p in posts if is_explosive(p, now=now)]
     return rank_candidates(candidates, now=now)
+
+
+def explosive_progress(post: dict, now=None) -> float:
+    """
+    「爆発条件にどれだけ近づいているか」を0.0〜1.0+の値で返す。
+    引用・ブックマーク・いいね、それぞれの「閾値に対する達成率」を計算し、
+    その中で最も低い値(=一番足りていない項目)を採用する。
+    1.0以上なら、その投稿は既に is_explosive の条件を満たしている。
+
+    「動作確認」通知で、まだ通知条件は満たしていないが最も近い投稿を
+    見せるために使う(早期発見の目安として)。
+    投稿からの経過時間が THRESHOLD_HOURS を超えている場合は対象外として 0.0 を返す
+    (もう通知され得ない投稿なので、近さを見る意味が無いため)。
+    """
+    hours = elapsed_hours(post["posted_at"], now=now)
+    if hours > THRESHOLD_HOURS:
+        return 0.0
+
+    quote_progress = post.get("quotes", 0) / QUOTE_THRESHOLD if QUOTE_THRESHOLD else 1.0
+    bookmark_progress = post.get("bookmarks", 0) / BOOKMARK_THRESHOLD if BOOKMARK_THRESHOLD else 1.0
+    like_progress = post.get("likes", 0) / LIKE_THRESHOLD if LIKE_THRESHOLD else 1.0
+
+    return min(quote_progress, bookmark_progress, like_progress)
+
+
+def rank_by_progress(posts: list[dict], now=None, limit: int = 5) -> list[dict]:
+    """
+    「爆発条件への近さ」順に投稿を並べ、上位limit件を返す。
+    各投稿には progress(0.0〜1.0+)フィールドを付与する。
+    早期発見・動作確認の目的で使う。
+    """
+    enriched = []
+    for post in posts:
+        p = dict(post)
+        p["progress"] = round(explosive_progress(post, now=now), 3)
+        enriched.append(p)
+
+    enriched.sort(key=lambda p: p["progress"], reverse=True)
+    return enriched[:limit]

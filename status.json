@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-09T18:37:35.944476+00:00",
+  "updated_at": "2026-08-09T19:31:37.794594+00:00",
   "status": "success",
-  "started_at": "2026-08-09T18:36:50.122366+00:00",
-  "finished_at": "2026-08-09T18:37:35.941952+00:00",
-  "posts_scanned": 46,
+  "started_at": "2026-08-09T19:31:19.776666+00:00",
+  "finished_at": "2026-08-09T19:31:37.790275+00:00",
+  "posts_scanned": 47,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "MotokiOhmoriMGA",
-      "likes": 13590,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "kirizaki_ei",
-      "likes": 8732,
+      "likes": 14548,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ado1024imokenp",
-      "likes": 7252,
+      "likes": 9277,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "kirizaki_ei",
+      "likes": 9189,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "natsuiromatsuri",
-      "likes": 5554,
+      "likes": 6426,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "KKeiko_official",
-      "likes": 4620,
+      "likes": 5166,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "fuu_tan_sub",
-      "likes": 509,
-      "quotes": 1,
-      "bookmarks": 3,
-      "progress_percent": 2
-    },
-    {
-      "author": "lanlan_sub",
-      "likes": 574,
-      "quotes": 0,
-      "bookmarks": 9,
-      "progress_percent": 0
-    },
-    {
-      "author": "daiquiri_ch",
-      "likes": 529,
-      "quotes": 0,
-      "bookmarks": 14,
-      "progress_percent": 0
-    },
-    {
-      "author": "mumu_mumu09",
-      "likes": 587,
+      "author": "inugamikorone",
+      "likes": 1104,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "osusi0303",
-      "likes": 604,
+      "author": "Vau0307",
+      "likes": 564,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "fuu_tan_sub",
+      "likes": 720,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "lanlan_sub",
+      "likes": 717,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "daiquiri_ch",
+      "likes": 635,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

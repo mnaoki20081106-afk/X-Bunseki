@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-09T20:30:13.356401+00:00",
+  "updated_at": "2026-08-09T21:30:24.144196+00:00",
   "status": "success",
-  "started_at": "2026-08-09T20:29:42.929343+00:00",
-  "finished_at": "2026-08-09T20:30:13.352179+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-09T21:29:40.170113+00:00",
+  "finished_at": "2026-08-09T21:30:24.142211+00:00",
+  "posts_scanned": 37,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "ado1024imokenp",
-      "likes": 11084,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "natsuiromatsuri",
-      "likes": 7261,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "KKeiko_official",
-      "likes": 6202,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "hinatazaka46",
-      "likes": 4401,
+      "likes": 12937,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Kanae_2434",
-      "likes": 3827,
+      "likes": 4672,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "ui_shig",
+      "likes": 2421,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "wagahaida_L",
+      "likes": 2243,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "legend7749",
+      "likes": 2140,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "inugamikorone",
-      "likes": 831,
-      "quotes": 3,
-      "bookmarks": 11,
-      "progress_percent": 6
+      "author": "karaage_rutsubo",
+      "likes": 1240,
+      "quotes": 9,
+      "bookmarks": 24,
+      "progress_percent": 18
     },
     {
-      "author": "tsunomakiwatame",
-      "likes": 514,
+      "author": "chanbaekkailu1",
+      "likes": 610,
+      "quotes": 2,
+      "bookmarks": 52,
+      "progress_percent": 4
+    },
+    {
+      "author": "KoikeRina0903",
+      "likes": 567,
       "quotes": 0,
-      "bookmarks": 2,
+      "bookmarks": 24,
       "progress_percent": 0
     },
     {
-      "author": "wagahaida_L",
-      "likes": 1150,
+      "author": "eny7xb",
+      "likes": 528,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "tsubasubyade",
-      "likes": 508,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "K_I_A__1",
-      "likes": 580,
+      "author": "rs__7__",
+      "likes": 586,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

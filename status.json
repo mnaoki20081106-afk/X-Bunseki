@@ -1,41 +1,78 @@
 {
-  "updated_at": "2026-08-09T10:36:08.995530+00:00",
+  "updated_at": "2026-08-09T11:13:05.398398+00:00",
   "status": "success",
-  "started_at": "2026-08-09T10:31:56.665497+00:00",
-  "finished_at": "2026-08-09T10:36:08.990400+00:00",
-  "posts_scanned": 30,
+  "started_at": "2026-08-09T11:08:36.641006+00:00",
+  "finished_at": "2026-08-09T11:13:05.395732+00:00",
+  "posts_scanned": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "suisei_hosimati",
-      "likes": 2335,
-      "quotes": 3,
-      "bookmarks": 13
-    },
-    {
-      "author": "Kaisei_2434",
-      "likes": 2307,
-      "quotes": 2,
-      "bookmarks": 13
-    },
-    {
-      "author": "ookamimio",
-      "likes": 1872,
-      "quotes": 2,
-      "bookmarks": 32
-    },
-    {
-      "author": "sakuramiko35",
-      "likes": 1799,
-      "quotes": 1,
-      "bookmarks": 36
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 11928,
+      "quotes": 33,
+      "bookmarks": 157
     },
     {
       "author": "SerAph_DazZ",
-      "likes": 1797,
+      "likes": 2964,
       "quotes": 1,
-      "bookmarks": 8
+      "bookmarks": 34
+    },
+    {
+      "author": "k4sen",
+      "likes": 2063,
+      "quotes": 21,
+      "bookmarks": 21
+    },
+    {
+      "author": "StPri_info",
+      "likes": 1983,
+      "quotes": 15,
+      "bookmarks": 17
+    },
+    {
+      "author": "HAWKS_official",
+      "likes": 1612,
+      "quotes": 13,
+      "bookmarks": 13
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 11928,
+      "quotes": 33,
+      "bookmarks": 157,
+      "progress_percent": 66
+    },
+    {
+      "author": "kana_cs1111",
+      "likes": 667,
+      "quotes": 11,
+      "bookmarks": 26,
+      "progress_percent": 22
+    },
+    {
+      "author": "k4sen",
+      "likes": 2063,
+      "quotes": 21,
+      "bookmarks": 21,
+      "progress_percent": 21
+    },
+    {
+      "author": "Colon56Nsab",
+      "likes": 1410,
+      "quotes": 12,
+      "bookmarks": 20,
+      "progress_percent": 20
+    },
+    {
+      "author": "sixfonia_info",
+      "likes": 1428,
+      "quotes": 15,
+      "bookmarks": 17,
+      "progress_percent": 17
     }
   ]
 }

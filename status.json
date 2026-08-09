@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-08-09T10:08:47.255748+00:00",
+  "status": "success",
+  "started_at": "2026-08-09T10:03:52.234267+00:00",
+  "finished_at": "2026-08-09T10:08:47.245124+00:00",
+  "posts_scanned": 35,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "top5_by_likes": [
+    {
+      "author": "kiyo_saiore",
+      "likes": 11148,
+      "quotes": 18,
+      "bookmarks": 249
+    },
+    {
+      "author": "Ex_Albio",
+      "likes": 8378,
+      "quotes": 4,
+      "bookmarks": 99
+    },
+    {
+      "author": "mazzel_official",
+      "likes": 6494,
+      "quotes": 15,
+      "bookmarks": 168
+    },
+    {
+      "author": "KNTFR2434",
+      "likes": 6327,
+      "quotes": 3,
+      "bookmarks": 77
+    },
+    {
+      "author": "H_KAGAMI2434",
+      "likes": 5278,
+      "quotes": 8,
+      "bookmarks": 130
+    }
+  ]
+}

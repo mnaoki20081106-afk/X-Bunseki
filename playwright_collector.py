@@ -119,8 +119,6 @@ def _extract_tweet_data(article) -> dict | None:
         text_snippet = text_el.inner_text()[:200] if text_el else ""
 
         # エンゲージメント数値(返信・RT・いいね)
-        # 標準的なアクションバーのボタンには data-testid が振られており、
-        # aria-label に「返信 12件」のような形式で件数が入っている
         def _count_by_testid(testid: str) -> int:
             el = article.query_selector(f'[data-testid="{testid}"]')
             if not el:
@@ -162,24 +160,65 @@ class SessionExpiredError(Exception):
     pass
 
 
+def _count_quote_tweets(page, main_article, base_url: str) -> int:
+    """
+    「View quotes」リンクを実際に開き、引用投稿の一覧ページを表示して、
+    そこに並んでいる投稿の件数を数える。
+
+    ★注意: Xは他人の投稿の「引用数」を正確な数字として公開していない
+    (投稿者本人のアナリティクス機能でしか正確な数は見れない)。
+    そのため、この関数は「実際に一覧に表示されている引用投稿を
+    数える」という近似的な方法を取っている。スクロールした範囲でしか
+    数えられないため、本当の総数より少なく出ることがある(下限値に近い)。
+    それでも「0のまま」より遥かに有用な情報になる。
+    """
+    try:
+        quote_link = main_article.query_selector('a[href*="quotes" i], a[href*="Quotes" i]')
+        if not quote_link:
+            all_links = main_article.query_selector_all("a")
+            for link in all_links:
+                text = (link.inner_text() or "").lower()
+                aria = (link.get_attribute("aria-label") or "").lower()
+                if "quote" in text or "quote" in aria or "引用" in text:
+                    quote_link = link
+                    break
+
+        if not quote_link:
+            return 0
+
+        href = quote_link.get_attribute("href")
+        if not href:
+            return 0
+        quote_url = f"https://x.com{href}" if href.startswith("/") else href
+
+        page.goto(quote_url, wait_until="domcontentloaded", timeout=20000)
+        page.wait_for_timeout(2000)
+
+        seen_ids = set()
+        for _ in range(3):
+            articles = page.query_selector_all('article[data-testid="tweet"]')
+            for a in articles:
+                tid = a.get_attribute("aria-labelledby") or id(a)
+                seen_ids.add(tid)
+            page.mouse.wheel(0, 3000)
+            page.wait_for_timeout(1500)
+
+        return len(seen_ids)
+    except Exception as e:  # noqa: BLE001
+        print(f"  [警告] 引用一覧の取得に失敗 {base_url}: {e}")
+        return 0
+
+
 def _fetch_detail_stats(page, url: str) -> dict:
     """
     投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
     (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
     候補に絞ってからここで1件ずつ取得する。
-
-    ★ページ全体のテキストを対象に検索すると、サイドバーの「おすすめ
-    アカウント」のフォロワー数や、トレンドの投稿数など無関係な数字を
-    誤って拾ってしまうことがある(実際に発生した不具合)。
-    そのため、詳細ページの「本体の投稿」(最初のarticle要素)の中だけを
-    対象に検索するようにしている。
     """
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
         page.wait_for_timeout(2000)
 
-        # 詳細ページでは、最初の <article data-testid="tweet"> が
-        # 本体の投稿(2番目以降はリプライなど別の投稿)
         main_article = page.query_selector('article[data-testid="tweet"]')
         if not main_article:
             print(f"  [警告] 詳細ページで投稿本体が見つからない {url}")
@@ -190,33 +229,29 @@ def _fetch_detail_stats(page, url: str) -> dict:
         print(f"  [警告] 詳細ページの取得に失敗 {url}: {e}")
         return {"quotes": 0, "bookmarks": 0, "impressions": 0}
 
-    def _find(patterns) -> int:
-        for pattern in patterns:
-            m = re.search(pattern, scoped_text, re.IGNORECASE)
-            if m:
-                return _parse_count(m.group(1))
-        return 0
+    views_match = re.search(r"([\d,\.]+[万億KkMm]?)\s*Views?", scoped_text, re.IGNORECASE)
+    impressions = _parse_count(views_match.group(1)) if views_match else 0
 
-    quotes = _find([
-        r"([\d,\.]+[万億KkMm]?)\s*件の引用",
-        r"([\d,\.]+[万億KkMm]?)\s*Quotes?",
-    ])
-    bookmarks = _find([
-        r"([\d,\.]+[万億KkMm]?)\s*件のブックマーク",
-        r"([\d,\.]+[万億KkMm]?)\s*Bookmarks?",
-    ])
-    impressions = _find([
-        r"([\d,\.]+[万億KkMm]?)\s*件の表示",
-        r"([\d,\.]+[万億KkMm]?)\s*Views?",
-    ])
+    bookmarks = 0
+    if views_match:
+        after = scoped_text[views_match.end():]
+        cutoff = after.find("Relevant")
+        if cutoff != -1:
+            after = after[:cutoff]
 
-    # ★診断: 引用・ブックマークどちらも0だった場合、本体テキストの末尾
-    # (通常、統計情報は投稿の一番下に固まっている)を出力しておく。
-    # 「本当に0件」なのか「パターンが違って取れていない」のかを、
-    # 次回このログを見て切り分けられるようにするため。
-    if quotes == 0 and bookmarks == 0:
+        numbers = re.findall(r"[\d,\.]+[万億KkMm]?", after)
+        parsed = [_parse_count(n) for n in numbers]
+
+        if len(parsed) >= 4:
+            bookmarks = parsed[3]
+        else:
+            print(f"      [デバッグ] Views以降の数字が4つ未満: {parsed} (url={url})")
+
+    quotes = _count_quote_tweets(page, main_article, url)
+
+    if bookmarks == 0:
         tail = scoped_text[-300:].replace("\n", " | ")
-        print(f"      [デバッグ] 投稿本体テキスト末尾300字: {tail}")
+        print(f"      [デバッグ] ブックマーク0。投稿本体テキスト末尾300字: {tail}")
 
     return {"quotes": quotes, "bookmarks": bookmarks, "impressions": impressions}
 
@@ -227,7 +262,6 @@ def _search_one_query(page, query: str) -> list[dict]:
     page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
 
-    # セッション切れの検知: ログイン画面にリダイレクトされていないか確認
     current_url = page.url
     if "/login" in current_url or "/i/flow/login" in current_url:
         raise SessionExpiredError(
@@ -276,11 +310,10 @@ def fetch_posts() -> list[dict]:
                 print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
             except SessionExpiredError:
                 browser.close()
-                raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
+                raise
             except Exception as e:  # noqa: BLE001
                 print(f"  [ERROR] 検索クエリ失敗 '{query}': {e}")
 
-        # 2段階目: いいねが閾値以上、かつ投稿から時間内の候補だけ詳細ページを見る
         candidates = [
             p for p in all_posts.values()
             if p.get("likes", 0) >= detector.LIKE_THRESHOLD
@@ -303,9 +336,6 @@ def fetch_posts() -> list[dict]:
 
     result = list(all_posts.values())
 
-    # ★診断用ログ: いいね数上位5件の全指標を出力する。
-    # 「引用・ブックマークがいつも0」になっていないかをここで確認できる。
-    # (Xの画面構造の変化でセレクタが合わなくなった時の切り分けに使う)
     top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
     for p in top5:

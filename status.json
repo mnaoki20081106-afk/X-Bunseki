@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T12:48:27.086928+00:00",
+  "updated_at": "2026-08-09T13:52:15.395233+00:00",
   "status": "success",
-  "started_at": "2026-08-09T12:44:08.363967+00:00",
-  "finished_at": "2026-08-09T12:48:27.084221+00:00",
-  "posts_scanned": 28,
+  "started_at": "2026-08-09T13:47:37.223112+00:00",
+  "finished_at": "2026-08-09T13:52:15.281740+00:00",
+  "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Kagetsu_2434",
-      "likes": 6172,
-      "quotes": 13,
-      "bookmarks": 226
+      "author": "nino_honmono",
+      "likes": 15824,
+      "quotes": 32,
+      "bookmarks": 118
+    },
+    {
+      "author": "Show_SylveSTAR",
+      "likes": 3561,
+      "quotes": 0,
+      "bookmarks": 27
+    },
+    {
+      "author": "Kaida_Haru",
+      "likes": 3337,
+      "quotes": 31,
+      "bookmarks": 99
+    },
+    {
+      "author": "nhk_kouhaku",
+      "likes": 3087,
+      "quotes": 0,
+      "bookmarks": 109
     },
     {
       "author": "Saiki_Supadari",
-      "likes": 5962,
-      "quotes": 21,
-      "bookmarks": 215
-    },
-    {
-      "author": "MelocoKyoran",
-      "likes": 4543,
-      "quotes": 16,
-      "bookmarks": 264
-    },
-    {
-      "author": "azurlane_staff",
-      "likes": 2903,
-      "quotes": 15,
-      "bookmarks": 388
-    },
-    {
-      "author": "morohashi_sana",
-      "likes": 2700,
-      "quotes": 23,
-      "bookmarks": 76
+      "likes": 2993,
+      "quotes": 4,
+      "bookmarks": 20
     }
   ],
   "top5_by_progress": [
     {
-      "author": "kaito_hori",
-      "likes": 931,
-      "quotes": 30,
-      "bookmarks": 79,
-      "progress_percent": 60
+      "author": "nino_honmono",
+      "likes": 15824,
+      "quotes": 32,
+      "bookmarks": 118,
+      "progress_percent": 64
     },
     {
-      "author": "morohashi_sana",
-      "likes": 2700,
+      "author": "Kaida_Haru",
+      "likes": 3337,
+      "quotes": 31,
+      "bookmarks": 99,
+      "progress_percent": 62
+    },
+    {
+      "author": "KKeiko_official",
+      "likes": 2392,
       "quotes": 23,
-      "bookmarks": 76,
+      "bookmarks": 47,
       "progress_percent": 46
     },
     {
-      "author": "Saiki_Supadari",
-      "likes": 5962,
-      "quotes": 21,
-      "bookmarks": 215,
-      "progress_percent": 42
-    },
-    {
       "author": "ara_mackey",
-      "likes": 1496,
+      "likes": 2773,
       "quotes": 18,
-      "bookmarks": 93,
+      "bookmarks": 165,
       "progress_percent": 36
     },
     {
-      "author": "ireisu_info",
-      "likes": 1381,
-      "quotes": 18,
-      "bookmarks": 70,
-      "progress_percent": 36
+      "author": "inoriminase",
+      "likes": 778,
+      "quotes": 16,
+      "bookmarks": 37,
+      "progress_percent": 32
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T22:58:07.882710+00:00",
+  "updated_at": "2026-08-10T23:50:57.737387+00:00",
   "status": "success",
-  "started_at": "2026-08-10T22:54:04.531791+00:00",
-  "finished_at": "2026-08-10T22:58:07.877273+00:00",
-  "posts_scanned": 32,
+  "started_at": "2026-08-10T23:48:06.693701+00:00",
+  "finished_at": "2026-08-10T23:50:57.735418+00:00",
+  "posts_scanned": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "nino_honmono",
-      "likes": 16316,
-      "quotes": 36,
-      "bookmarks": 49
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 11938,
+      "quotes": 17,
+      "bookmarks": 219
     },
     {
       "author": "takaichi_sanae",
-      "likes": 2148,
-      "quotes": 11,
-      "bookmarks": 19
-    },
-    {
-      "author": "ok_nobuhiko",
-      "likes": 1377,
-      "quotes": 2,
-      "bookmarks": 19
-    },
-    {
-      "author": "umasugi_human",
-      "likes": 1274,
+      "likes": 7251,
       "quotes": 0,
-      "bookmarks": 59
+      "bookmarks": 0
     },
     {
-      "author": "Patra_HNST",
-      "likes": 1180,
-      "quotes": 1,
+      "author": "Fooootest",
+      "likes": 3604,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "H_KAGAMI2434",
+      "likes": 2479,
+      "quotes": 0,
+      "bookmarks": 11
+    },
+    {
+      "author": "AZKi_VDiVA",
+      "likes": 2108,
+      "quotes": 0,
       "bookmarks": 12
     }
   ],
   "top5_by_progress": [
     {
-      "author": "nino_honmono",
-      "likes": 16316,
-      "quotes": 36,
-      "bookmarks": 49,
-      "progress_percent": 49
+      "author": "watch_UNEXT",
+      "likes": 1397,
+      "quotes": 17,
+      "bookmarks": 133,
+      "progress_percent": 34
     },
     {
-      "author": "kobateck",
-      "likes": 644,
-      "quotes": 15,
-      "bookmarks": 656,
-      "progress_percent": 30
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 11938,
+      "quotes": 17,
+      "bookmarks": 219,
+      "progress_percent": 34
     },
     {
-      "author": "akiko_lawson",
-      "likes": 583,
-      "quotes": 14,
-      "bookmarks": 135,
-      "progress_percent": 28
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 2148,
-      "quotes": 11,
+      "author": "HANON_INWS",
+      "likes": 609,
+      "quotes": 13,
       "bookmarks": 19,
       "progress_percent": 19
     },
     {
-      "author": "natanakane",
-      "likes": 695,
-      "quotes": 4,
-      "bookmarks": 25,
-      "progress_percent": 8
+      "author": "hakuikoyori",
+      "likes": 940,
+      "quotes": 6,
+      "bookmarks": 29,
+      "progress_percent": 12
+    },
+    {
+      "author": "RYUKI_GENIC",
+      "likes": 545,
+      "quotes": 14,
+      "bookmarks": 11,
+      "progress_percent": 11
     }
   ]
 }

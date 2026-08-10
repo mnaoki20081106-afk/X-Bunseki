@@ -1,77 +1,77 @@
 {
-  "updated_at": "2026-08-10T17:06:58.901586+00:00",
+  "updated_at": "2026-08-10T18:03:50.501480+00:00",
   "status": "success",
-  "started_at": "2026-08-10T17:05:56.012736+00:00",
-  "finished_at": "2026-08-10T17:06:58.899777+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-10T18:02:36.260074+00:00",
+  "finished_at": "2026-08-10T18:03:50.499314+00:00",
+  "posts_scanned": 40,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "imasogari8119",
-      "likes": 6698,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "Saiki_Supadari",
-      "likes": 3501,
+      "likes": 3910,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "jpapachannel",
-      "likes": 2951,
-      "quotes": 0,
-      "bookmarks": 0
+      "likes": 2566,
+      "quotes": 2,
+      "bookmarks": 64
     },
     {
       "author": "puri_dao",
-      "likes": 1973,
+      "likes": 2233,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "TMR15",
-      "likes": 1957,
+      "likes": 2218,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Tigusa_voice",
+      "likes": 1972,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Cocoa_nonfic",
-      "likes": 656,
-      "quotes": 11,
-      "bookmarks": 4,
+      "author": "Patra_HNST",
+      "likes": 508,
+      "quotes": 2,
+      "bookmarks": 17,
       "progress_percent": 4
     },
     {
-      "author": "tokino_sora",
-      "likes": 614,
+      "author": "hakuikoyori",
+      "likes": 871,
       "quotes": 1,
-      "bookmarks": 7,
+      "bookmarks": 6,
       "progress_percent": 2
     },
     {
-      "author": "44do_akari",
-      "likes": 698,
-      "quotes": 1,
-      "bookmarks": 1,
-      "progress_percent": 1
+      "author": "Tr0uT_2434",
+      "likes": 897,
+      "quotes": 0,
+      "bookmarks": 5,
+      "progress_percent": 0
     },
     {
-      "author": "I_Nozomi_",
-      "likes": 568,
+      "author": "tsunomakiwatame",
+      "likes": 694,
       "quotes": 0,
       "bookmarks": 3,
       "progress_percent": 0
     },
     {
-      "author": "hakuikoyori",
-      "likes": 895,
-      "quotes": 0,
-      "bookmarks": 6,
+      "author": "shima___sub",
+      "likes": 664,
+      "quotes": 1,
+      "bookmarks": 0,
       "progress_percent": 0
     }
   ]

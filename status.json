@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T12:01:40.964186+00:00",
+  "updated_at": "2026-08-10T13:44:06.337829+00:00",
   "status": "success",
-  "started_at": "2026-08-10T11:57:05.625876+00:00",
-  "finished_at": "2026-08-10T12:01:40.957411+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-10T13:39:35.034788+00:00",
+  "finished_at": "2026-08-10T13:44:06.335522+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "MotokiOhmoriMGA",
-      "likes": 9737,
-      "quotes": 32,
-      "bookmarks": 238
+      "author": "H_KAGAMI2434",
+      "likes": 6093,
+      "quotes": 15,
+      "bookmarks": 100
     },
     {
-      "author": "Vamp_Kuzu",
-      "likes": 5508,
-      "quotes": 4,
-      "bookmarks": 32
+      "author": "AORINGOHUZIN",
+      "likes": 3961,
+      "quotes": 18,
+      "bookmarks": 179
     },
     {
-      "author": "satomimi__",
-      "likes": 3165,
-      "quotes": 0,
-      "bookmarks": 66
+      "author": "AORINGOHUZIN",
+      "likes": 3702,
+      "quotes": 7,
+      "bookmarks": 51
     },
     {
-      "author": "suzuki_hitomi_",
-      "likes": 3014,
-      "quotes": 0,
-      "bookmarks": 77
+      "author": "tomita_nanaka",
+      "likes": 3071,
+      "quotes": 20,
+      "bookmarks": 103
     },
     {
-      "author": "ice_icol",
-      "likes": 2954,
-      "quotes": 16,
-      "bookmarks": 72
+      "author": "akagi_wen",
+      "likes": 2583,
+      "quotes": 3,
+      "bookmarks": 15
     }
   ],
   "top5_by_progress": [
     {
-      "author": "MotokiOhmoriMGA",
-      "likes": 9737,
-      "quotes": 32,
-      "bookmarks": 238,
-      "progress_percent": 64
+      "author": "Zakuro_Shiro",
+      "likes": 1116,
+      "quotes": 21,
+      "bookmarks": 300,
+      "progress_percent": 42
     },
     {
-      "author": "satomimi__",
-      "likes": 1953,
-      "quotes": 30,
-      "bookmarks": 63,
-      "progress_percent": 60
+      "author": "tomita_nanaka",
+      "likes": 3071,
+      "quotes": 20,
+      "bookmarks": 103,
+      "progress_percent": 40
     },
     {
-      "author": "tbsTV_MGA",
-      "likes": 2786,
-      "quotes": 24,
-      "bookmarks": 76,
-      "progress_percent": 48
+      "author": "Hakase_Fuyuki",
+      "likes": 1317,
+      "quotes": 19,
+      "bookmarks": 61,
+      "progress_percent": 38
     },
     {
-      "author": "SORI0918",
-      "likes": 1393,
-      "quotes": 17,
-      "bookmarks": 71,
-      "progress_percent": 34
+      "author": "AORINGOHUZIN",
+      "likes": 3961,
+      "quotes": 18,
+      "bookmarks": 179,
+      "progress_percent": 36
     },
     {
-      "author": "monaki_official",
-      "likes": 1112,
-      "quotes": 16,
-      "bookmarks": 45,
-      "progress_percent": 32
+      "author": "ozawa_aimi__",
+      "likes": 1066,
+      "quotes": 22,
+      "bookmarks": 31,
+      "progress_percent": 31
     }
   ]
 }

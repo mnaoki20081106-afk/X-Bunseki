@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-10T20:58:58.294852+00:00",
+  "updated_at": "2026-08-10T21:56:36.180056+00:00",
   "status": "success",
-  "started_at": "2026-08-10T20:58:22.141962+00:00",
-  "finished_at": "2026-08-10T20:58:58.292314+00:00",
-  "posts_scanned": 42,
+  "started_at": "2026-08-10T21:55:28.928557+00:00",
+  "finished_at": "2026-08-10T21:56:36.178101+00:00",
+  "posts_scanned": 36,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "ko04_514",
-      "likes": 5014,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "jpapachannel",
-      "likes": 3226,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akagi_wen",
-      "likes": 2301,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 3338,
+      "quotes": 15,
+      "bookmarks": 26
     },
     {
       "author": "lizhi3",
-      "likes": 2000,
+      "likes": 3285,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Cocoa_nonfic",
-      "likes": 1991,
+      "author": "clearusui",
+      "likes": 2966,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Yuuhi_Riri",
+      "likes": 2634,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "tumuohakusai",
+      "likes": 2418,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "clearusui",
-      "likes": 1139,
-      "quotes": 17,
-      "bookmarks": 51,
-      "progress_percent": 34
+      "author": "H_KAGAMI2434",
+      "likes": 2138,
+      "quotes": 15,
+      "bookmarks": 32,
+      "progress_percent": 30
     },
     {
-      "author": "tnsc_JAXA",
-      "likes": 962,
-      "quotes": 18,
-      "bookmarks": 28,
-      "progress_percent": 28
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 3338,
+      "quotes": 15,
+      "bookmarks": 26,
+      "progress_percent": 26
     },
     {
-      "author": "clearusui",
-      "likes": 1379,
+      "author": "kiho_kanematsu",
+      "likes": 535,
+      "quotes": 1,
+      "bookmarks": 40,
+      "progress_percent": 2
+    },
+    {
+      "author": "korokorococoroo",
+      "likes": 629,
       "quotes": 0,
-      "bookmarks": 0,
+      "bookmarks": 21,
       "progress_percent": 0
     },
     {
-      "author": "Yuuhi_Riri",
-      "likes": 1609,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "Hibachi_Mana",
-      "likes": 783,
+      "author": "kuromu_yano",
+      "likes": 584,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

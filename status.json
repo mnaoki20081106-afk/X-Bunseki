@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T09:22:27.097153+00:00",
+  "updated_at": "2026-08-10T12:01:40.964186+00:00",
   "status": "success",
-  "started_at": "2026-08-10T09:17:34.070301+00:00",
-  "finished_at": "2026-08-10T09:22:27.095229+00:00",
-  "posts_scanned": 33,
+  "started_at": "2026-08-10T11:57:05.625876+00:00",
+  "finished_at": "2026-08-10T12:01:40.957411+00:00",
+  "posts_scanned": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "AORINGOHUZIN",
-      "likes": 3522,
-      "quotes": 18,
-      "bookmarks": 321
+      "author": "MotokiOhmoriMGA",
+      "likes": 9737,
+      "quotes": 32,
+      "bookmarks": 238
     },
     {
-      "author": "uni_mafumafu",
-      "likes": 3476,
-      "quotes": 33,
-      "bookmarks": 92
+      "author": "Vamp_Kuzu",
+      "likes": 5508,
+      "quotes": 4,
+      "bookmarks": 32
     },
     {
-      "author": "rai_173",
-      "likes": 2839,
+      "author": "satomimi__",
+      "likes": 3165,
       "quotes": 0,
-      "bookmarks": 19
+      "bookmarks": 66
     },
     {
-      "author": "takaichi_sanae",
-      "likes": 2311,
+      "author": "suzuki_hitomi_",
+      "likes": 3014,
       "quotes": 0,
-      "bookmarks": 31
+      "bookmarks": 77
     },
     {
-      "author": "USSS_info",
-      "likes": 2116,
-      "quotes": 46,
-      "bookmarks": 16
+      "author": "ice_icol",
+      "likes": 2954,
+      "quotes": 16,
+      "bookmarks": 72
     }
   ],
   "top5_by_progress": [
     {
-      "author": "uni_mafumafu",
-      "likes": 3476,
-      "quotes": 33,
-      "bookmarks": 92,
-      "progress_percent": 66
+      "author": "MotokiOhmoriMGA",
+      "likes": 9737,
+      "quotes": 32,
+      "bookmarks": 238,
+      "progress_percent": 64
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 3522,
-      "quotes": 18,
-      "bookmarks": 321,
-      "progress_percent": 36
+      "author": "satomimi__",
+      "likes": 1953,
+      "quotes": 30,
+      "bookmarks": 63,
+      "progress_percent": 60
     },
     {
-      "author": "HIROOMI_3JSB_",
-      "likes": 1677,
-      "quotes": 10,
-      "bookmarks": 41,
-      "progress_percent": 20
+      "author": "tbsTV_MGA",
+      "likes": 2786,
+      "quotes": 24,
+      "bookmarks": 76,
+      "progress_percent": 48
     },
     {
-      "author": "mtor_info",
-      "likes": 1445,
-      "quotes": 10,
-      "bookmarks": 35,
-      "progress_percent": 20
+      "author": "SORI0918",
+      "likes": 1393,
+      "quotes": 17,
+      "bookmarks": 71,
+      "progress_percent": 34
     },
     {
-      "author": "USSS_info",
-      "likes": 2116,
-      "quotes": 46,
-      "bookmarks": 16,
-      "progress_percent": 16
+      "author": "monaki_official",
+      "likes": 1112,
+      "quotes": 16,
+      "bookmarks": 45,
+      "progress_percent": 32
     }
   ]
 }

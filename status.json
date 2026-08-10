@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-09T23:32:06.038788+00:00",
+  "updated_at": "2026-08-10T01:31:59.179043+00:00",
   "status": "success",
-  "started_at": "2026-08-09T23:28:42.646361+00:00",
-  "finished_at": "2026-08-09T23:32:06.036488+00:00",
-  "posts_scanned": 33,
+  "started_at": "2026-08-10T01:29:14.935726+00:00",
+  "finished_at": "2026-08-10T01:31:59.176507+00:00",
+  "posts_scanned": 32,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "sena_asumi",
-      "likes": 1650,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "NIKKE_japan",
+      "likes": 5031,
+      "quotes": 18,
+      "bookmarks": 635
     },
     {
-      "author": "ookamimio",
-      "likes": 1631,
-      "quotes": 1,
-      "bookmarks": 7
+      "author": "mixinews",
+      "likes": 4650,
+      "quotes": 9,
+      "bookmarks": 92
     },
     {
-      "author": "Milan_Kestrel",
-      "likes": 1503,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "mata11katu",
+      "likes": 3972,
+      "quotes": 18,
+      "bookmarks": 76
     },
     {
-      "author": "Blue_ArchiveJP",
-      "likes": 1499,
-      "quotes": 17,
-      "bookmarks": 79
+      "author": "akiko_lawson",
+      "likes": 3436,
+      "quotes": 15,
+      "bookmarks": 192
     },
     {
-      "author": "Kaisei_2434",
-      "likes": 1469,
-      "quotes": 6,
-      "bookmarks": 13
+      "author": "hinatazaka46",
+      "likes": 3071,
+      "quotes": 16,
+      "bookmarks": 106
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Blue_ArchiveJP",
-      "likes": 1499,
-      "quotes": 17,
-      "bookmarks": 79,
-      "progress_percent": 34
+      "author": "starwarsjapan",
+      "likes": 1652,
+      "quotes": 19,
+      "bookmarks": 113,
+      "progress_percent": 38
     },
     {
-      "author": "aida_jurii",
-      "likes": 890,
+      "author": "hinatazaka46",
+      "likes": 1316,
+      "quotes": 16,
+      "bookmarks": 50,
+      "progress_percent": 32
+    },
+    {
+      "author": "hinatazaka46",
+      "likes": 3071,
+      "quotes": 16,
+      "bookmarks": 106,
+      "progress_percent": 32
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 3436,
       "quotes": 15,
-      "bookmarks": 35,
+      "bookmarks": 192,
       "progress_percent": 30
     },
     {
-      "author": "HANON_INWS",
-      "likes": 505,
-      "quotes": 13,
-      "bookmarks": 20,
-      "progress_percent": 20
-    },
-    {
-      "author": "_takemoto_yui",
-      "likes": 1379,
-      "quotes": 14,
-      "bookmarks": 15,
-      "progress_percent": 15
-    },
-    {
-      "author": "Kaisei_2434",
-      "likes": 1469,
-      "quotes": 6,
-      "bookmarks": 13,
-      "progress_percent": 12
+      "author": "mixinews",
+      "likes": 4650,
+      "quotes": 9,
+      "bookmarks": 92,
+      "progress_percent": 18
     }
   ]
 }

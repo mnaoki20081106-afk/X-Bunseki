@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T13:44:06.337829+00:00",
+  "updated_at": "2026-08-10T15:19:28.908463+00:00",
   "status": "success",
-  "started_at": "2026-08-10T13:39:35.034788+00:00",
-  "finished_at": "2026-08-10T13:44:06.335522+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-10T15:13:54.052493+00:00",
+  "finished_at": "2026-08-10T15:19:28.906227+00:00",
+  "posts_scanned": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "H_KAGAMI2434",
-      "likes": 6093,
+      "author": "usamirito_power",
+      "likes": 7007,
+      "quotes": 32,
+      "bookmarks": 306
+    },
+    {
+      "author": "otoshima_risa",
+      "likes": 4313,
       "quotes": 15,
-      "bookmarks": 100
+      "bookmarks": 132
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 3961,
-      "quotes": 18,
-      "bookmarks": 179
+      "author": "rai_173",
+      "likes": 4250,
+      "quotes": 2,
+      "bookmarks": 23
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 3702,
-      "quotes": 7,
-      "bookmarks": 51
+      "author": "suzuka_fz1124",
+      "likes": 2797,
+      "quotes": 23,
+      "bookmarks": 78
     },
     {
-      "author": "tomita_nanaka",
-      "likes": 3071,
-      "quotes": 20,
-      "bookmarks": 103
-    },
-    {
-      "author": "akagi_wen",
-      "likes": 2583,
-      "quotes": 3,
-      "bookmarks": 15
+      "author": "yamamoto_anna_",
+      "likes": 2736,
+      "quotes": 19,
+      "bookmarks": 63
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Zakuro_Shiro",
-      "likes": 1116,
-      "quotes": 21,
-      "bookmarks": 300,
-      "progress_percent": 42
+      "author": "usamirito_power",
+      "likes": 7007,
+      "quotes": 32,
+      "bookmarks": 306,
+      "progress_percent": 64
     },
     {
-      "author": "tomita_nanaka",
-      "likes": 3071,
-      "quotes": 20,
-      "bookmarks": 103,
-      "progress_percent": 40
+      "author": "suzuka_fz1124",
+      "likes": 2797,
+      "quotes": 23,
+      "bookmarks": 78,
+      "progress_percent": 46
     },
     {
-      "author": "Hakase_Fuyuki",
-      "likes": 1317,
+      "author": "yamamoto_anna_",
+      "likes": 2736,
       "quotes": 19,
-      "bookmarks": 61,
+      "bookmarks": 63,
       "progress_percent": 38
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 3961,
-      "quotes": 18,
-      "bookmarks": 179,
-      "progress_percent": 36
+      "author": "mayumi_ss1227",
+      "likes": 566,
+      "quotes": 17,
+      "bookmarks": 607,
+      "progress_percent": 34
     },
     {
-      "author": "ozawa_aimi__",
-      "likes": 1066,
-      "quotes": 22,
-      "bookmarks": 31,
-      "progress_percent": 31
+      "author": "otoshima_risa",
+      "likes": 4313,
+      "quotes": 15,
+      "bookmarks": 132,
+      "progress_percent": 30
     }
   ]
 }

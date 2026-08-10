@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-10T19:13:13.091844+00:00",
+  "updated_at": "2026-08-10T20:58:58.294852+00:00",
   "status": "success",
-  "started_at": "2026-08-10T19:12:47.064735+00:00",
-  "finished_at": "2026-08-10T19:13:13.088096+00:00",
-  "posts_scanned": 40,
+  "started_at": "2026-08-10T20:58:22.141962+00:00",
+  "finished_at": "2026-08-10T20:58:58.292314+00:00",
+  "posts_scanned": 42,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
+      "author": "ko04_514",
+      "likes": 5014,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
       "author": "jpapachannel",
-      "likes": 2846,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "TMR15",
-      "likes": 2367,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Tigusa_voice",
-      "likes": 2146,
+      "likes": 3226,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akagi_wen",
-      "likes": 2037,
+      "likes": 2301,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "mazeta_sub",
-      "likes": 1868,
+      "author": "lizhi3",
+      "likes": 2000,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Cocoa_nonfic",
+      "likes": 1991,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Ex_Albio",
-      "likes": 821,
-      "quotes": 1,
-      "bookmarks": 11,
-      "progress_percent": 2
+      "author": "clearusui",
+      "likes": 1139,
+      "quotes": 17,
+      "bookmarks": 51,
+      "progress_percent": 34
     },
     {
-      "author": "saine_ginjo",
-      "likes": 558,
+      "author": "tnsc_JAXA",
+      "likes": 962,
+      "quotes": 18,
+      "bookmarks": 28,
+      "progress_percent": 28
+    },
+    {
+      "author": "clearusui",
+      "likes": 1379,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "uruha_ichinose",
-      "likes": 1273,
+      "author": "Yuuhi_Riri",
+      "likes": 1609,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "amagai_ruka",
-      "likes": 712,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "Tr0uT_2434",
-      "likes": 1478,
+      "author": "Hibachi_Mana",
+      "likes": 783,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

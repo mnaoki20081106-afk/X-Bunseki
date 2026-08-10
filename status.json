@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T05:27:29.097615+00:00",
+  "updated_at": "2026-08-10T07:31:23.116615+00:00",
   "status": "success",
-  "started_at": "2026-08-10T05:24:18.884130+00:00",
-  "finished_at": "2026-08-10T05:27:29.095286+00:00",
-  "posts_scanned": 30,
+  "started_at": "2026-08-10T07:27:57.811444+00:00",
+  "finished_at": "2026-08-10T07:31:23.114543+00:00",
+  "posts_scanned": 27,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Genshin_7",
-      "likes": 5575,
-      "quotes": 15,
-      "bookmarks": 128
+      "author": "number_i_offic",
+      "likes": 5293,
+      "quotes": 13,
+      "bookmarks": 441
     },
     {
-      "author": "Masayoshi_Oishi",
-      "likes": 2916,
+      "author": "KMF2_0810MENT",
+      "likes": 3587,
+      "quotes": 18,
+      "bookmarks": 135
+    },
+    {
+      "author": "ookamimio",
+      "likes": 2842,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "BLUELOCK_MOVIE",
-      "likes": 2853,
-      "quotes": 15,
-      "bookmarks": 168
-    },
-    {
-      "author": "fubuchandayo",
-      "likes": 2123,
-      "quotes": 8,
-      "bookmarks": 16
-    },
-    {
-      "author": "honmahimawari",
-      "likes": 2070,
+      "author": "Sora_Sakurai",
+      "likes": 2524,
       "quotes": 0,
       "bookmarks": 0
+    },
+    {
+      "author": "starglow_bmsg",
+      "likes": 2459,
+      "quotes": 18,
+      "bookmarks": 82
     }
   ],
   "top5_by_progress": [
     {
-      "author": "yosi980",
-      "likes": 1843,
-      "quotes": 16,
-      "bookmarks": 46,
-      "progress_percent": 32
+      "author": "KMF2_0810MENT",
+      "likes": 3587,
+      "quotes": 18,
+      "bookmarks": 135,
+      "progress_percent": 36
     },
     {
-      "author": "BLUELOCK_MOVIE",
-      "likes": 2853,
+      "author": "starglow_bmsg",
+      "likes": 2459,
+      "quotes": 18,
+      "bookmarks": 82,
+      "progress_percent": 36
+    },
+    {
+      "author": "we_konami",
+      "likes": 1009,
       "quotes": 15,
-      "bookmarks": 168,
+      "bookmarks": 45,
       "progress_percent": 30
     },
     {
-      "author": "Genshin_7",
-      "likes": 5575,
-      "quotes": 15,
-      "bookmarks": 128,
-      "progress_percent": 30
-    },
-    {
-      "author": "fantastics_fext",
-      "likes": 1811,
+      "author": "KonaTsukine",
+      "likes": 659,
       "quotes": 13,
-      "bookmarks": 107,
+      "bookmarks": 67,
       "progress_percent": 26
     },
     {
-      "author": "_takemoto_yui",
-      "likes": 1708,
-      "quotes": 11,
-      "bookmarks": 32,
-      "progress_percent": 22
+      "author": "number_i_offic",
+      "likes": 5293,
+      "quotes": 13,
+      "bookmarks": 441,
+      "progress_percent": 26
     }
   ]
 }

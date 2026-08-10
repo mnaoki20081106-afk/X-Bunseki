@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T01:31:59.179043+00:00",
+  "updated_at": "2026-08-10T03:56:42.464393+00:00",
   "status": "success",
-  "started_at": "2026-08-10T01:29:14.935726+00:00",
-  "finished_at": "2026-08-10T01:31:59.176507+00:00",
-  "posts_scanned": 32,
+  "started_at": "2026-08-10T03:52:17.433964+00:00",
+  "finished_at": "2026-08-10T03:56:42.462093+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "NIKKE_japan",
-      "likes": 5031,
-      "quotes": 18,
-      "bookmarks": 635
+      "author": "Genshin_7",
+      "likes": 4350,
+      "quotes": 23,
+      "bookmarks": 65
     },
     {
-      "author": "mixinews",
-      "likes": 4650,
-      "quotes": 9,
-      "bookmarks": 92
+      "author": "t_miyata_kmf2",
+      "likes": 3399,
+      "quotes": 13,
+      "bookmarks": 59
     },
     {
-      "author": "mata11katu",
-      "likes": 3972,
-      "quotes": 18,
-      "bookmarks": 76
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 3436,
-      "quotes": 15,
-      "bookmarks": 192
-    },
-    {
-      "author": "hinatazaka46",
-      "likes": 3071,
+      "author": "tbsTV_MGA",
+      "likes": 3341,
       "quotes": 16,
-      "bookmarks": 106
+      "bookmarks": 135
+    },
+    {
+      "author": "t_nikaido_86",
+      "likes": 2799,
+      "quotes": 13,
+      "bookmarks": 69
+    },
+    {
+      "author": "purin_sanrio",
+      "likes": 2556,
+      "quotes": 9,
+      "bookmarks": 103
     }
   ],
   "top5_by_progress": [
     {
-      "author": "starwarsjapan",
-      "likes": 1652,
+      "author": "Genshin_7",
+      "likes": 4350,
+      "quotes": 23,
+      "bookmarks": 65,
+      "progress_percent": 46
+    },
+    {
+      "author": "reissuerecords",
+      "likes": 2515,
       "quotes": 19,
-      "bookmarks": 113,
+      "bookmarks": 56,
       "progress_percent": 38
     },
     {
-      "author": "hinatazaka46",
-      "likes": 1316,
+      "author": "kannkannna",
+      "likes": 1180,
+      "quotes": 19,
+      "bookmarks": 54,
+      "progress_percent": 38
+    },
+    {
+      "author": "tbsTV_MGA",
+      "likes": 3341,
       "quotes": 16,
-      "bookmarks": 50,
+      "bookmarks": 135,
       "progress_percent": 32
     },
     {
-      "author": "hinatazaka46",
-      "likes": 3071,
-      "quotes": 16,
-      "bookmarks": 106,
-      "progress_percent": 32
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 3436,
+      "author": "ara_mackey",
+      "likes": 1253,
       "quotes": 15,
-      "bookmarks": 192,
+      "bookmarks": 66,
       "progress_percent": 30
-    },
-    {
-      "author": "mixinews",
-      "likes": 4650,
-      "quotes": 9,
-      "bookmarks": 92,
-      "progress_percent": 18
     }
   ]
 }

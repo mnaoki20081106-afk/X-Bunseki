@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T21:56:36.180056+00:00",
+  "updated_at": "2026-08-10T22:58:07.882710+00:00",
   "status": "success",
-  "started_at": "2026-08-10T21:55:28.928557+00:00",
-  "finished_at": "2026-08-10T21:56:36.178101+00:00",
-  "posts_scanned": 36,
+  "started_at": "2026-08-10T22:54:04.531791+00:00",
+  "finished_at": "2026-08-10T22:58:07.877273+00:00",
+  "posts_scanned": 32,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 3338,
-      "quotes": 15,
-      "bookmarks": 26
+      "author": "nino_honmono",
+      "likes": 16316,
+      "quotes": 36,
+      "bookmarks": 49
     },
     {
-      "author": "lizhi3",
-      "likes": 3285,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "takaichi_sanae",
+      "likes": 2148,
+      "quotes": 11,
+      "bookmarks": 19
     },
     {
-      "author": "clearusui",
-      "likes": 2966,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "ok_nobuhiko",
+      "likes": 1377,
+      "quotes": 2,
+      "bookmarks": 19
     },
     {
-      "author": "Yuuhi_Riri",
-      "likes": 2634,
+      "author": "umasugi_human",
+      "likes": 1274,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 59
     },
     {
-      "author": "tumuohakusai",
-      "likes": 2418,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "Patra_HNST",
+      "likes": 1180,
+      "quotes": 1,
+      "bookmarks": 12
     }
   ],
   "top5_by_progress": [
     {
-      "author": "H_KAGAMI2434",
-      "likes": 2138,
+      "author": "nino_honmono",
+      "likes": 16316,
+      "quotes": 36,
+      "bookmarks": 49,
+      "progress_percent": 49
+    },
+    {
+      "author": "kobateck",
+      "likes": 644,
       "quotes": 15,
-      "bookmarks": 32,
+      "bookmarks": 656,
       "progress_percent": 30
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 3338,
-      "quotes": 15,
-      "bookmarks": 26,
-      "progress_percent": 26
+      "author": "akiko_lawson",
+      "likes": 583,
+      "quotes": 14,
+      "bookmarks": 135,
+      "progress_percent": 28
     },
     {
-      "author": "kiho_kanematsu",
-      "likes": 535,
-      "quotes": 1,
-      "bookmarks": 40,
-      "progress_percent": 2
+      "author": "takaichi_sanae",
+      "likes": 2148,
+      "quotes": 11,
+      "bookmarks": 19,
+      "progress_percent": 19
     },
     {
-      "author": "korokorococoroo",
-      "likes": 629,
-      "quotes": 0,
-      "bookmarks": 21,
-      "progress_percent": 0
-    },
-    {
-      "author": "kuromu_yano",
-      "likes": 584,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
+      "author": "natanakane",
+      "likes": 695,
+      "quotes": 4,
+      "bookmarks": 25,
+      "progress_percent": 8
     }
   ]
 }

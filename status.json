@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T07:31:23.116615+00:00",
+  "updated_at": "2026-08-10T09:22:27.097153+00:00",
   "status": "success",
-  "started_at": "2026-08-10T07:27:57.811444+00:00",
-  "finished_at": "2026-08-10T07:31:23.114543+00:00",
-  "posts_scanned": 27,
+  "started_at": "2026-08-10T09:17:34.070301+00:00",
+  "finished_at": "2026-08-10T09:22:27.095229+00:00",
+  "posts_scanned": 33,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "number_i_offic",
-      "likes": 5293,
-      "quotes": 13,
-      "bookmarks": 441
-    },
-    {
-      "author": "KMF2_0810MENT",
-      "likes": 3587,
+      "author": "AORINGOHUZIN",
+      "likes": 3522,
       "quotes": 18,
-      "bookmarks": 135
+      "bookmarks": 321
     },
     {
-      "author": "ookamimio",
-      "likes": 2842,
+      "author": "uni_mafumafu",
+      "likes": 3476,
+      "quotes": 33,
+      "bookmarks": 92
+    },
+    {
+      "author": "rai_173",
+      "likes": 2839,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 19
     },
     {
-      "author": "Sora_Sakurai",
-      "likes": 2524,
+      "author": "takaichi_sanae",
+      "likes": 2311,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 31
     },
     {
-      "author": "starglow_bmsg",
-      "likes": 2459,
-      "quotes": 18,
-      "bookmarks": 82
+      "author": "USSS_info",
+      "likes": 2116,
+      "quotes": 46,
+      "bookmarks": 16
     }
   ],
   "top5_by_progress": [
     {
-      "author": "KMF2_0810MENT",
-      "likes": 3587,
+      "author": "uni_mafumafu",
+      "likes": 3476,
+      "quotes": 33,
+      "bookmarks": 92,
+      "progress_percent": 66
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "likes": 3522,
       "quotes": 18,
-      "bookmarks": 135,
+      "bookmarks": 321,
       "progress_percent": 36
     },
     {
-      "author": "starglow_bmsg",
-      "likes": 2459,
-      "quotes": 18,
-      "bookmarks": 82,
-      "progress_percent": 36
+      "author": "HIROOMI_3JSB_",
+      "likes": 1677,
+      "quotes": 10,
+      "bookmarks": 41,
+      "progress_percent": 20
     },
     {
-      "author": "we_konami",
-      "likes": 1009,
-      "quotes": 15,
-      "bookmarks": 45,
-      "progress_percent": 30
+      "author": "mtor_info",
+      "likes": 1445,
+      "quotes": 10,
+      "bookmarks": 35,
+      "progress_percent": 20
     },
     {
-      "author": "KonaTsukine",
-      "likes": 659,
-      "quotes": 13,
-      "bookmarks": 67,
-      "progress_percent": 26
-    },
-    {
-      "author": "number_i_offic",
-      "likes": 5293,
-      "quotes": 13,
-      "bookmarks": 441,
-      "progress_percent": 26
+      "author": "USSS_info",
+      "likes": 2116,
+      "quotes": 46,
+      "bookmarks": 16,
+      "progress_percent": 16
     }
   ]
 }

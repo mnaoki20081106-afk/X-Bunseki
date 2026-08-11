@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T22:02:03.965903+00:00",
+  "updated_at": "2026-08-11T23:03:55.095398+00:00",
   "status": "success",
-  "started_at": "2026-08-11T22:00:38.581635+00:00",
-  "finished_at": "2026-08-11T22:02:03.963826+00:00",
-  "posts_scanned": 40,
+  "started_at": "2026-08-11T22:59:16.795562+00:00",
+  "finished_at": "2026-08-11T23:03:55.090181+00:00",
+  "posts_scanned": 44,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Suzuna_Nanase",
-      "likes": 5474,
+      "author": "nino_honmono",
+      "likes": 17850,
+      "quotes": 48,
+      "bookmarks": 50
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 6926,
+      "quotes": 31,
+      "bookmarks": 66
+    },
+    {
+      "author": "Genshin_7",
+      "likes": 5781,
+      "quotes": 0,
+      "bookmarks": 96
+    },
+    {
+      "author": "ok_nobuhiko",
+      "likes": 2643,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Vamp_Kuzu",
-      "likes": 3496,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "suchi_sub",
-      "likes": 2806,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "irys_en",
-      "likes": 2510,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "CHINTiger",
-      "likes": 2508,
+      "author": "Kyoma_mma",
+      "likes": 2262,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "k_r_r_l_l_",
-      "likes": 1827,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 6926,
+      "quotes": 31,
+      "bookmarks": 66,
+      "progress_percent": 62
+    },
+    {
+      "author": "nino_honmono",
+      "likes": 17850,
+      "quotes": 48,
+      "bookmarks": 50,
+      "progress_percent": 50
+    },
+    {
+      "author": "badassceo",
+      "likes": 793,
+      "quotes": 14,
+      "bookmarks": 36,
+      "progress_percent": 28
+    },
+    {
+      "author": "kobateck",
+      "likes": 781,
+      "quotes": 13,
+      "bookmarks": 22,
+      "progress_percent": 22
+    },
+    {
+      "author": "Kanae_2434",
+      "likes": 1503,
       "quotes": 8,
-      "bookmarks": 89,
+      "bookmarks": 49,
       "progress_percent": 16
-    },
-    {
-      "author": "Kantei_Saigai",
-      "likes": 721,
-      "quotes": 30,
-      "bookmarks": 15,
-      "progress_percent": 15
-    },
-    {
-      "author": "natsuiromatsuri",
-      "likes": 691,
-      "quotes": 2,
-      "bookmarks": 10,
-      "progress_percent": 4
-    },
-    {
-      "author": "aquamarin__",
-      "likes": 800,
-      "quotes": 1,
-      "bookmarks": 29,
-      "progress_percent": 2
-    },
-    {
-      "author": "wagahaida_L",
-      "likes": 707,
-      "quotes": 2,
-      "bookmarks": 1,
-      "progress_percent": 1
     }
   ]
 }

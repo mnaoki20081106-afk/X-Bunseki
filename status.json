@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T13:41:37.687802+00:00",
+  "updated_at": "2026-08-11T15:20:06.084119+00:00",
   "status": "success",
-  "started_at": "2026-08-11T13:37:12.857700+00:00",
-  "finished_at": "2026-08-11T13:41:37.686045+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-11T15:14:38.688568+00:00",
+  "finished_at": "2026-08-11T15:20:06.082037+00:00",
+  "posts_scanned": 36,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "SB19Official",
-      "likes": 5782,
-      "quotes": 13,
-      "bookmarks": 398
+      "author": "usamirito_power",
+      "likes": 10222,
+      "quotes": 31,
+      "bookmarks": 468
     },
     {
-      "author": "furen_2434",
-      "likes": 4874,
-      "quotes": 3,
-      "bookmarks": 87
-    },
-    {
-      "author": "Sara_Hoshikawa",
-      "likes": 4653,
-      "quotes": 5,
-      "bookmarks": 106
-    },
-    {
-      "author": "official__INI",
-      "likes": 3717,
+      "author": "korekore19",
+      "likes": 7178,
       "quotes": 18,
-      "bookmarks": 96
+      "bookmarks": 138
     },
     {
-      "author": "I_Nozomi_",
-      "likes": 2854,
-      "quotes": 6,
-      "bookmarks": 74
+      "author": "Saiki_Supadari",
+      "likes": 6401,
+      "quotes": 20,
+      "bookmarks": 168
+    },
+    {
+      "author": "saitou_kiara",
+      "likes": 6305,
+      "quotes": 19,
+      "bookmarks": 150
+    },
+    {
+      "author": "ookamimio",
+      "likes": 3216,
+      "quotes": 0,
+      "bookmarks": 40
     }
   ],
   "top5_by_progress": [
     {
-      "author": "official__INI",
-      "likes": 3717,
+      "author": "usamirito_power",
+      "likes": 10222,
+      "quotes": 31,
+      "bookmarks": 468,
+      "progress_percent": 62
+    },
+    {
+      "author": "Masayoshi_Oishi",
+      "likes": 1332,
+      "quotes": 22,
+      "bookmarks": 78,
+      "progress_percent": 44
+    },
+    {
+      "author": "Saiki_Supadari",
+      "likes": 6401,
+      "quotes": 20,
+      "bookmarks": 168,
+      "progress_percent": 40
+    },
+    {
+      "author": "saitou_kiara",
+      "likes": 6305,
+      "quotes": 19,
+      "bookmarks": 150,
+      "progress_percent": 38
+    },
+    {
+      "author": "korekore19",
+      "likes": 7178,
       "quotes": 18,
-      "bookmarks": 96,
+      "bookmarks": 138,
       "progress_percent": 36
-    },
-    {
-      "author": "honda_miyuki_",
-      "likes": 1740,
-      "quotes": 18,
-      "bookmarks": 43,
-      "progress_percent": 36
-    },
-    {
-      "author": "amano_konoa",
-      "likes": 1631,
-      "quotes": 21,
-      "bookmarks": 33,
-      "progress_percent": 33
-    },
-    {
-      "author": "noguchi_iori",
-      "likes": 2373,
-      "quotes": 16,
-      "bookmarks": 35,
-      "progress_percent": 32
-    },
-    {
-      "author": "GAMBA_OFFICIAL",
-      "likes": 2547,
-      "quotes": 15,
-      "bookmarks": 35,
-      "progress_percent": 30
     }
   ]
 }

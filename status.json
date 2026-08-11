@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-10T23:50:57.737387+00:00",
+  "updated_at": "2026-08-11T02:27:51.872670+00:00",
   "status": "success",
-  "started_at": "2026-08-10T23:48:06.693701+00:00",
-  "finished_at": "2026-08-10T23:50:57.735418+00:00",
-  "posts_scanned": 39,
+  "started_at": "2026-08-11T02:24:06.397109+00:00",
+  "finished_at": "2026-08-11T02:27:51.870734+00:00",
+  "posts_scanned": 35,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 11938,
-      "quotes": 17,
-      "bookmarks": 219
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 7251,
+      "author": "HAWKS_official",
+      "likes": 2713,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Fooootest",
-      "likes": 3604,
+      "author": "memememememe28",
+      "likes": 2405,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "H_KAGAMI2434",
-      "likes": 2479,
+      "author": "wagahaida_L",
+      "likes": 2334,
       "quotes": 0,
-      "bookmarks": 11
+      "bookmarks": 0
     },
     {
-      "author": "AZKi_VDiVA",
-      "likes": 2108,
-      "quotes": 0,
+      "author": "uratasama",
+      "likes": 1725,
+      "quotes": 18,
+      "bookmarks": 4
+    },
+    {
+      "author": "takahashiyu",
+      "likes": 1655,
+      "quotes": 2,
       "bookmarks": 12
     }
   ],
   "top5_by_progress": [
     {
-      "author": "watch_UNEXT",
-      "likes": 1397,
-      "quotes": 17,
-      "bookmarks": 133,
-      "progress_percent": 34
+      "author": "takuya_matsuri",
+      "likes": 571,
+      "quotes": 8,
+      "bookmarks": 18,
+      "progress_percent": 16
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 11938,
-      "quotes": 17,
-      "bookmarks": 219,
-      "progress_percent": 34
+      "author": "teruto_sub",
+      "likes": 1550,
+      "quotes": 30,
+      "bookmarks": 15,
+      "progress_percent": 15
     },
     {
-      "author": "HANON_INWS",
-      "likes": 609,
-      "quotes": 13,
-      "bookmarks": 19,
-      "progress_percent": 19
+      "author": "livedoornews",
+      "likes": 514,
+      "quotes": 7,
+      "bookmarks": 125,
+      "progress_percent": 14
     },
     {
-      "author": "hakuikoyori",
-      "likes": 940,
-      "quotes": 6,
-      "bookmarks": 29,
-      "progress_percent": 12
+      "author": "aanc20",
+      "likes": 800,
+      "quotes": 5,
+      "bookmarks": 27,
+      "progress_percent": 10
     },
     {
-      "author": "RYUKI_GENIC",
-      "likes": 545,
-      "quotes": 14,
-      "bookmarks": 11,
-      "progress_percent": 11
+      "author": "Hoshuto_hyakuta",
+      "likes": 1423,
+      "quotes": 3,
+      "bookmarks": 23,
+      "progress_percent": 6
     }
   ]
 }

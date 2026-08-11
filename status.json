@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T11:06:35.030557+00:00",
+  "updated_at": "2026-08-11T11:58:10.374999+00:00",
   "status": "success",
-  "started_at": "2026-08-11T11:02:07.315328+00:00",
-  "finished_at": "2026-08-11T11:06:35.025743+00:00",
+  "started_at": "2026-08-11T11:53:38.770065+00:00",
+  "finished_at": "2026-08-11T11:58:10.370303+00:00",
   "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Fuwa_Minato",
-      "likes": 17733,
-      "quotes": 22,
-      "bookmarks": 262
+      "author": "Vamp_Kuzu",
+      "likes": 6679,
+      "quotes": 2,
+      "bookmarks": 33
     },
     {
-      "author": "milk_info",
-      "likes": 7449,
-      "quotes": 16,
-      "bookmarks": 86
-    },
-    {
-      "author": "takamatsuhitomi",
-      "likes": 6724,
-      "quotes": 19,
-      "bookmarks": 190
-    },
-    {
-      "author": "otoshima_risa",
-      "likes": 4356,
+      "author": "hana_oba",
+      "likes": 4969,
       "quotes": 18,
-      "bookmarks": 146
+      "bookmarks": 134
     },
     {
-      "author": "kikiraravivi",
-      "likes": 3472,
+      "author": "saitou_kiara",
+      "likes": 4667,
       "quotes": 15,
-      "bookmarks": 54
+      "bookmarks": 83
+    },
+    {
+      "author": "BEFIRSTofficial",
+      "likes": 3711,
+      "quotes": 15,
+      "bookmarks": 83
+    },
+    {
+      "author": "nogizaka46",
+      "likes": 2864,
+      "quotes": 15,
+      "bookmarks": 165
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Fuwa_Minato",
-      "likes": 17733,
-      "quotes": 22,
-      "bookmarks": 262,
-      "progress_percent": 44
+      "author": "oshida_mitsuki",
+      "likes": 1815,
+      "quotes": 21,
+      "bookmarks": 43,
+      "progress_percent": 42
     },
     {
-      "author": "otoshima_risa",
-      "likes": 2397,
-      "quotes": 50,
-      "bookmarks": 39,
-      "progress_percent": 39
-    },
-    {
-      "author": "takamatsuhitomi",
-      "likes": 6724,
-      "quotes": 19,
-      "bookmarks": 190,
-      "progress_percent": 38
-    },
-    {
-      "author": "_sakurai_momo_",
-      "likes": 1290,
+      "author": "hana_oba",
+      "likes": 4969,
       "quotes": 18,
-      "bookmarks": 37,
+      "bookmarks": 134,
       "progress_percent": 36
     },
     {
-      "author": "otoshima_risa",
-      "likes": 4356,
-      "quotes": 18,
-      "bookmarks": 146,
-      "progress_percent": 36
+      "author": "ireisu_info",
+      "likes": 1352,
+      "quotes": 15,
+      "bookmarks": 78,
+      "progress_percent": 30
+    },
+    {
+      "author": "saitou_kiara",
+      "likes": 4667,
+      "quotes": 15,
+      "bookmarks": 83,
+      "progress_percent": 30
+    },
+    {
+      "author": "nogizaka46",
+      "likes": 2864,
+      "quotes": 15,
+      "bookmarks": 165,
+      "progress_percent": 30
     }
   ]
 }

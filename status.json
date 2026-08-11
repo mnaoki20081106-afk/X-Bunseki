@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T21:01:51.498190+00:00",
+  "updated_at": "2026-08-11T22:02:03.965903+00:00",
   "status": "success",
-  "started_at": "2026-08-11T21:00:55.970005+00:00",
-  "finished_at": "2026-08-11T21:01:51.485362+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-11T22:00:38.581635+00:00",
+  "finished_at": "2026-08-11T22:02:03.963826+00:00",
+  "posts_scanned": 40,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "Suzuna_Nanase",
-      "likes": 10728,
+      "likes": 5474,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "sakuramiko35",
-      "likes": 6063,
+      "author": "Vamp_Kuzu",
+      "likes": 3496,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Suzuna_Nanase",
-      "likes": 3551,
+      "author": "suchi_sub",
+      "likes": 2806,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Kanae_2434",
-      "likes": 3271,
+      "author": "irys_en",
+      "likes": 2510,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "puri_dao",
-      "likes": 2819,
+      "author": "CHINTiger",
+      "likes": 2508,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "illmaaaaaa",
-      "likes": 1660,
+      "author": "k_r_r_l_l_",
+      "likes": 1827,
+      "quotes": 8,
+      "bookmarks": 89,
+      "progress_percent": 16
+    },
+    {
+      "author": "Kantei_Saigai",
+      "likes": 721,
+      "quotes": 30,
+      "bookmarks": 15,
+      "progress_percent": 15
+    },
+    {
+      "author": "natsuiromatsuri",
+      "likes": 691,
       "quotes": 2,
-      "bookmarks": 25,
+      "bookmarks": 10,
       "progress_percent": 4
     },
     {
-      "author": "Vamp_Kuzu",
-      "likes": 1638,
+      "author": "aquamarin__",
+      "likes": 800,
       "quotes": 1,
-      "bookmarks": 7,
+      "bookmarks": 29,
       "progress_percent": 2
     },
     {
-      "author": "amamfrfr2nd",
-      "likes": 713,
-      "quotes": 0,
-      "bookmarks": 12,
-      "progress_percent": 0
-    },
-    {
-      "author": "amamfrfr2nd",
-      "likes": 853,
-      "quotes": 0,
-      "bookmarks": 12,
-      "progress_percent": 0
-    },
-    {
-      "author": "mikoto_miko11",
-      "likes": 1360,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
+      "author": "wagahaida_L",
+      "likes": 707,
+      "quotes": 2,
+      "bookmarks": 1,
+      "progress_percent": 1
     }
   ]
 }

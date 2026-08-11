@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T02:27:51.872670+00:00",
+  "updated_at": "2026-08-11T04:41:05.170301+00:00",
   "status": "success",
-  "started_at": "2026-08-11T02:24:06.397109+00:00",
-  "finished_at": "2026-08-11T02:27:51.870734+00:00",
-  "posts_scanned": 35,
+  "started_at": "2026-08-11T04:36:56.194499+00:00",
+  "finished_at": "2026-08-11T04:41:05.168112+00:00",
+  "posts_scanned": 28,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "HAWKS_official",
-      "likes": 2713,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "memememememe28",
-      "likes": 2405,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "wagahaida_L",
-      "likes": 2334,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "uratasama",
-      "likes": 1725,
+      "author": "houkaistarrail",
+      "likes": 25595,
       "quotes": 18,
-      "bookmarks": 4
+      "bookmarks": 1100
     },
     {
-      "author": "takahashiyu",
-      "likes": 1655,
-      "quotes": 2,
-      "bookmarks": 12
+      "author": "milk_info",
+      "likes": 8144,
+      "quotes": 31,
+      "bookmarks": 135
+    },
+    {
+      "author": "Genshin_7",
+      "likes": 7726,
+      "quotes": 18,
+      "bookmarks": 313
+    },
+    {
+      "author": "Genshin_7",
+      "likes": 7155,
+      "quotes": 15,
+      "bookmarks": 158
+    },
+    {
+      "author": "andTEAMofficial",
+      "likes": 4277,
+      "quotes": 15,
+      "bookmarks": 397
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takuya_matsuri",
-      "likes": 571,
-      "quotes": 8,
-      "bookmarks": 18,
-      "progress_percent": 16
+      "author": "milk_info",
+      "likes": 8144,
+      "quotes": 31,
+      "bookmarks": 135,
+      "progress_percent": 62
     },
     {
-      "author": "teruto_sub",
-      "likes": 1550,
-      "quotes": 30,
-      "bookmarks": 15,
-      "progress_percent": 15
+      "author": "kano9x",
+      "likes": 1501,
+      "quotes": 24,
+      "bookmarks": 44,
+      "progress_percent": 44
     },
     {
-      "author": "livedoornews",
-      "likes": 514,
-      "quotes": 7,
-      "bookmarks": 125,
-      "progress_percent": 14
+      "author": "Genshin_7",
+      "likes": 7726,
+      "quotes": 18,
+      "bookmarks": 313,
+      "progress_percent": 36
     },
     {
-      "author": "aanc20",
-      "likes": 800,
-      "quotes": 5,
-      "bookmarks": 27,
-      "progress_percent": 10
+      "author": "poke_times",
+      "likes": 3316,
+      "quotes": 18,
+      "bookmarks": 307,
+      "progress_percent": 36
     },
     {
-      "author": "Hoshuto_hyakuta",
-      "likes": 1423,
-      "quotes": 3,
-      "bookmarks": 23,
-      "progress_percent": 6
+      "author": "houkaistarrail",
+      "likes": 25595,
+      "quotes": 18,
+      "bookmarks": 1100,
+      "progress_percent": 36
     }
   ]
 }

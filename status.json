@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-11T19:17:42.575450+00:00",
+  "updated_at": "2026-08-11T21:01:51.498190+00:00",
   "status": "success",
-  "started_at": "2026-08-11T19:17:13.100891+00:00",
-  "finished_at": "2026-08-11T19:17:42.567171+00:00",
-  "posts_scanned": 46,
+  "started_at": "2026-08-11T21:00:55.970005+00:00",
+  "finished_at": "2026-08-11T21:01:51.485362+00:00",
+  "posts_scanned": 47,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "rei_Toya_rei",
-      "likes": 21513,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "Suzuna_Nanase",
-      "likes": 7403,
+      "likes": 10728,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "sakuramiko35",
-      "likes": 4400,
+      "likes": 6063,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "lanlan_sub",
-      "likes": 2656,
+      "author": "Suzuna_Nanase",
+      "likes": 3551,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "lanlan_sub",
-      "likes": 2645,
+      "author": "Kanae_2434",
+      "likes": 3271,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "puri_dao",
+      "likes": 2819,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hinano_tachiba7",
-      "likes": 683,
+      "author": "illmaaaaaa",
+      "likes": 1660,
+      "quotes": 2,
+      "bookmarks": 25,
+      "progress_percent": 4
+    },
+    {
+      "author": "Vamp_Kuzu",
+      "likes": 1638,
+      "quotes": 1,
+      "bookmarks": 7,
+      "progress_percent": 2
+    },
+    {
+      "author": "amamfrfr2nd",
+      "likes": 713,
       "quotes": 0,
-      "bookmarks": 3,
+      "bookmarks": 12,
       "progress_percent": 0
     },
     {
-      "author": "Suzuna_Nanase",
-      "likes": 1525,
+      "author": "amamfrfr2nd",
+      "likes": 853,
       "quotes": 0,
-      "bookmarks": 4,
+      "bookmarks": 12,
       "progress_percent": 0
     },
     {
-      "author": "suchi_sub",
-      "likes": 1551,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "irys_en",
-      "likes": 1147,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "shiranuiflare",
-      "likes": 519,
+      "author": "mikoto_miko11",
+      "likes": 1360,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

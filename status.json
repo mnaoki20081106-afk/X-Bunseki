@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T17:11:12.979008+00:00",
+  "updated_at": "2026-08-11T19:17:42.575450+00:00",
   "status": "success",
-  "started_at": "2026-08-11T17:09:57.820885+00:00",
-  "finished_at": "2026-08-11T17:11:12.976927+00:00",
-  "posts_scanned": 40,
+  "started_at": "2026-08-11T19:17:13.100891+00:00",
+  "finished_at": "2026-08-11T19:17:42.567171+00:00",
+  "posts_scanned": 46,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "rei_Toya_rei",
-      "likes": 12974,
-      "quotes": 20,
-      "bookmarks": 387
-    },
-    {
-      "author": "sixfonia_info",
-      "likes": 5281,
+      "likes": 21513,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Show_SylveSTAR",
-      "likes": 4900,
+      "author": "Suzuna_Nanase",
+      "likes": 7403,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Kaida_Haru",
-      "likes": 4387,
+      "author": "sakuramiko35",
+      "likes": 4400,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kzhodowameku",
-      "likes": 3442,
+      "author": "lanlan_sub",
+      "likes": 2656,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "lanlan_sub",
+      "likes": 2645,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "rei_Toya_rei",
-      "likes": 12974,
-      "quotes": 20,
-      "bookmarks": 387,
-      "progress_percent": 40
+      "author": "hinano_tachiba7",
+      "likes": 683,
+      "quotes": 0,
+      "bookmarks": 3,
+      "progress_percent": 0
     },
     {
-      "author": "lanlan_sub",
-      "likes": 2077,
-      "quotes": 4,
-      "bookmarks": 31,
-      "progress_percent": 8
+      "author": "Suzuna_Nanase",
+      "likes": 1525,
+      "quotes": 0,
+      "bookmarks": 4,
+      "progress_percent": 0
     },
     {
-      "author": "isekaijoucho",
-      "likes": 602,
-      "quotes": 4,
-      "bookmarks": 6,
-      "progress_percent": 6
+      "author": "suchi_sub",
+      "likes": 1551,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     },
     {
-      "author": "illmaaaaaa",
-      "likes": 1887,
-      "quotes": 1,
-      "bookmarks": 24,
-      "progress_percent": 2
+      "author": "irys_en",
+      "likes": 1147,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     },
     {
-      "author": "hakuikoyori",
-      "likes": 1203,
-      "quotes": 1,
-      "bookmarks": 10,
-      "progress_percent": 2
+      "author": "shiranuiflare",
+      "likes": 519,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     }
   ]
 }

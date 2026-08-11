@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T15:20:06.084119+00:00",
+  "updated_at": "2026-08-11T17:11:12.979008+00:00",
   "status": "success",
-  "started_at": "2026-08-11T15:14:38.688568+00:00",
-  "finished_at": "2026-08-11T15:20:06.082037+00:00",
-  "posts_scanned": 36,
+  "started_at": "2026-08-11T17:09:57.820885+00:00",
+  "finished_at": "2026-08-11T17:11:12.976927+00:00",
+  "posts_scanned": 40,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "usamirito_power",
-      "likes": 10222,
-      "quotes": 31,
-      "bookmarks": 468
-    },
-    {
-      "author": "korekore19",
-      "likes": 7178,
-      "quotes": 18,
-      "bookmarks": 138
-    },
-    {
-      "author": "Saiki_Supadari",
-      "likes": 6401,
+      "author": "rei_Toya_rei",
+      "likes": 12974,
       "quotes": 20,
-      "bookmarks": 168
+      "bookmarks": 387
     },
     {
-      "author": "saitou_kiara",
-      "likes": 6305,
-      "quotes": 19,
-      "bookmarks": 150
-    },
-    {
-      "author": "ookamimio",
-      "likes": 3216,
+      "author": "sixfonia_info",
+      "likes": 5281,
       "quotes": 0,
-      "bookmarks": 40
+      "bookmarks": 0
+    },
+    {
+      "author": "Show_SylveSTAR",
+      "likes": 4900,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Kaida_Haru",
+      "likes": 4387,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "kzhodowameku",
+      "likes": 3442,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "usamirito_power",
-      "likes": 10222,
-      "quotes": 31,
-      "bookmarks": 468,
-      "progress_percent": 62
-    },
-    {
-      "author": "Masayoshi_Oishi",
-      "likes": 1332,
-      "quotes": 22,
-      "bookmarks": 78,
-      "progress_percent": 44
-    },
-    {
-      "author": "Saiki_Supadari",
-      "likes": 6401,
+      "author": "rei_Toya_rei",
+      "likes": 12974,
       "quotes": 20,
-      "bookmarks": 168,
+      "bookmarks": 387,
       "progress_percent": 40
     },
     {
-      "author": "saitou_kiara",
-      "likes": 6305,
-      "quotes": 19,
-      "bookmarks": 150,
-      "progress_percent": 38
+      "author": "lanlan_sub",
+      "likes": 2077,
+      "quotes": 4,
+      "bookmarks": 31,
+      "progress_percent": 8
     },
     {
-      "author": "korekore19",
-      "likes": 7178,
-      "quotes": 18,
-      "bookmarks": 138,
-      "progress_percent": 36
+      "author": "isekaijoucho",
+      "likes": 602,
+      "quotes": 4,
+      "bookmarks": 6,
+      "progress_percent": 6
+    },
+    {
+      "author": "illmaaaaaa",
+      "likes": 1887,
+      "quotes": 1,
+      "bookmarks": 24,
+      "progress_percent": 2
+    },
+    {
+      "author": "hakuikoyori",
+      "likes": 1203,
+      "quotes": 1,
+      "bookmarks": 10,
+      "progress_percent": 2
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T06:06:38.218851+00:00",
+  "updated_at": "2026-08-11T07:37:45.050031+00:00",
   "status": "success",
-  "started_at": "2026-08-11T06:02:15.874954+00:00",
-  "finished_at": "2026-08-11T06:06:38.216397+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-11T07:32:58.026726+00:00",
+  "finished_at": "2026-08-11T07:37:45.048113+00:00",
+  "posts_scanned": 32,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Fuwa_Minato",
-      "likes": 8701,
-      "quotes": 30,
-      "bookmarks": 74
+      "author": "suisei_hosimati",
+      "likes": 3137,
+      "quotes": 17,
+      "bookmarks": 97
     },
     {
-      "author": "PacificleagueTV",
-      "likes": 3548,
-      "quotes": 18,
-      "bookmarks": 300
+      "author": "FightsMemory",
+      "likes": 3109,
+      "quotes": 13,
+      "bookmarks": 66
     },
     {
-      "author": "takaichi_sanae",
-      "likes": 3468,
-      "quotes": 19,
-      "bookmarks": 41
-    },
-    {
-      "author": "Tr0uT_2434",
-      "likes": 2761,
-      "quotes": 15,
-      "bookmarks": 39
-    },
-    {
-      "author": "Lauren_iroas",
-      "likes": 2688,
+      "author": "H_KAGAMI2434",
+      "likes": 3012,
       "quotes": 5,
-      "bookmarks": 24
+      "bookmarks": 29
+    },
+    {
+      "author": "shirakamifubuki",
+      "likes": 2492,
+      "quotes": 4,
+      "bookmarks": 13
+    },
+    {
+      "author": "sj1119sogo",
+      "likes": 2471,
+      "quotes": 0,
+      "bookmarks": 64
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Fuwa_Minato",
-      "likes": 8701,
-      "quotes": 30,
-      "bookmarks": 74,
-      "progress_percent": 60
+      "author": "kenshin_0708_k",
+      "likes": 975,
+      "quotes": 32,
+      "bookmarks": 42,
+      "progress_percent": 42
     },
     {
-      "author": "takaichi_sanae",
-      "likes": 3468,
-      "quotes": 19,
-      "bookmarks": 41,
-      "progress_percent": 38
-    },
-    {
-      "author": "starglow_bmsg",
-      "likes": 2229,
+      "author": "ntv_baseball",
+      "likes": 1589,
       "quotes": 18,
-      "bookmarks": 88,
+      "bookmarks": 72,
       "progress_percent": 36
     },
     {
-      "author": "PacificleagueTV",
-      "likes": 3548,
-      "quotes": 18,
-      "bookmarks": 300,
-      "progress_percent": 36
+      "author": "suisei_hosimati",
+      "likes": 3137,
+      "quotes": 17,
+      "bookmarks": 97,
+      "progress_percent": 34
     },
     {
-      "author": "SeikinTV",
-      "likes": 1410,
-      "quotes": 15,
-      "bookmarks": 86,
-      "progress_percent": 30
+      "author": "FightsMemory",
+      "likes": 3109,
+      "quotes": 13,
+      "bookmarks": 66,
+      "progress_percent": 26
+    },
+    {
+      "author": "kaito_hori",
+      "likes": 593,
+      "quotes": 22,
+      "bookmarks": 18,
+      "progress_percent": 18
     }
   ]
 }

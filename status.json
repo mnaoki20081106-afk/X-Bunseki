@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T07:37:45.050031+00:00",
+  "updated_at": "2026-08-11T09:15:58.588876+00:00",
   "status": "success",
-  "started_at": "2026-08-11T07:32:58.026726+00:00",
-  "finished_at": "2026-08-11T07:37:45.048113+00:00",
-  "posts_scanned": 32,
+  "started_at": "2026-08-11T09:11:52.309571+00:00",
+  "finished_at": "2026-08-11T09:15:58.586591+00:00",
+  "posts_scanned": 25,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "suisei_hosimati",
-      "likes": 3137,
-      "quotes": 17,
-      "bookmarks": 97
+      "author": "nino_honmono",
+      "likes": 15811,
+      "quotes": 32,
+      "bookmarks": 234
     },
     {
-      "author": "FightsMemory",
-      "likes": 3109,
-      "quotes": 13,
-      "bookmarks": 66
+      "author": "otani_emiri",
+      "likes": 6563,
+      "quotes": 18,
+      "bookmarks": 178
     },
     {
-      "author": "H_KAGAMI2434",
-      "likes": 3012,
-      "quotes": 5,
-      "bookmarks": 29
+      "author": "kanae_iroiro",
+      "likes": 5909,
+      "quotes": 7,
+      "bookmarks": 60
     },
     {
-      "author": "shirakamifubuki",
-      "likes": 2492,
-      "quotes": 4,
-      "bookmarks": 13
+      "author": "uni_mafumafu",
+      "likes": 3592,
+      "quotes": 28,
+      "bookmarks": 47
     },
     {
-      "author": "sj1119sogo",
-      "likes": 2471,
-      "quotes": 0,
-      "bookmarks": 64
+      "author": "gen_senden",
+      "likes": 2194,
+      "quotes": 18,
+      "bookmarks": 96
     }
   ],
   "top5_by_progress": [
     {
-      "author": "kenshin_0708_k",
-      "likes": 975,
+      "author": "nino_honmono",
+      "likes": 15811,
       "quotes": 32,
-      "bookmarks": 42,
-      "progress_percent": 42
+      "bookmarks": 234,
+      "progress_percent": 64
     },
     {
-      "author": "ntv_baseball",
-      "likes": 1589,
+      "author": "MitoTsukino",
+      "likes": 1832,
+      "quotes": 29,
+      "bookmarks": 118,
+      "progress_percent": 58
+    },
+    {
+      "author": "uni_mafumafu",
+      "likes": 3592,
+      "quotes": 28,
+      "bookmarks": 47,
+      "progress_percent": 47
+    },
+    {
+      "author": "yokai_punipuni",
+      "likes": 1181,
+      "quotes": 31,
+      "bookmarks": 37,
+      "progress_percent": 37
+    },
+    {
+      "author": "gen_senden",
+      "likes": 2194,
       "quotes": 18,
-      "bookmarks": 72,
+      "bookmarks": 96,
       "progress_percent": 36
-    },
-    {
-      "author": "suisei_hosimati",
-      "likes": 3137,
-      "quotes": 17,
-      "bookmarks": 97,
-      "progress_percent": 34
-    },
-    {
-      "author": "FightsMemory",
-      "likes": 3109,
-      "quotes": 13,
-      "bookmarks": 66,
-      "progress_percent": 26
-    },
-    {
-      "author": "kaito_hori",
-      "likes": 593,
-      "quotes": 22,
-      "bookmarks": 18,
-      "progress_percent": 18
     }
   ]
 }

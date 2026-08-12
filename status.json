@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T23:02:04.323388+00:00",
+  "updated_at": "2026-08-12T23:59:00.395957+00:00",
   "status": "success",
-  "started_at": "2026-08-12T22:57:07.223802+00:00",
-  "finished_at": "2026-08-12T23:02:04.321383+00:00",
-  "posts_scanned": 39,
+  "started_at": "2026-08-12T23:55:25.334067+00:00",
+  "finished_at": "2026-08-12T23:59:00.394027+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "nino_honmono",
-      "likes": 14415,
-      "quotes": 44,
-      "bookmarks": 46
+      "author": "akiko_lawson",
+      "likes": 9202,
+      "quotes": 21,
+      "bookmarks": 211
     },
     {
-      "author": "sakayori_soma",
-      "likes": 6469,
-      "quotes": 7,
-      "bookmarks": 84
+      "author": "number_i_offic",
+      "likes": 8998,
+      "quotes": 15,
+      "bookmarks": 680
     },
     {
-      "author": "enako_cos",
-      "likes": 5739,
-      "quotes": 13,
-      "bookmarks": 446
+      "author": "number_i_offic",
+      "likes": 7098,
+      "quotes": 14,
+      "bookmarks": 612
     },
     {
-      "author": "KingGnu_JP",
-      "likes": 3746,
-      "quotes": 0,
-      "bookmarks": 174
+      "author": "hinatazaka46",
+      "likes": 5127,
+      "quotes": 16,
+      "bookmarks": 196
     },
     {
-      "author": "Saiki_Supadari",
-      "likes": 2588,
-      "quotes": 0,
-      "bookmarks": 27
+      "author": "lions_official",
+      "likes": 2541,
+      "quotes": 14,
+      "bookmarks": 49
     }
   ],
   "top5_by_progress": [
     {
-      "author": "nino_honmono",
-      "likes": 14415,
-      "quotes": 44,
-      "bookmarks": 46,
-      "progress_percent": 46
+      "author": "akiko_lawson",
+      "likes": 9202,
+      "quotes": 21,
+      "bookmarks": 211,
+      "progress_percent": 42
     },
     {
-      "author": "Satoru_191",
-      "likes": 2177,
+      "author": "kokoperiGO",
+      "likes": 592,
       "quotes": 18,
-      "bookmarks": 82,
+      "bookmarks": 75,
       "progress_percent": 36
     },
     {
-      "author": "karaage_rutsubo",
-      "likes": 1595,
-      "quotes": 14,
-      "bookmarks": 69,
-      "progress_percent": 28
+      "author": "hinatazaka46",
+      "likes": 5127,
+      "quotes": 16,
+      "bookmarks": 196,
+      "progress_percent": 32
     },
     {
-      "author": "enako_cos",
-      "likes": 5739,
-      "quotes": 13,
-      "bookmarks": 446,
-      "progress_percent": 26
+      "author": "PokemonGOAppJP",
+      "likes": 1167,
+      "quotes": 15,
+      "bookmarks": 157,
+      "progress_percent": 30
     },
     {
-      "author": "sakayori_soma",
-      "likes": 6469,
-      "quotes": 7,
-      "bookmarks": 84,
-      "progress_percent": 14
+      "author": "number_i_offic",
+      "likes": 8998,
+      "quotes": 15,
+      "bookmarks": 680,
+      "progress_percent": 30
     }
   ]
 }

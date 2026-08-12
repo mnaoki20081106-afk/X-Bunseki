@@ -1,77 +1,77 @@
 {
-  "updated_at": "2026-08-12T17:10:10.736186+00:00",
+  "updated_at": "2026-08-12T19:17:14.483101+00:00",
   "status": "success",
-  "started_at": "2026-08-12T17:09:15.165999+00:00",
-  "finished_at": "2026-08-12T17:10:10.733853+00:00",
-  "posts_scanned": 35,
+  "started_at": "2026-08-12T19:16:57.731676+00:00",
+  "finished_at": "2026-08-12T19:17:14.479054+00:00",
+  "posts_scanned": 37,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Yuno_Shino38",
-      "likes": 7713,
+      "author": "uesaka_official",
+      "likes": 5319,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kirara_tamako",
-      "likes": 5045,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "NEBU_KURO",
-      "likes": 2551,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "watarai_hibari",
-      "likes": 2530,
+      "author": "Kanae_2434",
+      "likes": 3170,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "official_jo1",
-      "likes": 2502,
+      "likes": 3024,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "H_KAGAMI2434",
+      "likes": 2420,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "ogi_hana_",
+      "likes": 2015,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ogi_hana_",
-      "likes": 785,
-      "quotes": 10,
-      "bookmarks": 39,
-      "progress_percent": 20
-    },
-    {
-      "author": "Kaida_Haru",
-      "likes": 1271,
-      "quotes": 1,
-      "bookmarks": 7,
-      "progress_percent": 2
-    },
-    {
-      "author": "hakuikoyori",
-      "likes": 509,
-      "quotes": 1,
-      "bookmarks": 7,
-      "progress_percent": 2
-    },
-    {
-      "author": "H_KAGAMI2434",
-      "likes": 1750,
-      "quotes": 1,
-      "bookmarks": 20,
-      "progress_percent": 2
-    },
-    {
-      "author": "hakuikoyori",
-      "likes": 731,
+      "author": "mizumiya_su",
+      "likes": 544,
       "quotes": 0,
-      "bookmarks": 735,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "uruha_ichinose",
+      "likes": 1032,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "Tr0uT_2434",
+      "likes": 1871,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "I_Nozomi_",
+      "likes": 662,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
+    },
+    {
+      "author": "hakuikoyori",
+      "likes": 627,
+      "quotes": 0,
+      "bookmarks": 0,
       "progress_percent": 0
     }
   ]

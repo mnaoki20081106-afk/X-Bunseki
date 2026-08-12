@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T08:41:33.215213+00:00",
+  "updated_at": "2026-08-12T10:23:32.799687+00:00",
   "status": "success",
-  "started_at": "2026-08-12T08:37:44.314193+00:00",
-  "finished_at": "2026-08-12T08:41:33.210250+00:00",
-  "posts_scanned": 26,
+  "started_at": "2026-08-12T10:18:28.908279+00:00",
+  "finished_at": "2026-08-12T10:23:32.797687+00:00",
+  "posts_scanned": 34,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "SN__20200122",
-      "likes": 15685,
+      "author": "DAZNJPNBaseball",
+      "likes": 4629,
       "quotes": 18,
-      "bookmarks": 762
+      "bookmarks": 254
     },
     {
-      "author": "ushizawa",
-      "likes": 4701,
-      "quotes": 18,
-      "bookmarks": 86
+      "author": "DAZNJPNBaseball",
+      "likes": 3953,
+      "quotes": 17,
+      "bookmarks": 288
     },
     {
       "author": "houshoumarine",
-      "likes": 1793,
-      "quotes": 1,
+      "likes": 2508,
+      "quotes": 0,
+      "bookmarks": 20
+    },
+    {
+      "author": "yuki_sakuna",
+      "likes": 2349,
+      "quotes": 3,
+      "bookmarks": 31
+    },
+    {
+      "author": "takaichi_sanae",
+      "likes": 2334,
+      "quotes": 10,
       "bookmarks": 28
-    },
-    {
-      "author": "shirakamifubuki",
-      "likes": 1715,
-      "quotes": 2,
-      "bookmarks": 7
-    },
-    {
-      "author": "saku_sasaki",
-      "likes": 1628,
-      "quotes": 6,
-      "bookmarks": 34
     }
   ],
   "top5_by_progress": [
     {
-      "author": "SN__20200122",
-      "likes": 15685,
+      "author": "ntv_baseball",
+      "likes": 1773,
+      "quotes": 19,
+      "bookmarks": 168,
+      "progress_percent": 38
+    },
+    {
+      "author": "lastnote_fujitv",
+      "likes": 774,
       "quotes": 18,
-      "bookmarks": 762,
+      "bookmarks": 89,
       "progress_percent": 36
     },
     {
-      "author": "ushizawa",
-      "likes": 4701,
+      "author": "DAZNJPNBaseball",
+      "likes": 4629,
       "quotes": 18,
-      "bookmarks": 86,
+      "bookmarks": 254,
       "progress_percent": 36
     },
     {
-      "author": "RBT_sng",
-      "likes": 909,
+      "author": "DAZNJPNBaseball",
+      "likes": 3953,
+      "quotes": 17,
+      "bookmarks": 288,
+      "progress_percent": 34
+    },
+    {
+      "author": "iorimoe_five",
+      "likes": 2172,
       "quotes": 15,
-      "bookmarks": 27,
-      "progress_percent": 27
-    },
-    {
-      "author": "hochi_giants",
-      "likes": 674,
-      "quotes": 30,
-      "bookmarks": 24,
-      "progress_percent": 24
-    },
-    {
-      "author": "Blue_ArchiveJP",
-      "likes": 1471,
-      "quotes": 10,
-      "bookmarks": 26,
-      "progress_percent": 20
+      "bookmarks": 267,
+      "progress_percent": 30
     }
   ]
 }

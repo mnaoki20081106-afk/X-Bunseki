@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T21:59:49.143284+00:00",
+  "updated_at": "2026-08-12T23:02:04.323388+00:00",
   "status": "success",
-  "started_at": "2026-08-12T21:59:12.271439+00:00",
-  "finished_at": "2026-08-12T21:59:49.141217+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-12T22:57:07.223802+00:00",
+  "finished_at": "2026-08-12T23:02:04.321383+00:00",
+  "posts_scanned": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "meotobiyori",
-      "likes": 9393,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "nino_honmono",
+      "likes": 14415,
+      "quotes": 44,
+      "bookmarks": 46
     },
     {
-      "author": "oricon",
-      "likes": 4131,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "sakayori_soma",
+      "likes": 6469,
+      "quotes": 7,
+      "bookmarks": 84
     },
     {
-      "author": "nogizaka46",
-      "likes": 3204,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "enako_cos",
+      "likes": 5739,
+      "quotes": 13,
+      "bookmarks": 446
     },
     {
-      "author": "mizumiya_su",
-      "likes": 1540,
+      "author": "KingGnu_JP",
+      "likes": 3746,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 174
     },
     {
-      "author": "hochi_giants",
-      "likes": 1491,
+      "author": "Saiki_Supadari",
+      "likes": 2588,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 27
     }
   ],
   "top5_by_progress": [
     {
-      "author": "usa_usa0427",
-      "likes": 640,
-      "quotes": 1,
-      "bookmarks": 25,
-      "progress_percent": 2
+      "author": "nino_honmono",
+      "likes": 14415,
+      "quotes": 44,
+      "bookmarks": 46,
+      "progress_percent": 46
     },
     {
-      "author": "tsunomakiwatame",
-      "likes": 551,
-      "quotes": 1,
-      "bookmarks": 2,
-      "progress_percent": 2
+      "author": "Satoru_191",
+      "likes": 2177,
+      "quotes": 18,
+      "bookmarks": 82,
+      "progress_percent": 36
     },
     {
-      "author": "tsunko_p",
-      "likes": 514,
-      "quotes": 0,
-      "bookmarks": 48,
-      "progress_percent": 0
+      "author": "karaage_rutsubo",
+      "likes": 1595,
+      "quotes": 14,
+      "bookmarks": 69,
+      "progress_percent": 28
     },
     {
-      "author": "daisubkiri3",
-      "likes": 514,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
+      "author": "enako_cos",
+      "likes": 5739,
+      "quotes": 13,
+      "bookmarks": 446,
+      "progress_percent": 26
     },
     {
-      "author": "nogizaka46",
-      "likes": 3204,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
+      "author": "sakayori_soma",
+      "likes": 6469,
+      "quotes": 7,
+      "bookmarks": 84,
+      "progress_percent": 14
     }
   ]
 }

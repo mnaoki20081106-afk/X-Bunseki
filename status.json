@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T15:16:50.296364+00:00",
+  "updated_at": "2026-08-12T17:10:10.736186+00:00",
   "status": "success",
-  "started_at": "2026-08-12T15:11:30.824577+00:00",
-  "finished_at": "2026-08-12T15:16:50.294065+00:00",
-  "posts_scanned": 36,
+  "started_at": "2026-08-12T17:09:15.165999+00:00",
+  "finished_at": "2026-08-12T17:10:10.733853+00:00",
+  "posts_scanned": 35,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "LuxOfficial",
-      "likes": 6755,
-      "quotes": 18,
-      "bookmarks": 751
-    },
-    {
-      "author": "ado1024imokenp",
-      "likes": 5212,
-      "quotes": 17,
-      "bookmarks": 94
-    },
-    {
-      "author": "imai1005",
-      "likes": 5111,
+      "author": "Yuno_Shino38",
+      "likes": 7713,
       "quotes": 0,
-      "bookmarks": 275
+      "bookmarks": 0
     },
     {
-      "author": "usamirito_power",
-      "likes": 4845,
-      "quotes": 5,
-      "bookmarks": 32
+      "author": "kirara_tamako",
+      "likes": 5045,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
-      "author": "rai_173",
-      "likes": 4007,
-      "quotes": 1,
-      "bookmarks": 13
+      "author": "NEBU_KURO",
+      "likes": 2551,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "watarai_hibari",
+      "likes": 2530,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "official_jo1",
+      "likes": 2502,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "LuxOfficial",
-      "likes": 6755,
-      "quotes": 18,
-      "bookmarks": 751,
-      "progress_percent": 36
+      "author": "ogi_hana_",
+      "likes": 785,
+      "quotes": 10,
+      "bookmarks": 39,
+      "progress_percent": 20
     },
     {
-      "author": "ado1024imokenp",
-      "likes": 5212,
-      "quotes": 17,
-      "bookmarks": 94,
-      "progress_percent": 34
+      "author": "Kaida_Haru",
+      "likes": 1271,
+      "quotes": 1,
+      "bookmarks": 7,
+      "progress_percent": 2
     },
     {
-      "author": "YojiNoda1",
-      "likes": 1321,
-      "quotes": 15,
-      "bookmarks": 1300,
-      "progress_percent": 30
+      "author": "hakuikoyori",
+      "likes": 509,
+      "quotes": 1,
+      "bookmarks": 7,
+      "progress_percent": 2
     },
     {
-      "author": "uypnmn",
-      "likes": 809,
-      "quotes": 15,
-      "bookmarks": 52,
-      "progress_percent": 30
+      "author": "H_KAGAMI2434",
+      "likes": 1750,
+      "quotes": 1,
+      "bookmarks": 20,
+      "progress_percent": 2
     },
     {
-      "author": "Etocha_cos",
-      "likes": 903,
-      "quotes": 14,
-      "bookmarks": 140,
-      "progress_percent": 28
+      "author": "hakuikoyori",
+      "likes": 731,
+      "quotes": 0,
+      "bookmarks": 735,
+      "progress_percent": 0
     }
   ]
 }

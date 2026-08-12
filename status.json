@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T06:43:22.829493+00:00",
+  "updated_at": "2026-08-12T08:41:33.215213+00:00",
   "status": "success",
-  "started_at": "2026-08-12T06:39:31.375239+00:00",
-  "finished_at": "2026-08-12T06:43:22.686853+00:00",
-  "posts_scanned": 27,
+  "started_at": "2026-08-12T08:37:44.314193+00:00",
+  "finished_at": "2026-08-12T08:41:33.210250+00:00",
+  "posts_scanned": 26,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "t7s_staff",
-      "likes": 3677,
+      "author": "SN__20200122",
+      "likes": 15685,
       "quotes": 18,
-      "bookmarks": 3900
+      "bookmarks": 762
     },
     {
-      "author": "oozorasubaru",
-      "likes": 3472,
-      "quotes": 4,
-      "bookmarks": 41
-    },
-    {
-      "author": "sixfonia_info",
-      "likes": 2985,
+      "author": "ushizawa",
+      "likes": 4701,
       "quotes": 18,
-      "bookmarks": 44
+      "bookmarks": 86
     },
     {
-      "author": "NEWS0915_music",
-      "likes": 2660,
-      "quotes": 15,
-      "bookmarks": 99
+      "author": "houshoumarine",
+      "likes": 1793,
+      "quotes": 1,
+      "bookmarks": 28
     },
     {
-      "author": "ookamimio",
-      "likes": 2644,
-      "quotes": 0,
+      "author": "shirakamifubuki",
+      "likes": 1715,
+      "quotes": 2,
+      "bookmarks": 7
+    },
+    {
+      "author": "saku_sasaki",
+      "likes": 1628,
+      "quotes": 6,
       "bookmarks": 34
     }
   ],
   "top5_by_progress": [
     {
-      "author": "J_OKADA_AISTON",
-      "likes": 1202,
-      "quotes": 30,
-      "bookmarks": 74,
-      "progress_percent": 60
-    },
-    {
-      "author": "we_konami",
-      "likes": 856,
-      "quotes": 30,
-      "bookmarks": 66,
-      "progress_percent": 60
-    },
-    {
-      "author": "t7s_staff",
-      "likes": 3677,
+      "author": "SN__20200122",
+      "likes": 15685,
       "quotes": 18,
-      "bookmarks": 3900,
+      "bookmarks": 762,
       "progress_percent": 36
     },
     {
-      "author": "sixfonia_info",
-      "likes": 2985,
+      "author": "ushizawa",
+      "likes": 4701,
       "quotes": 18,
-      "bookmarks": 44,
+      "bookmarks": 86,
       "progress_percent": 36
     },
     {
-      "author": "mushokutensei_C",
-      "likes": 827,
-      "quotes": 17,
-      "bookmarks": 904,
-      "progress_percent": 34
+      "author": "RBT_sng",
+      "likes": 909,
+      "quotes": 15,
+      "bookmarks": 27,
+      "progress_percent": 27
+    },
+    {
+      "author": "hochi_giants",
+      "likes": 674,
+      "quotes": 30,
+      "bookmarks": 24,
+      "progress_percent": 24
+    },
+    {
+      "author": "Blue_ArchiveJP",
+      "likes": 1471,
+      "quotes": 10,
+      "bookmarks": 26,
+      "progress_percent": 20
     }
   ]
 }

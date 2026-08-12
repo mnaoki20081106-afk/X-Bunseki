@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-11T23:58:18.361875+00:00",
+  "updated_at": "2026-08-12T02:43:40.684881+00:00",
   "status": "success",
-  "started_at": "2026-08-11T23:55:31.171056+00:00",
-  "finished_at": "2026-08-11T23:58:18.283492+00:00",
+  "started_at": "2026-08-12T02:40:49.571942+00:00",
+  "finished_at": "2026-08-12T02:43:40.682738+00:00",
   "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 8441,
-      "quotes": 26,
-      "bookmarks": 264
+      "author": "Suzuna_Nanase",
+      "likes": 4466,
+      "quotes": 0,
+      "bookmarks": 12
     },
     {
-      "author": "karaage_rutsubo",
-      "likes": 5732,
+      "author": "Rou_2434",
+      "likes": 3926,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "hezuruy",
-      "likes": 3863,
-      "quotes": 11,
-      "bookmarks": 13
-    },
-    {
-      "author": "Kanae_2434",
-      "likes": 3739,
+      "author": "rindochihaya",
+      "likes": 3335,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kitamuraharuo",
-      "likes": 3215,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "oricon",
+      "likes": 2811,
+      "quotes": 18,
+      "bookmarks": 65
+    },
+    {
+      "author": "Ness_Sakaki",
+      "likes": 2667,
+      "quotes": 2,
+      "bookmarks": 50
     }
   ],
   "top5_by_progress": [
     {
+      "author": "oricon",
+      "likes": 2811,
+      "quotes": 18,
+      "bookmarks": 65,
+      "progress_percent": 36
+    },
+    {
       "author": "McDonaldsJapan",
-      "likes": 1617,
-      "quotes": 30,
-      "bookmarks": 152,
-      "progress_percent": 60
+      "likes": 1621,
+      "quotes": 17,
+      "bookmarks": 56,
+      "progress_percent": 34
     },
     {
-      "author": "akiko_lawson",
-      "likes": 8441,
-      "quotes": 26,
-      "bookmarks": 264,
-      "progress_percent": 52
+      "author": "FireEmblemJP",
+      "likes": 2036,
+      "quotes": 15,
+      "bookmarks": 2000,
+      "progress_percent": 30
     },
     {
-      "author": "HANON_INWS",
-      "likes": 836,
-      "quotes": 13,
-      "bookmarks": 46,
-      "progress_percent": 26
+      "author": "sakatansab",
+      "likes": 990,
+      "quotes": 12,
+      "bookmarks": 1000,
+      "progress_percent": 24
     },
     {
-      "author": "hezuruy",
-      "likes": 3863,
-      "quotes": 11,
-      "bookmarks": 13,
-      "progress_percent": 13
-    },
-    {
-      "author": "ami_touma",
-      "likes": 1127,
-      "quotes": 6,
-      "bookmarks": 59,
-      "progress_percent": 12
+      "author": "Nico_nico_Sou",
+      "likes": 1078,
+      "quotes": 10,
+      "bookmarks": 37,
+      "progress_percent": 20
     }
   ]
 }

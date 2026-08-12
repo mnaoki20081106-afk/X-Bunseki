@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T02:43:40.684881+00:00",
+  "updated_at": "2026-08-12T05:01:47.721068+00:00",
   "status": "success",
-  "started_at": "2026-08-12T02:40:49.571942+00:00",
-  "finished_at": "2026-08-12T02:43:40.682738+00:00",
-  "posts_scanned": 30,
+  "started_at": "2026-08-12T04:58:00.331926+00:00",
+  "finished_at": "2026-08-12T05:01:47.718714+00:00",
+  "posts_scanned": 33,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Suzuna_Nanase",
-      "likes": 4466,
-      "quotes": 0,
-      "bookmarks": 12
+      "author": "AOD_JP_Official",
+      "likes": 5051,
+      "quotes": 17,
+      "bookmarks": 769
     },
     {
-      "author": "Rou_2434",
-      "likes": 3926,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "takaichi_sanae",
+      "likes": 4856,
+      "quotes": 30,
+      "bookmarks": 51
     },
     {
-      "author": "rindochihaya",
-      "likes": 3335,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "TravisJapan_cr",
+      "likes": 4575,
+      "quotes": 13,
+      "bookmarks": 72
     },
     {
-      "author": "oricon",
-      "likes": 2811,
-      "quotes": 18,
-      "bookmarks": 65
+      "author": "amamiya_kokoro",
+      "likes": 2545,
+      "quotes": 3,
+      "bookmarks": 31
     },
     {
-      "author": "Ness_Sakaki",
-      "likes": 2667,
-      "quotes": 2,
-      "bookmarks": 50
+      "author": "suchi_paint",
+      "likes": 2463,
+      "quotes": 8,
+      "bookmarks": 35
     }
   ],
   "top5_by_progress": [
     {
-      "author": "oricon",
-      "likes": 2811,
-      "quotes": 18,
-      "bookmarks": 65,
-      "progress_percent": 36
+      "author": "takaichi_sanae",
+      "likes": 4856,
+      "quotes": 30,
+      "bookmarks": 51,
+      "progress_percent": 51
     },
     {
-      "author": "McDonaldsJapan",
-      "likes": 1621,
-      "quotes": 17,
-      "bookmarks": 56,
-      "progress_percent": 34
+      "author": "TravisJapan_cr",
+      "likes": 4575,
+      "quotes": 13,
+      "bookmarks": 72,
+      "progress_percent": 26
     },
     {
-      "author": "FireEmblemJP",
-      "likes": 2036,
-      "quotes": 15,
-      "bookmarks": 2000,
-      "progress_percent": 30
+      "author": "hochi_giants",
+      "likes": 1550,
+      "quotes": 49,
+      "bookmarks": 21,
+      "progress_percent": 21
     },
     {
-      "author": "sakatansab",
-      "likes": 990,
-      "quotes": 12,
-      "bookmarks": 1000,
-      "progress_percent": 24
+      "author": "H_KANNA_0203",
+      "likes": 1322,
+      "quotes": 19,
+      "bookmarks": 21,
+      "progress_percent": 21
     },
     {
-      "author": "Nico_nico_Sou",
-      "likes": 1078,
-      "quotes": 10,
-      "bookmarks": 37,
-      "progress_percent": 20
+      "author": "hgt__pokeka",
+      "likes": 710,
+      "quotes": 11,
+      "bookmarks": 13,
+      "progress_percent": 13
     }
   ]
 }

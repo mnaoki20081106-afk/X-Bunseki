@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T13:45:52.670906+00:00",
+  "updated_at": "2026-08-12T15:16:50.296364+00:00",
   "status": "success",
-  "started_at": "2026-08-12T13:41:02.441638+00:00",
-  "finished_at": "2026-08-12T13:45:52.668913+00:00",
-  "posts_scanned": 32,
+  "started_at": "2026-08-12T15:11:30.824577+00:00",
+  "finished_at": "2026-08-12T15:16:50.294065+00:00",
+  "posts_scanned": 36,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "sanohayatodazo",
-      "likes": 26248,
-      "quotes": 14,
-      "bookmarks": 495
+      "author": "LuxOfficial",
+      "likes": 6755,
+      "quotes": 18,
+      "bookmarks": 751
     },
     {
-      "author": "kiyo_saiore",
-      "likes": 7756,
-      "quotes": 33,
-      "bookmarks": 109
+      "author": "ado1024imokenp",
+      "likes": 5212,
+      "quotes": 17,
+      "bookmarks": 94
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 7343,
-      "quotes": 33,
-      "bookmarks": 80
-    },
-    {
-      "author": "illmaill",
-      "likes": 2552,
+      "author": "imai1005",
+      "likes": 5111,
       "quotes": 0,
-      "bookmarks": 63
+      "bookmarks": 275
     },
     {
-      "author": "Hibachi_Mana",
-      "likes": 2544,
-      "quotes": 3,
+      "author": "usamirito_power",
+      "likes": 4845,
+      "quotes": 5,
       "bookmarks": 32
+    },
+    {
+      "author": "rai_173",
+      "likes": 4007,
+      "quotes": 1,
+      "bookmarks": 13
     }
   ],
   "top5_by_progress": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 7343,
-      "quotes": 33,
-      "bookmarks": 80,
-      "progress_percent": 66
+      "author": "LuxOfficial",
+      "likes": 6755,
+      "quotes": 18,
+      "bookmarks": 751,
+      "progress_percent": 36
     },
     {
-      "author": "kiyo_saiore",
-      "likes": 7756,
-      "quotes": 33,
-      "bookmarks": 109,
-      "progress_percent": 66
+      "author": "ado1024imokenp",
+      "likes": 5212,
+      "quotes": 17,
+      "bookmarks": 94,
+      "progress_percent": 34
     },
     {
-      "author": "tkzwgrs",
-      "likes": 618,
-      "quotes": 16,
-      "bookmarks": 97,
-      "progress_percent": 32
+      "author": "YojiNoda1",
+      "likes": 1321,
+      "quotes": 15,
+      "bookmarks": 1300,
+      "progress_percent": 30
     },
     {
-      "author": "sanohayatodazo",
-      "likes": 26248,
+      "author": "uypnmn",
+      "likes": 809,
+      "quotes": 15,
+      "bookmarks": 52,
+      "progress_percent": 30
+    },
+    {
+      "author": "Etocha_cos",
+      "likes": 903,
       "quotes": 14,
-      "bookmarks": 495,
+      "bookmarks": 140,
       "progress_percent": 28
-    },
-    {
-      "author": "airi_sato0624",
-      "likes": 974,
-      "quotes": 11,
-      "bookmarks": 23,
-      "progress_percent": 22
     }
   ]
 }

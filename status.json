@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-12T19:17:14.483101+00:00",
+  "updated_at": "2026-08-12T20:59:58.394913+00:00",
   "status": "success",
-  "started_at": "2026-08-12T19:16:57.731676+00:00",
-  "finished_at": "2026-08-12T19:17:14.479054+00:00",
-  "posts_scanned": 37,
+  "started_at": "2026-08-12T20:59:28.294439+00:00",
+  "finished_at": "2026-08-12T20:59:58.391234+00:00",
+  "posts_scanned": 33,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "uesaka_official",
-      "likes": 5319,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "Kanae_2434",
-      "likes": 3170,
+      "likes": 3788,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "official_jo1",
-      "likes": 3024,
+      "author": "Tr0uT_2434",
+      "likes": 2639,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "H_KAGAMI2434",
-      "likes": 2420,
+      "author": "oricon",
+      "likes": 2336,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ogi_hana_",
-      "likes": 2015,
+      "author": "uruha_ichinose",
+      "likes": 1356,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "lune_U_",
+      "likes": 1239,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
+      "author": "hochi_giants",
+      "likes": 555,
+      "quotes": 27,
+      "bookmarks": 557,
+      "progress_percent": 54
+    },
+    {
       "author": "mizumiya_su",
-      "likes": 544,
+      "likes": 501,
+      "quotes": 0,
+      "bookmarks": 1,
+      "progress_percent": 0
+    },
+    {
+      "author": "takkuxutv",
+      "likes": 589,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "uruha_ichinose",
-      "likes": 1032,
+      "author": "ojm52811",
+      "likes": 519,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 1871,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "I_Nozomi_",
-      "likes": 662,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "hakuikoyori",
-      "likes": 627,
+      "author": "nashiko_cos",
+      "likes": 629,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

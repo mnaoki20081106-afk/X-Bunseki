@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T10:23:32.799687+00:00",
+  "updated_at": "2026-08-12T12:00:40.488880+00:00",
   "status": "success",
-  "started_at": "2026-08-12T10:18:28.908279+00:00",
-  "finished_at": "2026-08-12T10:23:32.797687+00:00",
-  "posts_scanned": 34,
+  "started_at": "2026-08-12T11:56:28.633410+00:00",
+  "finished_at": "2026-08-12T12:00:40.485877+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "DAZNJPNBaseball",
-      "likes": 4629,
-      "quotes": 18,
-      "bookmarks": 254
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 8190,
+      "quotes": 40,
+      "bookmarks": 73
     },
     {
-      "author": "DAZNJPNBaseball",
-      "likes": 3953,
-      "quotes": 17,
-      "bookmarks": 288
-    },
-    {
-      "author": "houshoumarine",
-      "likes": 2508,
-      "quotes": 0,
-      "bookmarks": 20
-    },
-    {
-      "author": "yuki_sakuna",
-      "likes": 2349,
-      "quotes": 3,
-      "bookmarks": 31
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 2334,
+      "author": "saku_sasaki",
+      "likes": 6913,
       "quotes": 10,
-      "bookmarks": 28
+      "bookmarks": 156
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 4021,
+      "quotes": 30,
+      "bookmarks": 45
+    },
+    {
+      "author": "Lauren_iroas",
+      "likes": 3623,
+      "quotes": 3,
+      "bookmarks": 40
+    },
+    {
+      "author": "sixfonia_info",
+      "likes": 3614,
+      "quotes": 18,
+      "bookmarks": 52
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ntv_baseball",
-      "likes": 1773,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 8190,
+      "quotes": 40,
+      "bookmarks": 73,
+      "progress_percent": 73
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 4021,
+      "quotes": 30,
+      "bookmarks": 45,
+      "progress_percent": 45
+    },
+    {
+      "author": "sixfonia_info",
+      "likes": 1565,
       "quotes": 19,
-      "bookmarks": 168,
+      "bookmarks": 48,
       "progress_percent": 38
     },
     {
-      "author": "lastnote_fujitv",
-      "likes": 774,
+      "author": "sixfonia_info",
+      "likes": 1858,
       "quotes": 18,
-      "bookmarks": 89,
+      "bookmarks": 50,
       "progress_percent": 36
     },
     {
-      "author": "DAZNJPNBaseball",
-      "likes": 4629,
+      "author": "sixfonia_info",
+      "likes": 2365,
       "quotes": 18,
-      "bookmarks": 254,
+      "bookmarks": 79,
       "progress_percent": 36
-    },
-    {
-      "author": "DAZNJPNBaseball",
-      "likes": 3953,
-      "quotes": 17,
-      "bookmarks": 288,
-      "progress_percent": 34
-    },
-    {
-      "author": "iorimoe_five",
-      "likes": 2172,
-      "quotes": 15,
-      "bookmarks": 267,
-      "progress_percent": 30
     }
   ]
 }

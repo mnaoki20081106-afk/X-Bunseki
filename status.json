@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-12T20:59:58.394913+00:00",
+  "updated_at": "2026-08-12T21:59:49.143284+00:00",
   "status": "success",
-  "started_at": "2026-08-12T20:59:28.294439+00:00",
-  "finished_at": "2026-08-12T20:59:58.391234+00:00",
-  "posts_scanned": 33,
+  "started_at": "2026-08-12T21:59:12.271439+00:00",
+  "finished_at": "2026-08-12T21:59:49.141217+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Kanae_2434",
-      "likes": 3788,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Tr0uT_2434",
-      "likes": 2639,
+      "author": "meotobiyori",
+      "likes": 9393,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "oricon",
-      "likes": 2336,
+      "likes": 4131,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "uruha_ichinose",
-      "likes": 1356,
+      "author": "nogizaka46",
+      "likes": 3204,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "lune_U_",
-      "likes": 1239,
+      "author": "mizumiya_su",
+      "likes": 1540,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "hochi_giants",
+      "likes": 1491,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hochi_giants",
-      "likes": 555,
-      "quotes": 27,
-      "bookmarks": 557,
-      "progress_percent": 54
+      "author": "usa_usa0427",
+      "likes": 640,
+      "quotes": 1,
+      "bookmarks": 25,
+      "progress_percent": 2
     },
     {
-      "author": "mizumiya_su",
-      "likes": 501,
+      "author": "tsunomakiwatame",
+      "likes": 551,
+      "quotes": 1,
+      "bookmarks": 2,
+      "progress_percent": 2
+    },
+    {
+      "author": "tsunko_p",
+      "likes": 514,
       "quotes": 0,
-      "bookmarks": 1,
+      "bookmarks": 48,
       "progress_percent": 0
     },
     {
-      "author": "takkuxutv",
-      "likes": 589,
+      "author": "daisubkiri3",
+      "likes": 514,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "ojm52811",
-      "likes": 519,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "nashiko_cos",
-      "likes": 629,
+      "author": "nogizaka46",
+      "likes": 3204,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

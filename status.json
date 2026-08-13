@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-12T23:59:00.395957+00:00",
+  "updated_at": "2026-08-13T02:46:59.500451+00:00",
   "status": "success",
-  "started_at": "2026-08-12T23:55:25.334067+00:00",
-  "finished_at": "2026-08-12T23:59:00.394027+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-13T02:42:39.989872+00:00",
+  "finished_at": "2026-08-13T02:46:59.498243+00:00",
+  "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 9202,
-      "quotes": 21,
-      "bookmarks": 211
+      "author": "Aegroupofficial",
+      "likes": 7271,
+      "quotes": 33,
+      "bookmarks": 376
     },
     {
-      "author": "number_i_offic",
-      "likes": 8998,
-      "quotes": 15,
-      "bookmarks": 680
+      "author": "AORINGOHUZIN",
+      "likes": 6950,
+      "quotes": 17,
+      "bookmarks": 281
     },
     {
-      "author": "number_i_offic",
-      "likes": 7098,
-      "quotes": 14,
-      "bookmarks": 612
+      "author": "Suzuna_Nanase",
+      "likes": 5108,
+      "quotes": 2,
+      "bookmarks": 130
     },
     {
-      "author": "hinatazaka46",
-      "likes": 5127,
+      "author": "nhk_kouhaku",
+      "likes": 4655,
+      "quotes": 18,
+      "bookmarks": 226
+    },
+    {
+      "author": "MotokiOhmori_ST",
+      "likes": 4535,
       "quotes": 16,
-      "bookmarks": 196
-    },
-    {
-      "author": "lions_official",
-      "likes": 2541,
-      "quotes": 14,
-      "bookmarks": 49
+      "bookmarks": 105
     }
   ],
   "top5_by_progress": [
     {
-      "author": "akiko_lawson",
-      "likes": 9202,
-      "quotes": 21,
-      "bookmarks": 211,
-      "progress_percent": 42
+      "author": "Aegroupofficial",
+      "likes": 7271,
+      "quotes": 33,
+      "bookmarks": 376,
+      "progress_percent": 66
     },
     {
-      "author": "kokoperiGO",
-      "likes": 592,
+      "author": "nhk_kouhaku",
+      "likes": 3991,
+      "quotes": 27,
+      "bookmarks": 313,
+      "progress_percent": 54
+    },
+    {
+      "author": "nhk_kouhaku",
+      "likes": 4655,
       "quotes": 18,
-      "bookmarks": 75,
+      "bookmarks": 226,
       "progress_percent": 36
     },
     {
-      "author": "hinatazaka46",
-      "likes": 5127,
-      "quotes": 16,
-      "bookmarks": 196,
-      "progress_percent": 32
+      "author": "AORINGOHUZIN",
+      "likes": 6950,
+      "quotes": 17,
+      "bookmarks": 281,
+      "progress_percent": 34
     },
     {
-      "author": "PokemonGOAppJP",
-      "likes": 1167,
-      "quotes": 15,
-      "bookmarks": 157,
-      "progress_percent": 30
-    },
-    {
-      "author": "number_i_offic",
-      "likes": 8998,
-      "quotes": 15,
-      "bookmarks": 680,
-      "progress_percent": 30
+      "author": "oricon",
+      "likes": 3497,
+      "quotes": 17,
+      "bookmarks": 161,
+      "progress_percent": 34
     }
   ]
 }

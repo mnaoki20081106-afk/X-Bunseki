@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T13:45:43.609636+00:00",
+  "updated_at": "2026-08-13T15:16:20.157182+00:00",
   "status": "success",
-  "started_at": "2026-08-13T13:41:00.885321+00:00",
-  "finished_at": "2026-08-13T13:45:43.607658+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-13T15:11:52.230073+00:00",
+  "finished_at": "2026-08-13T15:16:20.153923+00:00",
+  "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
+      "author": "sonoshunta0503",
+      "likes": 47455,
+      "quotes": 34,
+      "bookmarks": 1100
+    },
+    {
+      "author": "milk_info",
+      "likes": 11932,
+      "quotes": 17,
+      "bookmarks": 438
+    },
+    {
       "author": "nino_honmono",
-      "likes": 19353,
-      "quotes": 18,
-      "bookmarks": 633
+      "likes": 11636,
+      "quotes": 46,
+      "bookmarks": 160
     },
     {
-      "author": "Speciale_info",
-      "likes": 6525,
-      "quotes": 18,
-      "bookmarks": 168
+      "author": "takaohayato_mg",
+      "likes": 3816,
+      "quotes": 19,
+      "bookmarks": 151
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 3028,
-      "quotes": 5,
-      "bookmarks": 31
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 2183,
-      "quotes": 15,
-      "bookmarks": 40
-    },
-    {
-      "author": "iLiFE_riri",
-      "likes": 2067,
-      "quotes": 15,
-      "bookmarks": 29
+      "author": "iLiFE_official",
+      "likes": 2988,
+      "quotes": 16,
+      "bookmarks": 45
     }
   ],
   "top5_by_progress": [
     {
-      "author": "AND2BLE",
-      "likes": 1297,
-      "quotes": 19,
+      "author": "nino_honmono",
+      "likes": 11636,
+      "quotes": 46,
+      "bookmarks": 160,
+      "progress_percent": 92
+    },
+    {
+      "author": "sonoshunta0503",
+      "likes": 47455,
+      "quotes": 34,
+      "bookmarks": 1100,
+      "progress_percent": 68
+    },
+    {
+      "author": "fantastics_fext",
+      "likes": 1013,
+      "quotes": 33,
       "bookmarks": 48,
+      "progress_percent": 48
+    },
+    {
+      "author": "YOONSANHA_offcl",
+      "likes": 574,
+      "quotes": 19,
+      "bookmarks": 43,
       "progress_percent": 38
     },
     {
-      "author": "nino_honmono",
-      "likes": 19353,
-      "quotes": 18,
-      "bookmarks": 633,
-      "progress_percent": 36
-    },
-    {
-      "author": "Speciale_info",
-      "likes": 6525,
-      "quotes": 18,
-      "bookmarks": 168,
-      "progress_percent": 36
-    },
-    {
-      "author": "iLiFE_koguma",
-      "likes": 1906,
-      "quotes": 18,
-      "bookmarks": 36,
-      "progress_percent": 36
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 2183,
-      "quotes": 15,
-      "bookmarks": 40,
-      "progress_percent": 30
+      "author": "takaohayato_mg",
+      "likes": 3816,
+      "quotes": 19,
+      "bookmarks": 151,
+      "progress_percent": 38
     }
   ]
 }

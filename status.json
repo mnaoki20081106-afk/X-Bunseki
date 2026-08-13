@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T08:45:38.092280+00:00",
+  "updated_at": "2026-08-13T10:24:19.622164+00:00",
   "status": "success",
-  "started_at": "2026-08-13T08:41:19.620879+00:00",
-  "finished_at": "2026-08-13T08:45:38.089057+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-13T10:20:11.486718+00:00",
+  "finished_at": "2026-08-13T10:24:19.620682+00:00",
+  "posts_scanned": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "SN__20200122",
-      "likes": 8147,
-      "quotes": 30,
-      "bookmarks": 195
+      "author": "sn_edogawa_tbs",
+      "likes": 3187,
+      "quotes": 17,
+      "bookmarks": 182
     },
     {
-      "author": "takaichi_sanae",
-      "likes": 7567,
-      "quotes": 35,
-      "bookmarks": 166
+      "author": "Kaida_Haru",
+      "likes": 2952,
+      "quotes": 9,
+      "bookmarks": 96
     },
     {
-      "author": "Vamp_Kuzu",
-      "likes": 6052,
-      "quotes": 32,
-      "bookmarks": 414
+      "author": "DAZNJPNBaseball",
+      "likes": 2546,
+      "quotes": 18,
+      "bookmarks": 192
     },
     {
-      "author": "horideiyasumi",
-      "likes": 4658,
-      "quotes": 2,
-      "bookmarks": 213
+      "author": "sixfonia_info",
+      "likes": 1759,
+      "quotes": 9,
+      "bookmarks": 28
     },
     {
-      "author": "au_official",
-      "likes": 3143,
-      "quotes": 14,
-      "bookmarks": 441
+      "author": "unkochan1234567",
+      "likes": 1528,
+      "quotes": 12,
+      "bookmarks": 17
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takaichi_sanae",
-      "likes": 7567,
-      "quotes": 35,
-      "bookmarks": 166,
-      "progress_percent": 70
-    },
-    {
-      "author": "Vamp_Kuzu",
-      "likes": 6052,
-      "quotes": 32,
-      "bookmarks": 414,
-      "progress_percent": 64
-    },
-    {
-      "author": "SN__20200122",
-      "likes": 8147,
-      "quotes": 30,
-      "bookmarks": 195,
-      "progress_percent": 60
-    },
-    {
-      "author": "shoji_kohei",
-      "likes": 1052,
-      "quotes": 29,
-      "bookmarks": 65,
-      "progress_percent": 58
-    },
-    {
-      "author": "monst_mixi",
-      "likes": 1288,
+      "author": "DAZNJPNBaseball",
+      "likes": 2546,
       "quotes": 18,
-      "bookmarks": 59,
+      "bookmarks": 192,
       "progress_percent": 36
+    },
+    {
+      "author": "k_hiro_mitsu917",
+      "likes": 1078,
+      "quotes": 18,
+      "bookmarks": 38,
+      "progress_percent": 36
+    },
+    {
+      "author": "sn_edogawa_tbs",
+      "likes": 3187,
+      "quotes": 17,
+      "bookmarks": 182,
+      "progress_percent": 34
+    },
+    {
+      "author": "gucci_jp",
+      "likes": 634,
+      "quotes": 14,
+      "bookmarks": 62,
+      "progress_percent": 28
+    },
+    {
+      "author": "arale_yumemita",
+      "likes": 628,
+      "quotes": 13,
+      "bookmarks": 59,
+      "progress_percent": 26
     }
   ]
 }

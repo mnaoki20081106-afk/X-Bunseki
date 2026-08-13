@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T05:05:55.881014+00:00",
+  "updated_at": "2026-08-13T06:46:49.113112+00:00",
   "status": "success",
-  "started_at": "2026-08-13T05:01:30.177551+00:00",
-  "finished_at": "2026-08-13T05:05:55.877130+00:00",
-  "posts_scanned": 30,
+  "started_at": "2026-08-13T06:41:35.826442+00:00",
+  "finished_at": "2026-08-13T06:46:49.111100+00:00",
+  "posts_scanned": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "mazzel_official",
-      "likes": 6963,
-      "quotes": 15,
-      "bookmarks": 206
+      "author": "ANYCOLOR_Inc",
+      "likes": 26087,
+      "quotes": 30,
+      "bookmarks": 1400
     },
     {
-      "author": "hezuruy",
-      "likes": 5624,
-      "quotes": 13,
-      "bookmarks": 27
+      "author": "ozawakazuhito",
+      "likes": 7879,
+      "quotes": 21,
+      "bookmarks": 862
     },
     {
-      "author": "tentenchan2525",
-      "likes": 4191,
-      "quotes": 7,
-      "bookmarks": 224
+      "author": "Kanae_2434",
+      "likes": 6592,
+      "quotes": 46,
+      "bookmarks": 155
     },
     {
-      "author": "nozawayukiko",
-      "likes": 2739,
-      "quotes": 16,
-      "bookmarks": 196
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 5286,
+      "quotes": 32,
+      "bookmarks": 77
     },
     {
-      "author": "shirakamifubuki",
-      "likes": 2377,
-      "quotes": 2,
-      "bookmarks": 25
+      "author": "j_nakama_w7_3",
+      "likes": 3079,
+      "quotes": 22,
+      "bookmarks": 67
     }
   ],
   "top5_by_progress": [
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 890,
+      "author": "Kanae_2434",
+      "likes": 6592,
+      "quotes": 46,
+      "bookmarks": 155,
+      "progress_percent": 92
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 5286,
+      "quotes": 32,
+      "bookmarks": 77,
+      "progress_percent": 64
+    },
+    {
+      "author": "ANYCOLOR_Inc",
+      "likes": 26087,
+      "quotes": 30,
+      "bookmarks": 1400,
+      "progress_percent": 60
+    },
+    {
+      "author": "j_nakama_w7_3",
+      "likes": 3079,
+      "quotes": 22,
+      "bookmarks": 67,
+      "progress_percent": 44
+    },
+    {
+      "author": "ozawakazuhito",
+      "likes": 7879,
       "quotes": 21,
-      "bookmarks": 86,
+      "bookmarks": 862,
       "progress_percent": 42
-    },
-    {
-      "author": "nozawayukiko",
-      "likes": 2739,
-      "quotes": 16,
-      "bookmarks": 196,
-      "progress_percent": 32
-    },
-    {
-      "author": "mazzel_official",
-      "likes": 6963,
-      "quotes": 15,
-      "bookmarks": 206,
-      "progress_percent": 30
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 1576,
-      "quotes": 13,
-      "bookmarks": 30,
-      "progress_percent": 26
-    },
-    {
-      "author": "hezuruy",
-      "likes": 5624,
-      "quotes": 13,
-      "bookmarks": 27,
-      "progress_percent": 26
     }
   ]
 }

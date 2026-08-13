@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T02:46:59.500451+00:00",
+  "updated_at": "2026-08-13T05:05:55.881014+00:00",
   "status": "success",
-  "started_at": "2026-08-13T02:42:39.989872+00:00",
-  "finished_at": "2026-08-13T02:46:59.498243+00:00",
+  "started_at": "2026-08-13T05:01:30.177551+00:00",
+  "finished_at": "2026-08-13T05:05:55.877130+00:00",
   "posts_scanned": 30,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Aegroupofficial",
-      "likes": 7271,
-      "quotes": 33,
-      "bookmarks": 376
+      "author": "mazzel_official",
+      "likes": 6963,
+      "quotes": 15,
+      "bookmarks": 206
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 6950,
-      "quotes": 17,
-      "bookmarks": 281
+      "author": "hezuruy",
+      "likes": 5624,
+      "quotes": 13,
+      "bookmarks": 27
     },
     {
-      "author": "Suzuna_Nanase",
-      "likes": 5108,
-      "quotes": 2,
-      "bookmarks": 130
+      "author": "tentenchan2525",
+      "likes": 4191,
+      "quotes": 7,
+      "bookmarks": 224
     },
     {
-      "author": "nhk_kouhaku",
-      "likes": 4655,
-      "quotes": 18,
-      "bookmarks": 226
-    },
-    {
-      "author": "MotokiOhmori_ST",
-      "likes": 4535,
+      "author": "nozawayukiko",
+      "likes": 2739,
       "quotes": 16,
-      "bookmarks": 105
+      "bookmarks": 196
+    },
+    {
+      "author": "shirakamifubuki",
+      "likes": 2377,
+      "quotes": 2,
+      "bookmarks": 25
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Aegroupofficial",
-      "likes": 7271,
-      "quotes": 33,
-      "bookmarks": 376,
-      "progress_percent": 66
+      "author": "30R9gmaMUy3guDJ",
+      "likes": 890,
+      "quotes": 21,
+      "bookmarks": 86,
+      "progress_percent": 42
     },
     {
-      "author": "nhk_kouhaku",
-      "likes": 3991,
-      "quotes": 27,
-      "bookmarks": 313,
-      "progress_percent": 54
+      "author": "nozawayukiko",
+      "likes": 2739,
+      "quotes": 16,
+      "bookmarks": 196,
+      "progress_percent": 32
     },
     {
-      "author": "nhk_kouhaku",
-      "likes": 4655,
-      "quotes": 18,
-      "bookmarks": 226,
-      "progress_percent": 36
+      "author": "mazzel_official",
+      "likes": 6963,
+      "quotes": 15,
+      "bookmarks": 206,
+      "progress_percent": 30
     },
     {
-      "author": "AORINGOHUZIN",
-      "likes": 6950,
-      "quotes": 17,
-      "bookmarks": 281,
-      "progress_percent": 34
+      "author": "takaichi_sanae",
+      "likes": 1576,
+      "quotes": 13,
+      "bookmarks": 30,
+      "progress_percent": 26
     },
     {
-      "author": "oricon",
-      "likes": 3497,
-      "quotes": 17,
-      "bookmarks": 161,
-      "progress_percent": 34
+      "author": "hezuruy",
+      "likes": 5624,
+      "quotes": 13,
+      "bookmarks": 27,
+      "progress_percent": 26
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T15:16:20.157182+00:00",
+  "updated_at": "2026-08-13T17:10:53.995527+00:00",
   "status": "success",
-  "started_at": "2026-08-13T15:11:52.230073+00:00",
-  "finished_at": "2026-08-13T15:16:20.153923+00:00",
-  "posts_scanned": 30,
+  "started_at": "2026-08-13T17:09:21.814837+00:00",
+  "finished_at": "2026-08-13T17:10:53.993748+00:00",
+  "posts_scanned": 40,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "sonoshunta0503",
-      "likes": 47455,
-      "quotes": 34,
-      "bookmarks": 1100
+      "author": "nakiriayame",
+      "likes": 4762,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
-      "author": "milk_info",
-      "likes": 11932,
-      "quotes": 17,
-      "bookmarks": 438
+      "author": "shoko_takiwaki",
+      "likes": 4670,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
-      "author": "nino_honmono",
-      "likes": 11636,
-      "quotes": 46,
-      "bookmarks": 160
+      "author": "Tr0uT_2434",
+      "likes": 4548,
+      "quotes": 10,
+      "bookmarks": 70
     },
     {
-      "author": "takaohayato_mg",
-      "likes": 3816,
-      "quotes": 19,
-      "bookmarks": 151
+      "author": "akagi_wen",
+      "likes": 4093,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
-      "author": "iLiFE_official",
-      "likes": 2988,
-      "quotes": 16,
-      "bookmarks": 45
+      "author": "ado1024imokenp",
+      "likes": 3748,
+      "quotes": 27,
+      "bookmarks": 3700
     }
   ],
   "top5_by_progress": [
     {
-      "author": "nino_honmono",
-      "likes": 11636,
-      "quotes": 46,
-      "bookmarks": 160,
-      "progress_percent": 92
+      "author": "ado1024imokenp",
+      "likes": 3748,
+      "quotes": 27,
+      "bookmarks": 3700,
+      "progress_percent": 54
     },
     {
-      "author": "sonoshunta0503",
-      "likes": 47455,
-      "quotes": 34,
-      "bookmarks": 1100,
-      "progress_percent": 68
-    },
-    {
-      "author": "fantastics_fext",
-      "likes": 1013,
-      "quotes": 33,
-      "bookmarks": 48,
+      "author": "ado1024imokenp",
+      "likes": 2256,
+      "quotes": 24,
+      "bookmarks": 2200,
       "progress_percent": 48
     },
     {
-      "author": "YOONSANHA_offcl",
-      "likes": 574,
-      "quotes": 19,
-      "bookmarks": 43,
-      "progress_percent": 38
+      "author": "official_jo1",
+      "likes": 1167,
+      "quotes": 12,
+      "bookmarks": 47,
+      "progress_percent": 24
     },
     {
-      "author": "takaohayato_mg",
-      "likes": 3816,
-      "quotes": 19,
-      "bookmarks": 151,
-      "progress_percent": 38
+      "author": "Tr0uT_2434",
+      "likes": 4548,
+      "quotes": 10,
+      "bookmarks": 70,
+      "progress_percent": 20
+    },
+    {
+      "author": "gaku_fushimi",
+      "likes": 678,
+      "quotes": 2,
+      "bookmarks": 5,
+      "progress_percent": 4
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T17:10:53.995527+00:00",
+  "updated_at": "2026-08-13T19:17:42.210926+00:00",
   "status": "success",
-  "started_at": "2026-08-13T17:09:21.814837+00:00",
-  "finished_at": "2026-08-13T17:10:53.993748+00:00",
-  "posts_scanned": 40,
+  "started_at": "2026-08-13T19:17:15.358262+00:00",
+  "finished_at": "2026-08-13T19:17:42.207641+00:00",
+  "posts_scanned": 45,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "nakiriayame",
-      "likes": 4762,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "shoko_takiwaki",
-      "likes": 4670,
+      "author": "ado1024imokenp",
+      "likes": 8159,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Tr0uT_2434",
-      "likes": 4548,
-      "quotes": 10,
-      "bookmarks": 70
+      "likes": 7561,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Kanae_2434",
+      "likes": 5684,
+      "quotes": 0,
+      "bookmarks": 0
     },
     {
       "author": "akagi_wen",
-      "likes": 4093,
+      "likes": 5497,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ado1024imokenp",
-      "likes": 3748,
-      "quotes": 27,
-      "bookmarks": 3700
+      "likes": 5215,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ado1024imokenp",
-      "likes": 3748,
-      "quotes": 27,
-      "bookmarks": 3700,
-      "progress_percent": 54
+      "author": "sabudei0303",
+      "likes": 809,
+      "quotes": 9,
+      "bookmarks": 34,
+      "progress_percent": 18
     },
     {
-      "author": "ado1024imokenp",
-      "likes": 2256,
-      "quotes": 24,
-      "bookmarks": 2200,
-      "progress_percent": 48
+      "author": "Vau875",
+      "likes": 982,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     },
     {
-      "author": "official_jo1",
-      "likes": 1167,
-      "quotes": 12,
-      "bookmarks": 47,
-      "progress_percent": 24
+      "author": "Patra_HNST",
+      "likes": 501,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 4548,
-      "quotes": 10,
-      "bookmarks": 70,
-      "progress_percent": 20
+      "author": "hinano__otaku",
+      "likes": 882,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     },
     {
-      "author": "gaku_fushimi",
-      "likes": 678,
-      "quotes": 2,
-      "bookmarks": 5,
-      "progress_percent": 4
+      "author": "hinano_tachiba7",
+      "likes": 4167,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     }
   ]
 }

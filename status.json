@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-13T20:59:59.441162+00:00",
+  "updated_at": "2026-08-13T21:59:17.462305+00:00",
   "status": "success",
-  "started_at": "2026-08-13T20:59:31.816935+00:00",
-  "finished_at": "2026-08-13T20:59:59.437491+00:00",
-  "posts_scanned": 39,
+  "started_at": "2026-08-13T21:58:30.151397+00:00",
+  "finished_at": "2026-08-13T21:59:17.460208+00:00",
+  "posts_scanned": 40,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "hinano_tachiba7",
-      "likes": 6989,
+      "likes": 10348,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Vamp_Kuzu",
-      "likes": 5186,
+      "likes": 6376,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "suisei_submati",
-      "likes": 4075,
+      "likes": 5198,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ado1024imokenp",
-      "likes": 3840,
+      "likes": 4619,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "teruto_sub",
-      "likes": 3577,
+      "author": "47news_official",
+      "likes": 2818,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "aquamarin__",
-      "likes": 625,
-      "quotes": 4,
-      "bookmarks": 17,
-      "progress_percent": 8
+      "author": "illmaaaaaa",
+      "likes": 833,
+      "quotes": 1,
+      "bookmarks": 8,
+      "progress_percent": 2
     },
     {
-      "author": "ojm52811",
-      "likes": 557,
+      "author": "gemmalouisejpn",
+      "likes": 586,
       "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "uruha_ichinose",
-      "likes": 719,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
-    },
-    {
-      "author": "natsuiromatsuri",
-      "likes": 771,
-      "quotes": 0,
-      "bookmarks": 0,
+      "bookmarks": 49,
       "progress_percent": 0
     },
     {
       "author": "tsunomakiwatame",
-      "likes": 1121,
+      "likes": 539,
+      "quotes": 0,
+      "bookmarks": 6,
+      "progress_percent": 0
+    },
+    {
+      "author": "Suzuna_Nanase",
+      "likes": 980,
+      "quotes": 0,
+      "bookmarks": 3,
+      "progress_percent": 0
+    },
+    {
+      "author": "miumiu__mirai",
+      "likes": 613,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

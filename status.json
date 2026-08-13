@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-13T19:17:42.210926+00:00",
+  "updated_at": "2026-08-13T20:59:59.441162+00:00",
   "status": "success",
-  "started_at": "2026-08-13T19:17:15.358262+00:00",
-  "finished_at": "2026-08-13T19:17:42.207641+00:00",
-  "posts_scanned": 45,
+  "started_at": "2026-08-13T20:59:31.816935+00:00",
+  "finished_at": "2026-08-13T20:59:59.437491+00:00",
+  "posts_scanned": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "ado1024imokenp",
-      "likes": 8159,
+      "author": "hinano_tachiba7",
+      "likes": 6989,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 7561,
+      "author": "Vamp_Kuzu",
+      "likes": 5186,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Kanae_2434",
-      "likes": 5684,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akagi_wen",
-      "likes": 5497,
+      "author": "suisei_submati",
+      "likes": 4075,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ado1024imokenp",
-      "likes": 5215,
+      "likes": 3840,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "teruto_sub",
+      "likes": 3577,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "sabudei0303",
-      "likes": 809,
-      "quotes": 9,
-      "bookmarks": 34,
-      "progress_percent": 18
+      "author": "aquamarin__",
+      "likes": 625,
+      "quotes": 4,
+      "bookmarks": 17,
+      "progress_percent": 8
     },
     {
-      "author": "Vau875",
-      "likes": 982,
+      "author": "ojm52811",
+      "likes": 557,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "Patra_HNST",
-      "likes": 501,
+      "author": "uruha_ichinose",
+      "likes": 719,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "hinano__otaku",
-      "likes": 882,
+      "author": "natsuiromatsuri",
+      "likes": 771,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0
     },
     {
-      "author": "hinano_tachiba7",
-      "likes": 4167,
+      "author": "tsunomakiwatame",
+      "likes": 1121,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0

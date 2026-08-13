@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T12:01:04.505206+00:00",
+  "updated_at": "2026-08-13T13:45:43.609636+00:00",
   "status": "success",
-  "started_at": "2026-08-13T11:56:43.205456+00:00",
-  "finished_at": "2026-08-13T12:01:04.499531+00:00",
-  "posts_scanned": 29,
+  "started_at": "2026-08-13T13:41:00.885321+00:00",
+  "finished_at": "2026-08-13T13:45:43.607658+00:00",
+  "posts_scanned": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "MotokiOhmoriMGA",
-      "likes": 13488,
-      "quotes": 26,
-      "bookmarks": 377
+      "author": "nino_honmono",
+      "likes": 19353,
+      "quotes": 18,
+      "bookmarks": 633
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 8956,
-      "quotes": 35,
-      "bookmarks": 131
+      "author": "Speciale_info",
+      "likes": 6525,
+      "quotes": 18,
+      "bookmarks": 168
     },
     {
-      "author": "noguchi_iori",
-      "likes": 5749,
-      "quotes": 47,
-      "bookmarks": 84
+      "author": "Tr0uT_2434",
+      "likes": 3028,
+      "quotes": 5,
+      "bookmarks": 31
     },
     {
-      "author": "Fuwa_Minato",
-      "likes": 4877,
-      "quotes": 9,
-      "bookmarks": 81
+      "author": "takaichi_sanae",
+      "likes": 2183,
+      "quotes": 15,
+      "bookmarks": 40
     },
     {
-      "author": "takamatsuhitomi",
-      "likes": 4308,
-      "quotes": 0,
-      "bookmarks": 97
+      "author": "iLiFE_riri",
+      "likes": 2067,
+      "quotes": 15,
+      "bookmarks": 29
     }
   ],
   "top5_by_progress": [
     {
-      "author": "noguchi_iori",
-      "likes": 5749,
-      "quotes": 47,
-      "bookmarks": 84,
-      "progress_percent": 84
+      "author": "AND2BLE",
+      "likes": 1297,
+      "quotes": 19,
+      "bookmarks": 48,
+      "progress_percent": 38
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 8956,
-      "quotes": 35,
-      "bookmarks": 131,
-      "progress_percent": 70
-    },
-    {
-      "author": "MotokiOhmoriMGA",
-      "likes": 13488,
-      "quotes": 26,
-      "bookmarks": 377,
-      "progress_percent": 52
-    },
-    {
-      "author": "suzuki_hitomi_",
-      "likes": 1996,
-      "quotes": 23,
-      "bookmarks": 66,
-      "progress_percent": 46
-    },
-    {
-      "author": "FRUITS_ZIPPER",
-      "likes": 1576,
+      "author": "nino_honmono",
+      "likes": 19353,
       "quotes": 18,
-      "bookmarks": 68,
+      "bookmarks": 633,
       "progress_percent": 36
+    },
+    {
+      "author": "Speciale_info",
+      "likes": 6525,
+      "quotes": 18,
+      "bookmarks": 168,
+      "progress_percent": 36
+    },
+    {
+      "author": "iLiFE_koguma",
+      "likes": 1906,
+      "quotes": 18,
+      "bookmarks": 36,
+      "progress_percent": 36
+    },
+    {
+      "author": "takaichi_sanae",
+      "likes": 2183,
+      "quotes": 15,
+      "bookmarks": 40,
+      "progress_percent": 30
     }
   ]
 }

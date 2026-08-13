@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T21:59:17.462305+00:00",
+  "updated_at": "2026-08-13T23:03:01.193122+00:00",
   "status": "success",
-  "started_at": "2026-08-13T21:58:30.151397+00:00",
-  "finished_at": "2026-08-13T21:59:17.460208+00:00",
-  "posts_scanned": 40,
+  "started_at": "2026-08-13T22:59:10.629282+00:00",
+  "finished_at": "2026-08-13T23:03:01.190701+00:00",
+  "posts_scanned": 35,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "hinano_tachiba7",
-      "likes": 10348,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "nino_honmono",
+      "likes": 17594,
+      "quotes": 34,
+      "bookmarks": 48
     },
     {
-      "author": "Vamp_Kuzu",
-      "likes": 6376,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "k_r_r_l_l_",
+      "likes": 3359,
+      "quotes": 4,
+      "bookmarks": 137
     },
     {
-      "author": "suisei_submati",
-      "likes": 5198,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "TigersDreamlink",
+      "likes": 2244,
+      "quotes": 15,
+      "bookmarks": 24
     },
     {
-      "author": "ado1024imokenp",
-      "likes": 4619,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "Shikinagi_2434",
+      "likes": 1911,
+      "quotes": 6,
+      "bookmarks": 50
     },
     {
-      "author": "47news_official",
-      "likes": 2818,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "hima72_2nd",
+      "likes": 1552,
+      "quotes": 8,
+      "bookmarks": 36
     }
   ],
   "top5_by_progress": [
     {
-      "author": "illmaaaaaa",
-      "likes": 833,
-      "quotes": 1,
-      "bookmarks": 8,
-      "progress_percent": 2
+      "author": "nino_honmono",
+      "likes": 17594,
+      "quotes": 34,
+      "bookmarks": 48,
+      "progress_percent": 48
     },
     {
-      "author": "gemmalouisejpn",
-      "likes": 586,
-      "quotes": 0,
-      "bookmarks": 49,
-      "progress_percent": 0
+      "author": "kobateck",
+      "likes": 839,
+      "quotes": 14,
+      "bookmarks": 25,
+      "progress_percent": 25
     },
     {
-      "author": "tsunomakiwatame",
-      "likes": 539,
-      "quotes": 0,
+      "author": "chukimeroday",
+      "likes": 852,
+      "quotes": 3,
+      "bookmarks": 25,
+      "progress_percent": 6
+    },
+    {
+      "author": "ifmaroireisu",
+      "likes": 752,
+      "quotes": 3,
       "bookmarks": 6,
-      "progress_percent": 0
+      "progress_percent": 6
     },
     {
-      "author": "Suzuna_Nanase",
-      "likes": 980,
-      "quotes": 0,
-      "bookmarks": 3,
-      "progress_percent": 0
-    },
-    {
-      "author": "miumiu__mirai",
-      "likes": 613,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0
+      "author": "wanko_notcat",
+      "likes": 751,
+      "quotes": 4,
+      "bookmarks": 5,
+      "progress_percent": 5
     }
   ]
 }

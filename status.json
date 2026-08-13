@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T10:24:19.622164+00:00",
+  "updated_at": "2026-08-13T12:01:04.505206+00:00",
   "status": "success",
-  "started_at": "2026-08-13T10:20:11.486718+00:00",
-  "finished_at": "2026-08-13T10:24:19.620682+00:00",
-  "posts_scanned": 31,
+  "started_at": "2026-08-13T11:56:43.205456+00:00",
+  "finished_at": "2026-08-13T12:01:04.499531+00:00",
+  "posts_scanned": 29,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "sn_edogawa_tbs",
-      "likes": 3187,
-      "quotes": 17,
-      "bookmarks": 182
+      "author": "MotokiOhmoriMGA",
+      "likes": 13488,
+      "quotes": 26,
+      "bookmarks": 377
     },
     {
-      "author": "Kaida_Haru",
-      "likes": 2952,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 8956,
+      "quotes": 35,
+      "bookmarks": 131
+    },
+    {
+      "author": "noguchi_iori",
+      "likes": 5749,
+      "quotes": 47,
+      "bookmarks": 84
+    },
+    {
+      "author": "Fuwa_Minato",
+      "likes": 4877,
       "quotes": 9,
-      "bookmarks": 96
+      "bookmarks": 81
     },
     {
-      "author": "DAZNJPNBaseball",
-      "likes": 2546,
-      "quotes": 18,
-      "bookmarks": 192
-    },
-    {
-      "author": "sixfonia_info",
-      "likes": 1759,
-      "quotes": 9,
-      "bookmarks": 28
-    },
-    {
-      "author": "unkochan1234567",
-      "likes": 1528,
-      "quotes": 12,
-      "bookmarks": 17
+      "author": "takamatsuhitomi",
+      "likes": 4308,
+      "quotes": 0,
+      "bookmarks": 97
     }
   ],
   "top5_by_progress": [
     {
-      "author": "DAZNJPNBaseball",
-      "likes": 2546,
+      "author": "noguchi_iori",
+      "likes": 5749,
+      "quotes": 47,
+      "bookmarks": 84,
+      "progress_percent": 84
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 8956,
+      "quotes": 35,
+      "bookmarks": 131,
+      "progress_percent": 70
+    },
+    {
+      "author": "MotokiOhmoriMGA",
+      "likes": 13488,
+      "quotes": 26,
+      "bookmarks": 377,
+      "progress_percent": 52
+    },
+    {
+      "author": "suzuki_hitomi_",
+      "likes": 1996,
+      "quotes": 23,
+      "bookmarks": 66,
+      "progress_percent": 46
+    },
+    {
+      "author": "FRUITS_ZIPPER",
+      "likes": 1576,
       "quotes": 18,
-      "bookmarks": 192,
+      "bookmarks": 68,
       "progress_percent": 36
-    },
-    {
-      "author": "k_hiro_mitsu917",
-      "likes": 1078,
-      "quotes": 18,
-      "bookmarks": 38,
-      "progress_percent": 36
-    },
-    {
-      "author": "sn_edogawa_tbs",
-      "likes": 3187,
-      "quotes": 17,
-      "bookmarks": 182,
-      "progress_percent": 34
-    },
-    {
-      "author": "gucci_jp",
-      "likes": 634,
-      "quotes": 14,
-      "bookmarks": 62,
-      "progress_percent": 28
-    },
-    {
-      "author": "arale_yumemita",
-      "likes": 628,
-      "quotes": 13,
-      "bookmarks": 59,
-      "progress_percent": 26
     }
   ]
 }

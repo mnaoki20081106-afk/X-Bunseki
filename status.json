@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-13T23:58:19.316361+00:00",
+  "updated_at": "2026-08-14T02:44:20.195608+00:00",
   "status": "success",
-  "started_at": "2026-08-13T23:54:38.930800+00:00",
-  "finished_at": "2026-08-13T23:58:19.314195+00:00",
-  "posts_scanned": 39,
+  "started_at": "2026-08-14T02:41:08.719485+00:00",
+  "finished_at": "2026-08-14T02:44:20.192520+00:00",
+  "posts_scanned": 33,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "ito_44_3",
-      "likes": 13888,
+      "author": "SN__20200122",
+      "likes": 27634,
+      "quotes": 33,
+      "bookmarks": 1600
+    },
+    {
+      "author": "MotokiOhmoriMGA",
+      "likes": 11931,
+      "quotes": 15,
+      "bookmarks": 407
+    },
+    {
+      "author": "Suzuna_Nanase",
+      "likes": 10213,
+      "quotes": 15,
+      "bookmarks": 221
+    },
+    {
+      "author": "EBiDAN_official",
+      "likes": 9885,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 9190,
-      "quotes": 19,
-      "bookmarks": 181
-    },
-    {
-      "author": "TOMA_IKUTA10",
-      "likes": 7201,
-      "quotes": 32,
-      "bookmarks": 110
-    },
-    {
-      "author": "summer_sonic",
-      "likes": 3062,
-      "quotes": 33,
-      "bookmarks": 189
-    },
-    {
-      "author": "shishirobotan",
-      "likes": 2720,
-      "quotes": 3,
-      "bookmarks": 430
+      "author": "Kanae_2434",
+      "likes": 9547,
+      "quotes": 13,
+      "bookmarks": 74
     }
   ],
   "top5_by_progress": [
     {
-      "author": "summer_sonic",
-      "likes": 3062,
+      "author": "SN__20200122",
+      "likes": 27634,
       "quotes": 33,
-      "bookmarks": 189,
+      "bookmarks": 1600,
       "progress_percent": 66
     },
     {
-      "author": "TOMA_IKUTA10",
-      "likes": 7201,
-      "quotes": 32,
-      "bookmarks": 110,
-      "progress_percent": 64
+      "author": "hoppou_erika",
+      "likes": 3018,
+      "quotes": 30,
+      "bookmarks": 84,
+      "progress_percent": 60
     },
     {
-      "author": "asadora_nhk",
-      "likes": 846,
+      "author": "Equal_LOVE_12",
+      "likes": 4643,
+      "quotes": 29,
+      "bookmarks": 81,
+      "progress_percent": 58
+    },
+    {
+      "author": "p_ka2295079",
+      "likes": 1245,
       "quotes": 19,
-      "bookmarks": 42,
+      "bookmarks": 67,
       "progress_percent": 38
     },
     {
-      "author": "karaage_rutsubo",
-      "likes": 1818,
-      "quotes": 19,
-      "bookmarks": 52,
-      "progress_percent": 38
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 9190,
-      "quotes": 19,
-      "bookmarks": 181,
-      "progress_percent": 38
+      "author": "WEareWEST7",
+      "likes": 9026,
+      "quotes": 17,
+      "bookmarks": 379,
+      "progress_percent": 34
     }
   ]
 }

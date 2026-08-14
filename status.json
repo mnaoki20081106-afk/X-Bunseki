@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-14T13:44:05.060694+00:00",
+  "updated_at": "2026-08-14T15:23:18.494001+00:00",
   "status": "success",
-  "started_at": "2026-08-14T13:36:36.539170+00:00",
-  "finished_at": "2026-08-14T13:44:05.059487+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 31,
-  "notified_count": 31,
+  "started_at": "2026-08-14T15:14:58.582674+00:00",
+  "finished_at": "2026-08-14T15:23:18.492677+00:00",
+  "posts_scanned": 53,
+  "posts_flagged": 40,
+  "notified_count": 40,
   "top5_by_likes": [
     {
-      "author": "momonosekaiii",
-      "likes": 379655,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "mononoke_2525",
-      "likes": 204990,
+      "likes": 226580,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ALmnTJV1bdn923B",
-      "likes": 202258,
+      "author": "__xjkx",
+      "likes": 141341,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "NazologyInfo",
-      "likes": 139004,
+      "author": "e7osju",
+      "likes": 94856,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 110836,
+      "author": "HALT1975",
+      "likes": 81071,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "dshinob",
+      "likes": 73520,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Anker_JP",
-      "likes": 8993,
+      "author": "boketezizou",
+      "likes": 10546,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "mononoke_2525",
+      "likes": 226580,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "HALT1975",
+      "likes": 81071,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "__xjkx",
+      "likes": 141341,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "applied_group",
-      "likes": 16878,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 54178,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "momonosekaiii",
-      "likes": 379655,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "momonosekaiii",
-      "likes": 110836,
+      "likes": 16903,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

@@ -48,7 +48,8 @@ def send_notification(post: dict) -> bool:
     )
 
     is_gekiatsu = post.get("is_gekiatsu", False)
-    title = f"激アツ投稿 [{genre}]" if is_gekiatsu else f"急上昇検知 [{genre}]"
+    type_label = "瞬間" if post.get("explosive_type") == "instant" else "持続"
+    title = f"激アツ投稿 [{type_label}/{genre}]" if is_gekiatsu else f"急上昇検知 [{type_label}/{genre}]"
     tags = "fire,fire,fire" if is_gekiatsu else "fire"
 
     headers = {

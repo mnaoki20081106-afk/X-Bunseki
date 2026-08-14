@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-14T10:21:51.433694+00:00",
+  "updated_at": "2026-08-14T12:02:20.365714+00:00",
   "status": "success",
-  "started_at": "2026-08-14T10:15:00.426330+00:00",
-  "finished_at": "2026-08-14T10:21:51.432527+00:00",
-  "posts_scanned": 49,
-  "posts_flagged": 34,
-  "notified_count": 34,
+  "started_at": "2026-08-14T11:54:25.182906+00:00",
+  "finished_at": "2026-08-14T12:02:20.362069+00:00",
+  "posts_scanned": 52,
+  "posts_flagged": 35,
+  "notified_count": 35,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 53888,
+      "author": "Misosiru_City",
+      "likes": 191947,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "NRSr34",
+      "likes": 90793,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "kitanisuto30395",
+      "likes": 76225,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 40359,
+      "likes": 68230,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "hanomanga",
-      "likes": 29652,
+      "author": "akiko_lawson",
+      "likes": 54023,
       "quotes": 0,
       "bookmarks": 0
-    },
-    {
-      "author": "applied_group",
-      "likes": 16836,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "hapidanbui",
-      "likes": 13852,
-      "quotes": 0,
-      "bookmarks": 491
     }
   ],
   "top5_by_progress": [
     {
-      "author": "NVIDIAGeForceJP",
-      "likes": 1823,
+      "author": "Anker_JP",
+      "likes": 8985,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "applied_group",
+      "likes": 16859,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 42170,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 2323,
+      "likes": 2461,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "applied_group",
-      "likes": 16836,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "kirishimashuzo",
-      "likes": 2059,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "Anker_JP",
-      "likes": 8977,
+      "author": "akiko_lawson",
+      "likes": 54023,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

@@ -92,7 +92,6 @@ def _extract_tweet_data(article) -> dict | None:
     ★DOM構造はXの仕様変更で壊れやすい箇所。動かなければここを調整する。
     """
     try:
-        # 投稿URL・IDの取得(時刻リンクの href から辿る)
         time_el = article.query_selector("time")
         if not time_el:
             return None
@@ -105,20 +104,17 @@ def _extract_tweet_data(article) -> dict | None:
             return None
         url = f"https://x.com{href}" if href.startswith("/") else href
 
-        posted_at_raw = time_el.get_attribute("datetime")  # ISO8601形式で取得できる
+        posted_at_raw = time_el.get_attribute("datetime")
 
-        # 投稿者ハンドル
         author_handle = ""
         user_link = article.query_selector('a[role="link"][href^="/"]')
         if user_link:
             href_user = user_link.get_attribute("href") or ""
             author_handle = href_user.strip("/").split("/")[0]
 
-        # 本文
         text_el = article.query_selector('[data-testid="tweetText"]')
         text_snippet = text_el.inner_text()[:200] if text_el else ""
 
-        # エンゲージメント数値(返信・RT・いいね)
         def _count_by_testid(testid: str) -> int:
             el = article.query_selector(f'[data-testid="{testid}"]')
             if not el:
@@ -131,10 +127,6 @@ def _extract_tweet_data(article) -> dict | None:
         retweets = _count_by_testid("retweet")
         likes = _count_by_testid("like")
 
-        # 引用・ブックマーク・表示回数(インプレッション)は、検索結果一覧の
-        # カードには表示されないことが実際の運用で確認された。
-        # これらは _fetch_detail_stats() で個別の投稿ページから別途取得し、
-        # fetch_posts() 内で上書きする。ここではひとまず0を入れておく。
         quotes = 0
         bookmarks = 0
 
@@ -164,13 +156,6 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
     """
     「View quotes」リンクを実際に開き、引用投稿の一覧ページを表示して、
     そこに並んでいる投稿の件数を数える。
-
-    ★注意: Xは他人の投稿の「引用数」を正確な数字として公開していない
-    (投稿者本人のアナリティクス機能でしか正確な数は見れない)。
-    そのため、この関数は「実際に一覧に表示されている引用投稿を
-    数える」という近似的な方法を取っている。スクロールした範囲でしか
-    数えられないため、本当の総数より少なく出ることがある(下限値に近い)。
-    それでも「0のまま」より遥かに有用な情報になる。
     """
     try:
         quote_link = main_article.query_selector('a[href*="quotes" i], a[href*="Quotes" i]')
@@ -212,8 +197,7 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
 def _fetch_detail_stats(page, url: str) -> dict:
     """
     投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
-    (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
-    候補に絞ってからここで1件ずつ取得する。
+    (インプレッション)を取得する。
     """
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
@@ -256,9 +240,14 @@ def _fetch_detail_stats(page, url: str) -> dict:
     return {"quotes": quotes, "bookmarks": bookmarks, "impressions": impressions}
 
 
-def _search_one_query(page, query: str) -> list[dict]:
-    search_url = f"https://x.com/search?q={quote(query)}&src=typed_query&f=live"
-    print(f"  検索実行: {query}")
+def _search_one_query(page, query: str, mode: str = "live") -> list[dict]:
+    """
+    mode="live": 時系列順(Latest)。新しい投稿を幅広く拾う。
+    mode="top" : 話題性順(Top/おすすめ)。じわじわ系のバズを拾うために追加。
+    """
+    f_param = "&f=live" if mode == "live" else ""
+    search_url = f"https://x.com/search?q={quote(query)}&src=typed_query{f_param}"
+    print(f"  検索実行 [{mode}]: {query}")
     page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
 
@@ -286,16 +275,6 @@ def _search_one_query(page, query: str) -> list[dict]:
 def fetch_posts() -> list[dict]:
     """
     全ての検索クエリを実行し、正規化済みの投稿リストを返す。
-
-    2段階方式:
-      1段階目(検索): 広く投稿を集める。「時系列順(Latest)」と「話題性順(Top)」の
-                     両方で検索することで、新着の投稿だけでなく、じわじわ伸びて
-                     いる投稿(ニュース・災害など)も拾えるようにしている。
-                     いいね・RT・返信は取れるが、引用・ブックマーク・表示回数は
-                     ここでは取れない。
-      2段階目(詳細ページ): 1段階目のうち「瞬間バズ候補または持続バズ候補」に
-                     該当する投稿だけ、個別ページを開いて
-                     引用・ブックマーク・表示回数を取得する。
     """
     session_path = _session_path()
     all_posts = {}
@@ -314,18 +293,11 @@ def fetch_posts() -> list[dict]:
                     print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
                 except SessionExpiredError:
                     browser.close()
-                    raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
+                    raise
                 except Exception as e:  # noqa: BLE001
                     print(f"  [ERROR] 検索クエリ失敗 [{mode}] '{query}': {e}")
 
-        # 2段階目: 「瞬間バズ候補(いいね多め・2時間以内)」または
-        # 「持続バズ候補(一定のいいねがあり・8時間以内)」のどちらかに
-        # 該当する投稿だけ詳細ページを見る。
-        # 事前フィルタなので、v3の絶対閾値のうち緩い方(瞬間バズのいいね
-        # 閾値の半分程度)を目安に広めに候補を拾い、正確な判定は
-        # detector.filter_explosive() 側(quotes/bookmarks/impressions
-        # 取得後)で行う。
-        PRELIMINARY_LIKE_THRESHOLD = detector.INSTANT_LIKE_THRESHOLD // 2  # 400
+        PRELIMINARY_LIKE_THRESHOLD = detector.INSTANT_LIKE_THRESHOLD // 2
         candidates = [
             p for p in all_posts.values()
             if p.get("likes", 0) >= PRELIMINARY_LIKE_THRESHOLD
@@ -348,6 +320,18 @@ def fetch_posts() -> list[dict]:
 
     result = list(all_posts.values())
 
+    top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
+    print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
+    for p in top5:
+        print(
+            f"  [{p['post_id']}] {p['author_handle']}: "
+            f"likes={p['likes']}, quotes={p['quotes']}, "
+            f"bookmarks={p['bookmarks']}, retweets={p['retweets']}, "
+            f"replies={p['replies']}, posted_at={p['posted_at']}"
+        )
+    print("--- 診断ログここまで ---\n")
+
+    return result
 
 
 if __name__ == "__main__":

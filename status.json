@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-14T16:12:47.904248+00:00",
+  "updated_at": "2026-08-14T17:18:19.177371+00:00",
   "status": "success",
-  "started_at": "2026-08-14T16:04:55.182227+00:00",
-  "finished_at": "2026-08-14T16:12:47.902158+00:00",
-  "posts_scanned": 58,
-  "posts_flagged": 33,
-  "notified_count": 33,
+  "started_at": "2026-08-14T17:09:20.895612+00:00",
+  "finished_at": "2026-08-14T17:18:19.176097+00:00",
+  "posts_scanned": 63,
+  "posts_flagged": 38,
+  "notified_count": 38,
   "top5_by_likes": [
     {
-      "author": "Ptz_zt9",
-      "likes": 276768,
+      "author": "onechi8",
+      "likes": 185944,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "mononoke_2525",
-      "likes": 235888,
+      "author": "akiko_lawson",
+      "likes": 68247,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "__xjkx",
-      "likes": 144730,
+      "author": "zespri_jp",
+      "likes": 55981,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "e7osju",
-      "likes": 96146,
+      "author": "akiko_lawson",
+      "likes": 54446,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ururuzawa",
-      "likes": 83771,
+      "author": "ibsukionsen",
+      "likes": 53100,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "boketezizou",
-      "likes": 2990,
+      "likes": 11727,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "mononoke_2525",
-      "likes": 235888,
+      "author": "akiko_lawson",
+      "likes": 46151,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "boketezizou",
-      "likes": 11177,
+      "author": "Anker_JP",
+      "likes": 9009,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "__xjkx",
-      "likes": 144730,
+      "author": "HTMSLIFE",
+      "likes": 39820,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "pirooooon3",
-      "likes": 20730,
+      "author": "akiko_lawson",
+      "likes": 54446,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

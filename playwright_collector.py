@@ -288,10 +288,13 @@ def fetch_posts() -> list[dict]:
     全ての検索クエリを実行し、正規化済みの投稿リストを返す。
 
     2段階方式:
-      1段階目(検索): 広く投稿を集める。いいね・RT・返信は取れるが、
-                     引用・ブックマーク・表示回数はここでは取れない。
-      2段階目(詳細ページ): 1段階目のうち「いいねが閾値以上、かつ
-                     投稿から時間内」の候補だけ、個別ページを開いて
+      1段階目(検索): 広く投稿を集める。「時系列順(Latest)」と「話題性順(Top)」の
+                     両方で検索することで、新着の投稿だけでなく、じわじわ伸びて
+                     いる投稿(ニュース・災害など)も拾えるようにしている。
+                     いいね・RT・返信は取れるが、引用・ブックマーク・表示回数は
+                     ここでは取れない。
+      2段階目(詳細ページ): 1段階目のうち「瞬間バズ候補または持続バズ候補」に
+                     該当する投稿だけ、個別ページを開いて
                      引用・ブックマーク・表示回数を取得する。
     """
     session_path = _session_path()
@@ -303,21 +306,30 @@ def fetch_posts() -> list[dict]:
         page = context.new_page()
 
         for query in SEARCH_QUERIES:
-            try:
-                posts = _search_one_query(page, query)
-                for post in posts:
-                    all_posts[post["post_id"]] = post
-                print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
-            except SessionExpiredError:
-                browser.close()
-                raise
-            except Exception as e:  # noqa: BLE001
-                print(f"  [ERROR] 検索クエリ失敗 '{query}': {e}")
+            for mode in ("live", "top"):
+                try:
+                    posts = _search_one_query(page, query, mode=mode)
+                    for post in posts:
+                        all_posts[post["post_id"]] = post
+                    print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
+                except SessionExpiredError:
+                    browser.close()
+                    raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
+                except Exception as e:  # noqa: BLE001
+                    print(f"  [ERROR] 検索クエリ失敗 [{mode}] '{query}': {e}")
 
+        # 2段階目: 「瞬間バズ候補(いいね多め・2時間以内)」または
+        # 「持続バズ候補(一定のいいねがあり・8時間以内)」のどちらかに
+        # 該当する投稿だけ詳細ページを見る。
+        # 事前フィルタなので、v3の絶対閾値のうち緩い方(瞬間バズのいいね
+        # 閾値の半分程度)を目安に広めに候補を拾い、正確な判定は
+        # detector.filter_explosive() 側(quotes/bookmarks/impressions
+        # 取得後)で行う。
+        PRELIMINARY_LIKE_THRESHOLD = detector.INSTANT_LIKE_THRESHOLD // 2  # 400
         candidates = [
             p for p in all_posts.values()
-            if p.get("likes", 0) >= detector.LIKE_THRESHOLD
-            and detector.elapsed_hours(p["posted_at"]) <= detector.THRESHOLD_HOURS
+            if p.get("likes", 0) >= PRELIMINARY_LIKE_THRESHOLD
+            and detector.elapsed_hours(p["posted_at"]) <= detector.SUSTAINED_MAX_HOURS
         ]
         print(f"  [2段階目] 詳細ページ取得の対象: {len(candidates)}件")
 
@@ -336,18 +348,6 @@ def fetch_posts() -> list[dict]:
 
     result = list(all_posts.values())
 
-    top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
-    print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
-    for p in top5:
-        print(
-            f"  [{p['post_id']}] {p['author_handle']}: "
-            f"likes={p['likes']}, quotes={p['quotes']}, "
-            f"bookmarks={p['bookmarks']}, retweets={p['retweets']}, "
-            f"replies={p['replies']}, posted_at={p['posted_at']}"
-        )
-    print("--- 診断ログここまで ---\n")
-
-    return result
 
 
 if __name__ == "__main__":

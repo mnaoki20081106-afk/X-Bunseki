@@ -1,9 +1,78 @@
 {
-  "updated_at": "2026-08-14T04:06:34.717945+00:00",
-  "status": "error",
-  "started_at": "2026-08-14T04:06:31.762146+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "module 'detector' has no attribute 'INSTANT_LIKE_THRESHOLD'"
+  "updated_at": "2026-08-14T09:04:59.196439+00:00",
+  "status": "success",
+  "started_at": "2026-08-14T08:58:07.901138+00:00",
+  "finished_at": "2026-08-14T09:04:59.194991+00:00",
+  "posts_scanned": 52,
+  "posts_flagged": 43,
+  "notified_count": 43,
+  "top5_by_likes": [
+    {
+      "author": "DuckHouse_G",
+      "likes": 85635,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 53761,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 38807,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "SplatoonJP",
+      "likes": 18190,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "applied_group",
+      "likes": 16815,
+      "quotes": 0,
+      "bookmarks": 0
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "rindochihaya",
+      "likes": 980,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "Kanon_Takao",
+      "likes": 1502,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "applied_group",
+      "likes": 16815,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 38807,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "karen_fz0328",
+      "likes": 5743,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    }
+  ]
 }

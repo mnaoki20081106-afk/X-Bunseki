@@ -1,33 +1,27 @@
 {
-  "updated_at": "2026-08-14T22:43:04.301545+00:00",
+  "updated_at": "2026-08-14T23:39:13.494667+00:00",
   "status": "success",
-  "started_at": "2026-08-14T22:36:50.807274+00:00",
-  "finished_at": "2026-08-14T22:43:04.300342+00:00",
-  "posts_scanned": 61,
-  "posts_flagged": 35,
-  "notified_count": 35,
+  "started_at": "2026-08-14T23:33:16.001107+00:00",
+  "finished_at": "2026-08-14T23:39:13.493385+00:00",
+  "posts_scanned": 55,
+  "posts_flagged": 31,
+  "notified_count": 31,
   "top5_by_likes": [
     {
       "author": "momonosekaiii",
-      "likes": 379848,
+      "likes": 379892,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Tomohisanine",
-      "likes": 188736,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "h81jwzzzzz",
-      "likes": 123704,
+      "author": "poke_times",
+      "likes": 142640,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "momonosekaiii",
-      "likes": 112836,
+      "likes": 112966,
       "quotes": 0,
       "bookmarks": 0
     },
@@ -36,40 +30,46 @@
       "likes": 108698,
       "quotes": 0,
       "bookmarks": 0
+    },
+    {
+      "author": "UJfh8rgz3F46952",
+      "likes": 105135,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
       "author": "Anker_JP",
-      "likes": 9032,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "applied_group",
-      "likes": 16927,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "Snapdragon_JPN",
-      "likes": 3404,
+      "likes": 9035,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "sanrio_news",
-      "likes": 6573,
+      "likes": 6823,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "boketezizou",
-      "likes": 6279,
+      "author": "loveodoro",
+      "likes": 20149,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "GyomusuperOFCL",
+      "likes": 3299,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "applied_group",
+      "likes": 16931,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

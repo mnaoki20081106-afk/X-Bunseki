@@ -28,9 +28,10 @@ SMTP_PORT = 587
 
 def build_subject(post: dict) -> str:
     genre = post.get("genre", "その他")
+    type_label = "瞬間" if post.get("explosive_type") == "instant" else "持続"
     if post.get("is_gekiatsu"):
-        return f"🔥🔥🔥 激アツ投稿検知 [{genre}]"
-    return f"🔥 急上昇検知 [{genre}]"
+        return f"🔥🔥🔥 激アツ投稿検知 [{type_label}/{genre}]"
+    return f"🔥 急上昇検知 [{type_label}/{genre}]"
 
 
 def build_body(post: dict) -> str:

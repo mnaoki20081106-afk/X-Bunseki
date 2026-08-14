@@ -39,8 +39,10 @@ def build_message(post: dict) -> str:
     url = post.get("url", "")
     author = post.get("author_handle", "")
 
+    type_label = "⚡瞬間" if post.get("explosive_type") == "instant" else "📈持続"
+
     if post.get("is_gekiatsu"):
-        header = f"🔥🔥🔥 激アツ投稿 [{genre}]"
+        header = f"🔥🔥🔥 激アツ投稿 [{type_label}/{genre}]"
         quote_ratio = post.get("quote_like_ratio", 0) * 100
         bookmark_ratio = post.get("bookmark_like_ratio", 0) * 100
         detail = (
@@ -49,7 +51,7 @@ def build_message(post: dict) -> str:
             f"・ブックマーク{bookmarks:,}({bookmark_ratio:.0f}%)"
         )
     else:
-        header = f"🔥 急上昇検知 [{genre}]"
+        header = f"🔥 急上昇検知 [{type_label}/{genre}]"
         detail = (
             f"{author} の投稿が{hours}時間で"
             f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"

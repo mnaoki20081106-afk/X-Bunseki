@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-14T12:02:20.365714+00:00",
+  "updated_at": "2026-08-14T13:44:05.060694+00:00",
   "status": "success",
-  "started_at": "2026-08-14T11:54:25.182906+00:00",
-  "finished_at": "2026-08-14T12:02:20.362069+00:00",
+  "started_at": "2026-08-14T13:36:36.539170+00:00",
+  "finished_at": "2026-08-14T13:44:05.059487+00:00",
   "posts_scanned": 52,
-  "posts_flagged": 35,
-  "notified_count": 35,
+  "posts_flagged": 31,
+  "notified_count": 31,
   "top5_by_likes": [
     {
-      "author": "Misosiru_City",
-      "likes": 191947,
+      "author": "momonosekaiii",
+      "likes": 379655,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "NRSr34",
-      "likes": 90793,
+      "author": "mononoke_2525",
+      "likes": 204990,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kitanisuto30395",
-      "likes": 76225,
+      "author": "ALmnTJV1bdn923B",
+      "likes": 202258,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 68230,
+      "author": "NazologyInfo",
+      "likes": 139004,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 54023,
+      "author": "momonosekaiii",
+      "likes": 110836,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "Anker_JP",
-      "likes": 8985,
+      "likes": 8993,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "applied_group",
-      "likes": 16859,
+      "likes": 16878,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "akiko_lawson",
-      "likes": 42170,
+      "likes": 54178,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "McDonaldsJapan",
-      "likes": 2461,
+      "author": "momonosekaiii",
+      "likes": 379655,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "akiko_lawson",
-      "likes": 54023,
+      "author": "momonosekaiii",
+      "likes": 110836,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

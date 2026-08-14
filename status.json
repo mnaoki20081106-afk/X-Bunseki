@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-14T17:18:19.177371+00:00",
+  "updated_at": "2026-08-14T19:18:19.261412+00:00",
   "status": "success",
-  "started_at": "2026-08-14T17:09:20.895612+00:00",
-  "finished_at": "2026-08-14T17:18:19.176097+00:00",
-  "posts_scanned": 63,
-  "posts_flagged": 38,
-  "notified_count": 38,
+  "started_at": "2026-08-14T19:10:17.978220+00:00",
+  "finished_at": "2026-08-14T19:18:19.259655+00:00",
+  "posts_scanned": 76,
+  "posts_flagged": 32,
+  "notified_count": 32,
   "top5_by_likes": [
     {
-      "author": "onechi8",
-      "likes": 185944,
+      "author": "arashi5official",
+      "likes": 1516915,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 68247,
+      "author": "mononoke_2525",
+      "likes": 252009,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "zespri_jp",
-      "likes": 55981,
+      "author": "Misosiru_City",
+      "likes": 192110,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 54446,
+      "author": "Sakenmilove",
+      "likes": 181149,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ibsukionsen",
-      "likes": 53100,
+      "author": "susuki_hozuki",
+      "likes": 152982,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
+      "author": "kkkoplm",
+      "likes": 95520,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "zespri_jp",
+      "likes": 57077,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "YahooNewsTopics",
+      "likes": 6753,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
       "author": "boketezizou",
-      "likes": 11727,
+      "likes": 12106,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "akiko_lawson",
-      "likes": 46151,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "Anker_JP",
-      "likes": 9009,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "HTMSLIFE",
-      "likes": 39820,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 54446,
+      "author": "susuki_hozuki",
+      "likes": 152982,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

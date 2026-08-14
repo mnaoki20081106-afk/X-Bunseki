@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-14T15:23:18.494001+00:00",
+  "updated_at": "2026-08-14T16:12:47.904248+00:00",
   "status": "success",
-  "started_at": "2026-08-14T15:14:58.582674+00:00",
-  "finished_at": "2026-08-14T15:23:18.492677+00:00",
-  "posts_scanned": 53,
-  "posts_flagged": 40,
-  "notified_count": 40,
+  "started_at": "2026-08-14T16:04:55.182227+00:00",
+  "finished_at": "2026-08-14T16:12:47.902158+00:00",
+  "posts_scanned": 58,
+  "posts_flagged": 33,
+  "notified_count": 33,
   "top5_by_likes": [
     {
+      "author": "Ptz_zt9",
+      "likes": 276768,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
       "author": "mononoke_2525",
-      "likes": 226580,
+      "likes": 235888,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "__xjkx",
-      "likes": 141341,
+      "likes": 144730,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "e7osju",
-      "likes": 94856,
+      "likes": 96146,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "HALT1975",
-      "likes": 81071,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "dshinob",
-      "likes": 73520,
+      "author": "ururuzawa",
+      "likes": 83771,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "boketezizou",
-      "likes": 10546,
+      "likes": 2990,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "mononoke_2525",
-      "likes": 226580,
+      "likes": 235888,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "HALT1975",
-      "likes": 81071,
+      "author": "boketezizou",
+      "likes": 11177,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "__xjkx",
-      "likes": 141341,
+      "likes": 144730,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "applied_group",
-      "likes": 16903,
+      "author": "pirooooon3",
+      "likes": 20730,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

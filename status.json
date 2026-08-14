@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-14T09:04:59.196439+00:00",
+  "updated_at": "2026-08-14T10:21:51.433694+00:00",
   "status": "success",
-  "started_at": "2026-08-14T08:58:07.901138+00:00",
-  "finished_at": "2026-08-14T09:04:59.194991+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 43,
-  "notified_count": 43,
+  "started_at": "2026-08-14T10:15:00.426330+00:00",
+  "finished_at": "2026-08-14T10:21:51.432527+00:00",
+  "posts_scanned": 49,
+  "posts_flagged": 34,
+  "notified_count": 34,
   "top5_by_likes": [
     {
-      "author": "DuckHouse_G",
-      "likes": 85635,
+      "author": "akiko_lawson",
+      "likes": 53888,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 53761,
+      "likes": 40359,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 38807,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "SplatoonJP",
-      "likes": 18190,
+      "author": "hanomanga",
+      "likes": 29652,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 16815,
+      "likes": 16836,
       "quotes": 0,
       "bookmarks": 0
+    },
+    {
+      "author": "hapidanbui",
+      "likes": 13852,
+      "quotes": 0,
+      "bookmarks": 491
     }
   ],
   "top5_by_progress": [
     {
-      "author": "rindochihaya",
-      "likes": 980,
+      "author": "NVIDIAGeForceJP",
+      "likes": 1823,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "Kanon_Takao",
-      "likes": 1502,
+      "author": "McDonaldsJapan",
+      "likes": 2323,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "applied_group",
-      "likes": 16815,
+      "likes": 16836,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "akiko_lawson",
-      "likes": 38807,
+      "author": "kirishimashuzo",
+      "likes": 2059,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "karen_fz0328",
-      "likes": 5743,
+      "author": "Anker_JP",
+      "likes": 8977,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

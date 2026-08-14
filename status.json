@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-14T20:48:40.534803+00:00",
+  "updated_at": "2026-08-14T21:43:10.843519+00:00",
   "status": "success",
-  "started_at": "2026-08-14T20:42:29.667579+00:00",
-  "finished_at": "2026-08-14T20:48:40.533086+00:00",
-  "posts_scanned": 67,
-  "posts_flagged": 9,
-  "notified_count": 9,
+  "started_at": "2026-08-14T21:37:19.266013+00:00",
+  "finished_at": "2026-08-14T21:43:10.842274+00:00",
+  "posts_scanned": 62,
+  "posts_flagged": 12,
+  "notified_count": 12,
   "top5_by_likes": [
     {
-      "author": "rurumo2525",
-      "likes": 148197,
+      "author": "arashi5official",
+      "likes": 1516910,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142643,
+      "author": "panipani1976",
+      "likes": 154484,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "nag1_r",
+      "likes": 144167,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "tokumei_6_6",
-      "likes": 118129,
+      "likes": 118135,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 112664,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "uturou_adhd",
-      "likes": 109846,
+      "author": "tyomateee",
+      "likes": 97398,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "boketezizou",
-      "likes": 6242,
+      "likes": 3268,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "boketezizou",
-      "likes": 12193,
+      "likes": 12224,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "boketezizou",
-      "likes": 3256,
+      "likes": 6258,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "applied_group",
-      "likes": 16924,
+      "author": "tyomateee",
+      "likes": 97398,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "Anker_JP",
-      "likes": 9019,
+      "author": "arashi5official",
+      "likes": 1516910,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

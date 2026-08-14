@@ -1,42 +1,64 @@
 """
-detector.py
-「超短時間爆発」の判定ロジック(v2: 引用・ブックマーク優先版)
+detector.py (v3)
+「瞬間バズ」+「持続バズ(ニュース・災害系)」の両方を拾う判定ロジック。
 
-インプレッション数は無料では技術的に取得できないため、
-公開データだけで取れる以下の指標を使う。
-
-判定基準(投稿後 THRESHOLD_HOURS 以内に、以下をすべて満たす):
-  - 引用(quotes)    >= QUOTE_THRESHOLD
-  - ブックマーク数   >= BOOKMARK_THRESHOLD
-  - いいね数         >= LIKE_THRESHOLD
-
-ランキング優先順位(以下の順で重み付けしたスコア):
-  1. 引用の伸び速度(1時間あたり)
-  2. ブックマークの伸び速度(1時間あたり)
-  3. いいねの絶対数
+v2からの変更点(Grokへのレビュー依頼を経て、2026-08に再設計):
+  - 投稿後1時間固定だった判定を、「瞬間バズ(2時間以内・速度重視)」と
+    「持続バズ(最大8時間・減衰する速度基準+インプレッション成長)」の
+    2系統に分離。これにより「3時間かけて600万インプレッションに到達した
+    ニュース投稿」のような、じわじわ伸びるタイプも拾えるようにした。
+  - 引用数(quotes)を必須条件から外し、スコアリングの補助指標に格下げ。
+    理由: Xが引用数を公開しておらず、実際には「View quotes一覧を数件
+    スクロールして数えた近似値(下限値)」でしかないため、これを必須条件に
+    すると不正確な値で通知の可否が左右されてしまう。
+  - 「激アツ」判定を、引用・ブックマーク・返信の3つの比率のうち
+    「2つ以上」満たせばOKという緩やかな基準に変更(元は引用+ブックマーク
+    の両方が必須で厳しすぎた)。
+  - Grok提案の「早期警告(進捗55%で通知)」は採用していない。理由:
+    閾値未達の投稿まで通知対象にすると、本来の「本当にバズった投稿だけ
+    知りたい」という目的に反し通知過多になるため。進捗情報自体は
+    「動作確認」機能(rank_by_progress)で見れるようにしている。
 """
 
+import math
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-# ── 設定値(投稿後1時間の目安値。運用しながら調整すること) ──────────
-THRESHOLD_HOURS = 1.0
+# ── 時間窓 ──────────────────────────────────────────
+INSTANT_MAX_HOURS = 2.0      # 瞬間バズの対象窓
+SUSTAINED_MAX_HOURS = 8.0    # 持続バズの対象窓(ニュース系はここまで見る)
 
-QUOTE_THRESHOLD = 50        # 引用: 50〜100以上 → 下限の50を採用(緩め側)
-BOOKMARK_THRESHOLD = 100     # ブックマーク: 100〜300以上 → 下限の100を採用
-LIKE_THRESHOLD = 500         # いいね: 500〜1000以上 → 下限の500を採用
+# ── 瞬間バズ用の閾値(絶対数 or 速度のどちらかを満たせばOK) ──
+INSTANT_LIKE_THRESHOLD = 800
+INSTANT_LIKE_VELOCITY = 400     # いいね/時間
+INSTANT_RT_THRESHOLD = 50
+INSTANT_RT_VELOCITY = 30        # リポスト/時間
+INSTANT_REPLY_THRESHOLD = 30
+INSTANT_REPLY_VELOCITY = 20     # 返信/時間
 
-# ランキングスコアの重み(優先順位 引用 > ブックマーク > いいね を反映)
-WEIGHT_QUOTE_VELOCITY = 3.0
-WEIGHT_BOOKMARK_VELOCITY = 2.0
-WEIGHT_LIKE_COUNT = 1.0
+# ── 持続バズ用(速度の減衰しにくさ + インプレッション成長) ──
+SUSTAINED_LIKE_VELOCITY_BASE = 250   # 投稿直後の基準速度(いいね/時間)
+SUSTAINED_DECAY_FACTOR = 0.25        # 時間経過による要求速度の緩和係数
+SUSTAINED_MIN_IMPRESSIONS = 50_000   # 詳細ページ取得後の最低インプレッション
+SUSTAINED_MIN_AGE_HOURS = 0.3        # あまりに新しい投稿は持続バズ判定の対象外
 
-# 「激アツ」判定: 絶対値の条件を満たした上で、さらに比率が高い投稿を特別扱いする
-# - 引用 ÷ いいね が10%を超える → 「意見を付け加えたい」熱量が強いサイン
-# - ブックマーク ÷ いいね が20%を超える → 「保存してでも残したい」心理が強いサイン
-GEKIATSU_QUOTE_LIKE_RATIO = 0.10
-GEKIATSU_BOOKMARK_LIKE_RATIO = 0.20
-# ──────────────────────────────────────────────────────────
+# ── 激アツ判定(3指標中2つ以上を満たせばOK) ──
+GEKIATSU_QUOTE_LIKE_RATIO = 0.04     # 引用÷いいね 4%以上(近似値なので緩め)
+GEKIATSU_BOOKMARK_LIKE_RATIO = 0.08  # ブックマーク÷いいね 8%以上
+GEKIATSU_REPLY_LIKE_RATIO = 0.05     # 返信÷いいね 5%以上(ニュース系で重要)
+
+# ── ランキングスコアの重み ──
+WEIGHT_LIKE_VELOCITY = 2.5
+WEIGHT_RT_VELOCITY = 2.0
+WEIGHT_REPLY_VELOCITY = 1.8
+WEIGHT_IMPRESSION_GROWTH = 1.5
+WEIGHT_QUOTE_APPROX = 0.8    # 引用は近似値なので重みを下げる(補助指標)
+WEIGHT_BOOKMARK_VELOCITY = 1.2
+
+# 速度計算時の経過時間の下限(15分未満は15分として計算し、投稿直後の
+# ブレによる速度の過大評価を防ぐ)
+MIN_VELOCITY_HOURS = 0.25
+# ──────────────────────────────────────────────────────
 
 
 @dataclass
@@ -64,89 +86,148 @@ def elapsed_hours(posted_at, now=None) -> float:
     now = now or datetime.now(timezone.utc)
     posted = _parse_dt(posted_at)
     delta = now - posted
-    return delta.total_seconds() / 3600.0
+    return max(delta.total_seconds() / 3600.0, 0.01)  # ゼロ除算防止
 
 
 def _velocity(count: int, hours: float) -> float:
     """1時間あたりの増加速度(概算)。経過時間が短すぎる場合は過大評価を避けるため下限を設ける。"""
-    safe_hours = max(hours, 0.25)
+    safe_hours = max(hours, MIN_VELOCITY_HOURS)
     return count / safe_hours
 
 
-def is_explosive(post: dict, now=None) -> bool:
-    """
-    一次フィルタ: 投稿後 THRESHOLD_HOURS 以内に、
-    引用・ブックマーク・いいねの全ての閾値を満たしたか
-
-    ★引用数は、Xが数字として公開していないため、実際に「View quotes」
-    リンク先の一覧を開いて件数を数える近似値(playwright_collector.pyの
-    _count_quote_tweets参照)。スクロールで確認できた範囲の件数なので、
-    非常に多くの引用がある投稿では実際より少なく出ることがある。
-    """
-    hours = elapsed_hours(post["posted_at"], now=now)
-    if hours > THRESHOLD_HOURS:
-        return False
-    if post.get("quotes", 0) < QUOTE_THRESHOLD:
-        return False
-    if post.get("bookmarks", 0) < BOOKMARK_THRESHOLD:
-        return False
-    if post.get("likes", 0) < LIKE_THRESHOLD:
-        return False
-    return True
-
-
-def _compute_ratios(post: dict) -> tuple[float, float]:
-    """
-    (引用÷いいね, ブックマーク÷いいね) の比率を計算する。
-    いいねが0の場合はゼロ除算を避けて0.0を返す。
-    """
-    likes = post.get("likes", 0)
-    if likes <= 0:
-        return 0.0, 0.0
+def _compute_ratios(post: dict) -> tuple[float, float, float]:
+    """(引用÷いいね, ブックマーク÷いいね, 返信÷いいね) の比率を計算する"""
+    likes = max(post.get("likes", 0), 1)
     quote_ratio = post.get("quotes", 0) / likes
     bookmark_ratio = post.get("bookmarks", 0) / likes
-    return quote_ratio, bookmark_ratio
+    reply_ratio = post.get("replies", 0) / likes
+    return quote_ratio, bookmark_ratio, reply_ratio
+
+
+def is_instant_explosive(post: dict, now=None) -> bool:
+    """
+    瞬間バズ判定: 投稿後2時間以内に、いいね・RT・返信の
+    絶対数または速度が一定以上か(柔軟にORで判定)。
+    """
+    hours = elapsed_hours(post["posted_at"], now=now)
+    if hours > INSTANT_MAX_HOURS:
+        return False
+
+    likes = post.get("likes", 0)
+    rts = post.get("retweets", 0)
+    replies = post.get("replies", 0)
+
+    like_ok = likes >= INSTANT_LIKE_THRESHOLD or _velocity(likes, hours) >= INSTANT_LIKE_VELOCITY
+    rt_ok = rts >= INSTANT_RT_THRESHOLD or _velocity(rts, hours) >= INSTANT_RT_VELOCITY
+    reply_ok = replies >= INSTANT_REPLY_THRESHOLD or _velocity(replies, hours) >= INSTANT_REPLY_VELOCITY
+
+    return like_ok and (rt_ok or reply_ok)
+
+
+def is_sustained_explosive(post: dict, now=None) -> bool:
+    """
+    持続バズ判定(ニュース・災害系): 投稿後最大8時間まで見る。
+    いいね速度が「時間が経っても大きく減衰していない」ことと、
+    インプレッション成長(取得できていれば)・エンゲージメント比率を見る。
+    """
+    hours = elapsed_hours(post["posted_at"], now=now)
+    if hours > SUSTAINED_MAX_HOURS or hours < SUSTAINED_MIN_AGE_HOURS:
+        return False
+
+    likes = post.get("likes", 0)
+    impressions = post.get("impressions", 0)
+    replies = post.get("replies", 0)
+    bookmarks = post.get("bookmarks", 0)
+    quotes = post.get("quotes", 0)
+
+    # 投稿直後は速い速度を要求し、時間が経つにつれて要求を緩める
+    required_velocity = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
+    like_velocity = _velocity(likes, hours)
+
+    velocity_ok = like_velocity >= required_velocity
+    # impressionsが未取得(0)の場合は、この条件はスキップ扱いにする
+    impression_ok = impressions >= SUSTAINED_MIN_IMPRESSIONS if impressions else True
+    engagement_ok = (replies / max(likes, 1)) >= 0.03 or bookmarks >= 20 or quotes >= 8
+
+    return velocity_ok and (impression_ok or engagement_ok)
+
+
+def is_explosive(post: dict, now=None) -> bool:
+    """瞬間バズ・持続バズのいずれかを満たせば「爆発」とみなす"""
+    return is_instant_explosive(post, now=now) or is_sustained_explosive(post, now=now)
+
+
+def explosive_type(post: dict, now=None) -> str | None:
+    """どちらの種類の爆発として判定されたかを返す(通知文言の出し分け用)"""
+    if is_instant_explosive(post, now=now):
+        return "instant"
+    if is_sustained_explosive(post, now=now):
+        return "sustained"
+    return None
 
 
 def is_gekiatsu(post: dict) -> bool:
     """
-    「激アツ」判定: 引用÷いいね と ブックマーク÷いいね の両方が
-    閾値を超えているか(絶対値の閾値は is_explosive 側で別途チェック済み前提)
+    「激アツ」判定: 引用比率・ブックマーク比率・返信比率のうち、
+    3つ中2つ以上が閾値を超えているか(引用は近似値なのでANDにせず緩めている)
     """
-    quote_ratio, bookmark_ratio = _compute_ratios(post)
-    return (
-        quote_ratio >= GEKIATSU_QUOTE_LIKE_RATIO
-        and bookmark_ratio >= GEKIATSU_BOOKMARK_LIKE_RATIO
+    quote_ratio, bookmark_ratio, reply_ratio = _compute_ratios(post)
+    conditions = [
+        quote_ratio >= GEKIATSU_QUOTE_LIKE_RATIO,
+        bookmark_ratio >= GEKIATSU_BOOKMARK_LIKE_RATIO,
+        reply_ratio >= GEKIATSU_REPLY_LIKE_RATIO,
+    ]
+    return sum(conditions) >= 2
+
+
+def rank_score(post: dict, now=None) -> float:
+    """通知候補の中での優先順位付け用スコア"""
+    hours = elapsed_hours(post["posted_at"], now=now)
+    likes = post.get("likes", 0)
+    rts = post.get("retweets", 0)
+    replies = post.get("replies", 0)
+    quotes = post.get("quotes", 0)
+    bookmarks = post.get("bookmarks", 0)
+    impressions = post.get("impressions", 0)
+
+    like_v = _velocity(likes, hours)
+    rt_v = _velocity(rts, hours)
+    reply_v = _velocity(replies, hours)
+    quote_v = _velocity(quotes, hours)
+    bookmark_v = _velocity(bookmarks, hours)
+
+    score = (
+        WEIGHT_LIKE_VELOCITY * like_v
+        + WEIGHT_RT_VELOCITY * rt_v
+        + WEIGHT_REPLY_VELOCITY * reply_v
+        + WEIGHT_QUOTE_APPROX * quote_v
+        + WEIGHT_BOOKMARK_VELOCITY * bookmark_v
     )
+
+    if impressions:
+        score += WEIGHT_IMPRESSION_GROWTH * math.log1p(impressions / 10_000)
+
+    return score
 
 
 def rank_candidates(posts: list[dict], now=None) -> list[dict]:
     """
-    爆発候補を「引用速度 > ブックマーク速度 > いいね数」の優先順位でスコアリングし、
-    降順にランキングする。あわせて「激アツ」判定・比率も付与する。
+    爆発判定を通過した投稿群を rank_score 降順で並べ、
+    各種フィールド(スコア・比率・激アツ判定・種別)を付与して返す。
     """
     ranked = []
     for post in posts:
         hours = elapsed_hours(post["posted_at"], now=now)
-        quote_v = _velocity(post.get("quotes", 0), hours)
-        bookmark_v = _velocity(post.get("bookmarks", 0), hours)
-        likes = post.get("likes", 0)
-        quote_ratio, bookmark_ratio = _compute_ratios(post)
-
-        score = (
-            WEIGHT_QUOTE_VELOCITY * quote_v
-            + WEIGHT_BOOKMARK_VELOCITY * bookmark_v
-            + WEIGHT_LIKE_COUNT * likes
-        )
+        quote_ratio, bookmark_ratio, reply_ratio = _compute_ratios(post)
 
         enriched = dict(post)
         enriched["elapsed_hours"] = round(hours, 2)
-        enriched["quote_velocity_per_hour"] = round(quote_v, 1)
-        enriched["bookmark_velocity_per_hour"] = round(bookmark_v, 1)
-        enriched["buzz_score"] = round(score, 1)
+        enriched["buzz_score"] = round(rank_score(post, now=now), 1)
         enriched["quote_like_ratio"] = round(quote_ratio, 3)
         enriched["bookmark_like_ratio"] = round(bookmark_ratio, 3)
+        enriched["reply_like_ratio"] = round(reply_ratio, 3)
         enriched["is_gekiatsu"] = is_gekiatsu(post)
+        enriched["explosive_type"] = explosive_type(post, now=now)
         ranked.append(enriched)
 
     ranked.sort(key=lambda p: p["buzz_score"], reverse=True)
@@ -154,7 +235,7 @@ def rank_candidates(posts: list[dict], now=None) -> list[dict]:
 
 
 def filter_explosive(posts: list[dict], now=None) -> list[dict]:
-    """収集した投稿群から、爆発条件を満たすものだけ抽出してランキング付きで返す"""
+    """収集した投稿群から、爆発条件(瞬間 or 持続)を満たすものだけ抽出してランキング付きで返す"""
     candidates = [p for p in posts if is_explosive(p, now=now)]
     return rank_candidates(candidates, now=now)
 
@@ -162,36 +243,44 @@ def filter_explosive(posts: list[dict], now=None) -> list[dict]:
 def explosive_progress(post: dict, now=None) -> float:
     """
     「爆発条件にどれだけ近づいているか」を0.0〜1.0+の値で返す。
-    引用・ブックマーク・いいね、それぞれの「閾値に対する達成率」を計算し、
-    その中で最も低い値(=一番足りていない項目)を採用する。
-    1.0以上なら、その投稿は既に is_explosive の条件を満たしている。
-
-    「動作確認」通知で、まだ通知条件は満たしていないが最も近い投稿を
-    見せるために使う(早期発見の目安として)。
-    投稿からの経過時間が THRESHOLD_HOURS を超えている場合は対象外として 0.0 を返す
-    (もう通知され得ない投稿なので、近さを見る意味が無いため)。
+    瞬間バズ側の進捗と持続バズ側の進捗をそれぞれ計算し、高い方を採用する。
+    「動作確認」機能で、まだ通知条件は満たしていないが最も近い投稿を
+    見せるために使う(早期発見の目安。ただし通知トリガーにはしない)。
     """
     hours = elapsed_hours(post["posted_at"], now=now)
-    if hours > THRESHOLD_HOURS:
-        return 0.0
+    likes = post.get("likes", 0)
+    rts = post.get("retweets", 0)
+    replies = post.get("replies", 0)
+    impressions = post.get("impressions", 0)
 
-    quote_progress = post.get("quotes", 0) / QUOTE_THRESHOLD if QUOTE_THRESHOLD else 1.0
-    bookmark_progress = post.get("bookmarks", 0) / BOOKMARK_THRESHOLD if BOOKMARK_THRESHOLD else 1.0
-    like_progress = post.get("likes", 0) / LIKE_THRESHOLD if LIKE_THRESHOLD else 1.0
+    # 瞬間側の進捗(0〜1.5でクリップ)
+    instant_like_p = min(likes / INSTANT_LIKE_THRESHOLD, 1.5) if INSTANT_LIKE_THRESHOLD else 0
+    instant_rt_p = min(rts / INSTANT_RT_THRESHOLD, 1.5) if INSTANT_RT_THRESHOLD else 0
+    instant_reply_p = min(replies / INSTANT_REPLY_THRESHOLD, 1.5) if INSTANT_REPLY_THRESHOLD else 0
+    instant_score = instant_like_p * 0.5 + instant_rt_p * 0.3 + instant_reply_p * 0.2
 
-    return min(quote_progress, bookmark_progress, like_progress)
+    # 持続側の進捗(速度ベース)
+    required_v = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
+    actual_v = _velocity(likes, hours)
+    sustained_score = min(actual_v / required_v, 1.8) if required_v else 0
+
+    if impressions:
+        imp_score = min(impressions / SUSTAINED_MIN_IMPRESSIONS, 1.5)
+        sustained_score = sustained_score * 0.7 + imp_score * 0.3
+
+    return round(max(instant_score, sustained_score), 3)
 
 
 def rank_by_progress(posts: list[dict], now=None, limit: int = 5) -> list[dict]:
     """
     「爆発条件への近さ」順に投稿を並べ、上位limit件を返す。
     各投稿には progress(0.0〜1.0+)フィールドを付与する。
-    早期発見・動作確認の目的で使う。
+    早期発見・動作確認の目的で使う(通知はしない、あくまで参考情報)。
     """
     enriched = []
     for post in posts:
         p = dict(post)
-        p["progress"] = round(explosive_progress(post, now=now), 3)
+        p["progress"] = explosive_progress(post, now=now)
         enriched.append(p)
 
     enriched.sort(key=lambda p: p["progress"], reverse=True)

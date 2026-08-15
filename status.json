@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-15T01:54:17.486269+00:00",
+  "updated_at": "2026-08-15T03:08:04.652434+00:00",
   "status": "success",
-  "started_at": "2026-08-15T01:46:57.260896+00:00",
-  "finished_at": "2026-08-15T01:54:17.484979+00:00",
-  "posts_scanned": 59,
-  "posts_flagged": 38,
-  "notified_count": 38,
+  "started_at": "2026-08-15T03:01:41.771272+00:00",
+  "finished_at": "2026-08-15T03:08:04.651160+00:00",
+  "posts_scanned": 61,
+  "posts_flagged": 35,
+  "notified_count": 35,
   "top5_by_likes": [
     {
       "author": "_mumei_R",
-      "likes": 544217,
+      "likes": 544211,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "mononoke_2525",
-      "likes": 274157,
+      "likes": 279828,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "polymarketjapan",
-      "likes": 156462,
+      "author": "poke_times",
+      "likes": 142643,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kitanisuto30395",
-      "likes": 133404,
+      "author": "Zakuro_Shiro",
+      "likes": 128678,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tokumei_6_6",
-      "likes": 118165,
+      "author": "_sa_me_sa_ma",
+      "likes": 127227,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "zespri_jp",
-      "likes": 61322,
+      "author": "mononoke_2525",
+      "likes": 279828,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "polymarketjapan",
-      "likes": 156462,
+      "author": "_sa_me_sa_ma",
+      "likes": 127227,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "kitanisuto30395",
-      "likes": 133404,
+      "author": "tokumei_6_6",
+      "likes": 118181,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "___mobko____",
-      "likes": 78316,
+      "author": "_mumei_R",
+      "likes": 544211,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "us_missouri",
-      "likes": 36814,
+      "author": "natsui_tanoshi",
+      "likes": 104314,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

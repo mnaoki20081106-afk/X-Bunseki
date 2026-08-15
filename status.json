@@ -1,27 +1,21 @@
 {
-  "updated_at": "2026-08-15T05:41:28.488084+00:00",
+  "updated_at": "2026-08-15T06:59:31.204927+00:00",
   "status": "success",
-  "started_at": "2026-08-15T05:37:08.465795+00:00",
-  "finished_at": "2026-08-15T05:41:28.486789+00:00",
-  "posts_scanned": 60,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-15T06:55:17.688434+00:00",
+  "finished_at": "2026-08-15T06:59:31.203794+00:00",
+  "posts_scanned": 59,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
       "author": "_mumei_R",
-      "likes": 544214,
+      "likes": 544204,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "mononoke_2525",
-      "likes": 290476,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Misosiru_City",
-      "likes": 192176,
+      "likes": 295035,
       "quotes": 0,
       "bookmarks": 0
     },
@@ -33,46 +27,52 @@
     },
     {
       "author": "poke_times",
-      "likes": 142649,
+      "likes": 142653,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "NazologyInfo",
+      "likes": 138988,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 925,
-      "quotes": 26,
-      "bookmarks": 13,
-      "progress_percent": 171
-    },
-    {
       "author": "McDonaldsJapan",
-      "likes": 8494,
+      "likes": 11168,
       "quotes": 19,
-      "bookmarks": 1300,
+      "bookmarks": 1900,
       "progress_percent": 171
     },
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 921,
-      "quotes": 17,
-      "bookmarks": 25,
-      "progress_percent": 155
+      "author": "twf003",
+      "likes": 2310,
+      "quotes": 15,
+      "bookmarks": 735,
+      "progress_percent": 171
     },
     {
-      "author": "Lauren_iroas",
-      "likes": 5947,
-      "quotes": 4,
-      "bookmarks": 47,
-      "progress_percent": 150
+      "author": "DisneyStudioJ_A",
+      "likes": 34350,
+      "quotes": 19,
+      "bookmarks": 1600,
+      "progress_percent": 171
     },
     {
-      "author": "Anker_JP",
-      "likes": 9058,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
+      "author": "NazologyInfo",
+      "likes": 5885,
+      "quotes": 18,
+      "bookmarks": 1500,
+      "progress_percent": 171
+    },
+    {
+      "author": "comiketofficial",
+      "likes": 10503,
+      "quotes": 22,
+      "bookmarks": 728,
+      "progress_percent": 167
     }
   ]
 }

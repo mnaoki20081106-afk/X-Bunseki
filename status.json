@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-15T09:42:34.947071+00:00",
+  "updated_at": "2026-08-15T10:41:55.024613+00:00",
   "status": "success",
-  "started_at": "2026-08-15T09:36:45.903310+00:00",
-  "finished_at": "2026-08-15T09:42:34.945908+00:00",
-  "posts_scanned": 61,
-  "posts_flagged": 6,
-  "notified_count": 6,
+  "started_at": "2026-08-15T10:35:56.535617+00:00",
+  "finished_at": "2026-08-15T10:41:54.825410+00:00",
+  "posts_scanned": 59,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "shoutube1217",
-      "likes": 155716,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "kitanisuto30395",
-      "likes": 154330,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "poke_times",
-      "likes": 142653,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "ibsukionsen",
-      "likes": 114275,
+      "likes": 117420,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "natsui_tanoshi",
-      "likes": 109778,
+      "author": "dshinob",
+      "likes": 91489,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "us_missouri",
+      "likes": 90940,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "DisneyStudioJ_A",
+      "likes": 61943,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 54694,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,38 +41,38 @@
   "top5_by_progress": [
     {
       "author": "boketezizou",
-      "likes": 3145,
+      "likes": 5423,
       "quotes": 0,
-      "bookmarks": 3300,
+      "bookmarks": 870,
       "progress_percent": 171
     },
     {
-      "author": "mazetamax",
-      "likes": 10816,
+      "author": "YahooNewsTopics",
+      "likes": 1701,
       "quotes": 0,
-      "bookmarks": 2000,
+      "bookmarks": 341,
       "progress_percent": 171
     },
     {
-      "author": "DisneyStudioJ_A",
-      "likes": 57203,
+      "author": "NazologyInfo",
+      "likes": 5627,
       "quotes": 0,
-      "bookmarks": 2500,
+      "bookmarks": 1500,
+      "progress_percent": 171
+    },
+    {
+      "author": "47news_official",
+      "likes": 5841,
+      "quotes": 0,
+      "bookmarks": 491,
       "progress_percent": 171
     },
     {
       "author": "iwabajunki06",
-      "likes": 2567,
+      "likes": 3133,
       "quotes": 0,
-      "bookmarks": 1100,
+      "bookmarks": 1300,
       "progress_percent": 171
-    },
-    {
-      "author": "nino_honmono",
-      "likes": 10002,
-      "quotes": 33,
-      "bookmarks": 73,
-      "progress_percent": 150
     }
   ]
 }

@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-15T19:36:08.619942+00:00",
+  "updated_at": "2026-08-15T20:40:44.946111+00:00",
   "status": "success",
-  "started_at": "2026-08-15T19:30:43.043876+00:00",
-  "finished_at": "2026-08-15T19:36:08.617170+00:00",
+  "started_at": "2026-08-15T20:35:35.437487+00:00",
+  "finished_at": "2026-08-15T20:40:44.943648+00:00",
   "posts_scanned": 74,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "mononoke_2525",
-      "likes": 335621,
+      "author": "_mumei_R",
+      "likes": 544134,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Sakenmilove",
-      "likes": 181158,
+      "author": "tesu777UR",
+      "likes": 153354,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "pam99ham",
-      "likes": 179808,
+      "author": "NazologyInfo",
+      "likes": 138944,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "gyouza_strong",
-      "likes": 174968,
+      "author": "ibsukionsen",
+      "likes": 138249,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "lir69",
-      "likes": 174772,
+      "author": "MNLTDRV",
+      "likes": 126606,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "Fooootest",
-      "likes": 3550,
+      "likes": 3899,
       "quotes": 0,
-      "bookmarks": 102,
-      "progress_percent": 159
-    },
-    {
-      "author": "SixTONES_SME",
-      "likes": 19773,
-      "quotes": 0,
-      "bookmarks": 1200,
-      "progress_percent": 157
+      "bookmarks": 109,
+      "progress_percent": 163
     },
     {
       "author": "Kanae_2434",
-      "likes": 3768,
+      "likes": 4221,
       "quotes": 1,
-      "bookmarks": 20,
+      "bookmarks": 24,
+      "progress_percent": 150
+    },
+    {
+      "author": "rinu_nico",
+      "likes": 4083,
+      "quotes": 20,
+      "bookmarks": 80,
       "progress_percent": 150
     },
     {
       "author": "sakuramiko35",
-      "likes": 4905,
-      "quotes": 18,
-      "bookmarks": 123,
+      "likes": 5420,
+      "quotes": 0,
+      "bookmarks": 139,
       "progress_percent": 150
     },
     {
       "author": "boketezizou",
-      "likes": 18355,
+      "likes": 18649,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150

@@ -1,51 +1,63 @@
 """
-detector.py (v3)
-「瞬間バズ」+「持続バズ(ニュース・災害系)」の両方を拾う判定ロジック。
+detector.py (v3.3)
+「瞬間バズ」+「持続バズ(ニュース・災害系)」の判定ロジック。
+「1日0〜1件」レベルの厳しさを目標に、Grokとの複数回のレビューを経て
+再設計した。
 
-v2からの変更点(Grokへのレビュー依頼を経て、2026-08に再設計):
-  - 投稿後1時間固定だった判定を、「瞬間バズ(2時間以内・速度重視)」と
-    「持続バズ(最大8時間・減衰する速度基準+インプレッション成長)」の
-    2系統に分離。これにより「3時間かけて600万インプレッションに到達した
-    ニュース投稿」のような、じわじわ伸びるタイプも拾えるようにした。
-  - 引用数(quotes)を必須条件から外し、スコアリングの補助指標に格下げ。
-    理由: Xが引用数を公開しておらず、実際には「View quotes一覧を数件
-    スクロールして数えた近似値(下限値)」でしかないため、これを必須条件に
-    すると不正確な値で通知の可否が左右されてしまう。
-  - 「激アツ」判定を、引用・ブックマーク・返信の3つの比率のうち
-    「2つ以上」満たせばOKという緩やかな基準に変更(元は引用+ブックマーク
-    の両方が必須で厳しすぎた)。
-  - Grok提案の「早期警告(進捗55%で通知)」は採用していない。理由:
-    閾値未達の投稿まで通知対象にすると、本来の「本当にバズった投稿だけ
-    知りたい」という目的に反し通知過多になるため。進捗情報自体は
-    「動作確認」機能(rank_by_progress)で見れるようにしている。
+これまでの変遷:
+  v2  : 投稿後1時間固定、引用・ブックマーク・いいねの3条件必須
+  v3  : 瞬間/持続の2系統に分離。引用を補助指標に格下げ → 緩すぎて通知過多
+  v3.1: 閾値引き上げ、激アツを厳格ANDに戻す → まだ緩い
+  v3.2: 速度換算の抜け道(短時間の伸びを1時間換算で水増し)を発見・修正
+        → さらに「インプレッション未取得を自動合格扱いにする」抜け道も発見・修正
+  v3.3: Grok第3提案を反映。時間窓を短縮、インプレッションを完全必須化
+        (未取得は無条件で不合格)、アカウント単位クールダウンを追加
+
+★重要な設計判断の記録:
+  - 引用数(quotes)は必須条件にしない。Xが公開しておらず、実際には
+    「View quotes一覧を数件スクロールして数えた近似値(下限値)」でしか
+    ないため。あくまで補助条件・激アツ判定・スコアリングにのみ使う。
+  - 持続バズは「インプレッションが取得できていなければ無条件で不合格」。
+    以前は代替判定で通してしまい、抜け道になっていた。
+  - 早期警告(閾値未達でも通知)は採用しない。ノイズになるため。
+    進捗情報自体は「動作確認」機能(rank_by_progress)で見れる。
 """
 
 import math
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
-# ── 時間窓 ──────────────────────────────────────────
-INSTANT_MAX_HOURS = 2.0      # 瞬間バズの対象窓
-SUSTAINED_MAX_HOURS = 8.0    # 持続バズの対象窓(ニュース系はここまで見る)
+# ── 時間窓(v3.3で短縮) ──────────────────────────────
+INSTANT_MAX_HOURS = 1.5      # 瞬間バズの対象窓(2.0→1.5)
+SUSTAINED_MAX_HOURS = 5.0    # 持続バズの対象窓(6.0→5.0)
 
-# ── 瞬間バズ用の閾値(絶対数 or 速度のどちらかを満たせばOK) ──
-INSTANT_LIKE_THRESHOLD = 800
-INSTANT_LIKE_VELOCITY = 400     # いいね/時間
-INSTANT_RT_THRESHOLD = 50
-INSTANT_RT_VELOCITY = 30        # リポスト/時間
-INSTANT_REPLY_THRESHOLD = 30
-INSTANT_REPLY_VELOCITY = 20     # 返信/時間
+# ── 瞬間バズ用の閾値(v3.3) ──
+INSTANT_LIKE_THRESHOLD = 2500
+INSTANT_LIKE_VELOCITY = 1200    # いいね/時間
+INSTANT_RT_THRESHOLD = 200
+INSTANT_RT_VELOCITY = 80        # リポスト/時間
+INSTANT_REPLY_THRESHOLD = 100
+INSTANT_REPLY_VELOCITY = 40     # 返信/時間
 
-# ── 持続バズ用(速度の減衰しにくさ + インプレッション成長) ──
-SUSTAINED_LIKE_VELOCITY_BASE = 250   # 投稿直後の基準速度(いいね/時間)
-SUSTAINED_DECAY_FACTOR = 0.25        # 時間経過による要求速度の緩和係数
-SUSTAINED_MIN_IMPRESSIONS = 50_000   # 詳細ページ取得後の最低インプレッション
+# 速度換算による早期判定は、投稿からこの時間が経つまで使わせない。
+# 理由: 投稿直後30〜40分の伸びを1時間換算すると異常に高い速度になり、
+# 速度閾値をいくら上げても実質意味が無くなってしまうため(v3.2で発見)。
+MIN_AGE_FOR_VELOCITY_HOURS = 1.0
+
+# ── 持続バズ用(v3.3: 全条件AND必須、インプレッション必須) ──
+SUSTAINED_LIKE_VELOCITY_BASE = 600   # 投稿直後の基準速度(いいね/時間)
+SUSTAINED_DECAY_FACTOR = 0.2         # 時間経過による要求速度の緩和係数
+                                       # (1h→500, 3h→375, 5h→300 相当)
+SUSTAINED_MIN_IMPRESSIONS = 300_000  # 最低インプレッション。未取得は無条件不合格
 SUSTAINED_MIN_AGE_HOURS = 0.3        # あまりに新しい投稿は持続バズ判定の対象外
+SUSTAINED_MIN_REPLY_LIKE_RATIO = 0.06   # 返信÷いいね 6%以上(必須)
+SUSTAINED_MIN_BOOKMARKS = 30             # ブックマーク30以上
+SUSTAINED_MIN_QUOTES = 15                # または引用15以上(近似値。どちらか片方でOK)
 
-# ── 激アツ判定(3指標中2つ以上を満たせばOK) ──
-GEKIATSU_QUOTE_LIKE_RATIO = 0.04     # 引用÷いいね 4%以上(近似値なので緩め)
-GEKIATSU_BOOKMARK_LIKE_RATIO = 0.08  # ブックマーク÷いいね 8%以上
-GEKIATSU_REPLY_LIKE_RATIO = 0.05     # 返信÷いいね 5%以上(ニュース系で重要)
+# ── 激アツ判定(3指標すべて必須) ──
+GEKIATSU_QUOTE_LIKE_RATIO = 0.06     # 引用÷いいね 6%以上
+GEKIATSU_BOOKMARK_LIKE_RATIO = 0.12  # ブックマーク÷いいね 12%以上
+GEKIATSU_REPLY_LIKE_RATIO = 0.07     # 返信÷いいね 7%以上
 
 # ── ランキングスコアの重み ──
 WEIGHT_LIKE_VELOCITY = 2.5
@@ -58,6 +70,12 @@ WEIGHT_BOOKMARK_VELOCITY = 1.2
 # 速度計算時の経過時間の下限(15分未満は15分として計算し、投稿直後の
 # ブレによる速度の過大評価を防ぐ)
 MIN_VELOCITY_HOURS = 0.25
+
+# 早期警告(通知トリガーとしては使わない。参考値として残すのみ)
+EARLY_WARNING_PROGRESS = 0.90
+
+# アカウント単位のクールダウン(同じ投稿者から立て続けに通知しない)
+ACCOUNT_COOLDOWN_HOURS = 2.0
 # ──────────────────────────────────────────────────────
 
 
@@ -106,8 +124,15 @@ def _compute_ratios(post: dict) -> tuple[float, float, float]:
 
 def is_instant_explosive(post: dict, now=None) -> bool:
     """
-    瞬間バズ判定: 投稿後2時間以内に、いいね・RT・返信の
-    絶対数または速度が一定以上か(柔軟にORで判定)。
+    瞬間バズ判定: 投稿後1.5時間以内に、いいね・RT・返信の
+    絶対数を全て満たすか(v3.3で速度換算を完全撤廃)。
+
+    ★経緯: 当初は「絶対数 または 速度換算」のORロジックだったが、
+    速度換算(count÷経過時間)は短い時間で伸びた投稿を1時間換算で
+    過大評価してしまい、速度側の閾値をいくら上げても実質意味が
+    無くなる問題が繰り返し発生した。1.5時間という短い判定窓なら、
+    絶対数だけで十分に「速さ」を表現できるため、速度換算を廃止して
+    単純化した。
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     if hours > INSTANT_MAX_HOURS:
@@ -117,22 +142,28 @@ def is_instant_explosive(post: dict, now=None) -> bool:
     rts = post.get("retweets", 0)
     replies = post.get("replies", 0)
 
-    like_ok = likes >= INSTANT_LIKE_THRESHOLD or _velocity(likes, hours) >= INSTANT_LIKE_VELOCITY
-    rt_ok = rts >= INSTANT_RT_THRESHOLD or _velocity(rts, hours) >= INSTANT_RT_VELOCITY
-    reply_ok = replies >= INSTANT_REPLY_THRESHOLD or _velocity(replies, hours) >= INSTANT_REPLY_VELOCITY
-
-    return like_ok and (rt_ok or reply_ok)
+    return (
+        likes >= INSTANT_LIKE_THRESHOLD
+        and rts >= INSTANT_RT_THRESHOLD
+        and replies >= INSTANT_REPLY_THRESHOLD
+    )
 
 
 def is_sustained_explosive(post: dict, now=None) -> bool:
     """
-    持続バズ判定(ニュース・災害系): 投稿後最大8時間まで見る。
-    いいね速度が「時間が経っても大きく減衰していない」ことと、
-    インプレッション成長(取得できていれば)・エンゲージメント比率を見る。
+    持続バズ判定(ニュース・災害系): 投稿後最大5時間まで見る。
+    以下を「全て」満たした場合のみ合格(v3.3でAND必須に統一):
+      - いいね速度が、経過時間に応じた要求速度以上
+      - インプレッションが30万以上(★未取得の場合は無条件で不合格。
+        以前はここが代替判定で通ってしまう抜け道だった)
+      - 返信÷いいね比率が6%以上
+      - ブックマーク30以上、または引用15以上(近似値なのでどちらかでOK)
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     if hours > SUSTAINED_MAX_HOURS or hours < SUSTAINED_MIN_AGE_HOURS:
         return False
+    if hours < MIN_AGE_FOR_VELOCITY_HOURS:
+        return False  # 持続バズは元々「時間をかけて伸びる」ものなので早すぎる判定はしない
 
     likes = post.get("likes", 0)
     impressions = post.get("impressions", 0)
@@ -140,16 +171,19 @@ def is_sustained_explosive(post: dict, now=None) -> bool:
     bookmarks = post.get("bookmarks", 0)
     quotes = post.get("quotes", 0)
 
-    # 投稿直後は速い速度を要求し、時間が経つにつれて要求を緩める
     required_velocity = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
     like_velocity = _velocity(likes, hours)
-
     velocity_ok = like_velocity >= required_velocity
-    # impressionsが未取得(0)の場合は、この条件はスキップ扱いにする
-    impression_ok = impressions >= SUSTAINED_MIN_IMPRESSIONS if impressions else True
-    engagement_ok = (replies / max(likes, 1)) >= 0.03 or bookmarks >= 20 or quotes >= 8
 
-    return velocity_ok and (impression_ok or engagement_ok)
+    # インプレッション未取得は無条件で不合格(代替判定は無し)
+    if not impressions:
+        return False
+    impression_ok = impressions >= SUSTAINED_MIN_IMPRESSIONS
+
+    reply_ratio_ok = (replies / max(likes, 1)) >= SUSTAINED_MIN_REPLY_LIKE_RATIO
+    bookmark_or_quote_ok = bookmarks >= SUSTAINED_MIN_BOOKMARKS or quotes >= SUSTAINED_MIN_QUOTES
+
+    return velocity_ok and impression_ok and reply_ratio_ok and bookmark_or_quote_ok
 
 
 def is_explosive(post: dict, now=None) -> bool:
@@ -158,7 +192,7 @@ def is_explosive(post: dict, now=None) -> bool:
 
 
 def explosive_type(post: dict, now=None) -> str | None:
-    """どちらの種類の爆発として判定されたかを返す(通知文言の出し分け用)"""
+    """どちらの種類の爆発として判定されたかを返す(優先順位: 瞬間 → 持続)"""
     if is_instant_explosive(post, now=now):
         return "instant"
     if is_sustained_explosive(post, now=now):
@@ -167,17 +201,13 @@ def explosive_type(post: dict, now=None) -> str | None:
 
 
 def is_gekiatsu(post: dict) -> bool:
-    """
-    「激アツ」判定: 引用比率・ブックマーク比率・返信比率のうち、
-    3つ中2つ以上が閾値を超えているか(引用は近似値なのでANDにせず緩めている)
-    """
+    """「激アツ」判定: 引用比率・ブックマーク比率・返信比率の3つすべてを満たす厳格AND"""
     quote_ratio, bookmark_ratio, reply_ratio = _compute_ratios(post)
-    conditions = [
-        quote_ratio >= GEKIATSU_QUOTE_LIKE_RATIO,
-        bookmark_ratio >= GEKIATSU_BOOKMARK_LIKE_RATIO,
-        reply_ratio >= GEKIATSU_REPLY_LIKE_RATIO,
-    ]
-    return sum(conditions) >= 2
+    return (
+        quote_ratio >= GEKIATSU_QUOTE_LIKE_RATIO
+        and bookmark_ratio >= GEKIATSU_BOOKMARK_LIKE_RATIO
+        and reply_ratio >= GEKIATSU_REPLY_LIKE_RATIO
+    )
 
 
 def rank_score(post: dict, now=None) -> float:
@@ -244,8 +274,7 @@ def explosive_progress(post: dict, now=None) -> float:
     """
     「爆発条件にどれだけ近づいているか」を0.0〜1.0+の値で返す。
     瞬間バズ側の進捗と持続バズ側の進捗をそれぞれ計算し、高い方を採用する。
-    「動作確認」機能で、まだ通知条件は満たしていないが最も近い投稿を
-    見せるために使う(早期発見の目安。ただし通知トリガーにはしない)。
+    「動作確認」機能で参考情報として見せるためのもの(通知トリガーにはしない)。
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     likes = post.get("likes", 0)
@@ -253,13 +282,11 @@ def explosive_progress(post: dict, now=None) -> float:
     replies = post.get("replies", 0)
     impressions = post.get("impressions", 0)
 
-    # 瞬間側の進捗(0〜1.5でクリップ)
     instant_like_p = min(likes / INSTANT_LIKE_THRESHOLD, 1.5) if INSTANT_LIKE_THRESHOLD else 0
     instant_rt_p = min(rts / INSTANT_RT_THRESHOLD, 1.5) if INSTANT_RT_THRESHOLD else 0
     instant_reply_p = min(replies / INSTANT_REPLY_THRESHOLD, 1.5) if INSTANT_REPLY_THRESHOLD else 0
     instant_score = instant_like_p * 0.5 + instant_rt_p * 0.3 + instant_reply_p * 0.2
 
-    # 持続側の進捗(速度ベース)
     required_v = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
     actual_v = _velocity(likes, hours)
     sustained_score = min(actual_v / required_v, 1.8) if required_v else 0
@@ -267,6 +294,8 @@ def explosive_progress(post: dict, now=None) -> float:
     if impressions:
         imp_score = min(impressions / SUSTAINED_MIN_IMPRESSIONS, 1.5)
         sustained_score = sustained_score * 0.7 + imp_score * 0.3
+    else:
+        sustained_score *= 0.5  # インプレッション未取得は大幅減点(必須条件のため)
 
     return round(max(instant_score, sustained_score), 3)
 
@@ -274,7 +303,6 @@ def explosive_progress(post: dict, now=None) -> float:
 def rank_by_progress(posts: list[dict], now=None, limit: int = 5) -> list[dict]:
     """
     「爆発条件への近さ」順に投稿を並べ、上位limit件を返す。
-    各投稿には progress(0.0〜1.0+)フィールドを付与する。
     早期発見・動作確認の目的で使う(通知はしない、あくまで参考情報)。
     """
     enriched = []
@@ -285,3 +313,16 @@ def rank_by_progress(posts: list[dict], now=None, limit: int = 5) -> list[dict]:
 
     enriched.sort(key=lambda p: p["progress"], reverse=True)
     return enriched[:limit]
+
+
+def is_in_cooldown(author_handle: str, last_notified_at, now=None) -> bool:
+    """
+    アカウント単位のクールダウン判定。同じ投稿者から
+    ACCOUNT_COOLDOWN_HOURS以内に既に通知済みなら True(=今回は見送る)。
+    last_notified_at は None(未通知)またはISO8601文字列。
+    """
+    if not last_notified_at:
+        return False
+    now = now or datetime.now(timezone.utc)
+    last_dt = _parse_dt(last_notified_at)
+    return (now - last_dt) < timedelta(hours=ACCOUNT_COOLDOWN_HOURS)

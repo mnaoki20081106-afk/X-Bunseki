@@ -92,6 +92,7 @@ def _extract_tweet_data(article) -> dict | None:
     ★DOM構造はXの仕様変更で壊れやすい箇所。動かなければここを調整する。
     """
     try:
+        # 投稿URL・IDの取得(時刻リンクの href から辿る)
         time_el = article.query_selector("time")
         if not time_el:
             return None
@@ -104,17 +105,22 @@ def _extract_tweet_data(article) -> dict | None:
             return None
         url = f"https://x.com{href}" if href.startswith("/") else href
 
-        posted_at_raw = time_el.get_attribute("datetime")
+        posted_at_raw = time_el.get_attribute("datetime")  # ISO8601形式で取得できる
 
+        # 投稿者ハンドル
         author_handle = ""
         user_link = article.query_selector('a[role="link"][href^="/"]')
         if user_link:
             href_user = user_link.get_attribute("href") or ""
             author_handle = href_user.strip("/").split("/")[0]
 
+        # 本文
         text_el = article.query_selector('[data-testid="tweetText"]')
         text_snippet = text_el.inner_text()[:200] if text_el else ""
 
+        # エンゲージメント数値(返信・RT・いいね)
+        # 標準的なアクションバーのボタンには data-testid が振られており、
+        # aria-label に「返信 12件」のような形式で件数が入っている
         def _count_by_testid(testid: str) -> int:
             el = article.query_selector(f'[data-testid="{testid}"]')
             if not el:
@@ -127,6 +133,10 @@ def _extract_tweet_data(article) -> dict | None:
         retweets = _count_by_testid("retweet")
         likes = _count_by_testid("like")
 
+        # 引用・ブックマーク・表示回数(インプレッション)は、検索結果一覧の
+        # カードには表示されないことが実際の運用で確認された。
+        # これらは _fetch_detail_stats() で個別の投稿ページから別途取得し、
+        # fetch_posts() 内で上書きする。ここではひとまず0を入れておく。
         quotes = 0
         bookmarks = 0
 
@@ -156,10 +166,18 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
     """
     「View quotes」リンクを実際に開き、引用投稿の一覧ページを表示して、
     そこに並んでいる投稿の件数を数える。
+
+    ★注意: Xは他人の投稿の「引用数」を正確な数字として公開していない
+    (投稿者本人のアナリティクス機能でしか正確な数は見れない)。
+    そのため、この関数は「実際に一覧に表示されている引用投稿を
+    数える」という近似的な方法を取っている。スクロールした範囲でしか
+    数えられないため、本当の総数より少なく出ることがある(下限値に近い)。
+    それでも「0のまま」より遥かに有用な情報になる。
     """
     try:
         quote_link = main_article.query_selector('a[href*="quotes" i], a[href*="Quotes" i]')
         if not quote_link:
+            # aria-label や表示テキストに "quote" を含むリンクも探す
             all_links = main_article.query_selector_all("a")
             for link in all_links:
                 text = (link.inner_text() or "").lower()
@@ -169,7 +187,7 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
                     break
 
         if not quote_link:
-            return 0
+            return 0  # 引用が無い投稿は、そもそもリンク自体が表示されない
 
         href = quote_link.get_attribute("href")
         if not href:
@@ -179,6 +197,7 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
         page.goto(quote_url, wait_until="domcontentloaded", timeout=20000)
         page.wait_for_timeout(2000)
 
+        # 数回スクロールして、読み込まれる引用投稿の数を数える
         seen_ids = set()
         for _ in range(3):
             articles = page.query_selector_all('article[data-testid="tweet"]')
@@ -197,7 +216,20 @@ def _count_quote_tweets(page, main_article, base_url: str) -> int:
 def _fetch_detail_stats(page, url: str) -> dict:
     """
     投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
-    (インプレッション)を取得する。
+    (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
+    候補に絞ってからここで1件ずつ取得する。
+
+    ★実運用で判明した重要な事実(2026-08):
+      - 表示回数(Views)は "7,445 Views" のような明確なテキストとして
+        投稿本体に含まれており、確実に取得できる。
+      - Viewsの直後に、ラベルの付いていない4つの数字が並んでいる。
+        実際の投稿で検索段階の値と突き合わせたところ、この並び順は
+        [返信, リポスト, いいね, ブックマーク] であることが確認できた。
+        4つ目がブックマーク数にあたる。
+      - 「引用(Quotes)」は数字としては表示されておらず、「View quotes」
+        というリンクがあるだけ。そのため _count_quote_tweets() で
+        実際にそのリンク先を開いて件数を数える方式を取っている
+        (正確な総数ではなく、スクロールで確認できた件数の近似値)。
     """
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
@@ -213,11 +245,13 @@ def _fetch_detail_stats(page, url: str) -> dict:
         print(f"  [警告] 詳細ページの取得に失敗 {url}: {e}")
         return {"quotes": 0, "bookmarks": 0, "impressions": 0}
 
+    # 表示回数(Views)の位置を見つける
     views_match = re.search(r"([\d,\.]+[万億KkMm]?)\s*Views?", scoped_text, re.IGNORECASE)
     impressions = _parse_count(views_match.group(1)) if views_match else 0
 
     bookmarks = 0
     if views_match:
+        # Views以降、「Relevant」(統計エリアの終わり目印)までの範囲だけを見る
         after = scoped_text[views_match.end():]
         cutoff = after.find("Relevant")
         if cutoff != -1:
@@ -226,11 +260,13 @@ def _fetch_detail_stats(page, url: str) -> dict:
         numbers = re.findall(r"[\d,\.]+[万億KkMm]?", after)
         parsed = [_parse_count(n) for n in numbers]
 
+        # [返信, リポスト, いいね, ブックマーク] の順で並んでいる想定
         if len(parsed) >= 4:
             bookmarks = parsed[3]
         else:
             print(f"      [デバッグ] Views以降の数字が4つ未満: {parsed} (url={url})")
 
+    # 引用数: 「View quotes」リンクを開いて実際に数える
     quotes = _count_quote_tweets(page, main_article, url)
 
     if bookmarks == 0:
@@ -243,14 +279,18 @@ def _fetch_detail_stats(page, url: str) -> dict:
 def _search_one_query(page, query: str, mode: str = "live") -> list[dict]:
     """
     mode="live": 時系列順(Latest)。新しい投稿を幅広く拾う。
-    mode="top" : 話題性順(Top/おすすめ)。じわじわ系のバズを拾うために追加。
+    mode="top" : 話題性順(Top/おすすめ)。Xのアルゴリズムが「伸びている」と
+                 判断した投稿を直接拾う。時系列順だと新しい投稿に埋もれて
+                 見えなくなる「じわじわ系のバズ」(ニュース・災害など、
+                 数時間かけて伸び続ける話題)を拾うために追加した。
     """
-    f_param = "&f=live" if mode == "live" else ""
+    f_param = "&f=live" if mode == "live" else ""  # Topはfパラメータ無しがデフォルト
     search_url = f"https://x.com/search?q={quote(query)}&src=typed_query{f_param}"
     print(f"  検索実行 [{mode}]: {query}")
     page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
 
+    # セッション切れの検知: ログイン画面にリダイレクトされていないか確認
     current_url = page.url
     if "/login" in current_url or "/i/flow/login" in current_url:
         raise SessionExpiredError(
@@ -275,6 +315,16 @@ def _search_one_query(page, query: str, mode: str = "live") -> list[dict]:
 def fetch_posts() -> list[dict]:
     """
     全ての検索クエリを実行し、正規化済みの投稿リストを返す。
+
+    2段階方式:
+      1段階目(検索): 広く投稿を集める。「時系列順(Latest)」と「話題性順(Top)」の
+                     両方で検索することで、新着の投稿だけでなく、じわじわ伸びて
+                     いる投稿(ニュース・災害など)も拾えるようにしている。
+                     いいね・RT・返信は取れるが、引用・ブックマーク・表示回数は
+                     ここでは取れない。
+      2段階目(詳細ページ): 1段階目のうち「いいね800以上または返信50以上」の
+                     候補だけ、個別ページを開いて引用・ブックマーク・
+                     表示回数を取得する。
     """
     session_path = _session_path()
     all_posts = {}
@@ -293,14 +343,25 @@ def fetch_posts() -> list[dict]:
                     print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
                 except SessionExpiredError:
                     browser.close()
-                    raise
+                    raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
                 except Exception as e:  # noqa: BLE001
                     print(f"  [ERROR] 検索クエリ失敗 [{mode}] '{query}': {e}")
 
-        PRELIMINARY_LIKE_THRESHOLD = detector.INSTANT_LIKE_THRESHOLD // 2
+        # 2段階目: 「いいね800以上」または「返信50以上」のどちらかを
+        # 満たす投稿だけ詳細ページを見る(Grok提案の事前フィルタ)。
+        # 返信数もOR条件に含めているのは、いいねはそこまで伸びなくても
+        # 返信(議論・反応)が多い投稿を取りこぼさないため。
+        # 事前フィルタなので広めに候補を拾い、正確な判定は
+        # detector.filter_explosive() 側(quotes/bookmarks/impressions
+        # 取得後)で行う。
+        PRELIMINARY_LIKE_THRESHOLD = 800
+        PRELIMINARY_REPLY_THRESHOLD = 50
         candidates = [
             p for p in all_posts.values()
-            if p.get("likes", 0) >= PRELIMINARY_LIKE_THRESHOLD
+            if (
+                p.get("likes", 0) >= PRELIMINARY_LIKE_THRESHOLD
+                or p.get("replies", 0) >= PRELIMINARY_REPLY_THRESHOLD
+            )
             and detector.elapsed_hours(p["posted_at"]) <= detector.SUSTAINED_MAX_HOURS
         ]
         print(f"  [2段階目] 詳細ページ取得の対象: {len(candidates)}件")
@@ -320,6 +381,9 @@ def fetch_posts() -> list[dict]:
 
     result = list(all_posts.values())
 
+    # ★診断用ログ: いいね数上位5件の全指標を出力する。
+    # 「引用・ブックマークがいつも0」になっていないかをここで確認できる。
+    # (Xの画面構造の変化でセレクタが合わなくなった時の切り分けに使う)
     top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
     for p in top5:

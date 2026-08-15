@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-15T03:59:44.852352+00:00",
+  "updated_at": "2026-08-15T04:51:22.104754+00:00",
   "status": "success",
-  "started_at": "2026-08-15T03:51:14.104540+00:00",
-  "finished_at": "2026-08-15T03:59:44.850966+00:00",
-  "posts_scanned": 66,
-  "posts_flagged": 43,
-  "notified_count": 43,
+  "started_at": "2026-08-15T04:43:51.426999+00:00",
+  "finished_at": "2026-08-15T04:51:22.102966+00:00",
+  "posts_scanned": 60,
+  "posts_flagged": 37,
+  "notified_count": 37,
   "top5_by_likes": [
     {
       "author": "_mumei_R",
-      "likes": 544212,
+      "likes": 544214,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "mononoke_2525",
-      "likes": 283245,
+      "likes": 286989,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "donbei_jp",
-      "likes": 250667,
+      "author": "Misosiru_City",
+      "likes": 192170,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "h_a_r_u_1_3",
-      "likes": 174539,
+      "author": "gogonano2",
+      "likes": 191405,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142648,
+      "author": "polymarketjapan",
+      "likes": 156532,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "mononoke_2525",
-      "likes": 283245,
+      "author": "boketezizou",
+      "likes": 12628,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "poke_times",
-      "likes": 142648,
+      "author": "applied_group",
+      "likes": 16965,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "_mumei_R",
-      "likes": 544212,
+      "author": "NRSr34",
+      "likes": 111811,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "ibsukionsen",
-      "likes": 93271,
+      "author": "MNLTDRV",
+      "likes": 100295,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "helvetica_7",
-      "likes": 118248,
+      "author": "Anker_JP",
+      "likes": 9057,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

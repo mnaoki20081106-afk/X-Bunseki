@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-15T05:12:00.541313+00:00",
+  "updated_at": "2026-08-15T05:41:28.488084+00:00",
   "status": "success",
-  "started_at": "2026-08-15T05:07:00.884001+00:00",
-  "finished_at": "2026-08-15T05:12:00.538478+00:00",
-  "posts_scanned": 59,
+  "started_at": "2026-08-15T05:37:08.465795+00:00",
+  "finished_at": "2026-08-15T05:41:28.486789+00:00",
+  "posts_scanned": 60,
   "posts_flagged": 1,
   "notified_count": 1,
   "top5_by_likes": [
@@ -15,61 +15,61 @@
     },
     {
       "author": "mononoke_2525",
-      "likes": 288585,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "natsuki_aoya",
-      "likes": 261696,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "donbei_jp",
-      "likes": 250669,
+      "likes": 290476,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Misosiru_City",
-      "likes": 192175,
+      "likes": 192176,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "polymarketjapan",
+      "likes": 156536,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "poke_times",
+      "likes": 142649,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
+      "author": "30R9gmaMUy3guDJ",
+      "likes": 925,
+      "quotes": 26,
+      "bookmarks": 13,
+      "progress_percent": 171
+    },
+    {
       "author": "McDonaldsJapan",
-      "likes": 7442,
-      "quotes": 20,
-      "bookmarks": 1200,
-      "progress_percent": 170
+      "likes": 8494,
+      "quotes": 19,
+      "bookmarks": 1300,
+      "progress_percent": 171
     },
     {
-      "author": "boketezizou",
-      "likes": 12651,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
+      "author": "30R9gmaMUy3guDJ",
+      "likes": 921,
+      "quotes": 17,
+      "bookmarks": 25,
+      "progress_percent": 155
     },
     {
-      "author": "applied_group",
-      "likes": 16970,
-      "quotes": 0,
-      "bookmarks": 0,
+      "author": "Lauren_iroas",
+      "likes": 5947,
+      "quotes": 4,
+      "bookmarks": 47,
       "progress_percent": 150
     },
     {
       "author": "Anker_JP",
-      "likes": 9057,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
-    },
-    {
-      "author": "unktich",
-      "likes": 116308,
+      "likes": 9058,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150

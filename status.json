@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-14T23:39:13.494667+00:00",
+  "updated_at": "2026-08-15T01:54:17.486269+00:00",
   "status": "success",
-  "started_at": "2026-08-14T23:33:16.001107+00:00",
-  "finished_at": "2026-08-14T23:39:13.493385+00:00",
-  "posts_scanned": 55,
-  "posts_flagged": 31,
-  "notified_count": 31,
+  "started_at": "2026-08-15T01:46:57.260896+00:00",
+  "finished_at": "2026-08-15T01:54:17.484979+00:00",
+  "posts_scanned": 59,
+  "posts_flagged": 38,
+  "notified_count": 38,
   "top5_by_likes": [
     {
-      "author": "momonosekaiii",
-      "likes": 379892,
+      "author": "_mumei_R",
+      "likes": 544217,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142640,
+      "author": "mononoke_2525",
+      "likes": 274157,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 112966,
+      "author": "polymarketjapan",
+      "likes": 156462,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "0Ari_2",
-      "likes": 108698,
+      "author": "kitanisuto30395",
+      "likes": 133404,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "UJfh8rgz3F46952",
-      "likes": 105135,
+      "author": "tokumei_6_6",
+      "likes": 118165,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Anker_JP",
-      "likes": 9035,
+      "author": "zespri_jp",
+      "likes": 61322,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "sanrio_news",
-      "likes": 6823,
+      "author": "polymarketjapan",
+      "likes": 156462,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "loveodoro",
-      "likes": 20149,
+      "author": "kitanisuto30395",
+      "likes": 133404,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "GyomusuperOFCL",
-      "likes": 3299,
+      "author": "___mobko____",
+      "likes": 78316,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "applied_group",
-      "likes": 16931,
+      "author": "us_missouri",
+      "likes": 36814,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

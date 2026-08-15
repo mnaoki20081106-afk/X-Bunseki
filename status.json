@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-15T15:39:15.951711+00:00",
+  "updated_at": "2026-08-15T16:42:53.354760+00:00",
   "status": "success",
-  "started_at": "2026-08-15T15:32:47.236918+00:00",
-  "finished_at": "2026-08-15T15:39:15.950358+00:00",
-  "posts_scanned": 60,
-  "posts_flagged": 5,
-  "notified_count": 5,
+  "started_at": "2026-08-15T16:37:27.774176+00:00",
+  "finished_at": "2026-08-15T16:42:53.353503+00:00",
+  "posts_scanned": 69,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "Misosiru_City",
-      "likes": 192211,
+      "author": "mononoke_2525",
+      "likes": 330833,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kitanisuto30395",
-      "likes": 170583,
+      "author": "Sakenmilove",
+      "likes": 181161,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142656,
+      "author": "pam99ham",
+      "likes": 176116,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ibsukionsen",
-      "likes": 131936,
+      "author": "unmaimondaisuki",
+      "likes": 115241,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "_sa_me_sa_ma",
-      "likes": 127243,
+      "author": "us_missouri",
+      "likes": 114045,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "modelpress",
-      "likes": 6833,
+      "author": "yasuko_sma",
+      "likes": 2103,
       "quotes": 0,
-      "bookmarks": 691,
+      "bookmarks": 234,
       "progress_percent": 171
     },
     {
-      "author": "nbuna_staff",
-      "likes": 18944,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 4079,
       "quotes": 0,
-      "bookmarks": 728,
-      "progress_percent": 171
+      "bookmarks": 42,
+      "progress_percent": 150
     },
     {
-      "author": "nitorisasami",
-      "likes": 21966,
+      "author": "boketezizou",
+      "likes": 16281,
       "quotes": 0,
-      "bookmarks": 938,
-      "progress_percent": 171
+      "bookmarks": 0,
+      "progress_percent": 150
     },
     {
-      "author": "IUnS_252255",
-      "likes": 13158,
+      "author": "applied_group",
+      "likes": 17028,
       "quotes": 0,
-      "bookmarks": 564,
-      "progress_percent": 171
+      "bookmarks": 0,
+      "progress_percent": 150
     },
     {
-      "author": "oowadashinya",
-      "likes": 10537,
+      "author": "TakoyakTako",
+      "likes": 61709,
       "quotes": 0,
-      "bookmarks": 243,
-      "progress_percent": 156
+      "bookmarks": 0,
+      "progress_percent": 150
     }
   ]
 }

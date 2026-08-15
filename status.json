@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-15T03:08:04.652434+00:00",
+  "updated_at": "2026-08-15T03:59:44.852352+00:00",
   "status": "success",
-  "started_at": "2026-08-15T03:01:41.771272+00:00",
-  "finished_at": "2026-08-15T03:08:04.651160+00:00",
-  "posts_scanned": 61,
-  "posts_flagged": 35,
-  "notified_count": 35,
+  "started_at": "2026-08-15T03:51:14.104540+00:00",
+  "finished_at": "2026-08-15T03:59:44.850966+00:00",
+  "posts_scanned": 66,
+  "posts_flagged": 43,
+  "notified_count": 43,
   "top5_by_likes": [
     {
       "author": "_mumei_R",
-      "likes": 544211,
+      "likes": 544212,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "mononoke_2525",
-      "likes": 279828,
+      "likes": 283245,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "donbei_jp",
+      "likes": 250667,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "h_a_r_u_1_3",
+      "likes": 174539,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "poke_times",
-      "likes": 142643,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Zakuro_Shiro",
-      "likes": 128678,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "_sa_me_sa_ma",
-      "likes": 127227,
+      "likes": 142648,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "mononoke_2525",
-      "likes": 279828,
+      "likes": 283245,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "_sa_me_sa_ma",
-      "likes": 127227,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 180
-    },
-    {
-      "author": "tokumei_6_6",
-      "likes": 118181,
+      "author": "poke_times",
+      "likes": 142648,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
       "author": "_mumei_R",
-      "likes": 544211,
+      "likes": 544212,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180
     },
     {
-      "author": "natsui_tanoshi",
-      "likes": 104314,
+      "author": "ibsukionsen",
+      "likes": 93271,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 180
+    },
+    {
+      "author": "helvetica_7",
+      "likes": 118248,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 180

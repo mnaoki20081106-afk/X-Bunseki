@@ -1,77 +1,77 @@
 {
-  "updated_at": "2026-08-15T13:43:41.643610+00:00",
+  "updated_at": "2026-08-15T14:40:46.659361+00:00",
   "status": "success",
-  "started_at": "2026-08-15T13:39:59.675988+00:00",
-  "finished_at": "2026-08-15T13:43:41.642474+00:00",
-  "posts_scanned": 47,
-  "posts_flagged": 5,
-  "notified_count": 5,
+  "started_at": "2026-08-15T14:35:54.496730+00:00",
+  "finished_at": "2026-08-15T14:40:46.657538+00:00",
+  "posts_scanned": 55,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "momonosekaiii",
-      "likes": 380362,
+      "author": "poke_times",
+      "likes": 142653,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "mononoke_2525",
-      "likes": 320173,
+      "author": "HappyOrange222",
+      "likes": 104517,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Misosiru_City",
-      "likes": 192204,
+      "author": "zoo69712356",
+      "likes": 78695,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "__xjkx",
-      "likes": 177736,
+      "author": "DisneyStudioJ_A",
+      "likes": 74530,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "_sa_me_sa_ma",
-      "likes": 127241,
+      "author": "ytranking",
+      "likes": 71121,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "yane_urabeya",
-      "likes": 17251,
+      "author": "nbuna_staff",
+      "likes": 17460,
       "quotes": 14,
-      "bookmarks": 2700,
+      "bookmarks": 678,
+      "progress_percent": 171
+    },
+    {
+      "author": "tkzwgrs",
+      "likes": 1609,
+      "quotes": 18,
+      "bookmarks": 342,
       "progress_percent": 171
     },
     {
       "author": "nitorisasami",
-      "likes": 18537,
-      "quotes": 22,
-      "bookmarks": 802,
+      "likes": 20414,
+      "quotes": 23,
+      "bookmarks": 875,
       "progress_percent": 171
     },
     {
-      "author": "Purin_a_La_Mode",
-      "likes": 8022,
-      "quotes": 2,
-      "bookmarks": 399,
-      "progress_percent": 151
+      "author": "yane_urabeya",
+      "likes": 20273,
+      "quotes": 0,
+      "bookmarks": 3100,
+      "progress_percent": 171
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "likes": 13052,
-      "quotes": 34,
-      "bookmarks": 410,
-      "progress_percent": 150
-    },
-    {
-      "author": "Vamp_Kuzu",
-      "likes": 5840,
-      "quotes": 29,
-      "bookmarks": 38,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 7262,
+      "quotes": 18,
+      "bookmarks": 220,
       "progress_percent": 150
     }
   ]

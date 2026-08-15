@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-15T20:40:44.946111+00:00",
+  "updated_at": "2026-08-15T21:36:59.666293+00:00",
   "status": "success",
-  "started_at": "2026-08-15T20:35:35.437487+00:00",
-  "finished_at": "2026-08-15T20:40:44.943648+00:00",
-  "posts_scanned": 74,
+  "started_at": "2026-08-15T21:32:53.748226+00:00",
+  "finished_at": "2026-08-15T21:36:59.663923+00:00",
+  "posts_scanned": 71,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "_mumei_R",
-      "likes": 544134,
+      "author": "Misosiru_City",
+      "likes": 192211,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tesu777UR",
-      "likes": 153354,
+      "author": "maruon22",
+      "likes": 145057,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "NazologyInfo",
-      "likes": 138944,
+      "likes": 138943,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ibsukionsen",
-      "likes": 138249,
+      "likes": 138836,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "MNLTDRV",
-      "likes": 126606,
+      "likes": 126959,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Fooootest",
-      "likes": 3899,
-      "quotes": 0,
-      "bookmarks": 109,
-      "progress_percent": 163
+      "author": "ikutalilas",
+      "likes": 2592,
+      "quotes": 3,
+      "bookmarks": 126,
+      "progress_percent": 153
     },
     {
       "author": "Kanae_2434",
-      "likes": 4221,
+      "likes": 4778,
       "quotes": 1,
-      "bookmarks": 24,
+      "bookmarks": 27,
       "progress_percent": 150
     },
     {
       "author": "rinu_nico",
-      "likes": 4083,
+      "likes": 4610,
       "quotes": 20,
-      "bookmarks": 80,
+      "bookmarks": 86,
       "progress_percent": 150
     },
     {
-      "author": "sakuramiko35",
-      "likes": 5420,
+      "author": "Anker_JP",
+      "likes": 9123,
       "quotes": 0,
-      "bookmarks": 139,
+      "bookmarks": 0,
       "progress_percent": 150
     },
     {
-      "author": "boketezizou",
-      "likes": 18649,
+      "author": "ibsukionsen",
+      "likes": 138836,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150

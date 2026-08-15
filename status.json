@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-15T22:38:25.268214+00:00",
+  "updated_at": "2026-08-15T23:36:55.467956+00:00",
   "status": "success",
-  "started_at": "2026-08-15T22:34:50.597857+00:00",
-  "finished_at": "2026-08-15T22:38:25.265376+00:00",
+  "started_at": "2026-08-15T23:32:16.333854+00:00",
+  "finished_at": "2026-08-15T23:36:55.465783+00:00",
   "posts_scanned": 57,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "Misosiru_City",
-      "likes": 192210,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "onechi8",
-      "likes": 186060,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "poke_times",
-      "likes": 142657,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "ibsukionsen",
-      "likes": 139555,
+      "likes": 192211,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "MNLTDRV",
-      "likes": 127363,
+      "likes": 127929,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "us_missouri",
+      "likes": 122968,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "imokenple",
+      "likes": 121266,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "helvetica_7",
+      "likes": 118267,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 2614,
-      "quotes": 18,
-      "bookmarks": 194,
-      "progress_percent": 171
-    },
-    {
-      "author": "poke_times",
-      "likes": 142657,
-      "quotes": 0,
-      "bookmarks": 0,
+      "author": "McDonaldsJapan",
+      "likes": 2189,
+      "quotes": 31,
+      "bookmarks": 226,
       "progress_percent": 150
     },
     {
       "author": "akiko_lawson",
-      "likes": 45995,
+      "likes": 5261,
+      "quotes": 18,
+      "bookmarks": 85,
+      "progress_percent": 150
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 46360,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150
     },
     {
-      "author": "momonosekaiii",
-      "likes": 81188,
+      "author": "Anker_JP",
+      "likes": 9126,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150
     },
     {
-      "author": "bunchoccho1",
-      "likes": 66763,
+      "author": "boketezizou",
+      "likes": 19378,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150

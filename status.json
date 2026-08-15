@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-15T08:47:59.706098+00:00",
+  "updated_at": "2026-08-15T09:42:34.947071+00:00",
   "status": "success",
-  "started_at": "2026-08-15T08:43:24.983566+00:00",
-  "finished_at": "2026-08-15T08:47:59.704754+00:00",
-  "posts_scanned": 53,
-  "posts_flagged": 2,
-  "notified_count": 2,
+  "started_at": "2026-08-15T09:36:45.903310+00:00",
+  "finished_at": "2026-08-15T09:42:34.945908+00:00",
+  "posts_scanned": 61,
+  "posts_flagged": 6,
+  "notified_count": 6,
   "top5_by_likes": [
     {
-      "author": "_mumei_R",
-      "likes": 544204,
+      "author": "shoutube1217",
+      "likes": 155716,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "kitanisuto30395",
+      "likes": 154330,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "poke_times",
+      "likes": 142653,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ibsukionsen",
-      "likes": 111177,
+      "likes": 114275,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "natsui_tanoshi",
-      "likes": 109716,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "konstnar2011",
-      "likes": 92002,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "NBenmaran85901",
-      "likes": 86004,
+      "likes": 109778,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "v9938",
-      "likes": 7647,
-      "quotes": 22,
-      "bookmarks": 592,
-      "progress_percent": 171
-    },
-    {
-      "author": "ariyoshihiroiki",
-      "likes": 15871,
-      "quotes": 33,
-      "bookmarks": 156,
-      "progress_percent": 171
-    },
-    {
-      "author": "comiketofficial",
-      "likes": 20037,
+      "author": "boketezizou",
+      "likes": 3145,
       "quotes": 0,
-      "bookmarks": 1400,
+      "bookmarks": 3300,
       "progress_percent": 171
     },
     {
-      "author": "Himazin_3323",
-      "likes": 11483,
-      "quotes": 13,
-      "bookmarks": 373,
-      "progress_percent": 162
+      "author": "mazetamax",
+      "likes": 10816,
+      "quotes": 0,
+      "bookmarks": 2000,
+      "progress_percent": 171
     },
     {
-      "author": "gallop_keiba",
-      "likes": 3812,
-      "quotes": 47,
-      "bookmarks": 152,
-      "progress_percent": 161
+      "author": "DisneyStudioJ_A",
+      "likes": 57203,
+      "quotes": 0,
+      "bookmarks": 2500,
+      "progress_percent": 171
+    },
+    {
+      "author": "iwabajunki06",
+      "likes": 2567,
+      "quotes": 0,
+      "bookmarks": 1100,
+      "progress_percent": 171
+    },
+    {
+      "author": "nino_honmono",
+      "likes": 10002,
+      "quotes": 33,
+      "bookmarks": 73,
+      "progress_percent": 150
     }
   ]
 }

@@ -157,6 +157,20 @@ def set_meta(key: str, value: str):
         )
 
 
+def get_last_notified_at_for_author(author_handle: str) -> str | None:
+    """
+    アカウント単位のクールダウン判定用: そのアカウントを最後に
+    通知した時刻(ISO8601文字列)を取得する。未通知ならNone。
+    meta テーブルを間借りして "author_last_notified:{handle}" という
+    キーで保存している。
+    """
+    return get_meta(f"author_last_notified:{author_handle}")
+
+
+def set_last_notified_at_for_author(author_handle: str, notified_at: str):
+    set_meta(f"author_last_notified:{author_handle}", notified_at)
+
+
 if __name__ == "__main__":
     init_db()
     print(f"DB initialized at {DB_PATH}")

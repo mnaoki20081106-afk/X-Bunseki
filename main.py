@@ -6,7 +6,7 @@ main.py
   1. Playwrightで投稿収集(ログインセッションが切れていたら専用エラー)
   2. 「爆発」判定(引用・ブックマーク・いいねの閾値 × 経過時間)
   3. 未通知の候補だけをGroqでジャンル分類
-  4. LINE + ntfy + メール の3ルートで即時通知(いずれか1つでも届けば通知済み扱い)
+  4. LINEに即時通知
   5. DBに記録(重複通知防止)
 """
 
@@ -53,8 +53,8 @@ def _write_status(**kwargs):
 
 def _notify_session_expired():
     """
-    セッション切れをLINE+ntfy+メールで知らせる。ただし1日1回まで
-    (毎時失敗し続けて通知が埋まるのを防ぐため)。
+    セッション切れをLINEで知らせる。ただし1日1回まで(毎時失敗し続けて
+    通知が埋まるのを防ぐため)。
     """
     last_alert = db.get_meta("session_expired_alert_at")
     now = datetime.now(timezone.utc)
@@ -92,11 +92,12 @@ def _check_zero_posts_streak(posts_count: int):
     """
     取得件数が0件の実行が連続していないかチェックする。
     連続していたら、Xのページ構造が変わってデータが取れなくなっている
-    可能性が高いのでLINE+ntfy+メールで知らせる(セッション切れとは別原因の壊れ方)。
+    可能性が高いのでLINEで知らせる(セッション切れとは別原因の壊れ方)。
     """
     now = datetime.now(timezone.utc)
 
     if posts_count > 0:
+        # 正常に取れているなら連続カウントをリセット
         db.set_meta("zero_posts_streak", "0")
         return
 
@@ -179,8 +180,21 @@ def run_once():
     candidates = detector.filter_explosive(posts)
     print(f"爆発条件を満たした投稿数: {len(candidates)}")
 
+    # 既に通知済みのpost_idは除外
     new_candidates = [p for p in candidates if not db.is_known(p["post_id"])]
     print(f"未通知の新規候補: {len(new_candidates)}")
+
+    # アカウント単位のクールダウン(同じ投稿者から立て続けに通知しない)
+    filtered_candidates = []
+    for post in new_candidates:
+        author = post.get("author_handle", "")
+        last_notified = db.get_last_notified_at_for_author(author)
+        if detector.is_in_cooldown(author, last_notified):
+            print(f"  (クールダウン中のためスキップ: @{author})")
+            continue
+        filtered_candidates.append(post)
+    new_candidates = filtered_candidates
+    print(f"クールダウン適用後の候補: {len(new_candidates)}")
 
     notified_count = 0
     for post in new_candidates:
@@ -210,6 +224,9 @@ def run_once():
         success = line_success or ntfy_success or email_success
         if success:
             db.mark_notified(post["post_id"])
+            db.set_last_notified_at_for_author(
+                post.get("author_handle", ""), datetime.now(timezone.utc).isoformat()
+            )
             notified_count += 1
             channels = []
             if line_success:
@@ -224,6 +241,9 @@ def run_once():
     db.log_run(started_at, finished_at, len(posts), len(new_candidates), "success")
     print(f"完了。通知送信数: {notified_count}")
 
+    # 「動作確認」用に、2種類のランキングを記録しておく。
+    # - top5_by_likes: 単純にいいね数が多い順(何が話題になっているかの全体像)
+    # - top5_by_progress: 通知条件への「達成度」が高い順(早期発見の目安)
     top5_likes = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     top5_by_likes = [
         {
@@ -263,8 +283,6 @@ def run_test_notification():
     """
     「通知確認」用のテストモード。実際にXを検索せず、テスト用の
     ダミー投稿データでLINE・ntfy・メールの3ルート全部に送信を試みる。
-    「通知条件の判定ロジックは正しいが、通知の送信自体が失敗している」
-    ケースを、実際にX検索を待たずすぐに確認できるようにするため。
     """
     print("=== テスト通知モード ===")
 

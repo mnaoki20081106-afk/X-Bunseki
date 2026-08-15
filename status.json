@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-15T07:44:51.919229+00:00",
+  "updated_at": "2026-08-15T08:47:59.706098+00:00",
   "status": "success",
-  "started_at": "2026-08-15T07:40:33.769751+00:00",
-  "finished_at": "2026-08-15T07:44:51.918016+00:00",
-  "posts_scanned": 58,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-15T08:43:24.983566+00:00",
+  "finished_at": "2026-08-15T08:47:59.704754+00:00",
+  "posts_scanned": 53,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "mononoke_2525",
-      "likes": 297612,
+      "author": "_mumei_R",
+      "likes": 544204,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "__xjkx",
-      "likes": 171930,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "polymarketjapan",
-      "likes": 156539,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "lir69",
-      "likes": 124192,
+      "author": "ibsukionsen",
+      "likes": 111177,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "natsui_tanoshi",
-      "likes": 109584,
+      "likes": 109716,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "konstnar2011",
+      "likes": 92002,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "NBenmaran85901",
+      "likes": 86004,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "twf003",
-      "likes": 3298,
-      "quotes": 15,
-      "bookmarks": 1000,
+      "author": "v9938",
+      "likes": 7647,
+      "quotes": 22,
+      "bookmarks": 592,
       "progress_percent": 171
     },
     {
-      "author": "ytranking",
-      "likes": 3074,
-      "quotes": 17,
-      "bookmarks": 723,
+      "author": "ariyoshihiroiki",
+      "likes": 15871,
+      "quotes": 33,
+      "bookmarks": 156,
       "progress_percent": 171
     },
     {
-      "author": "hiroshifp0215",
-      "likes": 2391,
-      "quotes": 26,
-      "bookmarks": 229,
-      "progress_percent": 156
-    },
-    {
-      "author": "rapstar_jp",
-      "likes": 4339,
-      "quotes": 19,
-      "bookmarks": 4400,
-      "progress_percent": 152
-    },
-    {
-      "author": "__xjkx",
-      "likes": 171930,
+      "author": "comiketofficial",
+      "likes": 20037,
       "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
+      "bookmarks": 1400,
+      "progress_percent": 171
+    },
+    {
+      "author": "Himazin_3323",
+      "likes": 11483,
+      "quotes": 13,
+      "bookmarks": 373,
+      "progress_percent": 162
+    },
+    {
+      "author": "gallop_keiba",
+      "likes": 3812,
+      "quotes": 47,
+      "bookmarks": 152,
+      "progress_percent": 161
     }
   ]
 }

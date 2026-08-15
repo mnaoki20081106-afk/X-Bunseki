@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-15T16:42:53.354760+00:00",
+  "updated_at": "2026-08-15T17:38:57.740348+00:00",
   "status": "success",
-  "started_at": "2026-08-15T16:37:27.774176+00:00",
-  "finished_at": "2026-08-15T16:42:53.353503+00:00",
-  "posts_scanned": 69,
+  "started_at": "2026-08-15T17:33:13.761596+00:00",
+  "finished_at": "2026-08-15T17:38:57.739004+00:00",
+  "posts_scanned": 71,
   "posts_flagged": 1,
   "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "mononoke_2525",
-      "likes": 330833,
+      "author": "Misosiru_City",
+      "likes": 192209,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Sakenmilove",
-      "likes": 181161,
+      "likes": 181162,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "pam99ham",
-      "likes": 176116,
+      "author": "gyouza_strong",
+      "likes": 174970,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "unmaimondaisuki",
-      "likes": 115241,
+      "author": "kitanisuto30395",
+      "likes": 173742,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "us_missouri",
-      "likes": 114045,
+      "author": "ibsukionsen",
+      "likes": 135827,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,35 +41,35 @@
   "top5_by_progress": [
     {
       "author": "yasuko_sma",
-      "likes": 2103,
+      "likes": 2670,
       "quotes": 0,
-      "bookmarks": 234,
+      "bookmarks": 318,
       "progress_percent": 171
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 4079,
-      "quotes": 0,
-      "bookmarks": 42,
-      "progress_percent": 150
+      "author": "SixTONES_SME",
+      "likes": 17044,
+      "quotes": 18,
+      "bookmarks": 1000,
+      "progress_percent": 151
     },
     {
       "author": "boketezizou",
-      "likes": 16281,
+      "likes": 17186,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 150
+    },
+    {
+      "author": "gyouza_strong",
+      "likes": 174970,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150
     },
     {
       "author": "applied_group",
-      "likes": 17028,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
-    },
-    {
-      "author": "TakoyakTako",
-      "likes": 61709,
+      "likes": 17030,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 150

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T03:29:05.446743+00:00",
+  "updated_at": "2026-08-16T04:53:23.151243+00:00",
   "status": "success",
-  "started_at": "2026-08-16T03:24:21.595700+00:00",
-  "finished_at": "2026-08-16T03:29:05.441684+00:00",
-  "posts_scanned": 56,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-16T04:48:03.948080+00:00",
+  "finished_at": "2026-08-16T04:53:23.149838+00:00",
+  "posts_scanned": 52,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "maruon22",
-      "likes": 145049,
+      "author": "natsui_tanoshi",
+      "likes": 109978,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142649,
+      "author": "akiko_lawson",
+      "likes": 68292,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "nyankorooow",
-      "likes": 131557,
+      "author": "akiko_lawson",
+      "likes": 54727,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 114181,
+      "author": "akiko_lawson",
+      "likes": 47453,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "fude_kakikaki",
-      "likes": 89353,
+      "author": "momo_ollife",
+      "likes": 45093,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "satojima_x",
-      "likes": 3878,
-      "quotes": 19,
-      "bookmarks": 305,
-      "progress_percent": 103
+      "author": "ado1024imokenp",
+      "likes": 4816,
+      "quotes": 18,
+      "bookmarks": 4900,
+      "progress_percent": 193
     },
     {
-      "author": "akagi_wen",
-      "likes": 2404,
+      "author": "hololive_dreams",
+      "likes": 7430,
+      "quotes": 18,
+      "bookmarks": 326,
+      "progress_percent": 140
+    },
+    {
+      "author": "McDonaldsJapan",
+      "likes": 1677,
+      "quotes": 18,
+      "bookmarks": 196,
+      "progress_percent": 60
+    },
+    {
+      "author": "rindochihaya",
+      "likes": 1414,
       "quotes": 0,
-      "bookmarks": 9,
-      "progress_percent": 96
+      "bookmarks": 1,
+      "progress_percent": 57
     },
     {
-      "author": "matsucoco_co",
-      "likes": 2602,
-      "quotes": 13,
-      "bookmarks": 571,
-      "progress_percent": 88
-    },
-    {
-      "author": "NitoriOfficial",
-      "likes": 896,
-      "quotes": 19,
-      "bookmarks": 124,
-      "progress_percent": 63
-    },
-    {
-      "author": "kedama_tori_ki",
-      "likes": 14387,
-      "quotes": 15,
-      "bookmarks": 269,
-      "progress_percent": 61
+      "author": "houshoumarine",
+      "likes": 1407,
+      "quotes": 1,
+      "bookmarks": 8,
+      "progress_percent": 56
     }
   ]
 }

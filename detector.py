@@ -275,27 +275,56 @@ def explosive_progress(post: dict, now=None) -> float:
     「爆発条件にどれだけ近づいているか」を0.0〜1.0+の値で返す。
     瞬間バズ側の進捗と持続バズ側の進捗をそれぞれ計算し、高い方を採用する。
     「動作確認」機能で参考情報として見せるためのもの(通知トリガーにはしない)。
+
+    ★v3.3で修正した不具合: 以前は「いいね達成率×0.5 + RT達成率×0.3 +
+    返信達成率×0.2」のような加重平均で計算していたが、実際の判定
+    (is_instant_explosive等)は「全項目を同時に満たす」AND条件のため、
+    いいねだけ突出していても他の項目が基準未達なら加重平均だけでは
+    100%を超えてしまい、「進捗100%超なのに通知が来ない」という
+    ズレが生じていた。
+    修正: 各項目の達成率のうち「最も低いもの(ボトルネック)」を
+    採用する方式に変更。これにより、進捗が100%に達した時点で、
+    必ず実際の判定ロジックも合格する(整合性が保証される)。
     """
     hours = elapsed_hours(post["posted_at"], now=now)
     likes = post.get("likes", 0)
     rts = post.get("retweets", 0)
     replies = post.get("replies", 0)
     impressions = post.get("impressions", 0)
+    bookmarks = post.get("bookmarks", 0)
+    quotes = post.get("quotes", 0)
 
-    instant_like_p = min(likes / INSTANT_LIKE_THRESHOLD, 1.5) if INSTANT_LIKE_THRESHOLD else 0
-    instant_rt_p = min(rts / INSTANT_RT_THRESHOLD, 1.5) if INSTANT_RT_THRESHOLD else 0
-    instant_reply_p = min(replies / INSTANT_REPLY_THRESHOLD, 1.5) if INSTANT_REPLY_THRESHOLD else 0
-    instant_score = instant_like_p * 0.5 + instant_rt_p * 0.3 + instant_reply_p * 0.2
-
-    required_v = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
-    actual_v = _velocity(likes, hours)
-    sustained_score = min(actual_v / required_v, 1.8) if required_v else 0
-
-    if impressions:
-        imp_score = min(impressions / SUSTAINED_MIN_IMPRESSIONS, 1.5)
-        sustained_score = sustained_score * 0.7 + imp_score * 0.3
+    # 瞬間バズ側の進捗: 3項目のうち最も低い達成率(ボトルネック)を採用。
+    # 時間窓を超えていたら0にする。
+    if hours <= INSTANT_MAX_HOURS:
+        instant_like_p = likes / INSTANT_LIKE_THRESHOLD if INSTANT_LIKE_THRESHOLD else 0
+        instant_rt_p = rts / INSTANT_RT_THRESHOLD if INSTANT_RT_THRESHOLD else 0
+        instant_reply_p = replies / INSTANT_REPLY_THRESHOLD if INSTANT_REPLY_THRESHOLD else 0
+        instant_score = min(instant_like_p, instant_rt_p, instant_reply_p)
     else:
-        sustained_score *= 0.5  # インプレッション未取得は大幅減点(必須条件のため)
+        instant_score = 0.0
+
+    # 持続バズ側の進捗: 4条件(速度・インプレッション・返信比率・
+    # ブックマークor引用)のうち最も低い達成率を採用。
+    # ブックマークと引用は「どちらか片方でOK」なので、2つのうち高い方を使う。
+    # インプレッション未取得の場合は0(=必須条件を満たしていない)にする。
+    if SUSTAINED_MIN_AGE_HOURS <= hours <= SUSTAINED_MAX_HOURS and hours >= MIN_AGE_FOR_VELOCITY_HOURS:
+        required_v = SUSTAINED_LIKE_VELOCITY_BASE / (1.0 + SUSTAINED_DECAY_FACTOR * hours)
+        actual_v = _velocity(likes, hours)
+        velocity_p = actual_v / required_v if required_v else 0
+
+        impression_p = impressions / SUSTAINED_MIN_IMPRESSIONS if impressions else 0.0
+
+        reply_ratio = replies / max(likes, 1)
+        reply_ratio_p = reply_ratio / SUSTAINED_MIN_REPLY_LIKE_RATIO if SUSTAINED_MIN_REPLY_LIKE_RATIO else 0
+
+        bookmark_p = bookmarks / SUSTAINED_MIN_BOOKMARKS if SUSTAINED_MIN_BOOKMARKS else 0
+        quote_p = quotes / SUSTAINED_MIN_QUOTES if SUSTAINED_MIN_QUOTES else 0
+        bookmark_or_quote_p = max(bookmark_p, quote_p)
+
+        sustained_score = min(velocity_p, impression_p, reply_ratio_p, bookmark_or_quote_p)
+    else:
+        sustained_score = 0.0
 
     return round(max(instant_score, sustained_score), 3)
 

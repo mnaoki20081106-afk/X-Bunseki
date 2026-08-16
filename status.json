@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T16:44:03.752315+00:00",
+  "updated_at": "2026-08-16T17:36:16.789266+00:00",
   "status": "success",
-  "started_at": "2026-08-16T16:38:33.745362+00:00",
-  "finished_at": "2026-08-16T16:44:03.751127+00:00",
-  "posts_scanned": 63,
-  "posts_flagged": 5,
-  "notified_count": 5,
+  "started_at": "2026-08-16T17:31:57.659557+00:00",
+  "finished_at": "2026-08-16T17:36:16.787844+00:00",
+  "posts_scanned": 60,
+  "posts_flagged": 3,
+  "notified_count": 3,
   "top5_by_likes": [
     {
-      "author": "_mumei_R",
-      "likes": 544043,
+      "author": "lir69",
+      "likes": 208029,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Misosiru_City",
-      "likes": 192254,
+      "author": "wilson_DTA",
+      "likes": 203726,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Karimpuuc",
-      "likes": 169767,
+      "author": "TakoyakTako",
+      "likes": 177659,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ibsukionsen",
-      "likes": 149094,
+      "author": "us_missouri",
+      "likes": 142567,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "japancapsuletoy",
-      "likes": 127632,
+      "author": "GYOSEIIII",
+      "likes": 136040,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "unkochan1234567",
-      "likes": 14408,
-      "quotes": 0,
-      "bookmarks": 258,
-      "progress_percent": 541
-    },
-    {
       "author": "ado1024imokenp",
-      "likes": 5685,
-      "quotes": 19,
-      "bookmarks": 96,
-      "progress_percent": 206
-    },
-    {
-      "author": "Lauren_iroas",
-      "likes": 3993,
-      "quotes": 4,
-      "bookmarks": 28,
-      "progress_percent": 160
-    },
-    {
-      "author": "ado1024imokenp",
-      "likes": 2725,
+      "likes": 7713,
       "quotes": 18,
-      "bookmarks": 133,
-      "progress_percent": 109
+      "bookmarks": 7800,
+      "progress_percent": 308
     },
     {
-      "author": "Lize_Helesta",
-      "likes": 3850,
-      "quotes": 7,
-      "bookmarks": 29,
-      "progress_percent": 106
+      "author": "Kanae_2434",
+      "likes": 3603,
+      "quotes": 3,
+      "bookmarks": 98,
+      "progress_percent": 144
+    },
+    {
+      "author": "rai_173",
+      "likes": 6365,
+      "quotes": 14,
+      "bookmarks": 273,
+      "progress_percent": 143
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 2901,
+      "quotes": 30,
+      "bookmarks": 39,
+      "progress_percent": 116
+    },
+    {
+      "author": "Vau1113",
+      "likes": 2371,
+      "quotes": 14,
+      "bookmarks": 87,
+      "progress_percent": 95
     }
   ]
 }

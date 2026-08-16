@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T14:40:57.296829+00:00",
+  "updated_at": "2026-08-16T15:38:32.073754+00:00",
   "status": "success",
-  "started_at": "2026-08-16T14:35:44.584099+00:00",
-  "finished_at": "2026-08-16T14:40:57.295546+00:00",
-  "posts_scanned": 58,
-  "posts_flagged": 2,
-  "notified_count": 2,
+  "started_at": "2026-08-16T15:33:10.859555+00:00",
+  "finished_at": "2026-08-16T15:38:32.072585+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 4,
+  "notified_count": 4,
   "top5_by_likes": [
     {
-      "author": "h_a_r_u_1_3",
-      "likes": 174495,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Hawaiian6boyz",
-      "likes": 155050,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "ibsukionsen",
-      "likes": 149064,
+      "likes": 149081,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tyomateee",
-      "likes": 97381,
+      "author": "yokai_punipuni",
+      "likes": 141811,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kedama_tori_ki",
-      "likes": 82098,
+      "author": "sumimachine",
+      "likes": 79578,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 68303,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 54760,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ado1024imokenp",
-      "likes": 2955,
+      "author": "unkochan1234567",
+      "likes": 4952,
+      "quotes": 15,
+      "bookmarks": 91,
+      "progress_percent": 198
+    },
+    {
+      "author": "usamirito_power",
+      "likes": 3947,
+      "quotes": 14,
+      "bookmarks": 77,
+      "progress_percent": 158
+    },
+    {
+      "author": "TXT_bighit_jp",
+      "likes": 10156,
+      "quotes": 17,
+      "bookmarks": 363,
+      "progress_percent": 148
+    },
+    {
+      "author": "tomita_nanaka",
+      "likes": 3349,
       "quotes": 18,
-      "bookmarks": 154,
-      "progress_percent": 118
+      "bookmarks": 121,
+      "progress_percent": 120
     },
     {
-      "author": "t_nikaido_86",
-      "likes": 4420,
-      "quotes": 31,
-      "bookmarks": 29,
-      "progress_percent": 110
-    },
-    {
-      "author": "Show_SylveSTAR",
-      "likes": 2363,
+      "author": "honmono_ibrahim",
+      "likes": 2969,
       "quotes": 2,
-      "bookmarks": 16,
-      "progress_percent": 94
-    },
-    {
-      "author": "Ness_Sakaki",
-      "likes": 5723,
-      "quotes": 11,
-      "bookmarks": 157,
-      "progress_percent": 61
-    },
-    {
-      "author": "natsuiromatsuri",
-      "likes": 1334,
-      "quotes": 7,
-      "bookmarks": 13,
-      "progress_percent": 53
+      "bookmarks": 31,
+      "progress_percent": 98
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T02:00:25.686533+00:00",
+  "updated_at": "2026-08-16T03:14:59.944959+00:00",
   "status": "success",
-  "started_at": "2026-08-16T01:55:33.555618+00:00",
-  "finished_at": "2026-08-16T02:00:25.685277+00:00",
+  "started_at": "2026-08-16T03:10:39.598106+00:00",
+  "finished_at": "2026-08-16T03:14:59.942218+00:00",
   "posts_scanned": 50,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "maruon22",
-      "likes": 145051,
+      "author": "shoutube1217",
+      "likes": 197287,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "ibsukionsen",
-      "likes": 142856,
+      "likes": 144395,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "wakasato_",
-      "likes": 114125,
+      "author": "poke_times",
+      "likes": 142649,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tokyonuenue",
-      "likes": 113698,
+      "author": "japancapsuletoy",
+      "likes": 127579,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "livedoornews",
-      "likes": 81440,
+      "author": "snsnokyoufu",
+      "likes": 80470,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "akiko_lawson",
-      "likes": 19642,
-      "quotes": 18,
-      "bookmarks": 295,
-      "progress_percent": 171
+      "author": "ichikawa_zoo",
+      "likes": 3197,
+      "quotes": 12,
+      "bookmarks": 77,
+      "progress_percent": 94
     },
     {
-      "author": "McDonaldsJapan",
-      "likes": 4791,
-      "quotes": 29,
-      "bookmarks": 429,
-      "progress_percent": 171
+      "author": "matsucoco_co",
+      "likes": 2390,
+      "quotes": 13,
+      "bookmarks": 518,
+      "progress_percent": 84
     },
     {
-      "author": "chi_bakun_chiba",
-      "likes": 17262,
-      "quotes": 18,
-      "bookmarks": 612,
-      "progress_percent": 171
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 46861,
+      "author": "akagi_wen",
+      "likes": 1854,
       "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
+      "bookmarks": 6,
+      "progress_percent": 74
     },
     {
-      "author": "akiko_lawson",
-      "likes": 54717,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 150
+      "author": "KKeiko_official",
+      "likes": 5271,
+      "quotes": 12,
+      "bookmarks": 61,
+      "progress_percent": 70
+    },
+    {
+      "author": "Rou_2434",
+      "likes": 3547,
+      "quotes": 6,
+      "bookmarks": 29,
+      "progress_percent": 65
     }
   ]
 }

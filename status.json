@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T11:36:44.060276+00:00",
+  "updated_at": "2026-08-16T13:02:45.313367+00:00",
   "status": "success",
-  "started_at": "2026-08-16T11:31:35.303157+00:00",
-  "finished_at": "2026-08-16T11:36:44.058904+00:00",
-  "posts_scanned": 53,
+  "started_at": "2026-08-16T12:57:49.849253+00:00",
+  "finished_at": "2026-08-16T13:02:45.311985+00:00",
+  "posts_scanned": 47,
   "posts_flagged": 1,
   "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "TakoyakTako",
-      "likes": 161762,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "us_missouri",
-      "likes": 142429,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "atahuta123",
-      "likes": 82327,
+      "author": "kedama_tori_ki",
+      "likes": 74861,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 39956,
+      "likes": 68286,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "skip_and_loafer",
-      "likes": 36601,
+      "author": "akiko_lawson",
+      "likes": 54748,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 41414,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "ae_kaji",
+      "likes": 40338,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "sasaki_maika",
-      "likes": 8777,
-      "quotes": 9,
-      "bookmarks": 264,
-      "progress_percent": 245
+      "author": "Amai_nico",
+      "likes": 2570,
+      "quotes": 11,
+      "bookmarks": 94,
+      "progress_percent": 103
     },
     {
-      "author": "Kaida_Haru",
-      "likes": 3731,
-      "quotes": 10,
-      "bookmarks": 54,
-      "progress_percent": 149
+      "author": "TBS_VIVANT",
+      "likes": 4356,
+      "quotes": 13,
+      "bookmarks": 64,
+      "progress_percent": 97
     },
     {
-      "author": "Nonfic_official",
-      "likes": 5201,
-      "quotes": 12,
-      "bookmarks": 167,
-      "progress_percent": 99
+      "author": "Yq4Ro_",
+      "likes": 2128,
+      "quotes": 18,
+      "bookmarks": 74,
+      "progress_percent": 85
     },
     {
-      "author": "Kaida_Haru",
-      "likes": 2375,
-      "quotes": 2,
-      "bookmarks": 26,
-      "progress_percent": 95
-    },
-    {
-      "author": "calbee_PR",
-      "likes": 3996,
+      "author": "ireisu_info",
+      "likes": 2052,
       "quotes": 16,
-      "bookmarks": 256,
-      "progress_percent": 94
+      "bookmarks": 158,
+      "progress_percent": 74
+    },
+    {
+      "author": "yamamoto_anna_",
+      "likes": 2839,
+      "quotes": 18,
+      "bookmarks": 71,
+      "progress_percent": 72
     }
   ]
 }

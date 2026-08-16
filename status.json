@@ -1,77 +1,77 @@
 {
-  "updated_at": "2026-08-16T05:43:48.473751+00:00",
+  "updated_at": "2026-08-16T07:02:03.767129+00:00",
   "status": "success",
-  "started_at": "2026-08-16T05:39:01.820581+00:00",
-  "finished_at": "2026-08-16T05:43:48.472540+00:00",
-  "posts_scanned": 55,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-16T06:56:57.991047+00:00",
+  "finished_at": "2026-08-16T07:02:03.765966+00:00",
+  "posts_scanned": 48,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "natsui_tanoshi",
-      "likes": 109981,
+      "author": "poke_times",
+      "likes": 142654,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "momonosekaiii",
+      "likes": 114232,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "gigazine",
+      "likes": 75472,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 54731,
+      "likes": 68295,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 47613,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "momo_ollife",
-      "likes": 45374,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "chi_bakun_chiba",
-      "likes": 37478,
+      "likes": 54735,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ui_shig",
-      "likes": 3584,
-      "quotes": 28,
-      "bookmarks": 32,
-      "progress_percent": 116
+      "author": "rai_173",
+      "likes": 4617,
+      "quotes": 18,
+      "bookmarks": 114,
+      "progress_percent": 185
     },
     {
-      "author": "shirakamifubuki",
-      "likes": 2129,
+      "author": "pj_sekai",
+      "likes": 19429,
+      "quotes": 18,
+      "bookmarks": 964,
+      "progress_percent": 142
+    },
+    {
+      "author": "McDonaldsJapan",
+      "likes": 2727,
       "quotes": 0,
-      "bookmarks": 17,
-      "progress_percent": 85
+      "bookmarks": 263,
+      "progress_percent": 94
     },
     {
-      "author": "rinu_nico",
-      "likes": 1874,
-      "quotes": 6,
+      "author": "Tr0uT_2434",
+      "likes": 2595,
+      "quotes": 3,
+      "bookmarks": 11,
+      "progress_percent": 88
+    },
+    {
+      "author": "tokino_sora",
+      "likes": 1642,
+      "quotes": 10,
       "bookmarks": 16,
-      "progress_percent": 75
-    },
-    {
-      "author": "108_towasama",
-      "likes": 1912,
-      "quotes": 8,
-      "bookmarks": 18,
-      "progress_percent": 70
-    },
-    {
-      "author": "_amatsuki_",
-      "likes": 1853,
-      "quotes": 21,
-      "bookmarks": 1900,
       "progress_percent": 66
     }
   ]

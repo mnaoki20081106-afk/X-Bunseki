@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T22:38:43.019543+00:00",
+  "updated_at": "2026-08-16T23:36:46.963217+00:00",
   "status": "success",
-  "started_at": "2026-08-16T22:34:35.612417+00:00",
-  "finished_at": "2026-08-16T22:38:43.017704+00:00",
+  "started_at": "2026-08-16T23:32:01.188341+00:00",
+  "finished_at": "2026-08-16T23:36:46.961951+00:00",
   "posts_scanned": 51,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "natsui_tanoshi",
-      "likes": 110007,
+      "author": "poke_times",
+      "likes": 142652,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "gigazine",
-      "likes": 75106,
+      "author": "momonosekaiii",
+      "likes": 103026,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 68303,
+      "author": "kedama_tori_ki",
+      "likes": 93770,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Pokemon_cojp",
-      "likes": 68149,
+      "author": "yoasobi_ABEMA",
+      "likes": 77405,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Starbucks_J",
-      "likes": 61311,
+      "author": "zespri_jp",
+      "likes": 71421,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "truckmeimei",
-      "likes": 2959,
-      "quotes": 10,
-      "bookmarks": 7,
-      "progress_percent": 54
+      "author": "55_kumamon",
+      "likes": 3128,
+      "quotes": 15,
+      "bookmarks": 51,
+      "progress_percent": 125
     },
     {
-      "author": "ok_nobuhiko",
-      "likes": 1054,
-      "quotes": 0,
-      "bookmarks": 11,
-      "progress_percent": 42
+      "author": "j_nakama_w7_3",
+      "likes": 2272,
+      "quotes": 4,
+      "bookmarks": 33,
+      "progress_percent": 91
     },
     {
-      "author": "0927_yuina",
-      "likes": 905,
-      "quotes": 2,
-      "bookmarks": 29,
-      "progress_percent": 36
+      "author": "j_nakama_w7_3",
+      "likes": 2869,
+      "quotes": 14,
+      "bookmarks": 45,
+      "progress_percent": 89
     },
     {
-      "author": "McDonaldsJapan",
-      "likes": 762,
-      "quotes": 30,
-      "bookmarks": 814,
-      "progress_percent": 30
+      "author": "osusi0303",
+      "likes": 1942,
+      "quotes": 8,
+      "bookmarks": 46,
+      "progress_percent": 78
     },
     {
-      "author": "LVT_sng",
-      "likes": 755,
-      "quotes": 0,
-      "bookmarks": 5,
-      "progress_percent": 30
+      "author": "AZKi_VDiVA",
+      "likes": 1880,
+      "quotes": 1,
+      "bookmarks": 12,
+      "progress_percent": 75
     }
   ]
 }

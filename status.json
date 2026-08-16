@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T09:42:09.477822+00:00",
+  "updated_at": "2026-08-16T10:40:29.774995+00:00",
   "status": "success",
-  "started_at": "2026-08-16T09:38:11.878888+00:00",
-  "finished_at": "2026-08-16T09:42:09.474918+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-16T10:36:17.494866+00:00",
+  "finished_at": "2026-08-16T10:40:29.773828+00:00",
+  "posts_scanned": 52,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "kedama_tori_ki",
-      "likes": 55449,
+      "author": "arinaariri",
+      "likes": 67225,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 54741,
+      "likes": 38974,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 48264,
+      "author": "ae_kaji",
+      "likes": 29428,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 37798,
+      "author": "applied_group",
+      "likes": 17796,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "McDonaldsJapan",
-      "likes": 18566,
-      "quotes": 0,
-      "bookmarks": 0
+      "author": "comiketofficial",
+      "likes": 14279,
+      "quotes": 19,
+      "bookmarks": 520
     }
   ],
   "top5_by_progress": [
     {
-      "author": "rinu_nico",
-      "likes": 2394,
+      "author": "iLiFE_official",
+      "likes": 6828,
       "quotes": 18,
-      "bookmarks": 33,
-      "progress_percent": 96
+      "bookmarks": 7800,
+      "progress_percent": 273
     },
     {
-      "author": "inui_toko",
-      "likes": 2211,
-      "quotes": 18,
-      "bookmarks": 72,
-      "progress_percent": 88
+      "author": "Kaida_Haru",
+      "likes": 3304,
+      "quotes": 3,
+      "bookmarks": 32,
+      "progress_percent": 102
     },
     {
-      "author": "rai_173",
-      "likes": 2893,
-      "quotes": 0,
-      "bookmarks": 14,
-      "progress_percent": 76
+      "author": "Lapiskawaii",
+      "likes": 2074,
+      "quotes": 16,
+      "bookmarks": 81,
+      "progress_percent": 83
     },
     {
-      "author": "yamamoto_anna_",
-      "likes": 3761,
+      "author": "iorimoe_five",
+      "likes": 4889,
       "quotes": 17,
-      "bookmarks": 80,
-      "progress_percent": 63
+      "bookmarks": 1100,
+      "progress_percent": 78
     },
     {
       "author": "calbee_PR",
-      "likes": 2487,
+      "likes": 3343,
       "quotes": 15,
-      "bookmarks": 223,
-      "progress_percent": 54
+      "bookmarks": 262,
+      "progress_percent": 76
     }
   ]
 }

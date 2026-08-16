@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-08-16T15:38:32.073754+00:00",
+  "updated_at": "2026-08-16T16:44:03.752315+00:00",
   "status": "success",
-  "started_at": "2026-08-16T15:33:10.859555+00:00",
-  "finished_at": "2026-08-16T15:38:32.072585+00:00",
-  "posts_scanned": 56,
-  "posts_flagged": 4,
-  "notified_count": 4,
+  "started_at": "2026-08-16T16:38:33.745362+00:00",
+  "finished_at": "2026-08-16T16:44:03.751127+00:00",
+  "posts_scanned": 63,
+  "posts_flagged": 5,
+  "notified_count": 5,
   "top5_by_likes": [
     {
+      "author": "_mumei_R",
+      "likes": 544043,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Misosiru_City",
+      "likes": 192254,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Karimpuuc",
+      "likes": 169767,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
       "author": "ibsukionsen",
-      "likes": 149081,
+      "likes": 149094,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "yokai_punipuni",
-      "likes": 141811,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "sumimachine",
-      "likes": 79578,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 68303,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 54760,
+      "author": "japancapsuletoy",
+      "likes": 127632,
       "quotes": 0,
       "bookmarks": 0
     }
@@ -41,38 +41,38 @@
   "top5_by_progress": [
     {
       "author": "unkochan1234567",
-      "likes": 4952,
-      "quotes": 15,
-      "bookmarks": 91,
-      "progress_percent": 198
+      "likes": 14408,
+      "quotes": 0,
+      "bookmarks": 258,
+      "progress_percent": 541
     },
     {
-      "author": "usamirito_power",
-      "likes": 3947,
-      "quotes": 14,
-      "bookmarks": 77,
-      "progress_percent": 158
+      "author": "ado1024imokenp",
+      "likes": 5685,
+      "quotes": 19,
+      "bookmarks": 96,
+      "progress_percent": 206
     },
     {
-      "author": "TXT_bighit_jp",
-      "likes": 10156,
-      "quotes": 17,
-      "bookmarks": 363,
-      "progress_percent": 148
+      "author": "Lauren_iroas",
+      "likes": 3993,
+      "quotes": 4,
+      "bookmarks": 28,
+      "progress_percent": 160
     },
     {
-      "author": "tomita_nanaka",
-      "likes": 3349,
+      "author": "ado1024imokenp",
+      "likes": 2725,
       "quotes": 18,
-      "bookmarks": 121,
-      "progress_percent": 120
+      "bookmarks": 133,
+      "progress_percent": 109
     },
     {
-      "author": "honmono_ibrahim",
-      "likes": 2969,
-      "quotes": 2,
-      "bookmarks": 31,
-      "progress_percent": 98
+      "author": "Lize_Helesta",
+      "likes": 3850,
+      "quotes": 7,
+      "bookmarks": 29,
+      "progress_percent": 106
     }
   ]
 }

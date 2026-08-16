@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T13:02:45.313367+00:00",
+  "updated_at": "2026-08-16T13:46:48.478301+00:00",
   "status": "success",
-  "started_at": "2026-08-16T12:57:49.849253+00:00",
-  "finished_at": "2026-08-16T13:02:45.311985+00:00",
-  "posts_scanned": 47,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-16T13:41:38.972125+00:00",
+  "finished_at": "2026-08-16T13:46:48.477140+00:00",
+  "posts_scanned": 55,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "kedama_tori_ki",
-      "likes": 74861,
+      "author": "TakoyakTako",
+      "likes": 169311,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "bunchoccho1",
+      "likes": 101565,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 68286,
+      "likes": 54749,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 54748,
+      "likes": 42118,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 41414,
+      "author": "umiuminemui",
+      "likes": 38580,
       "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "ae_kaji",
-      "likes": 40338,
-      "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 7000
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Amai_nico",
-      "likes": 2570,
-      "quotes": 11,
-      "bookmarks": 94,
+      "author": "Nonfic_official",
+      "likes": 6722,
+      "quotes": 18,
+      "bookmarks": 203,
+      "progress_percent": 126
+    },
+    {
+      "author": "NCTsmtown",
+      "likes": 2564,
+      "quotes": 18,
+      "bookmarks": 51,
       "progress_percent": 103
     },
     {
-      "author": "TBS_VIVANT",
-      "likes": 4356,
-      "quotes": 13,
-      "bookmarks": 64,
-      "progress_percent": 97
-    },
-    {
-      "author": "Yq4Ro_",
-      "likes": 2128,
+      "author": "iLiFE_sumire",
+      "likes": 2010,
       "quotes": 18,
-      "bookmarks": 74,
-      "progress_percent": 85
+      "bookmarks": 2100,
+      "progress_percent": 80
     },
     {
-      "author": "ireisu_info",
-      "likes": 2052,
-      "quotes": 16,
-      "bookmarks": 158,
-      "progress_percent": 74
+      "author": "lanlanutau",
+      "likes": 1485,
+      "quotes": 2,
+      "bookmarks": 13,
+      "progress_percent": 59
     },
     {
-      "author": "yamamoto_anna_",
-      "likes": 2839,
-      "quotes": 18,
-      "bookmarks": 71,
-      "progress_percent": 72
+      "author": "suchi_paint",
+      "likes": 1466,
+      "quotes": 1,
+      "bookmarks": 14,
+      "progress_percent": 59
     }
   ]
 }

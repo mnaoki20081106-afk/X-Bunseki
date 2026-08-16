@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T19:34:48.026791+00:00",
+  "updated_at": "2026-08-16T20:38:34.879064+00:00",
   "status": "success",
-  "started_at": "2026-08-16T19:30:55.276386+00:00",
-  "finished_at": "2026-08-16T19:34:48.025521+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-16T20:35:12.096387+00:00",
+  "finished_at": "2026-08-16T20:38:34.788473+00:00",
+  "posts_scanned": 53,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "momonosekaiii",
-      "likes": 380560,
+      "likes": 380562,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "polymarketjapan",
-      "likes": 156479,
+      "author": "WindowTappcou0",
+      "likes": 196697,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "KonichiWorld75",
-      "likes": 124286,
+      "author": "poke_times",
+      "likes": 142651,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "natsui_tanoshi",
-      "likes": 110004,
+      "author": "_sa_me_sa_ma",
+      "likes": 127227,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "bunchoccho1",
-      "likes": 106188,
+      "author": "zoo69712356",
+      "likes": 124875,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
+      "author": "rinu_nico",
+      "likes": 8282,
+      "quotes": 17,
+      "bookmarks": 288,
+      "progress_percent": 38
+    },
+    {
       "author": "Vamp_Kuzu",
-      "likes": 3253,
+      "likes": 4253,
       "quotes": 3,
-      "bookmarks": 22,
-      "progress_percent": 130
+      "bookmarks": 34,
+      "progress_percent": 32
     },
     {
-      "author": "root_nico",
-      "likes": 1174,
-      "quotes": 15,
-      "bookmarks": 1100,
-      "progress_percent": 47
+      "author": "takanashikiara",
+      "likes": 717,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 29
     },
     {
-      "author": "ketchup_N2",
-      "likes": 1043,
-      "quotes": 5,
-      "bookmarks": 23,
-      "progress_percent": 42
+      "author": "_AtToKun",
+      "likes": 681,
+      "quotes": 4,
+      "bookmarks": 14,
+      "progress_percent": 27
     },
     {
-      "author": "DnQ_cp",
-      "likes": 909,
-      "quotes": 1,
-      "bookmarks": 21,
-      "progress_percent": 36
-    },
-    {
-      "author": "mtor_rose",
-      "likes": 850,
-      "quotes": 9,
-      "bookmarks": 21,
-      "progress_percent": 34
+      "author": "natsuiromatsuri",
+      "likes": 1970,
+      "quotes": 2,
+      "bookmarks": 20,
+      "progress_percent": 12
     }
   ]
 }

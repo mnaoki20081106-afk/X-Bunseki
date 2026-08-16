@@ -1,21 +1,15 @@
 {
-  "updated_at": "2026-08-16T03:14:59.944959+00:00",
+  "updated_at": "2026-08-16T03:29:05.446743+00:00",
   "status": "success",
-  "started_at": "2026-08-16T03:10:39.598106+00:00",
-  "finished_at": "2026-08-16T03:14:59.942218+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-16T03:24:21.595700+00:00",
+  "finished_at": "2026-08-16T03:29:05.441684+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "shoutube1217",
-      "likes": 197287,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "ibsukionsen",
-      "likes": 144395,
+      "author": "maruon22",
+      "likes": 145049,
       "quotes": 0,
       "bookmarks": 0
     },
@@ -26,53 +20,59 @@
       "bookmarks": 0
     },
     {
-      "author": "japancapsuletoy",
-      "likes": 127579,
+      "author": "nyankorooow",
+      "likes": 131557,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "snsnokyoufu",
-      "likes": 80470,
+      "author": "momonosekaiii",
+      "likes": 114181,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "fude_kakikaki",
+      "likes": 89353,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ichikawa_zoo",
-      "likes": 3197,
-      "quotes": 12,
-      "bookmarks": 77,
-      "progress_percent": 94
-    },
-    {
-      "author": "matsucoco_co",
-      "likes": 2390,
-      "quotes": 13,
-      "bookmarks": 518,
-      "progress_percent": 84
+      "author": "satojima_x",
+      "likes": 3878,
+      "quotes": 19,
+      "bookmarks": 305,
+      "progress_percent": 103
     },
     {
       "author": "akagi_wen",
-      "likes": 1854,
+      "likes": 2404,
       "quotes": 0,
-      "bookmarks": 6,
-      "progress_percent": 74
+      "bookmarks": 9,
+      "progress_percent": 96
     },
     {
-      "author": "KKeiko_official",
-      "likes": 5271,
-      "quotes": 12,
-      "bookmarks": 61,
-      "progress_percent": 70
+      "author": "matsucoco_co",
+      "likes": 2602,
+      "quotes": 13,
+      "bookmarks": 571,
+      "progress_percent": 88
     },
     {
-      "author": "Rou_2434",
-      "likes": 3547,
-      "quotes": 6,
-      "bookmarks": 29,
-      "progress_percent": 65
+      "author": "NitoriOfficial",
+      "likes": 896,
+      "quotes": 19,
+      "bookmarks": 124,
+      "progress_percent": 63
+    },
+    {
+      "author": "kedama_tori_ki",
+      "likes": 14387,
+      "quotes": 15,
+      "bookmarks": 269,
+      "progress_percent": 61
     }
   ]
 }

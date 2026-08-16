@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T07:02:03.767129+00:00",
+  "updated_at": "2026-08-16T07:46:05.578866+00:00",
   "status": "success",
-  "started_at": "2026-08-16T06:56:57.991047+00:00",
-  "finished_at": "2026-08-16T07:02:03.765966+00:00",
-  "posts_scanned": 48,
-  "posts_flagged": 2,
-  "notified_count": 2,
+  "started_at": "2026-08-16T07:41:29.233324+00:00",
+  "finished_at": "2026-08-16T07:46:05.577691+00:00",
+  "posts_scanned": 49,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "poke_times",
-      "likes": 142654,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "momonosekaiii",
-      "likes": 114232,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "gigazine",
-      "likes": 75472,
+      "author": "akiko_lawson",
+      "likes": 68285,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 68295,
+      "likes": 54731,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 54735,
+      "likes": 47968,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "kedama_tori_ki",
+      "likes": 44541,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "chi_bakun_chiba",
+      "likes": 42878,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "rai_173",
-      "likes": 4617,
-      "quotes": 18,
-      "bookmarks": 114,
-      "progress_percent": 185
-    },
-    {
-      "author": "pj_sekai",
-      "likes": 19429,
-      "quotes": 18,
-      "bookmarks": 964,
-      "progress_percent": 142
-    },
-    {
       "author": "McDonaldsJapan",
-      "likes": 2727,
-      "quotes": 0,
-      "bookmarks": 263,
-      "progress_percent": 94
+      "likes": 2992,
+      "quotes": 29,
+      "bookmarks": 280,
+      "progress_percent": 101
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 2595,
-      "quotes": 3,
-      "bookmarks": 11,
-      "progress_percent": 88
+      "author": "ichikawa_zoo",
+      "likes": 3891,
+      "quotes": 13,
+      "bookmarks": 68,
+      "progress_percent": 98
     },
     {
-      "author": "tokino_sora",
-      "likes": 1642,
-      "quotes": 10,
-      "bookmarks": 16,
-      "progress_percent": 66
+      "author": "mtor_info",
+      "likes": 1833,
+      "quotes": 15,
+      "bookmarks": 66,
+      "progress_percent": 73
+    },
+    {
+      "author": "hinano_tachiba7",
+      "likes": 2900,
+      "quotes": 1,
+      "bookmarks": 18,
+      "progress_percent": 71
+    },
+    {
+      "author": "hinano_tachiba7",
+      "likes": 1512,
+      "quotes": 5,
+      "bookmarks": 12,
+      "progress_percent": 60
     }
   ]
 }

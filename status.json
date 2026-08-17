@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T14:41:05.344281+00:00",
+  "updated_at": "2026-08-17T15:36:47.912984+00:00",
   "status": "success",
-  "started_at": "2026-08-17T14:40:26.523933+00:00",
-  "finished_at": "2026-08-17T14:41:05.343074+00:00",
-  "posts_scanned": 59,
-  "posts_flagged": 5,
-  "notified_count": 5,
+  "started_at": "2026-08-17T15:36:09.961089+00:00",
+  "finished_at": "2026-08-17T15:36:47.911792+00:00",
+  "posts_scanned": 54,
+  "posts_flagged": 3,
+  "notified_count": 3,
   "top5_by_likes": [
     {
-      "author": "McDonaldsJapan",
-      "likes": 19257,
+      "author": "ibsukionsen",
+      "likes": 149142,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "applied_group",
-      "likes": 18605,
+      "author": "nuuuuu00_xxx",
+      "likes": 105533,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "FRIEREN_PR",
-      "likes": 16890,
+      "author": "tyomateee",
+      "likes": 97361,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "rei_Toya_rei",
-      "likes": 13639,
+      "author": "akiko_lawson",
+      "likes": 68281,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "sugakicosystems",
-      "likes": 11940,
+      "author": "akiko_lawson",
+      "likes": 54743,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Fuwa_Minato",
-      "likes": 6198,
+      "author": "iLiFE_mew",
+      "likes": 3262,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 240
+      "progress_percent": 130
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 10180,
+      "author": "usamirito_power",
+      "likes": 3223,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 219
+      "progress_percent": 129
     },
     {
-      "author": "rei_Toya_rei",
-      "likes": 13639,
+      "author": "XH_official",
+      "likes": 3763,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 204
+      "progress_percent": 123
     },
     {
-      "author": "tomita_nanaka",
-      "likes": 4330,
+      "author": "Kaida_Haru",
+      "likes": 2462,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 139
+      "progress_percent": 98
     },
     {
-      "author": "iLiFE_riri",
-      "likes": 4110,
+      "author": "houshoumarine",
+      "likes": 2220,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 116
+      "progress_percent": 89
     }
   ]
 }

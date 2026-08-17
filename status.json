@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T08:57:49.661011+00:00",
+  "updated_at": "2026-08-17T09:54:54.128253+00:00",
   "status": "success",
-  "started_at": "2026-08-17T08:57:09.495579+00:00",
-  "finished_at": "2026-08-17T08:57:49.658826+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-17T09:54:12.045642+00:00",
+  "finished_at": "2026-08-17T09:54:54.127116+00:00",
+  "posts_scanned": 49,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "chiikawa_movie",
-      "likes": 167726,
+      "author": "akiko_lawson",
+      "likes": 54749,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 46200,
+      "likes": 46334,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "tomuisan",
+      "likes": 22058,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "poco3118",
-      "likes": 18585,
+      "likes": 19173,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18394,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "McDonaldsJapan",
-      "likes": 15598,
+      "likes": 18435,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takaichi_sanae",
-      "likes": 2320,
-      "quotes": 30,
-      "bookmarks": 36,
-      "progress_percent": 93
+      "author": "suisei_hosimati",
+      "likes": 2921,
+      "quotes": 18,
+      "bookmarks": 37,
+      "progress_percent": 117
     },
     {
-      "author": "Vau0307",
-      "likes": 2022,
+      "author": "gkmas_official",
+      "likes": 2586,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 81
+      "progress_percent": 47
     },
     {
-      "author": "Vau875",
-      "likes": 1742,
+      "author": "shoji_kohei",
+      "likes": 1061,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 70
+      "progress_percent": 41
     },
     {
-      "author": "Ex_Albio",
-      "likes": 1677,
+      "author": "shirakamifubuki",
+      "likes": 962,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 67
+      "progress_percent": 38
     },
     {
-      "author": "Lize_Helesta",
-      "likes": 1590,
+      "author": "_amatsuki_",
+      "likes": 959,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 64
+      "progress_percent": 38
     }
   ]
 }

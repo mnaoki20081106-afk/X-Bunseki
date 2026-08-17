@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-17T05:48:23.197283+00:00",
+  "updated_at": "2026-08-17T07:13:59.021780+00:00",
   "status": "success",
-  "started_at": "2026-08-17T05:47:31.681688+00:00",
-  "finished_at": "2026-08-17T05:48:23.196202+00:00",
-  "posts_scanned": 54,
+  "started_at": "2026-08-17T07:13:26.289015+00:00",
+  "finished_at": "2026-08-17T07:13:59.020696+00:00",
+  "posts_scanned": 57,
   "posts_flagged": 1,
   "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "chiikawa_movie",
-      "likes": 57802,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "japancapsuletoy",
-      "likes": 25711,
+      "author": "akiko_lawson",
+      "likes": 45989,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18346,
+      "likes": 18368,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "poco3118",
+      "likes": 17006,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 13243,
+      "likes": 14460,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Anker_JP",
-      "likes": 9250,
+      "author": "dengekionline",
+      "likes": 11977,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "chiikawa_movie",
-      "likes": 57802,
+      "author": "ado1024imokenp",
+      "likes": 10272,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 200
+      "progress_percent": 411
     },
     {
-      "author": "suchi_paint",
-      "likes": 2336,
+      "author": "Tigers_140609",
+      "likes": 2326,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 93
     },
     {
-      "author": "hinano__otaku",
-      "likes": 2257,
+      "author": "osusi0303",
+      "likes": 2134,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 90
+      "progress_percent": 85
     },
     {
-      "author": "mumu_mumu09",
-      "likes": 2286,
+      "author": "HIROOMI_3JSB_",
+      "likes": 1643,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 76
+      "progress_percent": 66
     },
     {
-      "author": "momosuzunene",
-      "likes": 1542,
+      "author": "tokoyamitowa",
+      "likes": 1557,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 62

@@ -1,75 +1,75 @@
 {
-  "updated_at": "2026-08-17T03:11:00.622153+00:00",
+  "updated_at": "2026-08-17T04:55:34.785253+00:00",
   "status": "success",
-  "started_at": "2026-08-17T03:10:26.681258+00:00",
-  "finished_at": "2026-08-17T03:11:00.620621+00:00",
-  "posts_scanned": 48,
+  "started_at": "2026-08-17T04:54:59.120411+00:00",
+  "finished_at": "2026-08-17T04:55:34.784016+00:00",
+  "posts_scanned": 61,
   "posts_flagged": 1,
   "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "poke_times",
-      "likes": 142647,
+      "author": "akiko_lawson",
+      "likes": 45670,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "BANGBANGsendai",
-      "likes": 9686,
+      "author": "Genshin_7",
+      "likes": 35376,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Anker_JP",
-      "likes": 9240,
+      "author": "applied_group",
+      "likes": 18330,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "poco3118",
-      "likes": 8638,
+      "likes": 13388,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 8428,
+      "likes": 12385,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "pj_sekai",
-      "likes": 3653,
+      "author": "Genshin_7",
+      "likes": 35376,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 146
+      "progress_percent": 175
     },
     {
-      "author": "hinano_tachiba7",
-      "likes": 3574,
+      "author": "TENZAN323",
+      "likes": 3241,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 91
+      "progress_percent": 99
     },
     {
-      "author": "kikiraravivi",
-      "likes": 2090,
+      "author": "K_Matsuyama2023",
+      "likes": 7528,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 84
+      "progress_percent": 90
     },
     {
-      "author": "yukihanalamy",
-      "likes": 1935,
+      "author": "Saiki_Supadari",
+      "likes": 6579,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 77
+      "progress_percent": 88
     },
     {
       "author": "shirakamifubuki",
-      "likes": 1759,
+      "likes": 1743,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 70

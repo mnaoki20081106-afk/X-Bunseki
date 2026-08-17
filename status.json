@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-17T20:40:05.978602+00:00",
+  "updated_at": "2026-08-17T21:37:42.305477+00:00",
   "status": "success",
-  "started_at": "2026-08-17T20:39:33.354507+00:00",
-  "finished_at": "2026-08-17T20:40:05.976148+00:00",
-  "posts_scanned": 67,
+  "started_at": "2026-08-17T21:37:11.590884+00:00",
+  "finished_at": "2026-08-17T21:37:42.302392+00:00",
+  "posts_scanned": 58,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
@@ -14,65 +14,65 @@
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 114367,
+      "author": "issikazu20",
+      "likes": 135567,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "muen_615",
-      "likes": 102936,
+      "author": "nuuuuu00_xxx",
+      "likes": 109276,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tyomateee",
-      "likes": 97355,
+      "author": "aki_sui_earth",
+      "likes": 64114,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "ui_nyan",
-      "likes": 68852,
+      "author": "oumi_channel",
+      "likes": 63113,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "suisei_submati",
-      "likes": 1246,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 50
-    },
-    {
-      "author": "7216_2nd",
-      "likes": 1285,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 37
-    },
-    {
       "author": "nakamuraFF11",
-      "likes": 552,
+      "likes": 3024,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 21
+      "progress_percent": 81
     },
     {
-      "author": "tesuta001",
-      "likes": 790,
+      "author": "Tr0uT_2434",
+      "likes": 1263,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 0
+      "progress_percent": 42
     },
     {
-      "author": "Ex_Albio",
-      "likes": 1369,
+      "author": "ok_nobuhiko",
+      "likes": 800,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 0
+      "progress_percent": 32
+    },
+    {
+      "author": "eny7xb",
+      "likes": 598,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 24
+    },
+    {
+      "author": "karaage_rutsubo",
+      "likes": 1016,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 23
     }
   ]
 }

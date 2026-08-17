@@ -26,6 +26,7 @@ from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 
 import detector
+import keyword_filter
 
 # 監視対象の検索クエリ。ジャンルを横断して拾いたいので、
 # 特定ジャンルに偏らない広めの条件にしてある。
@@ -322,9 +323,8 @@ def fetch_posts() -> list[dict]:
                      いる投稿(ニュース・災害など)も拾えるようにしている。
                      いいね・RT・返信は取れるが、引用・ブックマーク・表示回数は
                      ここでは取れない。
-      2段階目(詳細ページ): 1段階目のうち「いいね800以上または返信50以上」の
-                     候補だけ、個別ページを開いて引用・ブックマーク・
-                     表示回数を取得する。
+      2段階目(詳細ページ): 1段階目のうち条件を満たす候補だけ、個別ページを
+                     開いて引用・ブックマーク・表示回数を取得する。
     """
     session_path = _session_path()
     all_posts = {}
@@ -347,13 +347,12 @@ def fetch_posts() -> list[dict]:
                 except Exception as e:  # noqa: BLE001
                     print(f"  [ERROR] 検索クエリ失敗 [{mode}] '{query}': {e}")
 
-        # 2段階目: 「いいね800以上」または「返信50以上」のどちらかを
-        # 満たす投稿だけ詳細ページを見る(Grok提案の事前フィルタ)。
-        # 返信数もOR条件に含めているのは、いいねはそこまで伸びなくても
-        # 返信(議論・反応)が多い投稿を取りこぼさないため。
-        # 事前フィルタなので広めに候補を拾い、正確な判定は
-        # detector.filter_explosive() 側(quotes/bookmarks/impressions
-        # 取得後)で行う。
+        # 2段階目: 以下の全てを満たす投稿だけ詳細ページを見る。
+        #   - 「いいね800以上」または「返信50以上」(Grok提案の事前フィルタ)
+        #   - 投稿から5時間(SUSTAINED_MAX_HOURS)以内
+        #   - keywords.txt のいずれかのワードを本文に含む(ホワイトリスト方式)
+        #     広告・懸賞キャンペーン・関係の無いジャンルのファン投稿などを
+        #     ここで除外する。
         PRELIMINARY_LIKE_THRESHOLD = 800
         PRELIMINARY_REPLY_THRESHOLD = 50
         candidates = [
@@ -363,6 +362,7 @@ def fetch_posts() -> list[dict]:
                 or p.get("replies", 0) >= PRELIMINARY_REPLY_THRESHOLD
             )
             and detector.elapsed_hours(p["posted_at"]) <= detector.SUSTAINED_MAX_HOURS
+            and keyword_filter.matches_keyword(p.get("text_snippet", ""))
         ]
         print(f"  [2段階目] 詳細ページ取得の対象: {len(candidates)}件")
 

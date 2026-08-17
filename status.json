@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T10:46:55.631824+00:00",
+  "updated_at": "2026-08-17T11:37:25.985508+00:00",
   "status": "success",
-  "started_at": "2026-08-17T10:46:21.779237+00:00",
-  "finished_at": "2026-08-17T10:46:55.630673+00:00",
+  "started_at": "2026-08-17T11:36:46.259351+00:00",
+  "finished_at": "2026-08-17T11:37:25.984274+00:00",
   "posts_scanned": 50,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "posts_flagged": 4,
+  "notified_count": 4,
   "top5_by_likes": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 22502,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "applied_group",
-      "likes": 18486,
+      "likes": 18512,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 16932,
+      "likes": 17568,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "modelpress",
-      "likes": 14804,
+      "author": "sugakicosystems",
+      "likes": 10675,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "info__Johnnys",
-      "likes": 12425,
+      "author": "Anker_JP",
+      "likes": 9291,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "puppet_sunsun",
+      "likes": 8321,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "likes": 22502,
+      "author": "Vamp_Kuzu",
+      "likes": 5818,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 306
+      "progress_percent": 233
     },
     {
-      "author": "sakuramiko35",
-      "likes": 2420,
+      "author": "KO1KEYZofficial",
+      "likes": 7814,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 97
+      "progress_percent": 126
     },
     {
-      "author": "usadapekora",
-      "likes": 1711,
+      "author": "Kaida_Haru",
+      "likes": 2979,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 68
+      "progress_percent": 119
+    },
+    {
+      "author": "yamada_momoka__",
+      "likes": 2532,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 101
     },
     {
       "author": "DnQ_cp",
-      "likes": 1605,
+      "likes": 2325,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 64
-    },
-    {
-      "author": "mazeta_sub",
-      "likes": 1479,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 59
+      "progress_percent": 93
     }
   ]
 }

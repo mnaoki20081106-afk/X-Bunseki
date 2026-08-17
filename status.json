@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T13:03:52.974505+00:00",
+  "updated_at": "2026-08-17T13:51:19.251196+00:00",
   "status": "success",
-  "started_at": "2026-08-17T13:03:20.558050+00:00",
-  "finished_at": "2026-08-17T13:03:52.972456+00:00",
-  "posts_scanned": 56,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-17T13:50:42.240249+00:00",
+  "finished_at": "2026-08-17T13:51:19.249778+00:00",
+  "posts_scanned": 46,
+  "posts_flagged": 3,
+  "notified_count": 3,
   "top5_by_likes": [
     {
-      "author": "fukkunmania",
-      "likes": 25513,
+      "author": "chiikawa_movie",
+      "likes": 219363,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tintinpapa1",
-      "likes": 21999,
+      "author": "poke_times",
+      "likes": 142685,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "gigazine",
+      "likes": 75056,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "fukkunmania",
+      "likes": 27554,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18545,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "McDonaldsJapan",
-      "likes": 18460,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Capcom_amuse",
-      "likes": 12091,
+      "likes": 18576,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "usamirito_power",
-      "likes": 3393,
+      "author": "rai_173",
+      "likes": 3839,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 95
+      "progress_percent": 132
     },
     {
-      "author": "noguchi_iori",
-      "likes": 2362,
+      "author": "suzuka_fz1124",
+      "likes": 2953,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 94
+      "progress_percent": 118
     },
     {
-      "author": "yukihanalamy",
-      "likes": 1553,
+      "author": "root_nico_2",
+      "likes": 2890,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 62
+      "progress_percent": 116
     },
     {
-      "author": "shishirobotan",
-      "likes": 1544,
+      "author": "jr_official_X",
+      "likes": 9804,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 62
+      "progress_percent": 74
     },
     {
-      "author": "karen_fz0328",
-      "likes": 1475,
+      "author": "yui_fz0221",
+      "likes": 1769,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 59
+      "progress_percent": 71
     }
   ]
 }

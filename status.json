@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T22:38:14.527377+00:00",
+  "updated_at": "2026-08-17T23:35:04.582133+00:00",
   "status": "success",
-  "started_at": "2026-08-17T22:37:42.292046+00:00",
-  "finished_at": "2026-08-17T22:38:14.525504+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-17T23:34:28.386356+00:00",
+  "finished_at": "2026-08-17T23:35:04.426917+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "momonosekaiii",
-      "likes": 380572,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "if_life_s2",
-      "likes": 203949,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "poke_times",
-      "likes": 142675,
+      "likes": 142677,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kedama_tori_ki",
-      "likes": 104063,
+      "author": "wakasato_",
+      "likes": 114104,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tyomateee",
-      "likes": 97353,
+      "author": "suama7700",
+      "likes": 88502,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "sugokuii_",
+      "likes": 19953,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "applied_group",
+      "likes": 18713,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hinekureo_dayo",
-      "likes": 1724,
+      "author": "nino_honmono",
+      "likes": 16728,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 69
+      "progress_percent": 452
     },
     {
-      "author": "truckmeimei",
-      "likes": 2274,
+      "author": "55_kumamon",
+      "likes": 2856,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 44
+      "progress_percent": 114
     },
     {
-      "author": "amamfrfr2nd",
-      "likes": 913,
+      "author": "suchi_sub",
+      "likes": 1768,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 36
+      "progress_percent": 71
     },
     {
-      "author": "kobateck",
-      "likes": 909,
+      "author": "AZKi_VDiVA",
+      "likes": 1642,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 36
+      "progress_percent": 66
     },
     {
-      "author": "hakuikoyori",
-      "likes": 845,
+      "author": "akiko_lawson",
+      "likes": 1558,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 34
+      "progress_percent": 62
     }
   ]
 }

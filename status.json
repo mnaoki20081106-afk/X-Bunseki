@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T07:13:59.021780+00:00",
+  "updated_at": "2026-08-17T08:57:49.661011+00:00",
   "status": "success",
-  "started_at": "2026-08-17T07:13:26.289015+00:00",
-  "finished_at": "2026-08-17T07:13:59.020696+00:00",
-  "posts_scanned": 57,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-17T08:57:09.495579+00:00",
+  "finished_at": "2026-08-17T08:57:49.658826+00:00",
+  "posts_scanned": 50,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 45989,
+      "author": "chiikawa_movie",
+      "likes": 167726,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "applied_group",
-      "likes": 18368,
+      "author": "akiko_lawson",
+      "likes": 46200,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "poco3118",
-      "likes": 17006,
+      "likes": 18585,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "applied_group",
+      "likes": 18394,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 14460,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "dengekionline",
-      "likes": 11977,
+      "likes": 15598,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "ado1024imokenp",
-      "likes": 10272,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 411
-    },
-    {
-      "author": "Tigers_140609",
-      "likes": 2326,
-      "quotes": 0,
-      "bookmarks": 0,
+      "author": "takaichi_sanae",
+      "likes": 2320,
+      "quotes": 30,
+      "bookmarks": 36,
       "progress_percent": 93
     },
     {
-      "author": "osusi0303",
-      "likes": 2134,
+      "author": "Vau0307",
+      "likes": 2022,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 85
+      "progress_percent": 81
     },
     {
-      "author": "HIROOMI_3JSB_",
-      "likes": 1643,
+      "author": "Vau875",
+      "likes": 1742,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 66
+      "progress_percent": 70
     },
     {
-      "author": "tokoyamitowa",
-      "likes": 1557,
+      "author": "Ex_Albio",
+      "likes": 1677,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 62
+      "progress_percent": 67
+    },
+    {
+      "author": "Lize_Helesta",
+      "likes": 1590,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 64
     }
   ]
 }

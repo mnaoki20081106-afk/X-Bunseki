@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T15:36:47.912984+00:00",
+  "updated_at": "2026-08-17T16:42:54.639671+00:00",
   "status": "success",
-  "started_at": "2026-08-17T15:36:09.961089+00:00",
-  "finished_at": "2026-08-17T15:36:47.911792+00:00",
-  "posts_scanned": 54,
-  "posts_flagged": 3,
-  "notified_count": 3,
+  "started_at": "2026-08-17T16:42:09.646904+00:00",
+  "finished_at": "2026-08-17T16:42:54.638336+00:00",
+  "posts_scanned": 64,
+  "posts_flagged": 7,
+  "notified_count": 7,
   "top5_by_likes": [
     {
-      "author": "ibsukionsen",
-      "likes": 149142,
+      "author": "chiikawa_movie",
+      "likes": 225926,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "nuuuuu00_xxx",
-      "likes": 105533,
+      "author": "poke_times",
+      "likes": 142677,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tyomateee",
-      "likes": 97361,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 68281,
+      "author": "tomuisan",
+      "likes": 65614,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 54743,
+      "likes": 49282,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 47171,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "iLiFE_mew",
-      "likes": 3262,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 130
-    },
-    {
-      "author": "usamirito_power",
-      "likes": 3223,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 129
-    },
-    {
-      "author": "XH_official",
-      "likes": 3763,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 123
-    },
-    {
       "author": "Kaida_Haru",
-      "likes": 2462,
+      "likes": 4464,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 98
+      "progress_percent": 179
     },
     {
-      "author": "houshoumarine",
-      "likes": 2220,
+      "author": "YODAYOsub",
+      "likes": 3721,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 89
+      "progress_percent": 149
+    },
+    {
+      "author": "Fuwa_Minato",
+      "likes": 3658,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 146
+    },
+    {
+      "author": "Lauren_iroas",
+      "likes": 4666,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 144
+    },
+    {
+      "author": "YODAYOsub",
+      "likes": 2967,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 119
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T13:51:19.251196+00:00",
+  "updated_at": "2026-08-17T14:41:05.344281+00:00",
   "status": "success",
-  "started_at": "2026-08-17T13:50:42.240249+00:00",
-  "finished_at": "2026-08-17T13:51:19.249778+00:00",
-  "posts_scanned": 46,
-  "posts_flagged": 3,
-  "notified_count": 3,
+  "started_at": "2026-08-17T14:40:26.523933+00:00",
+  "finished_at": "2026-08-17T14:41:05.343074+00:00",
+  "posts_scanned": 59,
+  "posts_flagged": 5,
+  "notified_count": 5,
   "top5_by_likes": [
     {
-      "author": "chiikawa_movie",
-      "likes": 219363,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "poke_times",
-      "likes": 142685,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "gigazine",
-      "likes": 75056,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "fukkunmania",
-      "likes": 27554,
+      "author": "McDonaldsJapan",
+      "likes": 19257,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18576,
+      "likes": 18605,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "FRIEREN_PR",
+      "likes": 16890,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "rei_Toya_rei",
+      "likes": 13639,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "sugakicosystems",
+      "likes": 11940,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "rai_173",
-      "likes": 3839,
+      "author": "Fuwa_Minato",
+      "likes": 6198,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 132
+      "progress_percent": 240
     },
     {
-      "author": "suzuka_fz1124",
-      "likes": 2953,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 10180,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 118
+      "progress_percent": 219
     },
     {
-      "author": "root_nico_2",
-      "likes": 2890,
+      "author": "rei_Toya_rei",
+      "likes": 13639,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 204
+    },
+    {
+      "author": "tomita_nanaka",
+      "likes": 4330,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 139
+    },
+    {
+      "author": "iLiFE_riri",
+      "likes": 4110,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 116
-    },
-    {
-      "author": "jr_official_X",
-      "likes": 9804,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 74
-    },
-    {
-      "author": "yui_fz0221",
-      "likes": 1769,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 71
     }
   ]
 }

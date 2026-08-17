@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T11:37:25.985508+00:00",
+  "updated_at": "2026-08-17T13:03:52.974505+00:00",
   "status": "success",
-  "started_at": "2026-08-17T11:36:46.259351+00:00",
-  "finished_at": "2026-08-17T11:37:25.984274+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 4,
-  "notified_count": 4,
+  "started_at": "2026-08-17T13:03:20.558050+00:00",
+  "finished_at": "2026-08-17T13:03:52.972456+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
+      "author": "fukkunmania",
+      "likes": 25513,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "tintinpapa1",
+      "likes": 21999,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
       "author": "applied_group",
-      "likes": 18512,
+      "likes": 18545,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "McDonaldsJapan",
-      "likes": 17568,
+      "likes": 18460,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "sugakicosystems",
-      "likes": 10675,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Anker_JP",
-      "likes": 9291,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "puppet_sunsun",
-      "likes": 8321,
+      "author": "Capcom_amuse",
+      "likes": 12091,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Vamp_Kuzu",
-      "likes": 5818,
+      "author": "usamirito_power",
+      "likes": 3393,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 233
+      "progress_percent": 95
     },
     {
-      "author": "KO1KEYZofficial",
-      "likes": 7814,
+      "author": "noguchi_iori",
+      "likes": 2362,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 126
+      "progress_percent": 94
     },
     {
-      "author": "Kaida_Haru",
-      "likes": 2979,
+      "author": "yukihanalamy",
+      "likes": 1553,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 119
+      "progress_percent": 62
     },
     {
-      "author": "yamada_momoka__",
-      "likes": 2532,
+      "author": "shishirobotan",
+      "likes": 1544,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 101
+      "progress_percent": 62
     },
     {
-      "author": "DnQ_cp",
-      "likes": 2325,
+      "author": "karen_fz0328",
+      "likes": 1475,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 93
+      "progress_percent": 59
     }
   ]
 }

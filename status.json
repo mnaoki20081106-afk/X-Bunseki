@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-17T19:37:50.928513+00:00",
+  "updated_at": "2026-08-17T20:40:05.978602+00:00",
   "status": "success",
-  "started_at": "2026-08-17T19:37:19.207609+00:00",
-  "finished_at": "2026-08-17T19:37:50.925079+00:00",
-  "posts_scanned": 70,
+  "started_at": "2026-08-17T20:39:33.354507+00:00",
+  "finished_at": "2026-08-17T20:40:05.976148+00:00",
+  "posts_scanned": 67,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
@@ -14,20 +14,14 @@
       "bookmarks": 0
     },
     {
-      "author": "helvetica_7",
-      "likes": 118269,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
       "author": "momonosekaiii",
-      "likes": 114366,
+      "likes": 114367,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "6yhsdsiswmcd",
-      "likes": 98421,
+      "author": "muen_615",
+      "likes": 102936,
       "quotes": 0,
       "bookmarks": 0
     },
@@ -36,43 +30,49 @@
       "likes": 97355,
       "quotes": 0,
       "bookmarks": 0
+    },
+    {
+      "author": "ui_nyan",
+      "likes": 68852,
+      "quotes": 0,
+      "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Ex_Albio",
-      "likes": 959,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 38
-    },
-    {
-      "author": "SerAph_DazZ",
-      "likes": 785,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 31
-    },
-    {
       "author": "suisei_submati",
-      "likes": 607,
+      "likes": 1246,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 24
+      "progress_percent": 50
     },
     {
-      "author": "Koyota0",
-      "likes": 526,
+      "author": "7216_2nd",
+      "likes": 1285,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 37
+    },
+    {
+      "author": "nakamuraFF11",
+      "likes": 552,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 21
     },
     {
-      "author": "uruha_ichinose",
-      "likes": 683,
+      "author": "tesuta001",
+      "likes": 790,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 7
+      "progress_percent": 0
+    },
+    {
+      "author": "Ex_Albio",
+      "likes": 1369,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0
     }
   ]
 }

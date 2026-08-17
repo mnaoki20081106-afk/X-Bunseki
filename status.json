@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T17:39:52.330043+00:00",
+  "updated_at": "2026-08-17T18:55:39.169353+00:00",
   "status": "success",
-  "started_at": "2026-08-17T17:39:19.897876+00:00",
-  "finished_at": "2026-08-17T17:39:51.849008+00:00",
-  "posts_scanned": 61,
+  "started_at": "2026-08-17T18:54:56.566509+00:00",
+  "finished_at": "2026-08-17T18:55:39.037125+00:00",
+  "posts_scanned": 65,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "poke_times",
-      "likes": 142679,
+      "author": "karahazu1004",
+      "likes": 156882,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "suicide_jc2",
-      "likes": 134833,
+      "author": "ado1024imokenp",
+      "likes": 115492,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "tomuisan",
-      "likes": 68298,
+      "author": "tyomateee",
+      "likes": 97355,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "pingpong_pearl1",
-      "likes": 58765,
+      "author": "doctor_nw",
+      "likes": 78625,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "akiko_lawson",
-      "likes": 47204,
+      "author": "oumi_channel",
+      "likes": 59174,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Hibachi_Mana",
-      "likes": 2280,
+      "author": "H_KAGAMI2434",
+      "likes": 2079,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 87
+      "progress_percent": 62
     },
     {
-      "author": "shirakamifubuki",
-      "likes": 1812,
+      "author": "milet_music",
+      "likes": 703,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 72
+      "progress_percent": 28
     },
     {
-      "author": "IQ200YukaF",
-      "likes": 1724,
+      "author": "tsunomakiwatame",
+      "likes": 602,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 69
+      "progress_percent": 24
     },
     {
-      "author": "Kanae_2434",
-      "likes": 1488,
+      "author": "iLiFE_koguma",
+      "likes": 978,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 60
+      "progress_percent": 22
     },
     {
-      "author": "oomoriseiko",
-      "likes": 1282,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 49
+      "author": "kitamuraharuo",
+      "likes": 1987,
+      "quotes": 3,
+      "bookmarks": 27,
+      "progress_percent": 13
     }
   ]
 }

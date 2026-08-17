@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-16T23:36:46.963217+00:00",
+  "updated_at": "2026-08-17T01:57:41.650382+00:00",
   "status": "success",
-  "started_at": "2026-08-16T23:32:01.188341+00:00",
-  "finished_at": "2026-08-16T23:36:46.961951+00:00",
-  "posts_scanned": 51,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-17T01:52:58.472497+00:00",
+  "finished_at": "2026-08-17T01:57:41.649007+00:00",
+  "posts_scanned": 50,
+  "posts_flagged": 3,
+  "notified_count": 3,
   "top5_by_likes": [
     {
-      "author": "poke_times",
-      "likes": 142652,
+      "author": "polymarketjapan",
+      "likes": 156475,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "momonosekaiii",
-      "likes": 103026,
+      "author": "akiko_lawson",
+      "likes": 68295,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "kedama_tori_ki",
-      "likes": 93770,
+      "author": "akiko_lawson",
+      "likes": 49236,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "yoasobi_ABEMA",
-      "likes": 77405,
+      "author": "akiko_lawson",
+      "likes": 45099,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "zespri_jp",
-      "likes": 71421,
+      "author": "doradoradon1",
+      "likes": 42735,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "55_kumamon",
-      "likes": 3128,
-      "quotes": 15,
-      "bookmarks": 51,
-      "progress_percent": 125
+      "author": "TAIGA_KYOMO33",
+      "likes": 8461,
+      "quotes": 30,
+      "bookmarks": 213,
+      "progress_percent": 180
     },
     {
-      "author": "j_nakama_w7_3",
-      "likes": 2272,
-      "quotes": 4,
-      "bookmarks": 33,
-      "progress_percent": 91
-    },
-    {
-      "author": "j_nakama_w7_3",
-      "likes": 2869,
-      "quotes": 14,
-      "bookmarks": 45,
-      "progress_percent": 89
-    },
-    {
-      "author": "osusi0303",
-      "likes": 1942,
-      "quotes": 8,
-      "bookmarks": 46,
-      "progress_percent": 78
-    },
-    {
-      "author": "AZKi_VDiVA",
-      "likes": 1880,
+      "author": "shionsab",
+      "likes": 2783,
       "quotes": 1,
-      "bookmarks": 12,
-      "progress_percent": 75
+      "bookmarks": 60,
+      "progress_percent": 111
+    },
+    {
+      "author": "McDonaldsJapan",
+      "likes": 3373,
+      "quotes": 24,
+      "bookmarks": 348,
+      "progress_percent": 108
+    },
+    {
+      "author": "hinano_tachiba7",
+      "likes": 1974,
+      "quotes": 1,
+      "bookmarks": 9,
+      "progress_percent": 79
+    },
+    {
+      "author": "sana_natori",
+      "likes": 1789,
+      "quotes": 4,
+      "bookmarks": 39,
+      "progress_percent": 72
     }
   ]
 }

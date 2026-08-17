@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17T16:42:54.639671+00:00",
+  "updated_at": "2026-08-17T17:39:52.330043+00:00",
   "status": "success",
-  "started_at": "2026-08-17T16:42:09.646904+00:00",
-  "finished_at": "2026-08-17T16:42:54.638336+00:00",
-  "posts_scanned": 64,
-  "posts_flagged": 7,
-  "notified_count": 7,
+  "started_at": "2026-08-17T17:39:19.897876+00:00",
+  "finished_at": "2026-08-17T17:39:51.849008+00:00",
+  "posts_scanned": 61,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "chiikawa_movie",
-      "likes": 225926,
+      "author": "poke_times",
+      "likes": 142679,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "poke_times",
-      "likes": 142677,
+      "author": "suicide_jc2",
+      "likes": 134833,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "tomuisan",
-      "likes": 65614,
+      "likes": 68298,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "pingpong_pearl1",
+      "likes": 58765,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 49282,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 47171,
+      "likes": 47204,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Kaida_Haru",
-      "likes": 4464,
+      "author": "Hibachi_Mana",
+      "likes": 2280,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 179
+      "progress_percent": 87
     },
     {
-      "author": "YODAYOsub",
-      "likes": 3721,
+      "author": "shirakamifubuki",
+      "likes": 1812,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 149
+      "progress_percent": 72
     },
     {
-      "author": "Fuwa_Minato",
-      "likes": 3658,
+      "author": "IQ200YukaF",
+      "likes": 1724,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 146
+      "progress_percent": 69
     },
     {
-      "author": "Lauren_iroas",
-      "likes": 4666,
+      "author": "Kanae_2434",
+      "likes": 1488,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 144
+      "progress_percent": 60
     },
     {
-      "author": "YODAYOsub",
-      "likes": 2967,
+      "author": "oomoriseiko",
+      "likes": 1282,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 119
+      "progress_percent": 49
     }
   ]
 }

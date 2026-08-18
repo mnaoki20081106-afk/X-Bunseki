@@ -1,58 +1,58 @@
 {
-  "updated_at": "2026-08-18T10:44:04.788650+00:00",
+  "updated_at": "2026-08-18T11:37:17.633497+00:00",
   "status": "success",
-  "started_at": "2026-08-18T10:43:33.064850+00:00",
-  "finished_at": "2026-08-18T10:44:04.785170+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-18T11:36:37.010930+00:00",
+  "finished_at": "2026-08-18T11:37:17.631312+00:00",
+  "posts_scanned": 51,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 49297,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2088400272330502594"
-    },
-    {
-      "author": "akiko_lawson",
       "likes": 47519,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/akiko_lawson/status/2088762669109064084"
     },
     {
-      "author": "LINEGIFT_JP",
-      "likes": 8311,
+      "author": "angelia_lapin",
+      "likes": 1593,
+      "quotes": 8,
+      "bookmarks": 457,
+      "url": "https://x.com/angelia_lapin/status/2089672743843426529"
+    },
+    {
+      "author": "erii_20031027",
+      "likes": 520,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
+      "url": "https://x.com/erii_20031027/status/2089671924289032236"
     }
   ],
   "top5_by_progress": [
     {
+      "author": "angelia_lapin",
+      "likes": 1593,
+      "quotes": 8,
+      "bookmarks": 457,
+      "progress_percent": 45,
+      "url": "https://x.com/angelia_lapin/status/2089672743843426529"
+    },
+    {
+      "author": "erii_20031027",
+      "likes": 520,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 21,
+      "url": "https://x.com/erii_20031027/status/2089671924289032236"
+    },
+    {
       "author": "akiko_lawson",
       "likes": 47519,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,
       "url": "https://x.com/akiko_lawson/status/2088762669109064084"
-    },
-    {
-      "author": "LINEGIFT_JP",
-      "likes": 8311,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 49297,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/akiko_lawson/status/2088400272330502594"
     }
   ]
 }

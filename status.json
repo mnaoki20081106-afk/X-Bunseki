@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-18T04:49:30.928115+00:00",
+  "updated_at": "2026-08-18T05:43:23.680906+00:00",
   "status": "success",
-  "started_at": "2026-08-18T04:48:36.216745+00:00",
-  "finished_at": "2026-08-18T04:49:30.926996+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 2,
-  "notified_count": 2,
+  "started_at": "2026-08-18T05:41:55.410313+00:00",
+  "finished_at": "2026-08-18T05:43:23.678193+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 49538,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 47477,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Genshin_7",
-      "likes": 42689,
+      "likes": 63459,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18793,
+      "likes": 18803,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "fujiichan2000",
+      "likes": 11564,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Anker_JP",
-      "likes": 9403,
+      "likes": 9406,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "LINEGIFT_JP",
+      "likes": 6488,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Genshin_7",
-      "likes": 42689,
+      "author": "Hoshuto_hyakuta",
+      "likes": 3293,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 176
+      "progress_percent": 96
     },
     {
-      "author": "kikiraravivi",
-      "likes": 4352,
+      "author": "sakatansab",
+      "likes": 2182,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 174
+      "progress_percent": 87
     },
     {
-      "author": "itsuki__rmpg",
-      "likes": 1933,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 67
+      "author": "jpapachannel",
+      "likes": 1980,
+      "quotes": 1,
+      "bookmarks": 17,
+      "progress_percent": 79
     },
     {
-      "author": "hakuikoyori",
-      "likes": 1461,
+      "author": "Hoshuto_hyakuta",
+      "likes": 1723,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 58
+      "progress_percent": 69
     },
     {
-      "author": "otonosekanade",
-      "likes": 1673,
+      "author": "uratasama_kari",
+      "likes": 1650,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 57
+      "progress_percent": 66
     }
   ]
 }

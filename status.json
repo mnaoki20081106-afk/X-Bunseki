@@ -1,58 +1,73 @@
 {
-  "updated_at": "2026-08-18T11:37:17.633497+00:00",
+  "updated_at": "2026-08-18T13:06:05.031562+00:00",
   "status": "success",
-  "started_at": "2026-08-18T11:36:37.010930+00:00",
-  "finished_at": "2026-08-18T11:37:17.631312+00:00",
-  "posts_scanned": 51,
+  "started_at": "2026-08-18T13:05:23.430504+00:00",
+  "finished_at": "2026-08-18T13:06:04.856909+00:00",
+  "posts_scanned": 45,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 47519,
+      "author": "Teagle_Noir",
+      "likes": 174790,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2088762669109064084"
+      "url": "https://x.com/Teagle_Noir/status/2088553563870114233"
     },
     {
-      "author": "angelia_lapin",
-      "likes": 1593,
-      "quotes": 8,
-      "bookmarks": 457,
-      "url": "https://x.com/angelia_lapin/status/2089672743843426529"
-    },
-    {
-      "author": "erii_20031027",
-      "likes": 520,
+      "author": "LINEGIFT_JP",
+      "likes": 8818,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/erii_20031027/status/2089671924289032236"
+      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
+    },
+    {
+      "author": "kei_nagao2434",
+      "likes": 1297,
+      "quotes": 0,
+      "bookmarks": 2,
+      "url": "https://x.com/kei_nagao2434/status/2089695716310659112"
+    },
+    {
+      "author": "oozorasubaru",
+      "likes": 853,
+      "quotes": 0,
+      "bookmarks": 868,
+      "url": "https://x.com/oozorasubaru/status/2089696679872401439"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "angelia_lapin",
-      "likes": 1593,
-      "quotes": 8,
-      "bookmarks": 457,
-      "progress_percent": 45,
-      "url": "https://x.com/angelia_lapin/status/2089672743843426529"
-    },
-    {
-      "author": "erii_20031027",
-      "likes": 520,
+      "author": "kei_nagao2434",
+      "likes": 1297,
       "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 21,
-      "url": "https://x.com/erii_20031027/status/2089671924289032236"
+      "bookmarks": 2,
+      "progress_percent": 44,
+      "url": "https://x.com/kei_nagao2434/status/2089695716310659112"
     },
     {
-      "author": "akiko_lawson",
-      "likes": 47519,
+      "author": "oozorasubaru",
+      "likes": 853,
+      "quotes": 0,
+      "bookmarks": 868,
+      "progress_percent": 34,
+      "url": "https://x.com/oozorasubaru/status/2089696679872401439"
+    },
+    {
+      "author": "Teagle_Noir",
+      "likes": 174790,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,
-      "url": "https://x.com/akiko_lawson/status/2088762669109064084"
+      "url": "https://x.com/Teagle_Noir/status/2088553563870114233"
+    },
+    {
+      "author": "LINEGIFT_JP",
+      "likes": 8818,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
     }
   ]
 }

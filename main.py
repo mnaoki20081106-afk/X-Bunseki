@@ -257,17 +257,20 @@ def run_once():
     print(f"完了。通知送信数: {notified_count}")
 
     # 「動作確認」用に、2種類のランキングを記録しておく。
-    # - top5_by_likes: 単純にいいね数が多い順(何が話題になっているかの全体像)
-    # - top5_by_progress: 通知条件(引用・ブックマーク・いいね)への
-    #   「達成度」が高い順(まだ通知はされていないが、条件に一番近い投稿。
-    #   早期発見の目安になる)
-    top5_likes = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
+    # どちらも posts_matching_keywords(キーワードフィルター通過後)を
+    # 対象にする。以前は top5_by_likes だけ全件(フィルタ前)を使っていたが、
+    # キーワードに関係ない投稿が混ざって分かりにくいとの指摘を受けて統一した。
+    # - top5_by_likes: いいね数が多い順(話題になっている投稿の全体像)
+    # - top5_by_progress: 通知条件への「達成度」が高い順(早期発見の目安)
+    # URLも添付し、実際の投稿をすぐ確認できるようにしている。
+    top5_likes = sorted(posts_matching_keywords, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     top5_by_likes = [
         {
             "author": p.get("author_handle"),
             "likes": p.get("likes", 0),
             "quotes": p.get("quotes", 0),
             "bookmarks": p.get("bookmarks", 0),
+            "url": p.get("url", ""),
         }
         for p in top5_likes
     ]
@@ -280,6 +283,7 @@ def run_once():
             "quotes": p.get("quotes", 0),
             "bookmarks": p.get("bookmarks", 0),
             "progress_percent": round(p.get("progress", 0) * 100),
+            "url": p.get("url", ""),
         }
         for p in top5_progress
     ]

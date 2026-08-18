@@ -1,88 +1,58 @@
 {
-  "updated_at": "2026-08-18T13:56:53.284176+00:00",
+  "updated_at": "2026-08-18T14:49:34.266786+00:00",
   "status": "success",
-  "started_at": "2026-08-18T13:55:49.806189+00:00",
-  "finished_at": "2026-08-18T13:56:53.283297+00:00",
-  "posts_scanned": 44,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-18T14:48:43.750526+00:00",
+  "finished_at": "2026-08-18T14:49:34.263416+00:00",
+  "posts_scanned": 53,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "animalkyat",
-      "likes": 79924,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/animalkyat/status/2089606124488315384"
-    },
-    {
-      "author": "Kanae_2434",
-      "likes": 3489,
-      "quotes": 10,
-      "bookmarks": 21,
-      "url": "https://x.com/Kanae_2434/status/2089709707518968001"
-    },
-    {
-      "author": "soraruru02",
-      "likes": 1690,
-      "quotes": 8,
-      "bookmarks": 13,
-      "url": "https://x.com/soraruru02/status/2089705877825843283"
-    },
-    {
       "author": "LINEGIFT_JP",
-      "likes": 1568,
+      "likes": 2622,
       "quotes": 15,
-      "bookmarks": 95,
+      "bookmarks": 152,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "enako_cos",
-      "likes": 772,
+      "author": "funassyi",
+      "likes": 754,
+      "quotes": 10,
+      "bookmarks": 9,
+      "url": "https://x.com/funassyi/status/2089719226240323666"
+    },
+    {
+      "author": "akirosenthal",
+      "likes": 656,
       "quotes": 0,
-      "bookmarks": 15,
-      "url": "https://x.com/enako_cos/status/2089709513565929982"
+      "bookmarks": 1,
+      "url": "https://x.com/akirosenthal/status/2089720765843464259"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Kanae_2434",
-      "likes": 3489,
-      "quotes": 10,
-      "bookmarks": 21,
-      "progress_percent": 140,
-      "url": "https://x.com/Kanae_2434/status/2089709707518968001"
-    },
-    {
-      "author": "soraruru02",
-      "likes": 1690,
-      "quotes": 8,
-      "bookmarks": 13,
-      "progress_percent": 68,
-      "url": "https://x.com/soraruru02/status/2089705877825843283"
-    },
-    {
       "author": "LINEGIFT_JP",
-      "likes": 1568,
+      "likes": 2622,
       "quotes": 15,
-      "bookmarks": 95,
-      "progress_percent": 63,
+      "bookmarks": 152,
+      "progress_percent": 56,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "enako_cos",
-      "likes": 772,
-      "quotes": 0,
-      "bookmarks": 15,
-      "progress_percent": 18,
-      "url": "https://x.com/enako_cos/status/2089709513565929982"
+      "author": "funassyi",
+      "likes": 754,
+      "quotes": 10,
+      "bookmarks": 9,
+      "progress_percent": 30,
+      "url": "https://x.com/funassyi/status/2089719226240323666"
     },
     {
-      "author": "animalkyat",
-      "likes": 79924,
+      "author": "akirosenthal",
+      "likes": 656,
       "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/animalkyat/status/2089606124488315384"
+      "bookmarks": 1,
+      "progress_percent": 26,
+      "url": "https://x.com/akirosenthal/status/2089720765843464259"
     }
   ]
 }

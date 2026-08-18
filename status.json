@@ -1,71 +1,43 @@
 {
-  "updated_at": "2026-08-18T09:15:42.932699+00:00",
+  "updated_at": "2026-08-18T09:31:08.756508+00:00",
   "status": "success",
-  "started_at": "2026-08-18T09:14:58.327719+00:00",
-  "finished_at": "2026-08-18T09:15:42.927344+00:00",
-  "posts_scanned": 43,
+  "started_at": "2026-08-18T09:30:23.406336+00:00",
+  "finished_at": "2026-08-18T09:31:08.753814+00:00",
+  "posts_scanned": 19,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "akiko_lawson",
-      "likes": 47513,
+      "author": "LINEGIFT_JP",
+      "likes": 7935,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
     },
     {
-      "author": "applied_group",
-      "likes": 18851,
+      "author": "yayoiken_com",
+      "likes": 5990,
       "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "McDonaldsJapan",
-      "likes": 11839,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "Anker_JP",
-      "likes": 9481,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "eyecare_cp",
-      "likes": 8374,
-      "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "url": "https://x.com/yayoiken_com/status/2089517643166363860"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "tokino_sora",
-      "likes": 796,
-      "quotes": 0,
-      "bookmarks": 4,
-      "progress_percent": 32
-    },
-    {
-      "author": "iorimoe_five",
-      "likes": 1371,
-      "quotes": 2,
-      "bookmarks": 60,
-      "progress_percent": 24
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 47513,
+      "author": "LINEGIFT_JP",
+      "likes": 7935,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 0
+      "progress_percent": 0,
+      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
     },
     {
       "author": "yayoiken_com",
-      "likes": 5886,
+      "likes": 5990,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 0
+      "progress_percent": 0,
+      "url": "https://x.com/yayoiken_com/status/2089517643166363860"
     }
   ]
 }

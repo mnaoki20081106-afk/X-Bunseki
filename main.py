@@ -20,6 +20,7 @@ from pathlib import Path
 import db
 import detector
 import genre_classifier
+import keyword_filter
 import line_notifier
 import ntfy_notifier
 import email_notifier
@@ -177,7 +178,21 @@ def run_once():
     print(f"収集した投稿数: {len(posts)}")
     _check_zero_posts_streak(len(posts))
 
-    candidates = detector.filter_explosive(posts)
+    # ★キーワードフィルター(ホワイトリスト方式)をここで明示的に適用する。
+    # playwright_collector.py側のキーワードフィルターは「詳細ページを
+    # 取得する候補を絞る」ためだけのものであり、判定ロジック
+    # (detector.filter_explosive)にはフィルタされていない生の投稿が
+    # そのまま渡ってしまっていた。
+    # 特に「瞬間バズ」判定は引用・ブックマーク・表示回数を必要とせず、
+    # 検索段階のいいね・RT・返信だけで成立してしまうため、キーワードに
+    # 一致しない投稿(広告・関係ないジャンルのファン投稿等)でも
+    # 通知されてしまう不具合があった。ここで確実に絞り込む。
+    posts_matching_keywords = [
+        p for p in posts if keyword_filter.matches_keyword(p.get("text_snippet", ""))
+    ]
+    print(f"キーワードフィルター通過後: {len(posts_matching_keywords)}件")
+
+    candidates = detector.filter_explosive(posts_matching_keywords)
     print(f"爆発条件を満たした投稿数: {len(candidates)}")
 
     # 既に通知済みのpost_idは除外
@@ -243,7 +258,9 @@ def run_once():
 
     # 「動作確認」用に、2種類のランキングを記録しておく。
     # - top5_by_likes: 単純にいいね数が多い順(何が話題になっているかの全体像)
-    # - top5_by_progress: 通知条件への「達成度」が高い順(早期発見の目安)
+    # - top5_by_progress: 通知条件(引用・ブックマーク・いいね)への
+    #   「達成度」が高い順(まだ通知はされていないが、条件に一番近い投稿。
+    #   早期発見の目安になる)
     top5_likes = sorted(posts, key=lambda p: p.get("likes", 0), reverse=True)[:5]
     top5_by_likes = [
         {
@@ -255,7 +272,7 @@ def run_once():
         for p in top5_likes
     ]
 
-    top5_progress = detector.rank_by_progress(posts, limit=5)
+    top5_progress = detector.rank_by_progress(posts_matching_keywords, limit=5)
     top5_by_progress = [
         {
             "author": p.get("author_handle"),
@@ -283,6 +300,8 @@ def run_test_notification():
     """
     「通知確認」用のテストモード。実際にXを検索せず、テスト用の
     ダミー投稿データでLINE・ntfy・メールの3ルート全部に送信を試みる。
+    「通知条件の判定ロジックは正しいが、通知の送信自体が失敗している」
+    ケースを、実際にX検索を待たずすぐに確認できるようにするため。
     """
     print("=== テスト通知モード ===")
 
@@ -321,6 +340,7 @@ def run_test_notification():
 
     print(f"テスト通知結果: {results}")
 
+    # 結果自体もLINEに送っておく(どのルートが失敗したか一目で分かるように)
     summary_lines = ["📋 通知確認テスト結果"]
     for channel, success in results.items():
         mark = "✅" if success else "❌"

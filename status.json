@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-18T03:58:26.586670+00:00",
+  "updated_at": "2026-08-18T04:49:30.928115+00:00",
   "status": "success",
-  "started_at": "2026-08-18T03:57:31.816401+00:00",
-  "finished_at": "2026-08-18T03:58:26.585033+00:00",
-  "posts_scanned": 48,
+  "started_at": "2026-08-18T04:48:36.216745+00:00",
+  "finished_at": "2026-08-18T04:49:30.926996+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 2,
   "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "animal_kyawa_",
-      "likes": 64591,
+      "author": "akiko_lawson",
+      "likes": 49538,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 40084,
+      "likes": 47477,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "Yeq6X",
-      "likes": 38254,
+      "author": "Genshin_7",
+      "likes": 42689,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18785,
+      "likes": 18793,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Anker_JP",
-      "likes": 9395,
+      "likes": 9403,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hezuruy",
-      "likes": 6779,
+      "author": "Genshin_7",
+      "likes": 42689,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 162
+      "progress_percent": 176
     },
     {
-      "author": "sasaki_maika",
-      "likes": 5372,
+      "author": "kikiraravivi",
+      "likes": 4352,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 129
+      "progress_percent": 174
     },
     {
-      "author": "sakayori_soma",
-      "likes": 2273,
+      "author": "itsuki__rmpg",
+      "likes": 1933,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 88
+      "progress_percent": 67
     },
     {
-      "author": "illmaaaaaa",
-      "likes": 2188,
+      "author": "hakuikoyori",
+      "likes": 1461,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 88
+      "progress_percent": 58
     },
     {
-      "author": "micomikoto2nd",
-      "likes": 1951,
+      "author": "otonosekanade",
+      "likes": 1673,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 78
+      "progress_percent": 57
     }
   ]
 }

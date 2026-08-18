@@ -1,58 +1,43 @@
 {
-  "updated_at": "2026-08-18T14:49:34.266786+00:00",
+  "updated_at": "2026-08-18T15:45:14.320144+00:00",
   "status": "success",
-  "started_at": "2026-08-18T14:48:43.750526+00:00",
-  "finished_at": "2026-08-18T14:49:34.263416+00:00",
-  "posts_scanned": 53,
+  "started_at": "2026-08-18T15:44:32.193778+00:00",
+  "finished_at": "2026-08-18T15:45:14.318252+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "LINEGIFT_JP",
-      "likes": 2622,
+      "author": "kotsume_cha",
+      "likes": 1108,
       "quotes": 15,
-      "bookmarks": 152,
-      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
+      "bookmarks": 66,
+      "url": "https://x.com/kotsume_cha/status/2089729135908385184"
     },
     {
-      "author": "funassyi",
-      "likes": 754,
-      "quotes": 10,
-      "bookmarks": 9,
-      "url": "https://x.com/funassyi/status/2089719226240323666"
-    },
-    {
-      "author": "akirosenthal",
-      "likes": 656,
+      "author": "inui_toko",
+      "likes": 575,
       "quotes": 0,
-      "bookmarks": 1,
-      "url": "https://x.com/akirosenthal/status/2089720765843464259"
+      "bookmarks": 0,
+      "url": "https://x.com/inui_toko/status/2089734327550824679"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "LINEGIFT_JP",
-      "likes": 2622,
+      "author": "kotsume_cha",
+      "likes": 1108,
       "quotes": 15,
-      "bookmarks": 152,
-      "progress_percent": 56,
-      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
+      "bookmarks": 66,
+      "progress_percent": 44,
+      "url": "https://x.com/kotsume_cha/status/2089729135908385184"
     },
     {
-      "author": "funassyi",
-      "likes": 754,
-      "quotes": 10,
-      "bookmarks": 9,
-      "progress_percent": 30,
-      "url": "https://x.com/funassyi/status/2089719226240323666"
-    },
-    {
-      "author": "akirosenthal",
-      "likes": 656,
+      "author": "inui_toko",
+      "likes": 575,
       "quotes": 0,
-      "bookmarks": 1,
-      "progress_percent": 26,
-      "url": "https://x.com/akirosenthal/status/2089720765843464259"
+      "bookmarks": 0,
+      "progress_percent": 19,
+      "url": "https://x.com/inui_toko/status/2089734327550824679"
     }
   ]
 }

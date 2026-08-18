@@ -1,88 +1,88 @@
 {
-  "updated_at": "2026-08-18T16:48:32.619258+00:00",
+  "updated_at": "2026-08-18T17:47:01.528259+00:00",
   "status": "success",
-  "started_at": "2026-08-18T16:46:44.479635+00:00",
-  "finished_at": "2026-08-18T16:48:32.617236+00:00",
-  "posts_scanned": 57,
+  "started_at": "2026-08-18T17:45:38.906206+00:00",
+  "finished_at": "2026-08-18T17:47:01.525602+00:00",
+  "posts_scanned": 51,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 104534,
+      "likes": 110700,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2063395513169289347"
-    },
-    {
-      "author": "animalkyat",
-      "likes": 102354,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/animalkyat/status/2089606124488315384"
+      "url": "https://x.com/akiko_lawson/status/2069556106356261332"
     },
     {
       "author": "akiko_lawson",
-      "likes": 83618,
+      "likes": 47527,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2072092828180640095"
+      "url": "https://x.com/akiko_lawson/status/2088762669109064084"
     },
     {
-      "author": "LINEGIFT_JP",
-      "likes": 3808,
+      "author": "anime_kimishinu",
+      "likes": 2709,
+      "quotes": 17,
+      "bookmarks": 387,
+      "url": "https://x.com/anime_kimishinu/status/2089744136157143522"
+    },
+    {
+      "author": "tokoyamitowa",
+      "likes": 1921,
+      "quotes": 0,
+      "bookmarks": 6,
+      "url": "https://x.com/tokoyamitowa/status/2089749947587645538"
+    },
+    {
+      "author": "kotsume_cha",
+      "likes": 1900,
       "quotes": 15,
-      "bookmarks": 201,
-      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
-    },
-    {
-      "author": "arimoto_kaori",
-      "likes": 1816,
-      "quotes": 1,
-      "bookmarks": 14,
-      "url": "https://x.com/arimoto_kaori/status/2089735211173204183"
+      "bookmarks": 99,
+      "url": "https://x.com/kotsume_cha/status/2089729135908385184"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "LINEGIFT_JP",
-      "likes": 3808,
-      "quotes": 15,
-      "bookmarks": 201,
-      "progress_percent": 87,
-      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
-    },
-    {
-      "author": "illmaaaaaa",
-      "likes": 1445,
-      "quotes": 1,
-      "bookmarks": 16,
-      "progress_percent": 58,
-      "url": "https://x.com/illmaaaaaa/status/2089739186152862128"
-    },
-    {
       "author": "tokoyamitowa",
-      "likes": 1034,
+      "likes": 1921,
       "quotes": 0,
-      "bookmarks": 4,
-      "progress_percent": 41,
+      "bookmarks": 6,
+      "progress_percent": 75,
       "url": "https://x.com/tokoyamitowa/status/2089749947587645538"
     },
     {
       "author": "shirakamifubuki",
-      "likes": 1014,
+      "likes": 1454,
       "quotes": 1,
       "bookmarks": 3,
-      "progress_percent": 41,
+      "progress_percent": 58,
       "url": "https://x.com/shirakamifubuki/status/2089748797316628629"
     },
     {
-      "author": "mazeta_sub",
-      "likes": 938,
-      "quotes": 3,
-      "bookmarks": 12,
-      "progress_percent": 38,
-      "url": "https://x.com/mazeta_sub/status/2089745874650030129"
+      "author": "shirakamifubuki",
+      "likes": 1183,
+      "quotes": 1,
+      "bookmarks": 5,
+      "progress_percent": 47,
+      "url": "https://x.com/shirakamifubuki/status/2089749562147950811"
+    },
+    {
+      "author": "rindochihaya",
+      "likes": 642,
+      "quotes": 0,
+      "bookmarks": 3,
+      "progress_percent": 26,
+      "url": "https://x.com/rindochihaya/status/2089753420421103660"
+    },
+    {
+      "author": "sena_asumi",
+      "likes": 875,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 24,
+      "url": "https://x.com/sena_asumi/status/2089752767598657842"
     }
   ]
 }

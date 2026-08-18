@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-18T01:49:32.627755+00:00",
+  "updated_at": "2026-08-18T03:07:17.113256+00:00",
   "status": "success",
-  "started_at": "2026-08-18T01:48:56.598597+00:00",
-  "finished_at": "2026-08-18T01:49:32.626524+00:00",
-  "posts_scanned": 54,
-  "posts_flagged": 2,
-  "notified_count": 2,
+  "started_at": "2026-08-18T03:06:42.820331+00:00",
+  "finished_at": "2026-08-18T03:07:17.111197+00:00",
+  "posts_scanned": 56,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "if_life_s2",
-      "likes": 323542,
+      "author": "chiikawa_movie",
+      "likes": 232224,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "issikazu20",
-      "likes": 154026,
+      "author": "akiko_lawson",
+      "likes": 29714,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "oumi_channel",
-      "likes": 76656,
+      "author": "applied_group",
+      "likes": 18767,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "gigazine",
-      "likes": 75025,
+      "author": "XaiabP",
+      "likes": 9572,
       "quotes": 0,
       "bookmarks": 0
     },
     {
-      "author": "yui10ii",
-      "likes": 58955,
+      "author": "Anker_JP",
+      "likes": 9388,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "akiko_lawson",
-      "likes": 11347,
+      "author": "30R9gmaMUy3guDJ",
+      "likes": 5858,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 340
+      "progress_percent": 101
     },
     {
-      "author": "Mikogami_Kotone",
-      "likes": 2764,
+      "author": "jel_sub",
+      "likes": 2236,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 110
+      "progress_percent": 89
     },
     {
-      "author": "Saiki_Supadari",
-      "likes": 7541,
+      "author": "30R9gmaMUy3guDJ",
+      "likes": 6256,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 72
+      "progress_percent": 86
     },
     {
-      "author": "Rou_2434",
-      "likes": 7760,
+      "author": "Kadou_Mikaru",
+      "likes": 2535,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 62
+      "progress_percent": 79
     },
     {
-      "author": "ayasa_ito",
-      "likes": 1415,
+      "author": "naiko_notgirl",
+      "likes": 1855,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 55
+      "progress_percent": 74
     }
   ]
 }

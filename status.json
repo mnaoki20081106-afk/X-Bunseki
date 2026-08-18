@@ -1,73 +1,88 @@
 {
-  "updated_at": "2026-08-18T13:06:05.031562+00:00",
+  "updated_at": "2026-08-18T13:56:53.284176+00:00",
   "status": "success",
-  "started_at": "2026-08-18T13:05:23.430504+00:00",
-  "finished_at": "2026-08-18T13:06:04.856909+00:00",
-  "posts_scanned": 45,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-18T13:55:49.806189+00:00",
+  "finished_at": "2026-08-18T13:56:53.283297+00:00",
+  "posts_scanned": 44,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "Teagle_Noir",
-      "likes": 174790,
+      "author": "animalkyat",
+      "likes": 79924,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/Teagle_Noir/status/2088553563870114233"
+      "url": "https://x.com/animalkyat/status/2089606124488315384"
+    },
+    {
+      "author": "Kanae_2434",
+      "likes": 3489,
+      "quotes": 10,
+      "bookmarks": 21,
+      "url": "https://x.com/Kanae_2434/status/2089709707518968001"
+    },
+    {
+      "author": "soraruru02",
+      "likes": 1690,
+      "quotes": 8,
+      "bookmarks": 13,
+      "url": "https://x.com/soraruru02/status/2089705877825843283"
     },
     {
       "author": "LINEGIFT_JP",
-      "likes": 8818,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
+      "likes": 1568,
+      "quotes": 15,
+      "bookmarks": 95,
+      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "kei_nagao2434",
-      "likes": 1297,
+      "author": "enako_cos",
+      "likes": 772,
       "quotes": 0,
-      "bookmarks": 2,
-      "url": "https://x.com/kei_nagao2434/status/2089695716310659112"
-    },
-    {
-      "author": "oozorasubaru",
-      "likes": 853,
-      "quotes": 0,
-      "bookmarks": 868,
-      "url": "https://x.com/oozorasubaru/status/2089696679872401439"
+      "bookmarks": 15,
+      "url": "https://x.com/enako_cos/status/2089709513565929982"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "kei_nagao2434",
-      "likes": 1297,
-      "quotes": 0,
-      "bookmarks": 2,
-      "progress_percent": 44,
-      "url": "https://x.com/kei_nagao2434/status/2089695716310659112"
+      "author": "Kanae_2434",
+      "likes": 3489,
+      "quotes": 10,
+      "bookmarks": 21,
+      "progress_percent": 140,
+      "url": "https://x.com/Kanae_2434/status/2089709707518968001"
     },
     {
-      "author": "oozorasubaru",
-      "likes": 853,
-      "quotes": 0,
-      "bookmarks": 868,
-      "progress_percent": 34,
-      "url": "https://x.com/oozorasubaru/status/2089696679872401439"
-    },
-    {
-      "author": "Teagle_Noir",
-      "likes": 174790,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/Teagle_Noir/status/2088553563870114233"
+      "author": "soraruru02",
+      "likes": 1690,
+      "quotes": 8,
+      "bookmarks": 13,
+      "progress_percent": 68,
+      "url": "https://x.com/soraruru02/status/2089705877825843283"
     },
     {
       "author": "LINEGIFT_JP",
-      "likes": 8818,
+      "likes": 1568,
+      "quotes": 15,
+      "bookmarks": 95,
+      "progress_percent": 63,
+      "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
+    },
+    {
+      "author": "enako_cos",
+      "likes": 772,
+      "quotes": 0,
+      "bookmarks": 15,
+      "progress_percent": 18,
+      "url": "https://x.com/enako_cos/status/2089709513565929982"
+    },
+    {
+      "author": "animalkyat",
+      "likes": 79924,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,
-      "url": "https://x.com/LINEGIFT_JP/status/2089335954792497620"
+      "url": "https://x.com/animalkyat/status/2089606124488315384"
     }
   ]
 }

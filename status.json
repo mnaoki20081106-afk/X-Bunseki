@@ -1,88 +1,88 @@
 {
-  "updated_at": "2026-08-18T22:39:28.598887+00:00",
+  "updated_at": "2026-08-18T23:34:56.631810+00:00",
   "status": "success",
-  "started_at": "2026-08-18T22:38:09.048928+00:00",
-  "finished_at": "2026-08-18T22:39:28.596864+00:00",
-  "posts_scanned": 53,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-18T23:33:36.132557+00:00",
+  "finished_at": "2026-08-18T23:34:56.629784+00:00",
+  "posts_scanned": 48,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
+      "author": "akiko_lawson",
+      "likes": 47532,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/akiko_lawson/status/2088762669109064084"
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 10993,
+      "quotes": 21,
+      "bookmarks": 319,
+      "url": "https://x.com/akiko_lawson/status/2089849833008087519"
+    },
+    {
+      "author": "0sammeteo",
+      "likes": 10479,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/0sammeteo/status/2089672301130420440"
+    },
+    {
       "author": "LINEGIFT_JP",
-      "likes": 5081,
+      "likes": 5525,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "KAJI__OFFICIAL",
-      "likes": 1199,
-      "quotes": 0,
-      "bookmarks": 4,
-      "url": "https://x.com/KAJI__OFFICIAL/status/2089828331676107080"
-    },
-    {
-      "author": "osusi0303",
-      "likes": 903,
-      "quotes": 13,
-      "bookmarks": 17,
-      "url": "https://x.com/osusi0303/status/2089835479739039854"
-    },
-    {
-      "author": "EL6_neiro_",
-      "likes": 684,
-      "quotes": 1,
-      "bookmarks": 1,
-      "url": "https://x.com/EL6_neiro_/status/2089835983223107791"
-    },
-    {
-      "author": "kahotann_",
-      "likes": 625,
-      "quotes": 0,
-      "bookmarks": 20,
-      "url": "https://x.com/kahotann_/status/2089832939634987228"
+      "author": "ok_nobuhiko",
+      "likes": 4649,
+      "quotes": 5,
+      "bookmarks": 48,
+      "url": "https://x.com/ok_nobuhiko/status/2089845231336468501"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "KAJI__OFFICIAL",
-      "likes": 1199,
+      "author": "akiko_lawson",
+      "likes": 10993,
+      "quotes": 21,
+      "bookmarks": 319,
+      "progress_percent": 125,
+      "url": "https://x.com/akiko_lawson/status/2089849833008087519"
+    },
+    {
+      "author": "ok_nobuhiko",
+      "likes": 4649,
+      "quotes": 5,
+      "bookmarks": 48,
+      "progress_percent": 61,
+      "url": "https://x.com/ok_nobuhiko/status/2089845231336468501"
+    },
+    {
+      "author": "kano_2525",
+      "likes": 1239,
+      "quotes": 2,
+      "bookmarks": 14,
+      "progress_percent": 50,
+      "url": "https://x.com/kano_2525/status/2089846200371679557"
+    },
+    {
+      "author": "EL6_JIL_",
+      "likes": 874,
       "quotes": 0,
-      "bookmarks": 4,
-      "progress_percent": 36,
-      "url": "https://x.com/KAJI__OFFICIAL/status/2089828331676107080"
+      "bookmarks": 3,
+      "progress_percent": 35,
+      "url": "https://x.com/EL6_JIL_/status/2089845042743558269"
     },
     {
-      "author": "osusi0303",
-      "likes": 903,
-      "quotes": 13,
-      "bookmarks": 17,
-      "progress_percent": 36,
-      "url": "https://x.com/osusi0303/status/2089835479739039854"
-    },
-    {
-      "author": "EL6_neiro_",
-      "likes": 684,
-      "quotes": 1,
-      "bookmarks": 1,
-      "progress_percent": 27,
-      "url": "https://x.com/EL6_neiro_/status/2089835983223107791"
-    },
-    {
-      "author": "YugiriRay",
-      "likes": 564,
-      "quotes": 3,
-      "bookmarks": 8,
-      "progress_percent": 23,
-      "url": "https://x.com/YugiriRay/status/2089835602858606873"
-    },
-    {
-      "author": "takuya_matsuri",
-      "likes": 537,
-      "quotes": 10,
-      "bookmarks": 22,
-      "progress_percent": 22,
-      "url": "https://x.com/takuya_matsuri/status/2089830194634715204"
+      "author": "truckmeimei",
+      "likes": 1391,
+      "quotes": 8,
+      "bookmarks": 3,
+      "progress_percent": 32,
+      "url": "https://x.com/truckmeimei/status/2089851798748271101"
     }
   ]
 }

@@ -1,88 +1,88 @@
 {
-  "updated_at": "2026-08-18T21:36:38.973949+00:00",
+  "updated_at": "2026-08-18T22:39:28.598887+00:00",
   "status": "success",
-  "started_at": "2026-08-18T21:35:37.581808+00:00",
-  "finished_at": "2026-08-18T21:36:38.971488+00:00",
-  "posts_scanned": 51,
+  "started_at": "2026-08-18T22:38:09.048928+00:00",
+  "finished_at": "2026-08-18T22:39:28.596864+00:00",
+  "posts_scanned": 53,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "LINEGIFT_JP",
-      "likes": 4710,
+      "likes": 5081,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "kotsume_cha",
-      "likes": 2270,
+      "author": "KAJI__OFFICIAL",
+      "likes": 1199,
       "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/kotsume_cha/status/2089729135908385184"
+      "bookmarks": 4,
+      "url": "https://x.com/KAJI__OFFICIAL/status/2089828331676107080"
     },
     {
-      "author": "hirox246",
-      "likes": 1350,
-      "quotes": 17,
-      "bookmarks": 89,
-      "url": "https://x.com/hirox246/status/2089808531155210661"
+      "author": "osusi0303",
+      "likes": 903,
+      "quotes": 13,
+      "bookmarks": 17,
+      "url": "https://x.com/osusi0303/status/2089835479739039854"
     },
     {
-      "author": "jijicom",
-      "likes": 1176,
-      "quotes": 32,
-      "bookmarks": 382,
-      "url": "https://x.com/jijicom/status/2089772593482174717"
-    },
-    {
-      "author": "ichijouririka",
-      "likes": 999,
+      "author": "EL6_neiro_",
+      "likes": 684,
       "quotes": 1,
-      "bookmarks": 6,
-      "url": "https://x.com/ichijouririka/status/2089761073041899597"
+      "bookmarks": 1,
+      "url": "https://x.com/EL6_neiro_/status/2089835983223107791"
+    },
+    {
+      "author": "kahotann_",
+      "likes": 625,
+      "quotes": 0,
+      "bookmarks": 20,
+      "url": "https://x.com/kahotann_/status/2089832939634987228"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "jijicom",
-      "likes": 1176,
-      "quotes": 32,
-      "bookmarks": 382,
-      "progress_percent": 45,
-      "url": "https://x.com/jijicom/status/2089772593482174717"
+      "author": "KAJI__OFFICIAL",
+      "likes": 1199,
+      "quotes": 0,
+      "bookmarks": 4,
+      "progress_percent": 36,
+      "url": "https://x.com/KAJI__OFFICIAL/status/2089828331676107080"
     },
     {
-      "author": "hirox246",
-      "likes": 1350,
-      "quotes": 17,
-      "bookmarks": 89,
-      "progress_percent": 33,
-      "url": "https://x.com/hirox246/status/2089808531155210661"
+      "author": "osusi0303",
+      "likes": 903,
+      "quotes": 13,
+      "bookmarks": 17,
+      "progress_percent": 36,
+      "url": "https://x.com/osusi0303/status/2089835479739039854"
     },
     {
-      "author": "ichijouririka",
-      "likes": 999,
+      "author": "EL6_neiro_",
+      "likes": 684,
       "quotes": 1,
-      "bookmarks": 6,
-      "progress_percent": 10,
-      "url": "https://x.com/ichijouririka/status/2089761073041899597"
+      "bookmarks": 1,
+      "progress_percent": 27,
+      "url": "https://x.com/EL6_neiro_/status/2089835983223107791"
     },
     {
-      "author": "ojm52811",
-      "likes": 846,
-      "quotes": 0,
-      "bookmarks": 6,
-      "progress_percent": 1,
-      "url": "https://x.com/ojm52811/status/2089798061967253872"
+      "author": "YugiriRay",
+      "likes": 564,
+      "quotes": 3,
+      "bookmarks": 8,
+      "progress_percent": 23,
+      "url": "https://x.com/YugiriRay/status/2089835602858606873"
     },
     {
-      "author": "Thor_0916",
-      "likes": 632,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/Thor_0916/status/2089789427543572908"
+      "author": "takuya_matsuri",
+      "likes": 537,
+      "quotes": 10,
+      "bookmarks": 22,
+      "progress_percent": 22,
+      "url": "https://x.com/takuya_matsuri/status/2089830194634715204"
     }
   ]
 }

@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-18T03:07:17.113256+00:00",
+  "updated_at": "2026-08-18T03:58:26.586670+00:00",
   "status": "success",
-  "started_at": "2026-08-18T03:06:42.820331+00:00",
-  "finished_at": "2026-08-18T03:07:17.111197+00:00",
-  "posts_scanned": 56,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-18T03:57:31.816401+00:00",
+  "finished_at": "2026-08-18T03:58:26.585033+00:00",
+  "posts_scanned": 48,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "chiikawa_movie",
-      "likes": 232224,
+      "author": "animal_kyawa_",
+      "likes": 64591,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "akiko_lawson",
-      "likes": 29714,
+      "likes": 40084,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Yeq6X",
+      "likes": 38254,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18767,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "XaiabP",
-      "likes": 9572,
+      "likes": 18785,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Anker_JP",
-      "likes": 9388,
+      "likes": 9395,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 5858,
+      "author": "hezuruy",
+      "likes": 6779,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 101
+      "progress_percent": 162
     },
     {
-      "author": "jel_sub",
-      "likes": 2236,
+      "author": "sasaki_maika",
+      "likes": 5372,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 89
+      "progress_percent": 129
     },
     {
-      "author": "30R9gmaMUy3guDJ",
-      "likes": 6256,
+      "author": "sakayori_soma",
+      "likes": 2273,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 86
+      "progress_percent": 88
     },
     {
-      "author": "Kadou_Mikaru",
-      "likes": 2535,
+      "author": "illmaaaaaa",
+      "likes": 2188,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 79
+      "progress_percent": 88
     },
     {
-      "author": "naiko_notgirl",
-      "likes": 1855,
+      "author": "micomikoto2nd",
+      "likes": 1951,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 74
+      "progress_percent": 78
     }
   ]
 }

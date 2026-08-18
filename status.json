@@ -1,78 +1,71 @@
 {
-  "updated_at": "2026-08-18T08:52:25.855329+00:00",
+  "updated_at": "2026-08-18T09:15:42.932699+00:00",
   "status": "success",
-  "started_at": "2026-08-18T08:51:28.129218+00:00",
-  "finished_at": "2026-08-18T08:52:25.854133+00:00",
-  "posts_scanned": 47,
-  "posts_flagged": 3,
-  "notified_count": 3,
+  "started_at": "2026-08-18T09:14:58.327719+00:00",
+  "finished_at": "2026-08-18T09:15:42.927344+00:00",
+  "posts_scanned": 43,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 104306,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 47509,
+      "likes": 47513,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "applied_group",
-      "likes": 18848,
+      "likes": 18851,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "McDonaldsJapan",
+      "likes": 11839,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "Anker_JP",
-      "likes": 9475,
+      "likes": 9481,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "eyecare_cp",
-      "likes": 7967,
+      "likes": 8374,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "jel_sub",
-      "likes": 3519,
-      "quotes": 14,
+      "author": "tokino_sora",
+      "likes": 796,
+      "quotes": 0,
+      "bookmarks": 4,
+      "progress_percent": 32
+    },
+    {
+      "author": "iorimoe_five",
+      "likes": 1371,
+      "quotes": 2,
       "bookmarks": 60,
-      "progress_percent": 141
+      "progress_percent": 24
     },
     {
-      "author": "root_nico_2",
-      "likes": 3118,
+      "author": "akiko_lawson",
+      "likes": 47513,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 125
+      "progress_percent": 0
     },
     {
-      "author": "applied_group",
-      "likes": 2536,
+      "author": "yayoiken_com",
+      "likes": 5886,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 101
-    },
-    {
-      "author": "meynico",
-      "likes": 2067,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 83
-    },
-    {
-      "author": "ookamimio",
-      "likes": 1464,
-      "quotes": 0,
-      "bookmarks": 6,
-      "progress_percent": 59
+      "progress_percent": 0
     }
   ]
 }

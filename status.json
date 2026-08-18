@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-18T07:01:58.654703+00:00",
+  "updated_at": "2026-08-18T07:51:08.327494+00:00",
   "status": "success",
-  "started_at": "2026-08-18T07:00:54.054530+00:00",
-  "finished_at": "2026-08-18T07:01:58.653408+00:00",
-  "posts_scanned": 51,
-  "posts_flagged": 3,
-  "notified_count": 3,
+  "started_at": "2026-08-18T07:49:55.870433+00:00",
+  "finished_at": "2026-08-18T07:51:08.325981+00:00",
+  "posts_scanned": 55,
+  "posts_flagged": 2,
+  "notified_count": 2,
   "top5_by_likes": [
     {
-      "author": "momonosekaiii",
-      "likes": 114376,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 80015,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 47493,
-      "quotes": 0,
-      "bookmarks": 0
-    },
-    {
-      "author": "applied_group",
-      "likes": 18818,
+      "author": "NazologyInfo",
+      "likes": 19981,
       "quotes": 0,
       "bookmarks": 0
     },
     {
       "author": "hibikana417",
-      "likes": 11702,
+      "likes": 13619,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 10807,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "Anker_JP",
+      "likes": 9457,
+      "quotes": 0,
+      "bookmarks": 0
+    },
+    {
+      "author": "sunnyftt1",
+      "likes": 7488,
       "quotes": 0,
       "bookmarks": 0
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Vamp_Kuzu",
-      "likes": 8189,
+      "author": "SAK_SAK_SAKUMA",
+      "likes": 10807,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 278
+      "progress_percent": 246
     },
     {
-      "author": "QnlyQ",
-      "likes": 3012,
+      "author": "shirakamifubuki",
+      "likes": 3627,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 120
+      "progress_percent": 145
     },
     {
-      "author": "nakiriayame",
-      "likes": 2520,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 101
-    },
-    {
-      "author": "fubuchandayo",
-      "likes": 2433,
+      "author": "amatsuuni",
+      "likes": 2581,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 97
     },
     {
-      "author": "Tr0uT_2434",
-      "likes": 2096,
+      "author": "DEATHDOL_NOTE",
+      "likes": 6352,
+      "quotes": 15,
+      "bookmarks": 2700,
+      "progress_percent": 63
+    },
+    {
+      "author": "milet_music",
+      "likes": 1571,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 82
+      "progress_percent": 63
     }
   ]
 }

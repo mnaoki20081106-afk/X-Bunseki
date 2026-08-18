@@ -1,26 +1,12 @@
 {
-  "updated_at": "2026-08-18T18:55:57.310213+00:00",
+  "updated_at": "2026-08-18T19:39:04.297641+00:00",
   "status": "success",
-  "started_at": "2026-08-18T18:54:15.667676+00:00",
-  "finished_at": "2026-08-18T18:55:57.307158+00:00",
-  "posts_scanned": 61,
+  "started_at": "2026-08-18T19:37:40.584356+00:00",
+  "finished_at": "2026-08-18T19:39:04.295713+00:00",
+  "posts_scanned": 53,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
-    {
-      "author": "akiko_lawson",
-      "likes": 158053,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2061945962583687260"
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 49293,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2088400272330502594"
-    },
     {
       "author": "akiko_lawson",
       "likes": 47530,
@@ -30,59 +16,73 @@
     },
     {
       "author": "LINEGIFT_JP",
-      "likes": 4226,
+      "likes": 4303,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
       "author": "anime_kimishinu",
-      "likes": 3345,
+      "likes": 3600,
       "quotes": 18,
-      "bookmarks": 480,
+      "bookmarks": 524,
       "url": "https://x.com/anime_kimishinu/status/2089744136157143522"
+    },
+    {
+      "author": "tokoyamitowa",
+      "likes": 2532,
+      "quotes": 0,
+      "bookmarks": 10,
+      "url": "https://x.com/tokoyamitowa/status/2089749947587645538"
+    },
+    {
+      "author": "shirakamifubuki",
+      "likes": 1776,
+      "quotes": 1,
+      "bookmarks": 4,
+      "url": "https://x.com/shirakamifubuki/status/2089748797316628629"
     }
   ],
   "top5_by_progress": [
     {
       "author": "shirakamifubuki",
-      "likes": 1339,
+      "likes": 1427,
       "quotes": 1,
       "bookmarks": 8,
-      "progress_percent": 20,
+      "progress_percent": 21,
       "url": "https://x.com/shirakamifubuki/status/2089749562147950811"
     },
     {
       "author": "anime_kimishinu",
-      "likes": 3345,
+      "likes": 3600,
       "quotes": 18,
-      "bookmarks": 480,
-      "progress_percent": 19,
+      "bookmarks": 524,
+      "progress_percent": 20,
       "url": "https://x.com/anime_kimishinu/status/2089744136157143522"
     },
     {
       "author": "tokoyamitowa",
-      "likes": 2328,
+      "likes": 2532,
       "quotes": 0,
-      "bookmarks": 9,
-      "progress_percent": 16,
+      "bookmarks": 10,
+      "progress_percent": 17,
       "url": "https://x.com/tokoyamitowa/status/2089749947587645538"
     },
     {
-      "author": "kotsume_cha",
-      "likes": 2029,
-      "quotes": 15,
-      "bookmarks": 102,
-      "progress_percent": 14,
-      "url": "https://x.com/kotsume_cha/status/2089729135908385184"
-    },
-    {
       "author": "shirakamifubuki",
-      "likes": 1665,
+      "likes": 1776,
       "quotes": 1,
       "bookmarks": 4,
       "progress_percent": 13,
       "url": "https://x.com/shirakamifubuki/status/2089748797316628629"
+    },
+    {
+      "author": "rindochihaya",
+      "likes": 838,
+      "quotes": 0,
+      "bookmarks": 4,
+      "progress_percent": 8,
+      "url": "https://x.com/rindochihaya/status/2089753420421103660"
     }
   ]
 }

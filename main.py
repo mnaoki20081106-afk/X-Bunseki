@@ -187,9 +187,21 @@ def run_once():
     # 検索段階のいいね・RT・返信だけで成立してしまうため、キーワードに
     # 一致しない投稿(広告・関係ないジャンルのファン投稿等)でも
     # 通知されてしまう不具合があった。ここで確実に絞り込む。
-    posts_matching_keywords = [
-        p for p in posts if keyword_filter.matches_keyword(p.get("text_snippet", ""))
-    ]
+    #
+    # ★診断用: 実際にマッチしたキーワードを post["matched_keyword"] に
+    # 記録し、通知本文にも含める。これにより「本当にキーワードフィルターが
+    # 機能しているか」を、届いた通知そのものを見るだけで検証できるようにする。
+    posts_matching_keywords = []
+    for p in posts:
+        text = p.get("text_snippet", "")
+        matched = keyword_filter.find_matching_keyword(text)
+        if matched:
+            p["matched_keyword"] = matched
+            posts_matching_keywords.append(p)
+        elif keyword_filter.matches_keyword(text):
+            # キーワード自体が0件登録(フィルタ無効)の場合はここに来る
+            p["matched_keyword"] = "(フィルタ無効・全件通過)"
+            posts_matching_keywords.append(p)
     print(f"キーワードフィルター通過後: {len(posts_matching_keywords)}件")
 
     candidates = detector.filter_explosive(posts_matching_keywords)
@@ -215,6 +227,16 @@ def run_once():
     for post in new_candidates:
         classification = genre_classifier.classify(post.get("text_snippet", ""))
         post["genre"] = classification["genre"]
+
+        # ★診断ログ: 通知する直前に、マッチしたキーワードと本文の冒頭を必ず出力する。
+        # 「キーワードに関係ない投稿が通知された」という報告があった際に、
+        # このログを見れば実際にマッチしたキーワードが何だったのか、
+        # 本文に本当に含まれていたのかがその場で検証できる。
+        print(
+            f"  [通知前チェック] post_id={post['post_id']}, "
+            f"matched_keyword={post.get('matched_keyword')!r}, "
+            f"text_snippet={post.get('text_snippet', '')[:100]!r}"
+        )
 
         db.upsert_post(post)
 

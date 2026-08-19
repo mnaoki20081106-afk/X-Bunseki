@@ -1,84 +1,84 @@
 {
-  "updated_at": "2026-08-19T05:02:34.152054+00:00",
+  "updated_at": "2026-08-19T05:43:48.471359+00:00",
   "status": "success",
-  "started_at": "2026-08-19T05:01:26.666545+00:00",
-  "finished_at": "2026-08-19T05:02:34.132667+00:00",
-  "posts_scanned": 48,
+  "started_at": "2026-08-19T05:42:56.598182+00:00",
+  "finished_at": "2026-08-19T05:43:48.468850+00:00",
+  "posts_scanned": 50,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 67246,
+      "likes": 71131,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/akiko_lawson/status/2089849833008087519"
     },
     {
       "author": "LINEGIFT_JP",
-      "likes": 8347,
+      "likes": 8667,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "AUTOMATONJapan",
-      "likes": 2502,
-      "quotes": 19,
-      "bookmarks": 289,
-      "url": "https://x.com/AUTOMATONJapan/status/2089900639858147420"
+      "author": "yukihanalamy",
+      "likes": 1334,
+      "quotes": 0,
+      "bookmarks": 2,
+      "url": "https://x.com/yukihanalamy/status/2089942547699585196"
     },
     {
-      "author": "tokino_sora",
-      "likes": 1096,
-      "quotes": 2,
-      "bookmarks": 6,
-      "url": "https://x.com/tokino_sora/status/2089928155650044117"
+      "author": "Tr0uT_2434",
+      "likes": 1123,
+      "quotes": 0,
+      "bookmarks": 2,
+      "url": "https://x.com/Tr0uT_2434/status/2089944940264694084"
     },
     {
-      "author": "FightersPR",
-      "likes": 852,
-      "quotes": 13,
-      "bookmarks": 10,
-      "url": "https://x.com/FightersPR/status/2089931458769264951"
+      "author": "kadokawa_san",
+      "likes": 637,
+      "quotes": 4,
+      "bookmarks": 149,
+      "url": "https://x.com/kadokawa_san/status/2089910223951613980"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "tokino_sora",
-      "likes": 1096,
-      "quotes": 2,
-      "bookmarks": 6,
-      "progress_percent": 44,
-      "url": "https://x.com/tokino_sora/status/2089928155650044117"
+      "author": "yukihanalamy",
+      "likes": 1334,
+      "quotes": 0,
+      "bookmarks": 2,
+      "progress_percent": 53,
+      "url": "https://x.com/yukihanalamy/status/2089942547699585196"
     },
     {
-      "author": "FightersPR",
-      "likes": 852,
-      "quotes": 13,
-      "bookmarks": 10,
-      "progress_percent": 28,
-      "url": "https://x.com/FightersPR/status/2089931458769264951"
+      "author": "Tr0uT_2434",
+      "likes": 1123,
+      "quotes": 0,
+      "bookmarks": 2,
+      "progress_percent": 31,
+      "url": "https://x.com/Tr0uT_2434/status/2089944940264694084"
     },
     {
-      "author": "iLiFE_koguma",
-      "likes": 836,
-      "quotes": 2,
-      "bookmarks": 3,
-      "progress_percent": 24,
-      "url": "https://x.com/iLiFE_koguma/status/2089933516188574148"
+      "author": "kadokawa_san",
+      "likes": 637,
+      "quotes": 4,
+      "bookmarks": 149,
+      "progress_percent": 6,
+      "url": "https://x.com/kadokawa_san/status/2089910223951613980"
     },
     {
-      "author": "AUTOMATONJapan",
-      "likes": 2502,
-      "quotes": 19,
-      "bookmarks": 289,
-      "progress_percent": 21,
-      "url": "https://x.com/AUTOMATONJapan/status/2089900639858147420"
+      "author": "akiko_lawson",
+      "likes": 71131,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/akiko_lawson/status/2089849833008087519"
     },
     {
       "author": "LINEGIFT_JP",
-      "likes": 8347,
+      "likes": 8667,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,

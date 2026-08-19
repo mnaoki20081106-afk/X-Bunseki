@@ -1,30 +1,11 @@
 {
-  "updated_at": "2026-08-19T11:37:22.189690+00:00",
+  "updated_at": "2026-08-19T13:06:52.946128+00:00",
   "status": "success",
-  "started_at": "2026-08-19T11:36:41.436640+00:00",
-  "finished_at": "2026-08-19T11:37:22.187425+00:00",
+  "started_at": "2026-08-19T13:06:21.586990+00:00",
+  "finished_at": "2026-08-19T13:06:52.944232+00:00",
   "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [
-    {
-      "author": "juufuuteiraden",
-      "likes": 1147,
-      "quotes": 16,
-      "bookmarks": 43,
-      "url": "https://x.com/juufuuteiraden/status/2090034325006000498",
-      "matched_keyword": "速報"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "juufuuteiraden",
-      "likes": 1147,
-      "quotes": 16,
-      "bookmarks": 43,
-      "progress_percent": 46,
-      "url": "https://x.com/juufuuteiraden/status/2090034325006000498",
-      "matched_keyword": "速報"
-    }
-  ]
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

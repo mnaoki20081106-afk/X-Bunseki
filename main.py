@@ -293,6 +293,7 @@ def run_once():
             "quotes": p.get("quotes", 0),
             "bookmarks": p.get("bookmarks", 0),
             "url": p.get("url", ""),
+            "matched_keyword": p.get("matched_keyword"),
         }
         for p in top5_likes
     ]
@@ -306,6 +307,7 @@ def run_once():
             "bookmarks": p.get("bookmarks", 0),
             "progress_percent": round(p.get("progress", 0) * 100),
             "url": p.get("url", ""),
+            "matched_keyword": p.get("matched_keyword"),
         }
         for p in top5_progress
     ]

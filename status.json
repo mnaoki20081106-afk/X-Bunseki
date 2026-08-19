@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-08-19T22:38:07.958810+00:00",
+  "updated_at": "2026-08-19T23:34:36.207181+00:00",
   "status": "success",
-  "started_at": "2026-08-19T22:37:36.421265+00:00",
-  "finished_at": "2026-08-19T22:38:07.951277+00:00",
-  "posts_scanned": 61,
+  "started_at": "2026-08-19T23:33:55.611357+00:00",
+  "finished_at": "2026-08-19T23:34:36.204933+00:00",
+  "posts_scanned": 53,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "livedoornews",
-      "likes": 10649,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/livedoornews/status/2090013568821535011",
-      "matched_keyword": "迷惑行為"
+      "author": "hezuruy",
+      "likes": 890,
+      "quotes": 4,
+      "bookmarks": 8,
+      "url": "https://x.com/hezuruy/status/2090215621380407395",
+      "matched_keyword": "被災"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "livedoornews",
-      "likes": 10649,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/livedoornews/status/2090013568821535011",
-      "matched_keyword": "迷惑行為"
+      "author": "hezuruy",
+      "likes": 890,
+      "quotes": 4,
+      "bookmarks": 8,
+      "progress_percent": 30,
+      "url": "https://x.com/hezuruy/status/2090215621380407395",
+      "matched_keyword": "被災"
     }
   ]
 }

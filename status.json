@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-19T14:53:38.014969+00:00",
+  "updated_at": "2026-08-19T15:47:31.584476+00:00",
   "status": "success",
-  "started_at": "2026-08-19T14:53:03.207844+00:00",
-  "finished_at": "2026-08-19T14:53:38.013210+00:00",
-  "posts_scanned": 50,
+  "started_at": "2026-08-19T15:46:50.834790+00:00",
+  "finished_at": "2026-08-19T15:47:31.582343+00:00",
+  "posts_scanned": 59,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "ag0NAOE",
+      "likes": 2279,
+      "quotes": 15,
+      "bookmarks": 73,
+      "url": "https://x.com/ag0NAOE/status/2090091415888146679",
+      "matched_keyword": "違法"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "ag0NAOE",
+      "likes": 2279,
+      "quotes": 15,
+      "bookmarks": 73,
+      "progress_percent": 26,
+      "url": "https://x.com/ag0NAOE/status/2090091415888146679",
+      "matched_keyword": "違法"
+    }
+  ]
 }

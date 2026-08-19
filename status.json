@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-08-19T10:44:12.346797+00:00",
+  "updated_at": "2026-08-19T11:37:22.189690+00:00",
   "status": "success",
-  "started_at": "2026-08-19T10:43:31.756487+00:00",
-  "finished_at": "2026-08-19T10:44:12.344832+00:00",
-  "posts_scanned": 46,
+  "started_at": "2026-08-19T11:36:41.436640+00:00",
+  "finished_at": "2026-08-19T11:37:22.187425+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "takaichi_sanae",
-      "likes": 932,
-      "quotes": 8,
-      "bookmarks": 11,
-      "url": "https://x.com/takaichi_sanae/status/2090024655193268672",
-      "matched_keyword": "地震"
+      "author": "juufuuteiraden",
+      "likes": 1147,
+      "quotes": 16,
+      "bookmarks": 43,
+      "url": "https://x.com/juufuuteiraden/status/2090034325006000498",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takaichi_sanae",
-      "likes": 932,
-      "quotes": 8,
-      "bookmarks": 11,
-      "progress_percent": 37,
-      "url": "https://x.com/takaichi_sanae/status/2090024655193268672",
-      "matched_keyword": "地震"
+      "author": "juufuuteiraden",
+      "likes": 1147,
+      "quotes": 16,
+      "bookmarks": 43,
+      "progress_percent": 46,
+      "url": "https://x.com/juufuuteiraden/status/2090034325006000498",
+      "matched_keyword": "速報"
     }
   ]
 }

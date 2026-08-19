@@ -97,8 +97,9 @@ function formatStatus(status) {
       lines.push("");
       lines.push("【いいね数 上位】");
       for (const p of status.top5_by_likes) {
+        const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
         lines.push(
-          `・@${p.author} いいね${p.likes} 引用${p.quotes} BM${p.bookmarks}`
+          `・@${p.author} いいね${p.likes} 引用${p.quotes} BM${p.bookmarks}${keywordNote}`
         );
       }
     }
@@ -107,8 +108,9 @@ function formatStatus(status) {
       lines.push("");
       lines.push("【通知条件への到達度 上位】");
       for (const p of status.top5_by_progress) {
+        const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
         lines.push(
-          `・@${p.author} 達成度${p.progress_percent}% (いいね${p.likes} 引用${p.quotes} BM${p.bookmarks})`
+          `・@${p.author} 達成度${p.progress_percent}% (いいね${p.likes} 引用${p.quotes} BM${p.bookmarks})${keywordNote}`
         );
       }
     }

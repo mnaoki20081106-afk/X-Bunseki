@@ -93,25 +93,33 @@ function formatStatus(status) {
     lines.push(`収集件数: ${status.posts_scanned}件`);
     lines.push(`通知件数: ${status.notified_count}件`);
 
-    if (status.top5_by_likes && status.top5_by_likes.length > 0) {
+    if (status.top5_by_likes) {
       lines.push("");
-      lines.push("【いいね数 上位】");
-      for (const p of status.top5_by_likes) {
-        const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
-        lines.push(
-          `・@${p.author} いいね${p.likes} 引用${p.quotes} BM${p.bookmarks}${keywordNote}`
-        );
+      lines.push("【いいね数 上位(キーワード一致のみ)】");
+      if (status.top5_by_likes.length > 0) {
+        for (const p of status.top5_by_likes) {
+          const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
+          lines.push(
+            `・@${p.author} いいね${p.likes} 引用${p.quotes} BM${p.bookmarks}${keywordNote}`
+          );
+        }
+      } else {
+        lines.push("(キーワードに一致する投稿は今回ありませんでした)");
       }
     }
 
-    if (status.top5_by_progress && status.top5_by_progress.length > 0) {
+    if (status.top5_by_progress) {
       lines.push("");
-      lines.push("【通知条件への到達度 上位】");
-      for (const p of status.top5_by_progress) {
-        const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
-        lines.push(
-          `・@${p.author} 達成度${p.progress_percent}% (いいね${p.likes} 引用${p.quotes} BM${p.bookmarks})${keywordNote}`
-        );
+      lines.push("【通知条件への到達度 上位(キーワード一致のみ)】");
+      if (status.top5_by_progress.length > 0) {
+        for (const p of status.top5_by_progress) {
+          const keywordNote = p.matched_keyword ? ` [${p.matched_keyword}]` : "";
+          lines.push(
+            `・@${p.author} 達成度${p.progress_percent}% (いいね${p.likes} 引用${p.quotes} BM${p.bookmarks})${keywordNote}`
+          );
+        }
+      } else {
+        lines.push("(キーワードに一致する投稿は今回ありませんでした)");
       }
     }
   }

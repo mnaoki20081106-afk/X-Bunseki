@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-19T09:47:10.959714+00:00",
+  "updated_at": "2026-08-19T10:44:12.346797+00:00",
   "status": "success",
-  "started_at": "2026-08-19T09:46:38.288718+00:00",
-  "finished_at": "2026-08-19T09:47:10.957740+00:00",
-  "posts_scanned": 49,
+  "started_at": "2026-08-19T10:43:31.756487+00:00",
+  "finished_at": "2026-08-19T10:44:12.344832+00:00",
+  "posts_scanned": 46,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "takaichi_sanae",
+      "likes": 932,
+      "quotes": 8,
+      "bookmarks": 11,
+      "url": "https://x.com/takaichi_sanae/status/2090024655193268672",
+      "matched_keyword": "地震"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "takaichi_sanae",
+      "likes": 932,
+      "quotes": 8,
+      "bookmarks": 11,
+      "progress_percent": 37,
+      "url": "https://x.com/takaichi_sanae/status/2090024655193268672",
+      "matched_keyword": "地震"
+    }
+  ]
 }

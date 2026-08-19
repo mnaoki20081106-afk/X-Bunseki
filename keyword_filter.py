@@ -67,3 +67,18 @@ def matches_keyword(text: str) -> bool:
     if not text:
         return False
     return any(keyword in text for keyword in _KEYWORDS)
+
+
+def find_matching_keyword(text: str) -> str | None:
+    """
+    投稿本文(text)に実際にマッチした最初のキーワードを返す(診断用)。
+    「本当にキーワードフィルターが機能しているか」を検証できるよう、
+    マッチしたワードそのものを通知本文・ログに出すために使う。
+    マッチが無ければ None。
+    """
+    if not text:
+        return None
+    for keyword in _KEYWORDS:
+        if keyword in text:
+            return keyword
+    return None

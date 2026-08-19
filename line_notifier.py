@@ -57,7 +57,10 @@ def build_message(post: dict) -> str:
             f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"
         )
 
-    return f"{header}\n{detail}\n{url}"
+    matched_keyword = post.get("matched_keyword")
+    keyword_line = f"\n🔑 マッチしたワード: {matched_keyword}" if matched_keyword else ""
+
+    return f"{header}\n{detail}\n{url}{keyword_line}"
 
 
 def send_notification(post: dict) -> bool:

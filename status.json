@@ -1,88 +1,88 @@
 {
-  "updated_at": "2026-08-18T23:34:56.631810+00:00",
+  "updated_at": "2026-08-19T01:51:55.632390+00:00",
   "status": "success",
-  "started_at": "2026-08-18T23:33:36.132557+00:00",
-  "finished_at": "2026-08-18T23:34:56.629784+00:00",
-  "posts_scanned": 48,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-19T01:50:29.455118+00:00",
+  "finished_at": "2026-08-19T01:51:55.630096+00:00",
+  "posts_scanned": 57,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "akiko_lawson",
-      "likes": 47532,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/akiko_lawson/status/2088762669109064084"
-    },
-    {
-      "author": "akiko_lawson",
-      "likes": 10993,
-      "quotes": 21,
-      "bookmarks": 319,
+      "likes": 36704,
+      "quotes": 19,
+      "bookmarks": 940,
       "url": "https://x.com/akiko_lawson/status/2089849833008087519"
     },
     {
-      "author": "0sammeteo",
-      "likes": 10479,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/0sammeteo/status/2089672301130420440"
-    },
-    {
       "author": "LINEGIFT_JP",
-      "likes": 5525,
+      "likes": 6643,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/LINEGIFT_JP/status/2089698351004762545"
     },
     {
-      "author": "ok_nobuhiko",
-      "likes": 4649,
-      "quotes": 5,
-      "bookmarks": 48,
-      "url": "https://x.com/ok_nobuhiko/status/2089845231336468501"
+      "author": "momoka_ito1206",
+      "likes": 1090,
+      "quotes": 4,
+      "bookmarks": 21,
+      "url": "https://x.com/momoka_ito1206/status/2089878792286458244"
+    },
+    {
+      "author": "daisubkiri2",
+      "likes": 744,
+      "quotes": 2,
+      "bookmarks": 8,
+      "url": "https://x.com/daisubkiri2/status/2089887313337962891"
+    },
+    {
+      "author": "ice_icol",
+      "likes": 742,
+      "quotes": 1,
+      "bookmarks": 1,
+      "url": "https://x.com/ice_icol/status/2089886397671051620"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "akiko_lawson",
-      "likes": 10993,
-      "quotes": 21,
-      "bookmarks": 319,
-      "progress_percent": 125,
-      "url": "https://x.com/akiko_lawson/status/2089849833008087519"
+      "author": "momoka_ito1206",
+      "likes": 1090,
+      "quotes": 4,
+      "bookmarks": 21,
+      "progress_percent": 44,
+      "url": "https://x.com/momoka_ito1206/status/2089878792286458244"
     },
     {
-      "author": "ok_nobuhiko",
-      "likes": 4649,
-      "quotes": 5,
-      "bookmarks": 48,
-      "progress_percent": 61,
-      "url": "https://x.com/ok_nobuhiko/status/2089845231336468501"
-    },
-    {
-      "author": "kano_2525",
-      "likes": 1239,
+      "author": "daisubkiri2",
+      "likes": 744,
       "quotes": 2,
-      "bookmarks": 14,
-      "progress_percent": 50,
-      "url": "https://x.com/kano_2525/status/2089846200371679557"
+      "bookmarks": 8,
+      "progress_percent": 30,
+      "url": "https://x.com/daisubkiri2/status/2089887313337962891"
     },
     {
-      "author": "EL6_JIL_",
-      "likes": 874,
+      "author": "EL6_832",
+      "likes": 553,
       "quotes": 0,
-      "bookmarks": 3,
-      "progress_percent": 35,
-      "url": "https://x.com/EL6_JIL_/status/2089845042743558269"
+      "bookmarks": 5,
+      "progress_percent": 22,
+      "url": "https://x.com/EL6_832/status/2089887647921848452"
     },
     {
-      "author": "truckmeimei",
-      "likes": 1391,
-      "quotes": 8,
-      "bookmarks": 3,
-      "progress_percent": 32,
-      "url": "https://x.com/truckmeimei/status/2089851798748271101"
+      "author": "atsuki_mashiko",
+      "likes": 535,
+      "quotes": 5,
+      "bookmarks": 5,
+      "progress_percent": 21,
+      "url": "https://x.com/atsuki_mashiko/status/2089876230590087287"
+    },
+    {
+      "author": "akiko_lawson",
+      "likes": 36704,
+      "quotes": 19,
+      "bookmarks": 940,
+      "progress_percent": 19,
+      "url": "https://x.com/akiko_lawson/status/2089849833008087519"
     }
   ]
 }

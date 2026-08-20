@@ -1,11 +1,47 @@
 {
-  "updated_at": "2026-08-20T10:45:10.245949+00:00",
+  "updated_at": "2026-08-20T11:38:36.898512+00:00",
   "status": "success",
-  "started_at": "2026-08-20T10:44:40.010125+00:00",
-  "finished_at": "2026-08-20T10:45:10.239576+00:00",
-  "posts_scanned": 49,
+  "started_at": "2026-08-20T11:38:05.711453+00:00",
+  "finished_at": "2026-08-20T11:38:36.896698+00:00",
+  "posts_scanned": 51,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "livedoornews",
+      "likes": 20387,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/livedoornews/status/2090299008321536502",
+      "matched_keyword": "死亡"
+    },
+    {
+      "author": "tospo_keiba",
+      "likes": 4062,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/tospo_keiba/status/2090323261926379602",
+      "matched_keyword": "事故"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "livedoornews",
+      "likes": 20387,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/livedoornews/status/2090299008321536502",
+      "matched_keyword": "死亡"
+    },
+    {
+      "author": "tospo_keiba",
+      "likes": 4062,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/tospo_keiba/status/2090323261926379602",
+      "matched_keyword": "事故"
+    }
+  ]
 }

@@ -1,28 +1,45 @@
 {
-  "updated_at": "2026-08-20T20:43:47.716915+00:00",
+  "updated_at": "2026-08-20T21:40:13.065197+00:00",
   "status": "success",
-  "started_at": "2026-08-20T20:43:06.548320+00:00",
-  "finished_at": "2026-08-20T20:43:47.714577+00:00",
-  "posts_scanned": 66,
+  "started_at": "2026-08-20T21:39:21.545268+00:00",
+  "finished_at": "2026-08-20T21:40:13.062887+00:00",
+  "posts_scanned": 62,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "Koyota0",
-      "likes": 1668,
+      "likes": 1978,
       "quotes": 4,
-      "bookmarks": 13,
+      "bookmarks": 15,
       "url": "https://x.com/Koyota0/status/2090514856411566172",
       "matched_keyword": "死ぬ"
+    },
+    {
+      "author": "oricon_ranking",
+      "likes": 1754,
+      "quotes": 17,
+      "bookmarks": 43,
+      "url": "https://x.com/oricon_ranking/status/2090544403320582638",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
+      "author": "oricon_ranking",
+      "likes": 1754,
+      "quotes": 17,
+      "bookmarks": 43,
+      "progress_percent": 84,
+      "url": "https://x.com/oricon_ranking/status/2090544403320582638",
+      "matched_keyword": "速報"
+    },
+    {
       "author": "Koyota0",
-      "likes": 1668,
+      "likes": 1978,
       "quotes": 4,
-      "bookmarks": 13,
-      "progress_percent": 92,
+      "bookmarks": 15,
+      "progress_percent": 19,
       "url": "https://x.com/Koyota0/status/2090514856411566172",
       "matched_keyword": "死ぬ"
     }

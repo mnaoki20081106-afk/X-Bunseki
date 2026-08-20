@@ -1,11 +1,47 @@
 {
-  "updated_at": "2026-08-20T22:42:29.138088+00:00",
+  "updated_at": "2026-08-20T23:36:58.183344+00:00",
   "status": "success",
-  "started_at": "2026-08-20T22:41:58.414875+00:00",
-  "finished_at": "2026-08-20T22:42:29.135376+00:00",
-  "posts_scanned": 51,
+  "started_at": "2026-08-20T23:36:17.872645+00:00",
+  "finished_at": "2026-08-20T23:36:58.181562+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "hezuruy",
+      "likes": 2860,
+      "quotes": 9,
+      "bookmarks": 21,
+      "url": "https://x.com/hezuruy/status/2090574634530005271",
+      "matched_keyword": "逮捕"
+    },
+    {
+      "author": "yominokuni140",
+      "likes": 743,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/yominokuni140/status/2090574325023944750",
+      "matched_keyword": "水害"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "hezuruy",
+      "likes": 2860,
+      "quotes": 9,
+      "bookmarks": 21,
+      "progress_percent": 49,
+      "url": "https://x.com/hezuruy/status/2090574634530005271",
+      "matched_keyword": "逮捕"
+    },
+    {
+      "author": "yominokuni140",
+      "likes": 743,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 41,
+      "url": "https://x.com/yominokuni140/status/2090574325023944750",
+      "matched_keyword": "水害"
+    }
+  ]
 }

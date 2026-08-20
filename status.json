@@ -1,30 +1,11 @@
 {
-  "updated_at": "2026-08-20T09:48:14.687147+00:00",
+  "updated_at": "2026-08-20T10:45:10.245949+00:00",
   "status": "success",
-  "started_at": "2026-08-20T09:47:42.600403+00:00",
-  "finished_at": "2026-08-20T09:48:14.685428+00:00",
-  "posts_scanned": 50,
+  "started_at": "2026-08-20T10:44:40.010125+00:00",
+  "finished_at": "2026-08-20T10:45:10.239576+00:00",
+  "posts_scanned": 49,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [
-    {
-      "author": "hanshintigersjp",
-      "likes": 584,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/hanshintigersjp/status/2090370584584868010",
-      "matched_keyword": "速報"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "hanshintigersjp",
-      "likes": 584,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 23,
-      "url": "https://x.com/hanshintigersjp/status/2090370584584868010",
-      "matched_keyword": "速報"
-    }
-  ]
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

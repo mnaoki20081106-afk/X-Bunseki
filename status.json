@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-20T01:49:21.358260+00:00",
+  "updated_at": "2026-08-20T03:08:29.844924+00:00",
   "status": "success",
-  "started_at": "2026-08-20T01:48:48.985857+00:00",
-  "finished_at": "2026-08-20T01:49:21.355734+00:00",
-  "posts_scanned": 54,
+  "started_at": "2026-08-20T03:07:47.343409+00:00",
+  "finished_at": "2026-08-20T03:08:29.842857+00:00",
+  "posts_scanned": 56,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "Hoshuto_hyakuta",
+      "likes": 1753,
+      "quotes": 4,
+      "bookmarks": 15,
+      "url": "https://x.com/Hoshuto_hyakuta/status/2090261677417828744",
+      "matched_keyword": "偽善"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "Hoshuto_hyakuta",
+      "likes": 1753,
+      "quotes": 4,
+      "bookmarks": 15,
+      "progress_percent": 44,
+      "url": "https://x.com/Hoshuto_hyakuta/status/2090261677417828744",
+      "matched_keyword": "偽善"
+    }
+  ]
 }

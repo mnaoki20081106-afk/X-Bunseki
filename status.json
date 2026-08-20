@@ -1,11 +1,47 @@
 {
-  "updated_at": "2026-08-20T04:50:19.092454+00:00",
+  "updated_at": "2026-08-20T05:44:19.245860+00:00",
   "status": "success",
-  "started_at": "2026-08-20T04:49:48.479946+00:00",
-  "finished_at": "2026-08-20T04:50:19.088530+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-20T05:43:29.743910+00:00",
+  "finished_at": "2026-08-20T05:44:19.243471+00:00",
+  "posts_scanned": 49,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "livedoornews",
+      "likes": 4126,
+      "quotes": 31,
+      "bookmarks": 4100,
+      "url": "https://x.com/livedoornews/status/2090299008321536502",
+      "matched_keyword": "死亡"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "likes": 550,
+      "quotes": 29,
+      "bookmarks": 52,
+      "url": "https://x.com/YahooNewsTopics/status/2090298279947018252",
+      "matched_keyword": "死亡"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "livedoornews",
+      "likes": 4126,
+      "quotes": 31,
+      "bookmarks": 4100,
+      "progress_percent": 86,
+      "url": "https://x.com/livedoornews/status/2090299008321536502",
+      "matched_keyword": "死亡"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "likes": 550,
+      "quotes": 29,
+      "bookmarks": 52,
+      "progress_percent": 67,
+      "url": "https://x.com/YahooNewsTopics/status/2090298279947018252",
+      "matched_keyword": "死亡"
+    }
+  ]
 }

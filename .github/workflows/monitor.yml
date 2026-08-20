@@ -58,6 +58,7 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
+          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
         run: python main.py
 
       - name: Clean up session file

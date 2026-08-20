@@ -1,5 +1,5 @@
 """
-detector.py (v3.3)
+detector.py (v3.4)
 「瞬間バズ」+「持続バズ(ニュース・災害系)」の判定ロジック。
 「1日0〜1件」レベルの厳しさを目標に、Grokとの複数回のレビューを経て
 再設計した。
@@ -12,6 +12,9 @@ detector.py (v3.3)
         → さらに「インプレッション未取得を自動合格扱いにする」抜け道も発見・修正
   v3.3: Grok第3提案を反映。時間窓を短縮、インプレッションを完全必須化
         (未取得は無条件で不合格)、アカウント単位クールダウンを追加
+  v3.4: keywords.txt によるホワイトリストフィルターが正しく機能するように
+        なった(無関係な投稿は既にそちらで弾かれる)ため、爆発判定側の
+        閾値を約25〜30%緩和。AND条件による厳格さ自体は維持。
 
 ★重要な設計判断の記録:
   - 引用数(quotes)は必須条件にしない。Xが公開しておらず、実際には
@@ -27,16 +30,16 @@ import math
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 
-# ── 時間窓(v3.3で短縮) ──────────────────────────────
-INSTANT_MAX_HOURS = 1.5      # 瞬間バズの対象窓(2.0→1.5)
-SUSTAINED_MAX_HOURS = 5.0    # 持続バズの対象窓(6.0→5.0)
+# ── 時間窓(v3.4でキーワードフィルター運用開始に伴い緩和) ──────
+INSTANT_MAX_HOURS = 2.0      # 瞬間バズの対象窓(v3.3の1.5→2.0)
+SUSTAINED_MAX_HOURS = 6.0    # 持続バズの対象窓(v3.3の5.0→6.0)
 
-# ── 瞬間バズ用の閾値(v3.3) ──
-INSTANT_LIKE_THRESHOLD = 2500
+# ── 瞬間バズ用の閾値(v3.4で約25〜30%緩和) ──
+INSTANT_LIKE_THRESHOLD = 1800   # v3.3: 2500
 INSTANT_LIKE_VELOCITY = 1200    # いいね/時間
-INSTANT_RT_THRESHOLD = 200
+INSTANT_RT_THRESHOLD = 150      # v3.3: 200
 INSTANT_RT_VELOCITY = 80        # リポスト/時間
-INSTANT_REPLY_THRESHOLD = 100
+INSTANT_REPLY_THRESHOLD = 70    # v3.3: 100
 INSTANT_REPLY_VELOCITY = 40     # 返信/時間
 
 # 速度換算による早期判定は、投稿からこの時間が経つまで使わせない。
@@ -44,15 +47,15 @@ INSTANT_REPLY_VELOCITY = 40     # 返信/時間
 # 速度閾値をいくら上げても実質意味が無くなってしまうため(v3.2で発見)。
 MIN_AGE_FOR_VELOCITY_HOURS = 1.0
 
-# ── 持続バズ用(v3.3: 全条件AND必須、インプレッション必須) ──
-SUSTAINED_LIKE_VELOCITY_BASE = 600   # 投稿直後の基準速度(いいね/時間)
+# ── 持続バズ用(v3.4: 全条件AND必須は維持しつつ約25〜30%緩和) ──
+SUSTAINED_LIKE_VELOCITY_BASE = 450   # 投稿直後の基準速度(いいね/時間、v3.3: 600)
 SUSTAINED_DECAY_FACTOR = 0.2         # 時間経過による要求速度の緩和係数
-                                       # (1h→500, 3h→375, 5h→300 相当)
-SUSTAINED_MIN_IMPRESSIONS = 300_000  # 最低インプレッション。未取得は無条件不合格
+                                       # (1h→375, 3h→281, 5h→225 相当)
+SUSTAINED_MIN_IMPRESSIONS = 200_000  # 最低インプレッション(v3.3: 30万)。未取得は無条件不合格
 SUSTAINED_MIN_AGE_HOURS = 0.3        # あまりに新しい投稿は持続バズ判定の対象外
-SUSTAINED_MIN_REPLY_LIKE_RATIO = 0.06   # 返信÷いいね 6%以上(必須)
-SUSTAINED_MIN_BOOKMARKS = 30             # ブックマーク30以上
-SUSTAINED_MIN_QUOTES = 15                # または引用15以上(近似値。どちらか片方でOK)
+SUSTAINED_MIN_REPLY_LIKE_RATIO = 0.045  # 返信÷いいね 4.5%以上(必須、v3.3: 6%)
+SUSTAINED_MIN_BOOKMARKS = 20             # ブックマーク20以上(v3.3: 30)
+SUSTAINED_MIN_QUOTES = 10                # または引用10以上(近似値。どちらか片方でOK、v3.3: 15)
 
 # ── 激アツ判定(3指標すべて必須) ──
 GEKIATSU_QUOTE_LIKE_RATIO = 0.06     # 引用÷いいね 6%以上

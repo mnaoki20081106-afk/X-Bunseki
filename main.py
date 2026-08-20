@@ -6,7 +6,7 @@ main.py
   1. Playwrightで投稿収集(ログインセッションが切れていたら専用エラー)
   2. 「爆発」判定(引用・ブックマーク・いいねの閾値 × 経過時間)
   3. 未通知の候補だけをGroqでジャンル分類
-  4. LINEに即時通知
+  4. LINE・ntfy・メール・Barkに即時通知
   5. DBに記録(重複通知防止)
 """
 
@@ -17,6 +17,7 @@ import traceback
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import bark_notifier
 import db
 import detector
 import genre_classifier
@@ -84,6 +85,10 @@ def _notify_session_expired():
         email_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] セッション切れ通知(メール)の送信に失敗: {e}")
+    try:
+        bark_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] セッション切れ通知(Bark)の送信に失敗: {e}")
 
     db.set_meta("session_expired_alert_at", now.isoformat())
     print("セッション切れ通知を送信しました")
@@ -137,6 +142,10 @@ def _check_zero_posts_streak(posts_count: int):
         email_notifier.send_notification(system_post)
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] 0件連続アラート(メール)の送信に失敗: {e}")
+    try:
+        bark_notifier.send_notification(system_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] 0件連続アラート(Bark)の送信に失敗: {e}")
 
     db.set_meta("zero_posts_alert_at", now.isoformat())
     print("0件連続アラートを送信しました")
@@ -258,7 +267,13 @@ def run_once():
             print(f"[ERROR] メール通知に失敗しました (post_id={post['post_id']}): {e}")
             email_success = False
 
-        success = line_success or ntfy_success or email_success
+        try:
+            bark_success = bark_notifier.send_notification(post)
+        except Exception as e:  # noqa: BLE001
+            print(f"[ERROR] Bark通知に失敗しました (post_id={post['post_id']}): {e}")
+            bark_success = False
+
+        success = line_success or ntfy_success or email_success or bark_success
         if success:
             db.mark_notified(post["post_id"])
             db.set_last_notified_at_for_author(
@@ -272,6 +287,8 @@ def run_once():
                 channels.append("ntfy")
             if email_success:
                 channels.append("メール")
+            if bark_success:
+                channels.append("Bark")
             print(f"  → 通知送信({'/'.join(channels)}): [{post['genre']}] {post['url']}")
 
     finished_at = datetime.now(timezone.utc).isoformat()
@@ -327,7 +344,7 @@ def run_once():
 def run_test_notification():
     """
     「通知確認」用のテストモード。実際にXを検索せず、テスト用の
-    ダミー投稿データでLINE・ntfy・メールの3ルート全部に送信を試みる。
+    ダミー投稿データでLINE・ntfy・メール・Barkの4ルート全部に送信を試みる。
     「通知条件の判定ロジックは正しいが、通知の送信自体が失敗している」
     ケースを、実際にX検索を待たずすぐに確認できるようにするため。
     """
@@ -365,6 +382,12 @@ def run_test_notification():
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] メールテスト通知に失敗: {e}")
         results["メール"] = False
+
+    try:
+        results["Bark"] = bark_notifier.send_notification(test_post)
+    except Exception as e:  # noqa: BLE001
+        print(f"[ERROR] Barkテスト通知に失敗: {e}")
+        results["Bark"] = False
 
     print(f"テスト通知結果: {results}")
 

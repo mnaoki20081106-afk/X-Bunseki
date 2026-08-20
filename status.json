@@ -1,30 +1,11 @@
 {
-  "updated_at": "2026-08-20T13:09:26.000157+00:00",
+  "updated_at": "2026-08-20T14:52:22.275001+00:00",
   "status": "success",
-  "started_at": "2026-08-20T13:08:51.736733+00:00",
-  "finished_at": "2026-08-20T13:09:25.922567+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-20T14:51:43.261293+00:00",
+  "finished_at": "2026-08-20T14:52:22.272660+00:00",
+  "posts_scanned": 55,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [
-    {
-      "author": "tospo_keiba",
-      "likes": 4264,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/tospo_keiba/status/2090323261926379602",
-      "matched_keyword": "事故"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "tospo_keiba",
-      "likes": 4264,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/tospo_keiba/status/2090323261926379602",
-      "matched_keyword": "事故"
-    }
-  ]
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

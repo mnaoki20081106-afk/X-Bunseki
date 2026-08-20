@@ -1,30 +1,64 @@
 {
-  "updated_at": "2026-08-20T07:03:26.147398+00:00",
+  "updated_at": "2026-08-20T07:54:47.943683+00:00",
   "status": "success",
-  "started_at": "2026-08-20T07:02:45.785846+00:00",
-  "finished_at": "2026-08-20T07:03:26.144611+00:00",
-  "posts_scanned": 45,
+  "started_at": "2026-08-20T07:53:48.437491+00:00",
+  "finished_at": "2026-08-20T07:54:47.941044+00:00",
+  "posts_scanned": 56,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "hirox246",
-      "likes": 1618,
-      "quotes": 9,
-      "bookmarks": 24,
-      "url": "https://x.com/hirox246/status/2090317171578605727",
-      "matched_keyword": "地震"
+      "author": "funassyi",
+      "likes": 1382,
+      "quotes": 18,
+      "bookmarks": 44,
+      "url": "https://x.com/funassyi/status/2090331777718231445",
+      "matched_keyword": "豪雨"
+    },
+    {
+      "author": "YoshikiOfficial",
+      "likes": 1266,
+      "quotes": 7,
+      "bookmarks": 25,
+      "url": "https://x.com/YoshikiOfficial/status/2090330671457923141",
+      "matched_keyword": "被災"
+    },
+    {
+      "author": "nishispo_hawks",
+      "likes": 874,
+      "quotes": 31,
+      "bookmarks": 17,
+      "url": "https://x.com/nishispo_hawks/status/2090344407136645427",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hirox246",
-      "likes": 1618,
-      "quotes": 9,
-      "bookmarks": 24,
-      "progress_percent": 45,
-      "url": "https://x.com/hirox246/status/2090317171578605727",
-      "matched_keyword": "地震"
+      "author": "funassyi",
+      "likes": 1382,
+      "quotes": 18,
+      "bookmarks": 44,
+      "progress_percent": 55,
+      "url": "https://x.com/funassyi/status/2090331777718231445",
+      "matched_keyword": "豪雨"
+    },
+    {
+      "author": "YoshikiOfficial",
+      "likes": 1266,
+      "quotes": 7,
+      "bookmarks": 25,
+      "progress_percent": 44,
+      "url": "https://x.com/YoshikiOfficial/status/2090330671457923141",
+      "matched_keyword": "被災"
+    },
+    {
+      "author": "nishispo_hawks",
+      "likes": 874,
+      "quotes": 31,
+      "bookmarks": 17,
+      "progress_percent": 35,
+      "url": "https://x.com/nishispo_hawks/status/2090344407136645427",
+      "matched_keyword": "速報"
     }
   ]
 }

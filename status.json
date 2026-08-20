@@ -1,23 +1,15 @@
 {
-  "updated_at": "2026-08-20T17:42:50.392887+00:00",
+  "updated_at": "2026-08-20T18:57:01.086222+00:00",
   "status": "success",
-  "started_at": "2026-08-20T17:42:08.329061+00:00",
-  "finished_at": "2026-08-20T17:42:50.391825+00:00",
-  "posts_scanned": 59,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-20T18:56:28.413370+00:00",
+  "finished_at": "2026-08-20T18:57:01.084329+00:00",
+  "posts_scanned": 61,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "YahooNewsTopics",
-      "likes": 2165,
-      "quotes": 34,
-      "bookmarks": 293,
-      "url": "https://x.com/YahooNewsTopics/status/2090431909705011258",
-      "matched_keyword": "死亡"
-    },
-    {
       "author": "Ange_Katrina_",
-      "likes": 671,
+      "likes": 767,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/Ange_Katrina_/status/2090472071356981279",
@@ -26,20 +18,11 @@
   ],
   "top5_by_progress": [
     {
-      "author": "YahooNewsTopics",
-      "likes": 2165,
-      "quotes": 34,
-      "bookmarks": 293,
-      "progress_percent": 104,
-      "url": "https://x.com/YahooNewsTopics/status/2090431909705011258",
-      "matched_keyword": "死亡"
-    },
-    {
       "author": "Ange_Katrina_",
-      "likes": 671,
+      "likes": 767,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 37,
+      "progress_percent": 0,
       "url": "https://x.com/Ange_Katrina_/status/2090472071356981279",
       "matched_keyword": "事故"
     }

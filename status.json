@@ -1,47 +1,30 @@
 {
-  "updated_at": "2026-08-20T19:42:19.305856+00:00",
+  "updated_at": "2026-08-20T20:43:47.716915+00:00",
   "status": "success",
-  "started_at": "2026-08-20T19:41:28.553790+00:00",
-  "finished_at": "2026-08-20T19:42:19.189839+00:00",
-  "posts_scanned": 63,
+  "started_at": "2026-08-20T20:43:06.548320+00:00",
+  "finished_at": "2026-08-20T20:43:47.714577+00:00",
+  "posts_scanned": 66,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "Koyota0",
-      "likes": 1296,
+      "likes": 1668,
       "quotes": 4,
-      "bookmarks": 12,
+      "bookmarks": 13,
       "url": "https://x.com/Koyota0/status/2090514856411566172",
       "matched_keyword": "死ぬ"
-    },
-    {
-      "author": "Ange_Katrina_",
-      "likes": 817,
-      "quotes": 2,
-      "bookmarks": 5,
-      "url": "https://x.com/Ange_Katrina_/status/2090472071356981279",
-      "matched_keyword": "事故"
     }
   ],
   "top5_by_progress": [
     {
       "author": "Koyota0",
-      "likes": 1296,
+      "likes": 1668,
       "quotes": 4,
-      "bookmarks": 12,
-      "progress_percent": 72,
+      "bookmarks": 13,
+      "progress_percent": 92,
       "url": "https://x.com/Koyota0/status/2090514856411566172",
       "matched_keyword": "死ぬ"
-    },
-    {
-      "author": "Ange_Katrina_",
-      "likes": 817,
-      "quotes": 2,
-      "bookmarks": 5,
-      "progress_percent": 18,
-      "url": "https://x.com/Ange_Katrina_/status/2090472071356981279",
-      "matched_keyword": "事故"
     }
   ]
 }

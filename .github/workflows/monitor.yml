@@ -54,11 +54,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NOTIFY_EMAIL_TO: ${{ secrets.NOTIFY_EMAIL_TO }}
-          BARK_DEVICE_KEY: ${{ secrets.BARK_DEVICE_KEY }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
         run: python main.py
 
       - name: Clean up session file

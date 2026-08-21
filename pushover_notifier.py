@@ -21,9 +21,29 @@ Pushoverの利点(ntfy/Barkとの違い):
 
 音・優先度のカスタマイズ(任意):
   PUSHOVER_SOUND    : 通知音。省略時は "siren"(アプリ内の「サウンド一覧」で試聴可)
-  PUSHOVER_PRIORITY : 優先度。省略時は "2"(Emergency = 確認するまで鳴り続ける)
+  PUSHOVER_PRIORITY : 通常時の優先度。省略時は "2"(Emergency = マナーモード・
+                       おやすみモードを貫通して、確認するまで鳴り続ける)
   PUSHOVER_RETRY     : Emergency時の再通知間隔(秒)。省略時は60。最小30
   PUSHOVER_EXPIRE     : Emergency時に鳴り続ける最大時間(秒)。省略時は3600。最大10800
+
+学校にいる間だけ優先度を下げる仕組み(任意):
+  Critical Alert(優先度2)はiOSの仕様上、おやすみモード・集中モードを
+  アプリ単位で除外することができない(常に貫通してしまう)。そのため、
+  「学校にいる間はおやすみモードに従わせたい(＝鳴らしたくない)」を
+  実現するには、iPhone側のショートカット(位置情報オートメーション)から
+  Cloudflare Worker(cloudflare_worker.js の /school-status)に「今学校に
+  いるか」を伝えてもらい、ここでその状態を見て優先度を切り替える。
+
+  SCHOOL_STATUS_URL    : cloudflare_worker.js の /school-status のURL
+                          (例: https://xxxx.workers.dev/school-status)
+                          未設定なら、この機能自体を使わない(常にPUSHOVER_PRIORITY)
+  SCHOOL_STATUS_SECRET : cloudflare_worker.js 側と共有する合言葉
+  PUSHOVER_SCHOOL_PRIORITY : 学校にいる間に使う優先度。省略時は "0"
+                              (通常優先度。おやすみモード中は鳴らない)
+
+  学校の位置情報判定や通信の失敗時は「学校にいない」扱い(＝通常通り
+  Criticalで確実に鳴らす)にフェイルオープンする。通知が届かなくなる
+  よりは、余計に鳴ってしまう方を安全側として選んでいる。
 """
 
 import os
@@ -33,8 +53,35 @@ import requests
 PUSHOVER_API_URL = "https://api.pushover.net/1/messages.json"
 DEFAULT_SOUND = "siren"
 DEFAULT_PRIORITY = "2"
+DEFAULT_SCHOOL_PRIORITY = "0"
 DEFAULT_RETRY = "60"
 DEFAULT_EXPIRE = "3600"
+
+
+def _is_at_school() -> bool:
+    """
+    Cloudflare Workerに「今学校にいるか」を問い合わせる。
+    SCHOOL_STATUS_URLが未設定、または通信に失敗した場合はFalse
+    (学校にいない扱い=通常通りCriticalで鳴らす)を返す。
+    """
+    status_url = os.environ.get("SCHOOL_STATUS_URL")
+    secret = os.environ.get("SCHOOL_STATUS_SECRET")
+    if not status_url or not secret:
+        return False
+
+    try:
+        resp = requests.get(
+            status_url,
+            headers={"Authorization": f"Bearer {secret}"},
+            timeout=5,
+        )
+        if resp.status_code != 200:
+            print(f"[学校判定] school-status取得に失敗: status={resp.status_code}")
+            return False
+        return bool(resp.json().get("at_school", False))
+    except Exception as e:  # noqa: BLE001
+        print(f"[学校判定] 取得に失敗、通常優先度で送信します: {e}")
+        return False
 
 
 def send_notification(post: dict) -> bool:
@@ -69,7 +116,11 @@ def send_notification(post: dict) -> bool:
     type_label = "瞬間" if post.get("explosive_type") == "instant" else "持続"
     title = f"🔥🔥🔥 激アツ投稿 [{type_label}/{genre}]" if is_gekiatsu else f"🔥 急上昇検知 [{type_label}/{genre}]"
 
-    priority = os.environ.get("PUSHOVER_PRIORITY") or DEFAULT_PRIORITY
+    if _is_at_school():
+        priority = os.environ.get("PUSHOVER_SCHOOL_PRIORITY") or DEFAULT_SCHOOL_PRIORITY
+        print(f"[学校判定] 学校にいるため優先度を{priority}に下げます")
+    else:
+        priority = os.environ.get("PUSHOVER_PRIORITY") or DEFAULT_PRIORITY
 
     payload = {
         "token": token,

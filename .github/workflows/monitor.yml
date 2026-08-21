@@ -56,6 +56,8 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+          SCHOOL_STATUS_URL: ${{ secrets.SCHOOL_STATUS_URL }}
+          SCHOOL_STATUS_SECRET: ${{ secrets.SCHOOL_STATUS_SECRET }}
         run: python main.py
 
       - name: Clean up session file

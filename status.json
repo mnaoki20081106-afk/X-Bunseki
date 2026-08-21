@@ -1,98 +1,30 @@
 {
-  "updated_at": "2026-08-21T09:51:01.415302+00:00",
+  "updated_at": "2026-08-21T10:44:41.731007+00:00",
   "status": "success",
-  "started_at": "2026-08-21T09:50:01.470249+00:00",
-  "finished_at": "2026-08-21T09:51:01.414249+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-21T10:44:10.565153+00:00",
+  "finished_at": "2026-08-21T10:44:41.729080+00:00",
+  "posts_scanned": 49,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Sankei_news",
-      "likes": 3098,
+      "author": "tendo_sun",
+      "likes": 654,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/Sankei_news/status/2090610977100427321",
-      "matched_keyword": "犯罪"
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 1814,
-      "quotes": 9,
-      "bookmarks": 18,
-      "url": "https://x.com/takaichi_sanae/status/2090728929770578019",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 1623,
-      "quotes": 9,
-      "bookmarks": 20,
-      "url": "https://x.com/takaichi_sanae/status/2090731294904762595",
-      "matched_keyword": "豪雨"
-    },
-    {
-      "author": "hezuruy",
-      "likes": 758,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/hezuruy/status/2090734050256547848",
-      "matched_keyword": "被災"
-    },
-    {
-      "author": "ICCHY8591",
-      "likes": 649,
-      "quotes": 5,
-      "bookmarks": 12,
-      "url": "https://x.com/ICCHY8591/status/2090732840803840463",
-      "matched_keyword": "豪雨"
+      "url": "https://x.com/tendo_sun/status/2090747210027913312",
+      "matched_keyword": "事故"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takaichi_sanae",
-      "likes": 1814,
-      "quotes": 9,
-      "bookmarks": 18,
-      "progress_percent": 101,
-      "url": "https://x.com/takaichi_sanae/status/2090728929770578019",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "takaichi_sanae",
-      "likes": 1623,
-      "quotes": 9,
-      "bookmarks": 20,
-      "progress_percent": 90,
-      "url": "https://x.com/takaichi_sanae/status/2090731294904762595",
-      "matched_keyword": "豪雨"
-    },
-    {
-      "author": "ICCHY8591",
-      "likes": 649,
-      "quotes": 5,
-      "bookmarks": 12,
+      "author": "tendo_sun",
+      "likes": 654,
+      "quotes": 0,
+      "bookmarks": 0,
       "progress_percent": 36,
-      "url": "https://x.com/ICCHY8591/status/2090732840803840463",
-      "matched_keyword": "豪雨"
-    },
-    {
-      "author": "hezuruy",
-      "likes": 758,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 29,
-      "url": "https://x.com/hezuruy/status/2090734050256547848",
-      "matched_keyword": "被災"
-    },
-    {
-      "author": "Sankei_news",
-      "likes": 3098,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/Sankei_news/status/2090610977100427321",
-      "matched_keyword": "犯罪"
+      "url": "https://x.com/tendo_sun/status/2090747210027913312",
+      "matched_keyword": "事故"
     }
   ]
 }

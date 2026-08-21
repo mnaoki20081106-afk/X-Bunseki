@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-21T01:55:36.524239+00:00",
+  "updated_at": "2026-08-21T03:14:09.158550+00:00",
   "status": "success",
-  "started_at": "2026-08-21T01:54:56.051180+00:00",
-  "finished_at": "2026-08-21T01:55:36.523232+00:00",
-  "posts_scanned": 48,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-21T03:13:28.256702+00:00",
+  "finished_at": "2026-08-21T03:14:09.156147+00:00",
+  "posts_scanned": 54,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "livedoornews",
-      "likes": 1315,
-      "quotes": 36,
-      "bookmarks": 103,
-      "url": "https://x.com/livedoornews/status/2090599754245996581",
+      "likes": 817,
+      "quotes": 33,
+      "bookmarks": 71,
+      "url": "https://x.com/livedoornews/status/2090608504445063192",
       "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
       "author": "livedoornews",
-      "likes": 1315,
-      "quotes": 36,
-      "bookmarks": 103,
-      "progress_percent": 124,
-      "url": "https://x.com/livedoornews/status/2090599754245996581",
+      "likes": 817,
+      "quotes": 33,
+      "bookmarks": 71,
+      "progress_percent": 87,
+      "url": "https://x.com/livedoornews/status/2090608504445063192",
       "matched_keyword": "速報"
     }
   ]

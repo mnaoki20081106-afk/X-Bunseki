@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-21T22:38:16.518798+00:00",
+  "updated_at": "2026-08-21T23:36:03.427681+00:00",
   "status": "success",
-  "started_at": "2026-08-21T22:37:44.695426+00:00",
-  "finished_at": "2026-08-21T22:38:16.515514+00:00",
-  "posts_scanned": 57,
+  "started_at": "2026-08-21T23:35:31.346057+00:00",
+  "finished_at": "2026-08-21T23:36:03.426220+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "anan_mag",
-      "likes": 28328,
+      "likes": 28450,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/anan_mag/status/2090635015809851777",
@@ -19,7 +19,7 @@
   "top5_by_progress": [
     {
       "author": "anan_mag",
-      "likes": 28328,
+      "likes": 28450,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,

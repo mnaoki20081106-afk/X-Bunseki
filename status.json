@@ -1,47 +1,11 @@
 {
-  "updated_at": "2026-08-21T16:49:24.997190+00:00",
+  "updated_at": "2026-08-21T17:41:48.712668+00:00",
   "status": "success",
-  "started_at": "2026-08-21T16:48:53.447478+00:00",
-  "finished_at": "2026-08-21T16:49:24.995237+00:00",
+  "started_at": "2026-08-21T17:41:15.803974+00:00",
+  "finished_at": "2026-08-21T17:41:48.710398+00:00",
   "posts_scanned": 55,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [
-    {
-      "author": "47news_official",
-      "likes": 36527,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/47news_official/status/2089524190953222226",
-      "matched_keyword": "速報"
-    },
-    {
-      "author": "anan_mag",
-      "likes": 27891,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/anan_mag/status/2090635015809851777",
-      "matched_keyword": "速報"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "anan_mag",
-      "likes": 27891,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/anan_mag/status/2090635015809851777",
-      "matched_keyword": "速報"
-    },
-    {
-      "author": "47news_official",
-      "likes": 36527,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/47news_official/status/2089524190953222226",
-      "matched_keyword": "速報"
-    }
-  ]
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

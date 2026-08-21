@@ -1,11 +1,47 @@
 {
-  "updated_at": "2026-08-21T17:41:48.712668+00:00",
+  "updated_at": "2026-08-21T18:53:20.080643+00:00",
   "status": "success",
-  "started_at": "2026-08-21T17:41:15.803974+00:00",
-  "finished_at": "2026-08-21T17:41:48.710398+00:00",
-  "posts_scanned": 55,
+  "started_at": "2026-08-21T18:52:48.048186+00:00",
+  "finished_at": "2026-08-21T18:53:20.077562+00:00",
+  "posts_scanned": 61,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "gigazine",
+      "likes": 74885,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/gigazine/status/2088362530158616865",
+      "matched_keyword": "違法"
+    },
+    {
+      "author": "anan_mag",
+      "likes": 28078,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/anan_mag/status/2090635015809851777",
+      "matched_keyword": "速報"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "anan_mag",
+      "likes": 28078,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/anan_mag/status/2090635015809851777",
+      "matched_keyword": "速報"
+    },
+    {
+      "author": "gigazine",
+      "likes": 74885,
+      "quotes": 0,
+      "bookmarks": 0,
+      "progress_percent": 0,
+      "url": "https://x.com/gigazine/status/2088362530158616865",
+      "matched_keyword": "違法"
+    }
+  ]
 }

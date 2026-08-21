@@ -1,47 +1,30 @@
 {
-  "updated_at": "2026-08-21T21:36:25.602231+00:00",
+  "updated_at": "2026-08-21T22:38:16.518798+00:00",
   "status": "success",
-  "started_at": "2026-08-21T21:35:43.305041+00:00",
-  "finished_at": "2026-08-21T21:36:25.599918+00:00",
-  "posts_scanned": 70,
+  "started_at": "2026-08-21T22:37:44.695426+00:00",
+  "finished_at": "2026-08-21T22:38:16.515514+00:00",
+  "posts_scanned": 57,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "KadotaRyusho",
-      "likes": 1504,
-      "quotes": 3,
-      "bookmarks": 10,
-      "url": "https://x.com/KadotaRyusho/status/2090851989961982275",
-      "matched_keyword": "誹謗中傷"
-    },
-    {
-      "author": "ojm52811",
-      "likes": 722,
+      "author": "anan_mag",
+      "likes": 28328,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/ojm52811/status/2090882611107569826",
-      "matched_keyword": "豪雨"
+      "url": "https://x.com/anan_mag/status/2090635015809851777",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "KadotaRyusho",
-      "likes": 1504,
-      "quotes": 3,
-      "bookmarks": 10,
-      "progress_percent": 14,
-      "url": "https://x.com/KadotaRyusho/status/2090851989961982275",
-      "matched_keyword": "誹謗中傷"
-    },
-    {
-      "author": "ojm52811",
-      "likes": 722,
+      "author": "anan_mag",
+      "likes": 28328,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,
-      "url": "https://x.com/ojm52811/status/2090882611107569826",
-      "matched_keyword": "豪雨"
+      "url": "https://x.com/anan_mag/status/2090635015809851777",
+      "matched_keyword": "速報"
     }
   ]
 }

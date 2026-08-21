@@ -1,30 +1,47 @@
 {
-  "updated_at": "2026-08-21T10:44:41.731007+00:00",
+  "updated_at": "2026-08-21T11:37:58.178160+00:00",
   "status": "success",
-  "started_at": "2026-08-21T10:44:10.565153+00:00",
-  "finished_at": "2026-08-21T10:44:41.729080+00:00",
-  "posts_scanned": 49,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-21T11:37:16.449638+00:00",
+  "finished_at": "2026-08-21T11:37:58.158918+00:00",
+  "posts_scanned": 50,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "tendo_sun",
-      "likes": 654,
+      "author": "fucx7_xx",
+      "likes": 54331,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/tendo_sun/status/2090747210027913312",
-      "matched_keyword": "事故"
+      "url": "https://x.com/fucx7_xx/status/2090646628025946538",
+      "matched_keyword": "死ね"
+    },
+    {
+      "author": "kiyo_saiore",
+      "likes": 6957,
+      "quotes": 18,
+      "bookmarks": 98,
+      "url": "https://x.com/kiyo_saiore/status/2090760985145717042",
+      "matched_keyword": "崩壊"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "tendo_sun",
-      "likes": 654,
+      "author": "kiyo_saiore",
+      "likes": 6957,
+      "quotes": 18,
+      "bookmarks": 98,
+      "progress_percent": 121,
+      "url": "https://x.com/kiyo_saiore/status/2090760985145717042",
+      "matched_keyword": "崩壊"
+    },
+    {
+      "author": "fucx7_xx",
+      "likes": 54331,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 36,
-      "url": "https://x.com/tendo_sun/status/2090747210027913312",
-      "matched_keyword": "事故"
+      "progress_percent": 0,
+      "url": "https://x.com/fucx7_xx/status/2090646628025946538",
+      "matched_keyword": "死ね"
     }
   ]
 }

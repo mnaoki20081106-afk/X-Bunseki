@@ -1,30 +1,47 @@
 {
-  "updated_at": "2026-08-21T03:14:09.158550+00:00",
+  "updated_at": "2026-08-21T04:52:13.067257+00:00",
   "status": "success",
-  "started_at": "2026-08-21T03:13:28.256702+00:00",
-  "finished_at": "2026-08-21T03:14:09.156147+00:00",
-  "posts_scanned": 54,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-21T04:51:19.402385+00:00",
+  "finished_at": "2026-08-21T04:52:13.066300+00:00",
+  "posts_scanned": 48,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "livedoornews",
-      "likes": 817,
-      "quotes": 33,
-      "bookmarks": 71,
-      "url": "https://x.com/livedoornews/status/2090608504445063192",
-      "matched_keyword": "速報"
+      "author": "houkaistarrail",
+      "likes": 7204,
+      "quotes": 16,
+      "bookmarks": 598,
+      "url": "https://x.com/houkaistarrail/status/2090650101614264682",
+      "matched_keyword": "崩壊"
+    },
+    {
+      "author": "Sankei_news",
+      "likes": 1305,
+      "quotes": 26,
+      "bookmarks": 1300,
+      "url": "https://x.com/Sankei_news/status/2090610977100427321",
+      "matched_keyword": "犯罪"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "livedoornews",
-      "likes": 817,
-      "quotes": 33,
-      "bookmarks": 71,
-      "progress_percent": 87,
-      "url": "https://x.com/livedoornews/status/2090608504445063192",
-      "matched_keyword": "速報"
+      "author": "Sankei_news",
+      "likes": 1305,
+      "quotes": 26,
+      "bookmarks": 1300,
+      "progress_percent": 142,
+      "url": "https://x.com/Sankei_news/status/2090610977100427321",
+      "matched_keyword": "犯罪"
+    },
+    {
+      "author": "houkaistarrail",
+      "likes": 7204,
+      "quotes": 16,
+      "bookmarks": 598,
+      "progress_percent": 31,
+      "url": "https://x.com/houkaistarrail/status/2090650101614264682",
+      "matched_keyword": "崩壊"
     }
   ]
 }

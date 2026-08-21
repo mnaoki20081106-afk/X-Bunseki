@@ -1,47 +1,30 @@
 {
-  "updated_at": "2026-08-20T23:36:58.183344+00:00",
+  "updated_at": "2026-08-21T01:55:36.524239+00:00",
   "status": "success",
-  "started_at": "2026-08-20T23:36:17.872645+00:00",
-  "finished_at": "2026-08-20T23:36:58.181562+00:00",
-  "posts_scanned": 52,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-21T01:54:56.051180+00:00",
+  "finished_at": "2026-08-21T01:55:36.523232+00:00",
+  "posts_scanned": 48,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "top5_by_likes": [
     {
-      "author": "hezuruy",
-      "likes": 2860,
-      "quotes": 9,
-      "bookmarks": 21,
-      "url": "https://x.com/hezuruy/status/2090574634530005271",
-      "matched_keyword": "逮捕"
-    },
-    {
-      "author": "yominokuni140",
-      "likes": 743,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/yominokuni140/status/2090574325023944750",
-      "matched_keyword": "水害"
+      "author": "livedoornews",
+      "likes": 1315,
+      "quotes": 36,
+      "bookmarks": 103,
+      "url": "https://x.com/livedoornews/status/2090599754245996581",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "hezuruy",
-      "likes": 2860,
-      "quotes": 9,
-      "bookmarks": 21,
-      "progress_percent": 49,
-      "url": "https://x.com/hezuruy/status/2090574634530005271",
-      "matched_keyword": "逮捕"
-    },
-    {
-      "author": "yominokuni140",
-      "likes": 743,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 41,
-      "url": "https://x.com/yominokuni140/status/2090574325023944750",
-      "matched_keyword": "水害"
+      "author": "livedoornews",
+      "likes": 1315,
+      "quotes": 36,
+      "bookmarks": 103,
+      "progress_percent": 124,
+      "url": "https://x.com/livedoornews/status/2090599754245996581",
+      "matched_keyword": "速報"
     }
   ]
 }

@@ -1,47 +1,11 @@
 {
-  "updated_at": "2026-08-21T04:52:13.067257+00:00",
+  "updated_at": "2026-08-21T05:46:34.500697+00:00",
   "status": "success",
-  "started_at": "2026-08-21T04:51:19.402385+00:00",
-  "finished_at": "2026-08-21T04:52:13.066300+00:00",
+  "started_at": "2026-08-21T05:46:03.712424+00:00",
+  "finished_at": "2026-08-21T05:46:34.499128+00:00",
   "posts_scanned": 48,
-  "posts_flagged": 1,
-  "notified_count": 1,
-  "top5_by_likes": [
-    {
-      "author": "houkaistarrail",
-      "likes": 7204,
-      "quotes": 16,
-      "bookmarks": 598,
-      "url": "https://x.com/houkaistarrail/status/2090650101614264682",
-      "matched_keyword": "崩壊"
-    },
-    {
-      "author": "Sankei_news",
-      "likes": 1305,
-      "quotes": 26,
-      "bookmarks": 1300,
-      "url": "https://x.com/Sankei_news/status/2090610977100427321",
-      "matched_keyword": "犯罪"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "Sankei_news",
-      "likes": 1305,
-      "quotes": 26,
-      "bookmarks": 1300,
-      "progress_percent": 142,
-      "url": "https://x.com/Sankei_news/status/2090610977100427321",
-      "matched_keyword": "犯罪"
-    },
-    {
-      "author": "houkaistarrail",
-      "likes": 7204,
-      "quotes": 16,
-      "bookmarks": 598,
-      "progress_percent": 31,
-      "url": "https://x.com/houkaistarrail/status/2090650101614264682",
-      "matched_keyword": "崩壊"
-    }
-  ]
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

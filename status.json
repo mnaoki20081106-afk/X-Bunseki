@@ -1,97 +1,80 @@
 {
-  "updated_at": "2026-08-22T21:35:35.135620+00:00",
+  "updated_at": "2026-08-22T22:36:43.123365+00:00",
   "status": "success",
-  "started_at": "2026-08-22T21:33:11.858070+00:00",
-  "finished_at": "2026-08-22T21:35:35.133155+00:00",
-  "posts_scanned": 72,
+  "started_at": "2026-08-22T22:35:35.917414+00:00",
+  "finished_at": "2026-08-22T22:36:43.076027+00:00",
+  "posts_scanned": 54,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "YahooNewsTopics",
-      "likes": 54511,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/YahooNewsTopics/status/2089530469956366470",
-      "matched_keyword": "書類送検"
-    },
-    {
-      "author": "naki0734",
-      "likes": 23379,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/naki0734/status/2091073097541836810",
-      "matched_keyword": "亡くな"
-    },
-    {
       "author": "groundorago_opn",
-      "likes": 22824,
+      "likes": 27419,
       "quotes": 20,
-      "bookmarks": 7000,
+      "bookmarks": 8100,
       "url": "https://x.com/groundorago_opn/status/2091210956156396012",
       "matched_keyword": "地震"
     },
     {
-      "author": "murinerdo",
-      "likes": 22035,
-      "quotes": 33,
-      "bookmarks": 1100,
-      "url": "https://x.com/murinerdo/status/2091210082700943436",
+      "author": "Kantei_Saigai",
+      "likes": 11947,
+      "quotes": 30,
+      "bookmarks": 384,
+      "url": "https://x.com/Kantei_Saigai/status/2091209009177169973",
       "matched_keyword": "地震"
     },
     {
-      "author": "takaichi_sanae",
-      "likes": 13042,
-      "quotes": 27,
-      "bookmarks": 169,
-      "url": "https://x.com/takaichi_sanae/status/2091221773073399886",
+      "author": "Kantei_Saigai",
+      "likes": 2306,
+      "quotes": 14,
+      "bookmarks": 55,
+      "url": "https://x.com/Kantei_Saigai/status/2091219627011625034",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "ifmaroireisu",
+      "likes": 641,
+      "quotes": 0,
+      "bookmarks": 9,
+      "url": "https://x.com/ifmaroireisu/status/2091285534496772485",
       "matched_keyword": "地震"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "takaichi_sanae",
-      "likes": 13042,
-      "quotes": 27,
-      "bookmarks": 169,
-      "progress_percent": 58,
-      "url": "https://x.com/takaichi_sanae/status/2091221773073399886",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "nhk_news",
-      "likes": 1354,
-      "quotes": 18,
-      "bookmarks": 212,
-      "progress_percent": 57,
-      "url": "https://x.com/nhk_news/status/2091255715344310502",
-      "matched_keyword": "地震"
-    },
-    {
       "author": "Kantei_Saigai",
-      "likes": 2165,
-      "quotes": 25,
-      "bookmarks": 54,
+      "likes": 2306,
+      "quotes": 14,
+      "bookmarks": 55,
       "progress_percent": 52,
       "url": "https://x.com/Kantei_Saigai/status/2091219627011625034",
       "matched_keyword": "地震"
     },
     {
-      "author": "mikochisub",
-      "likes": 7803,
-      "quotes": 4,
-      "bookmarks": 53,
-      "progress_percent": 49,
-      "url": "https://x.com/mikochisub/status/2091217341564727787",
+      "author": "ifmaroireisu",
+      "likes": 641,
+      "quotes": 0,
+      "bookmarks": 9,
+      "progress_percent": 36,
+      "url": "https://x.com/ifmaroireisu/status/2091285534496772485",
       "matched_keyword": "地震"
     },
     {
-      "author": "___sep26x",
-      "likes": 1582,
-      "quotes": 23,
-      "bookmarks": 325,
-      "progress_percent": 44,
-      "url": "https://x.com/___sep26x/status/2091223454670639519",
+      "author": "Kantei_Saigai",
+      "likes": 11947,
+      "quotes": 30,
+      "bookmarks": 384,
+      "progress_percent": 24,
+      "url": "https://x.com/Kantei_Saigai/status/2091209009177169973",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "groundorago_opn",
+      "likes": 27419,
+      "quotes": 20,
+      "bookmarks": 8100,
+      "progress_percent": 20,
+      "url": "https://x.com/groundorago_opn/status/2091210956156396012",
       "matched_keyword": "地震"
     }
   ]

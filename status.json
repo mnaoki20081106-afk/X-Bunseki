@@ -1,11 +1,47 @@
 {
-  "updated_at": "2026-08-22T03:05:49.302594+00:00",
+  "updated_at": "2026-08-22T03:55:15.029916+00:00",
   "status": "success",
-  "started_at": "2026-08-22T03:05:18.300774+00:00",
-  "finished_at": "2026-08-22T03:05:49.300650+00:00",
-  "posts_scanned": 50,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "started_at": "2026-08-22T03:54:24.220564+00:00",
+  "finished_at": "2026-08-22T03:55:15.029011+00:00",
+  "posts_scanned": 53,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "top5_by_likes": [
+    {
+      "author": "livedoornews",
+      "likes": 9643,
+      "quotes": 30,
+      "bookmarks": 173,
+      "url": "https://x.com/livedoornews/status/2090999462059737248",
+      "matched_keyword": "速報"
+    },
+    {
+      "author": "aanc20",
+      "likes": 755,
+      "quotes": 4,
+      "bookmarks": 20,
+      "url": "https://x.com/aanc20/status/2091000257266262477",
+      "matched_keyword": "速報"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "livedoornews",
+      "likes": 9643,
+      "quotes": 30,
+      "bookmarks": 173,
+      "progress_percent": 151,
+      "url": "https://x.com/livedoornews/status/2090999462059737248",
+      "matched_keyword": "速報"
+    },
+    {
+      "author": "aanc20",
+      "likes": 755,
+      "quotes": 4,
+      "bookmarks": 20,
+      "progress_percent": 42,
+      "url": "https://x.com/aanc20/status/2091000257266262477",
+      "matched_keyword": "速報"
+    }
+  ]
 }

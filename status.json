@@ -1,81 +1,47 @@
 {
-  "updated_at": "2026-08-22T10:37:48.692131+00:00",
+  "updated_at": "2026-08-22T11:33:39.934114+00:00",
   "status": "success",
-  "started_at": "2026-08-22T10:37:08.349876+00:00",
-  "finished_at": "2026-08-22T10:37:48.689157+00:00",
-  "posts_scanned": 51,
+  "started_at": "2026-08-22T11:32:48.843962+00:00",
+  "finished_at": "2026-08-22T11:33:39.931357+00:00",
+  "posts_scanned": 56,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "miichan_desu_",
-      "likes": 21651,
-      "quotes": 35,
-      "bookmarks": 693,
-      "url": "https://x.com/miichan_desu_/status/2091061782890823916",
-      "matched_keyword": "セックス"
+      "author": "sig_le",
+      "likes": 20842,
+      "quotes": 19,
+      "bookmarks": 2900,
+      "url": "https://x.com/sig_le/status/2091063033871433747",
+      "matched_keyword": "豪雨"
     },
     {
-      "author": "Witchwatch99",
-      "likes": 13770,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/Witchwatch99/status/2090979794720878935",
-      "matched_keyword": "事故"
-    },
-    {
-      "author": "iammelting_",
-      "likes": 9912,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/iammelting_/status/2091000174424596836",
-      "matched_keyword": "死ぬ"
-    },
-    {
-      "author": "biwako__shiga",
-      "likes": 630,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/biwako__shiga/status/2091104731225895318",
-      "matched_keyword": "炎上"
+      "author": "dragon_fiveten",
+      "likes": 9280,
+      "quotes": 20,
+      "bookmarks": 1100,
+      "url": "https://x.com/dragon_fiveten/status/2091084263873740804",
+      "matched_keyword": "豪雨"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "biwako__shiga",
-      "likes": 630,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 31,
-      "url": "https://x.com/biwako__shiga/status/2091104731225895318",
-      "matched_keyword": "炎上"
+      "author": "dragon_fiveten",
+      "likes": 9280,
+      "quotes": 20,
+      "bookmarks": 1100,
+      "progress_percent": 25,
+      "url": "https://x.com/dragon_fiveten/status/2091084263873740804",
+      "matched_keyword": "豪雨"
     },
     {
-      "author": "miichan_desu_",
-      "likes": 21651,
-      "quotes": 35,
-      "bookmarks": 693,
-      "progress_percent": 5,
-      "url": "https://x.com/miichan_desu_/status/2091061782890823916",
-      "matched_keyword": "セックス"
-    },
-    {
-      "author": "Witchwatch99",
-      "likes": 13770,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/Witchwatch99/status/2090979794720878935",
-      "matched_keyword": "事故"
-    },
-    {
-      "author": "iammelting_",
-      "likes": 9912,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/iammelting_/status/2091000174424596836",
-      "matched_keyword": "死ぬ"
+      "author": "sig_le",
+      "likes": 20842,
+      "quotes": 19,
+      "bookmarks": 2900,
+      "progress_percent": 9,
+      "url": "https://x.com/sig_le/status/2091063033871433747",
+      "matched_keyword": "豪雨"
     }
   ]
 }

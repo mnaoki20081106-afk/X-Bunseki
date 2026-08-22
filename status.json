@@ -1,11 +1,98 @@
 {
-  "updated_at": "2026-08-22T16:37:52.289163+00:00",
+  "updated_at": "2026-08-22T17:36:58.211954+00:00",
   "status": "success",
-  "started_at": "2026-08-22T16:37:20.721856+00:00",
-  "finished_at": "2026-08-22T16:37:52.286496+00:00",
-  "posts_scanned": 62,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "started_at": "2026-08-22T17:33:18.310016+00:00",
+  "finished_at": "2026-08-22T17:36:58.210612+00:00",
+  "posts_scanned": 92,
+  "posts_flagged": 8,
+  "notified_count": 8,
+  "top5_by_likes": [
+    {
+      "author": "47news_official",
+      "likes": 36517,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/47news_official/status/2089524190953222226",
+      "matched_keyword": "速報"
+    },
+    {
+      "author": "Ex_Albio",
+      "likes": 8208,
+      "quotes": 1,
+      "bookmarks": 8800,
+      "url": "https://x.com/Ex_Albio/status/2091210109410242999",
+      "matched_keyword": "余震"
+    },
+    {
+      "author": "VanilLa_sub",
+      "likes": 7279,
+      "quotes": 6,
+      "bookmarks": 7700,
+      "url": "https://x.com/VanilLa_sub/status/2091211089430352222",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "ok_nobuhiko",
+      "likes": 6011,
+      "quotes": 5,
+      "bookmarks": 58,
+      "url": "https://x.com/ok_nobuhiko/status/2091210328986296607",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "ryogomatsumaru",
+      "likes": 5446,
+      "quotes": 2,
+      "bookmarks": 56,
+      "url": "https://x.com/ryogomatsumaru/status/2091210517721338349",
+      "matched_keyword": "地震"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "VanilLa_sub",
+      "likes": 7279,
+      "quotes": 6,
+      "bookmarks": 7700,
+      "progress_percent": 276,
+      "url": "https://x.com/VanilLa_sub/status/2091211089430352222",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "ok_nobuhiko",
+      "likes": 6011,
+      "quotes": 5,
+      "bookmarks": 58,
+      "progress_percent": 196,
+      "url": "https://x.com/ok_nobuhiko/status/2091210328986296607",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "rindochihaya",
+      "likes": 3465,
+      "quotes": 0,
+      "bookmarks": 18,
+      "progress_percent": 192,
+      "url": "https://x.com/rindochihaya/status/2091210582305525855",
+      "matched_keyword": "地震"
+    },
+    {
+      "author": "Ex_Albio",
+      "likes": 8208,
+      "quotes": 1,
+      "bookmarks": 8800,
+      "progress_percent": 190,
+      "url": "https://x.com/Ex_Albio/status/2091210109410242999",
+      "matched_keyword": "余震"
+    },
+    {
+      "author": "shiranuiflare",
+      "likes": 2483,
+      "quotes": 0,
+      "bookmarks": 14,
+      "progress_percent": 138,
+      "url": "https://x.com/shiranuiflare/status/2091211021763674426",
+      "matched_keyword": "地震"
+    }
+  ]
 }

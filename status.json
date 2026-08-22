@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-08-22T14:35:35.755594+00:00",
+  "updated_at": "2026-08-22T15:33:27.832664+00:00",
   "status": "success",
-  "started_at": "2026-08-22T14:35:02.451385+00:00",
-  "finished_at": "2026-08-22T14:35:35.753019+00:00",
-  "posts_scanned": 59,
+  "started_at": "2026-08-22T15:32:57.030419+00:00",
+  "finished_at": "2026-08-22T15:33:27.829689+00:00",
+  "posts_scanned": 44,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [],

@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-22T08:45:36.726498+00:00",
+  "updated_at": "2026-08-22T09:39:04.357557+00:00",
   "status": "success",
-  "started_at": "2026-08-22T08:45:04.211654+00:00",
-  "finished_at": "2026-08-22T08:45:36.723708+00:00",
-  "posts_scanned": 47,
+  "started_at": "2026-08-22T09:38:24.187753+00:00",
+  "finished_at": "2026-08-22T09:39:04.351080+00:00",
+  "posts_scanned": 48,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "EL6_Tsubasa",
+      "likes": 1386,
+      "quotes": 12,
+      "bookmarks": 20,
+      "url": "https://x.com/EL6_Tsubasa/status/2091090082048684365",
+      "matched_keyword": "死ぬ"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "EL6_Tsubasa",
+      "likes": 1386,
+      "quotes": 12,
+      "bookmarks": 20,
+      "progress_percent": 77,
+      "url": "https://x.com/EL6_Tsubasa/status/2091090082048684365",
+      "matched_keyword": "死ぬ"
+    }
+  ]
 }

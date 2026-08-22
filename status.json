@@ -1,97 +1,97 @@
 {
-  "updated_at": "2026-08-22T19:34:59.066925+00:00",
+  "updated_at": "2026-08-22T20:39:01.362422+00:00",
   "status": "success",
-  "started_at": "2026-08-22T19:32:30.435922+00:00",
-  "finished_at": "2026-08-22T19:34:59.064290+00:00",
-  "posts_scanned": 79,
+  "started_at": "2026-08-22T20:36:23.212125+00:00",
+  "finished_at": "2026-08-22T20:39:01.358806+00:00",
+  "posts_scanned": 86,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
+      "author": "YahooNewsTopics",
+      "likes": 54512,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/YahooNewsTopics/status/2089530469956366470",
+      "matched_keyword": "書類送検"
+    },
+    {
+      "author": "ydb96zzz",
+      "likes": 38141,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/ydb96zzz/status/2091091081714938005",
+      "matched_keyword": "水没"
+    },
+    {
+      "author": "naki0734",
+      "likes": 22678,
+      "quotes": 0,
+      "bookmarks": 0,
+      "url": "https://x.com/naki0734/status/2091073097541836810",
+      "matched_keyword": "亡くな"
+    },
+    {
       "author": "groundorago_opn",
-      "likes": 16871,
+      "likes": 19919,
       "quotes": 20,
-      "bookmarks": 5300,
+      "bookmarks": 6200,
       "url": "https://x.com/groundorago_opn/status/2091210956156396012",
       "matched_keyword": "地震"
     },
     {
       "author": "takaichi_sanae",
-      "likes": 8319,
+      "likes": 10279,
       "quotes": 26,
-      "bookmarks": 121,
+      "bookmarks": 138,
       "url": "https://x.com/takaichi_sanae/status/2091221773073399886",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "mikochisub",
-      "likes": 5905,
-      "quotes": 4,
-      "bookmarks": 42,
-      "url": "https://x.com/mikochisub/status/2091217341564727787",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "Chichichiakik",
-      "likes": 5620,
-      "quotes": 5,
-      "bookmarks": 59,
-      "url": "https://x.com/Chichichiakik/status/2091213838805004629",
-      "matched_keyword": "地震"
-    },
-    {
-      "author": "nhk_seikatsu",
-      "likes": 5324,
-      "quotes": 35,
-      "bookmarks": 199,
-      "url": "https://x.com/nhk_seikatsu/status/2091212587308658729",
       "matched_keyword": "地震"
     }
   ],
   "top5_by_progress": [
     {
+      "author": "n0ah_kurumi",
+      "likes": 4612,
+      "quotes": 0,
+      "bookmarks": 35,
+      "progress_percent": 65,
+      "url": "https://x.com/n0ah_kurumi/status/2091215051973955979",
+      "matched_keyword": "地震"
+    },
+    {
       "author": "takaichi_sanae",
-      "likes": 8319,
+      "likes": 10279,
       "quotes": 26,
-      "bookmarks": 121,
-      "progress_percent": 329,
+      "bookmarks": 138,
+      "progress_percent": 62,
       "url": "https://x.com/takaichi_sanae/status/2091221773073399886",
       "matched_keyword": "地震"
     },
     {
       "author": "Kantei_Saigai",
-      "likes": 1913,
+      "likes": 2040,
       "quotes": 22,
-      "bookmarks": 46,
-      "progress_percent": 69,
+      "bookmarks": 51,
+      "progress_percent": 52,
       "url": "https://x.com/Kantei_Saigai/status/2091219627011625034",
       "matched_keyword": "地震"
     },
     {
-      "author": "n0ah_kurumi",
-      "likes": 4161,
-      "quotes": 0,
-      "bookmarks": 33,
-      "progress_percent": 56,
-      "url": "https://x.com/n0ah_kurumi/status/2091215051973955979",
-      "matched_keyword": "地震"
-    },
-    {
       "author": "___sep26x",
-      "likes": 1196,
+      "likes": 1427,
       "quotes": 23,
-      "bookmarks": 256,
-      "progress_percent": 43,
+      "bookmarks": 300,
+      "progress_percent": 48,
       "url": "https://x.com/___sep26x/status/2091223454670639519",
       "matched_keyword": "地震"
     },
     {
-      "author": "yasuko_sma",
-      "likes": 4194,
-      "quotes": 7,
-      "bookmarks": 45,
-      "progress_percent": 41,
-      "url": "https://x.com/yasuko_sma/status/2091212871749484774",
+      "author": "chrymset",
+      "likes": 2644,
+      "quotes": 23,
+      "bookmarks": 961,
+      "progress_percent": 44,
+      "url": "https://x.com/chrymset/status/2091209478167581032",
       "matched_keyword": "地震"
     }
   ]

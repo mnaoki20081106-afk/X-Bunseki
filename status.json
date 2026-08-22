@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-22T06:57:16.492855+00:00",
+  "updated_at": "2026-08-22T07:42:15.598424+00:00",
   "status": "success",
-  "started_at": "2026-08-22T06:56:45.673427+00:00",
-  "finished_at": "2026-08-22T06:57:16.490900+00:00",
-  "posts_scanned": 49,
+  "started_at": "2026-08-22T07:41:34.634855+00:00",
+  "finished_at": "2026-08-22T07:42:15.596164+00:00",
+  "posts_scanned": 52,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "atlrs_official",
+      "likes": 1804,
+      "quotes": 14,
+      "bookmarks": 24,
+      "url": "https://x.com/atlrs_official/status/2091056727664005585",
+      "matched_keyword": "速報"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "atlrs_official",
+      "likes": 1804,
+      "quotes": 14,
+      "bookmarks": 24,
+      "progress_percent": 56,
+      "url": "https://x.com/atlrs_official/status/2091056727664005585",
+      "matched_keyword": "速報"
+    }
+  ]
 }

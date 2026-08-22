@@ -1,47 +1,11 @@
 {
-  "updated_at": "2026-08-22T11:33:39.934114+00:00",
+  "updated_at": "2026-08-22T12:58:19.286641+00:00",
   "status": "success",
-  "started_at": "2026-08-22T11:32:48.843962+00:00",
-  "finished_at": "2026-08-22T11:33:39.931357+00:00",
-  "posts_scanned": 56,
+  "started_at": "2026-08-22T12:57:46.866545+00:00",
+  "finished_at": "2026-08-22T12:58:19.284762+00:00",
+  "posts_scanned": 51,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [
-    {
-      "author": "sig_le",
-      "likes": 20842,
-      "quotes": 19,
-      "bookmarks": 2900,
-      "url": "https://x.com/sig_le/status/2091063033871433747",
-      "matched_keyword": "豪雨"
-    },
-    {
-      "author": "dragon_fiveten",
-      "likes": 9280,
-      "quotes": 20,
-      "bookmarks": 1100,
-      "url": "https://x.com/dragon_fiveten/status/2091084263873740804",
-      "matched_keyword": "豪雨"
-    }
-  ],
-  "top5_by_progress": [
-    {
-      "author": "dragon_fiveten",
-      "likes": 9280,
-      "quotes": 20,
-      "bookmarks": 1100,
-      "progress_percent": 25,
-      "url": "https://x.com/dragon_fiveten/status/2091084263873740804",
-      "matched_keyword": "豪雨"
-    },
-    {
-      "author": "sig_le",
-      "likes": 20842,
-      "quotes": 19,
-      "bookmarks": 2900,
-      "progress_percent": 9,
-      "url": "https://x.com/sig_le/status/2091063033871433747",
-      "matched_keyword": "豪雨"
-    }
-  ]
+  "top5_by_likes": [],
+  "top5_by_progress": []
 }

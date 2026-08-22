@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-22T12:58:19.286641+00:00",
+  "updated_at": "2026-08-22T13:42:37.499411+00:00",
   "status": "success",
-  "started_at": "2026-08-22T12:57:46.866545+00:00",
-  "finished_at": "2026-08-22T12:58:19.284762+00:00",
-  "posts_scanned": 51,
+  "started_at": "2026-08-22T13:41:55.226866+00:00",
+  "finished_at": "2026-08-22T13:42:37.496183+00:00",
+  "posts_scanned": 54,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "nagata_shiori_",
+      "likes": 1167,
+      "quotes": 15,
+      "bookmarks": 37,
+      "url": "https://x.com/nagata_shiori_/status/2091155599409201244",
+      "matched_keyword": "事件"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "nagata_shiori_",
+      "likes": 1167,
+      "quotes": 15,
+      "bookmarks": 37,
+      "progress_percent": 57,
+      "url": "https://x.com/nagata_shiori_/status/2091155599409201244",
+      "matched_keyword": "事件"
+    }
+  ]
 }

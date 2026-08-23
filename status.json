@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-23T03:13:39.649562+00:00",
+  "updated_at": "2026-08-23T04:49:59.530852+00:00",
   "status": "success",
-  "started_at": "2026-08-23T03:13:09.641481+00:00",
-  "finished_at": "2026-08-23T03:13:39.567005+00:00",
-  "posts_scanned": 43,
+  "started_at": "2026-08-23T04:49:29.612935+00:00",
+  "finished_at": "2026-08-23T04:49:59.526882+00:00",
+  "posts_scanned": 49,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Kantei_Saigai",
-      "likes": 2698,
+      "author": "murinerdo",
+      "likes": 75503,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/Kantei_Saigai/status/2091219627011625034",
+      "url": "https://x.com/murinerdo/status/2091210082700943436",
       "matched_keyword": "地震"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Kantei_Saigai",
-      "likes": 2698,
+      "author": "murinerdo",
+      "likes": 75503,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,
-      "url": "https://x.com/Kantei_Saigai/status/2091219627011625034",
+      "url": "https://x.com/murinerdo/status/2091210082700943436",
       "matched_keyword": "地震"
     }
   ]

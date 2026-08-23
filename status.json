@@ -1,11 +1,86 @@
 {
-  "updated_at": "2026-08-23T14:36:46.173022+00:00",
+  "updated_at": "2026-08-23T15:01:25.479161+00:00",
   "status": "success",
-  "started_at": "2026-08-23T14:36:13.861414+00:00",
-  "finished_at": "2026-08-23T14:36:46.170529+00:00",
-  "posts_scanned": 51,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "started_at": "2026-08-23T15:00:00.442477+00:00",
+  "finished_at": "2026-08-23T15:01:25.478184+00:00",
+  "posts_scanned": 112,
+  "posts_with_history": 0,
+  "posts_flagged": 2,
+  "notified_count": 2,
+  "notified_last_24h": 2,
+  "reject_reasons": {
+    "初回観測かつ平均速度が低い": 17,
+    "いいねが少なすぎる": 35,
+    "古すぎる": 23
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 150,
+    "MAX_AGE_MINUTES": 180,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 8,
+    "NOTIFY_MAX_PER_RUN": 2,
+    "NOTIFY_MAX_PER_DAY": 12
+  },
+  "observation_db": {
+    "total": 112,
+    "posts": 112,
+    "oldest": "2026-08-23T15:01:23.135575+00:00"
+  },
+  "top5": [
+    {
+      "author": "sakatansab",
+      "score": 61.1,
+      "likes": 2825,
+      "likes_per_min": 127.14385781806176,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 22.2,
+      "text": "ココマド救われてて良かったな〜\n\nヘイトミーからホエールからの火炎はキマるよね\n#浦島坂田船夏ツアー2026",
+      "url": "https://x.com/sakatansab/status/2091535724789346444"
+    },
+    {
+      "author": "nogizaka46",
+      "score": 55.8,
+      "likes": 5194,
+      "likes_per_min": 260.5390279442194,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 19.9,
+      "text": "₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊⊹₊˚‧\n\n　#乃木坂全国ツアー神宮Day4\n\n₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊",
+      "url": "https://x.com/nogizaka46/status/2091536301187363152"
+    },
+    {
+      "author": "Fuwa_Minato",
+      "score": 54.4,
+      "likes": 2451,
+      "likes_per_min": 304.3866103215438,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.1,
+      "text": "僕たちは海賊になれたんだ",
+      "url": "https://x.com/Fuwa_Minato/status/2091539288974647771"
+    },
+    {
+      "author": "yui_fz0221",
+      "score": 52.2,
+      "likes": 1125,
+      "likes_per_min": 85.10524824208017,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 13.2,
+      "text": "めっちゃレアな瞬間",
+      "url": "https://x.com/yui_fz0221/status/2091537989784777205"
+    },
+    {
+      "author": "nogizaka46",
+      "score": 51.7,
+      "likes": 5790,
+      "likes_per_min": 260.39332621798945,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 22.2,
+      "text": "₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊⊹₊˚‧\n\n　　#乃木坂全国ツアー神宮Day4\n\n₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚",
+      "url": "https://x.com/nogizaka46/status/2091535722318864522"
+    }
+  ]
 }

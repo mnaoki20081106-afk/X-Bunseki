@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-23T23:05:10.589058+00:00",
+  "updated_at": "2026-08-23T23:34:04.286984+00:00",
   "status": "success",
-  "started_at": "2026-08-23T23:02:26.787295+00:00",
-  "finished_at": "2026-08-23T23:05:10.588061+00:00",
-  "posts_scanned": 137,
-  "posts_with_history": 93,
+  "started_at": "2026-08-23T23:31:10.213489+00:00",
+  "finished_at": "2026-08-23T23:34:04.285853+00:00",
+  "posts_scanned": 144,
+  "posts_with_history": 83,
   "posts_flagged": 2,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 52,
+  "minutes_since_last_notification": 29,
   "reject_reasons": {
-    "いいねが少なすぎる": 51,
-    "古すぎる": 32
+    "いいねが少なすぎる": 59,
+    "古すぎる": 36,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 2679,
-    "posts": 905,
+    "total": 2823,
+    "posts": 966,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "marumie_tv",
-      "score": 71.8,
-      "likes": 3010,
-      "likes_per_min": 76.64,
-      "acceleration": 1.7,
-      "measured": true,
-      "age_minutes": 65.2,
-      "text": "#KingandPrince #永瀬廉 さんが\nジュニア時代のやらかしを暴露\n\n最寄り駅の自転車置き場で\nファンに遭遇し",
-      "url": "https://x.com/marumie_tv/status/2091646663832047881"
-    },
-    {
-      "author": "koc_staff",
-      "score": 58.9,
-      "likes": 4196,
-      "likes_per_min": 66.83,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 65.1,
-      "text": "◤◢◤◢◤◢◤◢◤◢◤◢\n　　  重大発表\n◤◢◤◢◤◢◤◢◤◢◤◢\n\n大会史上初“敗者復活戦”の開催決定\n決勝進出を逃",
-      "url": "https://x.com/koc_staff/status/2091646676465315859"
-    },
-    {
       "author": "kuratamagohan",
-      "score": 51.9,
-      "likes": 474,
-      "likes_per_min": 16.12,
-      "acceleration": null,
+      "score": 57.1,
+      "likes": 1086,
+      "likes_per_min": 21.17,
+      "acceleration": 1.31,
       "measured": true,
-      "age_minutes": 35.2,
+      "age_minutes": 64.2,
       "text": "「外国人労働者は優秀で、よく働く」\n\nこういう発言をされる大企業経営者は少なくありません。\n\nしかし、問題はそこではない",
       "url": "https://x.com/kuratamagohan/status/2091654193950212396"
     },
     {
-      "author": "mokudai_kazuto",
-      "score": 51.5,
-      "likes": 1707,
-      "likes_per_min": 42.57,
-      "acceleration": null,
+      "author": "marumie_tv",
+      "score": 56.9,
+      "likes": 4775,
+      "likes_per_min": 61.05,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 43.3,
-      "text": "出演情報\n\n中京テレビ・日本テレビ系全国ネット水曜プラチナイト『仮面教師～妻を亡くしたその日から』\n遠山 拓実役として出",
-      "url": "https://x.com/mokudai_kazuto/status/2091652157871452185"
+      "age_minutes": 94.1,
+      "text": "#KingandPrince #永瀬廉 さんが\nジュニア時代のやらかしを暴露\n\n最寄り駅の自転車置き場で\nファンに遭遇し",
+      "url": "https://x.com/marumie_tv/status/2091646663832047881"
     },
     {
-      "author": "Kadou_Mikaru",
-      "score": 48.5,
-      "likes": 193,
-      "likes_per_min": 13.178825481404287,
+      "author": "alt_dirty",
+      "score": 50.3,
+      "likes": 1347,
+      "likes_per_min": 30.75,
+      "acceleration": 2.0,
+      "measured": true,
+      "age_minutes": 91.0,
+      "text": "【悲報】哔哩哔哩に投稿されたINMU KING中国語版、検閲を受け削除される\n\n【朗報】削除されたということは中国当局は",
+      "url": "https://x.com/alt_dirty/status/2091647436548890665"
+    },
+    {
+      "author": "sakatansab",
+      "score": 44.9,
+      "likes": 1018,
+      "likes_per_min": 132.70446365281447,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.6,
-      "text": "50万再生ありがとう  \n\nずうっといっしょ！　歌ってみた。【 蝸堂みかる / にじさんじ 】 \nhttps://\nyo",
-      "url": "https://x.com/Kadou_Mikaru/status/2091659378214711653"
+      "age_minutes": 7.7,
+      "text": "イケメン回転寿司？？？ドスケベターンテーブル？？？？",
+      "url": "https://x.com/sakatansab/status/2091668406210826551"
+    },
+    {
+      "author": "akindosushiroco",
+      "score": 44.8,
+      "likes": 2021,
+      "likes_per_min": 59.375081585039375,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 34.0,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2091661771618844781"
     }
   ]
 }

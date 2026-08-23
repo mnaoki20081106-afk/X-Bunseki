@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-23T22:12:56.904944+00:00",
+  "updated_at": "2026-08-23T22:45:59.639838+00:00",
   "status": "success",
-  "started_at": "2026-08-23T22:10:05.352179+00:00",
-  "finished_at": "2026-08-23T22:12:56.902304+00:00",
-  "posts_scanned": 107,
-  "posts_with_history": 67,
+  "started_at": "2026-08-23T22:43:07.934121+00:00",
+  "finished_at": "2026-08-23T22:45:59.638388+00:00",
+  "posts_scanned": 136,
+  "posts_with_history": 63,
   "posts_flagged": 1,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": null,
+  "minutes_since_last_notification": 33,
   "reject_reasons": {
-    "いいねが少なすぎる": 31,
-    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 47,
+    "初回観測かつ平均速度が低い": 4,
     "古すぎる": 31
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 2406,
-    "posts": 788,
+    "total": 2542,
+    "posts": 861,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "Kaisei_2434",
-      "score": 57.5,
-      "likes": 1401,
-      "likes_per_min": 22.82,
+      "author": "marumie_tv",
+      "score": 63.8,
+      "likes": 1541,
+      "likes_per_min": 45.03,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 55.6,
+      "age_minutes": 46.0,
+      "text": "#KingandPrince #永瀬廉 さんが\nジュニア時代のやらかしを暴露\n\n最寄り駅の自転車置き場で\nファンに遭遇し",
+      "url": "https://x.com/marumie_tv/status/2091646663832047881"
+    },
+    {
+      "author": "koc_staff",
+      "score": 49.2,
+      "likes": 2915,
+      "likes_per_min": 63.44713745773031,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 45.9,
+      "text": "◤◢◤◢◤◢◤◢◤◢◤◢\n　　  重大発表\n◤◢◤◢◤◢◤◢◤◢◤◢\n\n大会史上初“敗者復活戦”の開催決定\n決勝進出を逃",
+      "url": "https://x.com/koc_staff/status/2091646676465315859"
+    },
+    {
+      "author": "Kaisei_2434",
+      "score": 48.3,
+      "likes": 2004,
+      "likes_per_min": 18.24,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 88.7,
       "text": "朝活中\n昨日のライブのスクショを曲名付きでリプに貼っていただきたく、、！！！",
       "url": "https://x.com/Kaisei_2434/status/2091635921980735939"
     },
     {
-      "author": "nino_honmono",
-      "score": 46.2,
-      "likes": 17225,
-      "likes_per_min": 231.28,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 60.3,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2091634744291438760"
-    },
-    {
-      "author": "karaage_rutsubo",
-      "score": 45.0,
-      "likes": 2359,
-      "likes_per_min": 31.19,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 87.7,
-      "text": "フルハーネス着用の実態 #現場猫",
-      "url": "https://x.com/karaage_rutsubo/status/2091627835861676448"
-    },
-    {
       "author": "satomimi__",
-      "score": 44.0,
-      "likes": 871,
-      "likes_per_min": 115.97097113889292,
+      "score": 46.8,
+      "likes": 2275,
+      "likes_per_min": 42.46,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.5,
+      "measured": true,
+      "age_minutes": 40.6,
       "text": "おはよん\n\n今日20時から配信\nアリツアラスト写真たくさん用意したぞー！！！！！！\n\n例のお知らせもあるよ",
       "url": "https://x.com/satomimi__/status/2091648030101676462"
     },
     {
-      "author": "QdAf0l",
-      "score": 43.6,
-      "likes": 280,
-      "likes_per_min": 3.5,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 71.7,
-      "text": "おはようございます\n\n今日は『処暑』……暑さが和らぐ頃\nそして飯盛山で自刃した「白虎隊自刃の日」です\n\n自決した飯盛山か",
-      "url": "https://x.com/QdAf0l/status/2091631872791249117"
+      "author": "battleshow_cx",
+      "score": 44.8,
+      "likes": 1262,
+      "likes_per_min": 27.448451669109406,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 46.0,
+      "text": "/／\n今夜７時から\n真剣遊戯！THEバトルSHOW 2時間SP\n\\＼\n\n爆笑問題 田中裕二 率いる 芸人バラエティ軍\n　",
+      "url": "https://x.com/battleshow_cx/status/2091646670421307796"
     }
   ]
 }

@@ -30,6 +30,7 @@ from pathlib import Path
 _BASE_DIR = Path(__file__).parent
 KEYWORDS_FILE_PATH = _BASE_DIR / "keywords.txt"
 NG_KEYWORDS_FILE_PATH = _BASE_DIR / "keywords_ng.txt"
+COMBO_FILE_PATH = _BASE_DIR / "keywords_combo.txt"
 
 # 1つのX検索クエリに詰め込むキーワード群の最大文字数。
 # Xの検索クエリには長さ制限があるため、長くなりすぎないよう分割する。
@@ -79,11 +80,64 @@ def _load_words(path: Path) -> list[str]:
     return unique
 
 
+def _load_lines(path: Path) -> list[str]:
+    """
+    1行を1単位として読み込む(カンマで分割しない)。
+    組み合わせ検索の行は "(逮捕 OR 起訴) (俳優 OR タレント)" のように
+    括弧やスペースを含む検索式そのものなので、分割してはいけない。
+    """
+    if not path.exists():
+        return []
+
+    lines = []
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line == "#" or line.startswith("# "):
+            continue
+        lines.append(line)
+    return lines
+
+
+def _words_in_expression(expression: str) -> list[str]:
+    """
+    組み合わせ検索の式から、素のワードだけを取り出す。
+
+    "(逮捕 OR 起訴) (俳優 OR タレント)" → ["逮捕", "起訴", "俳優", "タレント"]
+
+    ★何のために必要か:
+    組み合わせ検索でヒットした投稿は、keywords.txt のワードを1つも
+    含まない場合がある。そのままだと関連度スコアが0点になり、
+    「わざわざ狙って取りに行った投稿なのに減点される」という
+    ちぐはぐな状態になる。そこで式の中のワードも採点対象に含める。
+    """
+    cleaned = re.sub(r"[()\"]", " ", expression)
+    cleaned = re.sub(r"\bOR\b|\bAND\b", " ", cleaned)
+    words = []
+    for token in cleaned.split():
+        token = token.lstrip("-").strip()
+        # 検索演算子(min_faves: など)は除く
+        if not token or ":" in token or len(token) < 2:
+            continue
+        words.append(token)
+    return words
+
+
 _KEYWORDS = _load_words(KEYWORDS_FILE_PATH)
 _NG_KEYWORDS = _load_words(NG_KEYWORDS_FILE_PATH)
+_COMBO_EXPRESSIONS = _load_lines(COMBO_FILE_PATH)
+
+# 採点に使う語彙 = keywords.txt + 組み合わせ検索の式に出てくるワード
+_SCORING_WORDS = list(_KEYWORDS)
+_seen_scoring = set(_SCORING_WORDS)
+for _expression in _COMBO_EXPRESSIONS:
+    for _word in _words_in_expression(_expression):
+        if _word not in _seen_scoring:
+            _seen_scoring.add(_word)
+            _SCORING_WORDS.append(_word)
 
 print(
     f"[keyword_filter] 対象ワード{len(_KEYWORDS)}個 / "
+    f"組み合わせ検索{len(_COMBO_EXPRESSIONS)}本 / "
     f"除外ワード{len(_NG_KEYWORDS)}個を読み込みました"
 )
 
@@ -126,6 +180,14 @@ def query_groups(max_chars: int = DEFAULT_QUERY_GROUP_CHARS) -> list[str]:
     return groups
 
 
+def combo_queries() -> list[str]:
+    """
+    keywords_combo.txt の各行を、そのまま検索クエリの本体として返す。
+    1行 = 1本の検索になる。
+    """
+    return list(_COMBO_EXPRESSIONS)
+
+
 # ──────────────────────────────────────────────
 #  2. 除外(NG)判定
 # ──────────────────────────────────────────────
@@ -153,10 +215,14 @@ def is_ng(text: str) -> bool:
 # ──────────────────────────────────────────────
 
 def matched_keywords(text: str) -> list[str]:
-    """本文に含まれる対象ワードを全て返す"""
+    """
+    本文に含まれる対象ワードを全て返す。
+    keywords.txt のワードに加えて、組み合わせ検索の式に出てくる
+    ワードも対象にする(_words_in_expression の説明を参照)。
+    """
     if not text:
         return []
-    return [w for w in _KEYWORDS if w in text]
+    return [w for w in _SCORING_WORDS if w in text]
 
 
 def relevance_score(text: str) -> float:
@@ -185,7 +251,7 @@ def primary_keyword(text: str) -> str | None:
 # ── v3互換API(既存コードからの呼び出しを壊さないために残す) ──
 
 def matches_keyword(text: str) -> bool:
-    if not _KEYWORDS:
+    if not _SCORING_WORDS:
         return True
     return bool(matched_keywords(text))
 
@@ -195,6 +261,10 @@ def find_matching_keyword(text: str) -> str | None:
 
 
 if __name__ == "__main__":
-    print(f"--- 生成される検索クエリ用OR句 ({len(query_groups())}グループ) ---")
+    print(f"--- OR句 ({len(query_groups())}グループ) ---")
     for i, g in enumerate(query_groups(), 1):
         print(f"[{i}] ({g})")
+    print(f"\n--- 組み合わせ検索 ({len(combo_queries())}本) ---")
+    for i, q in enumerate(combo_queries(), 1):
+        print(f"[{i}] {q}")
+    print(f"\n採点に使う語彙: {len(_SCORING_WORDS)}個")

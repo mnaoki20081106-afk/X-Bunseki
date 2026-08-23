@@ -71,8 +71,13 @@ SEARCH_MIN_FAVES = int(_env("SEARCH_MIN_FAVES", "50"))
 # こちらはノイズが多いので閾値を高めに保つ。
 BROAD_MIN_FAVES = int(_env("BROAD_MIN_FAVES", "800"))
 
+# 組み合わせ検索(keywords_combo.txt)の最低いいね数。
+# AND条件で既に強く絞れているので、OR検索よりさらに低くできる。
+COMBO_MIN_FAVES = int(_env("COMBO_MIN_FAVES", "30"))
+
 # 各クエリのスクロール回数(多いほど件数は増えるが実行時間も伸びる)
 SCROLLS_KEYWORD = int(_env("SCROLLS_KEYWORD", "3"))
+SCROLLS_COMBO = int(_env("SCROLLS_COMBO", "2"))
 SCROLLS_BROAD = int(_env("SCROLLS_BROAD", "5"))
 SCROLL_WAIT_SECONDS = float(_env("SCROLL_WAIT_SECONDS", "1.8"))
 
@@ -375,7 +380,15 @@ def build_queries() -> list[tuple[str, str, int]]:
         q = f"({group}) lang:ja -filter:retweets min_faves:{SEARCH_MIN_FAVES}"
         queries.append((q, "live", SCROLLS_KEYWORD))
 
-    # (2) 広域クエリ … キーワードに無い話題を取りこぼさないための保険。
+    # (2) 組み合わせ検索 … keywords_combo.txt の各行がそのまま1本の検索になる。
+    #     「逮捕」のような単独では一般ニュースに埋もれるワードを、
+    #     文脈のAND条件で絞って拾うためのもの。
+    #     絞り込みが効いている分、閾値をさらに下げる。
+    for expression in keyword_filter.combo_queries():
+        q = f"{expression} lang:ja -filter:retweets min_faves:{COMBO_MIN_FAVES}"
+        queries.append((q, "live", SCROLLS_COMBO))
+
+    # (3) 広域クエリ … キーワードに無い話題を取りこぼさないための保険。
     #     ノイズが多いので閾値を高くし、返信も除外する。
     broad = f"lang:ja -filter:retweets -filter:replies min_faves:{BROAD_MIN_FAVES}"
     queries.append((broad, "live", SCROLLS_BROAD))

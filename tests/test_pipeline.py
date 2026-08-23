@@ -182,17 +182,87 @@ def test_query_groups_are_generated():
     groups = keyword_filter.query_groups()
     assert groups, "keywords.txt から検索クエリが生成されること"
     assert all(len(g) <= 400 for g in groups), "クエリが長くなりすぎないこと"
-    assert any("地震" in g for g in groups)
+    assert any("炎上" in g for g in groups)
 
 
 def test_ng_keywords_block_giveaways():
     assert keyword_filter.is_ng("フォロー&RTで現金プレゼント企画") is True
-    assert keyword_filter.is_ng("【速報】東京で地震が発生") is False
+    assert keyword_filter.is_ng("【文春砲】人気俳優に不倫疑惑") is False
+
+
+def test_combo_queries_are_loaded():
+    """keywords_combo.txt の各行が、そのまま検索クエリになること"""
+    combos = keyword_filter.combo_queries()
+    assert combos, "組み合わせ検索が読み込まれること"
+    # 行がカンマで分割されていないこと(検索式が壊れていないこと)
+    assert any("OR" in c and ")" in c for c in combos), combos
+
+
+def test_combo_words_count_toward_relevance():
+    """
+    組み合わせ検索でしかヒットしない投稿にも関連度が付くこと。
+
+    「逮捕」は keywords.txt には無く keywords_combo.txt にしかないが、
+    わざわざ狙って取りに行った投稿なので0点にしてはいけない。
+    """
+    assert "逮捕" not in keyword_filter._KEYWORDS
+    assert keyword_filter.relevance_score("人気俳優が逮捕されました") > 0
+
+
+def test_combo_and_ng_lists_do_not_conflict():
+    """
+    組み合わせ検索で狙っているワードが、NGワードにも入っていないこと。
+    両方に入っていると「検索して取りに行った投稿を、その場で捨てる」
+    という矛盾が起きる(実際に「拡散希望」でこれが起きた)。
+    """
+    conflicts = []
+    for expression in keyword_filter.combo_queries():
+        for word in keyword_filter._words_in_expression(expression):
+            if word in keyword_filter._NG_KEYWORDS:
+                conflicts.append(word)
+    assert not conflicts, f"組み合わせ検索とNGワードが衝突: {conflicts}"
+
+
+def test_ng_words_do_not_kill_real_news():
+    """
+    NGワードが、本当に拾いたい投稿を巻き添えにしていないこと。
+
+    NGは「1つでも含まれたら問答無用で捨てる」拒否権なので、
+    一般語を入れると拾いたい投稿まで消える。実際に
+    「ご来場ありがとう」をNGに入れて謝罪投稿が消えた事故があった。
+    """
+    must_survive = [
+        "【文春砲】人気俳優に不倫疑惑 事務所は事実無根とコメント",
+        "謝罪文を公開しました。ご来場ありがとうございました",
+        "有名アイドルが未成年飲酒で活動休止 事務所が謝罪",
+        "人気声優が書類送検 所属事務所がコメントを発表",
+        "配信者が生放送で不適切発言 切り抜きが拡散し炎上",
+    ]
+    killed = [(t, keyword_filter.find_ng_keyword(t)) for t in must_survive
+              if keyword_filter.find_ng_keyword(t)]
+    assert not killed, f"拾いたい投稿がNGワードで消えている: {killed}"
+
+
+def test_keywords_have_no_ephemeral_proper_nouns():
+    """
+    keywords.txt に「今週だけの固有名詞」が紛れ込んでいないこと。
+
+    特定のタレント名やイベント名を入れると、その話題が終わった瞬間に
+    死にワードになる。人名で追いたい場合は keywords_combo.txt を使う。
+    ここでは過去に提案されて却下した実例を検出する。
+    """
+    rejected = [
+        "岩﨑大昇", "山口陽世", "ぱるちゃん", "りくりゅう", "KEYTOLIT",
+        "神宮Day", "箱パカ", "国連委員", "給料逆転", "発達障害就活",
+        "猫将軍", "たいがは", "セラが色を", "ヒルナンデス",
+    ]
+    found = [w for w in rejected if w in keyword_filter._KEYWORDS]
+    assert not found, f"一過性の固有名詞が入っています: {found}"
 
 
 def test_relevance_score_increases_with_hits():
-    one = keyword_filter.relevance_score("地震がありました")
-    many = keyword_filter.relevance_score("地震で火災が発生し行方不明者が出ています")
+    one = keyword_filter.relevance_score("炎上しました")
+    many = keyword_filter.relevance_score("文春砲で不倫が発覚し活動休止")
     assert 0 < one < many <= 1.0
 
 
@@ -242,12 +312,34 @@ def test_sanitize_keeps_plausible_values():
     assert post["impressions"] == 500000
 
 
-def test_build_queries_uses_low_threshold_for_keywords():
+def test_build_queries_covers_all_three_kinds():
+    """
+    3種類のクエリが全て生成されること。
+      1. キーワードOR検索 (keywords.txt)
+      2. 組み合わせ検索   (keywords_combo.txt)
+      3. 広域検索         (キーワードに無い話題の保険)
+    """
     queries = collector.build_queries()
-    keyword_queries = [q for q, mode, _ in queries if q.startswith("(")]
-    assert keyword_queries, "キーワード特化クエリが生成されること"
-    assert all(f"min_faves:{collector.SEARCH_MIN_FAVES}" in q for q in keyword_queries)
+    all_q = [q for q, _, _ in queries]
+
+    keyword_queries = [q for q in all_q if f"min_faves:{collector.SEARCH_MIN_FAVES}" in q]
+    combo_queries = [q for q in all_q if f"min_faves:{collector.COMBO_MIN_FAVES}" in q]
+    broad_queries = [q for q in all_q if f"min_faves:{collector.BROAD_MIN_FAVES}" in q]
+
+    assert keyword_queries, "キーワードOR検索が生成されること"
+    assert len(combo_queries) == len(keyword_filter.combo_queries()), \
+        "組み合わせ検索は1行につき1本になること"
+    assert broad_queries, "広域検索が生成されること"
+
     assert collector.SEARCH_MIN_FAVES < 500, "v3の500より低いこと(早期発見のため)"
+    assert collector.COMBO_MIN_FAVES <= collector.SEARCH_MIN_FAVES, \
+        "組み合わせ検索はAND条件で既に絞れているので、閾値をより低くできる"
+
+
+def test_all_queries_are_japanese_and_exclude_retweets():
+    for query, _, _ in collector.build_queries():
+        assert "lang:ja" in query, query
+        assert "-filter:retweets" in query, query
 
 
 # ── notification_text.py ─────────────────────────────────

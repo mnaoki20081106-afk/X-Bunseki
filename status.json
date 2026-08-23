@@ -1,86 +1,88 @@
 {
-  "updated_at": "2026-08-23T16:04:05.976434+00:00",
+  "updated_at": "2026-08-23T22:12:56.904944+00:00",
   "status": "success",
-  "started_at": "2026-08-23T16:02:46.329173+00:00",
-  "finished_at": "2026-08-23T16:04:05.975535+00:00",
-  "posts_scanned": 105,
-  "posts_with_history": 58,
-  "posts_flagged": 4,
+  "started_at": "2026-08-23T22:10:05.352179+00:00",
+  "finished_at": "2026-08-23T22:12:56.902304+00:00",
+  "posts_scanned": 107,
+  "posts_with_history": 67,
+  "posts_flagged": 1,
   "notified_count": 1,
-  "notified_last_24h": 9,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": null,
   "reject_reasons": {
-    "いいねが少なすぎる": 25,
-    "初回観測かつ平均速度が低い": 1,
-    "古すぎる": 35
+    "いいねが少なすぎる": 31,
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 31
   },
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
     "MAX_AGE_MINUTES": 180,
     "FIRST_SIGHT_MIN_LIKES_PER_MIN": 8,
-    "NOTIFY_MAX_PER_RUN": 2,
-    "NOTIFY_MAX_PER_DAY": 12
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 526,
-    "posts": 281,
+    "total": 2406,
+    "posts": 788,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "sen_sen_sen_sen",
-      "score": 63.8,
-      "likes": 2747,
-      "likes_per_min": 189.96714557289556,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.5,
-      "text": "ファイナルさんきゅー！！！！！",
-      "url": "https://x.com/sen_sen_sen_sen/status/2091553453961318737"
-    },
-    {
-      "author": "sumeragi_0o",
-      "score": 61.0,
-      "likes": 1995,
-      "likes_per_min": 45.8,
+      "author": "Kaisei_2434",
+      "score": 57.5,
+      "likes": 1401,
+      "likes_per_min": 22.82,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 31.3,
-      "text": "すぷれあ20万人本当にありがとう！！！！！！\n本当に本当にみんなで迎えれて嬉しい。\n\nそして25日に新衣装お披露目リレー",
-      "url": "https://x.com/sumeragi_0o/status/2091549210206441664"
+      "age_minutes": 55.6,
+      "text": "朝活中\n昨日のライブのスクショを曲名付きでリプに貼っていただきたく、、！！！",
+      "url": "https://x.com/Kaisei_2434/status/2091635921980735939"
     },
     {
-      "author": "splare_info",
-      "score": 60.0,
-      "likes": 5866,
-      "likes_per_min": 165.65,
-      "acceleration": null,
+      "author": "nino_honmono",
+      "score": 46.2,
+      "likes": 17225,
+      "likes_per_min": 231.28,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 35.4,
-      "text": "✧＼\\ 新衣装おひろめリレー /／✧\n\n8/25(火)\n20:00〜 皇れお\n20:30〜 篠宮ゆの\n21:00〜 城瀬",
-      "url": "https://x.com/splare_info/status/2091548180379033927"
+      "age_minutes": 60.3,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2091634744291438760"
     },
     {
-      "author": "Lets_BOATRACE",
-      "score": 57.4,
-      "likes": 1007,
-      "likes_per_min": 15.71545215502224,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 64.1,
-      "text": "Amazonデジタルギフト 10,000円分\n抽選で60名様に\n\nボートレース×ストリートファイター\nボートレースメモリ",
-      "url": "https://x.com/Lets_BOATRACE/status/2091540968319365343"
+      "author": "karaage_rutsubo",
+      "score": 45.0,
+      "likes": 2359,
+      "likes_per_min": 31.19,
+      "acceleration": 1.03,
+      "measured": true,
+      "age_minutes": 87.7,
+      "text": "フルハーネス着用の実態 #現場猫",
+      "url": "https://x.com/karaage_rutsubo/status/2091627835861676448"
     },
     {
-      "author": "Yuno_Shino38",
-      "score": 54.7,
-      "likes": 921,
-      "likes_per_min": 37.146490442604616,
+      "author": "satomimi__",
+      "score": 44.0,
+      "likes": 871,
+      "likes_per_min": 115.97097113889292,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.8,
-      "text": "改めて、すぷれあCH20万人ありがとうございます！！！！本当にいつも傍で支えてくれてありがとう\n\n明日20：00から新衣",
-      "url": "https://x.com/Yuno_Shino38/status/2091550853144658128"
+      "age_minutes": 7.5,
+      "text": "おはよん\n\n今日20時から配信\nアリツアラスト写真たくさん用意したぞー！！！！！！\n\n例のお知らせもあるよ",
+      "url": "https://x.com/satomimi__/status/2091648030101676462"
+    },
+    {
+      "author": "QdAf0l",
+      "score": 43.6,
+      "likes": 280,
+      "likes_per_min": 3.5,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 71.7,
+      "text": "おはようございます\n\n今日は『処暑』……暑さが和らぐ頃\nそして飯盛山で自刃した「白虎隊自刃の日」です\n\n自決した飯盛山か",
+      "url": "https://x.com/QdAf0l/status/2091631872791249117"
     }
   ]
 }

@@ -1,29 +1,29 @@
 {
-  "updated_at": "2026-08-23T08:46:12.419562+00:00",
+  "updated_at": "2026-08-23T09:39:26.783004+00:00",
   "status": "success",
-  "started_at": "2026-08-23T08:45:41.352516+00:00",
-  "finished_at": "2026-08-23T08:46:12.416807+00:00",
-  "posts_scanned": 50,
+  "started_at": "2026-08-23T09:38:45.912076+00:00",
+  "finished_at": "2026-08-23T09:39:26.634284+00:00",
+  "posts_scanned": 53,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "Saba_Tigers",
-      "likes": 775,
-      "quotes": 0,
-      "bookmarks": 0,
-      "url": "https://x.com/Saba_Tigers/status/2091438458007159266",
+      "author": "hanshintigersjp",
+      "likes": 1049,
+      "quotes": 13,
+      "bookmarks": 9,
+      "url": "https://x.com/hanshintigersjp/status/2091451972633362701",
       "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "Saba_Tigers",
-      "likes": 775,
-      "quotes": 0,
-      "bookmarks": 0,
-      "progress_percent": 29,
-      "url": "https://x.com/Saba_Tigers/status/2091438458007159266",
+      "author": "hanshintigersjp",
+      "likes": 1049,
+      "quotes": 13,
+      "bookmarks": 9,
+      "progress_percent": 34,
+      "url": "https://x.com/hanshintigersjp/status/2091451972633362701",
       "matched_keyword": "速報"
     }
   ]

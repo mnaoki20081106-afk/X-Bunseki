@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-23T06:58:42.560095+00:00",
+  "updated_at": "2026-08-23T07:45:06.935523+00:00",
   "status": "success",
-  "started_at": "2026-08-23T06:58:11.001651+00:00",
-  "finished_at": "2026-08-23T06:58:42.556667+00:00",
-  "posts_scanned": 50,
+  "started_at": "2026-08-23T07:44:33.940570+00:00",
+  "finished_at": "2026-08-23T07:45:06.933663+00:00",
+  "posts_scanned": 49,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
       "author": "tadakiti517",
-      "likes": 74010,
+      "likes": 74205,
       "quotes": 0,
       "bookmarks": 0,
       "url": "https://x.com/tadakiti517/status/2091077594271891788",
@@ -19,7 +19,7 @@
   "top5_by_progress": [
     {
       "author": "tadakiti517",
-      "likes": 74010,
+      "likes": 74205,
       "quotes": 0,
       "bookmarks": 0,
       "progress_percent": 0,

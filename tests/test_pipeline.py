@@ -336,6 +336,46 @@ def test_build_queries_covers_all_three_kinds():
         "組み合わせ検索はAND条件で既に絞れているので、閾値をより低くできる"
 
 
+def test_no_query_exceeds_the_operator_limit():
+    """
+    ★X検索は演算子が22〜23個を超えると、超えた分をエラーも出さずに無視する。
+    2026-08-24以前は1グループ32ワード(演算子34個)で組み立てており、
+    各グループの後半のワードは実際には検索されていなかった。
+    ログにも何も出ないため、気づけない種類の不具合だった。
+    """
+    for query, _, _ in collector.build_queries():
+        ops = keyword_filter.count_operators(query)
+        assert ops <= 22, f"演算子{ops}個で上限超過: {query}"
+
+
+def test_operator_counter_counts_or_and_prefixes():
+    q = "(A OR B OR C) lang:ja -filter:retweets min_faves:30 within_time:3h"
+    # OR×2 + lang: + filter: + min_faves: + within_time: + 除外の「-」
+    assert keyword_filter.count_operators(q) == 7, keyword_filter.count_operators(q)
+
+
+def test_queries_are_limited_to_recent_posts():
+    """
+    検索の段階で新しい投稿に絞れていること。
+    全件取ってから捨てる方式だと、スクロールの大半が無駄になる。
+    """
+    if not collector.SEARCH_WITHIN_TIME:
+        return  # 無効化されている場合はスキップ
+    for query, _, _ in collector.build_queries():
+        assert f"within_time:{collector.SEARCH_WITHIN_TIME}" in query, query
+
+
+def test_broad_query_excludes_official_announcement_noise():
+    """
+    広域クエリが、公式アカウントの誕生日祝い・新譜告知を除外していること。
+    実測ではここが上位をほぼ占拠しており、一般投稿が拾えていなかった。
+    """
+    broad = [q for q, _, _ in collector.build_queries()
+             if f"min_faves:{collector.BROAD_MIN_FAVES}" in q]
+    assert broad, "広域クエリが生成されること"
+    assert all("-誕生日" in q for q in broad), broad
+
+
 def test_all_queries_are_japanese_and_exclude_retweets():
     for query, _, _ in collector.build_queries():
         assert "lang:ja" in query, query

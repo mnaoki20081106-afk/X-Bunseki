@@ -73,8 +73,10 @@ v4は同じ投稿を15分おきに観測し、**前回との差分**を取りま
 | `MAX_AGE_MINUTES` | 180 | これより古い投稿は追わない |
 | `NOTIFY_MAX_PER_RUN` | 2 | 1回の実行で鳴らす上限 |
 | `NOTIFY_MAX_PER_DAY` | 12 | 24時間の上限 |
-| `SEARCH_MIN_FAVES` | 50 | ジャンル特化検索の最低いいね数 |
+| `SEARCH_MIN_FAVES` | 30 | キーワード検索の最低いいね数 |
+| `COMBO_MIN_FAVES` | 20 | 組み合わせ検索の最低いいね数 |
 | `BROAD_MIN_FAVES` | 800 | 広域検索の最低いいね数 |
+| `SEARCH_WITHIN_TIME` | 3h | 検索を新しい投稿だけに絞る。`off` で無効化 |
 
 - **通知が多い** → `NOTIFY_SCORE` を 60〜65 に
 - **通知が少ない** → `NOTIFY_SCORE` を 50 に

@@ -90,7 +90,9 @@ jobs:
           NOTIFY_MAX_PER_RUN: ${{ vars.NOTIFY_MAX_PER_RUN }}
           NOTIFY_MAX_PER_DAY: ${{ vars.NOTIFY_MAX_PER_DAY }}
           SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
+          COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
           BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
+          SEARCH_WITHIN_TIME: ${{ vars.SEARCH_WITHIN_TIME }}
           MAX_DETAIL_FETCH: ${{ vars.MAX_DETAIL_FETCH }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
         run: python main.py

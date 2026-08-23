@@ -65,7 +65,7 @@ def _env(name: str, default: str) -> str:
 # ── 検索の設定(環境変数で調整可能) ────────────────────────
 # ジャンル特化クエリの最低いいね数。v3の500から大幅に下げた。
 # 「バズる前」を捉えるには、入口の閾値を低くするしかない。
-SEARCH_MIN_FAVES = int(_env("SEARCH_MIN_FAVES", "50"))
+SEARCH_MIN_FAVES = int(_env("SEARCH_MIN_FAVES", "30"))
 
 # キーワードに引っかからない話題も一応拾うための広域クエリ用。
 # こちらはノイズが多いので閾値を高めに保つ。
@@ -73,10 +73,10 @@ BROAD_MIN_FAVES = int(_env("BROAD_MIN_FAVES", "800"))
 
 # 組み合わせ検索(keywords_combo.txt)の最低いいね数。
 # AND条件で既に強く絞れているので、OR検索よりさらに低くできる。
-COMBO_MIN_FAVES = int(_env("COMBO_MIN_FAVES", "30"))
+COMBO_MIN_FAVES = int(_env("COMBO_MIN_FAVES", "20"))
 
 # 各クエリのスクロール回数(多いほど件数は増えるが実行時間も伸びる)
-SCROLLS_KEYWORD = int(_env("SCROLLS_KEYWORD", "3"))
+SCROLLS_KEYWORD = int(_env("SCROLLS_KEYWORD", "2"))
 SCROLLS_COMBO = int(_env("SCROLLS_COMBO", "2"))
 SCROLLS_BROAD = int(_env("SCROLLS_BROAD", "5"))
 SCROLL_WAIT_SECONDS = float(_env("SCROLL_WAIT_SECONDS", "1.8"))
@@ -89,6 +89,29 @@ FETCH_QUOTES = _env("FETCH_QUOTES", "false").lower() == "true"
 
 # 収集対象とする投稿の最大経過分(これより古い投稿は詳細を取りに行かない)
 COLLECT_MAX_AGE_MINUTES = float(_env("COLLECT_MAX_AGE_MINUTES", "240"))
+
+# ★X検索側で「新しい投稿だけ」に絞り込む指定(2026-08-24に追加)。
+#
+# これまでは全件取得してから投稿時刻で後から捨てていたため、
+# スクロールして読み込んだ投稿の大半が「古すぎて対象外」で無駄になっていた。
+# within_time を付けるとXのサーバー側で絞ってくれるので、
+# 同じスクロール回数でも取れる「新しい投稿」の数が大きく増える。
+#
+# detector.MAX_AGE_MINUTES(180分)に合わせて3時間にしてある。
+# 空文字にすればこの絞り込みを無効化できる。
+# 無効化したいときは "off" を設定する。
+# (GitHubのVariablesは空文字を設定しても未設定と区別できないため、
+#  無効化の意思をはっきり示せる合言葉を用意している)
+SEARCH_WITHIN_TIME = _env("SEARCH_WITHIN_TIME", "3h")
+if SEARCH_WITHIN_TIME.lower() in ("off", "none", "no", "0", "-"):
+    SEARCH_WITHIN_TIME = ""
+
+# 広域クエリから除外するワード。
+# 実測すると、広域クエリの上位はアイドル・ゲーム公式アカウントの
+# 誕生日祝い・新譜告知・キャンペーンでほぼ埋まっており、
+# 「これから伸びる一般投稿」がまったく拾えていなかった。
+# エンゲージメントは非常に高いが、動画のネタにはならない類型なので除外する。
+BROAD_EXCLUDE = _env("BROAD_EXCLUDE", "誕生日 生誕祭 発売記念 キャンペーン 先行配信").split()
 
 
 class SessionExpiredError(Exception):
@@ -368,16 +391,25 @@ def _count_quote_tweets(page, url: str) -> int:
 #  検索クエリの組み立てと実行
 # ──────────────────────────────────────────────────────────
 
+def _with_recency(query: str) -> str:
+    """新しい投稿だけに絞る指定を付け足す"""
+    return f"{query} within_time:{SEARCH_WITHIN_TIME}" if SEARCH_WITHIN_TIME else query
+
+
 def build_queries() -> list[tuple[str, str, int]]:
     """
     実行する検索クエリの一覧を (クエリ文字列, モード, スクロール回数) で返す。
     モード: "live"=時系列順(新着) / "top"=話題性順(Xのアルゴリズムが選んだもの)
+
+    ★演算子の個数に注意。X検索は演算子が22〜23個を超えると、
+      超えた分をエラーも出さずに無視する。組み立てたクエリは
+      keyword_filter.count_operators() で必ず確認すること。
     """
     queries: list[tuple[str, str, int]] = []
 
     # (1) キーワード特化クエリ … 本命。ジャンルが絞れているので閾値を低くできる。
     for group in keyword_filter.query_groups():
-        q = f"({group}) lang:ja -filter:retweets min_faves:{SEARCH_MIN_FAVES}"
+        q = _with_recency(f"({group}) lang:ja -filter:retweets min_faves:{SEARCH_MIN_FAVES}")
         queries.append((q, "live", SCROLLS_KEYWORD))
 
     # (2) 組み合わせ検索 … keywords_combo.txt の各行がそのまま1本の検索になる。
@@ -385,14 +417,28 @@ def build_queries() -> list[tuple[str, str, int]]:
     #     文脈のAND条件で絞って拾うためのもの。
     #     絞り込みが効いている分、閾値をさらに下げる。
     for expression in keyword_filter.combo_queries():
-        q = f"{expression} lang:ja -filter:retweets min_faves:{COMBO_MIN_FAVES}"
+        q = _with_recency(f"{expression} lang:ja -filter:retweets min_faves:{COMBO_MIN_FAVES}")
         queries.append((q, "live", SCROLLS_COMBO))
 
     # (3) 広域クエリ … キーワードに無い話題を取りこぼさないための保険。
-    #     ノイズが多いので閾値を高くし、返信も除外する。
-    broad = f"lang:ja -filter:retweets -filter:replies min_faves:{BROAD_MIN_FAVES}"
+    #     実測すると公式アカウントの誕生日祝い・新譜告知で埋まっていたため、
+    #     それらを除外したうえで、閾値を高めに保つ。
+    exclusions = " ".join(f"-{w}" for w in BROAD_EXCLUDE)
+    broad = _with_recency(
+        f"lang:ja -filter:retweets -filter:replies "
+        f"min_faves:{BROAD_MIN_FAVES} {exclusions}".strip()
+    )
     queries.append((broad, "live", SCROLLS_BROAD))
     queries.append((broad, "top", SCROLLS_BROAD))
+
+    # 組み立てたクエリが演算子上限に収まっているか確認する
+    for query, mode, _ in queries:
+        ops = keyword_filter.count_operators(query)
+        if ops > keyword_filter.OPERATOR_WARN_THRESHOLD:
+            print(
+                f"  [警告] 演算子が{ops}個あります(上限は22〜23個)。"
+                f"超過分は無視される可能性があります: {query[:60]}..."
+            )
 
     return queries
 
@@ -445,9 +491,28 @@ def fetch_posts() -> list[dict]:
 
         queries = build_queries()
         print(f"検索クエリ数: {len(queries)}")
+        within_time_failures = 0
+        within_time_queries = 0
+
         for query, mode, scrolls in queries:
             try:
                 posts = _search_one_query(page, query, mode, scrolls)
+
+                # ★within_time はXの非公式な検索演算子で、公式ドキュメントに
+                #   記載がない。将来Xが対応をやめると、この指定を含むクエリが
+                #   常に0件を返し、システムが静かに無音になってしまう。
+                #   0件だったら指定を外して1回だけやり直し、どちらが原因か
+                #   切り分けられるようにする。
+                if not posts and "within_time:" in query:
+                    within_time_queries += 1
+                    fallback = re.sub(r"\s*within_time:\S+", "", query)
+                    print("    (0件のため within_time を外して再試行します)")
+                    posts = _search_one_query(page, fallback, mode, scrolls)
+                    if posts:
+                        within_time_failures += 1
+                elif "within_time:" in query:
+                    within_time_queries += 1
+
                 for post in posts:
                     existing = all_posts.get(post["post_id"])
                     if existing:
@@ -463,6 +528,13 @@ def fetch_posts() -> list[dict]:
                 raise
             except Exception as e:  # noqa: BLE001
                 print(f"  [ERROR] 検索クエリ失敗 [{mode}]: {e}")
+
+        if within_time_failures and within_time_failures >= within_time_queries:
+            print(
+                "\n  [警告] within_time 付きのクエリが全て0件で、外すと取得できました。\n"
+                "         Xが within_time 演算子に対応しなくなった可能性が高いです。\n"
+                "         Variables に SEARCH_WITHIN_TIME=off を設定して無効化してください。\n"
+            )
 
         # ── 詳細ページで補完 ──
         # カードからブックマーク/表示回数が取れなかった投稿のうち、

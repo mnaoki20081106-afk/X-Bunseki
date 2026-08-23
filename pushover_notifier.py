@@ -50,6 +50,8 @@ import os
 
 import requests
 
+import notification_text
+
 PUSHOVER_API_URL = "https://api.pushover.net/1/messages.json"
 DEFAULT_SOUND = "siren"
 DEFAULT_PRIORITY = "2"
@@ -95,26 +97,15 @@ def send_notification(post: dict) -> bool:
             "環境変数 PUSHOVER_TOKEN / PUSHOVER_USER_KEY が設定されていません"
         )
 
-    genre = post.get("genre", "その他")
-    likes = post.get("likes", 0)
-    quotes = post.get("quotes", 0)
-    bookmarks = post.get("bookmarks", 0)
-    hours = post.get("elapsed_hours", "?")
+    if post.get("system_message"):
+        title = "⚙️ SNS Buzz Monitor"
+        message = post["system_message"]
+    else:
+        title = notification_text.build_title(post)
+        # Pushoverはtitleが別枠なので、本文にURLは入れずurlフィールドを使う
+        message = notification_text.build_body(post, include_url=False)
+
     url = post.get("url", "")
-    author = post.get("author_handle", "")
-
-    message = (
-        f"{author} の投稿が{hours}時間で"
-        f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"
-    )
-
-    matched_keyword = post.get("matched_keyword")
-    if matched_keyword:
-        message += f"\n🔑 マッチしたワード: {matched_keyword}"
-
-    is_gekiatsu = post.get("is_gekiatsu", False)
-    type_label = "瞬間" if post.get("explosive_type") == "instant" else "持続"
-    title = f"🔥🔥🔥 激アツ投稿 [{type_label}/{genre}]" if is_gekiatsu else f"🔥 急上昇検知 [{type_label}/{genre}]"
 
     if _is_at_school():
         priority = os.environ.get("PUSHOVER_SCHOOL_PRIORITY") or DEFAULT_SCHOOL_PRIORITY

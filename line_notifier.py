@@ -17,6 +17,8 @@ import os
 
 import requests
 
+import notification_text
+
 LINE_PUSH_ENDPOINT = "https://api.line.me/v2/bot/message/push"
 
 
@@ -31,36 +33,13 @@ def _headers() -> dict:
 
 
 def build_message(post: dict) -> str:
-    genre = post.get("genre", "その他")
-    likes = post.get("likes", 0)
-    quotes = post.get("quotes", 0)
-    bookmarks = post.get("bookmarks", 0)
-    hours = post.get("elapsed_hours", "?")
-    url = post.get("url", "")
-    author = post.get("author_handle", "")
-
-    type_label = "⚡瞬間" if post.get("explosive_type") == "instant" else "📈持続"
-
-    if post.get("is_gekiatsu"):
-        header = f"🔥🔥🔥 激アツ投稿 [{type_label}/{genre}]"
-        quote_ratio = post.get("quote_like_ratio", 0) * 100
-        bookmark_ratio = post.get("bookmark_like_ratio", 0) * 100
-        detail = (
-            f"{author} の投稿が{hours}時間で"
-            f"いいね{likes:,}・引用{quotes:,}({quote_ratio:.0f}%)"
-            f"・ブックマーク{bookmarks:,}({bookmark_ratio:.0f}%)"
-        )
-    else:
-        header = f"🔥 急上昇検知 [{type_label}/{genre}]"
-        detail = (
-            f"{author} の投稿が{hours}時間で"
-            f"いいね{likes:,}・引用{quotes:,}・ブックマーク{bookmarks:,}"
-        )
-
-    matched_keyword = post.get("matched_keyword")
-    keyword_line = f"\n🔑 マッチしたワード: {matched_keyword}" if matched_keyword else ""
-
-    return f"{header}\n{detail}\n{url}{keyword_line}"
+    """
+    通知本文の組み立ては notification_text.py に一本化した。
+    v3ではLINEとPushoverで別々に本文を作っていて内容がズレていたため。
+    """
+    if post.get("system_message"):
+        return post["system_message"]
+    return notification_text.build_message(post)
 
 
 def send_notification(post: dict) -> bool:

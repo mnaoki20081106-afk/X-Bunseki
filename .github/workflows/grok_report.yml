@@ -1,0 +1,66 @@
+name: Grok用レポート作成
+
+# 分析用ログ(data/log/*.jsonl)を、Grokにそのまま貼れる要約に変換する。
+#
+# ★iPadだけでも使えるようにするためのワークフロー。
+#   15分間隔で動かすと、生ログは1日あたり約1,000行(500KB前後)になり、
+#   iPadでコピーしてGrokに貼るのは現実的ではない。
+#   ここで要約を作り、data/grok_report.md をGitHub上で開いてコピーする。
+#
+# 使い方:
+#   Actionsタブ →「Grok用レポート作成」→「Run workflow」
+#   → 完了後、data/grok_report.md を開いて全文コピー
+#   → docs/grok_prompts.md のプロンプト④に貼る
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "集計する日数"
+        required: false
+        default: "3"
+      viral_threshold:
+        description: "「バズった」とみなす最終いいね数(ジャンルによって調整してください)"
+        required: false
+        default: "5000"
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: レポート生成
+        run: |
+          python tools/make_grok_report.py \
+            --days "${{ github.event.inputs.days || '3' }}" \
+            --viral-threshold "${{ github.event.inputs.viral_threshold || '5000' }}"
+
+      - name: コミット
+        run: |
+          set -e
+          git config user.name "sns-monitor-bot"
+          git config user.email "actions@github.com"
+          git add data/grok_report.md
+          if git diff --staged --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "Update grok_report.md"
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((2 ** i))
+          done
+          exit 1
+
+      - name: 結果の案内
+        run: |
+          echo "::notice::data/grok_report.md を開いて全文コピーし、docs/grok_prompts.md のプロンプト④に貼ってください"

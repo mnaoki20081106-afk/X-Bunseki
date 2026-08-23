@@ -2,12 +2,24 @@ name: SNS Buzz Monitor
 
 on:
   schedule:
-    # 毎時7分に実行 (UTC基準。日本時間は+9時間)
-    # ★毎時0分を避けている理由: GitHubの仕様上、毎時0分は世界中の
-    #   ワークフローが集中し、実行の遅延・スキップが起きやすいと
-    #   公式ドキュメントで明記されているため。実際に2時間以上の
-    #   遅延が発生したことを受けて、この時刻に変更した(2026-08)。
-    - cron: "7 * * * *"
+    # ★v4で毎時 → 15分おきに変更した。
+    #
+    # 理由1(必須): v4は「前回観測との差分」で伸び率を計算する。
+    #   毎時実行だと、投稿を2回観測できるまで最短でも1時間かかり、
+    #   その頃にはバズは終わっている。15分間隔なら、投稿から30分の
+    #   時点で既に2〜3回観測できており、加速中かどうかを判断できる。
+    #
+    # 理由2: このリポジトリはPublicなので、GitHub Actionsの実行時間は
+    #   無制限で無料。毎時に抑える理由がそもそも無かった
+    #   (Privateリポジトリの2,000分/月という制約を前提にしていた)。
+    #
+    # 頻度を下げたい場合(Xアカウントへの負荷を減らしたい等)は
+    # "*/20" や "*/30" に変えれば良い。1時間まで戻すと伸び率の精度が
+    # 大きく落ちる点にだけ注意。
+    #
+    # 毎時0分ちょうどを避けるため7分ずらしている(世界中のワークフローが
+    # 集中して遅延・スキップが起きやすいとGitHubが公式に案内しているため)。
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       test_notification:
@@ -16,11 +28,19 @@ on:
         default: "false"
 
 permissions:
-  contents: write  # status.json をリポジトリにcommit&pushするために必要
+  contents: write  # status.json と分析用ログをcommit&pushするために必要
+
+# 前の実行が終わる前に次が始まらないようにする。
+# 15分間隔にしたことで、実行が長引いたときに2つのジョブが同時に走り
+# SQLiteキャッシュを奪い合う可能性が出てきたため。
+concurrency:
+  group: sns-buzz-monitor
+  cancel-in-progress: false
 
 jobs:
   run-monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
 
@@ -35,7 +55,7 @@ jobs:
         if: github.event.inputs.test_notification != 'true'
         run: playwright install --with-deps chromium
 
-      - name: Restore DB (重複通知防止用)
+      - name: Restore DB (伸び率の計算に使う観測履歴)
         uses: actions/cache@v4
         with:
           path: data/monitor.db
@@ -58,17 +78,49 @@ jobs:
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
           SCHOOL_STATUS_URL: ${{ secrets.SCHOOL_STATUS_URL }}
           SCHOOL_STATUS_SECRET: ${{ secrets.SCHOOL_STATUS_SECRET }}
+
+          # ── 感度の調整ツマミ ─────────────────────────
+          # ここは Settings → Secrets and variables → Actions → Variables
+          # で設定できる。コードを書き換えずに閾値を変えられるので、
+          # 「通知が多い/少ない」の調整はまずここで行う。
+          # 空(未設定)なら detector.py の既定値が使われる。
+          NOTIFY_SCORE: ${{ vars.NOTIFY_SCORE }}
+          MIN_LIKES_FLOOR: ${{ vars.MIN_LIKES_FLOOR }}
+          MAX_AGE_MINUTES: ${{ vars.MAX_AGE_MINUTES }}
+          NOTIFY_MAX_PER_RUN: ${{ vars.NOTIFY_MAX_PER_RUN }}
+          NOTIFY_MAX_PER_DAY: ${{ vars.NOTIFY_MAX_PER_DAY }}
+          SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
+          BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
+          MAX_DETAIL_FETCH: ${{ vars.MAX_DETAIL_FETCH }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
         run: python main.py
 
       - name: Clean up session file
         if: always()
         run: rm -f storage_state.json
 
-      - name: Commit status.json (動作確認用)
+      - name: Commit status.json と分析用ログ
         if: always()
         run: |
+          set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json
-          git diff --staged --quiet || git commit -m "Update status.json"
-          git push
+          git add status.json data/log 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "Update status.json"
+          # 15分間隔になったことで、他の実行のpushと衝突しうる。
+          # rebaseしてから数回リトライする。
+          for i in 1 2 3 4; do
+            if git push; then
+              echo "push成功"
+              exit 0
+            fi
+            echo "push失敗。${i}回目のリトライ前にpull --rebaseします"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((2 ** i))
+          done
+          echo "pushに4回失敗しました"
+          exit 1

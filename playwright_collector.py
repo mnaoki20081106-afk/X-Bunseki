@@ -1,42 +1,94 @@
 """
-playwright_collector.py
+playwright_collector.py (v4)
 ログイン済みセッション(storage_state.json)を使って、X検索結果から
-投稿データ(いいね・引用・ブックマーク・返信数)を取得する。
+投稿データを取得する。
 
-★重要な注意(必ず読むこと):
-  この実装はXの現在(2026年8月時点)の画面構造(DOM)を前提にして書かれています。
-  Xは頻繁にHTML構造やクラス名を変更するため、実際に動かした時にセレクタが
-  合わずデータが取れない可能性があります。その場合はエラーメッセージや
-  「0件しか取れない」といった症状が出るので、教えてもらえれば調整します。
-  これは一度作って終わりではなく、育てていくタイプのコードです。
+════════════════════════════════════════════════════════════
+ v4での主な変更
+════════════════════════════════════════════════════════════
 
-事前準備:
-  pip install playwright
-  playwright install chromium
-  環境変数 X_SESSION_STATE_PATH に storage_state.json のパスを設定
-  (GitHub Actionsでは、Secretから復元したファイルのパスを渡す)
+【1】検索クエリをキーワードから自動生成し、min_faves を大幅に下げた
+
+  v3: "lang:ja min_faves:500 min_replies:20 -filter:retweets" の1本だけ。
+      → 毎回55件前後しか集まらず、キーワードに合致するのは1〜2件(39%の実行で0件)。
+        しかも「すでに500いいね付いた投稿」しか入口を通れないため、
+        早期発見が原理的に不可能だった。
+
+  v4: keywords.txt を "(地震 OR 台風 OR 速報 OR ...)" というOR句に変換し、
+      Xのサーバー側でジャンルを絞らせる。絞れているぶん min_faves を
+      50まで下げられるので、「まだ小さいが伸びている投稿」が入口を通れる。
+
+【2】検索結果カードから、ブックマーク・表示回数も取れるようにした
+
+  v3は詳細ページを1件ずつ開いて取っていた(1件あたり約8秒)。
+  現在のXは、投稿カードのアクションバー([role="group"])の aria-label に
+  「12件の返信、34件のリポスト、56件のいいね、78件のブックマーク、9千件の表示」
+  という形式で全指標をまとめて持っている。まずこれを読む。
+  読めなかったものだけ、従来どおり詳細ページにフォールバックする。
+
+【3】引用数のスクレイピングを既定で停止した
+
+  v3の _count_quote_tweets() は「引用一覧ページを開いて3回スクロールして
+  表示された件数を数える」という実装で、1件あたり約8秒かかるうえ、
+  得られるのは画面に載った分だけの下限値でしかなかった。
+  費用対効果が見合わないので既定オフ(FETCH_QUOTES=true で復活可能)。
+
+【4】明らかにおかしい数値を弾くサニティチェックを入れた
+
+  実行履歴を見ると likes=8208 / bookmarks=8800、likes=5048 / bookmarks=5000
+  のように「ブックマークがいいねを超える」データが記録されていた。
+  実際にはまず起きない事象で、v3の「Views以降の4番目の数字＝ブックマーク」
+  という位置頼みのパースが崩れていたことを示している。
+  誤った大きな値は判定を歪めるので、破棄して0扱いにする。
+
+★注意: この実装はXの画面構造(DOM)に依存します。Xの仕様変更で
+  取得できなくなることがあります。0件が続いたら通知が飛ぶようにしてあります。
 """
 
 import os
 import re
-import time
 from datetime import datetime, timezone
 from urllib.parse import quote
 
-from playwright.sync_api import sync_playwright
-
-import detector
 import keyword_filter
 
-# 監視対象の検索クエリ。ジャンルを横断して拾いたいので、
-# 特定ジャンルに偏らない広めの条件にしてある。
-# Xの検索演算子(min_faves, min_replies等)はログイン状態でも通常通り使える。
-SEARCH_QUERIES = [
-    "lang:ja min_faves:500 min_replies:20 -filter:retweets",
-]
+# playwright は実際にブラウザを起動する fetch_posts() の中でのみ import する。
+# こうしておくと、検索クエリの確認やパーサの単体テストを
+# playwright 未インストールの環境でも実行できる。
 
-MAX_SCROLLS = 5           # 検索結果を何回スクロールして読み込むか(増やすほど件数は増えるが時間もかかる)
-SCROLL_WAIT_SECONDS = 2.0  # スクロール後の読み込み待機時間
+
+def _env(name: str, default: str) -> str:
+    value = os.environ.get(name)
+    return value if value is not None and value.strip() != "" else default
+
+
+# ── 検索の設定(環境変数で調整可能) ────────────────────────
+# ジャンル特化クエリの最低いいね数。v3の500から大幅に下げた。
+# 「バズる前」を捉えるには、入口の閾値を低くするしかない。
+SEARCH_MIN_FAVES = int(_env("SEARCH_MIN_FAVES", "50"))
+
+# キーワードに引っかからない話題も一応拾うための広域クエリ用。
+# こちらはノイズが多いので閾値を高めに保つ。
+BROAD_MIN_FAVES = int(_env("BROAD_MIN_FAVES", "800"))
+
+# 各クエリのスクロール回数(多いほど件数は増えるが実行時間も伸びる)
+SCROLLS_KEYWORD = int(_env("SCROLLS_KEYWORD", "3"))
+SCROLLS_BROAD = int(_env("SCROLLS_BROAD", "5"))
+SCROLL_WAIT_SECONDS = float(_env("SCROLL_WAIT_SECONDS", "1.8"))
+
+# 詳細ページを開く上限件数(1件あたり2〜3秒かかるため上限を設ける)
+MAX_DETAIL_FETCH = int(_env("MAX_DETAIL_FETCH", "12"))
+
+# 引用数のスクレイピング(コストに見合わないため既定オフ)
+FETCH_QUOTES = _env("FETCH_QUOTES", "false").lower() == "true"
+
+# 収集対象とする投稿の最大経過分(これより古い投稿は詳細を取りに行かない)
+COLLECT_MAX_AGE_MINUTES = float(_env("COLLECT_MAX_AGE_MINUTES", "240"))
+
+
+class SessionExpiredError(Exception):
+    """ログインセッションが切れて、ログイン画面に飛ばされた場合の専用エラー"""
+    pass
 
 
 def _session_path() -> str:
@@ -50,36 +102,93 @@ def _session_path() -> str:
     return path
 
 
+# ──────────────────────────────────────────────────────────
+#  数値パース
+# ──────────────────────────────────────────────────────────
+
 def _parse_count(text: str) -> int:
-    """
-    Xの表示上の数値("1.2万", "3,500", "12" など)を整数に変換する。
-    Xの表示形式は変わることがあるので、複数パターンに対応。
-    """
+    """Xの表示上の数値("1.2万", "3,500", "12K" など)を整数に変換する"""
     if not text:
         return 0
-    text = text.strip().replace(",", "")
+    text = str(text).strip().replace(",", "").replace("，", "")
     if not text:
         return 0
 
     multiplier = 1
     if text.endswith("万"):
-        multiplier = 10_000
-        text = text[:-1]
+        multiplier, text = 10_000, text[:-1]
     elif text.endswith("億"):
-        multiplier = 100_000_000
-        text = text[:-1]
+        multiplier, text = 100_000_000, text[:-1]
+    elif text.endswith("千"):
+        multiplier, text = 1_000, text[:-1]
     elif text.upper().endswith("K"):
-        multiplier = 1_000
-        text = text[:-1]
+        multiplier, text = 1_000, text[:-1]
     elif text.upper().endswith("M"):
-        multiplier = 1_000_000
-        text = text[:-1]
+        multiplier, text = 1_000_000, text[:-1]
 
     try:
-        value = float(text)
-        return int(value * multiplier)
+        return int(float(text) * multiplier)
     except ValueError:
         return 0
+
+
+# aria-label から「ラベル付きの数字」を拾うためのパターン。
+# 日本語UI・英語UIのどちらでも動くように両方書いておく。
+_LABEL_PATTERNS = {
+    "replies": r"([\d,\.]+\s*[万億千KkMm]?)\s*(?:件の返信|返信|repl(?:y|ies))",
+    "retweets": r"([\d,\.]+\s*[万億千KkMm]?)\s*(?:件のリポスト|リポスト|件のリツイート|リツイート|repost|retweet)",
+    "likes": r"([\d,\.]+\s*[万億千KkMm]?)\s*(?:件のいいね|いいね|like)",
+    "bookmarks": r"([\d,\.]+\s*[万億千KkMm]?)\s*(?:件のブックマーク|ブックマーク|bookmark)",
+    "impressions": r"([\d,\.]+\s*[万億千KkMm]?)\s*(?:件の表示|表示|view)",
+}
+
+
+def _parse_labeled_counts(label: str) -> dict:
+    """
+    "12件の返信、34件のリポスト、56件のいいね、78件のブックマーク、9千件の表示"
+    のような文字列から、ラベルごとに数値を取り出す。
+
+    ★位置(何番目の数字か)ではなくラベルで取るのが重要。
+    v3は位置で取っていたため、UIの要素が1つ増減しただけで
+    「ブックマーク数」に全く別の値が入り込んでいた。
+    """
+    result = {}
+    if not label:
+        return result
+    for field, pattern in _LABEL_PATTERNS.items():
+        m = re.search(pattern, label, re.IGNORECASE)
+        if m:
+            result[field] = _parse_count(m.group(1).replace(" ", ""))
+    return result
+
+
+def sanitize_counts(post: dict) -> dict:
+    """
+    明らかにありえない数値を捨てる。
+
+    Xでは通常 いいね > リポスト > 返信 ≧ ブックマーク という大小関係になる。
+    「ブックマークがいいねの2倍」のような値はパース失敗を意味するので、
+    そのまま使わず0に落とす(0なら単に加点されないだけで済むが、
+    誤った巨大な値はスコアを壊してしまうため)。
+    """
+    likes = post.get("likes") or 0
+    if likes > 0:
+        for field, max_ratio in (("bookmarks", 1.0), ("retweets", 3.0), ("quotes", 1.0)):
+            value = post.get(field) or 0
+            if value > likes * max_ratio:
+                print(
+                    f"    [サニティ] {post.get('post_id')}: {field}={value} が "
+                    f"likes={likes} に対して不自然なため0に補正しました"
+                )
+                post[field] = 0
+
+    impressions = post.get("impressions") or 0
+    if impressions and likes and impressions < likes:
+        # 表示回数がいいね数を下回ることはない
+        print(f"    [サニティ] {post.get('post_id')}: impressions={impressions} < likes={likes} のため0に補正")
+        post["impressions"] = 0
+
+    return post
 
 
 def _extract_tweet_id(url: str) -> str:
@@ -87,18 +196,59 @@ def _extract_tweet_id(url: str) -> str:
     return match.group(1) if match else ""
 
 
-def _extract_tweet_data(article) -> dict | None:
+# ──────────────────────────────────────────────────────────
+#  検索結果カードの解析
+# ──────────────────────────────────────────────────────────
+
+def _counts_from_card(article) -> dict:
     """
-    検索結果ページの1投稿分(<article>要素)から必要なデータを抜き出す。
-    ★DOM構造はXの仕様変更で壊れやすい箇所。動かなければここを調整する。
+    投稿カードから各指標を取り出す。
+
+    優先順位:
+      1. アクションバー([role="group"])の aria-label をまとめて解析
+         → 返信/RT/いいね/ブックマーク/表示 が一度に取れる
+      2. 取れなかった項目だけ、個別ボタンの aria-label から取る
     """
+    counts = {}
+
     try:
-        # 投稿URL・IDの取得(時刻リンクの href から辿る)
+        group = article.query_selector('[role="group"][aria-label]')
+        if group:
+            counts.update(_parse_labeled_counts(group.get_attribute("aria-label") or ""))
+    except Exception:  # noqa: BLE001
+        pass
+
+    # 個別ボタンでの補完
+    for field, testid in (("replies", "reply"), ("retweets", "retweet"), ("likes", "like")):
+        if counts.get(field):
+            continue
+        try:
+            el = article.query_selector(f'[data-testid="{testid}"]')
+            if not el:
+                continue
+            label = el.get_attribute("aria-label") or el.inner_text() or ""
+            parsed = _parse_labeled_counts(label)
+            if field in parsed:
+                counts[field] = parsed[field]
+            else:
+                m = re.search(r"[\d,\.]+[万億千KkMm]?", label)
+                if m:
+                    counts[field] = _parse_count(m.group(0))
+        except Exception:  # noqa: BLE001
+            continue
+
+    return counts
+
+
+def _extract_tweet_data(article) -> dict | None:
+    """検索結果ページの1投稿分(<article>要素)から必要なデータを抜き出す"""
+    try:
         time_el = article.query_selector("time")
         if not time_el:
             return None
-        link_el = time_el.evaluate_handle("el => el.closest('a')")
-        href = link_el.as_element().get_attribute("href") if link_el else None
+        link_handle = time_el.evaluate_handle("el => el.closest('a')")
+        link_el = link_handle.as_element() if link_handle else None
+        href = link_el.get_attribute("href") if link_el else None
         if not href:
             return None
         post_id = _extract_tweet_id(href)
@@ -106,192 +256,141 @@ def _extract_tweet_data(article) -> dict | None:
             return None
         url = f"https://x.com{href}" if href.startswith("/") else href
 
-        posted_at_raw = time_el.get_attribute("datetime")  # ISO8601形式で取得できる
+        posted_at_raw = time_el.get_attribute("datetime")
 
-        # 投稿者ハンドル
+        # 投稿者ハンドル。
+        # v3は article 内の最初のリンクを使っていたが、それだと
+        # 「○○さんがリポストしました」ヘッダのアカウントを拾ってしまう。
+        # User-Name 内のリンクを優先し、無ければ時刻リンクのhrefから取る。
         author_handle = ""
-        user_link = article.query_selector('a[role="link"][href^="/"]')
+        user_link = article.query_selector('[data-testid="User-Name"] a[href^="/"]')
         if user_link:
-            href_user = user_link.get_attribute("href") or ""
-            author_handle = href_user.strip("/").split("/")[0]
+            author_handle = (user_link.get_attribute("href") or "").strip("/").split("/")[0]
+        if not author_handle:
+            author_handle = href.strip("/").split("/")[0]
 
-        # 本文
         text_el = article.query_selector('[data-testid="tweetText"]')
-        text_snippet = text_el.inner_text()[:200] if text_el else ""
+        text_snippet = text_el.inner_text()[:280] if text_el else ""
 
-        # エンゲージメント数値(返信・RT・いいね)
-        # 標準的なアクションバーのボタンには data-testid が振られており、
-        # aria-label に「返信 12件」のような形式で件数が入っている
-        def _count_by_testid(testid: str) -> int:
-            el = article.query_selector(f'[data-testid="{testid}"]')
-            if not el:
-                return 0
-            label = el.get_attribute("aria-label") or el.inner_text()
-            m = re.search(r"[\d,\.]+[万億KkMm]?", label)
-            return _parse_count(m.group(0)) if m else 0
-
-        replies = _count_by_testid("reply")
-        retweets = _count_by_testid("retweet")
-        likes = _count_by_testid("like")
-
-        # 引用・ブックマーク・表示回数(インプレッション)は、検索結果一覧の
-        # カードには表示されないことが実際の運用で確認された。
-        # これらは _fetch_detail_stats() で個別の投稿ページから別途取得し、
-        # fetch_posts() 内で上書きする。ここではひとまず0を入れておく。
-        quotes = 0
-        bookmarks = 0
-
-        return {
+        post = {
             "post_id": post_id,
             "author_handle": author_handle,
             "url": url,
             "posted_at": posted_at_raw or datetime.now(timezone.utc).isoformat(),
             "text_snippet": text_snippet,
-            "likes": likes,
-            "retweets": retweets,
-            "replies": replies,
-            "quotes": quotes,
-            "bookmarks": bookmarks,
+            "likes": 0,
+            "retweets": 0,
+            "replies": 0,
+            "quotes": 0,
+            "bookmarks": 0,
+            "impressions": 0,
         }
+        post.update(_counts_from_card(article))
+        return sanitize_counts(post)
     except Exception as e:  # noqa: BLE001
         print(f"  [警告] 投稿1件の解析に失敗: {e}")
         return None
 
 
-class SessionExpiredError(Exception):
-    """ログインセッションが切れて、ログイン画面に飛ばされた場合の専用エラー"""
-    pass
-
-
-def _count_quote_tweets(page, main_article, base_url: str) -> int:
-    """
-    「View quotes」リンクを実際に開き、引用投稿の一覧ページを表示して、
-    そこに並んでいる投稿の件数を数える。
-
-    ★注意: Xは他人の投稿の「引用数」を正確な数字として公開していない
-    (投稿者本人のアナリティクス機能でしか正確な数は見れない)。
-    そのため、この関数は「実際に一覧に表示されている引用投稿を
-    数える」という近似的な方法を取っている。スクロールした範囲でしか
-    数えられないため、本当の総数より少なく出ることがある(下限値に近い)。
-    それでも「0のまま」より遥かに有用な情報になる。
-    """
-    try:
-        quote_link = main_article.query_selector('a[href*="quotes" i], a[href*="Quotes" i]')
-        if not quote_link:
-            # aria-label や表示テキストに "quote" を含むリンクも探す
-            all_links = main_article.query_selector_all("a")
-            for link in all_links:
-                text = (link.inner_text() or "").lower()
-                aria = (link.get_attribute("aria-label") or "").lower()
-                if "quote" in text or "quote" in aria or "引用" in text:
-                    quote_link = link
-                    break
-
-        if not quote_link:
-            return 0  # 引用が無い投稿は、そもそもリンク自体が表示されない
-
-        href = quote_link.get_attribute("href")
-        if not href:
-            return 0
-        quote_url = f"https://x.com{href}" if href.startswith("/") else href
-
-        page.goto(quote_url, wait_until="domcontentloaded", timeout=20000)
-        page.wait_for_timeout(2000)
-
-        # 数回スクロールして、読み込まれる引用投稿の数を数える
-        seen_ids = set()
-        for _ in range(3):
-            articles = page.query_selector_all('article[data-testid="tweet"]')
-            for a in articles:
-                tid = a.get_attribute("aria-labelledby") or id(a)
-                seen_ids.add(tid)
-            page.mouse.wheel(0, 3000)
-            page.wait_for_timeout(1500)
-
-        return len(seen_ids)
-    except Exception as e:  # noqa: BLE001
-        print(f"  [警告] 引用一覧の取得に失敗 {base_url}: {e}")
-        return 0
-
+# ──────────────────────────────────────────────────────────
+#  詳細ページ(カードから取れなかった項目の補完)
+# ──────────────────────────────────────────────────────────
 
 def _fetch_detail_stats(page, url: str) -> dict:
     """
-    投稿の個別ページ(詳細ページ)を開き、引用・ブックマーク・表示回数
-    (インプレッション)を取得する。検索結果一覧には出てこない情報なので、
-    候補に絞ってからここで1件ずつ取得する。
-
-    ★実運用で判明した重要な事実(2026-08):
-      - 表示回数(Views)は "7,445 Views" のような明確なテキストとして
-        投稿本体に含まれており、確実に取得できる。
-      - Viewsの直後に、ラベルの付いていない4つの数字が並んでいる。
-        実際の投稿で検索段階の値と突き合わせたところ、この並び順は
-        [返信, リポスト, いいね, ブックマーク] であることが確認できた。
-        4つ目がブックマーク数にあたる。
-      - 「引用(Quotes)」は数字としては表示されておらず、「View quotes」
-        というリンクがあるだけ。そのため _count_quote_tweets() で
-        実際にそのリンク先を開いて件数を数える方式を取っている
-        (正確な総数ではなく、スクロールで確認できた件数の近似値)。
+    投稿の個別ページを開き、ブックマーク・表示回数を取得する。
+    検索結果カードの aria-label から取れなかった場合のフォールバック。
     """
+    stats = {}
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
-        page.wait_for_timeout(2000)
-
+        page.wait_for_timeout(1800)
         main_article = page.query_selector('article[data-testid="tweet"]')
         if not main_article:
             print(f"  [警告] 詳細ページで投稿本体が見つからない {url}")
-            return {"quotes": 0, "bookmarks": 0, "impressions": 0}
+            return stats
 
-        scoped_text = main_article.inner_text()
+        # (1) アクションバーの aria-label(最も信頼できる)
+        group = main_article.query_selector('[role="group"][aria-label]')
+        if group:
+            stats.update(_parse_labeled_counts(group.get_attribute("aria-label") or ""))
+
+        # (2) 本文テキスト中のラベル付き数値
+        #     詳細ページは "1,234 件の表示" のようにテキストでも出る
+        text = main_article.inner_text()
+        for field, value in _parse_labeled_counts(text).items():
+            stats.setdefault(field, value)
+
     except Exception as e:  # noqa: BLE001
         print(f"  [警告] 詳細ページの取得に失敗 {url}: {e}")
-        return {"quotes": 0, "bookmarks": 0, "impressions": 0}
 
-    # 表示回数(Views)の位置を見つける
-    views_match = re.search(r"([\d,\.]+[万億KkMm]?)\s*Views?", scoped_text, re.IGNORECASE)
-    impressions = _parse_count(views_match.group(1)) if views_match else 0
-
-    bookmarks = 0
-    if views_match:
-        # Views以降、「Relevant」(統計エリアの終わり目印)までの範囲だけを見る
-        after = scoped_text[views_match.end():]
-        cutoff = after.find("Relevant")
-        if cutoff != -1:
-            after = after[:cutoff]
-
-        numbers = re.findall(r"[\d,\.]+[万億KkMm]?", after)
-        parsed = [_parse_count(n) for n in numbers]
-
-        # [返信, リポスト, いいね, ブックマーク] の順で並んでいる想定
-        if len(parsed) >= 4:
-            bookmarks = parsed[3]
-        else:
-            print(f"      [デバッグ] Views以降の数字が4つ未満: {parsed} (url={url})")
-
-    # 引用数: 「View quotes」リンクを開いて実際に数える
-    quotes = _count_quote_tweets(page, main_article, url)
-
-    if bookmarks == 0:
-        tail = scoped_text[-300:].replace("\n", " | ")
-        print(f"      [デバッグ] ブックマーク0。投稿本体テキスト末尾300字: {tail}")
-
-    return {"quotes": quotes, "bookmarks": bookmarks, "impressions": impressions}
+    return stats
 
 
-def _search_one_query(page, query: str, mode: str = "live") -> list[dict]:
+def _count_quote_tweets(page, url: str) -> int:
     """
-    mode="live": 時系列順(Latest)。新しい投稿を幅広く拾う。
-    mode="top" : 話題性順(Top/おすすめ)。Xのアルゴリズムが「伸びている」と
-                 判断した投稿を直接拾う。時系列順だと新しい投稿に埋もれて
-                 見えなくなる「じわじわ系のバズ」(ニュース・災害など、
-                 数時間かけて伸び続ける話題)を拾うために追加した。
+    引用一覧ページを開いて件数を数える(FETCH_QUOTES=true のときだけ使う)。
+
+    ★Xは他人の投稿の引用数を正確な数字として公開していないため、
+      これは「画面に読み込まれた分を数えた下限値」でしかない。
+      1件あたり8秒前後かかるわりに精度が低いので、既定では使わない。
     """
-    f_param = "&f=live" if mode == "live" else ""  # Topはfパラメータ無しがデフォルト
+    try:
+        quote_url = f"{url}/quotes"
+        page.goto(quote_url, wait_until="domcontentloaded", timeout=20000)
+        page.wait_for_timeout(1800)
+        seen = set()
+        for _ in range(3):
+            for article in page.query_selector_all('article[data-testid="tweet"]'):
+                time_el = article.query_selector("time")
+                if not time_el:
+                    continue
+                href = time_el.evaluate(
+                    "el => el.closest('a') ? el.closest('a').getAttribute('href') : ''"
+                )
+                tid = _extract_tweet_id(href)
+                if tid:
+                    seen.add(tid)
+            page.mouse.wheel(0, 3000)
+            page.wait_for_timeout(1500)
+        return len(seen)
+    except Exception as e:  # noqa: BLE001
+        print(f"  [警告] 引用一覧の取得に失敗 {url}: {e}")
+        return 0
+
+
+# ──────────────────────────────────────────────────────────
+#  検索クエリの組み立てと実行
+# ──────────────────────────────────────────────────────────
+
+def build_queries() -> list[tuple[str, str, int]]:
+    """
+    実行する検索クエリの一覧を (クエリ文字列, モード, スクロール回数) で返す。
+    モード: "live"=時系列順(新着) / "top"=話題性順(Xのアルゴリズムが選んだもの)
+    """
+    queries: list[tuple[str, str, int]] = []
+
+    # (1) キーワード特化クエリ … 本命。ジャンルが絞れているので閾値を低くできる。
+    for group in keyword_filter.query_groups():
+        q = f"({group}) lang:ja -filter:retweets min_faves:{SEARCH_MIN_FAVES}"
+        queries.append((q, "live", SCROLLS_KEYWORD))
+
+    # (2) 広域クエリ … キーワードに無い話題を取りこぼさないための保険。
+    #     ノイズが多いので閾値を高くし、返信も除外する。
+    broad = f"lang:ja -filter:retweets -filter:replies min_faves:{BROAD_MIN_FAVES}"
+    queries.append((broad, "live", SCROLLS_BROAD))
+    queries.append((broad, "top", SCROLLS_BROAD))
+
+    return queries
+
+
+def _search_one_query(page, query: str, mode: str, scrolls: int) -> list[dict]:
+    f_param = "&f=live" if mode == "live" else ""
     search_url = f"https://x.com/search?q={quote(query)}&src=typed_query{f_param}"
-    print(f"  検索実行 [{mode}]: {query}")
+    print(f"  検索[{mode}]: {query[:70]}{'...' if len(query) > 70 else ''}")
     page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
     page.wait_for_timeout(3000)
 
-    # セッション切れの検知: ログイン画面にリダイレクトされていないか確認
     current_url = page.url
     if "/login" in current_url or "/i/flow/login" in current_url:
         raise SessionExpiredError(
@@ -300,106 +399,106 @@ def _search_one_query(page, query: str, mode: str = "live") -> list[dict]:
         )
 
     posts_by_id = {}
-    for _ in range(MAX_SCROLLS):
-        articles = page.query_selector_all('article[data-testid="tweet"]')
-        for article in articles:
+    for _ in range(scrolls):
+        for article in page.query_selector_all('article[data-testid="tweet"]'):
             data = _extract_tweet_data(article)
             if data:
                 posts_by_id[data["post_id"]] = data
-
         page.mouse.wheel(0, 3000)
         page.wait_for_timeout(int(SCROLL_WAIT_SECONDS * 1000))
 
     return list(posts_by_id.values())
 
 
-def fetch_posts() -> list[dict]:
-    """
-    全ての検索クエリを実行し、正規化済みの投稿リストを返す。
+def _age_minutes(posted_at: str) -> float:
+    try:
+        dt = datetime.fromisoformat(str(posted_at).replace("Z", "+00:00"))
+    except ValueError:
+        return 0.0
+    return (datetime.now(timezone.utc) - dt).total_seconds() / 60.0
 
-    2段階方式:
-      1段階目(検索): 広く投稿を集める。「時系列順(Latest)」と「話題性順(Top)」の
-                     両方で検索することで、新着の投稿だけでなく、じわじわ伸びて
-                     いる投稿(ニュース・災害など)も拾えるようにしている。
-                     いいね・RT・返信は取れるが、引用・ブックマーク・表示回数は
-                     ここでは取れない。
-      2段階目(詳細ページ): 1段階目のうち条件を満たす候補だけ、個別ページを
-                     開いて引用・ブックマーク・表示回数を取得する。
-    """
+
+def fetch_posts() -> list[dict]:
+    """全ての検索クエリを実行し、正規化済みの投稿リストを返す"""
+    from playwright.sync_api import sync_playwright
+
     session_path = _session_path()
-    all_posts = {}
+    all_posts: dict[str, dict] = {}
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(storage_state=session_path)
         page = context.new_page()
 
-        for query in SEARCH_QUERIES:
-            for mode in ("live", "top"):
-                try:
-                    posts = _search_one_query(page, query, mode=mode)
-                    for post in posts:
+        queries = build_queries()
+        print(f"検索クエリ数: {len(queries)}")
+        for query, mode, scrolls in queries:
+            try:
+                posts = _search_one_query(page, query, mode, scrolls)
+                for post in posts:
+                    existing = all_posts.get(post["post_id"])
+                    if existing:
+                        # 同じ投稿を複数クエリで拾った場合は、値が入っている方を残す
+                        for field in ("likes", "retweets", "replies", "bookmarks", "impressions"):
+                            if not existing.get(field) and post.get(field):
+                                existing[field] = post[field]
+                    else:
                         all_posts[post["post_id"]] = post
-                    print(f"  → {len(posts)}件取得(累計{len(all_posts)}件)")
-                except SessionExpiredError:
-                    browser.close()
-                    raise  # セッション切れは main.py 側で専用処理するため、そのまま伝播させる
-                except Exception as e:  # noqa: BLE001
-                    print(f"  [ERROR] 検索クエリ失敗 [{mode}] '{query}': {e}")
+                print(f"  → {len(posts)}件(累計{len(all_posts)}件)")
+            except SessionExpiredError:
+                browser.close()
+                raise
+            except Exception as e:  # noqa: BLE001
+                print(f"  [ERROR] 検索クエリ失敗 [{mode}]: {e}")
 
-        # 2段階目: 以下の全てを満たす投稿だけ詳細ページを見る。
-        #   - 「いいね800以上」または「返信50以上」(Grok提案の事前フィルタ)
-        #   - 投稿から5時間(SUSTAINED_MAX_HOURS)以内
-        #   - keywords.txt のいずれかのワードを本文に含む(ホワイトリスト方式)
-        #     広告・懸賞キャンペーン・関係の無いジャンルのファン投稿などを
-        #     ここで除外する。
-        PRELIMINARY_LIKE_THRESHOLD = 800
-        PRELIMINARY_REPLY_THRESHOLD = 50
-        candidates = [
+        # ── 詳細ページで補完 ──
+        # カードからブックマーク/表示回数が取れなかった投稿のうち、
+        # 「新しくて、いいねが多い」ものを優先して補完する。
+        needs_detail = [
             p for p in all_posts.values()
-            if (
-                p.get("likes", 0) >= PRELIMINARY_LIKE_THRESHOLD
-                or p.get("replies", 0) >= PRELIMINARY_REPLY_THRESHOLD
-            )
-            and detector.elapsed_hours(p["posted_at"]) <= detector.SUSTAINED_MAX_HOURS
-            and keyword_filter.matches_keyword(p.get("text_snippet", ""))
+            if (not p.get("bookmarks") or not p.get("impressions"))
+            and _age_minutes(p["posted_at"]) <= COLLECT_MAX_AGE_MINUTES
+            and not keyword_filter.is_ng(p.get("text_snippet", ""))
         ]
-        print(f"  [2段階目] 詳細ページ取得の対象: {len(candidates)}件")
+        needs_detail.sort(key=lambda p: p.get("likes", 0), reverse=True)
+        needs_detail = needs_detail[:MAX_DETAIL_FETCH]
+        print(f"  [詳細補完] 対象{len(needs_detail)}件(上限{MAX_DETAIL_FETCH})")
 
-        for post in candidates:
+        for post in needs_detail:
             stats = _fetch_detail_stats(page, post["url"])
-            post["quotes"] = stats["quotes"]
-            post["bookmarks"] = stats["bookmarks"]
-            post["impressions"] = stats["impressions"]
+            for field, value in stats.items():
+                if value:
+                    post[field] = value
+            if FETCH_QUOTES:
+                post["quotes"] = _count_quote_tweets(page, post["url"])
+            sanitize_counts(post)
             print(
-                f"    [詳細] {post['post_id']}: "
-                f"quotes={stats['quotes']}, bookmarks={stats['bookmarks']}, "
-                f"impressions={stats['impressions']}"
+                f"    [詳細] {post['post_id']}: likes={post.get('likes')}, "
+                f"bookmarks={post.get('bookmarks')}, impressions={post.get('impressions')}"
             )
 
         browser.close()
 
     result = list(all_posts.values())
 
-    # ★診断用ログ: いいね数上位5件の全指標を出力する。
-    # 「引用・ブックマークがいつも0」になっていないかをここで確認できる。
-    # (Xの画面構造の変化でセレクタが合わなくなった時の切り分けに使う)
+    # ── 診断ログ ──
+    # 「取れているはずの指標がいつも0」になっていないかをここで確認できる。
     top5 = sorted(result, key=lambda p: p.get("likes", 0), reverse=True)[:5]
-    print("\n--- 診断ログ: いいね数上位5件の取得結果 ---")
+    print("\n--- 診断ログ: いいね数上位5件 ---")
     for p in top5:
         print(
-            f"  [{p['post_id']}] {p['author_handle']}: "
-            f"likes={p['likes']}, quotes={p['quotes']}, "
-            f"bookmarks={p['bookmarks']}, retweets={p['retweets']}, "
-            f"replies={p['replies']}, posted_at={p['posted_at']}"
+            f"  [{p['post_id']}] @{p['author_handle']}: "
+            f"likes={p['likes']}, rt={p['retweets']}, reply={p['replies']}, "
+            f"bm={p['bookmarks']}, imp={p['impressions']}, "
+            f"age={_age_minutes(p['posted_at']):.0f}分"
         )
+    filled = sum(1 for p in result if p.get("bookmarks"))
+    print(f"  ブックマークが取得できた投稿: {filled}/{len(result)}件")
     print("--- 診断ログここまで ---\n")
 
     return result
 
 
 if __name__ == "__main__":
-    results = fetch_posts()
-    print(f"\n合計 {len(results)} 件取得")
-    for p in results[:5]:
-        print(p)
+    for q, m, s in build_queries():
+        print(f"[{m}] scrolls={s} :: {q}")

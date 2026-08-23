@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-08-23T07:45:06.935523+00:00",
+  "updated_at": "2026-08-23T08:46:12.419562+00:00",
   "status": "success",
-  "started_at": "2026-08-23T07:44:33.940570+00:00",
-  "finished_at": "2026-08-23T07:45:06.933663+00:00",
-  "posts_scanned": 49,
+  "started_at": "2026-08-23T08:45:41.352516+00:00",
+  "finished_at": "2026-08-23T08:46:12.416807+00:00",
+  "posts_scanned": 50,
   "posts_flagged": 0,
   "notified_count": 0,
   "top5_by_likes": [
     {
-      "author": "tadakiti517",
-      "likes": 74205,
+      "author": "Saba_Tigers",
+      "likes": 775,
       "quotes": 0,
       "bookmarks": 0,
-      "url": "https://x.com/tadakiti517/status/2091077594271891788",
-      "matched_keyword": "水没"
+      "url": "https://x.com/Saba_Tigers/status/2091438458007159266",
+      "matched_keyword": "速報"
     }
   ],
   "top5_by_progress": [
     {
-      "author": "tadakiti517",
-      "likes": 74205,
+      "author": "Saba_Tigers",
+      "likes": 775,
       "quotes": 0,
       "bookmarks": 0,
-      "progress_percent": 0,
-      "url": "https://x.com/tadakiti517/status/2091077594271891788",
-      "matched_keyword": "水没"
+      "progress_percent": 29,
+      "url": "https://x.com/Saba_Tigers/status/2091438458007159266",
+      "matched_keyword": "速報"
     }
   ]
 }

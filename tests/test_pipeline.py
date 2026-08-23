@@ -262,6 +262,79 @@ def test_line_sends_only_system_alerts_by_default():
     assert line_notifier.should_send({"post_id": "1", "buzz_score": 80}) is False
 
 
+def test_interval_limit_blocks_frequent_notifications():
+    """
+    ★実運用の苦情への対応。
+    このツールの趣旨は「選りすぐりを早期に見つけること」であって、
+    条件に合う投稿を全部知らせることではない。
+    候補が何件あっても、前回から一定時間空くまでは鳴らさない。
+    """
+    assert detector.can_notify_now(60, None)[0] is True, "初回は鳴る"
+    assert detector.can_notify_now(60, 20)[0] is False, "20分後は見送る"
+    assert detector.can_notify_now(60, 50)[0] is True, "45分経てば鳴る"
+
+
+def test_big_story_can_break_the_interval():
+    """
+    間隔制限で「凡庸な通知の直後に来た大ネタ」を潰さないこと。
+    そうなると早期発見という目的そのものを損なう。
+    """
+    assert detector.can_notify_now(85, 20)[0] is True, "80点超なら間隔を短縮できる"
+    assert detector.can_notify_now(85, 5)[0] is False, "それでも最短15分は空ける"
+
+
+def test_only_top_scores_use_the_repeating_alert():
+    """
+    ★「同じ通知が何度も鳴って鬱陶しい」の再発防止。
+
+    旧設定は全通知が priority=2 / retry=60 / expire=3600 で、
+    1件の通知が確認するまで**60秒おきに最大60回**鳴っていた。
+    繰り返し鳴る優先度2は、飛び抜けたスコアのものだけに限定する。
+    """
+    import pushover_notifier
+    assert pushover_notifier.DEFAULT_PRIORITY == "1", "通常通知は繰り返さない優先度"
+    assert pushover_notifier.DEFAULT_URGENT_PRIORITY == "2"
+    assert int(pushover_notifier.DEFAULT_RETRY) >= 300, "再通知は5分以上あける"
+    assert int(pushover_notifier.DEFAULT_EXPIRE) <= 600, "鳴り続けるのは10分まで"
+    # 実際に鳴る回数
+    repeats = int(pushover_notifier.DEFAULT_EXPIRE) // int(pushover_notifier.DEFAULT_RETRY)
+    assert repeats <= 2, f"最大{repeats}回は多すぎる"
+
+
+def test_notification_history_survives_cache_loss():
+    """
+    通知履歴がリポジトリ内のファイルで管理されていること。
+
+    GitHub Actionsのキャッシュに置くと、キャッシュが消えた瞬間に
+    「昨日通知した投稿がまた鳴る」という最悪の挙動になる。
+    """
+    import notify_state
+    assert notify_state.STATE_PATH.name.endswith(".json")
+    assert "data" in notify_state.STATE_PATH.parts
+
+    state = notify_state.NotifyState()
+    post = {"post_id": "abc", "author_handle": "someone",
+            "buzz_score": 72.0, "text_snippet": "テスト投稿", "url": "https://x.com/a/status/abc"}
+    assert state.is_notified("abc") is False
+    state.record(post)
+    assert state.is_notified("abc") is True
+    assert state.count_last_24h() == 1
+    assert state.minutes_since_last() < 1
+    assert state.last_notified_at_for_author("someone") is not None
+
+
+def test_gitignore_does_not_exclude_notification_history():
+    """
+    通知履歴が .gitignore で除外されていないこと。
+    除外されるとコミットされず、重複通知が起きる。
+    """
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    with open(os.path.join(root, ".gitignore"), encoding="utf-8") as f:
+        ignored = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+    assert "data/notify_state.json" not in ignored
+    assert "data/" not in ignored and "data" not in ignored
+
+
 # ── clustering.py ────────────────────────────────────────
 
 def test_clustering_groups_same_event():

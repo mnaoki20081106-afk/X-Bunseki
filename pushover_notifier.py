@@ -54,10 +54,27 @@ import notification_text
 
 PUSHOVER_API_URL = "https://api.pushover.net/1/messages.json"
 DEFAULT_SOUND = "siren"
-DEFAULT_PRIORITY = "2"
 DEFAULT_SCHOOL_PRIORITY = "0"
-DEFAULT_RETRY = "60"
-DEFAULT_EXPIRE = "3600"
+
+# ★2026-08-24 修正: 全ての通知を優先度2(Emergency)で送っていた。
+#
+#   旧設定: priority=2, retry=60, expire=3600
+#   → 1件の通知が、確認して消すまで**60秒おきに最大60回**鳴り続ける。
+#     「同じ通知が何度も出て鬱陶しい」の原因はこれ。重複送信ではなく、
+#     1件の通知がPushoverの仕様どおりに再通知を繰り返していた。
+#
+#   新設定は2段階にする。
+#     通常の急上昇 → 優先度1(High)
+#         おやすみモード・マナーモードを貫通して音は鳴るが、繰り返さない。
+#         「1回しっかり鳴って終わり」なので、見逃しにくく、鬱陶しくない。
+#     激アツ(高スコア) → 優先度2(Emergency)
+#         5分おきに最大10分(＝最大2回)。本当に逃したくないものだけ。
+#
+#   これで「鳴りすぎ」と「見逃し」の両方を避けられる。
+DEFAULT_PRIORITY = "1"           # 通常の急上昇通知
+DEFAULT_URGENT_PRIORITY = "2"    # 激アツ通知
+DEFAULT_RETRY = "300"            # 5分おき(旧: 60秒おき)
+DEFAULT_EXPIRE = "600"           # 最大10分 = 最大2回(旧: 1時間 = 最大60回)
 
 
 def _is_at_school() -> bool:
@@ -107,9 +124,15 @@ def send_notification(post: dict) -> bool:
 
     url = post.get("url", "")
 
+    # 激アツ(高スコア)だけ、確認するまで数回鳴る優先度2を使う。
+    # それ以外は1回鳴って終わる優先度1にする。
+    is_urgent = bool(post.get("is_gekiatsu")) and not post.get("system_message")
+
     if _is_at_school():
         priority = os.environ.get("PUSHOVER_SCHOOL_PRIORITY") or DEFAULT_SCHOOL_PRIORITY
         print(f"[学校判定] 学校にいるため優先度を{priority}に下げます")
+    elif is_urgent:
+        priority = os.environ.get("PUSHOVER_URGENT_PRIORITY") or DEFAULT_URGENT_PRIORITY
     else:
         priority = os.environ.get("PUSHOVER_PRIORITY") or DEFAULT_PRIORITY
 

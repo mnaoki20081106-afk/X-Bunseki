@@ -78,7 +78,9 @@ FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 8)
 
 # ── 通知の閾値 ────────────────────────────────────
 NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)             # このスコア以上で通知
-GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 75)         # このスコア以上は「激アツ」表示
+# 「激アツ」= Pushoverの優先度2(確認するまで数回鳴る)を使う基準。
+# 鳴り方が強いので、本当に逃したくないものだけに絞る。
+GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 80)
 
 # ── 採点の配点(合計100点) ────────────────────────
 POINTS_GROWTH = _envf("POINTS_GROWTH", 44)           # 伸び率そのもの
@@ -121,8 +123,29 @@ FRESHNESS_FULL_MINUTES = _envf("FRESHNESS_FULL_MINUTES", 60)
 FRESHNESS_MIN_MULTIPLIER = _envf("FRESHNESS_MIN_MULTIPLIER", 0.6)
 
 # ── 通知量の制御 ──────────────────────────────────
-NOTIFY_MAX_PER_RUN = int(_envf("NOTIFY_MAX_PER_RUN", 2))     # 1回の実行で鳴らす上限
-NOTIFY_MAX_PER_DAY = int(_envf("NOTIFY_MAX_PER_DAY", 12))    # 1日あたりの上限
+#
+# ★このツールの趣旨は「選りすぐりを早期に見つけること」であって、
+#   条件に合う投稿を全部知らせることではない。
+#   スコアが何点の投稿が何件あろうと、**鳴る回数はここで決まる**。
+#
+# 実際、初期設定(1回2件・1日12件)では多すぎるという結果になった。
+# 「1日に数回、本当に見るべきものだけ」を目標に絞り込んである。
+
+# ★最も効く設定: 前回の通知からこれだけ経つまで、次は絶対に鳴らさない。
+#   スコアや件数がどうであれ、この間隔は必ず守られる。
+#   「うるさい」と感じたらまずこの値を大きくする。
+NOTIFY_MIN_INTERVAL_MINUTES = _envf("NOTIFY_MIN_INTERVAL_MINUTES", 45)
+
+# ★間隔制限の例外。
+#   間隔だけで止めると「凡庸な投稿で鳴った直後に、桁違いの大ネタが来ても
+#   45分間は知らせない」ことになる。それは趣旨(選りすぐりを早期に)に反する。
+#   このスコアを超える投稿だけは、間隔を短縮して通知を許す。
+#   ただし完全に無視はせず、下の最短間隔は必ず守る。
+NOTIFY_INTERVAL_OVERRIDE_SCORE = _envf("NOTIFY_INTERVAL_OVERRIDE_SCORE", 80)
+NOTIFY_HARD_MIN_INTERVAL_MINUTES = _envf("NOTIFY_HARD_MIN_INTERVAL_MINUTES", 15)
+
+NOTIFY_MAX_PER_RUN = int(_envf("NOTIFY_MAX_PER_RUN", 1))     # 1回の実行で鳴らす上限
+NOTIFY_MAX_PER_DAY = int(_envf("NOTIFY_MAX_PER_DAY", 6))     # 1日あたりの上限
 ACCOUNT_COOLDOWN_HOURS = _envf("ACCOUNT_COOLDOWN_HOURS", 3.0)
 TOPIC_COOLDOWN_HOURS = _envf("TOPIC_COOLDOWN_HOURS", 8.0)    # 同じ話題を再通知しない時間
 
@@ -309,6 +332,34 @@ def evaluate_all(posts: list[dict], history_map: dict, relevance_fn=None, now=No
     return results
 
 
+def can_notify_now(score: float, minutes_since_last: float | None) -> tuple[bool, str]:
+    """
+    「間隔」の観点で今すぐ通知してよいかを判定し、理由も返す。
+
+    通常は NOTIFY_MIN_INTERVAL_MINUTES 空ける。
+    ただし飛び抜けたスコアの投稿だけは、より短い最短間隔まで短縮を許す。
+    """
+    if minutes_since_last is None:
+        return True, ""
+
+    if score >= NOTIFY_INTERVAL_OVERRIDE_SCORE:
+        if minutes_since_last >= NOTIFY_HARD_MIN_INTERVAL_MINUTES:
+            return True, ""
+        return False, (
+            f"前回の通知から{minutes_since_last:.0f}分"
+            f"(大ネタでも最短{NOTIFY_HARD_MIN_INTERVAL_MINUTES:.0f}分は空ける)"
+        )
+
+    if minutes_since_last >= NOTIFY_MIN_INTERVAL_MINUTES:
+        return True, ""
+
+    return False, (
+        f"前回の通知から{minutes_since_last:.0f}分"
+        f"(最短間隔{NOTIFY_MIN_INTERVAL_MINUTES:.0f}分 / "
+        f"{NOTIFY_INTERVAL_OVERRIDE_SCORE:.0f}点以上なら短縮可)"
+    )
+
+
 def config_summary() -> dict:
     """現在有効な閾値を返す(status.jsonに載せて、いつでも確認できるようにする)"""
     return {
@@ -318,4 +369,5 @@ def config_summary() -> dict:
         "FIRST_SIGHT_MIN_LIKES_PER_MIN": FIRST_SIGHT_MIN_LIKES_PER_MIN,
         "NOTIFY_MAX_PER_RUN": NOTIFY_MAX_PER_RUN,
         "NOTIFY_MAX_PER_DAY": NOTIFY_MAX_PER_DAY,
+        "NOTIFY_MIN_INTERVAL_MINUTES": NOTIFY_MIN_INTERVAL_MINUTES,
     }

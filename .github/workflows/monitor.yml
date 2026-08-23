@@ -89,6 +89,10 @@ jobs:
           MAX_AGE_MINUTES: ${{ vars.MAX_AGE_MINUTES }}
           NOTIFY_MAX_PER_RUN: ${{ vars.NOTIFY_MAX_PER_RUN }}
           NOTIFY_MAX_PER_DAY: ${{ vars.NOTIFY_MAX_PER_DAY }}
+          # 「うるさい」と感じたら、まずこれを大きくする(分)
+          NOTIFY_MIN_INTERVAL_MINUTES: ${{ vars.NOTIFY_MIN_INTERVAL_MINUTES }}
+          PUSHOVER_PRIORITY: ${{ vars.PUSHOVER_PRIORITY }}
+          PUSHOVER_URGENT_PRIORITY: ${{ vars.PUSHOVER_URGENT_PRIORITY }}
           SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
           COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
           BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
@@ -105,13 +109,15 @@ jobs:
         if: always()
         run: rm -f storage_state.json
 
-      - name: Commit status.json と分析用ログ
+      - name: Commit status.json・通知履歴・分析用ログ
         if: always()
         run: |
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json data/log 2>/dev/null || true
+          # data/notify_state.json は通知の重複防止に必須。
+          # これがコミットされないと、次の実行で同じ投稿がまた鳴る。
+          git add status.json data/log data/notify_state.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0

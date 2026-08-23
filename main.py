@@ -36,6 +36,7 @@ import detector
 import keyword_filter
 import line_notifier
 import notification_text
+import notify_state
 import pushover_notifier
 from playwright_collector import SessionExpiredError, fetch_posts
 
@@ -259,15 +260,20 @@ def run_once():
     print(f"通知スコア({detector.NOTIFY_SCORE:.0f}点)到達: {len(candidates)}件")
 
     # ── 5. 除外 ──
+    # 通知履歴はリポジトリ内のJSON(data/notify_state.json)で管理する。
+    # GitHub Actionsのキャッシュに置くと、キャッシュが消えた瞬間に
+    # 「昨日通知した投稿がまた鳴る」という最悪の挙動になるため。
+    state = notify_state.NotifyState.load()
+
     filtered = []
     for post in candidates:
         ng = keyword_filter.find_ng_keyword(post.get("text_snippet", ""))
         if ng:
             print(f"  (NGワード'{ng}'のため除外: {post['url']})")
             continue
-        if db.is_known(post["post_id"]):
+        if state.is_notified(post["post_id"]):
             continue
-        last = db.get_last_notified_at_for_author(post.get("author_handle", ""))
+        last = state.last_notified_at_for_author(post.get("author_handle", ""))
         if detector.is_in_cooldown(post.get("author_handle", ""), last, now=now):
             print(f"  (アカウントクールダウン中: @{post['author_handle']})")
             continue
@@ -280,7 +286,7 @@ def run_once():
         print(f"話題まとめ: {len(filtered)}件 → {len(representatives)}話題")
 
     # 直近に通知した話題と似ているものを除外する
-    recent_texts = db.recent_notified_texts(hours=detector.TOPIC_COOLDOWN_HOURS)
+    recent_texts = state.recent_texts(hours=detector.TOPIC_COOLDOWN_HOURS)
     fresh_topics = []
     for post in representatives:
         similar = clustering.is_similar_to_any(post.get("text_snippet", ""), recent_texts)
@@ -290,13 +296,27 @@ def run_once():
         fresh_topics.append(post)
 
     # ── 通知数の上限 ──
-    day_start = (now - timedelta(hours=24)).isoformat()
-    sent_today = db.count_notifications_since(day_start)
+    # ★このツールの趣旨は「選りすぐりを早期に見つけること」。
+    #   条件を満たす投稿が何件あろうと、鳴る回数はここで決まる。
+    sent_today = state.count_last_24h()
     remaining_today = max(detector.NOTIFY_MAX_PER_DAY - sent_today, 0)
     limit = min(detector.NOTIFY_MAX_PER_RUN, remaining_today)
+
+    # 前回の通知からの間隔を見る。
+    # 「うるさい」を直接抑えるのはこの条件だが、飛び抜けた投稿は例外にする
+    # (凡庸な通知の直後に大ネタが来ても知らせない、では趣旨に反するため)。
+    since_last = state.minutes_since_last()
     if remaining_today == 0 and fresh_topics:
         print(f"[上限] 直近24時間で既に{sent_today}件通知しているため、今回は送信しません")
-    to_notify = fresh_topics[:limit]
+        limit = 0
+
+    to_notify = []
+    for post in fresh_topics[:limit]:
+        allowed, reason = detector.can_notify_now(post["buzz_score"], since_last)
+        if not allowed:
+            print(f"[間隔] {post['buzz_score']:.0f}点の投稿を見送ります: {reason}")
+            continue
+        to_notify.append(post)
 
     # ── 7. LLMで「動画ネタとして使えるか」を評価 ──
     to_notify = content_scorer.enrich(to_notify, limit=LLM_MAX_POSTS)
@@ -317,8 +337,7 @@ def run_once():
 
         if any(results.values()):
             db.mark_notified(post["post_id"])
-            db.record_notified_topic(post["post_id"], post.get("text_snippet", ""), now_iso)
-            db.set_last_notified_at_for_author(post.get("author_handle", ""), now_iso)
+            state.record(post)
             notified_count += 1
             notified_ids.add(post["post_id"])
             ok = "/".join(k for k, v in results.items() if v)
@@ -332,13 +351,25 @@ def run_once():
     log_targets += [p for p in to_notify if p["post_id"] not in logged_ids]
     _append_log([_log_row(p, p["post_id"] in notified_ids) for p in log_targets])
 
+    if notified_count:
+        state.save()
+
     deleted = db.prune_observations(keep_hours=OBSERVATION_KEEP_HOURS)
     stats = db.observation_stats()
     print(f"観測DB: {stats.get('posts')}投稿 / {stats.get('total')}レコード(古い{deleted}件を削除)")
 
     finished_at = datetime.now(timezone.utc).isoformat()
     db.log_run(started_iso, finished_at, len(posts), len(candidates), "success")
-    print(f"完了。通知送信数: {notified_count}")
+
+    # ★1行で漏斗全体が見えるようにする。
+    #   「候補が何件あるか」ではなく「実際に何回鳴ったか」が本来の関心事なので、
+    #   どこで何件に絞られたのかを毎回並べて確認できるようにしておく。
+    print(
+        f"\n[まとめ] 収集{len(posts)} → 足切り通過{len(surviving)} "
+        f"→ スコア{detector.NOTIFY_SCORE:.0f}点到達{len(candidates)} "
+        f"→ 話題まとめ{len(representatives)} → 🔔通知{notified_count}"
+        f"  (24時間で{sent_today + notified_count}/{detector.NOTIFY_MAX_PER_DAY}件)"
+    )
 
     _write_status(
         status="success",
@@ -349,6 +380,9 @@ def run_once():
         posts_flagged=len(candidates),
         notified_count=notified_count,
         notified_last_24h=sent_today + notified_count,
+        minutes_since_last_notification=(
+            None if since_last is None else round(since_last)
+        ),
         reject_reasons=reasons,
         config=detector.config_summary(),
         observation_db=stats,

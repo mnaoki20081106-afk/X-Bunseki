@@ -30,10 +30,29 @@ from pathlib import Path
 _BASE_DIR = Path(__file__).parent
 KEYWORDS_FILE_PATH = _BASE_DIR / "keywords.txt"
 NG_KEYWORDS_FILE_PATH = _BASE_DIR / "keywords_ng.txt"
+COMBO_FILE_PATH = _BASE_DIR / "keywords_combo.txt"
 
-# 1つのX検索クエリに詰め込むキーワード群の最大文字数。
-# Xの検索クエリには長さ制限があるため、長くなりすぎないよう分割する。
-DEFAULT_QUERY_GROUP_CHARS = 250
+# 1つのX検索クエリに詰め込むキーワードの最大個数。
+#
+# ★★これは文字数ではなく「演算子の個数」で決まる制限です(2026-08-24に判明)。
+#
+# X検索には演算子の個数の上限があり、おおよそ22〜23個を超えると
+# **超えた分の条件がエラーも出さずに無視されます**。
+# OR 自体も演算子として数えられるため、N個のワードをORでつなぐと
+#
+#     演算子数 = (N - 1)個のOR + lang:ja + -filter:retweets + min_faves:
+#              = N + 2
+#
+# となります。当初は文字数(250字)で分割していたため1グループが32ワードになり、
+# 演算子34個で上限を大幅に超過していました。
+# つまり**各グループの後半のワードは、検索に一切使われていませんでした。**
+# エラーが出ないので、ログを見ても気づけない種類の不具合です。
+#
+# 14ワード = 演算子16個。上限に対して十分な余裕を持たせています。
+DEFAULT_QUERY_GROUP_WORDS = 14
+
+# 演算子がこの数を超えたら警告をログに出す(将来ワードを足したときの保険)
+OPERATOR_WARN_THRESHOLD = 20
 
 # 検索クエリのOR条件に使うワードの最小文字数。
 # 日本語は「地震」「速報」「炎上」のような2文字語が最も情報量が高いので
@@ -79,11 +98,64 @@ def _load_words(path: Path) -> list[str]:
     return unique
 
 
+def _load_lines(path: Path) -> list[str]:
+    """
+    1行を1単位として読み込む(カンマで分割しない)。
+    組み合わせ検索の行は "(逮捕 OR 起訴) (俳優 OR タレント)" のように
+    括弧やスペースを含む検索式そのものなので、分割してはいけない。
+    """
+    if not path.exists():
+        return []
+
+    lines = []
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line == "#" or line.startswith("# "):
+            continue
+        lines.append(line)
+    return lines
+
+
+def _words_in_expression(expression: str) -> list[str]:
+    """
+    組み合わせ検索の式から、素のワードだけを取り出す。
+
+    "(逮捕 OR 起訴) (俳優 OR タレント)" → ["逮捕", "起訴", "俳優", "タレント"]
+
+    ★何のために必要か:
+    組み合わせ検索でヒットした投稿は、keywords.txt のワードを1つも
+    含まない場合がある。そのままだと関連度スコアが0点になり、
+    「わざわざ狙って取りに行った投稿なのに減点される」という
+    ちぐはぐな状態になる。そこで式の中のワードも採点対象に含める。
+    """
+    cleaned = re.sub(r"[()\"]", " ", expression)
+    cleaned = re.sub(r"\bOR\b|\bAND\b", " ", cleaned)
+    words = []
+    for token in cleaned.split():
+        token = token.lstrip("-").strip()
+        # 検索演算子(min_faves: など)は除く
+        if not token or ":" in token or len(token) < 2:
+            continue
+        words.append(token)
+    return words
+
+
 _KEYWORDS = _load_words(KEYWORDS_FILE_PATH)
 _NG_KEYWORDS = _load_words(NG_KEYWORDS_FILE_PATH)
+_COMBO_EXPRESSIONS = _load_lines(COMBO_FILE_PATH)
+
+# 採点に使う語彙 = keywords.txt + 組み合わせ検索の式に出てくるワード
+_SCORING_WORDS = list(_KEYWORDS)
+_seen_scoring = set(_SCORING_WORDS)
+for _expression in _COMBO_EXPRESSIONS:
+    for _word in _words_in_expression(_expression):
+        if _word not in _seen_scoring:
+            _seen_scoring.add(_word)
+            _SCORING_WORDS.append(_word)
 
 print(
     f"[keyword_filter] 対象ワード{len(_KEYWORDS)}個 / "
+    f"組み合わせ検索{len(_COMBO_EXPRESSIONS)}本 / "
     f"除外ワード{len(_NG_KEYWORDS)}個を読み込みました"
 )
 
@@ -92,12 +164,25 @@ print(
 #  1. X検索クエリの組み立て
 # ──────────────────────────────────────────────
 
-def query_groups(max_chars: int = DEFAULT_QUERY_GROUP_CHARS) -> list[str]:
+def count_operators(query: str) -> int:
     """
-    キーワードを "地震 OR 台風 OR 速報" 形式のOR句に分割して返す。
-    Xの検索クエリ長制限に収まるよう、max_chars ごとに区切る。
+    X検索クエリに含まれる演算子の個数を数える。
 
-    短すぎるワード(一般語)はノイズ源になるのでクエリには含めない。
+    上限(22〜23個)を超えた分は、エラーも出さずに無視されてしまうため、
+    クエリを組み立てたら必ずこれで確認する。
+    """
+    operators = len(re.findall(r"\bOR\b", query))          # OR
+    operators += len(re.findall(r"\b\w+:", query))          # lang: min_faves: within_time: など
+    operators += len(re.findall(r"(?:^|\s)-", query))       # -filter:retweets などの除外
+    return operators
+
+
+def query_groups(max_words: int = DEFAULT_QUERY_GROUP_WORDS) -> list[str]:
+    """
+    キーワードを "炎上 OR 大炎上 OR 批判殺到" 形式のOR句に分割して返す。
+
+    X検索の演算子上限を超えないよう、max_words ごとに区切る。
+    1文字のワードと、一般的すぎるワードはノイズ源になるので除外する。
     """
     usable = [
         w for w in _KEYWORDS
@@ -107,23 +192,21 @@ def query_groups(max_chars: int = DEFAULT_QUERY_GROUP_CHARS) -> list[str]:
         return []
 
     groups = []
-    current: list[str] = []
-    current_len = 0
-
-    for word in usable:
+    for start in range(0, len(usable), max_words):
+        chunk = usable[start:start + max_words]
         # 空白を含むワードはフレーズ検索として引用符で囲む
-        token = f'"{word}"' if " " in word or "　" in word else word
-        added = len(token) + 4  # " OR " の分
-        if current and current_len + added > max_chars:
-            groups.append(" OR ".join(current))
-            current, current_len = [], 0
-        current.append(token)
-        current_len += added
-
-    if current:
-        groups.append(" OR ".join(current))
+        tokens = [f'"{w}"' if " " in w or "　" in w else w for w in chunk]
+        groups.append(" OR ".join(tokens))
 
     return groups
+
+
+def combo_queries() -> list[str]:
+    """
+    keywords_combo.txt の各行を、そのまま検索クエリの本体として返す。
+    1行 = 1本の検索になる。
+    """
+    return list(_COMBO_EXPRESSIONS)
 
 
 # ──────────────────────────────────────────────
@@ -153,10 +236,14 @@ def is_ng(text: str) -> bool:
 # ──────────────────────────────────────────────
 
 def matched_keywords(text: str) -> list[str]:
-    """本文に含まれる対象ワードを全て返す"""
+    """
+    本文に含まれる対象ワードを全て返す。
+    keywords.txt のワードに加えて、組み合わせ検索の式に出てくる
+    ワードも対象にする(_words_in_expression の説明を参照)。
+    """
     if not text:
         return []
-    return [w for w in _KEYWORDS if w in text]
+    return [w for w in _SCORING_WORDS if w in text]
 
 
 def relevance_score(text: str) -> float:
@@ -172,8 +259,13 @@ def relevance_score(text: str) -> float:
     hits = matched_keywords(text)
     if not hits:
         return 0.0
-    # 1ワード=0.6、2ワード=0.8、3ワード以上=1.0 と頭打ちにする
-    return min(0.6 + 0.2 * (len(hits) - 1), 1.0)
+    # 1ワード=0.8、2ワード=0.9、3ワード以上=1.0 と頭打ちにする。
+    #
+    # ★以前は1ワード=0.6だったが、関連度をスコアの係数に変えた際に
+    #   厳しすぎることが分かったため引き上げた。
+    #   「文春砲」が1つ当たれば、それはもう狙っているジャンルど真ん中であり、
+    #   3つ当たった場合との差はそれほど大きくない。
+    return min(0.8 + 0.1 * (len(hits) - 1), 1.0)
 
 
 def primary_keyword(text: str) -> str | None:
@@ -185,7 +277,7 @@ def primary_keyword(text: str) -> str | None:
 # ── v3互換API(既存コードからの呼び出しを壊さないために残す) ──
 
 def matches_keyword(text: str) -> bool:
-    if not _KEYWORDS:
+    if not _SCORING_WORDS:
         return True
     return bool(matched_keywords(text))
 
@@ -195,6 +287,12 @@ def find_matching_keyword(text: str) -> str | None:
 
 
 if __name__ == "__main__":
-    print(f"--- 生成される検索クエリ用OR句 ({len(query_groups())}グループ) ---")
+    print(f"--- OR句 ({len(query_groups())}グループ) ---")
     for i, g in enumerate(query_groups(), 1):
-        print(f"[{i}] ({g})")
+        ops = count_operators(f"({g}) lang:ja -filter:retweets min_faves:30")
+        print(f"[{i}] 演算子{ops}個 ({g})")
+    print(f"\n--- 組み合わせ検索 ({len(combo_queries())}本) ---")
+    for i, q in enumerate(combo_queries(), 1):
+        ops = count_operators(f"{q} lang:ja -filter:retweets min_faves:20")
+        print(f"[{i}] 演算子{ops}個 {q}")
+    print(f"\n採点に使う語彙: {len(_SCORING_WORDS)}個")

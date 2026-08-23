@@ -78,15 +78,35 @@ FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 8)
 
 # ── 通知の閾値 ────────────────────────────────────
 NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)             # このスコア以上で通知
-GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 75)         # このスコア以上は「激アツ」表示
+# 「激アツ」= Pushoverの優先度2(確認するまで数回鳴る)を使う基準。
+# 鳴り方が強いので、本当に逃したくないものだけに絞る。
+GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 80)
 
 # ── 採点の配点(合計100点) ────────────────────────
-POINTS_GROWTH = _envf("POINTS_GROWTH", 40)           # 伸び率そのもの
-POINTS_ACCEL = _envf("POINTS_ACCEL", 15)             # 加速しているか
-POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 15)   # 議論の量(返信÷いいね)
-POINTS_SAVE = _envf("POINTS_SAVE", 10)               # 保存率(BM÷いいね)
-POINTS_SPREAD = _envf("POINTS_SPREAD", 10)           # 拡散率(RT÷いいね)
-POINTS_RELEVANCE = _envf("POINTS_RELEVANCE", 10)     # 狙ったジャンルへの近さ
+POINTS_GROWTH = _envf("POINTS_GROWTH", 44)           # 伸び率そのもの
+POINTS_ACCEL = _envf("POINTS_ACCEL", 17)             # 加速しているか
+POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 17)   # 議論の量(返信÷いいね)
+POINTS_SAVE = _envf("POINTS_SAVE", 11)               # 保存率(BM÷いいね)
+POINTS_SPREAD = _envf("POINTS_SPREAD", 11)           # 拡散率(RT÷いいね)
+
+# ★関連度は「加点」ではなく「係数」として効かせる(2026-08-24に変更)。
+#
+# 変更前は関連度を10点の加点として扱っていた。しかしそれだと
+#   伸び率40 + 加速度7.5 + 拡散率10 = 57.5点
+# となり、**関連度0点(＝狙っているジャンルと全く関係ない投稿)でも
+# 閾値55点を超えて通知できてしまった。**
+#
+# 実際、初回の本番実行で通知された2件は、どちらも関連度0.0の
+# アイドル事務所公式アカウントの告知だった:
+#     @Aegroupofficial 64.9点 関連度0.0
+#     @SN__20200122    64.8点 関連度0.0
+# 数字が大きいだけの、動画のネタにならない投稿である。
+#
+# 係数にすると、ジャンル外の投稿は最大でも65%に減点される。
+# 上の2件は46点前後まで下がり、通知されなくなる。
+# 一方で「本当に巨大な出来事」なら、キーワードに無くても
+# 高得点を取って通知できる余地は残してある(完全な足切りにはしない)。
+RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.65)     # 関連度0のときの係数
 
 # ── 採点の基準値(この値で満点になる) ──────────────
 GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 120)
@@ -103,8 +123,29 @@ FRESHNESS_FULL_MINUTES = _envf("FRESHNESS_FULL_MINUTES", 60)
 FRESHNESS_MIN_MULTIPLIER = _envf("FRESHNESS_MIN_MULTIPLIER", 0.6)
 
 # ── 通知量の制御 ──────────────────────────────────
-NOTIFY_MAX_PER_RUN = int(_envf("NOTIFY_MAX_PER_RUN", 2))     # 1回の実行で鳴らす上限
-NOTIFY_MAX_PER_DAY = int(_envf("NOTIFY_MAX_PER_DAY", 12))    # 1日あたりの上限
+#
+# ★このツールの趣旨は「選りすぐりを早期に見つけること」であって、
+#   条件に合う投稿を全部知らせることではない。
+#   スコアが何点の投稿が何件あろうと、**鳴る回数はここで決まる**。
+#
+# 実際、初期設定(1回2件・1日12件)では多すぎるという結果になった。
+# 「1日に数回、本当に見るべきものだけ」を目標に絞り込んである。
+
+# ★最も効く設定: 前回の通知からこれだけ経つまで、次は絶対に鳴らさない。
+#   スコアや件数がどうであれ、この間隔は必ず守られる。
+#   「うるさい」と感じたらまずこの値を大きくする。
+NOTIFY_MIN_INTERVAL_MINUTES = _envf("NOTIFY_MIN_INTERVAL_MINUTES", 45)
+
+# ★間隔制限の例外。
+#   間隔だけで止めると「凡庸な投稿で鳴った直後に、桁違いの大ネタが来ても
+#   45分間は知らせない」ことになる。それは趣旨(選りすぐりを早期に)に反する。
+#   このスコアを超える投稿だけは、間隔を短縮して通知を許す。
+#   ただし完全に無視はせず、下の最短間隔は必ず守る。
+NOTIFY_INTERVAL_OVERRIDE_SCORE = _envf("NOTIFY_INTERVAL_OVERRIDE_SCORE", 80)
+NOTIFY_HARD_MIN_INTERVAL_MINUTES = _envf("NOTIFY_HARD_MIN_INTERVAL_MINUTES", 15)
+
+NOTIFY_MAX_PER_RUN = int(_envf("NOTIFY_MAX_PER_RUN", 1))     # 1回の実行で鳴らす上限
+NOTIFY_MAX_PER_DAY = int(_envf("NOTIFY_MAX_PER_DAY", 6))     # 1日あたりの上限
 ACCOUNT_COOLDOWN_HOURS = _envf("ACCOUNT_COOLDOWN_HOURS", 3.0)
 TOPIC_COOLDOWN_HOURS = _envf("TOPIC_COOLDOWN_HOURS", 8.0)    # 同じ話題を再通知しない時間
 
@@ -214,11 +255,11 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
     )
     breakdown["拡散率"] = round(spread_points, 1)
 
-    # (6) 関連度: 狙ったジャンルにどれだけ近いか。
-    relevance_points = POINTS_RELEVANCE * max(min(relevance, 1.0), 0.0)
-    breakdown["関連度"] = round(relevance_points, 1)
-
     raw_total = sum(breakdown.values())
+
+    # (6) 関連度: 狙ったジャンルにどれだけ近いか。加点ではなく係数として効かせる。
+    relevance = max(min(relevance, 1.0), 0.0)
+    relevance_multiplier = RELEVANCE_FLOOR + (1.0 - RELEVANCE_FLOOR) * relevance
 
     # (7) 鮮度による減衰: 発見が遅い投稿ほど、動画にする価値が下がる。
     age = g["age_minutes"]
@@ -228,12 +269,14 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
         over = (age - FRESHNESS_FULL_MINUTES) / max(MAX_AGE_MINUTES - FRESHNESS_FULL_MINUTES, 1)
         freshness = max(1.0 - over * (1.0 - FRESHNESS_MIN_MULTIPLIER), FRESHNESS_MIN_MULTIPLIER)
 
-    total = raw_total * freshness
+    total = raw_total * freshness * relevance_multiplier
 
     return {
         "buzz_score": round(total, 1),
         "score_breakdown": breakdown,
         "freshness_multiplier": round(freshness, 2),
+        "relevance_multiplier": round(relevance_multiplier, 2),
+        "relevance": round(relevance, 2),
         "is_gekiatsu": total >= GEKIATSU_SCORE,
     }
 
@@ -289,6 +332,34 @@ def evaluate_all(posts: list[dict], history_map: dict, relevance_fn=None, now=No
     return results
 
 
+def can_notify_now(score: float, minutes_since_last: float | None) -> tuple[bool, str]:
+    """
+    「間隔」の観点で今すぐ通知してよいかを判定し、理由も返す。
+
+    通常は NOTIFY_MIN_INTERVAL_MINUTES 空ける。
+    ただし飛び抜けたスコアの投稿だけは、より短い最短間隔まで短縮を許す。
+    """
+    if minutes_since_last is None:
+        return True, ""
+
+    if score >= NOTIFY_INTERVAL_OVERRIDE_SCORE:
+        if minutes_since_last >= NOTIFY_HARD_MIN_INTERVAL_MINUTES:
+            return True, ""
+        return False, (
+            f"前回の通知から{minutes_since_last:.0f}分"
+            f"(大ネタでも最短{NOTIFY_HARD_MIN_INTERVAL_MINUTES:.0f}分は空ける)"
+        )
+
+    if minutes_since_last >= NOTIFY_MIN_INTERVAL_MINUTES:
+        return True, ""
+
+    return False, (
+        f"前回の通知から{minutes_since_last:.0f}分"
+        f"(最短間隔{NOTIFY_MIN_INTERVAL_MINUTES:.0f}分 / "
+        f"{NOTIFY_INTERVAL_OVERRIDE_SCORE:.0f}点以上なら短縮可)"
+    )
+
+
 def config_summary() -> dict:
     """現在有効な閾値を返す(status.jsonに載せて、いつでも確認できるようにする)"""
     return {
@@ -298,4 +369,5 @@ def config_summary() -> dict:
         "FIRST_SIGHT_MIN_LIKES_PER_MIN": FIRST_SIGHT_MIN_LIKES_PER_MIN,
         "NOTIFY_MAX_PER_RUN": NOTIFY_MAX_PER_RUN,
         "NOTIFY_MAX_PER_DAY": NOTIFY_MAX_PER_DAY,
+        "NOTIFY_MIN_INTERVAL_MINUTES": NOTIFY_MIN_INTERVAL_MINUTES,
     }

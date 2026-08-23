@@ -1,11 +1,30 @@
 {
-  "updated_at": "2026-08-23T10:37:07.314610+00:00",
+  "updated_at": "2026-08-23T11:33:32.981337+00:00",
   "status": "success",
-  "started_at": "2026-08-23T10:36:36.374561+00:00",
-  "finished_at": "2026-08-23T10:37:07.313010+00:00",
-  "posts_scanned": 50,
+  "started_at": "2026-08-23T11:32:51.132713+00:00",
+  "finished_at": "2026-08-23T11:33:32.979483+00:00",
+  "posts_scanned": 53,
   "posts_flagged": 0,
   "notified_count": 0,
-  "top5_by_likes": [],
-  "top5_by_progress": []
+  "top5_by_likes": [
+    {
+      "author": "REDSOFFICIAL",
+      "likes": 1246,
+      "quotes": 15,
+      "bookmarks": 4,
+      "url": "https://x.com/REDSOFFICIAL/status/2091486611452375420",
+      "matched_keyword": "速報"
+    }
+  ],
+  "top5_by_progress": [
+    {
+      "author": "REDSOFFICIAL",
+      "likes": 1246,
+      "quotes": 15,
+      "bookmarks": 4,
+      "progress_percent": 69,
+      "url": "https://x.com/REDSOFFICIAL/status/2091486611452375420",
+      "matched_keyword": "速報"
+    }
+  ]
 }

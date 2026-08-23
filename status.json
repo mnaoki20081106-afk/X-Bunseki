@@ -1,17 +1,16 @@
 {
-  "updated_at": "2026-08-23T15:01:25.479161+00:00",
+  "updated_at": "2026-08-23T15:13:38.420066+00:00",
   "status": "success",
-  "started_at": "2026-08-23T15:00:00.442477+00:00",
-  "finished_at": "2026-08-23T15:01:25.478184+00:00",
-  "posts_scanned": 112,
-  "posts_with_history": 0,
-  "posts_flagged": 2,
+  "started_at": "2026-08-23T15:12:14.089297+00:00",
+  "finished_at": "2026-08-23T15:13:38.419184+00:00",
+  "posts_scanned": 103,
+  "posts_with_history": 56,
+  "posts_flagged": 5,
   "notified_count": 2,
-  "notified_last_24h": 2,
+  "notified_last_24h": 4,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 17,
-    "いいねが少なすぎる": 35,
-    "古すぎる": 23
+    "いいねが少なすぎる": 36,
+    "古すぎる": 15
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -22,65 +21,65 @@
     "NOTIFY_MAX_PER_DAY": 12
   },
   "observation_db": {
-    "total": 112,
-    "posts": 112,
+    "total": 215,
+    "posts": 159,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "sakatansab",
-      "score": 61.1,
-      "likes": 2825,
-      "likes_per_min": 127.14385781806176,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 22.2,
-      "text": "ココマド救われてて良かったな〜\n\nヘイトミーからホエールからの火炎はキマるよね\n#浦島坂田船夏ツアー2026",
-      "url": "https://x.com/sakatansab/status/2091535724789346444"
-    },
-    {
       "author": "nogizaka46",
-      "score": 55.8,
-      "likes": 5194,
-      "likes_per_min": 260.5390279442194,
+      "score": 67.6,
+      "likes": 7426,
+      "likes_per_min": 182.73,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 19.9,
+      "measured": true,
+      "age_minutes": 32.2,
       "text": "₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊⊹₊˚‧\n\n　#乃木坂全国ツアー神宮Day4\n\n₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊",
       "url": "https://x.com/nogizaka46/status/2091536301187363152"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 54.4,
-      "likes": 2451,
-      "likes_per_min": 304.3866103215438,
+      "score": 60.7,
+      "likes": 3611,
+      "likes_per_min": 94.97,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.1,
+      "measured": true,
+      "age_minutes": 20.3,
       "text": "僕たちは海賊になれたんだ",
       "url": "https://x.com/Fuwa_Minato/status/2091539288974647771"
     },
     {
-      "author": "yui_fz0221",
-      "score": 52.2,
-      "likes": 1125,
-      "likes_per_min": 85.10524824208017,
+      "author": "yg_treasure_jp",
+      "score": 58.6,
+      "likes": 3381,
+      "likes_per_min": 101.27,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.2,
+      "measured": true,
+      "age_minutes": 29.9,
+      "text": "[]\n\nTREASURE THE STAGE 2026\nNEW WAV : LIVE IN JAPAN\n\n˗ˏˋ 𝟮𝟬𝟮",
+      "url": "https://x.com/yg_treasure_jp/status/2091536862708133974"
+    },
+    {
+      "author": "yui_fz0221",
+      "score": 56.3,
+      "likes": 1902,
+      "likes_per_min": 63.61,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 25.4,
       "text": "めっちゃレアな瞬間",
       "url": "https://x.com/yui_fz0221/status/2091537989784777205"
     },
     {
-      "author": "nogizaka46",
-      "score": 51.7,
-      "likes": 5790,
-      "likes_per_min": 260.39332621798945,
+      "author": "kurusurindesu",
+      "score": 55.3,
+      "likes": 1106,
+      "likes_per_min": 77.88541602521377,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.2,
-      "text": "₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚₊⊹₊˚‧\n\n　　#乃木坂全国ツアー神宮Day4\n\n₊˚‧⊹₊˚‧ ︵‿₊₊‿︵ ‧˚",
-      "url": "https://x.com/nogizaka46/status/2091535722318864522"
+      "age_minutes": 14.2,
+      "text": "今日のライブで発表させていただきましたが改めて、\nこの度ユニットを組んで活動することが決定しました。\nある女の子との運命",
+      "url": "https://x.com/kurusurindesu/status/2091540817068568605"
     }
   ]
 }

@@ -81,12 +81,30 @@ NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)             # このスコア以上で�
 GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 75)         # このスコア以上は「激アツ」表示
 
 # ── 採点の配点(合計100点) ────────────────────────
-POINTS_GROWTH = _envf("POINTS_GROWTH", 40)           # 伸び率そのもの
-POINTS_ACCEL = _envf("POINTS_ACCEL", 15)             # 加速しているか
-POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 15)   # 議論の量(返信÷いいね)
-POINTS_SAVE = _envf("POINTS_SAVE", 10)               # 保存率(BM÷いいね)
-POINTS_SPREAD = _envf("POINTS_SPREAD", 10)           # 拡散率(RT÷いいね)
-POINTS_RELEVANCE = _envf("POINTS_RELEVANCE", 10)     # 狙ったジャンルへの近さ
+POINTS_GROWTH = _envf("POINTS_GROWTH", 44)           # 伸び率そのもの
+POINTS_ACCEL = _envf("POINTS_ACCEL", 17)             # 加速しているか
+POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 17)   # 議論の量(返信÷いいね)
+POINTS_SAVE = _envf("POINTS_SAVE", 11)               # 保存率(BM÷いいね)
+POINTS_SPREAD = _envf("POINTS_SPREAD", 11)           # 拡散率(RT÷いいね)
+
+# ★関連度は「加点」ではなく「係数」として効かせる(2026-08-24に変更)。
+#
+# 変更前は関連度を10点の加点として扱っていた。しかしそれだと
+#   伸び率40 + 加速度7.5 + 拡散率10 = 57.5点
+# となり、**関連度0点(＝狙っているジャンルと全く関係ない投稿)でも
+# 閾値55点を超えて通知できてしまった。**
+#
+# 実際、初回の本番実行で通知された2件は、どちらも関連度0.0の
+# アイドル事務所公式アカウントの告知だった:
+#     @Aegroupofficial 64.9点 関連度0.0
+#     @SN__20200122    64.8点 関連度0.0
+# 数字が大きいだけの、動画のネタにならない投稿である。
+#
+# 係数にすると、ジャンル外の投稿は最大でも65%に減点される。
+# 上の2件は46点前後まで下がり、通知されなくなる。
+# 一方で「本当に巨大な出来事」なら、キーワードに無くても
+# 高得点を取って通知できる余地は残してある(完全な足切りにはしない)。
+RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.65)     # 関連度0のときの係数
 
 # ── 採点の基準値(この値で満点になる) ──────────────
 GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 120)
@@ -214,11 +232,11 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
     )
     breakdown["拡散率"] = round(spread_points, 1)
 
-    # (6) 関連度: 狙ったジャンルにどれだけ近いか。
-    relevance_points = POINTS_RELEVANCE * max(min(relevance, 1.0), 0.0)
-    breakdown["関連度"] = round(relevance_points, 1)
-
     raw_total = sum(breakdown.values())
+
+    # (6) 関連度: 狙ったジャンルにどれだけ近いか。加点ではなく係数として効かせる。
+    relevance = max(min(relevance, 1.0), 0.0)
+    relevance_multiplier = RELEVANCE_FLOOR + (1.0 - RELEVANCE_FLOOR) * relevance
 
     # (7) 鮮度による減衰: 発見が遅い投稿ほど、動画にする価値が下がる。
     age = g["age_minutes"]
@@ -228,12 +246,14 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
         over = (age - FRESHNESS_FULL_MINUTES) / max(MAX_AGE_MINUTES - FRESHNESS_FULL_MINUTES, 1)
         freshness = max(1.0 - over * (1.0 - FRESHNESS_MIN_MULTIPLIER), FRESHNESS_MIN_MULTIPLIER)
 
-    total = raw_total * freshness
+    total = raw_total * freshness * relevance_multiplier
 
     return {
         "buzz_score": round(total, 1),
         "score_breakdown": breakdown,
         "freshness_multiplier": round(freshness, 2),
+        "relevance_multiplier": round(relevance_multiplier, 2),
+        "relevance": round(relevance, 2),
         "is_gekiatsu": total >= GEKIATSU_SCORE,
     }
 

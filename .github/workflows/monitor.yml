@@ -93,6 +93,10 @@ jobs:
           COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
           BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
           SEARCH_WITHIN_TIME: ${{ vars.SEARCH_WITHIN_TIME }}
+          RELEVANCE_FLOOR: ${{ vars.RELEVANCE_FLOOR }}
+          # LINEの無料枠は月200通。既定ではシステム通知のみLINEに送り、
+          # 急上昇通知はPushoverに任せる(alerts_only)。
+          LINE_MODE: ${{ vars.LINE_MODE }}
           MAX_DETAIL_FETCH: ${{ vars.MAX_DETAIL_FETCH }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
         run: python main.py

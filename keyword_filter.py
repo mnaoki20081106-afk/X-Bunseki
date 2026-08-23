@@ -259,8 +259,13 @@ def relevance_score(text: str) -> float:
     hits = matched_keywords(text)
     if not hits:
         return 0.0
-    # 1ワード=0.6、2ワード=0.8、3ワード以上=1.0 と頭打ちにする
-    return min(0.6 + 0.2 * (len(hits) - 1), 1.0)
+    # 1ワード=0.8、2ワード=0.9、3ワード以上=1.0 と頭打ちにする。
+    #
+    # ★以前は1ワード=0.6だったが、関連度をスコアの係数に変えた際に
+    #   厳しすぎることが分かったため引き上げた。
+    #   「文春砲」が1つ当たれば、それはもう狙っているジャンルど真ん中であり、
+    #   3つ当たった場合との差はそれほど大きくない。
+    return min(0.8 + 0.1 * (len(hits) - 1), 1.0)
 
 
 def primary_keyword(text: str) -> str | None:

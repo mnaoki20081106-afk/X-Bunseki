@@ -192,16 +192,26 @@ def _parse_labeled_counts(label: str) -> dict:
 
 def sanitize_counts(post: dict) -> dict:
     """
-    明らかにありえない数値を捨てる。
+    明らかにありえない数値を捨てる。パース失敗による巨大な誤値が
+    スコアを壊すのを防ぐのが目的(0なら単に加点されないだけで済む)。
 
-    Xでは通常 いいね > リポスト > 返信 ≧ ブックマーク という大小関係になる。
-    「ブックマークがいいねの2倍」のような値はパース失敗を意味するので、
-    そのまま使わず0に落とす(0なら単に加点されないだけで済むが、
-    誤った巨大な値はスコアを壊してしまうため)。
+    ★2026-08-24の修正: リポストの判定基準が厳しすぎて、正常な値まで
+      捨てていた。実運用ログで次のような誤検知が出ていた。
+
+        [サニティ] retweets=1237 が likes=330 に対して不自然なため0に補正
+        [サニティ] retweets=515166 が likes=109922 に対して不自然なため0に補正
+
+      「リポストがいいねより多い」のは異常ではない。災害情報・注意喚起・
+      公式の拡散依頼・キャンペーンなどでは、いいねの数倍リポストされるのが
+      普通である(上の515166件はローソン公式のRTキャンペーン投稿で、実在の値)。
+      判定基準を3倍から20倍に緩め、パース事故レベルの値だけを弾くようにした。
+
+      ブックマークは事情が違う。「保存した人が、いいねした人より多い」は
+      現実にはまず起きないので、1.0倍のままにしてある。
     """
     likes = post.get("likes") or 0
     if likes > 0:
-        for field, max_ratio in (("bookmarks", 1.0), ("retweets", 3.0), ("quotes", 1.0)):
+        for field, max_ratio in (("bookmarks", 1.0), ("retweets", 20.0), ("quotes", 1.0)):
             value = post.get(field) or 0
             if value > likes * max_ratio:
                 print(
@@ -324,18 +334,65 @@ def _extract_tweet_data(article) -> dict | None:
 #  詳細ページ(カードから取れなかった項目の補完)
 # ──────────────────────────────────────────────────────────
 
+def _article_post_id(article) -> str:
+    """投稿カードからステータスIDだけを安く取り出す(重複解析を避けるため)"""
+    try:
+        time_el = article.query_selector("time")
+        if not time_el:
+            return ""
+        href = time_el.evaluate(
+            "el => el.closest('a') ? el.closest('a').getAttribute('href') : ''"
+        )
+        return _extract_tweet_id(href)
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def _article_matches(article, expected_id: str) -> bool:
+    """
+    表示されている投稿が、開こうとした投稿かどうかを確認する。
+    時刻要素のリンク先に含まれるステータスIDで判定する。
+    """
+    if not expected_id:
+        return True
+    try:
+        time_el = article.query_selector("time")
+        if not time_el:
+            return False
+        href = time_el.evaluate(
+            "el => el.closest('a') ? el.closest('a').getAttribute('href') : ''"
+        )
+        return _extract_tweet_id(href) == expected_id
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def _fetch_detail_stats(page, url: str) -> dict:
     """
     投稿の個別ページを開き、ブックマーク・表示回数を取得する。
     検索結果カードの aria-label から取れなかった場合のフォールバック。
     """
     stats = {}
+    expected_id = _extract_tweet_id(url)
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=20000)
         page.wait_for_timeout(1800)
-        main_article = page.query_selector('article[data-testid="tweet"]')
+
+        # ★読み込みが間に合わないと、前に開いていた投稿の数値を
+        #   そのまま読んでしまう。実運用ログで、別々の3投稿に
+        #   likes=1038/1039/1045, bookmarks=60/60/61, impressions=38395(同値)
+        #   という、明らかに使い回された数値が記録されていた。
+        #   開いたページが目的の投稿かどうかを確認し、違えば待ち直す。
+        main_article = None
+        for attempt in range(3):
+            main_article = page.query_selector('article[data-testid="tweet"]')
+            if main_article and _article_matches(main_article, expected_id):
+                break
+            main_article = None
+            page.wait_for_timeout(1200)
+
         if not main_article:
-            print(f"  [警告] 詳細ページで投稿本体が見つからない {url}")
+            print(f"  [警告] 詳細ページで目的の投稿を確認できませんでした {url}")
             return stats
 
         # (1) アクションバーの aria-label(最も信頼できる)
@@ -460,6 +517,12 @@ def _search_one_query(page, query: str, mode: str, scrolls: int) -> list[dict]:
     posts_by_id = {}
     for _ in range(scrolls):
         for article in page.query_selector_all('article[data-testid="tweet"]'):
+            # スクロールしても既読の投稿は画面に残り続けるため、
+            # 毎回すべてを解析し直すと同じ投稿を何度も処理することになる。
+            # 先に安いID取得だけ行い、既に読んだものは飛ばす。
+            post_id = _article_post_id(article)
+            if post_id and post_id in posts_by_id:
+                continue
             data = _extract_tweet_data(article)
             if data:
                 posts_by_id[data["post_id"]] = data

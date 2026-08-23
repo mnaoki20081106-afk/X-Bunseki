@@ -30,8 +30,23 @@ import os
 
 GENRES = ["スポーツ", "芸能", "政治", "経済", "エンタメ", "事件・事故", "テクノロジー", "その他"]
 
+def _env(name: str, default: str) -> str:
+    """
+    環境変数を読む。★空文字は「未設定」として扱う。
+
+    GitHub Actions は `GROQ_MODEL: ${{ vars.GROQ_MODEL }}` のように書くと、
+    Variablesが未設定でも「空文字が設定された状態」で渡してくる。
+    os.environ.get(name, default) はキーが存在すれば空文字をそのまま返すため、
+    既定値が効かずモデル名が "" になり、
+        Error code: 404 - The model `` does not exist
+    で毎回LLM評価が失敗していた(2026-08-24に実運用ログで発覚)。
+    """
+    value = os.environ.get(name)
+    return value if value is not None and value.strip() != "" else default
+
+
 # Groqで使うモデル。無料枠で使えるモデルは入れ替わるので環境変数で差し替えられるようにする。
-MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+MODEL = _env("GROQ_MODEL", "llama-3.3-70b-versatile")
 
 SYSTEM_PROMPT = """あなたは、Xで話題になっている投稿を素材にしてTikTokのショート動画
 (スクープ速報・解説動画)を作る、日本のショート動画クリエイターの編集アシスタントです。
@@ -87,7 +102,7 @@ def score_post(text: str) -> dict:
     if not text or not text.strip():
         return dict(FALLBACK)
 
-    api_key = os.environ.get("GROQ_API_KEY")
+    api_key = _env("GROQ_API_KEY", "")
     if not api_key:
         print("[content_scorer] GROQ_API_KEY が未設定のため、LLM評価をスキップします")
         return dict(FALLBACK)

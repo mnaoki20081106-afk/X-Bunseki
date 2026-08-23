@@ -153,6 +153,115 @@ def test_env_override_changes_threshold():
     assert detector.NOTIFY_SCORE == 55.0
 
 
+def test_offgenre_post_with_big_numbers_is_not_notified():
+    """
+    ★実運用で起きた誤通知の再発防止。
+
+    初回の本番実行で、アイドル事務所公式アカウントの告知が2件通知された。
+    どちらも関連度0.0(狙っているジャンルのワードを1つも含まない)なのに、
+    伸び率と拡散率だけで55点を超えていた。
+        @Aegroupofficial 64.9点 いいね13,471 関連度0.0
+        @SN__20200122    64.8点 いいね20,498 関連度0.0
+    数字が大きいだけで、スクープでも解説ネタでもない投稿である。
+    """
+    post = _post(minutes_old=50, likes=13471, retweets=3500, replies=500, bookmarks=250)
+    history = [_obs(35, 9000), _obs(20, 5000)]
+    result = detector.evaluate(post, history, relevance=0.0, now=NOW)
+    assert result["should_notify"] is False, (
+        f"ジャンル外の投稿が通知されています: {result['buzz_score']}点 {result['score_breakdown']}"
+    )
+
+
+def test_ongenre_post_still_notified():
+    """
+    ジャンル外を弾く仕組みが、狙っている投稿まで巻き添えにしていないこと。
+    キーワードが1つ当たれば(関連度0.8)通知に届く必要がある。
+    """
+    post = _post(minutes_old=40, likes=1500, retweets=225, replies=90, bookmarks=75)
+    history = [_obs(25, 900), _obs(10, 300)]
+    result = detector.evaluate(post, history, relevance=0.8, now=NOW)
+    assert result["should_notify"] is True, (
+        f"狙っているジャンルの投稿が通知されていません: "
+        f"{result['buzz_score']}点 {result['score_breakdown']}"
+    )
+
+
+def test_relevance_acts_as_a_multiplier():
+    """関連度が同じ投稿のスコアを実際に押し下げていること"""
+    post = _post(minutes_old=40, likes=3000, retweets=500, replies=200, bookmarks=200)
+    history = [_obs(25, 1500)]
+    high = detector.evaluate(post, history, relevance=1.0, now=NOW)["buzz_score"]
+    low = detector.evaluate(post, history, relevance=0.0, now=NOW)["buzz_score"]
+    assert low < high, (low, high)
+    assert abs(low / high - detector.RELEVANCE_FLOOR) < 0.01
+
+
+def test_one_keyword_hit_is_enough_to_count_as_on_genre():
+    """
+    キーワードが1つ当たれば「ジャンルど真ん中」として扱うこと。
+    「文春砲」が1つ当たった時点で狙い通りであり、
+    3つ当たった場合と大きな差を付けるべきではない。
+    """
+    assert keyword_filter.relevance_score("文春砲が炸裂") >= 0.8
+
+
+def test_groq_model_falls_back_when_env_is_empty_string():
+    """
+    ★実運用で起きた不具合の再発防止。
+
+    ワークフローが GROQ_MODEL: ${{ vars.GROQ_MODEL }} を渡すため、
+    Variablesが未設定でも「空文字」が環境変数に入る。
+    os.environ.get(name, default) はキーが存在すれば空文字を返すので、
+    既定値が効かずモデル名が "" になり、毎回LLM評価が失敗していた。
+        Error code: 404 - The model `` does not exist
+    """
+    import importlib
+    os.environ["GROQ_MODEL"] = ""
+    try:
+        import content_scorer
+        importlib.reload(content_scorer)
+        assert content_scorer.MODEL, "空文字のときは既定のモデル名に戻ること"
+        assert content_scorer.MODEL.strip() != ""
+    finally:
+        del os.environ["GROQ_MODEL"]
+
+
+def test_sanitize_keeps_high_retweet_ratios():
+    """
+    ★実運用で起きた誤検知の再発防止。
+
+    「リポストがいいねより多い」のは異常ではない。災害情報・注意喚起・
+    公式の拡散キャンペーンでは普通に起きる。以前は3倍で切っていたため、
+    実在する値(ローソン公式 いいね109,922 / リポスト515,166)を
+    パース失敗とみなして0にしていた。
+    """
+    real_cases = [(330, 1237), (109922, 515166), (1633, 7409)]
+    for likes, retweets in real_cases:
+        post = collector.sanitize_counts(
+            {"post_id": "x", "likes": likes, "retweets": retweets,
+             "bookmarks": 0, "quotes": 0}
+        )
+        assert post["retweets"] == retweets, f"正常な値が捨てられた: {likes=} {retweets=}"
+
+    # パース事故レベルの値は引き続き捨てる
+    broken = collector.sanitize_counts(
+        {"post_id": "x", "likes": 1000, "retweets": 50000, "bookmarks": 0, "quotes": 0}
+    )
+    assert broken["retweets"] == 0
+
+
+def test_line_sends_only_system_alerts_by_default():
+    """
+    ★LINEの無料プランはプッシュ通知が月200通まで。実際に上限に達した。
+        status=429 {"message":"You have reached your monthly limit."}
+    急上昇通知はPushoverに任せ、LINEにはシステム通知だけを送る。
+    """
+    import line_notifier
+    assert line_notifier.LINE_MODE == "alerts_only"
+    assert line_notifier.should_send({"system_message": "⚠️ セッション切れ"}) is True
+    assert line_notifier.should_send({"post_id": "1", "buzz_score": 80}) is False
+
+
 # ── clustering.py ────────────────────────────────────────
 
 def test_clustering_groups_same_event():

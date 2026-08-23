@@ -77,6 +77,8 @@ v4は同じ投稿を15分おきに観測し、**前回との差分**を取りま
 | `COMBO_MIN_FAVES` | 20 | 組み合わせ検索の最低いいね数 |
 | `BROAD_MIN_FAVES` | 800 | 広域検索の最低いいね数 |
 | `SEARCH_WITHIN_TIME` | 3h | 検索を新しい投稿だけに絞る。`off` で無効化 |
+| `RELEVANCE_FLOOR` | 0.65 | 狙ったジャンル外の投稿にかける減点係数 |
+| `LINE_MODE` | alerts_only | `all`=急上昇通知もLINEに送る / `off`=送らない |
 
 - **通知が多い** → `NOTIFY_SCORE` を 60〜65 に
 - **通知が少ない** → `NOTIFY_SCORE` を 50 に

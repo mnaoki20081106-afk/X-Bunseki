@@ -216,15 +216,31 @@ X-Bunseki/
 ├── keywords_ng.txt            # 除外するワード
 ├── data/
 │   ├── feedback.csv           # ★動画の結果を手で記録するファイル
-│   └── log/                   # 分析用ログ(自動生成)
+│   ├── log/                   # 分析用ログ(自動生成)
+│   └── grok_report.md         # Grokに貼る要約(自動生成)
+├── tools/
+│   └── make_grok_report.py    # 分析用ログ → Grokに貼れる要約への変換
 ├── docs/
 │   ├── REVIEW.md              # v3の問題点の診断レポート
 │   └── grok_prompts.md        # Grok活用ガイド(プロンプト集)
 ├── tests/test_pipeline.py     # 判定ロジックのテスト(24件)
 └── .github/workflows/
     ├── monitor.yml            # 15分おき自動実行
+    ├── grok_report.yml        # 【手動】Grok用レポート作成
     └── test.yml               # push毎にロジックテスト
 ```
+
+## 閾値の調整のしかた
+
+閾値は推測で決めるものではなく、実測ログから決めます。
+
+1. **Actions** タブ → **「Grok用レポート作成」** → **Run workflow**
+2. 完了後 `data/grok_report.md` を開いて全文コピー
+3. [docs/grok_prompts.md](docs/grok_prompts.md) の**プロンプト④**に貼ってGrokに分析させる
+4. 返ってきた数値を **Settings → Variables** に設定する
+
+レポートには各投稿の「15分おきの伸びの軌跡」と「スコア」「最終的にどれだけ伸びたか」が
+対応付けて入っているので、**スコアが当たっていたかどうかの答え合わせ**ができます。
 
 ## テストの実行
 

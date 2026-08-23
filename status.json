@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-08-23T15:30:58.576175+00:00",
+  "updated_at": "2026-08-23T15:43:33.063354+00:00",
   "status": "success",
-  "started_at": "2026-08-23T15:29:34.906429+00:00",
-  "finished_at": "2026-08-23T15:30:58.575324+00:00",
-  "posts_scanned": 104,
-  "posts_with_history": 55,
+  "started_at": "2026-08-23T15:42:09.780977+00:00",
+  "finished_at": "2026-08-23T15:43:33.062291+00:00",
+  "posts_scanned": 102,
+  "posts_with_history": 76,
   "posts_flagged": 4,
   "notified_count": 2,
-  "notified_last_24h": 6,
+  "notified_last_24h": 8,
   "reject_reasons": {
-    "いいねが少なすぎる": 37,
+    "いいねが少なすぎる": 38,
     "古すぎる": 19
   },
   "config": {
@@ -21,65 +21,65 @@
     "NOTIFY_MAX_PER_DAY": 12
   },
   "observation_db": {
-    "total": 319,
-    "posts": 208,
+    "total": 421,
+    "posts": 234,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "Aegroupofficial",
-      "score": 64.9,
-      "likes": 13471,
-      "likes_per_min": 268.1,
+      "author": "SpotifyJP",
+      "score": 67.5,
+      "likes": 2764,
+      "likes_per_min": 131.48,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 30.8,
-      "text": " 𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚 \n\n本日、8/24は末澤誠也の誕生日\n\nたくさんのお祝いコメント\nお待ちしています\n\n#",
-      "url": "https://x.com/Aegroupofficial/status/2091541003564187713"
+      "age_minutes": 39.9,
+      "text": "◤New Release◢ \nSnow Manの6th Album『AMENITY』から\n9曲が先行配信スタート⠀ \n\n",
+      "url": "https://x.com/SpotifyJP/status/2091541878588227927"
     },
     {
-      "author": "SN__20200122",
-      "score": 64.8,
-      "likes": 20498,
-      "likes_per_min": 457.45,
+      "author": "Kojima_Hideo",
+      "score": 64.7,
+      "likes": 3040,
+      "likes_per_min": 119.46,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 30.9,
-      "text": "6th Album『AMENITY』から\n9曲の先行配信がスタート！\n\nStreaming & Download\n\nht",
-      "url": "https://x.com/SN__20200122/status/2091540971431547207"
+      "age_minutes": 40.6,
+      "text": "63歳になりました。歳を重ねるごとに、“やらなければいけない”こと、“やりたい”ことが、どんどん増えていきます。その一方",
+      "url": "https://x.com/Kojima_Hideo/status/2091541708014240108"
     },
     {
-      "author": "kagurabachi_x",
-      "score": 62.7,
-      "likes": 3316,
-      "likes_per_min": 111.8,
+      "author": "sumeragi_0o",
+      "score": 59.8,
+      "likes": 1053,
+      "likes_per_min": 97.86666379913315,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 29.9,
-      "text": "【お知らせ】\n#カグラバチ コミックス12巻の書影を公開！\n発売日は2026年9月4日(金)！\n\n表紙は真打を構える剣聖",
-      "url": "https://x.com/kagurabachi_x/status/2091541224780152963"
+      "measured": false,
+      "age_minutes": 10.8,
+      "text": "すぷれあ20万人本当にありがとう！！！！！！\n本当に本当にみんなで迎えれて嬉しい。\n\nそして25日に新衣装お披露目リレー",
+      "url": "https://x.com/sumeragi_0o/status/2091549210206441664"
     },
     {
-      "author": "STARTO_INT",
-      "score": 59.4,
-      "likes": 6064,
-      "likes_per_min": 144.89,
-      "acceleration": null,
+      "author": "WataOyoyo",
+      "score": 58.9,
+      "likes": 1685,
+      "likes_per_min": 51.49,
+      "acceleration": 1.53,
       "measured": true,
-      "age_minutes": 30.9,
-      "text": "末澤誠也 お誕生日おめでとう\nHappy Birthday Seiya Suezawa\n末澤誠也、生日快樂\n\n#末澤誠也",
-      "url": "https://x.com/STARTO_INT/status/2091540975927562362"
+      "age_minutes": 49.5,
+      "text": "「好きで不倫しているわけではない」\nごめん、全く理解不能だしこいつの言い分読んでるだけでも奥さんに100%同意ゆw",
+      "url": "https://x.com/WataOyoyo/status/2091539470361465170"
     },
     {
-      "author": "twst_jp",
-      "score": 54.1,
-      "likes": 2371,
-      "likes_per_min": 68.03,
+      "author": "atashiwad",
+      "score": 54.9,
+      "likes": 1686,
+      "likes_per_min": 51.49,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 25.9,
-      "text": "【HAPPY BIRTHDAY】\n8月24日はリドルの誕生日です。\nゲーム内では「リドル バースデーキャンペーン」を開催",
-      "url": "https://x.com/twst_jp/status/2091542227130429757"
+      "age_minutes": 52.7,
+      "text": "奥さんが正しいよ。\n不倫してる奴なんてゴミだから\nゴミと関わりたいわけないでしょ",
+      "url": "https://x.com/atashiwad/status/2091538654309347709"
     }
   ]
 }

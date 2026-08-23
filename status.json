@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-23T23:34:04.286984+00:00",
+  "updated_at": "2026-08-23T23:55:26.464415+00:00",
   "status": "success",
-  "started_at": "2026-08-23T23:31:10.213489+00:00",
-  "finished_at": "2026-08-23T23:34:04.285853+00:00",
-  "posts_scanned": 144,
-  "posts_with_history": 83,
-  "posts_flagged": 2,
+  "started_at": "2026-08-23T23:52:25.656231+00:00",
+  "finished_at": "2026-08-23T23:55:26.463064+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 111,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 29,
+  "minutes_since_last_notification": 50,
   "reject_reasons": {
-    "いいねが少なすぎる": 59,
-    "古すぎる": 36,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 60,
+    "古すぎる": 37,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 2823,
-    "posts": 966,
+    "total": 2978,
+    "posts": 1010,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "kuratamagohan",
-      "score": 57.1,
-      "likes": 1086,
-      "likes_per_min": 21.17,
-      "acceleration": 1.31,
-      "measured": true,
-      "age_minutes": 64.2,
-      "text": "「外国人労働者は優秀で、よく働く」\n\nこういう発言をされる大企業経営者は少なくありません。\n\nしかし、問題はそこではない",
-      "url": "https://x.com/kuratamagohan/status/2091654193950212396"
+      "author": "gongcha_japan",
+      "score": 57.5,
+      "likes": 1268,
+      "likes_per_min": 20.979198289368085,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 60.4,
+      "text": "＼次の新作は…／\n\nジューシーな秋、はじまる。\n\n『秋はジューシー〇峰』\n\n【 #ゴンチャの新作 】を付けて、\nこの投稿",
+      "url": "https://x.com/gongcha_japan/status/2091660505194660277"
     },
     {
-      "author": "marumie_tv",
-      "score": 56.9,
-      "likes": 4775,
-      "likes_per_min": 61.05,
-      "acceleration": 0.8,
+      "author": "akindosushiroco",
+      "score": 52.3,
+      "likes": 2896,
+      "likes_per_min": 40.95,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 94.1,
-      "text": "#KingandPrince #永瀬廉 さんが\nジュニア時代のやらかしを暴露\n\n最寄り駅の自転車置き場で\nファンに遭遇し",
-      "url": "https://x.com/marumie_tv/status/2091646663832047881"
+      "age_minutes": 55.4,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2091661771618844781"
     },
     {
-      "author": "alt_dirty",
-      "score": 50.3,
-      "likes": 1347,
-      "likes_per_min": 30.75,
-      "acceleration": 2.0,
-      "measured": true,
-      "age_minutes": 91.0,
-      "text": "【悲報】哔哩哔哩に投稿されたINMU KING中国語版、検閲を受け削除される\n\n【朗報】削除されたということは中国当局は",
-      "url": "https://x.com/alt_dirty/status/2091647436548890665"
+      "author": "yamazakipan_cp",
+      "score": 51.1,
+      "likes": 1465,
+      "likes_per_min": 26.432518059551864,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 55.4,
+      "text": "／\n東京ディズニーリゾート®ご招待＆\n東京ディズニーシー®25周年\nスペシャルグッズプレゼント\n＼\n\n25周年グッズとパ",
+      "url": "https://x.com/yamazakipan_cp/status/2091661768976118264"
     },
     {
       "author": "sakatansab",
-      "score": 44.9,
-      "likes": 1018,
-      "likes_per_min": 132.70446365281447,
+      "score": 46.7,
+      "likes": 1849,
+      "likes_per_min": 38.89,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.7,
+      "measured": true,
+      "age_minutes": 29.0,
       "text": "イケメン回転寿司？？？ドスケベターンテーブル？？？？",
       "url": "https://x.com/sakatansab/status/2091668406210826551"
     },
     {
-      "author": "akindosushiroco",
-      "score": 44.8,
-      "likes": 2021,
-      "likes_per_min": 59.375081585039375,
+      "author": "famima_now",
+      "score": 46.7,
+      "likes": 810,
+      "likes_per_min": 14.61456629913789,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 34.0,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2091661771618844781"
+      "age_minutes": 55.4,
+      "text": "#熱闘おむすび選手権 開幕\n\n応募方法\n\n@famima_now\nをフォロー\nこの投稿をリポスト\n応募は画像から！",
+      "url": "https://x.com/famima_now/status/2091661769844658187"
     }
   ]
 }

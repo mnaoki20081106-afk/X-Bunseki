@@ -1,16 +1,17 @@
 {
-  "updated_at": "2026-08-23T15:43:33.063354+00:00",
+  "updated_at": "2026-08-23T16:04:05.976434+00:00",
   "status": "success",
-  "started_at": "2026-08-23T15:42:09.780977+00:00",
-  "finished_at": "2026-08-23T15:43:33.062291+00:00",
-  "posts_scanned": 102,
-  "posts_with_history": 76,
+  "started_at": "2026-08-23T16:02:46.329173+00:00",
+  "finished_at": "2026-08-23T16:04:05.975535+00:00",
+  "posts_scanned": 105,
+  "posts_with_history": 58,
   "posts_flagged": 4,
-  "notified_count": 2,
-  "notified_last_24h": 8,
+  "notified_count": 1,
+  "notified_last_24h": 9,
   "reject_reasons": {
-    "いいねが少なすぎる": 38,
-    "古すぎる": 19
+    "いいねが少なすぎる": 25,
+    "初回観測かつ平均速度が低い": 1,
+    "古すぎる": 35
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -21,65 +22,65 @@
     "NOTIFY_MAX_PER_DAY": 12
   },
   "observation_db": {
-    "total": 421,
-    "posts": 234,
+    "total": 526,
+    "posts": 281,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "SpotifyJP",
-      "score": 67.5,
-      "likes": 2764,
-      "likes_per_min": 131.48,
+      "author": "sen_sen_sen_sen",
+      "score": 63.8,
+      "likes": 2747,
+      "likes_per_min": 189.96714557289556,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 39.9,
-      "text": "◤New Release◢ \nSnow Manの6th Album『AMENITY』から\n9曲が先行配信スタート⠀ \n\n",
-      "url": "https://x.com/SpotifyJP/status/2091541878588227927"
-    },
-    {
-      "author": "Kojima_Hideo",
-      "score": 64.7,
-      "likes": 3040,
-      "likes_per_min": 119.46,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 40.6,
-      "text": "63歳になりました。歳を重ねるごとに、“やらなければいけない”こと、“やりたい”ことが、どんどん増えていきます。その一方",
-      "url": "https://x.com/Kojima_Hideo/status/2091541708014240108"
+      "measured": false,
+      "age_minutes": 14.5,
+      "text": "ファイナルさんきゅー！！！！！",
+      "url": "https://x.com/sen_sen_sen_sen/status/2091553453961318737"
     },
     {
       "author": "sumeragi_0o",
-      "score": 59.8,
-      "likes": 1053,
-      "likes_per_min": 97.86666379913315,
+      "score": 61.0,
+      "likes": 1995,
+      "likes_per_min": 45.8,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.8,
+      "measured": true,
+      "age_minutes": 31.3,
       "text": "すぷれあ20万人本当にありがとう！！！！！！\n本当に本当にみんなで迎えれて嬉しい。\n\nそして25日に新衣装お披露目リレー",
       "url": "https://x.com/sumeragi_0o/status/2091549210206441664"
     },
     {
-      "author": "WataOyoyo",
-      "score": 58.9,
-      "likes": 1685,
-      "likes_per_min": 51.49,
-      "acceleration": 1.53,
-      "measured": true,
-      "age_minutes": 49.5,
-      "text": "「好きで不倫しているわけではない」\nごめん、全く理解不能だしこいつの言い分読んでるだけでも奥さんに100%同意ゆw",
-      "url": "https://x.com/WataOyoyo/status/2091539470361465170"
-    },
-    {
-      "author": "atashiwad",
-      "score": 54.9,
-      "likes": 1686,
-      "likes_per_min": 51.49,
+      "author": "splare_info",
+      "score": 60.0,
+      "likes": 5866,
+      "likes_per_min": 165.65,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 52.7,
-      "text": "奥さんが正しいよ。\n不倫してる奴なんてゴミだから\nゴミと関わりたいわけないでしょ",
-      "url": "https://x.com/atashiwad/status/2091538654309347709"
+      "age_minutes": 35.4,
+      "text": "✧＼\\ 新衣装おひろめリレー /／✧\n\n8/25(火)\n20:00〜 皇れお\n20:30〜 篠宮ゆの\n21:00〜 城瀬",
+      "url": "https://x.com/splare_info/status/2091548180379033927"
+    },
+    {
+      "author": "Lets_BOATRACE",
+      "score": 57.4,
+      "likes": 1007,
+      "likes_per_min": 15.71545215502224,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 64.1,
+      "text": "Amazonデジタルギフト 10,000円分\n抽選で60名様に\n\nボートレース×ストリートファイター\nボートレースメモリ",
+      "url": "https://x.com/Lets_BOATRACE/status/2091540968319365343"
+    },
+    {
+      "author": "Yuno_Shino38",
+      "score": 54.7,
+      "likes": 921,
+      "likes_per_min": 37.146490442604616,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 24.8,
+      "text": "改めて、すぷれあCH20万人ありがとうございます！！！！本当にいつも傍で支えてくれてありがとう\n\n明日20：00から新衣",
+      "url": "https://x.com/Yuno_Shino38/status/2091550853144658128"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T15:10:14.437969+00:00",
+  "updated_at": "2026-08-24T15:56:53.447234+00:00",
   "status": "success",
-  "started_at": "2026-08-24T15:07:14.668094+00:00",
-  "finished_at": "2026-08-24T15:10:14.436751+00:00",
-  "posts_scanned": 156,
-  "posts_with_history": 51,
+  "started_at": "2026-08-24T15:53:52.387283+00:00",
+  "finished_at": "2026-08-24T15:56:53.446240+00:00",
+  "posts_scanned": 162,
+  "posts_with_history": 83,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 299,
+  "minutes_since_last_notification": 346,
   "reject_reasons": {
-    "いいねが少なすぎる": 75,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 13
+    "いいねが少なすぎる": 62,
+    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 25
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5253,
-    "posts": 2588,
-    "oldest": "2026-08-23T15:13:36.020871+00:00"
+    "total": 5106,
+    "posts": 2555,
+    "oldest": "2026-08-23T16:04:04.623712+00:00"
   },
   "top5": [
     {
       "author": "deathdolnote",
-      "score": 51.7,
-      "likes": 304,
-      "likes_per_min": 12.438465321445143,
+      "score": 49.1,
+      "likes": 781,
+      "likes_per_min": 10.23,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 24.4,
+      "measured": true,
+      "age_minutes": 71.1,
       "text": "【知名度D】\n\nグラビアアイドル\n琴雛ひな \n@nya_n319\n \n\n備考 : 未成年飲酒・喫煙・情報漏洩",
       "url": "https://x.com/deathdolnote/status/2091899781023162860"
     },
     {
-      "author": "akagi_wen",
-      "score": 48.9,
-      "likes": 7661,
-      "likes_per_min": 185.39021762514636,
+      "author": "KFC_jp",
+      "score": 45.5,
+      "likes": 1551,
+      "likes_per_min": 27.27888444040355,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 41.3,
+      "age_minutes": 56.9,
+      "text": "／\nとろ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜り\n＼\n\n今年のケンタのとろ〜り月見バーガーはたまごが大暴れ8月26日",
+      "url": "https://x.com/KFC_jp/status/2091903365357646291"
+    },
+    {
+      "author": "akagi_wen",
+      "score": 45.2,
+      "likes": 9118,
+      "likes_per_min": 31.23,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 88.0,
       "text": "【本日の配信連絡】\n23:45スタート！！\n\nタイトル\n【REMATCH】夏はサッカーだろ！with めちゃつえー【にじ",
       "url": "https://x.com/akagi_wen/status/2091895535041126784"
     },
     {
-      "author": "monaki_official",
-      "score": 48.5,
-      "likes": 865,
-      "likes_per_min": 27.209545521273185,
+      "author": "yamadayuki__ANN",
+      "score": 45.0,
+      "likes": 186,
+      "likes_per_min": 10.31013718574307,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 31.8,
-      "text": "こんばんは〜！おヨネです\n\n本日は「MONAKI 1st Tour 2026 「モナキやで☆しらんけど Supporte",
-      "url": "https://x.com/monaki_official/status/2091897935110066481"
+      "age_minutes": 18.0,
+      "text": "今夜はスペシャルウィーク！\n#SUPERBEAVER #渋谷龍太 さんがやってきます！\n\n『 #山田裕貴 のオールナイト",
+      "url": "https://x.com/yamadayuki__ANN/status/2091913134009463061"
     },
     {
-      "author": "the_voca_colle",
-      "score": 47.2,
-      "likes": 1602,
-      "likes_per_min": 63.891781244227154,
+      "author": "VOLTACTION_info",
+      "score": 42.8,
+      "likes": 10194,
+      "likes_per_min": 115.33,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 25.1,
-      "text": "||◤リプライでお祝いしよう◢||\n⋱ #ボカコレ2026夏ランキング発表 ⋰\n\n#ボカコレ2026夏TOP100 ラン",
-      "url": "https://x.com/the_voca_colle/status/2091899624563114422"
-    },
-    {
-      "author": "akirosenthal",
-      "score": 46.0,
-      "likes": 435,
-      "likes_per_min": 14.626610795232638,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 29.7,
-      "text": "／\n今日は月曜日ー！\nこのあと23:40からはじまるよ！\n＼\n『 #最近のマイブーム 』 #アキちょこナイパレ\n 第48",
-      "url": "https://x.com/akirosenthal/status/2091898449289736281"
+      "measured": true,
+      "age_minutes": 56.7,
+      "text": "○o  。……ぷくぷくぷくぷく……。o○\n\n 　　 　Goods info coming soon!\n　        ",
+      "url": "https://x.com/VOLTACTION_info/status/2091903412539629734"
     }
   ]
 }

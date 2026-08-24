@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T00:41:15.699070+00:00",
+  "updated_at": "2026-08-24T02:16:28.055566+00:00",
   "status": "success",
-  "started_at": "2026-08-24T00:38:23.198457+00:00",
-  "finished_at": "2026-08-24T00:41:15.697995+00:00",
-  "posts_scanned": 156,
-  "posts_with_history": 79,
-  "posts_flagged": 2,
-  "notified_count": 1,
+  "started_at": "2026-08-24T02:13:47.348264+00:00",
+  "finished_at": "2026-08-24T02:16:28.054490+00:00",
+  "posts_scanned": 142,
+  "posts_with_history": 34,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 96,
+  "minutes_since_last_notification": 95,
   "reject_reasons": {
-    "いいねが少なすぎる": 71,
-    "初回観測かつ平均速度が低い": 4,
-    "古すぎる": 25
+    "いいねが少なすぎる": 59,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3134,
-    "posts": 1087,
+    "total": 3276,
+    "posts": 1195,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "AORINGOHUZIN",
-      "score": 58.1,
-      "likes": 12359,
-      "likes_per_min": 299.99593686221607,
+      "author": "MotokiOhmoriMGA",
+      "score": 52.8,
+      "likes": 11752,
+      "likes_per_min": 303.6635678739542,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 41.2,
+      "age_minutes": 38.7,
+      "text": "そして公式鍵アカなるものがアルバムに向けて爆誕しました。\nなんやねん公式鍵アカて。\n\n従来の解禁の仕方を好む方、なるべく",
+      "url": "https://x.com/MotokiOhmoriMGA/status/2091701466327318588"
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "score": 50.5,
+      "likes": 24959,
+      "likes_per_min": 132.32,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 136.4,
       "text": "【オリジナルフルアルバム 全収録楽曲を解禁】\n⁡\n9月30日(水)発売、6枚目となる\nオリジナルフルアルバム全収録楽曲を",
       "url": "https://x.com/AORINGOHUZIN/status/2091676878549684541"
     },
     {
-      "author": "gongcha_japan",
-      "score": 55.2,
-      "likes": 2335,
-      "likes_per_min": 23.29,
+      "author": "Snapdragon_JPN",
+      "score": 43.4,
+      "likes": 1322,
+      "likes_per_min": 9.687295926751686,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 106.2,
-      "text": "＼次の新作は…／\n\nジューシーな秋、はじまる。\n\n『秋はジューシー〇峰』\n\n【 #ゴンチャの新作 】を付けて、\nこの投稿",
-      "url": "https://x.com/gongcha_japan/status/2091660505194660277"
+      "measured": false,
+      "age_minutes": 136.5,
+      "text": "／\n好評につき第二弾CP実施中\n＼\n\nSnapdragon® 8 Elite Gen 5 for Galaxy搭載 「G",
+      "url": "https://x.com/Snapdragon_JPN/status/2091676863550624202"
     },
     {
       "author": "AORINGOHUZIN",
-      "score": 52.3,
-      "likes": 4995,
-      "likes_per_min": 138.12119825722405,
+      "score": 43.1,
+      "likes": 10805,
+      "likes_per_min": 61.02,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 36.2,
+      "measured": true,
+      "age_minutes": 131.4,
       "text": "【オリジナルフルアルバム 公式非公開アカウント開設】\n⁡\n\nhttps://\nx.com/mga6thalkagiaka",
       "url": "https://x.com/AORINGOHUZIN/status/2091678141618282520"
     },
     {
-      "author": "ookamimio",
-      "score": 51.6,
-      "likes": 1641,
-      "likes_per_min": 29.828829795939196,
+      "author": "ichijouririka",
+      "score": 41.6,
+      "likes": 1081,
+      "likes_per_min": 15.118727979206152,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.0,
-      "text": "#朝ミオ おつみぉーん\n\n来週の #朝ミオおたより テーマは、\n#食欲の秋と言えば です\n\n#朝ミオニュース では、ホロ",
-      "url": "https://x.com/ookamimio/status/2091673398196031654"
-    },
-    {
-      "author": "tsuisoku777",
-      "score": 50.7,
-      "likes": 321,
-      "likes_per_min": 5.52,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 65.3,
-      "text": "蓮舫氏、クールジャパン機構を批判 → 民主党政権時代に始まった構想で、記憶力ないの？と批判殺到",
-      "url": "https://x.com/tsuisoku777/status/2091670805927387172"
+      "age_minutes": 71.5,
+      "text": "おはよ〜〜\n今日は公式配信に出るよ〜〜\n眠いよ〜〜",
+      "url": "https://x.com/ichijouririka/status/2091693212805283961"
     }
   ]
 }

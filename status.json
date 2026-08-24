@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-24T23:13:18.112288+00:00",
+  "updated_at": "2026-08-24T23:44:43.432118+00:00",
   "status": "success",
-  "started_at": "2026-08-24T23:10:38.298097+00:00",
-  "finished_at": "2026-08-24T23:13:18.111399+00:00",
-  "posts_scanned": 108,
-  "posts_with_history": 63,
+  "started_at": "2026-08-24T23:41:51.637380+00:00",
+  "finished_at": "2026-08-24T23:44:43.430955+00:00",
+  "posts_scanned": 148,
+  "posts_with_history": 82,
   "posts_flagged": 1,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 782,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "古すぎる": 2
+    "いいねが少なすぎる": 69,
+    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 24
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4257,
-    "posts": 2374,
-    "oldest": "2026-08-23T23:34:04.270878+00:00"
+    "total": 4261,
+    "posts": 2406,
+    "oldest": "2026-08-23T23:55:26.449350+00:00"
   },
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 57.3,
-      "likes": 197,
-      "likes_per_min": 5.72,
+      "author": "AZKi_VDiVA",
+      "score": 55.6,
+      "likes": 1551,
+      "likes_per_min": 40.053126042868584,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 38.7,
+      "text": "おはあずき「第2回 ホロライブ ダジャレASMRバトル」のダジャレ募集が【本日23:59まで】！\n\nたくさんのダジャレを",
+      "url": "https://x.com/AZKi_VDiVA/status/2092025661200474211"
+    },
+    {
+      "author": "akindosushiroco",
+      "score": 54.3,
+      "likes": 2532,
+      "likes_per_min": 52.99,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 43.3,
+      "age_minutes": 44.7,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2092024154744668464"
+    },
+    {
+      "author": "livedoornews",
+      "score": 52.0,
+      "likes": 258,
+      "likes_per_min": 5.06,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 59.7,
+      "text": "【否認】マッサージ店にみせかけて違法な風俗店経営か 中国籍の女ら2人逮捕\n\nhttps://\nnews.livedoor",
+      "url": "https://x.com/livedoornews/status/2092020376356483519"
+    },
+    {
+      "author": "livedoornews",
+      "score": 48.6,
+      "likes": 325,
+      "likes_per_min": 4.07,
+      "acceleration": 0.71,
+      "measured": true,
+      "age_minutes": 74.7,
       "text": "【発覚】白菜の鮮度維持に発がん性物質、当局が調査 中国河北省\n\nhttps://\nnews.livedoor.com/a",
       "url": "https://x.com/livedoornews/status/2092016601390620797"
     },
     {
       "author": "NetflixJP",
-      "score": 54.7,
-      "likes": 1685,
-      "likes_per_min": 29.44,
-      "acceleration": null,
+      "score": 46.7,
+      "likes": 2472,
+      "likes_per_min": 25.03,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 73.3,
+      "age_minutes": 104.7,
       "text": "【10月22日世界独占配信決定！】\nNetflixシリーズ\n『俺のこと、なんか言ってた？』\nティーザー予告公開\n\n◆主演",
       "url": "https://x.com/NetflixJP/status/2092009055384457376"
-    },
-    {
-      "author": "PapalotX",
-      "score": 50.0,
-      "likes": 1167,
-      "likes_per_min": 23.95,
-      "acceleration": 1.78,
-      "measured": true,
-      "age_minutes": 108.5,
-      "text": "【発覚】立憲・中村至孝氏、YouTubeにAIで作成した高市総理への中傷動画を投稿していた",
-      "url": "https://x.com/PapalotX/status/2092000202089722274"
-    },
-    {
-      "author": "akindosushiroco",
-      "score": 45.2,
-      "likes": 866,
-      "likes_per_min": 65.26932126132601,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.3,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2092024154744668464"
-    },
-    {
-      "author": "Shikinagi_2434",
-      "score": 45.2,
-      "likes": 2022,
-      "likes_per_min": 19.87,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 73.3,
-      "text": "踊ってみたショート投稿しました。\n\n#四季凪の８月まいにちShort \n\n『INTERNET OVERDOSE』踊ってみ",
-      "url": "https://x.com/Shikinagi_2434/status/2092009059218338142"
     }
   ]
 }

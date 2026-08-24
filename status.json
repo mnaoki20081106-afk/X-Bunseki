@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-08-24T16:53:54.217246+00:00",
+  "updated_at": "2026-08-24T17:22:57.013351+00:00",
   "status": "success",
-  "started_at": "2026-08-24T16:51:05.476909+00:00",
-  "finished_at": "2026-08-24T16:53:54.216206+00:00",
-  "posts_scanned": 159,
-  "posts_with_history": 77,
+  "started_at": "2026-08-24T17:19:50.554168+00:00",
+  "finished_at": "2026-08-24T17:22:57.012439+00:00",
+  "posts_scanned": 151,
+  "posts_with_history": 121,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 403,
+  "minutes_since_last_notification": 432,
   "reject_reasons": {
-    "いいねが少なすぎる": 62,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 34
+    "いいねが少なすぎる": 53,
+    "古すぎる": 32
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4994,
-    "posts": 2514,
-    "oldest": "2026-08-23T17:11:36.649622+00:00"
+    "total": 4996,
+    "posts": 2503,
+    "oldest": "2026-08-23T17:43:13.077114+00:00"
   },
   "top5": [
     {
-      "author": "deathdolnote",
-      "score": 41.4,
-      "likes": 1524,
-      "likes_per_min": 13.03,
-      "acceleration": 1.27,
-      "measured": true,
-      "age_minutes": 128.1,
-      "text": "【知名度D】\n\nグラビアアイドル\n琴雛ひな \n@nya_n319\n \n\n備考 : 未成年飲酒・喫煙・情報漏洩",
-      "url": "https://x.com/deathdolnote/status/2091899781023162860"
+      "author": "tokino_sora",
+      "score": 39.9,
+      "likes": 836,
+      "likes_per_min": 9.41972274818486,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 88.7,
+      "text": "ショート動画更新\n今日は\n\nKAMACHO\n\n踊ってみた✩°｡⋆⸜(* ॑꒳ ॑* )⸝\n青い衣装で踊ってるよ( `･ㅂ",
+      "url": "https://x.com/tokino_sora/status/2091916994169966878"
     },
     {
       "author": "ado1024imokenp",
-      "score": 38.7,
-      "likes": 3262,
-      "likes_per_min": 77.38409468360085,
+      "score": 39.3,
+      "likes": 4652,
+      "likes_per_min": 47.85,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 42.2,
+      "measured": true,
+      "age_minutes": 71.2,
       "text": "ジャンガリアン飼っていた頃本人の目を盗んでおやつのドライフルーツを食べたことがあります。甘くておいしかったなー",
       "url": "https://x.com/ado1024imokenp/status/2091921410956624099"
     },
     {
-      "author": "PiggPARTY",
-      "score": 38.3,
-      "likes": 817,
-      "likes_per_min": 7.2,
+      "author": "gourmetroad5",
+      "score": 37.1,
+      "likes": 2787,
+      "likes_per_min": 34.12,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 113.9,
-      "text": "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆\n\nにじさんじPIGGPARTYチップス2\n発売開始\n\n◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆\n\n",
-      "url": "https://x.com/PiggPARTY/status/2091903361545314582"
+      "age_minutes": 89.7,
+      "text": "９月１日(火)よりセブンイレブンから、炭火でカリカリっとじっくり焼いた鶏皮の旨みを程よい塩味で引き立てた、香ばしい鶏皮と",
+      "url": "https://x.com/gourmetroad5/status/2091916749130305883"
     },
     {
-      "author": "C4Dbeginner",
-      "score": 38.2,
-      "likes": 997,
-      "likes_per_min": 10.51,
+      "author": "Show_SylveSTAR",
+      "score": 36.2,
+      "likes": 4545,
+      "likes_per_min": 37.11,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 112.3,
-      "text": "炎上中の偉い人、生成AI関連でも突出してクリエイターに対して侮蔑的で嘲笑的な発言を繰り返していた人物なので、ああいう人が",
-      "url": "https://x.com/C4Dbeginner/status/2091903761698742286"
+      "age_minutes": 45.0,
+      "text": "神ゲーでした。",
+      "url": "https://x.com/Show_SylveSTAR/status/2091928015496523994"
     },
     {
-      "author": "mahironakamura",
-      "score": 37.8,
-      "likes": 1164,
-      "likes_per_min": 14.031980473549238,
+      "author": "Saiki_Supadari",
+      "score": 35.3,
+      "likes": 3692,
+      "likes_per_min": 36.6,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 83.0,
-      "text": "お待たせしました！\n背面の作画資料です…！\n\n#グラドル特技部 #くるくる動画 #仲村まひろ #バトントワリング #10",
-      "url": "https://x.com/mahironakamura/status/2091911143355019379"
+      "measured": true,
+      "age_minutes": 42.9,
+      "text": "配信ご視聴ありがとうございました！\nエゴイストはやっぱりいいエゴねぇ",
+      "url": "https://x.com/Saiki_Supadari/status/2091928532922540423"
     }
   ]
 }

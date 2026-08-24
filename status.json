@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T04:27:57.169974+00:00",
+  "updated_at": "2026-08-24T05:25:24.945209+00:00",
   "status": "success",
-  "started_at": "2026-08-24T04:25:05.466230+00:00",
-  "finished_at": "2026-08-24T04:27:57.169064+00:00",
-  "posts_scanned": 136,
-  "posts_with_history": 37,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 3,
-  "minutes_since_last_notification": 227,
+  "started_at": "2026-08-24T05:22:35.268496+00:00",
+  "finished_at": "2026-08-24T05:25:24.944191+00:00",
+  "posts_scanned": 141,
+  "posts_with_history": 45,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 4,
+  "minutes_since_last_notification": 284,
   "reject_reasons": {
-    "いいねが少なすぎる": 61,
-    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 72,
+    "初回観測かつ平均速度が低い": 3,
     "古すぎる": 11
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3553,
-    "posts": 1413,
+    "total": 3694,
+    "posts": 1509,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "ookamimio",
-      "score": 51.5,
-      "likes": 1075,
-      "likes_per_min": 38.45790832852906,
+      "author": "suisei_hosimati",
+      "score": 55.3,
+      "likes": 1747,
+      "likes_per_min": 116.45001159784123,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.0,
-      "text": "＼short動画投稿のお知らせ／\n\n１７時\n #ぽミオちゃん のショート動画投稿\n風の強い日に傘をさして・・だいじょぶか",
-      "url": "https://x.com/ookamimio/status/2091737263650549831"
+      "age_minutes": 15.0,
+      "text": "配信情報\n\nこのあと  19時から！\n 本当にあった真夏の怪談 \n\nゾっとする怖い話が集まりました\nあのホロメンの怪事件",
+      "url": "https://x.com/suisei_hosimati/status/2091754977224167752"
     },
     {
-      "author": "W_Planet_info",
-      "score": 50.1,
-      "likes": 228,
-      "likes_per_min": 8.156654045492674,
+      "author": "livedoornews",
+      "score": 46.9,
+      "likes": 2156,
+      "likes_per_min": 18.20912951895259,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.0,
-      "text": "【配信予報】8/24～の配信予報をお届けします！\n\nTOPIC\n\n❐ちいかわ沼は深いぞ。\n❐ #ウェザプラ写真部 で皆の",
-      "url": "https://x.com/W_Planet_info/status/2091737261335249242"
+      "age_minutes": 118.4,
+      "text": "【供述】「通り魔のように10人くらいにぶっかけた」盗んだケチャップを70代女性にかけたとして男子高校生ら4人を逮捕\n\nh",
+      "url": "https://x.com/livedoornews/status/2091728956072354189"
     },
     {
-      "author": "ArknightsStaff",
-      "score": 48.2,
-      "likes": 1598,
-      "likes_per_min": 57.51103553276503,
+      "author": "AnshininMisa",
+      "score": 44.2,
+      "likes": 839,
+      "likes_per_min": 17.70584624895005,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 27.8,
-      "text": "【公式X漫画】\n『アークナイツ OPERATORS!』84話-②\n\n朝から真剣にレシピ本を読むスズラン。そんな彼女にドク",
-      "url": "https://x.com/ArknightsStaff/status/2091737302775296299"
+      "age_minutes": 47.4,
+      "text": "私の限界リングフィット切り抜きが大反響らしいです",
+      "url": "https://x.com/AnshininMisa/status/2091746830770171985"
     },
     {
-      "author": "AKEndfieldJP",
-      "score": 47.8,
-      "likes": 1045,
-      "likes_per_min": 37.38466437517476,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 28.0,
-      "text": "【公式スタンプ第九弾配布】\nお知らせです、管理人。\n\n『アークナイツ：エンドフィールド』公式スタンプ第九弾の配布が決定し",
-      "url": "https://x.com/AKEndfieldJP/status/2091737261411049722"
-    },
-    {
-      "author": "Sankei_news",
-      "score": 45.8,
-      "likes": 254,
-      "likes_per_min": 2.7,
+      "author": "IdentityVJP",
+      "score": 44.1,
+      "likes": 1975,
+      "likes_per_min": 17.91,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 97.4,
-      "text": "「日本で一番悪い男」「ネパールは天国」…辞職意向の蔵内勇夫氏　言動が再三、物議醸す\n\nhttps://\nsankei.c",
-      "url": "https://x.com/Sankei_news/status/2091719774237860134"
+      "age_minutes": 85.4,
+      "text": "コピーキャットゲームの新マップ\n「悪名高い荘園」の最新情報を\nエマが事件を発生させてる間に\nひげさんに開発チームから\n新",
+      "url": "https://x.com/IdentityVJP/status/2091737262921048246"
+    },
+    {
+      "author": "naiko_notgirl",
+      "score": 43.2,
+      "likes": 1368,
+      "likes_per_min": 28.341281727166713,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 48.3,
+      "text": "第三報を公開しましたので、ご確認お願いいたします。\n会社として事態の早期収束と二次被害の防止に向け、全力を尽くしてまいり",
+      "url": "https://x.com/naiko_notgirl/status/2091746605917675552"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T12:20:47.857469+00:00",
+  "updated_at": "2026-08-24T13:28:15.791408+00:00",
   "status": "success",
-  "started_at": "2026-08-24T12:17:59.560110+00:00",
-  "finished_at": "2026-08-24T12:20:47.856464+00:00",
-  "posts_scanned": 143,
-  "posts_with_history": 46,
-  "posts_flagged": 0,
+  "started_at": "2026-08-24T13:25:23.120986+00:00",
+  "finished_at": "2026-08-24T13:28:15.790508+00:00",
+  "posts_scanned": 168,
+  "posts_with_history": 40,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 130,
+  "minutes_since_last_notification": 197,
   "reject_reasons": {
-    "いいねが少なすぎる": 61,
-    "初回観測かつ平均速度が低い": 1,
-    "古すぎる": 12
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 85,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4876,
-    "posts": 2291,
+    "total": 5044,
+    "posts": 2419,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "Kanae_2434",
-      "score": 51.6,
-      "likes": 3059,
-      "likes_per_min": 155.56255382689818,
+      "author": "emiru_cs0422",
+      "score": 59.3,
+      "likes": 1185,
+      "likes_per_min": 87.26295971240977,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.7,
-      "text": "Y4T4×EXゲマズで15人あもんぐあす！  | Among Us【にじさんじ/叶】 \nhttps://\nyoutube",
-      "url": "https://x.com/Kanae_2434/status/2091858343292027326"
+      "age_minutes": 13.6,
+      "text": "結成した時に8人で決めた\n最初の目標が武道館！\n私がアイドルになった時に\n初めてできた夢も武道館でした！\n明日は夢が叶う",
+      "url": "https://x.com/emiru_cs0422/status/2091876854600986801"
     },
     {
-      "author": "H_KAGAMI2434",
-      "score": 49.8,
-      "likes": 1703,
-      "likes_per_min": 340.6,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 4.4,
-      "text": "結論としては雑談枠です。\n22時30分より！\n【雑談】　ダイレクト　加賀美　【にじさんじ/加賀美ハヤト】 \nhttps:",
-      "url": "https://x.com/H_KAGAMI2434/status/2091862180190892415"
-    },
-    {
-      "author": "hotoke_imudayo_",
-      "score": 48.5,
-      "likes": 1173,
-      "likes_per_min": 8.84,
+      "author": "kitamuraharuo",
+      "score": 50.0,
+      "likes": 7480,
+      "likes_per_min": 91.07,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 64.6,
-      "text": "いむちむ重大発表　マシュマロもこたえていくよーー！！\n#いむはうすなう",
-      "url": "https://x.com/hotoke_imudayo_/status/2091847045128896967"
+      "age_minutes": 104.6,
+      "text": "離婚情報を市町村から入管当局に自動的に通知し、永住権を取り消すシステムを作るべきです。\nこの点を法務委員会で質疑したが、",
+      "url": "https://x.com/kitamuraharuo/status/2091853943857086568"
     },
     {
-      "author": "Kaida_Haru",
-      "score": 46.3,
-      "likes": 1437,
-      "likes_per_min": 69.87900897787223,
+      "author": "sir_goalous",
+      "score": 48.8,
+      "likes": 579,
+      "likes_per_min": 39.66755573831101,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 20.6,
-      "text": "【ELDEN RING】なんだこのデカい樹は・・・ #25【甲斐田晴/にじさんじ】 \nhttps://\nyoutube.",
-      "url": "https://x.com/Kaida_Haru/status/2091858115117629820"
+      "age_minutes": 14.6,
+      "text": "【重大報告】\n11月22日（日）\n「声福大作戦～GOALOUS Chu-ning Fever～」\n開催決定！\n\n本日の生",
+      "url": "https://x.com/sir_goalous/status/2091876598651949435"
     },
     {
-      "author": "mayuhappy831",
-      "score": 45.7,
-      "likes": 697,
-      "likes_per_min": 13.95,
+      "author": "wcat_project",
+      "score": 47.4,
+      "likes": 3499,
+      "likes_per_min": 25.17,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 75.8,
-      "text": "ウイグルの綿の時点でユニクロに見切りつけてたけど、今度はヒジャブ。\n\n極めつけに会長は日本人差別発言\n\nもう二度とユニク",
-      "url": "https://x.com/mayuhappy831/status/2091844219342295341"
+      "age_minutes": 143.3,
+      "text": "◥◣◥◣ コラボ決定 ◢◤◢◤\n8/31 16:00 𝐒𝐓𝐀𝐑𝐓 !\n#白猫プロジェクト × #ホロライブ 第3弾!!!",
+      "url": "https://x.com/wcat_project/status/2091844216204775805"
+    },
+    {
+      "author": "kenshin_0708_k",
+      "score": 44.3,
+      "likes": 1115,
+      "likes_per_min": 102.64220206401654,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 10.9,
+      "text": "配信ありがとうございました。\n\nこう見えてファンネームの集計を待ってます。\nみなさん、たくさんありがとうございます\n\n#",
+      "url": "https://x.com/kenshin_0708_k/status/2091877537945354389"
     }
   ]
 }

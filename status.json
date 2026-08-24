@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T10:11:01.222845+00:00",
+  "updated_at": "2026-08-24T11:00:26.020650+00:00",
   "status": "success",
-  "started_at": "2026-08-24T10:08:06.836854+00:00",
-  "finished_at": "2026-08-24T10:11:01.221684+00:00",
-  "posts_scanned": 148,
-  "posts_with_history": 39,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-24T10:57:34.681388+00:00",
+  "finished_at": "2026-08-24T11:00:26.019756+00:00",
+  "posts_scanned": 141,
+  "posts_with_history": 44,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 171,
+  "minutes_since_last_notification": 49,
   "reject_reasons": {
-    "いいねが少なすぎる": 70,
-    "初回観測かつ平均速度が低い": 2,
-    "古すぎる": 22
+    "いいねが少なすぎる": 69,
+    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4443,
-    "posts": 1997,
+    "total": 4584,
+    "posts": 2094,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "isakiriona",
-      "score": 55.6,
-      "likes": 499,
-      "likes_per_min": 36.1040299928453,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.8,
-      "text": "１９：００〜\n\n／\nホロライブ甲子園\n初のリセマラ配信！\n＼\n\n絶対引くぞ！虹色\n\n\nhttps://\nyoutube.",
-      "url": "https://x.com/isakiriona/status/2091827149720498534"
-    },
-    {
-      "author": "Show_SylveSTAR",
-      "score": 51.6,
-      "likes": 4377,
-      "likes_per_min": 397.7461921481594,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.0,
-      "text": "／\nMECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\nJR推し旅で俺たちの限定動画が見られるチャンスです。\n10月",
-      "url": "https://x.com/Show_SylveSTAR/status/2091827860759863711"
-    },
-    {
-      "author": "Kagetsu_2434",
-      "score": 50.5,
-      "likes": 2578,
-      "likes_per_min": 234.97945842326968,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.0,
-      "text": "／\n MECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\n10月1日より東海道新幹線にて限定動画が見れるので\nライブ",
-      "url": "https://x.com/Kagetsu_2434/status/2091827865759498285"
-    },
-    {
-      "author": "akagi_wen",
-      "score": 50.1,
-      "likes": 2563,
-      "likes_per_min": 233.25788921547453,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.0,
-      "text": "／\nMECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\n10/1より東海道新幹線でJR推し旅が開催されます！\n限定動",
-      "url": "https://x.com/akagi_wen/status/2091827861652971586"
-    },
-    {
-      "author": "livedoornews",
-      "score": 47.7,
-      "likes": 4271,
-      "likes_per_min": 60.44,
+      "author": "arimoto_kaori",
+      "score": 49.5,
+      "likes": 2514,
+      "likes_per_min": 35.69,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 101.0,
-      "text": "【】Prime Video、「劇場版『チェンソーマン レゼ篇』」配信を予告か 公式Xに「全部教えてあげる」と匂わせ投稿\n",
-      "url": "https://x.com/livedoornews/status/2091805210179969205"
+      "age_minutes": 77.2,
+      "text": "今、スーパーの生鮮野菜売り場では中国産の白菜は見かけないけれど、加工品は要注意。外食も。\n\n2006〜08年、週刊誌の編",
+      "url": "https://x.com/arimoto_kaori/status/2091823648969777569"
+    },
+    {
+      "author": "shimamura_gr",
+      "score": 46.6,
+      "likes": 1237,
+      "likes_per_min": 20.47443175610517,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 60.4,
+      "text": "9/9（水）よりしまむらパーク（オンラインストア）『鳥羽水族館』のアイテムが受注生産販売スタート！\nラインナップは画像を",
+      "url": "https://x.com/shimamura_gr/status/2091827863532278123"
+    },
+    {
+      "author": "oshidoraEX",
+      "score": 46.1,
+      "likes": 1075,
+      "likes_per_min": 40.59133635005209,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 26.5,
+      "text": "【第7話TVerで無料配信中】\n#夏色の雲が恋と嵐をまきおこす\n\n昨日のまったりオフショットが\n大好評ということで…\nま",
+      "url": "https://x.com/oshidoraEX/status/2091836401201684942"
+    },
+    {
+      "author": "noesukiofficial",
+      "score": 44.8,
+      "likes": 1722,
+      "likes_per_min": 46.04259547030432,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 37.4,
+      "text": "イチオシ動画です！\n\n音楽番組で披露したリムレスメガネ着用でのアクロバット。よくよく考えてみたら、なんで落ちなかったのだ",
+      "url": "https://x.com/noesukiofficial/status/2091833656134488108"
+    },
+    {
+      "author": "momosuzunene",
+      "score": 44.5,
+      "likes": 876,
+      "likes_per_min": 20.90684614605382,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 41.9,
+      "text": "#フロライフ癒しの湯巡り旅~ひとめぐり~開催中\n\nタオル、アクリルスタンド、缶バッジなどなど、かわいいグッズが登場\n\n詳",
+      "url": "https://x.com/momosuzunene/status/2091832523483697384"
     }
   ]
 }

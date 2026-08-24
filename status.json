@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-08-24T22:13:24.598604+00:00",
+  "updated_at": "2026-08-24T22:51:14.345811+00:00",
   "status": "success",
-  "started_at": "2026-08-24T22:10:33.292295+00:00",
-  "finished_at": "2026-08-24T22:13:24.597345+00:00",
-  "posts_scanned": 98,
-  "posts_with_history": 45,
+  "started_at": "2026-08-24T22:48:33.349156+00:00",
+  "finished_at": "2026-08-24T22:51:14.339777+00:00",
+  "posts_scanned": 112,
+  "posts_with_history": 37,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 722,
+  "minutes_since_last_notification": 760,
   "reject_reasons": {
-    "いいねが少なすぎる": 36,
-    "古すぎる": 20,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 59,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4310,
-    "posts": 2355,
-    "oldest": "2026-08-23T22:45:59.625547+00:00"
+    "total": 4286,
+    "posts": 2387,
+    "oldest": "2026-08-23T23:05:09.682248+00:00"
   },
   "top5": [
     {
-      "author": "jtc_ojisan2",
-      "score": 42.9,
-      "likes": 1504,
-      "likes_per_min": 18.280164564807343,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 82.3,
-      "text": "軍隊では、新兵を教育する際に、まず、自尊心を砕くという。企業でも、やることは大して変わらない。\n\n1/14",
-      "url": "https://x.com/jtc_ojisan2/status/2091991722477990389"
-    },
-    {
-      "author": "LPGadvisorJP",
-      "score": 41.8,
-      "likes": 569,
-      "likes_per_min": 8.21,
-      "acceleration": 1.36,
+      "author": "PapalotX",
+      "score": 51.3,
+      "likes": 639,
+      "likes_per_min": 13.45,
+      "acceleration": 3.93,
       "measured": true,
-      "age_minutes": 96.5,
-      "text": "戦後最も厳しく複雑な安全保障環境・・・\n\n・ロシアに「誰が行くかい、招かれても行かんわい」\n・さらに「北方領土はロシア領",
-      "url": "https://x.com/LPGadvisorJP/status/2091988149228724265"
+      "age_minutes": 86.4,
+      "text": "【発覚】立憲・中村至孝氏、YouTubeにAIで作成した高市総理への中傷動画を投稿していた",
+      "url": "https://x.com/PapalotX/status/2092000202089722274"
     },
     {
-      "author": "FITS_fragrance",
-      "score": 41.8,
-      "likes": 1470,
-      "likes_per_min": 20.585841161751596,
+      "author": "jr_official_X",
+      "score": 48.6,
+      "likes": 3126,
+      "likes_per_min": 76.20280097143653,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 71.4,
-      "text": "#高橋恭平 さんからライジングウェーブブランドアンバサダー就任コメントが届きました\n\n普段からフレグランスにこだわりのあ",
-      "url": "https://x.com/FITS_fragrance/status/2091994456090398859"
+      "age_minutes": 41.0,
+      "text": "【 Drama 】\n\n#岩本照 さん主演ドラマ\n『 真田十勇士 SHADOWS OF THE TEN NINJA 』に ",
+      "url": "https://x.com/jr_official_X/status/2092011623078932752"
     },
     {
-      "author": "kitamuraharuo",
-      "score": 38.5,
-      "likes": 1467,
-      "likes_per_min": 20.7179090717705,
+      "author": "NetflixJP",
+      "score": 46.2,
+      "likes": 1036,
+      "likes_per_min": 20.22563920275048,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.8,
-      "text": "「多文化共生」という名の狂気。\n16世紀前後の日本人は、宗教的侵略とそれに続く武力による侵略を未然に防いだ。\n現代人はそ",
-      "url": "https://x.com/kitamuraharuo/status/2091994606003245160"
+      "age_minutes": 51.2,
+      "text": "【10月22日世界独占配信決定！】\nNetflixシリーズ\n『俺のこと、なんか言ってた？』\nティーザー予告公開\n\n◆主演",
+      "url": "https://x.com/NetflixJP/status/2092009055384457376"
     },
     {
       "author": "nino_honmono",
-      "score": 38.4,
-      "likes": 12396,
-      "likes_per_min": 383.6784521509099,
+      "score": 45.2,
+      "likes": 21439,
+      "likes_per_min": 239.04,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 32.3,
+      "measured": true,
+      "age_minutes": 70.1,
       "text": "皆ーおはよー",
       "url": "https://x.com/nino_honmono/status/2092004295332024568"
+    },
+    {
+      "author": "emiru_cs0422",
+      "score": 44.5,
+      "likes": 1363,
+      "likes_per_min": 31.126694431310174,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 43.8,
+      "text": "おはよ！今日から2日間武道館\nみんなのTop of the topは\nきゅーすとでいたいし\n私たちのTop of the",
+      "url": "https://x.com/emiru_cs0422/status/2092010927466172559"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T06:09:23.454205+00:00",
+  "updated_at": "2026-08-24T07:20:26.580536+00:00",
   "status": "success",
-  "started_at": "2026-08-24T06:06:46.909584+00:00",
-  "finished_at": "2026-08-24T06:09:23.452059+00:00",
+  "started_at": "2026-08-24T07:17:38.092576+00:00",
+  "finished_at": "2026-08-24T07:20:26.579573+00:00",
   "posts_scanned": 143,
-  "posts_with_history": 59,
-  "posts_flagged": 2,
-  "notified_count": 0,
-  "notified_last_24h": 4,
-  "minutes_since_last_notification": 44,
+  "posts_with_history": 38,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 115,
   "reject_reasons": {
-    "いいねが少なすぎる": 61,
-    "初回観測かつ平均速度が低い": 6,
-    "古すぎる": 12
+    "いいねが少なすぎる": 64,
+    "初回観測かつ平均速度が低い": 8,
+    "古すぎる": 20
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3837,
-    "posts": 1593,
+    "total": 3980,
+    "posts": 1698,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "suisei_hosimati",
-      "score": 61.1,
-      "likes": 5154,
-      "likes_per_min": 77.45,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 59.0,
-      "text": "配信情報\n\nこのあと  19時から！\n 本当にあった真夏の怪談 \n\nゾっとする怖い話が集まりました\nあのホロメンの怪事件",
-      "url": "https://x.com/suisei_hosimati/status/2091754977224167752"
-    },
-    {
-      "author": "livedoornews",
-      "score": 59.4,
-      "likes": 545,
-      "likes_per_min": 10.78,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 64.3,
-      "text": "【在宅起訴】平将門の首供養する『将門塚』で迷惑行為、配信者が奇声を上げよじ登る\n\nhttps://\nnews.lived",
-      "url": "https://x.com/livedoornews/status/2091753647143305432"
-    },
-    {
-      "author": "Patra_HNST",
-      "score": 51.6,
-      "likes": 152,
-      "likes_per_min": 20.337188579691894,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.5,
-      "text": "今週の予定\nYoutube　\nhttps://\nyoutube.com/channel/UCeLzT\n-7b2PBcun",
-      "url": "https://x.com/Patra_HNST/status/2091767944493879535"
-    },
-    {
       "author": "fashionpressnet",
-      "score": 49.8,
-      "likes": 1314,
-      "likes_per_min": 33.42888288087212,
+      "score": 56.2,
+      "likes": 8171,
+      "likes_per_min": 96.53,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 39.3,
+      "measured": true,
+      "age_minutes": 110.3,
       "text": "「平成ガラケー風」折りたたみトイカメラ“懐かしの画質”で写真＆動画撮影、音楽再生も - \nhttps://\nfashio",
       "url": "https://x.com/fashionpressnet/status/2091759933096329269"
     },
     {
-      "author": "sd_bt",
-      "score": 48.8,
-      "likes": 1673,
-      "likes_per_min": 178.15575304868767,
+      "author": "hakuikoyori",
+      "score": 53.9,
+      "likes": 272,
+      "likes_per_min": 32.65792377893929,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 9.4,
-      "text": "★☆お知らせ☆★\n\n2号車 #カイ\nスキンケアブランド「#beplain」コラボ決定！\n\n今回のコラボ限定で、撮り下ろし",
-      "url": "https://x.com/sd_bt/status/2091767461096063034"
+      "age_minutes": 8.3,
+      "text": "／\n　8/25(火)AM7:00～\n　火曜日の朝は「朝こよ！」\n＼\n\nなんと8月最後の火曜日・・・エッ！？\n\nホロライブ",
+      "url": "https://x.com/hakuikoyori/status/2091785605323895118"
+    },
+    {
+      "author": "livedoornews",
+      "score": 46.0,
+      "likes": 1537,
+      "likes_per_min": 13.96,
+      "acceleration": 1.3,
+      "measured": true,
+      "age_minutes": 135.3,
+      "text": "【在宅起訴】平将門の首供養する『将門塚』で迷惑行為、配信者が奇声を上げよじ登る\n\nhttps://\nnews.lived",
+      "url": "https://x.com/livedoornews/status/2091753647143305432"
+    },
+    {
+      "author": "Alan7twi",
+      "score": 44.3,
+      "likes": 2010,
+      "likes_per_min": 55.15095306771284,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 36.4,
+      "text": "彼氏がそっけなくなってしまったTwitter動画保存ランキング\n\n位　 TsuyuzakiTHE3rd\n備考　安定のつゆ",
+      "url": "https://x.com/Alan7twi/status/2091778527930826919"
+    },
+    {
+      "author": "Kanae_2434",
+      "score": 39.9,
+      "likes": 3890,
+      "likes_per_min": 168.67506308149254,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.1,
+      "text": "やほ～",
+      "url": "https://x.com/Kanae_2434/status/2091781896489316386"
     }
   ]
 }

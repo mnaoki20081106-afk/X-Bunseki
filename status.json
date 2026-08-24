@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T07:20:26.580536+00:00",
+  "updated_at": "2026-08-24T08:11:19.105598+00:00",
   "status": "success",
-  "started_at": "2026-08-24T07:17:38.092576+00:00",
-  "finished_at": "2026-08-24T07:20:26.579573+00:00",
-  "posts_scanned": 143,
-  "posts_with_history": 38,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-24T08:08:15.671396+00:00",
+  "finished_at": "2026-08-24T08:11:19.104394+00:00",
+  "posts_scanned": 162,
+  "posts_with_history": 77,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 115,
+  "minutes_since_last_notification": 51,
   "reject_reasons": {
     "いいねが少なすぎる": 64,
-    "初回観測かつ平均速度が低い": 8,
-    "古すぎる": 20
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 35
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3980,
-    "posts": 1698,
+    "total": 4142,
+    "posts": 1783,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "fashionpressnet",
-      "score": 56.2,
-      "likes": 8171,
-      "likes_per_min": 96.53,
+      "author": "nico_nico_news",
+      "score": 54.9,
+      "likes": 836,
+      "likes_per_min": 13.5,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 110.3,
-      "text": "「平成ガラケー風」折りたたみトイカメラ“懐かしの画質”で写真＆動画撮影、音楽再生も - \nhttps://\nfashio",
-      "url": "https://x.com/fashionpressnet/status/2091759933096329269"
+      "age_minutes": 74.7,
+      "text": "白菜をホルムアルデヒドに浸して出荷、当局が緊急調査に乗り出す―中国\n\n\nhttps://\nnews.nicovideo.",
+      "url": "https://x.com/nico_nico_news/status/2091781723352936488"
     },
     {
-      "author": "hakuikoyori",
-      "score": 53.9,
-      "likes": 272,
-      "likes_per_min": 32.65792377893929,
+      "author": "Blue_ArchiveJP",
+      "score": 53.2,
+      "likes": 3518,
+      "likes_per_min": 334.46839623525875,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 8.3,
-      "text": "／\n　8/25(火)AM7:00～\n　火曜日の朝は「朝こよ！」\n＼\n\nなんと8月最後の火曜日・・・エッ！？\n\nホロライブ",
-      "url": "https://x.com/hakuikoyori/status/2091785605323895118"
+      "age_minutes": 10.5,
+      "text": "【メインストーリー追加・予告】\nオデュッセイア海洋高等学校は、荒波を生き抜く術として規律を重んじる。\nあらゆる問題は「禁",
+      "url": "https://x.com/Blue_ArchiveJP/status/2091797861801550032"
     },
     {
-      "author": "livedoornews",
-      "score": 46.0,
-      "likes": 1537,
-      "likes_per_min": 13.96,
-      "acceleration": 1.3,
-      "measured": true,
-      "age_minutes": 135.3,
-      "text": "【在宅起訴】平将門の首供養する『将門塚』で迷惑行為、配信者が奇声を上げよじ登る\n\nhttps://\nnews.lived",
-      "url": "https://x.com/livedoornews/status/2091753647143305432"
-    },
-    {
-      "author": "Alan7twi",
-      "score": 44.3,
-      "likes": 2010,
-      "likes_per_min": 55.15095306771284,
+      "author": "USSS_info",
+      "score": 42.6,
+      "likes": 2924,
+      "likes_per_min": 259.1084445876033,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.4,
-      "text": "彼氏がそっけなくなってしまったTwitter動画保存ランキング\n\n位　 TsuyuzakiTHE3rd\n備考　安定のつゆ",
-      "url": "https://x.com/Alan7twi/status/2091778527930826919"
+      "age_minutes": 11.3,
+      "text": "昨日、夏ツアーのファイナル公演を迎えました！たくさんの応援をいただき、ありがとうございました！\n\n本日の『浦島坂田船のげ",
+      "url": "https://x.com/USSS_info/status/2091797667781472453"
     },
     {
-      "author": "Kanae_2434",
-      "score": 39.9,
-      "likes": 3890,
-      "likes_per_min": 168.67506308149254,
+      "author": "AZKAIsHomeVideo",
+      "score": 42.1,
+      "likes": 862,
+      "likes_per_min": 12.426446178417736,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.1,
-      "text": "やほ～",
-      "url": "https://x.com/Kanae_2434/status/2091781896489316386"
+      "age_minutes": 69.4,
+      "text": "このツイートのリプ欄は何を言っても叩かれないらしいです！\n普段は言えないけど内心思ってることを教えてください\n\n※動画内",
+      "url": "https://x.com/AZKAIsHomeVideo/status/2091783049558344078"
+    },
+    {
+      "author": "yuki_sakuna",
+      "score": 40.0,
+      "likes": 2698,
+      "likes_per_min": 56.958063302220445,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 47.4,
+      "text": "＼このあと１８時から／    \n\n重大告知あり！\n３０曲歌うまで告知できない歌枠耐久\n\n持ってくれ、わたしの身体ー・・・",
+      "url": "https://x.com/yuki_sakuna/status/2091788587348218045"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T03:30:32.777182+00:00",
+  "updated_at": "2026-08-24T04:27:57.169974+00:00",
   "status": "success",
-  "started_at": "2026-08-24T03:27:45.706683+00:00",
-  "finished_at": "2026-08-24T03:30:32.775739+00:00",
-  "posts_scanned": 141,
-  "posts_with_history": 22,
+  "started_at": "2026-08-24T04:25:05.466230+00:00",
+  "finished_at": "2026-08-24T04:27:57.169064+00:00",
+  "posts_scanned": 136,
+  "posts_with_history": 37,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 169,
+  "minutes_since_last_notification": 227,
   "reject_reasons": {
-    "いいねが少なすぎる": 67,
+    "いいねが少なすぎる": 61,
     "初回観測かつ平均速度が低い": 6,
-    "古すぎる": 14
+    "古すぎる": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3417,
-    "posts": 1314,
+    "total": 3553,
+    "posts": 1413,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
+      "author": "ookamimio",
+      "score": 51.5,
+      "likes": 1075,
+      "likes_per_min": 38.45790832852906,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 28.0,
+      "text": "＼short動画投稿のお知らせ／\n\n１７時\n #ぽミオちゃん のショート動画投稿\n風の強い日に傘をさして・・だいじょぶか",
+      "url": "https://x.com/ookamimio/status/2091737263650549831"
+    },
+    {
+      "author": "W_Planet_info",
+      "score": 50.1,
+      "likes": 228,
+      "likes_per_min": 8.156654045492674,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 28.0,
+      "text": "【配信予報】8/24～の配信予報をお届けします！\n\nTOPIC\n\n❐ちいかわ沼は深いぞ。\n❐ #ウェザプラ写真部 で皆の",
+      "url": "https://x.com/W_Planet_info/status/2091737261335249242"
+    },
+    {
+      "author": "ArknightsStaff",
+      "score": 48.2,
+      "likes": 1598,
+      "likes_per_min": 57.51103553276503,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 27.8,
+      "text": "【公式X漫画】\n『アークナイツ OPERATORS!』84話-②\n\n朝から真剣にレシピ本を読むスズラン。そんな彼女にドク",
+      "url": "https://x.com/ArknightsStaff/status/2091737302775296299"
+    },
+    {
+      "author": "AKEndfieldJP",
+      "score": 47.8,
+      "likes": 1045,
+      "likes_per_min": 37.38466437517476,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 28.0,
+      "text": "【公式スタンプ第九弾配布】\nお知らせです、管理人。\n\n『アークナイツ：エンドフィールド』公式スタンプ第九弾の配布が決定し",
+      "url": "https://x.com/AKEndfieldJP/status/2091737261411049722"
+    },
+    {
       "author": "Sankei_news",
-      "score": 53.8,
-      "likes": 529,
-      "likes_per_min": 8.404017336980454,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 62.9,
-      "text": "将門塚によじ登り動画配信、男性が謝罪　不敬避けてきた場所…国税庁HPも「たたりの噂」\n\nhttps://\nsankei.",
-      "url": "https://x.com/Sankei_news/status/2091714010177851678"
-    },
-    {
-      "author": "rei_Toya_rei",
-      "score": 51.2,
-      "likes": 9397,
-      "likes_per_min": 308.1379009785438,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 30.5,
-      "text": "剣持がこどもに大人気のビスケットになりましたよ\nそんなにじさんじ缶バッジビスケット第3弾が本日発売しましたよ\nよろしくお",
-      "url": "https://x.com/rei_Toya_rei/status/2091722173706645778"
-    },
-    {
-      "author": "illmaaaaaa",
-      "score": 51.1,
-      "likes": 1626,
-      "likes_per_min": 32.58772626767152,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 49.9,
-      "text": "おはようおまえら！！！\n\n今週配信少ないし今日（クソ）ショート投稿するわ。",
-      "url": "https://x.com/illmaaaaaa/status/2091717294422688141"
-    },
-    {
-      "author": "sxzBST",
-      "score": 47.4,
-      "likes": 620,
-      "likes_per_min": 7.83,
+      "score": 45.8,
+      "likes": 254,
+      "likes_per_min": 2.7,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 92.4,
-      "text": "高市政権のせいで離婚したと主張する女性\n\n離婚の決定打\n「憲法9条改正というか改悪というか改憲ですよね、夫は必要だって言",
-      "url": "https://x.com/sxzBST/status/2091706601136922747"
-    },
-    {
-      "author": "hezuruy",
-      "score": 46.6,
-      "likes": 1428,
-      "likes_per_min": 51.55963149339655,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 27.7,
-      "text": "お願いしたいことが。\n外国人が日本の良さを発信する投稿をよく見かけます。\nそれよりも日本でのルールを徹底した内容を発信で",
-      "url": "https://x.com/hezuruy/status/2091722880233169324"
+      "age_minutes": 97.4,
+      "text": "「日本で一番悪い男」「ネパールは天国」…辞職意向の蔵内勇夫氏　言動が再三、物議醸す\n\nhttps://\nsankei.c",
+      "url": "https://x.com/Sankei_news/status/2091719774237860134"
     }
   ]
 }

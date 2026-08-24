@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T14:24:47.292912+00:00",
+  "updated_at": "2026-08-24T15:10:14.437969+00:00",
   "status": "success",
-  "started_at": "2026-08-24T14:21:52.446935+00:00",
-  "finished_at": "2026-08-24T14:24:47.291873+00:00",
-  "posts_scanned": 165,
+  "started_at": "2026-08-24T15:07:14.668094+00:00",
+  "finished_at": "2026-08-24T15:10:14.436751+00:00",
+  "posts_scanned": 156,
   "posts_with_history": 51,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 254,
+  "minutes_since_last_notification": 299,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 7,
-    "いいねが少なすぎる": 82,
+    "いいねが少なすぎる": 75,
+    "初回観測かつ平均速度が低い": 3,
     "古すぎる": 13
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5209,
-    "posts": 2533,
-    "oldest": "2026-08-23T15:01:23.135575+00:00"
+    "total": 5253,
+    "posts": 2588,
+    "oldest": "2026-08-23T15:13:36.020871+00:00"
   },
   "top5": [
     {
-      "author": "bokumono_PR",
-      "score": 44.6,
-      "likes": 11562,
-      "likes_per_min": 163.1,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 67.7,
-      "text": "「牧場物語」シリーズ最新作\n　開発中の映像を先行公開\n\n続報にご期待ください！\n\n#牧場物語30th #牧場物語ルンファ",
-      "url": "https://x.com/bokumono_PR/status/2091877449764372630"
-    },
-    {
-      "author": "PacificleagueTV",
-      "score": 42.9,
-      "likes": 2242,
-      "likes_per_min": 41.14669890111865,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 54.5,
-      "text": "【お知らせ】\nパーソル パ・リーグTVでは、埼玉西武 #栗山巧 選手の引退試合・セレモニーをライブ配信します。\n\n一軍か",
-      "url": "https://x.com/PacificleagueTV/status/2091880784294727770"
-    },
-    {
-      "author": "ado1024imokenp",
-      "score": 40.8,
-      "likes": 2848,
-      "likes_per_min": 102.6751502674528,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 27.7,
-      "text": "モンストロ激かっこよダンスが出来上がりました\nどうせ運動不足の皆さん踊りましょう",
-      "url": "https://x.com/ado1024imokenp/status/2091887515762585950"
-    },
-    {
       "author": "deathdolnote",
-      "score": 40.7,
-      "likes": 804,
-      "likes_per_min": 15.529839587016932,
+      "score": 51.7,
+      "likes": 304,
+      "likes_per_min": 12.438465321445143,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 51.8,
-      "text": "【知名度C+】\n\n中町兄妹\n中町JP \n@demichenakamach\n \n\n備考 : 当時未成年喫煙疑惑",
-      "url": "https://x.com/deathdolnote/status/2091881466846498993"
+      "age_minutes": 24.4,
+      "text": "【知名度D】\n\nグラビアアイドル\n琴雛ひな \n@nya_n319\n \n\n備考 : 未成年飲酒・喫煙・情報漏洩",
+      "url": "https://x.com/deathdolnote/status/2091899781023162860"
     },
     {
-      "author": "RuneFactory_PR",
-      "score": 37.3,
-      "likes": 9755,
-      "likes_per_min": 157.49628805830093,
+      "author": "akagi_wen",
+      "score": 48.9,
+      "likes": 7661,
+      "likes_per_min": 185.39021762514636,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 61.9,
-      "text": "「ルーンファクトリー」シリーズ最新作\n『ルーンファクトリー６』\n開発中の映像を先行公開\n\n続報にご期待ください！\n\n#ル",
-      "url": "https://x.com/RuneFactory_PR/status/2091878908086063141"
+      "age_minutes": 41.3,
+      "text": "【本日の配信連絡】\n23:45スタート！！\n\nタイトル\n【REMATCH】夏はサッカーだろ！with めちゃつえー【にじ",
+      "url": "https://x.com/akagi_wen/status/2091895535041126784"
+    },
+    {
+      "author": "monaki_official",
+      "score": 48.5,
+      "likes": 865,
+      "likes_per_min": 27.209545521273185,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 31.8,
+      "text": "こんばんは〜！おヨネです\n\n本日は「MONAKI 1st Tour 2026 「モナキやで☆しらんけど Supporte",
+      "url": "https://x.com/monaki_official/status/2091897935110066481"
+    },
+    {
+      "author": "the_voca_colle",
+      "score": 47.2,
+      "likes": 1602,
+      "likes_per_min": 63.891781244227154,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 25.1,
+      "text": "||◤リプライでお祝いしよう◢||\n⋱ #ボカコレ2026夏ランキング発表 ⋰\n\n#ボカコレ2026夏TOP100 ラン",
+      "url": "https://x.com/the_voca_colle/status/2091899624563114422"
+    },
+    {
+      "author": "akirosenthal",
+      "score": 46.0,
+      "likes": 435,
+      "likes_per_min": 14.626610795232638,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 29.7,
+      "text": "／\n今日は月曜日ー！\nこのあと23:40からはじまるよ！\n＼\n『 #最近のマイブーム 』 #アキちょこナイパレ\n 第48",
+      "url": "https://x.com/akirosenthal/status/2091898449289736281"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T20:56:13.803360+00:00",
+  "updated_at": "2026-08-24T21:41:51.119900+00:00",
   "status": "success",
-  "started_at": "2026-08-24T20:53:08.181305+00:00",
-  "finished_at": "2026-08-24T20:56:13.802086+00:00",
-  "posts_scanned": 103,
-  "posts_with_history": 79,
+  "started_at": "2026-08-24T21:39:10.478909+00:00",
+  "finished_at": "2026-08-24T21:41:51.119066+00:00",
+  "posts_scanned": 78,
+  "posts_with_history": 34,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 645,
+  "minutes_since_last_notification": 691,
   "reject_reasons": {
-    "いいねが少なすぎる": 18,
-    "古すぎる": 65,
-    "初回観測かつ平均速度が低い": 2
+    "初回観測かつ平均速度が低い": 9,
+    "いいねが少なすぎる": 23,
+    "古すぎる": 19
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4592,
-    "posts": 2427,
-    "oldest": "2026-08-23T20:58:55.690221+00:00"
+    "total": 4424,
+    "posts": 2383,
+    "oldest": "2026-08-23T21:54:39.015148+00:00"
   },
   "top5": [
     {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 39.8,
-      "likes": 5479,
-      "likes_per_min": 86.88,
+      "author": "LPGadvisorJP",
+      "score": 40.0,
+      "likes": 310,
+      "likes_per_min": 6.05,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 61.2,
-      "text": "やっぱ筋トレは目が覚めるな！！\n最高！！！！",
-      "url": "https://x.com/SAK_SAK_SAKUMA/status/2091977605201424432"
+      "age_minutes": 64.9,
+      "text": "戦後最も厳しく複雑な安全保障環境・・・\n\n・ロシアに「誰が行くかい、招かれても行かんわい」\n・さらに「北方領土はロシア領",
+      "url": "https://x.com/LPGadvisorJP/status/2091988149228724265"
+    },
+    {
+      "author": "sanada10ninja",
+      "score": 37.8,
+      "likes": 1652,
+      "likes_per_min": 22.991774225141647,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 71.9,
+      "text": "// 𝐂𝐀𝐒𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN ",
+      "url": "https://x.com/sanada10ninja/status/2091986402774786294"
     },
     {
       "author": "kikiraravivi",
-      "score": 38.7,
-      "likes": 1571,
-      "likes_per_min": 11.94,
-      "acceleration": null,
+      "score": 36.6,
+      "likes": 2479,
+      "likes_per_min": 19.9,
+      "acceleration": 1.67,
       "measured": true,
-      "age_minutes": 114.3,
+      "age_minutes": 159.9,
       "text": " ホロリスみんなから緊急募集\n\nおかゆ先輩とヴィヴィのやーらしなエピソード、切り抜き動画を教えてください\n\n明日21時〜",
       "url": "https://x.com/kikiraravivi/status/2091964237983941005"
     },
     {
-      "author": "AUTOMATONJapan",
-      "score": 32.6,
-      "likes": 1366,
-      "likes_per_min": 9.05,
-      "acceleration": null,
+      "author": "SAK_SAK_SAKUMA",
+      "score": 34.9,
+      "likes": 10691,
+      "likes_per_min": 114.24,
+      "acceleration": 1.31,
       "measured": true,
-      "age_minutes": 155.6,
-      "text": "【ニュース】傑作アクションRPG『天地創造』リマスター版正式発表。スクエニ公認、クインテットの主要スタッフが携わり31年",
-      "url": "https://x.com/AUTOMATONJapan/status/2091953854946721927"
+      "age_minutes": 106.8,
+      "text": "やっぱ筋トレは目が覚めるな！！\n最高！！！！",
+      "url": "https://x.com/SAK_SAK_SAKUMA/status/2091977605201424432"
     },
     {
       "author": "oricon",
-      "score": 30.7,
-      "likes": 1016,
-      "likes_per_min": 8.741307694569294,
+      "score": 34.2,
+      "likes": 2153,
+      "likes_per_min": 24.92,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 116.2,
+      "measured": true,
+      "age_minutes": 161.9,
       "text": "なにわ男子・高橋恭平\nメンズフレグランスブランド「RISING WAVE」\nブランドアンバサダー就任\n⠀\nONとOFF異",
       "url": "https://x.com/oricon/status/2091963755999744484"
-    },
-    {
-      "author": "modelpress",
-      "score": 29.6,
-      "likes": 1014,
-      "likes_per_min": 8.729107207769092,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 116.2,
-      "text": "なにわ男子・高橋恭平\nクールなON＆素顔のOFF異なる表情魅せる\n\nメンズフレグランスブランド\n「RISING WAVE",
-      "url": "https://x.com/modelpress/status/2091963770247811354"
     }
   ]
 }

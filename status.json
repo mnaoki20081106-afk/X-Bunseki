@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T21:41:51.119900+00:00",
+  "updated_at": "2026-08-24T22:13:24.598604+00:00",
   "status": "success",
-  "started_at": "2026-08-24T21:39:10.478909+00:00",
-  "finished_at": "2026-08-24T21:41:51.119066+00:00",
-  "posts_scanned": 78,
-  "posts_with_history": 34,
+  "started_at": "2026-08-24T22:10:33.292295+00:00",
+  "finished_at": "2026-08-24T22:13:24.597345+00:00",
+  "posts_scanned": 98,
+  "posts_with_history": 45,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 691,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 722,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 9,
-    "いいねが少なすぎる": 23,
-    "古すぎる": 19
+    "いいねが少なすぎる": 36,
+    "古すぎる": 20,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4424,
-    "posts": 2383,
-    "oldest": "2026-08-23T21:54:39.015148+00:00"
+    "total": 4310,
+    "posts": 2355,
+    "oldest": "2026-08-23T22:45:59.625547+00:00"
   },
   "top5": [
     {
-      "author": "LPGadvisorJP",
-      "score": 40.0,
-      "likes": 310,
-      "likes_per_min": 6.05,
+      "author": "jtc_ojisan2",
+      "score": 42.9,
+      "likes": 1504,
+      "likes_per_min": 18.280164564807343,
       "acceleration": null,
+      "measured": false,
+      "age_minutes": 82.3,
+      "text": "軍隊では、新兵を教育する際に、まず、自尊心を砕くという。企業でも、やることは大して変わらない。\n\n1/14",
+      "url": "https://x.com/jtc_ojisan2/status/2091991722477990389"
+    },
+    {
+      "author": "LPGadvisorJP",
+      "score": 41.8,
+      "likes": 569,
+      "likes_per_min": 8.21,
+      "acceleration": 1.36,
       "measured": true,
-      "age_minutes": 64.9,
+      "age_minutes": 96.5,
       "text": "戦後最も厳しく複雑な安全保障環境・・・\n\n・ロシアに「誰が行くかい、招かれても行かんわい」\n・さらに「北方領土はロシア領",
       "url": "https://x.com/LPGadvisorJP/status/2091988149228724265"
     },
     {
-      "author": "sanada10ninja",
-      "score": 37.8,
-      "likes": 1652,
-      "likes_per_min": 22.991774225141647,
+      "author": "FITS_fragrance",
+      "score": 41.8,
+      "likes": 1470,
+      "likes_per_min": 20.585841161751596,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 71.9,
-      "text": "// 𝐂𝐀𝐒𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN ",
-      "url": "https://x.com/sanada10ninja/status/2091986402774786294"
+      "age_minutes": 71.4,
+      "text": "#高橋恭平 さんからライジングウェーブブランドアンバサダー就任コメントが届きました\n\n普段からフレグランスにこだわりのあ",
+      "url": "https://x.com/FITS_fragrance/status/2091994456090398859"
     },
     {
-      "author": "kikiraravivi",
-      "score": 36.6,
-      "likes": 2479,
-      "likes_per_min": 19.9,
-      "acceleration": 1.67,
-      "measured": true,
-      "age_minutes": 159.9,
-      "text": " ホロリスみんなから緊急募集\n\nおかゆ先輩とヴィヴィのやーらしなエピソード、切り抜き動画を教えてください\n\n明日21時〜",
-      "url": "https://x.com/kikiraravivi/status/2091964237983941005"
-    },
-    {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 34.9,
-      "likes": 10691,
-      "likes_per_min": 114.24,
-      "acceleration": 1.31,
-      "measured": true,
-      "age_minutes": 106.8,
-      "text": "やっぱ筋トレは目が覚めるな！！\n最高！！！！",
-      "url": "https://x.com/SAK_SAK_SAKUMA/status/2091977605201424432"
-    },
-    {
-      "author": "oricon",
-      "score": 34.2,
-      "likes": 2153,
-      "likes_per_min": 24.92,
+      "author": "kitamuraharuo",
+      "score": 38.5,
+      "likes": 1467,
+      "likes_per_min": 20.7179090717705,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 161.9,
-      "text": "なにわ男子・高橋恭平\nメンズフレグランスブランド「RISING WAVE」\nブランドアンバサダー就任\n⠀\nONとOFF異",
-      "url": "https://x.com/oricon/status/2091963755999744484"
+      "measured": false,
+      "age_minutes": 70.8,
+      "text": "「多文化共生」という名の狂気。\n16世紀前後の日本人は、宗教的侵略とそれに続く武力による侵略を未然に防いだ。\n現代人はそ",
+      "url": "https://x.com/kitamuraharuo/status/2091994606003245160"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 38.4,
+      "likes": 12396,
+      "likes_per_min": 383.6784521509099,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 32.3,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2092004295332024568"
     }
   ]
 }

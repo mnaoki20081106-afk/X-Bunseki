@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-24T11:00:26.020650+00:00",
+  "updated_at": "2026-08-24T11:41:13.316441+00:00",
   "status": "success",
-  "started_at": "2026-08-24T10:57:34.681388+00:00",
-  "finished_at": "2026-08-24T11:00:26.019756+00:00",
-  "posts_scanned": 141,
-  "posts_with_history": 44,
-  "posts_flagged": 0,
+  "started_at": "2026-08-24T11:38:30.925046+00:00",
+  "finished_at": "2026-08-24T11:41:13.315176+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 49,
+  "posts_flagged": 2,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 49,
+  "minutes_since_last_notification": 90,
   "reject_reasons": {
-    "いいねが少なすぎる": 69,
+    "いいねが少なすぎる": 71,
     "初回観測かつ平均速度が低い": 3,
     "古すぎる": 13
   },
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4584,
-    "posts": 2094,
+    "total": 4733,
+    "posts": 2194,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "arimoto_kaori",
-      "score": 49.5,
-      "likes": 2514,
-      "likes_per_min": 35.69,
+      "author": "suisei_hosimati",
+      "score": 59.8,
+      "likes": 2477,
+      "likes_per_min": 138.34112093841205,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 77.2,
-      "text": "今、スーパーの生鮮野菜売り場では中国産の白菜は見かけないけれど、加工品は要注意。外食も。\n\n2006〜08年、週刊誌の編",
-      "url": "https://x.com/arimoto_kaori/status/2091823648969777569"
+      "measured": false,
+      "age_minutes": 17.9,
+      "text": "真夏の怪談配信ありがとうございました！！\nみんなに怖がってもらうために夜なべして動画作りました\nみなさんも背後には気を付",
+      "url": "https://x.com/suisei_hosimati/status/2091848827032698982"
+    },
+    {
+      "author": "wcat_project",
+      "score": 58.6,
+      "likes": 805,
+      "likes_per_min": 22.22425735477989,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 36.2,
+      "text": "◥◣◥◣ コラボ決定 ◢◤◢◤\n8/31 16:00 𝐒𝐓𝐀𝐑𝐓 !\n#白猫プロジェクト × #ホロライブ 第3弾!!!",
+      "url": "https://x.com/wcat_project/status/2091844216204775805"
+    },
+    {
+      "author": "hotoke_imudayo_",
+      "score": 53.8,
+      "likes": 823,
+      "likes_per_min": 32.93534859702388,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 25.0,
+      "text": "いむちむ重大発表　マシュマロもこたえていくよーー！！\n#いむはうすなう",
+      "url": "https://x.com/hotoke_imudayo_/status/2091847045128896967"
     },
     {
       "author": "shimamura_gr",
-      "score": 46.6,
-      "likes": 1237,
-      "likes_per_min": 20.47443175610517,
+      "score": 53.7,
+      "likes": 3331,
+      "likes_per_min": 51.34,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 60.4,
+      "measured": true,
+      "age_minutes": 101.2,
       "text": "9/9（水）よりしまむらパーク（オンラインストア）『鳥羽水族館』のアイテムが受注生産販売スタート！\nラインナップは画像を",
       "url": "https://x.com/shimamura_gr/status/2091827863532278123"
     },
     {
-      "author": "oshidoraEX",
-      "score": 46.1,
-      "likes": 1075,
-      "likes_per_min": 40.59133635005209,
+      "author": "akagi_wen",
+      "score": 51.1,
+      "likes": 11216,
+      "likes_per_min": 159.9885517654638,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 26.5,
-      "text": "【第7話TVerで無料配信中】\n#夏色の雲が恋と嵐をまきおこす\n\n昨日のまったりオフショットが\n大好評ということで…\nま",
-      "url": "https://x.com/oshidoraEX/status/2091836401201684942"
-    },
-    {
-      "author": "noesukiofficial",
-      "score": 44.8,
-      "likes": 1722,
-      "likes_per_min": 46.04259547030432,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 37.4,
-      "text": "イチオシ動画です！\n\n音楽番組で披露したリムレスメガネ着用でのアクロバット。よくよく考えてみたら、なんで落ちなかったのだ",
-      "url": "https://x.com/noesukiofficial/status/2091833656134488108"
-    },
-    {
-      "author": "momosuzunene",
-      "score": 44.5,
-      "likes": 876,
-      "likes_per_min": 20.90684614605382,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 41.9,
-      "text": "#フロライフ癒しの湯巡り旅~ひとめぐり~開催中\n\nタオル、アクリルスタンド、缶バッジなどなど、かわいいグッズが登場\n\n詳",
-      "url": "https://x.com/momosuzunene/status/2091832523483697384"
+      "age_minutes": 70.1,
+      "text": "【YouTubeショート動画投稿】\nタイトル\n【#KARAAGEDANCE コラボ(渋谷お出かけ)】〜↑↑-KARAAG",
+      "url": "https://x.com/akagi_wen/status/2091835688782385426"
     }
   ]
 }

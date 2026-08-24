@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T08:11:19.105598+00:00",
+  "updated_at": "2026-08-24T09:11:52.574920+00:00",
   "status": "success",
-  "started_at": "2026-08-24T08:08:15.671396+00:00",
-  "finished_at": "2026-08-24T08:11:19.104394+00:00",
-  "posts_scanned": 162,
-  "posts_with_history": 77,
+  "started_at": "2026-08-24T09:08:49.693570+00:00",
+  "finished_at": "2026-08-24T09:11:52.573970+00:00",
+  "posts_scanned": 153,
+  "posts_with_history": 48,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 51,
+  "minutes_since_last_notification": 111,
   "reject_reasons": {
-    "いいねが少なすぎる": 64,
-    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 52,
+    "初回観測かつ平均速度が低い": 8,
     "古すぎる": 35
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4142,
-    "posts": 1783,
+    "total": 4295,
+    "posts": 1888,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "nico_nico_news",
-      "score": 54.9,
-      "likes": 836,
-      "likes_per_min": 13.5,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 74.7,
-      "text": "白菜をホルムアルデヒドに浸して出荷、当局が緊急調査に乗り出す―中国\n\n\nhttps://\nnews.nicovideo.",
-      "url": "https://x.com/nico_nico_news/status/2091781723352936488"
-    },
-    {
-      "author": "Blue_ArchiveJP",
-      "score": 53.2,
-      "likes": 3518,
-      "likes_per_min": 334.46839623525875,
+      "author": "Tr0uT_2434",
+      "score": 52.2,
+      "likes": 1072,
+      "likes_per_min": 106.21590380933183,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.5,
-      "text": "【メインストーリー追加・予告】\nオデュッセイア海洋高等学校は、荒波を生き抜く術として規律を重んじる。\nあらゆる問題は「禁",
-      "url": "https://x.com/Blue_ArchiveJP/status/2091797861801550032"
+      "age_minutes": 10.1,
+      "text": "#一旦ステイtonight /不破湊先輩 踊らせていただきまして 【渚トラウト/にじさんじ】 \nhttps://\nyou",
+      "url": "https://x.com/Tr0uT_2434/status/2091813206780252237"
     },
     {
-      "author": "USSS_info",
-      "score": 42.6,
-      "likes": 2924,
-      "likes_per_min": 259.1084445876033,
+      "author": "kazamairohach",
+      "score": 51.3,
+      "likes": 2148,
+      "likes_per_min": 64.6157861801426,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.3,
-      "text": "昨日、夏ツアーのファイナル公演を迎えました！たくさんの応援をいただき、ありがとうございました！\n\n本日の『浦島坂田船のげ",
-      "url": "https://x.com/USSS_info/status/2091797667781472453"
+      "age_minutes": 33.2,
+      "text": "本日22時配信\n\n#あずいろ JSP3\n\nhttps://\nyoutube.com/live/SwqyIG9MH\nL8?",
+      "url": "https://x.com/kazamairohach/status/2091807384398352774"
     },
     {
-      "author": "AZKAIsHomeVideo",
-      "score": 42.1,
-      "likes": 862,
-      "likes_per_min": 12.426446178417736,
+      "author": "hololivetv",
+      "score": 48.1,
+      "likes": 472,
+      "likes_per_min": 39.855942553333215,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 69.4,
-      "text": "このツイートのリプ欄は何を言っても叩かれないらしいです！\n普段は言えないけど内心思ってることを教えてください\n\n※動画内",
-      "url": "https://x.com/AZKAIsHomeVideo/status/2091783049558344078"
+      "age_minutes": 11.8,
+      "text": "／ \nhololive Splash T-Party!\n店頭販売グッズの事後通販が決定\n事後通販限定グッズも登場\n＼ \n",
+      "url": "https://x.com/hololivetv/status/2091812768429330455"
     },
     {
-      "author": "yuki_sakuna",
-      "score": 40.0,
-      "likes": 2698,
-      "likes_per_min": 56.958063302220445,
+      "author": "illmaill",
+      "score": 47.8,
+      "likes": 1955,
+      "likes_per_min": 31.125955298256834,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.4,
-      "text": "＼このあと１８時から／    \n\n重大告知あり！\n３０曲歌うまで告知できない歌枠耐久\n\n持ってくれ、わたしの身体ー・・・",
-      "url": "https://x.com/yuki_sakuna/status/2091788587348218045"
+      "age_minutes": 62.8,
+      "text": "【Shorts,TikTok投稿】\n\nこの度は誠に申し訳ございませんでした。\n\n▼ TikTok\n\nhttps://\nv",
+      "url": "https://x.com/illmaill/status/2091799941610098928"
+    },
+    {
+      "author": "deathdolnote",
+      "score": 47.0,
+      "likes": 222,
+      "likes_per_min": 12.937577713428695,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 17.2,
+      "text": "19歳 未成年喫煙♡ すき…？",
+      "url": "https://x.com/deathdolnote/status/2091811428592447496"
     }
   ]
 }

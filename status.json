@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T13:28:15.791408+00:00",
+  "updated_at": "2026-08-24T14:24:47.292912+00:00",
   "status": "success",
-  "started_at": "2026-08-24T13:25:23.120986+00:00",
-  "finished_at": "2026-08-24T13:28:15.790508+00:00",
-  "posts_scanned": 168,
-  "posts_with_history": 40,
-  "posts_flagged": 1,
+  "started_at": "2026-08-24T14:21:52.446935+00:00",
+  "finished_at": "2026-08-24T14:24:47.291873+00:00",
+  "posts_scanned": 165,
+  "posts_with_history": 51,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 197,
+  "minutes_since_last_notification": 254,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 85,
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 82,
     "古すぎる": 13
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5044,
-    "posts": 2419,
+    "total": 5209,
+    "posts": 2533,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "emiru_cs0422",
-      "score": 59.3,
-      "likes": 1185,
-      "likes_per_min": 87.26295971240977,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.6,
-      "text": "結成した時に8人で決めた\n最初の目標が武道館！\n私がアイドルになった時に\n初めてできた夢も武道館でした！\n明日は夢が叶う",
-      "url": "https://x.com/emiru_cs0422/status/2091876854600986801"
-    },
-    {
-      "author": "kitamuraharuo",
-      "score": 50.0,
-      "likes": 7480,
-      "likes_per_min": 91.07,
+      "author": "bokumono_PR",
+      "score": 44.6,
+      "likes": 11562,
+      "likes_per_min": 163.1,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 104.6,
-      "text": "離婚情報を市町村から入管当局に自動的に通知し、永住権を取り消すシステムを作るべきです。\nこの点を法務委員会で質疑したが、",
-      "url": "https://x.com/kitamuraharuo/status/2091853943857086568"
+      "age_minutes": 67.7,
+      "text": "「牧場物語」シリーズ最新作\n　開発中の映像を先行公開\n\n続報にご期待ください！\n\n#牧場物語30th #牧場物語ルンファ",
+      "url": "https://x.com/bokumono_PR/status/2091877449764372630"
     },
     {
-      "author": "sir_goalous",
-      "score": 48.8,
-      "likes": 579,
-      "likes_per_min": 39.66755573831101,
+      "author": "PacificleagueTV",
+      "score": 42.9,
+      "likes": 2242,
+      "likes_per_min": 41.14669890111865,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.6,
-      "text": "【重大報告】\n11月22日（日）\n「声福大作戦～GOALOUS Chu-ning Fever～」\n開催決定！\n\n本日の生",
-      "url": "https://x.com/sir_goalous/status/2091876598651949435"
+      "age_minutes": 54.5,
+      "text": "【お知らせ】\nパーソル パ・リーグTVでは、埼玉西武 #栗山巧 選手の引退試合・セレモニーをライブ配信します。\n\n一軍か",
+      "url": "https://x.com/PacificleagueTV/status/2091880784294727770"
     },
     {
-      "author": "wcat_project",
-      "score": 47.4,
-      "likes": 3499,
-      "likes_per_min": 25.17,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 143.3,
-      "text": "◥◣◥◣ コラボ決定 ◢◤◢◤\n8/31 16:00 𝐒𝐓𝐀𝐑𝐓 !\n#白猫プロジェクト × #ホロライブ 第3弾!!!",
-      "url": "https://x.com/wcat_project/status/2091844216204775805"
-    },
-    {
-      "author": "kenshin_0708_k",
-      "score": 44.3,
-      "likes": 1115,
-      "likes_per_min": 102.64220206401654,
+      "author": "ado1024imokenp",
+      "score": 40.8,
+      "likes": 2848,
+      "likes_per_min": 102.6751502674528,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.9,
-      "text": "配信ありがとうございました。\n\nこう見えてファンネームの集計を待ってます。\nみなさん、たくさんありがとうございます\n\n#",
-      "url": "https://x.com/kenshin_0708_k/status/2091877537945354389"
+      "age_minutes": 27.7,
+      "text": "モンストロ激かっこよダンスが出来上がりました\nどうせ運動不足の皆さん踊りましょう",
+      "url": "https://x.com/ado1024imokenp/status/2091887515762585950"
+    },
+    {
+      "author": "deathdolnote",
+      "score": 40.7,
+      "likes": 804,
+      "likes_per_min": 15.529839587016932,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 51.8,
+      "text": "【知名度C+】\n\n中町兄妹\n中町JP \n@demichenakamach\n \n\n備考 : 当時未成年喫煙疑惑",
+      "url": "https://x.com/deathdolnote/status/2091881466846498993"
+    },
+    {
+      "author": "RuneFactory_PR",
+      "score": 37.3,
+      "likes": 9755,
+      "likes_per_min": 157.49628805830093,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 61.9,
+      "text": "「ルーンファクトリー」シリーズ最新作\n『ルーンファクトリー６』\n開発中の映像を先行公開\n\n続報にご期待ください！\n\n#ル",
+      "url": "https://x.com/RuneFactory_PR/status/2091878908086063141"
     }
   ]
 }

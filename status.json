@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T11:41:13.316441+00:00",
+  "updated_at": "2026-08-24T12:20:47.857469+00:00",
   "status": "success",
-  "started_at": "2026-08-24T11:38:30.925046+00:00",
-  "finished_at": "2026-08-24T11:41:13.315176+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 49,
-  "posts_flagged": 2,
+  "started_at": "2026-08-24T12:17:59.560110+00:00",
+  "finished_at": "2026-08-24T12:20:47.856464+00:00",
+  "posts_scanned": 143,
+  "posts_with_history": 46,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 90,
+  "minutes_since_last_notification": 130,
   "reject_reasons": {
-    "いいねが少なすぎる": 71,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 13
+    "いいねが少なすぎる": 61,
+    "初回観測かつ平均速度が低い": 1,
+    "古すぎる": 12
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4733,
-    "posts": 2194,
+    "total": 4876,
+    "posts": 2291,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "suisei_hosimati",
-      "score": 59.8,
-      "likes": 2477,
-      "likes_per_min": 138.34112093841205,
+      "author": "Kanae_2434",
+      "score": 51.6,
+      "likes": 3059,
+      "likes_per_min": 155.56255382689818,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.9,
-      "text": "真夏の怪談配信ありがとうございました！！\nみんなに怖がってもらうために夜なべして動画作りました\nみなさんも背後には気を付",
-      "url": "https://x.com/suisei_hosimati/status/2091848827032698982"
+      "age_minutes": 19.7,
+      "text": "Y4T4×EXゲマズで15人あもんぐあす！  | Among Us【にじさんじ/叶】 \nhttps://\nyoutube",
+      "url": "https://x.com/Kanae_2434/status/2091858343292027326"
     },
     {
-      "author": "wcat_project",
-      "score": 58.6,
-      "likes": 805,
-      "likes_per_min": 22.22425735477989,
+      "author": "H_KAGAMI2434",
+      "score": 49.8,
+      "likes": 1703,
+      "likes_per_min": 340.6,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.2,
-      "text": "◥◣◥◣ コラボ決定 ◢◤◢◤\n8/31 16:00 𝐒𝐓𝐀𝐑𝐓 !\n#白猫プロジェクト × #ホロライブ 第3弾!!!",
-      "url": "https://x.com/wcat_project/status/2091844216204775805"
+      "age_minutes": 4.4,
+      "text": "結論としては雑談枠です。\n22時30分より！\n【雑談】　ダイレクト　加賀美　【にじさんじ/加賀美ハヤト】 \nhttps:",
+      "url": "https://x.com/H_KAGAMI2434/status/2091862180190892415"
     },
     {
       "author": "hotoke_imudayo_",
-      "score": 53.8,
-      "likes": 823,
-      "likes_per_min": 32.93534859702388,
+      "score": 48.5,
+      "likes": 1173,
+      "likes_per_min": 8.84,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 25.0,
+      "measured": true,
+      "age_minutes": 64.6,
       "text": "いむちむ重大発表　マシュマロもこたえていくよーー！！\n#いむはうすなう",
       "url": "https://x.com/hotoke_imudayo_/status/2091847045128896967"
     },
     {
-      "author": "shimamura_gr",
-      "score": 53.7,
-      "likes": 3331,
-      "likes_per_min": 51.34,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 101.2,
-      "text": "9/9（水）よりしまむらパーク（オンラインストア）『鳥羽水族館』のアイテムが受注生産販売スタート！\nラインナップは画像を",
-      "url": "https://x.com/shimamura_gr/status/2091827863532278123"
-    },
-    {
-      "author": "akagi_wen",
-      "score": 51.1,
-      "likes": 11216,
-      "likes_per_min": 159.9885517654638,
+      "author": "Kaida_Haru",
+      "score": 46.3,
+      "likes": 1437,
+      "likes_per_min": 69.87900897787223,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.1,
-      "text": "【YouTubeショート動画投稿】\nタイトル\n【#KARAAGEDANCE コラボ(渋谷お出かけ)】〜↑↑-KARAAG",
-      "url": "https://x.com/akagi_wen/status/2091835688782385426"
+      "age_minutes": 20.6,
+      "text": "【ELDEN RING】なんだこのデカい樹は・・・ #25【甲斐田晴/にじさんじ】 \nhttps://\nyoutube.",
+      "url": "https://x.com/Kaida_Haru/status/2091858115117629820"
+    },
+    {
+      "author": "mayuhappy831",
+      "score": 45.7,
+      "likes": 697,
+      "likes_per_min": 13.95,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 75.8,
+      "text": "ウイグルの綿の時点でユニクロに見切りつけてたけど、今度はヒジャブ。\n\n極めつけに会長は日本人差別発言\n\nもう二度とユニク",
+      "url": "https://x.com/mayuhappy831/status/2091844219342295341"
     }
   ]
 }

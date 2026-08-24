@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T20:16:27.703916+00:00",
+  "updated_at": "2026-08-24T20:56:13.803360+00:00",
   "status": "success",
-  "started_at": "2026-08-24T20:13:02.208477+00:00",
-  "finished_at": "2026-08-24T20:16:27.702876+00:00",
-  "posts_scanned": 138,
-  "posts_with_history": 120,
+  "started_at": "2026-08-24T20:53:08.181305+00:00",
+  "finished_at": "2026-08-24T20:56:13.802086+00:00",
+  "posts_scanned": 103,
+  "posts_with_history": 79,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 605,
+  "minutes_since_last_notification": 645,
   "reject_reasons": {
-    "いいねが少なすぎる": 19,
-    "古すぎる": 88,
+    "いいねが少なすぎる": 18,
+    "古すぎる": 65,
     "初回観測かつ平均速度が低い": 2
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4627,
-    "posts": 2425,
-    "oldest": "2026-08-23T20:38:19.154282+00:00"
+    "total": 4592,
+    "posts": 2427,
+    "oldest": "2026-08-23T20:58:55.690221+00:00"
   },
   "top5": [
     {
-      "author": "kikiraravivi",
-      "score": 41.1,
-      "likes": 1096,
-      "likes_per_min": 14.702581354342742,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 74.5,
-      "text": " ホロリスみんなから緊急募集\n\nおかゆ先輩とヴィヴィのやーらしなエピソード、切り抜き動画を教えてください\n\n明日21時〜",
-      "url": "https://x.com/kikiraravivi/status/2091964237983941005"
-    },
-    {
       "author": "SAK_SAK_SAKUMA",
-      "score": 36.3,
-      "likes": 2024,
-      "likes_per_min": 94.45556019663042,
+      "score": 39.8,
+      "likes": 5479,
+      "likes_per_min": 86.88,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 21.4,
+      "measured": true,
+      "age_minutes": 61.2,
       "text": "やっぱ筋トレは目が覚めるな！！\n最高！！！！",
       "url": "https://x.com/SAK_SAK_SAKUMA/status/2091977605201424432"
     },
     {
-      "author": "AUTOMATONJapan",
-      "score": 34.1,
-      "likes": 1006,
-      "likes_per_min": 8.68778721454264,
+      "author": "kikiraravivi",
+      "score": 38.7,
+      "likes": 1571,
+      "likes_per_min": 11.94,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 115.8,
+      "measured": true,
+      "age_minutes": 114.3,
+      "text": " ホロリスみんなから緊急募集\n\nおかゆ先輩とヴィヴィのやーらしなエピソード、切り抜き動画を教えてください\n\n明日21時〜",
+      "url": "https://x.com/kikiraravivi/status/2091964237983941005"
+    },
+    {
+      "author": "AUTOMATONJapan",
+      "score": 32.6,
+      "likes": 1366,
+      "likes_per_min": 9.05,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 155.6,
       "text": "【ニュース】傑作アクションRPG『天地創造』リマスター版正式発表。スクエニ公認、クインテットの主要スタッフが携わり31年",
       "url": "https://x.com/AUTOMATONJapan/status/2091953854946721927"
     },
     {
-      "author": "famitsu",
-      "score": 30.8,
-      "likes": 1672,
-      "likes_per_min": 16.05,
+      "author": "oricon",
+      "score": 30.7,
+      "likes": 1016,
+      "likes_per_min": 8.741307694569294,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 108.8,
-      "text": "『天地創造』（Terranigma）が復活！ 2027年にSwitch2/Switch/PS5/PS4/Xbox Ser",
-      "url": "https://x.com/famitsu/status/2091955614054511023"
+      "measured": false,
+      "age_minutes": 116.2,
+      "text": "なにわ男子・高橋恭平\nメンズフレグランスブランド「RISING WAVE」\nブランドアンバサダー就任\n⠀\nONとOFF異",
+      "url": "https://x.com/oricon/status/2091963755999744484"
     },
     {
-      "author": "gyakutarou",
-      "score": 26.9,
-      "likes": 1997,
-      "likes_per_min": 13.29,
-      "acceleration": 1.17,
-      "measured": true,
-      "age_minutes": 121.2,
-      "text": "『山田裕貴のオールナイトニッポン』\nお邪魔しました、ありがとうございました。\n文句はある、本当にたくさんある。\nしかし結",
-      "url": "https://x.com/gyakutarou/status/2091952486957654402"
+      "author": "modelpress",
+      "score": 29.6,
+      "likes": 1014,
+      "likes_per_min": 8.729107207769092,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 116.2,
+      "text": "なにわ男子・高橋恭平\nクールなON＆素顔のOFF異なる表情魅せる\n\nメンズフレグランスブランド\n「RISING WAVE",
+      "url": "https://x.com/modelpress/status/2091963770247811354"
     }
   ]
 }

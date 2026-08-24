@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T02:16:28.055566+00:00",
+  "updated_at": "2026-08-24T03:30:32.777182+00:00",
   "status": "success",
-  "started_at": "2026-08-24T02:13:47.348264+00:00",
-  "finished_at": "2026-08-24T02:16:28.054490+00:00",
-  "posts_scanned": 142,
-  "posts_with_history": 34,
+  "started_at": "2026-08-24T03:27:45.706683+00:00",
+  "finished_at": "2026-08-24T03:30:32.775739+00:00",
+  "posts_scanned": 141,
+  "posts_with_history": 22,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 95,
+  "minutes_since_last_notification": 169,
   "reject_reasons": {
-    "いいねが少なすぎる": 59,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 13
+    "いいねが少なすぎる": 67,
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 14
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3276,
-    "posts": 1195,
+    "total": 3417,
+    "posts": 1314,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 52.8,
-      "likes": 11752,
-      "likes_per_min": 303.6635678739542,
+      "author": "Sankei_news",
+      "score": 53.8,
+      "likes": 529,
+      "likes_per_min": 8.404017336980454,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 38.7,
-      "text": "そして公式鍵アカなるものがアルバムに向けて爆誕しました。\nなんやねん公式鍵アカて。\n\n従来の解禁の仕方を好む方、なるべく",
-      "url": "https://x.com/MotokiOhmoriMGA/status/2091701466327318588"
+      "age_minutes": 62.9,
+      "text": "将門塚によじ登り動画配信、男性が謝罪　不敬避けてきた場所…国税庁HPも「たたりの噂」\n\nhttps://\nsankei.",
+      "url": "https://x.com/Sankei_news/status/2091714010177851678"
     },
     {
-      "author": "AORINGOHUZIN",
-      "score": 50.5,
-      "likes": 24959,
-      "likes_per_min": 132.32,
+      "author": "rei_Toya_rei",
+      "score": 51.2,
+      "likes": 9397,
+      "likes_per_min": 308.1379009785438,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 30.5,
+      "text": "剣持がこどもに大人気のビスケットになりましたよ\nそんなにじさんじ缶バッジビスケット第3弾が本日発売しましたよ\nよろしくお",
+      "url": "https://x.com/rei_Toya_rei/status/2091722173706645778"
+    },
+    {
+      "author": "illmaaaaaa",
+      "score": 51.1,
+      "likes": 1626,
+      "likes_per_min": 32.58772626767152,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 49.9,
+      "text": "おはようおまえら！！！\n\n今週配信少ないし今日（クソ）ショート投稿するわ。",
+      "url": "https://x.com/illmaaaaaa/status/2091717294422688141"
+    },
+    {
+      "author": "sxzBST",
+      "score": 47.4,
+      "likes": 620,
+      "likes_per_min": 7.83,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 136.4,
-      "text": "【オリジナルフルアルバム 全収録楽曲を解禁】\n⁡\n9月30日(水)発売、6枚目となる\nオリジナルフルアルバム全収録楽曲を",
-      "url": "https://x.com/AORINGOHUZIN/status/2091676878549684541"
+      "age_minutes": 92.4,
+      "text": "高市政権のせいで離婚したと主張する女性\n\n離婚の決定打\n「憲法9条改正というか改悪というか改憲ですよね、夫は必要だって言",
+      "url": "https://x.com/sxzBST/status/2091706601136922747"
     },
     {
-      "author": "Snapdragon_JPN",
-      "score": 43.4,
-      "likes": 1322,
-      "likes_per_min": 9.687295926751686,
+      "author": "hezuruy",
+      "score": 46.6,
+      "likes": 1428,
+      "likes_per_min": 51.55963149339655,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 136.5,
-      "text": "／\n好評につき第二弾CP実施中\n＼\n\nSnapdragon® 8 Elite Gen 5 for Galaxy搭載 「G",
-      "url": "https://x.com/Snapdragon_JPN/status/2091676863550624202"
-    },
-    {
-      "author": "AORINGOHUZIN",
-      "score": 43.1,
-      "likes": 10805,
-      "likes_per_min": 61.02,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 131.4,
-      "text": "【オリジナルフルアルバム 公式非公開アカウント開設】\n⁡\n\nhttps://\nx.com/mga6thalkagiaka",
-      "url": "https://x.com/AORINGOHUZIN/status/2091678141618282520"
-    },
-    {
-      "author": "ichijouririka",
-      "score": 41.6,
-      "likes": 1081,
-      "likes_per_min": 15.118727979206152,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 71.5,
-      "text": "おはよ〜〜\n今日は公式配信に出るよ〜〜\n眠いよ〜〜",
-      "url": "https://x.com/ichijouririka/status/2091693212805283961"
+      "age_minutes": 27.7,
+      "text": "お願いしたいことが。\n外国人が日本の良さを発信する投稿をよく見かけます。\nそれよりも日本でのルールを徹底した内容を発信で",
+      "url": "https://x.com/hezuruy/status/2091722880233169324"
     }
   ]
 }

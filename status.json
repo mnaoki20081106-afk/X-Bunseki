@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T17:55:51.653846+00:00",
+  "updated_at": "2026-08-24T18:57:39.317241+00:00",
   "status": "success",
-  "started_at": "2026-08-24T17:52:43.079362+00:00",
-  "finished_at": "2026-08-24T17:55:51.652755+00:00",
-  "posts_scanned": 168,
-  "posts_with_history": 130,
+  "started_at": "2026-08-24T18:54:18.671303+00:00",
+  "finished_at": "2026-08-24T18:57:39.316149+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 114,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 465,
+  "minutes_since_last_notification": 527,
   "reject_reasons": {
-    "いいねが少なすぎる": 49,
-    "古すぎる": 55,
-    "初回観測かつ平均速度が低い": 3
+    "いいねが少なすぎる": 30,
+    "古すぎる": 74,
+    "初回観測かつ平均速度が低い": 10
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5005,
-    "posts": 2504,
-    "oldest": "2026-08-23T18:04:22.595349+00:00"
+    "total": 4817,
+    "posts": 2465,
+    "oldest": "2026-08-23T19:14:19.655137+00:00"
   },
   "top5": [
     {
-      "author": "k_meruto",
-      "score": 42.2,
-      "likes": 535,
-      "likes_per_min": 17.105084977121653,
+      "author": "gyakutarou",
+      "score": 37.0,
+      "likes": 1033,
+      "likes_per_min": 24.350812438042812,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 31.3,
+      "age_minutes": 42.4,
+      "text": "『山田裕貴のオールナイトニッポン』\nお邪魔しました、ありがとうございました。\n文句はある、本当にたくさんある。\nしかし結",
+      "url": "https://x.com/gyakutarou/status/2091952486957654402"
+    },
+    {
+      "author": "k_meruto",
+      "score": 34.6,
+      "likes": 922,
+      "likes_per_min": 6.26,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 93.1,
       "text": "\\ 13:00～!! /\n\n今日はしちゃとお出かけなのですが、\n準備するところから一緒にやるーーーーー♡\n\n【 GRWM",
       "url": "https://x.com/k_meruto/status/2091939743554810230"
     },
     {
-      "author": "89c3eb_y",
-      "score": 36.0,
-      "likes": 199,
-      "likes_per_min": 3.92,
+      "author": "_nyanponya",
+      "score": 29.0,
+      "likes": 1330,
+      "likes_per_min": 8.344404349357308,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 68.3,
-      "text": "緋八に1人だけイナイレやってると言われた星導のゴール\n本人が1番ぽかんとしててバカ笑っちゃった\n\n【REMATCH】ME",
-      "url": "https://x.com/89c3eb_y/status/2091930414323839201"
+      "measured": false,
+      "age_minutes": 159.4,
+      "text": "応援してた人から公の場で「出禁でしょ？」って笑いながら言われて、翌日してもない事で出禁になって、事務所は何も対応、返答し",
+      "url": "https://x.com/_nyanponya/status/2091923052783427700"
     },
     {
       "author": "Nito_Yusha",
-      "score": 34.0,
-      "likes": 224,
-      "likes_per_min": 14.034575741609876,
+      "score": 27.0,
+      "likes": 450,
+      "likes_per_min": 3.66,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.0,
+      "measured": true,
+      "age_minutes": 77.8,
       "text": "vtuberの申し合わせ\n一、男は台所に立たない\n一、vtuberがルールであり法律\n一、vtuberの機嫌を損ねるべか",
       "url": "https://x.com/Nito_Yusha/status/2091943597792985342"
     },
     {
-      "author": "yamadayuki__ANN",
-      "score": 32.4,
-      "likes": 924,
-      "likes_per_min": 27.07513878891223,
+      "author": "lugilandia",
+      "score": 26.7,
+      "likes": 929,
+      "likes_per_min": 21.84772871300389,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 34.1,
-      "text": "渋谷さんのマネージャーさんに土下座して出演時間を延長してもらってます\n#山田裕貴ANN",
-      "url": "https://x.com/yamadayuki__ANN/status/2091939026819588466"
-    },
-    {
-      "author": "ado1024imokenp",
-      "score": 32.2,
-      "likes": 6022,
-      "likes_per_min": 41.63,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 104.1,
-      "text": "ジャンガリアン飼っていた頃本人の目を盗んでおやつのドライフルーツを食べたことがあります。甘くておいしかったなー",
-      "url": "https://x.com/ado1024imokenp/status/2091921410956624099"
+      "age_minutes": 42.5,
+      "text": "何してる？",
+      "url": "https://x.com/lugilandia/status/2091952462072836595"
     }
   ]
 }

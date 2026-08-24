@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-24T22:51:14.345811+00:00",
+  "updated_at": "2026-08-24T23:13:18.112288+00:00",
   "status": "success",
-  "started_at": "2026-08-24T22:48:33.349156+00:00",
-  "finished_at": "2026-08-24T22:51:14.339777+00:00",
-  "posts_scanned": 112,
-  "posts_with_history": 37,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-24T23:10:38.298097+00:00",
+  "finished_at": "2026-08-24T23:13:18.111399+00:00",
+  "posts_scanned": 108,
+  "posts_with_history": 63,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 760,
+  "minutes_since_last_notification": 782,
   "reject_reasons": {
-    "いいねが少なすぎる": 59,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 60,
+    "古すぎる": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4286,
-    "posts": 2387,
-    "oldest": "2026-08-23T23:05:09.682248+00:00"
+    "total": 4257,
+    "posts": 2374,
+    "oldest": "2026-08-23T23:34:04.270878+00:00"
   },
   "top5": [
     {
-      "author": "PapalotX",
-      "score": 51.3,
-      "likes": 639,
-      "likes_per_min": 13.45,
-      "acceleration": 3.93,
-      "measured": true,
-      "age_minutes": 86.4,
-      "text": "【発覚】立憲・中村至孝氏、YouTubeにAIで作成した高市総理への中傷動画を投稿していた",
-      "url": "https://x.com/PapalotX/status/2092000202089722274"
-    },
-    {
-      "author": "jr_official_X",
-      "score": 48.6,
-      "likes": 3126,
-      "likes_per_min": 76.20280097143653,
+      "author": "livedoornews",
+      "score": 57.3,
+      "likes": 197,
+      "likes_per_min": 5.72,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 41.0,
-      "text": "【 Drama 】\n\n#岩本照 さん主演ドラマ\n『 真田十勇士 SHADOWS OF THE TEN NINJA 』に ",
-      "url": "https://x.com/jr_official_X/status/2092011623078932752"
+      "measured": true,
+      "age_minutes": 43.3,
+      "text": "【発覚】白菜の鮮度維持に発がん性物質、当局が調査 中国河北省\n\nhttps://\nnews.livedoor.com/a",
+      "url": "https://x.com/livedoornews/status/2092016601390620797"
     },
     {
       "author": "NetflixJP",
-      "score": 46.2,
-      "likes": 1036,
-      "likes_per_min": 20.22563920275048,
+      "score": 54.7,
+      "likes": 1685,
+      "likes_per_min": 29.44,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 51.2,
+      "measured": true,
+      "age_minutes": 73.3,
       "text": "【10月22日世界独占配信決定！】\nNetflixシリーズ\n『俺のこと、なんか言ってた？』\nティーザー予告公開\n\n◆主演",
       "url": "https://x.com/NetflixJP/status/2092009055384457376"
     },
     {
-      "author": "nino_honmono",
-      "score": 45.2,
-      "likes": 21439,
-      "likes_per_min": 239.04,
-      "acceleration": null,
+      "author": "PapalotX",
+      "score": 50.0,
+      "likes": 1167,
+      "likes_per_min": 23.95,
+      "acceleration": 1.78,
       "measured": true,
-      "age_minutes": 70.1,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2092004295332024568"
+      "age_minutes": 108.5,
+      "text": "【発覚】立憲・中村至孝氏、YouTubeにAIで作成した高市総理への中傷動画を投稿していた",
+      "url": "https://x.com/PapalotX/status/2092000202089722274"
     },
     {
-      "author": "emiru_cs0422",
-      "score": 44.5,
-      "likes": 1363,
-      "likes_per_min": 31.126694431310174,
+      "author": "akindosushiroco",
+      "score": 45.2,
+      "likes": 866,
+      "likes_per_min": 65.26932126132601,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 43.8,
-      "text": "おはよ！今日から2日間武道館\nみんなのTop of the topは\nきゅーすとでいたいし\n私たちのTop of the",
-      "url": "https://x.com/emiru_cs0422/status/2092010927466172559"
+      "age_minutes": 13.3,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2092024154744668464"
+    },
+    {
+      "author": "Shikinagi_2434",
+      "score": 45.2,
+      "likes": 2022,
+      "likes_per_min": 19.87,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 73.3,
+      "text": "踊ってみたショート投稿しました。\n\n#四季凪の８月まいにちShort \n\n『INTERNET OVERDOSE』踊ってみ",
+      "url": "https://x.com/Shikinagi_2434/status/2092009059218338142"
     }
   ]
 }

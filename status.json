@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T09:11:52.574920+00:00",
+  "updated_at": "2026-08-24T10:11:01.222845+00:00",
   "status": "success",
-  "started_at": "2026-08-24T09:08:49.693570+00:00",
-  "finished_at": "2026-08-24T09:11:52.573970+00:00",
-  "posts_scanned": 153,
-  "posts_with_history": 48,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 111,
+  "started_at": "2026-08-24T10:08:06.836854+00:00",
+  "finished_at": "2026-08-24T10:11:01.221684+00:00",
+  "posts_scanned": 148,
+  "posts_with_history": 39,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 171,
   "reject_reasons": {
-    "いいねが少なすぎる": 52,
-    "初回観測かつ平均速度が低い": 8,
-    "古すぎる": 35
+    "いいねが少なすぎる": 70,
+    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4295,
-    "posts": 1888,
+    "total": 4443,
+    "posts": 1997,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "Tr0uT_2434",
-      "score": 52.2,
-      "likes": 1072,
-      "likes_per_min": 106.21590380933183,
+      "author": "isakiriona",
+      "score": 55.6,
+      "likes": 499,
+      "likes_per_min": 36.1040299928453,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.1,
-      "text": "#一旦ステイtonight /不破湊先輩 踊らせていただきまして 【渚トラウト/にじさんじ】 \nhttps://\nyou",
-      "url": "https://x.com/Tr0uT_2434/status/2091813206780252237"
+      "age_minutes": 13.8,
+      "text": "１９：００〜\n\n／\nホロライブ甲子園\n初のリセマラ配信！\n＼\n\n絶対引くぞ！虹色\n\n\nhttps://\nyoutube.",
+      "url": "https://x.com/isakiriona/status/2091827149720498534"
     },
     {
-      "author": "kazamairohach",
-      "score": 51.3,
-      "likes": 2148,
-      "likes_per_min": 64.6157861801426,
+      "author": "Show_SylveSTAR",
+      "score": 51.6,
+      "likes": 4377,
+      "likes_per_min": 397.7461921481594,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.2,
-      "text": "本日22時配信\n\n#あずいろ JSP3\n\nhttps://\nyoutube.com/live/SwqyIG9MH\nL8?",
-      "url": "https://x.com/kazamairohach/status/2091807384398352774"
+      "age_minutes": 11.0,
+      "text": "／\nMECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\nJR推し旅で俺たちの限定動画が見られるチャンスです。\n10月",
+      "url": "https://x.com/Show_SylveSTAR/status/2091827860759863711"
     },
     {
-      "author": "hololivetv",
-      "score": 48.1,
-      "likes": 472,
-      "likes_per_min": 39.855942553333215,
+      "author": "Kagetsu_2434",
+      "score": 50.5,
+      "likes": 2578,
+      "likes_per_min": 234.97945842326968,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.8,
-      "text": "／ \nhololive Splash T-Party!\n店頭販売グッズの事後通販が決定\n事後通販限定グッズも登場\n＼ \n",
-      "url": "https://x.com/hololivetv/status/2091812768429330455"
+      "age_minutes": 11.0,
+      "text": "／\n MECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\n10月1日より東海道新幹線にて限定動画が見れるので\nライブ",
+      "url": "https://x.com/Kagetsu_2434/status/2091827865759498285"
     },
     {
-      "author": "illmaill",
-      "score": 47.8,
-      "likes": 1955,
-      "likes_per_min": 31.125955298256834,
+      "author": "akagi_wen",
+      "score": 50.1,
+      "likes": 2563,
+      "likes_per_min": 233.25788921547453,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 62.8,
-      "text": "【Shorts,TikTok投稿】\n\nこの度は誠に申し訳ございませんでした。\n\n▼ TikTok\n\nhttps://\nv",
-      "url": "https://x.com/illmaill/status/2091799941610098928"
+      "age_minutes": 11.0,
+      "text": "／\nMECHATU-A ×#推し旅\n推し旅 開催決定\n＼\n\n10/1より東海道新幹線でJR推し旅が開催されます！\n限定動",
+      "url": "https://x.com/akagi_wen/status/2091827861652971586"
     },
     {
-      "author": "deathdolnote",
-      "score": 47.0,
-      "likes": 222,
-      "likes_per_min": 12.937577713428695,
+      "author": "livedoornews",
+      "score": 47.7,
+      "likes": 4271,
+      "likes_per_min": 60.44,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.2,
-      "text": "19歳 未成年喫煙♡ すき…？",
-      "url": "https://x.com/deathdolnote/status/2091811428592447496"
+      "measured": true,
+      "age_minutes": 101.0,
+      "text": "【】Prime Video、「劇場版『チェンソーマン レゼ篇』」配信を予告か 公式Xに「全部教えてあげる」と匂わせ投稿\n",
+      "url": "https://x.com/livedoornews/status/2091805210179969205"
     }
   ]
 }

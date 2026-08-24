@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-23T23:55:26.464415+00:00",
+  "updated_at": "2026-08-24T00:41:15.699070+00:00",
   "status": "success",
-  "started_at": "2026-08-23T23:52:25.656231+00:00",
-  "finished_at": "2026-08-23T23:55:26.463064+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 111,
-  "posts_flagged": 1,
-  "notified_count": 0,
-  "notified_last_24h": 2,
-  "minutes_since_last_notification": 50,
+  "started_at": "2026-08-24T00:38:23.198457+00:00",
+  "finished_at": "2026-08-24T00:41:15.697995+00:00",
+  "posts_scanned": 156,
+  "posts_with_history": 79,
+  "posts_flagged": 2,
+  "notified_count": 1,
+  "notified_last_24h": 3,
+  "minutes_since_last_notification": 96,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "古すぎる": 37,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 71,
+    "初回観測かつ平均速度が低い": 4,
+    "古すぎる": 25
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 2978,
-    "posts": 1010,
+    "total": 3134,
+    "posts": 1087,
     "oldest": "2026-08-23T15:01:23.135575+00:00"
   },
   "top5": [
     {
-      "author": "gongcha_japan",
-      "score": 57.5,
-      "likes": 1268,
-      "likes_per_min": 20.979198289368085,
+      "author": "AORINGOHUZIN",
+      "score": 58.1,
+      "likes": 12359,
+      "likes_per_min": 299.99593686221607,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 60.4,
+      "age_minutes": 41.2,
+      "text": "【オリジナルフルアルバム 全収録楽曲を解禁】\n⁡\n9月30日(水)発売、6枚目となる\nオリジナルフルアルバム全収録楽曲を",
+      "url": "https://x.com/AORINGOHUZIN/status/2091676878549684541"
+    },
+    {
+      "author": "gongcha_japan",
+      "score": 55.2,
+      "likes": 2335,
+      "likes_per_min": 23.29,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 106.2,
       "text": "＼次の新作は…／\n\nジューシーな秋、はじまる。\n\n『秋はジューシー〇峰』\n\n【 #ゴンチャの新作 】を付けて、\nこの投稿",
       "url": "https://x.com/gongcha_japan/status/2091660505194660277"
     },
     {
-      "author": "akindosushiroco",
+      "author": "AORINGOHUZIN",
       "score": 52.3,
-      "likes": 2896,
-      "likes_per_min": 40.95,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 55.4,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2091661771618844781"
-    },
-    {
-      "author": "yamazakipan_cp",
-      "score": 51.1,
-      "likes": 1465,
-      "likes_per_min": 26.432518059551864,
+      "likes": 4995,
+      "likes_per_min": 138.12119825722405,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.4,
-      "text": "／\n東京ディズニーリゾート®ご招待＆\n東京ディズニーシー®25周年\nスペシャルグッズプレゼント\n＼\n\n25周年グッズとパ",
-      "url": "https://x.com/yamazakipan_cp/status/2091661768976118264"
+      "age_minutes": 36.2,
+      "text": "【オリジナルフルアルバム 公式非公開アカウント開設】\n⁡\n\nhttps://\nx.com/mga6thalkagiaka",
+      "url": "https://x.com/AORINGOHUZIN/status/2091678141618282520"
     },
     {
-      "author": "sakatansab",
-      "score": 46.7,
-      "likes": 1849,
-      "likes_per_min": 38.89,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 29.0,
-      "text": "イケメン回転寿司？？？ドスケベターンテーブル？？？？",
-      "url": "https://x.com/sakatansab/status/2091668406210826551"
-    },
-    {
-      "author": "famima_now",
-      "score": 46.7,
-      "likes": 810,
-      "likes_per_min": 14.61456629913789,
+      "author": "ookamimio",
+      "score": 51.6,
+      "likes": 1641,
+      "likes_per_min": 29.828829795939196,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.4,
-      "text": "#熱闘おむすび選手権 開幕\n\n応募方法\n\n@famima_now\nをフォロー\nこの投稿をリポスト\n応募は画像から！",
-      "url": "https://x.com/famima_now/status/2091661769844658187"
+      "age_minutes": 55.0,
+      "text": "#朝ミオ おつみぉーん\n\n来週の #朝ミオおたより テーマは、\n#食欲の秋と言えば です\n\n#朝ミオニュース では、ホロ",
+      "url": "https://x.com/ookamimio/status/2091673398196031654"
+    },
+    {
+      "author": "tsuisoku777",
+      "score": 50.7,
+      "likes": 321,
+      "likes_per_min": 5.52,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 65.3,
+      "text": "蓮舫氏、クールジャパン機構を批判 → 民主党政権時代に始まった構想で、記憶力ないの？と批判殺到",
+      "url": "https://x.com/tsuisoku777/status/2091670805927387172"
     }
   ]
 }

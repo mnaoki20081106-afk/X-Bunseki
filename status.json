@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T19:41:19.503662+00:00",
+  "updated_at": "2026-08-24T20:16:27.703916+00:00",
   "status": "success",
-  "started_at": "2026-08-24T19:37:59.798551+00:00",
-  "finished_at": "2026-08-24T19:41:19.502552+00:00",
-  "posts_scanned": 139,
-  "posts_with_history": 115,
+  "started_at": "2026-08-24T20:13:02.208477+00:00",
+  "finished_at": "2026-08-24T20:16:27.702876+00:00",
+  "posts_scanned": 138,
+  "posts_with_history": 120,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 570,
+  "minutes_since_last_notification": 605,
   "reject_reasons": {
     "いいねが少なすぎる": 19,
-    "古すぎる": 84,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 88,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4803,
-    "posts": 2454,
-    "oldest": "2026-08-23T19:44:40.157301+00:00"
+    "total": 4627,
+    "posts": 2425,
+    "oldest": "2026-08-23T20:38:19.154282+00:00"
   },
   "top5": [
     {
-      "author": "gyakutarou",
-      "score": 31.7,
-      "likes": 1530,
-      "likes_per_min": 11.38,
+      "author": "kikiraravivi",
+      "score": 41.1,
+      "likes": 1096,
+      "likes_per_min": 14.702581354342742,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 86.1,
-      "text": "『山田裕貴のオールナイトニッポン』\nお邪魔しました、ありがとうございました。\n文句はある、本当にたくさんある。\nしかし結",
-      "url": "https://x.com/gyakutarou/status/2091952486957654402"
+      "measured": false,
+      "age_minutes": 74.5,
+      "text": " ホロリスみんなから緊急募集\n\nおかゆ先輩とヴィヴィのやーらしなエピソード、切り抜き動画を教えてください\n\n明日21時〜",
+      "url": "https://x.com/kikiraravivi/status/2091964237983941005"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 36.3,
+      "likes": 2024,
+      "likes_per_min": 94.45556019663042,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 21.4,
+      "text": "やっぱ筋トレは目が覚めるな！！\n最高！！！！",
+      "url": "https://x.com/SAK_SAK_SAKUMA/status/2091977605201424432"
+    },
+    {
+      "author": "AUTOMATONJapan",
+      "score": 34.1,
+      "likes": 1006,
+      "likes_per_min": 8.68778721454264,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 115.8,
+      "text": "【ニュース】傑作アクションRPG『天地創造』リマスター版正式発表。スクエニ公認、クインテットの主要スタッフが携わり31年",
+      "url": "https://x.com/AUTOMATONJapan/status/2091953854946721927"
     },
     {
       "author": "famitsu",
-      "score": 30.1,
-      "likes": 1108,
-      "likes_per_min": 15.039080322703905,
+      "score": 30.8,
+      "likes": 1672,
+      "likes_per_min": 16.05,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.7,
+      "measured": true,
+      "age_minutes": 108.8,
       "text": "『天地創造』（Terranigma）が復活！ 2027年にSwitch2/Switch/PS5/PS4/Xbox Ser",
       "url": "https://x.com/famitsu/status/2091955614054511023"
     },
     {
-      "author": "mizumiya_su",
-      "score": 28.4,
-      "likes": 452,
-      "likes_per_min": 2.47,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 97.2,
-      "text": "【ぷちホロの村 - 剣とお店と田舎暮らし】実装きた〜！初ぷちホロ楽しむ【水宮枢／ホロライブDEV_IS】 \nhttps:",
-      "url": "https://x.com/mizumiya_su/status/2091949685233901800"
-    },
-    {
-      "author": "zdD3zIdfcUj5Oo9",
-      "score": 27.3,
-      "likes": 3281,
-      "likes_per_min": 41.56,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 137.1,
-      "text": "#LimbusCompany\nあっついファウスト",
-      "url": "https://x.com/zdD3zIdfcUj5Oo9/status/2091939656120340916"
-    },
-    {
-      "author": "SeaChickenVRC",
+      "author": "gyakutarou",
       "score": 26.9,
-      "likes": 2405,
-      "likes_per_min": 36.64,
-      "acceleration": null,
+      "likes": 1997,
+      "likes_per_min": 13.29,
+      "acceleration": 1.17,
       "measured": true,
-      "age_minutes": 130.1,
-      "text": "流行ってるやつ",
-      "url": "https://x.com/SeaChickenVRC/status/2091941412787155039"
+      "age_minutes": 121.2,
+      "text": "『山田裕貴のオールナイトニッポン』\nお邪魔しました、ありがとうございました。\n文句はある、本当にたくさんある。\nしかし結",
+      "url": "https://x.com/gyakutarou/status/2091952486957654402"
     }
   ]
 }

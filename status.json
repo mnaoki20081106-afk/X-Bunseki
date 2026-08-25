@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T08:57:52.321817+00:00",
+  "updated_at": "2026-08-25T09:50:10.597602+00:00",
   "status": "success",
-  "started_at": "2026-08-25T08:55:09.506952+00:00",
-  "finished_at": "2026-08-25T08:57:52.320543+00:00",
-  "posts_scanned": 140,
-  "posts_with_history": 46,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 154,
+  "started_at": "2026-08-25T09:47:23.479216+00:00",
+  "finished_at": "2026-08-25T09:50:10.596568+00:00",
+  "posts_scanned": 139,
+  "posts_with_history": 35,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 207,
   "reject_reasons": {
-    "いいねが少なすぎる": 63,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 12
+    "いいねが少なすぎる": 71,
+    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4534,
-    "posts": 2482,
-    "oldest": "2026-08-24T09:11:52.559033+00:00"
+    "total": 4520,
+    "posts": 2472,
+    "oldest": "2026-08-24T10:11:00.270306+00:00"
   },
   "top5": [
     {
-      "author": "mtor_info",
-      "score": 53.4,
-      "likes": 1519,
-      "likes_per_min": 46.209927436293384,
+      "author": "Lapiskawaii",
+      "score": 59.3,
+      "likes": 1415,
+      "likes_per_min": 52.67201875424638,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 32.9,
-      "text": "【めておら動画投稿のお知らせ】\n\nめておら学園で一緒に給食の時間\n\n１万円分の学校給食を食べきれるまで帰りません！\n\nh",
-      "url": "https://x.com/mtor_info/status/2092166338160873785"
+      "age_minutes": 26.9,
+      "text": "アニメ投稿したよ〜！\n見てみて〜 感想まってる〜\n\nhttps://\nyoutube.com/shorts/96XS72",
+      "url": "https://x.com/Lapiskawaii/status/2092181012587626615"
     },
     {
-      "author": "FightersPR",
-      "score": 49.6,
-      "likes": 973,
-      "likes_per_min": 32.21314814403889,
+      "author": "KNTFR2434",
+      "score": 54.2,
+      "likes": 1663,
+      "likes_per_min": 131.48644106495973,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 30.2,
-      "text": "本日のスタメン！\n\nファイターズトレカで今日のヒーローを予想！\n\nhttps://\nfighters.orical.jp",
-      "url": "https://x.com/FightersPR/status/2092167010671300774"
+      "age_minutes": 12.6,
+      "text": "１９時～\n【 日本事故物件監視協会2 -JSP- 】絶対に３つ貯めないJSP２【にじさんじ/風楽奏斗】 \nhttps:/",
+      "url": "https://x.com/KNTFR2434/status/2092184587980173738"
     },
     {
-      "author": "keibalab",
-      "score": 49.0,
-      "likes": 1337,
-      "likes_per_min": 23.0,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 68.0,
-      "text": "訃報です。昨年の函館記念3着などの実績があるマイネルメモリーは、本日放牧先での調教中に心臓麻痺を発症し亡くなったことが、",
-      "url": "https://x.com/keibalab/status/2092157492323393852"
-    },
-    {
-      "author": "TigersDreamlink",
-      "score": 48.3,
-      "likes": 1149,
-      "likes_per_min": 46.792803816557914,
+      "author": "yukihanalamy",
+      "score": 52.2,
+      "likes": 1039,
+      "likes_per_min": 20.718800007411176,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.6,
-      "text": "【8月25日 D-T 公式戦】\n本日のスタメン発表！\n関西弁応援実況は公式モバイルサイトで！\n\nhttps://\nhan",
-      "url": "https://x.com/TigersDreamlink/status/2092168432397722095"
+      "age_minutes": 50.1,
+      "text": "━*＼ショート動画アップ／*━\n　　　【#めろぞーま】\nみんなもめろぞーま♡してみてね！\n━━━━━━━━━━━━━━\n",
+      "url": "https://x.com/yukihanalamy/status/2092175153207689253"
     },
     {
-      "author": "iD7Mng_Ogami",
-      "score": 47.6,
-      "likes": 838,
-      "likes_per_min": 65.10394201067064,
+      "author": "Infinity_rJP",
+      "score": 50.6,
+      "likes": 1069,
+      "likes_per_min": 103.64192689596811,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.9,
-      "text": "【音楽情報】\nCD4週連続発売企画、第4弾！\nIDOLiSH7『MY LiFE!』の試聴動画を公開いたしました！\n⇒\nh",
-      "url": "https://x.com/iD7Mng_Ogami/status/2092171371220508867"
+      "age_minutes": 10.3,
+      "text": "〖お知らせ〗\n\n／⋰\n EP『#ダンダーラ』【初回限定“超”盤】\n SUPER EIGHTアプリ特典\n 《令和8年8月8",
+      "url": "https://x.com/Infinity_rJP/status/2092185174780125423"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 50.0,
+      "likes": 156,
+      "likes_per_min": 12.966475968778477,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.0,
+      "text": "【知名度S】\n\nTKO\n木下隆行 \n@tkokinosita\n \n\n備考 : 駐車場に座り込んで、タバコの灰を落とすなど",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2092184745497252070"
     }
   ]
 }

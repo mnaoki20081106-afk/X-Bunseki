@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T18:23:11.258741+00:00",
+  "updated_at": "2026-08-25T19:08:49.763431+00:00",
   "status": "success",
-  "started_at": "2026-08-25T18:19:42.196421+00:00",
-  "finished_at": "2026-08-25T18:23:11.257800+00:00",
-  "posts_scanned": 161,
-  "posts_with_history": 138,
-  "posts_flagged": 0,
+  "started_at": "2026-08-25T19:05:22.928717+00:00",
+  "finished_at": "2026-08-25T19:08:49.762224+00:00",
+  "posts_scanned": 158,
+  "posts_with_history": 134,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 403,
+  "minutes_since_last_notification": 448,
   "reject_reasons": {
-    "いいねが少なすぎる": 27,
-    "古すぎる": 75,
-    "初回観測かつ平均速度が低い": 6
+    "いいねが少なすぎる": 19,
+    "古すぎる": 84,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4753,
-    "posts": 2552,
-    "oldest": "2026-08-24T18:57:39.294953+00:00"
+    "total": 4756,
+    "posts": 2531,
+    "oldest": "2026-08-24T19:41:19.483073+00:00"
   },
   "top5": [
     {
-      "author": "Milan_Kestrel",
-      "score": 42.6,
-      "likes": 3552,
-      "likes_per_min": 31.1,
-      "acceleration": 0.73,
+      "author": "Ananta_JP",
+      "score": 68.1,
+      "likes": 2441,
+      "likes_per_min": 64.84138845854152,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 37.6,
+      "text": "『無限大ANANTA』リリース日発表PV丨27年1月15日グローバルリリース",
+      "url": "https://x.com/Ananta_JP/status/2092318891410346444"
+    },
+    {
+      "author": "ROCKMAN_UNITY",
+      "score": 33.6,
+      "likes": 804,
+      "likes_per_min": 22.650625582528754,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 35.5,
+      "text": "『ロックマン: デュアル オーバーライド』最新トレーラー公開！\n\n新システム「オーバーライド」をはじめ、新たなボスロボッ",
+      "url": "https://x.com/ROCKMAN_UNITY/status/2092319432446222743"
+    },
+    {
+      "author": "grgr_donguri",
+      "score": 31.3,
+      "likes": 1676,
+      "likes_per_min": 13.23,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 89.9,
+      "age_minutes": 127.6,
+      "text": "ホラー回収録後\n※捏造",
+      "url": "https://x.com/grgr_donguri/status/2092296254260994098"
+    },
+    {
+      "author": "Milan_Kestrel",
+      "score": 31.3,
+      "likes": 4438,
+      "likes_per_min": 19.41,
+      "acceleration": 0.62,
+      "measured": true,
+      "age_minutes": 135.5,
       "text": "にじさんじばっか追っかけてて、良いかもしれない。条件合う人はきっとみんなのおかげで幸せだよ。\n\n・怪しくない\n・音質がい",
       "url": "https://x.com/Milan_Kestrel/status/2092294258929848770"
     },
     {
-      "author": "senukin69",
-      "score": 36.0,
-      "likes": 4824,
-      "likes_per_min": 78.29,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 90.3,
-      "text": "ぶれいんろっと彼女 - Bureinrotto Kanojo\n\nComing soon~",
-      "url": "https://x.com/senukin69/status/2092294164084052407"
-    },
-    {
-      "author": "akagi_wen",
-      "score": 35.3,
-      "likes": 1583,
-      "likes_per_min": 18.56,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 42.8,
-      "text": "配信ありがとうございます！！\n\nついに僕らはデュオハードコアでエンドラ討伐したぞ完全勝利だ！！",
-      "url": "https://x.com/akagi_wen/status/2092306109021467014"
-    },
-    {
-      "author": "lanlan_sub",
-      "score": 32.2,
-      "likes": 883,
-      "likes_per_min": 11.772709594249768,
+      "author": "uruha_ichinose",
+      "score": 27.5,
+      "likes": 579,
+      "likes_per_min": 11.801303944348867,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 75.0,
-      "text": "おまえらからおすすめされたやつだからちゃんとつこてる\n\nらん、えらい。",
-      "url": "https://x.com/lanlan_sub/status/2092298002937565456"
-    },
-    {
-      "author": "grgr_donguri",
-      "score": 31.8,
-      "likes": 1072,
-      "likes_per_min": 13.080512786313303,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 82.0,
-      "text": "ホラー回収録後\n※捏造",
-      "url": "https://x.com/grgr_donguri/status/2092296254260994098"
+      "age_minutes": 49.1,
+      "text": "話しすぎた、今日は風呂キャンして即寝する。\nメン限同時視聴ありがとう〜おやすみ",
+      "url": "https://x.com/uruha_ichinose/status/2092316016932200467"
     }
   ]
 }

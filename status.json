@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T16:53:36.413066+00:00",
+  "updated_at": "2026-08-25T17:23:48.598375+00:00",
   "status": "success",
-  "started_at": "2026-08-25T16:50:38.265711+00:00",
-  "finished_at": "2026-08-25T16:53:36.412006+00:00",
-  "posts_scanned": 176,
-  "posts_with_history": 98,
-  "posts_flagged": 1,
+  "started_at": "2026-08-25T17:20:47.345523+00:00",
+  "finished_at": "2026-08-25T17:23:48.597282+00:00",
+  "posts_scanned": 157,
+  "posts_with_history": 118,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 313,
+  "minutes_since_last_notification": 343,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 9,
-    "いいねが少なすぎる": 61,
-    "古すぎる": 37
+    "いいねが少なすぎる": 53,
+    "古すぎる": 37,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4739,
-    "posts": 2600,
-    "oldest": "2026-08-24T16:53:54.201909+00:00"
+    "total": 4586,
+    "posts": 2558,
+    "oldest": "2026-08-24T17:55:51.634933+00:00"
   },
   "top5": [
     {
-      "author": "Tr0uT_2434",
-      "score": 58.7,
-      "likes": 8582,
-      "likes_per_min": 128.15,
+      "author": "Milan_Kestrel",
+      "score": 49.4,
+      "likes": 1345,
+      "likes_per_min": 44.084409096571015,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 63.8,
-      "text": "やっぱにじさんじばっか追っかけてて、良い。\n条件合う方はお願いだから幸せになってください。\n\n・シェフ\n・酒カス\n・何と",
-      "url": "https://x.com/Tr0uT_2434/status/2092278281798336986"
-    },
-    {
-      "author": "KFC_jp",
-      "score": 48.3,
-      "likes": 6423,
-      "likes_per_min": 43.14,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 113.6,
-      "text": "／\nとろ〜〜〜り！\n＼\n\nケンタのとろ～り月見バーガーが本日(8/26)ついに発売\n今年は「たまごが大暴れ」\nたまごを思",
-      "url": "https://x.com/KFC_jp/status/2092265757337923754"
-    },
-    {
-      "author": "nijisanji_app",
-      "score": 44.8,
-      "likes": 2595,
-      "likes_per_min": 29.83,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 64.5,
-      "text": "『にじさんじのB級バラエティ(仮)』第119回、ありがとうございました。 \n写真は収録翌日に別店舗で食べたスタッフのラン",
-      "url": "https://x.com/nijisanji_app/status/2092278093146906705"
+      "measured": false,
+      "age_minutes": 30.5,
+      "text": "にじさんじばっか追っかけてて、良いかもしれない。条件合う人はきっとみんなのおかげで幸せだよ。\n\n・怪しくない\n・音質がい",
+      "url": "https://x.com/Milan_Kestrel/status/2092294258929848770"
     },
     {
       "author": "MotokiOhmoriMGA",
-      "score": 42.4,
-      "likes": 5294,
-      "likes_per_min": 270.932092889005,
+      "score": 45.8,
+      "likes": 7602,
+      "likes_per_min": 76.42,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 19.5,
+      "measured": true,
+      "age_minutes": 49.7,
       "text": "#大森元貴_灰色 \nうお、トレンド1位ありがとう。\nたくさん聴いてね〜",
       "url": "https://x.com/MotokiOhmoriMGA/status/2092289417885167913"
     },
     {
-      "author": "Kanae_2434",
-      "score": 38.4,
-      "likes": 2849,
-      "likes_per_min": 72.91426866207946,
+      "author": "Tr0uT_2434",
+      "score": 44.9,
+      "likes": 10725,
+      "likes_per_min": 70.95,
+      "acceleration": 0.55,
+      "measured": true,
+      "age_minutes": 94.0,
+      "text": "やっぱにじさんじばっか追っかけてて、良い。\n条件合う方はお願いだから幸せになってください。\n\n・シェフ\n・酒カス\n・何と",
+      "url": "https://x.com/Tr0uT_2434/status/2092278281798336986"
+    },
+    {
+      "author": "denfaminicogame",
+      "score": 39.9,
+      "likes": 2441,
+      "likes_per_min": 19.17,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 39.1,
-      "text": "今日のとこはここまで\n横になるます",
-      "url": "https://x.com/Kanae_2434/status/2092284499820425526"
+      "measured": true,
+      "age_minutes": 142.2,
+      "text": "「シャイニングスター」のサビ部分が流れる「魔王魂」のカプセルトイが12月発売へ。動画で聞きなじみのある“あの曲”たちが多",
+      "url": "https://x.com/denfaminicogame/status/2092266141901312250"
+    },
+    {
+      "author": "tikunobo826",
+      "score": 38.9,
+      "likes": 335,
+      "likes_per_min": 4.14,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 79.1,
+      "text": "31歳になりました！\nなんだかんだで実況始めて10年経ってるんだなぁと思うと感慨深いものがあるね。\n\n30過ぎてるんで健",
+      "url": "https://x.com/tikunobo826/status/2092282040075100285"
     }
   ]
 }

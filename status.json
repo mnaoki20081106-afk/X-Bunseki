@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T10:57:47.322646+00:00",
+  "updated_at": "2026-08-25T11:40:27.978716+00:00",
   "status": "success",
-  "started_at": "2026-08-25T10:55:07.640264+00:00",
-  "finished_at": "2026-08-25T10:57:47.321272+00:00",
-  "posts_scanned": 150,
-  "posts_with_history": 61,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 68,
+  "started_at": "2026-08-25T11:37:29.706449+00:00",
+  "finished_at": "2026-08-25T11:40:27.977700+00:00",
+  "posts_scanned": 153,
+  "posts_with_history": 52,
+  "posts_flagged": 2,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 110,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 2,
-    "いいねが少なすぎる": 62,
-    "古すぎる": 13
+    "いいねが少なすぎる": 75,
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4677,
-    "posts": 2534,
-    "oldest": "2026-08-24T11:00:26.009030+00:00"
+    "total": 4689,
+    "posts": 2542,
+    "oldest": "2026-08-24T11:41:13.300967+00:00"
   },
   "top5": [
     {
-      "author": "Lapiskawaii",
-      "score": 54.2,
-      "likes": 2763,
-      "likes_per_min": 19.93,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 94.5,
-      "text": "アニメ投稿したよ〜！\n見てみて〜 感想まってる〜\n\nhttps://\nyoutube.com/shorts/96XS72",
-      "url": "https://x.com/Lapiskawaii/status/2092181012587626615"
-    },
-    {
-      "author": "akagi_wen",
-      "score": 53.6,
-      "likes": 1717,
-      "likes_per_min": 120.02670702583914,
+      "author": "HobbySite",
+      "score": 64.6,
+      "likes": 944,
+      "likes_per_min": 57.2034884545565,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.3,
-      "text": "【YouTubeショート動画投稿】\nタイトル\n【#KARAAGEDANCE （練習 with ME）】〜↑↑-KARAA",
-      "url": "https://x.com/akagi_wen/status/2092201189073203382"
+      "age_minutes": 16.5,
+      "text": "【「最新！ガンプラ情報局」公開延期について】\n\nネットワークトラブルにより、動画のアップロードに遅延が生じております。\n",
+      "url": "https://x.com/HobbySite/status/2092211373820518582"
+    },
+    {
+      "author": "HobbySite",
+      "score": 62.3,
+      "likes": 1449,
+      "likes_per_min": 39.732204684502435,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 36.5,
+      "text": "「最新！ガンプラ情報局」公開延期のお知らせ】\n \n本日20:00より公開を予定しておりました番組の公開を延期させていただ",
+      "url": "https://x.com/HobbySite/status/2092206350768193794"
     },
     {
       "author": "kinnpatuhikaru",
-      "score": 52.4,
-      "likes": 172,
-      "likes_per_min": 19.387236483496757,
+      "score": 51.0,
+      "likes": 450,
+      "likes_per_min": 6.52,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.9,
+      "measured": true,
+      "age_minutes": 51.5,
       "text": "連日炎上してたのにYouTubeのメンシプ会員がなぜか5万人を超えてしまいました \nhttps://\nyoutu.be/",
       "url": "https://x.com/kinnpatuhikaru/status/2092202555321504155"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 51.5,
-      "likes": 1004,
-      "likes_per_min": 13.65,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 57.5,
-      "text": "【知名度S】\n\nTKO\n木下隆行 \n@tkokinosita\n \n\n備考 : セブンイレブンの駐車場に座り込んで、タバコ",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2092190313716859077"
-    },
-    {
-      "author": "imassc_official",
-      "score": 50.9,
-      "likes": 2703,
-      "likes_per_min": 97.38733312394037,
+      "author": "Kitami_Coolguy",
+      "score": 50.7,
+      "likes": 1633,
+      "likes_per_min": 76.41855129700626,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 27.8,
-      "text": "近日登場するアイドルの、私服イラストをご紹介しました！\n\n◆登場アイドル\nP-SSR 【恋まで、あと25メートル】郁田 ",
-      "url": "https://x.com/imassc_official/status/2092197803472928860"
+      "age_minutes": 21.4,
+      "text": "【振り返り】最高の二日間ありがとう！！【北見遊征/にじさんじ】 \nhttps://\nyoutube.com/live/2",
+      "url": "https://x.com/Kitami_Coolguy/status/2092210150702821886"
+    },
+    {
+      "author": "ponpokoka",
+      "score": 47.6,
+      "likes": 949,
+      "likes_per_min": 37.53091149090284,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 25.3,
+      "text": "今週は…！！！ついに決意して溜めていた動画を合宿で編集しております…！！\n\n更新少なくなるけど自分と戦ってるので完成次第",
+      "url": "https://x.com/ponpokoka/status/2092209163749453934"
     }
   ]
 }

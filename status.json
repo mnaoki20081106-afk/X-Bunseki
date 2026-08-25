@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T15:00:13.450170+00:00",
+  "updated_at": "2026-08-25T15:57:43.234503+00:00",
   "status": "success",
-  "started_at": "2026-08-25T14:57:31.779092+00:00",
-  "finished_at": "2026-08-25T15:00:13.449279+00:00",
-  "posts_scanned": 172,
-  "posts_with_history": 62,
-  "posts_flagged": 1,
+  "started_at": "2026-08-25T15:55:00.116403+00:00",
+  "finished_at": "2026-08-25T15:57:43.232909+00:00",
+  "posts_scanned": 159,
+  "posts_with_history": 54,
+  "posts_flagged": 2,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 200,
+  "minutes_since_last_notification": 257,
   "reject_reasons": {
-    "いいねが少なすぎる": 84,
+    "いいねが少なすぎる": 81,
     "初回観測かつ平均速度が低い": 4,
-    "古すぎる": 23
+    "古すぎる": 10
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4722,
-    "posts": 2562,
-    "oldest": "2026-08-24T15:10:14.418849+00:00"
+    "total": 4563,
+    "posts": 2522,
+    "oldest": "2026-08-24T16:53:54.201909+00:00"
   },
   "top5": [
     {
-      "author": "momosuzunene",
-      "score": 55.1,
-      "likes": 1057,
-      "likes_per_min": 39.57728182996245,
+      "author": "yukihanalamy",
+      "score": 58.7,
+      "likes": 3266,
+      "likes_per_min": 55.166433416383626,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 26.7,
-      "text": "ホロライブのメンバーであなたに近いのは『さくらみこ』です。",
-      "url": "https://x.com/momosuzunene/status/2092259077917393218"
+      "age_minutes": 59.2,
+      "text": "ホロライブのメンバーであなたに近いのは『天音かなた』です。",
+      "url": "https://x.com/yukihanalamy/status/2092265371197943910"
     },
     {
-      "author": "korekore_ch",
-      "score": 39.7,
-      "likes": 632,
-      "likes_per_min": 1.51,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 88.7,
-      "text": "キックで緊急生放送開始！まじでやばい重大発表をします…シンジと不倫したみーちゃんと通話！不倫大先輩加藤純一からアドバイス",
-      "url": "https://x.com/korekore_ch/status/2092243487026794618"
-    },
-    {
-      "author": "Taisei_F10",
-      "score": 38.7,
-      "likes": 825,
-      "likes_per_min": 22.546790185337958,
+      "author": "Tr0uT_2434",
+      "score": 58.5,
+      "likes": 1420,
+      "likes_per_min": 179.68616899500222,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.6,
-      "text": "全国ツアー「angel wing」無事に完走ー！\n本当にこの3ヶ月がキラキラの思い出！\nみんなが笑顔になってくれて嬉しい",
-      "url": "https://x.com/Taisei_F10/status/2092256593253630443"
+      "age_minutes": 7.9,
+      "text": "やっぱにじさんじばっか追っかけてて、良い。\n条件合う方はお願いだから幸せになってください。\n\n・シェフ\n・酒カス\n・何と",
+      "url": "https://x.com/Tr0uT_2434/status/2092278281798336986"
     },
     {
-      "author": "HobbySite",
-      "score": 38.3,
-      "likes": 1552,
-      "likes_per_min": 44.39709656833929,
+      "author": "KFC_jp",
+      "score": 52.0,
+      "likes": 4012,
+      "likes_per_min": 69.56903658635808,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.0,
-      "text": "【 #ガンプラ  情報解禁 】\n\n最新！ガンプラ情報局　公開中\n\nhttps://\nyoutube.com/watch?",
-      "url": "https://x.com/HobbySite/status/2092257002844291386"
+      "age_minutes": 57.7,
+      "text": "／\nとろ〜〜〜り！\n＼\n\nケンタのとろ～り月見バーガーが本日(8/26)ついに発売\n今年は「たまごが大暴れ」\nたまごを思",
+      "url": "https://x.com/KFC_jp/status/2092265757337923754"
     },
     {
-      "author": "ayano_cs0526",
-      "score": 38.2,
-      "likes": 1102,
-      "likes_per_min": 40.70339670350282,
+      "author": "nijisanji_app",
+      "score": 46.5,
+      "likes": 928,
+      "likes_per_min": 107.25016633310413,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 27.1,
-      "text": "日本武道館 DAY1 \nありがとうございました！\n\n本当にずっとずっと夢みたいでした；；\n\n360度きゅーてすと満員の空",
-      "url": "https://x.com/ayano_cs0526/status/2092258987983118569"
+      "age_minutes": 8.7,
+      "text": "『にじさんじのB級バラエティ(仮)』第119回、ありがとうございました。 \n写真は収録翌日に別店舗で食べたスタッフのラン",
+      "url": "https://x.com/nijisanji_app/status/2092278093146906705"
+    },
+    {
+      "author": "Saotome_Berry",
+      "score": 41.7,
+      "likes": 1760,
+      "likes_per_min": 41.376715642119485,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 42.5,
+      "text": "【雑談】登録者３０万人達成を見届けようの回【早乙女ベリー/にじさんじ】 \nhttps://\nyoutube.com/li",
+      "url": "https://x.com/Saotome_Berry/status/2092269564570816903"
     }
   ]
 }

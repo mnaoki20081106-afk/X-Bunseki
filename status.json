@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T21:17:52.925891+00:00",
+  "updated_at": "2026-08-25T21:52:08.839936+00:00",
   "status": "success",
-  "started_at": "2026-08-25T21:14:28.491784+00:00",
-  "finished_at": "2026-08-25T21:17:52.924488+00:00",
-  "posts_scanned": 144,
-  "posts_with_history": 119,
+  "started_at": "2026-08-25T21:48:59.694350+00:00",
+  "finished_at": "2026-08-25T21:52:08.838575+00:00",
+  "posts_scanned": 110,
+  "posts_with_history": 65,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 577,
+  "minutes_since_last_notification": 612,
   "reject_reasons": {
-    "古すぎる": 104,
-    "いいねが少なすぎる": 14,
-    "初回観測かつ平均速度が低い": 4
+    "いいねが少なすぎる": 28,
+    "古すぎる": 53,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4949,
-    "posts": 2484,
-    "oldest": "2026-08-24T21:41:51.107052+00:00"
+    "total": 4981,
+    "posts": 2496,
+    "oldest": "2026-08-24T22:13:24.498229+00:00"
   },
   "top5": [
     {
-      "author": "famitsu",
-      "score": 41.2,
-      "likes": 2341,
-      "likes_per_min": 28.6,
+      "author": "nino_honmono",
+      "score": 38.9,
+      "likes": 4440,
+      "likes_per_min": 575.5984053037539,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 147.3,
-      "text": "『原神』『スタレ』のHoYoverse新作『NODUS FALL』が発表\n\nhttps://\nfamitsu.com/a",
-      "url": "https://x.com/famitsu/status/2092323760493986238"
+      "measured": false,
+      "age_minutes": 7.7,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2092367525099323640"
     },
     {
-      "author": "Ananta_JP",
-      "score": 40.7,
-      "likes": 3672,
-      "likes_per_min": 23.3,
-      "acceleration": 1.15,
+      "author": "kyumei24_fujitv",
+      "score": 38.2,
+      "likes": 3189,
+      "likes_per_min": 29.818495751403404,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 106.9,
+      "text": "⧉公式SNS開設⧉\n￣￣￣￣￣￣￣￣\n公式SNSではドラマの情報や、\n撮影の裏側などを投稿していきます!!\nぜひフォロー",
+      "url": "https://x.com/kyumei24_fujitv/status/2092342548253622279"
+    },
+    {
+      "author": "oricon",
+      "score": 35.7,
+      "likes": 4216,
+      "likes_per_min": 86.5,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 146.0,
-      "text": "『#無限大ANANTA』\n全プラットフォームで事前登録受付開始！\n\nお待たせしました！\nこれまでの熱い応援と、長らくお待",
-      "url": "https://x.com/Ananta_JP/status/2092324099188269373"
+      "age_minutes": 112.1,
+      "text": "『救命病棟24時』13年ぶりに“初の月9枠”で復活\n\n主演は江口洋介＆松嶋菜々子\n16年ぶりの再共演に2人からコメントも",
+      "url": "https://x.com/oricon/status/2092341245125542258"
     },
     {
       "author": "FFVIIR_CLOUD",
-      "score": 38.3,
-      "likes": 4736,
-      "likes_per_min": 48.54,
-      "acceleration": 0.82,
+      "score": 35.4,
+      "likes": 6548,
+      "likes_per_min": 52.88,
+      "acceleration": 1.09,
       "measured": true,
-      "age_minutes": 77.9,
+      "age_minutes": 112.1,
       "text": "『FINAL FANTASY VII REVELATION』\n2ndトレーラー公開\n\n世界滅亡の脅威に呼応して、星の守護",
       "url": "https://x.com/FFVIIR_CLOUD/status/2092341242575094027"
     },
     {
-      "author": "Kanae_2434",
-      "score": 33.4,
-      "likes": 4381,
-      "likes_per_min": 41.8,
-      "acceleration": 1.23,
+      "author": "karaage_rutsubo",
+      "score": 33.6,
+      "likes": 1773,
+      "likes_per_min": 27.0,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 106.8,
-      "text": "おきたあ",
-      "url": "https://x.com/Kanae_2434/status/2092333971019620751"
-    },
-    {
-      "author": "denfaminicogame",
-      "score": 32.9,
-      "likes": 3231,
-      "likes_per_min": 12.9,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 165.2,
-      "text": "HoYoverseの新作アクションゲーム『Nodusfall』が発表。ダークファンタジー調の重厚な世界観\n\nhttps:",
-      "url": "https://x.com/denfaminicogame/status/2092319264376225953"
+      "age_minutes": 68.7,
+      "text": "少数精鋭とかいう聞こえのいい人材こき使いシステム #現場猫",
+      "url": "https://x.com/karaage_rutsubo/status/2092352177583112702"
     }
   ]
 }

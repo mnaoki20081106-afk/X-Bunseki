@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T02:49:41.824273+00:00",
+  "updated_at": "2026-08-25T03:38:47.406065+00:00",
   "status": "success",
-  "started_at": "2026-08-25T02:47:01.323702+00:00",
-  "finished_at": "2026-08-25T02:49:41.823198+00:00",
-  "posts_scanned": 140,
-  "posts_with_history": 28,
+  "started_at": "2026-08-25T03:35:44.193976+00:00",
+  "finished_at": "2026-08-25T03:38:47.404904+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 41,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 164,
+  "minutes_since_last_notification": 213,
   "reject_reasons": {
-    "いいねが少なすぎる": 83,
+    "いいねが少なすぎる": 70,
     "初回観測かつ平均速度が低い": 6,
-    "古すぎる": 2
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4234,
-    "posts": 2359,
-    "oldest": "2026-08-24T03:30:32.765174+00:00"
+    "total": 4242,
+    "posts": 2366,
+    "oldest": "2026-08-24T04:27:57.158296+00:00"
   },
   "top5": [
     {
-      "author": "airi_fact_555",
-      "score": 51.5,
-      "likes": 640,
-      "likes_per_min": 9.89,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 78.8,
-      "text": "【クルド】まるで私たち日本人のせいだと言いたいかのような発言「ならば全員帰さないと危険だ」となるのが常識ね\n\n埼玉・川口",
-      "url": "https://x.com/airi_fact_555/status/2092062117088366664"
-    },
-    {
-      "author": "jyu_ta_ro",
-      "score": 46.5,
-      "likes": 9253,
-      "likes_per_min": 195.01816620668856,
+      "author": "Aegroupofficial",
+      "score": 52.0,
+      "likes": 8674,
+      "likes_per_min": 232.71430398403345,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.4,
-      "text": "『LABO AROOM』\n\nブランドアンバサダーを山中が務めます\n\n\nhttps://\nlaboaroom.jp\n\nメロ",
-      "url": "https://x.com/jyu_ta_ro/status/2092070015415832693"
+      "age_minutes": 37.3,
+      "text": "［］\n\n15th Anniversary テレビ朝日\nドリームフェスティバル2026\n\nAぇ! groupの出演が決定\n",
+      "url": "https://x.com/Aegroupofficial/status/2092084931816210851"
     },
     {
-      "author": "tbsTV_MGA",
-      "score": 43.6,
-      "likes": 1128,
-      "likes_per_min": 37.983811346747046,
+      "author": "official__INI",
+      "score": 49.5,
+      "likes": 2713,
+      "likes_per_min": 76.22962601447638,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.7,
-      "text": "次回のお知らせ\n8/31(月)よる8時55分から\n\n極上の歌コラボSP\n\n#AI #郷ひろみ\n#森山直太朗 #Super",
-      "url": "https://x.com/tbsTV_MGA/status/2092074482995175465"
+      "age_minutes": 35.6,
+      "text": "[]\n\n「15th Anniversary テレビ朝日ドリームフェスティバル2026」\n#INI の出演が決定！\n\n11",
+      "url": "https://x.com/official__INI/status/2092085354618900849"
     },
     {
-      "author": "ICEx_official",
-      "score": 40.3,
-      "likes": 915,
-      "likes_per_min": 46.454100386417394,
+      "author": "VOLTACTION_info",
+      "score": 48.9,
+      "likes": 5322,
+      "likes_per_min": 149.6772567978852,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.7,
-      "text": "#こんにちICEx\n#阿久根温世\n#COOLer\n\n『ICEx Fourth Concert Tour 2026\n\"FR",
-      "url": "https://x.com/ICEx_official/status/2092077001217540226"
+      "age_minutes": 35.6,
+      "text": "ヴォルタShorts 投稿 \n\n／\n　『#アイスブレイクブレイカー / 甲斐田晴』に合わせて\n　ヴォルタが組体操してみた",
+      "url": "https://x.com/VOLTACTION_info/status/2092085365331099657"
     },
     {
-      "author": "etoile_griotte",
-      "score": 40.3,
-      "likes": 1026,
-      "likes_per_min": 12.130499310974042,
+      "author": "denfaminicogame",
+      "score": 48.3,
+      "likes": 1175,
+      "likes_per_min": 41.07457501704473,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 84.6,
-      "text": "𝑬𝑽𝑬𝑵𝑻 𝑵𝑬𝑾𝑺\n\n𝑯𝒆𝒍𝒍𝒐 𝑰𝑺𝑬𝑻𝑨𝑵 𝑯𝒆𝒍𝒍𝒐 𝑺𝒂𝒏𝒓𝒊𝒐 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔\n\n9/8(tue)-1",
-      "url": "https://x.com/etoile_griotte/status/2092060673853493756"
+      "age_minutes": 28.6,
+      "text": "『地球防衛軍6.2』発表！敵の数が“約2倍”になる「地球防衛軍6」のパワーアップ版\n\nhttps://\nnews.den",
+      "url": "https://x.com/denfaminicogame/status/2092087113374429687"
+    },
+    {
+      "author": "iD7Mng_Ogami",
+      "score": 48.0,
+      "likes": 2614,
+      "likes_per_min": 78.60116594094931,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 33.3,
+      "text": "【#ŹOOĻ記念日2026】\n8/31のŹOOĻの記念日まで、あと6日！\n\n2026年グループ記念日企画\n『Dance ",
+      "url": "https://x.com/iD7Mng_Ogami/status/2092085944078000431"
     }
   ]
 }

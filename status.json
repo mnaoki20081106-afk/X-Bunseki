@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-25T05:43:59.679344+00:00",
+  "updated_at": "2026-08-25T06:23:27.014325+00:00",
   "status": "success",
-  "started_at": "2026-08-25T05:40:58.832479+00:00",
-  "finished_at": "2026-08-25T05:43:59.678204+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 82,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 41,
+  "started_at": "2026-08-25T06:20:25.257004+00:00",
+  "finished_at": "2026-08-25T06:23:27.013088+00:00",
+  "posts_scanned": 145,
+  "posts_with_history": 70,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 80,
   "reject_reasons": {
-    "いいねが少なすぎる": 61,
-    "古すぎる": 22
+    "いいねが少なすぎる": 60,
+    "古すぎる": 23,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4426,
-    "posts": 2446,
-    "oldest": "2026-08-24T06:09:23.439565+00:00"
+    "total": 4428,
+    "posts": 2416,
+    "oldest": "2026-08-24T07:20:25.725583+00:00"
   },
   "top5": [
     {
-      "author": "miosugita",
-      "score": 47.9,
-      "likes": 1534,
-      "likes_per_min": 27.65,
+      "author": "Kanae_2434",
+      "score": 56.8,
+      "likes": 2526,
+      "likes_per_min": 107.82185877380533,
       "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.4,
+      "text": "／\n#にじさんじ束縛ボイス Vol.2 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで\nStore｜\nhttp",
+      "url": "https://x.com/Kanae_2434/status/2092129849012113606"
+    },
+    {
+      "author": "Kanae_2434",
+      "score": 54.7,
+      "likes": 2586,
+      "likes_per_min": 110.46153190179659,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.4,
+      "text": "／\n#にじさんじがんばらないボイス 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで！\nStore｜\nhttps",
+      "url": "https://x.com/Kanae_2434/status/2092129853923328230"
+    },
+    {
+      "author": "chiikawa_kouhou",
+      "score": 51.8,
+      "likes": 1133,
+      "likes_per_min": 48.39633242255821,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.4,
+      "text": "＼新商品／\n\nファッションセンターしまむらから\n「ちいかわ」のアイテムが登場\n\n8月26日(水)より\n全国のファッション",
+      "url": "https://x.com/chiikawa_kouhou/status/2092129853202186643"
+    },
+    {
+      "author": "ensemble_stars",
+      "score": 49.4,
+      "likes": 3007,
+      "likes_per_min": 130.39406861101727,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.1,
+      "text": "(1/2)【お知らせ】\n\n15時より『Bright me up!!スカウト Stage:斑』を開始しました！\n新カードの",
+      "url": "https://x.com/ensemble_stars/status/2092129941777449098"
+    },
+    {
+      "author": "miosugita",
+      "score": 47.7,
+      "likes": 3180,
+      "likes_per_min": 41.74,
+      "acceleration": 1.51,
       "measured": true,
-      "age_minutes": 77.4,
+      "age_minutes": 116.8,
       "text": "改めて、このAIで作った架空の“立憲民主党”候補者のニュースを見ているのですが、これがもし、自民党や維新の関係者がやって",
       "url": "https://x.com/miosugita/status/2092106352529461689"
-    },
-    {
-      "author": "airi_fact_555",
-      "score": 44.1,
-      "likes": 687,
-      "likes_per_min": 10.51,
-      "acceleration": 1.87,
-      "measured": true,
-      "age_minutes": 91.9,
-      "text": "刑事告発 ｷﾀ ━━━━(ﾟ∀ﾟ)━━━━!!\n\nとうとう出たね。。。【沖縄県知事選】 玉城デニー知事に対する刑事告発状",
-      "url": "https://x.com/airi_fact_555/status/2092102691707330954"
-    },
-    {
-      "author": "Hanakago_2434rr",
-      "score": 43.9,
-      "likes": 934,
-      "likes_per_min": 31.95600536224507,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 29.2,
-      "text": "【新衣装お披露目】感謝のお揃い新衣装を大公開！！！【花籠つばさ / にじさんじ】 \nhttps://\nyoutube.c",
-      "url": "https://x.com/Hanakago_2434rr/status/2092118467109654734"
-    },
-    {
-      "author": "mazzel_official",
-      "score": 42.6,
-      "likes": 2648,
-      "likes_per_min": 64.88444119003995,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 40.8,
-      "text": "[ EVENT ]\n\n11/23(月・祝)\n「15th Anniversary テレビ朝日ドリームフェスティバル2026",
-      "url": "https://x.com/mazzel_official/status/2092115551309254969"
-    },
-    {
-      "author": "livedoornews",
-      "score": 41.3,
-      "likes": 396,
-      "likes_per_min": 2.37,
-      "acceleration": 0.57,
-      "measured": true,
-      "age_minutes": 114.0,
-      "text": "【熊本地震】イオンモール爆発事故、従業員遺族に「ハビタ」幹部が再び謝罪\n\nhttps://\nnews.livedoor.",
-      "url": "https://x.com/livedoornews/status/2092097132081578234"
     }
   ]
 }

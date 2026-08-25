@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T22:14:00.909024+00:00",
+  "updated_at": "2026-08-25T22:52:55.228022+00:00",
   "status": "success",
-  "started_at": "2026-08-25T22:11:01.282793+00:00",
-  "finished_at": "2026-08-25T22:14:00.907480+00:00",
-  "posts_scanned": 111,
-  "posts_with_history": 73,
+  "started_at": "2026-08-25T22:49:44.715745+00:00",
+  "finished_at": "2026-08-25T22:52:55.226983+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 86,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 634,
+  "minutes_since_last_notification": 672,
   "reject_reasons": {
-    "いいねが少なすぎる": 34,
-    "古すぎる": 40,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 47,
+    "古すぎる": 54,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4994,
-    "posts": 2478,
-    "oldest": "2026-08-24T22:51:14.326849+00:00"
+    "total": 5031,
+    "posts": 2499,
+    "oldest": "2026-08-24T23:13:17.086109+00:00"
   },
   "top5": [
     {
-      "author": "kyumei24_fujitv",
-      "score": 50.6,
-      "likes": 6161,
-      "likes_per_min": 135.91,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 128.8,
-      "text": "⧉公式SNS開設⧉\n￣￣￣￣￣￣￣￣\n公式SNSではドラマの情報や、\n撮影の裏側などを投稿していきます!!\nぜひフォロー",
-      "url": "https://x.com/kyumei24_fujitv/status/2092342548253622279"
-    },
-    {
-      "author": "nino_honmono",
-      "score": 46.9,
-      "likes": 11788,
-      "likes_per_min": 336.02,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 29.6,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2092367525099323640"
-    },
-    {
       "author": "modelpress",
-      "score": 38.7,
-      "likes": 855,
-      "likes_per_min": 11.569975379911085,
+      "score": 46.0,
+      "likes": 2093,
+      "likes_per_min": 31.82,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.9,
+      "measured": true,
+      "age_minutes": 112.8,
       "text": "与田祐希主演×片思いの相手役に野村周平\n\n「溺愛カレシの作り方～セから本命になる女の子の話～」テレ東でドラマ化\n\nhtt",
       "url": "https://x.com/modelpress/status/2092356372159684840"
     },
     {
-      "author": "1l_namida_movie",
-      "score": 37.5,
-      "likes": 2581,
-      "likes_per_min": 46.74,
+      "author": "west_sashitabi",
+      "score": 44.0,
+      "likes": 5104,
+      "likes_per_min": 98.42,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 73.8,
-      "text": "医者になりたいと、本気で思ったきっかけは\n　　──彼女を助けたいと思ったからなんだ。\n\n─────────────\n\n ",
-      "url": "https://x.com/1l_namida_movie/status/2092356401448595493"
+      "age_minutes": 52.9,
+      "text": "＼今年もこの季節がやってきた／\n　　◤◢◤◢◤◢◤◢◤◢◤◢◤◢\n            \n              ",
+      "url": "https://x.com/west_sashitabi/status/2092371444114317602"
     },
     {
-      "author": "kugaleo_Q",
-      "score": 37.3,
-      "likes": 170,
-      "likes_per_min": 3.84,
+      "author": "nino_honmono",
+      "score": 43.9,
+      "likes": 21187,
+      "likes_per_min": 241.59,
+      "acceleration": 0.72,
+      "measured": true,
+      "age_minutes": 68.5,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2092367525099323640"
+    },
+    {
+      "author": "wagahaida_L",
+      "score": 41.5,
+      "likes": 2987,
+      "likes_per_min": 55.8,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 33.2,
-      "text": "just woke up in a cold sweat, had a nightmare that riko made",
-      "url": "https://x.com/kugaleo_Q/status/2092366614637461602"
+      "age_minutes": 61.9,
+      "text": "おはようございます。\n所で、お姉さんのVtuberさんをオススメしてください。自薦でも他薦でも、お願いします。",
+      "url": "https://x.com/wagahaida_L/status/2092369177499857038"
+    },
+    {
+      "author": "Shikinagi_2434",
+      "score": 39.9,
+      "likes": 1293,
+      "likes_per_min": 24.433030165032267,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 52.9,
+      "text": "ネタ系ショート投稿しました。\n引っ越しは悩みの種ですね。\n\n#四季凪の８月まいにちShort \n\nVTuberあるある ",
+      "url": "https://x.com/Shikinagi_2434/status/2092371441354444811"
     }
   ]
 }

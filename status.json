@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T19:45:42.591449+00:00",
+  "updated_at": "2026-08-25T20:14:54.690106+00:00",
   "status": "success",
-  "started_at": "2026-08-25T19:42:22.898787+00:00",
-  "finished_at": "2026-08-25T19:45:42.590461+00:00",
-  "posts_scanned": 146,
-  "posts_with_history": 125,
+  "started_at": "2026-08-25T20:11:39.687019+00:00",
+  "finished_at": "2026-08-25T20:14:54.689073+00:00",
+  "posts_scanned": 136,
+  "posts_with_history": 120,
   "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 485,
+  "minutes_since_last_notification": 514,
   "reject_reasons": {
-    "いいねが少なすぎる": 16,
-    "古すぎる": 88,
-    "初回観測かつ平均速度が低い": 8
+    "いいねが少なすぎる": 15,
+    "古すぎる": 85,
+    "初回観測かつ平均速度が低い": 9
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4763,
-    "posts": 2531,
+    "total": 4899,
+    "posts": 2547,
     "oldest": "2026-08-24T20:16:27.683974+00:00"
   },
   "top5": [
     {
       "author": "Ananta_JP",
-      "score": 68.0,
-      "likes": 3881,
-      "likes_per_min": 39.05,
-      "acceleration": null,
+      "score": 55.7,
+      "likes": 4654,
+      "likes_per_min": 26.47,
+      "acceleration": 0.68,
       "measured": true,
-      "age_minutes": 74.5,
+      "age_minutes": 103.7,
       "text": "『無限大ANANTA』リリース日発表PV丨27年1月15日グローバルリリース",
       "url": "https://x.com/Ananta_JP/status/2092318891410346444"
     },
     {
       "author": "Ananta_JP",
-      "score": 47.6,
-      "likes": 1693,
-      "likes_per_min": 31.45309222051748,
+      "score": 49.8,
+      "likes": 2324,
+      "likes_per_min": 21.61,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 53.8,
+      "measured": true,
+      "age_minutes": 83.0,
       "text": "『#無限大ANANTA』\n全プラットフォームで事前登録受付開始！\n\nお待たせしました！\nこれまでの熱い応援と、長らくお待",
       "url": "https://x.com/Ananta_JP/status/2092324099188269373"
     },
     {
       "author": "denfaminicogame",
-      "score": 45.9,
-      "likes": 1676,
-      "likes_per_min": 22.94543453706716,
+      "score": 48.3,
+      "likes": 2347,
+      "likes_per_min": 22.98,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.0,
+      "measured": true,
+      "age_minutes": 102.2,
       "text": "HoYoverseの新作アクションゲーム『Nodusfall』が発表。ダークファンタジー調の重厚な世界観\n\nhttps:",
       "url": "https://x.com/denfaminicogame/status/2092319264376225953"
     },
     {
       "author": "Kanae_2434",
-      "score": 38.7,
-      "likes": 985,
-      "likes_per_min": 67.49879585745842,
+      "score": 40.8,
+      "likes": 2057,
+      "likes_per_min": 36.71,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.6,
+      "measured": true,
+      "age_minutes": 43.8,
       "text": "おきたあ",
       "url": "https://x.com/Kanae_2434/status/2092333971019620751"
     },
     {
-      "author": "ROCKMAN_UNITY",
-      "score": 37.0,
-      "likes": 1629,
-      "likes_per_min": 22.37,
+      "author": "FFVIIR_CLOUD",
+      "score": 36.9,
+      "likes": 1264,
+      "likes_per_min": 84.76846944499394,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 72.4,
-      "text": "『ロックマン: デュアル オーバーライド』最新トレーラー公開！\n\n新システム「オーバーライド」をはじめ、新たなボスロボッ",
-      "url": "https://x.com/ROCKMAN_UNITY/status/2092319432446222743"
+      "measured": false,
+      "age_minutes": 14.9,
+      "text": "『FINAL FANTASY VII REVELATION』\n2ndトレーラー公開\n\n世界滅亡の脅威に呼応して、星の守護",
+      "url": "https://x.com/FFVIIR_CLOUD/status/2092341242575094027"
     }
   ]
 }

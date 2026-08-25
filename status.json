@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-25T04:24:03.539540+00:00",
+  "updated_at": "2026-08-25T05:03:28.235995+00:00",
   "status": "success",
-  "started_at": "2026-08-25T04:21:14.027334+00:00",
-  "finished_at": "2026-08-25T04:24:03.538484+00:00",
-  "posts_scanned": 152,
-  "posts_with_history": 53,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 258,
+  "started_at": "2026-08-25T05:00:35.473122+00:00",
+  "finished_at": "2026-08-25T05:03:28.235061+00:00",
+  "posts_scanned": 160,
+  "posts_with_history": 82,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 297,
   "reject_reasons": {
-    "いいねが少なすぎる": 67,
-    "初回観測かつ平均速度が低い": 2,
+    "いいねが少なすぎる": 69,
+    "初回観測かつ平均速度が低い": 4,
     "古すぎる": 22
   },
   "config": {
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4394,
-    "posts": 2465,
-    "oldest": "2026-08-24T04:27:57.158296+00:00"
+    "total": 4418,
+    "posts": 2457,
+    "oldest": "2026-08-24T05:25:24.128721+00:00"
   },
   "top5": [
     {
-      "author": "pps_as",
-      "score": 52.9,
-      "likes": 1355,
-      "likes_per_min": 56.35947677586513,
+      "author": "livedoornews",
+      "score": 55.2,
+      "likes": 300,
+      "likes_per_min": 4.19,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 24.0,
-      "text": "【新商品のお知らせ・プリティストアオンライン】\n『名探偵プリキュア！』よりマリンシリーズグッズが予約発売決定\n\nプリティ",
-      "url": "https://x.com/pps_as/status/2092099653525188751"
+      "measured": true,
+      "age_minutes": 73.5,
+      "text": "【熊本地震】イオンモール爆発事故、従業員遺族に「ハビタ」幹部が再び謝罪\n\nhttps://\nnews.livedoor.",
+      "url": "https://x.com/livedoornews/status/2092097132081578234"
     },
     {
-      "author": "tokoyamitowa",
-      "score": 50.0,
-      "likes": 1810,
-      "likes_per_min": 44.26283166406729,
+      "author": "hezuruy",
+      "score": 47.0,
+      "likes": 1606,
+      "likes_per_min": 30.84,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 40.9,
-      "text": "１８：００～\n\n【 第十回 / #ホロステ 】ホロドリに入れてほしい告知ありホロソングステーション【常闇トワ/ホロライブ",
-      "url": "https://x.com/tokoyamitowa/status/2092095412987646058"
-    },
-    {
-      "author": "usadapekora",
-      "score": 48.2,
-      "likes": 1571,
-      "likes_per_min": 30.86923307789612,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 50.9,
-      "text": "ぺこらの新アイテムがきｔら！！\n「和風Chibi style」から粋なアイテムが登場\n\nぺこーらがドーンと描かれた屏風！",
-      "url": "https://x.com/usadapekora/status/2092092897214783777"
+      "measured": true,
+      "age_minutes": 56.3,
+      "text": "NHKは本当に信用ならん。\n被災地で倒壊した住宅からお年寄りが救出された時もベトナム人が中心で日本人は補助程度という印象",
+      "url": "https://x.com/hezuruy/status/2092101442408780053"
     },
     {
       "author": "zespri_jp",
-      "score": 48.2,
-      "likes": 4261,
-      "likes_per_min": 50.69072897212328,
+      "score": 45.4,
+      "likes": 5344,
+      "likes_per_min": 27.49,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 84.1,
+      "measured": true,
+      "age_minutes": 123.5,
       "text": "／\n陽気すぎるオレたちのフィギュア発売\n初の片足立ちだよ万歳\n＼\n⠀\n今年もオレたちの\n【フィギュア付きパック】が数量限",
       "url": "https://x.com/zespri_jp/status/2092084551623578037"
     },
     {
-      "author": "official_jo1",
-      "score": 47.2,
-      "likes": 2360,
-      "likes_per_min": 98.36572489330257,
+      "author": "shinji_ishimaru",
+      "score": 45.0,
+      "likes": 1324,
+      "likes_per_min": 22.49,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 24.0,
-      "text": "[] #タフグミ \nタフグミブランドパートナーに #川尻蓮 がCOMEBACK\n\nみんなの熱い応援で、待望の第2弾が実現",
-      "url": "https://x.com/official_jo1/status/2092099667270226107"
+      "measured": true,
+      "age_minutes": 60.2,
+      "text": "財布をなくしました。\n\n朝、起きると財布が見当たらない…\n\nそういえば、深夜の飲み会収録!?の後、タクシーを降りる時に財",
+      "url": "https://x.com/shinji_ishimaru/status/2092100465957982347"
+    },
+    {
+      "author": "houkaistarrail",
+      "score": 42.3,
+      "likes": 7098,
+      "likes_per_min": 83.03,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 63.4,
+      "text": "【崩壊：スターレイル】ロビン・夏空の歌 キャラクターPV 「風を追いかけて」\n\n風の吹く先は誰にもわからない。\nこの風船",
+      "url": "https://x.com/houkaistarrail/status/2092099653244260733"
     }
   ]
 }

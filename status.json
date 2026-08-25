@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T09:50:10.597602+00:00",
+  "updated_at": "2026-08-25T10:19:19.932236+00:00",
   "status": "success",
-  "started_at": "2026-08-25T09:47:23.479216+00:00",
-  "finished_at": "2026-08-25T09:50:10.596568+00:00",
-  "posts_scanned": 139,
-  "posts_with_history": 35,
+  "started_at": "2026-08-25T10:16:30.054690+00:00",
+  "finished_at": "2026-08-25T10:19:19.930835+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 84,
   "posts_flagged": 1,
-  "notified_count": 1,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 207,
+  "notified_count": 0,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 29,
   "reject_reasons": {
-    "いいねが少なすぎる": 71,
-    "初回観測かつ平均速度が低い": 2,
-    "古すぎる": 13
+    "いいねが少なすぎる": 67,
+    "古すぎる": 22,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4520,
-    "posts": 2472,
-    "oldest": "2026-08-24T10:11:00.270306+00:00"
+    "total": 4527,
+    "posts": 2445,
+    "oldest": "2026-08-24T11:00:26.009030+00:00"
   },
   "top5": [
     {
-      "author": "Lapiskawaii",
-      "score": 59.3,
-      "likes": 1415,
-      "likes_per_min": 52.67201875424638,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 26.9,
-      "text": "アニメ投稿したよ〜！\n見てみて〜 感想まってる〜\n\nhttps://\nyoutube.com/shorts/96XS72",
-      "url": "https://x.com/Lapiskawaii/status/2092181012587626615"
-    },
-    {
-      "author": "KNTFR2434",
-      "score": 54.2,
-      "likes": 1663,
-      "likes_per_min": 131.48644106495973,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.6,
-      "text": "１９時～\n【 日本事故物件監視協会2 -JSP- 】絶対に３つ貯めないJSP２【にじさんじ/風楽奏斗】 \nhttps:/",
-      "url": "https://x.com/KNTFR2434/status/2092184587980173738"
-    },
-    {
-      "author": "yukihanalamy",
-      "score": 52.2,
-      "likes": 1039,
-      "likes_per_min": 20.718800007411176,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 50.1,
-      "text": "━*＼ショート動画アップ／*━\n　　　【#めろぞーま】\nみんなもめろぞーま♡してみてね！\n━━━━━━━━━━━━━━\n",
-      "url": "https://x.com/yukihanalamy/status/2092175153207689253"
-    },
-    {
       "author": "Infinity_rJP",
-      "score": 50.6,
-      "likes": 1069,
-      "likes_per_min": 103.64192689596811,
+      "score": 56.6,
+      "likes": 2758,
+      "likes_per_min": 57.91,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.3,
+      "measured": true,
+      "age_minutes": 39.5,
       "text": "〖お知らせ〗\n\n／⋰\n EP『#ダンダーラ』【初回限定“超”盤】\n SUPER EIGHTアプリ特典\n 《令和8年8月8",
       "url": "https://x.com/Infinity_rJP/status/2092185174780125423"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 50.0,
-      "likes": 156,
-      "likes_per_min": 12.966475968778477,
+      "score": 49.4,
+      "likes": 479,
+      "likes_per_min": 25.12453147993995,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.0,
-      "text": "【知名度S】\n\nTKO\n木下隆行 \n@tkokinosita\n \n\n備考 : 駐車場に座り込んで、タバコの灰を落とすなど",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2092184745497252070"
+      "age_minutes": 19.1,
+      "text": "【知名度S】\n\nTKO\n木下隆行 \n@tkokinosita\n \n\n備考 : セブンイレブンの駐車場に座り込んで、タバコ",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2092190313716859077"
+    },
+    {
+      "author": "yukihanalamy",
+      "score": 49.4,
+      "likes": 1281,
+      "likes_per_min": 8.3,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 79.3,
+      "text": "━*＼ショート動画アップ／*━\n　　　【#めろぞーま】\nみんなもめろぞーま♡してみてね！\n━━━━━━━━━━━━━━\n",
+      "url": "https://x.com/yukihanalamy/status/2092175153207689253"
+    },
+    {
+      "author": "surumelock",
+      "score": 49.0,
+      "likes": 243,
+      "likes_per_min": 6.65,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 39.2,
+      "text": "りくりゅうが婚約発表したら現れた理解のできない人",
+      "url": "https://x.com/surumelock/status/2092185236365095220"
+    },
+    {
+      "author": "1O46V",
+      "score": 44.6,
+      "likes": 500,
+      "likes_per_min": 33.41122127538187,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.0,
+      "text": "投稿完了～！ 是非沢山コメント拡散してね\n『抜錨 / ナナホシ管弦楽団 feat.巡音ルカ』歌ってみた by 弦月藤士郎",
+      "url": "https://x.com/1O46V/status/2092191345993769008"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T17:54:53.742504+00:00",
+  "updated_at": "2026-08-25T18:23:11.258741+00:00",
   "status": "success",
-  "started_at": "2026-08-25T17:51:25.691726+00:00",
-  "finished_at": "2026-08-25T17:54:53.741199+00:00",
-  "posts_scanned": 174,
-  "posts_with_history": 139,
+  "started_at": "2026-08-25T18:19:42.196421+00:00",
+  "finished_at": "2026-08-25T18:23:11.257800+00:00",
+  "posts_scanned": 161,
+  "posts_with_history": 138,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 374,
+  "minutes_since_last_notification": 403,
   "reject_reasons": {
-    "いいねが少なすぎる": 41,
-    "古すぎる": 66,
-    "初回観測かつ平均速度が低い": 3
+    "いいねが少なすぎる": 27,
+    "古すぎる": 75,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4760,
-    "posts": 2593,
-    "oldest": "2026-08-24T17:55:51.634933+00:00"
+    "total": 4753,
+    "posts": 2552,
+    "oldest": "2026-08-24T18:57:39.294953+00:00"
   },
   "top5": [
     {
       "author": "Milan_Kestrel",
-      "score": 53.2,
-      "likes": 2672,
-      "likes_per_min": 42.69,
-      "acceleration": null,
+      "score": 42.6,
+      "likes": 3552,
+      "likes_per_min": 31.1,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 61.6,
+      "age_minutes": 89.9,
       "text": "にじさんじばっか追っかけてて、良いかもしれない。条件合う人はきっとみんなのおかげで幸せだよ。\n\n・怪しくない\n・音質がい",
       "url": "https://x.com/Milan_Kestrel/status/2092294258929848770"
     },
     {
-      "author": "akagi_wen",
-      "score": 36.9,
-      "likes": 1058,
-      "likes_per_min": 72.98872606226045,
+      "author": "senukin69",
+      "score": 36.0,
+      "likes": 4824,
+      "likes_per_min": 78.29,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.5,
+      "measured": true,
+      "age_minutes": 90.3,
+      "text": "ぶれいんろっと彼女 - Bureinrotto Kanojo\n\nComing soon~",
+      "url": "https://x.com/senukin69/status/2092294164084052407"
+    },
+    {
+      "author": "akagi_wen",
+      "score": 35.3,
+      "likes": 1583,
+      "likes_per_min": 18.56,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 42.8,
       "text": "配信ありがとうございます！！\n\nついに僕らはデュオハードコアでエンドラ討伐したぞ完全勝利だ！！",
       "url": "https://x.com/akagi_wen/status/2092306109021467014"
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 35.0,
-      "likes": 8793,
-      "likes_per_min": 38.31,
-      "acceleration": 0.5,
-      "measured": true,
-      "age_minutes": 80.8,
-      "text": "#大森元貴_灰色 \nうお、トレンド1位ありがとう。\nたくさん聴いてね〜",
-      "url": "https://x.com/MotokiOhmoriMGA/status/2092289417885167913"
+      "author": "lanlan_sub",
+      "score": 32.2,
+      "likes": 883,
+      "likes_per_min": 11.772709594249768,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 75.0,
+      "text": "おまえらからおすすめされたやつだからちゃんとつこてる\n\nらん、えらい。",
+      "url": "https://x.com/lanlan_sub/status/2092298002937565456"
     },
     {
-      "author": "MarvelStudios_J",
-      "score": 34.9,
-      "likes": 1986,
-      "likes_per_min": 20.91,
+      "author": "grgr_donguri",
+      "score": 31.8,
+      "likes": 1072,
+      "likes_per_min": 13.080512786313303,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 80.5,
-      "text": "「アベンジャーズ、アッセンブル」\n⠀\n◥◣予告映像解禁◢◤\n『アベンジャーズ\n⠀／エンドゲーム：アンコール』\n⠀\nあの感",
-      "url": "https://x.com/MarvelStudios_J/status/2092289499451797885"
-    },
-    {
-      "author": "otsuichich",
-      "score": 34.8,
-      "likes": 1623,
-      "likes_per_min": 20.94,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 68.2,
-      "text": "今年も無事46にレベルアップさせていただきました\n\nまだまだストーリーの道半ば。\n\nこれからもゲームとプレイヤーの架け橋",
-      "url": "https://x.com/otsuichich/status/2092292601848508490"
+      "measured": false,
+      "age_minutes": 82.0,
+      "text": "ホラー回収録後\n※捏造",
+      "url": "https://x.com/grgr_donguri/status/2092296254260994098"
     }
   ]
 }

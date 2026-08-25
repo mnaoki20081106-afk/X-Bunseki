@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T08:06:26.550991+00:00",
+  "updated_at": "2026-08-25T08:57:52.321817+00:00",
   "status": "success",
-  "started_at": "2026-08-25T08:03:38.941061+00:00",
-  "finished_at": "2026-08-25T08:06:26.549710+00:00",
-  "posts_scanned": 134,
-  "posts_with_history": 42,
+  "started_at": "2026-08-25T08:55:09.506952+00:00",
+  "finished_at": "2026-08-25T08:57:52.320543+00:00",
+  "posts_scanned": 140,
+  "posts_with_history": 46,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 103,
+  "minutes_since_last_notification": 154,
   "reject_reasons": {
-    "いいねが少なすぎる": 48,
-    "初回観測かつ平均速度が低い": 4,
-    "古すぎる": 11
+    "いいねが少なすぎる": 63,
+    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 12
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4556,
-    "posts": 2509,
-    "oldest": "2026-08-24T08:11:19.091016+00:00"
+    "total": 4534,
+    "posts": 2482,
+    "oldest": "2026-08-24T09:11:52.559033+00:00"
   },
   "top5": [
     {
-      "author": "tokoyamitowa",
-      "score": 52.2,
-      "likes": 624,
-      "likes_per_min": 43.406957058853855,
+      "author": "mtor_info",
+      "score": 53.4,
+      "likes": 1519,
+      "likes_per_min": 46.209927436293384,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.4,
-      "text": "２０：００～\n\n【 DAY5 】#ホロ7大豆劇場 2回めの襲撃キタアアアアアどうにかなれええ【常闇トワ/ホロライブ】 \n",
-      "url": "https://x.com/tokoyamitowa/status/2092158050375479620"
+      "age_minutes": 32.9,
+      "text": "【めておら動画投稿のお知らせ】\n\nめておら学園で一緒に給食の時間\n\n１万円分の学校給食を食べきれるまで帰りません！\n\nh",
+      "url": "https://x.com/mtor_info/status/2092166338160873785"
     },
     {
-      "author": "FURYU_prize",
-      "score": 50.5,
-      "likes": 764,
-      "likes_per_min": 14.36,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 66.1,
-      "text": "＼フリュープライズ新着情報／\n\n【ホロライブプロダクション】\n2027年冬に登場予定のラインナップをどこよりも早く大発表",
-      "url": "https://x.com/FURYU_prize/status/2092145024322723914"
-    },
-    {
-      "author": "wcat_project",
-      "score": 47.7,
-      "likes": 822,
-      "likes_per_min": 13.18,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 66.4,
-      "text": "#白猫プロジェクト × #ホロライブ 第3弾\n\nこんこんきーつね！白上フブキです！\n⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒\n",
-      "url": "https://x.com/wcat_project/status/2092144954982224200"
-    },
-    {
-      "author": "YamaWayama_PR",
-      "score": 46.0,
-      "likes": 1893,
-      "likes_per_min": 16.02,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 96.5,
-      "text": "【お詫びと訂正】\n2026年12月11日発売の『和山やま作品４冊セット 小冊子＆アクリルスタンド付き特装版』につきまして",
-      "url": "https://x.com/YamaWayama_PR/status/2092137395433119855"
-    },
-    {
-      "author": "Ural26",
-      "score": 43.4,
-      "likes": 1006,
-      "likes_per_min": 33.84291049218623,
+      "author": "FightersPR",
+      "score": 49.6,
+      "likes": 973,
+      "likes_per_min": 32.21314814403889,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.7,
-      "text": "【知名度SSS】\n人気TikToker　合計フォロワー数20万\n辻○凜香（つじもとりんか）\n\n備考：配信が流出\n詳細：\n",
-      "url": "https://x.com/Ural26/status/2092154188579078413"
+      "age_minutes": 30.2,
+      "text": "本日のスタメン！\n\nファイターズトレカで今日のヒーローを予想！\n\nhttps://\nfighters.orical.jp",
+      "url": "https://x.com/FightersPR/status/2092167010671300774"
+    },
+    {
+      "author": "keibalab",
+      "score": 49.0,
+      "likes": 1337,
+      "likes_per_min": 23.0,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 68.0,
+      "text": "訃報です。昨年の函館記念3着などの実績があるマイネルメモリーは、本日放牧先での調教中に心臓麻痺を発症し亡くなったことが、",
+      "url": "https://x.com/keibalab/status/2092157492323393852"
+    },
+    {
+      "author": "TigersDreamlink",
+      "score": 48.3,
+      "likes": 1149,
+      "likes_per_min": 46.792803816557914,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 24.6,
+      "text": "【8月25日 D-T 公式戦】\n本日のスタメン発表！\n関西弁応援実況は公式モバイルサイトで！\n\nhttps://\nhan",
+      "url": "https://x.com/TigersDreamlink/status/2092168432397722095"
+    },
+    {
+      "author": "iD7Mng_Ogami",
+      "score": 47.6,
+      "likes": 838,
+      "likes_per_min": 65.10394201067064,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.9,
+      "text": "【音楽情報】\nCD4週連続発売企画、第4弾！\nIDOLiSH7『MY LiFE!』の試聴動画を公開いたしました！\n⇒\nh",
+      "url": "https://x.com/iD7Mng_Ogami/status/2092171371220508867"
     }
   ]
 }

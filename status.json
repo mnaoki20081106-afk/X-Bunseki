@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T17:23:48.598375+00:00",
+  "updated_at": "2026-08-25T17:54:53.742504+00:00",
   "status": "success",
-  "started_at": "2026-08-25T17:20:47.345523+00:00",
-  "finished_at": "2026-08-25T17:23:48.597282+00:00",
-  "posts_scanned": 157,
-  "posts_with_history": 118,
+  "started_at": "2026-08-25T17:51:25.691726+00:00",
+  "finished_at": "2026-08-25T17:54:53.741199+00:00",
+  "posts_scanned": 174,
+  "posts_with_history": 139,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 343,
+  "minutes_since_last_notification": 374,
   "reject_reasons": {
-    "いいねが少なすぎる": 53,
-    "古すぎる": 37,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 41,
+    "古すぎる": 66,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4586,
-    "posts": 2558,
+    "total": 4760,
+    "posts": 2593,
     "oldest": "2026-08-24T17:55:51.634933+00:00"
   },
   "top5": [
     {
       "author": "Milan_Kestrel",
-      "score": 49.4,
-      "likes": 1345,
-      "likes_per_min": 44.084409096571015,
+      "score": 53.2,
+      "likes": 2672,
+      "likes_per_min": 42.69,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 30.5,
+      "measured": true,
+      "age_minutes": 61.6,
       "text": "にじさんじばっか追っかけてて、良いかもしれない。条件合う人はきっとみんなのおかげで幸せだよ。\n\n・怪しくない\n・音質がい",
       "url": "https://x.com/Milan_Kestrel/status/2092294258929848770"
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 45.8,
-      "likes": 7602,
-      "likes_per_min": 76.42,
+      "author": "akagi_wen",
+      "score": 36.9,
+      "likes": 1058,
+      "likes_per_min": 72.98872606226045,
       "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.5,
+      "text": "配信ありがとうございます！！\n\nついに僕らはデュオハードコアでエンドラ討伐したぞ完全勝利だ！！",
+      "url": "https://x.com/akagi_wen/status/2092306109021467014"
+    },
+    {
+      "author": "MotokiOhmoriMGA",
+      "score": 35.0,
+      "likes": 8793,
+      "likes_per_min": 38.31,
+      "acceleration": 0.5,
       "measured": true,
-      "age_minutes": 49.7,
+      "age_minutes": 80.8,
       "text": "#大森元貴_灰色 \nうお、トレンド1位ありがとう。\nたくさん聴いてね〜",
       "url": "https://x.com/MotokiOhmoriMGA/status/2092289417885167913"
     },
     {
-      "author": "Tr0uT_2434",
-      "score": 44.9,
-      "likes": 10725,
-      "likes_per_min": 70.95,
-      "acceleration": 0.55,
-      "measured": true,
-      "age_minutes": 94.0,
-      "text": "やっぱにじさんじばっか追っかけてて、良い。\n条件合う方はお願いだから幸せになってください。\n\n・シェフ\n・酒カス\n・何と",
-      "url": "https://x.com/Tr0uT_2434/status/2092278281798336986"
-    },
-    {
-      "author": "denfaminicogame",
-      "score": 39.9,
-      "likes": 2441,
-      "likes_per_min": 19.17,
+      "author": "MarvelStudios_J",
+      "score": 34.9,
+      "likes": 1986,
+      "likes_per_min": 20.91,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 142.2,
-      "text": "「シャイニングスター」のサビ部分が流れる「魔王魂」のカプセルトイが12月発売へ。動画で聞きなじみのある“あの曲”たちが多",
-      "url": "https://x.com/denfaminicogame/status/2092266141901312250"
+      "age_minutes": 80.5,
+      "text": "「アベンジャーズ、アッセンブル」\n⠀\n◥◣予告映像解禁◢◤\n『アベンジャーズ\n⠀／エンドゲーム：アンコール』\n⠀\nあの感",
+      "url": "https://x.com/MarvelStudios_J/status/2092289499451797885"
     },
     {
-      "author": "tikunobo826",
-      "score": 38.9,
-      "likes": 335,
-      "likes_per_min": 4.14,
+      "author": "otsuichich",
+      "score": 34.8,
+      "likes": 1623,
+      "likes_per_min": 20.94,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 79.1,
-      "text": "31歳になりました！\nなんだかんだで実況始めて10年経ってるんだなぁと思うと感慨深いものがあるね。\n\n30過ぎてるんで健",
-      "url": "https://x.com/tikunobo826/status/2092282040075100285"
+      "age_minutes": 68.2,
+      "text": "今年も無事46にレベルアップさせていただきました\n\nまだまだストーリーの道半ば。\n\nこれからもゲームとプレイヤーの架け橋",
+      "url": "https://x.com/otsuichich/status/2092292601848508490"
     }
   ]
 }

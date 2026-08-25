@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-25T13:09:35.030979+00:00",
+  "updated_at": "2026-08-25T14:03:51.108481+00:00",
   "status": "success",
-  "started_at": "2026-08-25T13:06:51.997927+00:00",
-  "finished_at": "2026-08-25T13:09:35.028378+00:00",
-  "posts_scanned": 152,
-  "posts_with_history": 32,
+  "started_at": "2026-08-25T14:00:59.559899+00:00",
+  "finished_at": "2026-08-25T14:03:51.107417+00:00",
+  "posts_scanned": 168,
+  "posts_with_history": 52,
   "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 89,
+  "minutes_since_last_notification": 143,
   "reject_reasons": {
-    "いいねが少なすぎる": 74,
-    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 85,
+    "初回観測かつ平均速度が低い": 2,
     "古すぎる": 10
   },
   "config": {
@@ -25,64 +25,64 @@
   },
   "observation_db": {
     "total": 4715,
-    "posts": 2550,
-    "oldest": "2026-08-24T13:28:15.778690+00:00"
+    "posts": 2553,
+    "oldest": "2026-08-24T14:24:47.278061+00:00"
   },
   "top5": [
     {
-      "author": "osusi0303",
-      "score": 65.8,
-      "likes": 1256,
-      "likes_per_min": 136.5184357305325,
+      "author": "AZKi_VDiVA",
+      "score": 55.1,
+      "likes": 4301,
+      "likes_per_min": 107.29731545426377,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 9.2,
-      "text": "アイドルでした福岡ありがとでした‍\n\n#うぃあすに2",
-      "url": "https://x.com/osusi0303/status/2092235640096399811"
+      "age_minutes": 40.1,
+      "text": "\nホロライブのメンバーであなたに近いのは『天音かなた』です。",
+      "url": "https://x.com/AZKi_VDiVA/status/2092241524742562111"
     },
     {
-      "author": "usamirito_power",
-      "score": 49.4,
-      "likes": 3362,
-      "likes_per_min": 123.45064324954598,
+      "author": "korekore_ch",
+      "score": 53.2,
+      "likes": 547,
+      "likes_per_min": 16.93417370699349,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 27.2,
-      "text": "22:15から！！！\n\n【リズム天国 ミラクルスターズ】リズムにノリ遅れた【宇佐美リト/にじさんじ】\n\nhttps://",
-      "url": "https://x.com/usamirito_power/status/2092231101880447374"
+      "age_minutes": 32.3,
+      "text": "キックで緊急生放送開始！まじでやばい重大発表をします…シンジと不倫したみーちゃんと通話！不倫大先輩加藤純一からアドバイス",
+      "url": "https://x.com/korekore_ch/status/2092243487026794618"
     },
     {
-      "author": "yakuzanews",
-      "score": 48.6,
-      "likes": 1921,
-      "likes_per_min": 27.62,
-      "acceleration": 9.89,
+      "author": "korekore_ch",
+      "score": 50.2,
+      "likes": 555,
+      "likes_per_min": 9.128057288735764,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 60.8,
+      "text": "ツイキャスで闇ニュース生放送開始ガチの重大発表、シンジと不倫したみーちゃんと通話！映画ちいかわ観た",
+      "url": "https://x.com/korekore_ch/status/2092236312258675115"
+    },
+    {
+      "author": "nishiki1225",
+      "score": 45.5,
+      "likes": 1898,
+      "likes_per_min": 96.58272934298458,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 19.7,
+      "text": "こっちおいで\n\n福岡の俺あげる\n\n#うぃあすに2",
+      "url": "https://x.com/nishiki1225/status/2092246670176289235"
+    },
+    {
+      "author": "IkawaMototaka",
+      "score": 43.3,
+      "likes": 1910,
+      "likes_per_min": 29.96,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 125.2,
-      "text": "ホテルのベッドに使用済みコカインの袋…山口組傘下組員とセクシー女優を逮捕",
-      "url": "https://x.com/yakuzanews/status/2092206449837650072"
-    },
-    {
-      "author": "728_Storm",
-      "score": 48.0,
-      "likes": 4787,
-      "likes_per_min": 176.85815129659673,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 27.1,
-      "text": "なにわ男子 / Storm Labels\n公式TikTok更新！\n\n／\n＼僕カワ／\nやっぱり丈子が！\nいっちゃんカワイイ",
-      "url": "https://x.com/728_Storm/status/2092231145048166776"
-    },
-    {
-      "author": "daiquiri_ch",
-      "score": 46.5,
-      "likes": 1718,
-      "likes_per_min": 148.7417218713145,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.6,
-      "text": "愛しとーよ\n\n親孝行出来たかな\n\n#うぃあすに２",
-      "url": "https://x.com/daiquiri_ch/status/2092235051782283298"
+      "age_minutes": 78.2,
+      "text": "クソクズの幕の内弁当\n食中毒間違いなし\n\nで\nなんで議連に\n議員じゃない\n不倫ガソリン女が\n混ざってんの？",
+      "url": "https://x.com/IkawaMototaka/status/2092231928724504639"
     }
   ]
 }

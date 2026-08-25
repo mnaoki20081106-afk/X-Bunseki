@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T14:03:51.108481+00:00",
+  "updated_at": "2026-08-25T15:00:13.450170+00:00",
   "status": "success",
-  "started_at": "2026-08-25T14:00:59.559899+00:00",
-  "finished_at": "2026-08-25T14:03:51.107417+00:00",
-  "posts_scanned": 168,
-  "posts_with_history": 52,
+  "started_at": "2026-08-25T14:57:31.779092+00:00",
+  "finished_at": "2026-08-25T15:00:13.449279+00:00",
+  "posts_scanned": 172,
+  "posts_with_history": 62,
   "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 143,
+  "minutes_since_last_notification": 200,
   "reject_reasons": {
-    "いいねが少なすぎる": 85,
-    "初回観測かつ平均速度が低い": 2,
-    "古すぎる": 10
+    "いいねが少なすぎる": 84,
+    "初回観測かつ平均速度が低い": 4,
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4715,
-    "posts": 2553,
-    "oldest": "2026-08-24T14:24:47.278061+00:00"
+    "total": 4722,
+    "posts": 2562,
+    "oldest": "2026-08-24T15:10:14.418849+00:00"
   },
   "top5": [
     {
-      "author": "AZKi_VDiVA",
+      "author": "momosuzunene",
       "score": 55.1,
-      "likes": 4301,
-      "likes_per_min": 107.29731545426377,
+      "likes": 1057,
+      "likes_per_min": 39.57728182996245,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 40.1,
-      "text": "\nホロライブのメンバーであなたに近いのは『天音かなた』です。",
-      "url": "https://x.com/AZKi_VDiVA/status/2092241524742562111"
+      "age_minutes": 26.7,
+      "text": "ホロライブのメンバーであなたに近いのは『さくらみこ』です。",
+      "url": "https://x.com/momosuzunene/status/2092259077917393218"
     },
     {
       "author": "korekore_ch",
-      "score": 53.2,
-      "likes": 547,
-      "likes_per_min": 16.93417370699349,
+      "score": 39.7,
+      "likes": 632,
+      "likes_per_min": 1.51,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 32.3,
+      "measured": true,
+      "age_minutes": 88.7,
       "text": "キックで緊急生放送開始！まじでやばい重大発表をします…シンジと不倫したみーちゃんと通話！不倫大先輩加藤純一からアドバイス",
       "url": "https://x.com/korekore_ch/status/2092243487026794618"
     },
     {
-      "author": "korekore_ch",
-      "score": 50.2,
-      "likes": 555,
-      "likes_per_min": 9.128057288735764,
+      "author": "Taisei_F10",
+      "score": 38.7,
+      "likes": 825,
+      "likes_per_min": 22.546790185337958,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 60.8,
-      "text": "ツイキャスで闇ニュース生放送開始ガチの重大発表、シンジと不倫したみーちゃんと通話！映画ちいかわ観た",
-      "url": "https://x.com/korekore_ch/status/2092236312258675115"
+      "age_minutes": 36.6,
+      "text": "全国ツアー「angel wing」無事に完走ー！\n本当にこの3ヶ月がキラキラの思い出！\nみんなが笑顔になってくれて嬉しい",
+      "url": "https://x.com/Taisei_F10/status/2092256593253630443"
     },
     {
-      "author": "nishiki1225",
-      "score": 45.5,
-      "likes": 1898,
-      "likes_per_min": 96.58272934298458,
+      "author": "HobbySite",
+      "score": 38.3,
+      "likes": 1552,
+      "likes_per_min": 44.39709656833929,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.7,
-      "text": "こっちおいで\n\n福岡の俺あげる\n\n#うぃあすに2",
-      "url": "https://x.com/nishiki1225/status/2092246670176289235"
+      "age_minutes": 35.0,
+      "text": "【 #ガンプラ  情報解禁 】\n\n最新！ガンプラ情報局　公開中\n\nhttps://\nyoutube.com/watch?",
+      "url": "https://x.com/HobbySite/status/2092257002844291386"
     },
     {
-      "author": "IkawaMototaka",
-      "score": 43.3,
-      "likes": 1910,
-      "likes_per_min": 29.96,
+      "author": "ayano_cs0526",
+      "score": 38.2,
+      "likes": 1102,
+      "likes_per_min": 40.70339670350282,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 78.2,
-      "text": "クソクズの幕の内弁当\n食中毒間違いなし\n\nで\nなんで議連に\n議員じゃない\n不倫ガソリン女が\n混ざってんの？",
-      "url": "https://x.com/IkawaMototaka/status/2092231928724504639"
+      "measured": false,
+      "age_minutes": 27.1,
+      "text": "日本武道館 DAY1 \nありがとうございました！\n\n本当にずっとずっと夢みたいでした；；\n\n360度きゅーてすと満員の空",
+      "url": "https://x.com/ayano_cs0526/status/2092258987983118569"
     }
   ]
 }

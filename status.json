@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-24T23:44:43.432118+00:00",
+  "updated_at": "2026-08-25T00:06:07.747073+00:00",
   "status": "success",
-  "started_at": "2026-08-24T23:41:51.637380+00:00",
-  "finished_at": "2026-08-24T23:44:43.430955+00:00",
-  "posts_scanned": 148,
-  "posts_with_history": 82,
+  "started_at": "2026-08-25T00:03:20.063733+00:00",
+  "finished_at": "2026-08-25T00:06:07.745679+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 112,
   "posts_flagged": 1,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 31,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 53,
   "reject_reasons": {
-    "いいねが少なすぎる": 69,
-    "初回観測かつ平均速度が低い": 2,
-    "古すぎる": 24
+    "いいねが少なすぎる": 66,
+    "古すぎる": 24,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4261,
-    "posts": 2406,
-    "oldest": "2026-08-23T23:55:26.449350+00:00"
+    "total": 4255,
+    "posts": 2365,
+    "oldest": "2026-08-24T00:41:14.833478+00:00"
   },
   "top5": [
     {
       "author": "AZKi_VDiVA",
-      "score": 55.6,
-      "likes": 1551,
-      "likes_per_min": 40.053126042868584,
+      "score": 57.9,
+      "likes": 1908,
+      "likes_per_min": 16.7,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 38.7,
+      "measured": true,
+      "age_minutes": 60.1,
       "text": "おはあずき「第2回 ホロライブ ダジャレASMRバトル」のダジャレ募集が【本日23:59まで】！\n\nたくさんのダジャレを",
       "url": "https://x.com/AZKi_VDiVA/status/2092025661200474211"
     },
     {
-      "author": "akindosushiroco",
-      "score": 54.3,
-      "likes": 2532,
-      "likes_per_min": 52.99,
+      "author": "onishi_aoi",
+      "score": 54.7,
+      "likes": 1230,
+      "likes_per_min": 38.26971625562415,
       "acceleration": null,
+      "measured": false,
+      "age_minutes": 32.1,
+      "text": "おはようʕ´-ﻌก̀ʔᐝ\nアイドル5年目にして、おはツイを始めようと試みています(続かなかったら、スマンて感じで、な！)",
+      "url": "https://x.com/onishi_aoi/status/2092032699821420983"
+    },
+    {
+      "author": "akindosushiroco",
+      "score": 49.2,
+      "likes": 3390,
+      "likes_per_min": 40.12,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 44.7,
+      "age_minutes": 66.1,
       "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
       "url": "https://x.com/akindosushiroco/status/2092024154744668464"
     },
     {
       "author": "livedoornews",
-      "score": 52.0,
-      "likes": 258,
-      "likes_per_min": 5.06,
-      "acceleration": null,
+      "score": 44.0,
+      "likes": 351,
+      "likes_per_min": 4.35,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 59.7,
+      "age_minutes": 81.1,
       "text": "【否認】マッサージ店にみせかけて違法な風俗店経営か 中国籍の女ら2人逮捕\n\nhttps://\nnews.livedoor",
       "url": "https://x.com/livedoornews/status/2092020376356483519"
     },
     {
-      "author": "livedoornews",
-      "score": 48.6,
-      "likes": 325,
-      "likes_per_min": 4.07,
-      "acceleration": 0.71,
+      "author": "bikkuri__donkey",
+      "score": 43.4,
+      "likes": 1198,
+      "likes_per_min": 15.99,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 74.7,
-      "text": "【発覚】白菜の鮮度維持に発がん性物質、当局が調査 中国河北省\n\nhttps://\nnews.livedoor.com/a",
-      "url": "https://x.com/livedoornews/status/2092016601390620797"
-    },
-    {
-      "author": "NetflixJP",
-      "score": 46.7,
-      "likes": 2472,
-      "likes_per_min": 25.03,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 104.7,
-      "text": "【10月22日世界独占配信決定！】\nNetflixシリーズ\n『俺のこと、なんか言ってた？』\nティーザー予告公開\n\n◆主演",
-      "url": "https://x.com/NetflixJP/status/2092009055384457376"
+      "age_minutes": 71.1,
+      "text": "明日から『日本の秋に、月見ハンバーグ。』フェア\n\nまんまるな\"たまご\"が、まるで夜空のお月様\n\n【 #びっくりドンキーの",
+      "url": "https://x.com/bikkuri__donkey/status/2092022892808872403"
     }
   ]
 }

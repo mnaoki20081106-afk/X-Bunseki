@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T01:50:52.567406+00:00",
+  "updated_at": "2026-08-25T02:49:41.824273+00:00",
   "status": "success",
-  "started_at": "2026-08-25T01:48:02.527602+00:00",
-  "finished_at": "2026-08-25T01:50:52.566229+00:00",
-  "posts_scanned": 137,
-  "posts_with_history": 24,
+  "started_at": "2026-08-25T02:47:01.323702+00:00",
+  "finished_at": "2026-08-25T02:49:41.823198+00:00",
+  "posts_scanned": 140,
+  "posts_with_history": 28,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 105,
+  "minutes_since_last_notification": 164,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 7,
-    "いいねが少なすぎる": 74,
-    "古すぎる": 13
+    "いいねが少なすぎる": 83,
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4236,
-    "posts": 2365,
-    "oldest": "2026-08-24T02:16:28.043454+00:00"
+    "total": 4234,
+    "posts": 2359,
+    "oldest": "2026-08-24T03:30:32.765174+00:00"
   },
   "top5": [
     {
-      "author": "okiharumovie",
-      "score": 43.5,
-      "likes": 1093,
-      "likes_per_min": 22.97382797940212,
+      "author": "airi_fact_555",
+      "score": 51.5,
+      "likes": 640,
+      "likes_per_min": 9.89,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 47.6,
-      "text": "✧｡ 予告編公開 ｡✧\n\n余命１年の音楽教師が出会ったのは、死神に「喜び」以外の感情を奪われた高校生――\nどう生きるかを",
-      "url": "https://x.com/okiharumovie/status/2092055181798396023"
+      "measured": true,
+      "age_minutes": 78.8,
+      "text": "【クルド】まるで私たち日本人のせいだと言いたいかのような発言「ならば全員帰さないと危険だ」となるのが常識ね\n\n埼玉・川口",
+      "url": "https://x.com/airi_fact_555/status/2092062117088366664"
     },
     {
-      "author": "KNTFR2434",
-      "score": 38.2,
-      "likes": 1241,
-      "likes_per_min": 70.07653192067954,
+      "author": "jyu_ta_ro",
+      "score": 46.5,
+      "likes": 9253,
+      "likes_per_min": 195.01816620668856,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.7,
-      "text": "ちゃす",
-      "url": "https://x.com/KNTFR2434/status/2092062698565742718"
+      "age_minutes": 47.4,
+      "text": "『LABO AROOM』\n\nブランドアンバサダーを山中が務めます\n\n\nhttps://\nlaboaroom.jp\n\nメロ",
+      "url": "https://x.com/jyu_ta_ro/status/2092070015415832693"
     },
     {
-      "author": "welcia_jp",
-      "score": 37.9,
-      "likes": 1911,
-      "likes_per_min": 11.383410417089106,
+      "author": "tbsTV_MGA",
+      "score": 43.6,
+      "likes": 1128,
+      "likes_per_min": 37.983811346747046,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 167.9,
-      "text": "＼1日目／\nトラッキー×うえたん\n\nウエルシアグループ専用\nQUOカードPay1,111円分が\n合計400名様にその場で",
-      "url": "https://x.com/welcia_jp/status/2092024906397753501"
+      "age_minutes": 29.7,
+      "text": "次回のお知らせ\n8/31(月)よる8時55分から\n\n極上の歌コラボSP\n\n#AI #郷ひろみ\n#森山直太朗 #Super",
+      "url": "https://x.com/tbsTV_MGA/status/2092074482995175465"
     },
     {
-      "author": "TennimuNews",
-      "score": 37.8,
-      "likes": 851,
-      "likes_per_min": 16.726984584756618,
+      "author": "ICEx_official",
+      "score": 40.3,
+      "likes": 915,
+      "likes_per_min": 46.454100386417394,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 50.9,
-      "text": "【#テニミュ 全国立海 前編 グッズ情報】\n本日は幸村くんがテニミュモビールキットを紹介してくれました。さて、気になる勝",
-      "url": "https://x.com/TennimuNews/status/2092054350667686318"
+      "age_minutes": 19.7,
+      "text": "#こんにちICEx\n#阿久根温世\n#COOLer\n\n『ICEx Fourth Concert Tour 2026\n\"FR",
+      "url": "https://x.com/ICEx_official/status/2092077001217540226"
     },
     {
-      "author": "nishiki1225_2",
-      "score": 36.3,
-      "likes": 1811,
-      "likes_per_min": 24.79942849974922,
+      "author": "etoile_griotte",
+      "score": 40.3,
+      "likes": 1026,
+      "likes_per_min": 12.130499310974042,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 73.0,
-      "text": "おはようをくれ\n\n人生初の福岡行ってくる  ラスト楽しもうな？\n\nお前の為に写真とか撮ってくる",
-      "url": "https://x.com/nishiki1225_2/status/2092048778513805435"
+      "age_minutes": 84.6,
+      "text": "𝑬𝑽𝑬𝑵𝑻 𝑵𝑬𝑾𝑺\n\n𝑯𝒆𝒍𝒍𝒐 𝑰𝑺𝑬𝑻𝑨𝑵 𝑯𝒆𝒍𝒍𝒐 𝑺𝒂𝒏𝒓𝒊𝒐 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔\n\n9/8(tue)-1",
+      "url": "https://x.com/etoile_griotte/status/2092060673853493756"
     }
   ]
 }

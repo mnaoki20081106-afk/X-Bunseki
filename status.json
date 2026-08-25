@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T00:06:07.747073+00:00",
+  "updated_at": "2026-08-25T01:50:52.567406+00:00",
   "status": "success",
-  "started_at": "2026-08-25T00:03:20.063733+00:00",
-  "finished_at": "2026-08-25T00:06:07.745679+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 112,
-  "posts_flagged": 1,
-  "notified_count": 1,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 53,
+  "started_at": "2026-08-25T01:48:02.527602+00:00",
+  "finished_at": "2026-08-25T01:50:52.566229+00:00",
+  "posts_scanned": 137,
+  "posts_with_history": 24,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 105,
   "reject_reasons": {
-    "いいねが少なすぎる": 66,
-    "古すぎる": 24,
-    "初回観測かつ平均速度が低い": 3
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 74,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4255,
+    "total": 4236,
     "posts": 2365,
-    "oldest": "2026-08-24T00:41:14.833478+00:00"
+    "oldest": "2026-08-24T02:16:28.043454+00:00"
   },
   "top5": [
     {
-      "author": "AZKi_VDiVA",
-      "score": 57.9,
-      "likes": 1908,
-      "likes_per_min": 16.7,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 60.1,
-      "text": "おはあずき「第2回 ホロライブ ダジャレASMRバトル」のダジャレ募集が【本日23:59まで】！\n\nたくさんのダジャレを",
-      "url": "https://x.com/AZKi_VDiVA/status/2092025661200474211"
-    },
-    {
-      "author": "onishi_aoi",
-      "score": 54.7,
-      "likes": 1230,
-      "likes_per_min": 38.26971625562415,
+      "author": "okiharumovie",
+      "score": 43.5,
+      "likes": 1093,
+      "likes_per_min": 22.97382797940212,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 32.1,
-      "text": "おはようʕ´-ﻌก̀ʔᐝ\nアイドル5年目にして、おはツイを始めようと試みています(続かなかったら、スマンて感じで、な！)",
-      "url": "https://x.com/onishi_aoi/status/2092032699821420983"
+      "age_minutes": 47.6,
+      "text": "✧｡ 予告編公開 ｡✧\n\n余命１年の音楽教師が出会ったのは、死神に「喜び」以外の感情を奪われた高校生――\nどう生きるかを",
+      "url": "https://x.com/okiharumovie/status/2092055181798396023"
     },
     {
-      "author": "akindosushiroco",
-      "score": 49.2,
-      "likes": 3390,
-      "likes_per_min": 40.12,
-      "acceleration": 0.76,
-      "measured": true,
-      "age_minutes": 66.1,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2092024154744668464"
-    },
-    {
-      "author": "livedoornews",
-      "score": 44.0,
-      "likes": 351,
-      "likes_per_min": 4.35,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 81.1,
-      "text": "【否認】マッサージ店にみせかけて違法な風俗店経営か 中国籍の女ら2人逮捕\n\nhttps://\nnews.livedoor",
-      "url": "https://x.com/livedoornews/status/2092020376356483519"
-    },
-    {
-      "author": "bikkuri__donkey",
-      "score": 43.4,
-      "likes": 1198,
-      "likes_per_min": 15.99,
+      "author": "KNTFR2434",
+      "score": 38.2,
+      "likes": 1241,
+      "likes_per_min": 70.07653192067954,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 71.1,
-      "text": "明日から『日本の秋に、月見ハンバーグ。』フェア\n\nまんまるな\"たまご\"が、まるで夜空のお月様\n\n【 #びっくりドンキーの",
-      "url": "https://x.com/bikkuri__donkey/status/2092022892808872403"
+      "measured": false,
+      "age_minutes": 17.7,
+      "text": "ちゃす",
+      "url": "https://x.com/KNTFR2434/status/2092062698565742718"
+    },
+    {
+      "author": "welcia_jp",
+      "score": 37.9,
+      "likes": 1911,
+      "likes_per_min": 11.383410417089106,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 167.9,
+      "text": "＼1日目／\nトラッキー×うえたん\n\nウエルシアグループ専用\nQUOカードPay1,111円分が\n合計400名様にその場で",
+      "url": "https://x.com/welcia_jp/status/2092024906397753501"
+    },
+    {
+      "author": "TennimuNews",
+      "score": 37.8,
+      "likes": 851,
+      "likes_per_min": 16.726984584756618,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 50.9,
+      "text": "【#テニミュ 全国立海 前編 グッズ情報】\n本日は幸村くんがテニミュモビールキットを紹介してくれました。さて、気になる勝",
+      "url": "https://x.com/TennimuNews/status/2092054350667686318"
+    },
+    {
+      "author": "nishiki1225_2",
+      "score": 36.3,
+      "likes": 1811,
+      "likes_per_min": 24.79942849974922,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 73.0,
+      "text": "おはようをくれ\n\n人生初の福岡行ってくる  ラスト楽しもうな？\n\nお前の為に写真とか撮ってくる",
+      "url": "https://x.com/nishiki1225_2/status/2092048778513805435"
     }
   ]
 }

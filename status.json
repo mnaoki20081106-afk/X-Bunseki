@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T10:19:19.932236+00:00",
+  "updated_at": "2026-08-25T10:57:47.322646+00:00",
   "status": "success",
-  "started_at": "2026-08-25T10:16:30.054690+00:00",
-  "finished_at": "2026-08-25T10:19:19.930835+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 84,
-  "posts_flagged": 1,
+  "started_at": "2026-08-25T10:55:07.640264+00:00",
+  "finished_at": "2026-08-25T10:57:47.321272+00:00",
+  "posts_scanned": 150,
+  "posts_with_history": 61,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 29,
+  "minutes_since_last_notification": 68,
   "reject_reasons": {
-    "いいねが少なすぎる": 67,
-    "古すぎる": 22,
-    "初回観測かつ平均速度が低い": 1
+    "初回観測かつ平均速度が低い": 2,
+    "いいねが少なすぎる": 62,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4527,
-    "posts": 2445,
+    "total": 4677,
+    "posts": 2534,
     "oldest": "2026-08-24T11:00:26.009030+00:00"
   },
   "top5": [
     {
-      "author": "Infinity_rJP",
-      "score": 56.6,
-      "likes": 2758,
-      "likes_per_min": 57.91,
+      "author": "Lapiskawaii",
+      "score": 54.2,
+      "likes": 2763,
+      "likes_per_min": 19.93,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 39.5,
-      "text": "〖お知らせ〗\n\n／⋰\n EP『#ダンダーラ』【初回限定“超”盤】\n SUPER EIGHTアプリ特典\n 《令和8年8月8",
-      "url": "https://x.com/Infinity_rJP/status/2092185174780125423"
+      "age_minutes": 94.5,
+      "text": "アニメ投稿したよ〜！\n見てみて〜 感想まってる〜\n\nhttps://\nyoutube.com/shorts/96XS72",
+      "url": "https://x.com/Lapiskawaii/status/2092181012587626615"
+    },
+    {
+      "author": "akagi_wen",
+      "score": 53.6,
+      "likes": 1717,
+      "likes_per_min": 120.02670702583914,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.3,
+      "text": "【YouTubeショート動画投稿】\nタイトル\n【#KARAAGEDANCE （練習 with ME）】〜↑↑-KARAA",
+      "url": "https://x.com/akagi_wen/status/2092201189073203382"
+    },
+    {
+      "author": "kinnpatuhikaru",
+      "score": 52.4,
+      "likes": 172,
+      "likes_per_min": 19.387236483496757,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.9,
+      "text": "連日炎上してたのにYouTubeのメンシプ会員がなぜか5万人を超えてしまいました \nhttps://\nyoutu.be/",
+      "url": "https://x.com/kinnpatuhikaru/status/2092202555321504155"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 49.4,
-      "likes": 479,
-      "likes_per_min": 25.12453147993995,
+      "score": 51.5,
+      "likes": 1004,
+      "likes_per_min": 13.65,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 19.1,
+      "measured": true,
+      "age_minutes": 57.5,
       "text": "【知名度S】\n\nTKO\n木下隆行 \n@tkokinosita\n \n\n備考 : セブンイレブンの駐車場に座り込んで、タバコ",
       "url": "https://x.com/DEATHDOL_NOTE/status/2092190313716859077"
     },
     {
-      "author": "yukihanalamy",
-      "score": 49.4,
-      "likes": 1281,
-      "likes_per_min": 8.3,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 79.3,
-      "text": "━*＼ショート動画アップ／*━\n　　　【#めろぞーま】\nみんなもめろぞーま♡してみてね！\n━━━━━━━━━━━━━━\n",
-      "url": "https://x.com/yukihanalamy/status/2092175153207689253"
-    },
-    {
-      "author": "surumelock",
-      "score": 49.0,
-      "likes": 243,
-      "likes_per_min": 6.65,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 39.2,
-      "text": "りくりゅうが婚約発表したら現れた理解のできない人",
-      "url": "https://x.com/surumelock/status/2092185236365095220"
-    },
-    {
-      "author": "1O46V",
-      "score": 44.6,
-      "likes": 500,
-      "likes_per_min": 33.41122127538187,
+      "author": "imassc_official",
+      "score": 50.9,
+      "likes": 2703,
+      "likes_per_min": 97.38733312394037,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 15.0,
-      "text": "投稿完了～！ 是非沢山コメント拡散してね\n『抜錨 / ナナホシ管弦楽団 feat.巡音ルカ』歌ってみた by 弦月藤士郎",
-      "url": "https://x.com/1O46V/status/2092191345993769008"
+      "age_minutes": 27.8,
+      "text": "近日登場するアイドルの、私服イラストをご紹介しました！\n\n◆登場アイドル\nP-SSR 【恋まで、あと25メートル】郁田 ",
+      "url": "https://x.com/imassc_official/status/2092197803472928860"
     }
   ]
 }

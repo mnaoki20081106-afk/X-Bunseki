@@ -1,17 +1,16 @@
 {
-  "updated_at": "2026-08-25T05:03:28.235995+00:00",
+  "updated_at": "2026-08-25T05:43:59.679344+00:00",
   "status": "success",
-  "started_at": "2026-08-25T05:00:35.473122+00:00",
-  "finished_at": "2026-08-25T05:03:28.235061+00:00",
-  "posts_scanned": 160,
+  "started_at": "2026-08-25T05:40:58.832479+00:00",
+  "finished_at": "2026-08-25T05:43:59.678204+00:00",
+  "posts_scanned": 149,
   "posts_with_history": 82,
-  "posts_flagged": 1,
-  "notified_count": 1,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 297,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 41,
   "reject_reasons": {
-    "いいねが少なすぎる": 69,
-    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 61,
     "古すぎる": 22
   },
   "config": {
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4418,
-    "posts": 2457,
-    "oldest": "2026-08-24T05:25:24.128721+00:00"
+    "total": 4426,
+    "posts": 2446,
+    "oldest": "2026-08-24T06:09:23.439565+00:00"
   },
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 55.2,
-      "likes": 300,
-      "likes_per_min": 4.19,
+      "author": "miosugita",
+      "score": 47.9,
+      "likes": 1534,
+      "likes_per_min": 27.65,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 73.5,
+      "age_minutes": 77.4,
+      "text": "改めて、このAIで作った架空の“立憲民主党”候補者のニュースを見ているのですが、これがもし、自民党や維新の関係者がやって",
+      "url": "https://x.com/miosugita/status/2092106352529461689"
+    },
+    {
+      "author": "airi_fact_555",
+      "score": 44.1,
+      "likes": 687,
+      "likes_per_min": 10.51,
+      "acceleration": 1.87,
+      "measured": true,
+      "age_minutes": 91.9,
+      "text": "刑事告発 ｷﾀ ━━━━(ﾟ∀ﾟ)━━━━!!\n\nとうとう出たね。。。【沖縄県知事選】 玉城デニー知事に対する刑事告発状",
+      "url": "https://x.com/airi_fact_555/status/2092102691707330954"
+    },
+    {
+      "author": "Hanakago_2434rr",
+      "score": 43.9,
+      "likes": 934,
+      "likes_per_min": 31.95600536224507,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 29.2,
+      "text": "【新衣装お披露目】感謝のお揃い新衣装を大公開！！！【花籠つばさ / にじさんじ】 \nhttps://\nyoutube.c",
+      "url": "https://x.com/Hanakago_2434rr/status/2092118467109654734"
+    },
+    {
+      "author": "mazzel_official",
+      "score": 42.6,
+      "likes": 2648,
+      "likes_per_min": 64.88444119003995,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 40.8,
+      "text": "[ EVENT ]\n\n11/23(月・祝)\n「15th Anniversary テレビ朝日ドリームフェスティバル2026",
+      "url": "https://x.com/mazzel_official/status/2092115551309254969"
+    },
+    {
+      "author": "livedoornews",
+      "score": 41.3,
+      "likes": 396,
+      "likes_per_min": 2.37,
+      "acceleration": 0.57,
+      "measured": true,
+      "age_minutes": 114.0,
       "text": "【熊本地震】イオンモール爆発事故、従業員遺族に「ハビタ」幹部が再び謝罪\n\nhttps://\nnews.livedoor.",
       "url": "https://x.com/livedoornews/status/2092097132081578234"
-    },
-    {
-      "author": "hezuruy",
-      "score": 47.0,
-      "likes": 1606,
-      "likes_per_min": 30.84,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 56.3,
-      "text": "NHKは本当に信用ならん。\n被災地で倒壊した住宅からお年寄りが救出された時もベトナム人が中心で日本人は補助程度という印象",
-      "url": "https://x.com/hezuruy/status/2092101442408780053"
-    },
-    {
-      "author": "zespri_jp",
-      "score": 45.4,
-      "likes": 5344,
-      "likes_per_min": 27.49,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 123.5,
-      "text": "／\n陽気すぎるオレたちのフィギュア発売\n初の片足立ちだよ万歳\n＼\n⠀\n今年もオレたちの\n【フィギュア付きパック】が数量限",
-      "url": "https://x.com/zespri_jp/status/2092084551623578037"
-    },
-    {
-      "author": "shinji_ishimaru",
-      "score": 45.0,
-      "likes": 1324,
-      "likes_per_min": 22.49,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 60.2,
-      "text": "財布をなくしました。\n\n朝、起きると財布が見当たらない…\n\nそういえば、深夜の飲み会収録!?の後、タクシーを降りる時に財",
-      "url": "https://x.com/shinji_ishimaru/status/2092100465957982347"
-    },
-    {
-      "author": "houkaistarrail",
-      "score": 42.3,
-      "likes": 7098,
-      "likes_per_min": 83.03,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 63.4,
-      "text": "【崩壊：スターレイル】ロビン・夏空の歌 キャラクターPV 「風を追いかけて」\n\n風の吹く先は誰にもわからない。\nこの風船",
-      "url": "https://x.com/houkaistarrail/status/2092099653244260733"
     }
   ]
 }

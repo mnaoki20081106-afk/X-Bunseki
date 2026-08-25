@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T22:52:55.228022+00:00",
+  "updated_at": "2026-08-25T23:16:25.030057+00:00",
   "status": "success",
-  "started_at": "2026-08-25T22:49:44.715745+00:00",
-  "finished_at": "2026-08-25T22:52:55.226983+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 86,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-25T23:13:24.323770+00:00",
+  "finished_at": "2026-08-25T23:16:25.028986+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 99,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 672,
+  "minutes_since_last_notification": 696,
   "reject_reasons": {
-    "いいねが少なすぎる": 47,
-    "古すぎる": 54,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 53,
+    "古すぎる": 42,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5031,
-    "posts": 2499,
-    "oldest": "2026-08-24T23:13:17.086109+00:00"
+    "total": 5078,
+    "posts": 2506,
+    "oldest": "2026-08-24T23:44:43.414155+00:00"
   },
   "top5": [
     {
-      "author": "modelpress",
-      "score": 46.0,
-      "likes": 2093,
-      "likes_per_min": 31.82,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 112.8,
-      "text": "与田祐希主演×片思いの相手役に野村周平\n\n「溺愛カレシの作り方～セから本命になる女の子の話～」テレ東でドラマ化\n\nhtt",
-      "url": "https://x.com/modelpress/status/2092356372159684840"
-    },
-    {
-      "author": "west_sashitabi",
-      "score": 44.0,
-      "likes": 5104,
-      "likes_per_min": 98.42,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 52.9,
-      "text": "＼今年もこの季節がやってきた／\n　　◤◢◤◢◤◢◤◢◤◢◤◢◤◢\n            \n              ",
-      "url": "https://x.com/west_sashitabi/status/2092371444114317602"
-    },
-    {
-      "author": "nino_honmono",
-      "score": 43.9,
-      "likes": 21187,
-      "likes_per_min": 241.59,
-      "acceleration": 0.72,
-      "measured": true,
-      "age_minutes": 68.5,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2092367525099323640"
-    },
-    {
-      "author": "wagahaida_L",
-      "score": 41.5,
-      "likes": 2987,
-      "likes_per_min": 55.8,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 61.9,
-      "text": "おはようございます。\n所で、お姉さんのVtuberさんをオススメしてください。自薦でも他薦でも、お願いします。",
-      "url": "https://x.com/wagahaida_L/status/2092369177499857038"
-    },
-    {
-      "author": "Shikinagi_2434",
-      "score": 39.9,
-      "likes": 1293,
-      "likes_per_min": 24.433030165032267,
+      "author": "nambamasatoshi",
+      "score": 58.2,
+      "likes": 1267,
+      "likes_per_min": 73.30354310255278,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 52.9,
-      "text": "ネタ系ショート投稿しました。\n引っ越しは悩みの種ですね。\n\n#四季凪の８月まいにちShort \n\nVTuberあるある ",
-      "url": "https://x.com/Shikinagi_2434/status/2092371441354444811"
+      "age_minutes": 17.3,
+      "text": "私事ではございますが、結婚いたしました。\n業種は全く異なりますが、私と同じく会社員をしている大切な方です。\nお互い会社員",
+      "url": "https://x.com/nambamasatoshi/status/2092386319091818569"
+    },
+    {
+      "author": "EL6_JIL_",
+      "score": 49.8,
+      "likes": 998,
+      "likes_per_min": 21.98191365148378,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 45.4,
+      "text": "おはじる〜\n\n今日も楽しい楽しいレコーディン⤵︎グゥ⤴︎してくるよ！！！\n一生懸命いい歌録ってこようと思います！！\n\nそ",
+      "url": "https://x.com/EL6_JIL_/status/2092379241237123077"
+    },
+    {
+      "author": "akindosushiroco",
+      "score": 46.3,
+      "likes": 1202,
+      "likes_per_min": 73.36294076621638,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.4,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2092386545051603423"
+    },
+    {
+      "author": "jijicom",
+      "score": 45.8,
+      "likes": 163,
+      "likes_per_min": 2.85,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 96.5,
+      "text": "ロシアで入隊契約の強制横行か　泥酔時に署名も―人権団体\n\nhttps://\njiji.com/jc/article?k=",
+      "url": "https://x.com/jijicom/status/2092366393060806722"
+    },
+    {
+      "author": "odoru_movief",
+      "score": 43.8,
+      "likes": 5183,
+      "likes_per_min": 70.23,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 76.4,
+      "text": "『踊る大捜査線 N.E.W. 』\n◢◤オリジナルメンバー紹介映像解禁◢◤\n\n彼らも、元気だ、青島包囲網！\n    決して",
+      "url": "https://x.com/odoru_movief/status/2092371444382499158"
     }
   ]
 }

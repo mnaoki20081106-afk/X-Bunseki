@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T03:38:47.406065+00:00",
+  "updated_at": "2026-08-25T04:24:03.539540+00:00",
   "status": "success",
-  "started_at": "2026-08-25T03:35:44.193976+00:00",
-  "finished_at": "2026-08-25T03:38:47.404904+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 41,
+  "started_at": "2026-08-25T04:21:14.027334+00:00",
+  "finished_at": "2026-08-25T04:24:03.538484+00:00",
+  "posts_scanned": 152,
+  "posts_with_history": 53,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 213,
+  "minutes_since_last_notification": 258,
   "reject_reasons": {
-    "いいねが少なすぎる": 70,
-    "初回観測かつ平均速度が低い": 6,
-    "古すぎる": 23
+    "いいねが少なすぎる": 67,
+    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4242,
-    "posts": 2366,
+    "total": 4394,
+    "posts": 2465,
     "oldest": "2026-08-24T04:27:57.158296+00:00"
   },
   "top5": [
     {
-      "author": "Aegroupofficial",
-      "score": 52.0,
-      "likes": 8674,
-      "likes_per_min": 232.71430398403345,
+      "author": "pps_as",
+      "score": 52.9,
+      "likes": 1355,
+      "likes_per_min": 56.35947677586513,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 37.3,
-      "text": "［］\n\n15th Anniversary テレビ朝日\nドリームフェスティバル2026\n\nAぇ! groupの出演が決定\n",
-      "url": "https://x.com/Aegroupofficial/status/2092084931816210851"
+      "age_minutes": 24.0,
+      "text": "【新商品のお知らせ・プリティストアオンライン】\n『名探偵プリキュア！』よりマリンシリーズグッズが予約発売決定\n\nプリティ",
+      "url": "https://x.com/pps_as/status/2092099653525188751"
     },
     {
-      "author": "official__INI",
-      "score": 49.5,
-      "likes": 2713,
-      "likes_per_min": 76.22962601447638,
+      "author": "tokoyamitowa",
+      "score": 50.0,
+      "likes": 1810,
+      "likes_per_min": 44.26283166406729,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.6,
-      "text": "[]\n\n「15th Anniversary テレビ朝日ドリームフェスティバル2026」\n#INI の出演が決定！\n\n11",
-      "url": "https://x.com/official__INI/status/2092085354618900849"
+      "age_minutes": 40.9,
+      "text": "１８：００～\n\n【 第十回 / #ホロステ 】ホロドリに入れてほしい告知ありホロソングステーション【常闇トワ/ホロライブ",
+      "url": "https://x.com/tokoyamitowa/status/2092095412987646058"
     },
     {
-      "author": "VOLTACTION_info",
-      "score": 48.9,
-      "likes": 5322,
-      "likes_per_min": 149.6772567978852,
+      "author": "usadapekora",
+      "score": 48.2,
+      "likes": 1571,
+      "likes_per_min": 30.86923307789612,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.6,
-      "text": "ヴォルタShorts 投稿 \n\n／\n　『#アイスブレイクブレイカー / 甲斐田晴』に合わせて\n　ヴォルタが組体操してみた",
-      "url": "https://x.com/VOLTACTION_info/status/2092085365331099657"
+      "age_minutes": 50.9,
+      "text": "ぺこらの新アイテムがきｔら！！\n「和風Chibi style」から粋なアイテムが登場\n\nぺこーらがドーンと描かれた屏風！",
+      "url": "https://x.com/usadapekora/status/2092092897214783777"
     },
     {
-      "author": "denfaminicogame",
-      "score": 48.3,
-      "likes": 1175,
-      "likes_per_min": 41.07457501704473,
+      "author": "zespri_jp",
+      "score": 48.2,
+      "likes": 4261,
+      "likes_per_min": 50.69072897212328,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.6,
-      "text": "『地球防衛軍6.2』発表！敵の数が“約2倍”になる「地球防衛軍6」のパワーアップ版\n\nhttps://\nnews.den",
-      "url": "https://x.com/denfaminicogame/status/2092087113374429687"
+      "age_minutes": 84.1,
+      "text": "／\n陽気すぎるオレたちのフィギュア発売\n初の片足立ちだよ万歳\n＼\n⠀\n今年もオレたちの\n【フィギュア付きパック】が数量限",
+      "url": "https://x.com/zespri_jp/status/2092084551623578037"
     },
     {
-      "author": "iD7Mng_Ogami",
-      "score": 48.0,
-      "likes": 2614,
-      "likes_per_min": 78.60116594094931,
+      "author": "official_jo1",
+      "score": 47.2,
+      "likes": 2360,
+      "likes_per_min": 98.36572489330257,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.3,
-      "text": "【#ŹOOĻ記念日2026】\n8/31のŹOOĻの記念日まで、あと6日！\n\n2026年グループ記念日企画\n『Dance ",
-      "url": "https://x.com/iD7Mng_Ogami/status/2092085944078000431"
+      "age_minutes": 24.0,
+      "text": "[] #タフグミ \nタフグミブランドパートナーに #川尻蓮 がCOMEBACK\n\nみんなの熱い応援で、待望の第2弾が実現",
+      "url": "https://x.com/official_jo1/status/2092099667270226107"
     }
   ]
 }

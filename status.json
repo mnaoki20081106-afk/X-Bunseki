@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T12:04:04.918787+00:00",
+  "updated_at": "2026-08-25T13:09:35.030979+00:00",
   "status": "success",
-  "started_at": "2026-08-25T12:01:09.233010+00:00",
-  "finished_at": "2026-08-25T12:04:04.917599+00:00",
-  "posts_scanned": 166,
-  "posts_with_history": 80,
-  "posts_flagged": 0,
+  "started_at": "2026-08-25T13:06:51.997927+00:00",
+  "finished_at": "2026-08-25T13:09:35.028378+00:00",
+  "posts_scanned": 152,
+  "posts_with_history": 32,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 24,
+  "minutes_since_last_notification": 89,
   "reject_reasons": {
-    "いいねが少なすぎる": 73,
+    "いいねが少なすぎる": 74,
     "初回観測かつ平均速度が低い": 4,
-    "古すぎる": 22
+    "古すぎる": 10
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4706,
-    "posts": 2529,
-    "oldest": "2026-08-24T12:20:47.846920+00:00"
+    "total": 4715,
+    "posts": 2550,
+    "oldest": "2026-08-24T13:28:15.778690+00:00"
   },
   "top5": [
     {
-      "author": "KNTFR2434",
-      "score": 53.2,
-      "likes": 1594,
-      "likes_per_min": 120.01509630292918,
+      "author": "osusi0303",
+      "score": 65.8,
+      "likes": 1256,
+      "likes_per_min": 136.5184357305325,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.3,
-      "text": "配信視聴感謝！！！\n上司を、超えろ。",
-      "url": "https://x.com/KNTFR2434/status/2092218132534579576"
+      "age_minutes": 9.2,
+      "text": "アイドルでした福岡ありがとでした‍\n\n#うぃあすに2",
+      "url": "https://x.com/osusi0303/status/2092235640096399811"
     },
     {
-      "author": "livedoornews",
-      "score": 52.2,
-      "likes": 3898,
-      "likes_per_min": 49.29082012714424,
+      "author": "usamirito_power",
+      "score": 49.4,
+      "likes": 3362,
+      "likes_per_min": 123.45064324954598,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 79.1,
-      "text": "【告白】「タトゥー入れてる奴は全員バカ」主張の彫師YouTuber、刺青3人組に「自宅凸」され警察沙汰\n\nhttps:/",
-      "url": "https://x.com/livedoornews/status/2092201570595217759"
+      "age_minutes": 27.2,
+      "text": "22:15から！！！\n\n【リズム天国 ミラクルスターズ】リズムにノリ遅れた【宇佐美リト/にじさんじ】\n\nhttps://",
+      "url": "https://x.com/usamirito_power/status/2092231101880447374"
     },
     {
-      "author": "aparente1017",
-      "score": 50.0,
-      "likes": 557,
-      "likes_per_min": 16.25,
-      "acceleration": null,
+      "author": "yakuzanews",
+      "score": 48.6,
+      "likes": 1921,
+      "likes_per_min": 27.62,
+      "acceleration": 9.89,
       "measured": true,
-      "age_minutes": 67.4,
-      "text": "選手への誹謗中傷を見ていて思うこと。\n本当になくならないなこの問題。\n\n本人に直接DMを送っている人はもちろんやけど、Y",
-      "url": "https://x.com/aparente1017/status/2092204514145386707"
+      "age_minutes": 125.2,
+      "text": "ホテルのベッドに使用済みコカインの袋…山口組傘下組員とセクシー女優を逮捕",
+      "url": "https://x.com/yakuzanews/status/2092206449837650072"
     },
     {
-      "author": "uratasama_kari",
-      "score": 45.0,
-      "likes": 1269,
-      "likes_per_min": 111.65864223196633,
+      "author": "728_Storm",
+      "score": 48.0,
+      "likes": 4787,
+      "likes_per_min": 176.85815129659673,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.4,
-      "text": "放送はあしたの21時〜\n\n引き続き喉はおやすみー",
-      "url": "https://x.com/uratasama_kari/status/2092218612711051353"
+      "age_minutes": 27.1,
+      "text": "なにわ男子 / Storm Labels\n公式TikTok更新！\n\n／\n＼僕カワ／\nやっぱり丈子が！\nいっちゃんカワイイ",
+      "url": "https://x.com/728_Storm/status/2092231145048166776"
     },
     {
-      "author": "DAZNJPNBaseball",
-      "score": 43.1,
-      "likes": 640,
-      "likes_per_min": 12.78,
+      "author": "daiquiri_ch",
+      "score": 46.5,
+      "likes": 1718,
+      "likes_per_min": 148.7417218713145,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 56.7,
-      "text": "プロ初先発は上々\n\n初勝利の権利を持って降板\n伊藤樹 5回1失点2奪三振（85球）\n※映像は5回の奪三振\n\nオリックス×",
-      "url": "https://x.com/DAZNJPNBaseball/status/2092207208528539815"
+      "measured": false,
+      "age_minutes": 11.6,
+      "text": "愛しとーよ\n\n親孝行出来たかな\n\n#うぃあすに２",
+      "url": "https://x.com/daiquiri_ch/status/2092235051782283298"
     }
   ]
 }

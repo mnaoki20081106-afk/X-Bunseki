@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T06:23:27.014325+00:00",
+  "updated_at": "2026-08-25T07:17:15.742720+00:00",
   "status": "success",
-  "started_at": "2026-08-25T06:20:25.257004+00:00",
-  "finished_at": "2026-08-25T06:23:27.013088+00:00",
-  "posts_scanned": 145,
-  "posts_with_history": 70,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-25T07:14:19.064475+00:00",
+  "finished_at": "2026-08-25T07:17:15.741593+00:00",
+  "posts_scanned": 137,
+  "posts_with_history": 53,
+  "posts_flagged": 2,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 80,
+  "minutes_since_last_notification": 54,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "古すぎる": 23,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 54,
+    "初回観測かつ平均速度が低い": 5,
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4428,
-    "posts": 2416,
+    "total": 4565,
+    "posts": 2500,
     "oldest": "2026-08-24T07:20:25.725583+00:00"
   },
   "top5": [
     {
       "author": "Kanae_2434",
-      "score": 56.8,
-      "likes": 2526,
-      "likes_per_min": 107.82185877380533,
+      "score": 60.3,
+      "likes": 6429,
+      "likes_per_min": 72.5,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 23.4,
+      "measured": true,
+      "age_minutes": 77.3,
       "text": "／\n#にじさんじ束縛ボイス Vol.2 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで\nStore｜\nhttp",
       "url": "https://x.com/Kanae_2434/status/2092129849012113606"
     },
     {
       "author": "Kanae_2434",
-      "score": 54.7,
-      "likes": 2586,
-      "likes_per_min": 110.46153190179659,
+      "score": 55.8,
+      "likes": 5443,
+      "likes_per_min": 53.07,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 23.4,
+      "measured": true,
+      "age_minutes": 77.2,
       "text": "／\n#にじさんじがんばらないボイス 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで！\nStore｜\nhttps",
       "url": "https://x.com/Kanae_2434/status/2092129853923328230"
     },
     {
       "author": "chiikawa_kouhou",
-      "score": 51.8,
-      "likes": 1133,
-      "likes_per_min": 48.39633242255821,
+      "score": 54.3,
+      "likes": 3661,
+      "likes_per_min": 76.11941951779784,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.4,
+      "age_minutes": 48.1,
       "text": "＼新商品／\n\nファッションセンターしまむらから\n「ちいかわ」のアイテムが登場\n\n8月26日(水)より\n全国のファッション",
-      "url": "https://x.com/chiikawa_kouhou/status/2092129853202186643"
+      "url": "https://x.com/chiikawa_kouhou/status/2092137189954203965"
     },
     {
-      "author": "ensemble_stars",
-      "score": 49.4,
-      "likes": 3007,
-      "likes_per_min": 130.39406861101727,
+      "author": "ClubNPM",
+      "score": 46.1,
+      "likes": 436,
+      "likes_per_min": 6.63,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 72.8,
+      "text": "所属選手に関するご報告\n\n平素より日本プロ麻雀協会ならびに所属選手を応援いただき、誠にありがとうございます。\n\nこのたび",
+      "url": "https://x.com/ClubNPM/status/2092130958992388432"
+    },
+    {
+      "author": "YamaWayama_PR",
+      "score": 45.8,
+      "likes": 1105,
+      "likes_per_min": 23.3719911295644,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.1,
-      "text": "(1/2)【お知らせ】\n\n15時より『Bright me up!!スカウト Stage:斑』を開始しました！\n新カードの",
-      "url": "https://x.com/ensemble_stars/status/2092129941777449098"
-    },
-    {
-      "author": "miosugita",
-      "score": 47.7,
-      "likes": 3180,
-      "likes_per_min": 41.74,
-      "acceleration": 1.51,
-      "measured": true,
-      "age_minutes": 116.8,
-      "text": "改めて、このAIで作った架空の“立憲民主党”候補者のニュースを見ているのですが、これがもし、自民党や維新の関係者がやって",
-      "url": "https://x.com/miosugita/status/2092106352529461689"
+      "age_minutes": 47.3,
+      "text": "【お詫びと訂正】\n2026年12月11日発売の『和山やま作品４冊セット 小冊子＆アクリルスタンド付き特装版』につきまして",
+      "url": "https://x.com/YamaWayama_PR/status/2092137395433119855"
     }
   ]
 }

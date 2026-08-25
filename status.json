@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T23:16:25.030057+00:00",
+  "updated_at": "2026-08-25T23:46:29.454226+00:00",
   "status": "success",
-  "started_at": "2026-08-25T23:13:24.323770+00:00",
-  "finished_at": "2026-08-25T23:16:25.028986+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 99,
+  "started_at": "2026-08-25T23:43:31.851130+00:00",
+  "finished_at": "2026-08-25T23:46:29.453132+00:00",
+  "posts_scanned": 152,
+  "posts_with_history": 94,
   "posts_flagged": 1,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 696,
+  "minutes_since_last_notification": 30,
   "reject_reasons": {
-    "いいねが少なすぎる": 53,
-    "古すぎる": 42,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 54,
+    "古すぎる": 36,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5078,
-    "posts": 2506,
-    "oldest": "2026-08-24T23:44:43.414155+00:00"
+    "total": 5082,
+    "posts": 2520,
+    "oldest": "2026-08-25T00:06:06.417747+00:00"
   },
   "top5": [
     {
       "author": "nambamasatoshi",
-      "score": 58.2,
-      "likes": 1267,
-      "likes_per_min": 73.30354310255278,
+      "score": 62.1,
+      "likes": 10207,
+      "likes_per_min": 297.11,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.3,
+      "measured": true,
+      "age_minutes": 47.4,
       "text": "私事ではございますが、結婚いたしました。\n業種は全く異なりますが、私と同じく会社員をしている大切な方です。\nお互い会社員",
       "url": "https://x.com/nambamasatoshi/status/2092386319091818569"
     },
     {
-      "author": "EL6_JIL_",
-      "score": 49.8,
-      "likes": 998,
-      "likes_per_min": 21.98191365148378,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 45.4,
-      "text": "おはじる〜\n\n今日も楽しい楽しいレコーディン⤵︎グゥ⤴︎してくるよ！！！\n一生懸命いい歌録ってこようと思います！！\n\nそ",
-      "url": "https://x.com/EL6_JIL_/status/2092379241237123077"
-    },
-    {
       "author": "akindosushiroco",
-      "score": 46.3,
-      "likes": 1202,
-      "likes_per_min": 73.36294076621638,
+      "score": 54.5,
+      "likes": 2761,
+      "likes_per_min": 51.81,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.4,
+      "measured": true,
+      "age_minutes": 46.5,
       "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
       "url": "https://x.com/akindosushiroco/status/2092386545051603423"
     },
     {
-      "author": "jijicom",
-      "score": 45.8,
-      "likes": 163,
-      "likes_per_min": 2.85,
+      "author": "kikiraravivi",
+      "score": 51.6,
+      "likes": 2872,
+      "likes_per_min": 62.44755845149182,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 96.5,
-      "text": "ロシアで入隊契約の強制横行か　泥酔時に署名も―人権団体\n\nhttps://\njiji.com/jc/article?k=",
-      "url": "https://x.com/jijicom/status/2092366393060806722"
+      "measured": false,
+      "age_minutes": 46.0,
+      "text": "⋱このあと18時から⋰\n\n／\n【緊急凸待ち】\nぺこら先輩限定凸待ち！\n＼\n\n勇気の限定凸待ち\n凸待ちながらぺこヴィヴィ切",
+      "url": "https://x.com/kikiraravivi/status/2092386664685728002"
     },
     {
-      "author": "odoru_movief",
-      "score": 43.8,
-      "likes": 5183,
-      "likes_per_min": 70.23,
+      "author": "EL6_JIL_",
+      "score": 48.3,
+      "likes": 1291,
+      "likes_per_min": 9.74,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 76.4,
-      "text": "『踊る大捜査線 N.E.W. 』\n◢◤オリジナルメンバー紹介映像解禁◢◤\n\n彼らも、元気だ、青島包囲網！\n    決して",
-      "url": "https://x.com/odoru_movief/status/2092371444382499158"
+      "age_minutes": 75.5,
+      "text": "おはじる〜\n\n今日も楽しい楽しいレコーディン⤵︎グゥ⤴︎してくるよ！！！\n一生懸命いい歌録ってこようと思います！！\n\nそ",
+      "url": "https://x.com/EL6_JIL_/status/2092379241237123077"
+    },
+    {
+      "author": "jijicom",
+      "score": 48.1,
+      "likes": 336,
+      "likes_per_min": 5.75,
+      "acceleration": 2.01,
+      "measured": true,
+      "age_minutes": 126.5,
+      "text": "ロシアで入隊契約の強制横行か　泥酔時に署名も―人権団体\n\nhttps://\njiji.com/jc/article?k=",
+      "url": "https://x.com/jijicom/status/2092366393060806722"
     }
   ]
 }

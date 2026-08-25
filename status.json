@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T21:52:08.839936+00:00",
+  "updated_at": "2026-08-25T22:14:00.909024+00:00",
   "status": "success",
-  "started_at": "2026-08-25T21:48:59.694350+00:00",
-  "finished_at": "2026-08-25T21:52:08.838575+00:00",
-  "posts_scanned": 110,
-  "posts_with_history": 65,
+  "started_at": "2026-08-25T22:11:01.282793+00:00",
+  "finished_at": "2026-08-25T22:14:00.907480+00:00",
+  "posts_scanned": 111,
+  "posts_with_history": 73,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 612,
+  "minutes_since_last_notification": 634,
   "reject_reasons": {
-    "いいねが少なすぎる": 28,
-    "古すぎる": 53,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 34,
+    "古すぎる": 40,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4981,
-    "posts": 2496,
-    "oldest": "2026-08-24T22:13:24.498229+00:00"
+    "total": 4994,
+    "posts": 2478,
+    "oldest": "2026-08-24T22:51:14.326849+00:00"
   },
   "top5": [
     {
-      "author": "nino_honmono",
-      "score": 38.9,
-      "likes": 4440,
-      "likes_per_min": 575.5984053037539,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.7,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2092367525099323640"
-    },
-    {
       "author": "kyumei24_fujitv",
-      "score": 38.2,
-      "likes": 3189,
-      "likes_per_min": 29.818495751403404,
+      "score": 50.6,
+      "likes": 6161,
+      "likes_per_min": 135.91,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 106.9,
+      "measured": true,
+      "age_minutes": 128.8,
       "text": "⧉公式SNS開設⧉\n￣￣￣￣￣￣￣￣\n公式SNSではドラマの情報や、\n撮影の裏側などを投稿していきます!!\nぜひフォロー",
       "url": "https://x.com/kyumei24_fujitv/status/2092342548253622279"
     },
     {
-      "author": "oricon",
-      "score": 35.7,
-      "likes": 4216,
-      "likes_per_min": 86.5,
+      "author": "nino_honmono",
+      "score": 46.9,
+      "likes": 11788,
+      "likes_per_min": 336.02,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 112.1,
-      "text": "『救命病棟24時』13年ぶりに“初の月9枠”で復活\n\n主演は江口洋介＆松嶋菜々子\n16年ぶりの再共演に2人からコメントも",
-      "url": "https://x.com/oricon/status/2092341245125542258"
+      "age_minutes": 29.6,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2092367525099323640"
     },
     {
-      "author": "FFVIIR_CLOUD",
-      "score": 35.4,
-      "likes": 6548,
-      "likes_per_min": 52.88,
-      "acceleration": 1.09,
-      "measured": true,
-      "age_minutes": 112.1,
-      "text": "『FINAL FANTASY VII REVELATION』\n2ndトレーラー公開\n\n世界滅亡の脅威に呼応して、星の守護",
-      "url": "https://x.com/FFVIIR_CLOUD/status/2092341242575094027"
+      "author": "modelpress",
+      "score": 38.7,
+      "likes": 855,
+      "likes_per_min": 11.569975379911085,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 73.9,
+      "text": "与田祐希主演×片思いの相手役に野村周平\n\n「溺愛カレシの作り方～セから本命になる女の子の話～」テレ東でドラマ化\n\nhtt",
+      "url": "https://x.com/modelpress/status/2092356372159684840"
     },
     {
-      "author": "karaage_rutsubo",
-      "score": 33.6,
-      "likes": 1773,
-      "likes_per_min": 27.0,
+      "author": "1l_namida_movie",
+      "score": 37.5,
+      "likes": 2581,
+      "likes_per_min": 46.74,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 68.7,
-      "text": "少数精鋭とかいう聞こえのいい人材こき使いシステム #現場猫",
-      "url": "https://x.com/karaage_rutsubo/status/2092352177583112702"
+      "age_minutes": 73.8,
+      "text": "医者になりたいと、本気で思ったきっかけは\n　　──彼女を助けたいと思ったからなんだ。\n\n─────────────\n\n ",
+      "url": "https://x.com/1l_namida_movie/status/2092356401448595493"
+    },
+    {
+      "author": "kugaleo_Q",
+      "score": 37.3,
+      "likes": 170,
+      "likes_per_min": 3.84,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 33.2,
+      "text": "just woke up in a cold sweat, had a nightmare that riko made",
+      "url": "https://x.com/kugaleo_Q/status/2092366614637461602"
     }
   ]
 }

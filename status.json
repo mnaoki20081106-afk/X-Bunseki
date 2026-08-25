@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T07:17:15.742720+00:00",
+  "updated_at": "2026-08-25T08:06:26.550991+00:00",
   "status": "success",
-  "started_at": "2026-08-25T07:14:19.064475+00:00",
-  "finished_at": "2026-08-25T07:17:15.741593+00:00",
-  "posts_scanned": 137,
-  "posts_with_history": 53,
-  "posts_flagged": 2,
+  "started_at": "2026-08-25T08:03:38.941061+00:00",
+  "finished_at": "2026-08-25T08:06:26.549710+00:00",
+  "posts_scanned": 134,
+  "posts_with_history": 42,
+  "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 54,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 103,
   "reject_reasons": {
-    "いいねが少なすぎる": 54,
-    "初回観測かつ平均速度が低い": 5,
-    "古すぎる": 23
+    "いいねが少なすぎる": 48,
+    "初回観測かつ平均速度が低い": 4,
+    "古すぎる": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4565,
-    "posts": 2500,
-    "oldest": "2026-08-24T07:20:25.725583+00:00"
+    "total": 4556,
+    "posts": 2509,
+    "oldest": "2026-08-24T08:11:19.091016+00:00"
   },
   "top5": [
     {
-      "author": "Kanae_2434",
-      "score": 60.3,
-      "likes": 6429,
-      "likes_per_min": 72.5,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 77.3,
-      "text": "／\n#にじさんじ束縛ボイス Vol.2 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで\nStore｜\nhttp",
-      "url": "https://x.com/Kanae_2434/status/2092129849012113606"
-    },
-    {
-      "author": "Kanae_2434",
-      "score": 55.8,
-      "likes": 5443,
-      "likes_per_min": 53.07,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 77.2,
-      "text": "／\n#にじさんじがんばらないボイス 発売中！\n＼\n\n販売期間｜～8/31(月)23:59まで！\nStore｜\nhttps",
-      "url": "https://x.com/Kanae_2434/status/2092129853923328230"
-    },
-    {
-      "author": "chiikawa_kouhou",
-      "score": 54.3,
-      "likes": 3661,
-      "likes_per_min": 76.11941951779784,
+      "author": "tokoyamitowa",
+      "score": 52.2,
+      "likes": 624,
+      "likes_per_min": 43.406957058853855,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 48.1,
-      "text": "＼新商品／\n\nファッションセンターしまむらから\n「ちいかわ」のアイテムが登場\n\n8月26日(水)より\n全国のファッション",
-      "url": "https://x.com/chiikawa_kouhou/status/2092137189954203965"
+      "age_minutes": 14.4,
+      "text": "２０：００～\n\n【 DAY5 】#ホロ7大豆劇場 2回めの襲撃キタアアアアアどうにかなれええ【常闇トワ/ホロライブ】 \n",
+      "url": "https://x.com/tokoyamitowa/status/2092158050375479620"
     },
     {
-      "author": "ClubNPM",
-      "score": 46.1,
-      "likes": 436,
-      "likes_per_min": 6.63,
+      "author": "FURYU_prize",
+      "score": 50.5,
+      "likes": 764,
+      "likes_per_min": 14.36,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 72.8,
-      "text": "所属選手に関するご報告\n\n平素より日本プロ麻雀協会ならびに所属選手を応援いただき、誠にありがとうございます。\n\nこのたび",
-      "url": "https://x.com/ClubNPM/status/2092130958992388432"
+      "age_minutes": 66.1,
+      "text": "＼フリュープライズ新着情報／\n\n【ホロライブプロダクション】\n2027年冬に登場予定のラインナップをどこよりも早く大発表",
+      "url": "https://x.com/FURYU_prize/status/2092145024322723914"
+    },
+    {
+      "author": "wcat_project",
+      "score": 47.7,
+      "likes": 822,
+      "likes_per_min": 13.18,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 66.4,
+      "text": "#白猫プロジェクト × #ホロライブ 第3弾\n\nこんこんきーつね！白上フブキです！\n⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒\n",
+      "url": "https://x.com/wcat_project/status/2092144954982224200"
     },
     {
       "author": "YamaWayama_PR",
-      "score": 45.8,
-      "likes": 1105,
-      "likes_per_min": 23.3719911295644,
+      "score": 46.0,
+      "likes": 1893,
+      "likes_per_min": 16.02,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 47.3,
+      "measured": true,
+      "age_minutes": 96.5,
       "text": "【お詫びと訂正】\n2026年12月11日発売の『和山やま作品４冊セット 小冊子＆アクリルスタンド付き特装版』につきまして",
       "url": "https://x.com/YamaWayama_PR/status/2092137395433119855"
+    },
+    {
+      "author": "Ural26",
+      "score": 43.4,
+      "likes": 1006,
+      "likes_per_min": 33.84291049218623,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 29.7,
+      "text": "【知名度SSS】\n人気TikToker　合計フォロワー数20万\n辻○凜香（つじもとりんか）\n\n備考：配信が流出\n詳細：\n",
+      "url": "https://x.com/Ural26/status/2092154188579078413"
     }
   ]
 }

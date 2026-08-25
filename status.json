@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-25T19:08:49.763431+00:00",
+  "updated_at": "2026-08-25T19:45:42.591449+00:00",
   "status": "success",
-  "started_at": "2026-08-25T19:05:22.928717+00:00",
-  "finished_at": "2026-08-25T19:08:49.762224+00:00",
-  "posts_scanned": 158,
-  "posts_with_history": 134,
+  "started_at": "2026-08-25T19:42:22.898787+00:00",
+  "finished_at": "2026-08-25T19:45:42.590461+00:00",
+  "posts_scanned": 146,
+  "posts_with_history": 125,
   "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 448,
+  "minutes_since_last_notification": 485,
   "reject_reasons": {
-    "いいねが少なすぎる": 19,
-    "古すぎる": 84,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 16,
+    "古すぎる": 88,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4756,
+    "total": 4763,
     "posts": 2531,
-    "oldest": "2026-08-24T19:41:19.483073+00:00"
+    "oldest": "2026-08-24T20:16:27.683974+00:00"
   },
   "top5": [
     {
       "author": "Ananta_JP",
-      "score": 68.1,
-      "likes": 2441,
-      "likes_per_min": 64.84138845854152,
+      "score": 68.0,
+      "likes": 3881,
+      "likes_per_min": 39.05,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 37.6,
+      "measured": true,
+      "age_minutes": 74.5,
       "text": "『無限大ANANTA』リリース日発表PV丨27年1月15日グローバルリリース",
       "url": "https://x.com/Ananta_JP/status/2092318891410346444"
     },
     {
-      "author": "ROCKMAN_UNITY",
-      "score": 33.6,
-      "likes": 804,
-      "likes_per_min": 22.650625582528754,
+      "author": "Ananta_JP",
+      "score": 47.6,
+      "likes": 1693,
+      "likes_per_min": 31.45309222051748,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.5,
+      "age_minutes": 53.8,
+      "text": "『#無限大ANANTA』\n全プラットフォームで事前登録受付開始！\n\nお待たせしました！\nこれまでの熱い応援と、長らくお待",
+      "url": "https://x.com/Ananta_JP/status/2092324099188269373"
+    },
+    {
+      "author": "denfaminicogame",
+      "score": 45.9,
+      "likes": 1676,
+      "likes_per_min": 22.94543453706716,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 73.0,
+      "text": "HoYoverseの新作アクションゲーム『Nodusfall』が発表。ダークファンタジー調の重厚な世界観\n\nhttps:",
+      "url": "https://x.com/denfaminicogame/status/2092319264376225953"
+    },
+    {
+      "author": "Kanae_2434",
+      "score": 38.7,
+      "likes": 985,
+      "likes_per_min": 67.49879585745842,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.6,
+      "text": "おきたあ",
+      "url": "https://x.com/Kanae_2434/status/2092333971019620751"
+    },
+    {
+      "author": "ROCKMAN_UNITY",
+      "score": 37.0,
+      "likes": 1629,
+      "likes_per_min": 22.37,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 72.4,
       "text": "『ロックマン: デュアル オーバーライド』最新トレーラー公開！\n\n新システム「オーバーライド」をはじめ、新たなボスロボッ",
       "url": "https://x.com/ROCKMAN_UNITY/status/2092319432446222743"
-    },
-    {
-      "author": "grgr_donguri",
-      "score": 31.3,
-      "likes": 1676,
-      "likes_per_min": 13.23,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 127.6,
-      "text": "ホラー回収録後\n※捏造",
-      "url": "https://x.com/grgr_donguri/status/2092296254260994098"
-    },
-    {
-      "author": "Milan_Kestrel",
-      "score": 31.3,
-      "likes": 4438,
-      "likes_per_min": 19.41,
-      "acceleration": 0.62,
-      "measured": true,
-      "age_minutes": 135.5,
-      "text": "にじさんじばっか追っかけてて、良いかもしれない。条件合う人はきっとみんなのおかげで幸せだよ。\n\n・怪しくない\n・音質がい",
-      "url": "https://x.com/Milan_Kestrel/status/2092294258929848770"
-    },
-    {
-      "author": "uruha_ichinose",
-      "score": 27.5,
-      "likes": 579,
-      "likes_per_min": 11.801303944348867,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 49.1,
-      "text": "話しすぎた、今日は風呂キャンして即寝する。\nメン限同時視聴ありがとう〜おやすみ",
-      "url": "https://x.com/uruha_ichinose/status/2092316016932200467"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-26T09:55:37.331324+00:00",
+  "updated_at": "2026-08-26T10:50:06.833087+00:00",
   "status": "success",
-  "started_at": "2026-08-26T09:53:07.468348+00:00",
-  "finished_at": "2026-08-26T09:55:37.330361+00:00",
-  "posts_scanned": 154,
-  "posts_with_history": 30,
-  "posts_flagged": 3,
-  "notified_count": 1,
+  "started_at": "2026-08-26T10:47:29.032845+00:00",
+  "finished_at": "2026-08-26T10:50:06.831634+00:00",
+  "posts_scanned": 156,
+  "posts_with_history": 44,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 55,
+  "minutes_since_last_notification": 54,
   "reject_reasons": {
-    "いいねが少なすぎる": 72,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 80,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4882,
-    "posts": 2467,
-    "oldest": "2026-08-25T10:19:19.901928+00:00"
+    "total": 4883,
+    "posts": 2488,
+    "oldest": "2026-08-25T10:57:47.308976+00:00"
   },
   "top5": [
     {
-      "author": "lions_official",
-      "score": 59.6,
-      "likes": 9961,
-      "likes_per_min": 128.25,
+      "author": "Lauren_iroas",
+      "score": 54.7,
+      "likes": 3553,
+      "likes_per_min": 166.96212166654806,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 21.3,
+      "text": "20時ごろからやりますな【白栄大学 0号館】俺が心霊サークルを破壊する【ローレン・イロアス/にじさんじ】 \nhttps:",
+      "url": "https://x.com/Lauren_iroas/status/2092559890145546405"
+    },
+    {
+      "author": "BBBros_tokyo",
+      "score": 53.1,
+      "likes": 6617,
+      "likes_per_min": 188.44545349164142,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 35.1,
+      "text": "［ NEWS ］\n\n2026.08.27 - 11:00\nLINE公式スタンプ 販売決定！\n\n個性豊かな６人とトークを盛",
+      "url": "https://x.com/BBBros_tokyo/status/2092556408336126428"
+    },
+    {
+      "author": "tsuisoku777",
+      "score": 52.6,
+      "likes": 880,
+      "likes_per_min": 14.9,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 80.5,
-      "text": "本日のファーム・リーグ公式戦(楽天戦)において死球を受け、途中交代した栗山巧選手について、病院での診察の結果、異常は見ら",
-      "url": "https://x.com/lions_official/status/2092531265551683738"
+      "age_minutes": 71.9,
+      "text": "平将門の「将門塚」で迷惑行為をした配信者、アカウントが999年間の利用停止処分を受ける",
+      "url": "https://x.com/tsuisoku777/status/2092547138383487436"
     },
     {
-      "author": "livedoornews",
-      "score": 58.9,
-      "likes": 501,
-      "likes_per_min": 5.41,
+      "author": "hoshusokuhou",
+      "score": 47.3,
+      "likes": 3720,
+      "likes_per_min": 49.22,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 85.9,
-      "text": "【逮捕】俳優の女とトクリュウのトップが薬物所持疑い ホテルのベッドに使用済みコカインの袋\n\nhttps://\nnews.",
-      "url": "https://x.com/livedoornews/status/2092529923722478032"
+      "age_minutes": 120.3,
+      "text": "平将門の「将門塚」で迷惑行為　配信者に警察が家宅捜査中\n↓\n■時系列\n・警察がメンバー愛之助の自宅を家宅捜索\n↓\n・配信",
+      "url": "https://x.com/hoshusokuhou/status/2092534967439941731"
     },
     {
-      "author": "Equal_LOVE_12",
-      "score": 55.6,
-      "likes": 10839,
-      "likes_per_min": 194.9305720121248,
+      "author": "kiyo_saiore",
+      "score": 47.2,
+      "likes": 7993,
+      "likes_per_min": 407.8697483955892,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.6,
-      "text": "【お知らせ】\n\n所属タレントに対する誹謗中傷等への対応について\n※必ずご確認ください",
-      "url": "https://x.com/Equal_LOVE_12/status/2092537536417869889"
-    },
-    {
-      "author": "Hanakago_2434rr",
-      "score": 52.7,
-      "likes": 262,
-      "likes_per_min": 30.9897334285604,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.5,
-      "text": "【ボイスサンプル】\n\n束縛ボイス 8/31 23:59まで。\n\nサンプルは本編より。\n関西弁で束縛してます。\nいろいろ覚",
-      "url": "https://x.com/Hanakago_2434rr/status/2092549399956295844"
-    },
-    {
-      "author": "Notequal_ME",
-      "score": 45.9,
-      "likes": 2271,
-      "likes_per_min": 40.842082206802786,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 55.6,
-      "text": "【お知らせ】\n\n所属タレントに対する誹謗中傷等への対応について\n※必ずご確認ください",
-      "url": "https://x.com/Notequal_ME/status/2092537535893582291"
+      "age_minutes": 19.6,
+      "text": "動画投稿ーー！小学生がとんでもない夏を過ごすことになります。衝撃的なホラーで超面白かった。どうぞー⇒今話題の「八尺様」と",
+      "url": "https://x.com/kiyo_saiore/status/2092560314021892495"
     }
   ]
 }

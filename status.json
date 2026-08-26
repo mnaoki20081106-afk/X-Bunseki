@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T02:15:17.748903+00:00",
+  "updated_at": "2026-08-26T03:31:57.055185+00:00",
   "status": "success",
-  "started_at": "2026-08-26T02:12:26.521520+00:00",
-  "finished_at": "2026-08-26T02:15:17.747761+00:00",
-  "posts_scanned": 137,
-  "posts_with_history": 25,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 179,
+  "started_at": "2026-08-26T03:28:55.404612+00:00",
+  "finished_at": "2026-08-26T03:31:57.052553+00:00",
+  "posts_scanned": 138,
+  "posts_with_history": 29,
+  "posts_flagged": 2,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 256,
   "reject_reasons": {
-    "いいねが少なすぎる": 56,
-    "初回観測かつ平均速度が低い": 9,
-    "古すぎる": 23
+    "いいねが少なすぎる": 63,
+    "初回観測かつ平均速度が低い": 5,
+    "古すぎる": 21
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5061,
-    "posts": 2481,
-    "oldest": "2026-08-25T02:49:41.811714+00:00"
+    "total": 5059,
+    "posts": 2477,
+    "oldest": "2026-08-25T03:38:47.390248+00:00"
   },
   "top5": [
     {
-      "author": "HobbySite",
+      "author": "parade_capsule",
+      "score": 57.5,
+      "likes": 5120,
+      "likes_per_min": 160.66507811162677,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 31.9,
+      "text": "8月カプセルトイ新情報！\n\n#映画ちいかわ 人魚の島のひみつ \nたべものいっぱいマスコットが登場\n\n作中のたべものシーン",
+      "url": "https://x.com/parade_capsule/status/2092446956903977081"
+    },
+    {
+      "author": "PetitPlanet_JP",
+      "score": 57.1,
+      "likes": 857,
+      "likes_per_min": 13.837265629295134,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 61.9,
+      "text": " #プチプラネット 公式アカウントをフォローすると、素敵な賞品が当たるチャンス！\n\n参加方法\n1. \n@PetitPla",
+      "url": "https://x.com/PetitPlanet_JP/status/2092439387455844371"
+    },
+    {
+      "author": "shirakamifubuki",
       "score": 53.4,
-      "likes": 1574,
-      "likes_per_min": 31.577547802846865,
+      "likes": 1289,
+      "likes_per_min": 40.364246880343174,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 49.8,
-      "text": "【HOBBY NEW ITEM INFO.】\n2027年3月発売予定！\n本日以降、順次店頭やWEBにて予約受付開始！\n\n",
-      "url": "https://x.com/HobbySite/status/2092423143071875203"
+      "age_minutes": 31.9,
+      "text": "╭━━━━━━╮\n　　狐族密会\n╰━━━━━━╯\n #狐族密会 です\n8月は日頃頑張っている皆さんを褒めて応援\n\n＼ 投",
+      "url": "https://x.com/shirakamifubuki/status/2092446938902008194"
     },
     {
-      "author": "osusi0303",
-      "score": 53.1,
-      "likes": 1279,
-      "likes_per_min": 25.328968410316595,
+      "author": "oozorasubaru",
+      "score": 53.4,
+      "likes": 1344,
+      "likes_per_min": 42.13051462914724,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 50.5,
-      "text": "おは！！\nZeppツアーラストアイドル侍してくる‍",
-      "url": "https://x.com/osusi0303/status/2092422979695317456"
+      "age_minutes": 31.9,
+      "text": "明日からはーーー\n#ホロライブ × #極楽湯 #RAKUSPA コラボ！\n#フロライフ癒しの湯巡り旅 ～ふためぐり～\nが",
+      "url": "https://x.com/oozorasubaru/status/2092446947630006495"
     },
     {
-      "author": "HobbySite",
-      "score": 46.5,
-      "likes": 1437,
-      "likes_per_min": 31.972024835738363,
+      "author": "shirakamifubuki",
+      "score": 52.1,
+      "likes": 1893,
+      "likes_per_min": 39.28673578729349,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 44.9,
-      "text": "【HOBBY NEW ITEM INFO.】\n2027年3月発売予定！\n本日以降、順次店頭やWEBにて予約受付開始！\n\n",
-      "url": "https://x.com/HobbySite/status/2092424375752618366"
-    },
-    {
-      "author": "McDonaldsJapan",
-      "score": 41.9,
-      "likes": 4155,
-      "likes_per_min": 55.18254950934737,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 75.3,
-      "text": "全員が主役級のラインナップ！\n\n【#マックの月見ファミリー今年もやってくる】をつけて本日8/26(水)中にリプライすると",
-      "url": "https://x.com/McDonaldsJapan/status/2092416738604306476"
-    },
-    {
-      "author": "bikkuri__donkey",
-      "score": 39.5,
-      "likes": 1201,
-      "likes_per_min": 15.95047941293049,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 75.3,
-      "text": "今日からフェアスタート!\n￣￣￣￣￣V￣￣￣￣￣￣\n日本の秋に、びっくりドンキーの月見ハンバーグがやってきた\n\nお食事券",
-      "url": "https://x.com/bikkuri__donkey/status/2092416740755919065"
+      "age_minutes": 48.2,
+      "text": "ひるこんです(^・ω・^§)ﾉ\n昨晩の７大豆はフェチやら夏やら楽しかったですね！\n\n20時 ソロ配信？\n22時 狐族密会",
+      "url": "https://x.com/shirakamifubuki/status/2092442850541834593"
     }
   ]
 }

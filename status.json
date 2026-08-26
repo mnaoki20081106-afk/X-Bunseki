@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T14:25:19.632235+00:00",
+  "updated_at": "2026-08-26T16:06:53.005799+00:00",
   "status": "success",
-  "started_at": "2026-08-26T14:22:45.552080+00:00",
-  "finished_at": "2026-08-26T14:25:19.631199+00:00",
-  "posts_scanned": 148,
-  "posts_with_history": 45,
+  "started_at": "2026-08-26T16:04:14.472436+00:00",
+  "finished_at": "2026-08-26T16:06:53.004917+00:00",
+  "posts_scanned": 145,
+  "posts_with_history": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 53,
+  "minutes_since_last_notification": 154,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 68,
-    "古すぎる": 1
+    "いいねが少なすぎる": 53,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4872,
-    "posts": 2484,
-    "oldest": "2026-08-25T15:00:13.434454+00:00"
+    "total": 4686,
+    "posts": 2427,
+    "oldest": "2026-08-25T16:53:36.397100+00:00"
   },
   "top5": [
     {
-      "author": "_GingerGarden_",
-      "score": 52.6,
-      "likes": 4285,
-      "likes_per_min": 65.79457264910458,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 65.1,
-      "text": "⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙\n.\n                     夜限定\n",
-      "url": "https://x.com/_GingerGarden_/status/2092603016860094560"
-    },
-    {
-      "author": "Yuno_Shino38",
+      "author": "hima72_2nd",
       "score": 49.2,
-      "likes": 189,
-      "likes_per_min": 30.680395146066047,
+      "likes": 1544,
+      "likes_per_min": 22.913732267965024,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 6.2,
-      "text": "このあと23時40分から！\n\n【 Minecraft 】#にじメンマイクラ 森のでっかなレストラン 4日目【 篠宮ゆの ",
-      "url": "https://x.com/Yuno_Shino38/status/2092617855510667332"
+      "age_minutes": 67.4,
+      "text": "ガチでおもろすぎる動画撮れた",
+      "url": "https://x.com/hima72_2nd/status/2092628004417757299"
     },
     {
-      "author": "onenonly_tokyo",
-      "score": 45.8,
-      "likes": 1109,
-      "likes_per_min": 71.11883370012171,
+      "author": "shirakamifubuki",
+      "score": 46.9,
+      "likes": 1472,
+      "likes_per_min": 21.028619403864553,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 15.6,
-      "text": "／\nTikTok更新\n＼\n\nONE N' ONLYの名前が出たら即Samba de Night Fever\n\n動画はこち",
-      "url": "https://x.com/onenonly_tokyo/status/2092615483212378161"
+      "age_minutes": 70.0,
+      "text": "#狐族密会　今月もありがとうございました！\nたくあん…本当に光るか試してみたい…な…\nまた来月も皆さんと沢山笑い合う狐族",
+      "url": "https://x.com/shirakamifubuki/status/2092627346532790525"
     },
     {
-      "author": "livedoornews",
-      "score": 45.5,
-      "likes": 378,
-      "likes_per_min": 6.5,
+      "author": "KFC_jp",
+      "score": 44.0,
+      "likes": 1829,
+      "likes_per_min": 27.346190389034717,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 66.9,
+      "text": "／\nとろ〜〜〜〜〜〜〜〜〜〜〜り！\n＼\n\nケンタのとろ～り月見バーガー販売中\n今年は「たまごが大暴れ」\nたまごを思う存分",
+      "url": "https://x.com/KFC_jp/status/2092628133694542215"
+    },
+    {
+      "author": "tokino_sora",
+      "score": 43.8,
+      "likes": 1095,
+      "likes_per_min": 17.580992363143917,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 62.3,
+      "text": "ショート動画更新\n今日は\n\nさくらんぼメッセージ\n\n踊ってみた₍₍ ◝(•̀ㅂ•́)◟ ⁾⁾\nさくらんぼ\n\n動画はここか",
+      "url": "https://x.com/tokino_sora/status/2092629289921618240"
+    },
+    {
+      "author": "_GingerGarden_",
+      "score": 41.6,
+      "likes": 11222,
+      "likes_per_min": 68.31,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 59.3,
-      "text": "【言及】「GTA6」リーク映像が流出・拡散、制作会社が謝罪\n\nhttps://\nnews.livedoor.com/ar",
-      "url": "https://x.com/livedoornews/status/2092604491527057752"
-    },
-    {
-      "author": "satomimi__",
-      "score": 44.7,
-      "likes": 3088,
-      "likes_per_min": 151.5437609073342,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 20.4,
-      "text": "うわわたーくたくちゃお",
-      "url": "https://x.com/satomimi__/status/2092614279958814960"
+      "age_minutes": 166.7,
+      "text": "⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙\n.\n                     夜限定\n",
+      "url": "https://x.com/_GingerGarden_/status/2092603016860094560"
     }
   ]
 }

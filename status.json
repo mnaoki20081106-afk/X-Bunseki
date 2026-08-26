@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T00:28:07.574223+00:00",
+  "updated_at": "2026-08-26T02:15:17.748903+00:00",
   "status": "success",
-  "started_at": "2026-08-26T00:25:34.337663+00:00",
-  "finished_at": "2026-08-26T00:28:07.573223+00:00",
-  "posts_scanned": 128,
-  "posts_with_history": 56,
+  "started_at": "2026-08-26T02:12:26.521520+00:00",
+  "finished_at": "2026-08-26T02:15:17.747761+00:00",
+  "posts_scanned": 137,
+  "posts_with_history": 25,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 72,
+  "minutes_since_last_notification": 179,
   "reject_reasons": {
-    "いいねが少なすぎる": 52,
-    "古すぎる": 12,
-    "初回観測かつ平均速度が低い": 3
+    "いいねが少なすぎる": 56,
+    "初回観測かつ平均速度が低い": 9,
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -25,64 +25,64 @@
   },
   "observation_db": {
     "total": 5061,
-    "posts": 2478,
-    "oldest": "2026-08-25T01:50:52.552583+00:00"
+    "posts": 2481,
+    "oldest": "2026-08-25T02:49:41.811714+00:00"
   },
   "top5": [
     {
-      "author": "akindosushiroco",
-      "score": 43.7,
-      "likes": 4178,
-      "likes_per_min": 34.03,
-      "acceleration": 0.66,
-      "measured": true,
-      "age_minutes": 88.1,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2092386545051603423"
-    },
-    {
-      "author": "turningpointjpn",
-      "score": 42.5,
-      "likes": 201,
-      "likes_per_min": 3.03,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 78.0,
-      "text": "マジで、とんでもない事態に...\n\n人民日報が事実と認める  中国産白菜の発がん性物質まみれ疑惑  日本の厚労省は「確認",
-      "url": "https://x.com/turningpointjpn/status/2092389094777327616"
-    },
-    {
-      "author": "togootto",
-      "score": 41.4,
-      "likes": 456,
-      "likes_per_min": 9.752069671748426,
+      "author": "HobbySite",
+      "score": 53.4,
+      "likes": 1574,
+      "likes_per_min": 31.577547802846865,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 46.8,
-      "text": "まさかここへ来て立憲の現役党員が作った中傷動画が発掘されるとは夢にも思わなかった\n\n彼らは本当に楽しませてくれるよね",
-      "url": "https://x.com/togootto/status/2092396951836971259"
+      "age_minutes": 49.8,
+      "text": "【HOBBY NEW ITEM INFO.】\n2027年3月発売予定！\n本日以降、順次店頭やWEBにて予約受付開始！\n\n",
+      "url": "https://x.com/HobbySite/status/2092423143071875203"
     },
     {
-      "author": "qsfkbwIhuWLhnjI",
-      "score": 40.8,
-      "likes": 261,
-      "likes_per_min": 3.91,
-      "acceleration": 2.18,
-      "measured": true,
-      "age_minutes": 140.0,
-      "text": "NHKが大々的に紹介した“夢の男”が逮捕！中国帰化人の衝撃の末路\n\n「日本を潤す」と語った1ヶ月後、不正入国で捕まった真",
-      "url": "https://x.com/qsfkbwIhuWLhnjI/status/2092373487004614911"
-    },
-    {
-      "author": "PoppinCoco3",
-      "score": 40.6,
-      "likes": 297,
-      "likes_per_min": 5.52,
+      "author": "osusi0303",
+      "score": 53.1,
+      "likes": 1279,
+      "likes_per_min": 25.328968410316595,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 75.2,
-      "text": "ユニクロが炎上中ですが、\nそういや、かなり昔から不買してた理由を思い出した…\n石原都知事時代に起こった尖閣諸島問題の際、",
-      "url": "https://x.com/PoppinCoco3/status/2092389782097956910"
+      "measured": false,
+      "age_minutes": 50.5,
+      "text": "おは！！\nZeppツアーラストアイドル侍してくる‍",
+      "url": "https://x.com/osusi0303/status/2092422979695317456"
+    },
+    {
+      "author": "HobbySite",
+      "score": 46.5,
+      "likes": 1437,
+      "likes_per_min": 31.972024835738363,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 44.9,
+      "text": "【HOBBY NEW ITEM INFO.】\n2027年3月発売予定！\n本日以降、順次店頭やWEBにて予約受付開始！\n\n",
+      "url": "https://x.com/HobbySite/status/2092424375752618366"
+    },
+    {
+      "author": "McDonaldsJapan",
+      "score": 41.9,
+      "likes": 4155,
+      "likes_per_min": 55.18254950934737,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 75.3,
+      "text": "全員が主役級のラインナップ！\n\n【#マックの月見ファミリー今年もやってくる】をつけて本日8/26(水)中にリプライすると",
+      "url": "https://x.com/McDonaldsJapan/status/2092416738604306476"
+    },
+    {
+      "author": "bikkuri__donkey",
+      "score": 39.5,
+      "likes": 1201,
+      "likes_per_min": 15.95047941293049,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 75.3,
+      "text": "今日からフェアスタート!\n￣￣￣￣￣V￣￣￣￣￣￣\n日本の秋に、びっくりドンキーの月見ハンバーグがやってきた\n\nお食事券",
+      "url": "https://x.com/bikkuri__donkey/status/2092416740755919065"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T03:31:57.055185+00:00",
+  "updated_at": "2026-08-26T04:23:12.929162+00:00",
   "status": "success",
-  "started_at": "2026-08-26T03:28:55.404612+00:00",
-  "finished_at": "2026-08-26T03:31:57.052553+00:00",
-  "posts_scanned": 138,
-  "posts_with_history": 29,
-  "posts_flagged": 2,
-  "notified_count": 1,
+  "started_at": "2026-08-26T04:20:25.865906+00:00",
+  "finished_at": "2026-08-26T04:23:12.928034+00:00",
+  "posts_scanned": 135,
+  "posts_with_history": 35,
+  "posts_flagged": 4,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 256,
+  "minutes_since_last_notification": 51,
   "reject_reasons": {
-    "いいねが少なすぎる": 63,
-    "初回観測かつ平均速度が低い": 5,
-    "古すぎる": 21
+    "いいねが少なすぎる": 64,
+    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 5059,
-    "posts": 2477,
-    "oldest": "2026-08-25T03:38:47.390248+00:00"
+    "total": 5045,
+    "posts": 2481,
+    "oldest": "2026-08-25T04:24:03.525812+00:00"
   },
   "top5": [
     {
-      "author": "parade_capsule",
-      "score": 57.5,
-      "likes": 5120,
-      "likes_per_min": 160.66507811162677,
+      "author": "houshoumarine",
+      "score": 58.3,
+      "likes": 2077,
+      "likes_per_min": 61.8794839787901,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 31.9,
-      "text": "8月カプセルトイ新情報！\n\n#映画ちいかわ 人魚の島のひみつ \nたべものいっぱいマスコットが登場\n\n作中のたべものシーン",
-      "url": "https://x.com/parade_capsule/status/2092446956903977081"
+      "age_minutes": 33.6,
+      "text": "このあと20時から\n\nパワプロ2026栄冠ナイン！！\nホロライブ甲子園がはじまった～\n\n初回選手リセマラ配信やっていくぞ",
+      "url": "https://x.com/houshoumarine/status/2092459433288946112"
     },
     {
-      "author": "PetitPlanet_JP",
-      "score": 57.1,
-      "likes": 857,
-      "likes_per_min": 13.837265629295134,
+      "author": "imas_CGofficial",
+      "score": 56.6,
+      "likes": 6411,
+      "likes_per_min": 58.54,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 70.9,
+      "text": "◤￣￣￣￣￣￣￣￣￣◥\n   THE IDOLM@STER\n  CINDERELLA GIRLS\n　　　　  ×\n   ",
+      "url": "https://x.com/imas_CGofficial/status/2092450044830241114"
+    },
+    {
+      "author": "welcia_jp",
+      "score": 56.5,
+      "likes": 1378,
+      "likes_per_min": 16.562783143299413,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 61.9,
-      "text": " #プチプラネット 公式アカウントをフォローすると、素敵な賞品が当たるチャンス！\n\n参加方法\n1. \n@PetitPla",
-      "url": "https://x.com/PetitPlanet_JP/status/2092439387455844371"
+      "age_minutes": 83.2,
+      "text": "＼2日目／\nトラッキー×うえたん\n\nウエルシアグループ専用\nQUOカードPay1,111円分が\n合計400名様にその場で",
+      "url": "https://x.com/welcia_jp/status/2092446943616352376"
+    },
+    {
+      "author": "CaramelCorn1971",
+      "score": 55.3,
+      "likes": 1221,
+      "likes_per_min": 14.681613810469134,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 83.2,
+      "text": "˗ˏˋ夏のソルティ大作戦ˎˊ˗\n\n \n@CaramelCorn1971\n をフォロー\nこの投稿を8/27 11:59まで",
+      "url": "https://x.com/CaramelCorn1971/status/2092446949312233862"
     },
     {
       "author": "shirakamifubuki",
-      "score": 53.4,
-      "likes": 1289,
-      "likes_per_min": 40.364246880343174,
+      "score": 54.7,
+      "likes": 1058,
+      "likes_per_min": 40.43531892336407,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 31.9,
-      "text": "╭━━━━━━╮\n　　狐族密会\n╰━━━━━━╯\n #狐族密会 です\n8月は日頃頑張っている皆さんを褒めて応援\n\n＼ 投",
-      "url": "https://x.com/shirakamifubuki/status/2092446938902008194"
-    },
-    {
-      "author": "oozorasubaru",
-      "score": 53.4,
-      "likes": 1344,
-      "likes_per_min": 42.13051462914724,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 31.9,
-      "text": "明日からはーーー\n#ホロライブ × #極楽湯 #RAKUSPA コラボ！\n#フロライフ癒しの湯巡り旅 ～ふためぐり～\nが",
-      "url": "https://x.com/oozorasubaru/status/2092446947630006495"
-    },
-    {
-      "author": "shirakamifubuki",
-      "score": 52.1,
-      "likes": 1893,
-      "likes_per_min": 39.28673578729349,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 48.2,
-      "text": "ひるこんです(^・ω・^§)ﾉ\n昨晩の７大豆はフェチやら夏やら楽しかったですね！\n\n20時 ソロ配信？\n22時 狐族密会",
-      "url": "https://x.com/shirakamifubuki/status/2092442850541834593"
+      "age_minutes": 26.2,
+      "text": "今回から狐族密会オープニングトーク用の\nふつおたも募集開始しましたー！！\nお題に沿った内容思いつかない方はこちらに投稿を",
+      "url": "https://x.com/shirakamifubuki/status/2092461294813368827"
     }
   ]
 }

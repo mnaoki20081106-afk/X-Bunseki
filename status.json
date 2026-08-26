@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T11:53:41.282067+00:00",
+  "updated_at": "2026-08-26T12:23:50.911553+00:00",
   "status": "success",
-  "started_at": "2026-08-26T11:50:50.186449+00:00",
-  "finished_at": "2026-08-26T11:53:41.281134+00:00",
-  "posts_scanned": 166,
-  "posts_with_history": 71,
+  "started_at": "2026-08-26T12:21:13.552129+00:00",
+  "finished_at": "2026-08-26T12:23:50.910247+00:00",
+  "posts_scanned": 154,
+  "posts_with_history": 64,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 118,
+  "minutes_since_last_notification": 148,
   "reject_reasons": {
-    "いいねが少なすぎる": 87,
-    "初回観測かつ平均速度が低い": 1,
-    "古すぎる": 11
+    "いいねが少なすぎる": 84,
+    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4898,
-    "posts": 2485,
-    "oldest": "2026-08-25T12:04:04.899748+00:00"
+    "total": 4886,
+    "posts": 2456,
+    "oldest": "2026-08-25T13:09:35.013357+00:00"
   },
   "top5": [
     {
-      "author": "keibalab",
-      "score": 48.8,
-      "likes": 992,
-      "likes_per_min": 22.02,
+      "author": "pj_sekai",
+      "score": 44.4,
+      "likes": 7134,
+      "likes_per_min": 155.83,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 54.5,
-      "text": "【走り抜いた6年半】\n23年小倉記念など重賞を2勝したエヒトは、先月の小倉記念で競走中止した後に靱帯損傷していることが判",
-      "url": "https://x.com/keibalab/status/2092567525368512567"
+      "age_minutes": 35.0,
+      "text": "ワンダーランズ×ショウタイム書き下ろし楽曲を、\nサツキ（\n@32ki_May\n）さんが担当\n\n番組生配信中：\nhttps",
+      "url": "https://x.com/pj_sekai/status/2092580020485337382"
     },
     {
-      "author": "BBBros_tokyo",
-      "score": 48.7,
-      "likes": 11546,
-      "likes_per_min": 59.18,
-      "acceleration": 0.59,
-      "measured": true,
-      "age_minutes": 98.7,
-      "text": "［ NEWS ］\n\n2026.08.27 - 11:00\nLINE公式スタンプ 販売決定！\n\n個性豊かな６人とトークを盛",
-      "url": "https://x.com/BBBros_tokyo/status/2092556408336126428"
-    },
-    {
-      "author": "imoko_iimo",
-      "score": 48.1,
-      "likes": 1868,
-      "likes_per_min": 26.04,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 53.5,
-      "text": "【新しい動画です】\nメンバーが多すぎるグループYouTuber\n\nhttps://\nyoutu.be/0RQ9Og5Wq",
-      "url": "https://x.com/imoko_iimo/status/2092567781145456878"
-    },
-    {
-      "author": "tsuisoku777",
-      "score": 45.6,
-      "likes": 2771,
-      "likes_per_min": 34.17,
-      "acceleration": 1.4,
-      "measured": true,
-      "age_minutes": 135.5,
-      "text": "平将門の「将門塚」で迷惑行為をした配信者、アカウントが999年間の利用停止処分を受ける",
-      "url": "https://x.com/tsuisoku777/status/2092547138383487436"
-    },
-    {
-      "author": "akagi_wen",
-      "score": 43.0,
-      "likes": 5712,
-      "likes_per_min": 65.17738115566361,
+      "author": "hololivetv",
+      "score": 43.4,
+      "likes": 938,
+      "likes_per_min": 39.38717602005931,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 87.6,
-      "text": "【YouTubeショート動画投稿】\nタイトル\n【#KARAAGEDANCE コラボ(仕事なう)】〜↑↑-KARAAGE-",
-      "url": "https://x.com/akagi_wen/status/2092559190661402771"
+      "age_minutes": 23.8,
+      "text": "#さくらみこ 2ndライブ\n\nSakura Miko 2nd Live “Blooming Parade!!”\n\n現地会",
+      "url": "https://x.com/hololivetv/status/2092582841276076457"
+    },
+    {
+      "author": "nomusun_manga",
+      "score": 43.1,
+      "likes": 260,
+      "likes_per_min": 3.65,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 78.7,
+      "text": "とうとう夫から離婚を突きつけられた！けど…？\n（０／５）",
+      "url": "https://x.com/nomusun_manga/status/2092569018230296908"
+    },
+    {
+      "author": "miyu_cs0913",
+      "score": 43.0,
+      "likes": 1088,
+      "likes_per_min": 79.81499022204015,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 13.6,
+      "text": "日本武道館 \n2日間ありがとうございました！！\n大好きで大切な8人と、\n最高の宝物のきゅーてすとのみんなと、\n日本武道館",
+      "url": "https://x.com/miyu_cs0913/status/2092585404491063485"
+    },
+    {
+      "author": "daisubkiri3",
+      "score": 42.0,
+      "likes": 1119,
+      "likes_per_min": 60.876343305560816,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 18.4,
+      "text": "ねねさんとばあちゃんにお線香あげれたよ\n\n待たせてごめんねって言った\n\n飾られてる写真があまりにもいい顔してた",
+      "url": "https://x.com/daisubkiri3/status/2092584208199999765"
     }
   ]
 }

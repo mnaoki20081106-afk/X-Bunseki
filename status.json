@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-08-26T12:23:50.911553+00:00",
+  "updated_at": "2026-08-26T13:32:45.411308+00:00",
   "status": "success",
-  "started_at": "2026-08-26T12:21:13.552129+00:00",
-  "finished_at": "2026-08-26T12:23:50.910247+00:00",
-  "posts_scanned": 154,
-  "posts_with_history": 64,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 148,
+  "started_at": "2026-08-26T13:30:14.286291+00:00",
+  "finished_at": "2026-08-26T13:32:45.410303+00:00",
+  "posts_scanned": 158,
+  "posts_with_history": 29,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 217,
   "reject_reasons": {
     "いいねが少なすぎる": 84,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 1
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4886,
-    "posts": 2456,
-    "oldest": "2026-08-25T13:09:35.013357+00:00"
+    "total": 4892,
+    "posts": 2488,
+    "oldest": "2026-08-25T14:03:51.092792+00:00"
   },
   "top5": [
     {
-      "author": "pj_sekai",
-      "score": 44.4,
-      "likes": 7134,
-      "likes_per_min": 155.83,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 35.0,
-      "text": "ワンダーランズ×ショウタイム書き下ろし楽曲を、\nサツキ（\n@32ki_May\n）さんが担当\n\n番組生配信中：\nhttps",
-      "url": "https://x.com/pj_sekai/status/2092580020485337382"
-    },
-    {
-      "author": "hololivetv",
-      "score": 43.4,
-      "likes": 938,
-      "likes_per_min": 39.38717602005931,
+      "author": "kassy_imasch",
+      "score": 56.9,
+      "likes": 3275,
+      "likes_per_min": 116.51793456708694,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.8,
-      "text": "#さくらみこ 2ndライブ\n\nSakura Miko 2nd Live “Blooming Parade!!”\n\n現地会",
-      "url": "https://x.com/hololivetv/status/2092582841276076457"
+      "age_minutes": 28.1,
+      "text": "6年間、本当にありがとうございました！\n伝えたい想いなど、いろいろとお話しさせていただきました。\n発表後から、沢山の温か",
+      "url": "https://x.com/kassy_imasch/status/2092599100286128162"
     },
     {
-      "author": "nomusun_manga",
-      "score": 43.1,
-      "likes": 260,
-      "likes_per_min": 3.65,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 78.7,
-      "text": "とうとう夫から離婚を突きつけられた！けど…？\n（０／５）",
-      "url": "https://x.com/nomusun_manga/status/2092569018230296908"
-    },
-    {
-      "author": "miyu_cs0913",
-      "score": 43.0,
-      "likes": 1088,
-      "likes_per_min": 79.81499022204015,
+      "author": "gaku_fushimi",
+      "score": 54.0,
+      "likes": 550,
+      "likes_per_min": 60.50209467327073,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.6,
-      "text": "日本武道館 \n2日間ありがとうございました！！\n大好きで大切な8人と、\n最高の宝物のきゅーてすとのみんなと、\n日本武道館",
-      "url": "https://x.com/miyu_cs0913/status/2092585404491063485"
+      "age_minutes": 9.1,
+      "text": "２３時からの待機所はこちらです！！\n【#にじメンマイクラ】初上陸です！【にじさんじ / 伏見ガク】 \nhttps://\n",
+      "url": "https://x.com/gaku_fushimi/status/2092603884997062679"
     },
     {
-      "author": "daisubkiri3",
-      "score": 42.0,
-      "likes": 1119,
-      "likes_per_min": 60.876343305560816,
+      "author": "mtor_mikasa",
+      "score": 53.2,
+      "likes": 954,
+      "likes_per_min": 31.95202666002974,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 18.4,
-      "text": "ねねさんとばあちゃんにお線香あげれたよ\n\n待たせてごめんねって言った\n\n飾られてる写真があまりにもいい顔してた",
-      "url": "https://x.com/daisubkiri3/status/2092584208199999765"
+      "age_minutes": 29.9,
+      "text": "【初公開】ついに僕が飼ってるうさぎさんの名前を公開します\n\nそして特別な動画のプレゼントも・・・？\n↓",
+      "url": "https://x.com/mtor_mikasa/status/2092598660744015890"
+    },
+    {
+      "author": "oozorasubaru",
+      "score": 49.2,
+      "likes": 2016,
+      "likes_per_min": 41.61798646469333,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 48.4,
+      "text": "【#生スバル】勝利に導いてくれ！！！！ぺこーち！！！！！！！：Puyo Puyo Tetris 2【ホロライブ/大空スバ",
+      "url": "https://x.com/oozorasubaru/status/2092593982715183474"
+    },
+    {
+      "author": "usamirito_power",
+      "score": 45.0,
+      "likes": 4476,
+      "likes_per_min": 70.83332647906958,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 63.2,
+      "text": "21:45から！！！\n\n【マッチョでポン！】最強のボディビルダーを育成するぞ！！！【宇佐美リト/にじさんじ】\nhttps",
+      "url": "https://x.com/usamirito_power/status/2092590269191606280"
     }
   ]
 }

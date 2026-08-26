@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-08-26T16:06:53.005799+00:00",
+  "updated_at": "2026-08-26T16:59:33.898272+00:00",
   "status": "success",
-  "started_at": "2026-08-26T16:04:14.472436+00:00",
-  "finished_at": "2026-08-26T16:06:53.004917+00:00",
-  "posts_scanned": 145,
-  "posts_with_history": 31,
+  "started_at": "2026-08-26T16:56:43.852145+00:00",
+  "finished_at": "2026-08-26T16:59:33.895113+00:00",
+  "posts_scanned": 158,
+  "posts_with_history": 93,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 154,
+  "minutes_since_last_notification": 207,
   "reject_reasons": {
-    "いいねが少なすぎる": 53,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 22
+    "いいねが少なすぎる": 57,
+    "古すぎる": 33
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4686,
-    "posts": 2427,
-    "oldest": "2026-08-25T16:53:36.397100+00:00"
+    "total": 4668,
+    "posts": 2444,
+    "oldest": "2026-08-25T17:23:48.579147+00:00"
   },
   "top5": [
     {
-      "author": "hima72_2nd",
-      "score": 49.2,
-      "likes": 1544,
-      "likes_per_min": 22.913732267965024,
+      "author": "humikane",
+      "score": 48.3,
+      "likes": 2551,
+      "likes_per_min": 47.039274128423415,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 67.4,
-      "text": "ガチでおもろすぎる動画撮れた",
-      "url": "https://x.com/hima72_2nd/status/2092628004417757299"
+      "age_minutes": 54.2,
+      "text": "以前、昔の海外の学校制服調べてたら、ロシアにメイド服っぽいのがあるっぽい（結構な数検索に出てくる）のだけどどういう文化な",
+      "url": "https://x.com/humikane/status/2092644574460260618"
     },
     {
-      "author": "shirakamifubuki",
-      "score": 46.9,
-      "likes": 1472,
-      "likes_per_min": 21.028619403864553,
+      "author": "ookamimio",
+      "score": 43.7,
+      "likes": 1093,
+      "likes_per_min": 16.963810383420604,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.0,
-      "text": "#狐族密会　今月もありがとうございました！\nたくあん…本当に光るか試してみたい…な…\nまた来月も皆さんと沢山笑い合う狐族",
-      "url": "https://x.com/shirakamifubuki/status/2092627346532790525"
+      "age_minutes": 64.4,
+      "text": "ぽミオちゃん、たくさん見てもらえて嬉しいです\n\n次は8/31月曜日に投稿予定です\n次のぽミオちゃんは何をがんばるのか・・",
+      "url": "https://x.com/ookamimio/status/2092642007743365211"
     },
     {
-      "author": "KFC_jp",
-      "score": 44.0,
-      "likes": 1829,
-      "likes_per_min": 27.346190389034717,
+      "author": "iLiFE_mew",
+      "score": 41.7,
+      "likes": 1498,
+      "likes_per_min": 100.88937769226146,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 66.9,
-      "text": "／\nとろ〜〜〜〜〜〜〜〜〜〜〜り！\n＼\n\nケンタのとろ～り月見バーガー販売中\n今年は「たまごが大暴れ」\nたまごを思う存分",
-      "url": "https://x.com/KFC_jp/status/2092628133694542215"
+      "age_minutes": 14.8,
+      "text": "MEGALiFE!ありがとうございました！",
+      "url": "https://x.com/iLiFE_mew/status/2092654484396949532"
     },
     {
-      "author": "tokino_sora",
-      "score": 43.8,
-      "likes": 1095,
-      "likes_per_min": 17.580992363143917,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 62.3,
-      "text": "ショート動画更新\n今日は\n\nさくらんぼメッセージ\n\n踊ってみた₍₍ ◝(•̀ㅂ•́)◟ ⁾⁾\nさくらんぼ\n\n動画はここか",
-      "url": "https://x.com/tokino_sora/status/2092629289921618240"
-    },
-    {
-      "author": "_GingerGarden_",
-      "score": 41.6,
-      "likes": 11222,
-      "likes_per_min": 68.31,
+      "author": "Masayoshi_Oishi",
+      "score": 39.1,
+      "likes": 4115,
+      "likes_per_min": 53.3,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 166.7,
-      "text": "⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙\n.\n                     夜限定\n",
-      "url": "https://x.com/_GingerGarden_/status/2092603016860094560"
+      "age_minutes": 71.6,
+      "text": "オーイシマサヨシ！！！！！！！！\n\n本日デビュー12周年です！！！！！\n\n本当にありがとうございます！！！！",
+      "url": "https://x.com/Masayoshi_Oishi/status/2092640195292332280"
+    },
+    {
+      "author": "official_jo1",
+      "score": 38.9,
+      "likes": 4388,
+      "likes_per_min": 39.6,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 59.4,
+      "text": "2026.08.26\n ニッポン放送 #JO1 のオールナイトニッポンX \n\n#白岩瑠姫 が出演させていただきました！\n",
+      "url": "https://x.com/official_jo1/status/2092643275505287316"
     }
   ]
 }

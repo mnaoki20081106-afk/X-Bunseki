@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T05:47:33.911594+00:00",
+  "updated_at": "2026-08-26T06:24:17.777454+00:00",
   "status": "success",
-  "started_at": "2026-08-26T05:44:54.116557+00:00",
-  "finished_at": "2026-08-26T05:47:33.910382+00:00",
-  "posts_scanned": 138,
-  "posts_with_history": 65,
-  "posts_flagged": 1,
+  "started_at": "2026-08-26T06:21:36.166829+00:00",
+  "finished_at": "2026-08-26T06:24:17.776369+00:00",
+  "posts_scanned": 150,
+  "posts_with_history": 66,
+  "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 136,
+  "notified_last_24h": 4,
+  "minutes_since_last_notification": 172,
   "reject_reasons": {
-    "いいねが少なすぎる": 66,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 12
+    "いいねが少なすぎる": 63,
+    "初回観測かつ平均速度が低い": 5,
+    "古すぎる": 14
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4867,
-    "posts": 2412,
-    "oldest": "2026-08-25T06:23:25.651894+00:00"
+    "total": 4872,
+    "posts": 2403,
+    "oldest": "2026-08-25T07:17:15.728785+00:00"
   },
   "top5": [
     {
       "author": "shiozaki__info",
-      "score": 60.0,
-      "likes": 23341,
-      "likes_per_min": 423.48,
-      "acceleration": null,
+      "score": 51.2,
+      "likes": 33873,
+      "likes_per_min": 286.73,
+      "acceleration": 0.68,
       "measured": true,
-      "age_minutes": 50.4,
+      "age_minutes": 87.2,
       "text": "僕が出演させていただいている\nマクドナルドの発表会に\n参加してきました\n\n月見シリーズぜひ楽しみにしていてください！！\n",
       "url": "https://x.com/shiozaki__info/status/2092476416399229383"
     },
     {
-      "author": "kei_nagao2434",
-      "score": 42.4,
-      "likes": 1873,
-      "likes_per_min": 40.3679079693598,
+      "author": "flating2nd",
+      "score": 50.6,
+      "likes": 1121,
+      "likes_per_min": 31.287220980710988,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 46.4,
-      "text": "今日19時から \n#にじさんじラジコンバトル プレミア公開！！\nお楽しみにーー！！\n\n\nhttps://\nyoutube",
-      "url": "https://x.com/kei_nagao2434/status/2092477429172535337"
+      "age_minutes": 35.8,
+      "text": "【4000円＋α回収】flat-工房で万引き発生したんで犯行映像公開します。【デュエマ】 \nhttps://\nyoutu",
+      "url": "https://x.com/flating2nd/status/2092489334863925326"
     },
     {
-      "author": "akarusugiwww",
-      "score": 40.9,
-      "likes": 1896,
-      "likes_per_min": 48.78436667746869,
+      "author": "alexandrasts",
+      "score": 47.4,
+      "likes": 2003,
+      "likes_per_min": 94.12892686538987,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 38.9,
-      "text": "紫ばかやろうはよ来い",
-      "url": "https://x.com/akarusugiwww/status/2092479326981874066"
+      "age_minutes": 21.3,
+      "text": "先輩がトイレに立てこもってTwitter動画保存ランキング\n\n位　memo_s3ad\n備考　神降臨\n\n位　abdalla",
+      "url": "https://x.com/alexandrasts/status/2092492995321037244"
     },
     {
       "author": "MotokiOhmoriMGA",
-      "score": 40.2,
-      "likes": 5599,
-      "likes_per_min": 414.2832007477668,
+      "score": 46.0,
+      "likes": 11485,
+      "likes_per_min": 160.25,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.5,
+      "measured": true,
+      "age_minutes": 50.2,
       "text": "#大森元貴_灰色 \n本日、20時、灰色のMV公開です。\n企画立案しました。おたのちみに。",
       "url": "https://x.com/MotokiOhmoriMGA/status/2092485707000586324"
     },
     {
-      "author": "StellaSoraJP",
-      "score": 39.5,
-      "likes": 977,
-      "likes_per_min": 20.540352300855403,
+      "author": "rinu_nico",
+      "score": 43.9,
+      "likes": 1600,
+      "likes_per_min": 127.53077466046349,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.6,
-      "text": "【#夏の海真実のキミ】\nボス、今日も海の日にたーっくさん撮った写真を送っちゃうわよ♪\n\n川で遊んでたんだけど、アヤメが滑",
-      "url": "https://x.com/StellaSoraJP/status/2092477137856999728"
+      "age_minutes": 12.5,
+      "text": "赤城ウェンさんの神曲踊りましたよ\n\n〜↑↑-KARAAGE- \n\n今日18時からのすとぷり100時間生配信もお楽しみに！",
+      "url": "https://x.com/rinu_nico/status/2092495193715130801"
     }
   ]
 }

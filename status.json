@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T07:18:46.584576+00:00",
+  "updated_at": "2026-08-26T08:07:45.694963+00:00",
   "status": "success",
-  "started_at": "2026-08-26T07:15:54.358706+00:00",
-  "finished_at": "2026-08-26T07:18:46.583676+00:00",
-  "posts_scanned": 139,
-  "posts_with_history": 50,
-  "posts_flagged": 2,
-  "notified_count": 1,
+  "started_at": "2026-08-26T08:04:55.300396+00:00",
+  "finished_at": "2026-08-26T08:07:45.692816+00:00",
+  "posts_scanned": 140,
+  "posts_with_history": 51,
+  "posts_flagged": 1,
+  "notified_count": 0,
   "notified_last_24h": 5,
-  "minutes_since_last_notification": 227,
+  "minutes_since_last_notification": 49,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "古すぎる": 11,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 62,
+    "初回観測かつ平均速度が低い": 10,
+    "古すぎる": 12
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4874,
+    "total": 4880,
     "posts": 2407,
-    "oldest": "2026-08-25T08:06:26.534546+00:00"
+    "oldest": "2026-08-25T08:57:52.303465+00:00"
   },
   "top5": [
     {
       "author": "jpapachannel",
-      "score": 58.4,
-      "likes": 3541,
-      "likes_per_min": 112.97985050736544,
+      "score": 57.6,
+      "likes": 6338,
+      "likes_per_min": 57.08,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 31.3,
+      "measured": true,
+      "age_minutes": 80.3,
       "text": "からぴち事務所に駄菓子屋できた\n#からぴち",
       "url": "https://x.com/jpapachannel/status/2092504169576005941"
     },
     {
-      "author": "tkzwgrs",
-      "score": 56.8,
-      "likes": 1353,
-      "likes_per_min": 23.76,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 61.6,
-      "text": "【悲報】アダビ女優さん、暴力団幹部とのキメセク容疑で逮捕\n\n■“新セリナ(旧名:青木桃)”こと阿部星架(27)容疑者\n\n",
-      "url": "https://x.com/tkzwgrs/status/2092496555811242330"
-    },
-    {
       "author": "Sneaker_Step",
       "score": 54.3,
-      "likes": 2552,
-      "likes_per_min": 76.00847064169818,
+      "likes": 4394,
+      "likes_per_min": 37.59,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 33.6,
+      "measured": true,
+      "age_minutes": 82.6,
       "text": "▂▅  #すにすて から超重大発表  ▅▂\n\n　　　　初の、単独ホールライブ\n　･::･｡ 開　　催　　決　　定 ｡･:",
       "url": "https://x.com/Sneaker_Step/status/2092503608164258003"
     },
     {
-      "author": "rinu_nico",
-      "score": 43.9,
-      "likes": 5056,
-      "likes_per_min": 63.46,
-      "acceleration": null,
+      "author": "tkzwgrs",
+      "score": 48.5,
+      "likes": 2605,
+      "likes_per_min": 25.55,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 67.0,
-      "text": "赤城ウェンさんの神曲踊りましたよ\n\n〜↑↑-KARAAGE- \n\n今日18時からのすとぷり100時間生配信もお楽しみに！",
-      "url": "https://x.com/rinu_nico/status/2092495193715130801"
+      "age_minutes": 110.6,
+      "text": "【悲報】アダビ女優さん、暴力団幹部とのキメセク容疑で逮捕\n\n■“新セリナ(旧名:青木桃)”こと阿部星架(27)容疑者\n\n",
+      "url": "https://x.com/tkzwgrs/status/2092496555811242330"
     },
     {
-      "author": "omarupolka",
-      "score": 42.5,
-      "likes": 1165,
-      "likes_per_min": 22.537392389839596,
+      "author": "KO1KEYZofficial",
+      "score": 48.5,
+      "likes": 1428,
+      "likes_per_min": 48.123169675638906,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 51.7,
-      "text": "今日予定してあったホロ甲のリセマラ配信\n仕事が長引く可能性があって、明日に延期してもらうことになりました\nスケジュール面",
-      "url": "https://x.com/omarupolka/status/2092499046858645833"
+      "age_minutes": 29.7,
+      "text": "[] \n\n2026年10月7日(水)発売 KO1KEYZ DEBUT SINGLE「KO1KEYZ」 (KR) 公式輸入",
+      "url": "https://x.com/KO1KEYZofficial/status/2092516918431556054"
+    },
+    {
+      "author": "wcat_project",
+      "score": 47.4,
+      "likes": 1080,
+      "likes_per_min": 17.86,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 67.8,
+      "text": "#白猫プロジェクト × #ホロライブ 第3弾\n\nうちうち、うちだよ！大神ミオだよ！\n⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒\n",
+      "url": "https://x.com/wcat_project/status/2092507335466131956"
     }
   ]
 }

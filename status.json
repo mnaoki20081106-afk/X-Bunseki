@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-26T13:32:45.411308+00:00",
+  "updated_at": "2026-08-26T14:25:19.632235+00:00",
   "status": "success",
-  "started_at": "2026-08-26T13:30:14.286291+00:00",
-  "finished_at": "2026-08-26T13:32:45.410303+00:00",
-  "posts_scanned": 158,
-  "posts_with_history": 29,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-08-26T14:22:45.552080+00:00",
+  "finished_at": "2026-08-26T14:25:19.631199+00:00",
+  "posts_scanned": 148,
+  "posts_with_history": 45,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 217,
+  "minutes_since_last_notification": 53,
   "reject_reasons": {
-    "いいねが少なすぎる": 84,
-    "初回観測かつ平均速度が低い": 6
+    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 68,
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4892,
-    "posts": 2488,
-    "oldest": "2026-08-25T14:03:51.092792+00:00"
+    "total": 4872,
+    "posts": 2484,
+    "oldest": "2026-08-25T15:00:13.434454+00:00"
   },
   "top5": [
     {
-      "author": "kassy_imasch",
-      "score": 56.9,
-      "likes": 3275,
-      "likes_per_min": 116.51793456708694,
+      "author": "_GingerGarden_",
+      "score": 52.6,
+      "likes": 4285,
+      "likes_per_min": 65.79457264910458,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.1,
-      "text": "6年間、本当にありがとうございました！\n伝えたい想いなど、いろいろとお話しさせていただきました。\n発表後から、沢山の温か",
-      "url": "https://x.com/kassy_imasch/status/2092599100286128162"
+      "age_minutes": 65.1,
+      "text": "⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙ ⋆☽·̩͙⋆☽·̩͙\n.\n                     夜限定\n",
+      "url": "https://x.com/_GingerGarden_/status/2092603016860094560"
     },
     {
-      "author": "gaku_fushimi",
-      "score": 54.0,
-      "likes": 550,
-      "likes_per_min": 60.50209467327073,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.1,
-      "text": "２３時からの待機所はこちらです！！\n【#にじメンマイクラ】初上陸です！【にじさんじ / 伏見ガク】 \nhttps://\n",
-      "url": "https://x.com/gaku_fushimi/status/2092603884997062679"
-    },
-    {
-      "author": "mtor_mikasa",
-      "score": 53.2,
-      "likes": 954,
-      "likes_per_min": 31.95202666002974,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 29.9,
-      "text": "【初公開】ついに僕が飼ってるうさぎさんの名前を公開します\n\nそして特別な動画のプレゼントも・・・？\n↓",
-      "url": "https://x.com/mtor_mikasa/status/2092598660744015890"
-    },
-    {
-      "author": "oozorasubaru",
+      "author": "Yuno_Shino38",
       "score": 49.2,
-      "likes": 2016,
-      "likes_per_min": 41.61798646469333,
+      "likes": 189,
+      "likes_per_min": 30.680395146066047,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 48.4,
-      "text": "【#生スバル】勝利に導いてくれ！！！！ぺこーち！！！！！！！：Puyo Puyo Tetris 2【ホロライブ/大空スバ",
-      "url": "https://x.com/oozorasubaru/status/2092593982715183474"
+      "age_minutes": 6.2,
+      "text": "このあと23時40分から！\n\n【 Minecraft 】#にじメンマイクラ 森のでっかなレストラン 4日目【 篠宮ゆの ",
+      "url": "https://x.com/Yuno_Shino38/status/2092617855510667332"
     },
     {
-      "author": "usamirito_power",
-      "score": 45.0,
-      "likes": 4476,
-      "likes_per_min": 70.83332647906958,
+      "author": "onenonly_tokyo",
+      "score": 45.8,
+      "likes": 1109,
+      "likes_per_min": 71.11883370012171,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 63.2,
-      "text": "21:45から！！！\n\n【マッチョでポン！】最強のボディビルダーを育成するぞ！！！【宇佐美リト/にじさんじ】\nhttps",
-      "url": "https://x.com/usamirito_power/status/2092590269191606280"
+      "age_minutes": 15.6,
+      "text": "／\nTikTok更新\n＼\n\nONE N' ONLYの名前が出たら即Samba de Night Fever\n\n動画はこち",
+      "url": "https://x.com/onenonly_tokyo/status/2092615483212378161"
+    },
+    {
+      "author": "livedoornews",
+      "score": 45.5,
+      "likes": 378,
+      "likes_per_min": 6.5,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 59.3,
+      "text": "【言及】「GTA6」リーク映像が流出・拡散、制作会社が謝罪\n\nhttps://\nnews.livedoor.com/ar",
+      "url": "https://x.com/livedoornews/status/2092604491527057752"
+    },
+    {
+      "author": "satomimi__",
+      "score": 44.7,
+      "likes": 3088,
+      "likes_per_min": 151.5437609073342,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 20.4,
+      "text": "うわわたーくたくちゃお",
+      "url": "https://x.com/satomimi__/status/2092614279958814960"
     }
   ]
 }

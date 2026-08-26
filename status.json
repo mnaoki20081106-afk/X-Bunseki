@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-08-26T10:50:06.833087+00:00",
+  "updated_at": "2026-08-26T11:18:51.564208+00:00",
   "status": "success",
-  "started_at": "2026-08-26T10:47:29.032845+00:00",
-  "finished_at": "2026-08-26T10:50:06.831634+00:00",
-  "posts_scanned": 156,
-  "posts_with_history": 44,
-  "posts_flagged": 0,
+  "started_at": "2026-08-26T11:16:17.580747+00:00",
+  "finished_at": "2026-08-26T11:18:51.562962+00:00",
+  "posts_scanned": 152,
+  "posts_with_history": 73,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 54,
+  "minutes_since_last_notification": 83,
   "reject_reasons": {
-    "いいねが少なすぎる": 80,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 79,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4883,
-    "posts": 2488,
-    "oldest": "2026-08-25T10:57:47.308976+00:00"
+    "total": 4885,
+    "posts": 2464,
+    "oldest": "2026-08-25T11:40:27.149404+00:00"
   },
   "top5": [
     {
-      "author": "Lauren_iroas",
-      "score": 54.7,
-      "likes": 3553,
-      "likes_per_min": 166.96212166654806,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 21.3,
-      "text": "20時ごろからやりますな【白栄大学 0号館】俺が心霊サークルを破壊する【ローレン・イロアス/にじさんじ】 \nhttps:",
-      "url": "https://x.com/Lauren_iroas/status/2092559890145546405"
-    },
-    {
       "author": "BBBros_tokyo",
-      "score": 53.1,
-      "likes": 6617,
-      "likes_per_min": 188.44545349164142,
+      "score": 62.8,
+      "likes": 9485,
+      "likes_per_min": 99.77,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 35.1,
+      "measured": true,
+      "age_minutes": 63.9,
       "text": "［ NEWS ］\n\n2026.08.27 - 11:00\nLINE公式スタンプ 販売決定！\n\n個性豊かな６人とトークを盛",
       "url": "https://x.com/BBBros_tokyo/status/2092556408336126428"
     },
     {
-      "author": "tsuisoku777",
-      "score": 52.6,
-      "likes": 880,
-      "likes_per_min": 14.9,
+      "author": "Lauren_iroas",
+      "score": 53.8,
+      "likes": 2322,
+      "likes_per_min": 151.34460639255175,
       "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.3,
+      "text": "破壊を開始します【白栄大学 0号館】俺が心霊サークルを破壊する【ローレン・イロアス/にじさんじ】 \nhttps://\ny",
+      "url": "https://x.com/Lauren_iroas/status/2092568619393982487"
+    },
+    {
+      "author": "tsuisoku777",
+      "score": 53.7,
+      "likes": 1581,
+      "likes_per_min": 24.39,
+      "acceleration": 1.64,
       "measured": true,
-      "age_minutes": 71.9,
+      "age_minutes": 100.7,
       "text": "平将門の「将門塚」で迷惑行為をした配信者、アカウントが999年間の利用停止処分を受ける",
       "url": "https://x.com/tsuisoku777/status/2092547138383487436"
     },
     {
-      "author": "hoshusokuhou",
-      "score": 47.3,
-      "likes": 3720,
-      "likes_per_min": 49.22,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 120.3,
-      "text": "平将門の「将門塚」で迷惑行為　配信者に警察が家宅捜査中\n↓\n■時系列\n・警察がメンバー愛之助の自宅を家宅捜索\n↓\n・配信",
-      "url": "https://x.com/hoshusokuhou/status/2092534967439941731"
-    },
-    {
-      "author": "kiyo_saiore",
-      "score": 47.2,
-      "likes": 7993,
-      "likes_per_min": 407.8697483955892,
+      "author": "Kanae_2434",
+      "score": 51.6,
+      "likes": 1982,
+      "likes_per_min": 145.4593194629473,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.6,
-      "text": "動画投稿ーー！小学生がとんでもない夏を過ごすことになります。衝撃的なホラーで超面白かった。どうぞー⇒今話題の「八尺様」と",
-      "url": "https://x.com/kiyo_saiore/status/2092560314021892495"
+      "age_minutes": 13.6,
+      "text": "ゴルフやったことないけどうまいと思うんだよね。  | VCC GOLF【にじさんじ/叶】 \nhttps://\nyoutu",
+      "url": "https://x.com/Kanae_2434/status/2092569049867968931"
+    },
+    {
+      "author": "VOLTACTION_info",
+      "score": 48.6,
+      "likes": 2725,
+      "likes_per_min": 162.75974151471422,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.7,
+      "text": "ヴォルタShorts 投稿 \n\n／\n　【間違った答えを言うゲーム】\n　正解を答えたら即ハリセン！？即答で回避なるか！\n＼",
+      "url": "https://x.com/VOLTACTION_info/status/2092568268645315046"
     }
   ]
 }

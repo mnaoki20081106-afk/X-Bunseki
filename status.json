@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T19:19:01.234612+00:00",
+  "updated_at": "2026-08-26T22:22:44.026182+00:00",
   "status": "success",
-  "started_at": "2026-08-26T19:15:30.380166+00:00",
-  "finished_at": "2026-08-26T19:19:01.233122+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 75,
+  "started_at": "2026-08-26T22:19:41.289468+00:00",
+  "finished_at": "2026-08-26T22:22:44.024985+00:00",
+  "posts_scanned": 129,
+  "posts_with_history": 31,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 346,
+  "minutes_since_last_notification": 530,
   "reject_reasons": {
-    "いいねが少なすぎる": 27,
-    "古すぎる": 87,
-    "初回観測かつ平均速度が低い": 11
+    "いいねが少なすぎる": 40,
+    "初回観測かつ平均速度が低い": 9,
+    "古すぎる": 42
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4173,
-    "posts": 2390,
-    "oldest": "2026-08-25T19:45:42.571175+00:00"
+    "total": 3508,
+    "posts": 2263,
+    "oldest": "2026-08-25T22:52:55.209930+00:00"
   },
   "top5": [
     {
-      "author": "NOGI46ann",
-      "score": 39.8,
-      "likes": 840,
-      "likes_per_min": 11.04969933283595,
+      "author": "wni_jp",
+      "score": 43.4,
+      "likes": 1536,
+      "likes_per_min": 29.738541828329584,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 76.0,
-      "text": "お聞きいただきありがとうございました！\nプレゼント〆切は8/27（木）3時半まで！\n\nパーソナリティの #乃木坂46 #",
-      "url": "https://x.com/NOGI46ann/status/2092674184652742709"
+      "age_minutes": 51.7,
+      "text": "【レベル5大雨特別警報】\n記録的な大雨となっている石川県能登南部・富山県西部北に「レベル5大雨特別警報」が発表されました",
+      "url": "https://x.com/wni_jp/status/2092726550211047429"
     },
     {
-      "author": "ado1024imokenp",
-      "score": 34.4,
-      "likes": 2302,
-      "likes_per_min": 66.52505986626838,
+      "author": "jel_sub",
+      "score": 42.0,
+      "likes": 1133,
+      "likes_per_min": 63.950558147122614,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 34.6,
-      "text": "1位ありがとうございます！！",
-      "url": "https://x.com/ado1024imokenp/status/2092684609360384207"
+      "age_minutes": 17.7,
+      "text": "おはよ、今日も思い出作ろな\n\n#すとぷり100時間生配信",
+      "url": "https://x.com/jel_sub/status/2092735089948151956"
     },
     {
-      "author": "takaichi_sanae",
-      "score": 32.2,
-      "likes": 869,
-      "likes_per_min": 40.66416317571896,
+      "author": "UN_NERV",
+      "score": 38.8,
+      "likes": 1158,
+      "likes_per_min": 20.369341156518683,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 21.4,
-      "text": "ネパールでの大規模洪水発生につき、ネパール政府及びネパール国民の皆様に、心よりお見舞いを申し上げます。\n\n現地メディアで",
-      "url": "https://x.com/takaichi_sanae/status/2092687938320785705"
+      "age_minutes": 56.9,
+      "text": "【NHKニュース速報 06:25】\nレベル５特別警報［大雨］　富山県\n氷見市\nレベル５特別警報［大雨］　石川県\n羽咋市　",
+      "url": "https://x.com/UN_NERV/status/2092725244687687790"
     },
     {
-      "author": "iLiFE_karen",
-      "score": 31.1,
-      "likes": 836,
-      "likes_per_min": 17.427497844474576,
+      "author": "knightma310",
+      "score": 36.8,
+      "likes": 2241,
+      "likes_per_min": 21.10497822652088,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 48.0,
-      "text": "なんか余韻すごくて寝れない（ ;  ; ）♡",
-      "url": "https://x.com/iLiFE_karen/status/2092681244731723878"
+      "age_minutes": 106.2,
+      "text": "「『例のプール』がある家には昔、俳優の石坂浩二さんが住んでいた」\n\nという都市伝説があったので、マツコ・デラックスさんが",
+      "url": "https://x.com/knightma310/status/2092712825856901400"
     },
     {
-      "author": "iLiFE_koguma",
-      "score": 30.7,
-      "likes": 822,
-      "likes_per_min": 15.791444925285688,
+      "author": "oshidoraEX",
+      "score": 33.4,
+      "likes": 4866,
+      "likes_per_min": 34.33204387812301,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 52.1,
-      "text": "今日も一日お疲れ様でした（՞>⩊<՞）\n色々見返して、余韻に浸ってたら\nこんな時間になっちゃったー( °_° )\n急いで",
-      "url": "https://x.com/iLiFE_koguma/status/2092680216053449191"
+      "age_minutes": 141.7,
+      "text": "10月3日(土)よる11時スタート！\n　　「#はだかんぼうたち 」\n✦ ・・───────── ・・✦\n\n主演の#松田元",
+      "url": "https://x.com/oshidoraEX/status/2092703880526377014"
     }
   ]
 }

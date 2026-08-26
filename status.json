@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-08-26T08:07:45.694963+00:00",
+  "updated_at": "2026-08-26T09:00:53.296572+00:00",
   "status": "success",
-  "started_at": "2026-08-26T08:04:55.300396+00:00",
-  "finished_at": "2026-08-26T08:07:45.692816+00:00",
-  "posts_scanned": 140,
-  "posts_with_history": 51,
+  "started_at": "2026-08-26T08:58:24.313818+00:00",
+  "finished_at": "2026-08-26T09:00:53.295694+00:00",
+  "posts_scanned": 127,
+  "posts_with_history": 26,
   "posts_flagged": 1,
-  "notified_count": 0,
-  "notified_last_24h": 5,
-  "minutes_since_last_notification": 49,
+  "notified_count": 1,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "いいねが少なすぎる": 62,
-    "初回観測かつ平均速度が低い": 10,
-    "古すぎる": 12
+    "いいねが少なすぎる": 65,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4880,
-    "posts": 2407,
-    "oldest": "2026-08-25T08:57:52.303465+00:00"
+    "total": 4867,
+    "posts": 2409,
+    "oldest": "2026-08-25T09:50:09.861516+00:00"
   },
   "top5": [
     {
-      "author": "jpapachannel",
-      "score": 57.6,
-      "likes": 6338,
-      "likes_per_min": 57.08,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 80.3,
-      "text": "からぴち事務所に駄菓子屋できた\n#からぴち",
-      "url": "https://x.com/jpapachannel/status/2092504169576005941"
-    },
-    {
-      "author": "Sneaker_Step",
-      "score": 54.3,
-      "likes": 4394,
-      "likes_per_min": 37.59,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 82.6,
-      "text": "▂▅  #すにすて から超重大発表  ▅▂\n\n　　　　初の、単独ホールライブ\n　･::･｡ 開　　催　　決　　定 ｡･:",
-      "url": "https://x.com/Sneaker_Step/status/2092503608164258003"
-    },
-    {
-      "author": "tkzwgrs",
-      "score": 48.5,
-      "likes": 2605,
-      "likes_per_min": 25.55,
-      "acceleration": 1.08,
-      "measured": true,
-      "age_minutes": 110.6,
-      "text": "【悲報】アダビ女優さん、暴力団幹部とのキメセク容疑で逮捕\n\n■“新セリナ(旧名:青木桃)”こと阿部星架(27)容疑者\n\n",
-      "url": "https://x.com/tkzwgrs/status/2092496555811242330"
-    },
-    {
-      "author": "KO1KEYZofficial",
-      "score": 48.5,
-      "likes": 1428,
-      "likes_per_min": 48.123169675638906,
+      "author": "Kaida_Haru",
+      "score": 61.1,
+      "likes": 2169,
+      "likes_per_min": 147.97334085275315,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.7,
-      "text": "[] \n\n2026年10月7日(水)発売 KO1KEYZ DEBUT SINGLE「KO1KEYZ」 (KR) 公式輸入",
-      "url": "https://x.com/KO1KEYZofficial/status/2092516918431556054"
+      "age_minutes": 14.7,
+      "text": "『束縛ボイス Vol.2』\n\nhttps://\nshop.nijisanji.jp/dig-00096_B.ht\nml\n",
+      "url": "https://x.com/Kaida_Haru/status/2092534066663076228"
     },
     {
-      "author": "wcat_project",
-      "score": 47.4,
-      "likes": 1080,
-      "likes_per_min": 17.86,
+      "author": "sixfonia_info",
+      "score": 51.6,
+      "likes": 1740,
+      "likes_per_min": 57.28449297334774,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 67.8,
-      "text": "#白猫プロジェクト × #ホロライブ 第3弾\n\nうちうち、うちだよ！大神ミオだよ！\n⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒\n",
-      "url": "https://x.com/wcat_project/status/2092507335466131956"
+      "measured": false,
+      "age_minutes": 30.4,
+      "text": "◆動画投稿のお知らせ◆\n\n＿＿＿ 空 前 絶 後 の ケ ン カ 。\n\n▼本編はこちら\n\nhttps://\nyoutu.",
+      "url": "https://x.com/sixfonia_info/status/2092530109962236285"
+    },
+    {
+      "author": "lions_official",
+      "score": 51.3,
+      "likes": 2942,
+      "likes_per_min": 114.06912327154899,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 25.8,
+      "text": "本日のファーム・リーグ公式戦(楽天戦)において死球を受け、途中交代した栗山巧選手について、病院での診察の結果、異常は見ら",
+      "url": "https://x.com/lions_official/status/2092531265551683738"
+    },
+    {
+      "author": "FightersPR",
+      "score": 50.8,
+      "likes": 963,
+      "likes_per_min": 31.258068357029753,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 30.8,
+      "text": "本日のスタメン！\n\nファイターズトレカで今日のヒーローを予想！\n\nhttps://\nfighters.orical.jp",
+      "url": "https://x.com/FightersPR/status/2092530000192995813"
+    },
+    {
+      "author": "KNTFR2434",
+      "score": 49.5,
+      "likes": 1203,
+      "likes_per_min": 63.23354454210344,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 19.0,
+      "text": "本日はしょつ\nしゃがめばいけんだこいつｗ【風楽奏斗／にじさんじ】 \nhttps://\nyoutu.be/O8Vy9sbG",
+      "url": "https://x.com/KNTFR2434/status/2092532968824999991"
     }
   ]
 }

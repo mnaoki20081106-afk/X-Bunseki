@@ -1,17 +1,18 @@
 {
-  "updated_at": "2026-08-26T16:59:33.898272+00:00",
+  "updated_at": "2026-08-26T19:19:01.234612+00:00",
   "status": "success",
-  "started_at": "2026-08-26T16:56:43.852145+00:00",
-  "finished_at": "2026-08-26T16:59:33.895113+00:00",
-  "posts_scanned": 158,
-  "posts_with_history": 93,
+  "started_at": "2026-08-26T19:15:30.380166+00:00",
+  "finished_at": "2026-08-26T19:19:01.233122+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 75,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 207,
+  "minutes_since_last_notification": 346,
   "reject_reasons": {
-    "いいねが少なすぎる": 57,
-    "古すぎる": 33
+    "いいねが少なすぎる": 27,
+    "古すぎる": 87,
+    "初回観測かつ平均速度が低い": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -23,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 4668,
-    "posts": 2444,
-    "oldest": "2026-08-25T17:23:48.579147+00:00"
+    "total": 4173,
+    "posts": 2390,
+    "oldest": "2026-08-25T19:45:42.571175+00:00"
   },
   "top5": [
     {
-      "author": "humikane",
-      "score": 48.3,
-      "likes": 2551,
-      "likes_per_min": 47.039274128423415,
+      "author": "NOGI46ann",
+      "score": 39.8,
+      "likes": 840,
+      "likes_per_min": 11.04969933283595,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 54.2,
-      "text": "以前、昔の海外の学校制服調べてたら、ロシアにメイド服っぽいのがあるっぽい（結構な数検索に出てくる）のだけどどういう文化な",
-      "url": "https://x.com/humikane/status/2092644574460260618"
+      "age_minutes": 76.0,
+      "text": "お聞きいただきありがとうございました！\nプレゼント〆切は8/27（木）3時半まで！\n\nパーソナリティの #乃木坂46 #",
+      "url": "https://x.com/NOGI46ann/status/2092674184652742709"
     },
     {
-      "author": "ookamimio",
-      "score": 43.7,
-      "likes": 1093,
-      "likes_per_min": 16.963810383420604,
+      "author": "ado1024imokenp",
+      "score": 34.4,
+      "likes": 2302,
+      "likes_per_min": 66.52505986626838,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 64.4,
-      "text": "ぽミオちゃん、たくさん見てもらえて嬉しいです\n\n次は8/31月曜日に投稿予定です\n次のぽミオちゃんは何をがんばるのか・・",
-      "url": "https://x.com/ookamimio/status/2092642007743365211"
+      "age_minutes": 34.6,
+      "text": "1位ありがとうございます！！",
+      "url": "https://x.com/ado1024imokenp/status/2092684609360384207"
     },
     {
-      "author": "iLiFE_mew",
-      "score": 41.7,
-      "likes": 1498,
-      "likes_per_min": 100.88937769226146,
+      "author": "takaichi_sanae",
+      "score": 32.2,
+      "likes": 869,
+      "likes_per_min": 40.66416317571896,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.8,
-      "text": "MEGALiFE!ありがとうございました！",
-      "url": "https://x.com/iLiFE_mew/status/2092654484396949532"
+      "age_minutes": 21.4,
+      "text": "ネパールでの大規模洪水発生につき、ネパール政府及びネパール国民の皆様に、心よりお見舞いを申し上げます。\n\n現地メディアで",
+      "url": "https://x.com/takaichi_sanae/status/2092687938320785705"
     },
     {
-      "author": "Masayoshi_Oishi",
-      "score": 39.1,
-      "likes": 4115,
-      "likes_per_min": 53.3,
+      "author": "iLiFE_karen",
+      "score": 31.1,
+      "likes": 836,
+      "likes_per_min": 17.427497844474576,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 71.6,
-      "text": "オーイシマサヨシ！！！！！！！！\n\n本日デビュー12周年です！！！！！\n\n本当にありがとうございます！！！！",
-      "url": "https://x.com/Masayoshi_Oishi/status/2092640195292332280"
+      "measured": false,
+      "age_minutes": 48.0,
+      "text": "なんか余韻すごくて寝れない（ ;  ; ）♡",
+      "url": "https://x.com/iLiFE_karen/status/2092681244731723878"
     },
     {
-      "author": "official_jo1",
-      "score": 38.9,
-      "likes": 4388,
-      "likes_per_min": 39.6,
+      "author": "iLiFE_koguma",
+      "score": 30.7,
+      "likes": 822,
+      "likes_per_min": 15.791444925285688,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 59.4,
-      "text": "2026.08.26\n ニッポン放送 #JO1 のオールナイトニッポンX \n\n#白岩瑠姫 が出演させていただきました！\n",
-      "url": "https://x.com/official_jo1/status/2092643275505287316"
+      "measured": false,
+      "age_minutes": 52.1,
+      "text": "今日も一日お疲れ様でした（՞>⩊<՞）\n色々見返して、余韻に浸ってたら\nこんな時間になっちゃったー( °_° )\n急いで",
+      "url": "https://x.com/iLiFE_koguma/status/2092680216053449191"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-27T03:26:26.309668+00:00",
+  "updated_at": "2026-08-27T14:38:15.692809+00:00",
   "status": "success",
-  "started_at": "2026-08-27T03:23:24.648014+00:00",
-  "finished_at": "2026-08-27T03:26:26.308697+00:00",
-  "posts_scanned": 148,
-  "posts_with_history": 17,
-  "posts_flagged": 1,
-  "notified_count": 1,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 834,
+  "started_at": "2026-08-27T14:35:31.529048+00:00",
+  "finished_at": "2026-08-27T14:38:15.691928+00:00",
+  "posts_scanned": 164,
+  "posts_with_history": 0,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": 672,
   "reject_reasons": {
-    "いいねが少なすぎる": 71,
-    "初回観測かつ平均速度が低い": 9,
-    "古すぎる": 23
+    "いいねが少なすぎる": 84,
+    "初回観測かつ平均速度が低い": 13,
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 2935,
-    "posts": 1977,
-    "oldest": "2026-08-26T03:31:56.052100+00:00"
+    "total": 899,
+    "posts": 718,
+    "oldest": "2026-08-26T16:06:52.990418+00:00"
   },
   "top5": [
     {
-      "author": "AORINGOHUZIN",
-      "score": 58.3,
-      "likes": 7573,
-      "likes_per_min": 304.25640671315466,
+      "author": "mizumiya_su",
+      "score": 43.1,
+      "likes": 689,
+      "likes_per_min": 12.085326930037942,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.9,
-      "text": "【NEWS】\n⁡\nMrs. GREEN APPLEと\nボンボンドロップシール\n”アーティスト初”となるコラボが決定\n⁡\n",
-      "url": "https://x.com/AORINGOHUZIN/status/2092809710663844347"
+      "age_minutes": 57.0,
+      "text": "【メン限】ゆるゆる雑談＆近況報告回〜【水宮枢／ホロライブDEV_IS】 \nhttps://\nyoutube.com/li",
+      "url": "https://x.com/mizumiya_su/status/2092970703800902088"
     },
     {
-      "author": "oshidoraEX",
-      "score": 51.3,
-      "likes": 1026,
-      "likes_per_min": 38.82903721563584,
+      "author": "Pokemon_cojp",
+      "score": 42.3,
+      "likes": 2669,
+      "likes_per_min": 27.16688288453537,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 26.4,
-      "text": "＼匂わせ投稿の裏側／\n\n昨晩投稿した\n動画内の\"はだかんぼう\"の文字\n\n誰の字かわかりましたか？\n\n実は、主演の #松田",
-      "url": "https://x.com/oshidoraEX/status/2092809327300215285"
+      "age_minutes": 98.2,
+      "text": "ウェアラブルデバイス「Google Fitbit Air 限定モデル Pokémon Sleep」が、Google から",
+      "url": "https://x.com/Pokemon_cojp/status/2092960326375395470"
     },
     {
-      "author": "livedoornews",
-      "score": 50.3,
-      "likes": 6232,
-      "likes_per_min": 96.16266315665058,
+      "author": "AnshininMisa",
+      "score": 39.4,
+      "likes": 899,
+      "likes_per_min": 20.114279153955874,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 64.8,
-      "text": "【訃報】芸術家・草間彌生さん死去 97歳\n\nhttps://\nnews.livedoor.com/article/det",
-      "url": "https://x.com/livedoornews/status/2092799667159564727"
+      "age_minutes": 44.7,
+      "text": "「ラプラスさんは身体目当てで私をフォローしてます」と配信で暴露したところ、ご本人様から弁明を頂きました。",
+      "url": "https://x.com/AnshininMisa/status/2092973801466384592"
     },
     {
-      "author": "jinkamiya",
-      "score": 48.1,
-      "likes": 945,
-      "likes_per_min": 16.83286051178941,
+      "author": "yukihanalamy",
+      "score": 39.3,
+      "likes": 1262,
+      "likes_per_min": 74.69834984745452,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 56.1,
-      "text": "このガイドラインは改めて確認してください。\n参政党は消費税の議論をしています。\n\n政策議論はしたらいいですが、\n誹謗中傷",
-      "url": "https://x.com/jinkamiya/status/2092801848327770166"
+      "age_minutes": 16.9,
+      "text": "今日はねぽらぼご飯でした！楽しかった",
+      "url": "https://x.com/yukihanalamy/status/2092980798320513134"
     },
     {
-      "author": "BBBros_tokyo",
-      "score": 48.0,
-      "likes": 3718,
-      "likes_per_min": 80.08870660757984,
+      "author": "suchi_sub",
+      "score": 38.5,
+      "likes": 1729,
+      "likes_per_min": 47.140038943225,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 46.4,
-      "text": "［ NEWS ］\n\nBoom Boom Brothers 初の\nLINE公式スタンプ 登場！\n\nhttps://\nlin",
-      "url": "https://x.com/BBBros_tokyo/status/2092804291811569838"
+      "age_minutes": 36.7,
+      "text": "おつすち( ᐛ )\n\n人に教える難しさを学んだ。\nあと妹も配信見てたらしいので詰んだ。",
+      "url": "https://x.com/suchi_sub/status/2092975819316769207"
     }
   ]
 }

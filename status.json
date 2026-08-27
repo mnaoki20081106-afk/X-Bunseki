@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-26T22:22:44.026182+00:00",
+  "updated_at": "2026-08-27T03:26:26.309668+00:00",
   "status": "success",
-  "started_at": "2026-08-26T22:19:41.289468+00:00",
-  "finished_at": "2026-08-26T22:22:44.024985+00:00",
-  "posts_scanned": 129,
-  "posts_with_history": 31,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-08-27T03:23:24.648014+00:00",
+  "finished_at": "2026-08-27T03:26:26.308697+00:00",
+  "posts_scanned": 148,
+  "posts_with_history": 17,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 530,
+  "minutes_since_last_notification": 834,
   "reject_reasons": {
-    "いいねが少なすぎる": 40,
+    "いいねが少なすぎる": 71,
     "初回観測かつ平均速度が低い": 9,
-    "古すぎる": 42
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 3508,
-    "posts": 2263,
-    "oldest": "2026-08-25T22:52:55.209930+00:00"
+    "total": 2935,
+    "posts": 1977,
+    "oldest": "2026-08-26T03:31:56.052100+00:00"
   },
   "top5": [
     {
-      "author": "wni_jp",
-      "score": 43.4,
-      "likes": 1536,
-      "likes_per_min": 29.738541828329584,
+      "author": "AORINGOHUZIN",
+      "score": 58.3,
+      "likes": 7573,
+      "likes_per_min": 304.25640671315466,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 51.7,
-      "text": "【レベル5大雨特別警報】\n記録的な大雨となっている石川県能登南部・富山県西部北に「レベル5大雨特別警報」が発表されました",
-      "url": "https://x.com/wni_jp/status/2092726550211047429"
-    },
-    {
-      "author": "jel_sub",
-      "score": 42.0,
-      "likes": 1133,
-      "likes_per_min": 63.950558147122614,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.7,
-      "text": "おはよ、今日も思い出作ろな\n\n#すとぷり100時間生配信",
-      "url": "https://x.com/jel_sub/status/2092735089948151956"
-    },
-    {
-      "author": "UN_NERV",
-      "score": 38.8,
-      "likes": 1158,
-      "likes_per_min": 20.369341156518683,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 56.9,
-      "text": "【NHKニュース速報 06:25】\nレベル５特別警報［大雨］　富山県\n氷見市\nレベル５特別警報［大雨］　石川県\n羽咋市　",
-      "url": "https://x.com/UN_NERV/status/2092725244687687790"
-    },
-    {
-      "author": "knightma310",
-      "score": 36.8,
-      "likes": 2241,
-      "likes_per_min": 21.10497822652088,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 106.2,
-      "text": "「『例のプール』がある家には昔、俳優の石坂浩二さんが住んでいた」\n\nという都市伝説があったので、マツコ・デラックスさんが",
-      "url": "https://x.com/knightma310/status/2092712825856901400"
+      "age_minutes": 24.9,
+      "text": "【NEWS】\n⁡\nMrs. GREEN APPLEと\nボンボンドロップシール\n”アーティスト初”となるコラボが決定\n⁡\n",
+      "url": "https://x.com/AORINGOHUZIN/status/2092809710663844347"
     },
     {
       "author": "oshidoraEX",
-      "score": 33.4,
-      "likes": 4866,
-      "likes_per_min": 34.33204387812301,
+      "score": 51.3,
+      "likes": 1026,
+      "likes_per_min": 38.82903721563584,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 141.7,
-      "text": "10月3日(土)よる11時スタート！\n　　「#はだかんぼうたち 」\n✦ ・・───────── ・・✦\n\n主演の#松田元",
-      "url": "https://x.com/oshidoraEX/status/2092703880526377014"
+      "age_minutes": 26.4,
+      "text": "＼匂わせ投稿の裏側／\n\n昨晩投稿した\n動画内の\"はだかんぼう\"の文字\n\n誰の字かわかりましたか？\n\n実は、主演の #松田",
+      "url": "https://x.com/oshidoraEX/status/2092809327300215285"
+    },
+    {
+      "author": "livedoornews",
+      "score": 50.3,
+      "likes": 6232,
+      "likes_per_min": 96.16266315665058,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 64.8,
+      "text": "【訃報】芸術家・草間彌生さん死去 97歳\n\nhttps://\nnews.livedoor.com/article/det",
+      "url": "https://x.com/livedoornews/status/2092799667159564727"
+    },
+    {
+      "author": "jinkamiya",
+      "score": 48.1,
+      "likes": 945,
+      "likes_per_min": 16.83286051178941,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 56.1,
+      "text": "このガイドラインは改めて確認してください。\n参政党は消費税の議論をしています。\n\n政策議論はしたらいいですが、\n誹謗中傷",
+      "url": "https://x.com/jinkamiya/status/2092801848327770166"
+    },
+    {
+      "author": "BBBros_tokyo",
+      "score": 48.0,
+      "likes": 3718,
+      "likes_per_min": 80.08870660757984,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 46.4,
+      "text": "［ NEWS ］\n\nBoom Boom Brothers 初の\nLINE公式スタンプ 登場！\n\nhttps://\nlin",
+      "url": "https://x.com/BBBros_tokyo/status/2092804291811569838"
     }
   ]
 }

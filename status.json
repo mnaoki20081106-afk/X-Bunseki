@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-27T14:38:15.692809+00:00",
+  "updated_at": "2026-08-28T00:00:27.464796+00:00",
   "status": "success",
-  "started_at": "2026-08-27T14:35:31.529048+00:00",
-  "finished_at": "2026-08-27T14:38:15.691928+00:00",
-  "posts_scanned": 164,
-  "posts_with_history": 0,
+  "started_at": "2026-08-27T23:57:50.465842+00:00",
+  "finished_at": "2026-08-28T00:00:27.463352+00:00",
+  "posts_scanned": 142,
+  "posts_with_history": 5,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 672,
+  "minutes_since_last_notification": 1234,
   "reject_reasons": {
-    "いいねが少なすぎる": 84,
-    "初回観測かつ平均速度が低い": 13,
-    "古すぎる": 1
+    "いいねが少なすぎる": 58,
+    "初回観測かつ平均速度が低い": 16,
+    "古すぎる": 18
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 899,
-    "posts": 718,
-    "oldest": "2026-08-26T16:06:52.990418+00:00"
+    "total": 454,
+    "posts": 449,
+    "oldest": "2026-08-27T03:26:25.411445+00:00"
   },
   "top5": [
     {
-      "author": "mizumiya_su",
-      "score": 43.1,
-      "likes": 689,
-      "likes_per_min": 12.085326930037942,
+      "author": "H_KAGAMI2434",
+      "score": 51.5,
+      "likes": 1036,
+      "likes_per_min": 100.67236653976846,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 57.0,
-      "text": "【メン限】ゆるゆる雑談＆近況報告回〜【水宮枢／ホロライブDEV_IS】 \nhttps://\nyoutube.com/li",
-      "url": "https://x.com/mizumiya_su/status/2092970703800902088"
+      "age_minutes": 10.3,
+      "text": "皆さま、おはようございます\n本日開催の「遊戯王WCS2026マスターデュエルの部」にじさんじ実況がまもなく開始されます！",
+      "url": "https://x.com/H_KAGAMI2434/status/2093123940319445478"
     },
     {
-      "author": "Pokemon_cojp",
-      "score": 42.3,
-      "likes": 2669,
-      "likes_per_min": 27.16688288453537,
+      "author": "onishi_aoi",
+      "score": 50.0,
+      "likes": 1645,
+      "likes_per_min": 30.28119650142665,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 98.2,
-      "text": "ウェアラブルデバイス「Google Fitbit Air 限定モデル Pokémon Sleep」が、Google から",
-      "url": "https://x.com/Pokemon_cojp/status/2092960326375395470"
+      "age_minutes": 54.3,
+      "text": "おはようʕ´-ﻌก̀ʔᐝ\nおはツイを始めた理由は、おはツイをしているアイドルはなんか景気がいいからです景気いい系アイドル",
+      "url": "https://x.com/onishi_aoi/status/2093112858783654369"
     },
     {
-      "author": "AnshininMisa",
-      "score": 39.4,
-      "likes": 899,
-      "likes_per_min": 20.114279153955874,
+      "author": "akindosushiroco",
+      "score": 44.2,
+      "likes": 3419,
+      "likes_per_min": 56.567741403649215,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 44.7,
-      "text": "「ラプラスさんは身体目当てで私をフォローしてます」と配信で暴露したところ、ご本人様から弁明を頂きました。",
-      "url": "https://x.com/AnshininMisa/status/2092973801466384592"
+      "age_minutes": 60.4,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2093111319956484370"
     },
     {
-      "author": "yukihanalamy",
-      "score": 39.3,
-      "likes": 1262,
-      "likes_per_min": 74.69834984745452,
+      "author": "bikkuri__donkey",
+      "score": 42.2,
+      "likes": 1333,
+      "likes_per_min": 22.048555720315655,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 16.9,
-      "text": "今日はねぽらぼご飯でした！楽しかった",
-      "url": "https://x.com/yukihanalamy/status/2092980798320513134"
+      "age_minutes": 60.5,
+      "text": "／\nまんまるな“たまご”の中に、 \nハンバーグをダイブさせちゃおう \n＼\n\nお食事券10,000円分が抽選で合計50名様",
+      "url": "https://x.com/bikkuri__donkey/status/2093111317968089582"
     },
     {
-      "author": "suchi_sub",
-      "score": 38.5,
-      "likes": 1729,
-      "likes_per_min": 47.140038943225,
+      "author": "McDonaldsJapan",
+      "score": 42.0,
+      "likes": 1646,
+      "likes_per_min": 27.22574847384814,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.7,
-      "text": "おつすち( ᐛ )\n\n人に教える難しさを学んだ。\nあと妹も配信見てたらしいので詰んだ。",
-      "url": "https://x.com/suchi_sub/status/2092975819316769207"
+      "age_minutes": 60.5,
+      "text": "月見バーガー×すき焼き＝最高\n\n【#マックの炙り牛すき焼き風月見】をつけて本日8/28(金)中にリプライすると、抽選で4",
+      "url": "https://x.com/McDonaldsJapan/status/2093111316290417005"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-28T00:00:27.464796+00:00",
+  "updated_at": "2026-08-28T11:18:09.154770+00:00",
   "status": "success",
-  "started_at": "2026-08-27T23:57:50.465842+00:00",
-  "finished_at": "2026-08-28T00:00:27.463352+00:00",
-  "posts_scanned": 142,
-  "posts_with_history": 5,
+  "started_at": "2026-08-28T11:15:23.965026+00:00",
+  "finished_at": "2026-08-28T11:18:09.152086+00:00",
+  "posts_scanned": 158,
+  "posts_with_history": 12,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 1,
-  "minutes_since_last_notification": 1234,
+  "notified_last_24h": 0,
+  "minutes_since_last_notification": 1912,
   "reject_reasons": {
-    "いいねが少なすぎる": 58,
-    "初回観測かつ平均速度が低い": 16,
-    "古すぎる": 18
+    "いいねが少なすぎる": 62,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 454,
-    "posts": 449,
-    "oldest": "2026-08-27T03:26:25.411445+00:00"
+    "total": 464,
+    "posts": 451,
+    "oldest": "2026-08-27T14:38:15.677011+00:00"
   },
   "top5": [
     {
-      "author": "H_KAGAMI2434",
-      "score": 51.5,
-      "likes": 1036,
-      "likes_per_min": 100.67236653976846,
+      "author": "Mst_com",
+      "score": 53.1,
+      "likes": 4169,
+      "likes_per_min": 101.76793403963147,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.3,
-      "text": "皆さま、おはようございます\n本日開催の「遊戯王WCS2026マスターデュエルの部」にじさんじ実況がまもなく開始されます！",
-      "url": "https://x.com/H_KAGAMI2434/status/2093123940319445478"
+      "age_minutes": 41.0,
+      "text": "【Mステカメラ】\n⠀\n今夜9時から生放送！ #Mステ\n⠀\n／\n本番前の\nTOMORROW X TOGETHERから\nコメ",
+      "url": "https://x.com/Mst_com/status/2093286768380669954"
     },
     {
-      "author": "onishi_aoi",
-      "score": 50.0,
-      "likes": 1645,
-      "likes_per_min": 30.28119650142665,
+      "author": "milk_info",
+      "score": 49.1,
+      "likes": 11560,
+      "likes_per_min": 638.7062913456483,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 54.3,
-      "text": "おはようʕ´-ﻌก̀ʔᐝ\nおはツイを始めた理由は、おはツイをしているアイドルはなんか景気がいいからです景気いい系アイドル",
-      "url": "https://x.com/onishi_aoi/status/2093112858783654369"
+      "age_minutes": 18.1,
+      "text": "【#YouTube 更新】\n新作動画アップしました！\n\n本日8月28日は #やわしゅん こと\n#曽野舜太 と #山中柔太",
+      "url": "https://x.com/milk_info/status/2093292521162154073"
     },
     {
-      "author": "akindosushiroco",
+      "author": "ll_cellmates_ll",
+      "score": 49.0,
+      "likes": 1596,
+      "likes_per_min": 88.01914316358767,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 18.1,
+      "text": " shorts動画 投稿！ \n\n新人を観るイブラヒムを観るセルメイツ【手描き切り抜きになってしまうことも・・・】\n#にじ",
+      "url": "https://x.com/ll_cellmates_ll/status/2093292512496521437"
+    },
+    {
+      "author": "Inajun2434",
+      "score": 44.3,
+      "likes": 394,
+      "likes_per_min": 35.23387860358797,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 11.2,
+      "text": "【にじさんじ初配信】これ２Dなの凄すぎだろ #神永タイガ初配信 \n\n【\nhttps://\nyoutube.com/wat",
+      "url": "https://x.com/Inajun2434/status/2093294263388033271"
+    },
+    {
+      "author": "Jel__official",
       "score": 44.2,
-      "likes": 3419,
-      "likes_per_min": 56.567741403649215,
+      "likes": 1276,
+      "likes_per_min": 112.43196296730807,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 60.4,
-      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
-      "url": "https://x.com/akindosushiroco/status/2093111319956484370"
-    },
-    {
-      "author": "bikkuri__donkey",
-      "score": 42.2,
-      "likes": 1333,
-      "likes_per_min": 22.048555720315655,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 60.5,
-      "text": "／\nまんまるな“たまご”の中に、 \nハンバーグをダイブさせちゃおう \n＼\n\nお食事券10,000円分が抽選で合計50名様",
-      "url": "https://x.com/bikkuri__donkey/status/2093111317968089582"
-    },
-    {
-      "author": "McDonaldsJapan",
-      "score": 42.0,
-      "likes": 1646,
-      "likes_per_min": 27.22574847384814,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 60.5,
-      "text": "月見バーガー×すき焼き＝最高\n\n【#マックの炙り牛すき焼き風月見】をつけて本日8/28(金)中にリプライすると、抽選で4",
-      "url": "https://x.com/McDonaldsJapan/status/2093111316290417005"
+      "age_minutes": 11.3,
+      "text": "100時間リレーメイン企画！！\n\nナイトプールにきたぜー！\n\n水着着るの久々すぎるw\n\n\nhttps://\nyoutub",
+      "url": "https://x.com/Jel__official/status/2093294222489391462"
     }
   ]
 }

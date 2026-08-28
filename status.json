@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-28T11:18:09.154770+00:00",
+  "updated_at": "2026-08-28T21:30:35.144934+00:00",
   "status": "success",
-  "started_at": "2026-08-28T11:15:23.965026+00:00",
-  "finished_at": "2026-08-28T11:18:09.152086+00:00",
-  "posts_scanned": 158,
-  "posts_with_history": 12,
+  "started_at": "2026-08-28T21:27:48.376708+00:00",
+  "finished_at": "2026-08-28T21:30:35.144071+00:00",
+  "posts_scanned": 84,
+  "posts_with_history": 15,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 1912,
+  "minutes_since_last_notification": 2524,
   "reject_reasons": {
-    "いいねが少なすぎる": 62,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 22
+    "いいねが少なすぎる": 26,
+    "初回観測かつ平均速度が低い": 7,
+    "古すぎる": 35
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 464,
-    "posts": 451,
-    "oldest": "2026-08-27T14:38:15.677011+00:00"
+    "total": 384,
+    "posts": 357,
+    "oldest": "2026-08-28T00:00:27.448483+00:00"
   },
   "top5": [
     {
-      "author": "Mst_com",
-      "score": 53.1,
-      "likes": 4169,
-      "likes_per_min": 101.76793403963147,
+      "author": "nacarrera2",
+      "score": 30.7,
+      "likes": 2591,
+      "likes_per_min": 72.30241873245109,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 41.0,
-      "text": "【Mステカメラ】\n⠀\n今夜9時から生放送！ #Mステ\n⠀\n／\n本番前の\nTOMORROW X TOGETHERから\nコメ",
-      "url": "https://x.com/Mst_com/status/2093286768380669954"
+      "age_minutes": 35.8,
+      "text": "一軍ギャルの恐ろしさ（1/3）",
+      "url": "https://x.com/nacarrera2/status/2093442182132986242"
     },
     {
-      "author": "milk_info",
-      "score": 49.1,
-      "likes": 11560,
-      "likes_per_min": 638.7062913456483,
+      "author": "ir_poke",
+      "score": 26.3,
+      "likes": 1199,
+      "likes_per_min": 30.558988146076743,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 18.1,
-      "text": "【#YouTube 更新】\n新作動画アップしました！\n\n本日8月28日は #やわしゅん こと\n#曽野舜太 と #山中柔太",
-      "url": "https://x.com/milk_info/status/2093292521162154073"
+      "age_minutes": 39.2,
+      "text": "4戦目勝ち！！！！",
+      "url": "https://x.com/ir_poke/status/2093441327669404049"
     },
     {
-      "author": "ll_cellmates_ll",
-      "score": 49.0,
-      "likes": 1596,
-      "likes_per_min": 88.01914316358767,
+      "author": "nowhere_butup",
+      "score": 25.3,
+      "likes": 1515,
+      "likes_per_min": 17.24813324905421,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 18.1,
-      "text": " shorts動画 投稿！ \n\n新人を観るイブラヒムを観るセルメイツ【手描き切り抜きになってしまうことも・・・】\n#にじ",
-      "url": "https://x.com/ll_cellmates_ll/status/2093292512496521437"
+      "age_minutes": 87.8,
+      "text": "常連客泣いてるだろこれw",
+      "url": "https://x.com/nowhere_butup/status/2093429095845761101"
     },
     {
-      "author": "Inajun2434",
-      "score": 44.3,
-      "likes": 394,
-      "likes_per_min": 35.23387860358797,
+      "author": "zutomayo",
+      "score": 24.5,
+      "likes": 1648,
+      "likes_per_min": 16.91373717856488,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.2,
-      "text": "【にじさんじ初配信】これ２Dなの凄すぎだろ #神永タイガ初配信 \n\n【\nhttps://\nyoutube.com/wat",
-      "url": "https://x.com/Inajun2434/status/2093294263388033271"
+      "age_minutes": 97.4,
+      "text": "また好きな曲ができたよ",
+      "url": "https://x.com/zutomayo/status/2093426679930851400"
     },
     {
-      "author": "Jel__official",
-      "score": 44.2,
-      "likes": 1276,
-      "likes_per_min": 112.43196296730807,
+      "author": "nodati53",
+      "score": 24.2,
+      "likes": 1167,
+      "likes_per_min": 17.798064993865495,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.3,
-      "text": "100時間リレーメイン企画！！\n\nナイトプールにきたぜー！\n\n水着着るの久々すぎるw\n\n\nhttps://\nyoutub",
-      "url": "https://x.com/Jel__official/status/2093294222489391462"
+      "age_minutes": 65.6,
+      "text": "酔い師匠",
+      "url": "https://x.com/nodati53/status/2093434701314945306"
     }
   ]
 }

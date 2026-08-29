@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-29T21:12:37.698477+00:00",
+  "updated_at": "2026-08-29T23:28:26.267896+00:00",
   "status": "success",
-  "started_at": "2026-08-29T21:09:10.381794+00:00",
-  "finished_at": "2026-08-29T21:12:37.697219+00:00",
-  "posts_scanned": 128,
-  "posts_with_history": 61,
+  "started_at": "2026-08-29T23:25:28.353791+00:00",
+  "finished_at": "2026-08-29T23:28:26.266805+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 36,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 655,
+  "minutes_since_last_notification": 791,
   "reject_reasons": {
-    "いいねが少なすぎる": 20,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 86
+    "いいねが少なすぎる": 54,
+    "初回観測かつ平均速度が低い": 7,
+    "古すぎる": 38
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 868,
-    "posts": 709,
-    "oldest": "2026-08-28T21:30:35.135538+00:00"
+    "total": 933,
+    "posts": 760,
+    "oldest": "2026-08-29T03:23:42.975529+00:00"
   },
   "top5": [
     {
-      "author": "takaichi_sanae",
-      "score": 43.6,
-      "likes": 3939,
-      "likes_per_min": 48.63276952534076,
+      "author": "akindosushiroco",
+      "score": 43.3,
+      "likes": 1434,
+      "likes_per_min": 50.42624326437566,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 81.0,
-      "text": "現在、福井県福井市、大野市、勝山市にレベル５大雨特別警報が発表されています。\n\nこれらの地域では、これまでに経験したこと",
-      "url": "https://x.com/takaichi_sanae/status/2093788685632475321"
+      "age_minutes": 28.4,
+      "text": "／\nスシロー × ハローキティ\nコラボ大好評開催中\n＼\n\n抽選で20名さまにお食事券が当たる\n\n \n@akindosus",
+      "url": "https://x.com/akindosushiroco/status/2093836090285379982"
     },
     {
-      "author": "wni_jp",
-      "score": 34.9,
-      "likes": 1097,
-      "likes_per_min": 11.588668357249963,
+      "author": "bikkuri__donkey",
+      "score": 43.1,
+      "likes": 854,
+      "likes_per_min": 30.06593362427272,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 94.7,
-      "text": "【速報】福井県にレベル5大雨特別警報\n記録的な大雨となっている福井県嶺北北部、奥越（福井市、大野市、勝山市）に「レベル5",
-      "url": "https://x.com/wni_jp/status/2093785246831702095"
+      "age_minutes": 28.4,
+      "text": "＿人人人人人人人人人人人＿\n＞　本日ラストチャンス　＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣\nびっくりドンキーの月",
+      "url": "https://x.com/bikkuri__donkey/status/2093836098435010908"
     },
     {
-      "author": "MiBicampeona_",
-      "score": 27.8,
-      "likes": 1519,
-      "likes_per_min": 21.815903626282438,
+      "author": "McDonaldsJapan",
+      "score": 41.8,
+      "likes": 815,
+      "likes_per_min": 28.659266569362735,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 69.6,
-      "text": "彼氏泣いてるだろw",
-      "url": "https://x.com/MiBicampeona_/status/2093791546676334592"
+      "age_minutes": 28.4,
+      "text": "チーズで今年もとろける！\n\n【#マックのチーズ月見】をつけて本日8/30(日)中にリプライすると、抽選で4日合計100名",
+      "url": "https://x.com/McDonaldsJapan/status/2093836092948566157"
     },
     {
-      "author": "H_KAGAMI2434",
-      "score": 25.7,
-      "likes": 1148,
-      "likes_per_min": 14.333020679684317,
+      "author": "root_nico",
+      "score": 40.6,
+      "likes": 1045,
+      "likes_per_min": 50.35115671636036,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 80.1,
-      "text": "配信ありがとうございました！\n本日も皆さま、最高に輝いておりましたね",
-      "url": "https://x.com/H_KAGAMI2434/status/2093788912389111860"
+      "age_minutes": 20.8,
+      "text": "すとぷりトモコレリレー！\n\n早朝枠だけれど…みんな集合だよ！\n\n島が大変ことになってる予感…\n\n【トモコレ】すとぷり島に",
+      "url": "https://x.com/root_nico/status/2093838024442511529"
     },
     {
-      "author": "Ex_Albio",
-      "score": 24.2,
-      "likes": 1555,
-      "likes_per_min": 23.332663484991997,
+      "author": "root_nico_2",
+      "score": 39.6,
+      "likes": 2476,
+      "likes_per_min": 40.709685669542104,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 66.6,
-      "text": "ポスト少ないなって思うかもしれないんですけど、僕も思ってるので許してやってください",
-      "url": "https://x.com/Ex_Albio/status/2093792298593366432"
+      "age_minutes": 60.8,
+      "text": "おはようですね(  ´˘`  )",
+      "url": "https://x.com/root_nico_2/status/2093827940585009365"
     }
   ]
 }

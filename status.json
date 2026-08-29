@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-29T10:17:47.047840+00:00",
+  "updated_at": "2026-08-29T15:10:16.342007+00:00",
   "status": "success",
-  "started_at": "2026-08-29T10:14:44.139403+00:00",
-  "finished_at": "2026-08-29T10:17:47.045746+00:00",
-  "posts_scanned": 169,
-  "posts_with_history": 23,
-  "posts_flagged": 2,
-  "notified_count": 1,
+  "started_at": "2026-08-29T15:07:23.095794+00:00",
+  "finished_at": "2026-08-29T15:10:16.340943+00:00",
+  "posts_scanned": 162,
+  "posts_with_history": 18,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 3291,
+  "minutes_since_last_notification": 292,
   "reject_reasons": {
-    "いいねが少なすぎる": 74,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 35
+    "いいねが少なすぎる": 75,
+    "初回観測かつ平均速度が低い": 15,
+    "古すぎる": 24
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 565,
-    "posts": 511,
-    "oldest": "2026-08-28T11:18:08.945151+00:00"
+    "total": 569,
+    "posts": 512,
+    "oldest": "2026-08-28T21:30:35.135538+00:00"
   },
   "top5": [
     {
-      "author": "mofukun_cp",
-      "score": 59.1,
-      "likes": 1667,
-      "likes_per_min": 118.65743870067385,
+      "author": "onenonly_tokyo",
+      "score": 52.0,
+      "likes": 2406,
+      "likes_per_min": 139.56860436884207,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.0,
-      "text": "#JOYJOYウォーター株式会社\n\nネタバレに配慮して\n絵文字１文字だけで\n今の気持ちを表します",
-      "url": "https://x.com/mofukun_cp/status/2093640735396651317"
+      "age_minutes": 17.2,
+      "text": "／\nTikTok更新\n＼\n\nNHK『#Venue101』ご覧いただいた皆さまありがとうございました\n\n動画はこちら\n\nh",
+      "url": "https://x.com/onenonly_tokyo/status/2093713544382652764"
     },
     {
-      "author": "rai_173",
-      "score": 55.2,
-      "likes": 894,
-      "likes_per_min": 178.8,
+      "author": "official__INI",
+      "score": 45.7,
+      "likes": 1471,
+      "likes_per_min": 112.96122713131729,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 4.4,
-      "text": "#にじさんじ束縛ボイス Vol.2 発売中！ \n\n販売は8/31 23:59までです。 \nボイスの感想は #とどろけライ",
-      "url": "https://x.com/rai_173/status/2093643172505432512"
+      "age_minutes": 13.0,
+      "text": "[] 260829\nNHK総合「#Venue101」\n\n#松田迅 #JIN\n#MATSUDAJIN\n\nDetail ❯❯",
+      "url": "https://x.com/official__INI/status/2093714602735628709"
     },
     {
-      "author": "Ness_Sakaki",
-      "score": 53.7,
-      "likes": 1035,
-      "likes_per_min": 59.316245986775975,
+      "author": "teruto_sub",
+      "score": 45.0,
+      "likes": 2173,
+      "likes_per_min": 66.71339916911548,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.4,
-      "text": "ショート動画投稿いたしました！\nこのダンスも懐かしいね\n\n#CrashingWinners  踊ってみた【榊ネス】#にじ",
-      "url": "https://x.com/Ness_Sakaki/status/2093639876591985058"
+      "age_minutes": 32.6,
+      "text": "STPRゲーム実況者の１日セットログ",
+      "url": "https://x.com/teruto_sub/status/2093709684285005899"
     },
     {
-      "author": "akagi_wen",
-      "score": 53.4,
-      "likes": 905,
-      "likes_per_min": 172.41887468087504,
+      "author": "Vau0307",
+      "score": 44.5,
+      "likes": 1920,
+      "likes_per_min": 84.06733905072046,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 5.2,
-      "text": "【YouTubeショート動画投稿】\nタイトル\n【#からあゲー コール編(3AKG)】〜↑↑-KARAAGE- with ",
-      "url": "https://x.com/akagi_wen/status/2093642946520474101"
+      "age_minutes": 22.8,
+      "text": "あのね、\n初めて可愛いになっちゃいましたっ\n\n担当は〜〜〜\nばぁうだぴょんっっ\n\nみんなの心を\nぴょんぴぴょ〜〜んっって",
+      "url": "https://x.com/Vau0307/status/2093712131497804152"
     },
     {
-      "author": "gaku_fushimi",
-      "score": 51.8,
-      "likes": 1022,
-      "likes_per_min": 45.223549541267936,
+      "author": "Vau875",
+      "score": 44.2,
+      "likes": 1225,
+      "likes_per_min": 89.81706218412445,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.6,
-      "text": "今日の20時からはおれんじさんじでコードネームを遊ぶっすよ…！\n噂は聴いているゲームだから遊ぶの楽しみがすぎるぞ！！そし",
-      "url": "https://x.com/gaku_fushimi/status/2093638581999038906"
+      "age_minutes": 13.6,
+      "text": "全しゆんに顔射",
+      "url": "https://x.com/Vau875/status/2093714449022792185"
     }
   ]
 }

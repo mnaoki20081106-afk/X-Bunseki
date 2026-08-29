@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-29T15:10:16.342007+00:00",
+  "updated_at": "2026-08-29T18:29:26.755855+00:00",
   "status": "success",
-  "started_at": "2026-08-29T15:07:23.095794+00:00",
-  "finished_at": "2026-08-29T15:10:16.340943+00:00",
-  "posts_scanned": 162,
-  "posts_with_history": 18,
+  "started_at": "2026-08-29T18:26:14.003654+00:00",
+  "finished_at": "2026-08-29T18:29:26.752568+00:00",
+  "posts_scanned": 171,
+  "posts_with_history": 41,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 292,
+  "minutes_since_last_notification": 492,
   "reject_reasons": {
-    "いいねが少なすぎる": 75,
-    "初回観測かつ平均速度が低い": 15,
-    "古すぎる": 24
+    "いいねが少なすぎる": 39,
+    "初回観測かつ平均速度が低い": 22,
+    "古すぎる": 57
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 569,
-    "posts": 512,
+    "total": 740,
+    "posts": 642,
     "oldest": "2026-08-28T21:30:35.135538+00:00"
   },
   "top5": [
     {
-      "author": "onenonly_tokyo",
-      "score": 52.0,
-      "likes": 2406,
-      "likes_per_min": 139.56860436884207,
+      "author": "Fuwa_Minato",
+      "score": 33.7,
+      "likes": 5171,
+      "likes_per_min": 98.25377072002512,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.2,
-      "text": "／\nTikTok更新\n＼\n\nNHK『#Venue101』ご覧いただいた皆さまありがとうございました\n\n動画はこちら\n\nh",
-      "url": "https://x.com/onenonly_tokyo/status/2093713544382652764"
+      "age_minutes": 52.6,
+      "text": "タイトルとサムネを調整させて頂きました。\n紛らわしい表現で配慮が行き届いておらず申し訳ありませんでした",
+      "url": "https://x.com/Fuwa_Minato/status/2093754761686417720"
     },
     {
-      "author": "official__INI",
-      "score": 45.7,
-      "likes": 1471,
-      "likes_per_min": 112.96122713131729,
+      "author": "annkw5tyb",
+      "score": 32.8,
+      "likes": 1016,
+      "likes_per_min": 21.2053856023269,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.0,
-      "text": "[] 260829\nNHK総合「#Venue101」\n\n#松田迅 #JIN\n#MATSUDAJIN\n\nDetail ❯❯",
-      "url": "https://x.com/official__INI/status/2093714602735628709"
+      "age_minutes": 47.9,
+      "text": "うん◯スライダー\n\n#annkw",
+      "url": "https://x.com/annkw5tyb/status/2093755948909330476"
     },
     {
-      "author": "teruto_sub",
-      "score": 45.0,
-      "likes": 2173,
-      "likes_per_min": 66.71339916911548,
+      "author": "shirakamifubuki",
+      "score": 32.6,
+      "likes": 906,
+      "likes_per_min": 22.814057742871174,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 32.6,
-      "text": "STPRゲーム実況者の１日セットログ",
-      "url": "https://x.com/teruto_sub/status/2093709684285005899"
+      "age_minutes": 39.7,
+      "text": "VIVANTみてたら3時前でした\nおやすみなさい(:3[____]",
+      "url": "https://x.com/shirakamifubuki/status/2093758008815915419"
     },
     {
-      "author": "Vau0307",
-      "score": 44.5,
-      "likes": 1920,
-      "likes_per_min": 84.06733905072046,
+      "author": "GimenezKate",
+      "score": 32.5,
+      "likes": 1516,
+      "likes_per_min": 56.50597028657532,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.8,
-      "text": "あのね、\n初めて可愛いになっちゃいましたっ\n\n担当は〜〜〜\nばぁうだぴょんっっ\n\nみんなの心を\nぴょんぴぴょ〜〜んっって",
-      "url": "https://x.com/Vau0307/status/2093712131497804152"
+      "age_minutes": 26.8,
+      "text": "見た中で一番かもしれない",
+      "url": "https://x.com/GimenezKate/status/2093761251201663208"
     },
     {
-      "author": "Vau875",
-      "score": 44.2,
-      "likes": 1225,
-      "likes_per_min": 89.81706218412445,
+      "author": "SerAph_DazZ",
+      "score": 31.8,
+      "likes": 1416,
+      "likes_per_min": 32.1119818586352,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.6,
-      "text": "全しゆんに顔射",
-      "url": "https://x.com/Vau875/status/2093714449022792185"
+      "age_minutes": 44.1,
+      "text": "配信来てくれてありがとう！\n夢追さんを許さないの会がありましたら参加を強く希望します。\nよろしくお願いします。",
+      "url": "https://x.com/SerAph_DazZ/status/2093756908368982201"
     }
   ]
 }

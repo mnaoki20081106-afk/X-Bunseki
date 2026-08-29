@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-29T03:23:42.987697+00:00",
+  "updated_at": "2026-08-29T10:17:47.047840+00:00",
   "status": "success",
-  "started_at": "2026-08-29T03:20:56.712470+00:00",
-  "finished_at": "2026-08-29T03:23:42.986527+00:00",
-  "posts_scanned": 154,
-  "posts_with_history": 16,
+  "started_at": "2026-08-29T10:14:44.139403+00:00",
+  "finished_at": "2026-08-29T10:17:47.045746+00:00",
+  "posts_scanned": 169,
+  "posts_with_history": 23,
   "posts_flagged": 2,
-  "notified_count": 0,
-  "notified_last_24h": 0,
-  "minutes_since_last_notification": 2877,
+  "notified_count": 1,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": 3291,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 10,
-    "いいねが少なすぎる": 66,
-    "古すぎる": 25
+    "いいねが少なすぎる": 74,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 35
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 396,
-    "posts": 365,
+    "total": 565,
+    "posts": 511,
     "oldest": "2026-08-28T11:18:08.945151+00:00"
   },
   "top5": [
     {
-      "author": "yokai_punipuni",
-      "score": 57.6,
-      "likes": 4030,
-      "likes_per_min": 170.1647882494956,
+      "author": "mofukun_cp",
+      "score": 59.1,
+      "likes": 1667,
+      "likes_per_min": 118.65743870067385,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.7,
-      "text": "◤『五等分の花嫁』コラボ\n　　9/1（火）より開催！　◢\n\n中野家の五つ子が水着姿で登場！ぷにぷに姿の五等分の花嫁キャラ",
-      "url": "https://x.com/yokai_punipuni/status/2093534111109374134"
+      "age_minutes": 14.0,
+      "text": "#JOYJOYウォーター株式会社\n\nネタバレに配慮して\n絵文字１文字だけで\n今の気持ちを表します",
+      "url": "https://x.com/mofukun_cp/status/2093640735396651317"
     },
     {
-      "author": "houkaistarrail",
-      "score": 55.8,
-      "likes": 2162,
-      "likes_per_min": 91.35368698315082,
+      "author": "rai_173",
+      "score": 55.2,
+      "likes": 894,
+      "likes_per_min": 178.8,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.7,
-      "text": "スターレイル夏の限定フレーム\n\nこの時期にぴったり4種類\nフレームを使って #スターレイル涼夏開拓中 で涼しさを感じる投",
-      "url": "https://x.com/houkaistarrail/status/2093534112665698795"
+      "age_minutes": 4.4,
+      "text": "#にじさんじ束縛ボイス Vol.2 発売中！ \n\n販売は8/31 23:59までです。 \nボイスの感想は #とどろけライ",
+      "url": "https://x.com/rai_173/status/2093643172505432512"
     },
     {
-      "author": "qaefujitv",
-      "score": 48.4,
-      "likes": 2027,
-      "likes_per_min": 86.50221678218126,
+      "author": "Ness_Sakaki",
+      "score": 53.7,
+      "likes": 1035,
+      "likes_per_min": 59.316245986775975,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.4,
-      "text": "『Aぇ! groupのQ&Aぇ! 』\n\n次回予告\n9/1(火) 𝟐𝟒時𝟐𝟓分〜\n\nあのアイドルが再び...\nかわAぇ! ",
-      "url": "https://x.com/qaefujitv/status/2093534173386387946"
+      "age_minutes": 17.4,
+      "text": "ショート動画投稿いたしました！\nこのダンスも懐かしいね\n\n#CrashingWinners  踊ってみた【榊ネス】#にじ",
+      "url": "https://x.com/Ness_Sakaki/status/2093639876591985058"
     },
     {
-      "author": "tokoyamitowa",
-      "score": 47.2,
-      "likes": 749,
-      "likes_per_min": 30.57193750060039,
+      "author": "akagi_wen",
+      "score": 53.4,
+      "likes": 905,
+      "likes_per_min": 172.41887468087504,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.5,
-      "text": "過去の言動を反省するスバル #ホロライブ  #shorts \nhttps://\nyoutube.com/shorts/9",
-      "url": "https://x.com/tokoyamitowa/status/2093533903055458676"
+      "age_minutes": 5.2,
+      "text": "【YouTubeショート動画投稿】\nタイトル\n【#からあゲー コール編(3AKG)】〜↑↑-KARAAGE- with ",
+      "url": "https://x.com/akagi_wen/status/2093642946520474101"
     },
     {
-      "author": "mizumiya_su",
-      "score": 45.8,
-      "likes": 506,
-      "likes_per_min": 21.365603685916817,
+      "author": "gaku_fushimi",
+      "score": 51.8,
+      "likes": 1022,
+      "likes_per_min": 45.223549541267936,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.7,
-      "text": "【やめろや】夏の日差し対策みにみや  #ホロライブ  #vtuber #animation \nhttps://\nyout",
-      "url": "https://x.com/mizumiya_su/status/2093534109226410302"
+      "age_minutes": 22.6,
+      "text": "今日の20時からはおれんじさんじでコードネームを遊ぶっすよ…！\n噂は聴いているゲームだから遊ぶの楽しみがすぎるぞ！！そし",
+      "url": "https://x.com/gaku_fushimi/status/2093638581999038906"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-29T18:29:26.755855+00:00",
+  "updated_at": "2026-08-29T21:12:37.698477+00:00",
   "status": "success",
-  "started_at": "2026-08-29T18:26:14.003654+00:00",
-  "finished_at": "2026-08-29T18:29:26.752568+00:00",
-  "posts_scanned": 171,
-  "posts_with_history": 41,
+  "started_at": "2026-08-29T21:09:10.381794+00:00",
+  "finished_at": "2026-08-29T21:12:37.697219+00:00",
+  "posts_scanned": 128,
+  "posts_with_history": 61,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 492,
+  "minutes_since_last_notification": 655,
   "reject_reasons": {
-    "いいねが少なすぎる": 39,
-    "初回観測かつ平均速度が低い": 22,
-    "古すぎる": 57
+    "いいねが少なすぎる": 20,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 86
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 740,
-    "posts": 642,
+    "total": 868,
+    "posts": 709,
     "oldest": "2026-08-28T21:30:35.135538+00:00"
   },
   "top5": [
     {
-      "author": "Fuwa_Minato",
-      "score": 33.7,
-      "likes": 5171,
-      "likes_per_min": 98.25377072002512,
+      "author": "takaichi_sanae",
+      "score": 43.6,
+      "likes": 3939,
+      "likes_per_min": 48.63276952534076,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 52.6,
-      "text": "タイトルとサムネを調整させて頂きました。\n紛らわしい表現で配慮が行き届いておらず申し訳ありませんでした",
-      "url": "https://x.com/Fuwa_Minato/status/2093754761686417720"
+      "age_minutes": 81.0,
+      "text": "現在、福井県福井市、大野市、勝山市にレベル５大雨特別警報が発表されています。\n\nこれらの地域では、これまでに経験したこと",
+      "url": "https://x.com/takaichi_sanae/status/2093788685632475321"
     },
     {
-      "author": "annkw5tyb",
-      "score": 32.8,
-      "likes": 1016,
-      "likes_per_min": 21.2053856023269,
+      "author": "wni_jp",
+      "score": 34.9,
+      "likes": 1097,
+      "likes_per_min": 11.588668357249963,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.9,
-      "text": "うん◯スライダー\n\n#annkw",
-      "url": "https://x.com/annkw5tyb/status/2093755948909330476"
+      "age_minutes": 94.7,
+      "text": "【速報】福井県にレベル5大雨特別警報\n記録的な大雨となっている福井県嶺北北部、奥越（福井市、大野市、勝山市）に「レベル5",
+      "url": "https://x.com/wni_jp/status/2093785246831702095"
     },
     {
-      "author": "shirakamifubuki",
-      "score": 32.6,
-      "likes": 906,
-      "likes_per_min": 22.814057742871174,
+      "author": "MiBicampeona_",
+      "score": 27.8,
+      "likes": 1519,
+      "likes_per_min": 21.815903626282438,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 39.7,
-      "text": "VIVANTみてたら3時前でした\nおやすみなさい(:3[____]",
-      "url": "https://x.com/shirakamifubuki/status/2093758008815915419"
+      "age_minutes": 69.6,
+      "text": "彼氏泣いてるだろw",
+      "url": "https://x.com/MiBicampeona_/status/2093791546676334592"
     },
     {
-      "author": "GimenezKate",
-      "score": 32.5,
-      "likes": 1516,
-      "likes_per_min": 56.50597028657532,
+      "author": "H_KAGAMI2434",
+      "score": 25.7,
+      "likes": 1148,
+      "likes_per_min": 14.333020679684317,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 26.8,
-      "text": "見た中で一番かもしれない",
-      "url": "https://x.com/GimenezKate/status/2093761251201663208"
+      "age_minutes": 80.1,
+      "text": "配信ありがとうございました！\n本日も皆さま、最高に輝いておりましたね",
+      "url": "https://x.com/H_KAGAMI2434/status/2093788912389111860"
     },
     {
-      "author": "SerAph_DazZ",
-      "score": 31.8,
-      "likes": 1416,
-      "likes_per_min": 32.1119818586352,
+      "author": "Ex_Albio",
+      "score": 24.2,
+      "likes": 1555,
+      "likes_per_min": 23.332663484991997,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 44.1,
-      "text": "配信来てくれてありがとう！\n夢追さんを許さないの会がありましたら参加を強く希望します。\nよろしくお願いします。",
-      "url": "https://x.com/SerAph_DazZ/status/2093756908368982201"
+      "age_minutes": 66.6,
+      "text": "ポスト少ないなって思うかもしれないんですけど、僕も思ってるので許してやってください",
+      "url": "https://x.com/Ex_Albio/status/2093792298593366432"
     }
   ]
 }

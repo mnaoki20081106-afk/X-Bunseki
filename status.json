@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-30T17:25:43.347786+00:00",
+  "updated_at": "2026-08-30T20:03:17.434496+00:00",
   "status": "success",
-  "started_at": "2026-08-30T17:22:41.999439+00:00",
-  "finished_at": "2026-08-30T17:25:43.345042+00:00",
-  "posts_scanned": 184,
-  "posts_with_history": 25,
+  "started_at": "2026-08-30T20:00:21.717843+00:00",
+  "finished_at": "2026-08-30T20:03:17.433429+00:00",
+  "posts_scanned": 131,
+  "posts_with_history": 43,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 601,
+  "minutes_since_last_notification": 758,
   "reject_reasons": {
-    "いいねが少なすぎる": 66,
-    "初回観測かつ平均速度が低い": 21,
-    "古すぎる": 45
+    "いいねが少なすぎる": 24,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 53
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1097,
-    "posts": 937,
-    "oldest": "2026-08-29T18:29:26.741405+00:00"
+    "total": 1057,
+    "posts": 914,
+    "oldest": "2026-08-29T21:12:37.686222+00:00"
   },
   "top5": [
     {
-      "author": "AZKi_VDiVA",
-      "score": 35.5,
-      "likes": 1429,
-      "likes_per_min": 26.917137197992584,
+      "author": "Kanae_2434",
+      "score": 31.3,
+      "likes": 1407,
+      "likes_per_min": 25.151784749402957,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 53.1,
-      "text": "#あずきんち 深夜歌枠ありがとうございました\n\n夏の終わりに聴きたい曲やバラードで\nしっとりとしたセトリに…\n\n遅くまで",
-      "url": "https://x.com/AZKi_VDiVA/status/2094100996649832749"
+      "age_minutes": 55.9,
+      "text": "ゲーム発掘回かなりよかった",
+      "url": "https://x.com/Kanae_2434/status/2094139930750619936"
     },
     {
-      "author": "mushokutensei_A",
-      "score": 35.0,
-      "likes": 1478,
-      "likes_per_min": 57.49737374521075,
+      "author": "Hanakago_2434rr",
+      "score": 26.5,
+      "likes": 1604,
+      "likes_per_min": 12.655794463766739,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.7,
-      "text": "#無職転生Ⅲ\n次回 ９月６日(日)",
-      "url": "https://x.com/mushokutensei_A/status/2094107885852619118"
+      "age_minutes": 126.7,
+      "text": "長期間長時間見てくれてありがとう\nにじさんじで過ごす初めての夏に素敵な思い出の1ページが出来ました！\n弦月さんはじめ運営",
+      "url": "https://x.com/Hanakago_2434rr/status/2094122112332226963"
     },
     {
-      "author": "HiiragiTsurugi",
-      "score": 34.2,
-      "likes": 996,
-      "likes_per_min": 85.08804720616514,
+      "author": "_nenechidayo",
+      "score": 26.5,
+      "likes": 1302,
+      "likes_per_min": 13.332373388796114,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.7,
-      "text": "レオラス2日間　ご視聴ありがとうございました！！！\n\nチームあかりん、これにて終了です！！\n\nとんでもない終わり方すぎて",
-      "url": "https://x.com/HiiragiTsurugi/status/2094111408690721010"
+      "age_minutes": 97.7,
+      "text": "苦しくておきたら38度超えててまずいか\n喉が痛いし関節が痛い",
+      "url": "https://x.com/_nenechidayo/status/2094129431195652287"
     },
     {
-      "author": "Goodbye_Lara",
-      "score": 33.2,
-      "likes": 870,
-      "likes_per_min": 10.777705801193513,
+      "author": "1O46V",
+      "score": 24.9,
+      "likes": 6196,
+      "likes_per_min": 47.06763032816859,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 80.7,
-      "text": "˚⊹⁺‧┈┈┈┈┈┈┈┈┈┈┈‧⁺ ⊹˚\n　　     『#さよならララ』\n　　本編シーン投稿のススメ\n˚⊹⁺‧┈┈┈┈",
-      "url": "https://x.com/Goodbye_Lara/status/2094094040992260502"
+      "age_minutes": 131.6,
+      "text": "#にじメンマイクラ 終幕いたしました。\n参加してくださった皆様、運営の皆様、\n応援してくださったすべての皆様に感謝を。\n",
+      "url": "https://x.com/1O46V/status/2094120878821044570"
     },
     {
-      "author": "Stray_Kids_JP",
-      "score": 32.8,
-      "likes": 16658,
-      "likes_per_min": 196.04061377012343,
+      "author": "poke_unite_jp",
+      "score": 23.8,
+      "likes": 2823,
+      "likes_per_min": 22.832349431391613,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 85.0,
-      "text": "STAY\n\nMUFGスタジアム公演が終了しました！\n\n国立競技場という場所さえも、\nSTAYの大きな愛で満たしてくれて、",
-      "url": "https://x.com/Stray_Kids_JP/status/2094092973483106624"
+      "age_minutes": 123.6,
+      "text": "『ポケモンユナイト』に、モルペコ・ストリンダー・サンダース・ブースターの参戦が決定！\n\n#ポケモンユナイト #Pokem",
+      "url": "https://x.com/poke_unite_jp/status/2094122894414512456"
     }
   ]
 }

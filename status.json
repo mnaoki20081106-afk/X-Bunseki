@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-30T20:03:17.434496+00:00",
+  "updated_at": "2026-08-30T22:44:14.938987+00:00",
   "status": "success",
-  "started_at": "2026-08-30T20:00:21.717843+00:00",
-  "finished_at": "2026-08-30T20:03:17.433429+00:00",
-  "posts_scanned": 131,
-  "posts_with_history": 43,
+  "started_at": "2026-08-30T22:41:35.804702+00:00",
+  "finished_at": "2026-08-30T22:44:14.937935+00:00",
+  "posts_scanned": 116,
+  "posts_with_history": 22,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 758,
+  "minutes_since_last_notification": 919,
   "reject_reasons": {
-    "いいねが少なすぎる": 24,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 53
+    "いいねが少なすぎる": 45,
+    "古すぎる": 23,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1057,
-    "posts": 914,
-    "oldest": "2026-08-29T21:12:37.686222+00:00"
+    "total": 1045,
+    "posts": 916,
+    "oldest": "2026-08-29T23:28:26.254411+00:00"
   },
   "top5": [
     {
-      "author": "Kanae_2434",
-      "score": 31.3,
-      "likes": 1407,
-      "likes_per_min": 25.151784749402957,
+      "author": "satomimi__",
+      "score": 42.1,
+      "likes": 2257,
+      "likes_per_min": 71.08934333230198,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.9,
-      "text": "ゲーム発掘回かなりよかった",
-      "url": "https://x.com/Kanae_2434/status/2094139930750619936"
+      "age_minutes": 31.7,
+      "text": "はいおはよう",
+      "url": "https://x.com/satomimi__/status/2094186525886234667"
     },
     {
-      "author": "Hanakago_2434rr",
-      "score": 26.5,
-      "likes": 1604,
-      "likes_per_min": 12.655794463766739,
+      "author": "battleshow_cx",
+      "score": 42.1,
+      "likes": 948,
+      "likes_per_min": 21.432391649031977,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 126.7,
-      "text": "長期間長時間見てくれてありがとう\nにじさんじで過ごす初めての夏に素敵な思い出の1ページが出来ました！\n弦月さんはじめ運営",
-      "url": "https://x.com/Hanakago_2434rr/status/2094122112332226963"
+      "age_minutes": 44.2,
+      "text": "/／\n今夜８時から\n真剣遊戯！THEバトルSHOW\n\\＼\n\nHey! Say! JUMP 有岡大貴 率いる アイドル俳優",
+      "url": "https://x.com/battleshow_cx/status/2094183384616673663"
     },
     {
-      "author": "_nenechidayo",
-      "score": 26.5,
-      "likes": 1302,
-      "likes_per_min": 13.332373388796114,
+      "author": "ookamimio",
+      "score": 39.3,
+      "likes": 896,
+      "likes_per_min": 56.833146337552066,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 97.7,
-      "text": "苦しくておきたら38度超えててまずいか\n喉が痛いし関節が痛い",
-      "url": "https://x.com/_nenechidayo/status/2094129431195652287"
+      "age_minutes": 15.8,
+      "text": "おはみぉーん！おきた～～",
+      "url": "https://x.com/ookamimio/status/2094190546235584578"
     },
     {
-      "author": "1O46V",
-      "score": 24.9,
-      "likes": 6196,
-      "likes_per_min": 47.06763032816859,
+      "author": "nino_honmono",
+      "score": 38.2,
+      "likes": 18079,
+      "likes_per_min": 377.5731338091083,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 131.6,
-      "text": "#にじメンマイクラ 終幕いたしました。\n参加してくださった皆様、運営の皆様、\n応援してくださったすべての皆様に感謝を。\n",
-      "url": "https://x.com/1O46V/status/2094120878821044570"
+      "age_minutes": 47.9,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2094182464537424029"
     },
     {
-      "author": "poke_unite_jp",
-      "score": 23.8,
-      "likes": 2823,
-      "likes_per_min": 22.832349431391613,
+      "author": "EL6_take",
+      "score": 37.6,
+      "likes": 1332,
+      "likes_per_min": 36.746063166245335,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 123.6,
-      "text": "『ポケモンユナイト』に、モルペコ・ストリンダー・サンダース・ブースターの参戦が決定！\n\n#ポケモンユナイト #Pokem",
-      "url": "https://x.com/poke_unite_jp/status/2094122894414512456"
+      "age_minutes": 36.2,
+      "text": "オハヨーーー！！！\n\n昨日ぬい活しようと思って832の膝の上にぬいを置いたら、着てたズボンの中にしまわれちゃいました。\n",
+      "url": "https://x.com/EL6_take/status/2094185392220287170"
     }
   ]
 }

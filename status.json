@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-30T13:05:39.501235+00:00",
+  "updated_at": "2026-08-30T17:25:43.347786+00:00",
   "status": "success",
-  "started_at": "2026-08-30T13:02:44.570853+00:00",
-  "finished_at": "2026-08-30T13:05:39.499950+00:00",
-  "posts_scanned": 168,
-  "posts_with_history": 3,
+  "started_at": "2026-08-30T17:22:41.999439+00:00",
+  "finished_at": "2026-08-30T17:25:43.345042+00:00",
+  "posts_scanned": 184,
+  "posts_with_history": 25,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 341,
+  "minutes_since_last_notification": 601,
   "reject_reasons": {
-    "いいねが少なすぎる": 78,
-    "初回観測かつ平均速度が低い": 14,
-    "古すぎる": 11
+    "いいねが少なすぎる": 66,
+    "初回観測かつ平均速度が低い": 21,
+    "古すぎる": 45
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1075,
-    "posts": 909,
-    "oldest": "2026-08-29T15:10:16.330039+00:00"
+    "total": 1097,
+    "posts": 937,
+    "oldest": "2026-08-29T18:29:26.741405+00:00"
   },
   "top5": [
     {
-      "author": "Ange_Katrina_",
-      "score": 54.9,
-      "likes": 154,
-      "likes_per_min": 29.66421486045088,
+      "author": "AZKi_VDiVA",
+      "score": 35.5,
+      "likes": 1429,
+      "likes_per_min": 26.917137197992584,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 5.2,
-      "text": "はじまります！！！！！\n\n【魔法少女ノ魔女裁判】#15 あの。自分、魔女化いいすか？ ※ネタバレあり【にじさんじ/アンジ",
-      "url": "https://x.com/Ange_Katrina_/status/2094047600576278596"
+      "age_minutes": 53.1,
+      "text": "#あずきんち 深夜歌枠ありがとうございました\n\n夏の終わりに聴きたい曲やバラードで\nしっとりとしたセトリに…\n\n遅くまで",
+      "url": "https://x.com/AZKi_VDiVA/status/2094100996649832749"
     },
     {
-      "author": "PacificleagueTV",
-      "score": 53.6,
-      "likes": 9960,
-      "likes_per_min": 132.3152434934025,
+      "author": "mushokutensei_A",
+      "score": 35.0,
+      "likes": 1478,
+      "likes_per_min": 57.49737374521075,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 75.3,
-      "text": "【引退セレモニー】\nミスターレオ\nライオンズと共に歩み続けた現役生活25年\n埼玉西武 栗山巧 選手からファンの皆様へ向け",
-      "url": "https://x.com/PacificleagueTV/status/2094029962911322226"
+      "age_minutes": 25.7,
+      "text": "#無職転生Ⅲ\n次回 ９月６日(日)",
+      "url": "https://x.com/mushokutensei_A/status/2094107885852619118"
     },
     {
-      "author": "PacificleagueTV",
-      "score": 53.3,
-      "likes": 8639,
-      "likes_per_min": 131.0764396033074,
+      "author": "HiiragiTsurugi",
+      "score": 34.2,
+      "likes": 996,
+      "likes_per_min": 85.08804720616514,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 65.9,
-      "text": "【引退セレモニー】\nライオンズファンの待つレフトスタンドへ向かう埼玉西武 栗山巧 選手！\n自身の応援歌などを全力で歌うフ",
-      "url": "https://x.com/PacificleagueTV/status/2094032322811314669"
+      "age_minutes": 11.7,
+      "text": "レオラス2日間　ご視聴ありがとうございました！！！\n\nチームあかりん、これにて終了です！！\n\nとんでもない終わり方すぎて",
+      "url": "https://x.com/HiiragiTsurugi/status/2094111408690721010"
     },
     {
-      "author": "maimoto_k",
-      "score": 49.2,
-      "likes": 2027,
-      "likes_per_min": 103.55164456533684,
+      "author": "Goodbye_Lara",
+      "score": 33.2,
+      "likes": 870,
+      "likes_per_min": 10.777705801193513,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.6,
-      "text": "にじさんじ甲子園2026全日程終了！！！！\n今年も応援いただきありがとうございました！！！\n\nまた来年お会いいたしましょ",
-      "url": "https://x.com/maimoto_k/status/2094043981357388139"
+      "age_minutes": 80.7,
+      "text": "˚⊹⁺‧┈┈┈┈┈┈┈┈┈┈┈‧⁺ ⊹˚\n　　     『#さよならララ』\n　　本編シーン投稿のススメ\n˚⊹⁺‧┈┈┈┈",
+      "url": "https://x.com/Goodbye_Lara/status/2094094040992260502"
     },
     {
-      "author": "PacificleagueTV",
-      "score": 47.4,
-      "likes": 3699,
-      "likes_per_min": 76.67681516710327,
+      "author": "Stray_Kids_JP",
+      "score": 32.8,
+      "likes": 16658,
+      "likes_per_min": 196.04061377012343,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 48.2,
-      "text": "【引退セレモニー】\n最後は東北楽天 岸孝之 投手も加わっての胴上げ！！\n高々と3回宙を舞いスタジアムを去っていく 埼玉西",
-      "url": "https://x.com/PacificleagueTV/status/2094036769855717415"
+      "age_minutes": 85.0,
+      "text": "STAY\n\nMUFGスタジアム公演が終了しました！\n\n国立競技場という場所さえも、\nSTAYの大きな愛で満たしてくれて、",
+      "url": "https://x.com/Stray_Kids_JP/status/2094092973483106624"
     }
   ]
 }

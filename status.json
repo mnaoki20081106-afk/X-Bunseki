@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-30T01:39:21.007970+00:00",
+  "updated_at": "2026-08-30T07:24:52.956049+00:00",
   "status": "success",
-  "started_at": "2026-08-30T01:36:28.888476+00:00",
-  "finished_at": "2026-08-30T01:39:21.007023+00:00",
-  "posts_scanned": 154,
-  "posts_with_history": 30,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 1,
-  "minutes_since_last_notification": 922,
+  "started_at": "2026-08-30T07:22:13.523730+00:00",
+  "finished_at": "2026-08-30T07:24:52.954441+00:00",
+  "posts_scanned": 143,
+  "posts_with_history": 6,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 2,
+  "minutes_since_last_notification": 1267,
   "reject_reasons": {
-    "いいねが少なすぎる": 61,
+    "いいねが少なすぎる": 66,
     "初回観測かつ平均速度が低い": 6,
-    "古すぎる": 25
+    "古すぎる": 10
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1087,
+    "total": 1076,
     "posts": 884,
-    "oldest": "2026-08-29T03:23:42.975529+00:00"
+    "oldest": "2026-08-29T10:17:45.930718+00:00"
   },
   "top5": [
     {
-      "author": "shukan_bunshun",
-      "score": 54.0,
-      "likes": 2653,
-      "likes_per_min": 71.8321975496985,
+      "author": "jpapachannel",
+      "score": 58.7,
+      "likes": 2736,
+      "likes_per_min": 102.02134158193448,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.9,
-      "text": "「恋人つなぎで…」元=LOVE・齊藤なぎさ（23）が新人王最有力の巨人・浦田俊輔（23）と密着デート《スクープ撮》\n\n記",
-      "url": "https://x.com/shukan_bunshun/status/2093866899608338606"
+      "age_minutes": 26.8,
+      "text": "夏が終わってまうーーー！！\n今年も、毎日投稿に毎日配信も楽しかったなぁ\n\n夏が終わったら、次はぱらぴちだー\n\n人形屋敷も",
+      "url": "https://x.com/jpapachannel/status/2093956397532848426"
     },
     {
-      "author": "Ryuichiro_YMD",
-      "score": 53.8,
-      "likes": 1706,
-      "likes_per_min": 138.88777419404232,
+      "author": "Nijigaku_movie",
+      "score": 47.7,
+      "likes": 924,
+      "likes_per_min": 37.15630677613025,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.3,
-      "text": "おはようございます、山田です。\n\n皆さんが投稿してくれたアニメイトフェアのポストを見てにっこりしています。\nどうやら山田",
-      "url": "https://x.com/Ryuichiro_YMD/status/2093873100752589013"
+      "age_minutes": 24.9,
+      "text": "漫画連載\n『ラブライブ！虹ヶ咲学園スクールアイドル同好会』\n#叛逆のニジガサキ　＃127\n漫画／ちょぼらうにょぽみ\n毎月",
+      "url": "https://x.com/Nijigaku_movie/status/2093956888174215210"
     },
     {
-      "author": "hiroyoshimura",
-      "score": 52.5,
-      "likes": 1059,
-      "likes_per_min": 22.823292954944616,
+      "author": "livedoornews",
+      "score": 44.0,
+      "likes": 1859,
+      "likes_per_min": 21.90462589360053,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 46.4,
-      "text": "福岡県、県議の任意団体に公金で異例の補助　基準は不明確、30年以上「垂れ流し」か\n→凄いな。こんなことまでしてるのか。福",
-      "url": "https://x.com/hiroyoshimura/status/2093864516199301466"
+      "age_minutes": 84.9,
+      "text": "【面識なし】20代の女性の自宅に侵入し包丁を見せた疑い、インドネシア国籍の技能実習生の男を逮捕\n\nhttps://\nne",
+      "url": "https://x.com/livedoornews/status/2093941787660619976"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 52.2,
-      "likes": 6312,
-      "likes_per_min": 186.0119783079444,
+      "author": "Colon56N",
+      "score": 42.6,
+      "likes": 1215,
+      "likes_per_min": 81.53677507196778,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.9,
-      "text": "齊藤なぎさ（23）巨人 浦田俊輔（24）熱愛\n浦田は「女性の連絡先を消して」に同意して全消し",
-      "url": "https://x.com/k_maru_dau_baby/status/2093867653454836211"
+      "age_minutes": 14.9,
+      "text": "リレー放送最終盤！！！【ころん✖︎ジェル】 もうさいごらへんはこういうのでいいんだよなぁあああああああああああああああ！",
+      "url": "https://x.com/Colon56N/status/2093959397265551772"
     },
     {
-      "author": "shukan_bunshun",
-      "score": 50.5,
-      "likes": 1049,
-      "likes_per_min": 28.557195799343578,
+      "author": "Jel__official",
+      "score": 41.7,
+      "likes": 1126,
+      "likes_per_min": 64.77002495705257,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.7,
-      "text": "【写真多数】巨人・浦田俊輔＆齊藤なぎさの密着デート《腕を絡めて、恋人つなぎ…》\n\n\nhttps://\nbunshun.j",
-      "url": "https://x.com/shukan_bunshun/status/2093866951013720188"
+      "age_minutes": 17.4,
+      "text": "100時間リレーメイン企画！\n\nサムネ選手権開催！！\n\n #すとぷりぎゃらりー\nで募集するぜ！\n\n\nhttps://\ny",
+      "url": "https://x.com/Jel__official/status/2093958771307679970"
     }
   ]
 }

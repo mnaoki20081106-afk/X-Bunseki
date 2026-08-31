@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-31T15:05:51.231144+00:00",
+  "updated_at": "2026-08-31T20:49:49.177954+00:00",
   "status": "success",
-  "started_at": "2026-08-31T15:03:03.570303+00:00",
-  "finished_at": "2026-08-31T15:05:51.230293+00:00",
-  "posts_scanned": 159,
-  "posts_with_history": 9,
+  "started_at": "2026-08-31T20:46:54.368269+00:00",
+  "finished_at": "2026-08-31T20:49:49.176972+00:00",
+  "posts_scanned": 117,
+  "posts_with_history": 26,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 1901,
+  "minutes_since_last_notification": 2245,
   "reject_reasons": {
-    "いいねが少なすぎる": 84,
-    "初回観測かつ平均速度が低い": 5,
-    "古すぎる": 13
+    "古すぎる": 73,
+    "いいねが少なすぎる": 20,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 902,
-    "posts": 779,
-    "oldest": "2026-08-30T17:25:43.331314+00:00"
+    "total": 704,
+    "posts": 620,
+    "oldest": "2026-08-30T22:44:14.926866+00:00"
   },
   "top5": [
     {
-      "author": "akirosenthal",
-      "score": 46.3,
-      "likes": 538,
-      "likes_per_min": 21.60321762499393,
+      "author": "f5ve_official",
+      "score": 35.8,
+      "likes": 4872,
+      "likes_per_min": 114.3140629040521,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.9,
-      "text": "＼本日すーぱー告知あります！／\nまもなくはじまるよ～～～！！\n\n『 #私の夏の豆知識 』 #アキちょこナイパレ \n第49",
-      "url": "https://x.com/akirosenthal/status/2094435276638826659"
+      "age_minutes": 42.6,
+      "text": "こんにちは \n@flolikethis",
+      "url": "https://x.com/f5ve_official/status/2094517381825724810"
     },
     {
-      "author": "Vau0307",
-      "score": 46.0,
-      "likes": 1370,
-      "likes_per_min": 154.73760841607236,
+      "author": "GoalJP_Official",
+      "score": 29.0,
+      "likes": 2322,
+      "likes_per_min": 21.253467342178823,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 8.9,
-      "text": "歌ってみたに関わってやく20年ぐらいかな\nずっと自分が嫌いで\nずっと自分が憎くてなんであの人はって\n思い続けてきて誰かに",
-      "url": "https://x.com/Vau0307/status/2094439316948947375"
+      "age_minutes": 109.3,
+      "text": " 公式発表 \n\nフランス1部 リーグ・アンのリールが、フェイエノールトから日本代表 FW 上田綺世を獲得したことを発表！",
+      "url": "https://x.com/GoalJP_Official/status/2094500611064754640"
     },
     {
-      "author": "OtonoseRaco",
-      "score": 41.5,
-      "likes": 855,
-      "likes_per_min": 41.56465033082841,
+      "author": "wagahaida_L",
+      "score": 28.5,
+      "likes": 1073,
+      "likes_per_min": 19.15406911207157,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 20.6,
-      "text": "ののの隊のみなさんすみませんねぇ",
-      "url": "https://x.com/OtonoseRaco/status/2094436368789500131"
+      "age_minutes": 56.0,
+      "text": "配信終わったあとお腹痛すぎて倒れて寝たりお薬飲んだりして今やっと落ち着いたぜ！！！！！！！！！！！！とんでも早起き生活に",
+      "url": "https://x.com/wagahaida_L/status/2094514007302697295"
     },
     {
-      "author": "fz_annX",
-      "score": 40.3,
-      "likes": 984,
-      "likes_per_min": 21.428401421520515,
+      "author": "Fooootest",
+      "score": 26.4,
+      "likes": 1575,
+      "likes_per_min": 15.054565166302266,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 45.9,
-      "text": "この後深夜24時〜\n#ふるっぱーANNX \n\n櫻井優衣月足天音\n生放送でお届けします！\n\n果たしてどちらがどちらでしょう",
-      "url": "https://x.com/fz_annX/status/2094429986669347207"
+      "age_minutes": 104.6,
+      "text": "公式発表\n\n上田綺世がリールに完全移籍\n\n4年契約で背番号は「18」番に決定\n\n\n@losclive",
+      "url": "https://x.com/Fooootest/status/2094501779732144286"
     },
     {
-      "author": "fm21wannuumui",
-      "score": 39.8,
-      "likes": 766,
-      "likes_per_min": 12.851551668791474,
+      "author": "Karimpuuc",
+      "score": 24.4,
+      "likes": 2461,
+      "likes_per_min": 21.68547611201661,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 59.6,
-      "text": "【情報漏洩】\n古謝ゲンタがデニーを逆転した、\nという情報がネットで急拡散して\nいます。\n本当にそうですか？\n私の周囲のノ",
-      "url": "https://x.com/fm21wannuumui/status/2094426546111128033"
+      "age_minutes": 113.5,
+      "text": "あの、まだ寝ていない日本人は、本当に消しますよ〜。今すぐに寝ろ。",
+      "url": "https://x.com/Karimpuuc/status/2094499548215521570"
     }
   ]
 }

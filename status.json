@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-30T22:44:14.938987+00:00",
+  "updated_at": "2026-08-31T00:58:31.377533+00:00",
   "status": "success",
-  "started_at": "2026-08-30T22:41:35.804702+00:00",
-  "finished_at": "2026-08-30T22:44:14.937935+00:00",
-  "posts_scanned": 116,
-  "posts_with_history": 22,
+  "started_at": "2026-08-31T00:55:45.080172+00:00",
+  "finished_at": "2026-08-31T00:58:31.376666+00:00",
+  "posts_scanned": 154,
+  "posts_with_history": 28,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 919,
+  "minutes_since_last_notification": 1054,
   "reject_reasons": {
-    "いいねが少なすぎる": 45,
-    "古すぎる": 23,
-    "初回観測かつ平均速度が低い": 1
+    "いいねが少なすぎる": 68,
+    "初回観測かつ平均速度が低い": 15,
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1045,
-    "posts": 916,
-    "oldest": "2026-08-29T23:28:26.254411+00:00"
+    "total": 1050,
+    "posts": 923,
+    "oldest": "2026-08-30T01:39:20.997915+00:00"
   },
   "top5": [
     {
-      "author": "satomimi__",
-      "score": 42.1,
-      "likes": 2257,
-      "likes_per_min": 71.08934333230198,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 31.7,
-      "text": "はいおはよう",
-      "url": "https://x.com/satomimi__/status/2094186525886234667"
-    },
-    {
-      "author": "battleshow_cx",
-      "score": 42.1,
-      "likes": 948,
-      "likes_per_min": 21.432391649031977,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 44.2,
-      "text": "/／\n今夜８時から\n真剣遊戯！THEバトルSHOW\n\\＼\n\nHey! Say! JUMP 有岡大貴 率いる アイドル俳優",
-      "url": "https://x.com/battleshow_cx/status/2094183384616673663"
-    },
-    {
       "author": "ookamimio",
-      "score": 39.3,
-      "likes": 896,
-      "likes_per_min": 56.833146337552066,
+      "score": 47.2,
+      "likes": 1831,
+      "likes_per_min": 24.641317823024426,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 15.8,
-      "text": "おはみぉーん！おきた～～",
-      "url": "https://x.com/ookamimio/status/2094190546235584578"
+      "age_minutes": 74.3,
+      "text": "#朝ミオ おつみぉーん\n\n来週の #朝ミオおたより テーマは、\n#今年の夏の思い出 です\n\n#朝ミオニュース では、ホロ",
+      "url": "https://x.com/ookamimio/status/2094209605291438585"
     },
     {
-      "author": "nino_honmono",
-      "score": 38.2,
-      "likes": 18079,
-      "likes_per_min": 377.5731338091083,
+      "author": "1000000lome",
+      "score": 37.5,
+      "likes": 834,
+      "likes_per_min": 8.917615588362297,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.9,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2094182464537424029"
+      "age_minutes": 93.5,
+      "text": "おはようございますわ\n８月は最後ですがまだ夏は終わらねえですわ\n\n本日は夜にFCキャス\n１８時におショートあがります\nお",
+      "url": "https://x.com/1000000lome/status/2094204769737064738"
     },
     {
-      "author": "EL6_take",
-      "score": 37.6,
-      "likes": 1332,
-      "likes_per_min": 36.746063166245335,
+      "author": "kikiraravivi",
+      "score": 35.6,
+      "likes": 2124,
+      "likes_per_min": 36.407627105451986,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 36.2,
-      "text": "オハヨーーー！！！\n\n昨日ぬい活しようと思って832の膝の上にぬいを置いたら、着てたズボンの中にしまわれちゃいました。\n",
-      "url": "https://x.com/EL6_take/status/2094185392220287170"
+      "age_minutes": 58.3,
+      "text": "ダンスレッスンと収録いってきます",
+      "url": "https://x.com/kikiraravivi/status/2094213623145173486"
+    },
+    {
+      "author": "harias_official",
+      "score": 33.7,
+      "likes": 1517,
+      "likes_per_min": 26.799236232602485,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 56.6,
+      "text": "／\n#HARIAS × #IMP.\n今日もHARIASで、I’MPerfect.\n＼\n\n本日は月曜日。\n\n佐藤新さんと松",
+      "url": "https://x.com/harias_official/status/2094214063245148614"
+    },
+    {
+      "author": "Kunihiko_M92",
+      "score": 33.5,
+      "likes": 1005,
+      "likes_per_min": 15.90875624299202,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 63.2,
+      "text": "おとな旅あるき旅終了のお知らせです\n当初は13回の予定で始まった番組が18年近く続いたのは\nご覧いただいてる皆様のおかげ",
+      "url": "https://x.com/Kunihiko_M92/status/2094212408508321972"
     }
   ]
 }

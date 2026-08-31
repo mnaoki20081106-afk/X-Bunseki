@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-31T07:00:36.795084+00:00",
+  "updated_at": "2026-08-31T15:05:51.231144+00:00",
   "status": "success",
-  "started_at": "2026-08-31T06:57:50.680600+00:00",
-  "finished_at": "2026-08-31T07:00:36.793563+00:00",
-  "posts_scanned": 158,
-  "posts_with_history": 21,
+  "started_at": "2026-08-31T15:03:03.570303+00:00",
+  "finished_at": "2026-08-31T15:05:51.230293+00:00",
+  "posts_scanned": 159,
+  "posts_with_history": 9,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 1,
-  "minutes_since_last_notification": 1416,
+  "notified_last_24h": 0,
+  "minutes_since_last_notification": 1901,
   "reject_reasons": {
-    "いいねが少なすぎる": 62,
-    "初回観測かつ平均速度が低い": 15,
-    "古すぎる": 29
+    "いいねが少なすぎる": 84,
+    "初回観測かつ平均速度が低い": 5,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1054,
-    "posts": 919,
-    "oldest": "2026-08-30T07:24:52.075096+00:00"
+    "total": 902,
+    "posts": 779,
+    "oldest": "2026-08-30T17:25:43.331314+00:00"
   },
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 50.9,
-      "likes": 3150,
-      "likes_per_min": 26.12019663331567,
+      "author": "akirosenthal",
+      "score": 46.3,
+      "likes": 538,
+      "likes_per_min": 21.60321762499393,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 120.6,
-      "text": "【トラブル】『24時間テレビ』 マラソン“乱入男”は「登録者数450人の迷惑系YouTuber」\n\nhttps://\nn",
-      "url": "https://x.com/livedoornews/status/2094289079856922917"
+      "age_minutes": 24.9,
+      "text": "＼本日すーぱー告知あります！／\nまもなくはじまるよ～～～！！\n\n『 #私の夏の豆知識 』 #アキちょこナイパレ \n第49",
+      "url": "https://x.com/akirosenthal/status/2094435276638826659"
     },
     {
-      "author": "livedoornews",
-      "score": 44.9,
-      "likes": 2348,
-      "likes_per_min": 33.29882324412104,
+      "author": "Vau0307",
+      "score": 46.0,
+      "likes": 1370,
+      "likes_per_min": 154.73760841607236,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.5,
-      "text": "【数量限定】「映画ちいかわ」特典第4弾発表 島二郎らのミニフィギュア\n\nhttps://\nnews.livedoor.c",
-      "url": "https://x.com/livedoornews/status/2094301684436791525"
+      "age_minutes": 8.9,
+      "text": "歌ってみたに関わってやく20年ぐらいかな\nずっと自分が嫌いで\nずっと自分が憎くてなんであの人はって\n思い続けてきて誰かに",
+      "url": "https://x.com/Vau0307/status/2094439316948947375"
     },
     {
-      "author": "hinata_moka_",
-      "score": 39.5,
-      "likes": 1330,
-      "likes_per_min": 11.072906134492651,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 120.1,
-      "text": "この度の発表の通り、私日向もかは、2026年12月末までの期間、全ての芸能活動を休止いたします。\n応援してくださっている",
-      "url": "https://x.com/hinata_moka_/status/2094289201777017270"
-    },
-    {
-      "author": "females_db_park",
-      "score": 38.3,
-      "likes": 1553,
-      "likes_per_min": 22.165764369478065,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 70.1,
-      "text": "極楽とんぼ加藤浩次はこの告発が忘れられない\n\n「バイブコレクター桃子」さんが番組から受けた仕打ちを告発\n↓\n桃子さんは「",
-      "url": "https://x.com/females_db_park/status/2094301798790263247"
-    },
-    {
-      "author": "Ryuichiro_YMD",
-      "score": 38.2,
-      "likes": 2266,
-      "likes_per_min": 109.93061403772316,
+      "author": "OtonoseRaco",
+      "score": 41.5,
+      "likes": 855,
+      "likes_per_min": 41.56465033082841,
       "acceleration": null,
       "measured": false,
       "age_minutes": 20.6,
-      "text": "今週の配信予定です。\n内容はまだ考え中のものもありますが……\n自分、週７いけます。",
-      "url": "https://x.com/Ryuichiro_YMD/status/2094314241851609564"
+      "text": "ののの隊のみなさんすみませんねぇ",
+      "url": "https://x.com/OtonoseRaco/status/2094436368789500131"
+    },
+    {
+      "author": "fz_annX",
+      "score": 40.3,
+      "likes": 984,
+      "likes_per_min": 21.428401421520515,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 45.9,
+      "text": "この後深夜24時〜\n#ふるっぱーANNX \n\n櫻井優衣月足天音\n生放送でお届けします！\n\n果たしてどちらがどちらでしょう",
+      "url": "https://x.com/fz_annX/status/2094429986669347207"
+    },
+    {
+      "author": "fm21wannuumui",
+      "score": 39.8,
+      "likes": 766,
+      "likes_per_min": 12.851551668791474,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 59.6,
+      "text": "【情報漏洩】\n古謝ゲンタがデニーを逆転した、\nという情報がネットで急拡散して\nいます。\n本当にそうですか？\n私の周囲のノ",
+      "url": "https://x.com/fm21wannuumui/status/2094426546111128033"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-31T00:58:31.377533+00:00",
+  "updated_at": "2026-08-31T07:00:36.795084+00:00",
   "status": "success",
-  "started_at": "2026-08-31T00:55:45.080172+00:00",
-  "finished_at": "2026-08-31T00:58:31.376666+00:00",
-  "posts_scanned": 154,
-  "posts_with_history": 28,
+  "started_at": "2026-08-31T06:57:50.680600+00:00",
+  "finished_at": "2026-08-31T07:00:36.793563+00:00",
+  "posts_scanned": 158,
+  "posts_with_history": 21,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 1054,
+  "minutes_since_last_notification": 1416,
   "reject_reasons": {
-    "いいねが少なすぎる": 68,
+    "いいねが少なすぎる": 62,
     "初回観測かつ平均速度が低い": 15,
-    "古すぎる": 23
+    "古すぎる": 29
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1050,
-    "posts": 923,
-    "oldest": "2026-08-30T01:39:20.997915+00:00"
+    "total": 1054,
+    "posts": 919,
+    "oldest": "2026-08-30T07:24:52.075096+00:00"
   },
   "top5": [
     {
-      "author": "ookamimio",
-      "score": 47.2,
-      "likes": 1831,
-      "likes_per_min": 24.641317823024426,
+      "author": "livedoornews",
+      "score": 50.9,
+      "likes": 3150,
+      "likes_per_min": 26.12019663331567,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 74.3,
-      "text": "#朝ミオ おつみぉーん\n\n来週の #朝ミオおたより テーマは、\n#今年の夏の思い出 です\n\n#朝ミオニュース では、ホロ",
-      "url": "https://x.com/ookamimio/status/2094209605291438585"
+      "age_minutes": 120.6,
+      "text": "【トラブル】『24時間テレビ』 マラソン“乱入男”は「登録者数450人の迷惑系YouTuber」\n\nhttps://\nn",
+      "url": "https://x.com/livedoornews/status/2094289079856922917"
     },
     {
-      "author": "1000000lome",
-      "score": 37.5,
-      "likes": 834,
-      "likes_per_min": 8.917615588362297,
+      "author": "livedoornews",
+      "score": 44.9,
+      "likes": 2348,
+      "likes_per_min": 33.29882324412104,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 93.5,
-      "text": "おはようございますわ\n８月は最後ですがまだ夏は終わらねえですわ\n\n本日は夜にFCキャス\n１８時におショートあがります\nお",
-      "url": "https://x.com/1000000lome/status/2094204769737064738"
+      "age_minutes": 70.5,
+      "text": "【数量限定】「映画ちいかわ」特典第4弾発表 島二郎らのミニフィギュア\n\nhttps://\nnews.livedoor.c",
+      "url": "https://x.com/livedoornews/status/2094301684436791525"
     },
     {
-      "author": "kikiraravivi",
-      "score": 35.6,
-      "likes": 2124,
-      "likes_per_min": 36.407627105451986,
+      "author": "hinata_moka_",
+      "score": 39.5,
+      "likes": 1330,
+      "likes_per_min": 11.072906134492651,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 58.3,
-      "text": "ダンスレッスンと収録いってきます",
-      "url": "https://x.com/kikiraravivi/status/2094213623145173486"
+      "age_minutes": 120.1,
+      "text": "この度の発表の通り、私日向もかは、2026年12月末までの期間、全ての芸能活動を休止いたします。\n応援してくださっている",
+      "url": "https://x.com/hinata_moka_/status/2094289201777017270"
     },
     {
-      "author": "harias_official",
-      "score": 33.7,
-      "likes": 1517,
-      "likes_per_min": 26.799236232602485,
+      "author": "females_db_park",
+      "score": 38.3,
+      "likes": 1553,
+      "likes_per_min": 22.165764369478065,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 56.6,
-      "text": "／\n#HARIAS × #IMP.\n今日もHARIASで、I’MPerfect.\n＼\n\n本日は月曜日。\n\n佐藤新さんと松",
-      "url": "https://x.com/harias_official/status/2094214063245148614"
+      "age_minutes": 70.1,
+      "text": "極楽とんぼ加藤浩次はこの告発が忘れられない\n\n「バイブコレクター桃子」さんが番組から受けた仕打ちを告発\n↓\n桃子さんは「",
+      "url": "https://x.com/females_db_park/status/2094301798790263247"
     },
     {
-      "author": "Kunihiko_M92",
-      "score": 33.5,
-      "likes": 1005,
-      "likes_per_min": 15.90875624299202,
+      "author": "Ryuichiro_YMD",
+      "score": 38.2,
+      "likes": 2266,
+      "likes_per_min": 109.93061403772316,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 63.2,
-      "text": "おとな旅あるき旅終了のお知らせです\n当初は13回の予定で始まった番組が18年近く続いたのは\nご覧いただいてる皆様のおかげ",
-      "url": "https://x.com/Kunihiko_M92/status/2094212408508321972"
+      "age_minutes": 20.6,
+      "text": "今週の配信予定です。\n内容はまだ考え中のものもありますが……\n自分、週７いけます。",
+      "url": "https://x.com/Ryuichiro_YMD/status/2094314241851609564"
     }
   ]
 }

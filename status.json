@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T15:01:51.457792+00:00",
+  "updated_at": "2026-09-01T18:27:03.894975+00:00",
   "status": "success",
-  "started_at": "2026-09-01T14:59:07.449775+00:00",
-  "finished_at": "2026-09-01T15:01:51.456636+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 8,
+  "started_at": "2026-09-01T18:24:13.774274+00:00",
+  "finished_at": "2026-09-01T18:27:03.893891+00:00",
+  "posts_scanned": 133,
+  "posts_with_history": 13,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 284,
+  "minutes_since_last_notification": 489,
   "reject_reasons": {
-    "いいねが少なすぎる": 72,
-    "初回観測かつ平均速度が低い": 10,
-    "古すぎる": 11
+    "いいねが少なすぎる": 56,
+    "初回観測かつ平均速度が低い": 23,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 922,
-    "posts": 827,
-    "oldest": "2026-08-31T15:05:51.221859+00:00"
+    "total": 896,
+    "posts": 810,
+    "oldest": "2026-08-31T20:49:49.165694+00:00"
   },
   "top5": [
     {
-      "author": "nbuna_staff",
-      "score": 41.0,
-      "likes": 2821,
-      "likes_per_min": 55.871634397763145,
+      "author": "makoto_lo_olzzz",
+      "score": 29.8,
+      "likes": 1326,
+      "likes_per_min": 15.88695384233545,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 50.5,
-      "text": "本日18時に投稿いたしました画像につきまして、メモリアルチケット画像内の文字に不備があり、AI生成によるものと判定される",
-      "url": "https://x.com/nbuna_staff/status/2094790220164317536"
+      "age_minutes": 83.5,
+      "text": "恋二度 season2 リアタイ完了\nご覧いただきありがとうございました！\n皆さんいかがでした〜？\n#恋二度 #恋をする",
+      "url": "https://x.com/makoto_lo_olzzz/status/2094833563569209388"
     },
     {
-      "author": "mazeta_sub",
-      "score": 40.6,
-      "likes": 970,
-      "likes_per_min": 51.6211790032128,
+      "author": "juufuuteiraden",
+      "score": 27.7,
+      "likes": 2198,
+      "likes_per_min": 17.83154314524033,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 18.8,
-      "text": "顔出すってまじですか？",
-      "url": "https://x.com/mazeta_sub/status/2094798199018106902"
+      "age_minutes": 123.3,
+      "text": "絵画は肉眼を超えることがあるし、写真は被写体を超えることがあるし、工芸は言葉を超えることがあって、たぶん、そういったもの",
+      "url": "https://x.com/juufuuteiraden/status/2094823548191949056"
     },
     {
-      "author": "satomimi__",
-      "score": 40.2,
-      "likes": 1898,
-      "likes_per_min": 45.434883010933405,
+      "author": "matsudako_staff",
+      "score": 27.6,
+      "likes": 482,
+      "likes_per_min": 13.693942908336394,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 41.8,
-      "text": "ライブ終わったんで飲みますか",
-      "url": "https://x.com/satomimi__/status/2094792412136980523"
+      "age_minutes": 35.2,
+      "text": "出演情報\n\nこの後27:00〜\nニッポン放送「松田好花のオールナイトニッポン0」に生出演いたします\n\nぜひお聴きください",
+      "url": "https://x.com/matsudako_staff/status/2094845711674409063"
     },
     {
-      "author": "Tigusa_voice",
-      "score": 40.0,
-      "likes": 1250,
-      "likes_per_min": 41.54102302696339,
+      "author": "kikiraravivi",
+      "score": 26.7,
+      "likes": 3523,
+      "likes_per_min": 30.167481250076225,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 30.1,
-      "text": "配信スタート！\n\n閲覧1万で…実写カメラで\n\n初   顔見せ   します\n\n配信場所\n\nhttps://\nyoutube",
-      "url": "https://x.com/Tigusa_voice/status/2094795355640754276"
+      "age_minutes": 116.8,
+      "text": "褒めろッ\n生誕LIVEが終わってからも毎日ダンスレッスンが入っているッ\n明日もレッスンがあるんだよォーーッ！\n筋肉痛なん",
+      "url": "https://x.com/kikiraravivi/status/2094825178174046392"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 39.6,
-      "likes": 15143,
-      "likes_per_min": 142.378428517431,
+      "author": "cobta",
+      "score": 26.6,
+      "likes": 1814,
+      "likes_per_min": 13.066210532764078,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 106.4,
-      "text": "佐々木舞香(26)と俳優の日向亘(22)が破局",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2094776161964585396"
+      "age_minutes": 138.8,
+      "text": "EXILEのHIRO、ファンの声を聞いて軍事AI企業パランティアへの協賛を決めたGMOのイベント出演をキャンセルしたのは",
+      "url": "https://x.com/cobta/status/2094819632117059712"
     }
   ]
 }

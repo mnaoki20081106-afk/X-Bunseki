@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T18:27:03.894975+00:00",
+  "updated_at": "2026-09-01T21:20:50.289831+00:00",
   "status": "success",
-  "started_at": "2026-09-01T18:24:13.774274+00:00",
-  "finished_at": "2026-09-01T18:27:03.893891+00:00",
-  "posts_scanned": 133,
-  "posts_with_history": 13,
+  "started_at": "2026-09-01T21:17:45.013682+00:00",
+  "finished_at": "2026-09-01T21:20:50.288734+00:00",
+  "posts_scanned": 87,
+  "posts_with_history": 34,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 489,
+  "minutes_since_last_notification": 663,
   "reject_reasons": {
-    "いいねが少なすぎる": 56,
-    "初回観測かつ平均速度が低い": 23,
-    "古すぎる": 22
+    "いいねが少なすぎる": 28,
+    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 44
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 896,
-    "posts": 810,
-    "oldest": "2026-08-31T20:49:49.165694+00:00"
+    "total": 866,
+    "posts": 773,
+    "oldest": "2026-09-01T00:10:45.322601+00:00"
   },
   "top5": [
     {
-      "author": "makoto_lo_olzzz",
-      "score": 29.8,
-      "likes": 1326,
-      "likes_per_min": 15.88695384233545,
+      "author": "Vamp_Kuzu",
+      "score": 35.0,
+      "likes": 1443,
+      "likes_per_min": 80.59365956126943,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 83.5,
-      "text": "恋二度 season2 リアタイ完了\nご覧いただきありがとうございました！\n皆さんいかがでした〜？\n#恋二度 #恋をする",
-      "url": "https://x.com/makoto_lo_olzzz/status/2094833563569209388"
+      "age_minutes": 17.9,
+      "text": "配信見てくれた人ありがとう\n強いのは分かるのに思うように勝てん\nただたかしの脳はでかくなってってる",
+      "url": "https://x.com/Vamp_Kuzu/status/2094893793065710015"
     },
     {
-      "author": "juufuuteiraden",
-      "score": 27.7,
-      "likes": 2198,
-      "likes_per_min": 17.83154314524033,
+      "author": "hirox246",
+      "score": 23.8,
+      "likes": 1057,
+      "likes_per_min": 8.08075345182689,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 123.3,
-      "text": "絵画は肉眼を超えることがあるし、写真は被写体を超えることがあるし、工芸は言葉を超えることがあって、たぶん、そういったもの",
-      "url": "https://x.com/juufuuteiraden/status/2094823548191949056"
+      "age_minutes": 130.8,
+      "text": "日本はライドシェアのUberすら導入されないのに、アメリカではタクシーもトラックも無人運転。\n少しづつ研究開発と技術レベ",
+      "url": "https://x.com/hirox246/status/2094865384155332649"
     },
     {
-      "author": "matsudako_staff",
-      "score": 27.6,
-      "likes": 482,
-      "likes_per_min": 13.693942908336394,
+      "author": "Hz_lokka",
+      "score": 22.2,
+      "likes": 800,
+      "likes_per_min": 10.925782383275175,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.2,
-      "text": "出演情報\n\nこの後27:00〜\nニッポン放送「松田好花のオールナイトニッポン0」に生出演いたします\n\nぜひお聴きください",
-      "url": "https://x.com/matsudako_staff/status/2094845711674409063"
+      "age_minutes": 73.2,
+      "text": "寝起きはボケがち SFW \n#ほのぼの #日常エピソード",
+      "url": "https://x.com/Hz_lokka/status/2094879873843986876"
     },
     {
-      "author": "kikiraravivi",
-      "score": 26.7,
-      "likes": 3523,
-      "likes_per_min": 30.167481250076225,
+      "author": "konoka__ann0",
+      "score": 22.2,
+      "likes": 1108,
+      "likes_per_min": 11.140757874021757,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 116.8,
-      "text": "褒めろッ\n生誕LIVEが終わってからも毎日ダンスレッスンが入っているッ\n明日もレッスンがあるんだよォーーッ！\n筋肉痛なん",
-      "url": "https://x.com/kikiraravivi/status/2094825178174046392"
+      "age_minutes": 99.5,
+      "text": "#河田陽菜 とお送りした\n#松田好花 のオールナイトニッポン0\n深夜2時ぐらいの感覚でお送りしました\n\nボーリング下手映",
+      "url": "https://x.com/konoka__ann0/status/2094873271716253796"
     },
     {
-      "author": "cobta",
-      "score": 26.6,
-      "likes": 1814,
-      "likes_per_min": 13.066210532764078,
+      "author": "oricon",
+      "score": 21.2,
+      "likes": 2897,
+      "likes_per_min": 20.751460113569152,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 138.8,
-      "text": "EXILEのHIRO、ファンの声を聞いて軍事AI企業パランティアへの協賛を決めたGMOのイベント出演をキャンセルしたのは",
-      "url": "https://x.com/cobta/status/2094819632117059712"
+      "age_minutes": 139.6,
+      "text": "ミセス大森元貴、ソロ新曲「灰色」が「デジタルシングル」1位　ソロ名義初、映画『白鳥とコウモリ』主題歌【オリコンランキング",
+      "url": "https://x.com/oricon/status/2094863168510304320"
     }
   ]
 }

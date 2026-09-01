@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T05:22:53.076103+00:00",
+  "updated_at": "2026-09-01T10:17:36.527291+00:00",
   "status": "success",
-  "started_at": "2026-09-01T05:19:54.115982+00:00",
-  "finished_at": "2026-09-01T05:22:53.074666+00:00",
-  "posts_scanned": 177,
-  "posts_with_history": 27,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 0,
-  "minutes_since_last_notification": 2758,
+  "started_at": "2026-09-01T10:14:49.588299+00:00",
+  "finished_at": "2026-09-01T10:17:36.526374+00:00",
+  "posts_scanned": 145,
+  "posts_with_history": 13,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": 3053,
   "reject_reasons": {
-    "いいねが少なすぎる": 72,
-    "初回観測かつ平均速度が低い": 22,
-    "古すぎる": 28
+    "いいねが少なすぎる": 63,
+    "初回観測かつ平均速度が低い": 13,
+    "古すぎる": 15
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 780,
-    "posts": 689,
-    "oldest": "2026-08-31T07:00:36.780138+00:00"
+    "total": 767,
+    "posts": 680,
+    "oldest": "2026-08-31T15:05:51.221859+00:00"
   },
   "top5": [
     {
-      "author": "korekore_ch",
-      "score": 53.2,
-      "likes": 273,
-      "likes_per_min": 23.133636532923536,
+      "author": "hololivetv",
+      "score": 56.0,
+      "likes": 1969,
+      "likes_per_min": 111.91935790210309,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.8,
-      "text": "キックで緊急生放送開始！トーマスの結婚式に乱入！不倫王、加藤純一と一緒に行く！\n\nhttps://\nkick.com/k",
-      "url": "https://x.com/korekore_ch/status/2094654252522328314"
+      "age_minutes": 17.6,
+      "text": "▷▷ 新番組「#hololiveNext」始動 ◁◁\n\n2026年9月7日、#ホロライブプロダクション は9周年を迎えま",
+      "url": "https://x.com/hololivetv/status/2094726963835609464"
     },
     {
-      "author": "iLiFE_fukumaru",
-      "score": 45.8,
-      "likes": 900,
-      "likes_per_min": 27.189512478970144,
+      "author": "parade_prize",
+      "score": 52.2,
+      "likes": 6959,
+      "likes_per_min": 90.97561575106475,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.1,
-      "text": "おはよ〜₍ᐡ⊃ ̫ -｡ᐡ₎メジャーデビューが発表された瞬間の映像を見返して、朝(昼)から涙してる",
-      "url": "https://x.com/iLiFE_fukumaru/status/2094648893652996403"
+      "age_minutes": 76.5,
+      "text": "＼  #映画ちいかわ 人魚の島のひみつ  ／\n\n#プライズが当たる\n\n島へようこそ!!ぬいぐるみ（全8種）を\n抽選で3名",
+      "url": "https://x.com/parade_prize/status/2094712138099249645"
     },
     {
-      "author": "welcia_jp",
-      "score": 42.0,
-      "likes": 1319,
-      "likes_per_min": 9.234474562745074,
+      "author": "728_Storm",
+      "score": 47.4,
+      "likes": 2235,
+      "likes_per_min": 190.32575547434885,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 142.8,
-      "text": "＼8日目／\nトラッキー×うえたん\n\nウエルシアグループ専用\nQUOカードPay1,111円分が\n合計400名様にその場で",
-      "url": "https://x.com/welcia_jp/status/2094621276396552671"
+      "age_minutes": 11.7,
+      "text": "なにわ男子 / Storm Labels\n公式TikTok更新！\n\n／\nMoonlitライブ映像\nYouTubeにて公開",
+      "url": "https://x.com/728_Storm/status/2094728432416596448"
     },
     {
-      "author": "nctwish_jp",
-      "score": 41.8,
-      "likes": 1122,
-      "likes_per_min": 34.25849794611145,
+      "author": "TXT_bighit_jp",
+      "score": 47.0,
+      "likes": 1377,
+      "likes_per_min": 78.41823588189598,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 32.8,
-      "text": "⋱デジモンファンのジェヒ⋰\n\nそんなジェヒが #オーイシマサヨシ さんと\nデジモンOPテーマ「Butter-Fly」をカ",
-      "url": "https://x.com/nctwish_jp/status/2094648982396084411"
+      "age_minutes": 17.6,
+      "text": "／\n#TXT #VRコンサート\nご鑑賞者限定SNSイベント第2弾開催\n＼\n\nTXT VRコンサート #ENDLESS_R",
+      "url": "https://x.com/TXT_bighit_jp/status/2094726968398721241"
     },
     {
-      "author": "shukan_bunshun",
-      "score": 41.3,
-      "likes": 1682,
-      "likes_per_min": 20.885502750942315,
+      "author": "satosaori46",
+      "score": 46.5,
+      "likes": 636,
+      "likes_per_min": 28.067461146114606,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 80.5,
-      "text": "【公選法違反の疑い】小野田紀美経済安保相が“ヤミ選挙事務所”を作っていた《現役市議が証言》\n\n記事はこちら↓\n\nhttp",
-      "url": "https://x.com/shukan_bunshun/status/2094636955665625218"
+      "age_minutes": 22.7,
+      "text": "【都議会激震】さとうさおり初質問で“税金無申告の隠蔽”を暴露！→報道各社一斉速報！【傍聴席パンク】【都議会】 \nhttp",
+      "url": "https://x.com/satosaori46/status/2094725685336277219"
     }
   ]
 }

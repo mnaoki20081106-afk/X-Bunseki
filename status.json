@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T10:17:36.527291+00:00",
+  "updated_at": "2026-09-01T15:01:51.457792+00:00",
   "status": "success",
-  "started_at": "2026-09-01T10:14:49.588299+00:00",
-  "finished_at": "2026-09-01T10:17:36.526374+00:00",
-  "posts_scanned": 145,
-  "posts_with_history": 13,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "started_at": "2026-09-01T14:59:07.449775+00:00",
+  "finished_at": "2026-09-01T15:01:51.456636+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 8,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 3053,
+  "minutes_since_last_notification": 284,
   "reject_reasons": {
-    "いいねが少なすぎる": 63,
-    "初回観測かつ平均速度が低い": 13,
-    "古すぎる": 15
+    "いいねが少なすぎる": 72,
+    "初回観測かつ平均速度が低い": 10,
+    "古すぎる": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 767,
-    "posts": 680,
+    "total": 922,
+    "posts": 827,
     "oldest": "2026-08-31T15:05:51.221859+00:00"
   },
   "top5": [
     {
-      "author": "hololivetv",
-      "score": 56.0,
-      "likes": 1969,
-      "likes_per_min": 111.91935790210309,
+      "author": "nbuna_staff",
+      "score": 41.0,
+      "likes": 2821,
+      "likes_per_min": 55.871634397763145,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.6,
-      "text": "▷▷ 新番組「#hololiveNext」始動 ◁◁\n\n2026年9月7日、#ホロライブプロダクション は9周年を迎えま",
-      "url": "https://x.com/hololivetv/status/2094726963835609464"
+      "age_minutes": 50.5,
+      "text": "本日18時に投稿いたしました画像につきまして、メモリアルチケット画像内の文字に不備があり、AI生成によるものと判定される",
+      "url": "https://x.com/nbuna_staff/status/2094790220164317536"
     },
     {
-      "author": "parade_prize",
-      "score": 52.2,
-      "likes": 6959,
-      "likes_per_min": 90.97561575106475,
+      "author": "mazeta_sub",
+      "score": 40.6,
+      "likes": 970,
+      "likes_per_min": 51.6211790032128,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 76.5,
-      "text": "＼  #映画ちいかわ 人魚の島のひみつ  ／\n\n#プライズが当たる\n\n島へようこそ!!ぬいぐるみ（全8種）を\n抽選で3名",
-      "url": "https://x.com/parade_prize/status/2094712138099249645"
+      "age_minutes": 18.8,
+      "text": "顔出すってまじですか？",
+      "url": "https://x.com/mazeta_sub/status/2094798199018106902"
     },
     {
-      "author": "728_Storm",
-      "score": 47.4,
-      "likes": 2235,
-      "likes_per_min": 190.32575547434885,
+      "author": "satomimi__",
+      "score": 40.2,
+      "likes": 1898,
+      "likes_per_min": 45.434883010933405,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.7,
-      "text": "なにわ男子 / Storm Labels\n公式TikTok更新！\n\n／\nMoonlitライブ映像\nYouTubeにて公開",
-      "url": "https://x.com/728_Storm/status/2094728432416596448"
+      "age_minutes": 41.8,
+      "text": "ライブ終わったんで飲みますか",
+      "url": "https://x.com/satomimi__/status/2094792412136980523"
     },
     {
-      "author": "TXT_bighit_jp",
-      "score": 47.0,
-      "likes": 1377,
-      "likes_per_min": 78.41823588189598,
+      "author": "Tigusa_voice",
+      "score": 40.0,
+      "likes": 1250,
+      "likes_per_min": 41.54102302696339,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.6,
-      "text": "／\n#TXT #VRコンサート\nご鑑賞者限定SNSイベント第2弾開催\n＼\n\nTXT VRコンサート #ENDLESS_R",
-      "url": "https://x.com/TXT_bighit_jp/status/2094726968398721241"
+      "age_minutes": 30.1,
+      "text": "配信スタート！\n\n閲覧1万で…実写カメラで\n\n初   顔見せ   します\n\n配信場所\n\nhttps://\nyoutube",
+      "url": "https://x.com/Tigusa_voice/status/2094795355640754276"
     },
     {
-      "author": "satosaori46",
-      "score": 46.5,
-      "likes": 636,
-      "likes_per_min": 28.067461146114606,
+      "author": "DEATHDOL_NOTE",
+      "score": 39.6,
+      "likes": 15143,
+      "likes_per_min": 142.378428517431,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.7,
-      "text": "【都議会激震】さとうさおり初質問で“税金無申告の隠蔽”を暴露！→報道各社一斉速報！【傍聴席パンク】【都議会】 \nhttp",
-      "url": "https://x.com/satosaori46/status/2094725685336277219"
+      "age_minutes": 106.4,
+      "text": "佐々木舞香(26)と俳優の日向亘(22)が破局",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2094776161964585396"
     }
   ]
 }

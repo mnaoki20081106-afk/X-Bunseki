@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T21:20:50.289831+00:00",
+  "updated_at": "2026-09-01T23:25:47.436450+00:00",
   "status": "success",
-  "started_at": "2026-09-01T21:17:45.013682+00:00",
-  "finished_at": "2026-09-01T21:20:50.288734+00:00",
-  "posts_scanned": 87,
-  "posts_with_history": 34,
+  "started_at": "2026-09-01T23:22:52.285158+00:00",
+  "finished_at": "2026-09-01T23:25:47.435235+00:00",
+  "posts_scanned": 147,
+  "posts_with_history": 23,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 663,
+  "minutes_since_last_notification": 788,
   "reject_reasons": {
-    "いいねが少なすぎる": 28,
-    "初回観測かつ平均速度が低い": 3,
-    "古すぎる": 44
+    "いいねが少なすぎる": 66,
+    "初回観測かつ平均速度が低い": 13,
+    "古すぎる": 23
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 866,
-    "posts": 773,
+    "total": 1013,
+    "posts": 897,
     "oldest": "2026-09-01T00:10:45.322601+00:00"
   },
   "top5": [
     {
-      "author": "Vamp_Kuzu",
-      "score": 35.0,
-      "likes": 1443,
-      "likes_per_min": 80.59365956126943,
+      "author": "_Yuivox",
+      "score": 52.0,
+      "likes": 834,
+      "likes_per_min": 9.216447595464627,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.9,
-      "text": "配信見てくれた人ありがとう\n強いのは分かるのに思うように勝てん\nただたかしの脳はでかくなってってる",
-      "url": "https://x.com/Vamp_Kuzu/status/2094893793065710015"
+      "age_minutes": 90.5,
+      "text": "おはようございます。\n\nデビューしてからはじめての\nおはよう なので全人類 おはよう ください。\n\n#おはようVTube",
+      "url": "https://x.com/_Yuivox/status/2094906971862503800"
     },
     {
-      "author": "hirox246",
-      "score": 23.8,
-      "likes": 1057,
-      "likes_per_min": 8.08075345182689,
+      "author": "akiko_lawson",
+      "score": 49.9,
+      "likes": 4001,
+      "likes_per_min": 155.13526337058917,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 130.8,
-      "text": "日本はライドシェアのUberすら導入されないのに、アメリカではタクシーもトラックも無人運転。\n少しづつ研究開発と技術レベ",
-      "url": "https://x.com/hirox246/status/2094865384155332649"
+      "age_minutes": 25.8,
+      "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の1日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
+      "url": "https://x.com/akiko_lawson/status/2094923255777992879"
     },
     {
-      "author": "Hz_lokka",
-      "score": 22.2,
-      "likes": 800,
-      "likes_per_min": 10.925782383275175,
+      "author": "kaoruhana_mp",
+      "score": 45.6,
+      "likes": 1088,
+      "likes_per_min": 42.18624507553137,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 73.2,
-      "text": "寝起きはボケがち SFW \n#ほのぼの #日常エピソード",
-      "url": "https://x.com/Hz_lokka/status/2094879873843986876"
+      "age_minutes": 25.8,
+      "text": "『薫る花は凛と咲く』\n９月９日発売の24巻の特典イラストはコチラ\n黒い衣装に身を包んだクールな薫子\n\n配布店舗はツリーを",
+      "url": "https://x.com/kaoruhana_mp/status/2094923254662352983"
     },
     {
-      "author": "konoka__ann0",
-      "score": 22.2,
-      "likes": 1108,
-      "likes_per_min": 11.140757874021757,
+      "author": "JYPETWICE_JAPAN",
+      "score": 44.4,
+      "likes": 1456,
+      "likes_per_min": 56.52818310923808,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 99.5,
-      "text": "#河田陽菜 とお送りした\n#松田好花 のオールナイトニッポン0\n深夜2時ぐらいの感覚でお送りしました\n\nボーリング下手映",
-      "url": "https://x.com/konoka__ann0/status/2094873271716253796"
+      "age_minutes": 25.8,
+      "text": "MISAMO（MINA・SANA・MOMO）のファッションアイウエアブランド「RIM」のプロモーション第2弾が解禁！\n\n",
+      "url": "https://x.com/JYPETWICE_JAPAN/status/2094923264099299614"
     },
     {
-      "author": "oricon",
-      "score": 21.2,
-      "likes": 2897,
-      "likes_per_min": 20.751460113569152,
+      "author": "Fooootest",
+      "score": 43.6,
+      "likes": 4555,
+      "likes_per_min": 117.37553922142338,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 139.6,
-      "text": "ミセス大森元貴、ソロ新曲「灰色」が「デジタルシングル」1位　ソロ名義初、映画『白鳥とコウモリ』主題歌【オリコンランキング",
-      "url": "https://x.com/oricon/status/2094863168510304320"
+      "age_minutes": 38.8,
+      "text": "公式発表\n\n旗手怜央がバーンリーに電撃移籍\n\nセルティックを退団し、ついにイングランドへ\n\n\n@BurnleyOffic",
+      "url": "https://x.com/Fooootest/status/2094919981410770962"
     }
   ]
 }

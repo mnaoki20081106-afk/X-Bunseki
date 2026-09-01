@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T00:10:45.335922+00:00",
+  "updated_at": "2026-09-01T05:22:53.076103+00:00",
   "status": "success",
-  "started_at": "2026-09-01T00:07:47.861307+00:00",
-  "finished_at": "2026-09-01T00:10:45.334899+00:00",
-  "posts_scanned": 169,
-  "posts_with_history": 29,
-  "posts_flagged": 1,
+  "started_at": "2026-09-01T05:19:54.115982+00:00",
+  "finished_at": "2026-09-01T05:22:53.074666+00:00",
+  "posts_scanned": 177,
+  "posts_with_history": 27,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 2446,
+  "minutes_since_last_notification": 2758,
   "reject_reasons": {
-    "いいねが少なすぎる": 69,
-    "初回観測かつ平均速度が低い": 11,
-    "古すぎる": 38
+    "いいねが少なすぎる": 72,
+    "初回観測かつ平均速度が低い": 22,
+    "古すぎる": 28
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 757,
-    "posts": 672,
-    "oldest": "2026-08-31T00:58:31.365449+00:00"
+    "total": 780,
+    "posts": 689,
+    "oldest": "2026-08-31T07:00:36.780138+00:00"
   },
   "top5": [
     {
-      "author": "McDonaldsJapan",
-      "score": 58.3,
-      "likes": 2271,
-      "likes_per_min": 32.09650073893172,
+      "author": "korekore_ch",
+      "score": 53.2,
+      "likes": 273,
+      "likes_per_min": 23.133636532923536,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.8,
-      "text": "明日9/2(水)から始まるぞー！\n\n食べるぞー！という人は、この投稿に【#マックの月見バーガー前夜祭】をつけて本日9/1",
-      "url": "https://x.com/McDonaldsJapan/status/2094560867832508714"
+      "age_minutes": 11.8,
+      "text": "キックで緊急生放送開始！トーマスの結婚式に乱入！不倫王、加藤純一と一緒に行く！\n\nhttps://\nkick.com/k",
+      "url": "https://x.com/korekore_ch/status/2094654252522328314"
     },
     {
-      "author": "yamazakipan_cp",
-      "score": 53.8,
-      "likes": 2287,
-      "likes_per_min": 32.4602621923247,
+      "author": "iLiFE_fukumaru",
+      "score": 45.8,
+      "likes": 900,
+      "likes_per_min": 27.189512478970144,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.5,
-      "text": "／\n東京ディズニーシー・\nホテルミラコスタ®宿泊と\nパークチケットが当たる\n＼\n\n抽選で毎回1組2名様にプレゼント\n\n応",
-      "url": "https://x.com/yamazakipan_cp/status/2094560942939836548"
+      "age_minutes": 33.1,
+      "text": "おはよ〜₍ᐡ⊃ ̫ -｡ᐡ₎メジャーデビューが発表された瞬間の映像を見返して、朝(昼)から涙してる",
+      "url": "https://x.com/iLiFE_fukumaru/status/2094648893652996403"
     },
     {
-      "author": "info__Johnnys",
-      "score": 43.4,
-      "likes": 1572,
-      "likes_per_min": 27.007814218821647,
+      "author": "welcia_jp",
+      "score": 42.0,
+      "likes": 1319,
+      "likes_per_min": 9.234474562745074,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 58.2,
-      "text": "【道枝駿佑 AAA2026 出席決定】\n\nアジアトップアーティスト 音楽授賞式\n「Asia Artist Awards ",
-      "url": "https://x.com/info__Johnnys/status/2094564027284496407"
+      "age_minutes": 142.8,
+      "text": "＼8日目／\nトラッキー×うえたん\n\nウエルシアグループ専用\nQUOカードPay1,111円分が\n合計400名様にその場で",
+      "url": "https://x.com/welcia_jp/status/2094621276396552671"
     },
     {
-      "author": "hezuruy",
-      "score": 42.9,
-      "likes": 2565,
-      "likes_per_min": 56.866834701499805,
+      "author": "nctwish_jp",
+      "score": 41.8,
+      "likes": 1122,
+      "likes_per_min": 34.25849794611145,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 45.1,
-      "text": "司法はやる気あんの？\n銅線を盗んで逮捕されたベトナム国籍の男3人が不起訴って。\nてか住所不定で無職の外国人が日本にいるこ",
-      "url": "https://x.com/hezuruy/status/2094567321285390355"
+      "age_minutes": 32.8,
+      "text": "⋱デジモンファンのジェヒ⋰\n\nそんなジェヒが #オーイシマサヨシ さんと\nデジモンOPテーマ「Butter-Fly」をカ",
+      "url": "https://x.com/nctwish_jp/status/2094648982396084411"
     },
     {
-      "author": "AZKi_VDiVA",
-      "score": 40.1,
-      "likes": 4423,
-      "likes_per_min": 64.32951448104217,
+      "author": "shukan_bunshun",
+      "score": 41.3,
+      "likes": 1682,
+      "likes_per_min": 20.885502750942315,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 68.8,
-      "text": "おはあずき\n\n本日9月1日から、生活道路における自動車の法定速度が\n60km/hから30km/hに引き下げられます！\n\n",
-      "url": "https://x.com/AZKi_VDiVA/status/2094561369911963952"
+      "age_minutes": 80.5,
+      "text": "【公選法違反の疑い】小野田紀美経済安保相が“ヤミ選挙事務所”を作っていた《現役市議が証言》\n\n記事はこちら↓\n\nhttp",
+      "url": "https://x.com/shukan_bunshun/status/2094636955665625218"
     }
   ]
 }

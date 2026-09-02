@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T06:00:40.884753+00:00",
+  "updated_at": "2026-09-02T11:13:20.056209+00:00",
   "status": "success",
-  "started_at": "2026-09-02T05:57:27.966050+00:00",
-  "finished_at": "2026-09-02T06:00:40.883548+00:00",
-  "posts_scanned": 157,
-  "posts_with_history": 19,
+  "started_at": "2026-09-02T11:10:27.994354+00:00",
+  "finished_at": "2026-09-02T11:13:20.055216+00:00",
+  "posts_scanned": 155,
+  "posts_with_history": 1,
   "posts_flagged": 1,
   "notified_count": 1,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 1183,
+  "minutes_since_last_notification": 313,
   "reject_reasons": {
-    "いいねが少なすぎる": 68,
-    "初回観測かつ平均速度が低い": 13,
-    "古すぎる": 36
+    "いいねが少なすぎる": 75,
+    "初回観測かつ平均速度が低い": 14,
+    "古すぎる": 10
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 983,
-    "posts": 867,
-    "oldest": "2026-09-01T10:17:35.581467+00:00"
+    "total": 993,
+    "posts": 888,
+    "oldest": "2026-09-01T15:01:51.444222+00:00"
   },
   "top5": [
     {
-      "author": "Tigusa_voice",
+      "author": "tokoyamitowa",
       "score": 56.5,
-      "likes": 1677,
-      "likes_per_min": 49.346821232334456,
+      "likes": 569,
+      "likes_per_min": 65.50089099246559,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 34.0,
-      "text": "『 声優活動 』を開始させていただくことになりました\n\n元々アニメが大好きで、子供の頃からアニメに何度も心を救われてきま",
-      "url": "https://x.com/Tigusa_voice/status/2095020568634659306"
+      "age_minutes": 8.7,
+      "text": "２２：００～\n\n【 Big Walk 】チームワークとおしゃべりが鍵となる協力型アドベンチャー【 常闇トワ視点/ホロライ",
+      "url": "https://x.com/tokoyamitowa/status/2095105616121639116"
     },
     {
-      "author": "livedoornews",
-      "score": 48.0,
-      "likes": 2005,
-      "likes_per_min": 39.18519402004038,
+      "author": "Kagetsu_2434",
+      "score": 52.9,
+      "likes": 988,
+      "likes_per_min": 142.08525995720703,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 51.2,
-      "text": "【発表】三菱が新型「パジェロ」を世界初公開\n\nhttps://\nnews.livedoor.com/article/de",
-      "url": "https://x.com/livedoornews/status/2095016243543916818"
+      "age_minutes": 7.0,
+      "text": "【妖怪ウォッチ1】完全初見で妖怪ウォッチするぞ！ストーリークリア後の世界 #5 ※ネタバレあり【叢雲カゲツ/にじさんじ】",
+      "url": "https://x.com/Kagetsu_2434/status/2095106052211826794"
     },
     {
-      "author": "MMCjpn",
-      "score": 46.4,
-      "likes": 4622,
-      "likes_per_min": 53.99493691158811,
+      "author": "watarai_hibari",
+      "score": 52.2,
+      "likes": 1396,
+      "likes_per_min": 181.6075583643459,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 85.6,
-      "text": "【お知らせ】\n三菱自動車は本日、クロスカントリーSUV『パジェロ』をフルモデルチェンジし、これからの三菱自動車ブランドを",
-      "url": "https://x.com/MMCjpn/status/2095007577826267374"
+      "age_minutes": 7.7,
+      "text": "マイル\n\n【雑談】もう9月ってがちですか雑談【渡会雲雀/にじさんじ】 \nhttps://\nyoutube.com/liv",
+      "url": "https://x.com/watarai_hibari/status/2095105867121348995"
     },
     {
-      "author": "livedoornews",
-      "score": 37.2,
-      "likes": 1286,
-      "likes_per_min": 10.43402471145001,
+      "author": "heavenburnsred",
+      "score": 51.1,
+      "likes": 251,
+      "likes_per_min": 19.70651467174094,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 123.3,
-      "text": "【訃報】アニメ監督・柳瀬雄之さん死去「北斗の拳」「遊☆戯☆王5D′s」「聖闘士星矢オメガ」など\n\nhttps://\nne",
-      "url": "https://x.com/livedoornews/status/2094998100700246245"
+      "age_minutes": 12.7,
+      "text": "【あす 9/3(木) 20時〜】\n#ヘブバン 情報局Vol.124\n\nまだまだ夏は終わらない！\n＼新スタイルヒント②／\n",
+      "url": "https://x.com/heavenburnsred/status/2095104594988949964"
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 37.1,
-      "likes": 12860,
-      "likes_per_min": 231.77873161080691,
+      "author": "gkmas_official",
+      "score": 51.1,
+      "likes": 1126,
+      "likes_per_min": 84.95823246555264,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.5,
-      "text": "いぇ〜い",
-      "url": "https://x.com/MotokiOhmoriMGA/status/2095015158313824530"
+      "age_minutes": 13.3,
+      "text": "|◤　　　　　　 　　　  ◥||\n　 修楽旅行 ショート動画\n　　  ことねver.公開\n||◣　　　　　　   　　",
+      "url": "https://x.com/gkmas_official/status/2095104464134778998"
     }
   ]
 }

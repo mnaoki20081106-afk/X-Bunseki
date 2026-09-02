@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-01T23:25:47.436450+00:00",
+  "updated_at": "2026-09-02T01:22:53.132730+00:00",
   "status": "success",
-  "started_at": "2026-09-01T23:22:52.285158+00:00",
-  "finished_at": "2026-09-01T23:25:47.435235+00:00",
-  "posts_scanned": 147,
-  "posts_with_history": 23,
+  "started_at": "2026-09-02T01:20:05.525281+00:00",
+  "finished_at": "2026-09-02T01:22:53.131667+00:00",
+  "posts_scanned": 159,
+  "posts_with_history": 26,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 788,
+  "minutes_since_last_notification": 905,
   "reject_reasons": {
-    "いいねが少なすぎる": 66,
-    "初回観測かつ平均速度が低い": 13,
-    "古すぎる": 23
+    "いいねが少なすぎる": 72,
+    "初回観測かつ平均速度が低い": 17,
+    "古すぎる": 12
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1013,
-    "posts": 897,
-    "oldest": "2026-09-01T00:10:45.322601+00:00"
+    "total": 1003,
+    "posts": 886,
+    "oldest": "2026-09-01T05:22:53.059884+00:00"
   },
   "top5": [
     {
-      "author": "_Yuivox",
-      "score": 52.0,
-      "likes": 834,
-      "likes_per_min": 9.216447595464627,
+      "author": "taroabe0109",
+      "score": 52.1,
+      "likes": 1899,
+      "likes_per_min": 45.70180604877667,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 90.5,
-      "text": "おはようございます。\n\nデビューしてからはじめての\nおはよう なので全人類 おはよう ください。\n\n#おはようVTube",
-      "url": "https://x.com/_Yuivox/status/2094906971862503800"
+      "age_minutes": 41.6,
+      "text": "#number_i\n#岸優太　さん\n背番号14 の理由。\n「小学校時代の思い出の番号です」",
+      "url": "https://x.com/taroabe0109/status/2094948758039716300"
+    },
+    {
+      "author": "KFC_jp",
+      "score": 46.9,
+      "likes": 853,
+      "likes_per_min": 37.272831731066326,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 22.9,
+      "text": "ケンタのとろ〜り月見、味わっていただけましたか？\n\nもっと味わっていただくために抽選で100名様に1,000円分のデジタ",
+      "url": "https://x.com/KFC_jp/status/2094953453529502155"
     },
     {
       "author": "akiko_lawson",
-      "score": 49.9,
-      "likes": 4001,
-      "likes_per_min": 155.13526337058917,
+      "score": 45.1,
+      "likes": 21993,
+      "likes_per_min": 153.65,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 25.8,
+      "measured": true,
+      "age_minutes": 142.9,
       "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の1日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
       "url": "https://x.com/akiko_lawson/status/2094923255777992879"
     },
     {
-      "author": "kaoruhana_mp",
-      "score": 45.6,
-      "likes": 1088,
-      "likes_per_min": 42.18624507553137,
+      "author": "yamamoto34masa",
+      "score": 40.6,
+      "likes": 6254,
+      "likes_per_min": 73.38770441853022,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.8,
-      "text": "『薫る花は凛と咲く』\n９月９日発売の24巻の特典イラストはコチラ\n黒い衣装に身を包んだクールな薫子\n\n配布店舗はツリーを",
-      "url": "https://x.com/kaoruhana_mp/status/2094923254662352983"
+      "age_minutes": 85.2,
+      "text": "石川雅規投手が引退を発表しました。\n200勝まで頑張って欲しいと激励してきましたが、本当に良く頑張ってくれました。\n身体",
+      "url": "https://x.com/yamamoto34masa/status/2094937767126118678"
     },
     {
-      "author": "JYPETWICE_JAPAN",
-      "score": 44.4,
-      "likes": 1456,
-      "likes_per_min": 56.52818310923808,
+      "author": "ksngtysofficial",
+      "score": 40.1,
+      "likes": 2862,
+      "likes_per_min": 60.86948285411787,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.8,
-      "text": "MISAMO（MINA・SANA・MOMO）のファッションアイウエアブランド「RIM」のプロモーション第2弾が解禁！\n\n",
-      "url": "https://x.com/JYPETWICE_JAPAN/status/2094923264099299614"
-    },
-    {
-      "author": "Fooootest",
-      "score": 43.6,
-      "likes": 4555,
-      "likes_per_min": 117.37553922142338,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 38.8,
-      "text": "公式発表\n\n旗手怜央がバーンリーに電撃移籍\n\nセルティックを退団し、ついにイングランドへ\n\n\n@BurnleyOffic",
-      "url": "https://x.com/Fooootest/status/2094919981410770962"
+      "age_minutes": 47.0,
+      "text": "大阪\n暑いねー\n体調気をつけて\nめちゃくちゃ盛り上がるで\n",
+      "url": "https://x.com/ksngtysofficial/status/2094947382647746909"
     }
   ]
 }

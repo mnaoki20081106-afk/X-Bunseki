@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T21:24:54.261364+00:00",
+  "updated_at": "2026-09-02T23:28:55.959807+00:00",
   "status": "success",
-  "started_at": "2026-09-02T21:22:13.578718+00:00",
-  "finished_at": "2026-09-02T21:24:54.260122+00:00",
-  "posts_scanned": 89,
-  "posts_with_history": 23,
+  "started_at": "2026-09-02T23:26:13.674772+00:00",
+  "finished_at": "2026-09-02T23:28:55.958392+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 25,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 373,
+  "minutes_since_last_notification": 497,
   "reject_reasons": {
-    "いいねが少なすぎる": 26,
-    "初回観測かつ平均速度が低い": 8,
-    "古すぎる": 33
+    "いいねが少なすぎる": 65,
+    "初回観測かつ平均速度が低い": 12,
+    "古すぎる": 22
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1012,
-    "posts": 912,
-    "oldest": "2026-09-01T23:25:47.423808+00:00"
+    "total": 1014,
+    "posts": 921,
+    "oldest": "2026-09-02T01:22:53.118103+00:00"
   },
   "top5": [
     {
-      "author": "jyu_ta_ro",
-      "score": 44.0,
-      "likes": 14975,
-      "likes_per_min": 178.65484290673373,
+      "author": "famima_now",
+      "score": 50.2,
+      "likes": 1825,
+      "likes_per_min": 63.077943084706284,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 83.8,
-      "text": "10月期解禁\nTBS系火曜ドラマ\n『いろはの恋は時代をかける』\n\n山中が真島玲二役を務めます\n小学校の先生\n“いろはの恋",
-      "url": "https://x.com/jyu_ta_ro/status/2095240615307128927"
+      "age_minutes": 28.9,
+      "text": "✨🎁14日間限定🎁✨\n\nファミリーマート45周年記念！\n濃厚カスタードシューの\n無料クーポンが当たる！\n\n1️⃣ \n@f",
+      "url": "https://x.com/famima_now/status/2095285642100101272"
     },
     {
-      "author": "oricon",
-      "score": 34.2,
-      "likes": 1345,
-      "likes_per_min": 15.841387516627606,
+      "author": "akiko_lawson",
+      "score": 49.6,
+      "likes": 6650,
+      "likes_per_min": 229.84565562372427,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 84.9,
-      "text": "『いろはの恋は時代（とき）をかける』\n\n山中柔太朗、GP帯連続ドラマ初レギュラー出演\n「メンバーにも伝えに行ったのを覚え",
-      "url": "https://x.com/oricon/status/2095240345009430570"
+      "age_minutes": 28.9,
+      "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の2日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
+      "url": "https://x.com/akiko_lawson/status/2095285643513409723"
     },
     {
-      "author": "fantastics_fext",
-      "score": 30.2,
-      "likes": 1095,
-      "likes_per_min": 21.69569357010327,
+      "author": "togootto",
+      "score": 47.3,
+      "likes": 645,
+      "likes_per_min": 25.033191003406483,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 50.5,
-      "text": "／\n2027年2月開幕\nシルク・ドゥ・ソレイユ\n『クーザ』日本公演\nスペシャルサポーターに就任!!\n＼\n\n2027年2月",
-      "url": "https://x.com/fantastics_fext/status/2095249011443986751"
+      "age_minutes": 25.8,
+      "text": "【速報】玉城デニー、バレる。\n\n玉城デニーが対立候補の誹謗中傷ポスト\n↓\n批判殺到で削除\n↓\nデニー「事務所スタッフのミ",
+      "url": "https://x.com/togootto/status/2095286438506213605"
     },
     {
-      "author": "sanada10ninja",
-      "score": 29.8,
-      "likes": 2091,
-      "likes_per_min": 38.14242516236756,
+      "author": "oomoriseiko",
+      "score": 47.0,
+      "likes": 2065,
+      "likes_per_min": 40.25409740430735,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 54.8,
-      "text": "// 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN N",
-      "url": "https://x.com/sanada10ninja/status/2095247916960981472"
+      "age_minutes": 51.3,
+      "text": "日本の３割もの学生が不登校を経験したことがある中で、自分のままどう切り開くかの社会経験を可能な限り若く、手っ取り早く積む",
+      "url": "https://x.com/oomoriseiko/status/2095280013172166796"
     },
     {
-      "author": "sanada10ninja",
-      "score": 29.6,
-      "likes": 1140,
-      "likes_per_min": 22.974215505567756,
+      "author": "McDonaldsJapan",
+      "score": 42.2,
+      "likes": 968,
+      "likes_per_min": 33.45723227725791,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 49.6,
-      "text": "// 𝐍𝐄𝐖 𝐌𝐎𝐕𝐈𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN NIN",
-      "url": "https://x.com/sanada10ninja/status/2095249223843291260"
+      "age_minutes": 28.9,
+      "text": "北海道産バターがじゅわわっ！\n\n【#マックのあんバターとおもちの月見パイ】をつけて本日9/3(木)中にリプライすると、抽",
+      "url": "https://x.com/McDonaldsJapan/status/2095285641680486589"
     }
   ]
 }

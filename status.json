@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T01:22:53.132730+00:00",
+  "updated_at": "2026-09-02T06:00:40.884753+00:00",
   "status": "success",
-  "started_at": "2026-09-02T01:20:05.525281+00:00",
-  "finished_at": "2026-09-02T01:22:53.131667+00:00",
-  "posts_scanned": 159,
-  "posts_with_history": 26,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "notified_last_24h": 1,
-  "minutes_since_last_notification": 905,
+  "started_at": "2026-09-02T05:57:27.966050+00:00",
+  "finished_at": "2026-09-02T06:00:40.883548+00:00",
+  "posts_scanned": 157,
+  "posts_with_history": 19,
+  "posts_flagged": 1,
+  "notified_count": 1,
+  "notified_last_24h": 2,
+  "minutes_since_last_notification": 1183,
   "reject_reasons": {
-    "いいねが少なすぎる": 72,
-    "初回観測かつ平均速度が低い": 17,
-    "古すぎる": 12
+    "いいねが少なすぎる": 68,
+    "初回観測かつ平均速度が低い": 13,
+    "古すぎる": 36
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1003,
-    "posts": 886,
-    "oldest": "2026-09-01T05:22:53.059884+00:00"
+    "total": 983,
+    "posts": 867,
+    "oldest": "2026-09-01T10:17:35.581467+00:00"
   },
   "top5": [
     {
-      "author": "taroabe0109",
-      "score": 52.1,
-      "likes": 1899,
-      "likes_per_min": 45.70180604877667,
+      "author": "Tigusa_voice",
+      "score": 56.5,
+      "likes": 1677,
+      "likes_per_min": 49.346821232334456,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 41.6,
-      "text": "#number_i\n#岸優太　さん\n背番号14 の理由。\n「小学校時代の思い出の番号です」",
-      "url": "https://x.com/taroabe0109/status/2094948758039716300"
+      "age_minutes": 34.0,
+      "text": "『 声優活動 』を開始させていただくことになりました\n\n元々アニメが大好きで、子供の頃からアニメに何度も心を救われてきま",
+      "url": "https://x.com/Tigusa_voice/status/2095020568634659306"
     },
     {
-      "author": "KFC_jp",
-      "score": 46.9,
-      "likes": 853,
-      "likes_per_min": 37.272831731066326,
+      "author": "livedoornews",
+      "score": 48.0,
+      "likes": 2005,
+      "likes_per_min": 39.18519402004038,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.9,
-      "text": "ケンタのとろ〜り月見、味わっていただけましたか？\n\nもっと味わっていただくために抽選で100名様に1,000円分のデジタ",
-      "url": "https://x.com/KFC_jp/status/2094953453529502155"
+      "age_minutes": 51.2,
+      "text": "【発表】三菱が新型「パジェロ」を世界初公開\n\nhttps://\nnews.livedoor.com/article/de",
+      "url": "https://x.com/livedoornews/status/2095016243543916818"
     },
     {
-      "author": "akiko_lawson",
-      "score": 45.1,
-      "likes": 21993,
-      "likes_per_min": 153.65,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 142.9,
-      "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の1日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
-      "url": "https://x.com/akiko_lawson/status/2094923255777992879"
-    },
-    {
-      "author": "yamamoto34masa",
-      "score": 40.6,
-      "likes": 6254,
-      "likes_per_min": 73.38770441853022,
+      "author": "MMCjpn",
+      "score": 46.4,
+      "likes": 4622,
+      "likes_per_min": 53.99493691158811,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 85.2,
-      "text": "石川雅規投手が引退を発表しました。\n200勝まで頑張って欲しいと激励してきましたが、本当に良く頑張ってくれました。\n身体",
-      "url": "https://x.com/yamamoto34masa/status/2094937767126118678"
+      "age_minutes": 85.6,
+      "text": "【お知らせ】\n三菱自動車は本日、クロスカントリーSUV『パジェロ』をフルモデルチェンジし、これからの三菱自動車ブランドを",
+      "url": "https://x.com/MMCjpn/status/2095007577826267374"
     },
     {
-      "author": "ksngtysofficial",
-      "score": 40.1,
-      "likes": 2862,
-      "likes_per_min": 60.86948285411787,
+      "author": "livedoornews",
+      "score": 37.2,
+      "likes": 1286,
+      "likes_per_min": 10.43402471145001,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 47.0,
-      "text": "大阪\n暑いねー\n体調気をつけて\nめちゃくちゃ盛り上がるで\n",
-      "url": "https://x.com/ksngtysofficial/status/2094947382647746909"
+      "age_minutes": 123.3,
+      "text": "【訃報】アニメ監督・柳瀬雄之さん死去「北斗の拳」「遊☆戯☆王5D′s」「聖闘士星矢オメガ」など\n\nhttps://\nne",
+      "url": "https://x.com/livedoornews/status/2094998100700246245"
+    },
+    {
+      "author": "MotokiOhmoriMGA",
+      "score": 37.1,
+      "likes": 12860,
+      "likes_per_min": 231.77873161080691,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 55.5,
+      "text": "いぇ〜い",
+      "url": "https://x.com/MotokiOhmoriMGA/status/2095015158313824530"
     }
   ]
 }

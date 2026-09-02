@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-09-02T11:13:20.056209+00:00",
+  "updated_at": "2026-09-02T15:12:00.887905+00:00",
   "status": "success",
-  "started_at": "2026-09-02T11:10:27.994354+00:00",
-  "finished_at": "2026-09-02T11:13:20.055216+00:00",
-  "posts_scanned": 155,
-  "posts_with_history": 1,
+  "started_at": "2026-09-02T15:09:16.773401+00:00",
+  "finished_at": "2026-09-02T15:12:00.886688+00:00",
+  "posts_scanned": 156,
+  "posts_with_history": 0,
   "posts_flagged": 1,
   "notified_count": 1,
-  "notified_last_24h": 2,
-  "minutes_since_last_notification": 313,
+  "notified_last_24h": 3,
+  "minutes_since_last_notification": 239,
   "reject_reasons": {
-    "いいねが少なすぎる": 75,
-    "初回観測かつ平均速度が低い": 14,
-    "古すぎる": 10
+    "いいねが少なすぎる": 82,
+    "初回観測かつ平均速度が低い": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +23,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 993,
-    "posts": 888,
-    "oldest": "2026-09-01T15:01:51.444222+00:00"
+    "total": 994,
+    "posts": 912,
+    "oldest": "2026-09-01T18:27:03.882618+00:00"
   },
   "top5": [
     {
-      "author": "tokoyamitowa",
-      "score": 56.5,
-      "likes": 569,
-      "likes_per_min": 65.50089099246559,
+      "author": "KAJI__OFFICIAL",
+      "score": 58.7,
+      "likes": 860,
+      "likes_per_min": 74.05573310760418,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 8.7,
-      "text": "２２：００～\n\n【 Big Walk 】チームワークとおしゃべりが鍵となる協力型アドベンチャー【 常闇トワ視点/ホロライ",
-      "url": "https://x.com/tokoyamitowa/status/2095105616121639116"
+      "age_minutes": 11.6,
+      "text": "おかげさまで41歳になりました！\nまだまだ声優として声を上げていきます！\n直近、最も叫んだ時の映像をご覧ください！\n(※",
+      "url": "https://x.com/KAJI__OFFICIAL/status/2095164942794346662"
     },
     {
-      "author": "Kagetsu_2434",
-      "score": 52.9,
-      "likes": 988,
-      "likes_per_min": 142.08525995720703,
+      "author": "Rezero_official",
+      "score": 46.9,
+      "likes": 3995,
+      "likes_per_min": 90.80327865811338,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 7.0,
-      "text": "【妖怪ウォッチ1】完全初見で妖怪ウォッチするぞ！ストーリークリア後の世界 #5 ※ネタバレあり【叢雲カゲツ/にじさんじ】",
-      "url": "https://x.com/Kagetsu_2434/status/2095106052211826794"
+      "age_minutes": 44.0,
+      "text": "◪有り難うございました◪\n\nTVアニメ『Re:ゼロから始める異世界生活』\n第15話(第81話)「一途な星」\nご視聴有り難",
+      "url": "https://x.com/Rezero_official/status/2095156793596854632"
     },
     {
-      "author": "watarai_hibari",
-      "score": 52.2,
-      "likes": 1396,
-      "likes_per_min": 181.6075583643459,
+      "author": "Ryuichiro_YMD",
+      "score": 44.4,
+      "likes": 3627,
+      "likes_per_min": 43.01834071616745,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 7.7,
-      "text": "マイル\n\n【雑談】もう9月ってがちですか雑談【渡会雲雀/にじさんじ】 \nhttps://\nyoutube.com/liv",
-      "url": "https://x.com/watarai_hibari/status/2095105867121348995"
+      "age_minutes": 84.3,
+      "text": "【お知らせ】\n\nYouTubeの投稿の方にも記載しましたが、常設フォームを設置しました！\n\nhttps://\nforms",
+      "url": "https://x.com/Ryuichiro_YMD/status/2095146648175513755"
     },
     {
-      "author": "heavenburnsred",
-      "score": 51.1,
-      "likes": 251,
-      "likes_per_min": 19.70651467174094,
+      "author": "TetsuNitta",
+      "score": 39.7,
+      "likes": 690,
+      "likes_per_min": 12.914203894060888,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.7,
-      "text": "【あす 9/3(木) 20時〜】\n#ヘブバン 情報局Vol.124\n\nまだまだ夏は終わらない！\n＼新スタイルヒント②／\n",
-      "url": "https://x.com/heavenburnsred/status/2095104594988949964"
+      "age_minutes": 53.4,
+      "text": "ということはデニーさんのスタッフは、裏アカで陰謀論や中傷を平気でやってるってことですよね。",
+      "url": "https://x.com/TetsuNitta/status/2095154418698379530"
     },
     {
-      "author": "gkmas_official",
-      "score": 51.1,
-      "likes": 1126,
-      "likes_per_min": 84.95823246555264,
+      "author": "jpapachannel",
+      "score": 39.4,
+      "likes": 1136,
+      "likes_per_min": 98.10405239644172,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.3,
-      "text": "|◤　　　　　　 　　　  ◥||\n　 修楽旅行 ショート動画\n　　  ことねver.公開\n||◣　　　　　　   　　",
-      "url": "https://x.com/gkmas_official/status/2095104464134778998"
+      "age_minutes": 11.6,
+      "text": "お風呂出たよ",
+      "url": "https://x.com/jpapachannel/status/2095164951505854519"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T18:50:59.171171+00:00",
+  "updated_at": "2026-09-02T21:24:54.261364+00:00",
   "status": "success",
-  "started_at": "2026-09-02T18:47:46.958114+00:00",
-  "finished_at": "2026-09-02T18:50:59.169662+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 31,
+  "started_at": "2026-09-02T21:22:13.578718+00:00",
+  "finished_at": "2026-09-02T21:24:54.260122+00:00",
+  "posts_scanned": 89,
+  "posts_with_history": 23,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 219,
+  "minutes_since_last_notification": 373,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 20,
-    "古すぎる": 75,
-    "いいねが少なすぎる": 23
+    "いいねが少なすぎる": 26,
+    "初回観測かつ平均速度が低い": 8,
+    "古すぎる": 33
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1010,
-    "posts": 910,
-    "oldest": "2026-09-01T21:20:50.278057+00:00"
+    "total": 1012,
+    "posts": 912,
+    "oldest": "2026-09-01T23:25:47.423808+00:00"
   },
   "top5": [
     {
-      "author": "es_spe_live",
-      "score": 27.3,
-      "likes": 4639,
-      "likes_per_min": 43.360849838259774,
+      "author": "jyu_ta_ro",
+      "score": 44.0,
+      "likes": 14975,
+      "likes_per_min": 178.65484290673373,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 107.0,
-      "text": "みんな　はやくねるんじゃぞ（零）",
-      "url": "https://x.com/es_spe_live/status/2095196051821265091"
+      "age_minutes": 83.8,
+      "text": "10月期解禁\nTBS系火曜ドラマ\n『いろはの恋は時代をかける』\n\n山中が真島玲二役を務めます\n小学校の先生\n“いろはの恋",
+      "url": "https://x.com/jyu_ta_ro/status/2095240615307128927"
     },
     {
-      "author": "AZKi_VDiVA",
-      "score": 26.6,
-      "likes": 971,
-      "likes_per_min": 9.765083812452243,
+      "author": "oricon",
+      "score": 34.2,
+      "likes": 1345,
+      "likes_per_min": 15.841387516627606,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 99.4,
-      "text": "#あずきんち 月イチ！メン限雑談ありがとうございました\nなんだか8月は例のASMRが好評みたいでしたね…ほぉほぉ…\nいつ",
-      "url": "https://x.com/AZKi_VDiVA/status/2095197950867886276"
+      "age_minutes": 84.9,
+      "text": "『いろはの恋は時代（とき）をかける』\n\n山中柔太朗、GP帯連続ドラマ初レギュラー出演\n「メンバーにも伝えに行ったのを覚え",
+      "url": "https://x.com/oricon/status/2095240345009430570"
     },
     {
-      "author": "tsunomakiwatame",
-      "score": 25.0,
-      "likes": 1141,
-      "likes_per_min": 10.983202577793262,
+      "author": "fantastics_fext",
+      "score": 30.2,
+      "likes": 1095,
+      "likes_per_min": 21.69569357010327,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 103.9,
-      "text": "おなかすいちゃったなァ...",
-      "url": "https://x.com/tsunomakiwatame/status/2095196831047352497"
+      "age_minutes": 50.5,
+      "text": "／\n2027年2月開幕\nシルク・ドゥ・ソレイユ\n『クーザ』日本公演\nスペシャルサポーターに就任!!\n＼\n\n2027年2月",
+      "url": "https://x.com/fantastics_fext/status/2095249011443986751"
     },
     {
-      "author": "hakuikoyori",
-      "score": 24.9,
-      "likes": 895,
-      "likes_per_min": 8.718728985701729,
+      "author": "sanada10ninja",
+      "score": 29.8,
+      "likes": 2091,
+      "likes_per_min": 38.14242516236756,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 102.7,
-      "text": "おやすみ助手くん\nだーいすきだよっ(ᐡ •͈ ·̫ •͈ ᐡ)\nまた明日だっ",
-      "url": "https://x.com/hakuikoyori/status/2095197142755520944"
+      "age_minutes": 54.8,
+      "text": "// 𝐍𝐄𝐖 𝐑𝐄𝐋𝐄𝐀𝐒𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN N",
+      "url": "https://x.com/sanada10ninja/status/2095247916960981472"
     },
     {
-      "author": "OneHaunt",
-      "score": 24.8,
-      "likes": 1276,
-      "likes_per_min": 15.123994740555762,
+      "author": "sanada10ninja",
+      "score": 29.6,
+      "likes": 1140,
+      "likes_per_min": 22.974215505567756,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 84.4,
-      "text": "東大",
-      "url": "https://x.com/OneHaunt/status/2095201742757732816"
+      "age_minutes": 49.6,
+      "text": "// 𝐍𝐄𝐖 𝐌𝐎𝐕𝐈𝐄 //\n\n日本が誇る忍者を、世界へ─\n『真田十勇士 SHADOWS OF THE TEN NIN",
+      "url": "https://x.com/sanada10ninja/status/2095249223843291260"
     }
   ]
 }

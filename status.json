@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-02T23:28:55.959807+00:00",
+  "updated_at": "2026-09-03T01:27:52.076286+00:00",
   "status": "success",
-  "started_at": "2026-09-02T23:26:13.674772+00:00",
-  "finished_at": "2026-09-02T23:28:55.958392+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 25,
+  "started_at": "2026-09-03T01:24:57.423143+00:00",
+  "finished_at": "2026-09-03T01:27:52.075085+00:00",
+  "posts_scanned": 153,
+  "posts_with_history": 32,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 3,
-  "minutes_since_last_notification": 497,
+  "minutes_since_last_notification": 616,
   "reject_reasons": {
-    "いいねが少なすぎる": 65,
-    "初回観測かつ平均速度が低い": 12,
-    "古すぎる": 22
+    "初回観測かつ平均速度が低い": 13,
+    "いいねが少なすぎる": 71,
+    "古すぎる": 21
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1014,
-    "posts": 921,
-    "oldest": "2026-09-02T01:22:53.118103+00:00"
+    "total": 1008,
+    "posts": 896,
+    "oldest": "2026-09-02T06:00:40.037115+00:00"
   },
   "top5": [
     {
-      "author": "famima_now",
-      "score": 50.2,
-      "likes": 1825,
-      "likes_per_min": 63.077943084706284,
+      "author": "kabuara5",
+      "score": 53.3,
+      "likes": 25649,
+      "likes_per_min": 362.4393036721064,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.9,
-      "text": "✨🎁14日間限定🎁✨\n\nファミリーマート45周年記念！\n濃厚カスタードシューの\n無料クーポンが当たる！\n\n1️⃣ \n@f",
-      "url": "https://x.com/famima_now/status/2095285642100101272"
+      "age_minutes": 70.8,
+      "text": "【大切なお知らせ】\n\n株式会社嵐が製作し、是枝裕和氏が総監督を務めたドキュメンタリー映画『5 - 嵐という時間 -』が1",
+      "url": "https://x.com/kabuara5/status/2095305044816261596"
+    },
+    {
+      "author": "crg_movie",
+      "score": 50.6,
+      "likes": 6817,
+      "likes_per_min": 98.36792558766906,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 69.3,
+      "text": "株式会社嵐が製作し、株式会社分福の是枝裕和が総監督を務めたドキュメンタリー映画『5 - 嵐という時間 -』の情報解禁の日",
+      "url": "https://x.com/crg_movie/status/2095305415819206956"
+    },
+    {
+      "author": "japan_gummy",
+      "score": 44.1,
+      "likes": 2982,
+      "likes_per_min": 20.18032203450889,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 147.8,
+      "text": "＼9月3日はグミの日／ \nGUMMITよりグミ93個を10名様にプレゼント✨ｸﾞ٩( ᐛ )و ﾐ🎁 \n\n参加条件 \n①",
+      "url": "https://x.com/japan_gummy/status/2095285666238411026"
     },
     {
       "author": "akiko_lawson",
-      "score": 49.6,
-      "likes": 6650,
-      "likes_per_min": 229.84565562372427,
+      "score": 43.5,
+      "likes": 20331,
+      "likes_per_min": 115.03,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 28.9,
+      "measured": true,
+      "age_minutes": 147.9,
       "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の2日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
       "url": "https://x.com/akiko_lawson/status/2095285643513409723"
     },
     {
-      "author": "togootto",
-      "score": 47.3,
-      "likes": 645,
-      "likes_per_min": 25.033191003406483,
+      "author": "famima_now",
+      "score": 42.5,
+      "likes": 9062,
+      "likes_per_min": 60.85,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 25.8,
-      "text": "【速報】玉城デニー、バレる。\n\n玉城デニーが対立候補の誹謗中傷ポスト\n↓\n批判殺到で削除\n↓\nデニー「事務所スタッフのミ",
-      "url": "https://x.com/togootto/status/2095286438506213605"
-    },
-    {
-      "author": "oomoriseiko",
-      "score": 47.0,
-      "likes": 2065,
-      "likes_per_min": 40.25409740430735,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 51.3,
-      "text": "日本の３割もの学生が不登校を経験したことがある中で、自分のままどう切り開くかの社会経験を可能な限り若く、手っ取り早く積む",
-      "url": "https://x.com/oomoriseiko/status/2095280013172166796"
-    },
-    {
-      "author": "McDonaldsJapan",
-      "score": 42.2,
-      "likes": 968,
-      "likes_per_min": 33.45723227725791,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 28.9,
-      "text": "北海道産バターがじゅわわっ！\n\n【#マックのあんバターとおもちの月見パイ】をつけて本日9/3(木)中にリプライすると、抽",
-      "url": "https://x.com/McDonaldsJapan/status/2095285641680486589"
+      "measured": true,
+      "age_minutes": 147.9,
+      "text": "✨🎁14日間限定🎁✨\n\nファミリーマート45周年記念！\n濃厚カスタードシューの\n無料クーポンが当たる！\n\n1️⃣ \n@f",
+      "url": "https://x.com/famima_now/status/2095285642100101272"
     }
   ]
 }

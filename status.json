@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T01:27:52.076286+00:00",
+  "updated_at": "2026-09-03T06:29:52.213698+00:00",
   "status": "success",
-  "started_at": "2026-09-03T01:24:57.423143+00:00",
-  "finished_at": "2026-09-03T01:27:52.075085+00:00",
-  "posts_scanned": 153,
-  "posts_with_history": 32,
+  "started_at": "2026-09-03T06:26:57.917956+00:00",
+  "finished_at": "2026-09-03T06:29:52.212565+00:00",
+  "posts_scanned": 141,
+  "posts_with_history": 11,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 3,
-  "minutes_since_last_notification": 616,
+  "notified_last_24h": 2,
+  "minutes_since_last_notification": 918,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 13,
-    "いいねが少なすぎる": 71,
-    "古すぎる": 21
+    "いいねが少なすぎる": 60,
+    "初回観測かつ平均速度が低い": 17,
+    "古すぎる": 14
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1008,
-    "posts": 896,
-    "oldest": "2026-09-02T06:00:40.037115+00:00"
+    "total": 992,
+    "posts": 875,
+    "oldest": "2026-09-02T11:13:19.214284+00:00"
   },
   "top5": [
     {
-      "author": "kabuara5",
-      "score": 53.3,
-      "likes": 25649,
-      "likes_per_min": 362.4393036721064,
+      "author": "MH_Wilds",
+      "score": 52.5,
+      "likes": 2737,
+      "likes_per_min": 91.68146269643995,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 70.8,
-      "text": "【大切なお知らせ】\n\n株式会社嵐が製作し、是枝裕和氏が総監督を務めたドキュメンタリー映画『5 - 嵐という時間 -』が1",
-      "url": "https://x.com/kabuara5/status/2095305044816261596"
+      "age_minutes": 29.9,
+      "text": "武器紹介動画【弓】\n\n「ブーストブレイサー」を活用することで様々な新アクションが可能！\nブーストブレイサーを起動しながら",
+      "url": "https://x.com/MH_Wilds/status/2095391342662767065"
     },
     {
-      "author": "crg_movie",
-      "score": 50.6,
-      "likes": 6817,
-      "likes_per_min": 98.36792558766906,
+      "author": "gkmas_official",
+      "score": 47.4,
+      "likes": 2275,
+      "likes_per_min": 81.62890441687,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 69.3,
-      "text": "株式会社嵐が製作し、株式会社分福の是枝裕和が総監督を務めたドキュメンタリー映画『5 - 嵐という時間 -』の情報解禁の日",
-      "url": "https://x.com/crg_movie/status/2095305415819206956"
+      "age_minutes": 27.9,
+      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #有村麻央\n\n📅開催期間：9/4 (金) 11:00 ～ (予定)",
+      "url": "https://x.com/gkmas_official/status/2095391841827070427"
     },
     {
-      "author": "japan_gummy",
-      "score": 44.1,
-      "likes": 2982,
-      "likes_per_min": 20.18032203450889,
+      "author": "gkmas_official",
+      "score": 47.1,
+      "likes": 2290,
+      "likes_per_min": 79.32101263982703,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 147.8,
-      "text": "＼9月3日はグミの日／ \nGUMMITよりグミ93個を10名様にプレゼント✨ｸﾞ٩( ᐛ )و ﾐ🎁 \n\n参加条件 \n①",
-      "url": "https://x.com/japan_gummy/status/2095285666238411026"
+      "age_minutes": 28.9,
+      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #有村麻央\n【標】 #倉本千奈\n【標】 #紫雲清夏\n\n📅開催期間：",
+      "url": "https://x.com/gkmas_official/status/2095391590176919947"
     },
     {
-      "author": "akiko_lawson",
-      "score": 43.5,
-      "likes": 20331,
-      "likes_per_min": 115.03,
+      "author": "gkmas_official",
+      "score": 46.6,
+      "likes": 1948,
+      "likes_per_min": 65.21587062203295,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 147.9,
-      "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の2日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
-      "url": "https://x.com/akiko_lawson/status/2095285643513409723"
+      "measured": false,
+      "age_minutes": 29.9,
+      "text": "📣標ガシャ2つのポイント！\n\n①SSR Pアイドル出現時は【標】のPアイドルが確定で登場！\n\n②【標】アイドルの交換Pt",
+      "url": "https://x.com/gkmas_official/status/2095391339735106043"
     },
     {
-      "author": "famima_now",
-      "score": 42.5,
-      "likes": 9062,
-      "likes_per_min": 60.85,
+      "author": "gkmas_official",
+      "score": 44.3,
+      "likes": 1254,
+      "likes_per_min": 48.47307903727716,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 147.9,
-      "text": "✨🎁14日間限定🎁✨\n\nファミリーマート45周年記念！\n濃厚カスタードシューの\n無料クーポンが当たる！\n\n1️⃣ \n@f",
-      "url": "https://x.com/famima_now/status/2095285642100101272"
+      "measured": false,
+      "age_minutes": 25.9,
+      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #紫雲清夏\n\n📅開催期間：9/4 (金) 11:00 ～ (予定)",
+      "url": "https://x.com/gkmas_official/status/2095392345122607508"
     }
   ]
 }

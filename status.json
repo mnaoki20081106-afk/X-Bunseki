@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T11:43:37.832918+00:00",
+  "updated_at": "2026-09-03T15:17:55.315049+00:00",
   "status": "success",
-  "started_at": "2026-09-03T11:40:35.382941+00:00",
-  "finished_at": "2026-09-03T11:43:37.831977+00:00",
-  "posts_scanned": 171,
-  "posts_with_history": 17,
+  "started_at": "2026-09-03T15:15:02.717806+00:00",
+  "finished_at": "2026-09-03T15:17:55.312705+00:00",
+  "posts_scanned": 156,
+  "posts_with_history": 0,
   "posts_flagged": 1,
   "notified_count": 1,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 1232,
+  "minutes_since_last_notification": 214,
   "reject_reasons": {
-    "いいねが少なすぎる": 76,
+    "いいねが少なすぎる": 90,
     "初回観測かつ平均速度が低い": 14,
-    "古すぎる": 24
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -25,64 +25,64 @@
   },
   "observation_db": {
     "total": 1008,
-    "posts": 876,
-    "oldest": "2026-09-02T15:11:59.772523+00:00"
+    "posts": 900,
+    "oldest": "2026-09-02T18:50:59.154630+00:00"
   },
   "top5": [
     {
-      "author": "iLiFE_official",
-      "score": 61.6,
-      "likes": 3292,
-      "likes_per_min": 246.65319418914694,
+      "author": "imase_1109",
+      "score": 58.1,
+      "likes": 581,
+      "likes_per_min": 42.69856869853498,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.3,
-      "text": "この後21時..重大発表！！",
-      "url": "https://x.com/iLiFE_official/status/2095474452322722095"
+      "age_minutes": 13.6,
+      "text": "このたび活動再開します。\n今の僕の気持ちです。読んでいただけたら嬉しいです。\n\n歩き出します！\n_\nI’m back!\n",
+      "url": "https://x.com/imase_1109/status/2095528317554458771"
     },
     {
-      "author": "Sara_Hoshikawa",
-      "score": 49.9,
-      "likes": 11390,
-      "likes_per_min": 164.08949259885256,
+      "author": "rai_173",
+      "score": 50.9,
+      "likes": 2550,
+      "likes_per_min": 87.00988933758688,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 69.4,
-      "text": "＼＼重大発表あり❗️12時間配信🌟／／\n\n☆∴..∴..∴..∴..∴..∴..∴..∴..∴..∴..∴☆\n\n⏰9/5",
-      "url": "https://x.com/Sara_Hoshikawa/status/2095460345339089235"
+      "age_minutes": 29.3,
+      "text": "0:00~\n疲れるまでやらぁ\n\n【 スト6 】出でよケン・マスターズ【 伊波ライ/にじさんじ 】 \nhttps://\ny",
+      "url": "https://x.com/rai_173/status/2095524364360016312"
     },
     {
-      "author": "Vamp_Kuzu",
-      "score": 47.0,
-      "likes": 1538,
-      "likes_per_min": 101.76439085424188,
+      "author": "Fate_EX_Record",
+      "score": 50.8,
+      "likes": 1104,
+      "likes_per_min": 65.36277863226705,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 15.1,
-      "text": "【✂️切り抜き動画投稿✂️】\n\n【都市伝説解体センター#5】怒涛の展開と溢れ出すドーパミンによって推理が止まらなくなる葛",
-      "url": "https://x.com/Vamp_Kuzu/status/2095474008611561584"
+      "age_minutes": 16.9,
+      "text": "【ゲーム紹介&最新情報告知番組 】\n\nTYPE-MOON GAMES公式YouTubeチャンネルにて\n『Fate/EXT",
+      "url": "https://x.com/Fate_EX_Record/status/2095527488902578669"
     },
     {
-      "author": "MyungYi_",
-      "score": 44.6,
-      "likes": 277,
-      "likes_per_min": 11.066716288437501,
+      "author": "nikumarusuisann",
+      "score": 50.1,
+      "likes": 1831,
+      "likes_per_min": 55.78289794540299,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.0,
-      "text": "ホロライブ公式スマートフォンゲーム「hololive Dreams\n(ホロライブドリームス)」にて、\n白銀ノエルさんのイ",
-      "url": "https://x.com/MyungYi_/status/2095471514321829975"
+      "age_minutes": 32.8,
+      "text": "【不器用で心の中はいつも泣いてる女の子】\n\nビオラちゃんはそんな娘に見えました\n\n僭越ながらTVアニメ「バンドリ！ゆめ∞",
+      "url": "https://x.com/nikumarusuisann/status/2095523479332561273"
     },
     {
-      "author": "LVT_sng",
-      "score": 40.6,
-      "likes": 893,
-      "likes_per_min": 47.34049882174685,
+      "author": "Lize_Helesta",
+      "score": 44.5,
+      "likes": 1096,
+      "likes_per_min": 24.41504861782628,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 18.9,
-      "text": "ドパガキもびっくりなドパ歌詞とドパメロを思いついてしまって、早く見せたくて防音室で暴れ回りたい気持ちを抑えて収録してます",
-      "url": "https://x.com/LVT_sng/status/2095473064121360853"
+      "age_minutes": 44.9,
+      "text": "ふ、フヌヌードを許すわけにはいかない……な、なんとしても期限内に真相を暴かねば！ね！！",
+      "url": "https://x.com/Lize_Helesta/status/2095520444128592141"
     }
   ]
 }

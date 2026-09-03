@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T06:29:52.213698+00:00",
+  "updated_at": "2026-09-03T11:43:37.832918+00:00",
   "status": "success",
-  "started_at": "2026-09-03T06:26:57.917956+00:00",
-  "finished_at": "2026-09-03T06:29:52.212565+00:00",
-  "posts_scanned": 141,
-  "posts_with_history": 11,
-  "posts_flagged": 0,
-  "notified_count": 0,
+  "started_at": "2026-09-03T11:40:35.382941+00:00",
+  "finished_at": "2026-09-03T11:43:37.831977+00:00",
+  "posts_scanned": 171,
+  "posts_with_history": 17,
+  "posts_flagged": 1,
+  "notified_count": 1,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 918,
+  "minutes_since_last_notification": 1232,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "初回観測かつ平均速度が低い": 17,
-    "古すぎる": 14
+    "いいねが少なすぎる": 76,
+    "初回観測かつ平均速度が低い": 14,
+    "古すぎる": 24
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 992,
-    "posts": 875,
-    "oldest": "2026-09-02T11:13:19.214284+00:00"
+    "total": 1008,
+    "posts": 876,
+    "oldest": "2026-09-02T15:11:59.772523+00:00"
   },
   "top5": [
     {
-      "author": "MH_Wilds",
-      "score": 52.5,
-      "likes": 2737,
-      "likes_per_min": 91.68146269643995,
+      "author": "iLiFE_official",
+      "score": 61.6,
+      "likes": 3292,
+      "likes_per_min": 246.65319418914694,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.9,
-      "text": "武器紹介動画【弓】\n\n「ブーストブレイサー」を活用することで様々な新アクションが可能！\nブーストブレイサーを起動しながら",
-      "url": "https://x.com/MH_Wilds/status/2095391342662767065"
+      "age_minutes": 13.3,
+      "text": "この後21時..重大発表！！",
+      "url": "https://x.com/iLiFE_official/status/2095474452322722095"
     },
     {
-      "author": "gkmas_official",
-      "score": 47.4,
-      "likes": 2275,
-      "likes_per_min": 81.62890441687,
+      "author": "Sara_Hoshikawa",
+      "score": 49.9,
+      "likes": 11390,
+      "likes_per_min": 164.08949259885256,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 27.9,
-      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #有村麻央\n\n📅開催期間：9/4 (金) 11:00 ～ (予定)",
-      "url": "https://x.com/gkmas_official/status/2095391841827070427"
+      "age_minutes": 69.4,
+      "text": "＼＼重大発表あり❗️12時間配信🌟／／\n\n☆∴..∴..∴..∴..∴..∴..∴..∴..∴..∴..∴☆\n\n⏰9/5",
+      "url": "https://x.com/Sara_Hoshikawa/status/2095460345339089235"
     },
     {
-      "author": "gkmas_official",
-      "score": 47.1,
-      "likes": 2290,
-      "likes_per_min": 79.32101263982703,
+      "author": "Vamp_Kuzu",
+      "score": 47.0,
+      "likes": 1538,
+      "likes_per_min": 101.76439085424188,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 28.9,
-      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #有村麻央\n【標】 #倉本千奈\n【標】 #紫雲清夏\n\n📅開催期間：",
-      "url": "https://x.com/gkmas_official/status/2095391590176919947"
+      "age_minutes": 15.1,
+      "text": "【✂️切り抜き動画投稿✂️】\n\n【都市伝説解体センター#5】怒涛の展開と溢れ出すドーパミンによって推理が止まらなくなる葛",
+      "url": "https://x.com/Vamp_Kuzu/status/2095474008611561584"
     },
     {
-      "author": "gkmas_official",
-      "score": 46.6,
-      "likes": 1948,
-      "likes_per_min": 65.21587062203295,
+      "author": "MyungYi_",
+      "score": 44.6,
+      "likes": 277,
+      "likes_per_min": 11.066716288437501,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.9,
-      "text": "📣標ガシャ2つのポイント！\n\n①SSR Pアイドル出現時は【標】のPアイドルが確定で登場！\n\n②【標】アイドルの交換Pt",
-      "url": "https://x.com/gkmas_official/status/2095391339735106043"
+      "age_minutes": 25.0,
+      "text": "ホロライブ公式スマートフォンゲーム「hololive Dreams\n(ホロライブドリームス)」にて、\n白銀ノエルさんのイ",
+      "url": "https://x.com/MyungYi_/status/2095471514321829975"
     },
     {
-      "author": "gkmas_official",
-      "score": 44.3,
-      "likes": 1254,
-      "likes_per_min": 48.47307903727716,
+      "author": "LVT_sng",
+      "score": 40.6,
+      "likes": 893,
+      "likes_per_min": 47.34049882174685,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.9,
-      "text": "📢明日11時より！\n📌新プロデュースアイドル\n【標】 #紫雲清夏\n\n📅開催期間：9/4 (金) 11:00 ～ (予定)",
-      "url": "https://x.com/gkmas_official/status/2095392345122607508"
+      "age_minutes": 18.9,
+      "text": "ドパガキもびっくりなドパ歌詞とドパメロを思いついてしまって、早く見せたくて防音室で暴れ回りたい気持ちを抑えて収録してます",
+      "url": "https://x.com/LVT_sng/status/2095473064121360853"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T15:17:55.315049+00:00",
+  "updated_at": "2026-09-03T18:49:10.146767+00:00",
   "status": "success",
-  "started_at": "2026-09-03T15:15:02.717806+00:00",
-  "finished_at": "2026-09-03T15:17:55.312705+00:00",
+  "started_at": "2026-09-03T18:45:47.600986+00:00",
+  "finished_at": "2026-09-03T18:49:10.145005+00:00",
   "posts_scanned": 156,
-  "posts_with_history": 0,
-  "posts_flagged": 1,
-  "notified_count": 1,
+  "posts_with_history": 39,
+  "posts_flagged": 0,
+  "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 214,
+  "minutes_since_last_notification": 211,
   "reject_reasons": {
-    "いいねが少なすぎる": 90,
-    "初回観測かつ平均速度が低い": 14,
-    "古すぎる": 1
+    "いいねが少なすぎる": 25,
+    "初回観測かつ平均速度が低い": 26,
+    "古すぎる": 82
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1008,
-    "posts": 900,
+    "total": 1164,
+    "posts": 1017,
     "oldest": "2026-09-02T18:50:59.154630+00:00"
   },
   "top5": [
     {
-      "author": "imase_1109",
-      "score": 58.1,
-      "likes": 581,
-      "likes_per_min": 42.69856869853498,
+      "author": "Ex_Albio",
+      "score": 35.2,
+      "likes": 941,
+      "likes_per_min": 39.204765699654665,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.6,
-      "text": "このたび活動再開します。\n今の僕の気持ちです。読んでいただけたら嬉しいです。\n\n歩き出します！\n_\nI’m back!\n",
-      "url": "https://x.com/imase_1109/status/2095528317554458771"
+      "age_minutes": 24.0,
+      "text": "本物のPKClUBのARK2週間アリガトウゴザイヤシタァァ！！！！！",
+      "url": "https://x.com/Ex_Albio/status/2095578866022748400"
     },
     {
-      "author": "rai_173",
-      "score": 50.9,
-      "likes": 2550,
-      "likes_per_min": 87.00988933758688,
+      "author": "torres13202",
+      "score": 29.9,
+      "likes": 1003,
+      "likes_per_min": 43.572983487504565,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 29.3,
-      "text": "0:00~\n疲れるまでやらぁ\n\n【 スト6 】出でよケン・マスターズ【 伊波ライ/にじさんじ 】 \nhttps://\ny",
-      "url": "https://x.com/rai_173/status/2095524364360016312"
+      "age_minutes": 23.0,
+      "text": "ぼくの癖にドンズバすぎて一瞬で時間溶けてまう",
+      "url": "https://x.com/torres13202/status/2095579116376592834"
     },
     {
-      "author": "Fate_EX_Record",
-      "score": 50.8,
-      "likes": 1104,
-      "likes_per_min": 65.36277863226705,
+      "author": "MusicThaman",
+      "score": 26.8,
+      "likes": 1725,
+      "likes_per_min": 27.754455096863527,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 16.9,
-      "text": "【ゲーム紹介&最新情報告知番組 】\n\nTYPE-MOON GAMES公式YouTubeチャンネルにて\n『Fate/EXT",
-      "url": "https://x.com/Fate_EX_Record/status/2095527488902578669"
+      "age_minutes": 62.2,
+      "text": "🧸❤️ !! ワシ・オ・ワシ、我らの「オロチ・ゲンシン」のために \n\n🏆 #OgUniverse ❤️‍🔥",
+      "url": "https://x.com/MusicThaman/status/2095569264568873224"
     },
     {
-      "author": "nikumarusuisann",
-      "score": 50.1,
-      "likes": 1831,
-      "likes_per_min": 55.78289794540299,
+      "author": "dramaphil_mbs",
+      "score": 26.6,
+      "likes": 846,
+      "likes_per_min": 8.176373802831327,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 32.8,
-      "text": "【不器用で心の中はいつも泣いてる女の子】\n\nビオラちゃんはそんな娘に見えました\n\n僭越ながらTVアニメ「バンドリ！ゆめ∞",
-      "url": "https://x.com/nikumarusuisann/status/2095523479332561273"
+      "age_minutes": 103.5,
+      "text": "『ちょっと待とうよ、春虎くん 』\n＼第4話ご視聴ありがとうございました🧸🏀／\n\n皆さんのお気に入りシーンや感想を\n#ちょ",
+      "url": "https://x.com/dramaphil_mbs/status/2095558868478923246"
     },
     {
-      "author": "Lize_Helesta",
-      "score": 44.5,
-      "likes": 1096,
-      "likes_per_min": 24.41504861782628,
+      "author": "hakuikoyori",
+      "score": 24.8,
+      "likes": 858,
+      "likes_per_min": 8.382820634291496,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 44.9,
-      "text": "ふ、フヌヌードを許すわけにはいかない……な、なんとしても期限内に真相を暴かねば！ね！！",
-      "url": "https://x.com/Lize_Helesta/status/2095520444128592141"
+      "age_minutes": 102.4,
+      "text": "おやすみ助手くん💗\nまた明日だっ(ᐡ •͈ ·̫ •͈ ᐡ)✨",
+      "url": "https://x.com/hakuikoyori/status/2095559147588854195"
     }
   ]
 }

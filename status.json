@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T18:49:10.146767+00:00",
+  "updated_at": "2026-09-03T21:28:21.610137+00:00",
   "status": "success",
-  "started_at": "2026-09-03T18:45:47.600986+00:00",
-  "finished_at": "2026-09-03T18:49:10.145005+00:00",
-  "posts_scanned": 156,
-  "posts_with_history": 39,
+  "started_at": "2026-09-03T21:25:16.795137+00:00",
+  "finished_at": "2026-09-03T21:28:21.609144+00:00",
+  "posts_scanned": 121,
+  "posts_with_history": 70,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 211,
+  "minutes_since_last_notification": 370,
   "reject_reasons": {
-    "いいねが少なすぎる": 25,
-    "初回観測かつ平均速度が低い": 26,
-    "古すぎる": 82
+    "いいねが少なすぎる": 17,
+    "古すぎる": 78,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1164,
-    "posts": 1017,
-    "oldest": "2026-09-02T18:50:59.154630+00:00"
+    "total": 1047,
+    "posts": 878,
+    "oldest": "2026-09-02T23:28:55.947538+00:00"
   },
   "top5": [
     {
-      "author": "Ex_Albio",
-      "score": 35.2,
-      "likes": 941,
-      "likes_per_min": 39.204765699654665,
+      "author": "Taiga_Kaminaga",
+      "score": 38.9,
+      "likes": 1066,
+      "likes_per_min": 49.635379942373696,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 24.0,
-      "text": "本物のPKClUBのARK2週間アリガトウゴザイヤシタァァ！！！！！",
-      "url": "https://x.com/Ex_Albio/status/2095578866022748400"
+      "age_minutes": 21.5,
+      "text": "おっはよー！！\n\nこのあと7:00〜朝の配信！🐅🎻\nみんなぐっすり寝れたー？？\n\nほなねー！またあとで！！！\n\n#神はい",
+      "url": "https://x.com/Taiga_Kaminaga/status/2095619565082575000"
     },
     {
-      "author": "torres13202",
-      "score": 29.9,
-      "likes": 1003,
-      "likes_per_min": 43.572983487504565,
+      "author": "DAZN_JPN",
+      "score": 33.7,
+      "likes": 8125,
+      "likes_per_min": 156.37043701177376,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 23.0,
-      "text": "ぼくの癖にドンズバすぎて一瞬で時間溶けてまう",
-      "url": "https://x.com/torres13202/status/2095579116376592834"
+      "age_minutes": 52.0,
+      "text": "さっそくサポーターの心を掴んだ👨‍❤️‍👨\n\n新天地デビュー戦で一発回答‼️\n🇯🇵上田綺世 リール移籍後初ゴール\n\n🇫🇷",
+      "url": "https://x.com/DAZN_JPN/status/2095611893071429682"
     },
     {
-      "author": "MusicThaman",
-      "score": 26.8,
-      "likes": 1725,
-      "likes_per_min": 27.754455096863527,
+      "author": "k_r_r_l_l_",
+      "score": 32.7,
+      "likes": 1412,
+      "likes_per_min": 50.05326235471935,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 62.2,
-      "text": "🧸❤️ !! ワシ・オ・ワシ、我らの「オロチ・ゲンシン」のために \n\n🏆 #OgUniverse ❤️‍🔥",
-      "url": "https://x.com/MusicThaman/status/2095569264568873224"
+      "age_minutes": 28.2,
+      "text": "ぎゅっとしがみつくコウペンちゃん待ち受けです",
+      "url": "https://x.com/k_r_r_l_l_/status/2095617871187702050"
     },
     {
-      "author": "dramaphil_mbs",
-      "score": 26.6,
-      "likes": 846,
-      "likes_per_min": 8.176373802831327,
+      "author": "modelpress",
+      "score": 31.1,
+      "likes": 848,
+      "likes_per_min": 9.611611977034672,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 103.5,
-      "text": "『ちょっと待とうよ、春虎くん 』\n＼第4話ご視聴ありがとうございました🧸🏀／\n\n皆さんのお気に入りシーンや感想を\n#ちょ",
-      "url": "https://x.com/dramaphil_mbs/status/2095558868478923246"
+      "age_minutes": 88.2,
+      "text": "生田絵梨花が芙美子役\n「波うららかに、めおと日和」新キャスト✨️\n\n前任は山本舞香\n出産のため出演辞退していた\n\nhtt",
+      "url": "https://x.com/modelpress/status/2095602765548720257"
     },
     {
-      "author": "hakuikoyori",
-      "score": 24.8,
-      "likes": 858,
-      "likes_per_min": 8.382820634291496,
+      "author": "karaage_rutsubo",
+      "score": 27.7,
+      "likes": 1110,
+      "likes_per_min": 23.289995335657384,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 102.4,
-      "text": "おやすみ助手くん💗\nまた明日だっ(ᐡ •͈ ·̫ •͈ ᐡ)✨",
-      "url": "https://x.com/hakuikoyori/status/2095559147588854195"
+      "age_minutes": 47.7,
+      "text": "食事はちゃんと取ろうね！先輩とのお約束だよ！ #現場猫",
+      "url": "https://x.com/karaage_rutsubo/status/2095612975466021009"
     }
   ]
 }

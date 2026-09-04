@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-04T01:22:01.655259+00:00",
+  "updated_at": "2026-09-04T06:05:01.780540+00:00",
   "status": "success",
-  "started_at": "2026-09-04T01:19:13.868400+00:00",
-  "finished_at": "2026-09-04T01:22:01.654222+00:00",
-  "posts_scanned": 149,
-  "posts_with_history": 39,
+  "started_at": "2026-09-04T06:02:17.604864+00:00",
+  "finished_at": "2026-09-04T06:05:01.779582+00:00",
+  "posts_scanned": 144,
+  "posts_with_history": 11,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 604,
+  "minutes_since_last_notification": 887,
   "reject_reasons": {
-    "いいねが少なすぎる": 60,
-    "初回観測かつ平均速度が低い": 12,
-    "古すぎる": 27
+    "いいねが少なすぎる": 72,
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1189,
-    "posts": 991,
-    "oldest": "2026-09-03T01:27:52.062677+00:00"
+    "total": 1180,
+    "posts": 985,
+    "oldest": "2026-09-03T06:29:52.201789+00:00"
   },
   "top5": [
     {
-      "author": "akiko_lawson",
-      "score": 44.1,
-      "likes": 20252,
-      "likes_per_min": 109.31,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 142.0,
-      "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の3日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
-      "url": "https://x.com/akiko_lawson/status/2095648033635439077"
-    },
-    {
-      "author": "famima_now",
-      "score": 40.3,
-      "likes": 6436,
-      "likes_per_min": 38.68,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 142.0,
-      "text": "♥️抽選で5,000名様に当たる♥️\n\n濃厚カスタードシューの\n無料クーポンをプレゼント🎁\n\n1️⃣ \n@famima_",
-      "url": "https://x.com/famima_now/status/2095648039973044614"
-    },
-    {
-      "author": "nauru_japan",
-      "score": 38.5,
-      "likes": 449,
-      "likes_per_min": 8.115327537777896,
+      "author": "pokecachan",
+      "score": 47.2,
+      "likes": 1325,
+      "likes_per_min": 45.5909361750532,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 55.3,
-      "text": "【お詫び】\nX（旧Twitter）担当者が「おむすび」のことを「おにぎり」と誤って投稿していたことについてお詫びと訂正を",
-      "url": "https://x.com/nauru_japan/status/2095669850907742562"
+      "age_minutes": 29.1,
+      "text": "【30thさらに追加抽選】ポケセンオンライン第3回『30th CELEBRATION』の追加抽選が決定！！いいねで保存\n",
+      "url": "https://x.com/pokecachan/status/2095747677397168183"
     },
     {
-      "author": "Milan_Kestrel",
-      "score": 38.1,
-      "likes": 2242,
-      "likes_per_min": 116.40260893759289,
+      "author": "HAWKS_official",
+      "score": 40.2,
+      "likes": 1113,
+      "likes_per_min": 18.78075465638312,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 19.3,
-      "text": "◤◢◤ #ミラン新衣装  ◢◤◢\n◆◆9/9(水) 21:00~◆\n\nお待たせしました！！\n２年ぶりの新衣装お披露目です",
-      "url": "https://x.com/Milan_Kestrel/status/2095678924709904725"
+      "age_minutes": 59.3,
+      "text": "ホークス一筋、19年。\n中村晃選手引退特設サイト公開。\n\nひたむきに野球と向き合い続けたその軌跡を振り返ります。\n\nht",
+      "url": "https://x.com/HAWKS_official/status/2095740078471663676"
     },
     {
-      "author": "kikiraravivi",
-      "score": 36.6,
-      "likes": 2680,
-      "likes_per_min": 51.118305099121415,
+      "author": "Pokemon_cojp",
+      "score": 39.1,
+      "likes": 3756,
+      "likes_per_min": 107.27507115877351,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 52.4,
-      "text": "おはよう💘\n今日も1日がんばろうね〜！！",
-      "url": "https://x.com/kikiraravivi/status/2095670579269705773"
+      "age_minutes": 35.0,
+      "text": "9月12日（土）、ハロウィンをテーマにしたグッズ「Pokémon Magic Hour Illusion!」が、ポケモン",
+      "url": "https://x.com/Pokemon_cojp/status/2095746183125725582"
+    },
+    {
+      "author": "shima___sub",
+      "score": 36.5,
+      "likes": 964,
+      "likes_per_min": 34.45384459509286,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 28.0,
+      "text": "うまそう",
+      "url": "https://x.com/shima___sub/status/2095747951088058607"
+    },
+    {
+      "author": "es_spe_live",
+      "score": 36.1,
+      "likes": 1102,
+      "likes_per_min": 64.71138470894917,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 17.0,
+      "text": "『来来☆2winkイリュージョン』、ちょっとだけ弾いてみた👿🎶（ゆうた）#ツインズビート #2wink",
+      "url": "https://x.com/es_spe_live/status/2095750706351218702"
     }
   ]
 }

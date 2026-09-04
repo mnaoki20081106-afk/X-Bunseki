@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-04T18:22:51.266562+00:00",
+  "updated_at": "2026-09-04T20:54:44.014398+00:00",
   "status": "success",
-  "started_at": "2026-09-04T18:19:32.682749+00:00",
-  "finished_at": "2026-09-04T18:22:51.264619+00:00",
-  "posts_scanned": 174,
-  "posts_with_history": 37,
+  "started_at": "2026-09-04T20:51:33.047936+00:00",
+  "finished_at": "2026-09-04T20:54:44.013450+00:00",
+  "posts_scanned": 134,
+  "posts_with_history": 68,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 431,
+  "minutes_since_last_notification": 583,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 25,
-    "いいねが少なすぎる": 34,
-    "古すぎる": 68
+    "初回観測かつ平均速度が低い": 11,
+    "古すぎる": 93,
+    "いいねが少なすぎる": 18
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1205,
-    "posts": 1020,
-    "oldest": "2026-09-03T18:49:10.131040+00:00"
+    "total": 1183,
+    "posts": 993,
+    "oldest": "2026-09-03T21:28:21.596966+00:00"
   },
   "top5": [
     {
-      "author": "Onst_K",
-      "score": 28.9,
-      "likes": 2016,
-      "likes_per_min": 28.089397276759968,
+      "author": "es_spe_live",
+      "score": 32.1,
+      "likes": 1166,
+      "likes_per_min": 36.74365620027279,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 71.8,
-      "text": "残暑お見舞い",
-      "url": "https://x.com/Onst_K/status/2095922610194522248"
+      "age_minutes": 31.7,
+      "text": "おはよう　そしておやすみ（零）",
+      "url": "https://x.com/es_spe_live/status/2095970907491611051"
     },
     {
-      "author": "prprprprp____w",
-      "score": 28.0,
-      "likes": 2246,
-      "likes_per_min": 30.681305476725452,
+      "author": "kogomeAri",
+      "score": 24.0,
+      "likes": 919,
+      "likes_per_min": 9.488896868568162,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 73.2,
-      "text": "オトギと先生の有給休暇当日",
-      "url": "https://x.com/prprprprp____w/status/2095922252042973532"
+      "age_minutes": 96.9,
+      "text": "39.フラウ",
+      "url": "https://x.com/kogomeAri/status/2095954519662514376"
     },
     {
-      "author": "H_KAGAMI2434",
-      "score": 27.9,
-      "likes": 1438,
-      "likes_per_min": 20.56120961838306,
+      "author": "nitadimples",
+      "score": 22.6,
+      "likes": 1011,
+      "likes_per_min": 8.90095098471986,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 69.9,
-      "text": "配信ありがとうございました！\n耐えました！！！\n短時間であらゆる感情と教養を詰め込んでくれる素晴らしいゲームでしたね😊",
-      "url": "https://x.com/H_KAGAMI2434/status/2095923073514152060"
+      "age_minutes": 113.6,
+      "text": "500年前の皇帝の仕事\n(1/6)",
+      "url": "https://x.com/nitadimples/status/2095950310242197863"
     },
     {
-      "author": "Mariam_sato",
-      "score": 26.6,
-      "likes": 1008,
-      "likes_per_min": 12.304559392593921,
+      "author": "UN_NERV",
+      "score": 22.4,
+      "likes": 1500,
+      "likes_per_min": 14.546625001578974,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 81.9,
-      "text": "気まずい瞬間\n(1/5)",
-      "url": "https://x.com/Mariam_sato/status/2095920058522534063"
+      "age_minutes": 103.1,
+      "text": "【NHKニュース速報 04:11】\nインドネシア付近で大規模噴火\n日本への津波の有無を調査　気象庁",
+      "url": "https://x.com/UN_NERV/status/2095952943665328408"
     },
     {
-      "author": "Lov_N_N",
-      "score": 26.5,
-      "likes": 2599,
-      "likes_per_min": 27.647704896342265,
+      "author": "irys_en",
+      "score": 22.4,
+      "likes": 938,
+      "likes_per_min": 8.059570780549635,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 94.0,
-      "text": "夏オル",
-      "url": "https://x.com/Lov_N_N/status/2095917017933189428"
+      "age_minutes": 116.4,
+      "text": "💎Watchalong🗿\nWatching ALL 6 episodes of War in the Pocket wi",
+      "url": "https://x.com/irys_en/status/2095949606156931381"
     }
   ]
 }

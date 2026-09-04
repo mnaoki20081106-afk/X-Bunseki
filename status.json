@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-04T15:02:59.701227+00:00",
+  "updated_at": "2026-09-04T18:22:51.266562+00:00",
   "status": "success",
-  "started_at": "2026-09-04T15:00:18.092331+00:00",
-  "finished_at": "2026-09-04T15:02:59.700085+00:00",
-  "posts_scanned": 153,
-  "posts_with_history": 0,
+  "started_at": "2026-09-04T18:19:32.682749+00:00",
+  "finished_at": "2026-09-04T18:22:51.264619+00:00",
+  "posts_scanned": 174,
+  "posts_with_history": 37,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 2,
-  "minutes_since_last_notification": 231,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": 431,
   "reject_reasons": {
-    "いいねが少なすぎる": 80,
-    "初回観測かつ平均速度が低い": 20,
-    "古すぎる": 1
+    "初回観測かつ平均速度が低い": 25,
+    "いいねが少なすぎる": 34,
+    "古すぎる": 68
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1187,
-    "posts": 1006,
-    "oldest": "2026-09-03T15:17:54.420809+00:00"
+    "total": 1205,
+    "posts": 1020,
+    "oldest": "2026-09-03T18:49:10.131040+00:00"
   },
   "top5": [
     {
-      "author": "lanlanutau",
-      "score": 45.2,
-      "likes": 3952,
-      "likes_per_min": 39.2993477989824,
+      "author": "Onst_K",
+      "score": 28.9,
+      "likes": 2016,
+      "likes_per_min": 28.089397276759968,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 100.6,
-      "text": "ネットに限らずなんだけど\n誹謗中傷の1番タチの悪い性質って\n千の褒め言葉より\n一の悪口の方が記憶に残りやすいっていうこと",
-      "url": "https://x.com/lanlanutau/status/2095865069808804094"
+      "age_minutes": 71.8,
+      "text": "残暑お見舞い",
+      "url": "https://x.com/Onst_K/status/2095922610194522248"
     },
     {
-      "author": "a_studio_tbs",
-      "score": 43.4,
-      "likes": 929,
-      "likes_per_min": 28.170182620986722,
+      "author": "prprprprp____w",
+      "score": 28.0,
+      "likes": 2246,
+      "likes_per_min": 30.681305476725452,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.0,
-      "text": "今夜もご視聴ありがとうございました📺\n\n／\n📢A-Studio＋公式LINEができました！\n👇お友達登録はこちらからお願",
-      "url": "https://x.com/a_studio_tbs/status/2095882076033532274"
+      "age_minutes": 73.2,
+      "text": "オトギと先生の有給休暇当日",
+      "url": "https://x.com/prprprprp____w/status/2095922252042973532"
     },
     {
-      "author": "oricon",
-      "score": 43.3,
-      "likes": 1122,
-      "likes_per_min": 31.287065116103886,
+      "author": "H_KAGAMI2434",
+      "score": 27.9,
+      "likes": 1438,
+      "likes_per_min": 20.56120961838306,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 35.9,
-      "text": "King ＆ Prince髙橋海人、永瀬廉と設立した会社は“2人とも社長”　給料を振り込み合う「すごい緊張する」（写真 ",
-      "url": "https://x.com/oricon/status/2095881353716027401"
+      "age_minutes": 69.9,
+      "text": "配信ありがとうございました！\n耐えました！！！\n短時間であらゆる感情と教養を詰め込んでくれる素晴らしいゲームでしたね😊",
+      "url": "https://x.com/H_KAGAMI2434/status/2095923073514152060"
     },
     {
-      "author": "u_official0120",
-      "score": 42.3,
-      "likes": 1399,
-      "likes_per_min": 37.262152173535114,
+      "author": "Mariam_sato",
+      "score": 26.6,
+      "likes": 1008,
+      "likes_per_min": 12.304559392593921,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 37.5,
-      "text": "お久しぶりです。\n\n皆様には長い間、ご心配をおかけしました。\n一日も早く元気な姿をお見せしたく、少しずつ準備を進めてきま",
-      "url": "https://x.com/u_official0120/status/2095880929382379927"
+      "age_minutes": 81.9,
+      "text": "気まずい瞬間\n(1/5)",
+      "url": "https://x.com/Mariam_sato/status/2095920058522534063"
     },
     {
-      "author": "root_nico_2",
-      "score": 41.6,
-      "likes": 2757,
-      "likes_per_min": 64.24856342530909,
+      "author": "Lov_N_N",
+      "score": 26.5,
+      "likes": 2599,
+      "likes_per_min": 27.647704896342265,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 42.9,
-      "text": "おやすみください🤲🌙💤\n\n平日おつかれさまだよ💭",
-      "url": "https://x.com/root_nico_2/status/2095879578183188908"
+      "age_minutes": 94.0,
+      "text": "夏オル",
+      "url": "https://x.com/Lov_N_N/status/2095917017933189428"
     }
   ]
 }

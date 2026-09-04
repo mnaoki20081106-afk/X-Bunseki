@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-04T11:12:09.512217+00:00",
+  "updated_at": "2026-09-04T15:02:59.701227+00:00",
   "status": "success",
-  "started_at": "2026-09-04T11:09:17.784765+00:00",
-  "finished_at": "2026-09-04T11:12:09.511241+00:00",
-  "posts_scanned": 166,
-  "posts_with_history": 13,
-  "posts_flagged": 3,
-  "notified_count": 1,
-  "notified_last_24h": 3,
-  "minutes_since_last_notification": 1194,
+  "started_at": "2026-09-04T15:00:18.092331+00:00",
+  "finished_at": "2026-09-04T15:02:59.700085+00:00",
+  "posts_scanned": 153,
+  "posts_with_history": 0,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "notified_last_24h": 2,
+  "minutes_since_last_notification": 231,
   "reject_reasons": {
-    "初回観測かつ平均速度が低い": 19,
-    "いいねが少なすぎる": 63,
-    "古すぎる": 27
+    "いいねが少なすぎる": 80,
+    "初回観測かつ平均速度が低い": 20,
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1205,
-    "posts": 1011,
-    "oldest": "2026-09-03T11:43:36.800495+00:00"
+    "total": 1187,
+    "posts": 1006,
+    "oldest": "2026-09-03T15:17:54.420809+00:00"
   },
   "top5": [
     {
-      "author": "EL6_Tsubasa",
-      "score": 59.6,
-      "likes": 1041,
-      "likes_per_min": 67.85310828435188,
+      "author": "lanlanutau",
+      "score": 45.2,
+      "likes": 3952,
+      "likes_per_min": 39.2993477989824,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 15.3,
-      "text": "明日19:00歌ってみた投稿します！🪽\n\nみんなお待たせ！",
-      "url": "https://x.com/EL6_Tsubasa/status/2095828419485499462"
+      "age_minutes": 100.6,
+      "text": "ネットに限らずなんだけど\n誹謗中傷の1番タチの悪い性質って\n千の褒め言葉より\n一の悪口の方が記憶に残りやすいっていうこと",
+      "url": "https://x.com/lanlanutau/status/2095865069808804094"
     },
     {
-      "author": "USSS_info",
-      "score": 57.7,
-      "likes": 1671,
-      "likes_per_min": 137.62187794402945,
+      "author": "a_studio_tbs",
+      "score": 43.4,
+      "likes": 929,
+      "likes_per_min": 28.170182620986722,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.1,
-      "text": "浦島坂田船 SUMMER TOUR 2026～TA13OO～ライブ前動画\n\nhttps://\nyoutu.be/Vlie",
-      "url": "https://x.com/USSS_info/status/2095829223743406411"
+      "age_minutes": 33.0,
+      "text": "今夜もご視聴ありがとうございました📺\n\n／\n📢A-Studio＋公式LINEができました！\n👇お友達登録はこちらからお願",
+      "url": "https://x.com/a_studio_tbs/status/2095882076033532274"
     },
     {
-      "author": "CUTIE_STREET_",
-      "score": 55.0,
-      "likes": 834,
-      "likes_per_min": 68.68740048193929,
+      "author": "oricon",
+      "score": 43.3,
+      "likes": 1122,
+      "likes_per_min": 31.287065116103886,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.1,
-      "text": "【涙】日本武道館 LIVE映像\n\n一緒に幸せになる道を進もう\n\nきみを救う光になるから。\n\n私たちの、あなたの\n\n「Sh",
-      "url": "https://x.com/CUTIE_STREET_/status/2095829224355467586"
+      "age_minutes": 35.9,
+      "text": "King ＆ Prince髙橋海人、永瀬廉と設立した会社は“2人とも社長”　給料を振り込み合う「すごい緊張する」（写真 ",
+      "url": "https://x.com/oricon/status/2095881353716027401"
     },
     {
-      "author": "hakuchotokomori",
-      "score": 53.2,
-      "likes": 855,
-      "likes_per_min": 70.41693934299532,
+      "author": "u_official0120",
+      "score": 42.3,
+      "likes": 1399,
+      "likes_per_min": 37.262152173535114,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 12.1,
-      "text": "┆本編𝐶𝑙𝑖𝑝✂⑦\n⠀\n“犯罪者の息子”として──\nSNSで誹謗中傷に晒され怯える和真。\n⠀\n#映画白鳥とコウモリ 大ヒ",
-      "url": "https://x.com/hakuchotokomori/status/2095829225437790279"
+      "age_minutes": 37.5,
+      "text": "お久しぶりです。\n\n皆様には長い間、ご心配をおかけしました。\n一日も早く元気な姿をお見せしたく、少しずつ準備を進めてきま",
+      "url": "https://x.com/u_official0120/status/2095880929382379927"
     },
     {
-      "author": "genjibu_sdr",
-      "score": 50.4,
-      "likes": 2028,
-      "likes_per_min": 182.01457582835155,
+      "author": "root_nico_2",
+      "score": 41.6,
+      "likes": 2757,
+      "likes_per_min": 64.24856342530909,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.1,
-      "text": "〖原因は自分にある。 最新動画 公開  ＜#じぶTube＞〗\n\nEBiDAN THE LIVE 2026 15th An",
-      "url": "https://x.com/genjibu_sdr/status/2095829476068536403"
+      "age_minutes": 42.9,
+      "text": "おやすみください🤲🌙💤\n\n平日おつかれさまだよ💭",
+      "url": "https://x.com/root_nico_2/status/2095879578183188908"
     }
   ]
 }

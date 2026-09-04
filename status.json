@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-09-03T23:33:42.636592+00:00",
+  "updated_at": "2026-09-04T01:22:01.655259+00:00",
   "status": "success",
-  "started_at": "2026-09-03T23:30:48.557902+00:00",
-  "finished_at": "2026-09-03T23:33:42.635312+00:00",
-  "posts_scanned": 142,
-  "posts_with_history": 22,
+  "started_at": "2026-09-04T01:19:13.868400+00:00",
+  "finished_at": "2026-09-04T01:22:01.654222+00:00",
+  "posts_scanned": 149,
+  "posts_with_history": 39,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 2,
-  "minutes_since_last_notification": 496,
+  "minutes_since_last_notification": 604,
   "reject_reasons": {
     "いいねが少なすぎる": 60,
-    "初回観測かつ平均速度が低い": 8,
-    "古すぎる": 22
+    "初回観測かつ平均速度が低い": 12,
+    "古すぎる": 27
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -24,65 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1040,
-    "posts": 881,
+    "total": 1189,
+    "posts": 991,
     "oldest": "2026-09-03T01:27:52.062677+00:00"
   },
   "top5": [
     {
-      "author": "famima_now",
-      "score": 50.2,
-      "likes": 2246,
-      "likes_per_min": 66.69235170131101,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 33.7,
-      "text": "♥️抽選で5,000名様に当たる♥️\n\n濃厚カスタードシューの\n無料クーポンをプレゼント🎁\n\n1️⃣ \n@famima_",
-      "url": "https://x.com/famima_now/status/2095648039973044614"
-    },
-    {
       "author": "akiko_lawson",
-      "score": 49.0,
-      "likes": 8412,
-      "likes_per_min": 249.6609770925745,
+      "score": 44.1,
+      "likes": 20252,
+      "likes_per_min": 109.31,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 33.7,
+      "measured": true,
+      "age_minutes": 142.0,
       "text": "5日間限定の無料券チャレンジ(^^)\n今日は冷凍焼餃子無料の3日目です♪\n\n1）このアカウントをフォロー\n2）この投稿を",
       "url": "https://x.com/akiko_lawson/status/2095648033635439077"
     },
     {
-      "author": "precure_movie",
-      "score": 43.5,
-      "likes": 3073,
-      "likes_per_min": 32.792532783654366,
+      "author": "famima_now",
+      "score": 40.3,
+      "likes": 6436,
+      "likes_per_min": 38.68,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 93.7,
-      "text": "*✦#映画たんプリ メディア情報🔎\n\n📺9/18(金)よる11:17～\nABCテレビ「探偵！ナイトスクープ」\n※関西ロー",
-      "url": "https://x.com/precure_movie/status/2095632930769133945"
+      "measured": true,
+      "age_minutes": 142.0,
+      "text": "♥️抽選で5,000名様に当たる♥️\n\n濃厚カスタードシューの\n無料クーポンをプレゼント🎁\n\n1️⃣ \n@famima_",
+      "url": "https://x.com/famima_now/status/2095648039973044614"
     },
     {
-      "author": "McDonaldsJapan",
-      "score": 43.1,
-      "likes": 1112,
-      "likes_per_min": 32.986893429172206,
+      "author": "nauru_japan",
+      "score": 38.5,
+      "likes": 449,
+      "likes_per_min": 8.115327537777896,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 33.7,
-      "text": "さ、飲みマスカ！\n\n【#月見マックシェイクはシャインマスカット】をつけて本日9/4(金)中にリプライすると、抽選で3日合",
-      "url": "https://x.com/McDonaldsJapan/status/2095648029717962879"
+      "age_minutes": 55.3,
+      "text": "【お詫び】\nX（旧Twitter）担当者が「おむすび」のことを「おにぎり」と誤って投稿していたことについてお詫びと訂正を",
+      "url": "https://x.com/nauru_japan/status/2095669850907742562"
     },
     {
-      "author": "Taiga_Kaminaga",
-      "score": 41.6,
-      "likes": 2301,
-      "likes_per_min": 103.67810942169946,
+      "author": "Milan_Kestrel",
+      "score": 38.1,
+      "likes": 2242,
+      "likes_per_min": 116.40260893759289,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 22.2,
-      "text": "配信来てくれてありがとー！！！\n朝から楽しかったー！\n\n今日は配信3本立てで、夜に相方の龍と同期初コラボ配信が18:00",
-      "url": "https://x.com/Taiga_Kaminaga/status/2095650929416823011"
+      "age_minutes": 19.3,
+      "text": "◤◢◤ #ミラン新衣装  ◢◤◢\n◆◆9/9(水) 21:00~◆\n\nお待たせしました！！\n２年ぶりの新衣装お披露目です",
+      "url": "https://x.com/Milan_Kestrel/status/2095678924709904725"
+    },
+    {
+      "author": "kikiraravivi",
+      "score": 36.6,
+      "likes": 2680,
+      "likes_per_min": 51.118305099121415,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 52.4,
+      "text": "おはよう💘\n今日も1日がんばろうね〜！！",
+      "url": "https://x.com/kikiraravivi/status/2095670579269705773"
     }
   ]
 }

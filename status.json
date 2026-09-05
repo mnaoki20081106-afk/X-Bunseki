@@ -1,19 +1,15 @@
 {
-  "updated_at": "2026-09-04T22:38:47.715018+00:00",
+  "updated_at": "2026-09-05T00:25:59.545452+00:00",
   "status": "success",
-  "started_at": "2026-09-04T22:35:46.203144+00:00",
-  "finished_at": "2026-09-04T22:38:47.703180+00:00",
-  "posts_scanned": 133,
-  "posts_with_history": 42,
+  "started_at": "2026-09-05T00:22:16.512343+00:00",
+  "finished_at": "2026-09-05T00:25:59.544460+00:00",
+  "posts_scanned": 0,
+  "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 687,
-  "reject_reasons": {
-    "初回観測かつ平均速度が低い": 10,
-    "いいねが少なすぎる": 42,
-    "古すぎる": 45
-  },
+  "minutes_since_last_notification": 794,
+  "reject_reasons": {},
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
@@ -24,65 +20,9 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 1195,
-    "posts": 985,
-    "oldest": "2026-09-03T23:33:42.621504+00:00"
+    "total": 1053,
+    "posts": 882,
+    "oldest": "2026-09-04T01:22:01.644201+00:00"
   },
-  "top5": [
-    {
-      "author": "EL6_Tsubasa",
-      "score": 51.4,
-      "likes": 820,
-      "likes_per_min": 28.48128968911135,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 28.8,
-      "text": "おはよーさん🪽\n\n改めて本日19:00歌みた投稿します〜！\n楽しみにしててくれよな！\n\nさぁなんの曲でしょうかッ！！\nわ",
-      "url": "https://x.com/EL6_Tsubasa/status/2095997835082645969"
-    },
-    {
-      "author": "redbear2014",
-      "score": 37.0,
-      "likes": 1583,
-      "likes_per_min": 16.023754258446814,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 98.8,
-      "text": "「しんぶん赤旗」のスクープです。１人１０００円で「飲み放題」が提供された沖縄県知事選の古謝玄太候補の決起集会で、今度は「",
-      "url": "https://x.com/redbear2014/status/2095980218632818971"
-    },
-    {
-      "author": "0927_yuina",
-      "score": 34.3,
-      "likes": 886,
-      "likes_per_min": 29.57523381581229,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 30.0,
-      "text": "おはようございます☔️🔥\n\n“ Bu ” っちぎれ！！！\n“ Bu ”勇伝を作ろう！！！\n“ Bu ” リッジでもしちゃ",
-      "url": "https://x.com/0927_yuina/status/2095997541850726462"
-    },
-    {
-      "author": "wanko_notcat",
-      "score": 33.5,
-      "likes": 896,
-      "likes_per_min": 19.033795106514944,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 47.1,
-      "text": "おはないっฅ•ﻌ•´ฅ\n\nすたぽらくん東京FINAL頑張れ〜〜！！！！🔥🔥🔥🔥🔥\n\nいれいすメンバーも全力で応援している",
-      "url": "https://x.com/wanko_notcat/status/2095993232824074314"
-    },
-    {
-      "author": "biriyanijp",
-      "score": 32.6,
-      "likes": 778,
-      "likes_per_min": 10.654007565747646,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.0,
-      "text": "なんか、セブンのビリヤニの賛否両論でビリヤニ界隈が盛り上がっているけど、バスマティライスを使ったビリヤニがコンビニで食べ",
-      "url": "https://x.com/biriyanijp/status/2095986703630483944"
-    }
-  ]
+  "top5": []
 }

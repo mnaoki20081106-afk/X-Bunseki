@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-05T23:28:05.946532+00:00",
+  "updated_at": "2026-09-06T01:21:55.397765+00:00",
   "status": "success",
-  "started_at": "2026-09-05T23:24:23.494743+00:00",
-  "finished_at": "2026-09-05T23:28:05.945292+00:00",
+  "started_at": "2026-09-06T01:18:11.383996+00:00",
+  "finished_at": "2026-09-06T01:21:55.396501+00:00",
   "posts_scanned": 0,
   "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 2176,
+  "minutes_since_last_notification": 2290,
   "reject_reasons": {},
   "config": {
     "NOTIFY_SCORE": 55,

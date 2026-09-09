@@ -1,15 +1,19 @@
 {
-  "updated_at": "2026-09-09T21:20:20.328671+00:00",
+  "updated_at": "2026-09-09T23:23:27.188781+00:00",
   "status": "success",
-  "started_at": "2026-09-09T21:16:37.504622+00:00",
-  "finished_at": "2026-09-09T21:20:20.327733+00:00",
-  "posts_scanned": 0,
+  "started_at": "2026-09-09T23:20:33.560394+00:00",
+  "finished_at": "2026-09-09T23:23:27.187726+00:00",
+  "posts_scanned": 157,
   "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 7808,
-  "reject_reasons": {},
+  "minutes_since_last_notification": 7931,
+  "reject_reasons": {
+    "いいねが少なすぎる": 62,
+    "初回観測かつ平均速度が低い": 18,
+    "古すぎる": 31
+  },
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
@@ -20,9 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 0,
-    "posts": 0,
-    "oldest": null
+    "total": 157,
+    "posts": 157,
+    "oldest": "2026-09-09T23:23:27.179795+00:00"
   },
-  "top5": []
+  "top5": [
+    {
+      "author": "famima_now",
+      "score": 49.7,
+      "likes": 1702,
+      "likes_per_min": 72.67397408030622,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.4,
+      "text": "あと残り7日\n\n濃厚カスタードシューの\n無料クーポンをプレゼント\n\n \n@famima_now\n をフォロー\n この投稿",
+      "url": "https://x.com/famima_now/status/2097822366403301484"
+    },
+    {
+      "author": "akiko_lawson",
+      "score": 49.5,
+      "likes": 5338,
+      "likes_per_min": 227.7660375570963,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.4,
+      "text": "5日間限定の無料券チャレンジ(^^)\n今日はマチカフェコーヒー無料の2日目です♪\n\n1）このアカウントをフォロー\n2）こ",
+      "url": "https://x.com/akiko_lawson/status/2097822363190468910"
+    },
+    {
+      "author": "EL6_Tsubasa",
+      "score": 47.2,
+      "likes": 1874,
+      "likes_per_min": 25.170242784015816,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 74.5,
+      "text": "おはよーさん\n\n昨日投稿された『モンストロ』歌みたかなり好評みたいでうれしいどすえ〜\n\n俺らの歌みたみんな何が好き?\nも",
+      "url": "https://x.com/EL6_Tsubasa/status/2097809522467176496"
+    },
+    {
+      "author": "EL6_HRK",
+      "score": 46.1,
+      "likes": 1788,
+      "likes_per_min": 22.50387118029812,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 79.5,
+      "text": "ｵﾊﾖ\n最近ホラー耐性付けるためにYouTubeのホラーチャンネル見てるんだけど\n今俺が見てるチャンネルが怖すぎてえぐい",
+      "url": "https://x.com/EL6_HRK/status/2097808264486637878"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "score": 40.7,
+      "likes": 1187,
+      "likes_per_min": 8.961669653530217,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 132.5,
+      "text": "【折りたためる「iPhone Duo」発表】",
+      "url": "https://x.com/YahooNewsTopics/status/2097794926386020539"
+    }
+  ]
 }

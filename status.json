@@ -1,15 +1,19 @@
 {
-  "updated_at": "2026-09-12T13:09:08.802641+00:00",
+  "updated_at": "2026-09-12T16:18:06.794657+00:00",
   "status": "success",
-  "started_at": "2026-09-12T13:05:26.017706+00:00",
-  "finished_at": "2026-09-12T13:09:08.801464+00:00",
-  "posts_scanned": 0,
+  "started_at": "2026-09-12T16:15:00.608667+00:00",
+  "finished_at": "2026-09-12T16:18:06.793462+00:00",
+  "posts_scanned": 180,
   "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 11637,
-  "reject_reasons": {},
+  "minutes_since_last_notification": 11826,
+  "reject_reasons": {
+    "いいねが少なすぎる": 74,
+    "初回観測かつ平均速度が低い": 12,
+    "古すぎる": 38
+  },
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
@@ -20,9 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 0,
-    "posts": 0,
-    "oldest": null
+    "total": 180,
+    "posts": 180,
+    "oldest": "2026-09-12T16:18:06.784138+00:00"
   },
-  "top5": []
+  "top5": [
+    {
+      "author": "LaplusDarknesss",
+      "score": 53.8,
+      "likes": 1550,
+      "likes_per_min": 89.70044640092671,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 17.3,
+      "text": "ごめん、博衣こより1st LIVE同時視聴配信には参加出来ません。\n\nいま、ホロライブofficialShopにいます。",
+      "url": "https://x.com/LaplusDarknesss/status/2098804035839230061"
+    },
+    {
+      "author": "Black_Thunder_",
+      "score": 43.9,
+      "likes": 1101,
+      "likes_per_min": 14.100969874825854,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 78.1,
+      "text": "／\n本日月日 \nがついたらブラック「サン」ダーでご褒美\n ＼\n\nがつく日がちょっと楽しみになる！ブラックサンダー特別仕様",
+      "url": "https://x.com/Black_Thunder_/status/2098788734732825005"
+    },
+    {
+      "author": "achi_kochiA",
+      "score": 43.2,
+      "likes": 909,
+      "likes_per_min": 50.23097878410893,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 18.1,
+      "text": "⋱放送終わりの #あっちこっちAぇ⋰\n\n#末澤誠也 アイドル風ゴールパフォ考案 \n#正門良規 『サッカーはみじん切り』\n",
+      "url": "https://x.com/achi_kochiA/status/2098803831555469696"
+    },
+    {
+      "author": "KFC_jp",
+      "score": 42.6,
+      "likes": 2048,
+      "likes_per_min": 26.22399930963273,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 78.1,
+      "text": "食欲の秋は、にんにく醤油チキン‼︎\n超にんにく醤油マヨも登場です\n\n抽選で100名さまにデジタルKFCカードをプレゼント",
+      "url": "https://x.com/KFC_jp/status/2098788729187963384"
+    },
+    {
+      "author": "hakuikoyori",
+      "score": 42.3,
+      "likes": 1117,
+      "likes_per_min": 67.6433921674269,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.5,
+      "text": "ライブの日付、12/22。\n\n12を22で割ると・・・\n\n0.54545454545454545454545454545",
+      "url": "https://x.com/hakuikoyori/status/2098804226881405260"
+    }
+  ]
 }

@@ -1,15 +1,19 @@
 {
-  "updated_at": "2026-09-13T00:56:43.803709+00:00",
+  "updated_at": "2026-09-13T06:02:34.933077+00:00",
   "status": "success",
-  "started_at": "2026-09-13T00:53:01.092745+00:00",
-  "finished_at": "2026-09-13T00:56:43.802620+00:00",
-  "posts_scanned": 0,
-  "posts_with_history": 0,
+  "started_at": "2026-09-13T05:59:47.962759+00:00",
+  "finished_at": "2026-09-13T06:02:34.932002+00:00",
+  "posts_scanned": 147,
+  "posts_with_history": 9,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 12345,
-  "reject_reasons": {},
+  "minutes_since_last_notification": 12650,
+  "reject_reasons": {
+    "いいねが少なすぎる": 66,
+    "初回観測かつ平均速度が低い": 16,
+    "古すぎる": 14
+  },
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
@@ -20,9 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 180,
-    "posts": 180,
+    "total": 327,
+    "posts": 318,
     "oldest": "2026-09-12T16:18:06.784138+00:00"
   },
-  "top5": []
+  "top5": [
+    {
+      "author": "sakuramiko35",
+      "score": 54.8,
+      "likes": 1196,
+      "likes_per_min": 76.509214871233,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.6,
+      "text": "/／\n\nshort動画投稿したにぇ　\n\nビジネス会議すいちゃんの言葉がわがんないみこ………\n\nhttps://\nyout",
+      "url": "https://x.com/sakuramiko35/status/2099011933022425121"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 43.6,
+      "likes": 937,
+      "likes_per_min": 22.606219341599232,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 41.4,
+      "text": "「かつて“あいのり”にも出演した人気AV女優・倉木華さんがホストのDV彼氏に入れあげた末に自ら命を絶ってしまった件をまと",
+      "url": "https://x.com/tkzwgrs/status/2099005436871721285"
+    },
+    {
+      "author": "Hoshuto_hyakuta",
+      "score": 41.8,
+      "likes": 1470,
+      "likes_per_min": 34.97326714238867,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 42.0,
+      "text": "来週、記者会見で詳しく発表します！\n日本保守党は総力をあげます。",
+      "url": "https://x.com/Hoshuto_hyakuta/status/2099005290188574810"
+    },
+    {
+      "author": "livedoornews",
+      "score": 39.6,
+      "likes": 2189,
+      "likes_per_min": 17.85741906414717,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 122.6,
+      "text": "【報告】HIKAKIN、新商品「ONICHA コーン茶」を発表\n\nhttps://\nnews.livedoor.com/",
+      "url": "https://x.com/livedoornews/status/2098985020597883122"
+    },
+    {
+      "author": "sncrmpg_kk",
+      "score": 37.2,
+      "likes": 2731,
+      "likes_per_min": 100.84150053637174,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 27.1,
+      "text": "昨日3:45出発で撮影終わりは深夜だったのですがさすがにおそようございマイス。\nさすがにマイス見逃した。\nさすがに不覚。",
+      "url": "https://x.com/sncrmpg_kk/status/2099009054639260130"
+    }
+  ]
 }

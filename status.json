@@ -1,15 +1,19 @@
 {
-  "updated_at": "2026-09-18T21:41:18.757518+00:00",
+  "updated_at": "2026-09-18T23:41:47.283876+00:00",
   "status": "success",
-  "started_at": "2026-09-18T21:37:35.000179+00:00",
-  "finished_at": "2026-09-18T21:41:18.728593+00:00",
-  "posts_scanned": 0,
+  "started_at": "2026-09-18T23:38:51.129448+00:00",
+  "finished_at": "2026-09-18T23:41:47.282650+00:00",
+  "posts_scanned": 147,
   "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 0,
-  "minutes_since_last_notification": 20789,
-  "reject_reasons": {},
+  "minutes_since_last_notification": 20910,
+  "reject_reasons": {
+    "初回観測かつ平均速度が低い": 12,
+    "いいねが少なすぎる": 58,
+    "古すぎる": 23
+  },
   "config": {
     "NOTIFY_SCORE": 55,
     "MIN_LIKES_FLOOR": 150,
@@ -20,9 +24,65 @@
     "NOTIFY_MIN_INTERVAL_MINUTES": 45
   },
   "observation_db": {
-    "total": 0,
-    "posts": 0,
-    "oldest": null
+    "total": 147,
+    "posts": 147,
+    "oldest": "2026-09-18T23:41:47.269055+00:00"
   },
-  "top5": []
+  "top5": [
+    {
+      "author": "Sankei_news",
+      "score": 48.1,
+      "likes": 2070,
+      "likes_per_min": 29.583620862050733,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 70.0,
+      "text": "＜独自＞古謝氏の子供通う学校への爆破予告、辺野古沖事故遺族のアドレス悪用　遺族も中傷\n\nhttps://\nsankei.",
+      "url": "https://x.com/Sankei_news/status/2101076757680198046"
+    },
+    {
+      "author": "toru_2434",
+      "score": 47.2,
+      "likes": 270,
+      "likes_per_min": 14.77739422280783,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 18.3,
+      "text": "ぽはよう～～！！！朝練\n１０：００～～～～！！！！！！\n\n#こしみず起きました\n\n【#にじ遊戯王祭2026 】対戦練習！",
+      "url": "https://x.com/toru_2434/status/2101089767333204320"
+    },
+    {
+      "author": "jr_official_X",
+      "score": 47.2,
+      "likes": 3934,
+      "likes_per_min": 59.25785999911573,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 66.4,
+      "text": "【 Drama 】\n\n『 #妻を引退します 』に\n#本髙克樹 の出演が決定\n\n今最も人気の俳優・泉舞香の元付き人兼マネー",
+      "url": "https://x.com/jr_official_X/status/2101077656330555516"
+    },
+    {
+      "author": "akkkkiysab",
+      "score": 43.6,
+      "likes": 2284,
+      "likes_per_min": 21.30176723970392,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 107.2,
+      "text": "おはようおはよう( ͡o ᵕ ͡o )\n公式生放送で会えるのたのしみ！",
+      "url": "https://x.com/akkkkiysab/status/2101067381560975869"
+    },
+    {
+      "author": "tokaitv_dodra",
+      "score": 42.5,
+      "likes": 1232,
+      "likes_per_min": 30.205097330420006,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 40.8,
+      "text": "／\n『ドラマが飛んだ！』　\nいよいよ今夜24時05分～放送\n＼\n\n主演・ #髙木雄也 さんが\n東海テレビキャラクター イ",
+      "url": "https://x.com/tokaitv_dodra/status/2101084099813552412"
+    }
+  ]
 }

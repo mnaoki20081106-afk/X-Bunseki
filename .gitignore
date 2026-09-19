@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 data/monitor.db
 storage_state.json
+_playwright_collector_impl.py

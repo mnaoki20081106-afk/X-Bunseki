@@ -2,37 +2,17 @@ name: SNS Buzz Monitor
 
 on:
   schedule:
-    # ★v4で毎時 → 15分おきに変更した。
-    #
-    # 理由1(必須): v4は「前回観測との差分」で伸び率を計算する。
-    #   毎時実行だと、投稿を2回観測できるまで最短でも1時間かかり、
-    #   その頃にはバズは終わっている。15分間隔なら、投稿から30分の
-    #   時点で既に2〜3回観測できており、加速中かどうかを判断できる。
-    #
-    # 理由2: このリポジトリはPublicなので、GitHub Actionsの実行時間は
-    #   無制限で無料。毎時に抑える理由がそもそも無かった
-    #   (Privateリポジトリの2,000分/月という制約を前提にしていた)。
-    #
-    # 頻度を下げたい場合(Xアカウントへの負荷を減らしたい等)は
-    # "*/20" や "*/30" に変えれば良い。1時間まで戻すと伸び率の精度が
-    # 大きく落ちる点にだけ注意。
-    #
-    # 毎時0分ちょうどを避けるため7分ずらしている(世界中のワークフローが
-    # 集中して遅延・スキップが起きやすいとGitHubが公式に案内しているため)。
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       test_notification:
-        description: "trueにすると、実際のX検索をせずテスト通知だけ送る(「通知確認」機能用)"
+        description: "trueにすると、実際のX検索をせずテスト通知だけ送る"
         required: false
         default: "false"
 
 permissions:
-  contents: write  # status.json と分析用ログをcommit&pushするために必要
+  contents: write
 
-# 前の実行が終わる前に次が始まらないようにする。
-# 15分間隔にしたことで、実行が長引いたときに2つのジョブが同時に走り
-# SQLiteキャッシュを奪い合う可能性が出てきたため。
 concurrency:
   group: sns-buzz-monitor
   cancel-in-progress: false
@@ -55,7 +35,7 @@ jobs:
         if: github.event.inputs.test_notification != 'true'
         run: playwright install --with-deps chromium
 
-      - name: Restore DB (伸び率の計算に使う観測履歴)
+      - name: Restore DB
         uses: actions/cache@v4
         with:
           path: data/monitor.db
@@ -78,29 +58,21 @@ jobs:
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
           SCHOOL_STATUS_URL: ${{ secrets.SCHOOL_STATUS_URL }}
           SCHOOL_STATUS_SECRET: ${{ secrets.SCHOOL_STATUS_SECRET }}
-
-          # ── 感度の調整ツマミ ─────────────────────────
-          # ここは Settings → Secrets and variables → Actions → Variables
-          # で設定できる。コードを書き換えずに閾値を変えられるので、
-          # 「通知が多い/少ない」の調整はまずここで行う。
-          # 空(未設定)なら detector.py の既定値が使われる。
           NOTIFY_SCORE: ${{ vars.NOTIFY_SCORE }}
           MIN_LIKES_FLOOR: ${{ vars.MIN_LIKES_FLOOR }}
           MAX_AGE_MINUTES: ${{ vars.MAX_AGE_MINUTES }}
           NOTIFY_MAX_PER_RUN: ${{ vars.NOTIFY_MAX_PER_RUN }}
           NOTIFY_MAX_PER_DAY: ${{ vars.NOTIFY_MAX_PER_DAY }}
-          # 「うるさい」と感じたら、まずこれを大きくする(分)
           NOTIFY_MIN_INTERVAL_MINUTES: ${{ vars.NOTIFY_MIN_INTERVAL_MINUTES }}
           PUSHOVER_PRIORITY: ${{ vars.PUSHOVER_PRIORITY }}
           PUSHOVER_URGENT_PRIORITY: ${{ vars.PUSHOVER_URGENT_PRIORITY }}
           SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
           COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
           BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
-          SEARCH_WITHIN_TIME: ${{ vars.SEARCH_WITHIN_TIME }}
+          # 2026-09: within_time が0件を返す事例が増えたため強制オフ
+          SEARCH_WITHIN_TIME: "off"
           RELEVANCE_FLOOR: ${{ vars.RELEVANCE_FLOOR }}
-          # LINEの無料枠は月200通。既定ではシステム通知のみLINEに送り、
-          # 急上昇通知はPushoverに任せる(alerts_only)。
-          LINE_MODE: ${{ vars.LINE_MODE }}
+          LINE_MODE: "off"
           MAX_DETAIL_FETCH: ${{ vars.MAX_DETAIL_FETCH }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
         run: python main.py
@@ -115,16 +87,12 @@ jobs:
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          # data/notify_state.json は通知の重複防止に必須。
-          # これがコミットされないと、次の実行で同じ投稿がまた鳴る。
           git add status.json data/log data/notify_state.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0
           fi
           git commit -m "Update status.json"
-          # 15分間隔になったことで、他の実行のpushと衝突しうる。
-          # rebaseしてから数回リトライする。
           for i in 1 2 3 4; do
             if git push; then
               echo "push成功"

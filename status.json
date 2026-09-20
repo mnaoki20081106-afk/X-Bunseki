@@ -1,33 +1,9 @@
 {
-  "updated_at": "2026-09-20T23:28:44.319426+00:00",
-  "status": "success",
-  "started_at": "2026-09-20T23:26:13.481244+00:00",
-  "finished_at": "2026-09-20T23:28:44.318343+00:00",
+  "updated_at": "2026-09-20T23:34:30.569380+00:00",
+  "status": "error",
+  "started_at": "2026-09-20T23:34:11.641709+00:00",
   "posts_scanned": 0,
-  "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 0,
-  "minutes_since_last_notification": 23777,
-  "reject_reasons": {},
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 100,
-    "MAX_AGE_MINUTES": 240,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
-    "RELEVANCE_FLOOR": 0.9,
-    "EARLY_LPM_AT_30": 18,
-    "EARLY_BONUS_AT_30": 18,
-    "EARLY_LPM_AT_15": 18,
-    "EARLY_BURST_BONUS": 18
-  },
-  "observation_db": {
-    "total": 0,
-    "posts": 0,
-    "oldest": null
-  },
-  "top5": []
+  "error_message": "XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しています。Cookieは読み込まれていますが、検索DOMまで到達できません。"
 }

@@ -1,6 +1,6 @@
-"""detector.py (v4)
-実測伸び率 + X推薦寄り配点（返信・保存・加速を厚く）+ 初動爆発。
-keywords は収集参考のみ。除外は keywords_ng のみ。
+"""detector.py
+目的: 数百万imp級になりうる投稿を、目安4時間以内（可能なら数十分）で拾う。
+実装の綺麗さより再現性のある初速判定を優先。
 """
 
 import math
@@ -22,32 +22,27 @@ def _envf(name: str, default: float) -> float:
         return default
 
 
-# 4時間ウィンドウに合わせる
-MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 240)
-# 速度ゲートがあるのでいいね床は100で早期に拾う
+MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 240)  # 目安4時間
 MIN_LIKES_FLOOR = _envf("MIN_LIKES_FLOOR", 100)
 FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 10)
 NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)
 GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 78)
 
-# 配点合計100: Xは「会話・継続加速」を配信に強く使う
+# X寄り: 会話・加速・保存を厚く
 POINTS_GROWTH = _envf("POINTS_GROWTH", 36)
 POINTS_ACCEL = _envf("POINTS_ACCEL", 18)
 POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 22)
 POINTS_SAVE = _envf("POINTS_SAVE", 14)
 POINTS_SPREAD = _envf("POINTS_SPREAD", 10)
+POINTS_QUOTE = _envf("POINTS_QUOTE", 8)
 
 RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.90)
-
-# 満点基準: 80/分は実在の強い初速。120は過大だった
 GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 80)
 ACCEL_FULL = _envf("ACCEL_FULL", 1.8)
 DISCUSSION_FULL_RATIO = _envf("DISCUSSION_FULL_RATIO", 0.08)
 SAVE_FULL_RATIO = _envf("SAVE_FULL_RATIO", 0.12)
 SPREAD_FULL_RATIO = _envf("SPREAD_FULL_RATIO", 0.20)
-# 引用は拡散の質。いいね比3%で満点寄与（spreadに上乗せ）
 QUOTE_FULL_RATIO = _envf("QUOTE_FULL_RATIO", 0.05)
-POINTS_QUOTE = _envf("POINTS_QUOTE", 8)  # 拡散10のうち内訳ではなく raw に別枠 → 調整で growth から削らない
 
 UNMEASURED_CONFIDENCE = _envf("UNMEASURED_CONFIDENCE", 0.78)
 FRESHNESS_FULL_MINUTES = _envf("FRESHNESS_FULL_MINUTES", 90)
@@ -118,25 +113,21 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
         accel_points = POINTS_ACCEL * max(min(accel / ACCEL_FULL, 1.0), 0.0)
     breakdown["加速度"] = round(accel_points, 1)
 
-    # 返信 = For You の会話シグナル
     discussion_points = _ratio_points(
         post.get("replies") or 0, likes, DISCUSSION_FULL_RATIO, POINTS_DISCUSSION
     )
     breakdown["議論量"] = round(discussion_points, 1)
 
-    # ブックマーク = 質・再訪
     save_points = _ratio_points(
         post.get("bookmarks") or 0, likes, SAVE_FULL_RATIO, POINTS_SAVE
     )
     breakdown["保存率"] = round(save_points, 1)
 
-    # RT
     spread_points = _ratio_points(
         post.get("retweets") or 0, likes, SPREAD_FULL_RATIO, POINTS_SPREAD
     )
     breakdown["拡散率"] = round(spread_points, 1)
 
-    # 引用 = クラスタ横断（取れていれば加点、0なら0）
     quote_points = _ratio_points(
         post.get("quotes") or 0, likes, QUOTE_FULL_RATIO, POINTS_QUOTE
     )
@@ -147,7 +138,7 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
 
     early = early_signal.evaluate_early_burst(post, g)
     if early.get("hit"):
-        breakdown["初動爆発"] = round(early["bonus"], 1)
+        breakdown["初動"] = round(early["bonus"], 1)
         raw_total += early["bonus"]
 
     relevance = max(min(relevance, 1.0), 0.0)
@@ -160,9 +151,7 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
         over = (age - FRESHNESS_FULL_MINUTES) / max(MAX_AGE_MINUTES - FRESHNESS_FULL_MINUTES, 1)
         freshness = max(1.0 - over * (1.0 - FRESHNESS_MIN_MULTIPLIER), FRESHNESS_MIN_MULTIPLIER)
 
-    total = raw_total * freshness * relevance_multiplier
-    # 引用枠で100超えることがあるのでキャップ
-    total = min(total, 100.0)
+    total = min(raw_total * freshness * relevance_multiplier, 100.0)
 
     return {
         "buzz_score": round(total, 1),
@@ -236,10 +225,8 @@ def config_summary() -> dict:
         "NOTIFY_MAX_PER_DAY": NOTIFY_MAX_PER_DAY,
         "NOTIFY_MIN_INTERVAL_MINUTES": NOTIFY_MIN_INTERVAL_MINUTES,
         "RELEVANCE_FLOOR": RELEVANCE_FLOOR,
-        "POINTS_DISCUSSION": POINTS_DISCUSSION,
-        "POINTS_SAVE": POINTS_SAVE,
-        "GROWTH_FULL_LIKES_PER_MIN": GROWTH_FULL_LIKES_PER_MIN,
+        "EARLY_LPM_AT_30": early_signal.EARLY_LPM_AT_30,
+        "EARLY_BONUS_AT_30": early_signal.EARLY_BONUS_AT_30,
         "EARLY_LPM_AT_15": early_signal.EARLY_LPM_AT_15,
-        "EARLY_LPM_AT_60": early_signal.EARLY_LPM_AT_60,
         "EARLY_BURST_BONUS": early_signal.EARLY_BURST_BONUS,
     }

@@ -1,8 +1,8 @@
-"""playwright_collector.py - compressed v2 loader"""
+"""playwright_collector.py - full collector with session diagnostics"""
 import zlib, base64
 from pathlib import Path
 _DIR = Path(__file__).parent
-_b64 = (_DIR / "collector_chunk_0.txt").read_text() + (_DIR / "collector_chunk_1.txt").read_text()
+_b64 = "".join((_DIR / f"collector_chunk_{i}.txt").read_text() for i in range(3))
 _CODE = zlib.decompress(base64.b64decode(_b64)).decode("utf-8")
 _ns = {"__name__": "playwright_collector"}
 exec(compile(_CODE, "playwright_collector_impl.py", "exec"), _ns)

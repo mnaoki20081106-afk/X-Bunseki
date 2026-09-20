@@ -1,28 +1,9 @@
 {
-  "updated_at": "2026-09-20T00:20:50.588650+00:00",
-  "status": "success",
-  "started_at": "2026-09-20T00:14:51.580764+00:00",
-  "finished_at": "2026-09-20T00:20:50.587614+00:00",
+  "updated_at": "2026-09-20T12:17:31.390196+00:00",
+  "status": "session_expired",
+  "started_at": "2026-09-20T12:17:14.243447+00:00",
   "posts_scanned": 0,
-  "posts_with_history": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "notified_last_24h": 0,
-  "minutes_since_last_notification": 22389,
-  "reject_reasons": {},
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 150,
-    "MAX_AGE_MINUTES": 180,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 8,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45
-  },
-  "observation_db": {
-    "total": 0,
-    "posts": 0,
-    "oldest": null
-  },
-  "top5": []
+  "error_message": "ホームが『しばらくお待ちください』のまま。"
 }

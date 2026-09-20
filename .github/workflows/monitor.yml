@@ -69,7 +69,8 @@ jobs:
           PUSHOVER_URGENT_PRIORITY: ${{ vars.PUSHOVER_URGENT_PRIORITY }}
           SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
           COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
-          BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
+          # キーワード無し・数値主導の広域検索（文なし画像バズ用）
+          BROAD_MIN_FAVES: "250"
           SEARCH_WITHIN_TIME: "off"
           RELEVANCE_FLOOR: ${{ vars.RELEVANCE_FLOOR }}
           LINE_MODE: "off"

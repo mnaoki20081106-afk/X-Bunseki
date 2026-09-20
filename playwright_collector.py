@@ -1,4 +1,4 @@
-"""X collector using twscrape with browser-exported auth_token + ct0."""
+"""X collector using Playwright with browser-exported storage state."""
 from __future__ import annotations
 import asyncio, json, os, tempfile
 from datetime import datetime, timezone
@@ -63,49 +63,79 @@ def _normalize(t):
     }
 
 async def _collect():
-    from twscrape import API, gather
-    cookie=_cookie_header()
-    db=os.path.join(tempfile.gettempdir(),"x_bunseki_twscrape.db")
-    try: os.remove(db)
-    except FileNotFoundError: pass
-    api=API(db, raise_when_no_account=True, wait_timeout=10, wait_interval=1)
-    await api.pool.add_account_cookies("x_bunseki", cookie)
-    print("収集方式: twscrape / X SearchTimeline（Chromium不使用）")
-    print("セッションCookie: auth_token=あり / ct0=あり")
-
+    from playwright.async_api import async_playwright
+    state=_session_path()
     queries=build_queries()
-    # Cheap canary first. If transport/auth is broken, don't hammer X 20 times.
-    probe="lang:ja -filter:retweets"
-    print(f"  [疎通確認] SearchTimeline: {probe}")
-    try:
-        probe_rows=await gather(api.search(probe, limit=1))
-        print(f"  [疎通確認] 成功 ({len(probe_rows)}件)")
-    except Exception as e:
-        msg=str(e)
-        if any(x in msg.lower() for x in ("401","403","auth","cookie","inactive")):
-            raise SessionExpiredError(f"X SearchTimeline認証/アクセス失敗: {msg}") from e
-        raise RuntimeError(f"X SearchTimeline疎通確認失敗: {msg}") from e
-
     all_posts={}
-    failed=0
-    print(f"検索クエリ数: {len(queries)}")
-    for query,product,limit in queries:
-        print(f"  検索[{product}]: {query[:90]}{'...' if len(query)>90 else ''}")
+
+    async with async_playwright() as pw:
+        browser=await pw.chromium.launch(
+            headless=True,
+            args=["--disable-dev-shm-usage", "--no-sandbox"],
+        )
+        context=await browser.new_context(
+            storage_state=state,
+            locale="ja-JP",
+            timezone_id="Asia/Tokyo",
+            viewport={"width": 1280, "height": 800},
+        )
+        page=await context.new_page()
+        print("収集方式: Playwright Chromium / 通常ブラウザ互換設定")
+        print("セッションCookie: auth_token=あり / ct0=あり")
+
         try:
-            kv={"product":product}
-            rows=await gather(api.search(query,limit=limit,kv=kv))
-            for t in rows:
-                p=_normalize(t)
-                if p["post_id"]: all_posts[p["post_id"]]=p
-            print(f"  → {len(rows)}件(累計{len(all_posts)}件)")
-        except Exception as e:
-            failed+=1
-            print(f"  [ERROR] {type(e).__name__}: {str(e)[:350]}")
-    if queries and failed==len(queries):
-        raise RuntimeError(f"X SearchTimeline が全{len(queries)}クエリで失敗しました")
+            await page.goto("https://x.com/home", wait_until="domcontentloaded", timeout=30000)
+            await page.wait_for_timeout(5000)
+            title=await page.title()
+            url=page.url
+            print(f"[セッション確認] URL={url} title={title!r}")
+            if "/login" in url or "/i/flow/login" in url:
+                raise SessionExpiredError("Xログイン画面へ転送されました")
+            if "しばらくお待ちください" in title:
+                raise RuntimeError("XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しました")
+            # Home timeline or account navigation is enough to prove the browser session reached X.
+            home_ok=await page.locator('a[href="/home"], [data-testid="primaryColumn"]').count()
+            if not home_ok:
+                body=(await page.locator("body").inner_text())[:300]
+                raise RuntimeError(f"X Homeの通常DOMを確認できません: {body!r}")
+            print("[疎通確認] X Home 通常DOM到達: 成功")
+
+            print(f"検索クエリ数: {len(queries)}")
+            for query,product,limit in queries:
+                from urllib.parse import quote
+                search_url=f"https://x.com/search?q={quote(query)}&src=typed_query&f={'live' if product == 'Latest' else 'top'}"
+                print(f"  検索[{product}]: {query[:90]}{'...' if len(query)>90 else ''}")
+                try:
+                    await page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
+                    await page.wait_for_timeout(3500)
+                    articles=page.locator('article[data-testid="tweet"]')
+                    n=min(await articles.count(), limit)
+                    added=0
+                    for i in range(n):
+                        a=articles.nth(i)
+                        text=(await a.inner_text()).strip()
+                        links=await a.locator('a[href*="/status/"]').evaluate_all("(els)=>els.map(e=>e.getAttribute('href'))")
+                        href=next((x for x in links if x and "/status/" in x),None)
+                        if not href: continue
+                        parts=href.split("/status/")
+                        handle=parts[0].strip("/").split("/")[-1]
+                        tid=parts[1].split("?")[0].split("/")[0]
+                        if not tid or tid in all_posts: continue
+                        all_posts[tid]={
+                          "post_id":tid,"author_handle":handle,"url":"https://x.com"+href.split("?")[0],
+                          "posted_at":datetime.now(timezone.utc).isoformat(),"text_snippet":text[:280],
+                          "likes":0,"retweets":0,"replies":0,"quotes":0,"bookmarks":0,"impressions":0,
+                        }
+                        added+=1
+                    print(f"  → DOM {n}件 / 新規{added}件 (累計{len(all_posts)}件)")
+                except Exception as e:
+                    print(f"  [ERROR] {type(e).__name__}: {str(e)[:350]}")
+        finally:
+            await context.close()
+            await browser.close()
+
     out=list(all_posts.values())
-    out.sort(key=lambda p:(p["likes"],p["retweets"]),reverse=True)
-    print(f"twscrape収集完了: {len(out)}件 / 失敗クエリ {failed}/{len(queries)}")
+    print(f"Playwright収集完了: {len(out)}件")
     return out
 
 def fetch_posts():

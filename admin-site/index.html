@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Filter</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101316;--surface:#171b1f;--border:#2a3038;--text:#e7eaed;--muted:#8b939c;--faint:#565e67;--accent:#e8a33d;--danger:#d9584a;--ok:#5fb587;--radius:3px;--mono:'IBM Plex Mono',monospace;--sans:Inter,system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px 80px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--faint)}.dot.live{background:var(--ok);box-shadow:0 0 12px rgba(95,181,135,.5)}.dot.err{background:var(--danger)}.dot.busy{background:var(--accent);animation:p 1s infinite}
+@keyframes p{50%{opacity:.3}}h1{font-family:var(--mono);font-size:15px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:0}
+.st{font-family:var(--mono);font-size:11px;color:var(--faint)}.sub{font-size:13px;color:var(--muted);margin:4px 0 18px}
+.tabs{display:flex;gap:6px;margin:0 0 18px;border-bottom:1px solid var(--border)}
+.tab{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:0;border:0;color:var(--faint);padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px}
+.sl{font-family:var(--mono);font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.06em}
+.sv{font-family:var(--mono);font-size:22px;font-weight:700;margin-top:4px}.sv.ac{color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:14px}
+label{display:block;font-size:12px;font-weight:600;margin-bottom:6px;color:var(--muted)}
+textarea{width:100%;min-height:88px;padding:10px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;resize:vertical}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+button{font-family:var(--mono);font-size:12px;font-weight:600;padding:9px 14px;border-radius:var(--radius);cursor:pointer;border:1px solid var(--border)}
+.bp{background:var(--accent);color:#101316;border-color:var(--accent)}.bp:disabled{opacity:.4;cursor:not-allowed}
+.bg{background:transparent;color:var(--muted)}.bg:hover{color:var(--text);border-color:var(--muted)}
+.list{max-height:360px;overflow:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg)}
+.word{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:13px}
+.word:last-child{border-bottom:0}.word.del{opacity:.4;text-decoration:line-through}
+.word button{padding:4px 8px;font-size:11px}
+.empty{padding:24px;text-align:center;color:var(--faint);font-size:12px;font-family:var(--mono)}
+.log{font-family:var(--mono);font-size:12px;padding:10px 12px;border-radius:var(--radius);margin-top:12px;display:none;white-space:pre-wrap}
+.log.show{display:block}.log.ok{background:rgba(95,181,135,.08);border:1px solid rgba(95,181,135,.25);color:var(--ok)}
+.log.err{background:rgba(217,88,74,.08);border:1px solid rgba(217,88,74,.25);color:#ed9186}
+.log.info{background:rgba(232,163,61,.06);border:1px solid rgba(232,163,61,.2);color:var(--accent)}
+.hit{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
+.hit.star{border-color:rgba(232,163,61,.45);background:rgba(232,163,61,.06)}
+.ht{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline;margin-bottom:4px}
+.sc{font-family:var(--mono);font-weight:700;color:var(--accent);font-size:16px}
+.meta{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.tx{font-size:13px;color:var(--muted);margin:4px 0 8px;word-break:break-word}
+.lk{font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none}
+footer{margin-top:32px;font-family:var(--mono);font-size:10.5px;color:var(--faint);text-align:center}
+@media(max-width:520px){.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><span class="dot" id="dot"></span><h1>Signal Filter</h1></div>
+  <span class="st" id="conn">読み込み中...</span>
+</header>
+<p class="sub" id="sub">バズ検知の対象ワードを管理します。</p>
+<nav class="tabs">
+  <button type="button" class="tab active" id="tab-kw" onclick="go('kw')">キーワード</button>
+  <button type="button" class="tab" id="tab-hits" onclick="go('hits')">投稿一覧</button>
+</nav>
+
+<div id="panel-kw">
+  <div class="stats">
+    <div class="stat"><div class="sl">登録ワード数</div><div class="sv ac" id="nTotal">—</div></div>
+    <div class="stat"><div class="sl">追加予定</div><div class="sv" id="nAdd">0</div></div>
+    <div class="stat"><div class="sl">削除予定</div><div class="sv" id="nDel">0</div></div>
+  </div>
+  <div class="card">
+    <label>ワードを追加</label>
+    <textarea id="addBox" placeholder="1行1ワード / カンマ区切りOK"></textarea>
+    <div class="row">
+      <button type="button" class="bp" onclick="stageAdd()">一覧に追加</button>
+      <button type="button" class="bg" onclick="$('addBox').value=''">クリア</button>
+    </div>
+  </div>
+  <div class="card">
+    <label>登録ワード一覧</label>
+    <div class="list" id="wordList"><div class="empty">読み込み中...</div></div>
+  </div>
+  <div class="row">
+    <button type="button" class="bp" id="saveBtn" onclick="save()" disabled>変更を保存</button>
+    <button type="button" class="bg" onclick="loadKw()">再読み込み</button>
+  </div>
+  <div class="log" id="log"></div>
+</div>
+
+<div id="panel-hits" style="display:none">
+  <div class="stats">
+    <div class="stat"><div class="sl">監視</div><div class="sv" id="hSt" style="font-size:16px">—</div></div>
+    <div class="stat"><div class="sl">足切り通過</div><div class="sv ac" id="hSur">—</div></div>
+    <div class="stat"><div class="sl">候補★</div><div class="sv" id="hCan">—</div></div>
+  </div>
+  <div class="row" style="margin-bottom:12px"><button type="button" class="bg" onclick="loadHits()">再読み込み</button></div>
+  <div class="log" id="hLog"></div>
+  <div id="hits"></div>
+</div>
+<footer>keywords.txt · hits.json · Cloudflare Worker</footer>
+</div>
+<script>
+const API="https://keywordadminworker.c53gftun651-tiktok.workers.dev/keywords";
+const HITS=["https://cdn.jsdelivr.net/gh/mnaoki20081106-afk/X-Bunseki@main/hits.json","https://raw.githubusercontent.com/mnaoki20081106-afk/X-Bunseki/main/hits.json"];
+const STATUS=["https://cdn.jsdelivr.net/gh/mnaoki20081106-afk/X-Bunseki@main/status.json","https://raw.githubusercontent.com/mnaoki20081106-afk/X-Bunseki/main/status.json"];
+const $=id=>document.getElementById(id);
+let S={words:[],add:[],del:new Set(),ok:false};
+function live(m){$('dot').className='dot '+(m||'')}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&','<':'<','>':'>','"':'"',"'":'&#39;'}[c]))}
+function parse(t){const u=[],seen=new Set();for(const line of t.split(/\r?\n/)){const L=line.trim();if(!L||L.startsWith('#'))continue;for(const p of L.split(/[,、]/)){const w=p.trim();if(w&&!seen.has(w)){seen.add(w);u.push(w)}}}return u}
+function go(name){
+  $('tab-kw').classList.toggle('active',name==='kw');
+  $('tab-hits').classList.toggle('active',name==='hits');
+  $('panel-kw').style.display=name==='kw'?'':'none';
+  $('panel-hits').style.display=name==='hits'?'':'none';
+  $('sub').textContent=name==='kw'?'バズ検知の対象ワードを管理します。':'条件通過ポストをスコア順で表示します。';
+  if(name==='hits')loadHits();
+}
+function render(){
+  $('nTotal').textContent=S.words.length;
+  $('nAdd').textContent=S.add.length;
+  $('nDel').textContent=S.del.size;
+  $('saveBtn').disabled=!S.ok||(S.add.length===0&&S.del.size===0);
+  const all=[...S.words,...S.add.filter(w=>!S.words.includes(w))];
+  if(!all.length){$('wordList').innerHTML='<div class="empty">ワードなし</div>';return}
+  $('wordList').innerHTML=all.map(w=>{
+    const pending=S.add.includes(w)&&!S.words.includes(w);
+    const dead=S.del.has(w);
+    return `<div class="word${dead?' del':''}"><span>${esc(w)}${pending?' <small style="color:var(--accent)">+新</small>':''}</span>
+      <button type="button" class="bg" onclick="toggleDel('${esc(w).replace(/'/g,"\\'")}')">${dead?'復活':'削除'}</button></div>`;
+  }).join('');
+}
+function stageAdd(){const ws=parse($('addBox').value);for(const w of ws){if(!S.words.includes(w)&&!S.add.includes(w))S.add.push(w)}$('addBox').value='';render()}
+function toggleDel(w){if(S.del.has(w))S.del.delete(w);else S.del.add(w);render()}
+async function loadKw(){
+  live('busy');$('conn').textContent='読み込み中...';$('log').className='log';
+  try{
+    const r=await fetch(API);if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();S.ok=true;S.words=d.words||[];S.add=[];S.del=new Set();
+    live('live');$('conn').textContent=S.words.length+'件のワードを管理中';render();
+  }catch(e){live('err');$('conn').textContent='読み込みエラー';$('log').className='log show err';$('log').textContent='❌ '+e.message}
+}
+async function save(){
+  $('saveBtn').disabled=true;$('log').className='log show info';$('log').textContent='保存中...';
+  try{
+    const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({add:S.add,remove:[...S.del]})});
+    const d=await r.json();if(!r.ok||!d.success)throw new Error(d.error||('HTTP '+r.status));
+    $('log').className='log show ok';$('log').textContent=`✅ 保存 追加${d.added}・削除${d.removed}(合計${d.total})`;
+    await loadKw();
+  }catch(e){$('log').className='log show err';$('log').textContent='❌ '+e.message;$('saveBtn').disabled=false}
+}
+async function firstJson(urls){let last;for(const u of urls){try{const r=await fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json()}catch(e){last=e}}throw last}
+async function loadHits(){
+  live('busy');$('hits').innerHTML='<div class="empty">読み込み中...</div>';$('hLog').className='log';
+  try{
+    let hits={},st={};
+    try{hits=await firstJson(HITS)}catch(_){hits={posts:[]}}
+    try{st=await firstJson(STATUS)}catch(_){}
+    const status=st.status||'unknown';
+    $('hSt').textContent=status;
+    $('hSt').style.color=status==='success'?'var(--ok)':status==='session_expired'?'var(--danger)':'var(--text)';
+    $('hSur').textContent=hits.surviving??(hits.posts||[]).length;
+    $('hCan').textContent=hits.candidates??'—';
+    const posts=hits.posts||[];
+    if(!posts.length){
+      $('hits').innerHTML=`<div class="empty">まだ投稿がありません（ログイン復旧後に更新）<br>${esc(hits.updated_at||st.updated_at||'—')}</div>`;
+      live(status==='success'?'live':'err');$('conn').textContent=status==='session_expired'?'セッション切れ':'投稿 0件';return;
+    }
+    $('hits').innerHTML=posts.map(p=>{
+      const sc=p.score??p.buzz_score;const age=p.age_minutes!=null?Math.round(p.age_minutes)+'m':'—';
+      const lpm=p.likes_per_min!=null?Number(p.likes_per_min).toFixed(1):'—';
+      return `<div class="hit${p.candidate?' star':''}"><div class="ht">
+        <span class="sc">${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}</span>
+        <span class="meta">@${esc(p.author||'')}</span>
+        <span class="meta">${age} · いいね${p.likes!=null?Number(p.likes).toLocaleString():'—'} · ${lpm}/分 · 返信${p.replies??'—'} · RT${p.retweets??'—'}</span>
+      </div><div class="tx">${esc(p.text||'(文なし/画像など)')}</div>
+      ${p.url?`<a class="lk" href="${esc(p.url)}" target="_blank" rel="noopener">投稿を開く →</a>`:''}</div>`;
+    }).join('');
+    live(status==='session_expired'?'err':'live');
+    $('conn').textContent=`投稿 ${posts.length}件`;
+  }catch(e){live('err');$('hits').innerHTML='<div class="empty">失敗</div>';$('hLog').className='log show err';$('hLog').textContent='❌ '+e.message}
+}
+loadKw();
+</script>
+</body>
+</html>

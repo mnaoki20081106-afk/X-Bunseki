@@ -2,7 +2,7 @@
 main.py (v4)
 1回分の監視サイクルを実行する。GitHub Actionsから定期的に呼び出す想定。
 
-2026-09: 通知無効。条件通過投稿は hits.md に一覧出力。
+2026-09: 通知無効。条件通過投稿は hits.md / hits.json に一覧出力。
 """
 
 import json
@@ -32,6 +32,7 @@ LLM_MAX_POSTS = int(os.environ.get("LLM_MAX_POSTS") or 3)
 BASE_DIR = Path(__file__).parent
 STATUS_FILE_PATH = BASE_DIR / "status.json"
 HITS_FILE_PATH = BASE_DIR / "hits.md"
+HITS_JSON_PATH = BASE_DIR / "hits.json"
 LOG_DIR = BASE_DIR / "data" / "log"
 
 
@@ -47,7 +48,7 @@ def _write_status(**kwargs):
 
 
 def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str):
-    """条件を満たした投稿を Markdown 一覧で見られるようにする。"""
+    """条件を満たした投稿を Markdown / JSON 一覧で見られるようにする。"""
     lines = [
         "# 条件通過ポスト一覧",
         "",
@@ -71,7 +72,7 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str)
         lpm_s = f"{lpm:.1f}" if lpm is not None else "-"
         accel = g.get("acceleration")
         accel_s = f"{accel:.2f}" if accel is not None else "-"
-        text = (p.get("text_snippet") or "(文なし/画像など)").replace("|", "\|").replace("\n", " ")
+        text = (p.get("text_snippet") or "(文なし/画像など)").replace("|", "\\|").replace("\n", " ")
         text = text[:80]
         url = p.get("url") or ""
         author = p.get("author_handle") or ""
@@ -109,6 +110,37 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str)
         print(f"hits.md を書き出しました（通過{len(surviving)} / 候補{len(candidates)}）")
     except Exception as e:
         print(f"[ERROR] hits.md の書き出しに失敗: {e}")
+
+    payload = {
+        "updated_at": started_iso,
+        "surviving": len(surviving),
+        "candidates": len(candidates),
+        "notify_score": detector.NOTIFY_SCORE,
+        "posts": [
+            {
+                "author": p.get("author_handle"),
+                "score": p.get("buzz_score"),
+                "likes": p.get("likes"),
+                "replies": p.get("replies"),
+                "retweets": p.get("retweets"),
+                "bookmarks": p.get("bookmarks"),
+                "likes_per_min": (p.get("growth") or {}).get("likes_per_min"),
+                "acceleration": (p.get("growth") or {}).get("acceleration"),
+                "age_minutes": (p.get("growth") or {}).get("age_minutes"),
+                "candidate": bool(p.get("should_notify")),
+                "text": (p.get("text_snippet") or "")[:120],
+                "url": p.get("url") or "",
+            }
+            for p in surviving[:30]
+        ],
+    }
+    try:
+        HITS_JSON_PATH.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"hits.json を書き出しました（{len(payload['posts'])}件）")
+    except Exception as e:
+        print(f"[ERROR] hits.json の書き出しに失敗: {e}")
 
 
 def _append_log(rows: list[dict]):
@@ -261,7 +293,6 @@ def run_once():
     candidates = [p for p in surviving if p["should_notify"]]
     print(f"通知スコア({detector.NOTIFY_SCORE:.0f}点)到達: {len(candidates)}件")
 
-    # 条件通過一覧（GitHub上で開いて見られる）
     _write_hits(surviving, candidates, started_iso)
 
     state = notify_state.NotifyState.load()

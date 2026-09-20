@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-20T23:34:30.569380+00:00",
+  "updated_at": "2026-09-20T23:38:06.571034+00:00",
   "status": "error",
-  "started_at": "2026-09-20T23:34:11.641709+00:00",
+  "started_at": "2026-09-20T23:38:05.550090+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "error_message": "XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しています。Cookieは読み込まれていますが、検索DOMまで到達できません。"
+  "error_message": "X SearchTimeline が全20クエリで失敗しました"
 }

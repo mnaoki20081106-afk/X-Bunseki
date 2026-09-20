@@ -1,7 +1,6 @@
-"""detector.py (v4) 実測伸び率ベースの判定・採点 + 初動爆発ボーナス
-
-keywords.txt は収集の参考のみ。関連度は弱い係数(RELEVANCE_FLOOR=0.90)。
-除外は keywords_ng.txt のみ。
+"""detector.py (v4)
+実測伸び率 + X推薦寄り配点（返信・保存・加速を厚く）+ 初動爆発。
+keywords は収集参考のみ。除外は keywords_ng のみ。
 """
 
 import math
@@ -23,28 +22,39 @@ def _envf(name: str, default: float) -> float:
         return default
 
 
-MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 180)
-MIN_LIKES_FLOOR = _envf("MIN_LIKES_FLOOR", 150)
-FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 8)
+# 4時間ウィンドウに合わせる
+MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 240)
+# 速度ゲートがあるのでいいね床は100で早期に拾う
+MIN_LIKES_FLOOR = _envf("MIN_LIKES_FLOOR", 100)
+FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 10)
 NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)
-GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 80)
-POINTS_GROWTH = _envf("POINTS_GROWTH", 44)
-POINTS_ACCEL = _envf("POINTS_ACCEL", 17)
-POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 17)
-POINTS_SAVE = _envf("POINTS_SAVE", 11)
-POINTS_SPREAD = _envf("POINTS_SPREAD", 11)
-# キーワードは収集の参考のみ → 外れてもほぼ減点しない
+GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 78)
+
+# 配点合計100: Xは「会話・継続加速」を配信に強く使う
+POINTS_GROWTH = _envf("POINTS_GROWTH", 36)
+POINTS_ACCEL = _envf("POINTS_ACCEL", 18)
+POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 22)
+POINTS_SAVE = _envf("POINTS_SAVE", 14)
+POINTS_SPREAD = _envf("POINTS_SPREAD", 10)
+
 RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.90)
-GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 120)
-ACCEL_FULL = _envf("ACCEL_FULL", 2.0)
-DISCUSSION_FULL_RATIO = _envf("DISCUSSION_FULL_RATIO", 0.10)
-SAVE_FULL_RATIO = _envf("SAVE_FULL_RATIO", 0.15)
-SPREAD_FULL_RATIO = _envf("SPREAD_FULL_RATIO", 0.25)
-UNMEASURED_CONFIDENCE = _envf("UNMEASURED_CONFIDENCE", 0.7)
-FRESHNESS_FULL_MINUTES = _envf("FRESHNESS_FULL_MINUTES", 60)
-FRESHNESS_MIN_MULTIPLIER = _envf("FRESHNESS_MIN_MULTIPLIER", 0.6)
+
+# 満点基準: 80/分は実在の強い初速。120は過大だった
+GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 80)
+ACCEL_FULL = _envf("ACCEL_FULL", 1.8)
+DISCUSSION_FULL_RATIO = _envf("DISCUSSION_FULL_RATIO", 0.08)
+SAVE_FULL_RATIO = _envf("SAVE_FULL_RATIO", 0.12)
+SPREAD_FULL_RATIO = _envf("SPREAD_FULL_RATIO", 0.20)
+# 引用は拡散の質。いいね比3%で満点寄与（spreadに上乗せ）
+QUOTE_FULL_RATIO = _envf("QUOTE_FULL_RATIO", 0.05)
+POINTS_QUOTE = _envf("POINTS_QUOTE", 8)  # 拡散10のうち内訳ではなく raw に別枠 → 調整で growth から削らない
+
+UNMEASURED_CONFIDENCE = _envf("UNMEASURED_CONFIDENCE", 0.78)
+FRESHNESS_FULL_MINUTES = _envf("FRESHNESS_FULL_MINUTES", 90)
+FRESHNESS_MIN_MULTIPLIER = _envf("FRESHNESS_MIN_MULTIPLIER", 0.55)
+
 NOTIFY_MIN_INTERVAL_MINUTES = _envf("NOTIFY_MIN_INTERVAL_MINUTES", 45)
-NOTIFY_INTERVAL_OVERRIDE_SCORE = _envf("NOTIFY_INTERVAL_OVERRIDE_SCORE", 80)
+NOTIFY_INTERVAL_OVERRIDE_SCORE = _envf("NOTIFY_INTERVAL_OVERRIDE_SCORE", 78)
 NOTIFY_HARD_MIN_INTERVAL_MINUTES = _envf("NOTIFY_HARD_MIN_INTERVAL_MINUTES", 15)
 NOTIFY_MAX_PER_RUN = int(_envf("NOTIFY_MAX_PER_RUN", 1))
 NOTIFY_MAX_PER_DAY = int(_envf("NOTIFY_MAX_PER_DAY", 6))
@@ -93,45 +103,67 @@ def _ratio_points(numerator: int, denominator: int, full_ratio: float, max_point
 def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
     likes = post.get("likes") or 0
     breakdown = {}
+
     lpm = g["likes_per_min"]
     growth_ratio = math.log1p(max(lpm, 0)) / math.log1p(GROWTH_FULL_LIKES_PER_MIN)
     growth_points = POINTS_GROWTH * min(growth_ratio, 1.0)
     if not g["is_measured"]:
         growth_points *= UNMEASURED_CONFIDENCE
     breakdown["伸び率"] = round(growth_points, 1)
+
     accel = g.get("acceleration")
     if accel is None:
         accel_points = POINTS_ACCEL * 0.5
     else:
         accel_points = POINTS_ACCEL * max(min(accel / ACCEL_FULL, 1.0), 0.0)
     breakdown["加速度"] = round(accel_points, 1)
+
+    # 返信 = For You の会話シグナル
     discussion_points = _ratio_points(
         post.get("replies") or 0, likes, DISCUSSION_FULL_RATIO, POINTS_DISCUSSION
     )
     breakdown["議論量"] = round(discussion_points, 1)
+
+    # ブックマーク = 質・再訪
     save_points = _ratio_points(
         post.get("bookmarks") or 0, likes, SAVE_FULL_RATIO, POINTS_SAVE
     )
     breakdown["保存率"] = round(save_points, 1)
+
+    # RT
     spread_points = _ratio_points(
         post.get("retweets") or 0, likes, SPREAD_FULL_RATIO, POINTS_SPREAD
     )
     breakdown["拡散率"] = round(spread_points, 1)
+
+    # 引用 = クラスタ横断（取れていれば加点、0なら0）
+    quote_points = _ratio_points(
+        post.get("quotes") or 0, likes, QUOTE_FULL_RATIO, POINTS_QUOTE
+    )
+    if quote_points > 0:
+        breakdown["引用"] = round(quote_points, 1)
+
     raw_total = sum(breakdown.values())
+
     early = early_signal.evaluate_early_burst(post, g)
     if early.get("hit"):
         breakdown["初動爆発"] = round(early["bonus"], 1)
         raw_total += early["bonus"]
-    # キーワードは参考のみ: 外れても RELEVANCE_FLOOR(既定0.90)までしか下がらない
+
     relevance = max(min(relevance, 1.0), 0.0)
     relevance_multiplier = RELEVANCE_FLOOR + (1.0 - RELEVANCE_FLOOR) * relevance
+
     age = g["age_minutes"]
     if age <= FRESHNESS_FULL_MINUTES:
         freshness = 1.0
     else:
         over = (age - FRESHNESS_FULL_MINUTES) / max(MAX_AGE_MINUTES - FRESHNESS_FULL_MINUTES, 1)
         freshness = max(1.0 - over * (1.0 - FRESHNESS_MIN_MULTIPLIER), FRESHNESS_MIN_MULTIPLIER)
+
     total = raw_total * freshness * relevance_multiplier
+    # 引用枠で100超えることがあるのでキャップ
+    total = min(total, 100.0)
+
     return {
         "buzz_score": round(total, 1),
         "score_breakdown": breakdown,
@@ -139,6 +171,7 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
         "relevance_multiplier": round(relevance_multiplier, 2),
         "relevance": round(relevance, 2),
         "is_gekiatsu": total >= GEKIATSU_SCORE,
+        "early_burst": early.get("hit", False),
     }
 
 
@@ -155,6 +188,7 @@ def evaluate(post: dict, history: list[dict], relevance: float = 0.0, now=None) 
         enriched["score_breakdown"] = {}
         enriched["is_gekiatsu"] = False
         enriched["should_notify"] = False
+        enriched["early_burst"] = False
         return enriched
     enriched["rejected_reason"] = None
     enriched.update(score(post, g, relevance=relevance))
@@ -202,6 +236,9 @@ def config_summary() -> dict:
         "NOTIFY_MAX_PER_DAY": NOTIFY_MAX_PER_DAY,
         "NOTIFY_MIN_INTERVAL_MINUTES": NOTIFY_MIN_INTERVAL_MINUTES,
         "RELEVANCE_FLOOR": RELEVANCE_FLOOR,
+        "POINTS_DISCUSSION": POINTS_DISCUSSION,
+        "POINTS_SAVE": POINTS_SAVE,
+        "GROWTH_FULL_LIKES_PER_MIN": GROWTH_FULL_LIKES_PER_MIN,
         "EARLY_LPM_AT_15": early_signal.EARLY_LPM_AT_15,
         "EARLY_LPM_AT_60": early_signal.EARLY_LPM_AT_60,
         "EARLY_BURST_BONUS": early_signal.EARLY_BURST_BONUS,

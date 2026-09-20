@@ -84,6 +84,7 @@ jobs:
       - name: Run monitor
         env:
           X_SESSION_STATE_PATH: storage_state.json
+          TWS_HTTP_BACKEND: "curl"
           TEST_NOTIFICATION: ${{ github.event.inputs.test_notification }}
           DISABLE_NOTIFICATIONS: "1"
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

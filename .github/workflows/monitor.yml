@@ -84,18 +84,18 @@ jobs:
         if: always()
         run: rm -f storage_state.json
 
-      - name: Commit status.json・hits.md・ログ
+      - name: Commit status.json・hits・ログ
         if: always()
         run: |
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json hits.md data/log data/notify_state.json 2>/dev/null || true
+          git add status.json hits.md hits.json data/log data/notify_state.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0
           fi
-          git commit -m "Update status.json / hits.md"
+          git commit -m "Update status.json / hits"
           for i in 1 2 3 4; do
             if git push; then
               echo "push成功"

@@ -1,6 +1,6 @@
 """detector.py
 目的: 数百万imp級になりうる投稿を、目安4時間以内（可能なら数十分）で拾う。
-実装の綺麗さより再現性のある初速判定を優先。
+誤検知は false_positive.py で典型ノイズだけ切る。
 """
 
 import math
@@ -9,6 +9,7 @@ from datetime import datetime, timedelta, timezone
 
 import growth
 import early_signal
+import false_positive
 
 
 def _envf(name: str, default: float) -> float:
@@ -22,13 +23,12 @@ def _envf(name: str, default: float) -> float:
         return default
 
 
-MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 240)  # 目安4時間
+MAX_AGE_MINUTES = _envf("MAX_AGE_MINUTES", 240)
 MIN_LIKES_FLOOR = _envf("MIN_LIKES_FLOOR", 100)
 FIRST_SIGHT_MIN_LIKES_PER_MIN = _envf("FIRST_SIGHT_MIN_LIKES_PER_MIN", 10)
 NOTIFY_SCORE = _envf("NOTIFY_SCORE", 55)
 GEKIATSU_SCORE = _envf("GEKIATSU_SCORE", 78)
 
-# X寄り: 会話・加速・保存を厚く
 POINTS_GROWTH = _envf("POINTS_GROWTH", 36)
 POINTS_ACCEL = _envf("POINTS_ACCEL", 18)
 POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 22)
@@ -85,6 +85,10 @@ def hard_filter_reason(post: dict, g: dict) -> str | None:
             f"初回観測かつ平均速度が低い"
             f"({g['likes_per_min']:.1f} < {FIRST_SIGHT_MIN_LIKES_PER_MIN:.1f}/分)"
         )
+    # 誤検知ガード（失速・いいね稼ぎ・誘導文）
+    fp = false_positive.reason(post, g)
+    if fp:
+        return fp
     return None
 
 

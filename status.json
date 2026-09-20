@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-20T23:51:20.957822+00:00",
+  "updated_at": "2026-09-20T23:55:34.657303+00:00",
   "status": "error",
-  "started_at": "2026-09-20T23:51:10.378383+00:00",
+  "started_at": "2026-09-20T23:55:28.731214+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "error_message": "X SearchTimeline疎通確認失敗: No account available for queue SearchTimeline"
+  "error_message": "XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しました"
 }

@@ -51,6 +51,7 @@ jobs:
         env:
           X_SESSION_STATE_PATH: storage_state.json
           TEST_NOTIFICATION: ${{ github.event.inputs.test_notification }}
+          DISABLE_NOTIFICATIONS: "1"
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
@@ -69,12 +70,14 @@ jobs:
           SEARCH_MIN_FAVES: ${{ vars.SEARCH_MIN_FAVES }}
           COMBO_MIN_FAVES: ${{ vars.COMBO_MIN_FAVES }}
           BROAD_MIN_FAVES: ${{ vars.BROAD_MIN_FAVES }}
-          # 2026-09: within_time が0件を返す事例が増えたため強制オフ
           SEARCH_WITHIN_TIME: "off"
           RELEVANCE_FLOOR: ${{ vars.RELEVANCE_FLOOR }}
           LINE_MODE: "off"
           MAX_DETAIL_FETCH: ${{ vars.MAX_DETAIL_FETCH }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+          EARLY_LPM_AT_15: ${{ vars.EARLY_LPM_AT_15 }}
+          EARLY_LPM_AT_60: ${{ vars.EARLY_LPM_AT_60 }}
+          EARLY_BURST_BONUS: ${{ vars.EARLY_BURST_BONUS }}
         run: python main.py
 
       - name: Clean up session file

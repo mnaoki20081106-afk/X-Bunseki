@@ -1,4 +1,8 @@
-"""detector.py (v4) 実測伸び率ベースの判定・採点 + 初動爆発ボーナス"""
+"""detector.py (v4) 実測伸び率ベースの判定・採点 + 初動爆発ボーナス
+
+keywords.txt は収集の参考のみ。関連度は弱い係数(RELEVANCE_FLOOR=0.90)。
+除外は keywords_ng.txt のみ。
+"""
 
 import math
 import os
@@ -29,7 +33,8 @@ POINTS_ACCEL = _envf("POINTS_ACCEL", 17)
 POINTS_DISCUSSION = _envf("POINTS_DISCUSSION", 17)
 POINTS_SAVE = _envf("POINTS_SAVE", 11)
 POINTS_SPREAD = _envf("POINTS_SPREAD", 11)
-RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.65)
+# キーワードは収集の参考のみ → 外れてもほぼ減点しない
+RELEVANCE_FLOOR = _envf("RELEVANCE_FLOOR", 0.90)
 GROWTH_FULL_LIKES_PER_MIN = _envf("GROWTH_FULL_LIKES_PER_MIN", 120)
 ACCEL_FULL = _envf("ACCEL_FULL", 2.0)
 DISCUSSION_FULL_RATIO = _envf("DISCUSSION_FULL_RATIO", 0.10)
@@ -117,6 +122,7 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
     if early.get("hit"):
         breakdown["初動爆発"] = round(early["bonus"], 1)
         raw_total += early["bonus"]
+    # キーワードは参考のみ: 外れても RELEVANCE_FLOOR(既定0.90)までしか下がらない
     relevance = max(min(relevance, 1.0), 0.0)
     relevance_multiplier = RELEVANCE_FLOOR + (1.0 - RELEVANCE_FLOOR) * relevance
     age = g["age_minutes"]
@@ -195,6 +201,7 @@ def config_summary() -> dict:
         "NOTIFY_MAX_PER_RUN": NOTIFY_MAX_PER_RUN,
         "NOTIFY_MAX_PER_DAY": NOTIFY_MAX_PER_DAY,
         "NOTIFY_MIN_INTERVAL_MINUTES": NOTIFY_MIN_INTERVAL_MINUTES,
+        "RELEVANCE_FLOOR": RELEVANCE_FLOOR,
         "EARLY_LPM_AT_15": early_signal.EARLY_LPM_AT_15,
         "EARLY_LPM_AT_60": early_signal.EARLY_LPM_AT_60,
         "EARLY_BURST_BONUS": early_signal.EARLY_BURST_BONUS,

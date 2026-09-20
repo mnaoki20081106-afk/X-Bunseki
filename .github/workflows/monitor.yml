@@ -45,7 +45,45 @@ jobs:
 
       - name: Restore X login session
         if: github.event.inputs.test_notification != 'true'
-        run: echo "${{ secrets.X_SESSION_STATE }}" | base64 -d > storage_state.json
+        run: |
+          set -e
+          python3 << 'PY'
+          import base64, json, os, pathlib, sys
+          raw = os.environ.get("X_SESSION_STATE_B64", "") or ""
+          raw = raw.strip()
+          out = pathlib.Path("storage_state.json")
+          if not raw:
+              print("::warning::X_SESSION_STATE が空です。ログインが必要です。")
+              out.write_text("{}", encoding="utf-8")
+              sys.exit(0)
+          data = None
+          # 1) base64 → JSON
+          try:
+              decoded = base64.b64decode(raw, validate=False)
+              text = decoded.decode("utf-8")
+              data = json.loads(text)
+              print("セッション: base64→JSON として復元しました")
+          except Exception as e1:
+              print(f"base64経路失敗: {e1}")
+              # 2) 生JSON
+              try:
+                  data = json.loads(raw)
+                  print("セッション: 生JSONとして復元しました")
+              except Exception as e2:
+                  print(f"::error::X_SESSION_STATE を解釈できません: {e2}")
+                  out.write_text("{}", encoding="utf-8")
+                  # 壊れた秘密を残さない
+                  sys.exit(0)
+          if not isinstance(data, dict):
+              print("::error::storage_state がオブジェクトではありません")
+              out.write_text("{}", encoding="utf-8")
+              sys.exit(0)
+          out.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+          cookies = data.get("cookies") or []
+          print(f"セッション cookies={len(cookies)} 件")
+          PY
+        env:
+          X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
 
       - name: Run monitor
         env:
@@ -78,24 +116,45 @@ jobs:
           EARLY_LPM_AT_15: ${{ vars.EARLY_LPM_AT_15 }}
           EARLY_LPM_AT_60: ${{ vars.EARLY_LPM_AT_60 }}
           EARLY_BURST_BONUS: ${{ vars.EARLY_BURST_BONUS }}
-        run: python main.py
+        # セッション切れは status に書くだけ（ワークフロー自体は失敗扱いにしない）
+        run: |
+          set +e
+          python main.py
+          code=$?
+          if [ -f status.json ]; then
+            st=$(python3 -c "import json; print(json.load(open('status.json')).get('status',''))" 2>/dev/null || true)
+            if [ "$st" = "session_expired" ] || [ "$st" = "error" ]; then
+              echo "monitor ended with status=$st (exit=$code) — コミットは続行"
+              exit 0
+            fi
+          fi
+          exit $code
 
       - name: Clean up session file
         if: always()
         run: rm -f storage_state.json
 
-      - name: Commit status.json・hits・ログ
+      - name: Sync docs for GitHub Pages
+        if: always()
+        run: |
+          mkdir -p docs
+          cp -f status.json docs/status.json 2>/dev/null || true
+          cp -f hits.json docs/hits.json 2>/dev/null || true
+          cp -f hits.md docs/hits.md 2>/dev/null || true
+          cp -f keywords.txt docs/keywords.txt 2>/dev/null || true
+
+      - name: Commit status.json・hits・docs
         if: always()
         run: |
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json hits.md hits.json data/log data/notify_state.json 2>/dev/null || true
+          git add status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0
           fi
-          git commit -m "Update status.json / hits"
+          git commit -m "Update status.json / hits / docs"
           for i in 1 2 3 4; do
             if git push; then
               echo "push成功"

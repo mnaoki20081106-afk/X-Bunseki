@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-20T12:17:31.390196+00:00",
-  "status": "session_expired",
-  "started_at": "2026-09-20T12:17:14.243447+00:00",
+  "updated_at": "2026-09-20T15:07:09.445496+00:00",
+  "status": "error",
+  "started_at": "2026-09-20T15:07:08.561079+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "error_message": "ホームが『しばらくお待ちください』のまま。"
+  "error_message": "'utf-8' codec can't decode byte 0xf5 in position 0: invalid start byte"
 }

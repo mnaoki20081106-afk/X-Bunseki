@@ -47,8 +47,30 @@ def _write_status(**kwargs):
         print(f"[ERROR] status.json の書き出しに失敗: {e}")
 
 
+def _validate_session_file() -> str | None:
+    """storage_state が壊れていればエラーメッセージを返す。"""
+    path = Path(os.environ.get("X_SESSION_STATE_PATH") or "storage_state.json")
+    if not path.exists():
+        return f"セッションファイルがありません: {path}"
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError as e:
+        return f"セッションファイルがUTF-8ではありません（壊れた base64 の可能性）: {e}"
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as e:
+        return f"セッションファイルがJSONではありません: {e}"
+    if not isinstance(data, dict):
+        return "セッションファイルのルートがオブジェクトではありません"
+    cookies = data.get("cookies")
+    if cookies is not None and not isinstance(cookies, list):
+        return "cookies が配列ではありません"
+    if isinstance(cookies, list) and len(cookies) == 0 and not data.get("origins"):
+        return "セッションに cookies が空です。X_SESSION_STATE を再発行してください"
+    return None
+
+
 def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str):
-    """条件を満たした投稿を Markdown / JSON 一覧で見られるようにする。"""
     lines = [
         "# 条件通過ポスト一覧",
         "",
@@ -99,12 +121,7 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str)
     else:
         lines += ["", "## 候補", "", "（今回スコア到達なし）", ""]
 
-    lines += [
-        "",
-        "---",
-        "★ = 通知スコア到達。通知送信は無効化中（記録のみ）。",
-        "",
-    ]
+    lines += ["", "---", "★ = 通知スコア到達。通知送信は無効化中（記録のみ）。", ""]
     try:
         HITS_FILE_PATH.write_text("\n".join(lines), encoding="utf-8")
         print(f"hits.md を書き出しました（通過{len(surviving)} / 候補{len(candidates)}）")
@@ -227,6 +244,20 @@ def run_once():
     print(f"=== 実行開始 {started_iso} ===")
     print(f"判定設定: {detector.config_summary()}")
 
+    session_err = _validate_session_file()
+    if session_err:
+        print(f"[ERROR] {session_err}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "session_expired", session_err)
+        _write_status(
+            status="session_expired",
+            started_at=started_iso,
+            posts_scanned=0,
+            posts_flagged=0,
+            notified_count=0,
+            error_message=session_err,
+        )
+        sys.exit(1)
+
     try:
         posts = fetch_posts()
     except SessionExpiredError as e:
@@ -236,20 +267,30 @@ def run_once():
             "session_expired_alert_at",
             SESSION_ALERT_COOLDOWN_HOURS,
             "⚠️ Xのログインセッションが切れました。\n"
-            "codespace_login.sh を再実行して X_SESSION_STATE を更新してください。\n"
-            "https://x.com/login",
+            "X_SESSION_STATE を再発行してください。",
         )
         _write_status(status="session_expired", started_at=started_iso,
                       posts_scanned=0, posts_flagged=0, notified_count=0,
                       error_message=str(e))
         sys.exit(1)
+    except (UnicodeDecodeError, json.JSONDecodeError) as e:
+        msg = f"セッションファイルの読み込みに失敗: {e}"
+        print(f"[ERROR] {msg}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "session_expired", msg)
+        _write_status(status="session_expired", started_at=started_iso,
+                      posts_scanned=0, posts_flagged=0, notified_count=0,
+                      error_message=msg)
+        sys.exit(1)
     except Exception as e:
         print(f"[ERROR] データ収集に失敗しました: {e}")
         traceback.print_exc()
-        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "error", str(e))
-        _write_status(status="error", started_at=started_iso,
+        # Playwright の utf-8 失敗もセッション扱いに寄せる
+        msg = str(e)
+        status = "session_expired" if "utf-8" in msg.lower() or "storage" in msg.lower() else "error"
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, status, msg)
+        _write_status(status=status, started_at=started_iso,
                       posts_scanned=0, posts_flagged=0, notified_count=0,
-                      error_message=str(e))
+                      error_message=msg)
         sys.exit(1)
 
     print(f"収集した投稿数: {len(posts)}")

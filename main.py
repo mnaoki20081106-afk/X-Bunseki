@@ -2,7 +2,7 @@
 main.py (v4)
 1回分の監視サイクルを実行する。GitHub Actionsから定期的に呼び出す想定。
 
-2026-09: LINE / Pushover は line_notifier / pushover_notifier 側で無効化済み。
+2026-09: 通知無効。条件通過投稿は hits.md に一覧出力。
 """
 
 import json
@@ -31,6 +31,7 @@ LLM_MAX_POSTS = int(os.environ.get("LLM_MAX_POSTS") or 3)
 
 BASE_DIR = Path(__file__).parent
 STATUS_FILE_PATH = BASE_DIR / "status.json"
+HITS_FILE_PATH = BASE_DIR / "hits.md"
 LOG_DIR = BASE_DIR / "data" / "log"
 
 
@@ -43,6 +44,71 @@ def _write_status(**kwargs):
         print(f"status.json を書き出しました (status={status.get('status')})")
     except Exception as e:
         print(f"[ERROR] status.json の書き出しに失敗: {e}")
+
+
+def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str):
+    """条件を満たした投稿を Markdown 一覧で見られるようにする。"""
+    lines = [
+        "# 条件通過ポスト一覧",
+        "",
+        f"更新: `{started_iso}`（UTC）",
+        "",
+        f"- 足切り通過: **{len(surviving)}** 件",
+        f"- スコア {detector.NOTIFY_SCORE:.0f} 点以上: **{len(candidates)}** 件",
+        "",
+        "判定の主軸は数値（分速・返信・RT・引用・加速度）。キーワードは収集の参考のみ。",
+        "",
+        "## スコア順（上位30）",
+        "",
+        "| 点 | 経過 | いいね | /分 | 返信 | RT | 加速 | 投稿 |",
+        "|---:|---:|---:|---:|---:|---:|---:|---|",
+    ]
+    for p in surviving[:30]:
+        g = p.get("growth") or {}
+        age = g.get("age_minutes")
+        age_s = f"{age:.0f}m" if age is not None else "-"
+        lpm = g.get("likes_per_min")
+        lpm_s = f"{lpm:.1f}" if lpm is not None else "-"
+        accel = g.get("acceleration")
+        accel_s = f"{accel:.2f}" if accel is not None else "-"
+        text = (p.get("text_snippet") or "(文なし/画像など)").replace("|", "\|").replace("\n", " ")
+        text = text[:80]
+        url = p.get("url") or ""
+        author = p.get("author_handle") or ""
+        flag = " ★" if p.get("should_notify") else ""
+        lines.append(
+            f"| **{p.get('buzz_score', 0):.0f}**{flag} | {age_s} | "
+            f"{p.get('likes') or 0:,} | {lpm_s} | {p.get('replies') or 0:,} | "
+            f"{p.get('retweets') or 0:,} | {accel_s} | "
+            f"[@{author}]({url}) {text} |"
+        )
+
+    if candidates:
+        lines += ["", "## 候補（スコア到達）", ""]
+        for p in candidates[:15]:
+            g = p.get("growth") or {}
+            lines.append(
+                f"- **{p.get('buzz_score', 0):.0f}点** "
+                f"[ @{p.get('author_handle')} ]({p.get('url')}) "
+                f"いいね{p.get('likes') or 0:,} / "
+                f"{g.get('likes_per_min', 0):.1f}/分 / "
+                f"経過{g.get('age_minutes', 0):.0f}分  "
+                f"{(p.get('text_snippet') or '')[:100]}"
+            )
+    else:
+        lines += ["", "## 候補", "", "（今回スコア到達なし）", ""]
+
+    lines += [
+        "",
+        "---",
+        "★ = 通知スコア到達。通知送信は無効化中（記録のみ）。",
+        "",
+    ]
+    try:
+        HITS_FILE_PATH.write_text("\n".join(lines), encoding="utf-8")
+        print(f"hits.md を書き出しました（通過{len(surviving)} / 候補{len(candidates)}）")
+    except Exception as e:
+        print(f"[ERROR] hits.md の書き出しに失敗: {e}")
 
 
 def _append_log(rows: list[dict]):
@@ -195,6 +261,9 @@ def run_once():
     candidates = [p for p in surviving if p["should_notify"]]
     print(f"通知スコア({detector.NOTIFY_SCORE:.0f}点)到達: {len(candidates)}件")
 
+    # 条件通過一覧（GitHub上で開いて見られる）
+    _write_hits(surviving, candidates, started_iso)
+
     state = notify_state.NotifyState.load()
 
     filtered = []
@@ -243,19 +312,15 @@ def run_once():
 
     to_notify = content_scorer.enrich(to_notify, limit=LLM_MAX_POSTS)
 
-    # 通知は notifier 側で無効化済み。記録のみ行う。
     notified_count = 0
     notified_ids: set[str] = set()
     for post in to_notify:
         db.upsert_post(post)
-        results = {}
         for name, notifier in (("LINE", line_notifier), ("Pushover", pushover_notifier)):
             try:
-                results[name] = notifier.send_notification(post)
+                notifier.send_notification(post)
             except Exception as e:
                 print(f"[ERROR] {name}通知に失敗 (post_id={post['post_id']}): {e}")
-                results[name] = False
-        # 通知無効化中でも候補は記録する
         db.mark_notified(post["post_id"])
         state.record(post)
         notified_count += 1

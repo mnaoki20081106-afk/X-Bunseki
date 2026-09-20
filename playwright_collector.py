@@ -554,9 +554,17 @@ def fetch_posts() -> list[dict]:
         )
         context = browser.new_context(
             storage_state=session_path,
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/140.0.0.0 Safari/537.36"
+            ),
             locale="ja-JP",
             timezone_id="Asia/Tokyo",
             viewport={"width": 1280, "height": 900},
+            extra_http_headers={
+                "Accept-Language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7",
+            },
         )
         context.add_init_script(
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
@@ -578,10 +586,24 @@ def fetch_posts() -> list[dict]:
         print("  [セッション確認] X Homeを確認します")
         page.goto("https://x.com/home", wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(5000)
-        print(f"  [セッション確認] URL={page.url} title={(page.title() or '')[:80]!r}")
+        home_title = page.title() or ""
+        print(f"  [セッション確認] URL={page.url} title={home_title[:80]!r}")
         if "/login" in page.url or "/i/flow/login" in page.url:
             browser.close()
             raise SessionExpiredError("X Homeがログイン画面へリダイレクトされました。")
+        if "しばらくお待ちください" in home_title or "Just a moment" in home_title:
+            print("  [アクセス制限] X Homeが待機/チャレンジ画面です。1回だけ再読込します")
+            page.wait_for_timeout(8000)
+            page.reload(wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(5000)
+            home_title = page.title() or ""
+            print(f"  [アクセス制限] retry URL={page.url} title={home_title[:80]!r}")
+            if "しばらくお待ちください" in home_title or "Just a moment" in home_title:
+                browser.close()
+                raise RuntimeError(
+                    "XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しています。"
+                    "Cookieは読み込まれていますが、検索DOMまで到達できません。"
+                )
 
         queries = build_queries()
         print(f"検索クエリ数: {len(queries)}")

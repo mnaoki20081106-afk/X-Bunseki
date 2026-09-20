@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-20T23:38:06.571034+00:00",
+  "updated_at": "2026-09-20T23:47:21.965732+00:00",
   "status": "error",
-  "started_at": "2026-09-20T23:38:05.550090+00:00",
+  "started_at": "2026-09-20T23:47:11.450743+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "error_message": "X SearchTimeline が全20クエリで失敗しました"
+  "error_message": "X SearchTimeline疎通確認失敗: No account available for queue SearchTimeline"
 }

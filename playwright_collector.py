@@ -1,9 +1,6 @@
 """
 playwright_collector.py
 ランタイムで既知の良い実装を取得し、パッチを当てる。
-
-数値主導: キーワード無しの広域検索を早めの min_faves で回し、
-文なし画像バズもメトリクスで拾えるようにする。
 """
 from __future__ import annotations
 
@@ -18,9 +15,8 @@ _CACHE = Path(__file__).with_name("_playwright_collector_impl.py")
 
 
 def _ensure() -> Path:
-    # パッチ内容が変わったら再取得させる
     force = Path(__file__).with_name("_collector_patch_ver.txt")
-    ver = "2026-09-20-metrics"
+    ver = "2026-09-20-metrics-v2"
     if force.exists() and force.read_text().strip() == ver and _CACHE.exists() and _CACHE.stat().st_size >= 5000:
         return _CACHE
 
@@ -30,16 +26,13 @@ def _ensure() -> Path:
         'SEARCH_WITHIN_TIME = _env("SEARCH_WITHIN_TIME", "3h")',
         'SEARCH_WITHIN_TIME = _env("SEARCH_WITHIN_TIME", "off")',
     )
-    # 広域はキーワード無し・数値のみ。早期発見のため床を下げる
     data = data.replace(
         'BROAD_MIN_FAVES = int(_env("BROAD_MIN_FAVES", "800"))',
         'BROAD_MIN_FAVES = int(_env("BROAD_MIN_FAVES", "250"))',
     )
 
-    # build_queries 末尾にメトリクス専用クエリを追加
     anchor = '    queries.append((broad, "top", SCROLLS_BROAD))'
     extra = '''    queries.append((broad, "top", SCROLLS_BROAD))
-    # 数値のみ: 返信・RTが立っている投稿（文なし画像バズ含む）
     metric_replies = _with_recency(
         f"lang:ja -filter:retweets -filter:replies min_replies:{max(BROAD_MIN_FAVES // 8, 40)}"
     )
@@ -84,7 +77,6 @@ def _ensure() -> Path:
 
     marker = "        queries = build_queries()"
     smoke = (
-        "        # セッション健全性\n"
         "        try:\n"
         "            print(\"  [セッション確認] https://x.com/home …\")\n"
         "            page.goto(\"https://x.com/home\", wait_until=\"domcontentloaded\", timeout=45000)\n"
@@ -103,7 +95,7 @@ def _ensure() -> Path:
         "                title = page.title() or \"\"\n"
         "            if \"しばらくお待ちください\" in title:\n"
         "                raise SessionExpiredError(\n"
-        "                    \"ホームが『しばらくお待ちください』のまま。セッション無効の可能性。\"\n"
+        "                    \"ホームが『しばらくお待ちください』のまま。\"\n"
         "                )\n"
         "        except SessionExpiredError:\n"
         "            browser.close()\n"
@@ -125,4 +117,8 @@ _ns = {"__name__": "playwright_collector"}
 exec(compile(_path.read_text(encoding="utf-8"), str(_path), "exec"), _ns)
 SessionExpiredError = _ns["SessionExpiredError"]
 fetch_posts = _ns["fetch_posts"]
+# 公開API + テスト用の内部パース関数
 globals().update({k: v for k, v in _ns.items() if not k.startswith("_")})
+for _name in ("_parse_count", "_parse_labeled_counts", "sanitize_counts", "build_queries"):
+    if _name in _ns:
+        globals()[_name] = _ns[_name]

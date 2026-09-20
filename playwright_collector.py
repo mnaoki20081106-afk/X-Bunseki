@@ -72,16 +72,25 @@ def _normalize(t):
     }
 
 def fetch_posts():
-    from tweetkit_x import TweetKit
+    from twitter_cli.client import TwitterClient
     cookie=_cookie_header()
-    print("収集方式: tweetkit-x / X SearchTimeline GraphQL（Chromium不使用）")
+    pairs = {}
+    for part in cookie.split(";"):
+        if "=" in part:
+            k, v = part.strip().split("=", 1)
+            pairs[k] = v
+    print("収集方式: twitter-cli / X SearchTimeline POST + curl_cffi（Chromium不使用）")
     print("セッションCookie: auth_token=あり / ct0=あり")
     try:
-        tk=TweetKit(cookie=cookie, timeout=35)
-        local=tk.whoami()
-        print(f"tweetkit auth ready={local.get('ready')} ct0_len={local.get('ct0_len')}")
+        client=TwitterClient(
+            pairs["auth_token"],
+            pairs["ct0"],
+            rate_limit_config={"requestDelay": 1.0, "maxRetries": 2, "retryBaseDelay": 3.0, "maxCount": RESULTS_PER_QUERY},
+            cookie_string=cookie,
+        )
+        print("twitter-cli 初期化完了")
     except Exception as e:
-        raise SessionExpiredError(f"tweetkitセッション初期化失敗: {e}") from e
+        raise SessionExpiredError(f"twitter-cliセッション初期化失敗: {e}") from e
 
     all_posts={}
     queries=build_queries()
@@ -89,11 +98,23 @@ def fetch_posts():
     failed=0
     auth_fail=0
     for query, product, limit in queries:
-        print(f"  GraphQL検索[{product}]: {query[:80]}{'...' if len(query)>80 else ''}")
+        print(f"  POST検索[{product}]: {query[:80]}{'...' if len(query)>80 else ''}")
         try:
-            rows=tk.search_x(query, product=product, limit=limit)
+            rows=client.fetch_search(query, count=limit, product=product)
             for raw in rows:
-                p=_normalize(raw)
+                p={
+                    "post_id": str(raw.id or ""),
+                    "author_handle": raw.author.screen_name if raw.author else "",
+                    "url": f"https://x.com/{raw.author.screen_name}/status/{raw.id}" if raw.author and raw.id else "",
+                    "posted_at": _iso(raw.created_at),
+                    "text_snippet": (raw.text or "")[:280],
+                    "likes": int(raw.metrics.likes or 0),
+                    "retweets": int(raw.metrics.retweets or 0),
+                    "replies": int(raw.metrics.replies or 0),
+                    "quotes": int(raw.metrics.quotes or 0),
+                    "bookmarks": int(raw.metrics.bookmarks or 0),
+                    "impressions": int(raw.metrics.views or 0),
+                }
                 if p["post_id"]:
                     all_posts[p["post_id"]]=p
             print(f"  → {len(rows)}件(累計{len(all_posts)}件)")
@@ -102,15 +123,15 @@ def fetch_posts():
             msg=str(e)
             if any(x in msg for x in ("HTTP 401","HTTP 403","Could not authenticate","Unauthorized")):
                 auth_fail+=1
-            print(f"  [ERROR] GraphQL検索失敗: {msg[:300]}")
+            print(f"  [ERROR] POST検索失敗: {msg[:300]}")
 
     if queries and failed==len(queries):
         if auth_fail:
-            raise SessionExpiredError(f"X GraphQL認証に失敗しました ({auth_fail}/{len(queries)}クエリ)")
+            raise SessionExpiredError(f"X X認証に失敗しました ({auth_fail}/{len(queries)}クエリ)")
         raise RuntimeError(f"X SearchTimeline が全{len(queries)}クエリで失敗しました")
     result=list(all_posts.values())
     result.sort(key=lambda p:(p.get("likes",0),p.get("retweets",0)),reverse=True)
-    print(f"GraphQL収集完了: {len(result)}件 / 失敗クエリ {failed}/{len(queries)}")
+    print(f"POST収集完了: {len(result)}件 / 失敗クエリ {failed}/{len(queries)}")
     return result
 
 # compatibility exports used by tests/older code

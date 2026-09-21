@@ -1,0 +1,61 @@
+name: SearchTimeline Raw Probe
+on:
+  push:
+    branches: [main]
+    paths: [".github/search-raw-probe-trigger"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: npm install --no-save x-agent-sdk@0.2.3
+      - name: Restore X session
+        env:
+          X_SESSION_STATE: ${{ secrets.X_SESSION_STATE }}
+        run: printf '%s' "$X_SESSION_STATE" > storage_state.json
+      - name: Inspect raw SearchTimeline shape
+        run: |
+          cat > /tmp/probe.mjs <<'EOF'
+          import fs from 'node:fs';
+          import { XClient } from 'x-agent-sdk';
+          const s=JSON.parse(fs.readFileSync('storage_state.json','utf8'));
+          const c=Object.fromEntries((s.cookies||[]).map(x=>[x.name,x.value]));
+          let summary=null;
+          const inspectFetch=async (url,init)=>{
+            const res=await fetch(url,init);
+            if(String(url).includes('/SearchTimeline') && !summary){
+              try{
+                const d=await res.clone().json();
+                const instr=d?.data?.search_by_raw_query?.search_timeline?.timeline?.instructions||[];
+                let total=0, withViews=0, withLegacyReplies=0, sample=null;
+                for(const ins of instr) for(const e of ins.entries||[]){
+                  const r=e?.content?.itemContent?.tweet_results?.result;
+                  if(!r?.legacy) continue;
+                  total++;
+                  if(r.views && Object.prototype.hasOwnProperty.call(r.views,'count')) withViews++;
+                  if(Object.prototype.hasOwnProperty.call(r.legacy,'reply_count')) withLegacyReplies++;
+                  if(!sample) sample={
+                    result_keys:Object.keys(r).sort(),
+                    legacy_count_keys:Object.keys(r.legacy).filter(k=>k.endsWith('_count')).sort(),
+                    has_views:!!r.views,
+                    views_keys:r.views?Object.keys(r.views).sort():[],
+                    views_count_present:r.views?.count!=null,
+                    views_count_numeric:r.views?.count!=null && Number.isFinite(Number(r.views.count))
+                  };
+                }
+                summary={total_tweets:total,tweets_with_views_count:withViews,tweets_with_reply_count:withLegacyReplies,sample};
+              }catch(e){ summary={probe_error:String(e?.message||e)}; }
+            }
+            return res;
+          };
+          const x=new XClient({authToken:c.auth_token,ct0:c.ct0,retries:1,fetch:inspectFetch});
+          const page=await x.searchPage('lang:ja -filter:retweets min_faves:2000',20,'Top');
+          console.log(JSON.stringify({mapped_items:page.items.length,raw:summary},null,2));
+          EOF
+          node /tmp/probe.mjs
+      - if: always()
+        run: rm -f storage_state.json /tmp/probe.mjs

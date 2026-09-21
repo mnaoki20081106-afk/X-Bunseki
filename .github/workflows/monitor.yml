@@ -83,6 +83,44 @@ jobs:
         env:
           X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
 
+      - name: Probe XActions search (HTTP client)
+        if: github.event.inputs.test_notification != 'true'
+        continue-on-error: true
+        run: |
+          set -e
+          node --version
+          npm install --no-save xactions@3.5.0
+          cat > /tmp/xactions-probe.mjs <<'JS'
+          import fs from 'node:fs';
+          import { Scraper, SearchMode } from 'xactions/client';
+
+          const state = JSON.parse(fs.readFileSync('storage_state.json', 'utf8'));
+          const cookies = Object.fromEntries((state.cookies || []).map(c => [c.name, c.value]));
+          const auth = cookies.auth_token;
+          const ct0 = cookies.ct0;
+          console.log('[xactions-probe] auth_token=' + Boolean(auth) + ' ct0=' + Boolean(ct0));
+          if (!auth || !ct0) throw new Error('auth_token または ct0 がありません');
+
+          const x = new Scraper();
+          await x.setCookies(`auth_token=${auth}; ct0=${ct0}`);
+          const rows = [];
+          for await (const tweet of x.searchTweets('lang:ja', 3, SearchMode.Latest)) {
+            rows.push({
+              id: tweet.id ?? tweet.rest_id ?? null,
+              likes: tweet.likes ?? tweet.favoriteCount ?? null,
+              retweets: tweet.retweets ?? tweet.retweetCount ?? null,
+              replies: tweet.replies ?? tweet.replyCount ?? null,
+              text_length: typeof tweet.text === 'string' ? tweet.text.length : null,
+              username: tweet.username ?? tweet.user?.username ?? null,
+            });
+            if (rows.length >= 3) break;
+          }
+          console.log('[xactions-probe] result_count=' + rows.length);
+          console.log(JSON.stringify(rows, null, 2));
+          if (rows.length === 0) throw new Error('検索結果が0件でした');
+          JS
+          node /tmp/xactions-probe.mjs
+
       - name: Probe X with direct HTTP (no browser)
         if: github.event.inputs.test_notification != 'true'
         env:

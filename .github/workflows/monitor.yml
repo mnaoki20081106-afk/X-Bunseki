@@ -24,6 +24,9 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -149,12 +152,15 @@ jobs:
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json 2>/dev/null || true
+          # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
+          git add -f status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json 2>/dev/null || true
+          echo "生成物の差分:"
+          git status --short
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0
           fi
-          git commit -m "Update status.json / hits / docs"
+          git commit -m "Update monitor results [skip ci]"
           for i in 1 2 3 4; do
             if git push; then
               echo "push成功"

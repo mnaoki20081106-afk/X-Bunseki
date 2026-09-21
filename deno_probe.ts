@@ -33,6 +33,32 @@ async function probe() {
   };
 }
 
+
+async function searchPageProbe() {
+  const c = getCookies();
+  const cookie = `auth_token=${c.auth_token}; ct0=${c.ct0}`;
+  const q = encodeURIComponent("lang:ja");
+  const res = await fetch(`https://x.com/search?q=${q}&src=typed_query&f=live`, {
+    redirect: "manual",
+    headers: {
+      "cookie": cookie,
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+    },
+  });
+  const body = await res.text();
+  const waiting = body.includes("しばらくお待ちください") || body.toLowerCase().includes("just a moment");
+  return {
+    ok: res.status >= 200 && res.status < 400 && !waiting,
+    status: res.status,
+    location: res.headers.get("location"),
+    waiting,
+    response_bytes: body.length,
+    checked_at: new Date().toISOString(),
+  };
+}
+
 Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
   try { console.log(JSON.stringify(await probe())); }
   catch (e) { console.error(String(e)); }
@@ -40,9 +66,9 @@ Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
 
 Deno.serve(async (req) => {
   const u = new URL(req.url);
-  if (u.pathname !== "/probe") return new Response("X-Bunseki Deno probe", { status: 200 });
+  if (u.pathname !== "/probe" && u.pathname !== "/search-probe") return new Response("X-Bunseki Deno probe", { status: 200 });
   try {
-    return Response.json(await probe());
+    return Response.json(u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
   } catch (e) {
     return Response.json({ ok: false, error: String(e) }, { status: 500 });
   }

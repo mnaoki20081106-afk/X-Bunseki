@@ -1,9 +1,95 @@
 {
-  "updated_at": "2026-09-21T12:54:08.236131+00:00",
-  "status": "error",
-  "started_at": "2026-09-21T12:53:43.142401+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "Chromium / Firefox / WebKit の全てでX Home通常DOMへ到達できませんでした"
+  "updated_at": "2026-09-21T13:17:53.867059+00:00",
+  "status": "success",
+  "started_at": "2026-09-21T13:17:11.255731+00:00",
+  "finished_at": "2026-09-21T13:17:53.865879+00:00",
+  "posts_scanned": 703,
+  "posts_with_history": 0,
+  "posts_flagged": 31,
+  "notified_count": 1,
+  "notified_last_24h": 1,
+  "minutes_since_last_notification": 24606,
+  "reject_reasons": {
+    "いいねが少なすぎる": 306,
+    "初回観測かつ平均速度が低い": 105,
+    "誘導文パターン": 2,
+    "古すぎる": 197,
+    "いいね稼ぎ疑い": 2
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 703,
+    "posts": 703,
+    "oldest": "2026-09-21T13:17:52.703177+00:00"
+  },
+  "top5": [
+    {
+      "author": "usamirito_power",
+      "score": 63.8,
+      "likes": 1028,
+      "likes_per_min": 205.6,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 3.5,
+      "text": "22:30から！！！\n\n【マリオカートワールド】アプデもきたことだしひっさしぶりにかっとばすぜ【宇佐美リト/にじさんじ】",
+      "url": "https://x.com/usamirito_power/status/2102023637150867931"
+    },
+    {
+      "author": "akagi_wen",
+      "score": 63.8,
+      "likes": 2711,
+      "likes_per_min": 172.546358141742,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.7,
+      "text": "【本日の夜配信】\n22:30ごろスタート！！ついにやる！\n✅️タイトル\n【Detroit: Become Human】＃",
+      "url": "https://x.com/akagi_wen/status/2102020564860989584"
+    },
+    {
+      "author": "sixfonia_info",
+      "score": 63.8,
+      "likes": 2044,
+      "likes_per_min": 93.71108908066782,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 21.8,
+      "text": "◆公式生放送開始のお知らせ◆\n\n【 https://t.co/qJfoyWNadK 】\n\n#シクフォニ\n#マイクラ肝試し",
+      "url": "https://x.com/sixfonia_info/status/2102019026130214950"
+    },
+    {
+      "author": "rei_Toya_rei",
+      "score": 63.8,
+      "likes": 14401,
+      "likes_per_min": 721.4308324407158,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 20.0,
+      "text": "今日は22時くらいからコラボがあります https://t.co/1Dxkdjr1Xm",
+      "url": "https://x.com/rei_Toya_rei/status/2102019493715423509"
+    },
+    {
+      "author": "nogizaka46",
+      "score": 63.5,
+      "likes": 1627,
+      "likes_per_min": 105.1143168426999,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.5,
+      "text": "♪ 𝗡𝗢𝗚𝗜𝗭𝗔𝗞𝗔𝟰𝟲 𝟰𝟮𝗻𝗱𝗦𝗚 𝗨𝗡𝗗𝗘𝗥𝗟𝗜𝗩𝗘 ♪\n\n9月29日、30日は\n42ndSGアンダーライブが東京",
+      "url": "https://x.com/nogizaka46/status/2102020621958029336"
+    }
+  ]
 }

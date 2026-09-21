@@ -1,6 +1,8 @@
 name: SNS Buzz Monitor
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
@@ -31,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          python -m playwright install --with-deps chromium firefox webkit
+          npm install --no-save x-agent-sdk@0.2.3
 
       - name: Restore DB
         uses: actions/cache@v4
@@ -82,80 +84,6 @@ jobs:
           PY
         env:
           X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
-
-      - name: Probe XActions search (HTTP client)
-        if: github.event.inputs.test_notification != 'true'
-        continue-on-error: true
-        run: |
-          set -e
-          node --version
-          npm install --no-save github:nirholas/XActions#main
-          cat > .xactions-probe.mjs <<'JS'
-          import fs from 'node:fs';
-          import { Scraper, SearchMode } from 'xactions/client';
-
-          const state = JSON.parse(fs.readFileSync('storage_state.json', 'utf8'));
-          const cookies = Object.fromEntries((state.cookies || []).map(c => [c.name, c.value]));
-          const auth = cookies.auth_token;
-          const ct0 = cookies.ct0;
-          console.log('[xactions-probe] auth_token=' + Boolean(auth) + ' ct0=' + Boolean(ct0));
-          if (!auth || !ct0) throw new Error('auth_token または ct0 がありません');
-
-          const x = new Scraper();
-          await x.setCookies(`auth_token=${auth}; ct0=${ct0}`);
-          const rows = [];
-          for await (const tweet of x.searchTweets('lang:ja', 3, SearchMode.Latest)) {
-            rows.push({
-              id: tweet.id ?? tweet.rest_id ?? null,
-              likes: tweet.likes ?? tweet.favoriteCount ?? null,
-              retweets: tweet.retweets ?? tweet.retweetCount ?? null,
-              replies: tweet.replies ?? tweet.replyCount ?? null,
-              text_length: typeof tweet.text === 'string' ? tweet.text.length : null,
-              username: tweet.username ?? tweet.user?.username ?? null,
-            });
-            if (rows.length >= 3) break;
-          }
-          console.log('[xactions-probe] result_count=' + rows.length);
-          console.log(JSON.stringify(rows, null, 2));
-          if (rows.length === 0) throw new Error('検索結果が0件でした');
-          JS
-          node .xactions-probe.mjs
-          rm -f .xactions-probe.mjs
-
-      - name: Probe X with direct HTTP (no browser)
-        if: github.event.inputs.test_notification != 'true'
-        env:
-          X_SESSION_STATE_PATH: storage_state.json
-        run: |
-          python3 << 'PY'
-          import json, pathlib, urllib.request, urllib.error
-
-          data=json.loads(pathlib.Path("storage_state.json").read_text(encoding="utf-8"))
-          cookies={x.get("name"):x.get("value") for x in data.get("cookies",[]) if x.get("name") and x.get("value")}
-          cookie="; ".join(f"{k}={v}" for k,v in cookies.items())
-          req=urllib.request.Request(
-              "https://x.com/home",
-              headers={
-                  "Cookie": cookie,
-                  "User-Agent": "Mozilla/5.0",
-                  "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.8",
-              },
-          )
-          try:
-              with urllib.request.urlopen(req,timeout=30) as r:
-                  body=r.read().decode("utf-8","replace")
-                  final_url=r.geturl()
-                  status=r.status
-          except urllib.error.HTTPError as e:
-              status=e.code
-              final_url=e.geturl()
-              body=e.read().decode("utf-8","replace")
-          low=body.lower()
-          waiting=("しばらくお待ちください" in body or "just a moment" in low)
-          login=("/i/flow/login" in final_url or "/login" in final_url)
-          print(f"[http-probe] status={status} final_url={final_url} bytes={len(body.encode('utf-8'))} waiting={waiting} login={login}")
-          print(f"[http-probe] auth_token={bool(cookies.get('auth_token'))} ct0={bool(cookies.get('ct0'))}")
-          PY
 
       - name: Run monitor
         env:

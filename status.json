@@ -1,9 +1,98 @@
 {
-  "updated_at": "2026-09-21T20:23:09.088797+00:00",
-  "status": "error",
-  "started_at": "2026-09-21T20:16:08.965496+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "Command '['node', '.x-agent-collector.mjs']' timed out after 420 seconds"
+  "updated_at": "2026-09-21T23:24:32.661183+00:00",
+  "status": "success",
+  "started_at": "2026-09-21T23:23:08.998738+00:00",
+  "finished_at": "2026-09-21T23:24:32.660047+00:00",
+  "posts_scanned": 780,
+  "posts_with_history": 241,
+  "posts_flagged": 14,
+  "notified_count": 1,
+  "notified_last_24h": 3,
+  "minutes_since_last_notification": 407,
+  "reject_reasons": {
+    "古すぎる": 381,
+    "初回観測かつ平均速度が低い": 40,
+    "いいねが少なすぎる": 273,
+    "いいね稼ぎ疑い": 7,
+    "誘導文パターン": 1
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 6422,
+    "posts": 2815,
+    "oldest": "2026-09-21T13:17:52.703177+00:00"
+  },
+  "viral_discovery_posts": 90,
+  "million_imp_rescued": 0,
+  "watchlist_active": 37,
+  "top5": [
+    {
+      "author": "avashaka",
+      "score": 27.9,
+      "likes": 9423,
+      "likes_per_min": 53.6611942948518,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 175.6,
+      "text": "すご",
+      "url": "https://x.com/avashaka/status/2102132996866560457"
+    },
+    {
+      "author": "joqrpr",
+      "score": 42.2,
+      "likes": 20496,
+      "likes_per_min": 100.700080600901,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 203.5,
+      "text": "#SnowMan #向井康二 \n文化放送で待望の初単独レギュラーラジオ決定🎉\n\n『Snow Man 向井康二のぼちぼちア",
+      "url": "https://x.com/joqrpr/status/2102125964809458040"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 65.0,
+      "likes": 21649,
+      "likes_per_min": 288.26223073322194,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 75.1,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2102158285940126137"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 37.3,
+      "likes": 29140,
+      "likes_per_min": 177.87987059537306,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 163.8,
+      "text": "みんなーーーーー！！！！！\n\nこーじが1人でラジオやるよ〜 (^^) \n\nおめでとう康二 (^^)",
+      "url": "https://x.com/SAK_SAK_SAKUMA/status/2102135960838566306"
+    },
+    {
+      "author": "Infinity_rJP",
+      "score": 68.7,
+      "likes": 5659,
+      "likes_per_min": 230.9630286452267,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 24.5,
+      "text": "🎉───────────\n            #SUPER_EIGHT\n        ㊗️全国デビュー日㊗️\n  ",
+      "url": "https://x.com/Infinity_rJP/status/2102171018915627383"
+    }
+  ]
 }

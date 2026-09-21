@@ -121,6 +121,7 @@ jobs:
           set +e
           python main.py
           code=$?
+          python auto_train.py || true
           if [ -f status.json ]; then
             st=$(python3 -c "import json; print(json.load(open('status.json')).get('status',''))" 2>/dev/null || true)
             if [ "$st" = "session_expired" ] || [ "$st" = "error" ]; then
@@ -149,7 +150,7 @@ jobs:
           set -e
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
-          git add status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json 2>/dev/null || true
+          git add status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "変更なし"
             exit 0

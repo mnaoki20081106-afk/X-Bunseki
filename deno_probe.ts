@@ -59,6 +59,30 @@ async function searchPageProbe() {
   };
 }
 
+
+async function searchInspect() {
+  const c = getCookies();
+  const cookie = `auth_token=${c.auth_token}; ct0=${c.ct0}`;
+  const q = encodeURIComponent("lang:ja");
+  const res = await fetch(`https://x.com/search?q=${q}&src=typed_query&f=live`, {
+    headers: {
+      "cookie": cookie,
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+    },
+  });
+  const body = await res.text();
+  const markers = {
+    initial_state: body.includes("__INITIAL_STATE__"),
+    graphql: body.includes("SearchTimeline") || body.includes("/i/api/graphql/"),
+    tweet_result: body.includes("tweet_results") || body.includes("Tweet"),
+    status_links: (body.match(/\\/status\\//g) || []).length,
+    scripts: (body.match(/<script/g) || []).length,
+  };
+  return { ok: res.ok, status: res.status, response_bytes: body.length, markers, checked_at: new Date().toISOString() };
+}
+
 Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
   try { console.log(JSON.stringify(await probe())); }
   catch (e) { console.error(String(e)); }
@@ -66,9 +90,9 @@ Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
 
 Deno.serve(async (req) => {
   const u = new URL(req.url);
-  if (u.pathname !== "/probe" && u.pathname !== "/search-probe") return new Response("X-Bunseki Deno probe", { status: 200 });
+  if (u.pathname !== "/probe" && u.pathname !== "/search-probe" && u.pathname !== "/search-inspect") return new Response("X-Bunseki Deno probe", { status: 200 });
   try {
-    return Response.json(u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
+    return Response.json(u.pathname === "/search-inspect" ? await searchInspect() : u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
   } catch (e) {
     return Response.json({ ok: false, error: String(e) }, { status: 500 });
   }

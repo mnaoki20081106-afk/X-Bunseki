@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 import keyword_filter
+import watchlist
 
 def _env(name, default):
     v = os.environ.get(name)
@@ -34,6 +35,17 @@ def build_queries():
     exclusions = " ".join(f"-{w}" for w in BROAD_EXCLUDE)
     broad = f"lang:ja -filter:retweets -filter:replies min_faves:{BROAD_MIN_FAVES} {exclusions}".strip()
     q += [(broad, "Latest", RESULTS_PER_QUERY), (broad, "Top", RESULTS_PER_QUERY)]
+    # Keyword-independent Viral Discovery. Keep this small: high-signal queries
+    # are cheaper and safer than trying to crawl all of lang:ja.
+    viral = [
+        "lang:ja -filter:retweets min_faves:2000",
+        "lang:ja -filter:retweets min_faves:5000",
+        "lang:ja -filter:retweets min_retweets:400",
+        "lang:ja -filter:retweets min_faves:2000 min_retweets:200",
+    ]
+    for query in viral:
+        q.append((query, "Latest", RESULTS_PER_QUERY))
+        q.append((query, "Top", RESULTS_PER_QUERY))
     return q
 
 def _normalize_created_at(value):
@@ -66,8 +78,16 @@ def fetch_posts():
         raise SessionExpiredError("storage_state に auth_token または ct0 がありません")
 
     queries = build_queries()
-    payload = [{"query": q, "product": product, "limit": limit} for q, product, limit in queries]
+    keyword_query_count = len(queries) - 8
+    payload = [
+        {"query": q, "product": product, "limit": limit,
+         "source": "keyword" if i < keyword_query_count else "viral_search"}
+        for i, (q, product, limit) in enumerate(queries)
+    ]
     Path(".x-agent-queries.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    due = watchlist.due_posts(limit=int(_env("WATCHLIST_DETAIL_LIMIT", "40")))
+    Path(".x-agent-watchlist.json").write_text(json.dumps(due, ensure_ascii=False), encoding="utf-8")
+    print(f"watchlist追跡対象: {len(due)}件")
     _ensure_x_agent()
 
     script = r'''
@@ -77,6 +97,7 @@ const state=JSON.parse(fs.readFileSync(process.env.X_SESSION_STATE_PATH||'storag
 const cookies=Object.fromEntries((state.cookies||[]).map(c=>[c.name,c.value]));
 if(!cookies.auth_token || !cookies.ct0) throw new Error('SESSION_EXPIRED: auth_token/ct0 missing');
 const queries=JSON.parse(fs.readFileSync('.x-agent-queries.json','utf8'));
+const watch=JSON.parse(fs.readFileSync('.x-agent-watchlist.json','utf8'));
 const x=new XClient({authToken:cookies.auth_token,ct0:cookies.ct0,retries:1});
 const seen=new Map();
 for(const spec of queries){
@@ -98,7 +119,8 @@ for(const spec of queries){
           replies:Number(t.replies||0),
           quotes:0,
           bookmarks:0,
-          impressions:0
+          impressions:0,
+          discovery_source:spec.source||'keyword'
         });
       }
       fetched += (r.items||[]).length;
@@ -111,13 +133,32 @@ for(const spec of queries){
     console.error('[x-agent] query failed: '+(e?.message||e));
   }
 }
+// Re-add due watchlist posts even when SearchTimeline no longer returns them.
+for(const w of watch){
+  if(!w.post_id) continue;
+  if(!seen.has(String(w.post_id))){
+    seen.set(String(w.post_id), {
+      post_id:String(w.post_id), author_handle:w.author_handle||'',
+      url:w.url||('https://x.com/i/status/'+w.post_id), posted_at:w.posted_at,
+      text_snippet:w.text_snippet||'', likes:0, retweets:0, replies:0,
+      quotes:0, bookmarks:0, impressions:Number(w.last_impressions||0),
+      discovery_source:'watchlist'
+    });
+  }
+}
 // SearchTimeline's compact Tweet mapper omits view count. Enrich only the strongest
 // early candidates with TweetDetail so we can observe actual impressions without
 // multiplying requests for every collected tweet.
 const all=[...seen.values()];
-const enrich=[...all]
-  .sort((a,b)=>((b.likes||0)+(b.retweets||0)*2)-((a.likes||0)+(a.retweets||0)*2))
-  .slice(0,60);
+const dueIds=new Set(watch.map(w=>String(w.post_id)));
+const priority=[...all].sort((a,b)=>{
+  const aw=dueIds.has(String(a.post_id))?1:0, bw=dueIds.has(String(b.post_id))?1:0;
+  if(aw!==bw) return bw-aw;
+  const av=a.discovery_source==='viral_search'?1:0, bv=b.discovery_source==='viral_search'?1:0;
+  if(av!==bv) return bv-av;
+  return ((b.likes||0)+(b.retweets||0)*2)-((a.likes||0)+(a.retweets||0)*2);
+});
+const enrich=priority.slice(0,Number(process.env.MAX_DETAIL_FETCH||80));
 for(const p of enrich){
   try {
     const d=await x.getTweet(p.post_id);
@@ -164,6 +205,6 @@ process.stdout.write(JSON.stringify(all));
         print(f"x-agent収集完了: {len(posts)}件")
         return posts
     finally:
-        for p in (".x-agent-queries.json", ".x-agent-collector.mjs"):
+        for p in (".x-agent-queries.json", ".x-agent-watchlist.json", ".x-agent-collector.mjs"):
             try: Path(p).unlink()
             except FileNotFoundError: pass

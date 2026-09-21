@@ -29,6 +29,8 @@ v4の方式:
 """
 
 from datetime import datetime, timezone
+import json
+from pathlib import Path
 
 # 観測間隔がこれより短い場合は、差分がノイズに埋もれるので信用しない
 MIN_WINDOW_MINUTES = 3.0
@@ -169,7 +171,17 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
                 "prediction_basis": "impressions未取得"}
 
     # Grokの remaining_multiplier_base を時間方向に線形補間。
-    anchors = [(15, 15.0), (30, 8.0), (60, 4.5), (120, 2.5), (240, 1.5)]
+    defaults = {"15": 15.0, "30": 8.0, "45": 6.0, "60": 4.5, "90": 3.5, "120": 2.5, "180": 2.0, "240": 1.5}
+    model_path = Path(__file__).parent / "data" / "impression_model.json"
+    learned = {}
+    if model_path.exists():
+        try:
+            learned = json.loads(model_path.read_text(encoding="utf-8")).get("multipliers") or {}
+        except Exception:
+            learned = {}
+    multipliers = {**defaults, **learned}
+    anchors = [(int(k), float(v)) for k, v in multipliers.items()]
+    anchors.sort()
     if age <= anchors[0][0]:
         remaining = anchors[0][1]
     elif age >= anchors[-1][0]:

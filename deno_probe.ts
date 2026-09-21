@@ -77,7 +77,7 @@ async function searchInspect() {
     initial_state: body.includes("__INITIAL_STATE__"),
     graphql: body.includes("SearchTimeline") || body.includes("/i/api/graphql/"),
     tweet_result: body.includes("tweet_results") || body.includes("Tweet"),
-    status_links: (body.match(/\\/status\\//g) || []).length,
+    status_links: (body.match(/\/status\//g) || []).length,
     scripts: (body.match(/<script/g) || []).length,
   };
   return { ok: res.ok, status: res.status, response_bytes: body.length, markers, checked_at: new Date().toISOString() };

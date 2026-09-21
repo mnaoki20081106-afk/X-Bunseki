@@ -165,6 +165,33 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str)
         print(f"[ERROR] hits.json の書き出しに失敗: {e}")
 
 
+
+def _append_training_snapshots(posts: list[dict], observed_at: str):
+    """長期学習用。impを取得できた投稿だけをJSONLへ蓄積する。"""
+    path = BASE_DIR / "data" / "training_snapshots.jsonl"
+    rows = []
+    for p in posts:
+        imp = int(p.get("impressions") or 0)
+        if imp <= 0:
+            continue
+        g = p.get("growth") or {}
+        rows.append({
+            "post_id": p.get("post_id"), "observed_at": observed_at,
+            "posted_at": p.get("posted_at"), "age_minutes": g.get("age_minutes"),
+            "impressions": imp, "impressions_per_min": g.get("impressions_per_min"),
+            "impressions_acceleration": g.get("impressions_acceleration"),
+            "likes": p.get("likes") or 0, "retweets": p.get("retweets") or 0,
+            "replies": p.get("replies") or 0, "quotes": p.get("quotes") or 0,
+            "bookmarks": p.get("bookmarks") or 0,
+        })
+    if not rows:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as fh:
+        for row in rows:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    print(f"学習用スナップショット: {len(rows)}件追記")
+
 def _append_log(rows: list[dict]):
     if not rows:
         return
@@ -315,6 +342,7 @@ def run_once():
         now=now,
     )
 
+    _append_training_snapshots(evaluated, now_iso)
     db.record_observations(posts, now_iso)
 
     reasons: dict[str, int] = {}

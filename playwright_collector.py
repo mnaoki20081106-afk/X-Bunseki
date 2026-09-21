@@ -280,6 +280,11 @@ for(const r of first){
   const v=r.value;
   if(v?.cursor && v.spec.product==='Latest' && v.spec.limit>20) page2.push(v);
 }
+// Deep paging has diminishing returns and the first live run hit one 429 at
+// 51 SearchTimeline responses. Keep all viral Latest page-2 searches first,
+// then use only a few spare slots for keyword searches.
+page2.sort((a,b)=>(b.spec.source==='viral_search'?1:0)-(a.spec.source==='viral_search'?1:0));
+page2.splice(8);
 if(Date.now()-started < SEARCH_BUDGET_MS*0.70 && rateLimited<2 && forbidden<2){
   console.error('[search] phase2 latest-page2='+page2.length);
   await mapLimit(page2,SEARCH_CONCURRENCY,async v=>{

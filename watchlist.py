@@ -1,0 +1,109 @@
+"""Persistent follow-up watchlist for viral posts.
+
+Discovery and tracking are deliberately separate: once a post is interesting,
+we keep its id and re-read TweetDetail even if SearchTimeline stops returning it.
+"""
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+PATH = Path(__file__).parent / "data" / "watchlist.json"
+TARGET_MINUTES = [15, 30, 45, 60, 90, 120, 180, 240, 360, 720, 1440]
+
+
+def _dt(v):
+    return datetime.fromisoformat(str(v).replace("Z", "+00:00"))
+
+
+def load() -> dict:
+    if not PATH.exists():
+        return {}
+    try:
+        data = json.loads(PATH.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def due_posts(now=None, limit=40) -> list[dict]:
+    now = now or datetime.now(timezone.utc)
+    rows = []
+    for row in load().values():
+        if row.get("completed"):
+            continue
+        due = row.get("next_due_at")
+        if not due or _dt(due) <= now:
+            rows.append(row)
+    rows.sort(key=lambda r: r.get("next_due_at") or "")
+    return rows[:limit]
+
+
+def _next_due(posted_at: str, age_min: float, now: datetime):
+    posted = _dt(posted_at)
+    for target in TARGET_MINUTES:
+        if target > age_min + 2:
+            return (posted.timestamp() + target * 60, target)
+    return (None, None)
+
+
+def update(evaluated: list[dict], now=None) -> dict:
+    """Add strong discoveries and advance existing entries to their next checkpoint."""
+    now = now or datetime.now(timezone.utc)
+    state = load()
+    seen = {p.get("post_id"): p for p in evaluated}
+
+    for pid, p in seen.items():
+        if not pid:
+            continue
+        g = p.get("growth") or {}
+        age = float(g.get("age_minutes") or 0)
+        imp = int(p.get("impressions") or 0)
+        source = p.get("discovery_source") or "keyword"
+        # Broad viral discovery is intentionally permissive; TweetDetail tracking
+        # will quickly discard dead posts. Million-rescue posts are always tracked.
+        interesting = (
+            p.get("million_imp_bypass")
+            or (source in ("viral_search", "trend", "for_you") and age <= 240
+                and (imp >= 50_000 or (p.get("likes") or 0) >= 2_000 or (p.get("retweets") or 0) >= 400))
+        )
+        if pid not in state and not interesting:
+            continue
+        row = state.get(pid, {})
+        row.update({
+            "post_id": pid,
+            "author_handle": p.get("author_handle") or row.get("author_handle", ""),
+            "url": p.get("url") or row.get("url", ""),
+            "posted_at": p.get("posted_at") or row.get("posted_at"),
+            "text_snippet": p.get("text_snippet") or row.get("text_snippet", ""),
+            "discovery_source": source if source != "watchlist" else row.get("discovery_source", source),
+            "last_impressions": imp,
+            "last_seen_at": now.isoformat(),
+        })
+        if not row.get("added_at"):
+            row["added_at"] = now.isoformat()
+        if row.get("posted_at"):
+            ts, target = _next_due(row["posted_at"], age, now)
+            if ts is None:
+                row["completed"] = True
+                row["next_due_at"] = None
+                row["next_target_minutes"] = None
+            else:
+                row["completed"] = False
+                row["next_due_at"] = datetime.fromtimestamp(ts, timezone.utc).isoformat()
+                row["next_target_minutes"] = target
+        state[pid] = row
+
+    # Keep completed rows for 7 days for debugging, then compact.
+    compact = {}
+    for pid, row in state.items():
+        last = row.get("last_seen_at") or row.get("added_at")
+        if row.get("completed") and last:
+            try:
+                if (now - _dt(last)).total_seconds() > 7 * 86400:
+                    continue
+            except Exception:
+                pass
+        compact[pid] = row
+    PATH.parent.mkdir(parents=True, exist_ok=True)
+    PATH.write_text(json.dumps(compact, ensure_ascii=False, indent=2), encoding="utf-8")
+    return compact

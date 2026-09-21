@@ -1,9 +1,98 @@
 {
-  "updated_at": "2026-09-21T23:36:47.944971+00:00",
-  "status": "error",
-  "started_at": "2026-09-21T23:25:47.820818+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "Command '['node', '.x-agent-collector.mjs']' timed out after 660 seconds"
+  "updated_at": "2026-09-21T23:40:30.699985+00:00",
+  "status": "success",
+  "started_at": "2026-09-21T23:40:00.284090+00:00",
+  "finished_at": "2026-09-21T23:40:30.698891+00:00",
+  "posts_scanned": 800,
+  "posts_with_history": 570,
+  "posts_flagged": 41,
+  "notified_count": 1,
+  "notified_last_24h": 4,
+  "minutes_since_last_notification": 16,
+  "reject_reasons": {
+    "古すぎる": 367,
+    "誘導文パターン": 3,
+    "いいねが少なすぎる": 275,
+    "初回観測かつ平均速度が低い": 15,
+    "いいね稼ぎ疑い": 3
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 7222,
+    "posts": 3045,
+    "oldest": "2026-09-21T13:17:52.703177+00:00"
+  },
+  "viral_discovery_posts": 117,
+  "million_imp_rescued": 1,
+  "watchlist_active": 74,
+  "top5": [
+    {
+      "author": "anime_chiikawa",
+      "score": 79.2,
+      "likes": 6656,
+      "likes_per_min": 195.9,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 40.4,
+      "text": "／\n TVアニメちいかわ 第380話\n見逃し配信スタート📺\n ＼\n\n第380話「パラレルワールド⑥」の1週間限定見逃し配",
+      "url": "https://x.com/anime_chiikawa/status/2102171030899052604"
+    },
+    {
+      "author": "avashaka",
+      "score": 31.2,
+      "likes": 10401,
+      "likes_per_min": 61.25,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 191.6,
+      "text": "すご",
+      "url": "https://x.com/avashaka/status/2102132996866560457"
+    },
+    {
+      "author": "joqrpr",
+      "score": 43.4,
+      "likes": 22023,
+      "likes_per_min": 95.63,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 219.5,
+      "text": "#SnowMan #向井康二 \n文化放送で待望の初単独レギュラーラジオ決定🎉\n\n『Snow Man 向井康二のぼちぼちア",
+      "url": "https://x.com/joqrpr/status/2102125964809458040"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 71.9,
+      "likes": 24373,
+      "likes_per_min": 170.6,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 91.1,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2102158285940126137"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 40.2,
+      "likes": 31566,
+      "likes_per_min": 151.93,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 179.8,
+      "text": "みんなーーーーー！！！！！\n\nこーじが1人でラジオやるよ〜 (^^) \n\nおめでとう康二 (^^)",
+      "url": "https://x.com/SAK_SAK_SAKUMA/status/2102135960838566306"
+    }
+  ]
 }

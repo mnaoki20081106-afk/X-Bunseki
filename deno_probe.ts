@@ -126,6 +126,52 @@ async function initialStateInspect() {
 
 const X_BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA";
 
+
+async function adaptiveSearchProbe() {
+  const c = getCookies();
+  const cookie = `auth_token=${c.auth_token}; ct0=${c.ct0}`;
+  const params = new URLSearchParams({
+    q: "lang:ja",
+    count: "20",
+    tweet_search_mode: "live",
+    query_source: "typed_query",
+    tweet_mode: "extended",
+    include_entities: "true",
+    include_user_entities: "true",
+    include_quote_count: "true",
+    include_reply_count: "1",
+    send_error_codes: "true",
+  });
+  const headers = {
+    "authorization": `Bearer ${X_BEARER}`,
+    "cookie": cookie,
+    "x-csrf-token": c.ct0,
+    "x-twitter-auth-type": "OAuth2Session",
+    "x-twitter-active-user": "yes",
+    "x-twitter-client-language": "ja",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "accept": "*/*",
+  };
+  const urls = [
+    `https://x.com/i/api/2/search/adaptive.json?${params}`,
+    `https://api.x.com/2/search/adaptive.json?${params}`,
+  ];
+  const results = [];
+  for (const url of urls) {
+    const res = await fetch(url, { headers });
+    const body = await res.text();
+    results.push({
+      host: new URL(url).host,
+      status: res.status,
+      ok: res.ok,
+      bytes: body.length,
+      has_global_objects: body.includes("globalObjects"),
+      body_prefix: res.ok ? undefined : body.slice(0, 200),
+    });
+  }
+  return { ok: results.some(r => r.ok && r.has_global_objects), results, checked_at: new Date().toISOString() };
+}
+
 async function graphqlSearchProbe() {
   const c = getCookies();
   const cookie = `auth_token=${c.auth_token}; ct0=${c.ct0}`;
@@ -198,9 +244,9 @@ Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
 
 Deno.serve(async (req) => {
   const u = new URL(req.url);
-  if (u.pathname !== "/probe" && u.pathname !== "/search-probe" && u.pathname !== "/search-inspect" && u.pathname !== "/state-inspect" && u.pathname !== "/graphql-probe") return new Response("X-Bunseki Deno probe", { status: 200 });
+  if (u.pathname !== "/probe" && u.pathname !== "/search-probe" && u.pathname !== "/search-inspect" && u.pathname !== "/state-inspect" && u.pathname !== "/graphql-probe" && u.pathname !== "/adaptive-probe") return new Response("X-Bunseki Deno probe", { status: 200 });
   try {
-    return Response.json(u.pathname === "/graphql-probe" ? await graphqlSearchProbe() : u.pathname === "/state-inspect" ? await initialStateInspect() : u.pathname === "/search-inspect" ? await searchInspect() : u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
+    return Response.json(u.pathname === "/adaptive-probe" ? await adaptiveSearchProbe() : u.pathname === "/graphql-probe" ? await graphqlSearchProbe() : u.pathname === "/state-inspect" ? await initialStateInspect() : u.pathname === "/search-inspect" ? await searchInspect() : u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
   } catch (e) {
     return Response.json({ ok: false, error: String(e) }, { status: 500 });
   }

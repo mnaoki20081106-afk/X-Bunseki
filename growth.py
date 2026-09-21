@@ -93,6 +93,8 @@ def compute(post: dict, history: list[dict], now=None) -> dict:
         "window_minutes": None,
         "acceleration": None,
         "prev_likes_per_min": None,
+        "prev_impressions_per_min": None,
+        "impressions_acceleration": None,
     }
     for field in _TRACKED_FIELDS:
         result[f"{field}_per_min"] = 0.0
@@ -145,6 +147,10 @@ def compute(post: dict, history: list[dict], now=None) -> dict:
         result["prev_likes_per_min"] = round(prev_rate, 2)
         if prev_rate >= MIN_PREV_RATE_FOR_ACCEL:
             result["acceleration"] = round(result["likes_per_min"] / prev_rate, 2)
+        prev_imp_rate = _rate(baseline.get("impressions"), prev_baseline.get("impressions"), prev_window)
+        result["prev_impressions_per_min"] = round(prev_imp_rate, 2)
+        if prev_imp_rate >= MIN_PREV_RATE_FOR_ACCEL:
+            result["impressions_acceleration"] = round(result["impressions_per_min"] / prev_imp_rate, 2)
 
     # 表示用に丸める
     for field in _TRACKED_FIELDS:
@@ -152,6 +158,73 @@ def compute(post: dict, history: list[dict], now=None) -> dict:
 
     return result
 
+
+
+def predict_final_impressions(post: dict, growth: dict) -> dict:
+    """Grok由来の経験則を初期priorにした最終imp予測。実測蓄積後に係数を校正する。"""
+    current = max(int(post.get("impressions") or 0), 0)
+    age = max(float(growth.get("age_minutes") or 0.1), 0.1)
+    if current <= 0:
+        return {"predicted_final_impressions": None, "prediction_confidence": "none",
+                "prediction_basis": "impressions未取得"}
+
+    # Grokの remaining_multiplier_base を時間方向に線形補間。
+    anchors = [(15, 15.0), (30, 8.0), (60, 4.5), (120, 2.5), (240, 1.5)]
+    if age <= anchors[0][0]:
+        remaining = anchors[0][1]
+    elif age >= anchors[-1][0]:
+        remaining = anchors[-1][1]
+    else:
+        remaining = anchors[-1][1]
+        for (x0, y0), (x1, y1) in zip(anchors, anchors[1:]):
+            if x0 <= age <= x1:
+                t = (age - x0) / (x1 - x0)
+                remaining = y0 + (y1 - y0) * t
+                break
+
+    # impの実測加速度を最重要補正にする。
+    imp_accel = growth.get("impressions_acceleration")
+    if imp_accel is None:
+        accel_adjust = 1.0
+    elif imp_accel >= 1.5:
+        accel_adjust = min(1.5 + (imp_accel - 1.5) * 0.5, 3.0)
+    elif imp_accel >= 1.2:
+        accel_adjust = 1.2
+    elif imp_accel >= 0.9:
+        accel_adjust = 1.0
+    elif imp_accel < 0.6 and age >= 60:
+        accel_adjust = 0.55
+    else:
+        accel_adjust = 0.8
+
+    # engagementは倍率を暴れさせず±25%程度の補正に制限。
+    likes = max(post.get("likes") or 0, 0)
+    rts = max(post.get("retweets") or 0, 0)
+    replies = max(post.get("replies") or 0, 0)
+    bookmarks = max(post.get("bookmarks") or 0, 0)
+    like_r = likes / current
+    rt_r = rts / current
+    reply_r = replies / current
+    bookmark_r = bookmarks / current
+    quality_raw = (
+        0.30 * min(like_r / 0.03, 2.0)
+        + 0.35 * min(rt_r / 0.005, 2.0)
+        + 0.20 * min(bookmark_r / 0.01, 2.0)
+        + 0.15 * min(reply_r / 0.005, 2.0)
+    )
+    quality_adjust = min(max(0.75 + 0.25 * quality_raw, 0.75), 1.25)
+
+    predicted = max(current, int(round(current * remaining * accel_adjust * quality_adjust)))
+    samples = int(growth.get("samples") or 0)
+    confidence = "high" if samples >= 3 and imp_accel is not None else ("medium" if samples >= 1 else "low")
+    return {
+        "predicted_final_impressions": predicted,
+        "prediction_confidence": confidence,
+        "prediction_basis": "Grok経験則prior+15分観測",
+        "prediction_remaining_multiplier": round(remaining, 2),
+        "prediction_accel_adjustment": round(accel_adjust, 2),
+        "prediction_quality_adjustment": round(quality_adjust, 2),
+    }
 
 def describe(growth: dict) -> str:
     """通知本文に載せる、人間が読める1行の要約"""

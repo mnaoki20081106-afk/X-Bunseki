@@ -153,7 +153,13 @@ jobs:
           git config user.name "sns-monitor-bot"
           git config user.email "actions@github.com"
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
-          git add -f status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json 2>/dev/null || true
+          # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
+          # 混ぜると git add 全体が失敗するため、個別に確認する。
+          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json; do
+            if [ -e "$p" ]; then
+              git add -f "$p"
+            fi
+          done
           echo "生成物の差分:"
           git status --short
           if git diff --staged --quiet; then

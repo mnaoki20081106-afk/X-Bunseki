@@ -215,6 +215,9 @@ for(const p of enrich){
           views=Number(res?.views?.count||0)||0;
           bookmarks=Number(res?.legacy?.bookmark_count||0)||0;
           quotes=Number(res?.legacy?.quote_count||0)||0;
+          p.likes=Number(res?.legacy?.favorite_count||p.likes||0)||0;
+          p.retweets=Number(res?.legacy?.retweet_count||p.retweets||0)||0;
+          p.replies=Number(res?.legacy?.reply_count||p.replies||0)||0;
           break outer;
         }
       }

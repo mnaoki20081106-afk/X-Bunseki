@@ -1,20 +1,19 @@
 {
-  "updated_at": "2026-09-21T13:17:53.867059+00:00",
+  "updated_at": "2026-09-21T13:29:06.311859+00:00",
   "status": "success",
-  "started_at": "2026-09-21T13:17:11.255731+00:00",
-  "finished_at": "2026-09-21T13:17:53.865879+00:00",
-  "posts_scanned": 703,
-  "posts_with_history": 0,
-  "posts_flagged": 31,
-  "notified_count": 1,
+  "started_at": "2026-09-21T13:27:42.282429+00:00",
+  "finished_at": "2026-09-21T13:29:06.310599+00:00",
+  "posts_scanned": 712,
+  "posts_with_history": 534,
+  "posts_flagged": 32,
+  "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 24606,
+  "minutes_since_last_notification": 11,
   "reject_reasons": {
-    "いいねが少なすぎる": 306,
-    "初回観測かつ平均速度が低い": 105,
-    "誘導文パターン": 2,
-    "古すぎる": 197,
-    "いいね稼ぎ疑い": 2
+    "いいねが少なすぎる": 324,
+    "いいね稼ぎ疑い": 10,
+    "初回観測かつ平均速度が低い": 1,
+    "古すぎる": 200
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,65 +30,65 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 703,
-    "posts": 703,
+    "total": 1415,
+    "posts": 881,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
   "top5": [
     {
-      "author": "usamirito_power",
-      "score": 63.8,
-      "likes": 1028,
-      "likes_per_min": 205.6,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 3.5,
-      "text": "22:30から！！！\n\n【マリオカートワールド】アプデもきたことだしひっさしぶりにかっとばすぜ【宇佐美リト/にじさんじ】",
-      "url": "https://x.com/usamirito_power/status/2102023637150867931"
-    },
-    {
       "author": "akagi_wen",
-      "score": 63.8,
-      "likes": 2711,
-      "likes_per_min": 172.546358141742,
+      "score": 81.0,
+      "likes": 3670,
+      "likes_per_min": 85.43,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 15.7,
+      "measured": true,
+      "age_minutes": 26.9,
       "text": "【本日の夜配信】\n22:30ごろスタート！！ついにやる！\n✅️タイトル\n【Detroit: Become Human】＃",
       "url": "https://x.com/akagi_wen/status/2102020564860989584"
     },
     {
-      "author": "sixfonia_info",
-      "score": 63.8,
-      "likes": 2044,
-      "likes_per_min": 93.71108908066782,
+      "author": "TeamSURGE_JP",
+      "score": 78.5,
+      "likes": 3357,
+      "likes_per_min": 56.33698861814186,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 21.8,
-      "text": "◆公式生放送開始のお知らせ◆\n\n【 https://t.co/qJfoyWNadK 】\n\n#シクフォニ\n#マイクラ肝試し",
-      "url": "https://x.com/sixfonia_info/status/2102019026130214950"
+      "age_minutes": 59.6,
+      "text": "SURGE Townの次は...\n\nSURGE City\n\n完全招待制から今回は応募制へ。\n\nもっと多くの人が、\nもっと",
+      "url": "https://x.com/TeamSURGE_JP/status/2102012345832857653"
+    },
+    {
+      "author": "usamirito_power",
+      "score": 75.5,
+      "likes": 2021,
+      "likes_per_min": 88.45,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 14.7,
+      "text": "22:30から！！！\n\n【マリオカートワールド】アプデもきたことだしひっさしぶりにかっとばすぜ【宇佐美リト/にじさんじ】",
+      "url": "https://x.com/usamirito_power/status/2102023637150867931"
+    },
+    {
+      "author": "CNP___boxoffice",
+      "score": 75.4,
+      "likes": 5920,
+      "likes_per_min": 70.82,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 100.5,
+      "text": "【速報】\n\n来年の映画は『○タ○の○イ○○○イ』\n\n青山先生よりタイトルヒント発表\nコメントで皆さんの予想を教えて下さい",
+      "url": "https://x.com/CNP___boxoffice/status/2102002042361516144"
     },
     {
       "author": "rei_Toya_rei",
-      "score": 63.8,
-      "likes": 14401,
-      "likes_per_min": 721.4308324407158,
+      "score": 73.5,
+      "likes": 19280,
+      "likes_per_min": 434.61,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 20.0,
+      "measured": true,
+      "age_minutes": 31.2,
       "text": "今日は22時くらいからコラボがあります https://t.co/1Dxkdjr1Xm",
       "url": "https://x.com/rei_Toya_rei/status/2102019493715423509"
-    },
-    {
-      "author": "nogizaka46",
-      "score": 63.5,
-      "likes": 1627,
-      "likes_per_min": 105.1143168426999,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 15.5,
-      "text": "♪ 𝗡𝗢𝗚𝗜𝗭𝗔𝗞𝗔𝟰𝟲 𝟰𝟮𝗻𝗱𝗦𝗚 𝗨𝗡𝗗𝗘𝗥𝗟𝗜𝗩𝗘 ♪\n\n9月29日、30日は\n42ndSGアンダーライブが東京",
-      "url": "https://x.com/nogizaka46/status/2102020621958029336"
     }
   ]
 }

@@ -166,7 +166,7 @@ jobs:
             echo "変更なし"
             exit 0
           fi
-          git commit -m "Update monitor results [skip ci]"
+          git commit -m "Update monitor results"
           for i in 1 2 3 4; do
             if git push; then
               echo "push成功"

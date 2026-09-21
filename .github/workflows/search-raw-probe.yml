@@ -56,6 +56,6 @@ jobs:
           const page=await x.searchPage('lang:ja -filter:retweets min_faves:2000',20,'Top');
           console.log(JSON.stringify({mapped_items:page.items.length,raw:summary},null,2));
           EOF
-          node /tmp/probe.mjs
+          node probe.mjs
       - if: always()
-        run: rm -f storage_state.json /tmp/probe.mjs
+        run: rm -f storage_state.json probe.mjs

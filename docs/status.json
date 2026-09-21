@@ -1,18 +1,19 @@
 {
-  "updated_at": "2026-09-21T13:29:06.311859+00:00",
+  "updated_at": "2026-09-21T13:39:20.573326+00:00",
   "status": "success",
-  "started_at": "2026-09-21T13:27:42.282429+00:00",
-  "finished_at": "2026-09-21T13:29:06.310599+00:00",
-  "posts_scanned": 712,
-  "posts_with_history": 534,
-  "posts_flagged": 32,
+  "started_at": "2026-09-21T13:37:44.315261+00:00",
+  "finished_at": "2026-09-21T13:39:20.572039+00:00",
+  "posts_scanned": 717,
+  "posts_with_history": 557,
+  "posts_flagged": 27,
   "notified_count": 0,
   "notified_last_24h": 1,
-  "minutes_since_last_notification": 11,
+  "minutes_since_last_notification": 21,
   "reject_reasons": {
-    "いいねが少なすぎる": 324,
-    "いいね稼ぎ疑い": 10,
-    "初回観測かつ平均速度が低い": 1,
+    "いいねが少なすぎる": 329,
+    "失速済み": 3,
+    "いいね稼ぎ疑い": 13,
+    "初回観測かつ平均速度が低い": 2,
     "古すぎる": 200
   },
   "config": {
@@ -30,65 +31,65 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 1415,
-    "posts": 881,
+    "total": 2132,
+    "posts": 1041,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
   "top5": [
     {
-      "author": "akagi_wen",
-      "score": 81.0,
-      "likes": 3670,
-      "likes_per_min": 85.43,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 26.9,
-      "text": "【本日の夜配信】\n22:30ごろスタート！！ついにやる！\n✅️タイトル\n【Detroit: Become Human】＃",
-      "url": "https://x.com/akagi_wen/status/2102020564860989584"
-    },
-    {
-      "author": "TeamSURGE_JP",
-      "score": 78.5,
-      "likes": 3357,
-      "likes_per_min": 56.33698861814186,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 59.6,
-      "text": "SURGE Townの次は...\n\nSURGE City\n\n完全招待制から今回は応募制へ。\n\nもっと多くの人が、\nもっと",
-      "url": "https://x.com/TeamSURGE_JP/status/2102012345832857653"
-    },
-    {
-      "author": "usamirito_power",
-      "score": 75.5,
-      "likes": 2021,
-      "likes_per_min": 88.45,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 14.7,
-      "text": "22:30から！！！\n\n【マリオカートワールド】アプデもきたことだしひっさしぶりにかっとばすぜ【宇佐美リト/にじさんじ】",
-      "url": "https://x.com/usamirito_power/status/2102023637150867931"
-    },
-    {
       "author": "CNP___boxoffice",
-      "score": 75.4,
-      "likes": 5920,
-      "likes_per_min": 70.82,
-      "acceleration": null,
+      "score": 74.9,
+      "likes": 6678,
+      "likes_per_min": 74.04,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 100.5,
+      "age_minutes": 110.8,
       "text": "【速報】\n\n来年の映画は『○タ○の○イ○○○イ』\n\n青山先生よりタイトルヒント発表\nコメントで皆さんの予想を教えて下さい",
       "url": "https://x.com/CNP___boxoffice/status/2102002042361516144"
     },
     {
-      "author": "rei_Toya_rei",
-      "score": 73.5,
-      "likes": 19280,
-      "likes_per_min": 434.61,
+      "author": "wni_jp",
+      "score": 74.5,
+      "likes": 528,
+      "likes_per_min": 19.54,
+      "acceleration": 1.18,
+      "measured": true,
+      "age_minutes": 29.2,
+      "text": "【台風情報】\n9月21日(月)22時推定で、大型で強い台風25号(ドゥージェン)は千葉県銚子市の南東を北東へ進んでいると",
+      "url": "https://x.com/wni_jp/status/2102022579183845831"
+    },
+    {
+      "author": "USSS_info",
+      "score": 74.3,
+      "likes": 7441,
+      "likes_per_min": 27.44,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 31.2,
-      "text": "今日は22時くらいからコラボがあります https://t.co/1Dxkdjr1Xm",
-      "url": "https://x.com/rei_Toya_rei/status/2102019493715423509"
+      "age_minutes": 74.8,
+      "text": "【浦島坂田船 春ツアー初の映像化！】\n\n4月26日に開催された「浦島坂田船 Spring Tour 2026 ～夜叉～」",
+      "url": "https://x.com/USSS_info/status/2102011097792594348"
+    },
+    {
+      "author": "akagi_wen",
+      "score": 74.0,
+      "likes": 4325,
+      "likes_per_min": 63.98,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 37.2,
+      "text": "【本日の夜配信】\n22:30ごろスタート！！ついにやる！\n✅️タイトル\n【Detroit: Become Human】＃",
+      "url": "https://x.com/akagi_wen/status/2102020564860989584"
+    },
+    {
+      "author": "XaiabP",
+      "score": 71.3,
+      "likes": 857,
+      "likes_per_min": 85.19902419976879,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 10.1,
+      "text": "えらいえらい♪\n\n#TGS2026 https://t.co/94xfaQ5Fok",
+      "url": "https://x.com/XaiabP/status/2102027384975446214"
     }
   ]
 }

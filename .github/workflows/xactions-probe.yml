@@ -41,6 +41,7 @@ jobs:
         run: npm install --no-save github:nirholas/XActions#main
 
       - name: Discover live query IDs and search
+        continue-on-error: true
         run: |
           cat > .xactions-fast-probe.mjs <<'JS'
           import fs from 'node:fs';
@@ -75,6 +76,16 @@ jobs:
           }
           JS
           node .xactions-fast-probe.mjs
+
+      - name: Probe SearchTimeline through Deno Deploy
+        run: |
+          set -e
+          URL="https://x-bunseki.mnaoki20081106-afk.deno.net/graphql-probe"
+          echo "[deno] GET $URL"
+          body=$(curl -fsSL --max-time 30 "$URL")
+          echo "$body"
+          node -e 'const x=JSON.parse(process.argv[1]); if(!x.ok || x.status!==200 || !x.has_search_timeline) process.exit(1)' "$body"
+          echo "[deno] SUCCESS"
 
       - name: Clean
         if: always()

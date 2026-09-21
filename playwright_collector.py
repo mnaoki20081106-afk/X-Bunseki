@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+import re
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -19,6 +20,49 @@ BROAD_EXCLUDE = _env("BROAD_EXCLUDE", "誕生日 生誕祭 発売記念 キャ�
 
 class SessionExpiredError(Exception):
     pass
+
+
+def _parse_count(value):
+    """Compatibility parser for X's localized compact counters."""
+    if value is None:
+        return 0
+    s = str(value).strip().replace(",", "")
+    if not s or s in {"なし", "-", "—"}:
+        return 0
+    mult = 1
+    if s[-1:].lower() == "k":
+        mult, s = 1_000, s[:-1]
+    elif s[-1:].lower() == "m":
+        mult, s = 1_000_000, s[:-1]
+    elif s.endswith("万"):
+        mult, s = 10_000, s[:-1]
+    try:
+        return int(float(s) * mult)
+    except ValueError:
+        return 0
+
+
+def _parse_labeled_counts(label):
+    out = {"replies": 0, "retweets": 0, "likes": 0, "bookmarks": 0, "impressions": 0}
+    patterns = {
+        "replies": [r"([\d,.]+(?:万|[KkMm])?)件の返信", r"([\d,.]+(?:[KkMm])?)\s+replies?"],
+        "retweets": [r"([\d,.]+(?:万|[KkMm])?)件のリポスト", r"([\d,.]+(?:[KkMm])?)\s+reposts?"],
+        "likes": [r"([\d,.]+(?:万|[KkMm])?)件のいいね", r"([\d,.]+(?:[KkMm])?)\s+likes?"],
+        "bookmarks": [r"([\d,.]+(?:万|[KkMm])?)件のブックマーク", r"([\d,.]+(?:[KkMm])?)\s+bookmarks?"],
+        "impressions": [r"([\d,.]+(?:万|[KkMm])?)件の表示", r"([\d,.]+(?:[KkMm])?)\s+views?"],
+    }
+    for key, pats in patterns.items():
+        for pat in pats:
+            m = re.search(pat, str(label), re.I)
+            if m:
+                out[key] = _parse_count(m.group(1))
+                break
+    return out
+
+
+def sanitize_counts(post):
+    """Legacy API kept for tests/callers; x-agent already returns raw counts."""
+    return dict(post)
 
 def _session_path():
     p = os.environ.get("X_SESSION_STATE_PATH", "storage_state.json")

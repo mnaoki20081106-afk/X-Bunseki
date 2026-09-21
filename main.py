@@ -21,6 +21,7 @@ import line_notifier
 import notification_text
 import notify_state
 import pushover_notifier
+import watchlist
 from playwright_collector import SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24
@@ -150,6 +151,9 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str)
                 "acceleration": (p.get("growth") or {}).get("acceleration"),
                 "age_minutes": (p.get("growth") or {}).get("age_minutes"),
                 "candidate": bool(p.get("should_notify")),
+                "discovery_source": p.get("discovery_source") or "keyword",
+                "million_imp_bypass": bool(p.get("million_imp_bypass")),
+                "million_imp_bypass_detail": p.get("million_imp_bypass_detail") or "",
                 "text": (p.get("text_snippet") or "")[:120],
                 "url": p.get("url") or "",
             }
@@ -342,6 +346,12 @@ def run_once():
         now=now,
     )
 
+    watch_state = watchlist.update(evaluated, now=now)
+    active_watch = sum(1 for row in watch_state.values() if not row.get("completed"))
+    rescue_count = sum(1 for p in evaluated if p.get("million_imp_bypass"))
+    viral_count = sum(1 for p in posts if p.get("discovery_source") == "viral_search")
+    print(f"Viral Discovery: {viral_count}件 / Million Rescue: {rescue_count}件 / watchlist active: {active_watch}件")
+
     _append_training_snapshots(evaluated, now_iso)
     db.record_observations(posts, now_iso)
 
@@ -469,6 +479,9 @@ def run_once():
         reject_reasons=reasons,
         config=detector.config_summary(),
         observation_db=stats,
+        viral_discovery_posts=viral_count,
+        million_imp_rescued=rescue_count,
+        watchlist_active=active_watch,
         top5=[
             {
                 "author": p.get("author_handle"),

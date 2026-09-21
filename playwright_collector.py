@@ -77,7 +77,7 @@ const state=JSON.parse(fs.readFileSync(process.env.X_SESSION_STATE_PATH||'storag
 const cookies=Object.fromEntries((state.cookies||[]).map(c=>[c.name,c.value]));
 if(!cookies.auth_token || !cookies.ct0) throw new Error('SESSION_EXPIRED: auth_token/ct0 missing');
 const queries=JSON.parse(fs.readFileSync('.x-agent-queries.json','utf8'));
-const x=new XClient({authToken:cookies.auth_token,ct0:cookies.ct0,retries:2});
+const x=new XClient({authToken:cookies.auth_token,ct0:cookies.ct0,retries:1});
 const seen=new Map();
 for(const spec of queries){
   let cursor=undefined, fetched=0, pages=0;
@@ -117,7 +117,7 @@ for(const spec of queries){
 const all=[...seen.values()];
 const enrich=[...all]
   .sort((a,b)=>((b.likes||0)+(b.retweets||0)*2)-((a.likes||0)+(a.retweets||0)*2))
-  .slice(0,80);
+  .slice(0,60);
 for(const p of enrich){
   try {
     const d=await x.getTweet(p.post_id);
@@ -148,7 +148,7 @@ process.stdout.write(JSON.stringify(all));
     try:
         r = subprocess.run(
             ["node", ".x-agent-collector.mjs"],
-            text=True, capture_output=True, timeout=240,
+            text=True, capture_output=True, timeout=420,
             env={**os.environ, "X_SESSION_STATE_PATH": _session_path()},
         )
         if r.stderr:

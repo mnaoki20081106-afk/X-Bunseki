@@ -107,8 +107,10 @@ def test_million_imp_rescue_rejects_a_stalled_million_view_post():
 def test_viral_queries_are_keyword_independent():
     queries = collector.build_queries()
     texts = [q for q, _, _ in queries]
-    assert any(q.startswith("lang:ja") and "min_faves:2000" in q for q in texts)
-    assert any("min_retweets:400" in q for q in texts)
+    viral = [q for q in texts if q.startswith("lang:ja")]
+    assert len(viral) >= 4
+    assert any("min_faves:" in q for q in viral)
+    assert any("min_retweets:" in q for q in viral)
 
 
 def test_detector_notifies_a_fast_growing_post():

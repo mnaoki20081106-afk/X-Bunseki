@@ -19,7 +19,7 @@ jobs:
         run: printf '%s' "$X_SESSION_STATE" > storage_state.json
       - name: Inspect raw SearchTimeline shape
         run: |
-          cat > /tmp/probe.mjs <<'EOF'
+          cat > probe.mjs <<'EOF'
           import fs from 'node:fs';
           import { XClient } from 'x-agent-sdk';
           const s=JSON.parse(fs.readFileSync('storage_state.json','utf8'));

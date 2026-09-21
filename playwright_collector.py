@@ -2,6 +2,7 @@ import json
 import os
 import subprocess
 from pathlib import Path
+from datetime import datetime, timezone
 
 import keyword_filter
 
@@ -34,6 +35,22 @@ def build_queries():
     broad = f"lang:ja -filter:retweets -filter:replies min_faves:{BROAD_MIN_FAVES} {exclusions}".strip()
     q += [(broad, "Latest", RESULTS_PER_QUERY), (broad, "Top", RESULTS_PER_QUERY)]
     return q
+
+def _normalize_created_at(value):
+    if not value:
+        return datetime.now(timezone.utc).isoformat()
+    s = str(value).strip()
+    try:
+        return datetime.fromisoformat(s.replace("Z", "+00:00")).isoformat()
+    except ValueError:
+        pass
+    for fmt in ("%a %b %d %H:%M:%S %z %Y", "%a %b %d %H:%M:%S +0000 %Y"):
+        try:
+            return datetime.strptime(s, fmt).isoformat()
+        except ValueError:
+            continue
+    print(f"[WARN] 投稿日時を解釈できません: {s!r}")
+    return datetime.now(timezone.utc).isoformat()
 
 def _ensure_x_agent():
     pkg = Path("node_modules/x-agent-sdk/package.json")
@@ -111,6 +128,8 @@ process.stdout.write(JSON.stringify([...seen.values()]));
                 raise SessionExpiredError(msg)
             raise RuntimeError(msg)
         posts = json.loads(r.stdout or "[]")
+        for post in posts:
+            post["posted_at"] = _normalize_created_at(post.get("posted_at"))
         print(f"x-agent収集完了: {len(posts)}件")
         return posts
     finally:

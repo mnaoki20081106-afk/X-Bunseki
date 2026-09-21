@@ -37,6 +37,16 @@ jobs:
           console.log('[session] auth_token='+names.has('auth_token')+' ct0='+names.has('ct0'));
           JS
 
+      - name: Probe adaptive search through Deno Deploy
+        continue-on-error: true
+        run: |
+          URL="https://x-bunseki.mnaoki20081106-afk.deno.net/adaptive-probe"
+          echo "[adaptive] GET $URL"
+          body=$(curl -fsSL --max-time 30 "$URL")
+          echo "$body"
+          node -e 'const x=JSON.parse(process.argv[1]); if(!x.ok) process.exit(1)' "$body"
+          echo "[adaptive] SUCCESS"
+
       - name: Install latest XActions
         run: npm install --no-save github:nirholas/XActions#main
 

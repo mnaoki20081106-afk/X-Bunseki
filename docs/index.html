@@ -138,7 +138,7 @@ function go(name){
   $('tab-hits').classList.toggle('active',name==='hits');
   $('panel-kw').style.display=name==='kw'?'':'none';
   $('panel-hits').style.display=name==='hits'?'':'none';
-  $('sub').textContent=name==='kw'?'バズ検知の対象ワードを管理します。':'条件通過ポストをスコア順で表示します。';
+  $('sub').textContent=name==='kw'?'バズ検知の対象ワードを管理します。':'条件通過ポストを予測最終インプレッション順で表示します。';
   if(name==='hits')loadHits();
 }
 function render(){
@@ -224,7 +224,7 @@ async function loadHits(){
     $('hSt').style.color=status==='success'?'var(--ok)':status==='session_expired'?'var(--danger)':'var(--text)';
     $('hSur').textContent=hits.surviving??(hits.posts||[]).length;
     $('hCan').textContent=hits.candidates??'—';
-    const posts=hits.posts||[];
+    const posts=(hits.posts||[]).slice().sort((a,b)=>(b.predicted_final_impressions||0)-(a.predicted_final_impressions||0));
     if(!posts.length){
       $('hits').innerHTML=`<div class="empty">まだ投稿がありません（有効なログイン後に更新）<br>${esc(hits.updated_at||st.updated_at||'—')}<br>${esc(st.error_message||'')}</div>`;
       live(status==='success'?'live':'err');

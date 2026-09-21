@@ -83,6 +83,41 @@ jobs:
         env:
           X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
 
+      - name: Probe X with direct HTTP (no browser)
+        if: github.event.inputs.test_notification != 'true'
+        env:
+          X_SESSION_STATE_PATH: storage_state.json
+        run: |
+          python3 << 'PY'
+          import json, pathlib, urllib.request, urllib.error
+
+          data=json.loads(pathlib.Path("storage_state.json").read_text(encoding="utf-8"))
+          cookies={x.get("name"):x.get("value") for x in data.get("cookies",[]) if x.get("name") and x.get("value")}
+          cookie="; ".join(f"{k}={v}" for k,v in cookies.items())
+          req=urllib.request.Request(
+              "https://x.com/home",
+              headers={
+                  "Cookie": cookie,
+                  "User-Agent": "Mozilla/5.0",
+                  "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.8",
+              },
+          )
+          try:
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  body=r.read().decode("utf-8","replace")
+                  final_url=r.geturl()
+                  status=r.status
+          except urllib.error.HTTPError as e:
+              status=e.code
+              final_url=e.geturl()
+              body=e.read().decode("utf-8","replace")
+          low=body.lower()
+          waiting=("しばらくお待ちください" in body or "just a moment" in low)
+          login=("/i/flow/login" in final_url or "/login" in final_url)
+          print(f"[http-probe] status={status} final_url={final_url} bytes={len(body.encode('utf-8'))} waiting={waiting} login={login}")
+          print(f"[http-probe] auth_token={bool(cookies.get('auth_token'))} ct0={bool(cookies.get('ct0'))}")
+          PY
+
       - name: Run monitor
         env:
           X_SESSION_STATE_PATH: storage_state.json

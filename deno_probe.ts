@@ -123,6 +123,74 @@ async function initialStateInspect() {
   }
 }
 
+
+const X_BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA";
+
+async function graphqlSearchProbe() {
+  const c = getCookies();
+  const cookie = `auth_token=${c.auth_token}; ct0=${c.ct0}`;
+  const ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+
+  // Current live SearchTimeline query ID discovered by XActions from x.com's bundle.
+  const queryId = "auLkqtmHqYEpRvflfvLhyQ";
+  const variables = { rawQuery: "lang:ja", count: 20, querySource: "typed_query", product: "Latest" };
+  const features = {
+    rweb_tipjar_consumption_enabled: true,
+    responsive_web_graphql_exclude_directive_enabled: true,
+    verified_phone_label_enabled: false,
+    creator_subscriptions_tweet_preview_api_enabled: true,
+    responsive_web_graphql_timeline_navigation_enabled: true,
+    responsive_web_graphql_skip_user_profile_image_extensions_enabled: false,
+    communities_web_enable_tweet_community_results_fetch: true,
+    c9s_tweet_anatomy_moderator_badge_enabled: true,
+    articles_preview_enabled: true,
+    responsive_web_edit_tweet_api_enabled: true,
+    graphql_is_translatable_rweb_tweet_is_translatable_enabled: true,
+    view_counts_everywhere_api_enabled: true,
+    longform_notetweets_consumption_enabled: true,
+    responsive_web_twitter_article_tweet_consumption_enabled: true,
+    tweet_awards_web_tipping_enabled: false,
+    creator_subscriptions_quote_tweet_preview_enabled: false,
+    freedom_of_speech_not_reach_fetch_enabled: true,
+    standardized_nudges_misinfo: true,
+    tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled: true,
+    longform_notetweets_rich_text_read_enabled: true,
+    longform_notetweets_inline_media_enabled: true,
+    responsive_web_enhance_cards_enabled: false
+  };
+  const qs = new URLSearchParams({
+    variables: JSON.stringify(variables),
+    features: JSON.stringify(features),
+  });
+  const url = `https://x.com/i/api/graphql/${queryId}/SearchTimeline?${qs}`;
+  const res = await fetch(url, {
+    headers: {
+      "authorization": `Bearer ${X_BEARER}`,
+      "cookie": cookie,
+      "x-csrf-token": c.ct0,
+      "x-twitter-auth-type": "OAuth2Session",
+      "x-twitter-active-user": "yes",
+      "x-twitter-client-language": "ja",
+      "user-agent": ua,
+      "accept": "*/*",
+    },
+  });
+  const body = await res.text();
+  let parsed: any = null;
+  try { parsed = JSON.parse(body); } catch {}
+  const serialized = parsed ? JSON.stringify(parsed) : body;
+  return {
+    ok: res.ok,
+    status: res.status,
+    query_id: queryId,
+    response_bytes: body.length,
+    has_search_timeline: serialized.includes("search_timeline"),
+    tweet_result_markers: (serialized.match(/tweet_results/g) || []).length,
+    body_prefix: res.ok ? undefined : body.slice(0, 300),
+    checked_at: new Date().toISOString(),
+  };
+}
+
 Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
   try { console.log(JSON.stringify(await probe())); }
   catch (e) { console.error(String(e)); }
@@ -130,9 +198,9 @@ Deno.cron("X connectivity probe", "*/15 * * * *", async () => {
 
 Deno.serve(async (req) => {
   const u = new URL(req.url);
-  if (u.pathname !== "/probe" && u.pathname !== "/search-probe" && u.pathname !== "/search-inspect" && u.pathname !== "/state-inspect") return new Response("X-Bunseki Deno probe", { status: 200 });
+  if (u.pathname !== "/probe" && u.pathname !== "/search-probe" && u.pathname !== "/search-inspect" && u.pathname !== "/state-inspect" && u.pathname !== "/graphql-probe") return new Response("X-Bunseki Deno probe", { status: 200 });
   try {
-    return Response.json(u.pathname === "/state-inspect" ? await initialStateInspect() : u.pathname === "/search-inspect" ? await searchInspect() : u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
+    return Response.json(u.pathname === "/graphql-probe" ? await graphqlSearchProbe() : u.pathname === "/state-inspect" ? await initialStateInspect() : u.pathname === "/search-inspect" ? await searchInspect() : u.pathname === "/search-probe" ? await searchPageProbe() : await probe());
   } catch (e) {
     return Response.json({ ok: false, error: String(e) }, { status: 500 });
   }

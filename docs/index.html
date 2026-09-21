@@ -234,6 +234,11 @@ async function loadHits(){
     $('hits').innerHTML=posts.map(p=>{
       const sc=p.score??p.buzz_score;const age=p.age_minutes!=null?Math.round(p.age_minutes)+'m':'—';
       const lpm=p.likes_per_min!=null?Number(p.likes_per_min).toFixed(1):'—';
+      const pred=p.predicted_final_impressions;
+      const predText=pred!=null?(pred>=1000000?(pred/1000000).toFixed(1)+'M':Math.round(pred/1000)+'K'):'予測待ち';
+      const imp=p.impressions!=null?Number(p.impressions).toLocaleString():'—';
+      const ipm=p.impressions_per_min!=null?Number(p.impressions_per_min).toFixed(0):'—';
+      const iacc=p.impressions_acceleration!=null?Number(p.impressions_acceleration).toFixed(2)+'x':'—';
       return `<div class="hit${p.candidate?' star':''}"><div class="ht">
         <span class="sc">${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}</span>
         <span class="meta">@${esc(p.author||'')}</span>

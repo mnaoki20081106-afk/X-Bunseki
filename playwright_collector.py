@@ -62,6 +62,33 @@ def _normalize(t):
       "impressions":int(getattr(t,"viewCount",0) or 0),
     }
 
+async def _probe_engine(pw, engine_name, state):
+    engine=getattr(pw, engine_name)
+    browser=await engine.launch(headless=True)
+    context=await browser.new_context(
+        storage_state=state,
+        locale="ja-JP",
+        timezone_id="Asia/Tokyo",
+        viewport={"width":1280,"height":800},
+    )
+    page=await context.new_page()
+    try:
+        await page.goto("https://x.com/home", wait_until="domcontentloaded", timeout=30000)
+        await page.wait_for_timeout(5000)
+        title=await page.title()
+        url=page.url
+        waiting="しばらくお待ちください" in title
+        login="/login" in url or "/i/flow/login" in url
+        home_dom=await page.locator('a[href="/home"], [data-testid="primaryColumn"]').count()
+        print(f"[browser-probe] {engine_name}: URL={url} title={title!r} waiting={waiting} login={login} home_dom={home_dom}")
+        if not waiting and not login and home_dom:
+            return browser,context,page
+    except Exception as e:
+        print(f"[browser-probe] {engine_name}: ERROR {type(e).__name__}: {str(e)[:300]}")
+    await context.close()
+    await browser.close()
+    return None
+
 async def _collect():
     from playwright.async_api import async_playwright
     state=_session_path()
@@ -69,38 +96,21 @@ async def _collect():
     all_posts={}
 
     async with async_playwright() as pw:
-        browser=await pw.chromium.launch(
-            headless=True,
-            args=["--disable-dev-shm-usage", "--no-sandbox"],
-        )
-        context=await browser.new_context(
-            storage_state=state,
-            locale="ja-JP",
-            timezone_id="Asia/Tokyo",
-            viewport={"width": 1280, "height": 800},
-        )
-        page=await context.new_page()
-        print("収集方式: Playwright Chromium / 通常ブラウザ互換設定")
+        selected=None
+        print("収集方式: Playwright 3ブラウザ比較 / Chromium → Firefox → WebKit")
         print("セッションCookie: auth_token=あり / ct0=あり")
+        for engine_name in ("chromium","firefox","webkit"):
+            result=await _probe_engine(pw,engine_name,state)
+            if result:
+                selected=(engine_name,*result)
+                print(f"[browser-probe] 採用: {engine_name}")
+                break
+        if not selected:
+            raise RuntimeError("Chromium / Firefox / WebKit の全てでX Home通常DOMへ到達できませんでした")
 
+        engine_name,browser,context,page=selected
         try:
-            await page.goto("https://x.com/home", wait_until="domcontentloaded", timeout=30000)
-            await page.wait_for_timeout(5000)
-            title=await page.title()
-            url=page.url
-            print(f"[セッション確認] URL={url} title={title!r}")
-            if "/login" in url or "/i/flow/login" in url:
-                raise SessionExpiredError("Xログイン画面へ転送されました")
-            if "しばらくお待ちください" in title:
-                raise RuntimeError("XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しました")
-            # Home timeline or account navigation is enough to prove the browser session reached X.
-            home_ok=await page.locator('a[href="/home"], [data-testid="primaryColumn"]').count()
-            if not home_ok:
-                body=(await page.locator("body").inner_text())[:300]
-                raise RuntimeError(f"X Homeの通常DOMを確認できません: {body!r}")
-            print("[疎通確認] X Home 通常DOM到達: 成功")
-
-            print(f"検索クエリ数: {len(queries)}")
+            print(f"検索クエリ数: {len(queries)} / browser={engine_name}")
             for query,product,limit in queries:
                 from urllib.parse import quote
                 search_url=f"https://x.com/search?q={quote(query)}&src=typed_query&f={'live' if product == 'Latest' else 'top'}"
@@ -109,7 +119,7 @@ async def _collect():
                     await page.goto(search_url, wait_until="domcontentloaded", timeout=30000)
                     await page.wait_for_timeout(3500)
                     articles=page.locator('article[data-testid="tweet"]')
-                    n=min(await articles.count(), limit)
+                    n=min(await articles.count(),limit)
                     added=0
                     for i in range(n):
                         a=articles.nth(i)

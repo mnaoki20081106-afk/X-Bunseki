@@ -1,9 +1,6 @@
 name: SNS Buzz Monitor
 
 on:
-  push:
-    branches: [main]
-    paths: [".github/manual-monitor-trigger"]
   schedule:
     # GitHub Actions cronは毎時00分付近が混雑しやすいため、11分基準で15分間隔。
     - cron: "11,26,41,56 * * * *"

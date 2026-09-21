@@ -85,6 +85,32 @@ def test_detector_rejects_low_likes():
     assert "いいねが少なすぎる" in result["rejected_reason"]
 
 
+def test_million_imp_rescue_bypasses_low_likes_when_views_are_exploding():
+    post = _post(minutes_old=30, likes=10, impressions=3_000_000, text="未知の話題")
+    history = [_obs(15, 5, impressions=1_000_000)]
+    result = detector.evaluate(post, history, relevance=0.0, now=NOW)
+    assert result["million_imp_bypass"] is True
+    assert result["rejected_reason"] is None
+    assert result["should_notify"] is True
+
+
+def test_million_imp_rescue_rejects_a_stalled_million_view_post():
+    post = _post(minutes_old=120, likes=10, impressions=1_010_000, text="未知の話題")
+    history = [
+        _obs(30, 5, impressions=990_000),
+        _obs(15, 8, impressions=1_005_000),
+    ]
+    result = detector.evaluate(post, history, relevance=0.0, now=NOW)
+    assert result["million_imp_bypass"] is False
+
+
+def test_viral_queries_are_keyword_independent():
+    queries = collector.build_queries()
+    texts = [q for q, _, _ in queries]
+    assert any(q.startswith("lang:ja") and "min_faves:2000" in q for q in texts)
+    assert any("min_retweets:400" in q for q in texts)
+
+
 def test_detector_notifies_a_fast_growing_post():
     post = _post(minutes_old=45, likes=6000, retweets=1500, replies=700, bookmarks=800)
     history = [_obs(30, 800), _obs(15, 2500)]

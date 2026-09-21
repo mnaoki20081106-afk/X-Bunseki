@@ -185,6 +185,7 @@ def evaluate(post: dict, history: list[dict], relevance: float = 0.0, now=None) 
         return enriched
     enriched["rejected_reason"] = None
     enriched.update(score(post, g, relevance=relevance))
+    enriched.update(growth.predict_final_impressions(post, g))
     enriched["should_notify"] = enriched["buzz_score"] >= NOTIFY_SCORE
     return enriched
 
@@ -196,7 +197,7 @@ def evaluate_all(posts: list[dict], history_map: dict, relevance_fn=None, now=No
         results.append(
             evaluate(post, history_map.get(post["post_id"], []), relevance=relevance, now=now)
         )
-    results.sort(key=lambda p: p["buzz_score"], reverse=True)
+    results.sort(key=lambda p: (p.get("predicted_final_impressions") or 0, p["buzz_score"]), reverse=True)
     return results
 
 

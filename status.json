@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-20T23:55:34.657303+00:00",
+  "updated_at": "2026-09-21T00:47:32.994259+00:00",
   "status": "error",
-  "started_at": "2026-09-20T23:55:28.731214+00:00",
+  "started_at": "2026-09-21T00:47:08.686049+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
-  "error_message": "XがGitHub Actions上のChromiumに待機/チャレンジ画面を返しました"
+  "error_message": "Chromium / Firefox / WebKit の全てでX Home通常DOMへ到達できませんでした"
 }

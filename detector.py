@@ -168,14 +168,61 @@ def score(post: dict, g: dict, relevance: float = 0.0) -> dict:
     }
 
 
+def _million_velocity_floor(age: float) -> float:
+    """Grok prior, linearly interpolated to avoid a pile of hard boundaries."""
+    anchors = [(30, 2500), (60, 1600), (90, 1100), (120, 750), (180, 450), (240, 300)]
+    if age <= anchors[0][0]:
+        return anchors[0][1]
+    for (x0, y0), (x1, y1) in zip(anchors, anchors[1:]):
+        if x0 <= age <= x1:
+            t = (age - x0) / (x1 - x0)
+            return y0 + (y1 - y0) * t
+    return anchors[-1][1]
+
+
+def million_imp_rescue(post: dict, g: dict) -> tuple[bool, str]:
+    """Rescue proven million-view posts even when keyword/like scoring rejects them."""
+    age = float(g.get("age_minutes") or 9999)
+    imp = int(post.get("impressions") or 0)
+    if age > 240 or imp < 1_000_000:
+        return False, ""
+
+    velocity = float(g.get("impressions_per_min") or 0)
+    accel = g.get("impressions_acceleration")
+    floor = _million_velocity_floor(age)
+    # A post already at 3M/5M has proven distribution, so allow slower cruising.
+    if imp >= 5_000_000:
+        floor *= 0.60
+    elif imp >= 3_000_000:
+        floor *= 0.75
+
+    accel_factor = 1.0 if accel is None else max(0.5, min(2.0, float(accel))) ** 0.7
+    effective = velocity * accel_factor
+
+    # Do not reject a huge absolute velocity for mild deceleration. Only call it
+    # a stall when both acceleration and absolute speed are weak.
+    clear_stall = accel is not None and float(accel) <= 0.65 and velocity < floor * 1.5
+    if clear_stall:
+        return False, f"100万imp到達済みだが失速(accel={accel}, {velocity:.0f}imp/分)"
+
+    hit = effective >= floor
+    detail = f"{imp:,}imp / {velocity:.0f}imp/分 / effective={effective:.0f} >= {floor:.0f}"
+    return hit, detail
+
+
 def evaluate(post: dict, history: list[dict], relevance: float = 0.0, now=None) -> dict:
     g = growth.compute(post, history, now=now)
     enriched = dict(post)
     enriched["growth"] = g
     enriched["elapsed_minutes"] = g["age_minutes"]
     enriched["elapsed_hours"] = round(g["age_minutes"] / 60.0, 2)
+    # Forecast is useful even when the ordinary like/keyword filters reject a post.
+    enriched.update(growth.predict_final_impressions(post, g))
+    rescue, rescue_detail = million_imp_rescue(post, g)
+    enriched["million_imp_bypass"] = rescue
+    enriched["million_imp_bypass_detail"] = rescue_detail
     reason = hard_filter_reason(post, g)
-    if reason:
+    if reason and not rescue:
         enriched["rejected_reason"] = reason
         enriched["buzz_score"] = 0.0
         enriched["score_breakdown"] = {}
@@ -185,8 +232,8 @@ def evaluate(post: dict, history: list[dict], relevance: float = 0.0, now=None) 
         return enriched
     enriched["rejected_reason"] = None
     enriched.update(score(post, g, relevance=relevance))
-    enriched.update(growth.predict_final_impressions(post, g))
-    enriched["should_notify"] = enriched["buzz_score"] >= NOTIFY_SCORE
+    # Rescue means "show/track this post"; it does not inflate the normal score.
+    enriched["should_notify"] = enriched["buzz_score"] >= NOTIFY_SCORE or rescue
     return enriched
 
 

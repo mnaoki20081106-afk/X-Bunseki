@@ -87,9 +87,14 @@ def build_queries():
         "lang:ja -filter:retweets min_retweets:400",
         "lang:ja -filter:retweets min_faves:2000 min_retweets:200",
     ]
-    for query in viral:
-        q.append((query, "Latest", RESULTS_PER_QUERY))
-        q.append((query, "Top", RESULTS_PER_QUERY))
+    # Rotate four broad queries across 15-minute runs. Each cycle gets two
+    # complementary queries (likes + RT), both Latest and Top. Over 30 minutes
+    # all four priors are covered without doubling every run's request load.
+    slot = (datetime.now(timezone.utc).minute // 15) % 2
+    chosen = [viral[slot], viral[slot + 2]]
+    for query in chosen:
+        q.append((query, "Latest", min(RESULTS_PER_QUERY, 30)))
+        q.append((query, "Top", min(RESULTS_PER_QUERY, 30)))
     return q
 
 def _normalize_created_at(value):
@@ -122,7 +127,8 @@ def fetch_posts():
         raise SessionExpiredError("storage_state に auth_token または ct0 がありません")
 
     queries = build_queries()
-    keyword_query_count = len(queries) - 8
+    viral_query_count = 4
+    keyword_query_count = len(queries) - viral_query_count
     payload = [
         {"query": q, "product": product, "limit": limit,
          "source": "keyword" if i < keyword_query_count else "viral_search"}
@@ -148,7 +154,7 @@ for(const spec of queries){
   let cursor=undefined, fetched=0, pages=0;
   console.error('[x-agent] '+spec.product+' '+spec.query.slice(0,100));
   try {
-    while(fetched < spec.limit && pages < 3){
+    while(fetched < spec.limit && pages < 2){
       const r=await x.searchPage(spec.query, Math.min(20,spec.limit-fetched), spec.product, cursor);
       for(const t of (r.items||[])){
         if(!t.id) continue;
@@ -202,7 +208,9 @@ const priority=[...all].sort((a,b)=>{
   if(av!==bv) return bv-av;
   return ((b.likes||0)+(b.retweets||0)*2)-((a.likes||0)+(a.retweets||0)*2);
 });
-const enrich=priority.slice(0,Number(process.env.MAX_DETAIL_FETCH||80));
+const watchCount=dueIds.size;
+const detailLimit=Math.max(watchCount, Number(process.env.MAX_DETAIL_FETCH||60));
+const enrich=priority.slice(0,detailLimit);
 for(const p of enrich){
   try {
     const d=await x.getTweet(p.post_id);
@@ -236,7 +244,7 @@ process.stdout.write(JSON.stringify(all));
     try:
         r = subprocess.run(
             ["node", ".x-agent-collector.mjs"],
-            text=True, capture_output=True, timeout=420,
+            text=True, capture_output=True, timeout=660,
             env={**os.environ, "X_SESSION_STATE_PATH": _session_path()},
         )
         if r.stderr:

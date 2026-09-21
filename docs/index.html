@@ -240,9 +240,11 @@ async function loadHits(){
       const ipm=p.impressions_per_min!=null?Number(p.impressions_per_min).toFixed(0):'—';
       const iacc=p.impressions_acceleration!=null?Number(p.impressions_acceleration).toFixed(2)+'x':'—';
       return `<div class="hit${p.candidate?' star':''}"><div class="ht">
-        <span class="sc">${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}</span>
+        <span class="sc">予測 ${predText} imp</span>
+        <span class="meta">${esc(p.prediction_confidence||'—')} · 従来${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}</span>
         <span class="meta">@${esc(p.author||'')}</span>
-        <span class="meta">${age} · いいね${p.likes!=null?Number(p.likes).toLocaleString():'—'} · ${lpm}/分 · 返信${p.replies??'—'} · RT${p.retweets??'—'}</span>
+        <span class="meta">${age} · 現在imp ${imp} · ${ipm} imp/分 · 加速 ${iacc}</span>
+        <span class="meta">いいね${p.likes!=null?Number(p.likes).toLocaleString():'—'} · ${lpm}いいね/分 · 返信${p.replies??'—'} · RT${p.retweets??'—'}</span>
       </div><div class="tx">${esc(p.text||'(文なし/画像など)')}</div>
       ${p.url?`<a class="lk" href="${esc(p.url)}" target="_blank" rel="noopener">投稿を開く →</a>`:''}</div>`;
     }).join('');

@@ -111,7 +111,38 @@ for(const spec of queries){
     console.error('[x-agent] query failed: '+(e?.message||e));
   }
 }
-process.stdout.write(JSON.stringify([...seen.values()]));
+// SearchTimeline's compact Tweet mapper omits view count. Enrich only the strongest
+// early candidates with TweetDetail so we can observe actual impressions without
+// multiplying requests for every collected tweet.
+const all=[...seen.values()];
+const enrich=[...all]
+  .sort((a,b)=>((b.likes||0)+(b.retweets||0)*2)-((a.likes||0)+(a.retweets||0)*2))
+  .slice(0,80);
+for(const p of enrich){
+  try {
+    const d=await x.getTweet(p.post_id);
+    const ins=d?.data?.threaded_conversation_with_injections_v2?.instructions||[];
+    let views=null, bookmarks=null, quotes=null;
+    outer: for(const inst of ins){
+      for(const e of inst.entries||[]){
+        const res=e?.content?.itemContent?.tweet_results?.result;
+        if(String(res?.rest_id||'')===String(p.post_id)){
+          views=Number(res?.views?.count||0)||0;
+          bookmarks=Number(res?.legacy?.bookmark_count||0)||0;
+          quotes=Number(res?.legacy?.quote_count||0)||0;
+          break outer;
+        }
+      }
+    }
+    if(views!=null) p.impressions=views;
+    if(bookmarks!=null) p.bookmarks=bookmarks;
+    if(quotes!=null) p.quotes=quotes;
+  } catch(e) {
+    console.error('[views] '+p.post_id+' failed: '+(e?.message||e));
+  }
+}
+console.error('[views] enriched '+enrich.length+' / '+all.length);
+process.stdout.write(JSON.stringify(all));
 '''
     Path(".x-agent-collector.mjs").write_text(script, encoding="utf-8")
     try:

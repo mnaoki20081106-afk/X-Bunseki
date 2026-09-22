@@ -229,7 +229,7 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
     predicted = max(current, int(round(current * remaining * accel_adjust * quality_adjust)))
     samples = int(growth.get("samples") or 0)
     confidence = "high" if samples >= 3 and imp_accel is not None else ("medium" if samples >= 1 else "low")
-    return {
+    result = {
         "predicted_final_impressions": predicted,
         "prediction_confidence": confidence,
         "prediction_basis": "Grok経験則prior+15分観測",
@@ -237,6 +237,42 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
         "prediction_accel_adjustment": round(accel_adjust, 2),
         "prediction_quality_adjustment": round(quality_adjust, 2),
     }
+
+    # Gen1 can replace only the forecast after it has passed every promotion
+    # gate. Discovery, hard filters, rescue logic and buzz scoring remain Gen0.
+    registry_path = Path(__file__).parent / "data" / "model_registry.json"
+    try:
+        if registry_path.exists():
+            registry = json.loads(registry_path.read_text(encoding="utf-8"))
+            if (registry.get("champion") or {}).get("generation") == "gen1":
+                import shadow_predictor
+                feat = {
+                    "elapsed_minutes": age,
+                    "log1p_impressions": __import__("math").log1p(current),
+                    "velocity_imp_per_min": growth.get("impressions_per_min"),
+                    "log1p_velocity": __import__("math").log1p(max(float(growth.get("impressions_per_min") or 0), 0)),
+                    "velocity_ratio_prev": growth.get("impressions_acceleration"),
+                    "velocity_60m_avg": growth.get("impressions_per_min"),
+                    "velocity_recent_vs_60m": 1.0,
+                    "peak_velocity": growth.get("impressions_per_min"),
+                    "minutes_since_peak": 0.0,
+                    "reacceleration_count": 0,
+                    "like_per_imp": like_r,
+                    "retweet_per_imp": rt_r,
+                    "reply_per_imp": reply_r,
+                    "quote_per_imp": float(post.get("quotes") or 0) / max(current, 1),
+                    "bookmark_per_imp": bookmark_r,
+                    "observation_count": samples + 1,
+                    "impressions": current,
+                }
+                gen1 = shadow_predictor.predict(feat)
+                if gen1 is not None:
+                    result["predicted_final_impressions"] = gen1
+                    result["prediction_basis"] = "Gen1 promoted tree ensemble"
+                    result["prediction_confidence"] = confidence
+    except Exception as e:
+        print(f"[gen1] production inference failed; fallback to Gen0: {e}")
+    return result
 
 def describe(growth: dict) -> str:
     """通知本文に載せる、人間が読める1行の要約"""

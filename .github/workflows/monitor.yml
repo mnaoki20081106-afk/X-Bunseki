@@ -3,7 +3,11 @@ name: SNS Buzz Monitor
 on:
   schedule:
     # GitHub Actions cronは毎時00分付近が混雑しやすいため、11分基準で15分間隔。
-    - cron: "11,26,41,56 * * * *"
+    # GitHub schedulerの取りこぼし切り分けも兼ね、各15分枠を独立登録。
+    - cron: "11 * * * *"
+    - cron: "26 * * * *"
+    - cron: "41 * * * *"
+    - cron: "56 * * * *"
   workflow_dispatch:
     inputs:
       test_notification:

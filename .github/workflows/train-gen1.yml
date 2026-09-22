@@ -1,0 +1,65 @@
+name: Gen1 Model Training
+
+on:
+  schedule:
+    # Learning is isolated from the 15-minute discovery monitor.
+    - cron: "37 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gen1-model-training
+  cancel-in-progress: false
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install training dependencies
+        run: |
+          pip install "numpy>=2.0,<3" "scikit-learn>=1.6,<2" "joblib>=1.4,<2"
+
+      - name: Rebuild outcomes and readiness
+        run: |
+          python build_outcomes.py
+          python gen1_controller.py
+
+      - name: Train challenger when eligible
+        run: python train_gen1.py
+
+      - name: Refresh registry after training
+        run: python gen1_controller.py
+
+      - name: Commit model state
+        run: |
+          set -e
+          git config user.name "sns-model-bot"
+          git config user.email "actions@github.com"
+          for p in data/training_outcomes.json data/model_registry.json data/gen1_challenger.json data/gen1_challenger.joblib; do
+            if [ -e "$p" ]; then
+              git add -f "$p"
+            fi
+          done
+          if git diff --staged --quiet; then
+            echo "No model-state changes"
+            exit 0
+          fi
+          git commit -m "Update Gen1 model state"
+          for i in 1 2 3 4; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main || true
+            sleep $((2 ** i))
+          done
+          exit 1

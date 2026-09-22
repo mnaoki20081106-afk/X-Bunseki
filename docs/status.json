@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-09-22T11:03:24.069675+00:00",
+  "updated_at": "2026-09-22T11:17:34.356359+00:00",
   "status": "success",
-  "started_at": "2026-09-22T11:02:46.642289+00:00",
-  "finished_at": "2026-09-22T11:03:24.067782+00:00",
-  "posts_scanned": 288,
-  "posts_with_history": 190,
-  "posts_flagged": 21,
+  "started_at": "2026-09-22T11:16:59.331287+00:00",
+  "finished_at": "2026-09-22T11:17:34.355292+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 419,
+  "posts_flagged": 127,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 591,
+  "minutes_since_last_notification": 605,
   "reject_reasons": {
-    "古すぎる": 58,
-    "いいねが少なすぎる": 163,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 1
+    "古すぎる": 143,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 219,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 23157,
-    "posts": 7470,
+    "total": 23757,
+    "posts": 7651,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 1760,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 5,
+  "watchlist_active": 1845,
   "top5": [
     {
-      "author": "Genshin_7",
-      "score": 22.8,
-      "likes": 2501,
-      "likes_per_min": 9.84,
+      "author": "_mumei_R",
+      "score": 47.1,
+      "likes": 22338,
+      "likes_per_min": 194.33,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 159.4,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "y_nakamaru_94",
+      "score": 63.1,
+      "likes": 11746,
+      "likes_per_min": 173.22,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 70.9,
+      "text": "おめでとう！！！",
+      "url": "https://x.com/y_nakamaru_94/status/2102338789624713531"
+    },
+    {
+      "author": "ryoooooplus",
+      "score": 52.8,
+      "likes": 12956,
+      "likes_per_min": 181.54,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 213.4,
-      "text": "【「原神 星々の幻境」イベント紹介】\n「幻境奥秘・幻夜の燈火」おしゃれアイテムが登場\n\n▼星願期間\nVer.7.1アップ",
-      "url": "https://x.com/Genshin_7/status/2102299359610073474"
+      "age_minutes": 109.5,
+      "text": "ね。 https://t.co/M12N8hiri6",
+      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
     },
     {
-      "author": "sakayori_soma",
-      "score": 79.0,
-      "likes": 377,
-      "likes_per_min": 75.4,
+      "author": "YahooNewsTopics",
+      "score": 44.4,
+      "likes": 1894,
+      "likes_per_min": 8.28633707619632,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 3.1,
-      "text": "【Big Walk】デカ歩き w/奏斗さん、北見、塚原大地【酒寄颯馬/にじさんじ】 https://t.co/rxiGe",
-      "url": "https://x.com/sakayori_soma/status/2102352291055710678"
+      "age_minutes": 228.6,
+      "text": "【配偶者と性行為つらい 向き合い方】\nhttps://t.co/jfwiC8i2kq",
+      "url": "https://x.com/YahooNewsTopics/status/2102299105720684834"
     },
     {
-      "author": "I_Nozomi_",
-      "score": 85.3,
-      "likes": 349,
-      "likes_per_min": 69.8,
+      "author": "PacificleagueTV",
+      "score": 73.9,
+      "likes": 1543,
+      "likes_per_min": 269.01717278299736,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 2.2,
-      "text": "今日は21時30分からインターネットに帰還ッ……！",
-      "url": "https://x.com/I_Nozomi_/status/2102352513827807708"
-    },
-    {
-      "author": "rindochihaya",
-      "score": 23.1,
-      "likes": 3337,
-      "likes_per_min": 14.08,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 215.8,
-      "text": "え、できてるこれ？？どうやるの？？？\nただ他責思考なのバラしただけ？？",
-      "url": "https://x.com/rindochihaya/status/2102298742619853271"
-    },
-    {
-      "author": "madoka_exedra",
-      "score": 60.7,
-      "likes": 146,
-      "likes_per_min": 29.2,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 3.3,
-      "text": "／\n　#まどドラ 1.5th Anniversaryまで\n 　あと５日！\n＼\n\n本日は、「灯台劇場」から「ナマエ」「A-",
-      "url": "https://x.com/madoka_exedra/status/2102352219060441519"
+      "age_minutes": 5.7,
+      "text": "だからギータはスターなんです！😭🙌\nここぞという場面で決める力！💪\n福岡ソフトバンク 柳田悠岐 選手の今シーズン第18号",
+      "url": "https://x.com/PacificleagueTV/status/2102355184253059377"
     }
   ]
 }

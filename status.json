@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T03:54:22.648085+00:00",
+  "updated_at": "2026-09-22T03:55:21.937241+00:00",
   "status": "success",
-  "started_at": "2026-09-22T03:53:44.404722+00:00",
-  "finished_at": "2026-09-22T03:54:22.644179+00:00",
-  "posts_scanned": 269,
-  "posts_with_history": 262,
-  "posts_flagged": 8,
+  "started_at": "2026-09-22T03:54:44.950290+00:00",
+  "finished_at": "2026-09-22T03:55:21.936062+00:00",
+  "posts_scanned": 580,
+  "posts_with_history": 553,
+  "posts_flagged": 80,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 162,
+  "minutes_since_last_notification": 163,
   "reject_reasons": {
-    "古すぎる": 44,
-    "失速済み": 7,
-    "初回観測かつ平均速度が低い": 34,
-    "いいねが少なすぎる": 156,
-    "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 2
+    "古すぎる": 169,
+    "初回観測かつ平均速度が低い": 54,
+    "いいねが少なすぎる": 218,
+    "誘導文パターン": 3,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 9173,
-    "posts": 3924,
+    "total": 9753,
+    "posts": 3951,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 303,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 3,
+  "watchlist_active": 311,
   "top5": [
     {
-      "author": "rockinon_fes",
-      "score": 63.6,
-      "likes": 3182,
-      "likes_per_min": 58.58973367602935,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 54.3,
-      "text": "ROCK IN JAPAN FESTIVAL 2026を終えて。\n\n今これを書いているのは、9月21日の夜、本当は最終日",
-      "url": "https://x.com/rockinon_fes/status/2102231427718738285"
+      "author": "UcmRu",
+      "score": 25.7,
+      "likes": 31353,
+      "likes_per_min": 42.21,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 795.8,
+      "text": "timeleszのコメント、寺西が一番ましで勝利が一番酷い",
+      "url": "https://x.com/UcmRu/status/2102045074041549285"
     },
     {
-      "author": "Vamp_Kuzu",
-      "score": 25.4,
-      "likes": 3833,
-      "likes_per_min": 10.17,
+      "author": "Tigers_140609",
+      "score": 79.8,
+      "likes": 5919,
+      "likes_per_min": 76.62565687287177,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 77.2,
+      "text": "［広島］\n新井貴浩監督が続投へ　\nシーズン中に３度、球団に辞意伝える…\n「ゾンビたばこ」を巡る激動シーズン　来季５年目は",
+      "url": "https://x.com/Tigers_140609/status/2102225903728337211"
+    },
+    {
+      "author": "frontale_staff",
+      "score": 74.8,
+      "likes": 2384,
+      "likes_per_min": 43.61321271060251,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 54.7,
+      "text": "【重要】9/23 記者会見実施のお知らせ\n\n川崎フロンターレから所属選手に関する大切なお知らせがありますので、以下のとお",
+      "url": "https://x.com/frontale_staff/status/2102231585567478119"
+    },
+    {
+      "author": "711SEJ",
+      "score": 53.1,
+      "likes": 12798,
+      "likes_per_min": 77.3,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 228.6,
-      "text": "【✂️ショート動画投稿✂️】\n\n【雑談】Simejiの葛葉名言集\nhttps://t.co/I8HPLgRP6c\n\n【A",
-      "url": "https://x.com/Vamp_Kuzu/status/2102187566426640859"
+      "age_minutes": 175.3,
+      "text": "ゴンチャのペットボトルに新フレーバー誕生✨\n\n対象の貢茶(ゴンチャ)いずれか1本に使える\n150円引きクーポンが当たるチ",
+      "url": "https://x.com/711SEJ/status/2102201223336382507"
     },
     {
-      "author": "SerAph_DazZ",
-      "score": 62.9,
-      "likes": 1790,
-      "likes_per_min": 36.69798299524195,
+      "author": "daigonishi22",
+      "score": 57.9,
+      "likes": 6026,
+      "likes_per_min": 52.41716821789648,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 48.8,
-      "text": "しょ！\n\nMIMESISにて、不慮の事故（？）で〇され続けるセラフ達【セラフ・ダズルガーデン/四季凪アキラ/榊ネス/魁星",
-      "url": "https://x.com/SerAph_DazZ/status/2102232818780971347"
-    },
-    {
-      "author": "Tr0uT_2434",
-      "score": 78.5,
-      "likes": 1214,
-      "likes_per_min": 74.35753611142759,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.3,
-      "text": "起床！おはよう！！！\n今日は夜に配信あり！\nなにかオヌヌメをよろしく！",
-      "url": "https://x.com/Tr0uT_2434/status/2102240986139345125"
-    },
-    {
-      "author": "gaku_fushimi",
-      "score": 82.4,
-      "likes": 620,
-      "likes_per_min": 40.32120998800465,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 15.4,
-      "text": "今日は14時から！！もう今からジリジリしてきましたね・・・！！\nヒムさんとサロメちゃんと勝ち上がるぞ💪炎王の戦い見ててく",
-      "url": "https://x.com/gaku_fushimi/status/2102241225386635717"
+      "age_minutes": 115.0,
+      "text": "報告です。 https://t.co/1MzPahro99",
+      "url": "https://x.com/daigonishi22/status/2102216412190351501"
     }
   ]
 }

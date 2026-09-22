@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T07:47:36.965246+00:00",
+  "updated_at": "2026-09-22T08:03:42.291306+00:00",
   "status": "success",
-  "started_at": "2026-09-22T07:47:00.434425+00:00",
-  "finished_at": "2026-09-22T07:47:36.964252+00:00",
-  "posts_scanned": 293,
-  "posts_with_history": 222,
-  "posts_flagged": 11,
+  "started_at": "2026-09-22T08:03:10.475942+00:00",
+  "finished_at": "2026-09-22T08:03:42.290182+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 427,
+  "posts_flagged": 55,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 395,
+  "minutes_since_last_notification": 411,
   "reject_reasons": {
-    "古すぎる": 61,
-    "いいねが少なすぎる": 173,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 2,
-    "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 1
+    "古すぎる": 181,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 218,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 15790,
-    "posts": 5582,
+    "total": 16371,
+    "posts": 5736,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 978,
+  "viral_discovery_posts": 120,
+  "million_imp_rescued": 3,
+  "watchlist_active": 1045,
   "top5": [
     {
-      "author": "FightersPR",
-      "score": 40.4,
-      "likes": 7311,
-      "likes_per_min": 20.93,
-      "acceleration": 0.95,
+      "author": "tenjinnotami",
+      "score": 38.8,
+      "likes": 36240,
+      "likes_per_min": 149.93,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 162.3,
-      "text": "中島卓也選手が引退会見を行いました！\n\nサプライズで、子ガモの奈良間大己選手と細川凌平選手が登場🦆💐\n\n#ありがとう中島",
-      "url": "https://x.com/FightersPR/status/2102262941244653782"
+      "age_minutes": 234.4,
+      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
+      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 44.7,
-      "likes": 1027,
-      "likes_per_min": 6.49,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 130.0,
-      "text": "【害悪度S】\n\n厚生労働省 / 医師会\n\n備考 : 医師免許を持たない人が「アートメイク」を施術することを、すべて違法に",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2102271085941305423"
-    },
-    {
-      "author": "DEATHDOL_NOTE",
-      "score": 65.5,
-      "likes": 1421,
-      "likes_per_min": 10.73,
-      "acceleration": 0.82,
-      "measured": true,
-      "age_minutes": 93.2,
-      "text": "【害悪度A】\n\nTBSテレビ\n\n備考\n・業界関係者から地雷チャンへ脅迫DM\n・無断使用した地雷チャンの動画を非公開にして",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2102280329566495108"
-    },
-    {
-      "author": "swallowspr",
-      "score": 65.2,
-      "likes": 477,
-      "likes_per_min": 28.86,
+      "author": "418814",
+      "score": 37.6,
+      "likes": 14396,
+      "likes_per_min": 289.51,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 15.0,
-      "text": "【ファーム・リーグ】\n今日の活躍選手は4回無失点で勝利投手の ＃山崎太陽 投手。\n\n長年にわたり戸田で躍動した選手たちの",
-      "url": "https://x.com/swallowspr/status/2102300027213480331"
+      "age_minutes": 159.3,
+      "text": "ガチで終わった https://t.co/EspriDFrmB",
+      "url": "https://x.com/418814/status/2102267762001551476"
     },
     {
-      "author": "gekibnews",
-      "score": 28.1,
-      "likes": 142,
-      "likes_per_min": 0.81,
+      "author": "yuta_ptv",
+      "score": 36.7,
+      "likes": 6569,
+      "likes_per_min": 48.324799201462945,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 178.8,
-      "text": "タイムレス猪俣周杜・活動休止だけど、\n\n活動休止・自粛を発表した芸能人の\n\nその後を追ってみた。 https://t.c",
-      "url": "https://x.com/gekibnews/status/2102258793472225743"
+      "measured": false,
+      "age_minutes": 135.9,
+      "text": "それは違うんだよね…\nそのロゴの設計者、おれだもん。",
+      "url": "https://x.com/yuta_ptv/status/2102273630554169788"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 40.1,
+      "likes": 4001,
+      "likes_per_min": 319.62792210251325,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.5,
+      "text": "主人公すぎるって、、\n\nオーイシ主人公マサヨシ",
+      "url": "https://x.com/SAK_SAK_SAKUMA/status/2102304688255483947"
+    },
+    {
+      "author": "yeskiri",
+      "score": 42.4,
+      "likes": 3417,
+      "likes_per_min": 48.953444143069994,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 69.8,
+      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
+      "url": "https://x.com/yeskiri/status/2102290272348754259"
     }
   ]
 }

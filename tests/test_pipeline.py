@@ -8,6 +8,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import clustering
 import detector
 import growth
+import feature_engineering
+import build_outcomes
 import keyword_filter
 import notification_text
 import playwright_collector as collector
@@ -321,6 +323,33 @@ def test_system_message_passthrough():
     import line_notifier
     assert line_notifier.build_message({"system_message": "sys-alert"}) == "sys-alert"
 
+
+
+def test_feature_engineering_uses_elapsed_minutes_correctly():
+    rows = [
+        {"post_id":"p","observed_at":(NOW-timedelta(minutes=30)).isoformat(),"age_minutes":30,"impressions":1000,"likes":100},
+        {"post_id":"p","observed_at":(NOW-timedelta(minutes=15)).isoformat(),"age_minutes":45,"impressions":4000,"likes":250},
+        {"post_id":"p","observed_at":NOW.isoformat(),"age_minutes":60,"impressions":10000,"likes":500},
+    ]
+    feats = feature_engineering.make_features(rows)
+    assert abs(feats[1]["velocity_imp_per_min"] - 200.0) < 0.01
+    assert abs(feats[2]["velocity_imp_per_min"] - 400.0) < 0.01
+    assert feats[2]["velocity_ratio_prev"] > 1.9
+    assert feats[2]["reacceleration_count"] == 1
+
+
+def test_outcome_builder_requires_real_24h_observation():
+    groups = {
+        "early_only": [{"post_id":"early_only","observed_at":NOW.isoformat(),"posted_at":NOW.isoformat(),"age_minutes":360,"impressions":2_000_000}],
+        "complete": [
+            {"post_id":"complete","observed_at":NOW.isoformat(),"posted_at":NOW.isoformat(),"age_minutes":60,"impressions":100_000},
+            {"post_id":"complete","observed_at":NOW.isoformat(),"posted_at":NOW.isoformat(),"age_minutes":1435,"impressions":12_000_000},
+        ],
+    }
+    out = build_outcomes.build_outcomes(groups)
+    assert out["early_only"]["imp_24h"] is None
+    assert out["complete"]["imp_24h"] == 12_000_000
+    assert out["complete"]["reached_10m_24h"] is True
 
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]

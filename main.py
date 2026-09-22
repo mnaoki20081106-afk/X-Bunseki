@@ -129,9 +129,7 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
     except Exception as e:
         print(f"[ERROR] hits.md の書き出しに失敗: {e}")
 
-    # Two views: early discovery (0-4h) and currently viral (4-24h).
-    # Trending is backed by the persistent watchlist so a post does not disappear
-    # merely because it aged past the early-discovery window.
+    # Separate early discovery from posts that are already actively viral.
     early = [p for p in surviving if float((p.get("growth") or {}).get("age_minutes") or 0) <= 240]
     early.sort(key=lambda p: (p.get("predicted_final_impressions") or 0, p.get("buzz_score") or 0), reverse=True)
 
@@ -144,70 +142,402 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
         if not (240 < age <= 1440 and (imp >= 1_000_000 or ipm >= 300 or mega)):
             continue
         trending.append({
-            "author": row.get("author_handle"),
-            "score": row.get("last_buzz_score"),
-            "likes": row.get("last_likes"),
-            "impressions": imp,
+            "author": row.get("author_handle"), "score": row.get("last_buzz_score"),
+            "likes": row.get("last_likes"), "impressions": imp,
             "predicted_final_impressions": row.get("last_predicted_final_impressions"),
             "prediction_confidence": row.get("last_prediction_confidence"),
             "impressions_per_min": row.get("last_impressions_per_min"),
             "impressions_acceleration": row.get("last_impressions_acceleration"),
-            "replies": row.get("last_replies"),
-            "retweets": row.get("last_retweets"),
-            "bookmarks": row.get("last_bookmarks"),
-            "likes_per_min": row.get("last_likes_per_min"),
-            "age_minutes": age,
-            "candidate": True,
+            "replies": row.get("last_replies"), "retweets": row.get("last_retweets"),
+            "bookmarks": row.get("last_bookmarks"), "likes_per_min": row.get("last_likes_per_min"),
+            "age_minutes": age, "candidate": True,
             "discovery_source": row.get("discovery_source") or "watchlist",
             "million_imp_bypass": bool(row.get("million_imp_bypass")),
             "million_imp_bypass_detail": row.get("million_imp_bypass_detail") or "",
-            "mega_viral": mega,
-            "text": (row.get("text_snippet") or "")[:120],
+            "mega_viral": mega, "text": (row.get("text_snippet") or "")[:120],
             "url": row.get("url") or "",
         })
     trending.sort(key=lambda p: (p.get("impressions_per_min") or 0, p.get("impressions") or 0), reverse=True)
-
-    def _public_post(p):
-        return {
-            "author": p.get("author_handle"),
-            "score": p.get("buzz_score"),
-            "likes": p.get("likes"),
-            "impressions": p.get("impressions"),
-            "predicted_final_impressions": p.get("predicted_final_impressions"),
-            "prediction_confidence": p.get("prediction_confidence"),
-            "impressions_per_min": (p.get("growth") or {}).get("impressions_per_min"),
-            "impressions_acceleration": (p.get("growth") or {}).get("impressions_acceleration"),
-            "replies": p.get("replies"),
-            "retweets": p.get("retweets"),
-            "bookmarks": p.get("bookmarks"),
-            "likes_per_min": (p.get("growth") or {}).get("likes_per_min"),
-            "age_minutes": (p.get("growth") or {}).get("age_minutes"),
-            "candidate": bool(p.get("should_notify")),
-            "discovery_source": p.get("discovery_source") or "keyword",
-            "million_imp_bypass": bool(p.get("million_imp_bypass")),
-            "million_imp_bypass_detail": p.get("million_imp_bypass_detail") or "",
-            "mega_viral": float((p.get("growth") or {}).get("age_minutes") or 9999) <= 960 and int(p.get("impressions") or 0) >= 8_500_000,
-            "text": (p.get("text_snippet") or "")[:120],
-            "url": p.get("url") or "",
-        }
 
     payload = {
         "updated_at": started_iso,
         "surviving": len(surviving),
         "candidates": len(candidates),
         "notify_score": detector.NOTIFY_SCORE,
-        "early_posts": [_public_post(p) for p in early[:30]],
         "trending_posts": trending[:50],
-        # Backward compatibility for older clients.
-        "posts": [_public_post(p) for p in early[:30]],
+        "early_posts": [
+            {
+                "author": p.get("author_handle"),
+                "score": p.get("buzz_score"),
+                "likes": p.get("likes"),
+                "impressions": p.get("impressions"),
+                "predicted_final_impressions": p.get("predicted_final_impressions"),
+                "prediction_confidence": p.get("prediction_confidence"),
+                "impressions_per_min": (p.get("growth") or {}).get("impressions_per_min"),
+                "impressions_acceleration": (p.get("growth") or {}).get("impressions_acceleration"),
+                "replies": p.get("replies"),
+                "retweets": p.get("retweets"),
+                "bookmarks": p.get("bookmarks"),
+                "likes_per_min": (p.get("growth") or {}).get("likes_per_min"),
+                "acceleration": (p.get("growth") or {}).get("acceleration"),
+                "age_minutes": (p.get("growth") or {}).get("age_minutes"),
+                "candidate": bool(p.get("should_notify")),
+                "discovery_source": p.get("discovery_source") or "keyword",
+                "million_imp_bypass": bool(p.get("million_imp_bypass")),
+                "million_imp_bypass_detail": p.get("million_imp_bypass_detail") or "",
+                "text": (p.get("text_snippet") or "")[:120],
+                "url": p.get("url") or "",
+            }
+            for p in early[:30]
+        ],
     }
+    payload["posts"] = payload["early_posts"]  # backward compatibility
     try:
         HITS_JSON_PATH.write_text(
             json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
         )
-        print(
-            f"hits.json を書き出しました（早期{len(payload['early_posts'])} / "
-            f"バズ中{len(payload['trending_posts'])}件）"
-        )
+        print(f"hits.json を書き出しました（{len(payload['posts'])}件）")
     except Exception as e:
         print(f"[ERROR] hits.json の書き出しに失敗: {e}")
+
+
+
+def _append_training_snapshots(posts: list[dict], observed_at: str):
+    """長期学習用。impを取得できた投稿だけをJSONLへ蓄積する。"""
+    path = BASE_DIR / "data" / "training_snapshots.jsonl"
+    rows = []
+    for p in posts:
+        imp = int(p.get("impressions") or 0)
+        if imp <= 0:
+            continue
+        g = p.get("growth") or {}
+        rows.append({
+            "post_id": p.get("post_id"), "observed_at": observed_at,
+            "posted_at": p.get("posted_at"), "age_minutes": g.get("age_minutes"),
+            "impressions": imp, "impressions_per_min": g.get("impressions_per_min"),
+            "impressions_acceleration": g.get("impressions_acceleration"),
+            "likes": p.get("likes") or 0, "retweets": p.get("retweets") or 0,
+            "replies": p.get("replies") or 0, "quotes": p.get("quotes") or 0,
+            "bookmarks": p.get("bookmarks") or 0,
+        })
+    if not rows:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as fh:
+        for row in rows:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    print(f"学習用スナップショット: {len(rows)}件追記")
+
+def _append_log(rows: list[dict]):
+    if not rows:
+        return
+    try:
+        LOG_DIR.mkdir(parents=True, exist_ok=True)
+        path = LOG_DIR / f"{datetime.now(timezone.utc):%Y-%m-%d}.jsonl"
+        with path.open("a", encoding="utf-8") as f:
+            for row in rows:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        print(f"分析用ログに{len(rows)}件追記しました: {path.name}")
+    except Exception as e:
+        print(f"[ERROR] 分析用ログの書き出しに失敗: {e}")
+
+
+def _log_row(post: dict, notified: bool) -> dict:
+    g = post.get("growth") or {}
+    return {
+        "observed_at": datetime.now(timezone.utc).isoformat(),
+        "post_id": post.get("post_id"),
+        "url": post.get("url"),
+        "author": post.get("author_handle"),
+        "text": (post.get("text_snippet") or "")[:150],
+        "age_minutes": g.get("age_minutes"),
+        "likes": post.get("likes"),
+        "retweets": post.get("retweets"),
+        "replies": post.get("replies"),
+        "bookmarks": post.get("bookmarks"),
+        "impressions": post.get("impressions"),
+        "likes_per_min": g.get("likes_per_min"),
+        "acceleration": g.get("acceleration"),
+        "is_measured": g.get("is_measured"),
+        "samples": g.get("samples"),
+        "buzz_score": post.get("buzz_score"),
+        "score_breakdown": post.get("score_breakdown"),
+        "genre": post.get("genre"),
+        "tiktok_fit": post.get("tiktok_fit"),
+        "scoop_score": post.get("scoop_score"),
+        "notified": notified,
+    }
+
+
+def _send_system_alert(text: str):
+    print(f"[SYSTEM ALERT] {text}")
+
+
+def _alert_with_cooldown(meta_key: str, cooldown_hours: float, text: str):
+    now = datetime.now(timezone.utc)
+    last = db.get_meta(meta_key)
+    if last:
+        try:
+            if now - datetime.fromisoformat(last) < timedelta(hours=cooldown_hours):
+                print(f"({meta_key} はクールダウン中のためスキップ)")
+                return
+        except ValueError:
+            pass
+    _send_system_alert(text)
+    db.set_meta(meta_key, now.isoformat())
+
+
+def _check_zero_posts_streak(posts_count: int):
+    if posts_count > 0:
+        db.set_meta("zero_posts_streak", "0")
+        return
+    streak = int(db.get_meta("zero_posts_streak") or "0") + 1
+    db.set_meta("zero_posts_streak", str(streak))
+    print(f"(取得0件が{streak}回連続)")
+    if streak < ZERO_POSTS_ALERT_THRESHOLD:
+        return
+    _alert_with_cooldown(
+        "zero_posts_alert_at",
+        ZERO_POSTS_ALERT_COOLDOWN_HOURS,
+        f"⚠️ {streak}回連続で投稿を0件しか取得できていません。\n"
+        "Xのページ構造が変わったか、検索クエリが厳しすぎる可能性があります。",
+    )
+
+
+def run_once():
+    started_at = datetime.now(timezone.utc)
+    started_iso = started_at.isoformat()
+    db.init_db()
+
+    print(f"=== 実行開始 {started_iso} ===")
+    print(f"判定設定: {detector.config_summary()}")
+
+    session_err = _validate_session_file()
+    if session_err:
+        print(f"[ERROR] {session_err}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "session_expired", session_err)
+        _write_status(
+            status="session_expired",
+            started_at=started_iso,
+            posts_scanned=0,
+            posts_flagged=0,
+            notified_count=0,
+            error_message=session_err,
+        )
+        sys.exit(1)
+
+    try:
+        posts = fetch_posts()
+    except SessionExpiredError as e:
+        print(f"[ERROR] {e}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "session_expired", str(e))
+        _alert_with_cooldown(
+            "session_expired_alert_at",
+            SESSION_ALERT_COOLDOWN_HOURS,
+            "⚠️ Xのログインセッションが切れました。\n"
+            "X_SESSION_STATE を再発行してください。",
+        )
+        _write_status(status="session_expired", started_at=started_iso,
+                      posts_scanned=0, posts_flagged=0, notified_count=0,
+                      error_message=str(e))
+        sys.exit(1)
+    except (UnicodeDecodeError, json.JSONDecodeError) as e:
+        msg = f"セッションファイルの読み込みに失敗: {e}"
+        print(f"[ERROR] {msg}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "session_expired", msg)
+        _write_status(status="session_expired", started_at=started_iso,
+                      posts_scanned=0, posts_flagged=0, notified_count=0,
+                      error_message=msg)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] データ収集に失敗しました: {e}")
+        traceback.print_exc()
+        # Playwright の utf-8 失敗もセッション扱いに寄せる
+        msg = str(e)
+        status = "session_expired" if "utf-8" in msg.lower() or "storage" in msg.lower() else "error"
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, status, msg)
+        _write_status(status=status, started_at=started_iso,
+                      posts_scanned=0, posts_flagged=0, notified_count=0,
+                      error_message=msg)
+        sys.exit(1)
+
+    print(f"収集した投稿数: {len(posts)}")
+    _check_zero_posts_streak(len(posts))
+
+    now = datetime.now(timezone.utc)
+    now_iso = now.isoformat()
+
+    history_map = db.get_observation_history([p["post_id"] for p in posts])
+    measured = sum(1 for h in history_map.values() if h)
+    print(f"過去の観測がある投稿: {measured}/{len(posts)}件")
+
+    evaluated = detector.evaluate_all(
+        posts,
+        history_map,
+        relevance_fn=lambda p: keyword_filter.relevance_score(p.get("text_snippet", "")),
+        now=now,
+    )
+
+    watch_state = watchlist.update(evaluated, now=now)
+    active_watch = sum(1 for row in watch_state.values() if not row.get("completed"))
+    rescue_count = sum(1 for p in evaluated if p.get("million_imp_bypass"))
+    viral_count = sum(1 for p in posts if p.get("discovery_source") == "viral_search")
+    print(f"Viral Discovery: {viral_count}件 / Million Rescue: {rescue_count}件 / watchlist active: {active_watch}件")
+
+    _append_training_snapshots(evaluated, now_iso)
+    db.record_observations(posts, now_iso)
+
+    reasons: dict[str, int] = {}
+    for p in evaluated:
+        if p["rejected_reason"]:
+            key = p["rejected_reason"].split("(")[0]
+            reasons[key] = reasons.get(key, 0) + 1
+    if reasons:
+        print(f"足切りの内訳: {reasons}")
+
+    surviving = [p for p in evaluated if not p["rejected_reason"]]
+    print(f"足切り通過: {len(surviving)}件")
+    for p in surviving[:8]:
+        g = p["growth"]
+        print(
+            f"  {p['buzz_score']:5.1f}点 @{p['author_handle'][:18]:18s} "
+            f"いいね{p['likes']:6,} {g['likes_per_min']:6.1f}/分 "
+            f"{'実測' if g['is_measured'] else '推定'} "
+            f"加速{g['acceleration']} {p['score_breakdown']}"
+        )
+
+    candidates = [p for p in surviving if p["should_notify"]]
+    print(f"通知スコア({detector.NOTIFY_SCORE:.0f}点)到達: {len(candidates)}件")
+
+    _write_hits(surviving, candidates, started_iso, watch_state)
+
+    state = notify_state.NotifyState.load()
+
+    filtered = []
+    for post in candidates:
+        ng = keyword_filter.find_ng_keyword(post.get("text_snippet", ""))
+        if ng:
+            print(f"  (NGワード'{ng}'のため除外: {post['url']})")
+            continue
+        if state.is_notified(post["post_id"]):
+            continue
+        last = state.last_notified_at_for_author(post.get("author_handle", ""))
+        if detector.is_in_cooldown(post.get("author_handle", ""), last, now=now):
+            print(f"  (アカウントクールダウン中: @{post['author_handle']})")
+            continue
+        filtered.append(post)
+
+    representatives = clustering.pick_representatives(filtered)
+    if len(filtered) != len(representatives):
+        print(f"話題まとめ: {len(filtered)}件 → {len(representatives)}話題")
+
+    recent_texts = state.recent_texts(hours=detector.TOPIC_COOLDOWN_HOURS)
+    fresh_topics = []
+    for post in representatives:
+        similar = clustering.is_similar_to_any(post.get("text_snippet", ""), recent_texts)
+        if similar:
+            print(f"  (直近に同じ話題を通知済みのため除外: {post['url']})")
+            continue
+        fresh_topics.append(post)
+
+    sent_today = state.count_last_24h()
+    remaining_today = max(detector.NOTIFY_MAX_PER_DAY - sent_today, 0)
+    limit = min(detector.NOTIFY_MAX_PER_RUN, remaining_today)
+
+    since_last = state.minutes_since_last()
+    if remaining_today == 0 and fresh_topics:
+        print(f"[上限] 直近24時間で既に{sent_today}件通知しているため、今回は送信しません")
+        limit = 0
+
+    to_notify = []
+    for post in fresh_topics[:limit]:
+        allowed, reason = detector.can_notify_now(post["buzz_score"], since_last)
+        if not allowed:
+            print(f"[間隔] {post['buzz_score']:.0f}点の投稿を見送ります: {reason}")
+            continue
+        to_notify.append(post)
+
+    to_notify = content_scorer.enrich(to_notify, limit=LLM_MAX_POSTS)
+
+    notified_count = 0
+    notified_ids: set[str] = set()
+    for post in to_notify:
+        db.upsert_post(post)
+        for name, notifier in (("LINE", line_notifier), ("Pushover", pushover_notifier)):
+            try:
+                notifier.send_notification(post)
+            except Exception as e:
+                print(f"[ERROR] {name}通知に失敗 (post_id={post['post_id']}): {e}")
+        db.mark_notified(post["post_id"])
+        state.record(post)
+        notified_count += 1
+        notified_ids.add(post["post_id"])
+        print(f"  → 候補記録(通知無効): {post['buzz_score']:.0f}点 {post['url']}")
+
+    log_targets = list(surviving[:10])
+    logged_ids = {p["post_id"] for p in log_targets}
+    log_targets += [p for p in to_notify if p["post_id"] not in logged_ids]
+    _append_log([_log_row(p, p["post_id"] in notified_ids) for p in log_targets])
+
+    if notified_count:
+        state.save()
+
+    deleted = db.prune_observations(keep_hours=OBSERVATION_KEEP_HOURS)
+    stats = db.observation_stats()
+    print(f"観測DB: {stats.get('posts')}投稿 / {stats.get('total')}レコード(古い{deleted}件を削除)")
+
+    finished_at = datetime.now(timezone.utc).isoformat()
+    db.log_run(started_iso, finished_at, len(posts), len(candidates), "success")
+
+    print(
+        f"\n[まとめ] 収集{len(posts)} → 足切り通過{len(surviving)} "
+        f"→ スコア{detector.NOTIFY_SCORE:.0f}点到達{len(candidates)} "
+        f"→ 話題まとめ{len(representatives)} → 候補{notified_count}"
+        f"  (24時間で{sent_today + notified_count}/{detector.NOTIFY_MAX_PER_DAY}件)"
+    )
+
+    _write_status(
+        status="success",
+        started_at=started_iso,
+        finished_at=finished_at,
+        posts_scanned=len(posts),
+        posts_with_history=measured,
+        posts_flagged=len(candidates),
+        notified_count=notified_count,
+        notified_last_24h=sent_today + notified_count,
+        minutes_since_last_notification=(
+            None if since_last is None else round(since_last)
+        ),
+        reject_reasons=reasons,
+        config=detector.config_summary(),
+        observation_db=stats,
+        viral_discovery_posts=viral_count,
+        million_imp_rescued=rescue_count,
+        watchlist_active=active_watch,
+        top5=[
+            {
+                "author": p.get("author_handle"),
+                "score": p.get("buzz_score"),
+                "likes": p.get("likes"),
+                "likes_per_min": (p.get("growth") or {}).get("likes_per_min"),
+                "acceleration": (p.get("growth") or {}).get("acceleration"),
+                "measured": (p.get("growth") or {}).get("is_measured"),
+                "age_minutes": (p.get("growth") or {}).get("age_minutes"),
+                "text": (p.get("text_snippet") or "")[:60],
+                "url": p.get("url", ""),
+            }
+            for p in surviving[:5]
+        ],
+    )
+
+
+def run_test_notification():
+    print("=== テスト通知モード ===")
+    print("通知は無効化されています(LINE / Pushover 送信しません)")
+
+
+if __name__ == "__main__":
+    if os.environ.get("TEST_NOTIFICATION") == "true":
+        run_test_notification()
+    else:
+        run_once()

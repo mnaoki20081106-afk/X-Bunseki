@@ -213,6 +213,24 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
     path = BASE_DIR / "data" / "training_snapshots.jsonl"
     rows = []
     watch_state = watch_state or {}
+
+    # Persist the exact contemporaneous production ordering for later Recall@K/NDCG.
+    early_ranked = sorted(
+        [p for p in posts if float((p.get("growth") or {}).get("age_minutes") or 9999) <= 240],
+        key=lambda p: (p.get("predicted_final_impressions") or 0, p.get("buzz_score") or 0),
+        reverse=True,
+    )
+    early_rank = {p.get("post_id"): i + 1 for i, p in enumerate(early_ranked) if p.get("post_id")}
+
+    model_path = BASE_DIR / "data" / "impression_model.json"
+    model_version = "gen0-prior"
+    if model_path.exists():
+        try:
+            meta = json.loads(model_path.read_text(encoding="utf-8"))
+            model_version = f"gen0-multiplier-v{meta.get('version', 'unknown')}-n{meta.get('completed_posts', 'unknown')}"
+        except Exception:
+            model_version = "gen0-model-unreadable"
+
     for p in posts:
         imp = int(p.get("impressions") or 0)
         pid = p.get("post_id")
@@ -259,6 +277,9 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
             "impressions_delta": g.get("impressions_delta"),
             "predicted_final_impressions": p.get("predicted_final_impressions"),
             "prediction_confidence": p.get("prediction_confidence"),
+            "prediction_basis": p.get("prediction_basis"),
+            "production_model_version": model_version,
+            "production_early_rank": early_rank.get(pid),
             "prediction_remaining_multiplier": p.get("prediction_remaining_multiplier"),
             "prediction_accel_adjustment": p.get("prediction_accel_adjustment"),
             "prediction_quality_adjustment": p.get("prediction_quality_adjustment"),

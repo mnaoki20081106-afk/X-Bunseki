@@ -1,18 +1,20 @@
 {
-  "updated_at": "2026-09-22T21:47:19.173785+00:00",
+  "updated_at": "2026-09-22T22:02:03.279766+00:00",
   "status": "success",
-  "started_at": "2026-09-22T21:46:38.432377+00:00",
-  "finished_at": "2026-09-22T21:47:19.172614+00:00",
-  "posts_scanned": 295,
-  "posts_with_history": 226,
-  "posts_flagged": 2,
+  "started_at": "2026-09-22T22:01:22.250817+00:00",
+  "finished_at": "2026-09-22T22:02:03.278735+00:00",
+  "posts_scanned": 593,
+  "posts_with_history": 487,
+  "posts_flagged": 16,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 300,
+  "minutes_since_last_notification": 314,
   "reject_reasons": {
-    "古すぎる": 135,
-    "いいねが少なすぎる": 135,
-    "失速済み": 2
+    "古すぎる": 382,
+    "いいねが少なすぎる": 136,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 10,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -29,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 41033,
-    "posts": 9558,
+    "total": 41626,
+    "posts": 9664,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3337,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 1,
+  "watchlist_active": 3357,
   "top5": [
     {
-      "author": "wni_jp",
-      "score": 84.3,
-      "likes": 424,
-      "likes_per_min": 16.18,
-      "acceleration": null,
+      "author": "ryoooooplus",
+      "score": 22.1,
+      "likes": 32123,
+      "likes_per_min": 6.02,
+      "acceleration": 1.12,
       "measured": true,
-      "age_minutes": 32.5,
-      "text": "【台風発生予想】\n23日(水)3時現在、マリアナ諸島で発達中の熱帯低気圧について、気象庁は「24時間以内に台風に発達する",
-      "url": "https://x.com/wni_jp/status/2102506928886936049"
+      "age_minutes": 754.0,
+      "text": "ね。 https://t.co/M12N8hiri6",
+      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
     },
     {
-      "author": "melt_nemui",
-      "score": 82.7,
-      "likes": 185,
-      "likes_per_min": 37.0,
+      "author": "Tigers_140609",
+      "score": 69.1,
+      "likes": 2503,
+      "likes_per_min": 25.62,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 122.7,
+      "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
+      "url": "https://x.com/Tigers_140609/status/2102487923811823626"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 50.1,
+      "likes": 15353,
+      "likes_per_min": 85.95,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 210.5,
+      "text": "【カウコン開催決定！】\n\n12/31(木)\n「COUNTDOWN CONCERT 2026-2027 STARTO to",
+      "url": "https://x.com/info__Johnnys/status/2102465835822661721"
+    },
+    {
+      "author": "NetflixJP",
+      "score": 51.0,
+      "likes": 21608,
+      "likes_per_min": 181.68,
+      "acceleration": 1.09,
+      "measured": true,
+      "age_minutes": 182.0,
+      "text": "🐎今年の年越しはNetflixで！🐏\n━━━━━━━━━━━━━━━━\nCOUNTDOWN CONCERT\n2026-2",
+      "url": "https://x.com/NetflixJP/status/2102473002298261519"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 69.1,
+      "likes": 9522,
+      "likes_per_min": 293.2854689723124,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 4.1,
-      "text": "おはめるだよ\n\n今日20時文化祭の写真公開する～\n\n待ってる！",
-      "url": "https://x.com/melt_nemui/status/2102514069555335672"
-    },
-    {
-      "author": "SABR_lions",
-      "score": 36.5,
-      "likes": 164,
-      "likes_per_min": 2.37,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 63.6,
-      "text": "中日、ド軍ウォードを電撃獲得　マイナーで通算168発、25年2冠王＆MVP\n\n簡単に特徴を話すと\n・MLBで今年3HR＆",
-      "url": "https://x.com/SABR_lions/status/2102499107902517619"
-    },
-    {
-      "author": "OKB1917",
-      "score": 30.7,
-      "likes": 803,
-      "likes_per_min": 6.9,
-      "acceleration": 1.05,
-      "measured": true,
-      "age_minutes": 161.0,
-      "text": "酔っ払ったポルトガル人に「オブリガードとアリガトウは似ているだろ」などと言われながら華麗にホテルへと退避",
-      "url": "https://x.com/OKB1917/status/2102474595249061967"
-    },
-    {
-      "author": "Nito_Yusha",
-      "score": 48.1,
-      "likes": 241,
-      "likes_per_min": 7.88,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 20.8,
-      "text": "大丈夫だ、シルバーウィークは俺が終わらせない",
-      "url": "https://x.com/Nito_Yusha/status/2102509870717231338"
+      "age_minutes": 32.5,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/nino_honmono/status/2102510646428623210"
     }
   ]
 }

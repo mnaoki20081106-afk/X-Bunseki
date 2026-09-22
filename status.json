@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-09-22T22:47:17.724043+00:00",
+  "updated_at": "2026-09-22T23:02:59.408399+00:00",
   "status": "success",
-  "started_at": "2026-09-22T22:46:38.248712+00:00",
-  "finished_at": "2026-09-22T22:47:17.638104+00:00",
-  "posts_scanned": 298,
-  "posts_with_history": 222,
-  "posts_flagged": 6,
+  "started_at": "2026-09-22T23:02:29.156289+00:00",
+  "finished_at": "2026-09-22T23:02:59.407008+00:00",
+  "posts_scanned": 590,
+  "posts_with_history": 452,
+  "posts_flagged": 31,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 360,
+  "minutes_since_last_notification": 375,
   "reject_reasons": {
-    "古すぎる": 119,
-    "いいねが少なすぎる": 144,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 328,
+    "いいねが少なすぎる": 157,
+    "初回観測かつ平均速度が低い": 5,
+    "誘導文パターン": 2,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 43397,
-    "posts": 9959,
+    "total": 43987,
+    "posts": 10097,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3412,
+  "viral_discovery_posts": 112,
+  "million_imp_rescued": 8,
+  "watchlist_active": 3453,
   "top5": [
     {
-      "author": "wni_jp",
-      "score": 38.3,
-      "likes": 183,
-      "likes_per_min": 4.1,
-      "acceleration": null,
+      "author": "yyypandapanda",
+      "score": 36.1,
+      "likes": 23077,
+      "likes_per_min": 34.59,
+      "acceleration": 1.61,
       "measured": true,
-      "age_minutes": 32.6,
-      "text": "【台風25号 関東の6割が連休の予定を変更】\nシルバーウィーク中の21日(月)に関東付近を通過した台風25号。大雨や強風",
-      "url": "https://x.com/wni_jp/status/2102521998928974076"
+      "age_minutes": 746.2,
+      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
+      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
     },
     {
-      "author": "wanko_notcat",
-      "score": 82.7,
-      "likes": 602,
-      "likes_per_min": 48.99480464218938,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.3,
-      "text": "おはない₍ᵔ· ̫·ᵔ₎\n\nライブめーーーっちゃ楽しかったなあって思ってたら寝落ちしてた\n\n今日から活動6周年に向けて早",
-      "url": "https://x.com/wanko_notcat/status/2102527107914170778"
-    },
-    {
-      "author": "chi_bakun_chiba",
-      "score": 67.6,
-      "likes": 941,
-      "likes_per_min": 24.46,
-      "acceleration": 1.22,
+      "author": "_mumei_R",
+      "score": 24.5,
+      "likes": 61365,
+      "likes_per_min": 13.28,
+      "acceleration": 1.51,
       "measured": true,
-      "age_minutes": 47.3,
-      "text": "台風で大変な思いをしているおともだちもいるよね。\n チーバくんは、みんなが安心して過ごせる日が一日も早く来ることを願って",
-      "url": "https://x.com/chi_bakun_chiba/status/2102518305370280242"
+      "age_minutes": 864.8,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "oricon",
-      "score": 52.4,
-      "likes": 546,
-      "likes_per_min": 8.54,
-      "acceleration": 0.99,
+      "author": "Order0o1",
+      "score": 33.7,
+      "likes": 100105,
+      "likes_per_min": 30.95,
+      "acceleration": 1.18,
       "measured": true,
-      "age_minutes": 77.3,
-      "text": "🔑KEY TO LIT・岩﨑大昇＆猪狩蒼弥\nきょう放送『かまいガチ』出演📺️\n\n🆚“即帰宅”バトル初参戦\nデビュー発表日",
-      "url": "https://x.com/oricon/status/2102510752246407323"
+      "age_minutes": 752.5,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
     },
     {
-      "author": "OKB1917",
-      "score": 25.8,
-      "likes": 1274,
-      "likes_per_min": 9.5,
+      "author": "sirokuru_",
+      "score": 26.1,
+      "likes": 52765,
+      "likes_per_min": 20.64,
+      "acceleration": 1.8,
+      "measured": true,
+      "age_minutes": 953.6,
+      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
+      "url": "https://x.com/sirokuru_/status/2102294166197981315"
+    },
+    {
+      "author": "main_warabi",
+      "score": 29.7,
+      "likes": 86230,
+      "likes_per_min": 173.79,
       "acceleration": 1.27,
       "measured": true,
-      "age_minutes": 221.0,
-      "text": "酔っ払ったポルトガル人に「オブリガードとアリガトウは似ているだろ」などと言われながら華麗にホテルへと退避",
-      "url": "https://x.com/OKB1917/status/2102474595249061967"
+      "age_minutes": 623.8,
+      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
+      "url": "https://x.com/main_warabi/status/2102377179522949621"
     }
   ]
 }

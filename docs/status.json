@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-22T12:17:36.055040+00:00",
+  "updated_at": "2026-09-22T12:32:56.483357+00:00",
   "status": "success",
-  "started_at": "2026-09-22T12:16:57.344887+00:00",
-  "finished_at": "2026-09-22T12:17:36.053540+00:00",
-  "posts_scanned": 295,
-  "posts_with_history": 186,
-  "posts_flagged": 21,
+  "started_at": "2026-09-22T12:32:21.421766+00:00",
+  "finished_at": "2026-09-22T12:32:56.482368+00:00",
+  "posts_scanned": 578,
+  "posts_with_history": 403,
+  "posts_flagged": 119,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 665,
+  "minutes_since_last_notification": 680,
   "reject_reasons": {
-    "古すぎる": 60,
-    "誘導文パターン": 1,
-    "いいねが少なすぎる": 164,
-    "初回観測かつ平均速度が低い": 3,
-    "失速済み": 2
+    "古すぎる": 133,
+    "誘導文パターン": 4,
+    "失速済み": 6,
+    "初回観測かつ平均速度が低い": 2,
+    "いいねが少なすぎる": 222
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 25807,
-    "posts": 8246,
+    "total": 26385,
+    "posts": 8421,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 2095,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 7,
+  "watchlist_active": 2179,
   "top5": [
     {
-      "author": "728_Storm",
-      "score": 79.0,
-      "likes": 3673,
-      "likes_per_min": 614.0978457496058,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.0,
-      "text": "【お知らせ】\n\n本日9/22(火)22:00より生放送の\n関西テレビ「なにわAぇ!の放送させてください！ \nお蔵入りはド",
-      "url": "https://x.com/728_Storm/status/2102370230827929623"
-    },
-    {
-      "author": "FightersPR",
-      "score": 71.9,
-      "likes": 1505,
-      "likes_per_min": 191.36712062755245,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.9,
-      "text": "中島卓也選手の引退試合を飾る白星！\n最終回を柳川大晟投手が無失点に抑える✨\n#ありがとう中島卓也\n#ドミれ\n#lovef",
-      "url": "https://x.com/FightersPR/status/2102369753641971717"
-    },
-    {
-      "author": "I_Nozomi_",
-      "score": 80.9,
-      "likes": 821,
-      "likes_per_min": 140.3947211550645,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 5.8,
-      "text": "❤️‍🩹21:30❤️‍🩹\n\nみんなただいま～～～🤗\n\n復帰雑談です\n\n9月体調良い日無い【 にじさんじ所属 ／ 石神の",
-      "url": "https://x.com/I_Nozomi_/status/2102370264193617982"
-    },
-    {
-      "author": "MASAI_Fischers",
-      "score": 49.5,
-      "likes": 871,
-      "likes_per_min": 17.0,
-      "acceleration": 1.11,
+      "author": "MORE_STAR_",
+      "score": 83.1,
+      "likes": 10613,
+      "likes_per_min": 99.92,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 66.1,
-      "text": "【対談】ショートスリーパー堀大輔、大炎上のガミックスから学ぶ『ネットで生きる』ということ。 https://t.co/p",
-      "url": "https://x.com/MASAI_Fischers/status/2102355088451031167"
+      "age_minutes": 92.9,
+      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
+      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
     },
     {
-      "author": "uni_mafumafu",
-      "score": 73.9,
-      "likes": 1512,
-      "likes_per_min": 86.16465617685998,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.5,
-      "text": "まふまふとおしゃべり【#まふまふの生放送】\n#まふまふの生放送\nhttps://t.co/Imy0mQDnv0",
-      "url": "https://x.com/uni_mafumafu/status/2102367318257086607"
+      "author": "_mumei_R",
+      "score": 30.3,
+      "likes": 34450,
+      "likes_per_min": 152.6,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 234.7,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "snsnokyoufu",
+      "score": 54.7,
+      "likes": 20756,
+      "likes_per_min": 193.67,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 138.3,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
+    },
+    {
+      "author": "ryoooooplus",
+      "score": 40.8,
+      "likes": 23417,
+      "likes_per_min": 129.96,
+      "acceleration": 0.99,
+      "measured": true,
+      "age_minutes": 184.9,
+      "text": "ね。 https://t.co/M12N8hiri6",
+      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
+    },
+    {
+      "author": "gkmas_official",
+      "score": 73.4,
+      "likes": 33887,
+      "likes_per_min": 379.81,
+      "acceleration": 0.61,
+      "measured": true,
+      "age_minutes": 68.2,
+      "text": "💜⋆͛ ┈┈  Agitato ┈┈ ⋆͛💜\n\n   グラビアシリーズ 第2弾\n     　　小悪魔ガシャ\n\n💜⋆͛ ┈",
+      "url": "https://x.com/gkmas_official/status/2102358438663864586"
     }
   ]
 }

@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T18:49:16.932365+00:00",
+  "updated_at": "2026-09-22T19:03:10.402176+00:00",
   "status": "success",
-  "started_at": "2026-09-22T18:48:47.958277+00:00",
-  "finished_at": "2026-09-22T18:49:16.931226+00:00",
-  "posts_scanned": 586,
-  "posts_with_history": 577,
-  "posts_flagged": 10,
+  "started_at": "2026-09-22T19:02:32.050467+00:00",
+  "finished_at": "2026-09-22T19:03:10.401222+00:00",
+  "posts_scanned": 574,
+  "posts_with_history": 549,
+  "posts_flagged": 16,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 122,
+  "minutes_since_last_notification": 136,
   "reject_reasons": {
-    "古すぎる": 289,
-    "失速済み": 4,
+    "古すぎる": 293,
     "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 143,
-    "初回観測かつ平均速度が低い": 5,
-    "誘導文パターン": 1
+    "いいねが少なすぎる": 135,
+    "失速済み": 4,
+    "初回観測かつ平均速度が低い": 3,
+    "誘導文パターン": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 35463,
-    "posts": 8935,
+    "total": 36037,
+    "posts": 8960,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 3,
-  "watchlist_active": 3232,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 8,
+  "watchlist_active": 3241,
   "top5": [
     {
-      "author": "_mumei_R",
-      "score": 22.1,
-      "likes": 58841,
-      "likes_per_min": 17.27,
-      "acceleration": 0.81,
+      "author": "snsnokyoufu",
+      "score": 27.6,
+      "likes": 49228,
+      "likes_per_min": 19.02,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 611.1,
+      "age_minutes": 528.5,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
+    },
+    {
+      "author": "_mumei_R",
+      "score": 22.6,
+      "likes": 59070,
+      "likes_per_min": 16.48,
+      "acceleration": 0.95,
+      "measured": true,
+      "age_minutes": 625.0,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "k4sen",
-      "score": 27.6,
-      "likes": 26004,
-      "likes_per_min": 35.48,
-      "acceleration": 0.95,
+      "author": "Order0o1",
+      "score": 30.7,
+      "likes": 94116,
+      "likes_per_min": 43.73,
+      "acceleration": 0.33,
       "measured": true,
-      "age_minutes": 224.9,
-      "text": "乳首マシンガンにされたことあるか？",
-      "url": "https://x.com/k4sen/status/2102413713018171749"
+      "age_minutes": 512.7,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
     },
     {
-      "author": "main_warabi",
-      "score": 25.4,
-      "likes": 9269,
-      "likes_per_min": 22.61,
-      "acceleration": 0.91,
+      "author": "yyypandapanda",
+      "score": 30.0,
+      "likes": 17702,
+      "likes_per_min": 21.68,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 198.9,
-      "text": "セックス有識者が集まってきてしまった\nセックスって実在するんだ",
-      "url": "https://x.com/main_warabi/status/2102420247190155555"
+      "age_minutes": 506.4,
+      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
+      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
     },
     {
-      "author": "pj_sekai",
-      "score": 39.4,
-      "likes": 24483,
-      "likes_per_min": 22.48,
-      "acceleration": 0.97,
+      "author": "HaHaHaHaaa____",
+      "score": 16.9,
+      "likes": 17356,
+      "likes_per_min": 2.1,
+      "acceleration": 0.58,
       "measured": true,
-      "age_minutes": 229.2,
-      "text": "プロセカ6周年まであと7日\n\n『未来のスターによるショータイムだ！』\n\nAnimated by 山下RIRI（@RIRI",
-      "url": "https://x.com/pj_sekai/status/2102412616547090737"
-    },
-    {
-      "author": "watarai_hibari",
-      "score": 39.3,
-      "likes": 25649,
-      "likes_per_min": 18.54,
-      "acceleration": 1.01,
-      "measured": true,
-      "age_minutes": 208.5,
-      "text": "【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】\nhttps://t.co/CczGzg52cx\n\n   ",
-      "url": "https://x.com/watarai_hibari/status/2102417821238251826"
+      "age_minutes": 532.0,
+      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
+      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
     }
   ]
 }

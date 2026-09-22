@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-22T07:03:56.570730+00:00",
+  "updated_at": "2026-09-22T07:17:25.543253+00:00",
   "status": "success",
-  "started_at": "2026-09-22T07:03:25.969811+00:00",
-  "finished_at": "2026-09-22T07:03:56.569495+00:00",
-  "posts_scanned": 543,
-  "posts_with_history": 400,
-  "posts_flagged": 52,
+  "started_at": "2026-09-22T07:16:50.593502+00:00",
+  "finished_at": "2026-09-22T07:17:25.542164+00:00",
+  "posts_scanned": 287,
+  "posts_with_history": 208,
+  "posts_flagged": 10,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 351,
+  "minutes_since_last_notification": 365,
   "reject_reasons": {
-    "古すぎる": 110,
-    "いいね稼ぎ疑い": 5,
-    "失速済み": 14,
-    "いいねが少なすぎる": 211,
-    "初回観測かつ平均速度が低い": 7
+    "古すぎる": 28,
+    "失速済み": 11,
+    "いいねが少なすぎる": 164,
+    "初回観測かつ平均速度が低い": 3,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 14611,
-    "posts": 5267,
+    "total": 14898,
+    "posts": 5346,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 2,
-  "watchlist_active": 876,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 899,
   "top5": [
     {
-      "author": "tenjinnotami",
-      "score": 50.8,
-      "likes": 26391,
-      "likes_per_min": 217.84,
-      "acceleration": 0.78,
-      "measured": true,
-      "age_minutes": 174.6,
-      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
-      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
-    },
-    {
-      "author": "1garashi_Rika",
-      "score": 60.6,
-      "likes": 6312,
-      "likes_per_min": 107.67,
-      "acceleration": 1.34,
-      "measured": true,
-      "age_minutes": 77.4,
-      "text": "いや草",
-      "url": "https://x.com/1garashi_Rika/status/2102273329248038919"
-    },
-    {
-      "author": "canyong_1000000",
-      "score": 30.5,
-      "likes": 6052,
-      "likes_per_min": 24.14,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 194.3,
-      "text": "こちら、事実無根です。\n当時は連絡先すら知りませんでした。\nFABRIC7を辞めた後、別のヘアメイクさんに勤務先を教えて",
-      "url": "https://x.com/canyong_1000000/status/2102243897246372071"
-    },
-    {
-      "author": "Rou_2434",
-      "score": 77.6,
-      "likes": 6892,
-      "likes_per_min": 267.40570692588267,
+      "author": "reissuerecords",
+      "score": 73.7,
+      "likes": 596,
+      "likes_per_min": 119.2,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 25.8,
-      "text": "V26//ACT Ⅴ 　ソロイモータル\n味は格別。 https://t.co/Yea37g6xgs",
-      "url": "https://x.com/Rou_2434/status/2102286313542299670"
+      "age_minutes": 2.7,
+      "text": "「Kenshi Yonezu Station」オープン中！\n\nチャット欄、今日も目が離せません。\n\n▶ https://",
+      "url": "https://x.com/reissuerecords/status/2102295517229412514"
     },
     {
-      "author": "snsnokyoufu",
-      "score": 26.6,
-      "likes": 3217,
-      "likes_per_min": 15.366104159341957,
+      "author": "tonma5963",
+      "score": 39.6,
+      "likes": 1013,
+      "likes_per_min": 6.23,
+      "acceleration": 1.37,
+      "measured": true,
+      "age_minutes": 223.8,
+      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
+      "url": "https://x.com/tonma5963/status/2102239881972088982"
+    },
+    {
+      "author": "hochi_giants",
+      "score": 60.9,
+      "likes": 1759,
+      "likes_per_min": 10.87,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 209.4,
-      "text": "【驚愕】瀬戸環奈さんのイベント、男がチビに見えすぎるｗｗｗｗｗｗｗｗｗｗ\n\nヒール履いた170に並んだら180男でもギリ",
-      "url": "https://x.com/snsnokyoufu/status/2102240114206531895"
+      "measured": true,
+      "age_minutes": 121.1,
+      "text": "マツダスタジアム\nスタメン\n【巨人】　　【広島】\n8松本 　　　  7佐藤啓\n4吉川 　           4菊池\n6",
+      "url": "https://x.com/hochi_giants/status/2102265717911642504"
+    },
+    {
+      "author": "FightersPR",
+      "score": 49.3,
+      "likes": 6659,
+      "likes_per_min": 29.44,
+      "acceleration": 1.14,
+      "measured": true,
+      "age_minutes": 132.1,
+      "text": "中島卓也選手が引退会見を行いました！\n\nサプライズで、子ガモの奈良間大己選手と細川凌平選手が登場🦆💐\n\n#ありがとう中島",
+      "url": "https://x.com/FightersPR/status/2102262941244653782"
+    },
+    {
+      "author": "PoppinCoco3",
+      "score": 45.7,
+      "likes": 4512,
+      "likes_per_min": 36.64,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 214.3,
+      "text": "日本開催のアジア大会。\n\n世界に流す公式映像の制作は中国のCMG-IMP。 開催国以外がホストブロードキャスターを務める",
+      "url": "https://x.com/PoppinCoco3/status/2102242275292058084"
     }
   ]
 }

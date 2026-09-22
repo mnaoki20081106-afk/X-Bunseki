@@ -385,6 +385,41 @@ def test_gen1_dataset_never_leaks_a_post_across_splits():
     assert ids_by_split["validation"].isdisjoint(ids_by_split["test"])
 
 
+
+def test_ultra_early_uses_actual_one_minute_age():
+    post = _post(minutes_old=1, likes=200, retweets=40, impressions=6_000)
+    g = growth.compute(post, [], now=NOW)
+    # Legacy growth intentionally floors lifetime rate at 5m.
+    assert g["impressions_per_min"] == 1200
+    ultra = growth.ultra_early_signal(post, g)
+    # Ultra Early must use the real 1-minute age instead.
+    assert ultra["actual_impressions_per_min"] == 6000
+
+
+def test_ultra_early_can_predict_one_million_before_15m():
+    post = _post(minutes_old=5, likes=1200, retweets=220, impressions=40_000)
+    g = growth.compute(post, [], now=NOW)
+    pred = growth.predict_final_impressions(post, g)
+    assert pred["ultra_early"]["active"] is True
+    assert pred["ultra_early"]["candidate"] is True
+    assert pred["predicted_final_impressions"] >= 1_000_000
+
+
+def test_ultra_early_numeric_floor_bypass_requires_1m_prediction():
+    post = _post(minutes_old=3, likes=80, retweets=20, impressions=30_000, text="未知の話題")
+    result = detector.evaluate(post, [], relevance=0.0, now=NOW)
+    assert result["predicted_final_impressions"] >= 1_000_000
+    assert result["ultra_early_bypass"] is True
+    assert result["rejected_reason"] is None
+
+
+def test_after_15m_ultra_layer_is_inactive():
+    post = _post(minutes_old=30, likes=1000, retweets=200, impressions=200_000)
+    g = growth.compute(post, [], now=NOW)
+    pred = growth.predict_final_impressions(post, g)
+    assert pred["ultra_early"]["active"] is False
+
+
 def test_gen1_readiness_fails_closed_on_low_completion():
     stats = {
         "completed_24h_posts": 500, "positive_5m": 100, "positive_10m": 50,

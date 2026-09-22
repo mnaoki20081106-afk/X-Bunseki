@@ -1,19 +1,20 @@
 {
-  "updated_at": "2026-09-22T14:03:37.709942+00:00",
+  "updated_at": "2026-09-22T14:17:40.237189+00:00",
   "status": "success",
-  "started_at": "2026-09-22T14:03:04.551979+00:00",
-  "finished_at": "2026-09-22T14:03:37.708548+00:00",
-  "posts_scanned": 574,
-  "posts_with_history": 411,
-  "posts_flagged": 112,
+  "started_at": "2026-09-22T14:17:01.625519+00:00",
+  "finished_at": "2026-09-22T14:17:40.235569+00:00",
+  "posts_scanned": 566,
+  "posts_with_history": 455,
+  "posts_flagged": 110,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 30,
+  "minutes_since_last_notification": 44,
   "reject_reasons": {
-    "古すぎる": 126,
-    "失速済み": 4,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 222
+    "古すぎる": 136,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 8,
+    "いいねが少なすぎる": 206,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 26694,
-    "posts": 8448,
+    "total": 27260,
+    "posts": 8559,
     "oldest": "2026-09-21T14:41:24.502760+00:00"
   },
-  "viral_discovery_posts": 113,
-  "million_imp_rescued": 6,
-  "watchlist_active": 2614,
+  "viral_discovery_posts": 116,
+  "million_imp_rescued": 7,
+  "watchlist_active": 2672,
   "top5": [
     {
       "author": "_mumei_R",
-      "score": 29.3,
-      "likes": 45105,
-      "likes_per_min": 99.14,
-      "acceleration": 0.96,
+      "score": 29.6,
+      "likes": 46505,
+      "likes_per_min": 99.7,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 325.4,
+      "age_minutes": 339.4,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
       "author": "snsnokyoufu",
-      "score": 36.9,
-      "likes": 33011,
-      "likes_per_min": 118.15,
-      "acceleration": 1.01,
+      "score": 34.4,
+      "likes": 34568,
+      "likes_per_min": 110.89,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 229.0,
+      "age_minutes": 243.0,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 32.1,
-      "likes": 11762,
-      "likes_per_min": 57.76,
-      "acceleration": 0.99,
+      "author": "junnosuke_tag",
+      "score": 33.8,
+      "likes": 11506,
+      "likes_per_min": 8.32,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 232.5,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
-    },
-    {
-      "author": "modelpress",
-      "score": 75.2,
-      "likes": 4649,
-      "likes_per_min": 146.58,
-      "acceleration": 1.45,
-      "measured": true,
-      "age_minutes": 70.3,
-      "text": "「ラヴ上等」あも＆二世、破局を報告\n別れた理由・ビジネスカップル疑惑にも言及\nhttps://t.co/vHAl8t2O",
-      "url": "https://x.com/modelpress/status/2102380719188361567"
+      "age_minutes": 314.6,
+      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
+      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
     },
     {
       "author": "korekore_ch",
-      "score": 50.2,
-      "likes": 10056,
-      "likes_per_min": 97.41,
+      "score": 48.6,
+      "likes": 11229,
+      "likes_per_min": 83.54,
       "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 84.4,
+      "age_minutes": 98.4,
       "text": "急に連絡途絶えたけど生きてるよな？誕プレで貰った『戦慄かなのを無償で呼び出せる券』3枚使うので連絡してくれ",
       "url": "https://x.com/korekore_ch/status/2102377184623198507"
+    },
+    {
+      "author": "RytoSle2",
+      "score": 39.6,
+      "likes": 10890,
+      "likes_per_min": 64.66,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 154.6,
+      "text": "ちゃんと言う必要があると思ったので\n\nいまの若いまだSNSに顔出ししてない人や\nすでにやってる人にも伝えたい\n\nネットで",
+      "url": "https://x.com/RytoSle2/status/2102363050133409857"
     }
   ]
 }

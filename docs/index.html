@@ -57,6 +57,7 @@ footer{margin-top:32px;font-family:var(--mono);font-size:10.5px;color:var(--fain
   <span class="st" id="conn">読み込み中...</span>
 </header>
 <p class="sub" id="sub">バズ検知の対象ワードと条件通過ポストを管理します（GitHub Pages）。</p>
+<p class="st" id="lastMonitor" style="margin:-10px 0 16px">最終監視: 読み込み中...</p>
 <nav class="tabs">
   <button type="button" class="tab active" id="tab-kw" onclick="go('kw')">キーワード</button>
   <button type="button" class="tab" id="tab-hits" onclick="go('hits')">投稿一覧</button>
@@ -218,6 +219,15 @@ async function save(){
     await loadKw();
   }catch(e){$('log').className='log show err';$('log').textContent='❌ '+e.message;$('saveBtn').disabled=false}
 }
+function formatMonitorTime(value){
+  if(!value)return '不明';
+  const d=new Date(value);
+  if(Number.isNaN(d.getTime()))return '不明';
+  return new Intl.DateTimeFormat('ja-JP',{
+    timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',
+    hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false
+  }).format(d)+' JST';
+}
 function showFeed(name){
   H.feed=name;
   $('feed-early').classList.toggle('active',name==='early');
@@ -257,7 +267,11 @@ async function loadHits(){
     try{hits=await fetchJson(RAW.hits)}catch(_){hits={posts:[]}}
     try{st=await fetchJson(RAW.status)}catch(_){}
     const status=st.status||'unknown';
-    $('hSt').textContent=status;
+    const monitoredAt=hits.updated_at||st.started_at||st.updated_at;
+    const monitorText=formatMonitorTime(monitoredAt);
+    $('lastMonitor').textContent='最終監視: '+monitorText;
+    $('hSt').textContent=(status==='success'?'成功':status)+' · '+monitorText.replace(/:\d{2} JST$/,' JST');
+    $('hSt').title='実際に巡回を開始した時刻: '+monitorText;
     $('hSt').style.color=status==='success'?'var(--ok)':status==='session_expired'?'var(--danger)':'var(--text)';
     $('hSur').textContent=hits.surviving??(hits.posts||[]).length;
     $('hCan').textContent=hits.candidates??'—';

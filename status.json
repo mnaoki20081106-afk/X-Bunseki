@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T06:47:25.332784+00:00",
+  "updated_at": "2026-09-22T07:03:56.570730+00:00",
   "status": "success",
-  "started_at": "2026-09-22T06:46:48.761077+00:00",
-  "finished_at": "2026-09-22T06:47:25.331736+00:00",
-  "posts_scanned": 289,
-  "posts_with_history": 205,
-  "posts_flagged": 11,
+  "started_at": "2026-09-22T07:03:25.969811+00:00",
+  "finished_at": "2026-09-22T07:03:56.569495+00:00",
+  "posts_scanned": 543,
+  "posts_with_history": 400,
+  "posts_flagged": 52,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 335,
+  "minutes_since_last_notification": 351,
   "reject_reasons": {
-    "古すぎる": 24,
-    "いいねが少なすぎる": 174,
-    "失速済み": 7,
-    "初回観測かつ平均速度が低い": 2,
-    "誘導文パターン": 2,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 110,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 14,
+    "いいねが少なすぎる": 211,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 14068,
-    "posts": 5124,
+    "total": 14611,
+    "posts": 5267,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 819,
+  "viral_discovery_posts": 126,
+  "million_imp_rescued": 2,
+  "watchlist_active": 876,
   "top5": [
     {
-      "author": "towanokanae1984",
-      "score": 42.2,
-      "likes": 1441,
-      "likes_per_min": 10.83,
-      "acceleration": 1.06,
+      "author": "tenjinnotami",
+      "score": 50.8,
+      "likes": 26391,
+      "likes_per_min": 217.84,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 134.5,
-      "text": "この視点なかった。\nちょい反省。たしかに",
-      "url": "https://x.com/towanokanae1984/status/2102254798489932276"
+      "age_minutes": 174.6,
+      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
+      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
     },
     {
-      "author": "tonma5963",
-      "score": 40.9,
-      "likes": 854,
-      "likes_per_min": 4.77,
-      "acceleration": 0.79,
+      "author": "1garashi_Rika",
+      "score": 60.6,
+      "likes": 6312,
+      "likes_per_min": 107.67,
+      "acceleration": 1.34,
       "measured": true,
-      "age_minutes": 193.8,
-      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
-      "url": "https://x.com/tonma5963/status/2102239881972088982"
+      "age_minutes": 77.4,
+      "text": "いや草",
+      "url": "https://x.com/1garashi_Rika/status/2102273329248038919"
     },
     {
-      "author": "wni_jp",
-      "score": 53.2,
-      "likes": 121,
-      "likes_per_min": 11.14862783057211,
+      "author": "canyong_1000000",
+      "score": 30.5,
+      "likes": 6052,
+      "likes_per_min": 24.14,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.9,
-      "text": "【地震情報】\n9月22日 15:34 震度3\n【茨城県】茨城県北部　茨城県南部\n▶生放送で解説中 \nhttps://t.",
-      "url": "https://x.com/wni_jp/status/2102285910725582896"
+      "measured": true,
+      "age_minutes": 194.3,
+      "text": "こちら、事実無根です。\n当時は連絡先すら知りませんでした。\nFABRIC7を辞めた後、別のヘアメイクさんに勤務先を教えて",
+      "url": "https://x.com/canyong_1000000/status/2102243897246372071"
     },
     {
-      "author": "naniwa_x_ae",
-      "score": 62.4,
-      "likes": 1124,
-      "likes_per_min": 93.51065764148683,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.0,
-      "text": "◤◢◤ まもなく‼️ ◢◤◢\n\n🧡大西流星さん&amp;正門良規さん💙\n『旬感LIVE とれたてっ！』生出演📡\n\n今夜1",
-      "url": "https://x.com/naniwa_x_ae/status/2102285616599974358"
-    },
-    {
-      "author": "DEATHDOL_NOTE",
+      "author": "Rou_2434",
       "score": 77.6,
-      "likes": 524,
-      "likes_per_min": 16.97,
+      "likes": 6892,
+      "likes_per_min": 267.40570692588267,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 33.0,
-      "text": "【害悪度A】\n\nTBSテレビ\n\n備考\n・業界関係者から地雷チャンへ脅迫DM\n・無断使用した地雷チャンの動画を非公開にして",
-      "url": "https://x.com/DEATHDOL_NOTE/status/2102280329566495108"
+      "measured": false,
+      "age_minutes": 25.8,
+      "text": "V26//ACT Ⅴ 　ソロイモータル\n味は格別。 https://t.co/Yea37g6xgs",
+      "url": "https://x.com/Rou_2434/status/2102286313542299670"
+    },
+    {
+      "author": "snsnokyoufu",
+      "score": 26.6,
+      "likes": 3217,
+      "likes_per_min": 15.366104159341957,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 209.4,
+      "text": "【驚愕】瀬戸環奈さんのイベント、男がチビに見えすぎるｗｗｗｗｗｗｗｗｗｗ\n\nヒール履いた170に並んだら180男でもギリ",
+      "url": "https://x.com/snsnokyoufu/status/2102240114206531895"
     }
   ]
 }

@@ -61,8 +61,20 @@ def update(evaluated: list[dict], now=None) -> dict:
         source = p.get("discovery_source") or "keyword"
         # Broad viral discovery is intentionally permissive; TweetDetail tracking
         # will quickly discard dead posts. Million-rescue posts are always tracked.
+        # Learning cohort: once a post is a meaningful early candidate, keep
+        # following it even if it later stalls. Dead candidates are valuable
+        # negative examples and must not disappear from the training set.
+        early_candidate = (
+            age <= 240
+            and (
+                not p.get("rejected_reason")
+                or (p.get("predicted_final_impressions") or 0) >= 1_000_000
+                or (p.get("buzz_score") or 0) >= 45
+            )
+        )
         interesting = (
             p.get("million_imp_bypass")
+            or early_candidate
             or (source in ("viral_search", "trend", "for_you") and age <= 240
                 and (imp >= 50_000 or (p.get("likes") or 0) >= 2_000 or (p.get("retweets") or 0) >= 400))
         )
@@ -94,6 +106,12 @@ def update(evaluated: list[dict], now=None) -> dict:
         })
         if not row.get("added_at"):
             row["added_at"] = now.isoformat()
+            row["first_observed_at"] = now.isoformat()
+            row["first_observed_elapsed_min"] = age
+            row["first_discovery_source"] = source
+            row["was_early_observed"] = age <= 240
+            row["is_rescue_only"] = bool(p.get("million_imp_bypass")) and age > 240
+        row["learning_cohort"] = bool(row.get("learning_cohort") or early_candidate)
         if row.get("posted_at"):
             ts, target = _next_due(row["posted_at"], age, now)
             if ts is None:

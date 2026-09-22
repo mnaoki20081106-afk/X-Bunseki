@@ -1,19 +1,16 @@
 {
-  "updated_at": "2026-09-22T03:58:19.044685+00:00",
+  "updated_at": "2026-09-22T03:59:19.111632+00:00",
   "status": "success",
-  "started_at": "2026-09-22T03:57:46.359512+00:00",
-  "finished_at": "2026-09-22T03:58:19.043656+00:00",
-  "posts_scanned": 267,
-  "posts_with_history": 243,
-  "posts_flagged": 14,
+  "started_at": "2026-09-22T03:58:44.184520+00:00",
+  "finished_at": "2026-09-22T03:59:19.110056+00:00",
+  "posts_scanned": 6,
+  "posts_with_history": 6,
+  "posts_flagged": 4,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 166,
+  "minutes_since_last_notification": 167,
   "reject_reasons": {
-    "古すぎる": 40,
-    "いいねが少なすぎる": 165,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 3
+    "古すぎる": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,7 +27,7 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 10020,
+    "total": 10026,
     "posts": 3975,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
@@ -39,59 +36,59 @@
   "watchlist_active": 353,
   "top5": [
     {
-      "author": "rockinon_fes",
-      "score": 69.8,
-      "likes": 3423,
-      "likes_per_min": 61.17,
+      "author": "d_holi",
+      "score": 49.9,
+      "likes": 8310,
+      "likes_per_min": 83.17,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 58.2,
-      "text": "ROCK IN JAPAN FESTIVAL 2026を終えて。\n\n今これを書いているのは、9月21日の夜、本当は最終日",
-      "url": "https://x.com/rockinon_fes/status/2102231427718738285"
+      "age_minutes": 121.2,
+      "text": "ほぼ僕の名前で笑ってしまった。\n日本は平和。 https://t.co/mxizX31wcO",
+      "url": "https://x.com/d_holi/status/2102215839382688055"
     },
     {
-      "author": "MAC_MMA_",
-      "score": 44.2,
-      "likes": 701,
-      "likes_per_min": 4.82,
+      "author": "shirakamifubuki",
+      "score": 77.8,
+      "likes": 1009,
+      "likes_per_min": 34.89,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 125.5,
-      "text": "当時50kgで試合してた名高に天心ラストマッチの相手として53.5kgキックor55kg肘ありのオファーして断ったら🌹が",
-      "url": "https://x.com/MAC_MMA_/status/2102214496198758713"
+      "age_minutes": 16.3,
+      "text": "この日を待ちわびたし次週が最高潮になると思うと震えるじぇ…",
+      "url": "https://x.com/shirakamifubuki/status/2102242228932690339"
     },
     {
-      "author": "chinakichi_72",
-      "score": 46.4,
-      "likes": 340,
-      "likes_per_min": 4.31,
+      "author": "andTEAM_members",
+      "score": 69.0,
+      "likes": 3637,
+      "likes_per_min": 45.5,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 68.1,
-      "text": "法的措置？私のは誹謗中傷じゃない！(0/3) https://t.co/rgAvQdhDnr",
-      "url": "https://x.com/chinakichi_72/status/2102228947727790178"
+      "age_minutes": 46.1,
+      "text": "今日もGoodな1日を‼️\n\n#DayDay.\n#andTEAM #エンティーム #HARUA https://t.co",
+      "url": "https://x.com/andTEAM_members/status/2102234733065470409"
     },
     {
-      "author": "tsuyadamaninaru",
-      "score": 23.0,
-      "likes": 153,
-      "likes_per_min": 3.3,
+      "author": "DaiKing_boy",
+      "score": 72.0,
+      "likes": 2770,
+      "likes_per_min": 139.04,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 34.4,
-      "text": "@applepine_desu 家族には医療事故のこと、そもそも整形のことも話してないって言ってたので緑内障は家族用の嘘",
-      "url": "https://x.com/tsuyadamaninaru/status/2102237415729762428"
+      "age_minutes": 31.0,
+      "text": "こうやって聴いていくと彼の世界が広がっていくのを感じる\nまだまだ彼と共に見たい景色が沢山ある\nおめでとう僕の月と太陽🌙☀",
+      "url": "https://x.com/DaiKing_boy/status/2102238544358253037"
     },
     {
-      "author": "gaku_fushimi",
-      "score": 84.6,
-      "likes": 709,
-      "likes_per_min": 22.59,
+      "author": "sakatansab",
+      "score": 81.2,
+      "likes": 2025,
+      "likes_per_min": 35.64,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 19.3,
-      "text": "今日は14時から！！もう今からジリジリしてきましたね・・・！！\nヒムさんとサロメちゃんと勝ち上がるぞ💪炎王の戦い見ててく",
-      "url": "https://x.com/gaku_fushimi/status/2102241225386635717"
+      "age_minutes": 31.3,
+      "text": "俺声可愛いな〜低いのに なんかこう\n\nまろやかな耳触りでコクとまろやかさが両立しすぎてて、一口大のグラタン食べたときの満",
+      "url": "https://x.com/sakatansab/status/2102238475781284246"
     }
   ]
 }

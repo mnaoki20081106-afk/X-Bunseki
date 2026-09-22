@@ -132,7 +132,13 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
         print(f"[ERROR] hits.md の書き出しに失敗: {e}")
 
     # Separate early discovery from posts that are already actively viral.
-    early = [p for p in surviving if float((p.get("growth") or {}).get("age_minutes") or 0) <= 240]
+    # UIの早期発見は「最終100万imp以上の予測」に限定。
+    # 収集・Watchlist・学習コホート自体は絞らず、100万未満も裏で保持する。
+    early = [
+        p for p in surviving
+        if float((p.get("growth") or {}).get("age_minutes") or 0) <= 240
+        and int(p.get("predicted_final_impressions") or 0) >= 1_000_000
+    ]
     early.sort(key=lambda p: (p.get("predicted_final_impressions") or 0, p.get("buzz_score") or 0), reverse=True)
 
     trending = []

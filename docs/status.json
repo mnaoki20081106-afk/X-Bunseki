@@ -1,19 +1,18 @@
 {
-  "updated_at": "2026-09-22T20:32:58.667975+00:00",
+  "updated_at": "2026-09-22T20:47:35.296362+00:00",
   "status": "success",
-  "started_at": "2026-09-22T20:32:18.209304+00:00",
-  "finished_at": "2026-09-22T20:32:58.660011+00:00",
-  "posts_scanned": 577,
-  "posts_with_history": 515,
-  "posts_flagged": 15,
+  "started_at": "2026-09-22T20:46:51.268389+00:00",
+  "finished_at": "2026-09-22T20:47:35.294431+00:00",
+  "posts_scanned": 286,
+  "posts_with_history": 242,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 225,
+  "minutes_since_last_notification": 240,
   "reject_reasons": {
-    "古すぎる": 395,
-    "いいねが少なすぎる": 107,
-    "初回観測かつ平均速度が低い": 7,
-    "失速済み": 3
+    "古すぎる": 152,
+    "いいねが少なすぎる": 116,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +29,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 39001,
-    "posts": 9199,
+    "total": 39287,
+    "posts": 9243,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 121,
-  "million_imp_rescued": 6,
-  "watchlist_active": 3299,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3300,
   "top5": [
     {
-      "author": "snsnokyoufu",
-      "score": 26.4,
-      "likes": 50536,
-      "likes_per_min": 13.57,
-      "acceleration": 0.91,
+      "author": "Tigers_140609",
+      "score": 87.0,
+      "likes": 727,
+      "likes_per_min": 21.08,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 618.3,
-      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
-      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
+      "age_minutes": 48.3,
+      "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
+      "url": "https://x.com/Tigers_140609/status/2102487923811823626"
     },
     {
-      "author": "_mumei_R",
-      "score": 18.4,
-      "likes": 59841,
-      "likes_per_min": 6.83,
-      "acceleration": 0.75,
+      "author": "wni_jp",
+      "score": 40.3,
+      "likes": 141,
+      "likes_per_min": 4.72,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 714.8,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+      "age_minutes": 25.9,
+      "text": "【今日の天気予報】\nシルバーウィークの連休最終日となる今日23日(水)・秋分の日は、北日本や九州方面で晴れる所が多くなり",
+      "url": "https://x.com/wni_jp/status/2102493545676562805"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 18.2,
-      "likes": 17570,
-      "likes_per_min": 2.0,
-      "acceleration": 0.87,
+      "author": "nwqllxq",
+      "score": 26.6,
+      "likes": 854,
+      "likes_per_min": 2.74,
+      "acceleration": 1.17,
       "measured": true,
-      "age_minutes": 621.8,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+      "age_minutes": 187.8,
+      "text": "あんまりネガティブなツイートしたくなかったんですけど今の自分の現状を把握しておいて欲しくてツイートします",
+      "url": "https://x.com/nwqllxq/status/2102452822071705616"
     },
     {
-      "author": "Order0o1",
-      "score": 30.0,
-      "likes": 96285,
-      "likes_per_min": 19.08,
-      "acceleration": 0.83,
+      "author": "info__Johnnys",
+      "score": 43.9,
+      "likes": 389,
+      "likes_per_min": 3.42,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 602.5,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
+      "age_minutes": 76.2,
+      "text": "【矢花黎 ミュージカル単独初主演決定】\n\n『JUMP』〜ヨルがオちてくるそのマエに～\n\n■主演\n矢花黎(B&amp;ZA",
+      "url": "https://x.com/info__Johnnys/status/2102480892455461041"
     },
     {
-      "author": "main_warabi",
-      "score": 28.4,
-      "likes": 65634,
-      "likes_per_min": 97.54,
-      "acceleration": 0.95,
+      "author": "V9ih094vMWflnvg",
+      "score": 10.9,
+      "likes": 139,
+      "likes_per_min": 1.1,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 473.7,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
+      "age_minutes": 189.7,
+      "text": "@1set1500yen 間引くって言葉に反発コメント多いけど、\n障害持ち家族いる身としては綺麗事でしかないな。\nみいち",
+      "url": "https://x.com/V9ih094vMWflnvg/status/2102452345556849035"
     }
   ]
 }

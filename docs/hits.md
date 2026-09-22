@@ -1,9 +1,9 @@
 # 条件通過ポスト一覧
 
-更新: `2026-09-22T16:16:46.242441+00:00`（UTC）
+更新: `2026-09-22T16:32:28.745513+00:00`（UTC）
 
-- 足切り通過: **174** 件
-- スコア 55 点以上: **65** 件
+- 足切り通過: **191** 件
+- スコア 55 点以上: **63** 件
 
 判定の主軸は数値（分速・返信・RT・引用・加速度）。キーワードは収集の参考のみ。
 
@@ -11,105 +11,62 @@
 
 | 点 | 経過 | いいね | /分 | 返信 | RT | 加速 | 投稿 |
 |---:|---:|---:|---:|---:|---:|---:|---|
-| **33** ★ | 363m | 44,150 | 63.1 | 488 | 900 | 0.97 | [@snsnokyoufu](https://x.com/snsnokyoufu/status/2102340787556204777) 【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」  なんでや..... https://t.co/TypCXXmmSc |
-| **39** ★ | 204m | 12,430 | 23.9 | 122 | 376 | 0.93 | [@modelpress](https://x.com/modelpress/status/2102380719188361567) 「ラヴ上等」あも＆二世、破局を報告 別れた理由・ビジネスカップル疑惑にも言及 https://t.co/vHAl8t2OkA  二世「僕はまだ全然その、また付き |
-| **32** ★ | 218m | 20,807 | 380.5 | 158 | 278 | 0.94 | [@main_warabi](https://x.com/main_warabi/status/2102377179522949621) 「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる |
-| **45** ★ | 138m | 10,784 | 45.8 | 74 | 391 | 0.83 | [@enako_cos](https://x.com/enako_cos/status/2102397211682480457) 学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので 黒ずみとブツブツが酷かったのですが、数年前からきちんとケアしてみたら改善しました！ |
-| **60** ★ | 73m | 14,677 | 169.5 | 42 | 1,525 | 0.79 | [@k4sen](https://x.com/k4sen/status/2102413713018171749) 乳首マシンガンにされたことあるか？ |
-| **77** ★ | 57m | 18,279 | 147.7 | 349 | 8,427 | 0.64 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417821238251826) 【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】 https://t.co/CczGzg52cx      ~09/23 21:00 プレミア公開 |
-| **53** ★ | 171m | 14,761 | 88.4 | 83 | 3,241 | 0.88 | [@Runninzin](https://x.com/Runninzin/status/2102388991375118715) 台風25号「それではさようなら」  熱低b「続きまして」 https://t.co/IMSz6pJQzq |
-| **52** | 114m | 12,429 | 61.6 | 44 | 1,341 | 0.79 | [@koki1105t](https://x.com/koki1105t/status/2102403419617231300) おめでと |
-| **69** ★ | 13m | 2,320 | 181.0 | 7 | 522 | - | [@official__INI](https://x.com/official__INI/status/2102428852421280218) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #髙塚大夢 #HIROMU #TAKATSUKAHIROMU  D |
-| **79** ★ | 77m | 17,882 | 100.9 | 199 | 6,424 | 0.74 | [@pj_sekai](https://x.com/pj_sekai/status/2102412616547090737) プロセカ6周年まであと7日  『未来のスターによるショータイムだ！』  Animated by 山下RIRI（@RIRI45309899）  #プロセカ #プロ |
-| **71** ★ | 9m | 2,002 | 222.1 | 16 | 503 | - | [@official__INI](https://x.com/official__INI/status/2102429809100149024) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #藤牧京介 #KYOSUKE #FUJIMAKIKYOSUKE   |
-| **68** ★ | 8m | 1,438 | 181.7 | 9 | 297 | - | [@official__INI](https://x.com/official__INI/status/2102430085932614035) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #松田迅 #JIN #MATSUDAJIN  Detail ❯❯  |
-| **68** ★ | 10m | 1,788 | 175.6 | 18 | 398 | - | [@official__INI](https://x.com/official__INI/status/2102429515666649207) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #西洸人 #HIROTO #NISHIHIROTO  Detail |
-| **71** ★ | 11m | 2,042 | 181.8 | 35 | 438 | - | [@official__INI](https://x.com/official__INI/status/2102429250976649720) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #田島将吾 #SHOGO #TAJIMASHOGO  Detail |
-| **72** ★ | 50m | 11,469 | 183.7 | 41 | 2,374 | 0.79 | [@milk_info](https://x.com/milk_info/status/2102419409755427092) ／ TVアニメ『超巡！超条先輩』 オープニングテーマ決定🚨🎉 ＼  M!LKの新曲「ザッツ！超常」が、 10月6日(火)よる11:15〜放送開始となる TVアニ |
-| **81** ★ | 60m | 20,249 | 209.4 | 1,291 | 5,449 | 0.76 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417033480847553) 生まれました！！！！！！ 誕生日なんです！！！！！！！！！！！ |
-| **54** | 99m | 13,029 | 23.8 | 94 | 3,008 | 0.73 | [@naniwa_x_ae](https://x.com/naniwa_x_ae/status/2102407274954424443) 『なにわAぇ! の放送させてください！』 ご視聴ありがとうございました🌟  ╋━━  　 #TVer #カンテレドーガ での 　　　  無料見逃し配信は 　   |
-| **28** | 222m | 5,621 | 25.3 | 44 | 499 | - | [@JAXX0053](https://x.com/JAXX0053/status/2102376085329690985) 出雲のスーパーに売ってたこれ何 https://t.co/8vW9JMYx9v |
-| **75** ★ | 2m | 244 | 48.8 | 18 | 58 | - | [@AZKi_VDiVA](https://x.com/AZKi_VDiVA/status/2102431660113600646) #あずきんち ホロドリメン限参加型ありがとうございました🎶✨ 開拓者のみんなとたくさん遊べてHAPPY☺️🫶 これはメガサーキットで1位になれてほくほくのあずき |
-| **70** ★ | 60m | 12,380 | 76.4 | 159 | 4,512 | 0.67 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417103588614507) 渡会雲雀ソロでは初のVlog！！ 最近カメラにはまってまして…！！！！！ 良かったら見てください！！  9/23日 20時30分にプレミア公開します！！ カメラ |
-| **29** | 176m | 2,612 | 5.4 | 18 | 56 | 0.63 | [@trtmsz0721](https://x.com/trtmsz0721/status/2102387720429744471) 定型文謝罪のあと普通にキャッキャ話してるのドン引きメンバー勾留中なんだよね？被害者いるんだよね？ |
-| **75** ★ | 23m | 6,009 | 137.1 | 57 | 1,516 | - | [@official__INI](https://x.com/official__INI/status/2102426194776125788) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  ありがとうございました！  'You Know What To D |
-| **48** | 122m | 9,013 | 41.8 | 2 | 504 | 0.83 | [@_yukimasanyan](https://x.com/_yukimasanyan/status/2102401479592325626) おもろすぎて声出たｗｗｗｗｗなにわはNGなんだｗｗｗAぇマネｗｗｗｗｗ #なにわAぇ生放送 #なにわ男子 #Aぇǃgroup #佐野晶哉 https://t.c |
-| **72** ★ | 60m | 11,789 | 129.8 | 62 | 2,460 | 0.75 | [@sd_bt](https://x.com/sd_bt/status/2102416989105103130) 🎂HAPPY BIRTHDAY🎂  本日9月23日は7号車 #タカシ の誕生日🎉  引き続き応援よろしくお願いいたします！✨  #HAPPY_TAKASHI_Y |
-| **80** ★ | 27m | 2,938 | 51.4 | 209 | 515 | - | [@Fuwa_Minato](https://x.com/Fuwa_Minato/status/2102425255553925236) めっちゃおもろゲームでした👶 |
-| **64** ★ | 31m | 3,169 | 40.1 | 62 | 736 | - | [@KNTFR2434](https://x.com/KNTFR2434/status/2102424268755898411) おめでとせいほー |
-| **57** ★ | 72m | 6,666 | 30.6 | 7 | 2,020 | 0.68 | [@twst_jp](https://x.com/twst_jp/status/2102413863119364322) 【HAPPY BIRTHDAY】 9月23日はエースの誕生日です。 ゲーム内では「エース バースデーキャンペーン」を開催中です。  ◆バースデーログインボーナス |
-| **42** | 144m | 12,530 | 19.6 | 30 | 1,785 | 0.78 | [@FightersPR](https://x.com/FightersPR/status/2102395870323130637) 最後はやっぱりカルガモ隊🦆  #ありがとう中島卓也 #lovefighters https://t.co/iaR8Ni48IH |
-| **73** ★ | 17m | 3,097 | 181.1 | 71 | 603 | - | [@official__INI](https://x.com/official__INI/status/2102427773201760336) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #佐野雄大 #YUDAI #SANOYUDAI  Detail ❯ |
-| **67** ★ | 17m | 2,926 | 174.0 | 16 | 1,143 | - | [@number_i_offic](https://x.com/number_i_offic/status/2102427845138276586) Stationhead【UNLIMITED “TRIPLE_i”】配信開始📢 好きな時間にStationheadに参加しよう🎧  フォローはこちらから ▶︎ht |
+| **26** ★ | 475m | 55,353 | 53.0 | 157 | 1,687 | 0.78 | [@_mumei_R](https://x.com/_mumei_R/status/2102316524245815558) 友達と話してて、名前が曖昧なのですが ｢完全に俺が悪い。｣みたいなグループ名 教えてください… |
+| **36** ★ | 220m | 12,782 | 22.4 | 125 | 385 | 0.94 | [@modelpress](https://x.com/modelpress/status/2102380719188361567) 「ラヴ上等」あも＆二世、破局を報告 別れた理由・ビジネスカップル疑惑にも言及 https://t.co/vHAl8t2OkA  二世「僕はまだ全然その、また付き |
+| **44** ★ | 154m | 11,525 | 47.1 | 74 | 413 | 1.03 | [@enako_cos](https://x.com/enako_cos/status/2102397211682480457) 学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので 黒ずみとブツブツが酷かったのですが、数年前からきちんとケアしてみたら改善しました！ |
+| **60** ★ | 89m | 16,834 | 137.2 | 44 | 1,727 | 0.81 | [@k4sen](https://x.com/k4sen/status/2102413713018171749) 乳首マシンガンにされたことあるか？ |
+| **49** ★ | 187m | 15,958 | 76.1 | 88 | 3,438 | 0.86 | [@Runninzin](https://x.com/Runninzin/status/2102388991375118715) 台風25号「それではさようなら」  熱低b「続きまして」 https://t.co/IMSz6pJQzq |
+| **45** | 130m | 13,229 | 50.9 | 45 | 1,395 | 0.83 | [@koki1105t](https://x.com/koki1105t/status/2102403419617231300) おめでと |
+| **36** | 208m | 7,566 | 36.4 | 25 | 621 | - | [@EndeavorRising](https://x.com/EndeavorRising/status/2102383761195463018) テオくんの確変パートマジであつい https://t.co/Yum8cpCphB |
+| **74** ★ | 72m | 20,005 | 109.8 | 355 | 8,891 | 0.74 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417821238251826) 【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】 https://t.co/CczGzg52cx      ~09/23 21:00 プレミア公開 |
+| **38** | 213m | 14,089 | 66.1 | 92 | 1,988 | - | [@LEGO_Group_JP](https://x.com/LEGO_Group_JP/status/2102382407529710077) 願いを叶える準備はいいか…  #大人レゴ #ドラゴンボール https://t.co/3IKRnlII1G |
+| **68** ★ | 66m | 13,385 | 121.8 | 47 | 2,662 | 0.66 | [@milk_info](https://x.com/milk_info/status/2102419409755427092) ／ TVアニメ『超巡！超条先輩』 オープニングテーマ決定🚨🎉 ＼  M!LKの新曲「ザッツ！超常」が、 10月6日(火)よる11:15〜放送開始となる TVアニ |
+| **79** ★ | 93m | 19,267 | 88.1 | 205 | 6,806 | 0.87 | [@pj_sekai](https://x.com/pj_sekai/status/2102412616547090737) プロセカ6周年まであと7日  『未来のスターによるショータイムだ！』  Animated by 山下RIRI（@RIRI45309899）  #プロセカ #プロ |
+| **78** ★ | 37m | 3,387 | 57.1 | 175 | 1,225 | 0.87 | [@reco_tuesday](https://x.com/reco_tuesday/status/2102426686214357138) 【お知らせ】  #原嘉孝 くん担当回の来週9/29（火）の放送は #ふぉ〜ゆ〜 さんにご出演いただく予定でしたが、今回の件を受けて、ご出演を延期させていただくこ |
+| **32** | 180m | 19,892 | 35.4 | 464 | 1,187 | 0.73 | [@SayakaNeon](https://x.com/SayakaNeon/status/2102390652323627235) ぼっち参戦‼️ えぐい試合観たーー‼️ そして、耐えたーー🥹‼️ とらほーーー🐯🔥‼️ マジック8‼️  #阪神タイガース https://t.co/I1WZU |
+| **51** | 114m | 13,340 | 19.8 | 95 | 3,043 | 0.83 | [@naniwa_x_ae](https://x.com/naniwa_x_ae/status/2102407274954424443) 『なにわAぇ! の放送させてください！』 ご視聴ありがとうございました🌟  ╋━━  　 #TVer #カンテレドーガ での 　　　  無料見逃し配信は 　   |
+| **76** ★ | 76m | 22,482 | 142.0 | 1,340 | 5,697 | 0.68 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417033480847553) 生まれました！！！！！！ 誕生日なんです！！！！！！！！！！！ |
+| **44** | 59m | 2,218 | 37.0 | 29 | 166 | - | [@kano9x](https://x.com/kano9x/status/2102421180800254334) ちょ、まだやってるよ‥ ウィンク出来てないし。 |
+| **22** | 192m | 2,673 | 3.9 | 18 | 57 | 0.72 | [@trtmsz0721](https://x.com/trtmsz0721/status/2102387720429744471) 定型文謝罪のあと普通にキャッキャ話してるのドン引きメンバー勾留中なんだよね？被害者いるんだよね？ |
+| **68** ★ | 32m | 3,780 | 54.3 | 25 | 1,424 | - | [@number_i_offic](https://x.com/number_i_offic/status/2102427845138276586) Stationhead【UNLIMITED “TRIPLE_i”】配信開始📢 好きな時間にStationheadに参加しよう🎧  フォローはこちらから ▶︎ht |
+| **51** | 129m | 4,379 | 17.6 | 17 | 786 | 0.68 | [@lalalalack](https://x.com/lalalalack/status/2102403638442496459) リリースしました。ご査収ください  🙃カプラ・リブラス小物ブラシ（lack） \| 珈琲紳士の部屋（lack）  https://t.co/2z9iTI8hTh |
+| **72** ★ | 33m | 3,894 | 50.7 | 80 | 707 | - | [@official__INI](https://x.com/official__INI/status/2102427773201760336) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #佐野雄大 #YUDAI #SANOYUDAI  Detail ❯ |
+| **64** ★ | 75m | 13,210 | 52.8 | 161 | 4,652 | 0.69 | [@watarai_hibari](https://x.com/watarai_hibari/status/2102417103588614507) 渡会雲雀ソロでは初のVlog！！ 最近カメラにはまってまして…！！！！！ 良かったら見てください！！  9/23日 20時30分にプレミア公開します！！ カメラ |
+| **44** | 137m | 9,570 | 35.4 | 3 | 520 | 0.85 | [@_yukimasanyan](https://x.com/_yukimasanyan/status/2102401479592325626) おもろすぎて声出たｗｗｗｗｗなにわはNGなんだｗｗｗAぇマネｗｗｗｗｗ #なにわAぇ生放送 #なにわ男子 #Aぇǃgroup #佐野晶哉 https://t.c |
+| **18** | 198m | 1,915 | 2.7 | 3 | 17 | 0.67 | [@noi__73](https://x.com/noi__73/status/2102386139495883215) 二世とあもちゃん破局を報告 あもちゃんかわいくなったよね https://t.co/3QcFfzu1F6 |
+| **72** ★ | 28m | 2,988 | 42.5 | 9 | 633 | - | [@official__INI](https://x.com/official__INI/status/2102428852421280218) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  #髙塚大夢 #HIROMU #TAKATSUKAHIROMU  D |
+| **67** ★ | 76m | 13,159 | 87.1 | 73 | 2,639 | 0.67 | [@sd_bt](https://x.com/sd_bt/status/2102416989105103130) 🎂HAPPY BIRTHDAY🎂  本日9月23日は7号車 #タカシ の誕生日🎉  引き続き応援よろしくお願いいたします！✨  #HAPPY_TAKASHI_Y |
+| **65** ★ | 39m | 6,978 | 61.6 | 63 | 1,668 | 0.45 | [@official__INI](https://x.com/official__INI/status/2102426194776125788) [📸] 260922 日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」  ありがとうございました！  'You Know What To D |
+| **98** ★ | 31m | 3,520 | 120.6 | 91 | 1,484 | - | [@FENDI_JAPAN](https://x.com/FENDI_JAPAN/status/2102428150190035380) Fendi ブランドアンバサダー目黒蓮のミラノでの一日に密着  「FENDI EYE」Part 1 ─────── 2026年9月23日(水）21時（日本時間） |
+| **40** | 160m | 12,802 | 17.3 | 31 | 1,822 | 0.88 | [@FightersPR](https://x.com/FightersPR/status/2102395870323130637) 最後はやっぱりカルガモ隊🦆  #ありがとう中島卓也 #lovefighters https://t.co/iaR8Ni48IH |
+| **59** ★ | 91m | 8,686 | 21.1 | 3 | 3,910 | 0.77 | [@VOLTACTION_info](https://x.com/VOLTACTION_info/status/2102413217683460118) ヴォルタShorts 投稿✨  ／ 　✨ 𝗪𝗔𝗧𝗔𝗥𝗔𝗜 𝗛𝗜𝗕𝗔𝗥𝗜 ✨ 　💐お誕生日おめでとう💐 ＼  全力コーレス、よろしく〜！！！  YouTubeはこ |
+| **31** | 166m | 5,442 | 8.3 | 25 | 795 | 0.73 | [@room_leo_info](https://x.com/room_leo_info/status/2102394176126296308) こんばんは！  生配信始まりました🎮 お時間のある方は、お付き合いお願いいたします🙇🏻  https://t.co/9aESsLYsbk |
 
 ## 候補（スコア到達）
 
-- **33点** [ @snsnokyoufu ](https://x.com/snsnokyoufu/status/2102340787556204777) いいね44,150 / 63.1/分 / 経過363分  【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」
-
-なんでや..... https://t.co/TypCXXmmSc
-- **39点** [ @modelpress ](https://x.com/modelpress/status/2102380719188361567) いいね12,430 / 23.9/分 / 経過204分  「ラヴ上等」あも＆二世、破局を報告
+- **26点** [ @_mumei_R ](https://x.com/_mumei_R/status/2102316524245815558) いいね55,353 / 53.0/分 / 経過475分  友達と話してて、名前が曖昧なのですが
+｢完全に俺が悪い。｣みたいなグループ名
+教えてください…
+- **36点** [ @modelpress ](https://x.com/modelpress/status/2102380719188361567) いいね12,782 / 22.4/分 / 経過220分  「ラヴ上等」あも＆二世、破局を報告
 別れた理由・ビジネスカップル疑惑にも言及
 https://t.co/vHAl8t2OkA
 
 二世「僕はまだ全然その、また付き合う可能性もあるなって思ってる」
 あも「
-- **32点** [ @main_warabi ](https://x.com/main_warabi/status/2102377179522949621) いいね20,807 / 380.5/分 / 経過218分  「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる
-- **45点** [ @enako_cos ](https://x.com/enako_cos/status/2102397211682480457) いいね10,784 / 45.8/分 / 経過138分  学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので
+- **44点** [ @enako_cos ](https://x.com/enako_cos/status/2102397211682480457) いいね11,525 / 47.1/分 / 経過154分  学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので
 黒ずみとブツブツが酷かったのですが、数年前からきちんとケアしてみたら改善しました！🙆‍♀️
-- **60点** [ @k4sen ](https://x.com/k4sen/status/2102413713018171749) いいね14,677 / 169.5/分 / 経過73分  乳首マシンガンにされたことあるか？
-- **77点** [ @watarai_hibari ](https://x.com/watarai_hibari/status/2102417821238251826) いいね18,279 / 147.7/分 / 経過57分  【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】
+- **60点** [ @k4sen ](https://x.com/k4sen/status/2102413713018171749) いいね16,834 / 137.2/分 / 経過89分  乳首マシンガンにされたことあるか？
+- **49点** [ @Runninzin ](https://x.com/Runninzin/status/2102388991375118715) いいね15,958 / 76.1/分 / 経過187分  台風25号「それではさようなら」
+
+熱低b「続きまして」 https://t.co/IMSz6pJQzq
+- **74点** [ @watarai_hibari ](https://x.com/watarai_hibari/status/2102417821238251826) いいね20,005 / 109.8/分 / 経過72分  【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】
 https://t.co/CczGzg52cx
 
     ~09/23 21:00 プレミア公開~
 
 ▼Music 
 作詞 / 作曲：り
-- **53点** [ @Runninzin ](https://x.com/Runninzin/status/2102388991375118715) いいね14,761 / 88.4/分 / 経過171分  台風25号「それではさようなら」
-
-熱低b「続きまして」 https://t.co/IMSz6pJQzq
-- **69点** [ @official__INI ](https://x.com/official__INI/status/2102428852421280218) いいね2,320 / 181.0/分 / 経過13分  [📸] 260922
-日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
-
-#髙塚大夢 #HIROMU
-#TAKATSUKAHIROMU
-
-Detail ❯❯ https://t.c
-- **79点** [ @pj_sekai ](https://x.com/pj_sekai/status/2102412616547090737) いいね17,882 / 100.9/分 / 経過77分  プロセカ6周年まであと7日
-
-『未来のスターによるショータイムだ！』
-
-Animated by 山下RIRI（@RIRI45309899）
-
-#プロセカ #プロセカ6周年イラスト https://t.
-- **71点** [ @official__INI ](https://x.com/official__INI/status/2102429809100149024) いいね2,002 / 222.1/分 / 経過9分  [📸] 260922
-日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
-
-#藤牧京介 #KYOSUKE
-#FUJIMAKIKYOSUKE
-
-Detail ❯❯ https://t.
-- **68点** [ @official__INI ](https://x.com/official__INI/status/2102430085932614035) いいね1,438 / 181.7/分 / 経過8分  [📸] 260922
-日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
-
-#松田迅 #JIN
-#MATSUDAJIN
-
-Detail ❯❯ https://t.co/0mpiSn5
-- **68点** [ @official__INI ](https://x.com/official__INI/status/2102429515666649207) いいね1,788 / 175.6/分 / 経過10分  [📸] 260922
-日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
-
-#西洸人 #HIROTO
-#NISHIHIROTO
-
-Detail ❯❯ https://t.co/EDy
-- **71点** [ @official__INI ](https://x.com/official__INI/status/2102429250976649720) いいね2,042 / 181.8/分 / 経過11分  [📸] 260922
-日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
-
-#田島将吾 #SHOGO
-#TAJIMASHOGO
-
-Detail ❯❯ https://t.co/HGB
-- **72点** [ @milk_info ](https://x.com/milk_info/status/2102419409755427092) いいね11,469 / 183.7/分 / 経過50分  ／
+- **68点** [ @milk_info ](https://x.com/milk_info/status/2102419409755427092) いいね13,385 / 121.8/分 / 経過66分  ／
 TVアニメ『超巡！超条先輩』
 オープニングテーマ決定🚨🎉
 ＼
@@ -117,8 +74,54 @@ TVアニメ『超巡！超条先輩』
 M!LKの新曲「ザッツ！超常」が、
 10月6日(火)よる11:15〜放送開始となる
 TVアニメ『超巡！超条先輩』のオープニングテーマ
-- **81点** [ @watarai_hibari ](https://x.com/watarai_hibari/status/2102417033480847553) いいね20,249 / 209.4/分 / 経過60分  生まれました！！！！！！
+- **79点** [ @pj_sekai ](https://x.com/pj_sekai/status/2102412616547090737) いいね19,267 / 88.1/分 / 経過93分  プロセカ6周年まであと7日
+
+『未来のスターによるショータイムだ！』
+
+Animated by 山下RIRI（@RIRI45309899）
+
+#プロセカ #プロセカ6周年イラスト https://t.
+- **78点** [ @reco_tuesday ](https://x.com/reco_tuesday/status/2102426686214357138) いいね3,387 / 57.1/分 / 経過37分  【お知らせ】
+
+#原嘉孝 くん担当回の来週9/29（火）の放送は #ふぉ〜ゆ〜 さんにご出演いただく予定でしたが、今回の件を受けて、ご出演を延期させていただくことになりました。
+
+来週も #佐藤勝利 
+- **76点** [ @watarai_hibari ](https://x.com/watarai_hibari/status/2102417033480847553) いいね22,482 / 142.0/分 / 経過76分  生まれました！！！！！！
 誕生日なんです！！！！！！！！！！！
+- **68点** [ @number_i_offic ](https://x.com/number_i_offic/status/2102427845138276586) いいね3,780 / 54.3/分 / 経過32分  Stationhead【UNLIMITED “TRIPLE_i”】配信開始📢
+好きな時間にStationheadに参加しよう🎧
+
+フォローはこちらから
+▶︎https://t.co/kRixjw8Ma
+- **72点** [ @official__INI ](https://x.com/official__INI/status/2102427773201760336) いいね3,894 / 50.7/分 / 経過33分  [📸] 260922
+日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
+
+#佐野雄大 #YUDAI
+#SANOYUDAI
+
+Detail ❯❯ https://t.co/6LiTf
+- **64点** [ @watarai_hibari ](https://x.com/watarai_hibari/status/2102417103588614507) いいね13,210 / 52.8/分 / 経過75分  渡会雲雀ソロでは初のVlog！！
+最近カメラにはまってまして…！！！！！
+良かったら見てください！！
+
+9/23日 20時30分にプレミア公開します！！
+カメラおもろすぎる
+
+https://t.co
+- **72点** [ @official__INI ](https://x.com/official__INI/status/2102428852421280218) いいね2,988 / 42.5/分 / 経過28分  [📸] 260922
+日本テレビ「#夜の音 -TOKYO MIDNIGHT MUSIC-」
+
+#髙塚大夢 #HIROMU
+#TAKATSUKAHIROMU
+
+Detail ❯❯ https://t.c
+- **67点** [ @sd_bt ](https://x.com/sd_bt/status/2102416989105103130) いいね13,159 / 87.1/分 / 経過76分  🎂HAPPY BIRTHDAY🎂
+
+本日9月23日は7号車 #タカシ の誕生日🎉
+
+引き続き応援よろしくお願いいたします！✨
+
+#HAPPY_TAKASHI_YADAY https://t.co/tr
 
 ---
 ★ = 通知スコア到達。通知送信は無効化中（記録のみ）。

@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T18:03:20.839508+00:00",
+  "updated_at": "2026-09-22T18:17:25.735227+00:00",
   "status": "success",
-  "started_at": "2026-09-22T18:02:43.400867+00:00",
-  "finished_at": "2026-09-22T18:03:20.836464+00:00",
-  "posts_scanned": 588,
-  "posts_with_history": 552,
-  "posts_flagged": 23,
+  "started_at": "2026-09-22T18:16:56.978033+00:00",
+  "finished_at": "2026-09-22T18:17:25.734084+00:00",
+  "posts_scanned": 577,
+  "posts_with_history": 538,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 76,
+  "minutes_since_last_notification": 90,
   "reject_reasons": {
-    "古すぎる": 242,
+    "古すぎる": 246,
     "いいね稼ぎ疑い": 4,
-    "失速済み": 11,
+    "失速済み": 8,
     "誘導文パターン": 1,
-    "いいねが少なすぎる": 175,
-    "初回観測かつ平均速度が低い": 7
+    "いいねが少なすぎる": 165,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 33146,
-    "posts": 8814,
+    "total": 33723,
+    "posts": 8853,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 123,
-  "million_imp_rescued": 6,
-  "watchlist_active": 3193,
+  "viral_discovery_posts": 118,
+  "million_imp_rescued": 4,
+  "watchlist_active": 3206,
   "top5": [
     {
-      "author": "snsnokyoufu",
-      "score": 30.5,
-      "likes": 48015,
-      "likes_per_min": 29.09,
-      "acceleration": 1.07,
-      "measured": true,
-      "age_minutes": 468.7,
-      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
-      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
-    },
-    {
       "author": "_mumei_R",
-      "score": 23.2,
-      "likes": 57992,
-      "likes_per_min": 21.19,
-      "acceleration": 0.86,
+      "score": 23.9,
+      "likes": 58291,
+      "likes_per_min": 21.23,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 565.1,
+      "age_minutes": 579.2,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "Order0o1",
-      "score": 34.2,
-      "likes": 91500,
-      "likes_per_min": 131.85,
-      "acceleration": 0.53,
+      "author": "main_warabi",
+      "score": 31.7,
+      "likes": 8515,
+      "likes_per_min": 31.25,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 452.8,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
+      "age_minutes": 167.1,
+      "text": "セックス有識者が集まってきてしまった\nセックスって実在するんだ",
+      "url": "https://x.com/main_warabi/status/2102420247190155555"
     },
     {
       "author": "k4sen",
-      "score": 34.5,
-      "likes": 24256,
-      "likes_per_min": 47.65,
-      "acceleration": 0.79,
+      "score": 32.4,
+      "likes": 24845,
+      "likes_per_min": 41.83,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 178.9,
+      "age_minutes": 193.0,
       "text": "乳首マシンガンにされたことあるか？",
       "url": "https://x.com/k4sen/status/2102413713018171749"
     },
     {
-      "author": "main_warabi",
-      "score": 32.4,
-      "likes": 8075,
-      "likes_per_min": 31.41,
-      "acceleration": 0.87,
+      "author": "koki1105t",
+      "score": 21.3,
+      "likes": 15899,
+      "likes_per_min": 14.77,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 153.0,
-      "text": "セックス有識者が集まってきてしまった\nセックスって実在するんだ",
-      "url": "https://x.com/main_warabi/status/2102420247190155555"
+      "age_minutes": 233.9,
+      "text": "おめでと",
+      "url": "https://x.com/koki1105t/status/2102403419617231300"
+    },
+    {
+      "author": "p_kaki9",
+      "score": 28.3,
+      "likes": 10405,
+      "likes_per_min": 100.49,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 220.9,
+      "text": "クリックすると親子になーる🐧 https://t.co/GyGqRa9bow",
+      "url": "https://x.com/p_kaki9/status/2102406707200897289"
     }
   ]
 }

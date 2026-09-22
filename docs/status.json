@@ -1,18 +1,21 @@
 {
-  "updated_at": "2026-09-22T23:17:05.493365+00:00",
+  "updated_at": "2026-09-22T23:32:12.541866+00:00",
   "status": "success",
-  "started_at": "2026-09-22T23:16:31.673331+00:00",
-  "finished_at": "2026-09-22T23:17:05.492210+00:00",
-  "posts_scanned": 283,
-  "posts_with_history": 206,
-  "posts_flagged": 4,
-  "notified_count": 0,
+  "started_at": "2026-09-22T23:31:40.554435+00:00",
+  "finished_at": "2026-09-22T23:32:12.540813+00:00",
+  "posts_scanned": 578,
+  "posts_with_history": 473,
+  "posts_flagged": 48,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 389,
+  "minutes_since_last_notification": 405,
   "reject_reasons": {
-    "古すぎる": 107,
-    "いいねが少なすぎる": 147,
-    "いいね稼ぎ疑い": 2
+    "古すぎる": 311,
+    "誘導文パターン": 5,
+    "いいねが少なすぎる": 146,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 1,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -29,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 44270,
-    "posts": 10174,
-    "oldest": "2026-09-21T23:24:32.105419+00:00"
+    "total": 44068,
+    "posts": 10081,
+    "oldest": "2026-09-21T23:40:30.158744+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3460,
+  "viral_discovery_posts": 121,
+  "million_imp_rescued": 10,
+  "watchlist_active": 3499,
   "top5": [
     {
-      "author": "moeruasia01",
-      "score": 71.2,
-      "likes": 847,
-      "likes_per_min": 21.48,
-      "acceleration": 1.38,
+      "author": "snsnokyoufu",
+      "score": 31.3,
+      "likes": 54141,
+      "likes_per_min": 24.53,
+      "acceleration": 1.37,
       "measured": true,
-      "age_minutes": 82.3,
-      "text": "TBS「ひるおび」千葉県佐倉市の冠水した道路から中継、服をまくり上げて歩く女性の下半身をズームし19秒間も撮影\n\nエキス",
-      "url": "https://x.com/moeruasia01/status/2102516985716518943"
+      "age_minutes": 797.6,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "wni_jp",
-      "score": 32.9,
-      "likes": 258,
-      "likes_per_min": 2.13,
-      "acceleration": 0.74,
+      "author": "junnosuke_tag",
+      "score": 33.0,
+      "likes": 12858,
+      "likes_per_min": 1.81,
+      "acceleration": 1.69,
       "measured": true,
-      "age_minutes": 62.4,
-      "text": "【台風25号 関東の6割が連休の予定を変更】\nシルバーウィーク中の21日(月)に関東付近を通過した台風25号。大雨や強風",
-      "url": "https://x.com/wni_jp/status/2102521998928974076"
+      "age_minutes": 869.1,
+      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
+      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
     },
     {
-      "author": "suchi_sub",
-      "score": 75.1,
-      "likes": 785,
-      "likes_per_min": 57.98695572227603,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.5,
-      "text": "いいですか、落ち着いて聞いてください。\n\nお は す ち の お 時 間 で す",
-      "url": "https://x.com/suchi_sub/status/2102534291804782910"
+      "author": "Order0o1",
+      "score": 34.1,
+      "likes": 101158,
+      "likes_per_min": 36.04,
+      "acceleration": 1.16,
+      "measured": true,
+      "age_minutes": 781.7,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
     },
     {
-      "author": "kumagai_chiba",
-      "score": 46.8,
-      "likes": 165,
-      "likes_per_min": 3.12,
-      "acceleration": 1.19,
+      "author": "_mumei_R",
+      "score": 22.5,
+      "likes": 61775,
+      "likes_per_min": 14.03,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 65.1,
-      "text": "鹿島川は平成6年度から広域河川改修と住宅市街地基盤整備事業を導入、毎年度億単位の予算を投入して河道拡幅・築堤を進めていま",
-      "url": "https://x.com/kumagai_chiba/status/2102521318768062969"
+      "age_minutes": 894.0,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "sxzBST",
-      "score": 59.2,
-      "likes": 194,
-      "likes_per_min": 9.86,
-      "acceleration": null,
+      "author": "main_warabi",
+      "score": 28.8,
+      "likes": 91652,
+      "likes_per_min": 185.6,
+      "acceleration": 1.07,
       "measured": true,
-      "age_minutes": 26.6,
-      "text": "ひるおび、歩行している女性の脚にズームインしてしまい炎上\n\nこれ一般人がやったら盗撮なのにテレビ局がやったら問題ないのお",
-      "url": "https://x.com/sxzBST/status/2102531007299891270"
+      "age_minutes": 653.0,
+      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
+      "url": "https://x.com/main_warabi/status/2102377179522949621"
     }
   ]
 }

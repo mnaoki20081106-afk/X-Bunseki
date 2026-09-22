@@ -195,7 +195,9 @@ function harvestSearch(data){
       n++;
       const views=Number(r?.views?.count||0)||0;
       if(views>0) v++;
+      const user=r?.core?.user_results?.result;
       rawById.set(String(lg.id_str),{
+        author_name:user?.legacy?.name||user?.core?.name||'',
         impressions:views,
         likes:Number(lg.favorite_count||0)||0,
         retweets:Number(lg.retweet_count||0)||0,
@@ -236,6 +238,7 @@ function mergeTweet(t,spec){
   const base={
     post_id:id,
     author_handle:t.author||old?.author_handle||'',
+    author_name:raw.author_name||t.author_name||t.name||old?.author_name||t.author||'',
     url:t.url||old?.url||('https://x.com/i/status/'+id),
     posted_at:t.created_at||old?.posted_at||new Date().toISOString(),
     text_snippet:(t.text||old?.text_snippet||'').slice(0,280),
@@ -312,6 +315,7 @@ for(const w of watch){
   if(seen.has(id)) continue;
   const p={
     post_id:id,author_handle:w.author_handle||'',
+    author_name:w.author_name||w.author_handle||'',
     url:w.url||('https://x.com/i/status/'+id),posted_at:w.posted_at,
     text_snippet:w.text_snippet||'',likes:0,retweets:0,replies:0,
     quotes:0,bookmarks:0,impressions:Number(w.last_impressions||0),
@@ -326,6 +330,8 @@ function applyDetail(p,d){
     const res=unwrapResult(e?.content?.itemContent?.tweet_results?.result);
     if(String(res?.rest_id||res?.legacy?.id_str||'')!==String(p.post_id)) continue;
     const lg=res?.legacy||{};
+    const user=res?.core?.user_results?.result;
+    p.author_name=user?.legacy?.name||user?.core?.name||p.author_name||p.author_handle||'';
     p.impressions=Number(res?.views?.count||p.impressions||0)||0;
     p.likes=Number(lg.favorite_count??p.likes??0)||0;
     p.retweets=Number(lg.retweet_count??p.retweets??0)||0;

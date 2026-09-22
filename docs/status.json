@@ -1,20 +1,19 @@
 {
-  "updated_at": "2026-09-22T22:17:21.812619+00:00",
+  "updated_at": "2026-09-22T22:32:39.239506+00:00",
   "status": "success",
-  "started_at": "2026-09-22T22:16:43.937182+00:00",
-  "finished_at": "2026-09-22T22:17:21.811466+00:00",
-  "posts_scanned": 582,
-  "posts_with_history": 480,
-  "posts_flagged": 24,
+  "started_at": "2026-09-22T22:32:02.272167+00:00",
+  "finished_at": "2026-09-22T22:32:39.237774+00:00",
+  "posts_scanned": 595,
+  "posts_with_history": 490,
+  "posts_flagged": 33,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 330,
+  "minutes_since_last_notification": 345,
   "reject_reasons": {
-    "古すぎる": 362,
-    "いいねが少なすぎる": 141,
+    "古すぎる": 358,
     "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 1
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 141
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 42504,
-    "posts": 9778,
+    "total": 43099,
+    "posts": 9883,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
   "viral_discovery_posts": 119,
-  "million_imp_rescued": 4,
-  "watchlist_active": 3380,
+  "million_imp_rescued": 7,
+  "watchlist_active": 3402,
   "top5": [
     {
-      "author": "yyypandapanda",
-      "score": 33.8,
-      "likes": 21499,
-      "likes_per_min": 21.43,
-      "acceleration": 1.58,
+      "author": "snsnokyoufu",
+      "score": 29.8,
+      "likes": 52680,
+      "likes_per_min": 17.92,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 700.6,
-      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
-      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
+      "age_minutes": 738.0,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "_mumei_R",
-      "score": 22.0,
-      "likes": 60759,
-      "likes_per_min": 8.79,
+      "author": "main_warabi",
+      "score": 30.1,
+      "likes": 80958,
+      "likes_per_min": 136.7,
+      "acceleration": 1.34,
+      "measured": true,
+      "age_minutes": 593.4,
+      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
+      "url": "https://x.com/main_warabi/status/2102377179522949621"
+    },
+    {
+      "author": "sirokuru_",
+      "score": 24.0,
+      "likes": 52139,
+      "likes_per_min": 11.49,
+      "acceleration": 1.98,
+      "measured": true,
+      "age_minutes": 923.3,
+      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
+      "url": "https://x.com/sirokuru_/status/2102294166197981315"
+    },
+    {
+      "author": "Order0o1",
+      "score": 34.5,
+      "likes": 99166,
+      "likes_per_min": 26.2,
+      "acceleration": 1.48,
+      "measured": true,
+      "age_minutes": 722.1,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
+    },
+    {
+      "author": "HaHaHaHaaa____",
+      "score": 21.0,
+      "likes": 17879,
+      "likes_per_min": 2.58,
       "acceleration": 1.29,
       "measured": true,
-      "age_minutes": 819.1,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
-    },
-    {
-      "author": "MORE_STAR_",
-      "score": 28.8,
-      "likes": 19063,
-      "likes_per_min": 8.57,
-      "acceleration": 0.16,
-      "measured": true,
-      "age_minutes": 677.3,
-      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
-      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
-    },
-    {
-      "author": "ryoooooplus",
-      "score": 23.3,
-      "likes": 32236,
-      "likes_per_min": 7.38,
-      "acceleration": 1.23,
-      "measured": true,
-      "age_minutes": 769.3,
-      "text": "ね。 https://t.co/M12N8hiri6",
-      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
-    },
-    {
-      "author": "Tigers_140609",
-      "score": 67.1,
-      "likes": 2974,
-      "likes_per_min": 30.77,
-      "acceleration": 1.2,
-      "measured": true,
-      "age_minutes": 138.1,
-      "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
-      "url": "https://x.com/Tigers_140609/status/2102487923811823626"
+      "age_minutes": 741.5,
+      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
+      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
     }
   ]
 }

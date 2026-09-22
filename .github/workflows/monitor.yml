@@ -127,6 +127,7 @@ jobs:
           set +e
           python main.py
           code=$?
+          python build_outcomes.py || true
           python auto_train.py || true
           if [ -f status.json ]; then
             st=$(python3 -c "import json; print(json.load(open('status.json')).get('status',''))" 2>/dev/null || true)
@@ -159,7 +160,7 @@ jobs:
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
           # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
           # 混ぜると git add 全体が失敗するため、個別に確認する。
-          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/impression_model.json data/watchlist.json; do
+          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/training_outcomes.json data/impression_model.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

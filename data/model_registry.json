@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "champion": {
+    "generation": "gen0",
+    "kind": "grok_prior_calibrated_multiplier",
+    "status": "production"
+  },
+  "challenger": null,
+  "dataset_stats": {
+    "early_observed_posts": 301,
+    "completed_24h_posts": 0,
+    "completion_rate": 0.0,
+    "positive_5m": 0,
+    "positive_10m": 0,
+    "stalled_under_1_5m": 0
+  },
+  "readiness": {
+    "regression_ready": false,
+    "p5_classifier_ready": false,
+    "p10_classifier_ready": false,
+    "completion_rate_ok": false,
+    "requirements": {
+      "regression_completed": 300,
+      "p5_positives": 40,
+      "p5_stalled": 50,
+      "p10_positives": 25,
+      "p10_5m_positives": 80,
+      "minimum_completion_rate": 0.7
+    }
+  },
+  "dataset_posts": 0,
+  "split_posts": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "gen0_historical_metrics": {
+    "posts": 0,
+    "log_mae": null
+  },
+  "promotion_policy": {
+    "automatic": true,
+    "shadow_first": true,
+    "minimum_10m_positives_for_promotion": 15,
+    "requirements": [
+      "10M Recall@50 must be >= champion",
+      "5M Recall@50 must not regress",
+      "NDCG@100 must be >= champion",
+      "log-MAE must not be >15% worse",
+      "time-to-detection must not regress"
+    ]
+  },
+  "automation_state": "collecting"
+}

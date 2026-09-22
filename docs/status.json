@@ -1,16 +1,21 @@
 {
-  "updated_at": "2026-09-22T03:59:19.111632+00:00",
+  "updated_at": "2026-09-22T04:45:46.189904+00:00",
   "status": "success",
-  "started_at": "2026-09-22T03:58:44.184520+00:00",
-  "finished_at": "2026-09-22T03:59:19.110056+00:00",
-  "posts_scanned": 6,
-  "posts_with_history": 6,
-  "posts_flagged": 4,
+  "started_at": "2026-09-22T04:45:18.433808+00:00",
+  "finished_at": "2026-09-22T04:45:46.188809+00:00",
+  "posts_scanned": 572,
+  "posts_with_history": 311,
+  "posts_flagged": 82,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 167,
+  "minutes_since_last_notification": 213,
   "reject_reasons": {
-    "古すぎる": 1
+    "古すぎる": 137,
+    "いいねが少なすぎる": 211,
+    "失速済み": 7,
+    "初回観測かつ平均速度が低い": 20,
+    "誘導文パターン": 7,
+    "いいね稼ぎ疑い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -27,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 10026,
-    "posts": 3975,
+    "total": 10598,
+    "posts": 4236,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 353,
+  "viral_discovery_posts": 124,
+  "million_imp_rescued": 6,
+  "watchlist_active": 459,
   "top5": [
     {
-      "author": "d_holi",
-      "score": 49.9,
-      "likes": 8310,
-      "likes_per_min": 83.17,
+      "author": "Tigers_140609",
+      "score": 68.7,
+      "likes": 7666,
+      "likes_per_min": 34.66,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 121.2,
-      "text": "ほぼ僕の名前で笑ってしまった。\n日本は平和。 https://t.co/mxizX31wcO",
-      "url": "https://x.com/d_holi/status/2102215839382688055"
+      "age_minutes": 127.7,
+      "text": "［広島］\n新井貴浩監督が続投へ　\nシーズン中に３度、球団に辞意伝える…\n「ゾンビたばこ」を巡る激動シーズン　来季５年目は",
+      "url": "https://x.com/Tigers_140609/status/2102225903728337211"
     },
     {
-      "author": "shirakamifubuki",
-      "score": 77.8,
-      "likes": 1009,
-      "likes_per_min": 34.89,
+      "author": "yudai_vo",
+      "score": 85.3,
+      "likes": 8360,
+      "likes_per_min": 90.92,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 16.3,
-      "text": "この日を待ちわびたし次週が最高潮になると思うと震えるじぇ…",
-      "url": "https://x.com/shirakamifubuki/status/2102242228932690339"
+      "age_minutes": 100.7,
+      "text": "僕のInstagramはフォロワーの20%が韓国の方で、昨日の投稿に驚かれた方も多かったみたいで一晩で2000人くらいフ",
+      "url": "https://x.com/yudai_vo/status/2102232696978354448"
     },
     {
-      "author": "andTEAM_members",
-      "score": 69.0,
-      "likes": 3637,
-      "likes_per_min": 45.5,
-      "acceleration": null,
+      "author": "711SEJ",
+      "score": 37.8,
+      "likes": 14889,
+      "likes_per_min": 41.48,
+      "acceleration": 0.54,
       "measured": true,
-      "age_minutes": 46.1,
-      "text": "今日もGoodな1日を‼️\n\n#DayDay.\n#andTEAM #エンティーム #HARUA https://t.co",
-      "url": "https://x.com/andTEAM_members/status/2102234733065470409"
+      "age_minutes": 225.7,
+      "text": "ゴンチャのペットボトルに新フレーバー誕生✨\n\n対象の貢茶(ゴンチャ)いずれか1本に使える\n150円引きクーポンが当たるチ",
+      "url": "https://x.com/711SEJ/status/2102201223336382507"
     },
     {
-      "author": "DaiKing_boy",
-      "score": 72.0,
-      "likes": 2770,
-      "likes_per_min": 139.04,
+      "author": "___mobko____",
+      "score": 32.2,
+      "likes": 2804,
+      "likes_per_min": 15.543193355105831,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 31.0,
-      "text": "こうやって聴いていくと彼の世界が広がっていくのを感じる\nまだまだ彼と共に見たい景色が沢山ある\nおめでとう僕の月と太陽🌙☀",
-      "url": "https://x.com/DaiKing_boy/status/2102238544358253037"
+      "measured": false,
+      "age_minutes": 180.4,
+      "text": "みなさんもこんな経験ありますか？ https://t.co/mOAKSZWJSm",
+      "url": "https://x.com/___mobko____/status/2102212629859324309"
     },
     {
-      "author": "sakatansab",
-      "score": 81.2,
-      "likes": 2025,
-      "likes_per_min": 35.64,
+      "author": "narisumashi100",
+      "score": 42.7,
+      "likes": 3362,
+      "likes_per_min": 20.95132525549331,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 31.3,
-      "text": "俺声可愛いな〜低いのに なんかこう\n\nまろやかな耳触りでコクとまろやかさが両立しすぎてて、一口大のグラタン食べたときの満",
-      "url": "https://x.com/sakatansab/status/2102238475781284246"
+      "measured": false,
+      "age_minutes": 160.5,
+      "text": "野比さん\nまずは、ありがとうございます\n\nですが、Copilotで出したスライドを、\nそのまま顧客提出物にするのはやめて",
+      "url": "https://x.com/narisumashi100/status/2102217646284636511"
     }
   ]
 }

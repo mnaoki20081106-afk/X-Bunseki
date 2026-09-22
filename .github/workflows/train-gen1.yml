@@ -39,15 +39,17 @@ jobs:
       - name: Train challenger when eligible
         run: python train_gen1.py
 
-      - name: Refresh registry after training
-        run: python gen1_controller.py
+      - name: Evaluate shadow and guarded promotion
+        run: |
+          python evaluate_shadow.py
+          python evaluate_promotion.py
 
       - name: Commit model state
         run: |
           set -e
           git config user.name "sns-model-bot"
           git config user.email "actions@github.com"
-          for p in data/training_outcomes.json data/model_registry.json data/gen1_challenger.json data/gen1_challenger.joblib; do
+          for p in data/training_outcomes.json data/model_registry.json data/gen1_challenger.json data/gen1_challenger_model.json data/gen1_promotion.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

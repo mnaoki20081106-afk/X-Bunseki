@@ -100,6 +100,10 @@ footer{margin-top:32px;font-family:var(--mono);font-size:10.5px;color:var(--fain
     <div class="stat"><div class="sl">候補★</div><div class="sv" id="hCan">—</div></div>
   </div>
   <div class="row" style="margin-bottom:12px"><button type="button" class="bg" onclick="loadHits()">再読み込み</button></div>
+  <div class="tabs" style="margin-bottom:14px">
+    <button type="button" class="tab active" id="feed-early" onclick="showFeed('early')">早期発見</button>
+    <button type="button" class="tab" id="feed-trending" onclick="showFeed('trending')">🔥 バズっている</button>
+  </div>
   <div class="log" id="hLog"></div>
   <div id="hits"></div>
 </div>
@@ -127,6 +131,7 @@ const RAW = {
 const $=id=>document.getElementById(id);
 const PAT_KEY = 'xbunseki_gh_pat';
 let S={words:[],add:[],del:new Set(),ok:false,sha:null,rawText:''};
+let H={early:[],trending:[],feed:'early'};
 function live(m){$('dot').className='dot '+(m||'')}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&','<':'<','>':'>','"':'"',"'":'&#39;'}[c]))}
 function parse(t){const u=[],seen=new Set();for(const line of t.split(/\r?\n/)){const L=line.trim();if(!L||L.startsWith('#'))continue;for(const p of L.split(/[,、]/)){const w=p.trim();if(w&&!seen.has(w)){seen.add(w);u.push(w)}}}return u}
@@ -213,6 +218,38 @@ async function save(){
     await loadKw();
   }catch(e){$('log').className='log show err';$('log').textContent='❌ '+e.message;$('saveBtn').disabled=false}
 }
+function showFeed(name){
+  H.feed=name;
+  $('feed-early').classList.toggle('active',name==='early');
+  $('feed-trending').classList.toggle('active',name==='trending');
+  renderHits();
+}
+function renderHits(){
+  const posts=(H.feed==='trending'?H.trending:H.early).slice();
+  posts.sort(H.feed==='trending'
+    ? (a,b)=>(b.impressions_per_min||0)-(a.impressions_per_min||0)||(b.impressions||0)-(a.impressions||0)
+    : (a,b)=>(b.predicted_final_impressions||0)-(a.predicted_final_impressions||0));
+  if(!posts.length){$('hits').innerHTML='<div class="empty">'+(H.feed==='trending'?'現在表示する大バズ投稿はありません':'早期発見投稿はありません')+'</div>';return}
+  $('hits').innerHTML=posts.map(p=>{
+    const sc=p.score??p.buzz_score;const age=p.age_minutes!=null?Math.round(p.age_minutes)+'m':'—';
+    const lpm=p.likes_per_min!=null?Number(p.likes_per_min).toFixed(1):'—';
+    const pred=p.predicted_final_impressions;
+    const predText=pred!=null?(pred>=1000000?(pred/1000000).toFixed(1)+'M':Math.round(pred/1000)+'K'):'予測待ち';
+    const imp=p.impressions!=null?Number(p.impressions).toLocaleString():'—';
+    const ipm=p.impressions_per_min!=null?Number(p.impressions_per_min).toFixed(0):'—';
+    const iacc=p.impressions_acceleration!=null?Number(p.impressions_acceleration).toFixed(2)+'x':'—';
+    const title=H.feed==='trending'?'現在 '+imp+' imp':'予測 '+predText+' imp';
+    const mega=p.mega_viral?' · 👹 850万+':'';
+    return `<div class="hit${p.candidate?' star':''}"><div class="ht">
+      <span class="sc">${title}</span>
+      <span class="meta">${esc(p.prediction_confidence||'—')} · 従来${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}${mega}</span>
+      <span class="meta">@${esc(p.author||'')}</span>
+      <span class="meta">${age} · 現在imp ${imp} · ${ipm} imp/分 · 加速 ${iacc}</span>
+      <span class="meta">いいね${p.likes!=null?Number(p.likes).toLocaleString():'—'} · ${lpm}いいね/分 · 返信${p.replies??'—'} · RT${p.retweets??'—'}</span>
+    </div><div class="tx">${esc(p.text||'(文なし/画像など)')}</div>
+    ${p.url?`<a class="lk" href="${esc(p.url)}" target="_blank" rel="noopener">投稿を開く →</a>`:''}</div>`;
+  }).join('');
+}
 async function loadHits(){
   live('busy');$('hits').innerHTML='<div class="empty">読み込み中...</div>';$('hLog').className='log';
   try{
@@ -224,32 +261,12 @@ async function loadHits(){
     $('hSt').style.color=status==='success'?'var(--ok)':status==='session_expired'?'var(--danger)':'var(--text)';
     $('hSur').textContent=hits.surviving??(hits.posts||[]).length;
     $('hCan').textContent=hits.candidates??'—';
-    const posts=(hits.posts||[]).slice().sort((a,b)=>(b.predicted_final_impressions||0)-(a.predicted_final_impressions||0));
-    if(!posts.length){
-      $('hits').innerHTML=`<div class="empty">まだ投稿がありません（有効なログイン後に更新）<br>${esc(hits.updated_at||st.updated_at||'—')}<br>${esc(st.error_message||'')}</div>`;
-      live(status==='success'?'live':'err');
-      $('conn').textContent=status==='session_expired'?'セッション切れ':(status==='error'?'監視エラー':'投稿 0件');
-      return;
-    }
-    $('hits').innerHTML=posts.map(p=>{
-      const sc=p.score??p.buzz_score;const age=p.age_minutes!=null?Math.round(p.age_minutes)+'m':'—';
-      const lpm=p.likes_per_min!=null?Number(p.likes_per_min).toFixed(1):'—';
-      const pred=p.predicted_final_impressions;
-      const predText=pred!=null?(pred>=1000000?(pred/1000000).toFixed(1)+'M':Math.round(pred/1000)+'K'):'予測待ち';
-      const imp=p.impressions!=null?Number(p.impressions).toLocaleString():'—';
-      const ipm=p.impressions_per_min!=null?Number(p.impressions_per_min).toFixed(0):'—';
-      const iacc=p.impressions_acceleration!=null?Number(p.impressions_acceleration).toFixed(2)+'x':'—';
-      return `<div class="hit${p.candidate?' star':''}"><div class="ht">
-        <span class="sc">予測 ${predText} imp</span>
-        <span class="meta">${esc(p.prediction_confidence||'—')} · 従来${sc!=null?Math.round(sc):'—'}点${p.candidate?' ★':''}</span>
-        <span class="meta">@${esc(p.author||'')}</span>
-        <span class="meta">${age} · 現在imp ${imp} · ${ipm} imp/分 · 加速 ${iacc}</span>
-        <span class="meta">いいね${p.likes!=null?Number(p.likes).toLocaleString():'—'} · ${lpm}いいね/分 · 返信${p.replies??'—'} · RT${p.retweets??'—'}</span>
-      </div><div class="tx">${esc(p.text||'(文なし/画像など)')}</div>
-      ${p.url?`<a class="lk" href="${esc(p.url)}" target="_blank" rel="noopener">投稿を開く →</a>`:''}</div>`;
-    }).join('');
+    H.early=hits.early_posts||hits.posts||[];
+    H.trending=hits.trending_posts||[];
+    $('hSur').textContent=H.early.length;
+    renderHits();
     live(status==='session_expired'||status==='error'?'err':'live');
-    $('conn').textContent=`投稿 ${posts.length}件`;
+    $('conn').textContent=`早期 ${H.early.length}件 · バズ中 ${H.trending.length}件`;
   }catch(e){live('err');$('hits').innerHTML='<div class="empty">失敗</div>';$('hLog').className='log show err';$('hLog').textContent='❌ '+e.message}
 }
 $('pat').value=localStorage.getItem(PAT_KEY)||'';

@@ -204,23 +204,68 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
 
 
 
-def _append_training_snapshots(posts: list[dict], observed_at: str):
-    """長期学習用。impを取得できた投稿だけをJSONLへ蓄積する。"""
+def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state: dict | None = None):
+    """Long-term raw observations for future ML.
+
+    Store enough raw/context data to recompute features later. Do not fabricate
+    missing historical snapshots; first-observation metadata comes from watchlist.
+    """
     path = BASE_DIR / "data" / "training_snapshots.jsonl"
     rows = []
+    watch_state = watch_state or {}
     for p in posts:
         imp = int(p.get("impressions") or 0)
-        if imp <= 0:
+        pid = p.get("post_id")
+        if imp <= 0 or not pid:
             continue
         g = p.get("growth") or {}
+        w = watch_state.get(pid) or {}
         rows.append({
-            "post_id": p.get("post_id"), "observed_at": observed_at,
-            "posted_at": p.get("posted_at"), "age_minutes": g.get("age_minutes"),
-            "impressions": imp, "impressions_per_min": g.get("impressions_per_min"),
-            "impressions_acceleration": g.get("impressions_acceleration"),
-            "likes": p.get("likes") or 0, "retweets": p.get("retweets") or 0,
-            "replies": p.get("replies") or 0, "quotes": p.get("quotes") or 0,
+            "schema_version": 2,
+            "post_id": pid,
+            "observed_at": observed_at,
+            "posted_at": p.get("posted_at"),
+            "age_minutes": g.get("age_minutes"),
+            "first_observed_at": w.get("first_observed_at"),
+            "first_observed_elapsed_min": w.get("first_observed_elapsed_min"),
+            "first_discovery_source": w.get("first_discovery_source"),
+            "was_early_observed": w.get("was_early_observed"),
+            "is_rescue_only": w.get("is_rescue_only"),
+            "learning_cohort": w.get("learning_cohort"),
+            "discovery_source": p.get("discovery_source") or "keyword",
+            "discovery_sources": p.get("discovery_sources") or [],
+            "discovery_query_hits": p.get("discovery_query_hits") or 0,
+            "impressions": imp,
+            "likes": p.get("likes") or 0,
+            "retweets": p.get("retweets") or 0,
+            "replies": p.get("replies") or 0,
+            "quotes": p.get("quotes") or 0,
             "bookmarks": p.get("bookmarks") or 0,
+            "window_minutes": g.get("window_minutes"),
+            "is_measured": g.get("is_measured"),
+            "samples": g.get("samples"),
+            "impressions_per_min": g.get("impressions_per_min"),
+            "prev_impressions_per_min": g.get("prev_impressions_per_min"),
+            "impressions_acceleration": g.get("impressions_acceleration"),
+            "likes_per_min": g.get("likes_per_min"),
+            "retweets_per_min": g.get("retweets_per_min"),
+            "replies_per_min": g.get("replies_per_min"),
+            "bookmarks_per_min": g.get("bookmarks_per_min"),
+            "quotes_per_min": g.get("quotes_per_min"),
+            "likes_delta": g.get("likes_delta"),
+            "retweets_delta": g.get("retweets_delta"),
+            "replies_delta": g.get("replies_delta"),
+            "bookmarks_delta": g.get("bookmarks_delta"),
+            "impressions_delta": g.get("impressions_delta"),
+            "predicted_final_impressions": p.get("predicted_final_impressions"),
+            "prediction_confidence": p.get("prediction_confidence"),
+            "prediction_remaining_multiplier": p.get("prediction_remaining_multiplier"),
+            "prediction_accel_adjustment": p.get("prediction_accel_adjustment"),
+            "prediction_quality_adjustment": p.get("prediction_quality_adjustment"),
+            "buzz_score": p.get("buzz_score"),
+            "rejected_reason": p.get("rejected_reason"),
+            "million_imp_bypass": bool(p.get("million_imp_bypass")),
+            "million_imp_bypass_detail": p.get("million_imp_bypass_detail") or "",
         })
     if not rows:
         return
@@ -228,7 +273,7 @@ def _append_training_snapshots(posts: list[dict], observed_at: str):
     with path.open("a", encoding="utf-8") as fh:
         for row in rows:
             fh.write(json.dumps(row, ensure_ascii=False) + "\n")
-    print(f"学習用スナップショット: {len(rows)}件追記")
+    print(f"学習用スナップショット(v2): {len(rows)}件追記")
 
 def _append_log(rows: list[dict]):
     if not rows:
@@ -386,7 +431,7 @@ def run_once():
     viral_count = sum(1 for p in posts if p.get("discovery_source") == "viral_search")
     print(f"Viral Discovery: {viral_count}件 / Million Rescue: {rescue_count}件 / watchlist active: {active_watch}件")
 
-    _append_training_snapshots(evaluated, now_iso)
+    _append_training_snapshots(evaluated, now_iso, watch_state)
     db.record_observations(posts, now_iso)
 
     reasons: dict[str, int] = {}

@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T09:47:18.896427+00:00",
+  "updated_at": "2026-09-22T10:03:18.106590+00:00",
   "status": "success",
-  "started_at": "2026-09-22T09:46:47.534629+00:00",
-  "finished_at": "2026-09-22T09:47:18.894621+00:00",
-  "posts_scanned": 566,
-  "posts_with_history": 434,
+  "started_at": "2026-09-22T10:02:43.203710+00:00",
+  "finished_at": "2026-09-22T10:03:18.105306+00:00",
+  "posts_scanned": 570,
+  "posts_with_history": 428,
   "posts_flagged": 101,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 515,
+  "minutes_since_last_notification": 531,
   "reject_reasons": {
-    "古すぎる": 149,
+    "古すぎる": 156,
     "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 207,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 6
+    "失速済み": 4,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 210,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 20807,
-    "posts": 6742,
+    "total": 21377,
+    "posts": 6884,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 1,
-  "watchlist_active": 1481,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 5,
+  "watchlist_active": 1541,
   "top5": [
     {
       "author": "junnosuke_tag",
-      "score": 83.3,
-      "likes": 1856,
-      "likes_per_min": 41.933457084779235,
+      "score": 91.6,
+      "likes": 3626,
+      "likes_per_min": 110.72,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 44.3,
+      "measured": true,
+      "age_minutes": 60.2,
       "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
       "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
     },
     {
-      "author": "sirokuru_",
-      "score": 38.6,
-      "likes": 22173,
-      "likes_per_min": 145.36,
-      "acceleration": 0.93,
+      "author": "yeskiri",
+      "score": 36.7,
+      "likes": 18345,
+      "likes_per_min": 118.12,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 157.9,
+      "age_minutes": 189.4,
+      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
+      "url": "https://x.com/yeskiri/status/2102290272348754259"
+    },
+    {
+      "author": "_mumei_R",
+      "score": 64.2,
+      "likes": 6552,
+      "likes_per_min": 217.3,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 85.1,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "sirokuru_",
+      "score": 36.8,
+      "likes": 24493,
+      "likes_per_min": 145.12,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 173.9,
       "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
       "url": "https://x.com/sirokuru_/status/2102294166197981315"
     },
     {
-      "author": "SN__20200122",
-      "score": 69.2,
-      "likes": 31733,
-      "likes_per_min": 139.81,
-      "acceleration": 0.7,
-      "measured": true,
-      "age_minutes": 107.3,
-      "text": "［ 毎週火曜日更新 ］\n6th Album「AMENITY」新情報解禁 ☃️\n\n第6弾 ─【ボーナストラック解禁】\n\nI",
-      "url": "https://x.com/SN__20200122/status/2102306907239117255"
-    },
-    {
-      "author": "DAZNJPNBaseball",
-      "score": 78.0,
-      "likes": 7373,
-      "likes_per_min": 221.22,
-      "acceleration": 1.28,
-      "measured": true,
-      "age_minutes": 38.0,
-      "text": "怒涛の虎\n\n先頭から4連打\n佐藤輝明 第36号ホームラン\n\n⚾️ヤクルト×阪神\n#阪神タイガース #だったらDAZN h",
-      "url": "https://x.com/DAZNJPNBaseball/status/2102324353308434887"
-    },
-    {
-      "author": "milk_info",
-      "score": 63.5,
-      "likes": 6212,
-      "likes_per_min": 358.8552533592898,
+      "author": "ado1024imokenp",
+      "score": 70.5,
+      "likes": 1506,
+      "likes_per_min": 237.88420292988357,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.3,
-      "text": "／\nついに今週最終回📣\n＼\n👑M!LK冠番組👑\n⏰9月24日(木)25:29～放送\n⚠️いつもと放送時間が異なっておりま",
-      "url": "https://x.com/milk_info/status/2102329558745894948"
+      "age_minutes": 6.3,
+      "text": "楽しみだね👊",
+      "url": "https://x.com/ado1024imokenp/status/2102336342592291228"
     }
   ]
 }

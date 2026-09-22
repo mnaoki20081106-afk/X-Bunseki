@@ -1,19 +1,18 @@
 {
-  "updated_at": "2026-09-22T21:03:07.702606+00:00",
+  "updated_at": "2026-09-22T21:17:28.630561+00:00",
   "status": "success",
-  "started_at": "2026-09-22T21:02:36.464983+00:00",
-  "finished_at": "2026-09-22T21:03:07.701516+00:00",
-  "posts_scanned": 582,
-  "posts_with_history": 501,
-  "posts_flagged": 13,
+  "started_at": "2026-09-22T21:16:54.644345+00:00",
+  "finished_at": "2026-09-22T21:17:28.629607+00:00",
+  "posts_scanned": 286,
+  "posts_with_history": 220,
+  "posts_flagged": 4,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 255,
+  "minutes_since_last_notification": 270,
   "reject_reasons": {
-    "古すぎる": 409,
-    "初回観測かつ平均速度が低い": 11,
-    "いいねが少なすぎる": 116,
-    "誘導文パターン": 1
+    "古すぎる": 148,
+    "いいねが少なすぎる": 118,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +29,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 39869,
-    "posts": 9324,
+    "total": 40155,
+    "posts": 9390,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 3,
-  "watchlist_active": 3312,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3317,
   "top5": [
     {
-      "author": "Order0o1",
-      "score": 30.2,
-      "likes": 96820,
-      "likes_per_min": 17.75,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 632.6,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
-    },
-    {
-      "author": "main_warabi",
-      "score": 28.8,
-      "likes": 68720,
-      "likes_per_min": 102.36,
-      "acceleration": 1.05,
-      "measured": true,
-      "age_minutes": 503.9,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
-    },
-    {
-      "author": "sirokuru_",
-      "score": 18.6,
-      "likes": 51110,
-      "likes_per_min": 5.8,
-      "acceleration": 1.21,
-      "measured": true,
-      "age_minutes": 833.8,
-      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
-      "url": "https://x.com/sirokuru_/status/2102294166197981315"
-    },
-    {
       "author": "Tigers_140609",
-      "score": 79.6,
-      "likes": 1032,
-      "likes_per_min": 19.63,
-      "acceleration": 0.93,
+      "score": 82.5,
+      "likes": 1361,
+      "likes_per_min": 22.93,
+      "acceleration": 1.17,
       "measured": true,
-      "age_minutes": 63.8,
+      "age_minutes": 78.2,
       "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
       "url": "https://x.com/Tigers_140609/status/2102487923811823626"
     },
     {
-      "author": "info__Johnnys",
-      "score": 63.6,
-      "likes": 10570,
-      "likes_per_min": 57.41,
-      "acceleration": 1.1,
+      "author": "wni_jp",
+      "score": 71.0,
+      "likes": 253,
+      "likes_per_min": 8.5,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 151.6,
-      "text": "【カウコン開催決定！】\n\n12/31(木)\n「COUNTDOWN CONCERT 2026-2027 STARTO to",
-      "url": "https://x.com/info__Johnnys/status/2102465835822661721"
+      "age_minutes": 34.8,
+      "text": "【週間天気予報】この先一週間の天気のポイント\n・シルバーウィークの連休明けは西日本で秋晴れ\n・秋雨前線が停滞し再び雨　新",
+      "url": "https://x.com/wni_jp/status/2102498853824143507"
+    },
+    {
+      "author": "tsunomakiwatame",
+      "score": 58.7,
+      "likes": 260,
+      "likes_per_min": 16.802829761975165,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 15.5,
+      "text": "☀今日のわため☀\n投稿しました～～～～～～～～～！！！！！\n\nめぇ探偵きちゃ🔍🐏\n\nQ.女の子がいつも付いてる家電製品っ",
+      "url": "https://x.com/tsunomakiwatame/status/2102503703726952710"
+    },
+    {
+      "author": "nwqllxq",
+      "score": 22.2,
+      "likes": 944,
+      "likes_per_min": 2.93,
+      "acceleration": 0.95,
+      "measured": true,
+      "age_minutes": 217.7,
+      "text": "あんまりネガティブなツイートしたくなかったんですけど今の自分の現状を把握しておいて欲しくてツイートします",
+      "url": "https://x.com/nwqllxq/status/2102452822071705616"
+    },
+    {
+      "author": "V9ih094vMWflnvg",
+      "score": 17.1,
+      "likes": 189,
+      "likes_per_min": 2.37,
+      "acceleration": 2.3,
+      "measured": true,
+      "age_minutes": 219.6,
+      "text": "@1set1500yen 間引くって言葉に反発コメント多いけど、\n障害持ち家族いる身としては綺麗事でしかないな。\nみいち",
+      "url": "https://x.com/V9ih094vMWflnvg/status/2102452345556849035"
     }
   ]
 }

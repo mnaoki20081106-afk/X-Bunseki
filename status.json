@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-22T12:47:40.985787+00:00",
+  "updated_at": "2026-09-22T13:03:34.743337+00:00",
   "status": "success",
-  "started_at": "2026-09-22T12:47:00.753398+00:00",
-  "finished_at": "2026-09-22T12:47:40.984633+00:00",
-  "posts_scanned": 331,
-  "posts_with_history": 213,
-  "posts_flagged": 50,
+  "started_at": "2026-09-22T13:02:58.564863+00:00",
+  "finished_at": "2026-09-22T13:03:34.742027+00:00",
+  "posts_scanned": 553,
+  "posts_with_history": 394,
+  "posts_flagged": 122,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 695,
+  "minutes_since_last_notification": 711,
   "reject_reasons": {
-    "古すぎる": 61,
+    "古すぎる": 128,
+    "失速済み": 9,
     "誘導文パターン": 3,
-    "失速済み": 4,
-    "いいねが少なすぎる": 159,
-    "初回観測かつ平均速度が低い": 1
+    "初回観測かつ平均速度が低い": 2,
+    "いいねが少なすぎる": 204
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 26716,
-    "posts": 8539,
+    "total": 27269,
+    "posts": 8698,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 38,
-  "million_imp_rescued": 0,
-  "watchlist_active": 2228,
+  "viral_discovery_posts": 113,
+  "million_imp_rescued": 6,
+  "watchlist_active": 2310,
   "top5": [
     {
-      "author": "Equal_LOVE_12",
-      "score": 67.3,
-      "likes": 5477,
-      "likes_per_min": 380.85548223856375,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.4,
-      "text": "「INKIGAYO LIVE in TOKYO」に\n出演させていただきました❤️𓂃𓈒 𓂂𓏸\n\nありがとうございました🫧˒",
-      "url": "https://x.com/Equal_LOVE_12/status/2102375684371099859"
-    },
-    {
-      "author": "modelpress",
-      "score": 61.6,
-      "likes": 4270,
-      "likes_per_min": 58.52191764127247,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.0,
-      "text": "MORE STAR山本るしあ＆鈴木花梨、脱退発表\n 今後は7人で活動\nhttps://t.co/cnrQNCGLk2\n\n",
-      "url": "https://x.com/modelpress/status/2102360944395669562"
-    },
-    {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 65.5,
-      "likes": 17249,
-      "likes_per_min": 417.06,
-      "acceleration": null,
+      "author": "junnosuke_tag",
+      "score": 36.3,
+      "likes": 10732,
+      "likes_per_min": 25.48,
+      "acceleration": 0.4,
       "measured": true,
-      "age_minutes": 32.2,
-      "text": "#オーイシ武道館 vol3 参戦してきました！\n本当にオーイシマサヨシが凄すぎる、、\nめっちゃ歌うし、めっちゃ踊るし、め",
-      "url": "https://x.com/SAK_SAK_SAKUMA/status/2102371197904371943"
+      "age_minutes": 240.5,
+      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
+      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
     },
     {
-      "author": "starglow_bmsg",
-      "score": 70.7,
-      "likes": 2131,
-      "likes_per_min": 168.04956126177555,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.7,
-      "text": "〖 お知らせ🔔〗\n\n￣￣￣￣￣￣￣￣￣￣\nSTARGLOW 1st Arena Tour 2027\nAurora - T",
-      "url": "https://x.com/starglow_bmsg/status/2102376113112748361"
+      "author": "snsnokyoufu",
+      "score": 47.5,
+      "likes": 25676,
+      "likes_per_min": 160.59,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 168.9,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "n4s103d",
-      "score": 39.4,
-      "likes": 7386,
-      "likes_per_min": 36.96743885687904,
+      "author": "728_Storm",
+      "score": 82.5,
+      "likes": 13959,
+      "likes_per_min": 201.0,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 52.0,
+      "text": "【お知らせ】\n\n本日9/22(火)22:00より生放送の\n関西テレビ「なにわAぇ!の放送させてください！ \nお蔵入りはド",
+      "url": "https://x.com/728_Storm/status/2102370230827929623"
+    },
+    {
+      "author": "HaHaHaHaaa____",
+      "score": 35.6,
+      "likes": 8105,
+      "likes_per_min": 47.01072522560693,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 199.8,
-      "text": "読書垢でよく見かける三大「え？そうだったの？」案件\n\n・綾辻行人と小野不由美は夫婦\n・乙一と山白朝子と中田永一は同一人物",
-      "url": "https://x.com/n4s103d/status/2102329024072855809"
+      "age_minutes": 172.4,
+      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
+      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+    },
+    {
+      "author": "naniwa_x_ae",
+      "score": 75.4,
+      "likes": 18878,
+      "likes_per_min": 585.47,
+      "acceleration": 1.09,
+      "measured": true,
+      "age_minutes": 33.6,
+      "text": "＼　放送させてください❗️🙏  ／\n\n『なにわAぇ! の放送させてください！』\n\nこのあとよる10時〜\nカンテレ・フジテ",
+      "url": "https://x.com/naniwa_x_ae/status/2102374857774383155"
     }
   ]
 }

@@ -1,17 +1,18 @@
-# Signal Filter（キーワード管理サイト）
+# Signal Filter legacy viewer
 
-本番URL: https://keywords-administration.c53gftun651-tiktok.workers.dev/
+The old standalone keyword editor is retired.
 
-## 投稿一覧タブを反映する手順
+`admin-site/index.html` is now **read-only** and only displays public monitoring results. It no longer contains the keyword Worker URL or any browser-side POST path.
 
-このディレクトリの `index.html` を Cloudflare Worker（静的）に再デプロイしてください。
+Keyword administration now belongs to the authenticated parent application:
 
-1. https://dash.cloudflare.com → Workers & Pages
-2. `keywords-administration`（または該当Worker）を開く
-3. **Edit code** / Assets の `index.html` を `admin-site/index.html` の内容で置き換え
-4. **Deploy**
+- parent repository: `mnaoki20081106-afk/Tiktok-generater-Public`
+- route: `/admin/x-monitor`
+- authorization: existing Supabase session + server-side `ADMIN_EMAILS`
+- write path: server-only GitHub Contents API to the existing `keywords*.txt` files
 
-API（キーワード保存）は従来どおり:
-`https://keywordadminworker.c53gftun651-tiktok.workers.dev/keywords`
+## Required external cleanup
 
-投稿一覧は GitHub の `hits.json` を読みます（監視実行後に更新）。
+The legacy Cloudflare write Worker was deployed outside this repository, so repository changes cannot disable that deployed endpoint. After the parent application has `X_BUNSEKI_GITHUB_TOKEN` configured, disable/delete the old `keywordadminworker` Worker (or remove its public POST route) in Cloudflare.
+
+If this viewer is still deployed separately, redeploy this read-only `index.html` so the old editor UI disappears.

@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-22T05:47:23.045230+00:00",
+  "updated_at": "2026-09-22T06:02:59.836602+00:00",
   "status": "success",
-  "started_at": "2026-09-22T05:46:45.890048+00:00",
-  "finished_at": "2026-09-22T05:47:23.044214+00:00",
-  "posts_scanned": 286,
-  "posts_with_history": 212,
-  "posts_flagged": 12,
+  "started_at": "2026-09-22T06:02:27.598123+00:00",
+  "finished_at": "2026-09-22T06:02:59.835205+00:00",
+  "posts_scanned": 584,
+  "posts_with_history": 434,
+  "posts_flagged": 58,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 275,
+  "minutes_since_last_notification": 290,
   "reject_reasons": {
-    "古すぎる": 47,
-    "いいねが少なすぎる": 156,
-    "失速済み": 4,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 160,
+    "失速済み": 8,
+    "いいねが少なすぎる": 210,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 4,
+    "いいね稼ぎ疑い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 12325,
-    "posts": 4658,
+    "total": 12909,
+    "posts": 4808,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 644,
+  "viral_discovery_posts": 125,
+  "million_imp_rescued": 4,
+  "watchlist_active": 706,
   "top5": [
     {
-      "author": "Miyachika_TJ",
-      "score": 40.2,
-      "likes": 27529,
-      "likes_per_min": 64.45,
-      "acceleration": null,
+      "author": "yudai_vo",
+      "score": 57.4,
+      "likes": 13595,
+      "likes_per_min": 59.61,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 214.3,
-      "text": "腕に抱えてこぼれ落ちそうなくらい\nたくさんのお祝いメッセージありがとうございます🎁嬉しい☺️\n29レベになりました✨\nそ",
-      "url": "https://x.com/Miyachika_TJ/status/2102219610099752962"
+      "age_minutes": 177.9,
+      "text": "僕のInstagramはフォロワーの20%が韓国の方で、昨日の投稿に驚かれた方も多かったみたいで一晩で2000人くらいフ",
+      "url": "https://x.com/yudai_vo/status/2102232696978354448"
     },
     {
-      "author": "sakurazaka46",
-      "score": 35.6,
-      "likes": 7973,
-      "likes_per_min": 17.22,
+      "author": "fukami11",
+      "score": 30.4,
+      "likes": 15661,
+      "likes_per_min": 193.45,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 210.1,
-      "text": "小田倉麗奈がブログを更新しました！🌸｜ 16th Single https://t.co/JM7ACD7QB7 ぜひご覧",
-      "url": "https://x.com/sakurazaka46/status/2102220649091764639"
+      "age_minutes": 226.3,
+      "text": "読みの能力が高すぎて感心してしまった\n腕がある人はやっぱ違うな https://t.co/8SpZhb98iY",
+      "url": "https://x.com/fukami11/status/2102220499975889335"
     },
     {
-      "author": "tonma5963",
-      "score": 62.4,
-      "likes": 475,
-      "likes_per_min": 6.74,
-      "acceleration": 0.92,
+      "author": "mugenjin",
+      "score": 56.6,
+      "likes": 8945,
+      "likes_per_min": 91.44,
+      "acceleration": 3.4,
       "measured": true,
-      "age_minutes": 133.7,
-      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
-      "url": "https://x.com/tonma5963/status/2102239881972088982"
+      "age_minutes": 167.2,
+      "text": "こういうのに雑に行ったっていい　1/2 https://t.co/SDFJbMu71i",
+      "url": "https://x.com/mugenjin/status/2102235379625832695"
     },
     {
-      "author": "arimoto_kaori",
-      "score": 35.1,
-      "likes": 11260,
-      "likes_per_min": 54.32,
-      "acceleration": null,
+      "author": "shisou_",
+      "score": 28.2,
+      "likes": 17107,
+      "likes_per_min": 80.03,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 211.8,
-      "text": "ただただ恥ずかしい。全員交替。",
-      "url": "https://x.com/arimoto_kaori/status/2102220225043476535"
+      "age_minutes": 237.9,
+      "text": "10代って多感な時期だもんね\n\n31歳成人女性！？ https://t.co/UCJ4irQosN",
+      "url": "https://x.com/shisou_/status/2102217589648949697"
     },
     {
-      "author": "rinu_nico",
-      "score": 88.4,
-      "likes": 1700,
-      "likes_per_min": 95.50758563053056,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.8,
-      "text": "今日は22時から\n\n雨栗\nちーの\nポッキーで\n\nマイクラ肝試し👻",
-      "url": "https://x.com/rinu_nico/status/2102269055801631031"
+      "author": "p_ka2295079",
+      "score": 31.2,
+      "likes": 26658,
+      "likes_per_min": 107.1,
+      "acceleration": 0.73,
+      "measured": true,
+      "age_minutes": 189.6,
+      "text": "続きが気になりすぎる https://t.co/3aMjelmkTq",
+      "url": "https://x.com/p_ka2295079/status/2102229737502622135"
     }
   ]
 }

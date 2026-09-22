@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 PATH = Path(__file__).parent / "data" / "watchlist.json"
-TARGET_MINUTES = [15, 30, 45, 60, 90, 120, 180, 240, 360, 720, 1440]
+TARGET_MINUTES = [15, 30, 45, 60, 90, 120, 180, 240, 300, 360, 480, 600, 720, 960, 1200, 1440]
 
 
 def _dt(v):

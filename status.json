@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T10:03:18.106590+00:00",
+  "updated_at": "2026-09-22T10:17:21.723051+00:00",
   "status": "success",
-  "started_at": "2026-09-22T10:02:43.203710+00:00",
-  "finished_at": "2026-09-22T10:03:18.105306+00:00",
-  "posts_scanned": 570,
-  "posts_with_history": 428,
-  "posts_flagged": 101,
+  "started_at": "2026-09-22T10:16:42.593535+00:00",
+  "finished_at": "2026-09-22T10:17:21.722022+00:00",
+  "posts_scanned": 295,
+  "posts_with_history": 180,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 531,
+  "minutes_since_last_notification": 545,
   "reject_reasons": {
-    "古すぎる": 156,
-    "誘導文パターン": 1,
-    "失速済み": 4,
-    "いいね稼ぎ疑い": 4,
-    "いいねが少なすぎる": 210,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 58,
+    "いいねが少なすぎる": 168,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 2,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 21377,
-    "posts": 6884,
+    "total": 21672,
+    "posts": 6999,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 123,
-  "million_imp_rescued": 5,
-  "watchlist_active": 1541,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 1564,
   "top5": [
     {
-      "author": "junnosuke_tag",
-      "score": 91.6,
-      "likes": 3626,
-      "likes_per_min": 110.72,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 60.2,
-      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
-      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
-    },
-    {
-      "author": "yeskiri",
-      "score": 36.7,
-      "likes": 18345,
-      "likes_per_min": 118.12,
-      "acceleration": 1.01,
-      "measured": true,
-      "age_minutes": 189.4,
-      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
-      "url": "https://x.com/yeskiri/status/2102290272348754259"
-    },
-    {
-      "author": "_mumei_R",
-      "score": 64.2,
-      "likes": 6552,
-      "likes_per_min": 217.3,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 85.1,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
-    },
-    {
-      "author": "sirokuru_",
-      "score": 36.8,
-      "likes": 24493,
-      "likes_per_min": 145.12,
-      "acceleration": 1.0,
-      "measured": true,
-      "age_minutes": 173.9,
-      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
-      "url": "https://x.com/sirokuru_/status/2102294166197981315"
-    },
-    {
-      "author": "ado1024imokenp",
-      "score": 70.5,
-      "likes": 1506,
-      "likes_per_min": 237.88420292988357,
+      "author": "AZKi_VDiVA",
+      "score": 87.8,
+      "likes": 930,
+      "likes_per_min": 91.8324199606237,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 6.3,
-      "text": "楽しみだね👊",
-      "url": "https://x.com/ado1024imokenp/status/2102336342592291228"
+      "age_minutes": 10.1,
+      "text": "【#あずきんち 配信のお知らせ】\n\n本日🕙22:00(JST)~\n\n🎶🏰ホロライブドリームス #ホロドリ🏰🎶\n\n配信場所",
+      "url": "https://x.com/AZKi_VDiVA/status/2102338925843071445"
+    },
+    {
+      "author": "yagisan4444",
+      "score": 52.4,
+      "likes": 2318,
+      "likes_per_min": 23.61,
+      "acceleration": 0.77,
+      "measured": true,
+      "age_minutes": 75.0,
+      "text": "ほんとにこれでいいなら私は首を吊る。\n諦めて生きていたくはないから。\nその覚悟。\n\nちゃんと1回くらい読んで欲しい。\n言",
+      "url": "https://x.com/yagisan4444/status/2102322591222632517"
+    },
+    {
+      "author": "gintamamovie",
+      "score": 69.2,
+      "likes": 238,
+      "likes_per_min": 47.6,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 4.6,
+      "text": "━━━━━━━━━━━━━━━━━━\n『新劇場版 銀魂 -吉原大炎上-』\n9/25(金)より＜超炎上版＞として再上映スタ",
+      "url": "https://x.com/gintamamovie/status/2102340315785175362"
+    },
+    {
+      "author": "tokoyamitowa",
+      "score": 70.1,
+      "likes": 1744,
+      "likes_per_min": 22.9,
+      "acceleration": 0.65,
+      "measured": true,
+      "age_minutes": 48.1,
+      "text": "⏰️２２：００～\n\n【 STREET FIGHTER 6 】テリー村からのプレゼン回のお知らせが届きました📩【常闇トワ/",
+      "url": "https://x.com/tokoyamitowa/status/2102329377572913601"
+    },
+    {
+      "author": "dramal_abc",
+      "score": 80.6,
+      "likes": 1955,
+      "likes_per_min": 75.38,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 26.3,
+      "text": "#修学旅行で仲良くないグループに入りました 2\n🚌人物紹介💨\n3-2 日置朝陽 ( #藤本洸大 )\n\n平凡な男子高校生。",
+      "url": "https://x.com/dramal_abc/status/2102334847331221625"
     }
   ]
 }

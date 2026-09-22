@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T11:32:51.378031+00:00",
+  "updated_at": "2026-09-22T11:47:52.015846+00:00",
   "status": "success",
-  "started_at": "2026-09-22T11:32:16.918838+00:00",
-  "finished_at": "2026-09-22T11:32:51.373881+00:00",
-  "posts_scanned": 555,
-  "posts_with_history": 399,
-  "posts_flagged": 97,
+  "started_at": "2026-09-22T11:47:17.221528+00:00",
+  "finished_at": "2026-09-22T11:47:52.014799+00:00",
+  "posts_scanned": 606,
+  "posts_with_history": 442,
+  "posts_flagged": 112,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 620,
+  "minutes_since_last_notification": 635,
   "reject_reasons": {
     "古すぎる": 140,
-    "失速済み": 6,
-    "いいねが少なすぎる": 209,
-    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 218,
+    "失速済み": 3,
     "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 2
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 24312,
-    "posts": 7807,
+    "total": 24918,
+    "posts": 7971,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 107,
-  "million_imp_rescued": 7,
-  "watchlist_active": 1912,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 8,
+  "watchlist_active": 1996,
   "top5": [
     {
-      "author": "418814",
-      "score": 25.2,
-      "likes": 62775,
-      "likes_per_min": 128.97,
-      "acceleration": 0.74,
+      "author": "MORE_STAR_",
+      "score": 94.2,
+      "likes": 5361,
+      "likes_per_min": 139.02,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 368.4,
+      "age_minutes": 47.8,
+      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
+      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
+    },
+    {
+      "author": "418814",
+      "score": 26.5,
+      "likes": 64719,
+      "likes_per_min": 129.49,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 383.4,
       "text": "ガチで終わった https://t.co/EspriDFrmB",
       "url": "https://x.com/418814/status/2102267762001551476"
     },
     {
       "author": "_mumei_R",
-      "score": 44.3,
-      "likes": 24945,
-      "likes_per_min": 170.58,
-      "acceleration": 0.88,
+      "score": 41.9,
+      "likes": 27379,
+      "likes_per_min": 162.13,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 174.6,
+      "age_minutes": 189.6,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
       "author": "snsnokyoufu",
-      "score": 57.9,
-      "likes": 8194,
-      "likes_per_min": 104.75783058854745,
+      "score": 64.5,
+      "likes": 11723,
+      "likes_per_min": 235.07,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 78.2,
+      "measured": true,
+      "age_minutes": 93.2,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
       "author": "gkmas_official",
-      "score": 73.5,
-      "likes": 3982,
-      "likes_per_min": 492.50707036343505,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.1,
-      "text": "💜⋆͛ ┈┈  Agitato ┈┈ ⋆͛💜\n\n   グラビアシリーズ 第2弾\n     　　小悪魔ガシャ\n\n💜⋆͛ ┈",
-      "url": "https://x.com/gkmas_official/status/2102358438663864586"
-    },
-    {
-      "author": "MORE_STAR_",
-      "score": 91.5,
-      "likes": 3274,
-      "likes_per_min": 122.03,
+      "score": 82.0,
+      "likes": 12979,
+      "likes_per_min": 599.3,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 32.8,
-      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
-      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
+      "age_minutes": 23.1,
+      "text": "💜⋆͛ ┈┈  Agitato ┈┈ ⋆͛💜\n\n   グラビアシリーズ 第2弾\n     　　小悪魔ガシャ\n\n💜⋆͛ ┈",
+      "url": "https://x.com/gkmas_official/status/2102358438663864586"
     }
   ]
 }

@@ -1,18 +1,19 @@
 {
-  "updated_at": "2026-09-22T21:17:28.630561+00:00",
+  "updated_at": "2026-09-22T21:32:58.913472+00:00",
   "status": "success",
-  "started_at": "2026-09-22T21:16:54.644345+00:00",
-  "finished_at": "2026-09-22T21:17:28.629607+00:00",
-  "posts_scanned": 286,
-  "posts_with_history": 220,
-  "posts_flagged": 4,
+  "started_at": "2026-09-22T21:32:18.337356+00:00",
+  "finished_at": "2026-09-22T21:32:58.912168+00:00",
+  "posts_scanned": 583,
+  "posts_with_history": 484,
+  "posts_flagged": 15,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 270,
+  "minutes_since_last_notification": 285,
   "reject_reasons": {
-    "古すぎる": 148,
-    "いいねが少なすぎる": 118,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 394,
+    "いいねが少なすぎる": 126,
+    "初回観測かつ平均速度が低い": 9,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -29,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 40155,
-    "posts": 9390,
+    "total": 40738,
+    "posts": 9489,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 0,
+  "viral_discovery_posts": 123,
   "million_imp_rescued": 0,
-  "watchlist_active": 3317,
+  "watchlist_active": 3333,
   "top5": [
     {
-      "author": "Tigers_140609",
-      "score": 82.5,
-      "likes": 1361,
-      "likes_per_min": 22.93,
-      "acceleration": 1.17,
+      "author": "info__Johnnys",
+      "score": 59.1,
+      "likes": 12854,
+      "likes_per_min": 76.51,
+      "acceleration": 1.33,
       "measured": true,
-      "age_minutes": 78.2,
-      "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
-      "url": "https://x.com/Tigers_140609/status/2102487923811823626"
+      "age_minutes": 181.5,
+      "text": "【カウコン開催決定！】\n\n12/31(木)\n「COUNTDOWN CONCERT 2026-2027 STARTO to",
+      "url": "https://x.com/info__Johnnys/status/2102465835822661721"
     },
     {
-      "author": "wni_jp",
-      "score": 71.0,
-      "likes": 253,
-      "likes_per_min": 8.5,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 34.8,
-      "text": "【週間天気予報】この先一週間の天気のポイント\n・シルバーウィークの連休明けは西日本で秋晴れ\n・秋雨前線が停滞し再び雨　新",
-      "url": "https://x.com/wni_jp/status/2102498853824143507"
-    },
-    {
-      "author": "tsunomakiwatame",
+      "author": "NetflixJP",
       "score": 58.7,
-      "likes": 260,
-      "likes_per_min": 16.802829761975165,
+      "likes": 16326,
+      "likes_per_min": 166.28,
+      "acceleration": 1.27,
+      "measured": true,
+      "age_minutes": 153.0,
+      "text": "🐎今年の年越しはNetflixで！🐏\n━━━━━━━━━━━━━━━━\nCOUNTDOWN CONCERT\n2026-2",
+      "url": "https://x.com/NetflixJP/status/2102473002298261519"
+    },
+    {
+      "author": "oricon",
+      "score": 56.6,
+      "likes": 6910,
+      "likes_per_min": 59.36,
+      "acceleration": 1.25,
+      "measured": true,
+      "age_minutes": 153.0,
+      "text": "STARTO社、恒例“カウコン”🎤\n『COUNTDOWN CONCERT 2026-2027 STARTO to WOR",
+      "url": "https://x.com/oricon/status/2102473003129069766"
+    },
+    {
+      "author": "kantei",
+      "score": 65.6,
+      "likes": 4075,
+      "likes_per_min": 44.99,
+      "acceleration": 1.27,
+      "measured": true,
+      "age_minutes": 123.2,
+      "text": "【お知らせ】\n９月２２日（現地時間）、高市総理は、米国のトランプ大統領と会談を行いました。\n \n※両首脳による冒頭発言要",
+      "url": "https://x.com/kantei/status/2102480506080391213"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 53.6,
+      "likes": 2659,
+      "likes_per_min": 21.27,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 15.5,
-      "text": "☀今日のわため☀\n投稿しました～～～～～～～～～！！！！！\n\nめぇ探偵きちゃ🔍🐏\n\nQ.女の子がいつも付いてる家電製品っ",
-      "url": "https://x.com/tsunomakiwatame/status/2102503703726952710"
-    },
-    {
-      "author": "nwqllxq",
-      "score": 22.2,
-      "likes": 944,
-      "likes_per_min": 2.93,
-      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 217.7,
-      "text": "あんまりネガティブなツイートしたくなかったんですけど今の自分の現状を把握しておいて欲しくてツイートします",
-      "url": "https://x.com/nwqllxq/status/2102452822071705616"
-    },
-    {
-      "author": "V9ih094vMWflnvg",
-      "score": 17.1,
-      "likes": 189,
-      "likes_per_min": 2.37,
-      "acceleration": 2.3,
-      "measured": true,
-      "age_minutes": 219.6,
-      "text": "@1set1500yen 間引くって言葉に反発コメント多いけど、\n障害持ち家族いる身としては綺麗事でしかないな。\nみいち",
-      "url": "https://x.com/V9ih094vMWflnvg/status/2102452345556849035"
+      "age_minutes": 136.8,
+      "text": "【カウコン詳細】\n\n「COUNTDOWN CONCERT 2026-2027 STARTO to WORLD」\n\n■事前",
+      "url": "https://x.com/info__Johnnys/status/2102477078243463177"
     }
   ]
 }

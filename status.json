@@ -1,21 +1,19 @@
 {
-  "updated_at": "2026-09-22T10:50:26.305489+00:00",
+  "updated_at": "2026-09-22T11:03:24.069675+00:00",
   "status": "success",
-  "started_at": "2026-09-22T10:49:51.569731+00:00",
-  "finished_at": "2026-09-22T10:50:26.304200+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 422,
-  "posts_flagged": 114,
+  "started_at": "2026-09-22T11:02:46.642289+00:00",
+  "finished_at": "2026-09-22T11:03:24.067782+00:00",
+  "posts_scanned": 288,
+  "posts_with_history": 190,
+  "posts_flagged": 21,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 578,
+  "minutes_since_last_notification": 591,
   "reject_reasons": {
-    "古すぎる": 147,
-    "失速済み": 6,
-    "いいねが少なすぎる": 226,
-    "初回観測かつ平均速度が低い": 10,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 1
+    "古すぎる": 58,
+    "いいねが少なすぎる": 163,
+    "初回観測かつ平均速度が低い": 2,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 22869,
-    "posts": 7372,
+    "total": 23157,
+    "posts": 7470,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 129,
-  "million_imp_rescued": 4,
-  "watchlist_active": 1734,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 1760,
   "top5": [
     {
-      "author": "junnosuke_tag",
-      "score": 82.5,
-      "likes": 7340,
-      "likes_per_min": 64.45,
-      "acceleration": 0.74,
+      "author": "Genshin_7",
+      "score": 22.8,
+      "likes": 2501,
+      "likes_per_min": 9.84,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 107.4,
-      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
-      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
+      "age_minutes": 213.4,
+      "text": "【「原神 星々の幻境」イベント紹介】\n「幻境奥秘・幻夜の燈火」おしゃれアイテムが登場\n\n▼星願期間\nVer.7.1アップ",
+      "url": "https://x.com/Genshin_7/status/2102299359610073474"
     },
     {
-      "author": "_mumei_R",
-      "score": 53.8,
-      "likes": 17065,
-      "likes_per_min": 223.03,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 132.2,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
-    },
-    {
-      "author": "yeskiri",
-      "score": 29.1,
-      "likes": 23500,
-      "likes_per_min": 110.72,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 236.5,
-      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
-      "url": "https://x.com/yeskiri/status/2102290272348754259"
-    },
-    {
-      "author": "KuwagatoZaurus",
-      "score": 37.4,
-      "likes": 5352,
-      "likes_per_min": 35.9029438496159,
+      "author": "sakayori_soma",
+      "score": 79.0,
+      "likes": 377,
+      "likes_per_min": 75.4,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 149.1,
-      "text": "クリックすると繋がるやつ https://t.co/8rLKHMZH0n",
-      "url": "https://x.com/KuwagatoZaurus/status/2102312286476218581"
+      "age_minutes": 3.1,
+      "text": "【Big Walk】デカ歩き w/奏斗さん、北見、塚原大地【酒寄颯馬/にじさんじ】 https://t.co/rxiGe",
+      "url": "https://x.com/sakayori_soma/status/2102352291055710678"
     },
     {
-      "author": "y_nakamaru_94",
-      "score": 70.1,
-      "likes": 7046,
-      "likes_per_min": 200.35,
+      "author": "I_Nozomi_",
+      "score": 85.3,
+      "likes": 349,
+      "likes_per_min": 69.8,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 2.2,
+      "text": "今日は21時30分からインターネットに帰還ッ……！",
+      "url": "https://x.com/I_Nozomi_/status/2102352513827807708"
+    },
+    {
+      "author": "rindochihaya",
+      "score": 23.1,
+      "likes": 3337,
+      "likes_per_min": 14.08,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 43.8,
-      "text": "おめでとう！！！",
-      "url": "https://x.com/y_nakamaru_94/status/2102338789624713531"
+      "age_minutes": 215.8,
+      "text": "え、できてるこれ？？どうやるの？？？\nただ他責思考なのバラしただけ？？",
+      "url": "https://x.com/rindochihaya/status/2102298742619853271"
+    },
+    {
+      "author": "madoka_exedra",
+      "score": 60.7,
+      "likes": 146,
+      "likes_per_min": 29.2,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 3.3,
+      "text": "／\n　#まどドラ 1.5th Anniversaryまで\n 　あと５日！\n＼\n\n本日は、「灯台劇場」から「ナマエ」「A-",
+      "url": "https://x.com/madoka_exedra/status/2102352219060441519"
     }
   ]
 }

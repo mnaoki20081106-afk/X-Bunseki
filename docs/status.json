@@ -1,21 +1,19 @@
 {
-  "updated_at": "2026-09-22T20:03:24.746505+00:00",
+  "updated_at": "2026-09-22T20:17:38.016728+00:00",
   "status": "success",
-  "started_at": "2026-09-22T20:02:45.672576+00:00",
-  "finished_at": "2026-09-22T20:03:24.745121+00:00",
-  "posts_scanned": 578,
-  "posts_with_history": 532,
-  "posts_flagged": 13,
+  "started_at": "2026-09-22T20:16:54.806064+00:00",
+  "finished_at": "2026-09-22T20:17:38.015758+00:00",
+  "posts_scanned": 263,
+  "posts_with_history": 234,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 196,
+  "minutes_since_last_notification": 210,
   "reject_reasons": {
-    "古すぎる": 374,
-    "初回観測かつ平均速度が低い": 3,
-    "失速済み": 5,
-    "いいねが少なすぎる": 110,
-    "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 1
+    "古すぎる": 135,
+    "初回観測かつ平均速度が低い": 2,
+    "いいねが少なすぎる": 91,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 38161,
-    "posts": 9108,
+    "total": 38424,
+    "posts": 9137,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 124,
-  "million_imp_rescued": 5,
-  "watchlist_active": 3282,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3289,
   "top5": [
     {
-      "author": "_mumei_R",
-      "score": 22.0,
-      "likes": 59639,
-      "likes_per_min": 9.05,
-      "acceleration": 1.28,
+      "author": "nogizaka46",
+      "score": 60.2,
+      "likes": 1170,
+      "likes_per_min": 10.19,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 685.2,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+      "age_minutes": 70.8,
+      "text": "【ニュース更新】 五百城茉央が、来年1月上演のミュージカル『JUMP』〜ヨルがオちてくるそのマエに〜に出演決定！ htt",
+      "url": "https://x.com/nogizaka46/status/2102474726639902930"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 18.7,
-      "likes": 17511,
-      "likes_per_min": 2.28,
-      "acceleration": 0.9,
+      "author": "sh__0103",
+      "score": 30.6,
+      "likes": 586,
+      "likes_per_min": 4.5,
+      "acceleration": 1.19,
       "measured": true,
-      "age_minutes": 592.2,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+      "age_minutes": 216.7,
+      "text": "風磨くんってモラハラ気質？？\nマリウス後半メンタルやられてそうに見えるし心ここに在らず？だし\nモラハラ彼氏にやられてる優",
+      "url": "https://x.com/sh__0103/status/2102438014136053954"
     },
     {
-      "author": "Order0o1",
-      "score": 30.7,
-      "likes": 95721,
-      "likes_per_min": 23.08,
-      "acceleration": 0.83,
+      "author": "nwqllxq",
+      "score": 35.1,
+      "likes": 778,
+      "likes_per_min": 3.23,
+      "acceleration": 1.77,
       "measured": true,
-      "age_minutes": 572.9,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
+      "age_minutes": 157.8,
+      "text": "あんまりネガティブなツイートしたくなかったんですけど今の自分の現状を把握しておいて欲しくてツイートします",
+      "url": "https://x.com/nwqllxq/status/2102452822071705616"
     },
     {
-      "author": "yyypandapanda",
-      "score": 29.2,
-      "likes": 18629,
-      "likes_per_min": 13.58,
-      "acceleration": 1.09,
-      "measured": true,
-      "age_minutes": 566.7,
-      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
-      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
+      "author": "xoxleoxox",
+      "score": 57.9,
+      "likes": 151,
+      "likes_per_min": 12.230136338347126,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.3,
+      "text": "落ち込んじゃうとパフォーマンス下がるから無闇に落ち込みたくないんだけれど、しょんぼりはしちゃうよね、仕方ない。\n自分のこ",
+      "url": "https://x.com/xoxleoxox/status/2102489432561783147"
     },
     {
-      "author": "main_warabi",
-      "score": 28.1,
-      "likes": 62750,
-      "likes_per_min": 102.5,
-      "acceleration": 0.88,
+      "author": "hex6u",
+      "score": 35.9,
+      "likes": 106,
+      "likes_per_min": 0.42,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 444.2,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
+      "age_minutes": 225.7,
+      "text": "【朗報】timeleszの佐藤勝利さん＆原嘉孝さん、猪俣周杜の逮捕についてラジオで生謝罪\n\n■概要\n\n今夜、「timel",
+      "url": "https://x.com/hex6u/status/2102435736045974019"
     }
   ]
 }

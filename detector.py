@@ -228,6 +228,20 @@ def evaluate(post: dict, history: list[dict], relevance: float = 0.0, now=None) 
     enriched["million_imp_bypass"] = rescue
     enriched["million_imp_bypass_detail"] = rescue_detail
     reason = hard_filter_reason(post, g)
+    ultra = enriched.get("ultra_early") or {}
+    ultra_bypass = (
+        ultra.get("active")
+        and ultra.get("candidate")
+        and int(enriched.get("predicted_final_impressions") or 0) >= 1_000_000
+        and reason is not None
+        and (
+            reason.startswith("いいねが少なすぎる")
+            or reason.startswith("初回観測かつ平均速度が低い")
+        )
+    )
+    enriched["ultra_early_bypass"] = bool(ultra_bypass)
+    if ultra_bypass:
+        reason = None
     if reason and not rescue:
         enriched["rejected_reason"] = reason
         enriched["buzz_score"] = 0.0

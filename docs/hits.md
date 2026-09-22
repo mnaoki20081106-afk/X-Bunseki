@@ -1,9 +1,9 @@
 # 条件通過ポスト一覧
 
-更新: `2026-09-22T10:32:32.192175+00:00`（UTC）
+更新: `2026-09-22T10:49:51.569731+00:00`（UTC）
 
-- 足切り通過: **222** 件
-- スコア 55 点以上: **125** 件
+- 足切り通過: **205** 件
+- スコア 55 点以上: **114** 件
 
 判定の主軸は数値（分速・返信・RT・引用・加速度）。キーワードは収集の参考のみ。
 
@@ -11,108 +11,103 @@
 
 | 点 | 経過 | いいね | /分 | 返信 | RT | 加速 | 投稿 |
 |---:|---:|---:|---:|---:|---:|---:|---|
-| **90** ★ | 90m | 6,219 | 87.2 | 150 | 1,608 | 0.79 | [@junnosuke_tag](https://x.com/junnosuke_tag/status/2102322775868448936) 【田口淳之介よりご報告】  本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子誕生についてのご報告動画を公開いたしまし |
-| **31** ★ | 219m | 21,574 | 108.6 | 139 | 406 | 0.92 | [@yeskiri](https://x.com/yeskiri/status/2102290272348754259) フルボッコで草 https://t.co/KjiBLS0IdA |
-| **64** ★ | 58m | 10,500 | 214.7 | 101 | 697 | 1.29 | [@enako_cos](https://x.com/enako_cos/status/2102330937044549657) お尻のケアについて質問いただいたので 私が普段使っているものを紹介します💁‍♀️  顔と同じようにケアをする、というのを心掛けて①〜⑥の順番で使っています！ ( |
-| **67** ★ | 6m | 587 | 91.4 | 0 | 368 | - | [@gkmas_official](https://x.com/gkmas_official/status/2102343807081816237) 【#学マス標ツアー_岩手公演_DAY1】  ♪M9  ワタシカワイイアヒルノコ  初星学園より、倉本千奈の新曲「ワタシカワイイアヒルノコ」をサプライズ披露！   |
-| **68** ★ | 10m | 704 | 71.9 | 1 | 406 | - | [@gkmas_official](https://x.com/gkmas_official/status/2102342956116254965) 【#学マス標ツアー_岩手公演_DAY1】  ♪M8  海奏ララバイ  初星学園より、秦谷美鈴の新曲「海奏ララバイ」をサプライズ披露！  🎫配信視聴チケットのご購 |
-| **66** ★ | 84m | 13,153 | 102.3 | 60 | 2,750 | 0.60 | [@DAZNJPNBaseball](https://x.com/DAZNJPNBaseball/status/2102324353308434887) 怒涛の虎  先頭から4連打 佐藤輝明 第36号ホームラン  ⚾️ヤクルト×阪神 #阪神タイガース #だったらDAZN https://t.co/QqxDUZcZ |
-| **69** ★ | 33m | 19,352 | 585.7 | 42 | 3,320 | - | [@milk_info](https://x.com/milk_info/status/2102337106815201286) M!LKの渋谷ビジョンの映像を公開します🎥✨ #ラブエンジン 発電完了🚲💡  #ラブエンジン発電中 #MILK https://t.co/FTHJaC2xTv |
-| **35** ★ | 196m | 9,648 | 47.8 | 139 | 227 | 0.83 | [@nenemapp](https://x.com/nenemapp/status/2102296127152558335) はぃ･･･ https://t.co/xJJdAHa6h3 |
-| **71** ★ | 8m | 1,147 | 138.6 | 3 | 186 | - | [@nogizaka46](https://x.com/nogizaka46/status/2102343339681169491) ♪ 𝗡𝗢𝗚𝗜𝗭𝗔𝗞𝗔𝟰𝟲 𝟰𝟮𝗻𝗱𝗦𝗚 𝗨𝗡𝗗𝗘𝗥𝗟𝗜𝗩𝗘 ♪  9月29日、30日は 42ndSGアンダーライブが東京体育館にて開催です🎤  アンダーライブを |
-| **44** | 152m | 6,865 | 84.3 | 77 | 567 | - | [@Requiem0requiem](https://x.com/Requiem0requiem/status/2102307138299445355) これだけで何のアニメのシーンかわかった人は猛者 https://t.co/noR3EB5oZF |
-| **71** ★ | 26m | 3,561 | 135.1 | 61 | 909 | - | [@y_nakamaru_94](https://x.com/y_nakamaru_94/status/2102338789624713531) おめでとう！！！ |
-| **75** ★ | 50m | 10,287 | 145.8 | 19 | 1,870 | - | [@milk_info](https://x.com/milk_info/status/2102332870417371350) ♬#TikTok 更新♪ 待って…🫷楽しくやってます🌵 https://t.co/2kQVdClDtq #MILK #ときユニ #吉田仁人 #佐野勇斗 |
-| **69** ★ | 6m | 655 | 109.9 | 3 | 136 | - | [@sakurazaka46](https://x.com/sakurazaka46/status/2102343924669100412) WEBラジオ「さくみみ」vol.611の配信がスタートいたしました🌸👂🏻  #小田倉麗奈 #村山美羽 が登場！ Buddiesの皆さんから届いたメッセージをご紹 |
-| **67** ★ | 31m | 5,872 | 189.2 | 15 | 1,163 | - | [@ARuFa_FARu](https://x.com/ARuFa_FARu/status/2102337609548841447) ビンゴ大会を2ターンで終わらせる司会者 https://t.co/wxV54fWq8K |
-| **50** | 91m | 7,412 | 81.1 | 39 | 509 | - | [@kou88450](https://x.com/kou88450/status/2102322416114700731) 悪魔が天使を拾った結果（1/2） https://t.co/by60AQHqdG |
-| **66** ★ | 91m | 20,535 | 153.2 | 22 | 3,903 | 0.69 | [@twst_jp](https://x.com/twst_jp/status/2102322441674777013) 【召喚告知】 9月25日16:00より、「復刻 Lost in the Book with Tim Burton's The Nightmare Before  |
-| **75** ★ | 10m | 651 | 62.4 | 3 | 235 | - | [@DAZNJPNBaseball](https://x.com/DAZNJPNBaseball/status/2102342795294113964) 確信歩き  まさにパーフェクト 宗山塁 第8号ホームラン  ⚾️日本ハム×楽天 #RakutenEagles #だったらDAZN https://t.co/cC |
-| **72** ★ | 10m | 711 | 69.8 | 7 | 230 | - | [@PacificleagueTV](https://x.com/PacificleagueTV/status/2102342856480571439) 打った瞬間確信の一撃！💥💥 東北楽天 宗山塁 選手の今シーズン第8号ソロホームランで追加点を挙げる！🌈 https://t.co/fRRaFZDDFf |
-| **72** ★ | 48m | 6,064 | 138.4 | 12 | 989 | - | [@PacificleagueTV](https://x.com/PacificleagueTV/status/2102333337478279358) 近ちゃんらしい粋な演出⁉👀 福岡ソフトバンク 近藤健介 選手が 中島卓也 選手の曲を使用して打席に向かう！🥹😭 https://t.co/vTX9nYqsog |
-| **68** ★ | 29m | 8,879 | 302.3 | 15 | 1,417 | - | [@sd_bt](https://x.com/sd_bt/status/2102338029226705307) ＼ありがとうございました！／  「Nissy Entertainment Variety Show 〜歌えなくても、エンタメってあったじゃん！〜」  サプライズ |
-| **39** | 198m | 31,305 | 120.8 | 127 | 2,452 | 0.88 | [@akaoni2gou](https://x.com/akaoni2gou/status/2102295636901343367) レミエールでkiss memeを描こうと思ったら、捕食みたいになった https://t.co/iAcS5DiCSS |
-| **46** | 86m | 10,754 | 157.4 | 32 | 519 | 0.88 | [@siroyagishugo](https://x.com/siroyagishugo/status/2102323908716486826) 「運動会の忘れられない出来事」その21 https://t.co/snEuMreIjj |
-| **64** ★ | 10m | 987 | 101.2 | 0 | 222 | - | [@sakurazaka46](https://x.com/sakurazaka46/status/2102342964500627880) 増本綺良がブログを更新しました！🌸｜ グッズの話がしたい https://t.co/HEiKwqEIkl ぜひご覧ください！ #櫻坂46 #増本綺良 |
-| **84** ★ | 33m | 4,943 | 149.6 | 379 | 2,594 | - | [@USSS_info](https://x.com/USSS_info/status/2102337106668622265) 【LIVE STAGE MIX】truth／浦島坂田船【歌ってみた】 https://t.co/kwL5RUISxo https://t.co/Jv8G1O7d |
-| **62** ★ | 31m | 7,186 | 232.1 | 23 | 1,300 | - | [@728_Storm](https://x.com/728_Storm/status/2102337633246642641) 🚨申し込み締切間近🚨  ／ 11th Single「Moonlit」🌙💭 ファミクラストア オンライン限定【つきみ男子】盤 お申し込み締切まであと【1日】📣 ＼ |
-| **63** ★ | 70m | 5,753 | 70.2 | 30 | 1,020 | 0.68 | [@DAZNJPNBaseball](https://x.com/DAZNJPNBaseball/status/2102327865056670052) 30回目のデスターシャ  キャリアハイを更新 牧秀悟 自身初の30号ホームラン  ⚾️DeNA×中日 #baystars #だったらDAZN https://t |
-| **66** ★ | 93m | 6,177 | 36.6 | 41 | 1,033 | 0.71 | [@nogizaka46](https://x.com/nogizaka46/status/2102322010437382650) 青葉坂46オーディション “超”重大発表！  2026.9.24 20:00~  Streaming on YouTube  https://t.co/o0Rz |
-| **34** | 235m | 18,873 | 37.5 | 376 | 4,137 | 0.85 | [@Rou_2434](https://x.com/Rou_2434/status/2102286313542299670) V26//ACT Ⅴ 　ソロイモータル 味は格別。 https://t.co/Yea37g6xgs |
-| **64** ★ | 61m | 5,606 | 71.3 | 17 | 1,170 | 0.75 | [@ydb_yokohama](https://x.com/ydb_yokohama/status/2102330059411628202) 自身キャリアハイとなる30号2ランホームランで先制💥🌈 #牧秀悟 選手がレフトスタンドへ豪快に運びチームに勢いをつける🙌🙌  1回裏 DB 2 - 0 D  # |
-| **69** ★ | 32m | 3,861 | 119.9 | 29 | 1,326 | - | [@13witch_Trials](https://x.com/13witch_Trials/status/2102337316014735360) ◆MVカット公開◆  『魔法少女ノ魔女裁判』MVプロジェクト 09/24『ココロノクライ』Episode Ⅲ 紫藤アリサ  タイトル「アシェンプテル」  #まの |
+| **82** ★ | 107m | 7,340 | 64.5 | 173 | 1,847 | 0.74 | [@junnosuke_tag](https://x.com/junnosuke_tag/status/2102322775868448936) 【田口淳之介よりご報告】  本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子誕生についてのご報告動画を公開いたしまし |
+| **54** ★ | 132m | 17,065 | 223.0 | 74 | 507 | 1.03 | [@_mumei_R](https://x.com/_mumei_R/status/2102316524245815558) 友達と話してて、名前が曖昧なのですが ｢完全に俺が悪い。｣みたいなグループ名 教えてください… |
+| **29** ★ | 236m | 23,500 | 110.7 | 151 | 451 | 1.02 | [@yeskiri](https://x.com/yeskiri/status/2102290272348754259) フルボッコで草 https://t.co/KjiBLS0IdA |
+| **37** ★ | 149m | 5,352 | 35.9 | 43 | 197 | - | [@KuwagatoZaurus](https://x.com/KuwagatoZaurus/status/2102312286476218581) クリックすると繋がるやつ https://t.co/8rLKHMZH0n |
+| **70** ★ | 44m | 7,046 | 200.3 | 78 | 1,294 | - | [@y_nakamaru_94](https://x.com/y_nakamaru_94/status/2102338789624713531) おめでとう！！！ |
+| **48** | 82m | 8,030 | 97.5 | 36 | 196 | - | [@ryoooooplus](https://x.com/ryoooooplus/status/2102329065302807035) ね。 https://t.co/M12N8hiri6 |
+| **63** ★ | 75m | 14,734 | 243.4 | 122 | 963 | 1.13 | [@enako_cos](https://x.com/enako_cos/status/2102330937044549657) お尻のケアについて質問いただいたので 私が普段使っているものを紹介します💁‍♀️  顔と同じようにケアをする、というのを心掛けて①〜⑥の順番で使っています！ ( |
+| **43** | 170m | 8,487 | 93.2 | 87 | 760 | 1.11 | [@Requiem0requiem](https://x.com/Requiem0requiem/status/2102307138299445355) これだけで何のアニメのシーンかわかった人は猛者 https://t.co/noR3EB5oZF |
+| **61** ★ | 101m | 14,153 | 57.5 | 61 | 2,868 | 0.56 | [@DAZNJPNBaseball](https://x.com/DAZNJPNBaseball/status/2102324353308434887) 怒涛の虎  先頭から4連打 佐藤輝明 第36号ホームラン  ⚾️ヤクルト×阪神 #阪神タイガース #だったらDAZN https://t.co/QqxDUZcZ |
+| **74** ★ | 48m | 10,515 | 266.9 | 24 | 1,835 | - | [@ARuFa_FARu](https://x.com/ARuFa_FARu/status/2102337609548841447) ビンゴ大会を2ターンで終わらせる司会者 https://t.co/wxV54fWq8K |
+| **62** ★ | 20m | 6,335 | 310.0 | 18 | 983 | - | [@milk_info](https://x.com/milk_info/status/2102344656885370916) ／ このあと放送📻 ＼ 9月22日(火)20:05~20:55・21:05〜21:55放送 NHK AM「M!LKのみんなをキミを日本を元気にするラジオ！」が放 |
+| **75** ★ | 50m | 25,517 | 354.4 | 47 | 4,112 | - | [@milk_info](https://x.com/milk_info/status/2102337106815201286) M!LKの渋谷ビジョンの映像を公開します🎥✨ #ラブエンジン 発電完了🚲💡  #ラブエンジン発電中 #MILK https://t.co/FTHJaC2xTv |
+| **70** ★ | 77m | 10,805 | 247.4 | 29 | 1,537 | 1.83 | [@R_GameTV](https://x.com/R_GameTV/status/2102330502023713220) 釣ってはいけない魚を釣ってしまった村人 #映画ちいかわ #ちいかわファンアート #ちいかわ https://t.co/vEeIbV5smT |
+| **54** | 109m | 9,182 | 101.8 | 39 | 597 | - | [@kou88450](https://x.com/kou88450/status/2102322416114700731) 悪魔が天使を拾った結果（1/2） https://t.co/by60AQHqdG |
+| **70** ★ | 47m | 2,224 | 47.3 | 42 | 566 | - | [@ntv_baseball](https://x.com/ntv_baseball/status/2102337974616895518) 【広島🆚巨人】 11回裏 🎦勝田成選手 犠牲フライで広島がサヨナラ勝利👏 ─・─・─・─・─・─・─・─・─ 🔷ただいまBS日テレで生中継!! 🔶『GIANTS |
+| **76** ★ | 21m | 1,834 | 89.2 | 21 | 735 | - | [@DAZNJPNBaseball](https://x.com/DAZNJPNBaseball/status/2102344625608638950) フルスイング  高卒2年目の大器 田中陽翔 第2号ホームラン  ⚾️ヤクルト×阪神 #swallows #だったらDAZN https://t.co/byLfr |
+| **64** ★ | 109m | 22,796 | 130.0 | 24 | 4,263 | 0.85 | [@twst_jp](https://x.com/twst_jp/status/2102322441674777013) 【召喚告知】 9月25日16:00より、「復刻 Lost in the Book with Tim Burton's The Nightmare Before  |
+| **37** | 215m | 33,409 | 121.0 | 134 | 2,621 | 1.00 | [@akaoni2gou](https://x.com/akaoni2gou/status/2102295636901343367) レミエールでkiss memeを描こうと思ったら、捕食みたいになった https://t.co/iAcS5DiCSS |
+| **79** ★ | 10m | 1,569 | 161.2 | 4 | 487 | - | [@FightersPR](https://x.com/FightersPR/status/2102347347732873583) チャンスの場面で迎えた第三打席 魂の全力疾走で見事内野安打に🔥 中島卓也選手のプレーにエスコンが沸く！  #ありがとう中島卓也 #ドミれ #lovefighte |
+| **54** | 101m | 20,124 | 427.0 | 122 | 531 | - | [@yoru_fe](https://x.com/yoru_fe/status/2102324397193498913) この丈でしゃがんだら 後ろがお留守だよ https://t.co/A2CHdAtYEI |
+| **69** ★ | 67m | 11,712 | 81.9 | 24 | 2,116 | 0.56 | [@milk_info](https://x.com/milk_info/status/2102332870417371350) ♬#TikTok 更新♪ 待って…🫷楽しくやってます🌵 https://t.co/2kQVdClDtq #MILK #ときユニ #吉田仁人 #佐野勇斗 |
+| **44** | 103m | 13,272 | 144.8 | 35 | 625 | 0.92 | [@siroyagishugo](https://x.com/siroyagishugo/status/2102323908716486826) 「運動会の忘れられない出来事」その21 https://t.co/snEuMreIjj |
+| **70** ★ | 24m | 1,294 | 40.6 | 1 | 634 | - | [@gkmas_official](https://x.com/gkmas_official/status/2102343807081816237) 【#学マス標ツアー_岩手公演_DAY1】  ♪M9  ワタシカワイイアヒルノコ  初星学園より、倉本千奈の新曲「ワタシカワイイアヒルノコ」をサプライズ披露！   |
+| **73** ★ | 11m | 2,525 | 226.1 | 76 | 703 | - | [@Hibachi_Mana](https://x.com/Hibachi_Mana/status/2102346990428557610) ✦︎配信告知✦︎  9月23日 【21時開始】  曇天が続いていますが！ こんな歌枠はいかがですか！！  ▼待機所▼ https://t.co/SjgLCZ0O |
+| **71** ★ | 47m | 12,264 | 194.6 | 19 | 1,773 | - | [@sd_bt](https://x.com/sd_bt/status/2102338029226705307) ＼ありがとうございました！／  「Nissy Entertainment Variety Show 〜歌えなくても、エンタメってあったじゃん！〜」  サプライズ |
+| **70** ★ | 9m | 751 | 79.6 | 1 | 193 | - | [@PacificleagueTV](https://x.com/PacificleagueTV/status/2102347426363543916) 後輩たちが繋いでくれたチャンスで打席を迎える！🥹 北海道日本ハム 中島卓也 選手の第3打席は内野安打！✨ チームプレーの姿勢を見せながら自らも生きる！🏃 塁上で |
+| **68** ★ | 27m | 1,185 | 27.6 | 1 | 600 | - | [@gkmas_official](https://x.com/gkmas_official/status/2102342956116254965) 【#学マス標ツアー_岩手公演_DAY1】  ♪M8  海奏ララバイ  初星学園より、秦谷美鈴の新曲「海奏ララバイ」をサプライズ披露！  🎫配信視聴チケットのご購 |
+| **75** ★ | 49m | 5,788 | 196.6 | 16 | 633 | - | [@babelmaaan](https://x.com/babelmaaan/status/2102337407907668178) 9/24の夜に動画を投稿します 内容は5年がかりの大検証となっています https://t.co/4bT77tOdeb |
+| **74** ★ | 40m | 4,980 | 146.0 | 8 | 872 | - | [@kenshi_sugiya02](https://x.com/kenshi_sugiya02/status/2102339800594587766) 2008年、同期入団。 あれから18年。  卓也、本当にお疲れ様でした。  これからは昔の分まで、たくさん話そうぜ😁  #中島卓也 #引退 #感謝 #北海道日本 |
+| **37** | 167m | 3,404 | 19.8 | 43 | 79 | - | [@kankankan7210](https://x.com/kankankan7210/status/2102307885598621747) パイパン確定💕💕💕💕💕💕💕💕💕 https://t.co/M7nQEg5FnZ |
 
 ## 候補（スコア到達）
 
-- **90点** [ @junnosuke_tag ](https://x.com/junnosuke_tag/status/2102322775868448936) いいね6,219 / 87.2/分 / 経過90分  【田口淳之介よりご報告】
+- **82点** [ @junnosuke_tag ](https://x.com/junnosuke_tag/status/2102322775868448936) いいね7,340 / 64.5/分 / 経過107分  【田口淳之介よりご報告】
 
 本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子誕生についてのご報告動画を公開いたしました。
 
 これまで応援してくださった皆さま
-- **31点** [ @yeskiri ](https://x.com/yeskiri/status/2102290272348754259) いいね21,574 / 108.6/分 / 経過219分  フルボッコで草 https://t.co/KjiBLS0IdA
-- **64点** [ @enako_cos ](https://x.com/enako_cos/status/2102330937044549657) いいね10,500 / 214.7/分 / 経過58分  お尻のケアについて質問いただいたので
+- **54点** [ @_mumei_R ](https://x.com/_mumei_R/status/2102316524245815558) いいね17,065 / 223.0/分 / 経過132分  友達と話してて、名前が曖昧なのですが
+｢完全に俺が悪い。｣みたいなグループ名
+教えてください…
+- **29点** [ @yeskiri ](https://x.com/yeskiri/status/2102290272348754259) いいね23,500 / 110.7/分 / 経過236分  フルボッコで草 https://t.co/KjiBLS0IdA
+- **37点** [ @KuwagatoZaurus ](https://x.com/KuwagatoZaurus/status/2102312286476218581) いいね5,352 / 35.9/分 / 経過149分  クリックすると繋がるやつ https://t.co/8rLKHMZH0n
+- **70点** [ @y_nakamaru_94 ](https://x.com/y_nakamaru_94/status/2102338789624713531) いいね7,046 / 200.3/分 / 経過44分  おめでとう！！！
+- **63点** [ @enako_cos ](https://x.com/enako_cos/status/2102330937044549657) いいね14,734 / 243.4/分 / 経過75分  お尻のケアについて質問いただいたので
 私が普段使っているものを紹介します💁‍♀️
 
 顔と同じようにケアをする、というのを心掛けて①〜⑥の順番で使っています！
 (PRじゃないよ！) https://t.
-- **67点** [ @gkmas_official ](https://x.com/gkmas_official/status/2102343807081816237) いいね587 / 91.4/分 / 経過6分  【#学マス標ツアー_岩手公演_DAY1】
-
-♪M9  ワタシカワイイアヒルノコ
-
-初星学園より、倉本千奈の新曲「ワタシカワイイアヒルノコ」をサプライズ披露！
-
-🎫配信視聴チケットのご購入はこちら！
-h
-- **68点** [ @gkmas_official ](https://x.com/gkmas_official/status/2102342956116254965) いいね704 / 71.9/分 / 経過10分  【#学マス標ツアー_岩手公演_DAY1】
-
-♪M8  海奏ララバイ
-
-初星学園より、秦谷美鈴の新曲「海奏ララバイ」をサプライズ披露！
-
-🎫配信視聴チケットのご購入はこちら！
-https://t.co/
-- **66点** [ @DAZNJPNBaseball ](https://x.com/DAZNJPNBaseball/status/2102324353308434887) いいね13,153 / 102.3/分 / 経過84分  怒涛の虎
+- **61点** [ @DAZNJPNBaseball ](https://x.com/DAZNJPNBaseball/status/2102324353308434887) いいね14,153 / 57.5/分 / 経過101分  怒涛の虎
 
 先頭から4連打
 佐藤輝明 第36号ホームラン
 
 ⚾️ヤクルト×阪神
 #阪神タイガース #だったらDAZN https://t.co/QqxDUZcZHp
-- **69点** [ @milk_info ](https://x.com/milk_info/status/2102337106815201286) いいね19,352 / 585.7/分 / 経過33分  M!LKの渋谷ビジョンの映像を公開します🎥✨
+- **74点** [ @ARuFa_FARu ](https://x.com/ARuFa_FARu/status/2102337609548841447) いいね10,515 / 266.9/分 / 経過48分  ビンゴ大会を2ターンで終わらせる司会者 https://t.co/wxV54fWq8K
+- **62点** [ @milk_info ](https://x.com/milk_info/status/2102344656885370916) いいね6,335 / 310.0/分 / 経過20分  ／
+このあと放送📻
+＼
+9月22日(火)20:05~20:55・21:05〜21:55放送
+NHK AM「M!LKのみんなをキミを日本を元気にするラジオ！」が放送されます！
+
+ぜひ、お楽しみに！
+@n
+- **75点** [ @milk_info ](https://x.com/milk_info/status/2102337106815201286) いいね25,517 / 354.4/分 / 経過50分  M!LKの渋谷ビジョンの映像を公開します🎥✨
 #ラブエンジン 発電完了🚲💡
 
 #ラブエンジン発電中 #MILK https://t.co/FTHJaC2xTv
-- **35点** [ @nenemapp ](https://x.com/nenemapp/status/2102296127152558335) いいね9,648 / 47.8/分 / 経過196分  はぃ･･･ https://t.co/xJJdAHa6h3
-- **71点** [ @nogizaka46 ](https://x.com/nogizaka46/status/2102343339681169491) いいね1,147 / 138.6/分 / 経過8分  ♪ 𝗡𝗢𝗚𝗜𝗭𝗔𝗞𝗔𝟰𝟲 𝟰𝟮𝗻𝗱𝗦𝗚 𝗨𝗡𝗗𝗘𝗥𝗟𝗜𝗩𝗘 ♪
+- **70点** [ @R_GameTV ](https://x.com/R_GameTV/status/2102330502023713220) いいね10,805 / 247.4/分 / 経過77分  釣ってはいけない魚を釣ってしまった村人
+#映画ちいかわ #ちいかわファンアート #ちいかわ https://t.co/vEeIbV5smT
+- **70点** [ @ntv_baseball ](https://x.com/ntv_baseball/status/2102337974616895518) いいね2,224 / 47.3/分 / 経過47分  【広島🆚巨人】
+11回裏
+🎦勝田成選手
+犠牲フライで広島がサヨナラ勝利👏
+─・─・─・─・─・─・─・─・─
+🔷ただいまBS日テレで生中継!!
+🔶『GIANTS TV』でも配信中⚡️
+▶️https:
+- **76点** [ @DAZNJPNBaseball ](https://x.com/DAZNJPNBaseball/status/2102344625608638950) いいね1,834 / 89.2/分 / 経過21分  フルスイング
 
-9月29日、30日は
-42ndSGアンダーライブが東京体育館にて開催です🎤
+高卒2年目の大器
+田中陽翔 第2号ホームラン
 
-アンダーライブをもっと楽しむために、
-メンバーのかわいい
-- **71点** [ @y_nakamaru_94 ](https://x.com/y_nakamaru_94/status/2102338789624713531) いいね3,561 / 135.1/分 / 経過26分  おめでとう！！！
-- **75点** [ @milk_info ](https://x.com/milk_info/status/2102332870417371350) いいね10,287 / 145.8/分 / 経過50分  ♬#TikTok 更新♪
-待って…🫷楽しくやってます🌵
-https://t.co/2kQVdClDtq
-#MILK #ときユニ
-#吉田仁人 #佐野勇斗
-- **69点** [ @sakurazaka46 ](https://x.com/sakurazaka46/status/2102343924669100412) いいね655 / 109.9/分 / 経過6分  WEBラジオ「さくみみ」vol.611の配信がスタートいたしました🌸👂🏻
-
-#小田倉麗奈 #村山美羽 が登場！
-Buddiesの皆さんから届いたメッセージをご紹介します📩
-
-ぜひお聴きください🎧
-#さ
-- **67点** [ @ARuFa_FARu ](https://x.com/ARuFa_FARu/status/2102337609548841447) いいね5,872 / 189.2/分 / 経過31分  ビンゴ大会を2ターンで終わらせる司会者 https://t.co/wxV54fWq8K
-- **66点** [ @twst_jp ](https://x.com/twst_jp/status/2102322441674777013) いいね20,535 / 153.2/分 / 経過91分  【召喚告知】
+⚾️ヤクルト×阪神
+#swallows #だったらDAZN https://t.co/byLfrbBsvH
+- **64点** [ @twst_jp ](https://x.com/twst_jp/status/2102322441674777013) いいね22,796 / 130.0/分 / 経過109分  【召喚告知】
 9月25日16:00より、「復刻 Lost in the Book with Tim Burton's The Nightmare Before Christmas 期間限定召喚 スカリ
-- **75点** [ @DAZNJPNBaseball ](https://x.com/DAZNJPNBaseball/status/2102342795294113964) いいね651 / 62.4/分 / 経過10分  確信歩き
+- **79点** [ @FightersPR ](https://x.com/FightersPR/status/2102347347732873583) いいね1,569 / 161.2/分 / 経過10分  チャンスの場面で迎えた第三打席
+魂の全力疾走で見事内野安打に🔥
+中島卓也選手のプレーにエスコンが沸く！
 
-まさにパーフェクト
-宗山塁 第8号ホームラン
+#ありがとう中島卓也
+#ドミれ
+#lovefighters
 
-⚾️日本ハム×楽天
-#RakutenEagles #だったらDAZN https://t.co/cCXnyx6GoP
+Fビレッジの舞台裏を描く公式Yo
 
 ---
 ★ = 通知スコア到達。通知送信は無効化中（記録のみ）。

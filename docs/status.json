@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-22T10:33:02.723496+00:00",
+  "updated_at": "2026-09-22T10:50:26.305489+00:00",
   "status": "success",
-  "started_at": "2026-09-22T10:32:32.192175+00:00",
-  "finished_at": "2026-09-22T10:33:02.722146+00:00",
-  "posts_scanned": 600,
-  "posts_with_history": 402,
-  "posts_flagged": 125,
+  "started_at": "2026-09-22T10:49:51.569731+00:00",
+  "finished_at": "2026-09-22T10:50:26.304200+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 422,
+  "posts_flagged": 114,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 560,
+  "minutes_since_last_notification": 578,
   "reject_reasons": {
-    "古すぎる": 145,
-    "初回観測かつ平均速度が低い": 7,
-    "失速済み": 5,
-    "いいねが少なすぎる": 219,
-    "いいね稼ぎ疑い": 2
+    "古すぎる": 147,
+    "失速済み": 6,
+    "いいねが少なすぎる": 226,
+    "初回観測かつ平均速度が低い": 10,
+    "いいね稼ぎ疑い": 2,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 22272,
-    "posts": 7197,
+    "total": 22869,
+    "posts": 7372,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 3,
-  "watchlist_active": 1663,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 4,
+  "watchlist_active": 1734,
   "top5": [
     {
       "author": "junnosuke_tag",
-      "score": 89.6,
-      "likes": 6219,
-      "likes_per_min": 87.18,
-      "acceleration": 0.79,
+      "score": 82.5,
+      "likes": 7340,
+      "likes_per_min": 64.45,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 90.0,
+      "age_minutes": 107.4,
       "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
       "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
     },
     {
-      "author": "yeskiri",
-      "score": 31.3,
-      "likes": 21574,
-      "likes_per_min": 108.56,
-      "acceleration": 0.92,
+      "author": "_mumei_R",
+      "score": 53.8,
+      "likes": 17065,
+      "likes_per_min": 223.03,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 219.1,
+      "age_minutes": 132.2,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "yeskiri",
+      "score": 29.1,
+      "likes": 23500,
+      "likes_per_min": 110.72,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 236.5,
       "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
       "url": "https://x.com/yeskiri/status/2102290272348754259"
     },
     {
-      "author": "enako_cos",
-      "score": 64.1,
-      "likes": 10500,
-      "likes_per_min": 214.74,
-      "acceleration": 1.29,
+      "author": "KuwagatoZaurus",
+      "score": 37.4,
+      "likes": 5352,
+      "likes_per_min": 35.9029438496159,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 149.1,
+      "text": "クリックすると繋がるやつ https://t.co/8rLKHMZH0n",
+      "url": "https://x.com/KuwagatoZaurus/status/2102312286476218581"
+    },
+    {
+      "author": "y_nakamaru_94",
+      "score": 70.1,
+      "likes": 7046,
+      "likes_per_min": 200.35,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 57.6,
-      "text": "お尻のケアについて質問いただいたので\n私が普段使っているものを紹介します💁‍♀️\n\n顔と同じようにケアをする、というのを",
-      "url": "https://x.com/enako_cos/status/2102330937044549657"
-    },
-    {
-      "author": "gkmas_official",
-      "score": 67.2,
-      "likes": 587,
-      "likes_per_min": 91.37530662972758,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.4,
-      "text": "【#学マス標ツアー_岩手公演_DAY1】\n\n♪M9  ワタシカワイイアヒルノコ\n\n初星学園より、倉本千奈の新曲「ワタシカ",
-      "url": "https://x.com/gkmas_official/status/2102343807081816237"
-    },
-    {
-      "author": "gkmas_official",
-      "score": 68.0,
-      "likes": 704,
-      "likes_per_min": 71.90481155251165,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.8,
-      "text": "【#学マス標ツアー_岩手公演_DAY1】\n\n♪M8  海奏ララバイ\n\n初星学園より、秦谷美鈴の新曲「海奏ララバイ」をサプ",
-      "url": "https://x.com/gkmas_official/status/2102342956116254965"
+      "age_minutes": 43.8,
+      "text": "おめでとう！！！",
+      "url": "https://x.com/y_nakamaru_94/status/2102338789624713531"
     }
   ]
 }

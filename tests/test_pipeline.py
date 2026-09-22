@@ -10,6 +10,7 @@ import detector
 import growth
 import feature_engineering
 import build_outcomes
+import gen1_controller
 import keyword_filter
 import notification_text
 import playwright_collector as collector
@@ -350,6 +351,49 @@ def test_outcome_builder_requires_real_24h_observation():
     assert out["early_only"]["imp_24h"] is None
     assert out["complete"]["imp_24h"] == 12_000_000
     assert out["complete"]["reached_10m_24h"] is True
+
+
+
+def test_mega_rescue_includes_exact_8_5m_boundary():
+    post = _post(minutes_old=500, likes=10, impressions=8_500_000, text="未知の巨大バズ")
+    result = detector.evaluate(post, [], relevance=0.0, now=NOW)
+    assert result["million_imp_bypass"] is True
+    assert result["rejected_reason"] is None
+
+
+def test_gen1_dataset_never_leaks_a_post_across_splits():
+    groups = {}
+    outcomes = {}
+    for i in range(20):
+        pid = f"p{i:02d}"
+        groups[pid] = [
+            {"post_id":pid, "observed_at":(NOW+timedelta(minutes=i)).isoformat(),
+             "age_minutes":30, "impressions":1000+i, "likes":10,
+             "was_early_observed":True, "is_rescue_only":False},
+            {"post_id":pid, "observed_at":(NOW+timedelta(minutes=i+15)).isoformat(),
+             "age_minutes":45, "impressions":2000+i, "likes":20,
+             "was_early_observed":True, "is_rescue_only":False},
+        ]
+        outcomes[pid] = {"imp_24h": 1_000_000+i}
+    dataset = gen1_controller.build_dataset(groups, outcomes)
+    ids_by_split = {
+        s: {p["post_id"] for p in dataset if p["split"] == s}
+        for s in ("train", "validation", "test")
+    }
+    assert ids_by_split["train"].isdisjoint(ids_by_split["validation"])
+    assert ids_by_split["train"].isdisjoint(ids_by_split["test"])
+    assert ids_by_split["validation"].isdisjoint(ids_by_split["test"])
+
+
+def test_gen1_readiness_fails_closed_on_low_completion():
+    stats = {
+        "completed_24h_posts": 500, "positive_5m": 100, "positive_10m": 50,
+        "stalled_under_1_5m": 100, "completion_rate": 0.50,
+    }
+    ready = gen1_controller.readiness(stats)
+    assert ready["regression_ready"] is False
+    assert ready["p5_classifier_ready"] is False
+    assert ready["p10_classifier_ready"] is False
 
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]

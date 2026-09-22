@@ -50,5 +50,9 @@
       "time-to-detection must not regress"
     ]
   },
-  "automation_state": "collecting"
+  "automation_state": "collecting",
+  "shadow_metrics": {
+    "paired_posts": 0,
+    "status": "collecting"
+  }
 }

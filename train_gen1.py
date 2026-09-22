@@ -1,7 +1,7 @@
-"""Train a Gen1 nonlinear challenger from leakage-safe 24h outcomes.
+"""Train a Gen1 tree-ensemble challenger from leakage-safe 24h outcomes.
 
-Runs separately from the 15-minute monitor so model training can never delay
-viral discovery. Requires the readiness gates written by gen1_controller.py.
+Training runs separately from the 15-minute monitor. The fitted sklearn model
+is exported to plain JSON so production/shadow inference needs no ML dependency.
 """
 import json
 import math
@@ -12,14 +12,14 @@ from gen1_controller import load_snapshots, build_dataset, readiness, dataset_st
 OUTCOMES = Path("data/training_outcomes.json")
 REGISTRY = Path("data/model_registry.json")
 MODEL = Path("data/gen1_challenger.json")
+ARTIFACT = Path("data/gen1_challenger_model.json")
 
 FEATURES = [
     "elapsed_minutes", "log1p_impressions", "velocity_imp_per_min",
     "log1p_velocity", "velocity_ratio_prev", "velocity_60m_avg",
     "velocity_recent_vs_60m", "peak_velocity", "minutes_since_peak",
     "reacceleration_count", "like_per_imp", "retweet_per_imp",
-    "reply_per_imp", "quote_per_imp", "bookmark_per_imp",
-    "observation_count",
+    "reply_per_imp", "quote_per_imp", "bookmark_per_imp", "observation_count",
 ]
 
 
@@ -28,6 +28,11 @@ def _load(path, default):
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return default
+
+
+def _value(f, name):
+    v = f.get(name)
+    return float(v) if v is not None and math.isfinite(float(v)) else 0.0
 
 
 def _flatten(posts, split):
@@ -40,11 +45,12 @@ def _flatten(posts, split):
         y = p["target_24h"]
         class_weight = 2.5 if y >= 10_000_000 else (1.5 if y >= 5_000_000 else 1.0)
         for f in p["rows"]:
-            x = []
-            for name in FEATURES:
-                v = f.get(name)
-                x.append(float(v) if v is not None else float("nan"))
-            rows.append((p["post_id"], x, math.log1p(y), base_weight * class_weight))
+            rows.append((
+                p["post_id"],
+                [_value(f, name) for name in FEATURES],
+                math.log1p(y),
+                base_weight * class_weight,
+            ))
     return rows
 
 
@@ -62,6 +68,17 @@ def _metrics(model, rows):
     }
 
 
+def _tree_to_json(estimator):
+    t = estimator.tree_
+    return {
+        "children_left": t.children_left.tolist(),
+        "children_right": t.children_right.tolist(),
+        "feature": t.feature.tolist(),
+        "threshold": t.threshold.tolist(),
+        "value": [float(x[0][0]) for x in t.value],
+    }
+
+
 def main():
     outcomes = _load(OUTCOMES, {})
     groups = load_snapshots()
@@ -71,10 +88,9 @@ def main():
         print("[gen1-train] not ready; production Gen0 unchanged")
         return
 
-    # Import only when training is actually eligible. Monitor never needs sklearn.
     try:
         import numpy as np
-        from sklearn.ensemble import HistGradientBoostingRegressor
+        from sklearn.ensemble import GradientBoostingRegressor
     except Exception as e:
         print(f"[gen1-train] sklearn unavailable: {e}")
         return
@@ -91,39 +107,38 @@ def main():
     y = np.array([y for _, _, y, _ in train], dtype=float)
     w = np.array([w for _, _, _, w in train], dtype=float)
 
-    model = HistGradientBoostingRegressor(
-        loss="absolute_error",
-        learning_rate=0.05,
-        max_iter=250,
-        max_leaf_nodes=15,
-        min_samples_leaf=15,
-        l2_regularization=1.0,
+    model = GradientBoostingRegressor(
+        loss="huber", learning_rate=0.04, n_estimators=200,
+        max_depth=3, min_samples_leaf=12, subsample=0.85,
         random_state=20260922,
     )
     model.fit(X, y, sample_weight=w)
 
-    # JSON-native serialization: persist sklearn estimator through joblib in the
-    # dedicated artifact, while registry contains auditable metrics/metadata.
-    import joblib
-    artifact = Path("data/gen1_challenger.joblib")
-    artifact.parent.mkdir(parents=True, exist_ok=True)
-    joblib.dump({"model": model, "features": FEATURES}, artifact)
+    init_value = float(model.init_.constant_[0])
+    artifact = {
+        "format": "gbr-json-v1",
+        "features": FEATURES,
+        "learning_rate": float(model.learning_rate),
+        "init_value": init_value,
+        "trees": [_tree_to_json(est[0]) for est in model.estimators_],
+    }
+    ARTIFACT.parent.mkdir(parents=True, exist_ok=True)
+    ARTIFACT.write_text(json.dumps(artifact, separators=(",", ":")), encoding="utf-8")
 
     val_metrics = _metrics(model, val)
     test_metrics = _metrics(model, test)
     payload = {
         "generation": "gen1",
-        "kind": "hist_gradient_boosting_regression",
+        "kind": "gradient_boosting_regression",
         "target": "log1p_24h_impressions",
         "features": FEATURES,
         "dataset_stats": stats,
         "validation": val_metrics,
         "test": test_metrics,
         "status": "shadow",
-        "artifact": str(artifact),
+        "artifact": str(ARTIFACT),
     }
     MODEL.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
     registry = _load(REGISTRY, {})
     registry["challenger"] = payload
     registry["automation_state"] = "shadow_evaluation"

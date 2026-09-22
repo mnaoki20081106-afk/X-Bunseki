@@ -202,3 +202,12 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
         "posts": [_public_post(p) for p in early[:30]],
     }
     try:
+        HITS_JSON_PATH.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(
+            f"hits.json を書き出しました（早期{len(payload['early_posts'])} / "
+            f"バズ中{len(payload['trending_posts'])}件）"
+        )
+    except Exception as e:
+        print(f"[ERROR] hits.json の書き出しに失敗: {e}")

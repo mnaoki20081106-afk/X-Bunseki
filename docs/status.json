@@ -1,18 +1,20 @@
 {
-  "updated_at": "2026-09-22T22:03:20.164241+00:00",
+  "updated_at": "2026-09-22T22:17:21.812619+00:00",
   "status": "success",
-  "started_at": "2026-09-22T22:02:41.556132+00:00",
-  "finished_at": "2026-09-22T22:03:20.162903+00:00",
-  "posts_scanned": 296,
-  "posts_with_history": 284,
-  "posts_flagged": 4,
+  "started_at": "2026-09-22T22:16:43.937182+00:00",
+  "finished_at": "2026-09-22T22:17:21.811466+00:00",
+  "posts_scanned": 582,
+  "posts_with_history": 480,
+  "posts_flagged": 24,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 316,
+  "minutes_since_last_notification": 330,
   "reject_reasons": {
-    "古すぎる": 132,
-    "いいねが少なすぎる": 133,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 362,
+    "いいねが少なすぎる": 141,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 2,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -29,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 41922,
-    "posts": 9676,
+    "total": 42504,
+    "posts": 9778,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3359,
+  "viral_discovery_posts": 119,
+  "million_imp_rescued": 4,
+  "watchlist_active": 3380,
   "top5": [
     {
-      "author": "wni_jp",
-      "score": 83.1,
-      "likes": 707,
-      "likes_per_min": 17.67,
-      "acceleration": 1.09,
+      "author": "yyypandapanda",
+      "score": 33.8,
+      "likes": 21499,
+      "likes_per_min": 21.43,
+      "acceleration": 1.58,
       "measured": true,
-      "age_minutes": 48.5,
-      "text": "【台風発生予想】\n23日(水)3時現在、マリアナ諸島で発達中の熱帯低気圧について、気象庁は「24時間以内に台風に発達する",
-      "url": "https://x.com/wni_jp/status/2102506928886936049"
+      "age_minutes": 700.6,
+      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
+      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
     },
     {
-      "author": "kinnpatuhikaru",
-      "score": 53.7,
-      "likes": 104,
-      "likes_per_min": 11.472492479243407,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.1,
-      "text": "ヒカル「農家を救う」コメ事業に1年半で興味なくなる…販売担当者が明かした舞台裏にSNSで批判集まる「再生回数稼ぎに利用さ",
-      "url": "https://x.com/kinnpatuhikaru/status/2102516858213769399"
-    },
-    {
-      "author": "ICCHY8591",
-      "score": 79.4,
-      "likes": 293,
-      "likes_per_min": 28.087118412710982,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.4,
-      "text": "皆ーおはよー！（ニノ風）\n\n今日は岩手県にだっしゃ米の稲刈りに行ってきます！\n連休最終日、楽しむぞ！ https://t",
-      "url": "https://x.com/ICCHY8591/status/2102516513676927035"
-    },
-    {
-      "author": "_gtym21000_",
-      "score": 28.2,
-      "likes": 117,
-      "likes_per_min": 2.87,
-      "acceleration": 1.65,
+      "author": "_mumei_R",
+      "score": 22.0,
+      "likes": 60759,
+      "likes_per_min": 8.79,
+      "acceleration": 1.29,
       "measured": true,
-      "age_minutes": 160.5,
-      "text": "カウコン開催公式決定かーーー\n\n頼むから出演辞退してください…\n純正デビュー組だけで頼む…",
-      "url": "https://x.com/_gtym21000_/status/2102478740920099012"
+      "age_minutes": 819.1,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "oricon",
-      "score": 40.9,
-      "likes": 156,
-      "likes_per_min": 7.3,
-      "acceleration": null,
+      "author": "MORE_STAR_",
+      "score": 28.8,
+      "likes": 19063,
+      "likes_per_min": 8.57,
+      "acceleration": 0.16,
       "measured": true,
-      "age_minutes": 33.3,
-      "text": "🔑KEY TO LIT・岩﨑大昇＆猪狩蒼弥\nきょう放送『かまいガチ』出演📺️\n\n🆚“即帰宅”バトル初参戦\nデビュー発表日",
-      "url": "https://x.com/oricon/status/2102510752246407323"
+      "age_minutes": 677.3,
+      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
+      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
+    },
+    {
+      "author": "ryoooooplus",
+      "score": 23.3,
+      "likes": 32236,
+      "likes_per_min": 7.38,
+      "acceleration": 1.23,
+      "measured": true,
+      "age_minutes": 769.3,
+      "text": "ね。 https://t.co/M12N8hiri6",
+      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
+    },
+    {
+      "author": "Tigers_140609",
+      "score": 67.1,
+      "likes": 2974,
+      "likes_per_min": 30.77,
+      "acceleration": 1.2,
+      "measured": true,
+      "age_minutes": 138.1,
+      "text": "［中日］\nロサンゼルス・ドジャース\nマイナー通算168発ウォード\n中日へ電撃移籍　\n球団発表…25年2冠王＆MVP\n#Y",
+      "url": "https://x.com/Tigers_140609/status/2102487923811823626"
     }
   ]
 }

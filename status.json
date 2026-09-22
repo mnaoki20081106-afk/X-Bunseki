@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-22T14:47:40.277935+00:00",
+  "updated_at": "2026-09-22T15:03:09.428549+00:00",
   "status": "success",
-  "started_at": "2026-09-22T14:46:58.613977+00:00",
-  "finished_at": "2026-09-22T14:47:40.276367+00:00",
-  "posts_scanned": 265,
-  "posts_with_history": 255,
-  "posts_flagged": 13,
+  "started_at": "2026-09-22T15:02:36.999374+00:00",
+  "finished_at": "2026-09-22T15:03:09.427339+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 457,
+  "posts_flagged": 78,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 74,
+  "minutes_since_last_notification": 90,
   "reject_reasons": {
-    "古すぎる": 57,
-    "いいねが少なすぎる": 146,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 2
+    "古すぎる": 132,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 5,
+    "いいねが少なすぎる": 220,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 27962,
-    "posts": 8409,
+    "total": 28543,
+    "posts": 8533,
     "oldest": "2026-09-21T16:09:19.009298+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 1,
-  "watchlist_active": 2779,
+  "viral_discovery_posts": 119,
+  "million_imp_rescued": 5,
+  "watchlist_active": 2831,
   "top5": [
     {
-      "author": "modelpress",
-      "score": 64.3,
-      "likes": 8893,
-      "likes_per_min": 73.19,
-      "acceleration": 0.75,
+      "author": "snsnokyoufu",
+      "score": 33.7,
+      "likes": 38945,
+      "likes_per_min": 88.71,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 114.4,
+      "age_minutes": 288.5,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
+    },
+    {
+      "author": "HaHaHaHaaa____",
+      "score": 29.2,
+      "likes": 14432,
+      "likes_per_min": 40.62,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 292.0,
+      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
+      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+    },
+    {
+      "author": "modelpress",
+      "score": 57.1,
+      "likes": 9850,
+      "likes_per_min": 61.81,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 129.9,
       "text": "「ラヴ上等」あも＆二世、破局を報告\n別れた理由・ビジネスカップル疑惑にも言及\nhttps://t.co/vHAl8t2O",
       "url": "https://x.com/modelpress/status/2102380719188361567"
     },
     {
-      "author": "naniwa_x_ae",
-      "score": 67.6,
-      "likes": 4412,
-      "likes_per_min": 498.47376867658176,
+      "author": "enako_cos",
+      "score": 59.5,
+      "likes": 5818,
+      "likes_per_min": 121.76,
+      "acceleration": 1.03,
+      "measured": true,
+      "age_minutes": 64.3,
+      "text": "学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので\n黒ずみとブツブツが酷かったのですが、数年前",
+      "url": "https://x.com/enako_cos/status/2102397211682480457"
+    },
+    {
+      "author": "kaixakadesu",
+      "score": 25.9,
+      "likes": 8474,
+      "likes_per_min": 38.25126826150381,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 8.9,
-      "text": "『なにわAぇ! の放送させてください！』\nご視聴ありがとうございました🌟\n\n╋━━\n\n　 #TVer #カンテレドーガ ",
-      "url": "https://x.com/naniwa_x_ae/status/2102407274954424443"
-    },
-    {
-      "author": "trtmsz0721",
-      "score": 52.8,
-      "likes": 1715,
-      "likes_per_min": 17.2,
-      "acceleration": 0.71,
-      "measured": true,
-      "age_minutes": 86.6,
-      "text": "定型文謝罪のあと普通にキャッキャ話してるのドン引きメンバー勾留中なんだよね？被害者いるんだよね？",
-      "url": "https://x.com/trtmsz0721/status/2102387720429744471"
-    },
-    {
-      "author": "FightersPR",
-      "score": 62.3,
-      "likes": 9702,
-      "likes_per_min": 35.22,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 112.1,
-      "text": "中島卓也選手 引退セレモニー💐\n深いつながりのある方々からのメッセージ✨\n\n#ありがとう中島卓也\n#ドミれ\n#lovef",
-      "url": "https://x.com/FightersPR/status/2102381290771349891"
-    },
-    {
-      "author": "FightersPR",
-      "score": 59.1,
-      "likes": 136,
-      "likes_per_min": 27.2,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 2.2,
-      "text": "中島卓也選手の引退試合は逆転勝利！\n9/22(火・休)の試合ハイライトをご覧ください！\n\nhttps://t.co/1V",
-      "url": "https://x.com/FightersPR/status/2102408959957323878"
+      "age_minutes": 221.5,
+      "text": "【VIVANT】 次回考察\n\n←顔が汚れてる                          顔が綺麗→\n\n←奪還作戦",
+      "url": "https://x.com/kaixakadesu/status/2102357648163393834"
     }
   ]
 }

@@ -184,10 +184,10 @@ def million_imp_rescue(post: dict, g: dict) -> tuple[bool, str]:
     """Rescue proven million-view posts even when keyword/like scoring rejects them."""
     age = float(g.get("age_minutes") or 9999)
     imp = int(post.get("impressions") or 0)
-    # Mega Viral Rescue: a 10M+ post within 16 hours is exceptional enough
+    # Mega Viral Rescue: an 8.5M+ post within 16 hours is exceptional enough
     # to keep regardless of the normal 4h discovery window or current velocity.
     # This does not widen normal tracking to 16h; only already-proven mega hits pass.
-    if age <= 16 * 60 and imp >= 10_000_000:
+    if age <= 16 * 60 and imp >= 8_500_000:
         return True, f"MEGA: {imp:,}imp / age={age:.0f}分 <= 960分"
 
     if age > 240 or imp < 1_000_000:

@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-21T23:40:30.699985+00:00",
+  "updated_at": "2026-09-22T00:51:01.955980+00:00",
   "status": "success",
-  "started_at": "2026-09-21T23:40:00.284090+00:00",
-  "finished_at": "2026-09-21T23:40:30.698891+00:00",
-  "posts_scanned": 800,
-  "posts_with_history": 570,
-  "posts_flagged": 41,
+  "started_at": "2026-09-22T00:50:33.449664+00:00",
+  "finished_at": "2026-09-22T00:51:01.954814+00:00",
+  "posts_scanned": 564,
+  "posts_with_history": 278,
+  "posts_flagged": 46,
   "notified_count": 1,
-  "notified_last_24h": 4,
-  "minutes_since_last_notification": 16,
+  "notified_last_24h": 5,
+  "minutes_since_last_notification": 71,
   "reject_reasons": {
-    "古すぎる": 367,
-    "誘導文パターン": 3,
-    "いいねが少なすぎる": 275,
-    "初回観測かつ平均速度が低い": 15,
-    "いいね稼ぎ疑い": 3
+    "古すぎる": 191,
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 196,
+    "初回観測かつ平均速度が低い": 34,
+    "失速済み": 5,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 7222,
-    "posts": 3045,
+    "total": 7786,
+    "posts": 3331,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 117,
+  "viral_discovery_posts": 119,
   "million_imp_rescued": 1,
-  "watchlist_active": 74,
+  "watchlist_active": 130,
   "top5": [
     {
       "author": "anime_chiikawa",
-      "score": 79.2,
-      "likes": 6656,
-      "likes_per_min": 195.9,
-      "acceleration": null,
+      "score": 68.7,
+      "likes": 14359,
+      "likes_per_min": 109.23,
+      "acceleration": 0.56,
       "measured": true,
-      "age_minutes": 40.4,
+      "age_minutes": 111.0,
       "text": "／\n TVアニメちいかわ 第380話\n見逃し配信スタート📺\n ＼\n\n第380話「パラレルワールド⑥」の1週間限定見逃し配",
       "url": "https://x.com/anime_chiikawa/status/2102171030899052604"
     },
     {
-      "author": "avashaka",
-      "score": 31.2,
-      "likes": 10401,
-      "likes_per_min": 61.25,
+      "author": "SAMEX_1u2y",
+      "score": 54.6,
+      "likes": 5756,
+      "likes_per_min": 64.23587524093803,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 191.6,
-      "text": "すご",
-      "url": "https://x.com/avashaka/status/2102132996866560457"
+      "measured": false,
+      "age_minutes": 89.6,
+      "text": "正解は「16歳になっているので声変わりを利用します」だったの、怖いね",
+      "url": "https://x.com/SAMEX_1u2y/status/2102176401495560240"
     },
     {
-      "author": "joqrpr",
-      "score": 43.4,
-      "likes": 22023,
-      "likes_per_min": 95.63,
+      "author": "yellow_dancer0",
+      "score": 59.7,
+      "likes": 7033,
+      "likes_per_min": 66.98696124960354,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 219.5,
-      "text": "#SnowMan #向井康二 \n文化放送で待望の初単独レギュラーラジオ決定🎉\n\n『Snow Man 向井康二のぼちぼちア",
-      "url": "https://x.com/joqrpr/status/2102125964809458040"
+      "measured": false,
+      "age_minutes": 105.0,
+      "text": "ハチワレ「簡単ッッ！簡単ッッ！」\n\n伊藤アナ「うーわ怖ッッ！？スタイル良くなってんのに怖〜ッッ！」\n田中くんの地声聞けて",
+      "url": "https://x.com/yellow_dancer0/status/2102172532875132981"
     },
     {
-      "author": "nino_honmono",
-      "score": 71.9,
-      "likes": 24373,
-      "likes_per_min": 170.6,
+      "author": "JRE_F_Sobu",
+      "score": 66.3,
+      "likes": 2625,
+      "likes_per_min": 23.3,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 91.1,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/nino_honmono/status/2102158285940126137"
+      "age_minutes": 121.9,
+      "text": "台風25号の影響により、千葉県内の各線区では土砂流入等が発生しているため、運転を見合わせております。\n本日（9/22）の",
+      "url": "https://x.com/JRE_F_Sobu/status/2102168286293340630"
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 40.2,
-      "likes": 31566,
-      "likes_per_min": 151.93,
-      "acceleration": null,
+      "author": "moeruasia01",
+      "score": 56.2,
+      "likes": 6082,
+      "likes_per_min": 68.66,
+      "acceleration": 1.83,
       "measured": true,
-      "age_minutes": 179.8,
-      "text": "みんなーーーーー！！！！！\n\nこーじが1人でラジオやるよ〜 (^^) \n\nおめでとう康二 (^^)",
-      "url": "https://x.com/SAK_SAK_SAKUMA/status/2102135960838566306"
+      "age_minutes": 143.6,
+      "text": "高市総理、内閣人事に箝口令　入閣内定者に「漏れたら差し替える」\n\n→ いち早く報じたい全国紙記者「いつもなら前日には分か",
+      "url": "https://x.com/moeruasia01/status/2102162826420957299"
     }
   ]
 }

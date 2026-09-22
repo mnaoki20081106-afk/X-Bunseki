@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-22T11:17:34.356359+00:00",
+  "updated_at": "2026-09-22T11:32:51.378031+00:00",
   "status": "success",
-  "started_at": "2026-09-22T11:16:59.331287+00:00",
-  "finished_at": "2026-09-22T11:17:34.355292+00:00",
-  "posts_scanned": 600,
-  "posts_with_history": 419,
-  "posts_flagged": 127,
+  "started_at": "2026-09-22T11:32:16.918838+00:00",
+  "finished_at": "2026-09-22T11:32:51.373881+00:00",
+  "posts_scanned": 555,
+  "posts_with_history": 399,
+  "posts_flagged": 97,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 605,
+  "minutes_since_last_notification": 620,
   "reject_reasons": {
-    "古すぎる": 143,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 7,
-    "いいねが少なすぎる": 219,
-    "失速済み": 2
+    "古すぎる": 140,
+    "失速済み": 6,
+    "いいねが少なすぎる": 209,
+    "初回観測かつ平均速度が低い": 6,
+    "誘導文パターン": 1,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 23757,
-    "posts": 7651,
+    "total": 24312,
+    "posts": 7807,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 133,
-  "million_imp_rescued": 5,
-  "watchlist_active": 1845,
+  "viral_discovery_posts": 107,
+  "million_imp_rescued": 7,
+  "watchlist_active": 1912,
   "top5": [
     {
-      "author": "_mumei_R",
-      "score": 47.1,
-      "likes": 22338,
-      "likes_per_min": 194.33,
-      "acceleration": 0.87,
+      "author": "418814",
+      "score": 25.2,
+      "likes": 62775,
+      "likes_per_min": 128.97,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 159.4,
+      "age_minutes": 368.4,
+      "text": "ガチで終わった https://t.co/EspriDFrmB",
+      "url": "https://x.com/418814/status/2102267762001551476"
+    },
+    {
+      "author": "_mumei_R",
+      "score": 44.3,
+      "likes": 24945,
+      "likes_per_min": 170.58,
+      "acceleration": 0.88,
+      "measured": true,
+      "age_minutes": 174.6,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "y_nakamaru_94",
-      "score": 63.1,
-      "likes": 11746,
-      "likes_per_min": 173.22,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 70.9,
-      "text": "おめでとう！！！",
-      "url": "https://x.com/y_nakamaru_94/status/2102338789624713531"
-    },
-    {
-      "author": "ryoooooplus",
-      "score": 52.8,
-      "likes": 12956,
-      "likes_per_min": 181.54,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 109.5,
-      "text": "ね。 https://t.co/M12N8hiri6",
-      "url": "https://x.com/ryoooooplus/status/2102329065302807035"
-    },
-    {
-      "author": "YahooNewsTopics",
-      "score": 44.4,
-      "likes": 1894,
-      "likes_per_min": 8.28633707619632,
+      "author": "snsnokyoufu",
+      "score": 57.9,
+      "likes": 8194,
+      "likes_per_min": 104.75783058854745,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 228.6,
-      "text": "【配偶者と性行為つらい 向き合い方】\nhttps://t.co/jfwiC8i2kq",
-      "url": "https://x.com/YahooNewsTopics/status/2102299105720684834"
+      "age_minutes": 78.2,
+      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
+      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "PacificleagueTV",
-      "score": 73.9,
-      "likes": 1543,
-      "likes_per_min": 269.01717278299736,
+      "author": "gkmas_official",
+      "score": 73.5,
+      "likes": 3982,
+      "likes_per_min": 492.50707036343505,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 5.7,
-      "text": "だからギータはスターなんです！😭🙌\nここぞという場面で決める力！💪\n福岡ソフトバンク 柳田悠岐 選手の今シーズン第18号",
-      "url": "https://x.com/PacificleagueTV/status/2102355184253059377"
+      "age_minutes": 8.1,
+      "text": "💜⋆͛ ┈┈  Agitato ┈┈ ⋆͛💜\n\n   グラビアシリーズ 第2弾\n     　　小悪魔ガシャ\n\n💜⋆͛ ┈",
+      "url": "https://x.com/gkmas_official/status/2102358438663864586"
+    },
+    {
+      "author": "MORE_STAR_",
+      "score": 91.5,
+      "likes": 3274,
+      "likes_per_min": 122.03,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 32.8,
+      "text": "鈴木花梨・山本るしあに関しまして\nhttps://t.co/1lqgRTwA3S",
+      "url": "https://x.com/MORE_STAR_/status/2102352218716332260"
     }
   ]
 }

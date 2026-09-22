@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-22T16:03:38.810204+00:00",
+  "updated_at": "2026-09-22T16:17:23.243401+00:00",
   "status": "success",
-  "started_at": "2026-09-22T16:03:03.601619+00:00",
-  "finished_at": "2026-09-22T16:03:38.808877+00:00",
-  "posts_scanned": 587,
-  "posts_with_history": 486,
-  "posts_flagged": 69,
+  "started_at": "2026-09-22T16:16:46.242441+00:00",
+  "finished_at": "2026-09-22T16:17:23.242256+00:00",
+  "posts_scanned": 578,
+  "posts_with_history": 498,
+  "posts_flagged": 65,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 150,
+  "minutes_since_last_notification": 164,
   "reject_reasons": {
-    "古すぎる": 151,
-    "いいね稼ぎ疑い": 6,
-    "失速済み": 13,
-    "いいねが少なすぎる": 237,
-    "誘導文パターン": 2
+    "古すぎる": 160,
+    "いいね稼ぎ疑い": 7,
+    "失速済み": 5,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 231
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 30889,
-    "posts": 9007,
-    "oldest": "2026-09-21T16:09:19.009298+00:00"
+    "total": 30757,
+    "posts": 8914,
+    "oldest": "2026-09-21T16:31:09.316712+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 7,
-  "watchlist_active": 3010,
+  "viral_discovery_posts": 115,
+  "million_imp_rescued": 5,
+  "watchlist_active": 3050,
   "top5": [
     {
       "author": "snsnokyoufu",
-      "score": 33.1,
-      "likes": 43283,
-      "likes_per_min": 64.86,
-      "acceleration": 0.91,
+      "score": 33.3,
+      "likes": 44150,
+      "likes_per_min": 63.06,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 349.0,
+      "age_minutes": 362.7,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "junnosuke_tag",
-      "score": 33.1,
-      "likes": 12206,
-      "likes_per_min": 6.49,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 420.6,
-      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
-      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
-    },
-    {
-      "author": "HaHaHaHaaa____",
-      "score": 25.3,
-      "likes": 16051,
-      "likes_per_min": 18.65,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 352.5,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
-    },
-    {
-      "author": "satou_mohamedo",
-      "score": 38.4,
-      "likes": 17338,
-      "likes_per_min": 125.74,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 199.4,
-      "text": "これがみぃちゃんの元ネタらしい https://t.co/ipZpuvmEdf",
-      "url": "https://x.com/satou_mohamedo/status/2102378428125323651"
-    },
-    {
       "author": "modelpress",
-      "score": 40.3,
-      "likes": 12101,
-      "likes_per_min": 25.62,
-      "acceleration": 0.78,
+      "score": 38.7,
+      "likes": 12430,
+      "likes_per_min": 23.93,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 190.3,
+      "age_minutes": 204.1,
       "text": "「ラヴ上等」あも＆二世、破局を報告\n別れた理由・ビジネスカップル疑惑にも言及\nhttps://t.co/vHAl8t2O",
       "url": "https://x.com/modelpress/status/2102380719188361567"
+    },
+    {
+      "author": "main_warabi",
+      "score": 32.4,
+      "likes": 20807,
+      "likes_per_min": 380.47,
+      "acceleration": 0.94,
+      "measured": true,
+      "age_minutes": 218.1,
+      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
+      "url": "https://x.com/main_warabi/status/2102377179522949621"
+    },
+    {
+      "author": "enako_cos",
+      "score": 45.0,
+      "likes": 10784,
+      "likes_per_min": 45.75,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 138.5,
+      "text": "学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので\n黒ずみとブツブツが酷かったのですが、数年前",
+      "url": "https://x.com/enako_cos/status/2102397211682480457"
+    },
+    {
+      "author": "k4sen",
+      "score": 59.9,
+      "likes": 14677,
+      "likes_per_min": 169.54,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 73.0,
+      "text": "乳首マシンガンにされたことあるか？",
+      "url": "https://x.com/k4sen/status/2102413713018171749"
     }
   ]
 }

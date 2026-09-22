@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T06:33:09.891968+00:00",
+  "updated_at": "2026-09-22T06:47:25.332784+00:00",
   "status": "success",
-  "started_at": "2026-09-22T06:32:38.103101+00:00",
-  "finished_at": "2026-09-22T06:33:09.890815+00:00",
-  "posts_scanned": 587,
-  "posts_with_history": 426,
-  "posts_flagged": 73,
+  "started_at": "2026-09-22T06:46:48.761077+00:00",
+  "finished_at": "2026-09-22T06:47:25.331736+00:00",
+  "posts_scanned": 289,
+  "posts_with_history": 205,
+  "posts_flagged": 11,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 320,
+  "minutes_since_last_notification": 335,
   "reject_reasons": {
-    "古すぎる": 136,
-    "誘導文パターン": 3,
-    "失速済み": 11,
-    "いいねが少なすぎる": 212,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 24,
+    "いいねが少なすぎる": 174,
+    "失速済み": 7,
+    "初回観測かつ平均速度が低い": 2,
+    "誘導文パターン": 2,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 13779,
-    "posts": 5040,
+    "total": 14068,
+    "posts": 5124,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 133,
-  "million_imp_rescued": 3,
-  "watchlist_active": 804,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 819,
   "top5": [
     {
-      "author": "tenjinnotami",
-      "score": 57.7,
-      "likes": 19686,
-      "likes_per_min": 280.44,
-      "acceleration": null,
+      "author": "towanokanae1984",
+      "score": 42.2,
+      "likes": 1441,
+      "likes_per_min": 10.83,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 143.8,
-      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
-      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
+      "age_minutes": 134.5,
+      "text": "この視点なかった。\nちょい反省。たしかに",
+      "url": "https://x.com/towanokanae1984/status/2102254798489932276"
     },
     {
-      "author": "mugenjin",
-      "score": 45.5,
-      "likes": 14848,
-      "likes_per_min": 195.68,
-      "acceleration": 2.14,
+      "author": "tonma5963",
+      "score": 40.9,
+      "likes": 854,
+      "likes_per_min": 4.77,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 197.4,
-      "text": "こういうのに雑に行ったっていい　1/2 https://t.co/SDFJbMu71i",
-      "url": "https://x.com/mugenjin/status/2102235379625832695"
+      "age_minutes": 193.8,
+      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
+      "url": "https://x.com/tonma5963/status/2102239881972088982"
     },
     {
-      "author": "p_ka2295079",
-      "score": 27.9,
-      "likes": 29396,
-      "likes_per_min": 90.76,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 219.8,
-      "text": "続きが気になりすぎる https://t.co/3aMjelmkTq",
-      "url": "https://x.com/p_ka2295079/status/2102229737502622135"
-    },
-    {
-      "author": "sara2626_if",
-      "score": 24.9,
-      "likes": 5477,
-      "likes_per_min": 29.012975060481597,
+      "author": "wni_jp",
+      "score": 53.2,
+      "likes": 121,
+      "likes_per_min": 11.14862783057211,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 188.8,
-      "text": "妻がVIVANTにハマるとこうなります https://t.co/JO0hYZeAFZ",
-      "url": "https://x.com/sara2626_if/status/2102237547535667625"
+      "age_minutes": 10.9,
+      "text": "【地震情報】\n9月22日 15:34 震度3\n【茨城県】茨城県北部　茨城県南部\n▶生放送で解説中 \nhttps://t.",
+      "url": "https://x.com/wni_jp/status/2102285910725582896"
     },
     {
-      "author": "shisou_",
-      "score": 28.0,
-      "likes": 6811,
-      "likes_per_min": 37.09137267657971,
+      "author": "naniwa_x_ae",
+      "score": 62.4,
+      "likes": 1124,
+      "likes_per_min": 93.51065764148683,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 183.6,
-      "text": "これ毒マフィン紛れ込ませたコラだと気付かれずに話進んでて気まずかった https://t.co/D0GsJ66izl",
-      "url": "https://x.com/shisou_/status/2102238841600172400"
+      "age_minutes": 12.0,
+      "text": "◤◢◤ まもなく‼️ ◢◤◢\n\n🧡大西流星さん&amp;正門良規さん💙\n『旬感LIVE とれたてっ！』生出演📡\n\n今夜1",
+      "url": "https://x.com/naniwa_x_ae/status/2102285616599974358"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 77.6,
+      "likes": 524,
+      "likes_per_min": 16.97,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 33.0,
+      "text": "【害悪度A】\n\nTBSテレビ\n\n備考\n・業界関係者から地雷チャンへ脅迫DM\n・無断使用した地雷チャンの動画を非公開にして",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2102280329566495108"
     }
   ]
 }

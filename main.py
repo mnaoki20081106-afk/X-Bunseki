@@ -139,7 +139,9 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
         imp = int(row.get("last_impressions") or 0)
         ipm = float(row.get("last_impressions_per_min") or 0)
         mega = age <= 960 and imp >= 8_500_000
-        if not (240 < age <= 1440 and (imp >= 1_000_000 or ipm >= 300 or mega)):
+        # "Trending" is deliberately selective: velocity alone must not promote
+        # sub-million posts. Early-stage fast growers belong in Early Discovery.
+        if not (240 < age <= 1440 and imp >= 1_500_000):
             continue
         trending.append({
             "author": row.get("author_handle"), "score": row.get("last_buzz_score"),

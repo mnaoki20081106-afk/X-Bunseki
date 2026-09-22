@@ -7,7 +7,7 @@
   },
   "challenger": null,
   "dataset_stats": {
-    "early_observed_posts": 3190,
+    "early_observed_posts": 3195,
     "completed_24h_posts": 0,
     "completion_rate": 0.0,
     "positive_5m": 0,
@@ -50,9 +50,5 @@
       "time-to-detection must not regress"
     ]
   },
-  "automation_state": "collecting",
-  "shadow_metrics": {
-    "paired_posts": 0,
-    "status": "collecting"
-  }
+  "automation_state": "collecting"
 }

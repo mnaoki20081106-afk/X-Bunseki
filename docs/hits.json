@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-22T21:32:18.337356+00:00",
-  "surviving": 53,
-  "candidates": 15,
+  "updated_at": "2026-09-22T21:46:38.432377+00:00",
+  "surviving": 23,
+  "candidates": 2,
   "notify_score": 55,
   "trending_posts": [
     {
@@ -1306,60 +1306,6 @@
       "url": "https://x.com/narisumashi100/status/2102217646284636511"
     }
   ],
-  "early_posts": [
-    {
-      "post_id": "2102465835822661721",
-      "author": "info__Johnnys",
-      "author_name": "Johnny's information",
-      "posted_at": "2026-09-22T18:31:31+00:00",
-      "score": 59.1,
-      "likes": 12854,
-      "impressions": 618282,
-      "predicted_final_impressions": 1091415,
-      "prediction_confidence": "high",
-      "impressions_per_min": 3381.34,
-      "impressions_acceleration": 1.29,
-      "replies": 39,
-      "retweets": 1885,
-      "quotes": 1221,
-      "bookmarks": 1329,
-      "likes_per_min": 76.51,
-      "acceleration": 1.33,
-      "age_minutes": 181.5,
-      "candidate": true,
-      "discovery_source": "viral_search",
-      "million_imp_bypass": false,
-      "million_imp_bypass_detail": "",
-      "text": "【カウコン開催決定！】\n\n12/31(木)\n「COUNTDOWN CONCERT 2026-2027 STARTO to WORLD」\n\n■Netflixにて世界独占生配信\n　(アーカイブ配信あり)\n■12月にはカウコンへの思いを語る番組配",
-      "url": "https://x.com/info__Johnnys/status/2102465835822661721"
-    }
-  ],
-  "posts": [
-    {
-      "post_id": "2102465835822661721",
-      "author": "info__Johnnys",
-      "author_name": "Johnny's information",
-      "posted_at": "2026-09-22T18:31:31+00:00",
-      "score": 59.1,
-      "likes": 12854,
-      "impressions": 618282,
-      "predicted_final_impressions": 1091415,
-      "prediction_confidence": "high",
-      "impressions_per_min": 3381.34,
-      "impressions_acceleration": 1.29,
-      "replies": 39,
-      "retweets": 1885,
-      "quotes": 1221,
-      "bookmarks": 1329,
-      "likes_per_min": 76.51,
-      "acceleration": 1.33,
-      "age_minutes": 181.5,
-      "candidate": true,
-      "discovery_source": "viral_search",
-      "million_imp_bypass": false,
-      "million_imp_bypass_detail": "",
-      "text": "【カウコン開催決定！】\n\n12/31(木)\n「COUNTDOWN CONCERT 2026-2027 STARTO to WORLD」\n\n■Netflixにて世界独占生配信\n　(アーカイブ配信あり)\n■12月にはカウコンへの思いを語る番組配",
-      "url": "https://x.com/info__Johnnys/status/2102465835822661721"
-    }
-  ]
+  "early_posts": [],
+  "posts": []
 }

@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-22T17:03:24.092407+00:00",
+  "updated_at": "2026-09-22T17:17:20.550746+00:00",
   "status": "success",
-  "started_at": "2026-09-22T17:02:48.048350+00:00",
-  "finished_at": "2026-09-22T17:03:24.091250+00:00",
-  "posts_scanned": 570,
-  "posts_with_history": 489,
-  "posts_flagged": 46,
+  "started_at": "2026-09-22T17:16:47.360220+00:00",
+  "finished_at": "2026-09-22T17:17:20.549524+00:00",
+  "posts_scanned": 575,
+  "posts_with_history": 504,
+  "posts_flagged": 34,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 16,
+  "minutes_since_last_notification": 30,
   "reject_reasons": {
-    "古すぎる": 186,
-    "いいね稼ぎ疑い": 6,
-    "失速済み": 26,
-    "初回観測かつ平均速度が低い": 5,
-    "いいねが少なすぎる": 200
+    "古すぎる": 192,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 14,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 216,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 30832,
-    "posts": 8606,
+    "total": 31407,
+    "posts": 8677,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 116,
-  "million_imp_rescued": 6,
-  "watchlist_active": 3129,
+  "viral_discovery_posts": 113,
+  "million_imp_rescued": 3,
+  "watchlist_active": 3143,
   "top5": [
     {
-      "author": "snsnokyoufu",
-      "score": 30.0,
-      "likes": 46123,
-      "likes_per_min": 42.88,
-      "acceleration": 0.68,
-      "measured": true,
-      "age_minutes": 408.8,
-      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
-      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
-    },
-    {
       "author": "_mumei_R",
-      "score": 24.1,
-      "likes": 56408,
-      "likes_per_min": 34.83,
-      "acceleration": 0.66,
+      "score": 25.0,
+      "likes": 56854,
+      "likes_per_min": 31.99,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 505.2,
+      "age_minutes": 519.1,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 22.9,
-      "likes": 16763,
-      "likes_per_min": 11.91,
-      "acceleration": 0.64,
-      "measured": true,
-      "age_minutes": 412.2,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
-    },
-    {
-      "author": "minotake3",
-      "score": 25.4,
-      "likes": 7228,
-      "likes_per_min": 34.310753288274285,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 210.7,
-      "text": "若い時、ガンで手術するって言ってた友達の見舞いに行って「来月来るね」と帰った。忙しい月で、予定より２週間ほど遅れて行った",
-      "url": "https://x.com/minotake3/status/2102390644715225110"
-    },
-    {
       "author": "k4sen",
-      "score": 46.7,
-      "likes": 20298,
-      "likes_per_min": 114.37,
-      "acceleration": 0.83,
+      "score": 43.8,
+      "likes": 21476,
+      "likes_per_min": 84.5,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 119.0,
+      "age_minutes": 132.9,
       "text": "乳首マシンガンにされたことあるか？",
       "url": "https://x.com/k4sen/status/2102413713018171749"
+    },
+    {
+      "author": "Runninzin",
+      "score": 39.0,
+      "likes": 18702,
+      "likes_per_min": 58.6,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 231.2,
+      "text": "台風25号「それではさようなら」\n\n熱低b「続きまして」 https://t.co/IMSz6pJQzq",
+      "url": "https://x.com/Runninzin/status/2102388991375118715"
+    },
+    {
+      "author": "koki1105t",
+      "score": 35.0,
+      "likes": 14839,
+      "likes_per_min": 29.77,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 173.8,
+      "text": "おめでと",
+      "url": "https://x.com/koki1105t/status/2102403419617231300"
+    },
+    {
+      "author": "watarai_hibari",
+      "score": 64.4,
+      "likes": 23049,
+      "likes_per_min": 54.59,
+      "acceleration": 0.72,
+      "measured": true,
+      "age_minutes": 116.6,
+      "text": "【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】\nhttps://t.co/CczGzg52cx\n\n   ",
+      "url": "https://x.com/watarai_hibari/status/2102417821238251826"
     }
   ]
 }

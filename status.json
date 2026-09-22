@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T15:17:26.376250+00:00",
+  "updated_at": "2026-09-22T15:32:30.130834+00:00",
   "status": "success",
-  "started_at": "2026-09-22T15:16:50.193874+00:00",
-  "finished_at": "2026-09-22T15:17:26.375226+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 444,
-  "posts_flagged": 86,
+  "started_at": "2026-09-22T15:31:52.688115+00:00",
+  "finished_at": "2026-09-22T15:32:30.129511+00:00",
+  "posts_scanned": 585,
+  "posts_with_history": 471,
+  "posts_flagged": 85,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 104,
+  "minutes_since_last_notification": 119,
   "reject_reasons": {
-    "古すぎる": 140,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 8,
-    "いいねが少なすぎる": 233,
-    "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 3
+    "古すぎる": 139,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 6,
+    "いいねが少なすぎる": 230,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 29138,
-    "posts": 8684,
+    "total": 29723,
+    "posts": 8798,
     "oldest": "2026-09-21T16:09:19.009298+00:00"
   },
-  "viral_discovery_posts": 134,
-  "million_imp_rescued": 7,
-  "watchlist_active": 2887,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 6,
+  "watchlist_active": 2936,
   "top5": [
     {
       "author": "snsnokyoufu",
-      "score": 34.1,
-      "likes": 40080,
-      "likes_per_min": 79.47,
-      "acceleration": 0.9,
+      "score": 33.6,
+      "likes": 41164,
+      "likes_per_min": 71.97,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 302.8,
+      "age_minutes": 317.9,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "modelpress",
-      "score": 52.3,
-      "likes": 10535,
-      "likes_per_min": 47.96,
-      "acceleration": 0.78,
+      "author": "_mumei_R",
+      "score": 27.6,
+      "likes": 52143,
+      "likes_per_min": 68.16,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 144.1,
+      "age_minutes": 414.3,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "HaHaHaHaaa____",
+      "score": 27.6,
+      "likes": 15400,
+      "likes_per_min": 32.99,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 321.3,
+      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
+      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+    },
+    {
+      "author": "modelpress",
+      "score": 50.0,
+      "likes": 11196,
+      "likes_per_min": 43.88,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 159.2,
       "text": "「ラヴ上等」あも＆二世、破局を報告\n別れた理由・ビジネスカップル疑惑にも言及\nhttps://t.co/vHAl8t2O",
       "url": "https://x.com/modelpress/status/2102380719188361567"
     },
     {
-      "author": "milk_info",
-      "score": 71.5,
-      "likes": 7652,
-      "likes_per_min": 529.5140616171612,
+      "author": "watarai_hibari",
+      "score": 80.5,
+      "likes": 8040,
+      "likes_per_min": 683.4695046908543,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 14.5,
-      "text": "／\nTVアニメ『超巡！超条先輩』\nオープニングテーマ決定🚨🎉\n＼\n\nM!LKの新曲「ザッツ！超常」が、\n10月6日(火)",
-      "url": "https://x.com/milk_info/status/2102413355919065283"
-    },
-    {
-      "author": "RytoSle2",
-      "score": 27.8,
-      "likes": 13210,
-      "likes_per_min": 37.15,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 214.4,
-      "text": "ちゃんと言う必要があると思ったので\n\nいまの若いまだSNSに顔出ししてない人や\nすでにやってる人にも伝えたい\n\nネットで",
-      "url": "https://x.com/RytoSle2/status/2102363050133409857"
-    },
-    {
-      "author": "kaixakadesu",
-      "score": 24.7,
-      "likes": 8760,
-      "likes_per_min": 20.02,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 235.8,
-      "text": "【VIVANT】 次回考察\n\n←顔が汚れてる                          顔が綺麗→\n\n←奪還作戦",
-      "url": "https://x.com/kaixakadesu/status/2102357648163393834"
+      "age_minutes": 11.8,
+      "text": "【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】\nhttps://t.co/CczGzg52cx\n\n   ",
+      "url": "https://x.com/watarai_hibari/status/2102417821238251826"
     }
   ]
 }

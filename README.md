@@ -285,3 +285,17 @@ python3 tests/test_pipeline.py
 
 ここが全部通っていれば、判定ロジックは正常です。
 それでも通知が来ない場合は、原因は収集側(Xの画面構造の変化など)です。
+
+## Parent Web integration
+
+This repository remains the independent X monitoring / prediction engine. The parent Web app
+`mnaoki20081106-afk/Tiktok-generater-Public` consumes it as a Git submodule for source/model
+sharing while runtime monitoring results remain owned here.
+
+The parent reads the public result contract from `hits.json`, `status.json`,
+`data/model_registry.json`, and `data/impression_model.json`. Runtime observation commits
+(hits/status/watchlist/training snapshots) do not need to advance the parent submodule pointer;
+source, workflow, test, and model-artifact changes do.
+
+Keep parent-specific UI and authentication logic out of X-Bunseki.
+

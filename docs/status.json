@@ -1,20 +1,18 @@
 {
-  "updated_at": "2026-09-22T16:33:06.869888+00:00",
+  "updated_at": "2026-09-22T16:47:38.410120+00:00",
   "status": "success",
-  "started_at": "2026-09-22T16:32:28.745513+00:00",
-  "finished_at": "2026-09-22T16:33:06.850134+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 507,
-  "posts_flagged": 63,
-  "notified_count": 0,
+  "started_at": "2026-09-22T16:46:55.087358+00:00",
+  "finished_at": "2026-09-22T16:47:38.408919+00:00",
+  "posts_scanned": 286,
+  "posts_with_history": 239,
+  "posts_flagged": 2,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 180,
+  "minutes_since_last_notification": 194,
   "reject_reasons": {
-    "古すぎる": 162,
-    "いいね稼ぎ疑い": 8,
-    "失速済み": 10,
-    "いいねが少なすぎる": 223,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 69,
+    "いいねが少なすぎる": 161,
+    "失速済み": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +29,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 30665,
-    "posts": 8932,
-    "oldest": "2026-09-21T16:37:39.907985+00:00"
+    "total": 30262,
+    "posts": 8525,
+    "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 122,
-  "million_imp_rescued": 4,
-  "watchlist_active": 3087,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3093,
   "top5": [
     {
-      "author": "_mumei_R",
-      "score": 26.4,
-      "likes": 55353,
-      "likes_per_min": 52.96,
-      "acceleration": 0.78,
+      "author": "FightersPR",
+      "score": 32.4,
+      "likes": 11666,
+      "likes_per_min": 11.91,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 474.9,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+      "age_minutes": 232.1,
+      "text": "中島卓也選手 引退セレモニー💐\n深いつながりのある方々からのメッセージ✨\n\n#ありがとう中島卓也\n#ドミれ\n#lovef",
+      "url": "https://x.com/FightersPR/status/2102381290771349891"
     },
     {
-      "author": "modelpress",
-      "score": 35.6,
-      "likes": 12782,
-      "likes_per_min": 22.38,
-      "acceleration": 0.94,
+      "author": "12022ncintj",
+      "score": 31.3,
+      "likes": 149,
+      "likes_per_min": 1.58,
+      "acceleration": 1.25,
       "measured": true,
-      "age_minutes": 219.8,
-      "text": "「ラヴ上等」あも＆二世、破局を報告\n別れた理由・ビジネスカップル疑惑にも言及\nhttps://t.co/vHAl8t2O",
-      "url": "https://x.com/modelpress/status/2102380719188361567"
+      "age_minutes": 75.6,
+      "text": "@main_warabi アレは実験室で精子と卵子を用意して避妊確率を計測したわけじゃなく、実在のカップルにその避妊方法",
+      "url": "https://x.com/12022ncintj/status/2102420666662445142"
     },
     {
-      "author": "enako_cos",
-      "score": 44.0,
-      "likes": 11525,
-      "likes_per_min": 47.12,
-      "acceleration": 1.03,
+      "author": "0Haniwa0",
+      "score": 41.9,
+      "likes": 423,
+      "likes_per_min": 11.09,
+      "acceleration": 1.26,
       "measured": true,
-      "age_minutes": 154.3,
-      "text": "学生の頃からパンツのままイスに座って長時間ネトゲやるような生活をしていたので\n黒ずみとブツブツが酷かったのですが、数年前",
-      "url": "https://x.com/enako_cos/status/2102397211682480457"
+      "age_minutes": 51.7,
+      "text": "Twitterやめてから投稿した音楽spotifyからほとんど全部削除されちゃったんですけど\nもしかしてspoityって",
+      "url": "https://x.com/0Haniwa0/status/2102426673081979269"
     },
     {
-      "author": "k4sen",
-      "score": 59.9,
-      "likes": 16834,
-      "likes_per_min": 137.17,
-      "acceleration": 0.81,
+      "author": "shinobukonno",
+      "score": 22.9,
+      "likes": 2224,
+      "likes_per_min": 4.75,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 88.7,
-      "text": "乳首マシンガンにされたことあるか？",
-      "url": "https://x.com/k4sen/status/2102413713018171749"
+      "age_minutes": 174.2,
+      "text": "こういう発信には素直に敬意を表したい。\n\n国会では考え方も政策も違う。高市政権には厳しく対峙する。それでも、議場の外で相",
+      "url": "https://x.com/shinobukonno/status/2102395837959790711"
     },
     {
-      "author": "Runninzin",
-      "score": 49.2,
-      "likes": 15958,
-      "likes_per_min": 76.12,
-      "acceleration": 0.86,
+      "author": "PacificleagueTV",
+      "score": 23.1,
+      "likes": 4722,
+      "likes_per_min": 3.24,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 186.9,
-      "text": "台風25号「それではさようなら」\n\n熱低b「続きまして」 https://t.co/IMSz6pJQzq",
-      "url": "https://x.com/Runninzin/status/2102388991375118715"
+      "age_minutes": 233.0,
+      "text": "【引退セレモニー】\nありがとう中島卓也💐\nファイターズと共に歩み続けた現役生活18年‼\n北海道日本ハム 中島卓也 選手か",
+      "url": "https://x.com/PacificleagueTV/status/2102381046939693079"
     }
   ]
 }

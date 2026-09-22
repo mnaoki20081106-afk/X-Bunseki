@@ -1,21 +1,19 @@
 {
-  "updated_at": "2026-09-22T13:17:39.905227+00:00",
+  "updated_at": "2026-09-22T13:33:20.224810+00:00",
   "status": "success",
-  "started_at": "2026-09-22T13:17:05.582681+00:00",
-  "finished_at": "2026-09-22T13:17:39.904017+00:00",
-  "posts_scanned": 581,
-  "posts_with_history": 411,
-  "posts_flagged": 111,
-  "notified_count": 0,
+  "started_at": "2026-09-22T13:32:45.254509+00:00",
+  "finished_at": "2026-09-22T13:33:20.223725+00:00",
+  "posts_scanned": 553,
+  "posts_with_history": 392,
+  "posts_flagged": 110,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 725,
+  "minutes_since_last_notification": 741,
   "reject_reasons": {
-    "古すぎる": 125,
-    "いいね稼ぎ疑い": 3,
-    "失速済み": 3,
-    "いいねが少なすぎる": 221,
-    "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 8
+    "古すぎる": 123,
+    "失速済み": 7,
+    "いいねが少なすぎる": 211,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 27850,
-    "posts": 8868,
-    "oldest": "2026-09-21T13:17:52.703177+00:00"
+    "total": 26988,
+    "posts": 8726,
+    "oldest": "2026-09-21T13:39:20.528039+00:00"
   },
-  "viral_discovery_posts": 116,
-  "million_imp_rescued": 7,
-  "watchlist_active": 2383,
+  "viral_discovery_posts": 113,
+  "million_imp_rescued": 9,
+  "watchlist_active": 2457,
   "top5": [
     {
       "author": "_mumei_R",
-      "score": 28.8,
-      "likes": 40155,
-      "likes_per_min": 112.17,
-      "acceleration": 0.83,
+      "score": 29.9,
+      "likes": 42043,
+      "likes_per_min": 120.52,
+      "acceleration": 1.07,
       "measured": true,
-      "age_minutes": 279.4,
+      "age_minutes": 295.1,
       "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
       "url": "https://x.com/_mumei_R/status/2102316524245815558"
     },
     {
       "author": "snsnokyoufu",
-      "score": 44.9,
-      "likes": 27640,
-      "likes_per_min": 139.43,
-      "acceleration": 0.87,
+      "score": 41.7,
+      "likes": 29446,
+      "likes_per_min": 115.28,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 183.0,
+      "age_minutes": 198.7,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 40.2,
-      "likes": 9096,
-      "likes_per_min": 70.35,
-      "acceleration": null,
+      "author": "junnosuke_tag",
+      "score": 33.9,
+      "likes": 11114,
+      "likes_per_min": 12.84,
+      "acceleration": 0.5,
       "measured": true,
-      "age_minutes": 186.5,
+      "age_minutes": 270.3,
+      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
+      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
+    },
+    {
+      "author": "HaHaHaHaaa____",
+      "score": 36.2,
+      "likes": 10012,
+      "likes_per_min": 58.47,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 202.2,
       "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
       "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
     },
     {
-      "author": "Order0o1",
-      "score": 54.1,
-      "likes": 43125,
-      "likes_per_min": 323.01,
-      "acceleration": 0.8,
+      "author": "korekore_ch",
+      "score": 51.3,
+      "likes": 6878,
+      "likes_per_min": 147.84,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 167.2,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
-    },
-    {
-      "author": "728_Storm",
-      "score": 77.2,
-      "likes": 16200,
-      "likes_per_min": 159.1,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 66.0,
-      "text": "【お知らせ】\n\n本日9/22(火)22:00より生放送の\n関西テレビ「なにわAぇ!の放送させてください！ \nお蔵入りはド",
-      "url": "https://x.com/728_Storm/status/2102370230827929623"
+      "age_minutes": 54.1,
+      "text": "急に連絡途絶えたけど生きてるよな？誕プレで貰った『戦慄かなのを無償で呼び出せる券』3枚使うので連絡してくれ",
+      "url": "https://x.com/korekore_ch/status/2102377184623198507"
     }
   ]
 }

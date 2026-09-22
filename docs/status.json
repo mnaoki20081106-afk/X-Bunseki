@@ -1,20 +1,18 @@
 {
-  "updated_at": "2026-09-22T03:55:21.937241+00:00",
+  "updated_at": "2026-09-22T03:58:19.044685+00:00",
   "status": "success",
-  "started_at": "2026-09-22T03:54:44.950290+00:00",
-  "finished_at": "2026-09-22T03:55:21.936062+00:00",
-  "posts_scanned": 580,
-  "posts_with_history": 553,
-  "posts_flagged": 80,
+  "started_at": "2026-09-22T03:57:46.359512+00:00",
+  "finished_at": "2026-09-22T03:58:19.043656+00:00",
+  "posts_scanned": 267,
+  "posts_with_history": 243,
+  "posts_flagged": 14,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 163,
+  "minutes_since_last_notification": 166,
   "reject_reasons": {
-    "古すぎる": 169,
-    "初回観測かつ平均速度が低い": 54,
-    "いいねが少なすぎる": 218,
-    "誘導文パターン": 3,
-    "いいね稼ぎ疑い": 3,
+    "古すぎる": 40,
+    "いいねが少なすぎる": 165,
+    "いいね稼ぎ疑い": 1,
     "失速済み": 3
   },
   "config": {
@@ -32,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 9753,
-    "posts": 3951,
+    "total": 10020,
+    "posts": 3975,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 122,
-  "million_imp_rescued": 3,
-  "watchlist_active": 311,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 353,
   "top5": [
     {
-      "author": "UcmRu",
-      "score": 25.7,
-      "likes": 31353,
-      "likes_per_min": 42.21,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 795.8,
-      "text": "timeleszのコメント、寺西が一番ましで勝利が一番酷い",
-      "url": "https://x.com/UcmRu/status/2102045074041549285"
-    },
-    {
-      "author": "Tigers_140609",
-      "score": 79.8,
-      "likes": 5919,
-      "likes_per_min": 76.62565687287177,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 77.2,
-      "text": "［広島］\n新井貴浩監督が続投へ　\nシーズン中に３度、球団に辞意伝える…\n「ゾンビたばこ」を巡る激動シーズン　来季５年目は",
-      "url": "https://x.com/Tigers_140609/status/2102225903728337211"
-    },
-    {
-      "author": "frontale_staff",
-      "score": 74.8,
-      "likes": 2384,
-      "likes_per_min": 43.61321271060251,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 54.7,
-      "text": "【重要】9/23 記者会見実施のお知らせ\n\n川崎フロンターレから所属選手に関する大切なお知らせがありますので、以下のとお",
-      "url": "https://x.com/frontale_staff/status/2102231585567478119"
-    },
-    {
-      "author": "711SEJ",
-      "score": 53.1,
-      "likes": 12798,
-      "likes_per_min": 77.3,
+      "author": "rockinon_fes",
+      "score": 69.8,
+      "likes": 3423,
+      "likes_per_min": 61.17,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 175.3,
-      "text": "ゴンチャのペットボトルに新フレーバー誕生✨\n\n対象の貢茶(ゴンチャ)いずれか1本に使える\n150円引きクーポンが当たるチ",
-      "url": "https://x.com/711SEJ/status/2102201223336382507"
+      "age_minutes": 58.2,
+      "text": "ROCK IN JAPAN FESTIVAL 2026を終えて。\n\n今これを書いているのは、9月21日の夜、本当は最終日",
+      "url": "https://x.com/rockinon_fes/status/2102231427718738285"
     },
     {
-      "author": "daigonishi22",
-      "score": 57.9,
-      "likes": 6026,
-      "likes_per_min": 52.41716821789648,
+      "author": "MAC_MMA_",
+      "score": 44.2,
+      "likes": 701,
+      "likes_per_min": 4.82,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 115.0,
-      "text": "報告です。 https://t.co/1MzPahro99",
-      "url": "https://x.com/daigonishi22/status/2102216412190351501"
+      "measured": true,
+      "age_minutes": 125.5,
+      "text": "当時50kgで試合してた名高に天心ラストマッチの相手として53.5kgキックor55kg肘ありのオファーして断ったら🌹が",
+      "url": "https://x.com/MAC_MMA_/status/2102214496198758713"
+    },
+    {
+      "author": "chinakichi_72",
+      "score": 46.4,
+      "likes": 340,
+      "likes_per_min": 4.31,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 68.1,
+      "text": "法的措置？私のは誹謗中傷じゃない！(0/3) https://t.co/rgAvQdhDnr",
+      "url": "https://x.com/chinakichi_72/status/2102228947727790178"
+    },
+    {
+      "author": "tsuyadamaninaru",
+      "score": 23.0,
+      "likes": 153,
+      "likes_per_min": 3.3,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 34.4,
+      "text": "@applepine_desu 家族には医療事故のこと、そもそも整形のことも話してないって言ってたので緑内障は家族用の嘘",
+      "url": "https://x.com/tsuyadamaninaru/status/2102237415729762428"
+    },
+    {
+      "author": "gaku_fushimi",
+      "score": 84.6,
+      "likes": 709,
+      "likes_per_min": 22.59,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 19.3,
+      "text": "今日は14時から！！もう今からジリジリしてきましたね・・・！！\nヒムさんとサロメちゃんと勝ち上がるぞ💪炎王の戦い見ててく",
+      "url": "https://x.com/gaku_fushimi/status/2102241225386635717"
     }
   ]
 }

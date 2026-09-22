@@ -162,6 +162,90 @@ def compute(post: dict, history: list[dict], now=None) -> dict:
 
 
 
+ULTRA_EARLY_ANCHORS = [
+    (1.0, 45.0), (3.0, 35.0), (5.0, 28.0),
+    (8.0, 22.0), (10.0, 18.0), (15.0, 15.0),
+]
+
+
+def _interpolate_anchors(age: float, anchors: list[tuple[float, float]]) -> float:
+    if age <= anchors[0][0]:
+        return anchors[0][1]
+    if age >= anchors[-1][0]:
+        return anchors[-1][1]
+    for (x0, y0), (x1, y1) in zip(anchors, anchors[1:]):
+        if x0 <= age <= x1:
+            t = (age - x0) / (x1 - x0)
+            return y0 + (y1 - y0) * t
+    return anchors[-1][1]
+
+
+def ultra_early_signal(post: dict, growth: dict) -> dict:
+    """0-15分専用。通常growthの5分floorを使わず実経過時間で初速を見る。"""
+    age = max(float(growth.get("age_minutes") or 0.1), 0.1)
+    if age > 15.0:
+        return {"active": False}
+    imp = max(int(post.get("impressions") or 0), 0)
+    likes = max(int(post.get("likes") or 0), 0)
+    rts = max(int(post.get("retweets") or 0), 0)
+    actual_ipm = imp / age
+    actual_lpm = likes / age
+    actual_rtpm = rts / age
+
+    # Grok暫定prior。候補ゲートではなく、予測補正と表示ラベル用。
+    bands = [
+        (1, 800, 30, 5, 1000), (3, 2000, 80, 15, 800),
+        (5, 4000, 150, 30, 900), (8, 7000, 250, 50, 1000),
+        (10, 10000, 350, 70, 1100), (15, 15000, 500, 100, 1200),
+    ]
+    nearest = min(bands, key=lambda b: abs(b[0] - age))
+    _, imp_floor, like_floor, rt_floor, high_velocity = nearest
+    engagement_ok = likes >= like_floor or rts >= rt_floor
+    candidate = (imp >= imp_floor and engagement_ok) or (actual_ipm >= high_velocity and rts >= rt_floor)
+
+    # 超初動の質補正。Grok案の1.1-1.4 / 0.6-0.8を保守的に採用。
+    like_r = likes / max(imp, 1)
+    rt_r = rts / max(imp, 1)
+    if like_r >= 0.03 and rt_r >= 0.005:
+        quality = 1.30
+    elif like_r >= 0.02 or rt_r >= 0.004:
+        quality = 1.15
+    elif like_r < 0.005 and rt_r < 0.001:
+        quality = 0.70
+    else:
+        quality = 1.0
+
+    # 絶対速度のboost。母集団percentileはまだ無いので固定priorから開始。
+    if actual_ipm >= high_velocity * 3:
+        velocity_boost = 1.60
+    elif actual_ipm >= high_velocity * 2:
+        velocity_boost = 1.40
+    elif actual_ipm >= high_velocity:
+        velocity_boost = 1.20
+    else:
+        velocity_boost = 1.0
+
+    base = _interpolate_anchors(age, ULTRA_EARLY_ANCHORS)
+    raw_multiplier = base * quality * velocity_boost
+    # Grokのcapを時間方向に補間。1分80x → 15分25x。
+    cap = 80.0 + (25.0 - 80.0) * min(max((age - 1.0) / 14.0, 0.0), 1.0)
+    multiplier = min(max(raw_multiplier, 3.0), cap)
+    predicted = min(int(round(imp * multiplier)), 50_000_000)
+    return {
+        "active": True,
+        "candidate": candidate,
+        "actual_impressions_per_min": round(actual_ipm, 2),
+        "actual_likes_per_min": round(actual_lpm, 2),
+        "actual_retweets_per_min": round(actual_rtpm, 2),
+        "base_multiplier": round(base, 2),
+        "quality_factor": round(quality, 2),
+        "velocity_boost": round(velocity_boost, 2),
+        "multiplier": round(multiplier, 2),
+        "predicted_24h_impressions": max(predicted, imp),
+        "prior_source": "Grok 0-15m provisional prior",
+    }
+
+
 def predict_final_impressions(post: dict, growth: dict) -> dict:
     """Grok由来の経験則を初期priorにした最終imp予測。実測蓄積後に係数を校正する。"""
     current = max(int(post.get("impressions") or 0), 0)
@@ -170,7 +254,8 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
         return {"predicted_final_impressions": None, "prediction_confidence": "none",
                 "prediction_basis": "impressions未取得"}
 
-    # Grokの remaining_multiplier_base を時間方向に線形補間。
+    # 0-15分はUltra Early専用prior。15分以降は従来priorへ連続接続。
+    ultra = ultra_early_signal(post, growth)
     defaults = {"15": 15.0, "30": 8.0, "45": 6.0, "60": 4.5, "90": 3.5, "120": 2.5, "180": 2.0, "240": 1.5}
     model_path = Path(__file__).parent / "data" / "impression_model.json"
     learned = {}
@@ -228,6 +313,14 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
 
     predicted = max(current, int(round(current * remaining * accel_adjust * quality_adjust)))
     samples = int(growth.get("samples") or 0)
+
+    # Ultra Earlyは独立レイヤー。通常予測と比較し、大きい方を採用する。
+    # これにより数分の鬼バズを15分まで待たず拾う一方、従来予測を弱めない。
+    if ultra.get("active") and ultra.get("predicted_24h_impressions") is not None:
+        ultra_pred = int(ultra["predicted_24h_impressions"])
+        if ultra_pred > predicted:
+            predicted = ultra_pred
+            remaining = float(ultra.get("multiplier") or remaining)
     confidence = "high" if samples >= 3 and imp_accel is not None else ("medium" if samples >= 1 else "low")
     result = {
         "predicted_final_impressions": predicted,
@@ -236,7 +329,11 @@ def predict_final_impressions(post: dict, growth: dict) -> dict:
         "prediction_remaining_multiplier": round(remaining, 2),
         "prediction_accel_adjustment": round(accel_adjust, 2),
         "prediction_quality_adjustment": round(quality_adjust, 2),
+        "ultra_early": ultra,
     }
+    if ultra.get("active") and int(ultra.get("predicted_24h_impressions") or 0) >= predicted:
+        result["prediction_basis"] = "Grok 0-15分 Ultra Early暫定prior"
+        result["prediction_confidence"] = "medium" if ultra.get("candidate") else "low"
 
     # Gen1 can replace only the forecast after it has passed every promotion
     # gate. Discovery, hard filters, rescue logic and buzz scoring remain Gen0.

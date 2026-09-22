@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T06:02:59.836602+00:00",
+  "updated_at": "2026-09-22T06:17:23.921993+00:00",
   "status": "success",
-  "started_at": "2026-09-22T06:02:27.598123+00:00",
-  "finished_at": "2026-09-22T06:02:59.835205+00:00",
-  "posts_scanned": 584,
-  "posts_with_history": 434,
-  "posts_flagged": 58,
+  "started_at": "2026-09-22T06:16:48.214244+00:00",
+  "finished_at": "2026-09-22T06:17:23.920943+00:00",
+  "posts_scanned": 283,
+  "posts_with_history": 212,
+  "posts_flagged": 21,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 290,
+  "minutes_since_last_notification": 305,
   "reject_reasons": {
-    "古すぎる": 160,
-    "失速済み": 8,
-    "いいねが少なすぎる": 210,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 4,
-    "いいね稼ぎ疑い": 4
+    "古すぎる": 44,
+    "いいねが少なすぎる": 152,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 1,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 12909,
-    "posts": 4808,
+    "total": 13192,
+    "posts": 4879,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 4,
-  "watchlist_active": 706,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 733,
   "top5": [
     {
-      "author": "yudai_vo",
-      "score": 57.4,
-      "likes": 13595,
-      "likes_per_min": 59.61,
-      "acceleration": 0.86,
+      "author": "tonma5963",
+      "score": 50.1,
+      "likes": 691,
+      "likes_per_min": 7.08,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 177.9,
-      "text": "僕のInstagramはフォロワーの20%が韓国の方で、昨日の投稿に驚かれた方も多かったみたいで一晩で2000人くらいフ",
-      "url": "https://x.com/yudai_vo/status/2102232696978354448"
+      "age_minutes": 163.7,
+      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
+      "url": "https://x.com/tonma5963/status/2102239881972088982"
     },
     {
-      "author": "fukami11",
-      "score": 30.4,
-      "likes": 15661,
-      "likes_per_min": 193.45,
+      "author": "Kanae_2434",
+      "score": 66.6,
+      "likes": 1163,
+      "likes_per_min": 71.51016828426005,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.3,
+      "text": "／\n📢ショート動画投稿！\n＼\n【雑談】叶の好きがちキャラ #にじさんじ #叶 #shorts\nhttps://t.co/",
+      "url": "https://x.com/Kanae_2434/status/2102276994339852463"
+    },
+    {
+      "author": "Kanae_2434",
+      "score": 69.9,
+      "likes": 1165,
+      "likes_per_min": 44.64,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 226.3,
-      "text": "読みの能力が高すぎて感心してしまった\n腕がある人はやっぱ違うな https://t.co/8SpZhb98iY",
-      "url": "https://x.com/fukami11/status/2102220499975889335"
+      "age_minutes": 17.1,
+      "text": "／\n📢ショート動画投稿！\n＼\n【#SURGETown】ダイナミック墜落で大騒ぎ #にじさんじ #叶 #shorts\nht",
+      "url": "https://x.com/Kanae_2434/status/2102276794250629276"
     },
     {
-      "author": "mugenjin",
-      "score": 56.6,
-      "likes": 8945,
-      "likes_per_min": 91.44,
-      "acceleration": 3.4,
-      "measured": true,
-      "age_minutes": 167.2,
-      "text": "こういうのに雑に行ったっていい　1/2 https://t.co/SDFJbMu71i",
-      "url": "https://x.com/mugenjin/status/2102235379625832695"
+      "author": "Kanae_2434",
+      "score": 65.4,
+      "likes": 1174,
+      "likes_per_min": 67.5485645770362,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 17.4,
+      "text": "／\n📢ショート動画投稿！\n＼\n【#SURGETown】ふっかけた5億が払われ動揺 #にじさんじ #叶 #shorts\nh",
+      "url": "https://x.com/Kanae_2434/status/2102276713388687455"
     },
     {
-      "author": "shisou_",
-      "score": 28.2,
-      "likes": 17107,
-      "likes_per_min": 80.03,
-      "acceleration": 0.91,
+      "author": "FightersPR",
+      "score": 59.9,
+      "likes": 4901,
+      "likes_per_min": 44.99,
+      "acceleration": 0.69,
       "measured": true,
-      "age_minutes": 237.9,
-      "text": "10代って多感な時期だもんね\n\n31歳成人女性！？ https://t.co/UCJ4irQosN",
-      "url": "https://x.com/shisou_/status/2102217589648949697"
-    },
-    {
-      "author": "p_ka2295079",
-      "score": 31.2,
-      "likes": 26658,
-      "likes_per_min": 107.1,
-      "acceleration": 0.73,
-      "measured": true,
-      "age_minutes": 189.6,
-      "text": "続きが気になりすぎる https://t.co/3aMjelmkTq",
-      "url": "https://x.com/p_ka2295079/status/2102229737502622135"
+      "age_minutes": 72.1,
+      "text": "中島卓也選手が引退会見を行いました！\n\nサプライズで、子ガモの奈良間大己選手と細川凌平選手が登場🦆💐\n\n#ありがとう中島",
+      "url": "https://x.com/FightersPR/status/2102262941244653782"
     }
   ]
 }

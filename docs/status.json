@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-09-22T22:32:39.239506+00:00",
+  "updated_at": "2026-09-22T22:47:17.724043+00:00",
   "status": "success",
-  "started_at": "2026-09-22T22:32:02.272167+00:00",
-  "finished_at": "2026-09-22T22:32:39.237774+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 490,
-  "posts_flagged": 33,
+  "started_at": "2026-09-22T22:46:38.248712+00:00",
+  "finished_at": "2026-09-22T22:47:17.638104+00:00",
+  "posts_scanned": 298,
+  "posts_with_history": 222,
+  "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 345,
+  "minutes_since_last_notification": 360,
   "reject_reasons": {
-    "古すぎる": 358,
+    "古すぎる": 119,
+    "いいねが少なすぎる": 144,
     "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 141
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -30,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 43099,
-    "posts": 9883,
+    "total": 43397,
+    "posts": 9959,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 7,
-  "watchlist_active": 3402,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3412,
   "top5": [
     {
-      "author": "snsnokyoufu",
-      "score": 29.8,
-      "likes": 52680,
-      "likes_per_min": 17.92,
-      "acceleration": 1.32,
+      "author": "wni_jp",
+      "score": 38.3,
+      "likes": 183,
+      "likes_per_min": 4.1,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 738.0,
-      "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
-      "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
+      "age_minutes": 32.6,
+      "text": "【台風25号 関東の6割が連休の予定を変更】\nシルバーウィーク中の21日(月)に関東付近を通過した台風25号。大雨や強風",
+      "url": "https://x.com/wni_jp/status/2102521998928974076"
     },
     {
-      "author": "main_warabi",
-      "score": 30.1,
-      "likes": 80958,
-      "likes_per_min": 136.7,
-      "acceleration": 1.34,
-      "measured": true,
-      "age_minutes": 593.4,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
+      "author": "wanko_notcat",
+      "score": 82.7,
+      "likes": 602,
+      "likes_per_min": 48.99480464218938,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.3,
+      "text": "おはない₍ᵔ· ̫·ᵔ₎\n\nライブめーーーっちゃ楽しかったなあって思ってたら寝落ちしてた\n\n今日から活動6周年に向けて早",
+      "url": "https://x.com/wanko_notcat/status/2102527107914170778"
     },
     {
-      "author": "sirokuru_",
-      "score": 24.0,
-      "likes": 52139,
-      "likes_per_min": 11.49,
-      "acceleration": 1.98,
+      "author": "chi_bakun_chiba",
+      "score": 67.6,
+      "likes": 941,
+      "likes_per_min": 24.46,
+      "acceleration": 1.22,
       "measured": true,
-      "age_minutes": 923.3,
-      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
-      "url": "https://x.com/sirokuru_/status/2102294166197981315"
+      "age_minutes": 47.3,
+      "text": "台風で大変な思いをしているおともだちもいるよね。\n チーバくんは、みんなが安心して過ごせる日が一日も早く来ることを願って",
+      "url": "https://x.com/chi_bakun_chiba/status/2102518305370280242"
     },
     {
-      "author": "Order0o1",
-      "score": 34.5,
-      "likes": 99166,
-      "likes_per_min": 26.2,
-      "acceleration": 1.48,
+      "author": "oricon",
+      "score": 52.4,
+      "likes": 546,
+      "likes_per_min": 8.54,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 722.1,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
+      "age_minutes": 77.3,
+      "text": "🔑KEY TO LIT・岩﨑大昇＆猪狩蒼弥\nきょう放送『かまいガチ』出演📺️\n\n🆚“即帰宅”バトル初参戦\nデビュー発表日",
+      "url": "https://x.com/oricon/status/2102510752246407323"
     },
     {
-      "author": "HaHaHaHaaa____",
-      "score": 21.0,
-      "likes": 17879,
-      "likes_per_min": 2.58,
-      "acceleration": 1.29,
+      "author": "OKB1917",
+      "score": 25.8,
+      "likes": 1274,
+      "likes_per_min": 9.5,
+      "acceleration": 1.27,
       "measured": true,
-      "age_minutes": 741.5,
-      "text": "戦慄かなのインスタ https://t.co/D2RTEJda4m",
-      "url": "https://x.com/HaHaHaHaaa____/status/2102339918710337966"
+      "age_minutes": 221.0,
+      "text": "酔っ払ったポルトガル人に「オブリガードとアリガトウは似ているだろ」などと言われながら華麗にホテルへと退避",
+      "url": "https://x.com/OKB1917/status/2102474595249061967"
     }
   ]
 }

@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-09-22T10:17:21.723051+00:00",
+  "updated_at": "2026-09-22T10:33:02.723496+00:00",
   "status": "success",
-  "started_at": "2026-09-22T10:16:42.593535+00:00",
-  "finished_at": "2026-09-22T10:17:21.722022+00:00",
-  "posts_scanned": 295,
-  "posts_with_history": 180,
-  "posts_flagged": 13,
+  "started_at": "2026-09-22T10:32:32.192175+00:00",
+  "finished_at": "2026-09-22T10:33:02.722146+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 402,
+  "posts_flagged": 125,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 545,
+  "minutes_since_last_notification": 560,
   "reject_reasons": {
-    "古すぎる": 58,
-    "いいねが少なすぎる": 168,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 2,
+    "古すぎる": 145,
+    "初回観測かつ平均速度が低い": 7,
+    "失速済み": 5,
+    "いいねが少なすぎる": 219,
     "いいね稼ぎ疑い": 2
   },
   "config": {
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 21672,
-    "posts": 6999,
+    "total": 22272,
+    "posts": 7197,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 1564,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 3,
+  "watchlist_active": 1663,
   "top5": [
     {
-      "author": "AZKi_VDiVA",
-      "score": 87.8,
-      "likes": 930,
-      "likes_per_min": 91.8324199606237,
+      "author": "junnosuke_tag",
+      "score": 89.6,
+      "likes": 6219,
+      "likes_per_min": 87.18,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 90.0,
+      "text": "【田口淳之介よりご報告】\n\n本日、田口淳之介公式YouTubeチャンネル『田口淳之介official』にて、結婚と第一子",
+      "url": "https://x.com/junnosuke_tag/status/2102322775868448936"
+    },
+    {
+      "author": "yeskiri",
+      "score": 31.3,
+      "likes": 21574,
+      "likes_per_min": 108.56,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 219.1,
+      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
+      "url": "https://x.com/yeskiri/status/2102290272348754259"
+    },
+    {
+      "author": "enako_cos",
+      "score": 64.1,
+      "likes": 10500,
+      "likes_per_min": 214.74,
+      "acceleration": 1.29,
+      "measured": true,
+      "age_minutes": 57.6,
+      "text": "お尻のケアについて質問いただいたので\n私が普段使っているものを紹介します💁‍♀️\n\n顔と同じようにケアをする、というのを",
+      "url": "https://x.com/enako_cos/status/2102330937044549657"
+    },
+    {
+      "author": "gkmas_official",
+      "score": 67.2,
+      "likes": 587,
+      "likes_per_min": 91.37530662972758,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.1,
-      "text": "【#あずきんち 配信のお知らせ】\n\n本日🕙22:00(JST)~\n\n🎶🏰ホロライブドリームス #ホロドリ🏰🎶\n\n配信場所",
-      "url": "https://x.com/AZKi_VDiVA/status/2102338925843071445"
+      "age_minutes": 6.4,
+      "text": "【#学マス標ツアー_岩手公演_DAY1】\n\n♪M9  ワタシカワイイアヒルノコ\n\n初星学園より、倉本千奈の新曲「ワタシカ",
+      "url": "https://x.com/gkmas_official/status/2102343807081816237"
     },
     {
-      "author": "yagisan4444",
-      "score": 52.4,
-      "likes": 2318,
-      "likes_per_min": 23.61,
-      "acceleration": 0.77,
-      "measured": true,
-      "age_minutes": 75.0,
-      "text": "ほんとにこれでいいなら私は首を吊る。\n諦めて生きていたくはないから。\nその覚悟。\n\nちゃんと1回くらい読んで欲しい。\n言",
-      "url": "https://x.com/yagisan4444/status/2102322591222632517"
-    },
-    {
-      "author": "gintamamovie",
-      "score": 69.2,
-      "likes": 238,
-      "likes_per_min": 47.6,
+      "author": "gkmas_official",
+      "score": 68.0,
+      "likes": 704,
+      "likes_per_min": 71.90481155251165,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 4.6,
-      "text": "━━━━━━━━━━━━━━━━━━\n『新劇場版 銀魂 -吉原大炎上-』\n9/25(金)より＜超炎上版＞として再上映スタ",
-      "url": "https://x.com/gintamamovie/status/2102340315785175362"
-    },
-    {
-      "author": "tokoyamitowa",
-      "score": 70.1,
-      "likes": 1744,
-      "likes_per_min": 22.9,
-      "acceleration": 0.65,
-      "measured": true,
-      "age_minutes": 48.1,
-      "text": "⏰️２２：００～\n\n【 STREET FIGHTER 6 】テリー村からのプレゼン回のお知らせが届きました📩【常闇トワ/",
-      "url": "https://x.com/tokoyamitowa/status/2102329377572913601"
-    },
-    {
-      "author": "dramal_abc",
-      "score": 80.6,
-      "likes": 1955,
-      "likes_per_min": 75.38,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 26.3,
-      "text": "#修学旅行で仲良くないグループに入りました 2\n🚌人物紹介💨\n3-2 日置朝陽 ( #藤本洸大 )\n\n平凡な男子高校生。",
-      "url": "https://x.com/dramal_abc/status/2102334847331221625"
+      "age_minutes": 9.8,
+      "text": "【#学マス標ツアー_岩手公演_DAY1】\n\n♪M8  海奏ララバイ\n\n初星学園より、秦谷美鈴の新曲「海奏ララバイ」をサプ",
+      "url": "https://x.com/gkmas_official/status/2102342956116254965"
     }
   ]
 }

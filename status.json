@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T09:16:12.842550+00:00",
+  "updated_at": "2026-09-22T09:17:33.118140+00:00",
   "status": "success",
-  "started_at": "2026-09-22T09:15:38.910572+00:00",
-  "finished_at": "2026-09-22T09:16:12.841425+00:00",
-  "posts_scanned": 598,
-  "posts_with_history": 463,
-  "posts_flagged": 84,
+  "started_at": "2026-09-22T09:16:56.187609+00:00",
+  "finished_at": "2026-09-22T09:17:33.117087+00:00",
+  "posts_scanned": 295,
+  "posts_with_history": 283,
+  "posts_flagged": 16,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 483,
+  "minutes_since_last_notification": 485,
   "reject_reasons": {
-    "古すぎる": 155,
-    "いいね稼ぎ疑い": 5,
-    "誘導文パターン": 5,
-    "失速済み": 9,
-    "いいねが少なすぎる": 225,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 51,
+    "いいねが少なすぎる": 159,
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 6,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 19346,
-    "posts": 6448,
+    "total": 19641,
+    "posts": 6460,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 3,
-  "watchlist_active": 1348,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 1352,
   "top5": [
     {
-      "author": "yeskiri",
-      "score": 44.2,
-      "likes": 12794,
-      "likes_per_min": 108.6,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 142.3,
-      "text": "フルボッコで草 https://t.co/KjiBLS0IdA",
-      "url": "https://x.com/yeskiri/status/2102290272348754259"
-    },
-    {
-      "author": "yuta_ptv",
-      "score": 33.5,
-      "likes": 13876,
-      "likes_per_min": 91.48,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 208.4,
-      "text": "それは違うんだよね…\nそのロゴの設計者、おれだもん。",
-      "url": "https://x.com/yuta_ptv/status/2102273630554169788"
-    },
-    {
-      "author": "sirokuru_",
-      "score": 42.9,
-      "likes": 17483,
-      "likes_per_min": 175.72,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 126.8,
-      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
-      "url": "https://x.com/sirokuru_/status/2102294166197981315"
-    },
-    {
-      "author": "SN__20200122",
-      "score": 74.1,
-      "likes": 26405,
-      "likes_per_min": 155.45,
-      "acceleration": 0.84,
-      "measured": true,
-      "age_minutes": 76.2,
-      "text": "［ 毎週火曜日更新 ］\n6th Album「AMENITY」新情報解禁 ☃️\n\n第6弾 ─【ボーナストラック解禁】\n\nI",
-      "url": "https://x.com/SN__20200122/status/2102306907239117255"
-    },
-    {
-      "author": "Blue_ArchiveJP",
-      "score": 73.8,
-      "likes": 1381,
-      "likes_per_min": 100.24237495686484,
+      "author": "Ex_Albio",
+      "score": 62.3,
+      "likes": 570,
+      "likes_per_min": 55.612860561164105,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.8,
-      "text": "【生徒紹介・スキル編】\nタンパク質が熱によって固まる「熱凝固反応」の化学実験(？)をするエリナさん。\nEXスキルでは、円",
-      "url": "https://x.com/Blue_ArchiveJP/status/2102322618288545940"
+      "age_minutes": 10.2,
+      "text": "新しく来たARK鯖で超久しぶりの新ラグナロク完全攻略目指すぞ！！『 ARK: Survival Ascended 』＃4",
+      "url": "https://x.com/Ex_Albio/status/2102323842874265713"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "score": 84.2,
+      "likes": 281,
+      "likes_per_min": 14.05,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 37.5,
+      "text": "【台風で停電 ろうそくで民家全焼】\nhttps://t.co/Y0CPzKH6km",
+      "url": "https://x.com/YahooNewsTopics/status/2102316973610901808"
+    },
+    {
+      "author": "meytamaaa",
+      "score": 89.6,
+      "likes": 1190,
+      "likes_per_min": 92.37150220704045,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.9,
+      "text": "チャッピーと話してるめいちゃんがモラハラすぎて泣いちゃった https://t.co/ZspnyPkVRe",
+      "url": "https://x.com/meytamaaa/status/2102323182032294052"
+    },
+    {
+      "author": "livedoornews",
+      "score": 56.5,
+      "likes": 114,
+      "likes_per_min": 3.67,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 33.8,
+      "text": "【生出演】ACEes浮所飛貴、timelesz猪俣容疑者の逮捕に言及\nhttps://t.co/1KdQV7g4Yb\n\n",
+      "url": "https://x.com/livedoornews/status/2102317927085355042"
+    },
+    {
+      "author": "livedoornews",
+      "score": 81.7,
+      "likes": 514,
+      "likes_per_min": 16.09,
+      "acceleration": 1.31,
+      "measured": true,
+      "age_minutes": 45.7,
+      "text": "【住民落胆】「またやられた」千葉で再び冠水被害\nhttps://t.co/U8Upla2ZMq\n\n台風による大雨被害で、",
+      "url": "https://x.com/livedoornews/status/2102314927482696104"
     }
   ]
 }

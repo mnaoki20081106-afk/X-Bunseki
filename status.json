@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T05:02:51.520049+00:00",
+  "updated_at": "2026-09-22T05:17:16.737025+00:00",
   "status": "success",
-  "started_at": "2026-09-22T05:02:20.243671+00:00",
-  "finished_at": "2026-09-22T05:02:51.518781+00:00",
-  "posts_scanned": 580,
-  "posts_with_history": 442,
-  "posts_flagged": 68,
+  "started_at": "2026-09-22T05:16:41.144725+00:00",
+  "finished_at": "2026-09-22T05:17:16.735811+00:00",
+  "posts_scanned": 279,
+  "posts_with_history": 205,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 230,
+  "minutes_since_last_notification": 244,
   "reject_reasons": {
-    "古すぎる": 136,
-    "誘導文パターン": 15,
-    "失速済み": 6,
-    "いいねが少なすぎる": 198,
-    "いいね稼ぎ疑い": 4,
-    "初回観測かつ平均速度が低い": 9
+    "古すぎる": 38,
+    "いいねが少なすぎる": 149,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 5,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 11178,
-    "posts": 4374,
+    "total": 11457,
+    "posts": 4448,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 123,
-  "million_imp_rescued": 5,
-  "watchlist_active": 534,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 1,
+  "watchlist_active": 559,
   "top5": [
     {
-      "author": "UcmRu",
-      "score": 23.1,
-      "likes": 33296,
-      "likes_per_min": 28.79,
-      "acceleration": 0.68,
-      "measured": true,
-      "age_minutes": 863.3,
-      "text": "timeleszのコメント、寺西が一番ましで勝利が一番酷い",
-      "url": "https://x.com/UcmRu/status/2102045074041549285"
-    },
-    {
-      "author": "yudai_vo",
-      "score": 79.5,
-      "likes": 9710,
-      "likes_per_min": 79.0,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 117.7,
-      "text": "僕のInstagramはフォロワーの20%が韓国の方で、昨日の投稿に驚かれた方も多かったみたいで一晩で2000人くらいフ",
-      "url": "https://x.com/yudai_vo/status/2102232696978354448"
-    },
-    {
-      "author": "daigonishi22",
-      "score": 42.4,
-      "likes": 7414,
-      "likes_per_min": 20.57,
+      "author": "frontale_staff",
+      "score": 60.9,
+      "likes": 4532,
+      "likes_per_min": 26.22,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 182.5,
-      "text": "報告です。 https://t.co/1MzPahro99",
-      "url": "https://x.com/daigonishi22/status/2102216412190351501"
+      "age_minutes": 136.6,
+      "text": "【重要】9/23 記者会見実施のお知らせ\n\n川崎フロンターレから所属選手に関する大切なお知らせがありますので、以下のとお",
+      "url": "https://x.com/frontale_staff/status/2102231585567478119"
     },
     {
-      "author": "shisou_",
-      "score": 37.1,
-      "likes": 12294,
-      "likes_per_min": 87.6,
-      "acceleration": 0.84,
+      "author": "livedoornews",
+      "score": 87.8,
+      "likes": 1038,
+      "likes_per_min": 25.86,
+      "acceleration": 1.19,
       "measured": true,
-      "age_minutes": 177.8,
-      "text": "10代って多感な時期だもんね\n\n31歳成人女性！？ https://t.co/UCJ4irQosN",
-      "url": "https://x.com/shisou_/status/2102217589648949697"
+      "age_minutes": 59.0,
+      "text": "【解説】猪俣容疑者、なぜ釈放されない？軽傷の傷害事件では異例\nhttps://t.co/YA7DLNdhv0\n\n逮捕から",
+      "url": "https://x.com/livedoornews/status/2102251099914957308"
     },
     {
-      "author": "d_holi",
-      "score": 36.7,
-      "likes": 12017,
-      "likes_per_min": 54.31,
-      "acceleration": 0.91,
+      "author": "tamon_stage",
+      "score": 40.5,
+      "likes": 1161,
+      "likes_per_min": 5.03,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 184.7,
-      "text": "ほぼ僕の名前で笑ってしまった。\n日本は平和。 https://t.co/mxizX31wcO",
-      "url": "https://x.com/d_holi/status/2102215839382688055"
+      "age_minutes": 134.6,
+      "text": "【重要なお知らせ】\n　「多聞くん今どっち！？」THE STAGE\nジェイソン/玲王役 福澤侑さんに関する重要なお知らせ\n",
+      "url": "https://x.com/tamon_stage/status/2102232078914044025"
+    },
+    {
+      "author": "junkudo_ike",
+      "score": 75.4,
+      "likes": 545,
+      "likes_per_min": 21.36,
+      "acceleration": 2.31,
+      "measured": true,
+      "age_minutes": 69.0,
+      "text": "【臨時休業】\nただいま南池袋地区停電のため、一時休業とさせていただきます。\nお電話もつながりませんのでご了承くださいませ",
+      "url": "https://x.com/junkudo_ike/status/2102248604207657108"
+    },
+    {
+      "author": "tonma5963",
+      "score": 69.8,
+      "likes": 263,
+      "likes_per_min": 6.86,
+      "acceleration": 1.29,
+      "measured": true,
+      "age_minutes": 103.6,
+      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
+      "url": "https://x.com/tonma5963/status/2102239881972088982"
     }
   ]
 }

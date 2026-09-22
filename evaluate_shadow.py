@@ -72,6 +72,26 @@ def main():
             return dcg(ranked) / ideal_dcg if ideal_dcg else None
         n0, n1 = ndcg(1), ndcg(2)
 
+        # Time-to-detection across every persisted shadow observation.
+        # Misses receive a 240-minute penalty so a model cannot look fast by
+        # simply failing to detect difficult viral posts.
+        ttd_pairs = []
+        for pid, _, _, y in paired:
+            threshold = 10_000_000 if y >= 10_000_000 else (5_000_000 if y >= 5_000_000 else None)
+            if threshold is None:
+                continue
+            obs = [
+                r for r in groups[pid]
+                if r.get("shadow_gen1_predicted_24h") is not None
+                and r.get("predicted_final_impressions") is not None
+                and float(r.get("age_minutes") or 9999) <= 240
+            ]
+            g0_times = [float(r["age_minutes"]) for r in obs if int(r["predicted_final_impressions"]) >= threshold]
+            g1_times = [float(r["age_minutes"]) for r in obs if int(r["shadow_gen1_predicted_24h"]) >= threshold]
+            ttd_pairs.append((min(g0_times) if g0_times else 240.0, min(g1_times) if g1_times else 240.0))
+        ttd0 = sum(x[0] for x in ttd_pairs) / len(ttd_pairs) if ttd_pairs else None
+        ttd1 = sum(x[1] for x in ttd_pairs) / len(ttd_pairs) if ttd_pairs else None
+
         reg["shadow_metrics"] = {
             "paired_posts": len(paired),
             "status": "evaluated",
@@ -86,9 +106,9 @@ def main():
             "recall_10m_at_50_not_worse": r10_0 is not None and r10_1 is not None and r10_1 >= r10_0,
             "recall_5m_at_50_not_worse": r5_0 is not None and r5_1 is not None and r5_1 >= r5_0,
             "ndcg_100_not_worse": n0 is not None and n1 is not None and n1 >= n0,
-            # TTD requires multiple shadow observations before threshold crossing.
-            # Fail closed until enough evidence exists.
-            "time_to_detection_not_worse": False,
+            "ttd_viral_minutes_gen0": ttd0,
+            "ttd_viral_minutes_gen1": ttd1,
+            "time_to_detection_not_worse": ttd0 is not None and ttd1 is not None and ttd1 <= ttd0,
         }
     REGISTRY.write_text(json.dumps(reg, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[shadow-eval] paired={reg.get('shadow_metrics',{}).get('paired_posts',0)}")

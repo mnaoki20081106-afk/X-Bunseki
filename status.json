@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-22T05:32:41.989296+00:00",
+  "updated_at": "2026-09-22T05:47:23.045230+00:00",
   "status": "success",
-  "started_at": "2026-09-22T05:32:08.548176+00:00",
-  "finished_at": "2026-09-22T05:32:41.988154+00:00",
-  "posts_scanned": 582,
-  "posts_with_history": 446,
-  "posts_flagged": 62,
+  "started_at": "2026-09-22T05:46:45.890048+00:00",
+  "finished_at": "2026-09-22T05:47:23.044214+00:00",
+  "posts_scanned": 286,
+  "posts_with_history": 212,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 260,
+  "minutes_since_last_notification": 275,
   "reject_reasons": {
-    "古すぎる": 137,
-    "誘導文パターン": 9,
-    "いいね稼ぎ疑い": 7,
-    "失速済み": 8,
-    "いいねが少なすぎる": 202,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 47,
+    "いいねが少なすぎる": 156,
+    "失速済み": 4,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 12039,
-    "posts": 4584,
+    "total": 12325,
+    "posts": 4658,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 134,
-  "million_imp_rescued": 5,
-  "watchlist_active": 623,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 644,
   "top5": [
     {
-      "author": "UcmRu",
-      "score": 23.8,
-      "likes": 34075,
-      "likes_per_min": 26.1,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 893.1,
-      "text": "timeleszのコメント、寺西が一番ましで勝利が一番酷い",
-      "url": "https://x.com/UcmRu/status/2102045074041549285"
-    },
-    {
-      "author": "yudai_vo",
-      "score": 66.7,
-      "likes": 11789,
-      "likes_per_min": 69.67,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 147.6,
-      "text": "僕のInstagramはフォロワーの20%が韓国の方で、昨日の投稿に驚かれた方も多かったみたいで一晩で2000人くらいフ",
-      "url": "https://x.com/yudai_vo/status/2102232696978354448"
-    },
-    {
-      "author": "___mobko____",
-      "score": 30.1,
-      "likes": 3860,
-      "likes_per_min": 22.5,
+      "author": "Miyachika_TJ",
+      "score": 40.2,
+      "likes": 27529,
+      "likes_per_min": 64.45,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 227.3,
-      "text": "みなさんもこんな経験ありますか？ https://t.co/mOAKSZWJSm",
-      "url": "https://x.com/___mobko____/status/2102212629859324309"
+      "age_minutes": 214.3,
+      "text": "腕に抱えてこぼれ落ちそうなくらい\nたくさんのお祝いメッセージありがとうございます🎁嬉しい☺️\n29レベになりました✨\nそ",
+      "url": "https://x.com/Miyachika_TJ/status/2102219610099752962"
     },
     {
-      "author": "fukami11",
-      "score": 28.9,
-      "likes": 9800,
-      "likes_per_min": 49.988088527115416,
+      "author": "sakurazaka46",
+      "score": 35.6,
+      "likes": 7973,
+      "likes_per_min": 17.22,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 196.0,
-      "text": "読みの能力が高すぎて感心してしまった\n腕がある人はやっぱ違うな https://t.co/8SpZhb98iY",
-      "url": "https://x.com/fukami11/status/2102220499975889335"
+      "measured": true,
+      "age_minutes": 210.1,
+      "text": "小田倉麗奈がブログを更新しました！🌸｜ 16th Single https://t.co/JM7ACD7QB7 ぜひご覧",
+      "url": "https://x.com/sakurazaka46/status/2102220649091764639"
     },
     {
-      "author": "d_holi",
-      "score": 31.7,
-      "likes": 13512,
-      "likes_per_min": 50.1,
+      "author": "tonma5963",
+      "score": 62.4,
+      "likes": 475,
+      "likes_per_min": 6.74,
       "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 214.6,
-      "text": "ほぼ僕の名前で笑ってしまった。\n日本は平和。 https://t.co/mxizX31wcO",
-      "url": "https://x.com/d_holi/status/2102215839382688055"
+      "age_minutes": 133.7,
+      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
+      "url": "https://x.com/tonma5963/status/2102239881972088982"
+    },
+    {
+      "author": "arimoto_kaori",
+      "score": 35.1,
+      "likes": 11260,
+      "likes_per_min": 54.32,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 211.8,
+      "text": "ただただ恥ずかしい。全員交替。",
+      "url": "https://x.com/arimoto_kaori/status/2102220225043476535"
+    },
+    {
+      "author": "rinu_nico",
+      "score": 88.4,
+      "likes": 1700,
+      "likes_per_min": 95.50758563053056,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 17.8,
+      "text": "今日は22時から\n\n雨栗\nちーの\nポッキーで\n\nマイクラ肝試し👻",
+      "url": "https://x.com/rinu_nico/status/2102269055801631031"
     }
   ]
 }

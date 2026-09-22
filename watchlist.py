@@ -84,6 +84,7 @@ def update(evaluated: list[dict], now=None) -> dict:
         row.update({
             "post_id": pid,
             "author_handle": p.get("author_handle") or row.get("author_handle", ""),
+            "author_name": p.get("author_name") or row.get("author_name") or p.get("author_handle") or "",
             "url": p.get("url") or row.get("url", ""),
             "posted_at": p.get("posted_at") or row.get("posted_at"),
             "text_snippet": p.get("text_snippet") or row.get("text_snippet", ""),
@@ -92,6 +93,7 @@ def update(evaluated: list[dict], now=None) -> dict:
             "last_likes": int(p.get("likes") or 0),
             "last_retweets": int(p.get("retweets") or 0),
             "last_replies": int(p.get("replies") or 0),
+            "last_quotes": int(p.get("quotes") or 0),
             "last_bookmarks": int(p.get("bookmarks") or 0),
             "last_impressions_per_min": g.get("impressions_per_min"),
             "last_impressions_acceleration": g.get("impressions_acceleration"),

@@ -1,19 +1,17 @@
 {
-  "updated_at": "2026-09-22T23:02:59.408399+00:00",
+  "updated_at": "2026-09-22T23:17:05.493365+00:00",
   "status": "success",
-  "started_at": "2026-09-22T23:02:29.156289+00:00",
-  "finished_at": "2026-09-22T23:02:59.407008+00:00",
-  "posts_scanned": 590,
-  "posts_with_history": 452,
-  "posts_flagged": 31,
+  "started_at": "2026-09-22T23:16:31.673331+00:00",
+  "finished_at": "2026-09-22T23:17:05.492210+00:00",
+  "posts_scanned": 283,
+  "posts_with_history": 206,
+  "posts_flagged": 4,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 375,
+  "minutes_since_last_notification": 389,
   "reject_reasons": {
-    "古すぎる": 328,
-    "いいねが少なすぎる": 157,
-    "初回観測かつ平均速度が低い": 5,
-    "誘導文パターン": 2,
+    "古すぎる": 107,
+    "いいねが少なすぎる": 147,
     "いいね稼ぎ疑い": 2
   },
   "config": {
@@ -31,68 +29,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 43987,
-    "posts": 10097,
+    "total": 44270,
+    "posts": 10174,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 112,
-  "million_imp_rescued": 8,
-  "watchlist_active": 3453,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 3460,
   "top5": [
     {
-      "author": "yyypandapanda",
-      "score": 36.1,
-      "likes": 23077,
-      "likes_per_min": 34.59,
-      "acceleration": 1.61,
+      "author": "moeruasia01",
+      "score": 71.2,
+      "likes": 847,
+      "likes_per_min": 21.48,
+      "acceleration": 1.38,
       "measured": true,
-      "age_minutes": 746.2,
-      "text": "あー、しんどい。最後の投稿これで戦慄かなのの28歳の誕生日が9/8。天才アーティストは27歳で死ぬ伝説があるから区切りよ",
-      "url": "https://x.com/yyypandapanda/status/2102346354022597087"
+      "age_minutes": 82.3,
+      "text": "TBS「ひるおび」千葉県佐倉市の冠水した道路から中継、服をまくり上げて歩く女性の下半身をズームし19秒間も撮影\n\nエキス",
+      "url": "https://x.com/moeruasia01/status/2102516985716518943"
     },
     {
-      "author": "_mumei_R",
-      "score": 24.5,
-      "likes": 61365,
-      "likes_per_min": 13.28,
-      "acceleration": 1.51,
+      "author": "wni_jp",
+      "score": 32.9,
+      "likes": 258,
+      "likes_per_min": 2.13,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 864.8,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+      "age_minutes": 62.4,
+      "text": "【台風25号 関東の6割が連休の予定を変更】\nシルバーウィーク中の21日(月)に関東付近を通過した台風25号。大雨や強風",
+      "url": "https://x.com/wni_jp/status/2102521998928974076"
     },
     {
-      "author": "Order0o1",
-      "score": 33.7,
-      "likes": 100105,
-      "likes_per_min": 30.95,
-      "acceleration": 1.18,
-      "measured": true,
-      "age_minutes": 752.5,
-      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
-      "url": "https://x.com/Order0o1/status/2102344781154390352"
+      "author": "suchi_sub",
+      "score": 75.1,
+      "likes": 785,
+      "likes_per_min": 57.98695572227603,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 13.5,
+      "text": "いいですか、落ち着いて聞いてください。\n\nお は す ち の お 時 間 で す",
+      "url": "https://x.com/suchi_sub/status/2102534291804782910"
     },
     {
-      "author": "sirokuru_",
-      "score": 26.1,
-      "likes": 52765,
-      "likes_per_min": 20.64,
-      "acceleration": 1.8,
+      "author": "kumagai_chiba",
+      "score": 46.8,
+      "likes": 165,
+      "likes_per_min": 3.12,
+      "acceleration": 1.19,
       "measured": true,
-      "age_minutes": 953.6,
-      "text": "チーバくん音MAD対策されてんのおもろい https://t.co/L0nXDexBxW",
-      "url": "https://x.com/sirokuru_/status/2102294166197981315"
+      "age_minutes": 65.1,
+      "text": "鹿島川は平成6年度から広域河川改修と住宅市街地基盤整備事業を導入、毎年度億単位の予算を投入して河道拡幅・築堤を進めていま",
+      "url": "https://x.com/kumagai_chiba/status/2102521318768062969"
     },
     {
-      "author": "main_warabi",
-      "score": 29.7,
-      "likes": 86230,
-      "likes_per_min": 173.79,
-      "acceleration": 1.27,
+      "author": "sxzBST",
+      "score": 59.2,
+      "likes": 194,
+      "likes_per_min": 9.86,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 623.8,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
+      "age_minutes": 26.6,
+      "text": "ひるおび、歩行している女性の脚にズームインしてしまい炎上\n\nこれ一般人がやったら盗撮なのにテレビ局がやったら問題ないのお",
+      "url": "https://x.com/sxzBST/status/2102531007299891270"
     }
   ]
 }

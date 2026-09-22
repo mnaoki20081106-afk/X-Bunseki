@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T17:47:23.789254+00:00",
+  "updated_at": "2026-09-22T18:03:20.839508+00:00",
   "status": "success",
-  "started_at": "2026-09-22T17:46:52.920947+00:00",
-  "finished_at": "2026-09-22T17:47:23.788067+00:00",
-  "posts_scanned": 573,
-  "posts_with_history": 517,
-  "posts_flagged": 22,
+  "started_at": "2026-09-22T18:02:43.400867+00:00",
+  "finished_at": "2026-09-22T18:03:20.836464+00:00",
+  "posts_scanned": 588,
+  "posts_with_history": 552,
+  "posts_flagged": 23,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 60,
+  "minutes_since_last_notification": 76,
   "reject_reasons": {
-    "古すぎる": 213,
-    "いいね稼ぎ疑い": 5,
+    "古すぎる": 242,
+    "いいね稼ぎ疑い": 4,
     "失速済み": 11,
-    "いいねが少なすぎる": 198,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 175,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 32558,
-    "posts": 8778,
+    "total": 33146,
+    "posts": 8814,
     "oldest": "2026-09-21T23:24:32.105419+00:00"
   },
-  "viral_discovery_posts": 110,
-  "million_imp_rescued": 3,
-  "watchlist_active": 3168,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 6,
+  "watchlist_active": 3193,
   "top5": [
     {
-      "author": "_mumei_R",
-      "score": 23.8,
-      "likes": 57654,
-      "likes_per_min": 24.7,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 549.2,
-      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
-      "url": "https://x.com/_mumei_R/status/2102316524245815558"
-    },
-    {
       "author": "snsnokyoufu",
-      "score": 28.5,
-      "likes": 47551,
-      "likes_per_min": 27.07,
-      "acceleration": 0.77,
+      "score": 30.5,
+      "likes": 48015,
+      "likes_per_min": 29.09,
+      "acceleration": 1.07,
       "measured": true,
-      "age_minutes": 452.8,
+      "age_minutes": 468.7,
       "text": "【悲報】女子「人生経験としてこの髪型でお願いします！」 美容師「...手は尽くしました」\n\nなんでや..... http",
       "url": "https://x.com/snsnokyoufu/status/2102340787556204777"
     },
     {
-      "author": "k4sen",
-      "score": 38.2,
-      "likes": 23496,
-      "likes_per_min": 60.35,
-      "acceleration": 0.82,
+      "author": "_mumei_R",
+      "score": 23.2,
+      "likes": 57992,
+      "likes_per_min": 21.19,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 163.0,
+      "age_minutes": 565.1,
+      "text": "友達と話してて、名前が曖昧なのですが\n｢完全に俺が悪い。｣みたいなグループ名\n教えてください…",
+      "url": "https://x.com/_mumei_R/status/2102316524245815558"
+    },
+    {
+      "author": "Order0o1",
+      "score": 34.2,
+      "likes": 91500,
+      "likes_per_min": 131.85,
+      "acceleration": 0.53,
+      "measured": true,
+      "age_minutes": 452.8,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
+    },
+    {
+      "author": "k4sen",
+      "score": 34.5,
+      "likes": 24256,
+      "likes_per_min": 47.65,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 178.9,
       "text": "乳首マシンガンにされたことあるか？",
       "url": "https://x.com/k4sen/status/2102413713018171749"
     },
     {
-      "author": "p_kaki9",
-      "score": 33.1,
-      "likes": 7104,
-      "likes_per_min": 122.17,
-      "acceleration": null,
+      "author": "main_warabi",
+      "score": 32.4,
+      "likes": 8075,
+      "likes_per_min": 31.41,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 190.8,
-      "text": "クリックすると親子になーる🐧 https://t.co/GyGqRa9bow",
-      "url": "https://x.com/p_kaki9/status/2102406707200897289"
-    },
-    {
-      "author": "watarai_hibari",
-      "score": 53.6,
-      "likes": 24257,
-      "likes_per_min": 36.49,
-      "acceleration": 0.84,
-      "measured": true,
-      "age_minutes": 146.7,
-      "text": "【オリジナル曲】rail / 渡会雲雀 【アニメーションMV】\nhttps://t.co/CczGzg52cx\n\n   ",
-      "url": "https://x.com/watarai_hibari/status/2102417821238251826"
+      "age_minutes": 153.0,
+      "text": "セックス有識者が集まってきてしまった\nセックスって実在するんだ",
+      "url": "https://x.com/main_warabi/status/2102420247190155555"
     }
   ]
 }

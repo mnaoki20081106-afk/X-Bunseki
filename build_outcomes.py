@@ -35,6 +35,13 @@ def _nearest(rows, target, tolerance):
     return row if abs(float(row["age_minutes"]) - target) <= tolerance else None
 
 
+def _first_non_null(rows, key, fallback=None):
+    for row in rows:
+        if row.get(key) is not None:
+            return row.get(key)
+    return fallback
+
+
 def build_outcomes(groups):
     outcomes = {}
     for pid, rows in groups.items():
@@ -43,10 +50,10 @@ def build_outcomes(groups):
         out = {
             "post_id": pid,
             "posted_at": first.get("posted_at"),
-            "first_observed_at": first.get("first_observed_at") or first.get("observed_at"),
-            "first_observed_elapsed_min": first.get("first_observed_elapsed_min", first.get("age_minutes")),
-            "was_early_observed": first.get("was_early_observed"),
-            "is_rescue_only": first.get("is_rescue_only"),
+            "first_observed_at": _first_non_null(rows, "first_observed_at", first.get("observed_at")),
+            "first_observed_elapsed_min": _first_non_null(rows, "first_observed_elapsed_min", first.get("age_minutes")),
+            "was_early_observed": _first_non_null(rows, "was_early_observed"),
+            "is_rescue_only": _first_non_null(rows, "is_rescue_only"),
             "max_imp_observed": max(int(r.get("impressions") or 0) for r in rows),
         }
         for hours, target in HORIZONS.items():

@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-22T07:36:31.872678+00:00",
+  "updated_at": "2026-09-22T07:47:36.965246+00:00",
   "status": "success",
-  "started_at": "2026-09-22T07:35:59.117252+00:00",
-  "finished_at": "2026-09-22T07:36:31.871627+00:00",
-  "posts_scanned": 599,
-  "posts_with_history": 434,
-  "posts_flagged": 49,
+  "started_at": "2026-09-22T07:47:00.434425+00:00",
+  "finished_at": "2026-09-22T07:47:36.964252+00:00",
+  "posts_scanned": 293,
+  "posts_with_history": 222,
+  "posts_flagged": 11,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 384,
+  "minutes_since_last_notification": 395,
   "reject_reasons": {
-    "古すぎる": 158,
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 220,
-    "失速済み": 10,
-    "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 4
+    "古すぎる": 61,
+    "いいねが少なすぎる": 173,
+    "初回観測かつ平均速度が低い": 2,
+    "失速済み": 2,
+    "いいね稼ぎ疑い": 1,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 15497,
-    "posts": 5511,
+    "total": 15790,
+    "posts": 5582,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 129,
-  "million_imp_rescued": 1,
-  "watchlist_active": 965,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 978,
   "top5": [
     {
-      "author": "tenjinnotami",
-      "score": 44.1,
-      "likes": 32166,
-      "likes_per_min": 177.22,
-      "acceleration": 0.81,
+      "author": "FightersPR",
+      "score": 40.4,
+      "likes": 7311,
+      "likes_per_min": 20.93,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 207.2,
-      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
-      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
+      "age_minutes": 162.3,
+      "text": "中島卓也選手が引退会見を行いました！\n\nサプライズで、子ガモの奈良間大己選手と細川凌平選手が登場🦆💐\n\n#ありがとう中島",
+      "url": "https://x.com/FightersPR/status/2102262941244653782"
     },
     {
-      "author": "Genshin_7",
-      "score": 41.8,
-      "likes": 465,
-      "likes_per_min": 71.23710320228167,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.5,
-      "text": "【「原神 星々の幻境」イベント紹介】\n「幻境奥秘・幻夜の燈火」おしゃれアイテムが登場\n\n▼星願期間\nVer.7.1アップ",
-      "url": "https://x.com/Genshin_7/status/2102299359610073474"
-    },
-    {
-      "author": "yukowalski",
-      "score": 33.8,
-      "likes": 16738,
-      "likes_per_min": 85.84580390226004,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 195.0,
-      "text": "ミニマリスト妹VSマキシマリスト姉 https://t.co/GxkdMyIGRg",
-      "url": "https://x.com/yukowalski/status/2102251934279463246"
-    },
-    {
-      "author": "418814",
-      "score": 33.1,
-      "likes": 6529,
-      "likes_per_min": 49.43309899600978,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 132.1,
-      "text": "ガチで終わった https://t.co/EspriDFrmB",
-      "url": "https://x.com/418814/status/2102267762001551476"
-    },
-    {
-      "author": "tentenchan2525",
-      "score": 38.9,
-      "likes": 13631,
-      "likes_per_min": 67.05,
-      "acceleration": 0.87,
+      "author": "DEATHDOL_NOTE",
+      "score": 44.7,
+      "likes": 1027,
+      "likes_per_min": 6.49,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 158.8,
-      "text": "ひねくれオタクとピキるギャル https://t.co/ppfoOXM02P",
-      "url": "https://x.com/tentenchan2525/status/2102261029946466355"
+      "age_minutes": 130.0,
+      "text": "【害悪度S】\n\n厚生労働省 / 医師会\n\n備考 : 医師免許を持たない人が「アートメイク」を施術することを、すべて違法に",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2102271085941305423"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 65.5,
+      "likes": 1421,
+      "likes_per_min": 10.73,
+      "acceleration": 0.82,
+      "measured": true,
+      "age_minutes": 93.2,
+      "text": "【害悪度A】\n\nTBSテレビ\n\n備考\n・業界関係者から地雷チャンへ脅迫DM\n・無断使用した地雷チャンの動画を非公開にして",
+      "url": "https://x.com/DEATHDOL_NOTE/status/2102280329566495108"
+    },
+    {
+      "author": "swallowspr",
+      "score": 65.2,
+      "likes": 477,
+      "likes_per_min": 28.86,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 15.0,
+      "text": "【ファーム・リーグ】\n今日の活躍選手は4回無失点で勝利投手の ＃山崎太陽 投手。\n\n長年にわたり戸田で躍動した選手たちの",
+      "url": "https://x.com/swallowspr/status/2102300027213480331"
+    },
+    {
+      "author": "gekibnews",
+      "score": 28.1,
+      "likes": 142,
+      "likes_per_min": 0.81,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 178.8,
+      "text": "タイムレス猪俣周杜・活動休止だけど、\n\n活動休止・自粛を発表した芸能人の\n\nその後を追ってみた。 https://t.c",
+      "url": "https://x.com/gekibnews/status/2102258793472225743"
     }
   ]
 }

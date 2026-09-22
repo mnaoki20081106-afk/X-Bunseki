@@ -14,6 +14,7 @@ import gen1_controller
 import keyword_filter
 import notification_text
 import playwright_collector as collector
+import watchlist
 
 NOW = datetime(2026, 8, 23, 12, 0, 0, tzinfo=timezone.utc)
 
@@ -429,6 +430,41 @@ def test_gen1_readiness_fails_closed_on_low_completion():
     assert ready["regression_ready"] is False
     assert ready["p5_classifier_ready"] is False
     assert ready["p10_classifier_ready"] is False
+
+
+def test_watchlist_contains_required_24h_teacher_checkpoints():
+    required = {15, 30, 45, 60, 90, 120, 180, 240, 360, 720, 1440}
+    assert required.issubset(set(watchlist.TARGET_MINUTES))
+
+
+def test_public_timeline_metrics_survive_watchlist_tracking(tmp_path=None):
+    original_path = watchlist.PATH
+    import tempfile
+    from pathlib import Path
+    with tempfile.TemporaryDirectory() as d:
+        watchlist.PATH = Path(d) / "watchlist.json"
+        post = _post(minutes_old=30, impressions=500_000)
+        post.update({
+            "author_name": "表示名",
+            "quotes": 17,
+            "growth": {
+                "age_minutes": 30,
+                "impressions_per_min": 5000,
+                "impressions_acceleration": 1.2,
+                "likes_per_min": 20,
+            },
+            "buzz_score": 70,
+            "predicted_final_impressions": 2_000_000,
+            "prediction_confidence": "high",
+            "rejected_reason": None,
+            "discovery_source": "keyword",
+        })
+        state = watchlist.update([post], now=NOW)
+        row = state["1"]
+        assert row["author_name"] == "表示名"
+        assert row["last_quotes"] == 17
+    watchlist.PATH = original_path
+
 
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]

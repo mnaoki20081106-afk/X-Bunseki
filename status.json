@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-22T07:17:25.543253+00:00",
+  "updated_at": "2026-09-22T07:36:31.872678+00:00",
   "status": "success",
-  "started_at": "2026-09-22T07:16:50.593502+00:00",
-  "finished_at": "2026-09-22T07:17:25.542164+00:00",
-  "posts_scanned": 287,
-  "posts_with_history": 208,
-  "posts_flagged": 10,
+  "started_at": "2026-09-22T07:35:59.117252+00:00",
+  "finished_at": "2026-09-22T07:36:31.871627+00:00",
+  "posts_scanned": 599,
+  "posts_with_history": 434,
+  "posts_flagged": 49,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 365,
+  "minutes_since_last_notification": 384,
   "reject_reasons": {
-    "古すぎる": 28,
-    "失速済み": 11,
-    "いいねが少なすぎる": 164,
-    "初回観測かつ平均速度が低い": 3,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 158,
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 220,
+    "失速済み": 10,
+    "誘導文パターン": 1,
+    "いいね稼ぎ疑い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 14898,
-    "posts": 5346,
+    "total": 15497,
+    "posts": 5511,
     "oldest": "2026-09-21T13:17:52.703177+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 899,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 1,
+  "watchlist_active": 965,
   "top5": [
     {
-      "author": "reissuerecords",
-      "score": 73.7,
-      "likes": 596,
-      "likes_per_min": 119.2,
+      "author": "tenjinnotami",
+      "score": 44.1,
+      "likes": 32166,
+      "likes_per_min": 177.22,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 207.2,
+      "text": "今大阪に来ているのだが、店選びに失敗したようだ。\n\nなぜメニューの写真にAIを使うのだろうか？\n\n日本人の感性ではないと",
+      "url": "https://x.com/tenjinnotami/status/2102248863268815352"
+    },
+    {
+      "author": "Genshin_7",
+      "score": 41.8,
+      "likes": 465,
+      "likes_per_min": 71.23710320228167,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 2.7,
-      "text": "「Kenshi Yonezu Station」オープン中！\n\nチャット欄、今日も目が離せません。\n\n▶ https://",
-      "url": "https://x.com/reissuerecords/status/2102295517229412514"
+      "age_minutes": 6.5,
+      "text": "【「原神 星々の幻境」イベント紹介】\n「幻境奥秘・幻夜の燈火」おしゃれアイテムが登場\n\n▼星願期間\nVer.7.1アップ",
+      "url": "https://x.com/Genshin_7/status/2102299359610073474"
     },
     {
-      "author": "tonma5963",
-      "score": 39.6,
-      "likes": 1013,
-      "likes_per_min": 6.23,
-      "acceleration": 1.37,
-      "measured": true,
-      "age_minutes": 223.8,
-      "text": "【訃報】競輪・諸橋愛選手が49歳で死去　奈良競輪での落車後、治療を受けるも…\n\nJKAは9月22日、新潟の諸橋愛選手が亡",
-      "url": "https://x.com/tonma5963/status/2102239881972088982"
-    },
-    {
-      "author": "hochi_giants",
-      "score": 60.9,
-      "likes": 1759,
-      "likes_per_min": 10.87,
+      "author": "yukowalski",
+      "score": 33.8,
+      "likes": 16738,
+      "likes_per_min": 85.84580390226004,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 121.1,
-      "text": "マツダスタジアム\nスタメン\n【巨人】　　【広島】\n8松本 　　　  7佐藤啓\n4吉川 　           4菊池\n6",
-      "url": "https://x.com/hochi_giants/status/2102265717911642504"
+      "measured": false,
+      "age_minutes": 195.0,
+      "text": "ミニマリスト妹VSマキシマリスト姉 https://t.co/GxkdMyIGRg",
+      "url": "https://x.com/yukowalski/status/2102251934279463246"
     },
     {
-      "author": "FightersPR",
-      "score": 49.3,
-      "likes": 6659,
-      "likes_per_min": 29.44,
-      "acceleration": 1.14,
-      "measured": true,
+      "author": "418814",
+      "score": 33.1,
+      "likes": 6529,
+      "likes_per_min": 49.43309899600978,
+      "acceleration": null,
+      "measured": false,
       "age_minutes": 132.1,
-      "text": "中島卓也選手が引退会見を行いました！\n\nサプライズで、子ガモの奈良間大己選手と細川凌平選手が登場🦆💐\n\n#ありがとう中島",
-      "url": "https://x.com/FightersPR/status/2102262941244653782"
+      "text": "ガチで終わった https://t.co/EspriDFrmB",
+      "url": "https://x.com/418814/status/2102267762001551476"
     },
     {
-      "author": "PoppinCoco3",
-      "score": 45.7,
-      "likes": 4512,
-      "likes_per_min": 36.64,
-      "acceleration": 1.02,
+      "author": "tentenchan2525",
+      "score": 38.9,
+      "likes": 13631,
+      "likes_per_min": 67.05,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 214.3,
-      "text": "日本開催のアジア大会。\n\n世界に流す公式映像の制作は中国のCMG-IMP。 開催国以外がホストブロードキャスターを務める",
-      "url": "https://x.com/PoppinCoco3/status/2102242275292058084"
+      "age_minutes": 158.8,
+      "text": "ひねくれオタクとピキるギャル https://t.co/ppfoOXM02P",
+      "url": "https://x.com/tentenchan2525/status/2102261029946466355"
     }
   ]
 }

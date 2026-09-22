@@ -22,6 +22,8 @@ import notification_text
 import notify_state
 import pushover_notifier
 import watchlist
+import feature_engineering
+import shadow_predictor
 from playwright_collector import SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24
@@ -214,6 +216,20 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
     rows = []
     watch_state = watch_state or {}
 
+    # Existing raw rows are used only to construct the optional Gen1 shadow
+    # trajectory. If no challenger artifact exists, shadow_predictor is a no-op.
+    historical = {}
+    history_path = BASE_DIR / "data" / "training_snapshots.jsonl"
+    if shadow_predictor.ARTIFACT.exists() and history_path.exists():
+        try:
+            for line in history_path.read_text(encoding="utf-8").splitlines():
+                r = json.loads(line)
+                if r.get("post_id"):
+                    historical.setdefault(str(r["post_id"]), []).append(r)
+        except Exception as e:
+            print(f"[shadow] snapshot history load failed: {e}")
+            historical = {}
+
     # Persist the exact contemporaneous production ordering for later Recall@K/NDCG.
     early_ranked = sorted(
         [p for p in posts if float((p.get("growth") or {}).get("age_minutes") or 9999) <= 240],
@@ -238,6 +254,24 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
             continue
         g = p.get("growth") or {}
         w = watch_state.get(pid) or {}
+        shadow_pred = None
+        if shadow_predictor.ARTIFACT.exists():
+            current_raw = {
+                "post_id": pid, "observed_at": observed_at, "age_minutes": g.get("age_minutes"),
+                "impressions": imp, "likes": p.get("likes") or 0,
+                "retweets": p.get("retweets") or 0, "replies": p.get("replies") or 0,
+                "quotes": p.get("quotes") or 0, "bookmarks": p.get("bookmarks") or 0,
+                "was_early_observed": w.get("was_early_observed"),
+                "is_rescue_only": w.get("is_rescue_only"),
+                "discovery_source": p.get("discovery_source") or "keyword",
+            }
+            trajectory = list(historical.get(str(pid), [])) + [current_raw]
+            try:
+                feats = feature_engineering.make_features(trajectory)
+                if feats:
+                    shadow_pred = shadow_predictor.predict(feats[-1])
+            except Exception as e:
+                print(f"[shadow] feature/predict failed for {pid}: {e}")
         rows.append({
             "schema_version": 2,
             "post_id": pid,
@@ -280,6 +314,7 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
             "prediction_basis": p.get("prediction_basis"),
             "production_model_version": model_version,
             "production_early_rank": early_rank.get(pid),
+            "shadow_gen1_predicted_24h": shadow_pred,
             "prediction_remaining_multiplier": p.get("prediction_remaining_multiplier"),
             "prediction_accel_adjustment": p.get("prediction_accel_adjustment"),
             "prediction_quality_adjustment": p.get("prediction_quality_adjustment"),

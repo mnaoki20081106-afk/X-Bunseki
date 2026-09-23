@@ -1,4 +1,4 @@
-name: Temporary public X ID probe
+name: Temporary authenticated X page probe
 on:
   push:
     branches: [fix/query-discovery-diagnostics]
@@ -7,21 +7,21 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 2
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Probe public endpoints
+      - name: Check first-party X page
+        env:
+          X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
         run: |
           node --input-type=module <<'JS'
-          const urls=["https://x.com/","https://x.com/home","https://x.com/search?q=lang%3Aja","https://abs.twimg.com/responsive-web/client-web/main.60bedca26c9a9faaa.js"];
-          for (const url of urls) {
-            try {
-              const response=await fetch(url,{signal:AbortSignal.timeout(12000),redirect:'error'});
-              console.log(new URL(url).hostname + new URL(url).pathname.slice(0,48) + ' status=' + response.status);
-              await response.body?.cancel();
-            } catch (error) { console.log(new URL(url).hostname + new URL(url).pathname.slice(0,48) + ' error=' + error.name); }
-          }
+          const state=JSON.parse(Buffer.from(process.env.X_SESSION_STATE_B64||'', 'base64').toString('utf8'));
+          const cookies=Object.fromEntries((state.cookies||[]).map(c=>[c.name,c.value]));
+          if (!cookies.auth_token || !cookies.ct0) throw new Error('session_unavailable');
+          const response=await fetch('https://x.com/home',{headers:{cookie:'auth_token='+cookies.auth_token+'; ct0='+cookies.ct0},signal:AbortSignal.timeout(15000),redirect:'error'});
+          const html=await response.text();
+          console.log('home_status='+response.status+' has_main_bundle='+/responsive-web\\/client-web\\/main\\.[A-Za-z0-9_-]+\\.js/.test(html));
           JS

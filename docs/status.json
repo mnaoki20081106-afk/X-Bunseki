@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T21:33:54.657456+00:00",
+  "updated_at": "2026-09-23T21:49:23.949326+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,22 +13,23 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790200100
+      "reset": 1790201030
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T21:33:19.506593+00:00",
-  "finished_at": "2026-09-23T21:33:54.656132+00:00",
-  "posts_scanned": 607,
-  "posts_with_history": 473,
-  "posts_flagged": 13,
+  "started_at": "2026-09-23T21:48:49.673291+00:00",
+  "finished_at": "2026-09-23T21:49:23.947437+00:00",
+  "posts_scanned": 606,
+  "posts_with_history": 465,
+  "posts_flagged": 16,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 281,
+  "minutes_since_last_notification": 296,
   "reject_reasons": {
-    "古すぎる": 403,
-    "いいねが少なすぎる": 144,
-    "初回観測かつ平均速度が低い": 4
+    "古すぎる": 395,
+    "初回観測かつ平均速度が低い": 9,
+    "いいねが少なすぎる": 142,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -45,68 +46,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47133,
-    "posts": 13602,
-    "oldest": "2026-09-22T21:47:18.923705+00:00"
+    "total": 47444,
+    "posts": 13633,
+    "oldest": "2026-09-22T22:02:02.999681+00:00"
   },
-  "viral_discovery_posts": 133,
-  "million_imp_rescued": 2,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 1,
   "watchlist_active": 6265,
   "top5": [
     {
-      "author": "y_llrq",
-      "score": 26.9,
-      "likes": 35513,
-      "likes_per_min": 7.68,
-      "acceleration": 1.04,
-      "measured": true,
-      "age_minutes": 931.7,
-      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
-      "url": "https://x.com/i/status/2102639649718214672"
-    },
-    {
-      "author": "Ram1ram7",
-      "score": 22.5,
-      "likes": 43868,
-      "likes_per_min": 8.63,
-      "acceleration": 0.62,
-      "measured": true,
-      "age_minutes": 792.1,
-      "text": "これめっちゃ楽しい♡ https://t.co/qxiI21Fdmg",
-      "url": "https://x.com/i/status/2102674781573349631"
-    },
-    {
-      "author": "nino_honmono",
-      "score": 76.1,
-      "likes": 10337,
-      "likes_per_min": 282.2,
+      "author": "ktri6262",
+      "score": 24.4,
+      "likes": 85725,
+      "likes_per_min": 89.93167399131868,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 31.7,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/i/status/2102866142524322020"
+      "measured": false,
+      "age_minutes": 953.2,
+      "text": "これさ、家族3人でベンチに座ってアイス食べてたらしいんだよね...\nそしたら、いきなり飲酒運転の車にぶつけられた大型バイ",
+      "url": "https://x.com/i/status/2102638130419712504"
     },
     {
       "author": "subsugi_warota",
-      "score": 40.1,
-      "likes": 12391,
-      "likes_per_min": 51.62,
-      "acceleration": 0.93,
+      "score": 39.1,
+      "likes": 13303,
+      "likes_per_min": 58.88,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 201.8,
+      "age_minutes": 217.3,
       "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
       "url": "https://x.com/i/status/2102823335386345915"
     },
     {
       "author": "Tigers_140609",
-      "score": 47.6,
-      "likes": 4077,
-      "likes_per_min": 30.51,
-      "acceleration": 1.12,
+      "score": 43.6,
+      "likes": 4564,
+      "likes_per_min": 31.44,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 190.0,
+      "age_minutes": 205.5,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 76.0,
+      "likes": 14342,
+      "likes_per_min": 258.57,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 47.2,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/i/status/2102866142524322020"
+    },
+    {
+      "author": "oliverD_23",
+      "score": 50.3,
+      "likes": 4434,
+      "likes_per_min": 110.21,
+      "acceleration": 1.13,
+      "measured": true,
+      "age_minutes": 66.0,
+      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
+      "url": "https://x.com/i/status/2102861406941196616"
     }
   ]
 }

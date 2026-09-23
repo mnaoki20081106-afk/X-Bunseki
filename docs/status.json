@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T17:47:48.344153+00:00",
+  "updated_at": "2026-09-23T18:03:12.229875+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 28,
     "detail_failed": 0,
     "detail_skipped": 12,
-    "invalid_tweets": 10,
+    "invalid_tweets": 9,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790186532
+      "reset": 1790187463
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T17:47:11.543399+00:00",
-  "finished_at": "2026-09-23T17:47:48.343071+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 558,
-  "posts_flagged": 11,
+  "started_at": "2026-09-23T18:02:42.787496+00:00",
+  "finished_at": "2026-09-23T18:03:12.228228+00:00",
+  "posts_scanned": 599,
+  "posts_with_history": 550,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 55,
+  "minutes_since_last_notification": 70,
   "reject_reasons": {
-    "古すぎる": 208,
-    "いいねが少なすぎる": 191,
-    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 224,
+    "いいねが少なすぎる": 175,
+    "失速済み": 15,
     "いいね稼ぎ疑い": 3,
     "誘導文パターン": 3,
-    "失速済み": 7
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46914,
-    "posts": 13717,
+    "total": 47513,
+    "posts": 13766,
     "oldest": "2026-09-22T18:03:20.505630+00:00"
   },
-  "viral_discovery_posts": 129,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6430,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 4,
+  "watchlist_active": 6420,
   "top5": [
     {
-      "author": "YahooNewsTopics",
-      "score": 44.4,
-      "likes": 6290,
-      "likes_per_min": 18.31,
-      "acceleration": 0.95,
+      "author": "mask_watermelon",
+      "score": 26.3,
+      "likes": 46022,
+      "likes_per_min": 34.18,
+      "acceleration": 0.59,
       "measured": true,
-      "age_minutes": 167.8,
+      "age_minutes": 811.4,
+      "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
+      "url": "https://x.com/i/status/2102616899305852990"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "score": 41.4,
+      "likes": 6553,
+      "likes_per_min": 17.08,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 183.2,
       "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
       "url": "https://x.com/i/status/2102774991628730557"
     },
     {
-      "author": "MitoTsukino",
-      "score": 41.9,
-      "likes": 34646,
-      "likes_per_min": 90.64,
-      "acceleration": 0.82,
+      "author": "sukosuko_sukoya",
+      "score": 29.7,
+      "likes": 32196,
+      "likes_per_min": 58.06,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 146.9,
+      "age_minutes": 206.1,
+      "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
+      "url": "https://x.com/i/status/2102769226490753454"
+    },
+    {
+      "author": "MitoTsukino",
+      "score": 39.2,
+      "likes": 35811,
+      "likes_per_min": 75.66,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 162.3,
       "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
       "url": "https://x.com/i/status/2102780251738894502"
     },
     {
       "author": "info__Johnnys",
-      "score": 38.4,
-      "likes": 7725,
-      "likes_per_min": 14.66,
-      "acceleration": 0.87,
+      "score": 35.2,
+      "likes": 7919,
+      "likes_per_min": 12.6,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 188.0,
+      "age_minutes": 203.4,
       "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
       "url": "https://x.com/i/status/2102769895759073722"
-    },
-    {
-      "author": "sukosuko_sukoya",
-      "score": 32.2,
-      "likes": 31302,
-      "likes_per_min": 65.87,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 190.7,
-      "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
-      "url": "https://x.com/i/status/2102769226490753454"
-    },
-    {
-      "author": "k_maru_dau_baby",
-      "score": 32.2,
-      "likes": 8026,
-      "likes_per_min": 8.77,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 192.9,
-      "text": "このメンツをベルーナに集めて大トリAdoがおどるポンポコリン歌って帰って行ったの笑う（笑えない） https://t.c",
-      "url": "https://x.com/i/status/2102768662897893670"
     }
   ]
 }

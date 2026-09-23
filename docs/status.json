@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-09-23T01:46:58.534735+00:00",
+  "updated_at": "2026-09-23T02:02:42.893060+00:00",
   "status": "success",
-  "started_at": "2026-09-23T01:46:22.346888+00:00",
-  "finished_at": "2026-09-23T01:46:58.533674+00:00",
+  "started_at": "2026-09-23T02:02:08.418821+00:00",
+  "finished_at": "2026-09-23T02:02:42.891409+00:00",
   "posts_scanned": 608,
-  "posts_with_history": 495,
-  "posts_flagged": 52,
+  "posts_with_history": 482,
+  "posts_flagged": 49,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 215,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 8,
-    "いいねが少なすぎる": 223,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 1
+    "古すぎる": 211,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 207,
+    "誘導文パターン": 7,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47522,
-    "posts": 10134,
+    "total": 48130,
+    "posts": 10260,
     "oldest": "2026-09-22T03:53:18.582792+00:00"
   },
-  "viral_discovery_posts": 132,
+  "viral_discovery_posts": 137,
   "million_imp_rescued": 2,
-  "watchlist_active": 3826,
+  "watchlist_active": 3880,
   "top5": [
     {
       "author": "main_warabi",
-      "score": 27.9,
-      "likes": 115434,
-      "likes_per_min": 157.71,
-      "acceleration": 0.92,
+      "score": 28.0,
+      "likes": 117780,
+      "likes_per_min": 149.06,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 787.7,
+      "age_minutes": 803.5,
       "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
       "url": "https://x.com/main_warabi/status/2102377179522949621"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 74.4,
-      "likes": 4256,
-      "likes_per_min": 28.18,
-      "acceleration": 0.78,
-      "measured": true,
-      "age_minutes": 143.0,
-      "text": "【波紋 大食い動画の収益停止相次ぐ】\nhttps://t.co/xNRMk5gAXp",
-      "url": "https://x.com/YahooNewsTopics/status/2102539440103326148"
-    },
-    {
       "author": "jcom_support",
       "score": 100.0,
-      "likes": 1064,
-      "likes_per_min": 49.29,
-      "acceleration": null,
+      "likes": 1959,
+      "likes_per_min": 56.87,
+      "acceleration": 1.15,
       "measured": true,
-      "age_minutes": 22.4,
+      "age_minutes": 38.2,
       "text": "【お知らせ】現在、J:COM NETのインターネット接続がご利用できない状況が発生しております。\nまた各種サポート、カス",
       "url": "https://x.com/jcom_support/status/2102569778233917483"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 71.8,
-      "likes": 2431,
-      "likes_per_min": 32.21,
-      "acceleration": 1.75,
+      "score": 74.2,
+      "likes": 4764,
+      "likes_per_min": 32.28,
+      "acceleration": 1.15,
       "measured": true,
-      "age_minutes": 128.0,
-      "text": "【ダチョウ1頭が徘徊と通報 滋賀】\nhttps://t.co/y3S4esD3gS",
-      "url": "https://x.com/YahooNewsTopics/status/2102543214247071875"
+      "age_minutes": 158.7,
+      "text": "【波紋 大食い動画の収益停止相次ぐ】\nhttps://t.co/xNRMk5gAXp",
+      "url": "https://x.com/YahooNewsTopics/status/2102539440103326148"
     },
     {
       "author": "yuruhuwa_kdenpa",
-      "score": 74.9,
-      "likes": 2830,
-      "likes_per_min": 33.04,
-      "acceleration": 0.83,
+      "score": 65.7,
+      "likes": 3225,
+      "likes_per_min": 25.1,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 112.2,
+      "age_minutes": 127.9,
       "text": "本日朝8時\n印旛沼の最新映像\n\n堤防が切れた部分からは水が流出し続けており更に浸水被害が拡大する可能性\n\nこれ応急工事で",
       "url": "https://x.com/yuruhuwa_kdenpa/status/2102547182083854716"
+    },
+    {
+      "author": "YahooNewsTopics",
+      "score": 74.8,
+      "likes": 3823,
+      "likes_per_min": 142.58,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 62.7,
+      "text": "【徘徊「ダチョウ」エミューだった】\nhttps://t.co/0TpvdJPstj",
+      "url": "https://x.com/YahooNewsTopics/status/2102563598581256514"
     }
   ]
 }

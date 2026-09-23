@@ -50,11 +50,18 @@ test('distinguishes auth, restrictions, rate limits and request failures', () =>
   assert.equal(responseError(503, {}), 'upstream_error');
 });
 
-test('rate guard isolates operations; auth stops both', () => {
+test('rate guard isolates operations; detail schema errors stay post-local; auth stops both', () => {
   const guard = createRequestGuard();
   guard.fail('SearchTimeline', 'rate_limited');
   assert.throws(() => guard.check('SearchTimeline'), /rate_limited/);
   guard.check('TweetDetail');
+
+  const detailGuard = createRequestGuard();
+  detailGuard.fail('TweetDetail', 'schema_changed');
+  assert.doesNotThrow(() => detailGuard.check('TweetDetail'));
+  detailGuard.fail('SearchTimeline', 'schema_changed');
+  assert.throws(() => detailGuard.check('SearchTimeline'), /schema_changed/);
+
   guard.fail('TweetDetail', 'session_expired');
   assert.throws(() => guard.check('SearchTimeline'), /session_expired/);
   assert.throws(() => guard.check('TweetDetail'), /session_expired/);
@@ -87,7 +94,10 @@ function collect(scenario) {
       { name: 'auth_token', value: 'FAKE_TOKEN' }, { name: 'ct0', value: 'FAKE_CSRF' },
     ] }));
     writeFileSync(join(dir, '.x-agent-queries.json'), JSON.stringify(['first', 'second', 'third'].map(query => ({ query, product: 'Latest', limit: 20, source: 'keyword' }))));
-    writeFileSync(join(dir, '.x-agent-watchlist.json'), JSON.stringify([{ post_id: '456', last_impressions: 90000 }]));
+    const watchlist = scenario === 'detail_schema_then_success'
+      ? [{ post_id: '456', last_impressions: 90000 }, { post_id: '789', last_impressions: 120000 }]
+      : [{ post_id: '456', last_impressions: 90000 }];
+    writeFileSync(join(dir, '.x-agent-watchlist.json'), JSON.stringify(watchlist));
     const result = spawnSync(process.execPath, ['--import', fileURLToPath(new URL('./mock-x-transport.mjs', import.meta.url)), fileURLToPath(new URL('../x_collector.mjs', import.meta.url))], {
       cwd: dir, encoding: 'utf8', timeout: 15000,
       env: { ...process.env, TEST_SCENARIO: scenario, SEARCH_CONCURRENCY: '1', DETAIL_CONCURRENCY: '1',
@@ -117,6 +127,16 @@ test('partial success keeps valid data and reports degraded', () => {
   assert.equal(result.health.error_code, 'rate_limited');
   assert.equal(result.requests.filter(r => r.operation === 'SearchTimeline').length, 2);
   assert.equal(result.posts.length, 2);
+});
+
+test('one TweetDetail schema mismatch does not poison later watchlist details', () => {
+  const result = collect('detail_schema_then_success');
+  assert.equal(result.health.status, 'degraded');
+  assert.equal(result.health.error_code, 'schema_changed');
+  assert.equal(result.health.detail_succeeded, 1);
+  assert.equal(result.health.detail_failed, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '789']);
+  assert.equal(result.requests.filter(r => r.operation === 'TweetDetail').length, 2);
 });
 for (const [scenario, status] of [['auth', 'session_expired'], ['forbidden', 'access_denied'], ['rate', 'rate_limited'], ['schema', 'schema_changed'], ['missing_views', 'schema_changed'], ['network', 'network_error']]) {
   test(`full collector detects ${scenario}`, () => {

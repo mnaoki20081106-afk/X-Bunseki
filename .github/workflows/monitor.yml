@@ -33,16 +33,31 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Pace X collection
+        id: pace
+        if: github.event.inputs.test_notification != 'true'
+        env:
+          # SearchTimelineの実測枠は直近ログで50リクエスト/窓。
+          # statusにXのreset時刻があればそれを優先し、無ければ16分間隔にする。
+          X_MIN_COLLECTION_INTERVAL_SECONDS: "960"
+          X_DUPLICATE_SKIP_BELOW_SECONDS: "600"
+          X_MAX_PACING_WAIT_SECONDS: "360"
+          X_RATE_RESET_GRACE_SECONDS: "20"
+        run: python monitor_pacing.py
+
       - uses: actions/setup-node@v4
+        if: steps.pace.outputs.skip != 'true'
         with:
           node-version: "22"
 
       - name: Install dependencies
+        if: steps.pace.outputs.skip != 'true'
         run: |
           pip install -r requirements.txt
           npm ci --ignore-scripts
 
       - name: Restore DB
+        if: steps.pace.outputs.skip != 'true'
         uses: actions/cache@v4
         with:
           path: data/monitor.db
@@ -51,7 +66,7 @@ jobs:
             monitor-db-
 
       - name: Restore X login session
-        if: github.event.inputs.test_notification != 'true'
+        if: github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'
         run: |
           set -e
           python3 << 'PY'
@@ -93,6 +108,7 @@ jobs:
           X_SESSION_STATE_B64: ${{ secrets.X_SESSION_STATE }}
 
       - name: Run monitor
+        if: steps.pace.outputs.skip != 'true'
         env:
           X_SESSION_STATE_PATH: storage_state.json
           X_GRAPHQL_QUERY_IDS: ${{ vars.X_GRAPHQL_QUERY_IDS }}

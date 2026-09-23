@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T11:03:38.426030+00:00",
+  "updated_at": "2026-09-23T11:19:11.793206+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790162284
+      "reset": 1790163214
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T11:03:03.325022+00:00",
-  "finished_at": "2026-09-23T11:03:38.424885+00:00",
-  "posts_scanned": 599,
-  "posts_with_history": 379,
-  "posts_flagged": 107,
+  "started_at": "2026-09-23T11:18:34.108179+00:00",
+  "finished_at": "2026-09-23T11:19:11.791916+00:00",
+  "posts_scanned": 601,
+  "posts_with_history": 412,
+  "posts_flagged": 124,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 571,
+  "minutes_since_last_notification": 587,
   "reject_reasons": {
     "古すぎる": 126,
-    "いいね稼ぎ疑い": 6,
+    "失速済み": 5,
+    "いいね稼ぎ疑い": 4,
     "誘導文パターン": 3,
-    "失速済み": 6,
-    "初回観測かつ平均速度が低い": 9,
-    "いいねが少なすぎる": 236
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 226
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51066,
-    "posts": 12721,
-    "oldest": "2026-09-22T11:17:34.141599+00:00"
+    "total": 51067,
+    "posts": 12814,
+    "oldest": "2026-09-22T11:32:51.109787+00:00"
   },
   "viral_discovery_posts": 130,
   "million_imp_rescued": 3,
-  "watchlist_active": 5709,
+  "watchlist_active": 5786,
   "top5": [
     {
-      "author": "rui912912",
-      "score": 32.4,
-      "likes": 12608,
-      "likes_per_min": 42.14,
-      "acceleration": 0.96,
+      "author": "ngnchiikawa",
+      "score": 64.8,
+      "likes": 201852,
+      "likes_per_min": 3757.3606309814445,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 53.7,
+      "text": "⭐️ https://t.co/qIn8fg7Hj0",
+      "url": "https://x.com/i/status/2102705903581765731"
+    },
+    {
+      "author": "gonsan_vl",
+      "score": 77.9,
+      "likes": 26825,
+      "likes_per_min": 962.04,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 229.0,
-      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
-      "url": "https://x.com/i/status/2102657881619448301"
+      "age_minutes": 35.4,
+      "text": "昔Valorantが好きだった人も、\n今Valorantが好きな人も。\n\nアツくなれるカスタム、用意しました。\n\n202",
+      "url": "https://x.com/i/status/2102710504963883101"
+    },
+    {
+      "author": "JUMP_Storm",
+      "score": 76.0,
+      "likes": 10377,
+      "likes_per_min": 917.9054129121914,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 11.3,
+      "text": "🌹━━━━━━━━\n　 Hey! Sɑy! JUMP\n  New Album「Juliet」\n━━━━━━━━━🌹\n\n1",
+      "url": "https://x.com/i/status/2102716576374141421"
     },
     {
       "author": "TAIGA_KYOMO33",
-      "score": 66.6,
-      "likes": 15606,
-      "likes_per_min": 1163.029337831142,
+      "score": 71.4,
+      "likes": 24010,
+      "likes_per_min": 540.33,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.4,
+      "measured": true,
+      "age_minutes": 29.0,
       "text": "俺がMCの謎番組、23時からだって\n\n俺いまだにドッキリだと疑ってるよ\n\n#名探偵THREE",
       "url": "https://x.com/i/status/2102712132299313622"
     },
     {
-      "author": "114514Maaa",
-      "score": 34.9,
-      "likes": 33630,
-      "likes_per_min": 189.11,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 169.7,
-      "text": "この血筋で妖怪との接触が何も無いこの親父は逆に何なんだよ https://t.co/fcoINQyXCA",
-      "url": "https://x.com/i/status/2102672809956929619"
-    },
-    {
       "author": "iON_idol_",
-      "score": 86.1,
-      "likes": 7088,
-      "likes_per_min": 241.85,
-      "acceleration": null,
+      "score": 80.9,
+      "likes": 10252,
+      "likes_per_min": 203.43,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 29.2,
+      "age_minutes": 44.7,
       "text": "【新メンバー公開】\n\n♥小雛 りとる(こひな りとる) @iON_little_\n♡担当カラー ピンク🩷\n♥りとるの愛！",
       "url": "https://x.com/i/status/2102708165506965742"
-    },
-    {
-      "author": "Rocky_satsuei",
-      "score": 52.1,
-      "likes": 17608,
-      "likes_per_min": 256.74,
-      "acceleration": 1.06,
-      "measured": true,
-      "age_minutes": 121.1,
-      "text": "僕の周りにいるムカつく外国人たち\n【オーストラリア人編】 https://t.co/WhcSoORu9B",
-      "url": "https://x.com/i/status/2102685030384320653"
     }
   ]
 }

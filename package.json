@@ -1,0 +1,8 @@
+{
+  "name": "x-bunseki-collector",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/*.test.mjs" },
+  "dependencies": { "x-agent-sdk": "0.2.3" },
+  "engines": { "node": ">=22" }
+}

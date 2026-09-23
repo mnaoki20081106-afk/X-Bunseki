@@ -33,10 +33,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          npm install --no-save x-agent-sdk@0.2.3
+          npm ci --ignore-scripts
 
       - name: Restore DB
         uses: actions/cache@v4
@@ -91,6 +95,8 @@ jobs:
       - name: Run monitor
         env:
           X_SESSION_STATE_PATH: storage_state.json
+          X_GRAPHQL_QUERY_IDS: ${{ vars.X_GRAPHQL_QUERY_IDS }}
+          X_QUERY_ID_DISCOVERY: ${{ vars.X_QUERY_ID_DISCOVERY }}
           TEST_NOTIFICATION: ${{ github.event.inputs.test_notification }}
           DISABLE_NOTIFICATIONS: "1"
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

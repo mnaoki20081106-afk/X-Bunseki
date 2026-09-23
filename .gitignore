@@ -3,3 +3,6 @@ __pycache__/
 data/monitor.db
 storage_state.json
 _playwright_collector_impl.py
+
+node_modules/
+.x-agent-*.json

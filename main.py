@@ -24,7 +24,7 @@ import pushover_notifier
 import watchlist
 import feature_engineering
 import shadow_predictor
-from playwright_collector import SessionExpiredError, fetch_posts
+from playwright_collector import CollectionError, SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24
 ZERO_POSTS_ALERT_THRESHOLD = 3
@@ -460,6 +460,15 @@ def run_once():
                       posts_scanned=0, posts_flagged=0, notified_count=0,
                       error_message=str(e))
         sys.exit(1)
+    except CollectionError as e:
+        # Leave hits, watchlist, observations and learning data untouched when
+        # no trustworthy observations are available. Failure is not zero hits.
+        print(f"[ERROR] X収集を中断: {e}")
+        db.log_run(started_iso, datetime.now(timezone.utc).isoformat(), 0, 0, "error", str(e))
+        _write_status(status="error", started_at=started_iso,
+                      posts_scanned=0, posts_flagged=0, notified_count=0,
+                      error_message=str(e), collection_health=e.health)
+        sys.exit(1)
     except (UnicodeDecodeError, json.JSONDecodeError) as e:
         msg = f"セッションファイルの読み込みに失敗: {e}"
         print(f"[ERROR] {msg}")
@@ -606,7 +615,9 @@ def run_once():
     print(f"観測DB: {stats.get('posts')}投稿 / {stats.get('total')}レコード(古い{deleted}件を削除)")
 
     finished_at = datetime.now(timezone.utc).isoformat()
-    db.log_run(started_iso, finished_at, len(posts), len(candidates), "success")
+    collection_health = getattr(posts, "health", {"status": "success"})
+    run_status = "degraded" if collection_health.get("status") == "degraded" else "success"
+    db.log_run(started_iso, finished_at, len(posts), len(candidates), run_status)
 
     print(
         f"\n[まとめ] 収集{len(posts)} → 足切り通過{len(surviving)} "
@@ -616,7 +627,8 @@ def run_once():
     )
 
     _write_status(
-        status="success",
+        status=run_status,
+        collection_health=collection_health,
         started_at=started_iso,
         finished_at=finished_at,
         posts_scanned=len(posts),

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:05:30.139912+00:00",
+  "updated_at": "2026-09-23T19:20:51.965616+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 27,
     "detail_failed": 0,
     "detail_skipped": 13,
-    "invalid_tweets": 11,
+    "invalid_tweets": 10,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790191192
+      "reset": 1790192123
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T19:04:51.818947+00:00",
-  "finished_at": "2026-09-23T19:05:30.138725+00:00",
-  "posts_scanned": 620,
-  "posts_with_history": 577,
+  "started_at": "2026-09-23T19:20:22.206472+00:00",
+  "finished_at": "2026-09-23T19:20:51.964450+00:00",
+  "posts_scanned": 610,
+  "posts_with_history": 552,
   "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 132,
+  "minutes_since_last_notification": 148,
   "reject_reasons": {
-    "古すぎる": 333,
-    "いいねが少なすぎる": 145,
+    "古すぎる": 347,
+    "いいねが少なすぎる": 133,
+    "初回観測かつ平均速度が低い": 8,
     "いいね稼ぎ疑い": 3,
-    "誘導文パターン": 2,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 1
+    "誘導文パターン": 1,
+    "失速済み": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46434,
-    "posts": 13735,
-    "oldest": "2026-09-22T19:17:25.110633+00:00"
+    "total": 46460,
+    "posts": 13728,
+    "oldest": "2026-09-22T19:32:45.654313+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6360,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6345,
   "top5": [
     {
       "author": "mask_watermelon",
-      "score": 23.4,
-      "likes": 46960,
-      "likes_per_min": 12.43,
-      "acceleration": 0.78,
+      "score": 23.7,
+      "likes": 47135,
+      "likes_per_min": 11.39,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 873.7,
+      "age_minutes": 889.1,
       "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
       "url": "https://x.com/i/status/2102616899305852990"
     },
     {
-      "author": "MitoTsukino",
-      "score": 28.3,
-      "likes": 38865,
-      "likes_per_min": 42.88,
-      "acceleration": 1.01,
+      "author": "y_llrq",
+      "score": 25.6,
+      "likes": 34774,
+      "likes_per_min": 11.29,
+      "acceleration": 0.5,
       "measured": true,
-      "age_minutes": 224.6,
+      "age_minutes": 798.7,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
+    },
+    {
+      "author": "MitoTsukino",
+      "score": 25.8,
+      "likes": 39512,
+      "likes_per_min": 42.11,
+      "acceleration": 0.98,
+      "measured": true,
+      "age_minutes": 240.0,
       "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
       "url": "https://x.com/i/status/2102780251738894502"
     },
     {
       "author": "Biju_valo",
-      "score": 23.3,
-      "likes": 2977,
-      "likes_per_min": 5.02,
-      "acceleration": 0.86,
+      "score": 16.6,
+      "likes": 3032,
+      "likes_per_min": 3.58,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 215.4,
+      "age_minutes": 230.8,
       "text": "俺のパフォーマンスは悪くなかったんだけどなぁ😅\nGGでした！ https://t.co/LEQZcv6wxC",
       "url": "https://x.com/i/status/2102782560086720528"
     },
     {
       "author": "yuzukichococh",
-      "score": 31.6,
-      "likes": 7921,
-      "likes_per_min": 20.99,
-      "acceleration": 0.97,
+      "score": 27.0,
+      "likes": 8167,
+      "likes_per_min": 16.01,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 171.1,
+      "age_minutes": 186.5,
       "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
       "url": "https://x.com/i/status/2102793711025639476"
-    },
-    {
-      "author": "hirox246",
-      "score": 29.6,
-      "likes": 2301,
-      "likes_per_min": 6.31,
-      "acceleration": 1.08,
-      "measured": true,
-      "age_minutes": 198.8,
-      "text": "使わないよ。",
-      "url": "https://x.com/i/status/2102786745641398459"
     }
   ]
 }

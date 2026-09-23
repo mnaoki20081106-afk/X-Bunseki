@@ -1,18 +1,19 @@
 {
-  "updated_at": "2026-09-23T00:17:00.255160+00:00",
+  "updated_at": "2026-09-23T00:23:59.772422+00:00",
   "status": "success",
-  "started_at": "2026-09-23T00:16:22.937415+00:00",
-  "finished_at": "2026-09-23T00:17:00.253821+00:00",
-  "posts_scanned": 285,
-  "posts_with_history": 205,
-  "posts_flagged": 4,
+  "started_at": "2026-09-23T00:23:29.124306+00:00",
+  "finished_at": "2026-09-23T00:23:59.771349+00:00",
+  "posts_scanned": 595,
+  "posts_with_history": 508,
+  "posts_flagged": 39,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 14,
+  "minutes_since_last_notification": 21,
   "reject_reasons": {
-    "古すぎる": 82,
-    "いいねが少なすぎる": 166,
-    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 275,
+    "いいねが少なすぎる": 184,
+    "誘導文パターン": 6,
+    "初回観測かつ平均速度が低い": 6,
     "失速済み": 2
   },
   "config": {
@@ -30,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 44743,
-    "posts": 9874,
+    "total": 45338,
+    "posts": 9961,
     "oldest": "2026-09-22T00:51:01.434877+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3567,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 3,
+  "watchlist_active": 3605,
   "top5": [
     {
-      "author": "yuika_siina",
-      "score": 57.8,
-      "likes": 101,
-      "likes_per_min": 20.2,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 3.0,
-      "text": "朝からからあげ\n\n〜↑↑-KARAAGE- /赤城ウェン 🍱  #KARAAGEDANCE  #vtuber #踊ってみ",
-      "url": "https://x.com/yuika_siina/status/2102552029864534381"
-    },
-    {
-      "author": "kinnpatuhikaru",
-      "score": 71.7,
-      "likes": 231,
-      "likes_per_min": 27.44239313523744,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.4,
-      "text": "【重要なお知らせ】\n\nおはようございます！\n\n今日は二度目の明治座で落語イベントをします。\n\n落語と出会ってから僕自身か",
-      "url": "https://x.com/kinnpatuhikaru/status/2102550660323717502"
-    },
-    {
-      "author": "YoichiTakahashi",
-      "score": 41.7,
-      "likes": 148,
-      "likes_per_min": 10.520604121570114,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.1,
-      "text": "紙袋ってなんだ？\n\n左遷された財務官僚が元総理と密会\nhttps://t.co/Ef4Y8T3aiO",
-      "url": "https://x.com/YoichiTakahashi/status/2102549238915924444"
-    },
-    {
-      "author": "sxzBST",
-      "score": 72.2,
-      "likes": 810,
-      "likes_per_min": 10.37,
-      "acceleration": 1.06,
+      "author": "main_warabi",
+      "score": 28.4,
+      "likes": 101001,
+      "likes_per_min": 180.57,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 86.5,
-      "text": "ひるおび、歩行している女性の脚にズームインしてしまい炎上\n\nこれ一般人がやったら盗撮なのにテレビ局がやったら問題ないのお",
-      "url": "https://x.com/sxzBST/status/2102531007299891270"
+      "age_minutes": 704.8,
+      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
+      "url": "https://x.com/main_warabi/status/2102377179522949621"
     },
     {
-      "author": "Kadou_Mikaru",
-      "score": 52.5,
-      "likes": 186,
-      "likes_per_min": 13.675498672555738,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.6,
-      "text": "おはよ〜 今日は14:00頃から配信！二度寝しよ",
-      "url": "https://x.com/Kadou_Mikaru/status/2102549356503294021"
+      "author": "Order0o1",
+      "score": 35.3,
+      "likes": 103385,
+      "likes_per_min": 47.68,
+      "acceleration": 1.2,
+      "measured": true,
+      "age_minutes": 833.5,
+      "text": "7年前のテオくんのシャルルの有り得ないアレンジでも聴くか https://t.co/6LkCQDSLe8",
+      "url": "https://x.com/Order0o1/status/2102344781154390352"
+    },
+    {
+      "author": "modelpress",
+      "score": 51.9,
+      "likes": 11935,
+      "likes_per_min": 50.88,
+      "acceleration": 0.88,
+      "measured": true,
+      "age_minutes": 203.9,
+      "text": "渡辺翔太＆比嘉愛未MC音楽特番\n「歌の感謝祭」タイムテーブル発表❗️\nhttps://t.co/EEQyNZWKe9\n\n",
+      "url": "https://x.com/modelpress/status/2102503229200494958"
+    },
+    {
+      "author": "ptrrr_Nightmare",
+      "score": 46.7,
+      "likes": 2255,
+      "likes_per_min": 19.63,
+      "acceleration": 8.83,
+      "measured": true,
+      "age_minutes": 140.3,
+      "text": "Q:なんで長靴は汚れてないの？\n\nA:牛舎間を移動する際に毎回ホースの水とビルコンで洗浄しているからです\n（病気を持ち込",
+      "url": "https://x.com/ptrrr_Nightmare/status/2102519242138771476"
+    },
+    {
+      "author": "Genshin_7",
+      "score": 45.9,
+      "likes": 10729,
+      "likes_per_min": 54.36,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 144.0,
+      "text": "【お知らせ】\n現在、バージョンアップに伴うメンテナンスを実施しております。\nメンテナンス中はゲームプレイができませんので",
+      "url": "https://x.com/Genshin_7/status/2102518300198457552"
     }
   ]
 }

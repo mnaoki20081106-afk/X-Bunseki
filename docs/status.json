@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T23:06:48.368229+00:00",
+  "updated_at": "2026-09-23T23:31:14.339222+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790205681
+      "reset": 1790207144
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T23:06:21.039149+00:00",
-  "finished_at": "2026-09-23T23:06:48.367036+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 419,
-  "posts_flagged": 52,
+  "started_at": "2026-09-23T23:30:44.131696+00:00",
+  "finished_at": "2026-09-23T23:31:14.338111+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 410,
+  "posts_flagged": 50,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 374,
+  "minutes_since_last_notification": 398,
   "reject_reasons": {
-    "古すぎる": 289,
+    "古すぎる": 250,
     "誘導文パターン": 3,
-    "いいねが少なすぎる": 186,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 2
+    "失速済み": 6,
+    "いいねが少なすぎる": 194,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47192,
-    "posts": 13573,
-    "oldest": "2026-09-22T23:17:05.251642+00:00"
+    "total": 47512,
+    "posts": 13663,
+    "oldest": "2026-09-22T23:32:11.852660+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 0,
-  "watchlist_active": 6317,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6353,
   "top5": [
     {
-      "author": "poke_times",
-      "score": 68.1,
-      "likes": 648,
-      "likes_per_min": 95.57922790701451,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.8,
-      "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
-      "url": "https://x.com/i/status/2102895793166328280"
+      "author": "suzuran_www",
+      "score": 21.6,
+      "likes": 16133,
+      "likes_per_min": 6.33,
+      "acceleration": 0.57,
+      "measured": true,
+      "age_minutes": 873.1,
+      "text": "伊能忠敬界隈なら知っておいてほしい事\n\nシルバーウィークにディズニーで合計6万歩歩いても疲れゼロだから絶対試してみてくれ",
+      "url": "https://x.com/i/status/2102683921112785371"
     },
     {
       "author": "nhk_news",
-      "score": 72.2,
-      "likes": 2267,
-      "likes_per_min": 28.21,
-      "acceleration": null,
+      "score": 68.3,
+      "likes": 2922,
+      "likes_per_min": 26.81,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 137.7,
+      "age_minutes": 162.2,
       "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
       "url": "https://x.com/i/status/2102862833952366993"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 60.5,
-      "likes": 1779,
-      "likes_per_min": 14.850198007794685,
+      "score": 58.5,
+      "likes": 2238,
+      "likes_per_min": 18.79,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 119.8,
+      "measured": true,
+      "age_minutes": 144.2,
       "text": "【DeNA藤浪晋太郎 来季戦力構想外】\nhttps://t.co/e1AbSFp2zR",
       "url": "https://x.com/i/status/2102867349946896681"
     },
     {
-      "author": "oliverD_23",
-      "score": 40.5,
-      "likes": 15679,
-      "likes_per_min": 155.27,
-      "acceleration": 1.02,
+      "author": "poke_times",
+      "score": 69.5,
+      "likes": 3231,
+      "likes_per_min": 105.72,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 143.4,
-      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
-      "url": "https://x.com/i/status/2102861406941196616"
+      "age_minutes": 31.2,
+      "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
+      "url": "https://x.com/i/status/2102895793166328280"
     },
     {
-      "author": "ryujimovie_jp",
-      "score": 79.0,
-      "likes": 7757,
-      "likes_per_min": 87.98,
-      "acceleration": 0.73,
+      "author": "oliverD_23",
+      "score": 36.5,
+      "likes": 19260,
+      "likes_per_min": 146.56,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 66.8,
-      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
-      "url": "https://x.com/i/status/2102880688483520695"
+      "age_minutes": 167.8,
+      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
+      "url": "https://x.com/i/status/2102861406941196616"
     }
   ]
 }

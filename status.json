@@ -1,32 +1,33 @@
 {
-  "updated_at": "2026-09-23T05:53:40.497482+00:00",
+  "updated_at": "2026-09-23T06:03:26.688331+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "rate_limited",
-    "search_succeeded": 14,
-    "search_failed": 22,
+    "error_code": "schema_changed",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "rate_limited": 1,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T05:53:30.837566+00:00",
-  "finished_at": "2026-09-23T05:53:40.496203+00:00",
-  "posts_scanned": 248,
-  "posts_with_history": 206,
-  "posts_flagged": 18,
+  "started_at": "2026-09-23T06:03:04.336481+00:00",
+  "finished_at": "2026-09-23T06:03:26.687113+00:00",
+  "posts_scanned": 553,
+  "posts_with_history": 456,
+  "posts_flagged": 68,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 262,
+  "minutes_since_last_notification": 271,
   "reject_reasons": {
-    "古すぎる": 16,
-    "いいねが少なすぎる": 169,
-    "失速済み": 3,
-    "誘導文パターン": 1
+    "古すぎる": 116,
+    "誘導文パターン": 3,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 1,
+    "失速済み": 4,
+    "いいねが少なすぎる": 223
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -43,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51828,
-    "posts": 11620,
-    "oldest": "2026-09-22T06:02:59.631156+00:00"
+    "total": 51797,
+    "posts": 11643,
+    "oldest": "2026-09-22T06:17:23.805283+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4616,
+  "viral_discovery_posts": 121,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4665,
   "top5": [
     {
-      "author": "Kanae_2434",
-      "score": 92.9,
-      "likes": 2065,
-      "likes_per_min": 84.7,
-      "acceleration": null,
+      "author": "yokose_banana",
+      "score": 34.2,
+      "likes": 21726,
+      "likes_per_min": 53.66,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 12.1,
-      "text": "おはよー！今日の夜はJSP1やる\nなんと前情報無し",
-      "url": "https://x.com/i/status/2102634459858375060"
+      "age_minutes": 304.7,
+      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
+      "url": "https://x.com/i/status/2102563273724010845"
     },
     {
-      "author": "consaofficial",
-      "score": 83.1,
-      "likes": 1941,
-      "likes_per_min": 95.31,
-      "acceleration": 1.51,
+      "author": "YahooNewsTopics",
+      "score": 78.8,
+      "likes": 3594,
+      "likes_per_min": 56.83,
+      "acceleration": 1.61,
       "measured": true,
-      "age_minutes": 34.6,
-      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
-      "url": "https://x.com/i/status/2102628786093129897"
+      "age_minutes": 103.4,
+      "text": "【「疲れた」1カ月余りで店3度被災】\nhttps://t.co/r1q0cgmZtG",
+      "url": "https://x.com/i/status/2102613930288013449"
     },
     {
-      "author": "kumagai_chiba",
-      "score": 68.5,
-      "likes": 2036,
-      "likes_per_min": 30.24,
-      "acceleration": 1.08,
+      "author": "k_maru_dau_baby",
+      "score": 40.4,
+      "likes": 16715,
+      "likes_per_min": 59.5,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 81.6,
-      "text": "印旛沼の水位低下を図るため、排水機場のフル稼働とポンプ車投入による緊急排水などが全力で行われています。\n\n今回、北印旛沼",
-      "url": "https://x.com/i/status/2102616968432140478"
+      "age_minutes": 175.1,
+      "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
+      "url": "https://x.com/i/status/2102595903244911002"
     },
     {
-      "author": "tnk0456123789",
-      "score": 52.5,
-      "likes": 1202,
-      "likes_per_min": 27.23,
-      "acceleration": 1.27,
+      "author": "YahooNewsTopics",
+      "score": 44.4,
+      "likes": 36752,
+      "likes_per_min": 239.44,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 141.9,
-      "text": "「そもそも旦那に興奮しなさ過ぎるし情はあるけど恋はしてないしドキドキもクソもない」って言ってる奥さんが大半だよ。そして旦",
-      "url": "https://x.com/i/status/2102601795575099516"
+      "age_minutes": 174.4,
+      "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
+      "url": "https://x.com/i/status/2102596062485828079"
     },
     {
-      "author": "livedoornews",
-      "score": 70.3,
-      "likes": 363,
-      "likes_per_min": 16.15,
-      "acceleration": 1.26,
+      "author": "info__Johnnys",
+      "score": 89.4,
+      "likes": 3546,
+      "likes_per_min": 124.29,
+      "acceleration": 1.67,
       "measured": true,
-      "age_minutes": 29.7,
-      "text": "【復旧急ぐ】JCOMインターネットで接続障害\nhttps://t.co/vTVOAxAwA3\n\nケーブルテレビ大手のJC",
-      "url": "https://x.com/i/status/2102630035966623772"
+      "age_minutes": 47.2,
+      "text": "【Endless SHOCK 全国公演決定】\n\n11/28(土)～2027/2/21(日)\n「Endless SHOCK",
+      "url": "https://x.com/i/status/2102628074617737615"
     }
   ]
 }

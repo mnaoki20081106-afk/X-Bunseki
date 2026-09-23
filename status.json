@@ -1,32 +1,33 @@
 {
-  "updated_at": "2026-09-23T06:46:57.194594+00:00",
+  "updated_at": "2026-09-23T07:03:28.455560+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "rate_limited",
-    "search_succeeded": 14,
-    "search_failed": 22,
+    "error_code": "schema_changed",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "rate_limited": 1,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T06:46:48.006118+00:00",
-  "finished_at": "2026-09-23T06:46:57.192849+00:00",
-  "posts_scanned": 261,
-  "posts_with_history": 175,
-  "posts_flagged": 13,
+  "started_at": "2026-09-23T07:03:04.215204+00:00",
+  "finished_at": "2026-09-23T07:03:28.453951+00:00",
+  "posts_scanned": 567,
+  "posts_with_history": 422,
+  "posts_flagged": 69,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 315,
+  "minutes_since_last_notification": 331,
   "reject_reasons": {
-    "古すぎる": 17,
-    "いいねが少なすぎる": 173,
-    "初回観測かつ平均速度が低い": 1,
-    "失速済み": 3
+    "古すぎる": 133,
+    "いいね稼ぎ疑い": 7,
+    "誘導文パターン": 3,
+    "失速済み": 3,
+    "いいねが少なすぎる": 222,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -43,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51837,
-    "posts": 11783,
-    "oldest": "2026-09-22T06:47:25.201216+00:00"
+    "total": 52115,
+    "posts": 11867,
+    "oldest": "2026-09-22T07:03:56.414266+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4766,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4834,
   "top5": [
     {
-      "author": "clip_celsys",
-      "score": 78.3,
-      "likes": 1261,
-      "likes_per_min": 27.88,
-      "acceleration": 0.9,
+      "author": "YahooNewsTopics",
+      "score": 52.4,
+      "likes": 6042,
+      "likes_per_min": 40.78,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 49.5,
-      "text": "現在、CLIP STUDIO ASSETSでは、一部の素材を非公開にしています。運用方針にそって確認を行う中で、非公開と",
-      "url": "https://x.com/i/status/2102638460188467677"
-    },
-    {
-      "author": "frontale_staff",
-      "score": 43.6,
-      "likes": 3560,
-      "likes_per_min": 10.21,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 127.0,
-      "text": "本日、麻生グラウンドにて小林悠選手の引退発表会見を行いました。\n\nユウがフロンターレで決めた「184」ゴール。\nそのどれ",
-      "url": "https://x.com/i/status/2102618947451580715"
-    },
-    {
-      "author": "consaofficial",
-      "score": 67.4,
-      "likes": 5961,
-      "likes_per_min": 60.21,
-      "acceleration": 0.78,
-      "measured": true,
-      "age_minutes": 87.9,
-      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
-      "url": "https://x.com/i/status/2102628786093129897"
+      "age_minutes": 163.5,
+      "text": "【「疲れた」1カ月余りで店3度被災】\nhttps://t.co/r1q0cgmZtG",
+      "url": "https://x.com/i/status/2102613930288013449"
     },
     {
       "author": "deathdolnote",
-      "score": 86.6,
-      "likes": 360,
-      "likes_per_min": 12.74,
-      "acceleration": 1.9,
+      "score": 78.8,
+      "likes": 3540,
+      "likes_per_min": 91.26,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 41.0,
-      "text": "「韓国人変な菌持ってる」と発言し炎上中 https://t.co/JUcJkamsbj",
-      "url": "https://x.com/i/status/2102640595898659175"
+      "age_minutes": 53.9,
+      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
+      "url": "https://x.com/i/status/2102641496474431617"
     },
     {
-      "author": "houkaistarrail",
-      "score": 66.5,
-      "likes": 2256,
-      "likes_per_min": 29.52,
-      "acceleration": 0.77,
+      "author": "miiitan_n",
+      "score": 44.9,
+      "likes": 4600,
+      "likes_per_min": 23.46,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 46.9,
-      "text": "おったぬげ！？千星シティで異常現象頻発！？\n\n#崩壊スターレイル #月立つ前に獣と踊れ おったぬげ！？ | Ver.4.",
-      "url": "https://x.com/i/status/2102639098322157674"
+      "age_minutes": 227.1,
+      "text": "【 謝罪 】\n\n本日、せっかく店舗様に大きなポスターまでご用意いただいたにもかかわらず、現時点でファンの方からのお声がけ",
+      "url": "https://x.com/i/status/2102597917613949082"
+    },
+    {
+      "author": "DAZNJPNBaseball",
+      "score": 77.7,
+      "likes": 1677,
+      "likes_per_min": 149.9387146738383,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 11.2,
+      "text": "🗣️よっしゃー\n\n塁上で咆哮\n伏見寅威 走者一掃タイムリー2ベース\n\n⚾️ヤクルト×阪神\n#阪神タイガース #だったらD",
+      "url": "https://x.com/i/status/2102652256462274638"
+    },
+    {
+      "author": "SN__20200122",
+      "score": 60.2,
+      "likes": 24784,
+      "likes_per_min": 149.13,
+      "acceleration": 0.64,
+      "measured": true,
+      "age_minutes": 85.6,
+      "text": "『カリスマックス』 🕶️\n累積再生数2億回突破ありがとうございマックス‼️\n\n▽Music Video\nhttps://",
+      "url": "https://x.com/i/status/2102633531394634017"
     }
   ]
 }

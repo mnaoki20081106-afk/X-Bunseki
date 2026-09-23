@@ -12,6 +12,8 @@ import math
 from collections import defaultdict
 from pathlib import Path
 
+import training_store
+
 from feature_engineering import make_features
 
 SNAPSHOTS = Path("data/training_snapshots.jsonl")
@@ -38,13 +40,8 @@ def _load_json(path, default):
 
 def load_snapshots(path=SNAPSHOTS):
     groups = defaultdict(list)
-    if not path.exists():
-        return groups
-    for line in path.read_text(encoding="utf-8").splitlines():
-        try:
-            row = json.loads(line)
-        except Exception:
-            continue
+    rows = training_store.iter_snapshot_rows() if path == SNAPSHOTS else training_store._iter_jsonl(path)
+    for row in rows:
         pid = row.get("post_id")
         if pid and row.get("age_minutes") is not None:
             groups[str(pid)].append(row)

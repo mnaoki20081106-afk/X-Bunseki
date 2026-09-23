@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-23T03:32:12.310952+00:00",
+  "updated_at": "2026-09-23T03:46:56.233713+00:00",
   "status": "success",
-  "started_at": "2026-09-23T03:31:40.110588+00:00",
-  "finished_at": "2026-09-23T03:32:12.308838+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 418,
-  "posts_flagged": 95,
+  "started_at": "2026-09-23T03:46:23.657400+00:00",
+  "finished_at": "2026-09-23T03:46:56.232553+00:00",
+  "posts_scanned": 358,
+  "posts_with_history": 269,
+  "posts_flagged": 60,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 120,
+  "minutes_since_last_notification": 135,
   "reject_reasons": {
-    "古すぎる": 153,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 18,
-    "いいねが少なすぎる": 216,
-    "失速済み": 5
+    "古すぎる": 79,
+    "誘導文パターン": 2,
+    "いいねが少なすぎる": 157,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51164,
-    "posts": 11044,
+    "total": 51522,
+    "posts": 11133,
     "oldest": "2026-09-22T03:53:18.582792+00:00"
   },
-  "viral_discovery_posts": 142,
-  "million_imp_rescued": 9,
-  "watchlist_active": 4188,
+  "viral_discovery_posts": 78,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4216,
   "top5": [
     {
       "author": "main_warabi",
-      "score": 28.3,
-      "likes": 129621,
-      "likes_per_min": 126.38,
-      "acceleration": 1.0,
+      "score": 27.9,
+      "likes": 131341,
+      "likes_per_min": 116.74,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 893.0,
+      "age_minutes": 907.7,
       "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
       "url": "https://x.com/main_warabi/status/2102377179522949621"
     },
     {
-      "author": "minotake3",
-      "score": 24.2,
-      "likes": 31499,
-      "likes_per_min": 35.33,
+      "author": "frontale_staff",
+      "score": 72.3,
+      "likes": 17222,
+      "likes_per_min": 99.43,
       "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 839.5,
-      "text": "若い時、ガンで手術するって言ってた友達の見舞いに行って「来月来るね」と帰った。忙しい月で、予定より２週間ほど遅れて行った",
-      "url": "https://x.com/minotake3/status/2102390644715225110"
+      "age_minutes": 100.1,
+      "text": "川崎フロンターレに所属しております小林悠選手が、2027年1月1日をもって現役を引退することになりましたので、お知らせい",
+      "url": "https://x.com/frontale_staff/status/2102580416620474507"
     },
     {
-      "author": "jcom_support",
-      "score": 77.7,
-      "likes": 6289,
-      "likes_per_min": 37.44,
-      "acceleration": 0.74,
+      "author": "cinemastaff_",
+      "score": 78.2,
+      "likes": 6111,
+      "likes_per_min": 209.73,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 127.6,
-      "text": "【お知らせ】現在、J:COM NETのインターネット接続がご利用できない状況が発生しております。\nまた各種サポート、カス",
-      "url": "https://x.com/jcom_support/status/2102569778233917483"
+      "age_minutes": 46.2,
+      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
+      "url": "https://x.com/cinemastaff_/status/2102593976947949919"
     },
     {
-      "author": "yokose_banana",
-      "score": 54.3,
-      "likes": 10741,
-      "likes_per_min": 100.1,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 153.5,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/yokose_banana/status/2102563273724010845"
-    },
-    {
-      "author": "turningpointjpn",
-      "score": 51.6,
-      "likes": 32868,
-      "likes_per_min": 208.32,
+      "author": "YahooNewsTopics",
+      "score": 53.1,
+      "likes": 12111,
+      "likes_per_min": 63.46,
       "acceleration": 0.95,
       "measured": true,
       "age_minutes": 166.9,
-      "text": "高市首相、やりよった！ 旧敵国条項の削除を要請\n「日本の誇りと名誉にかけて強く申し上げる」\n\n→日本の国連加盟70周年。",
-      "url": "https://x.com/turningpointjpn/status/2102559893257585083"
+      "text": "【徘徊「ダチョウ」エミューだった】\nhttps://t.co/0TpvdJPstj",
+      "url": "https://x.com/YahooNewsTopics/status/2102563598581256514"
+    },
+    {
+      "author": "sanokutameo",
+      "score": 31.1,
+      "likes": 13557,
+      "likes_per_min": 136.08,
+      "acceleration": 0.94,
+      "measured": true,
+      "age_minutes": 229.9,
+      "text": "外人ヤード終了のお知らせ https://t.co/WY7Q6Jx8JA",
+      "url": "https://x.com/sanokutameo/status/2102547755872981237"
     }
   ]
 }

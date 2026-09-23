@@ -1,20 +1,31 @@
 {
-  "updated_at": "2026-09-23T04:17:08.399782+00:00",
+  "updated_at": "2026-09-23T04:19:56.351790+00:00",
   "status": "success",
-  "started_at": "2026-09-23T04:16:33.958524+00:00",
-  "finished_at": "2026-09-23T04:17:08.398531+00:00",
-  "posts_scanned": 293,
-  "posts_with_history": 200,
-  "posts_flagged": 15,
+  "collection_health": {
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 40,
+    "detail_failed": 0,
+    "invalid_tweets": 0,
+    "failures": {}
+  },
+  "started_at": "2026-09-23T04:19:24.777130+00:00",
+  "finished_at": "2026-09-23T04:19:56.350349+00:00",
+  "posts_scanned": 591,
+  "posts_with_history": 512,
+  "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 165,
+  "minutes_since_last_notification": 168,
   "reject_reasons": {
-    "古すぎる": 57,
-    "いいねが少なすぎる": 172,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 139,
+    "誘導文パターン": 6,
+    "失速済み": 5,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 231,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +42,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50713,
-    "posts": 11189,
+    "total": 51304,
+    "posts": 11268,
     "oldest": "2026-09-22T04:45:46.030568+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4286,
+  "viral_discovery_posts": 120,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4323,
   "top5": [
     {
-      "author": "houkaistarrail",
-      "score": 87.1,
-      "likes": 4439,
-      "likes_per_min": 250.94,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 17.1,
-      "text": "【崩壊：スターレイル】 即興芝居PV 「そして、芸術へと至る」\n\n▼キャスト\nパール CV: 安野希世乃\nトパーズ CV",
-      "url": "https://x.com/houkaistarrail/status/2102608902470672496"
-    },
-    {
-      "author": "hollyhock_staff",
-      "score": 59.2,
-      "likes": 2282,
-      "likes_per_min": 34.28,
-      "acceleration": 0.77,
-      "measured": true,
-      "age_minutes": 61.6,
-      "text": "2008シーズンに特別指定選手として #水戸ホーリーホック に在籍していた #小林悠 選手が2026年限りでの現役引退を",
-      "url": "https://x.com/hollyhock_staff/status/2102597705902223456"
-    },
-    {
-      "author": "tekitou115330",
-      "score": 62.3,
-      "likes": 665,
-      "likes_per_min": 26.8,
-      "acceleration": 2.94,
-      "measured": true,
-      "age_minutes": 136.0,
-      "text": "なんかみい山の作者炎上しててこれ https://t.co/YGsHqjYHT2",
-      "url": "https://x.com/tekitou115330/status/2102578998337507437"
-    },
-    {
-      "author": "Kanae_2434",
-      "score": 68.2,
-      "likes": 1323,
-      "likes_per_min": 77.28431680915615,
+      "author": "k_maru_dau_baby",
+      "score": 60.4,
+      "likes": 8857,
+      "likes_per_min": 123.76024135384958,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 17.1,
-      "text": "／\n📢ショート動画投稿！\n＼\n【#SURGETown】天然が出てしまう叶 #にじさんじ #叶 #shorts\nhttps",
-      "url": "https://x.com/Kanae_2434/status/2102608901707579598"
+      "age_minutes": 71.6,
+      "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
+      "url": "https://x.com/i/status/2102595903244911002"
     },
     {
-      "author": "KNTFR2434",
-      "score": 72.9,
-      "likes": 1470,
-      "likes_per_min": 21.51,
+      "author": "frontale_staff",
+      "score": 61.6,
+      "likes": 19764,
+      "likes_per_min": 70.28,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 133.1,
+      "text": "川崎フロンターレに所属しております小林悠選手が、2027年1月1日をもって現役を引退することになりましたので、お知らせい",
+      "url": "https://x.com/i/status/2102580416620474507"
+    },
+    {
+      "author": "cinemastaff_",
+      "score": 74.1,
+      "likes": 10954,
+      "likes_per_min": 128.77,
+      "acceleration": 0.78,
+      "measured": true,
+      "age_minutes": 79.2,
+      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
+      "url": "https://x.com/i/status/2102593976947949919"
+    },
+    {
+      "author": "tritiumkun1",
+      "score": 35.1,
+      "likes": 9383,
+      "likes_per_min": 105.61,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 26.1,
-      "text": "13時～\n【 Deadlock 】　シルバーウィーク〆はやっぱランケド【にじさんじ/風楽奏斗】 https://t.co",
-      "url": "https://x.com/KNTFR2434/status/2102606653522928118"
+      "age_minutes": 230.2,
+      "text": "AV？の方が経験者っぽい\n初段〜3段くらい持ってそう https://t.co/DmZUqUjXbJ",
+      "url": "https://x.com/i/status/2102555991271485841"
+    },
+    {
+      "author": "nijisanji_app",
+      "score": 41.7,
+      "likes": 489,
+      "likes_per_min": 97.8,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 4.8,
+      "text": "✦ ── ˖ ࣪ ⊹ ˚ ✧₊ 🌟 ₊✧ ˚ ⊹ ࣪ ˖ ── ✦\n　　#星川サラ_ステラノート \n  🚨早期予約特典　",
+      "url": "https://x.com/i/status/2102612712056623165"
     }
   ]
 }

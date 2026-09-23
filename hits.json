@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-23T00:02:09.674974+00:00",
-  "surviving": 115,
-  "candidates": 40,
+  "updated_at": "2026-09-23T00:16:22.937415+00:00",
+  "surviving": 33,
+  "candidates": 4,
   "notify_score": 55,
   "trending_posts": [
     {
@@ -1306,60 +1306,6 @@
       "url": "https://x.com/main_warabi/status/2102420247190155555"
     }
   ],
-  "early_posts": [
-    {
-      "post_id": "2102503229200494958",
-      "author": "modelpress",
-      "author_name": "モデルプレス",
-      "posted_at": "2026-09-22T21:00:07+00:00",
-      "score": 58.2,
-      "likes": 10853,
-      "impressions": 924463,
-      "predicted_final_impressions": 1304940,
-      "prediction_confidence": "high",
-      "impressions_per_min": 6649.72,
-      "impressions_acceleration": 1.03,
-      "replies": 45,
-      "retweets": 2426,
-      "quotes": 579,
-      "bookmarks": 1315,
-      "likes_per_min": 57.68,
-      "acceleration": 0.98,
-      "age_minutes": 182.6,
-      "candidate": true,
-      "discovery_source": "viral_search",
-      "million_imp_bypass": false,
-      "million_imp_bypass_detail": "",
-      "text": "渡辺翔太＆比嘉愛未MC音楽特番\n「歌の感謝祭」タイムテーブル発表❗️\nhttps://t.co/EEQyNZWKe9\n\n19時台\n絢香「三日月」\nKing ＆ Prince「リメンバー・ミー」\nSnow Man「ブラザービート」\nSEKAI",
-      "url": "https://x.com/modelpress/status/2102503229200494958"
-    }
-  ],
-  "posts": [
-    {
-      "post_id": "2102503229200494958",
-      "author": "modelpress",
-      "author_name": "モデルプレス",
-      "posted_at": "2026-09-22T21:00:07+00:00",
-      "score": 58.2,
-      "likes": 10853,
-      "impressions": 924463,
-      "predicted_final_impressions": 1304940,
-      "prediction_confidence": "high",
-      "impressions_per_min": 6649.72,
-      "impressions_acceleration": 1.03,
-      "replies": 45,
-      "retweets": 2426,
-      "quotes": 579,
-      "bookmarks": 1315,
-      "likes_per_min": 57.68,
-      "acceleration": 0.98,
-      "age_minutes": 182.6,
-      "candidate": true,
-      "discovery_source": "viral_search",
-      "million_imp_bypass": false,
-      "million_imp_bypass_detail": "",
-      "text": "渡辺翔太＆比嘉愛未MC音楽特番\n「歌の感謝祭」タイムテーブル発表❗️\nhttps://t.co/EEQyNZWKe9\n\n19時台\n絢香「三日月」\nKing ＆ Prince「リメンバー・ミー」\nSnow Man「ブラザービート」\nSEKAI",
-      "url": "https://x.com/modelpress/status/2102503229200494958"
-    }
-  ]
+  "early_posts": [],
+  "posts": []
 }

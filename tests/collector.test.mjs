@@ -135,8 +135,20 @@ test('one TweetDetail schema mismatch does not poison later watchlist details', 
   assert.equal(result.health.error_code, 'schema_changed');
   assert.equal(result.health.detail_succeeded, 1);
   assert.equal(result.health.detail_failed, 1);
+  assert.equal(result.health.detail_skipped, 0);
   assert.deepEqual(result.posts.map(p => p.post_id), ['123', '789']);
   assert.equal(result.requests.filter(r => r.operation === 'TweetDetail').length, 2);
+});
+
+test('one incomplete watchlist detail is skipped without degrading healthy search', () => {
+  const result = collect('detail_incomplete');
+  assert.equal(result.health.status, 'success');
+  assert.equal(result.health.error_code, null);
+  assert.equal(result.health.detail_succeeded, 0);
+  assert.equal(result.health.detail_failed, 0);
+  assert.equal(result.health.detail_skipped, 1);
+  assert.equal(result.health.invalid_tweets, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123']);
 });
 for (const [scenario, status] of [['auth', 'session_expired'], ['forbidden', 'access_denied'], ['rate', 'rate_limited'], ['schema', 'schema_changed'], ['missing_views', 'schema_changed'], ['network', 'network_error']]) {
   test(`full collector detects ${scenario}`, () => {

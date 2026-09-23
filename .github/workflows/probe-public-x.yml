@@ -2,7 +2,6 @@ name: Temporary public X ID probe
 on:
   push:
     branches: [fix/query-discovery-diagnostics]
-  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -14,6 +13,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm ci --ignore-scripts
-      - name: Probe public X operation IDs
-        run: node --input-type=module -e 'import("./x_query_ids.mjs").then(async ({discoverQueryIds}) => { const ids = await discoverQueryIds(); console.log("operation_ids_found=" + Object.keys(ids).sort().join(",")); })'
+      - name: Probe public endpoints
+        run: |
+          node --input-type=module <<'JS'
+          const urls=["https://x.com/","https://x.com/home","https://x.com/search?q=lang%3Aja","https://abs.twimg.com/responsive-web/client-web/main.60bedca26c9a9faaa.js"];
+          for (const url of urls) {
+            try {
+              const response=await fetch(url,{signal:AbortSignal.timeout(12000),redirect:'error'});
+              console.log(new URL(url).hostname + new URL(url).pathname.slice(0,48) + ' status=' + response.status);
+              await response.body?.cancel();
+            } catch (error) { console.log(new URL(url).hostname + new URL(url).pathname.slice(0,48) + ' error=' + error.name); }
+          }
+          JS

@@ -1,37 +1,38 @@
 {
-  "updated_at": "2026-09-23T13:07:45.382959+00:00",
+  "updated_at": "2026-09-23T13:23:01.357632+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 16,
+    "search_failed": 20,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
-    "invalid_tweets": 11,
+    "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790169728
+      "remaining": 34,
+      "reset": 1790170658
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T13:07:07.653496+00:00",
-  "finished_at": "2026-09-23T13:07:45.380867+00:00",
-  "posts_scanned": 602,
-  "posts_with_history": 403,
-  "posts_flagged": 122,
+  "started_at": "2026-09-23T13:22:37.801239+00:00",
+  "finished_at": "2026-09-23T13:23:01.356461+00:00",
+  "posts_scanned": 336,
+  "posts_with_history": 218,
+  "posts_flagged": 17,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 696,
+  "minutes_since_last_notification": 711,
   "reject_reasons": {
-    "古すぎる": 113,
-    "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 260,
-    "誘導文パターン": 2,
-    "失速済み": 12,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 78,
+    "失速済み": 3,
+    "いいね稼ぎ疑い": 1,
+    "いいねが少なすぎる": 186,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51313,
-    "posts": 13430,
-    "oldest": "2026-09-22T13:17:39.596959+00:00"
+    "total": 51068,
+    "posts": 13456,
+    "oldest": "2026-09-22T13:33:19.554263+00:00"
   },
-  "viral_discovery_posts": 123,
-  "million_imp_rescued": 7,
-  "watchlist_active": 6128,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6142,
   "top5": [
     {
-      "author": "rui912912",
-      "score": 28.1,
-      "likes": 16316,
-      "likes_per_min": 25.36,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 353.1,
-      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
-      "url": "https://x.com/i/status/2102657881619448301"
-    },
-    {
       "author": "hayate_lvsk",
-      "score": 71.5,
-      "likes": 13295,
-      "likes_per_min": 258.94,
-      "acceleration": 0.92,
+      "score": 69.5,
+      "likes": 16170,
+      "likes_per_min": 188.31,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 65.4,
+      "age_minutes": 80.7,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 51.9,
-      "likes": 6042,
-      "likes_per_min": 84.21160927052176,
+      "author": "pulsefeed62",
+      "score": 34.5,
+      "likes": 2112,
+      "likes_per_min": 15.2,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 217.0,
+      "text": "人気アイドルグループ「timelesz」のメンバー、猪俣周杜容疑者（25）の逮捕現場を間近で捉えました。 https:/",
+      "url": "https://x.com/i/status/2102695970559467778"
+    },
+    {
+      "author": "UN_NERV",
+      "score": 54.5,
+      "likes": 413,
+      "likes_per_min": 16.57,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 21.0,
+      "text": "【台風第26号実況・予報 2026年09月23日 22:01】\n台風第26号（スリゲ）が発生しました。 https://",
+      "url": "https://x.com/i/status/2102745295440449992"
+    },
+    {
+      "author": "ookamimio",
+      "score": 79.9,
+      "likes": 673,
+      "likes_per_min": 87.60548811023762,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 71.7,
-      "text": "【不明の6歳か 遺体は離島で発見】\nhttps://t.co/GJI5Pr9MCd",
-      "url": "https://x.com/i/status/2102728686323843542"
+      "age_minutes": 7.7,
+      "text": "⏰２３時から⏰\n\n🌟メンバーシップ限定🌟\nのんびり雑談します～～✨✨\nぽやぽやモード🐺\n\nこちら➡ https://t.",
+      "url": "https://x.com/i/status/2102748652959928573"
     },
     {
-      "author": "sanohayatodazo",
-      "score": 71.3,
-      "likes": 49531,
-      "likes_per_min": 1494.0,
+      "author": "wni_jp",
+      "score": 77.5,
+      "likes": 291,
+      "likes_per_min": 20.375059164544833,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 31.8,
-      "text": "M!LKのミニアルバム「LOVE ENG!NE」がミリオンを達成しました！！\n100万枚ですって。。\nデビューシングル「",
-      "url": "https://x.com/i/status/2102738735804924237"
-    },
-    {
-      "author": "shota201907",
-      "score": 66.3,
-      "likes": 18301,
-      "likes_per_min": 250.15,
-      "acceleration": 1.13,
-      "measured": true,
-      "age_minutes": 122.7,
-      "text": "は？ありえないんだけど、、\n\n渋谷駅で\n警察官に暴行する\nベトナム人がいたらしい。\n\n警察もここまで舐められたもんだね。",
-      "url": "https://x.com/i/status/2102715852198203522"
+      "measured": false,
+      "age_minutes": 14.3,
+      "text": "【台風発生】\n9月23日(水)21時、フィリピンの東で台風26号(スリゲ)が発生しました。\n26日(土)頃に沖縄の南に達",
+      "url": "https://x.com/i/status/2102746990400741871"
     }
   ]
 }

@@ -23,5 +23,5 @@ jobs:
           if (!cookies.auth_token || !cookies.ct0) throw new Error('session_unavailable');
           const response=await fetch('https://x.com/home',{headers:{cookie:'auth_token='+cookies.auth_token+'; ct0='+cookies.ct0},signal:AbortSignal.timeout(15000),redirect:'error'});
           const html=await response.text();
-          console.log('home_status='+response.status+' has_main_bundle='+/responsive-web\\/client-web\\/main\\.[A-Za-z0-9_-]+\\.js/.test(html));
+          console.log('home_status='+response.status+' has_main_bundle='+html.includes('responsive-web/client-web/main.'));
           JS

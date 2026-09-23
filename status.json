@@ -1,37 +1,38 @@
 {
-  "updated_at": "2026-09-23T15:50:32.051322+00:00",
+  "updated_at": "2026-09-23T16:06:20.631559+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "schema_changed",
-    "search_succeeded": 8,
-    "search_failed": 28,
+    "search_succeeded": 26,
+    "search_failed": 10,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
     "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 42,
-      "reset": 1790179516
+      "remaining": 24,
+      "reset": 1790180449
     },
     "failures": {
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T15:50:15.307548+00:00",
-  "finished_at": "2026-09-23T15:50:32.049892+00:00",
-  "posts_scanned": 180,
-  "posts_with_history": 133,
-  "posts_flagged": 5,
+  "started_at": "2026-09-23T16:05:48.559566+00:00",
+  "finished_at": "2026-09-23T16:06:20.630456+00:00",
+  "posts_scanned": 479,
+  "posts_with_history": 355,
+  "posts_flagged": 45,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 132,
+  "minutes_since_last_notification": 148,
   "reject_reasons": {
-    "古すぎる": 30,
-    "いいねが少なすぎる": 117,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 2
+    "古すぎる": 153,
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 181,
+    "失速済み": 12,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47655,
-    "posts": 13565,
-    "oldest": "2026-09-22T16:03:37.981855+00:00"
+    "total": 47547,
+    "posts": 13650,
+    "oldest": "2026-09-22T16:17:22.908822+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 6412,
+  "viral_discovery_posts": 82,
+  "million_imp_rescued": 4,
+  "watchlist_active": 6433,
   "top5": [
     {
-      "author": "NOSUKE0607",
-      "score": 77.8,
-      "likes": 1681,
-      "likes_per_min": 23.87,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 69.2,
-      "text": "NHK「未解決事件」をご覧になったみなさまへ。\n\n今回、NHKの番組で報じられたのは、長年続けてきた「北関東連続幼女誘拐",
-      "url": "https://x.com/i/status/2102770283602137365"
-    },
-    {
-      "author": "tokino_sora",
-      "score": 82.0,
-      "likes": 855,
-      "likes_per_min": 12.33,
+      "author": "dr_chuyan",
+      "score": 23.3,
+      "likes": 67515,
+      "likes_per_min": 113.07736092399011,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 34.2,
-      "text": "#ときのそら生放送\nありがとうございますー！！\n新曲のコール練習したり、ライブ締め切り最終日のお話をしたりしたの♪\n\nこ",
-      "url": "https://x.com/i/status/2102779106786177382"
+      "measured": false,
+      "age_minutes": 597.1,
+      "text": "【速報！】\n息子の夏休みの力作が市長賞を受賞しました！🙌 https://t.co/VX12b9dXvz",
+      "url": "https://x.com/i/status/2102641428983857298"
     },
     {
-      "author": "19880807kk",
-      "score": 37.2,
-      "likes": 348,
-      "likes_per_min": 3.15,
-      "acceleration": 0.9,
+      "author": "y_llrq",
+      "score": 31.6,
+      "likes": 31508,
+      "likes_per_min": 36.67,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 144.0,
-      "text": "堀大輔「週刊誌にすっぱ抜かれたので月末に堕とされると思うんで、奈落の底に」\n\n2025年の受講生による暴露がトップ記事に",
-      "url": "https://x.com/i/status/2102751477542563855"
+      "age_minutes": 604.1,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
     },
     {
-      "author": "monaki_official",
-      "score": 56.7,
-      "likes": 575,
-      "likes_per_min": 11.48,
-      "acceleration": null,
+      "author": "S1ster_Morphine",
+      "score": 42.1,
+      "likes": 21477,
+      "likes_per_min": 131.43,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 30.8,
-      "text": "こんにちは。\nサカイJr.です。\n\n本日は大阪・インテックス大阪で開催された\n『KOYABU SONIC 2026』に\n",
-      "url": "https://x.com/i/status/2102779968598237496"
+      "age_minutes": 177.9,
+      "text": "私、幼い頃にシンデレラの魔法が0時に解けて強制的に帰宅しなければならない場面を見て、『0時＝夜更かし、舞踏会も終盤の方だ",
+      "url": "https://x.com/i/status/2102746920460677623"
     },
     {
-      "author": "yuumtx",
-      "score": 22.8,
-      "likes": 106,
-      "likes_per_min": 0.85,
-      "acceleration": null,
+      "author": "haruori85",
+      "score": 38.6,
+      "likes": 10830,
+      "likes_per_min": 85.43,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 110.5,
-      "text": "密会フォーム公開しました。ご希望の方はプロフィール欄のリンクからお願いします。",
-      "url": "https://x.com/i/status/2102759889949118803"
+      "age_minutes": 194.7,
+      "text": "韓国に嫁いで3年目、まだこのレベルの衝撃があるとは思わんかったんや https://t.co/8UovEL1TEx",
+      "url": "https://x.com/i/status/2102742683114672248"
+    },
+    {
+      "author": "sukosuko_sukoya",
+      "score": 54.7,
+      "likes": 16549,
+      "likes_per_min": 301.33,
+      "acceleration": 1.52,
+      "measured": true,
+      "age_minutes": 89.3,
+      "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
+      "url": "https://x.com/i/status/2102769226490753454"
     }
   ]
 }

@@ -1,35 +1,35 @@
 {
-  "updated_at": "2026-09-23T19:36:31.205939+00:00",
+  "updated_at": "2026-09-23T19:52:05.834002+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 26,
+    "detail_succeeded": 25,
     "detail_failed": 0,
-    "detail_skipped": 14,
-    "invalid_tweets": 10,
+    "detail_skipped": 15,
+    "invalid_tweets": 13,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790193053
+      "reset": 1790193989
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T19:35:52.617247+00:00",
-  "finished_at": "2026-09-23T19:36:31.204850+00:00",
+  "started_at": "2026-09-23T19:51:28.645927+00:00",
+  "finished_at": "2026-09-23T19:52:05.832724+00:00",
   "posts_scanned": 610,
-  "posts_with_history": 549,
-  "posts_flagged": 7,
+  "posts_with_history": 543,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 163,
+  "minutes_since_last_notification": 179,
   "reject_reasons": {
-    "古すぎる": 372,
-    "いいねが少なすぎる": 125,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 8,
+    "古すぎる": 394,
+    "いいねが少なすぎる": 122,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 6,
     "失速済み": 2
   },
   "config": {
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46479,
-    "posts": 13719,
-    "oldest": "2026-09-22T19:47:30.200286+00:00"
+    "total": 46718,
+    "posts": 13721,
+    "oldest": "2026-09-22T20:03:24.391957+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6332,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6317,
   "top5": [
     {
       "author": "mask_watermelon",
-      "score": 24.8,
-      "likes": 47325,
-      "likes_per_min": 12.14,
-      "acceleration": 1.07,
+      "score": 22.8,
+      "likes": 47480,
+      "likes_per_min": 9.95,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 904.7,
+      "age_minutes": 920.3,
       "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
       "url": "https://x.com/i/status/2102616899305852990"
     },
     {
-      "author": "y_llrq",
-      "score": 23.3,
-      "likes": 34866,
-      "likes_per_min": 5.88,
-      "acceleration": 0.52,
-      "measured": true,
-      "age_minutes": 814.3,
-      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
-      "url": "https://x.com/i/status/2102639649718214672"
-    },
-    {
       "author": "yuzukichococh",
-      "score": 26.7,
-      "likes": 8422,
-      "likes_per_min": 16.29,
-      "acceleration": 1.02,
+      "score": 24.0,
+      "likes": 8661,
+      "likes_per_min": 15.34,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 202.1,
+      "age_minutes": 217.7,
       "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
       "url": "https://x.com/i/status/2102793711025639476"
     },
     {
-      "author": "hirox246",
-      "score": 23.9,
-      "likes": 2504,
-      "likes_per_min": 6.07,
+      "author": "Tigers_140609",
+      "score": 65.6,
+      "likes": 1818,
+      "likes_per_min": 16.17,
       "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 229.8,
-      "text": "使わないよ。",
-      "url": "https://x.com/i/status/2102786745641398459"
-    },
-    {
-      "author": "Tigers_140609",
-      "score": 64.4,
-      "likes": 1566,
-      "likes_per_min": 18.85,
-      "acceleration": 0.74,
-      "measured": true,
-      "age_minutes": 72.6,
+      "age_minutes": 88.2,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
+    },
+    {
+      "author": "oozorasubaru",
+      "score": 18.3,
+      "likes": 4824,
+      "likes_per_min": 8.02,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 213.7,
+      "text": "@yuzukichococh お前まじかwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "url": "https://x.com/i/status/2102794717004222803"
+    },
+    {
+      "author": "lazvell",
+      "score": 38.3,
+      "likes": 2255,
+      "likes_per_min": 18.68,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 85.2,
+      "text": "うぉーデン...wて感じでした。ガーディアンでいいorヴァンダルのほうがいいシーンが多すぎた\n\n強い使い方見つけれるとい",
+      "url": "https://x.com/i/status/2102827068337856554"
     }
   ]
 }

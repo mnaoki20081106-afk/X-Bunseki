@@ -1,32 +1,33 @@
 {
-  "updated_at": "2026-09-23T04:47:13.347681+00:00",
+  "updated_at": "2026-09-23T05:03:04.532298+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "rate_limited",
-    "search_succeeded": 14,
-    "search_failed": 22,
-    "detail_succeeded": 40,
-    "detail_failed": 0,
-    "invalid_tweets": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 37,
+    "detail_failed": 3,
+    "invalid_tweets": 2,
     "failures": {
-      "rate_limited": 1
+      "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T04:46:49.430658+00:00",
-  "finished_at": "2026-09-23T04:47:13.345503+00:00",
-  "posts_scanned": 297,
-  "posts_with_history": 216,
-  "posts_flagged": 13,
+  "started_at": "2026-09-23T05:02:30.927696+00:00",
+  "finished_at": "2026-09-23T05:03:04.531225+00:00",
+  "posts_scanned": 591,
+  "posts_with_history": 453,
+  "posts_flagged": 81,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 195,
+  "minutes_since_last_notification": 211,
   "reject_reasons": {
-    "古すぎる": 56,
-    "いいねが少なすぎる": 172,
-    "初回観測かつ平均速度が低い": 3,
-    "誘導文パターン": 1,
-    "失速済み": 1
+    "古すぎる": 144,
+    "誘導文パターン": 6,
+    "失速済み": 9,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 221,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -43,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51023,
-    "posts": 11343,
-    "oldest": "2026-09-22T05:02:51.334352+00:00"
+    "total": 51034,
+    "posts": 11406,
+    "oldest": "2026-09-22T05:17:16.628361+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4390,
+  "viral_discovery_posts": 121,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4453,
   "top5": [
     {
-      "author": "houkaistarrail",
-      "score": 81.2,
-      "likes": 10366,
-      "likes_per_min": 157.78,
-      "acceleration": 0.67,
+      "author": "jcom_support",
+      "score": 51.9,
+      "likes": 8652,
+      "likes_per_min": 26.0,
+      "acceleration": 0.69,
       "measured": true,
-      "age_minutes": 47.2,
-      "text": "【崩壊：スターレイル】 即興芝居PV 「そして、芸術へと至る」\n\n▼キャスト\nパール CV: 安野希世乃\nトパーズ CV",
-      "url": "https://x.com/i/status/2102608902470672496"
+      "age_minutes": 218.5,
+      "text": "【お知らせ】現在、J:COM NETのインターネット接続がご利用できない状況が発生しております。\nまた各種サポート、カス",
+      "url": "https://x.com/i/status/2102569778233917483"
     },
     {
-      "author": "nijisanji_app",
-      "score": 38.7,
-      "likes": 1265,
-      "likes_per_min": 20.35,
+      "author": "k_maru_dau_baby",
+      "score": 52.6,
+      "likes": 12644,
+      "likes_per_min": 88.4,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 32.1,
-      "text": "✦ ── ˖ ࣪ ⊹ ˚ ✧₊ 🌟 ₊✧ ˚ ⊹ ࣪ ˖ ── ✦\n　　#星川サラ_ステラノート \n  🚨早期予約特典　",
-      "url": "https://x.com/i/status/2102612712056623165"
+      "age_minutes": 114.7,
+      "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
+      "url": "https://x.com/i/status/2102595903244911002"
     },
     {
-      "author": "hollyhock_staff",
-      "score": 56.1,
-      "likes": 2916,
-      "likes_per_min": 20.62,
-      "acceleration": 0.96,
+      "author": "cinemastaff_",
+      "score": 62.8,
+      "likes": 14678,
+      "likes_per_min": 82.1,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 91.7,
-      "text": "2008シーズンに特別指定選手として #水戸ホーリーホック に在籍していた #小林悠 選手が2026年限りでの現役引退を",
-      "url": "https://x.com/i/status/2102597705902223456"
+      "age_minutes": 122.4,
+      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
+      "url": "https://x.com/i/status/2102593976947949919"
     },
     {
-      "author": "naniwa_x_ae",
-      "score": 63.5,
-      "likes": 1351,
-      "likes_per_min": 136.45560524704428,
+      "author": "YahooNewsTopics",
+      "score": 61.4,
+      "likes": 17739,
+      "likes_per_min": 445.21,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.9,
-      "text": "／\n\n#なにわAぇ生放送\n見逃し配信スタート💥\n\n＼\n\n『なにわAぇ! の放送させてください！』\n#TVer にて配信中",
-      "url": "https://x.com/i/status/2102618289398743264"
+      "measured": true,
+      "age_minutes": 114.1,
+      "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
+      "url": "https://x.com/i/status/2102596062485828079"
     },
     {
-      "author": "Pinakano",
-      "score": 34.5,
-      "likes": 1185,
-      "likes_per_min": 5.74,
-      "acceleration": 0.81,
+      "author": "saltfish12",
+      "score": 51.3,
+      "likes": 15512,
+      "likes_per_min": 276.41,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 159.0,
-      "text": "以前、DMでSNSとの向き合い方について少し話したことがある。忘れているなら、読み返してほしい。\n\nそのとき、問題意識そ",
-      "url": "https://x.com/i/status/2102580765620162683"
+      "age_minutes": 123.0,
+      "text": "#5連休は掘り出し作家大収穫祭\n夏のあの空気感が好き https://t.co/JF0GBuIxkh",
+      "url": "https://x.com/i/status/2102593823235092702"
     }
   ]
 }

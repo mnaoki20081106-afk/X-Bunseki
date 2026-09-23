@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-23T00:47:09.121105+00:00",
+  "updated_at": "2026-09-23T01:02:32.982017+00:00",
   "status": "success",
-  "started_at": "2026-09-23T00:46:37.443673+00:00",
-  "finished_at": "2026-09-23T00:47:09.120179+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 483,
-  "posts_flagged": 40,
-  "notified_count": 0,
+  "started_at": "2026-09-23T01:02:02.272256+00:00",
+  "finished_at": "2026-09-23T01:02:32.980783+00:00",
+  "posts_scanned": 598,
+  "posts_with_history": 478,
+  "posts_flagged": 41,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 44,
+  "minutes_since_last_notification": 60,
   "reject_reasons": {
-    "古すぎる": 261,
-    "初回観測かつ平均速度が低い": 4,
-    "誘導文パターン": 8,
-    "いいねが少なすぎる": 188,
-    "失速済み": 3
+    "古すぎる": 249,
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 193,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 2,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46539,
-    "posts": 10158,
-    "oldest": "2026-09-22T00:51:01.434877+00:00"
+    "total": 46573,
+    "posts": 10108,
+    "oldest": "2026-09-22T01:12:46.923389+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 3,
-  "watchlist_active": 3671,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 1,
+  "watchlist_active": 3709,
   "top5": [
     {
       "author": "main_warabi",
-      "score": 27.8,
-      "likes": 105269,
-      "likes_per_min": 176.44,
-      "acceleration": 0.89,
+      "score": 28.3,
+      "likes": 107994,
+      "likes_per_min": 177.06,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 727.9,
+      "age_minutes": 743.3,
       "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
       "url": "https://x.com/main_warabi/status/2102377179522949621"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 67.2,
-      "likes": 2013,
-      "likes_per_min": 14.78552424993976,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 136.1,
-      "text": "【AIは「SI」に改称 米大統領宣言】\nhttps://t.co/cqo3WBNSNM",
-      "url": "https://x.com/YahooNewsTopics/status/2102526101398708595"
-    },
-    {
-      "author": "YahooNewsTopics",
-      "score": 96.6,
-      "likes": 2146,
-      "likes_per_min": 40.25,
-      "acceleration": 1.08,
+      "score": 94.4,
+      "likes": 2764,
+      "likes_per_min": 40.15,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 83.1,
+      "age_minutes": 98.5,
       "text": "【波紋 大食い動画の収益停止相次ぐ】\nhttps://t.co/xNRMk5gAXp",
       "url": "https://x.com/YahooNewsTopics/status/2102539440103326148"
     },
     {
-      "author": "modelpress",
-      "score": 46.5,
-      "likes": 12966,
-      "likes_per_min": 44.61,
-      "acceleration": 1.01,
+      "author": "yuruhuwa_kdenpa",
+      "score": 84.8,
+      "likes": 1175,
+      "likes_per_min": 38.34,
+      "acceleration": 1.55,
       "measured": true,
-      "age_minutes": 227.0,
-      "text": "渡辺翔太＆比嘉愛未MC音楽特番\n「歌の感謝祭」タイムテーブル発表❗️\nhttps://t.co/EEQyNZWKe9\n\n",
-      "url": "https://x.com/modelpress/status/2102503229200494958"
+      "age_minutes": 67.8,
+      "text": "本日朝8時\n印旛沼の最新映像\n\n堤防が切れた部分からは水が流出し続けており更に浸水被害が拡大する可能性\n\nこれ応急工事で",
+      "url": "https://x.com/yuruhuwa_kdenpa/status/2102547182083854716"
     },
     {
-      "author": "Genshin_7",
-      "score": 42.5,
-      "likes": 12003,
-      "likes_per_min": 54.68,
-      "acceleration": 0.98,
+      "author": "DowndetectorJP",
+      "score": 86.7,
+      "likes": 519,
+      "likes_per_min": 13.9,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 167.1,
-      "text": "【お知らせ】\n現在、バージョンアップに伴うメンテナンスを実施しております。\nメンテナンス中はゲームプレイができませんので",
-      "url": "https://x.com/Genshin_7/status/2102518300198457552"
+      "age_minutes": 48.5,
+      "text": "ユーザーレポートによると、Jcom は 8:14 PM EDT から問題が発生しています。\nあなたにも問題が発生している",
+      "url": "https://x.com/DowndetectorJP/status/2102552042627539121"
+    },
+    {
+      "author": "no55555t",
+      "score": 44.9,
+      "likes": 156,
+      "likes_per_min": 1.49,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 196.4,
+      "text": "【2026年、実はこの芸能人カップルも破局していた】\n\n長年の交際から、突然の破局まで…\n\n① 鈴木愛理 × 田中碧\n約",
+      "url": "https://x.com/no55555t/status/2102514812957974861"
     }
   ]
 }

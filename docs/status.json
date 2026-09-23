@@ -1,33 +1,30 @@
 {
-  "updated_at": "2026-09-23T06:03:26.688331+00:00",
+  "updated_at": "2026-09-23T06:16:43.332103+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "schema_changed",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "search_succeeded": 5,
+    "search_failed": 28,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "schema_changed": 1
+      "schema_changed": 2
     }
   },
-  "started_at": "2026-09-23T06:03:04.336481+00:00",
-  "finished_at": "2026-09-23T06:03:26.687113+00:00",
-  "posts_scanned": 553,
-  "posts_with_history": 456,
-  "posts_flagged": 68,
+  "started_at": "2026-09-23T06:16:38.466325+00:00",
+  "finished_at": "2026-09-23T06:16:43.330703+00:00",
+  "posts_scanned": 97,
+  "posts_with_history": 73,
+  "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 271,
+  "minutes_since_last_notification": 285,
   "reject_reasons": {
-    "古すぎる": 116,
-    "誘導文パターン": 3,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 1,
-    "失速済み": 4,
-    "いいねが少なすぎる": 223
+    "古すぎる": 1,
+    "いいねが少なすぎる": 64,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +41,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51797,
-    "posts": 11643,
+    "total": 51894,
+    "posts": 11667,
     "oldest": "2026-09-22T06:17:23.805283+00:00"
   },
-  "viral_discovery_posts": 121,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4665,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4678,
   "top5": [
     {
-      "author": "yokose_banana",
-      "score": 34.2,
-      "likes": 21726,
-      "likes_per_min": 53.66,
-      "acceleration": 0.72,
+      "author": "Kanae_2434",
+      "score": 79.7,
+      "likes": 1416,
+      "likes_per_min": 68.61,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 304.7,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/i/status/2102563273724010845"
+      "age_minutes": 14.7,
+      "text": "／\n🕺ダンスショート投稿！\n＼\n【練習テイク③】｢にぎにぎにじたうん！｣ #にぎにじダンス 【にじさんじ/叶】\nhttp",
+      "url": "https://x.com/i/status/2102639599369810162"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 78.8,
-      "likes": 3594,
-      "likes_per_min": 56.83,
-      "acceleration": 1.61,
+      "author": "tnk0456123789",
+      "score": 47.4,
+      "likes": 1842,
+      "likes_per_min": 29.37,
+      "acceleration": 1.15,
       "measured": true,
-      "age_minutes": 103.4,
-      "text": "【「疲れた」1カ月余りで店3度被災】\nhttps://t.co/r1q0cgmZtG",
-      "url": "https://x.com/i/status/2102613930288013449"
+      "age_minutes": 164.9,
+      "text": "「そもそも旦那に興奮しなさ過ぎるし情はあるけど恋はしてないしドキドキもクソもない」って言ってる奥さんが大半だよ。そして旦",
+      "url": "https://x.com/i/status/2102601795575099516"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 40.4,
-      "likes": 16715,
-      "likes_per_min": 59.5,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 175.1,
-      "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
-      "url": "https://x.com/i/status/2102595903244911002"
+      "author": "houkaistarrail",
+      "score": 68.7,
+      "likes": 1224,
+      "likes_per_min": 73.2216713546599,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.7,
+      "text": "おったぬげ！？千星シティで異常現象頻発！？\n\n#崩壊スターレイル #月立つ前に獣と踊れ おったぬげ！？ | Ver.4.",
+      "url": "https://x.com/i/status/2102639098322157674"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 44.4,
-      "likes": 36752,
-      "likes_per_min": 239.44,
-      "acceleration": 0.78,
-      "measured": true,
-      "age_minutes": 174.4,
-      "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
-      "url": "https://x.com/i/status/2102596062485828079"
+      "author": "nijisanji_app",
+      "score": 42.6,
+      "likes": 1185,
+      "likes_per_min": 71.81950583616265,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.5,
+      "text": "／\n#もじさんじ 立伝都々編！\n👀チラ見せあり👀\n＼\n\nにじさんじ総合ファンクラブにて、#立伝都々(@tctt10_10",
+      "url": "https://x.com/i/status/2102639150524768581"
     },
     {
-      "author": "info__Johnnys",
-      "score": 89.4,
-      "likes": 3546,
-      "likes_per_min": 124.29,
-      "acceleration": 1.67,
+      "author": "Kanae_2434",
+      "score": 78.5,
+      "likes": 1641,
+      "likes_per_min": 57.69,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 47.2,
-      "text": "【Endless SHOCK 全国公演決定】\n\n11/28(土)～2027/2/21(日)\n「Endless SHOCK",
-      "url": "https://x.com/i/status/2102628074617737615"
+      "age_minutes": 16.7,
+      "text": "／\n🕺ダンスショート投稿！\n＼\n【練習テイク①】｢にぎにぎにじたうん！｣ #にぎにじダンス 【にじさんじ/叶】\nhttp",
+      "url": "https://x.com/i/status/2102639099899240452"
     }
   ]
 }

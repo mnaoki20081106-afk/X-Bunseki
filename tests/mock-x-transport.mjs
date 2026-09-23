@@ -20,6 +20,9 @@ globalThis.fetch = async url => {
     return Response.json({}, { status: 429, headers: { 'retry-after': '900' } });
   }
   if (mode === 'schema') return Response.json({ data: { new_schema: [] } });
+  if (mode === 'detail_schema_then_success' && operation === 'TweetDetail' && variables.focalTweetId === '456') {
+    return Response.json({ data: { new_schema: [] } });
+  }
   if (mode === 'network') throw new Error('SENSITIVE_VALUE');
   if (mode === 'stale' && operation === 'TweetDetail') return Response.json({}, { status: 503 });
   if (mode === 'stale' || mode === 'empty') return Response.json(timeline([], operation));

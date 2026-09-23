@@ -1,33 +1,32 @@
 {
-  "updated_at": "2026-09-23T05:47:21.667189+00:00",
+  "updated_at": "2026-09-23T05:53:40.497482+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "rate_limited",
+    "search_succeeded": 14,
+    "search_failed": 22,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
+      "rate_limited": 1,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T05:46:59.161250+00:00",
-  "finished_at": "2026-09-23T05:47:21.666063+00:00",
-  "posts_scanned": 569,
-  "posts_with_history": 451,
-  "posts_flagged": 73,
+  "started_at": "2026-09-23T05:53:30.837566+00:00",
+  "finished_at": "2026-09-23T05:53:40.496203+00:00",
+  "posts_scanned": 248,
+  "posts_with_history": 206,
+  "posts_flagged": 18,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 255,
+  "minutes_since_last_notification": 262,
   "reject_reasons": {
-    "古すぎる": 111,
-    "誘導文パターン": 4,
-    "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 221,
-    "初回観測かつ平均速度が低い": 3,
-    "失速済み": 2
+    "古すぎる": 16,
+    "いいねが少なすぎる": 169,
+    "失速済み": 3,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +43,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51866,
-    "posts": 11639,
-    "oldest": "2026-09-22T05:47:22.977997+00:00"
+    "total": 51828,
+    "posts": 11620,
+    "oldest": "2026-09-22T06:02:59.631156+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4612,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4616,
   "top5": [
     {
-      "author": "yokose_banana",
-      "score": 35.9,
-      "likes": 20863,
-      "likes_per_min": 74.89,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 288.7,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/i/status/2102563273724010845"
-    },
-    {
-      "author": "k_maru_dau_baby",
-      "score": 44.1,
-      "likes": 15758,
-      "likes_per_min": 65.41,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 159.0,
-      "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
-      "url": "https://x.com/i/status/2102595903244911002"
-    },
-    {
-      "author": "SN__20200122",
-      "score": 64.0,
-      "likes": 7455,
-      "likes_per_min": 787.1549212605396,
+      "author": "Kanae_2434",
+      "score": 92.9,
+      "likes": 2065,
+      "likes_per_min": 84.7,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.5,
-      "text": "『カリスマックス』 🕶️\n累積再生数2億回突破ありがとうございマックス‼️\n\n▽Music Video\nhttps://",
-      "url": "https://x.com/i/status/2102633531394634017"
+      "measured": true,
+      "age_minutes": 12.1,
+      "text": "おはよー！今日の夜はJSP1やる\nなんと前情報無し",
+      "url": "https://x.com/i/status/2102634459858375060"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 48.7,
-      "likes": 32901,
-      "likes_per_min": 307.64,
-      "acceleration": 0.97,
+      "author": "consaofficial",
+      "score": 83.1,
+      "likes": 1941,
+      "likes_per_min": 95.31,
+      "acceleration": 1.51,
       "measured": true,
-      "age_minutes": 158.4,
-      "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
-      "url": "https://x.com/i/status/2102596062485828079"
+      "age_minutes": 34.6,
+      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
+      "url": "https://x.com/i/status/2102628786093129897"
     },
     {
-      "author": "pap1yong",
-      "score": 46.7,
-      "likes": 11275,
-      "likes_per_min": 67.99,
-      "acceleration": 0.93,
+      "author": "kumagai_chiba",
+      "score": 68.5,
+      "likes": 2036,
+      "likes_per_min": 30.24,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 150.9,
-      "text": "学生の頃にいた若干周りから浮いていたあいつや、バイト先のこんなキモい人間今までこの街のどこにいたんだよと思わせてくれたあ",
-      "url": "https://x.com/i/status/2102597928607162477"
+      "age_minutes": 81.6,
+      "text": "印旛沼の水位低下を図るため、排水機場のフル稼働とポンプ車投入による緊急排水などが全力で行われています。\n\n今回、北印旛沼",
+      "url": "https://x.com/i/status/2102616968432140478"
+    },
+    {
+      "author": "tnk0456123789",
+      "score": 52.5,
+      "likes": 1202,
+      "likes_per_min": 27.23,
+      "acceleration": 1.27,
+      "measured": true,
+      "age_minutes": 141.9,
+      "text": "「そもそも旦那に興奮しなさ過ぎるし情はあるけど恋はしてないしドキドキもクソもない」って言ってる奥さんが大半だよ。そして旦",
+      "url": "https://x.com/i/status/2102601795575099516"
+    },
+    {
+      "author": "livedoornews",
+      "score": 70.3,
+      "likes": 363,
+      "likes_per_min": 16.15,
+      "acceleration": 1.26,
+      "measured": true,
+      "age_minutes": 29.7,
+      "text": "【復旧急ぐ】JCOMインターネットで接続障害\nhttps://t.co/vTVOAxAwA3\n\nケーブルテレビ大手のJC",
+      "url": "https://x.com/i/status/2102630035966623772"
     }
   ]
 }

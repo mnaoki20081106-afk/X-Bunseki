@@ -24,7 +24,7 @@ Object.assign(QID,queryIdOverrides(process.env.X_GRAPHQL_QUERY_IDS));
 const started=Date.now();
 const guard=createRequestGuard();
 const searchPages=new Map();
-let searchSuccess=0, searchFailed=0, detailFailed=0, invalidTweets=0;
+let searchSuccess=0, searchFailed=0, detailFailed=0, detailSkipped=0, invalidTweets=0;
 function pageKey(query,product,cursor){ return JSON.stringify([query,product,cursor||'']); }
 function safeError(e){ return e instanceof CollectorError ? e.code : 'request_failed'; }
 let searchResponses=0, searchTweets=0, searchTweetsWithViews=0;
@@ -207,7 +207,7 @@ await mapLimit(missingDue,DETAIL_CONCURRENCY,async p=>{
     guard.check('TweetDetail');
     const d=await x.getTweet(p.post_id);
     if(applyDetail(p,d)) detailOk++;
-    else detailFailed++;
+    else detailSkipped++;
   } catch(e){
     detailFailed++;
     console.error('[detail] '+p.post_id+' failed: '+safeError(e));
@@ -222,14 +222,22 @@ console.error('[collector] posts='+all.length+
   ' raw_search_views='+searchTweetsWithViews+'/'+searchTweets+
   ' search_responses='+searchResponses+
   ' detail='+detailOk+'/'+missingDue.length+
+  ' skipped='+detailSkipped+' failed='+detailFailed+
   ' 429='+rateLimited+' 403='+forbidden+
   ' elapsed_ms='+(Date.now()-started));
-const hasFailure=searchFailed>0 || detailFailed>0 || invalidTweets>0;
-const error=guard.primaryError || (searchSuccess===0 ? 'collection_failed' : null);
+// A small number of individual posts can legitimately omit views/bookmarks or
+// become unavailable. Skip those observations without declaring the whole
+// collector unhealthy. Escalate only when the loss is material.
+const detailSkipRatio=missingDue.length ? detailSkipped/missingDue.length : 0;
+const materialDetailLoss=detailSkipped>=5 && detailSkipRatio>=0.25;
+const hasFailure=searchFailed>0 || detailFailed>0 || materialDetailLoss;
+const error=guard.primaryError ||
+  (searchSuccess===0 ? 'collection_failed' : (materialDetailLoss?'incomplete_observations':null));
 const health={
   status:all.length===0 && hasFailure ? (error||'collection_failed') : (hasFailure?'degraded':'success'),
   error_code:error, search_succeeded:searchSuccess, search_failed:searchFailed,
-  detail_succeeded:detailOk, detail_failed:detailFailed, invalid_tweets:invalidTweets,
+  detail_succeeded:detailOk, detail_failed:detailFailed, detail_skipped:detailSkipped,
+  invalid_tweets:invalidTweets,
   search_rate_limit:searchRateLimit,
   failures:guard.failures
 };

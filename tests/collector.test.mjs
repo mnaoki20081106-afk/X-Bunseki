@@ -79,7 +79,7 @@ test('discovers bounded read-only query IDs without executing bundle or forwardi
     calls.push(url);
     assert.equal(options.headers, undefined);
     assert.equal(options.redirect, 'error');
-    return new Response(url === 'https://x.com/'
+    return new Response(url === 'https://x.com/home'
       ? '<script src="https://abs.twimg.com/responsive-web/client-web/main.abcdef.js"></script><script src="https://evil/main.js"></script>'
       : source);
   });

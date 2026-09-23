@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-23T18:18:52.980267+00:00",
+  "updated_at": "2026-09-23T18:34:20.243292+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 28,
+    "detail_succeeded": 27,
     "detail_failed": 0,
-    "detail_skipped": 12,
-    "invalid_tweets": 9,
+    "detail_skipped": 13,
+    "invalid_tweets": 10,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790188397
+      "reset": 1790189332
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T18:18:16.529035+00:00",
-  "finished_at": "2026-09-23T18:18:52.979057+00:00",
-  "posts_scanned": 574,
-  "posts_with_history": 539,
-  "posts_flagged": 12,
+  "started_at": "2026-09-23T18:33:51.448485+00:00",
+  "finished_at": "2026-09-23T18:34:20.241872+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 546,
+  "posts_flagged": 11,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 86,
+  "minutes_since_last_notification": 101,
   "reject_reasons": {
-    "古すぎる": 248,
+    "古すぎる": 255,
     "失速済み": 7,
-    "いいねが少なすぎる": 148,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 6,
-    "誘導文パターン": 3
+    "いいねが少なすぎる": 164,
+    "いいね稼ぎ疑い": 2,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46922,
-    "posts": 13717,
-    "oldest": "2026-09-22T18:33:02.585826+00:00"
+    "total": 46939,
+    "posts": 13735,
+    "oldest": "2026-09-22T18:47:56.299949+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 5,
-  "watchlist_active": 6400,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 4,
+  "watchlist_active": 6390,
   "top5": [
     {
       "author": "suzuran_www",
-      "score": 27.0,
-      "likes": 14081,
-      "likes_per_min": 17.83,
-      "acceleration": null,
+      "score": 23.9,
+      "likes": 14253,
+      "likes_per_min": 11.13,
+      "acceleration": 0.62,
       "measured": true,
-      "age_minutes": 560.8,
+      "age_minutes": 576.2,
       "text": "伊能忠敬界隈なら知っておいてほしい事\n\nシルバーウィークにディズニーで合計6万歩歩いても疲れゼロだから絶対試してみてくれ",
       "url": "https://x.com/i/status/2102683921112785371"
     },
     {
-      "author": "akiko_lawson",
-      "score": 33.0,
-      "likes": 822,
-      "likes_per_min": 4.134297073031491,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 198.8,
-      "text": "贅沢すぎ商品発売中です♪\nみなさんはどの商品が気になりますか？\nコメントで教えてください(^^)",
-      "url": "https://x.com/i/status/2102775005100544293"
-    },
-    {
       "author": "YahooNewsTopics",
-      "score": 36.2,
-      "likes": 6751,
-      "likes_per_min": 12.63,
-      "acceleration": 0.74,
+      "score": 34.7,
+      "likes": 6938,
+      "likes_per_min": 12.1,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 198.9,
+      "age_minutes": 214.3,
       "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
       "url": "https://x.com/i/status/2102774991628730557"
     },
     {
       "author": "sukosuko_sukoya",
-      "score": 27.0,
-      "likes": 32986,
-      "likes_per_min": 50.38,
-      "acceleration": 0.87,
+      "score": 23.6,
+      "likes": 33606,
+      "likes_per_min": 40.12,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 221.8,
+      "age_minutes": 237.2,
       "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
       "url": "https://x.com/i/status/2102769226490753454"
     },
     {
       "author": "info__Johnnys",
-      "score": 30.6,
-      "likes": 8062,
-      "likes_per_min": 9.12,
-      "acceleration": 0.72,
+      "score": 28.7,
+      "likes": 8188,
+      "likes_per_min": 8.15,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 219.1,
+      "age_minutes": 234.6,
       "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
       "url": "https://x.com/i/status/2102769895759073722"
+    },
+    {
+      "author": "MitoTsukino",
+      "score": 31.5,
+      "likes": 37534,
+      "likes_per_min": 47.18,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 193.4,
+      "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
+      "url": "https://x.com/i/status/2102780251738894502"
     }
   ]
 }

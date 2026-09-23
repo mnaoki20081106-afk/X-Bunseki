@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T21:18:16.613519+00:00",
+  "updated_at": "2026-09-23T21:33:54.657456+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,25 +9,25 @@
     "detail_succeeded": 22,
     "detail_failed": 0,
     "detail_skipped": 18,
-    "invalid_tweets": 14,
+    "invalid_tweets": 13,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790199171
+      "reset": 1790200100
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T21:17:50.361347+00:00",
-  "finished_at": "2026-09-23T21:18:16.612009+00:00",
-  "posts_scanned": 580,
-  "posts_with_history": 456,
-  "posts_flagged": 17,
+  "started_at": "2026-09-23T21:33:19.506593+00:00",
+  "finished_at": "2026-09-23T21:33:54.656132+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 473,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 265,
+  "minutes_since_last_notification": 281,
   "reject_reasons": {
-    "古すぎる": 390,
-    "いいねが少なすぎる": 126,
+    "古すぎる": 403,
+    "いいねが少なすぎる": 144,
     "初回観測かつ平均速度が低い": 4
   },
   "config": {
@@ -45,68 +45,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47109,
-    "posts": 13607,
-    "oldest": "2026-09-22T21:32:58.567866+00:00"
+    "total": 47133,
+    "posts": 13602,
+    "oldest": "2026-09-22T21:47:18.923705+00:00"
   },
   "viral_discovery_posts": 133,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6272,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6265,
   "top5": [
     {
       "author": "y_llrq",
-      "score": 29.0,
-      "likes": 35393,
-      "likes_per_min": 7.35,
-      "acceleration": 1.5,
+      "score": 26.9,
+      "likes": 35513,
+      "likes_per_min": 7.68,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 916.1,
+      "age_minutes": 931.7,
       "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
       "url": "https://x.com/i/status/2102639649718214672"
     },
     {
-      "author": "Tigers_140609",
-      "score": 51.3,
-      "likes": 3600,
-      "likes_per_min": 27.31,
-      "acceleration": 1.25,
+      "author": "Ram1ram7",
+      "score": 22.5,
+      "likes": 43868,
+      "likes_per_min": 8.63,
+      "acceleration": 0.62,
       "measured": true,
-      "age_minutes": 174.4,
-      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
-      "url": "https://x.com/i/status/2102826309907030122"
-    },
-    {
-      "author": "subsugi_warota",
-      "score": 43.8,
-      "likes": 11584,
-      "likes_per_min": 55.8,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 186.2,
-      "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
-      "url": "https://x.com/i/status/2102823335386345915"
+      "age_minutes": 792.1,
+      "text": "これめっちゃ楽しい♡ https://t.co/qxiI21Fdmg",
+      "url": "https://x.com/i/status/2102674781573349631"
     },
     {
       "author": "nino_honmono",
-      "score": 73.2,
-      "likes": 5925,
-      "likes_per_min": 368.7647318074258,
+      "score": 76.1,
+      "likes": 10337,
+      "likes_per_min": 282.2,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.1,
+      "measured": true,
+      "age_minutes": 31.7,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2102866142524322020"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 77.5,
-      "likes": 2985,
-      "likes_per_min": 32.77,
-      "acceleration": 1.24,
+      "author": "subsugi_warota",
+      "score": 40.1,
+      "likes": 12391,
+      "likes_per_min": 51.62,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 76.6,
-      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
-      "url": "https://x.com/i/status/2102850899475669089"
+      "age_minutes": 201.8,
+      "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
+      "url": "https://x.com/i/status/2102823335386345915"
+    },
+    {
+      "author": "Tigers_140609",
+      "score": 47.6,
+      "likes": 4077,
+      "likes_per_min": 30.51,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 190.0,
+      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
+      "url": "https://x.com/i/status/2102826309907030122"
     }
   ]
 }

@@ -1,21 +1,20 @@
 {
-  "updated_at": "2026-09-23T04:02:57.816232+00:00",
+  "updated_at": "2026-09-23T04:17:08.399782+00:00",
   "status": "success",
-  "started_at": "2026-09-23T04:02:25.744537+00:00",
-  "finished_at": "2026-09-23T04:02:57.815288+00:00",
-  "posts_scanned": 586,
-  "posts_with_history": 422,
-  "posts_flagged": 93,
+  "started_at": "2026-09-23T04:16:33.958524+00:00",
+  "finished_at": "2026-09-23T04:17:08.398531+00:00",
+  "posts_scanned": 293,
+  "posts_with_history": 200,
+  "posts_flagged": 15,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 151,
+  "minutes_since_last_notification": 165,
   "reject_reasons": {
-    "古すぎる": 143,
-    "誘導文パターン": 7,
-    "いいねが少なすぎる": 229,
-    "失速済み": 4,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 57,
+    "いいねが少なすぎる": 172,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -32,68 +31,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50420,
-    "posts": 11096,
+    "total": 50713,
+    "posts": 11189,
     "oldest": "2026-09-22T04:45:46.030568+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4283,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4286,
   "top5": [
     {
-      "author": "tamanchu_hiroto",
-      "score": 26.1,
-      "likes": 216581,
-      "likes_per_min": 486.77,
+      "author": "houkaistarrail",
+      "score": 87.1,
+      "likes": 4439,
+      "likes_per_min": 250.94,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 937.1,
-      "text": "妻と2人興奮した https://t.co/2Hso9xlcaK",
-      "url": "https://x.com/tamanchu_hiroto/status/2102373808095273120"
+      "age_minutes": 17.1,
+      "text": "【崩壊：スターレイル】 即興芝居PV 「そして、芸術へと至る」\n\n▼キャスト\nパール CV: 安野希世乃\nトパーズ CV",
+      "url": "https://x.com/houkaistarrail/status/2102608902470672496"
     },
     {
-      "author": "cinemastaff_",
-      "score": 73.9,
-      "likes": 8768,
-      "likes_per_min": 165.81,
-      "acceleration": 0.79,
+      "author": "hollyhock_staff",
+      "score": 59.2,
+      "likes": 2282,
+      "likes_per_min": 34.28,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 62.2,
-      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
-      "url": "https://x.com/cinemastaff_/status/2102593976947949919"
+      "age_minutes": 61.6,
+      "text": "2008シーズンに特別指定選手として #水戸ホーリーホック に在籍していた #小林悠 選手が2026年限りでの現役引退を",
+      "url": "https://x.com/hollyhock_staff/status/2102597705902223456"
     },
     {
-      "author": "wadaino_taikai",
-      "score": 23.0,
-      "likes": 4966,
-      "likes_per_min": 22.09009472490395,
+      "author": "tekitou115330",
+      "score": 62.3,
+      "likes": 665,
+      "likes_per_min": 26.8,
+      "acceleration": 2.94,
+      "measured": true,
+      "age_minutes": 136.0,
+      "text": "なんかみい山の作者炎上しててこれ https://t.co/YGsHqjYHT2",
+      "url": "https://x.com/tekitou115330/status/2102578998337507437"
+    },
+    {
+      "author": "Kanae_2434",
+      "score": 68.2,
+      "likes": 1323,
+      "likes_per_min": 77.28431680915615,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 224.8,
-      "text": "コインランドリーでチャーハン作ってる強者いると思ったら違ったwww https://t.co/UkKBECGeCY",
-      "url": "https://x.com/wadaino_taikai/status/2102553067887669652"
+      "age_minutes": 17.1,
+      "text": "／\n📢ショート動画投稿！\n＼\n【#SURGETown】天然が出てしまう叶 #にじさんじ #叶 #shorts\nhttps",
+      "url": "https://x.com/Kanae_2434/status/2102608901707579598"
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 83.6,
-      "likes": 13012,
-      "likes_per_min": 1270.7062790154225,
+      "author": "KNTFR2434",
+      "score": 72.9,
+      "likes": 1470,
+      "likes_per_min": 21.51,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.2,
-      "text": "ああああん https://t.co/5XKpQJ1Crc",
-      "url": "https://x.com/MotokiOhmoriMGA/status/2102607066770891215"
-    },
-    {
-      "author": "frontale_staff",
-      "score": 70.0,
-      "likes": 18571,
-      "likes_per_min": 84.18,
-      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 116.1,
-      "text": "川崎フロンターレに所属しております小林悠選手が、2027年1月1日をもって現役を引退することになりましたので、お知らせい",
-      "url": "https://x.com/frontale_staff/status/2102580416620474507"
+      "age_minutes": 26.1,
+      "text": "13時～\n【 Deadlock 】　シルバーウィーク〆はやっぱランケド【にじさんじ/風楽奏斗】 https://t.co",
+      "url": "https://x.com/KNTFR2434/status/2102606653522928118"
     }
   ]
 }

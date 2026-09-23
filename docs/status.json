@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T20:47:13.627282+00:00",
+  "updated_at": "2026-09-23T21:02:53.905932+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,21 +13,21 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790197305
+      "reset": 1790198237
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T20:46:44.288410+00:00",
-  "finished_at": "2026-09-23T20:47:13.626036+00:00",
-  "posts_scanned": 585,
-  "posts_with_history": 497,
-  "posts_flagged": 9,
+  "started_at": "2026-09-23T21:02:16.116092+00:00",
+  "finished_at": "2026-09-23T21:02:53.904452+00:00",
+  "posts_scanned": 602,
+  "posts_with_history": 516,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 234,
+  "minutes_since_last_notification": 250,
   "reject_reasons": {
-    "古すぎる": 409,
-    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 422,
+    "初回観測かつ平均速度が低い": 3,
     "いいねが少なすぎる": 125
   },
   "config": {
@@ -45,68 +45,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47081,
-    "posts": 13731,
-    "oldest": "2026-09-22T20:47:34.993342+00:00"
+    "total": 47397,
+    "posts": 13727,
+    "oldest": "2026-09-22T21:03:07.356606+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 0,
-  "watchlist_active": 6280,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6272,
   "top5": [
     {
-      "author": "Tigers_140609",
-      "score": 55.6,
-      "likes": 2837,
-      "likes_per_min": 20.48,
-      "acceleration": 1.19,
+      "author": "y_llrq",
+      "score": 25.8,
+      "likes": 35280,
+      "likes_per_min": 4.9,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 143.3,
+      "age_minutes": 900.7,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
+    },
+    {
+      "author": "Tigers_140609",
+      "score": 52.3,
+      "likes": 3180,
+      "likes_per_min": 21.89,
+      "acceleration": 1.07,
+      "measured": true,
+      "age_minutes": 159.0,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
     },
     {
       "author": "subsugi_warota",
-      "score": 49.0,
-      "likes": 9829,
-      "likes_per_min": 72.46,
-      "acceleration": 0.66,
+      "score": 45.7,
+      "likes": 10726,
+      "likes_per_min": 57.23,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 155.1,
+      "age_minutes": 170.8,
       "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
       "url": "https://x.com/i/status/2102823335386345915"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 81.6,
-      "likes": 2066,
-      "likes_per_min": 25.44,
-      "acceleration": 0.8,
+      "score": 77.3,
+      "likes": 2481,
+      "likes_per_min": 26.48,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 45.6,
+      "age_minutes": 61.3,
       "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
       "url": "https://x.com/i/status/2102850899475669089"
     },
     {
       "author": "lazvell",
-      "score": 31.2,
-      "likes": 3022,
-      "likes_per_min": 12.75,
-      "acceleration": 0.96,
+      "score": 30.0,
+      "likes": 3225,
+      "likes_per_min": 12.95,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 140.3,
+      "age_minutes": 156.0,
       "text": "うぉーデン...wて感じでした。ガーディアンでいいorヴァンダルのほうがいいシーンが多すぎた\n\n強い使い方見つけれるとい",
       "url": "https://x.com/i/status/2102827068337856554"
-    },
-    {
-      "author": "hex6u",
-      "score": 53.6,
-      "likes": 234,
-      "likes_per_min": 4.7,
-      "acceleration": 1.24,
-      "measured": true,
-      "age_minutes": 147.7,
-      "text": "【悲報】親子「中1の娘がオッサンに殴られた！拡散希望！絶対に許さない」と投稿\n↓\n“激イタ家族”と発覚\n↓\n本当は自分達",
-      "url": "https://x.com/i/status/2102825195623112710"
     }
   ]
 }

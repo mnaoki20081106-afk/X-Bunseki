@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-09-23T21:02:53.905932+00:00",
+  "updated_at": "2026-09-23T21:18:16.613519+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 23,
+    "detail_succeeded": 22,
     "detail_failed": 0,
-    "detail_skipped": 17,
-    "invalid_tweets": 12,
+    "detail_skipped": 18,
+    "invalid_tweets": 14,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790198237
+      "reset": 1790199171
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T21:02:16.116092+00:00",
-  "finished_at": "2026-09-23T21:02:53.904452+00:00",
-  "posts_scanned": 602,
-  "posts_with_history": 516,
-  "posts_flagged": 12,
+  "started_at": "2026-09-23T21:17:50.361347+00:00",
+  "finished_at": "2026-09-23T21:18:16.612009+00:00",
+  "posts_scanned": 580,
+  "posts_with_history": 456,
+  "posts_flagged": 17,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 250,
+  "minutes_since_last_notification": 265,
   "reject_reasons": {
-    "古すぎる": 422,
-    "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 125
+    "古すぎる": 390,
+    "いいねが少なすぎる": 126,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -45,9 +45,9 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47397,
-    "posts": 13727,
-    "oldest": "2026-09-22T21:03:07.356606+00:00"
+    "total": 47109,
+    "posts": 13607,
+    "oldest": "2026-09-22T21:32:58.567866+00:00"
   },
   "viral_discovery_posts": 133,
   "million_imp_rescued": 1,
@@ -55,58 +55,58 @@
   "top5": [
     {
       "author": "y_llrq",
-      "score": 25.8,
-      "likes": 35280,
-      "likes_per_min": 4.9,
-      "acceleration": 1.14,
+      "score": 29.0,
+      "likes": 35393,
+      "likes_per_min": 7.35,
+      "acceleration": 1.5,
       "measured": true,
-      "age_minutes": 900.7,
+      "age_minutes": 916.1,
       "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
       "url": "https://x.com/i/status/2102639649718214672"
     },
     {
       "author": "Tigers_140609",
-      "score": 52.3,
-      "likes": 3180,
-      "likes_per_min": 21.89,
-      "acceleration": 1.07,
+      "score": 51.3,
+      "likes": 3600,
+      "likes_per_min": 27.31,
+      "acceleration": 1.25,
       "measured": true,
-      "age_minutes": 159.0,
+      "age_minutes": 174.4,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
     },
     {
       "author": "subsugi_warota",
-      "score": 45.7,
-      "likes": 10726,
-      "likes_per_min": 57.23,
-      "acceleration": 0.79,
+      "score": 43.8,
+      "likes": 11584,
+      "likes_per_min": 55.8,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 170.8,
+      "age_minutes": 186.2,
       "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
       "url": "https://x.com/i/status/2102823335386345915"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 77.3,
-      "likes": 2481,
-      "likes_per_min": 26.48,
-      "acceleration": 1.04,
-      "measured": true,
-      "age_minutes": 61.3,
-      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
-      "url": "https://x.com/i/status/2102850899475669089"
+      "author": "nino_honmono",
+      "score": 73.2,
+      "likes": 5925,
+      "likes_per_min": 368.7647318074258,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 16.1,
+      "text": "皆ーおはよー",
+      "url": "https://x.com/i/status/2102866142524322020"
     },
     {
-      "author": "lazvell",
-      "score": 30.0,
-      "likes": 3225,
-      "likes_per_min": 12.95,
-      "acceleration": 1.02,
+      "author": "Fuwa_Minato",
+      "score": 77.5,
+      "likes": 2985,
+      "likes_per_min": 32.77,
+      "acceleration": 1.24,
       "measured": true,
-      "age_minutes": 156.0,
-      "text": "うぉーデン...wて感じでした。ガーディアンでいいorヴァンダルのほうがいいシーンが多すぎた\n\n強い使い方見つけれるとい",
-      "url": "https://x.com/i/status/2102827068337856554"
+      "age_minutes": 76.6,
+      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
+      "url": "https://x.com/i/status/2102850899475669089"
     }
   ]
 }

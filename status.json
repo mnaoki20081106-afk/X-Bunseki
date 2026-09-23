@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-23T09:20:32.321781+00:00",
+  "updated_at": "2026-09-23T09:36:04.690083+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 35,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "invalid_tweets": 4,
+    "detail_skipped": 5,
+    "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790156099
+      "reset": 1790157031
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T09:19:58.673986+00:00",
-  "finished_at": "2026-09-23T09:20:32.320496+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 407,
-  "posts_flagged": 114,
+  "started_at": "2026-09-23T09:35:30.867652+00:00",
+  "finished_at": "2026-09-23T09:36:04.688756+00:00",
+  "posts_scanned": 599,
+  "posts_with_history": 333,
+  "posts_flagged": 122,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 468,
+  "minutes_since_last_notification": 484,
   "reject_reasons": {
-    "古すぎる": 145,
-    "失速済み": 6,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 3,
-    "いいねが少なすぎる": 212,
-    "初回観測かつ平均速度が低い": 8
+    "古すぎる": 140,
+    "いいね稼ぎ疑い": 1,
+    "いいねが少なすぎる": 227,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 19,
+    "失速済み": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51658,
-    "posts": 12405,
-    "oldest": "2026-09-22T09:32:21.708171+00:00"
+    "total": 51056,
+    "posts": 12378,
+    "oldest": "2026-09-22T09:47:18.636042+00:00"
   },
-  "viral_discovery_posts": 138,
-  "million_imp_rescued": 3,
-  "watchlist_active": 5369,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 4,
+  "watchlist_active": 5414,
   "top5": [
     {
-      "author": "rui912912",
-      "score": 52.5,
-      "likes": 7843,
-      "likes_per_min": 61.32,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 125.9,
-      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
-      "url": "https://x.com/i/status/2102657881619448301"
-    },
-    {
-      "author": "iON_idol_",
-      "score": 78.1,
-      "likes": 2676,
-      "likes_per_min": 184.7925725815816,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.5,
-      "text": "【新メンバー公開】\nついに新メンバー公開🩷\n最年少146cmの小さなパワフルガール加入！\n\nそしてこの後公開のアー写ポス",
-      "url": "https://x.com/i/status/2102685917265961173"
-    },
-    {
       "author": "jamiereeseee",
-      "score": 65.7,
-      "likes": 642,
-      "likes_per_min": 22.74,
-      "acceleration": 2.45,
+      "score": 67.6,
+      "likes": 1205,
+      "likes_per_min": 29.49,
+      "acceleration": 3.17,
       "measured": true,
-      "age_minutes": 101.8,
+      "age_minutes": 117.3,
       "text": "離婚することにしたー😅\n\nきっかけは\n旦那さんの上司の家に遊びにいき\n奥さまがご不在(ケンカ)で\n変わりに台所仕事したり",
       "url": "https://x.com/i/status/2102663947887186293"
     },
     {
-      "author": "Ra_men_K",
-      "score": 34.5,
-      "likes": 6436,
-      "likes_per_min": 43.64442183821524,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 147.5,
-      "text": "営業中にブチギレました\n\nすみませんでした\n\n駐車場の竹 黒くて珍しいのか？欲しい方は声掛けてくれればと思います\n\n勝手",
-      "url": "https://x.com/i/status/2102652449890947413"
+      "author": "rui912912",
+      "score": 48.4,
+      "likes": 8654,
+      "likes_per_min": 56.75,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 141.4,
+      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
+      "url": "https://x.com/i/status/2102657881619448301"
     },
     {
-      "author": "fG5QSgFSsyaOy6D",
-      "score": 39.3,
-      "likes": 2020,
-      "likes_per_min": 12.82,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 170.0,
-      "text": "戦慄かなの、DJまると破局…母親から「息子の人生めちゃめちゃにした」と怒られ憤慨\n\n戦慄かなのが2024年10月22日の",
-      "url": "https://x.com/i/status/2102646783377821805"
+      "author": "gkmas_official",
+      "score": 72.5,
+      "likes": 3877,
+      "likes_per_min": 272.9287534342904,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.2,
+      "text": "✦\n\n⋆⁺₊⋆ 💖 Roar ガシャ 🖤 ⋆⁺₊⋆\n続報をお楽しみに💄\n\n✦\n#学マス標ツアー_岩手公演_DAY2 ht",
+      "url": "https://x.com/i/status/2102689896251207933"
+    },
+    {
+      "author": "iON_idol_",
+      "score": 75.3,
+      "likes": 7145,
+      "likes_per_min": 237.9934147327622,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 30.0,
+      "text": "【新メンバー公開】\nついに新メンバー公開🩷\n最年少146cmの小さなパワフルガール加入！\n\nそしてこの後公開のアー写ポス",
+      "url": "https://x.com/i/status/2102685917265961173"
+    },
+    {
+      "author": "hsxCtzfbH9b5fxS",
+      "score": 29.1,
+      "likes": 7016,
+      "likes_per_min": 49.552044940625414,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 141.6,
+      "text": "教員のみんなへ\n\nシルバーウィークが終わっても気にするなよ\n\nあと3ヶ月耐えれば、14連休が待ってるぞ",
+      "url": "https://x.com/i/status/2102657839261266227"
     }
   ]
 }

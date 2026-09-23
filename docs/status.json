@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-23T16:21:55.047626+00:00",
+  "updated_at": "2026-09-23T16:37:06.688263+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 4,
+    "search_failed": 28,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
-    "invalid_tweets": 7,
+    "invalid_tweets": 9,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790181383
+      "remaining": 45,
+      "reset": 1790182314
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T16:21:22.783441+00:00",
-  "finished_at": "2026-09-23T16:21:55.046680+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 495,
-  "posts_flagged": 56,
+  "started_at": "2026-09-23T16:36:53.345215+00:00",
+  "finished_at": "2026-09-23T16:37:06.687000+00:00",
+  "posts_scanned": 108,
+  "posts_with_history": 103,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 163,
+  "minutes_since_last_notification": 178,
   "reject_reasons": {
-    "古すぎる": 165,
-    "いいねが少なすぎる": 239,
-    "失速済み": 13,
-    "いいね稼ぎ疑い": 4,
-    "初回観測かつ平均速度が低い": 4,
-    "誘導文パターン": 2
+    "古すぎる": 30,
+    "いいねが少なすぎる": 48,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47572,
-    "posts": 13695,
-    "oldest": "2026-09-22T16:33:06.436020+00:00"
+    "total": 47085,
+    "posts": 13630,
+    "oldest": "2026-09-22T16:47:37.733661+00:00"
   },
-  "viral_discovery_posts": 120,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6452,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6425,
   "top5": [
     {
-      "author": "y_llrq",
-      "score": 30.5,
-      "likes": 31960,
-      "likes_per_min": 29.02,
-      "acceleration": 0.79,
+      "author": "NOSUKE0607",
+      "score": 70.8,
+      "likes": 2739,
+      "likes_per_min": 20.34,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 619.7,
-      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
-      "url": "https://x.com/i/status/2102639649718214672"
+      "age_minutes": 115.8,
+      "text": "NHK「未解決事件」をご覧になったみなさまへ。\n\n今回、NHKの番組で報じられたのは、長年続けてきた「北関東連続幼女誘拐",
+      "url": "https://x.com/i/status/2102770283602137365"
     },
     {
-      "author": "MitoTsukino",
-      "score": 65.1,
-      "likes": 20529,
-      "likes_per_min": 404.27,
-      "acceleration": 1.16,
+      "author": "19880807kk",
+      "score": 26.3,
+      "likes": 428,
+      "likes_per_min": 1.25,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 61.0,
-      "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
-      "url": "https://x.com/i/status/2102780251738894502"
+      "age_minutes": 190.5,
+      "text": "堀大輔「週刊誌にすっぱ抜かれたので月末に堕とされると思うんで、奈落の底に」\n\n2025年の受講生による暴露がトップ記事に",
+      "url": "https://x.com/i/status/2102751477542563855"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 59.2,
-      "likes": 2590,
-      "likes_per_min": 31.62025225302848,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 81.9,
-      "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
-      "url": "https://x.com/i/status/2102774991628730557"
-    },
-    {
-      "author": "info__Johnnys",
-      "score": 66.2,
-      "likes": 5629,
-      "likes_per_min": 63.22,
+      "author": "_h1sn",
+      "score": 17.3,
+      "likes": 153,
+      "likes_per_min": 1.32,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 102.2,
-      "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
-      "url": "https://x.com/i/status/2102769895759073722"
+      "age_minutes": 104.0,
+      "text": "@isuisu1024 これ文春あった時点で🍼側の会議で話題出てないわけないだろうから\nもう🧂に切られたと予想してるんだ",
+      "url": "https://x.com/i/status/2102773259972510038"
     },
     {
-      "author": "sukosuko_sukoya",
-      "score": 46.4,
-      "likes": 20579,
-      "likes_per_min": 258.77,
-      "acceleration": 0.86,
+      "author": "koroch_kowa",
+      "score": 13.3,
+      "likes": 115,
+      "likes_per_min": 0.13,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 104.8,
-      "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
-      "url": "https://x.com/i/status/2102769226490753454"
+      "age_minutes": 171.1,
+      "text": "@taireru いや、これは100％あり得ない。\n流石に奴らも勝手には契約しない。\n\nとんでもない違法行為だし、弁護士",
+      "url": "https://x.com/i/status/2102756361616658492"
+    },
+    {
+      "author": "attk_gossip",
+      "score": 48.1,
+      "likes": 505,
+      "likes_per_min": 8.62,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 101.8,
+      "text": "親金には勝てねー、泣いてる https://t.co/wM2SzLfA5s",
+      "url": "https://x.com/i/status/2102773803294359759"
     }
   ]
 }

@@ -1,34 +1,36 @@
 {
-  "updated_at": "2026-09-23T20:07:26.584572+00:00",
+  "updated_at": "2026-09-23T20:31:42.054989+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 25,
+    "detail_succeeded": 24,
     "detail_failed": 0,
-    "detail_skipped": 15,
-    "invalid_tweets": 11,
+    "detail_skipped": 16,
+    "invalid_tweets": 12,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790194920
+      "reset": 1790196375
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T20:06:59.263893+00:00",
-  "finished_at": "2026-09-23T20:07:26.583210+00:00",
-  "posts_scanned": 600,
-  "posts_with_history": 518,
-  "posts_flagged": 8,
+  "started_at": "2026-09-23T20:31:15.215523+00:00",
+  "finished_at": "2026-09-23T20:31:42.053465+00:00",
+  "posts_scanned": 596,
+  "posts_with_history": 497,
+  "posts_flagged": 9,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 194,
+  "minutes_since_last_notification": 219,
   "reject_reasons": {
-    "古すぎる": 403,
+    "古すぎる": 412,
+    "いいね稼ぎ疑い": 1,
     "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 122
+    "いいねが少なすぎる": 123,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -45,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46740,
-    "posts": 13711,
-    "oldest": "2026-09-22T20:17:37.793050+00:00"
+    "total": 47073,
+    "posts": 13741,
+    "oldest": "2026-09-22T20:32:58.412367+00:00"
   },
-  "viral_discovery_posts": 131,
+  "viral_discovery_posts": 130,
   "million_imp_rescued": 1,
-  "watchlist_active": 6303,
+  "watchlist_active": 6292,
   "top5": [
     {
       "author": "y_llrq",
-      "score": 24.5,
-      "likes": 35023,
-      "likes_per_min": 5.08,
-      "acceleration": 0.86,
+      "score": 23.8,
+      "likes": 35127,
+      "likes_per_min": 4.29,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 845.2,
+      "age_minutes": 869.5,
       "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
       "url": "https://x.com/i/status/2102639649718214672"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 92.5,
-      "likes": 897,
-      "likes_per_min": 154.6489868987108,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 5.8,
-      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
-      "url": "https://x.com/i/status/2102850899475669089"
+      "author": "Tigers_140609",
+      "score": 55.7,
+      "likes": 2519,
+      "likes_per_min": 17.15,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 127.8,
+      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
+      "url": "https://x.com/i/status/2102826309907030122"
     },
     {
       "author": "subsugi_warota",
-      "score": 66.5,
-      "likes": 6029,
-      "likes_per_min": 152.88,
-      "acceleration": 1.41,
+      "score": 52.9,
+      "likes": 8704,
+      "likes_per_min": 110.27,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 115.3,
+      "age_minutes": 139.6,
       "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
       "url": "https://x.com/i/status/2102823335386345915"
     },
     {
-      "author": "yuzukichococh",
-      "score": 23.2,
-      "likes": 8916,
-      "likes_per_min": 16.62,
-      "acceleration": 1.08,
+      "author": "Fuwa_Minato",
+      "score": 88.8,
+      "likes": 1671,
+      "likes_per_min": 31.91,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 233.1,
-      "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
-      "url": "https://x.com/i/status/2102793711025639476"
+      "age_minutes": 30.1,
+      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
+      "url": "https://x.com/i/status/2102850899475669089"
     },
     {
-      "author": "Tigers_140609",
-      "score": 66.3,
-      "likes": 2103,
-      "likes_per_min": 18.57,
-      "acceleration": 1.15,
+      "author": "lazvell",
+      "score": 32.1,
+      "likes": 2824,
+      "likes_per_min": 13.32,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 103.5,
-      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
-      "url": "https://x.com/i/status/2102826309907030122"
+      "age_minutes": 124.8,
+      "text": "うぉーデン...wて感じでした。ガーディアンでいいorヴァンダルのほうがいいシーンが多すぎた\n\n強い使い方見つけれるとい",
+      "url": "https://x.com/i/status/2102827068337856554"
     }
   ]
 }

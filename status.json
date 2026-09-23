@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-23T11:19:11.793206+00:00",
+  "updated_at": "2026-09-23T11:34:42.449119+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 35,
+    "detail_succeeded": 33,
     "detail_failed": 0,
-    "detail_skipped": 5,
-    "invalid_tweets": 5,
+    "detail_skipped": 7,
+    "invalid_tweets": 6,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790163214
+      "reset": 1790164146
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T11:18:34.108179+00:00",
-  "finished_at": "2026-09-23T11:19:11.791916+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 412,
-  "posts_flagged": 124,
+  "started_at": "2026-09-23T11:34:05.341042+00:00",
+  "finished_at": "2026-09-23T11:34:42.447746+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 429,
+  "posts_flagged": 128,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 587,
+  "minutes_since_last_notification": 603,
   "reject_reasons": {
-    "古すぎる": 126,
-    "失速済み": 5,
-    "いいね稼ぎ疑い": 4,
+    "古すぎる": 114,
     "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 7,
-    "いいねが少なすぎる": 226
+    "いいね稼ぎ疑い": 5,
+    "いいねが少なすぎる": 229,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51067,
-    "posts": 12814,
-    "oldest": "2026-09-22T11:32:51.109787+00:00"
+    "total": 51093,
+    "posts": 12889,
+    "oldest": "2026-09-22T11:47:51.859751+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 3,
-  "watchlist_active": 5786,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 4,
+  "watchlist_active": 5844,
   "top5": [
     {
-      "author": "ngnchiikawa",
-      "score": 64.8,
-      "likes": 201852,
-      "likes_per_min": 3757.3606309814445,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 53.7,
-      "text": "⭐️ https://t.co/qIn8fg7Hj0",
-      "url": "https://x.com/i/status/2102705903581765731"
-    },
-    {
       "author": "gonsan_vl",
-      "score": 77.9,
-      "likes": 26825,
-      "likes_per_min": 962.04,
-      "acceleration": null,
+      "score": 77.0,
+      "likes": 39226,
+      "likes_per_min": 799.49,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 35.4,
+      "age_minutes": 50.9,
       "text": "昔Valorantが好きだった人も、\n今Valorantが好きな人も。\n\nアツくなれるカスタム、用意しました。\n\n202",
       "url": "https://x.com/i/status/2102710504963883101"
     },
     {
-      "author": "JUMP_Storm",
-      "score": 76.0,
-      "likes": 10377,
-      "likes_per_min": 917.9054129121914,
+      "author": "Ram1ram7",
+      "score": 34.8,
+      "likes": 12111,
+      "likes_per_min": 62.78397576787991,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.3,
-      "text": "🌹━━━━━━━━\n　 Hey! Sɑy! JUMP\n  New Album「Juliet」\n━━━━━━━━━🌹\n\n1",
-      "url": "https://x.com/i/status/2102716576374141421"
+      "age_minutes": 192.9,
+      "text": "これめっちゃ楽しい♡ https://t.co/qxiI21Fdmg",
+      "url": "https://x.com/i/status/2102674781573349631"
     },
     {
-      "author": "TAIGA_KYOMO33",
-      "score": 71.4,
-      "likes": 24010,
-      "likes_per_min": 540.33,
+      "author": "KOTEshinya",
+      "score": 63.7,
+      "likes": 8768,
+      "likes_per_min": 286.76,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 29.0,
-      "text": "俺がMCの謎番組、23時からだって\n\n俺いまだにドッキリだと疑ってるよ\n\n#名探偵THREE",
-      "url": "https://x.com/i/status/2102712132299313622"
+      "age_minutes": 58.2,
+      "text": "私が出演を予定しておりました今週の #ニカゲーム は【放送休止】となりました。\nこのタイミングですから、検討に検討を重ね",
+      "url": "https://x.com/i/status/2102708670044008896"
     },
     {
       "author": "iON_idol_",
-      "score": 80.9,
-      "likes": 10252,
-      "likes_per_min": 203.43,
-      "acceleration": 0.84,
+      "score": 76.3,
+      "likes": 12875,
+      "likes_per_min": 169.1,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 44.7,
+      "age_minutes": 60.2,
       "text": "【新メンバー公開】\n\n♥小雛 りとる(こひな りとる) @iON_little_\n♡担当カラー ピンク🩷\n♥りとるの愛！",
       "url": "https://x.com/i/status/2102708165506965742"
+    },
+    {
+      "author": "Blue_ArchiveJP",
+      "score": 76.7,
+      "likes": 1110,
+      "likes_per_min": 176.20336187706977,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.3,
+      "text": "【緊急メンテナンス】  \n現在下記の不具合が確認されたため、本日20:35より緊急メンテナンスを実施いたします。\n\n・生",
+      "url": "https://x.com/i/status/2102721739612725329"
     }
   ]
 }

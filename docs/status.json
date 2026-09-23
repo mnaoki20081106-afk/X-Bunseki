@@ -1,37 +1,36 @@
 {
-  "updated_at": "2026-09-23T19:20:51.965616+00:00",
+  "updated_at": "2026-09-23T19:36:31.205939+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 27,
+    "detail_succeeded": 26,
     "detail_failed": 0,
-    "detail_skipped": 13,
+    "detail_skipped": 14,
     "invalid_tweets": 10,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790192123
+      "reset": 1790193053
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T19:20:22.206472+00:00",
-  "finished_at": "2026-09-23T19:20:51.964450+00:00",
+  "started_at": "2026-09-23T19:35:52.617247+00:00",
+  "finished_at": "2026-09-23T19:36:31.204850+00:00",
   "posts_scanned": 610,
-  "posts_with_history": 552,
-  "posts_flagged": 6,
+  "posts_with_history": 549,
+  "posts_flagged": 7,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 148,
+  "minutes_since_last_notification": 163,
   "reject_reasons": {
-    "古すぎる": 347,
-    "いいねが少なすぎる": 133,
+    "古すぎる": 372,
+    "いいねが少なすぎる": 125,
+    "いいね稼ぎ疑い": 2,
     "初回観測かつ平均速度が低い": 8,
-    "いいね稼ぎ疑い": 3,
-    "誘導文パターン": 1,
-    "失速済み": 5
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46460,
-    "posts": 13728,
-    "oldest": "2026-09-22T19:32:45.654313+00:00"
+    "total": 46479,
+    "posts": 13719,
+    "oldest": "2026-09-22T19:47:30.200286+00:00"
   },
-  "viral_discovery_posts": 129,
+  "viral_discovery_posts": 132,
   "million_imp_rescued": 2,
-  "watchlist_active": 6345,
+  "watchlist_active": 6332,
   "top5": [
     {
       "author": "mask_watermelon",
-      "score": 23.7,
-      "likes": 47135,
-      "likes_per_min": 11.39,
-      "acceleration": 0.92,
+      "score": 24.8,
+      "likes": 47325,
+      "likes_per_min": 12.14,
+      "acceleration": 1.07,
       "measured": true,
-      "age_minutes": 889.1,
+      "age_minutes": 904.7,
       "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
       "url": "https://x.com/i/status/2102616899305852990"
     },
     {
       "author": "y_llrq",
-      "score": 25.6,
-      "likes": 34774,
-      "likes_per_min": 11.29,
-      "acceleration": 0.5,
+      "score": 23.3,
+      "likes": 34866,
+      "likes_per_min": 5.88,
+      "acceleration": 0.52,
       "measured": true,
-      "age_minutes": 798.7,
+      "age_minutes": 814.3,
       "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
       "url": "https://x.com/i/status/2102639649718214672"
     },
     {
-      "author": "MitoTsukino",
-      "score": 25.8,
-      "likes": 39512,
-      "likes_per_min": 42.11,
-      "acceleration": 0.98,
-      "measured": true,
-      "age_minutes": 240.0,
-      "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
-      "url": "https://x.com/i/status/2102780251738894502"
-    },
-    {
-      "author": "Biju_valo",
-      "score": 16.6,
-      "likes": 3032,
-      "likes_per_min": 3.58,
-      "acceleration": 0.71,
-      "measured": true,
-      "age_minutes": 230.8,
-      "text": "俺のパフォーマンスは悪くなかったんだけどなぁ😅\nGGでした！ https://t.co/LEQZcv6wxC",
-      "url": "https://x.com/i/status/2102782560086720528"
-    },
-    {
       "author": "yuzukichococh",
-      "score": 27.0,
-      "likes": 8167,
-      "likes_per_min": 16.01,
-      "acceleration": 0.76,
+      "score": 26.7,
+      "likes": 8422,
+      "likes_per_min": 16.29,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 186.5,
+      "age_minutes": 202.1,
       "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
       "url": "https://x.com/i/status/2102793711025639476"
+    },
+    {
+      "author": "hirox246",
+      "score": 23.9,
+      "likes": 2504,
+      "likes_per_min": 6.07,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 229.8,
+      "text": "使わないよ。",
+      "url": "https://x.com/i/status/2102786745641398459"
+    },
+    {
+      "author": "Tigers_140609",
+      "score": 64.4,
+      "likes": 1566,
+      "likes_per_min": 18.85,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 72.6,
+      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
+      "url": "https://x.com/i/status/2102826309907030122"
     }
   ]
 }

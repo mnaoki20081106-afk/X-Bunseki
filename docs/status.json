@@ -1,36 +1,35 @@
 {
-  "updated_at": "2026-09-23T22:35:48.295010+00:00",
+  "updated_at": "2026-09-23T22:51:06.233746+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 15,
+    "search_failed": 21,
     "detail_succeeded": 22,
     "detail_failed": 0,
     "detail_skipped": 18,
     "invalid_tweets": 13,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790203820
+      "remaining": 35,
+      "reset": 1790204750
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T22:35:19.842839+00:00",
-  "finished_at": "2026-09-23T22:35:48.294050+00:00",
-  "posts_scanned": 607,
-  "posts_with_history": 459,
-  "posts_flagged": 31,
+  "started_at": "2026-09-23T22:50:49.280975+00:00",
+  "finished_at": "2026-09-23T22:51:06.232643+00:00",
+  "posts_scanned": 308,
+  "posts_with_history": 189,
+  "posts_flagged": 8,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 343,
+  "minutes_since_last_notification": 358,
   "reject_reasons": {
-    "古すぎる": 339,
-    "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 5,
-    "いいねが少なすぎる": 177,
-    "いいね稼ぎ疑い": 2
+    "古すぎる": 109,
+    "いいねが少なすぎる": 170
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +46,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47168,
-    "posts": 13565,
-    "oldest": "2026-09-22T22:47:17.221023+00:00"
+    "total": 47178,
+    "posts": 13564,
+    "oldest": "2026-09-22T23:02:59.042325+00:00"
   },
-  "viral_discovery_posts": 132,
+  "viral_discovery_posts": 0,
   "million_imp_rescued": 0,
-  "watchlist_active": 6289,
+  "watchlist_active": 6281,
   "top5": [
     {
-      "author": "gnomotoke",
-      "score": 56.2,
-      "likes": 2970,
-      "likes_per_min": 29.31,
-      "acceleration": 1.01,
+      "author": "hitotonoya1_00",
+      "score": 58.2,
+      "likes": 347,
+      "likes_per_min": 6.33,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 152.7,
-      "text": "DeNA・藤浪晋太郎、来季構想外…加入2年で1勝、制球難で結果残せず　現役続行希望　国内外含め模索（スポニチアネックス）",
-      "url": "https://x.com/i/status/2102851270499614740"
+      "age_minutes": 94.1,
+      "text": "現在9本塁打でOPS.695と、今シーズン深刻な打撃不振に陥ったブルージェイズの主砲・ゲレーロJr.\n\n昨年4月に結んだ",
+      "url": "https://x.com/i/status/2102869865732489443"
     },
     {
-      "author": "ryujimovie_jp",
-      "score": 84.2,
-      "likes": 5028,
-      "likes_per_min": 120.98,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 35.8,
-      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
-      "url": "https://x.com/i/status/2102880688483520695"
-    },
-    {
-      "author": "oliverD_23",
-      "score": 45.7,
-      "likes": 10863,
-      "likes_per_min": 151.84,
-      "acceleration": 1.09,
-      "measured": true,
-      "age_minutes": 112.4,
-      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
-      "url": "https://x.com/i/status/2102861406941196616"
-    },
-    {
-      "author": "oysm_mm",
-      "score": 28.1,
-      "likes": 2264,
-      "likes_per_min": 10.129178109358227,
+      "author": "uratasama",
+      "score": 85.7,
+      "likes": 282,
+      "likes_per_min": 56.4,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 223.5,
-      "text": "呟く(※長いよ)。\n私がパリの大学院生だった頃、教授から恐ろしく期限の短い重い課題が出されたことがある。クラス全員が愕然",
-      "url": "https://x.com/i/status/2102833444292325390"
+      "age_minutes": 1.9,
+      "text": "おはよーーいっ\nエントランスは開いた〜一夜限りお招きのために〜\n\nシルバーウィークは終わったのかな？？\n今日から一緒に頑",
+      "url": "https://x.com/i/status/2102893073160450428"
     },
     {
-      "author": "nhk_news",
-      "score": 71.6,
-      "likes": 1392,
-      "likes_per_min": 13.042332926014653,
+      "author": "alban_knox",
+      "score": 76.6,
+      "likes": 275,
+      "likes_per_min": 47.449309456971186,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 106.7,
-      "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
-      "url": "https://x.com/i/status/2102862833952366993"
+      "age_minutes": 5.8,
+      "text": "今年も、今月も、昨日も、今日も、明日も。。。\n\nみんな、お疲れ様 🫳\n\n🐱🧡",
+      "url": "https://x.com/i/status/2102892088526283212"
+    },
+    {
+      "author": "hakuikoyori",
+      "score": 75.3,
+      "likes": 874,
+      "likes_per_min": 32.45,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 21.1,
+      "text": "本日9/24は登録者100万人を迎えた記念日とのことです🧪\n\nあの日に語った「夢」がティザーに引用されて、12/22に1",
+      "url": "https://x.com/i/status/2102888239514493000"
+    },
+    {
+      "author": "achichi_mela",
+      "score": 87.1,
+      "likes": 617,
+      "likes_per_min": 106.15372818173134,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 5.8,
+      "text": "人間おはよーなのじゃ！\n今日は #熱千めら初配信 じゃよー！\n\nおきておきてー！ https://t.co/bLuXvD",
+      "url": "https://x.com/i/status/2102892085271830570"
     }
   ]
 }

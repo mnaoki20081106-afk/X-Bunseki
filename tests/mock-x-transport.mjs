@@ -27,6 +27,6 @@ globalThis.fetch = async url => {
   if (mode === 'stale' && operation === 'TweetDetail') return Response.json({}, { status: 503 });
   if (mode === 'stale' || mode === 'empty') return Response.json(timeline([], operation));
   const t = tweet(operation === 'TweetDetail' ? variables.focalTweetId : '123');
-  if (mode === 'missing_views') delete t.views;
+  if (mode === 'missing_views' || (mode === 'detail_incomplete' && operation === 'TweetDetail')) delete t.views;
   return Response.json(timeline([t], operation));
 };

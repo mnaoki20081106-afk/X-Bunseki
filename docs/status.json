@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-23T15:35:17.289153+00:00",
+  "updated_at": "2026-09-23T15:50:32.051322+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 8,
+    "search_failed": 28,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
     "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790178582
+      "remaining": 42,
+      "reset": 1790179516
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T15:34:41.319753+00:00",
-  "finished_at": "2026-09-23T15:35:17.287041+00:00",
-  "posts_scanned": 594,
-  "posts_with_history": 460,
-  "posts_flagged": 86,
+  "started_at": "2026-09-23T15:50:15.307548+00:00",
+  "finished_at": "2026-09-23T15:50:32.049892+00:00",
+  "posts_scanned": 180,
+  "posts_with_history": 133,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 117,
+  "minutes_since_last_notification": 132,
   "reject_reasons": {
-    "古すぎる": 139,
-    "失速済み": 12,
-    "いいねが少なすぎる": 240,
+    "古すぎる": 30,
+    "いいねが少なすぎる": 117,
     "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 2
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 48054,
-    "posts": 13603,
-    "oldest": "2026-09-22T15:47:16.550803+00:00"
+    "total": 47655,
+    "posts": 13565,
+    "oldest": "2026-09-22T16:03:37.981855+00:00"
   },
-  "viral_discovery_posts": 118,
-  "million_imp_rescued": 3,
-  "watchlist_active": 6433,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6412,
   "top5": [
     {
-      "author": "hayate_lvsk",
-      "score": 38.7,
-      "likes": 25351,
-      "likes_per_min": 38.38,
-      "acceleration": 0.89,
+      "author": "NOSUKE0607",
+      "score": 77.8,
+      "likes": 1681,
+      "likes_per_min": 23.87,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 212.9,
-      "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
-      "url": "https://x.com/i/status/2102730281535115526"
+      "age_minutes": 69.2,
+      "text": "NHK「未解決事件」をご覧になったみなさまへ。\n\n今回、NHKの番組で報じられたのは、長年続けてきた「北関東連続幼女誘拐",
+      "url": "https://x.com/i/status/2102770283602137365"
     },
     {
-      "author": "haruori85",
-      "score": 44.4,
-      "likes": 8177,
-      "likes_per_min": 100.3,
+      "author": "tokino_sora",
+      "score": 82.0,
+      "likes": 855,
+      "likes_per_min": 12.33,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 163.7,
-      "text": "韓国に嫁いで3年目、まだこのレベルの衝撃があるとは思わんかったんや https://t.co/8UovEL1TEx",
-      "url": "https://x.com/i/status/2102742683114672248"
+      "age_minutes": 34.2,
+      "text": "#ときのそら生放送\nありがとうございますー！！\n新曲のコール練習したり、ライブ締め切り最終日のお話をしたりしたの♪\n\nこ",
+      "url": "https://x.com/i/status/2102779106786177382"
     },
     {
-      "author": "hachi_08",
-      "score": 86.6,
-      "likes": 11134,
-      "likes_per_min": 185.84,
-      "acceleration": null,
+      "author": "19880807kk",
+      "score": 37.2,
+      "likes": 348,
+      "likes_per_min": 3.15,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 33.3,
-      "text": "終わりました。五日間ありがとうまた",
-      "url": "https://x.com/i/status/2102775481384984611"
+      "age_minutes": 144.0,
+      "text": "堀大輔「週刊誌にすっぱ抜かれたので月末に堕とされると思うんで、奈落の底に」\n\n2025年の受講生による暴露がトップ記事に",
+      "url": "https://x.com/i/status/2102751477542563855"
     },
     {
-      "author": "nijisanji_app",
-      "score": 67.0,
-      "likes": 6432,
-      "likes_per_min": 112.01,
+      "author": "monaki_official",
+      "score": 56.7,
+      "likes": 575,
+      "likes_per_min": 11.48,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 35.0,
-      "text": "【#渡会雲雀 オリジナル楽曲 デジタル配信開始 ♦☕】\n\n「rail」\n作詞・作曲：りぶ\n編曲：堀江晶太\n\n自分自身へ、",
-      "url": "https://x.com/i/status/2102775049929490831"
+      "age_minutes": 30.8,
+      "text": "こんにちは。\nサカイJr.です。\n\n本日は大阪・インテックス大阪で開催された\n『KOYABU SONIC 2026』に\n",
+      "url": "https://x.com/i/status/2102779968598237496"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 65.3,
-      "likes": 4599,
-      "likes_per_min": 83.63,
+      "author": "yuumtx",
+      "score": 22.8,
+      "likes": 106,
+      "likes_per_min": 0.85,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 60.4,
-      "text": "このメンツをベルーナに集めて大トリAdoがおどるポンポコリン歌って帰って行ったの笑う（笑えない） https://t.c",
-      "url": "https://x.com/i/status/2102768662897893670"
+      "age_minutes": 110.5,
+      "text": "密会フォーム公開しました。ご希望の方はプロフィール欄のリンクからお願いします。",
+      "url": "https://x.com/i/status/2102759889949118803"
     }
   ]
 }

@@ -1,20 +1,21 @@
 {
-  "updated_at": "2026-09-23T03:46:56.233713+00:00",
+  "updated_at": "2026-09-23T04:02:57.816232+00:00",
   "status": "success",
-  "started_at": "2026-09-23T03:46:23.657400+00:00",
-  "finished_at": "2026-09-23T03:46:56.232553+00:00",
-  "posts_scanned": 358,
-  "posts_with_history": 269,
-  "posts_flagged": 60,
+  "started_at": "2026-09-23T04:02:25.744537+00:00",
+  "finished_at": "2026-09-23T04:02:57.815288+00:00",
+  "posts_scanned": 586,
+  "posts_with_history": 422,
+  "posts_flagged": 93,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 135,
+  "minutes_since_last_notification": 151,
   "reject_reasons": {
-    "古すぎる": 79,
-    "誘導文パターン": 2,
-    "いいねが少なすぎる": 157,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 1
+    "古すぎる": 143,
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 229,
+    "失速済み": 4,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +32,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51522,
-    "posts": 11133,
-    "oldest": "2026-09-22T03:53:18.582792+00:00"
+    "total": 50420,
+    "posts": 11096,
+    "oldest": "2026-09-22T04:45:46.030568+00:00"
   },
-  "viral_discovery_posts": 78,
+  "viral_discovery_posts": 130,
   "million_imp_rescued": 5,
-  "watchlist_active": 4216,
+  "watchlist_active": 4283,
   "top5": [
     {
-      "author": "main_warabi",
-      "score": 27.9,
-      "likes": 131341,
-      "likes_per_min": 116.74,
-      "acceleration": 0.92,
+      "author": "tamanchu_hiroto",
+      "score": 26.1,
+      "likes": 216581,
+      "likes_per_min": 486.77,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 907.7,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
-    },
-    {
-      "author": "frontale_staff",
-      "score": 72.3,
-      "likes": 17222,
-      "likes_per_min": 99.43,
-      "acceleration": 0.72,
-      "measured": true,
-      "age_minutes": 100.1,
-      "text": "川崎フロンターレに所属しております小林悠選手が、2027年1月1日をもって現役を引退することになりましたので、お知らせい",
-      "url": "https://x.com/frontale_staff/status/2102580416620474507"
+      "age_minutes": 937.1,
+      "text": "妻と2人興奮した https://t.co/2Hso9xlcaK",
+      "url": "https://x.com/tamanchu_hiroto/status/2102373808095273120"
     },
     {
       "author": "cinemastaff_",
-      "score": 78.2,
-      "likes": 6111,
-      "likes_per_min": 209.73,
-      "acceleration": null,
+      "score": 73.9,
+      "likes": 8768,
+      "likes_per_min": 165.81,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 46.2,
+      "age_minutes": 62.2,
       "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
       "url": "https://x.com/cinemastaff_/status/2102593976947949919"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 53.1,
-      "likes": 12111,
-      "likes_per_min": 63.46,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 166.9,
-      "text": "【徘徊「ダチョウ」エミューだった】\nhttps://t.co/0TpvdJPstj",
-      "url": "https://x.com/YahooNewsTopics/status/2102563598581256514"
+      "author": "wadaino_taikai",
+      "score": 23.0,
+      "likes": 4966,
+      "likes_per_min": 22.09009472490395,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 224.8,
+      "text": "コインランドリーでチャーハン作ってる強者いると思ったら違ったwww https://t.co/UkKBECGeCY",
+      "url": "https://x.com/wadaino_taikai/status/2102553067887669652"
     },
     {
-      "author": "sanokutameo",
-      "score": 31.1,
-      "likes": 13557,
-      "likes_per_min": 136.08,
-      "acceleration": 0.94,
+      "author": "MotokiOhmoriMGA",
+      "score": 83.6,
+      "likes": 13012,
+      "likes_per_min": 1270.7062790154225,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 10.2,
+      "text": "ああああん https://t.co/5XKpQJ1Crc",
+      "url": "https://x.com/MotokiOhmoriMGA/status/2102607066770891215"
+    },
+    {
+      "author": "frontale_staff",
+      "score": 70.0,
+      "likes": 18571,
+      "likes_per_min": 84.18,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 229.9,
-      "text": "外人ヤード終了のお知らせ https://t.co/WY7Q6Jx8JA",
-      "url": "https://x.com/sanokutameo/status/2102547755872981237"
+      "age_minutes": 116.1,
+      "text": "川崎フロンターレに所属しております小林悠選手が、2027年1月1日をもって現役を引退することになりましたので、お知らせい",
+      "url": "https://x.com/frontale_staff/status/2102580416620474507"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T16:53:01.751532+00:00",
+  "updated_at": "2026-09-23T17:16:49.714691+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790183248
+      "reset": 1790184673
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T16:52:27.091520+00:00",
-  "finished_at": "2026-09-23T16:53:01.750344+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 488,
-  "posts_flagged": 39,
-  "notified_count": 1,
+  "started_at": "2026-09-23T17:16:12.725638+00:00",
+  "finished_at": "2026-09-23T17:16:49.713560+00:00",
+  "posts_scanned": 604,
+  "posts_with_history": 529,
+  "posts_flagged": 25,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 194,
+  "minutes_since_last_notification": 24,
   "reject_reasons": {
-    "古すぎる": 171,
-    "失速済み": 28,
-    "いいねが少なすぎる": 232,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 10,
-    "誘導文パターン": 2
+    "古すぎる": 186,
+    "いいねが少なすぎる": 209,
+    "失速済み": 18,
+    "初回観測かつ平均速度が低い": 12,
+    "誘導文パターン": 3,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47402,
-    "posts": 13711,
-    "oldest": "2026-09-22T17:03:23.769123+00:00"
+    "total": 47436,
+    "posts": 13736,
+    "oldest": "2026-09-22T17:17:20.220630+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 3,
-  "watchlist_active": 6437,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 4,
+  "watchlist_active": 6445,
   "top5": [
     {
-      "author": "suzuran_www",
-      "score": 25.7,
-      "likes": 12550,
-      "likes_per_min": 26.42675307508618,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 474.9,
-      "text": "伊能忠敬界隈なら知っておいてほしい事\n\nシルバーウィークにディズニーで合計6万歩歩いても疲れゼロだから絶対試してみてくれ",
-      "url": "https://x.com/i/status/2102683921112785371"
-    },
-    {
       "author": "rui912912",
-      "score": 22.9,
-      "likes": 19525,
-      "likes_per_min": 8.74,
-      "acceleration": 0.65,
+      "score": 20.2,
+      "likes": 19637,
+      "likes_per_min": 4.7,
+      "acceleration": 0.54,
       "measured": true,
-      "age_minutes": 578.4,
+      "age_minutes": 602.2,
       "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
       "url": "https://x.com/i/status/2102657881619448301"
     },
     {
-      "author": "S1ster_Morphine",
-      "score": 33.3,
-      "likes": 25435,
-      "likes_per_min": 84.79,
-      "acceleration": 0.65,
+      "author": "YahooNewsTopics",
+      "score": 25.4,
+      "likes": 105171,
+      "likes_per_min": 45.42,
+      "acceleration": 0.39,
       "measured": true,
-      "age_minutes": 224.6,
-      "text": "私、幼い頃にシンデレラの魔法が0時に解けて強制的に帰宅しなければならない場面を見て、『0時＝夜更かし、舞踏会も終盤の方だ",
-      "url": "https://x.com/i/status/2102746920460677623"
+      "age_minutes": 847.8,
+      "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
+      "url": "https://x.com/i/status/2102596062485828079"
     },
     {
-      "author": "info__Johnnys",
-      "score": 50.5,
-      "likes": 6748,
-      "likes_per_min": 35.98,
-      "acceleration": 0.57,
+      "author": "YahooNewsTopics",
+      "score": 55.9,
+      "likes": 5709,
+      "likes_per_min": 56.8,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 133.3,
-      "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
-      "url": "https://x.com/i/status/2102769895759073722"
+      "age_minutes": 136.8,
+      "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
+      "url": "https://x.com/i/status/2102774991628730557"
     },
     {
       "author": "sukosuko_sukoya",
-      "score": 40.3,
-      "likes": 26244,
-      "likes_per_min": 182.13,
-      "acceleration": 0.7,
+      "score": 36.6,
+      "likes": 29051,
+      "likes_per_min": 117.92,
+      "acceleration": 0.65,
       "measured": true,
-      "age_minutes": 135.9,
+      "age_minutes": 159.7,
       "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
       "url": "https://x.com/i/status/2102769226490753454"
+    },
+    {
+      "author": "MitoTsukino",
+      "score": 53.8,
+      "likes": 31536,
+      "likes_per_min": 154.46,
+      "acceleration": 0.66,
+      "measured": true,
+      "age_minutes": 115.9,
+      "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
+      "url": "https://x.com/i/status/2102780251738894502"
     }
   ]
 }

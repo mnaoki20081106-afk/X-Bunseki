@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T15:03:43.131130+00:00",
+  "updated_at": "2026-09-23T15:19:34.584930+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790176689
+      "reset": 1790177640
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T15:03:08.504892+00:00",
-  "finished_at": "2026-09-23T15:03:43.130037+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 233,
-  "posts_flagged": 91,
+  "started_at": "2026-09-23T15:18:58.971071+00:00",
+  "finished_at": "2026-09-23T15:19:34.583823+00:00",
+  "posts_scanned": 616,
+  "posts_with_history": 447,
+  "posts_flagged": 80,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 85,
+  "minutes_since_last_notification": 101,
   "reject_reasons": {
-    "古すぎる": 140,
-    "いいね稼ぎ疑い": 4,
-    "失速済み": 10,
-    "初回観測かつ平均速度が低い": 39,
-    "いいねが少なすぎる": 245
+    "古すぎる": 136,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 21,
+    "いいねが少なすぎる": 250,
+    "初回観測かつ平均速度が低い": 13
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 48024,
-    "posts": 13447,
-    "oldest": "2026-09-22T15:17:26.059127+00:00"
+    "total": 48045,
+    "posts": 13542,
+    "oldest": "2026-09-22T15:32:29.810569+00:00"
   },
-  "viral_discovery_posts": 136,
+  "viral_discovery_posts": 130,
   "million_imp_rescued": 7,
-  "watchlist_active": 6323,
+  "watchlist_active": 6394,
   "top5": [
     {
-      "author": "mask_watermelon",
-      "score": 29.1,
-      "likes": 39887,
-      "likes_per_min": 58.1,
-      "acceleration": 0.7,
-      "measured": true,
-      "age_minutes": 631.9,
-      "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
-      "url": "https://x.com/i/status/2102616899305852990"
-    },
-    {
-      "author": "y_llrq",
-      "score": 33.1,
-      "likes": 29082,
-      "likes_per_min": 47.94,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 541.5,
-      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
-      "url": "https://x.com/i/status/2102639649718214672"
-    },
-    {
       "author": "rui912912",
-      "score": 26.1,
-      "likes": 18495,
-      "likes_per_min": 17.38,
+      "score": 25.1,
+      "likes": 18708,
+      "likes_per_min": 13.43,
       "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 469.1,
+      "age_minutes": 484.9,
       "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
       "url": "https://x.com/i/status/2102657881619448301"
     },
     {
-      "author": "hayate_lvsk",
-      "score": 45.3,
-      "likes": 24062,
-      "likes_per_min": 68.77,
-      "acceleration": 0.53,
+      "author": "y_llrq",
+      "score": 33.0,
+      "likes": 29793,
+      "likes_per_min": 44.84,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 181.4,
+      "age_minutes": 557.4,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
+    },
+    {
+      "author": "hayate_lvsk",
+      "score": 40.5,
+      "likes": 24748,
+      "likes_per_min": 43.26,
+      "acceleration": 0.63,
+      "measured": true,
+      "age_minutes": 197.2,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
       "author": "S1ster_Morphine",
-      "score": 47.4,
-      "likes": 12707,
-      "likes_per_min": 110.24674992405534,
+      "score": 51.1,
+      "likes": 15330,
+      "likes_per_min": 165.41,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 115.3,
+      "measured": true,
+      "age_minutes": 131.1,
       "text": "私、幼い頃にシンデレラの魔法が0時に解けて強制的に帰宅しなければならない場面を見て、『0時＝夜更かし、舞踏会も終盤の方だ",
       "url": "https://x.com/i/status/2102746920460677623"
+    },
+    {
+      "author": "NAGOYA_iJU",
+      "score": 43.8,
+      "likes": 13444,
+      "likes_per_min": 77.77,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 231.3,
+      "text": "みんな病んだら名古屋に来たらいいよ。\n\n生まれ育った東京から名古屋に移住して4年経つけど、幸福度全国3位に納得。\n\n人は",
+      "url": "https://x.com/i/status/2102721708037971979"
     }
   ]
 }

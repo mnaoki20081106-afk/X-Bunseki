@@ -45,9 +45,10 @@ async function boundedText(response, limit) {
 }
 
 export async function discoverQueryIds(fetchImpl = fetch) {
-  // One shared deadline bounds the whole probe, including body reads.
-  const init = { signal: AbortSignal.timeout(8000), redirect: 'error' };
-  const html = await boundedText(await fetchImpl('https://x.com/', init), 2_000_000);
+  // The landing page now uses x-web, while the search page still supplies the
+  // GraphQL operation bundle. Share a deadline across HTML and bundle reads.
+  const init = { signal: AbortSignal.timeout(30000), redirect: 'error' };
+  const html = await boundedText(await fetchImpl('https://x.com/home', init), 2_000_000);
   const urls = [...new Set(html.match(/https:\/\/abs\.twimg\.com\/responsive-web\/client-web(?:-legacy)?\/main\.[A-Za-z0-9_-]+\.js/g) || [])].slice(0, 2);
   for (const url of urls) {
     const source = await boundedText(await fetchImpl(url, init), 8_000_000);

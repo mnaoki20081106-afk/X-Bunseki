@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T21:49:23.949326+00:00",
+  "updated_at": "2026-09-23T22:04:50.679161+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,22 +13,22 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790201030
+      "reset": 1790201959
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T21:48:49.673291+00:00",
-  "finished_at": "2026-09-23T21:49:23.947437+00:00",
-  "posts_scanned": 606,
-  "posts_with_history": 465,
-  "posts_flagged": 16,
+  "started_at": "2026-09-23T22:04:18.346351+00:00",
+  "finished_at": "2026-09-23T22:04:50.677823+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 451,
+  "posts_flagged": 21,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 296,
+  "minutes_since_last_notification": 312,
   "reject_reasons": {
-    "古すぎる": 395,
-    "初回観測かつ平均速度が低い": 9,
-    "いいねが少なすぎる": 142,
+    "古すぎる": 382,
+    "いいねが少なすぎる": 151,
+    "初回観測かつ平均速度が低い": 5,
     "失速済み": 1
   },
   "config": {
@@ -46,68 +46,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47444,
-    "posts": 13633,
-    "oldest": "2026-09-22T22:02:02.999681+00:00"
+    "total": 47155,
+    "posts": 13573,
+    "oldest": "2026-09-22T22:17:21.456209+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6265,
+  "viral_discovery_posts": 125,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6267,
   "top5": [
     {
-      "author": "ktri6262",
-      "score": 24.4,
-      "likes": 85725,
-      "likes_per_min": 89.93167399131868,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 953.2,
-      "text": "これさ、家族3人でベンチに座ってアイス食べてたらしいんだよね...\nそしたら、いきなり飲酒運転の車にぶつけられた大型バイ",
-      "url": "https://x.com/i/status/2102638130419712504"
-    },
-    {
       "author": "subsugi_warota",
-      "score": 39.1,
-      "likes": 13303,
-      "likes_per_min": 58.88,
+      "score": 36.5,
+      "likes": 14341,
+      "likes_per_min": 67.2,
       "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 217.3,
+      "age_minutes": 232.7,
       "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
       "url": "https://x.com/i/status/2102823335386345915"
     },
     {
       "author": "Tigers_140609",
-      "score": 43.6,
-      "likes": 4564,
-      "likes_per_min": 31.44,
-      "acceleration": 1.03,
+      "score": 41.4,
+      "likes": 5119,
+      "likes_per_min": 35.93,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 205.5,
+      "age_minutes": 220.9,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
     },
     {
       "author": "nino_honmono",
-      "score": 76.0,
-      "likes": 14342,
-      "likes_per_min": 258.57,
-      "acceleration": 0.92,
+      "score": 72.9,
+      "likes": 18284,
+      "likes_per_min": 255.22,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 47.2,
+      "age_minutes": 62.6,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2102866142524322020"
     },
     {
-      "author": "oliverD_23",
-      "score": 50.3,
-      "likes": 4434,
-      "likes_per_min": 110.21,
-      "acceleration": 1.13,
+      "author": "hulu_japan",
+      "score": 81.6,
+      "likes": 3035,
+      "likes_per_min": 45.19,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 66.0,
-      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
-      "url": "https://x.com/i/status/2102861406941196616"
+      "age_minutes": 64.8,
+      "text": "〖#髙橋海人のやらやり〗\n 待望の第2弾決定💛\n\n／⋰\nHuluオリジナル\n「King &amp; Prince 髙橋海",
+      "url": "https://x.com/i/status/2102865590440657402"
+    },
+    {
+      "author": "gnomotoke",
+      "score": 61.0,
+      "likes": 2067,
+      "likes_per_min": 26.89,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 121.7,
+      "text": "DeNA・藤浪晋太郎、来季構想外…加入2年で1勝、制球難で結果残せず　現役続行希望　国内外含め模索（スポニチアネックス）",
+      "url": "https://x.com/i/status/2102851270499614740"
     }
   ]
 }

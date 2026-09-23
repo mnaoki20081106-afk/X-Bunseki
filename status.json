@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T09:05:00.765037+00:00",
+  "updated_at": "2026-09-23T09:20:32.321781+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,29 +9,29 @@
     "detail_succeeded": 36,
     "detail_failed": 0,
     "detail_skipped": 4,
-    "invalid_tweets": 6,
+    "invalid_tweets": 4,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790155168
+      "reset": 1790156099
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T09:04:26.685767+00:00",
-  "finished_at": "2026-09-23T09:05:00.763576+00:00",
-  "posts_scanned": 579,
-  "posts_with_history": 413,
-  "posts_flagged": 103,
+  "started_at": "2026-09-23T09:19:58.673986+00:00",
+  "finished_at": "2026-09-23T09:20:32.320496+00:00",
+  "posts_scanned": 601,
+  "posts_with_history": 407,
+  "posts_flagged": 114,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 453,
+  "minutes_since_last_notification": 468,
   "reject_reasons": {
-    "古すぎる": 142,
-    "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 193,
+    "古すぎる": 145,
+    "失速済み": 6,
+    "いいね稼ぎ疑い": 2,
     "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 9,
-    "失速済み": 3
+    "いいねが少なすぎる": 212,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51950,
-    "posts": 12300,
-    "oldest": "2026-09-22T09:16:12.596537+00:00"
+    "total": 51658,
+    "posts": 12405,
+    "oldest": "2026-09-22T09:32:21.708171+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 6,
-  "watchlist_active": 5297,
+  "viral_discovery_posts": 138,
+  "million_imp_rescued": 3,
+  "watchlist_active": 5369,
   "top5": [
     {
       "author": "rui912912",
-      "score": 54.9,
-      "likes": 6891,
-      "likes_per_min": 66.4,
-      "acceleration": 0.83,
+      "score": 52.5,
+      "likes": 7843,
+      "likes_per_min": 61.32,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 110.4,
+      "age_minutes": 125.9,
       "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
       "url": "https://x.com/i/status/2102657881619448301"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 46.4,
-      "likes": 6629,
-      "likes_per_min": 46.98,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 143.8,
-      "text": "伊集院光（58）\n『クレヨンしんちゃん』ダウ90000蓮見 脚本回\n「見たんだけど、腰が抜けるほどつまんない」\n「勇気い",
-      "url": "https://x.com/i/status/2102649456646905873"
+      "author": "iON_idol_",
+      "score": 78.1,
+      "likes": 2676,
+      "likes_per_min": 184.7925725815816,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.5,
+      "text": "【新メンバー公開】\nついに新メンバー公開🩷\n最年少146cmの小さなパワフルガール加入！\n\nそしてこの後公開のアー写ポス",
+      "url": "https://x.com/i/status/2102685917265961173"
     },
     {
-      "author": "deathdolnote",
-      "score": 43.9,
-      "likes": 6867,
-      "likes_per_min": 14.33,
-      "acceleration": 0.94,
+      "author": "jamiereeseee",
+      "score": 65.7,
+      "likes": 642,
+      "likes_per_min": 22.74,
+      "acceleration": 2.45,
       "measured": true,
-      "age_minutes": 175.5,
-      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
-      "url": "https://x.com/i/status/2102641496474431617"
+      "age_minutes": 101.8,
+      "text": "離婚することにしたー😅\n\nきっかけは\n旦那さんの上司の家に遊びにいき\n奥さまがご不在(ケンカ)で\n変わりに台所仕事したり",
+      "url": "https://x.com/i/status/2102663947887186293"
     },
     {
-      "author": "canyong_1000000",
-      "score": 36.6,
-      "likes": 19593,
-      "likes_per_min": 93.76,
-      "acceleration": 0.98,
-      "measured": true,
-      "age_minutes": 174.9,
-      "text": "本当に申し訳ありませんでした。\n\nこれまで私は自分のことを勘違いし、\n「世界一かわいいプリンセス」などと豪語しておりまし",
-      "url": "https://x.com/i/status/2102641632495731113"
+      "author": "Ra_men_K",
+      "score": 34.5,
+      "likes": 6436,
+      "likes_per_min": 43.64442183821524,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 147.5,
+      "text": "営業中にブチギレました\n\nすみませんでした\n\n駐車場の竹 黒くて珍しいのか？欲しい方は声掛けてくれればと思います\n\n勝手",
+      "url": "https://x.com/i/status/2102652449890947413"
     },
     {
-      "author": "lao0928",
-      "score": 35.4,
-      "likes": 30206,
-      "likes_per_min": 345.87,
-      "acceleration": 1.0,
+      "author": "fG5QSgFSsyaOy6D",
+      "score": 39.3,
+      "likes": 2020,
+      "likes_per_min": 12.82,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 164.0,
-      "text": "これ多分さ、\n\n主さんが「ニンゲン怖くないよ」って7年かけて教えてくれたからこの反応なんやろな",
-      "url": "https://x.com/i/status/2102644372336742690"
+      "age_minutes": 170.0,
+      "text": "戦慄かなの、DJまると破局…母親から「息子の人生めちゃめちゃにした」と怒られ憤慨\n\n戦慄かなのが2024年10月22日の",
+      "url": "https://x.com/i/status/2102646783377821805"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T22:04:50.679161+00:00",
+  "updated_at": "2026-09-23T22:20:13.850938+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,23 +13,23 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790201959
+      "reset": 1790202887
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T22:04:18.346351+00:00",
-  "finished_at": "2026-09-23T22:04:50.677823+00:00",
-  "posts_scanned": 600,
-  "posts_with_history": 451,
-  "posts_flagged": 21,
+  "started_at": "2026-09-23T22:19:46.310985+00:00",
+  "finished_at": "2026-09-23T22:20:13.849992+00:00",
+  "posts_scanned": 583,
+  "posts_with_history": 428,
+  "posts_flagged": 34,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 312,
+  "minutes_since_last_notification": 327,
   "reject_reasons": {
-    "古すぎる": 382,
-    "いいねが少なすぎる": 151,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 1
+    "古すぎる": 347,
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 156,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -46,68 +46,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47155,
-    "posts": 13573,
-    "oldest": "2026-09-22T22:17:21.456209+00:00"
+    "total": 47156,
+    "posts": 13587,
+    "oldest": "2026-09-22T22:32:38.882692+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 0,
-  "watchlist_active": 6267,
+  "viral_discovery_posts": 119,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6283,
   "top5": [
     {
-      "author": "subsugi_warota",
-      "score": 36.5,
-      "likes": 14341,
-      "likes_per_min": 67.2,
-      "acceleration": 1.14,
+      "author": "Ram1ram7",
+      "score": 27.5,
+      "likes": 44422,
+      "likes_per_min": 11.96,
+      "acceleration": 1.39,
       "measured": true,
-      "age_minutes": 232.7,
-      "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
-      "url": "https://x.com/i/status/2102823335386345915"
+      "age_minutes": 838.4,
+      "text": "これめっちゃ楽しい♡ https://t.co/qxiI21Fdmg",
+      "url": "https://x.com/i/status/2102674781573349631"
     },
     {
       "author": "Tigers_140609",
-      "score": 41.4,
-      "likes": 5119,
-      "likes_per_min": 35.93,
-      "acceleration": 1.14,
+      "score": 36.3,
+      "likes": 5610,
+      "likes_per_min": 31.91,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 220.9,
+      "age_minutes": 236.3,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
     },
     {
-      "author": "nino_honmono",
-      "score": 72.9,
-      "likes": 18284,
-      "likes_per_min": 255.22,
-      "acceleration": 0.99,
+      "author": "gnomotoke",
+      "score": 59.5,
+      "likes": 2514,
+      "likes_per_min": 29.05,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 62.6,
+      "age_minutes": 137.1,
+      "text": "DeNA・藤浪晋太郎、来季構想外…加入2年で1勝、制球難で結果残せず　現役続行希望　国内外含め模索（スポニチアネックス）",
+      "url": "https://x.com/i/status/2102851270499614740"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 71.6,
+      "likes": 21678,
+      "likes_per_min": 220.57,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 78.0,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2102866142524322020"
     },
     {
-      "author": "hulu_japan",
-      "score": 81.6,
-      "likes": 3035,
-      "likes_per_min": 45.19,
-      "acceleration": 0.77,
-      "measured": true,
-      "age_minutes": 64.8,
-      "text": "〖#髙橋海人のやらやり〗\n 待望の第2弾決定💛\n\n／⋰\nHuluオリジナル\n「King &amp; Prince 髙橋海",
-      "url": "https://x.com/i/status/2102865590440657402"
-    },
-    {
-      "author": "gnomotoke",
-      "score": 61.0,
-      "likes": 2067,
-      "likes_per_min": 26.89,
+      "author": "kp_official0523",
+      "score": 73.0,
+      "likes": 5270,
+      "likes_per_min": 117.69,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 121.7,
-      "text": "DeNA・藤浪晋太郎、来季構想外…加入2年で1勝、制球難で結果残せず　現役続行希望　国内外含め模索（スポニチアネックス）",
-      "url": "https://x.com/i/status/2102851270499614740"
+      "age_minutes": 34.7,
+      "text": "Huluオリジナル\n「King &amp; Prince 髙橋海人\n　in ニュージーランド\n〜僕のやらなくてもいい、や",
+      "url": "https://x.com/i/status/2102877039749709893"
     }
   ]
 }

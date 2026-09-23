@@ -1,32 +1,31 @@
 {
-  "updated_at": "2026-09-23T06:32:21.297019+00:00",
+  "updated_at": "2026-09-23T06:46:57.194594+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "rate_limited",
+    "search_succeeded": 14,
+    "search_failed": 22,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
+      "rate_limited": 1,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T06:31:59.955902+00:00",
-  "finished_at": "2026-09-23T06:32:21.295552+00:00",
-  "posts_scanned": 552,
-  "posts_with_history": 377,
-  "posts_flagged": 71,
+  "started_at": "2026-09-23T06:46:48.006118+00:00",
+  "finished_at": "2026-09-23T06:46:57.192849+00:00",
+  "posts_scanned": 261,
+  "posts_with_history": 175,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 300,
+  "minutes_since_last_notification": 315,
   "reject_reasons": {
-    "古すぎる": 116,
-    "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 227,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 10,
+    "古すぎる": 17,
+    "いいねが少なすぎる": 173,
+    "初回観測かつ平均速度が低い": 1,
     "失速済み": 3
   },
   "config": {
@@ -44,68 +43,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52163,
-    "posts": 11782,
-    "oldest": "2026-09-22T06:33:09.656412+00:00"
+    "total": 51837,
+    "posts": 11783,
+    "oldest": "2026-09-22T06:47:25.201216+00:00"
   },
-  "viral_discovery_posts": 124,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4741,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4766,
   "top5": [
     {
-      "author": "YahooNewsTopics",
-      "score": 38.8,
-      "likes": 6852,
-      "likes_per_min": 10.92,
+      "author": "clip_celsys",
+      "score": 78.3,
+      "likes": 1261,
+      "likes_per_min": 27.88,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 49.5,
+      "text": "現在、CLIP STUDIO ASSETSでは、一部の素材を非公開にしています。運用方針にそって確認を行う中で、非公開と",
+      "url": "https://x.com/i/status/2102638460188467677"
+    },
+    {
+      "author": "frontale_staff",
+      "score": 43.6,
+      "likes": 3560,
+      "likes_per_min": 10.21,
       "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 481.3,
-      "text": "【AIは「SI」に改称 米大統領宣言】\nhttps://t.co/cqo3WBNSNM",
-      "url": "https://x.com/i/status/2102526101398708595"
+      "age_minutes": 127.0,
+      "text": "本日、麻生グラウンドにて小林悠選手の引退発表会見を行いました。\n\nユウがフロンターレで決めた「184」ゴール。\nそのどれ",
+      "url": "https://x.com/i/status/2102618947451580715"
     },
     {
-      "author": "yokose_banana",
-      "score": 29.3,
-      "likes": 22420,
-      "likes_per_min": 24.01,
-      "acceleration": 0.45,
+      "author": "consaofficial",
+      "score": 67.4,
+      "likes": 5961,
+      "likes_per_min": 60.21,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 333.6,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/i/status/2102563273724010845"
+      "age_minutes": 87.9,
+      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
+      "url": "https://x.com/i/status/2102628786093129897"
     },
     {
-      "author": "denfaminicogame",
-      "score": 54.6,
-      "likes": 10324,
-      "likes_per_min": 24.9,
-      "acceleration": 0.81,
+      "author": "deathdolnote",
+      "score": 86.6,
+      "likes": 360,
+      "likes_per_min": 12.74,
+      "acceleration": 1.9,
       "measured": true,
-      "age_minutes": 210.2,
-      "text": "【毎月23日・電ファミプレゼントの日】\n今月発売されたばかりの最新iPhone\n「iPhone 18 Pro」（2198",
-      "url": "https://x.com/i/status/2102594333027492189"
+      "age_minutes": 41.0,
+      "text": "「韓国人変な菌持ってる」と発言し炎上中 https://t.co/JUcJkamsbj",
+      "url": "https://x.com/i/status/2102640595898659175"
     },
     {
-      "author": "info__Johnnys",
-      "score": 77.8,
-      "likes": 6228,
-      "likes_per_min": 92.77,
-      "acceleration": 0.75,
+      "author": "houkaistarrail",
+      "score": 66.5,
+      "likes": 2256,
+      "likes_per_min": 29.52,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 76.1,
-      "text": "【Endless SHOCK 全国公演決定】\n\n11/28(土)～2027/2/21(日)\n「Endless SHOCK",
-      "url": "https://x.com/i/status/2102628074617737615"
-    },
-    {
-      "author": "miiitan_n",
-      "score": 51.4,
-      "likes": 3870,
-      "likes_per_min": 24.59,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 196.0,
-      "text": "【 謝罪 】\n\n本日、せっかく店舗様に大きなポスターまでご用意いただいたにもかかわらず、現時点でファンの方からのお声がけ",
-      "url": "https://x.com/i/status/2102597917613949082"
+      "age_minutes": 46.9,
+      "text": "おったぬげ！？千星シティで異常現象頻発！？\n\n#崩壊スターレイル #月立つ前に獣と踊れ おったぬげ！？ | Ver.4.",
+      "url": "https://x.com/i/status/2102639098322157674"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T13:38:46.048024+00:00",
+  "updated_at": "2026-09-23T15:03:43.131130+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790171588
+      "reset": 1790176689
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T13:38:07.322887+00:00",
-  "finished_at": "2026-09-23T13:38:46.046710+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 401,
-  "posts_flagged": 104,
-  "notified_count": 1,
+  "started_at": "2026-09-23T15:03:08.504892+00:00",
+  "finished_at": "2026-09-23T15:03:43.130037+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 233,
+  "posts_flagged": 91,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 727,
+  "minutes_since_last_notification": 85,
   "reject_reasons": {
-    "古すぎる": 123,
-    "失速済み": 11,
-    "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 241,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 140,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 10,
+    "初回観測かつ平均速度が低い": 39,
+    "いいねが少なすぎる": 245
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51107,
-    "posts": 13555,
-    "oldest": "2026-09-22T13:47:22.400164+00:00"
+    "total": 48024,
+    "posts": 13447,
+    "oldest": "2026-09-22T15:17:26.059127+00:00"
   },
-  "viral_discovery_posts": 112,
-  "million_imp_rescued": 5,
-  "watchlist_active": 6222,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 7,
+  "watchlist_active": 6323,
   "top5": [
     {
-      "author": "rui912912",
-      "score": 27.7,
-      "likes": 17018,
-      "likes_per_min": 22.64,
+      "author": "mask_watermelon",
+      "score": 29.1,
+      "likes": 39887,
+      "likes_per_min": 58.1,
+      "acceleration": 0.7,
+      "measured": true,
+      "age_minutes": 631.9,
+      "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
+      "url": "https://x.com/i/status/2102616899305852990"
+    },
+    {
+      "author": "y_llrq",
+      "score": 33.1,
+      "likes": 29082,
+      "likes_per_min": 47.94,
       "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 384.1,
+      "age_minutes": 541.5,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
+    },
+    {
+      "author": "rui912912",
+      "score": 26.1,
+      "likes": 18495,
+      "likes_per_min": 17.38,
+      "acceleration": 0.77,
+      "measured": true,
+      "age_minutes": 469.1,
       "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
       "url": "https://x.com/i/status/2102657881619448301"
     },
     {
       "author": "hayate_lvsk",
-      "score": 67.8,
-      "likes": 18219,
-      "likes_per_min": 130.21,
-      "acceleration": 0.69,
+      "score": 45.3,
+      "likes": 24062,
+      "likes_per_min": 68.77,
+      "acceleration": 0.53,
       "measured": true,
-      "age_minutes": 96.4,
+      "age_minutes": 181.4,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
-      "author": "114514Maaa",
-      "score": 28.8,
-      "likes": 8549,
-      "likes_per_min": 48.05476853177771,
+      "author": "S1ster_Morphine",
+      "score": 47.4,
+      "likes": 12707,
+      "likes_per_min": 110.24674992405534,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 177.9,
-      "text": "いいですか、落ち着いて聞いてください。\n\n来    年　の     6　  1      歳　は　　　\n\n平    成　",
-      "url": "https://x.com/i/status/2102709773930262853"
-    },
-    {
-      "author": "pulsefeed62",
-      "score": 31.0,
-      "likes": 2309,
-      "likes_per_min": 12.52,
-      "acceleration": 0.82,
-      "measured": true,
-      "age_minutes": 232.8,
-      "text": "人気アイドルグループ「timelesz」のメンバー、猪俣周杜容疑者（25）の逮捕現場を間近で捉えました。 https:/",
-      "url": "https://x.com/i/status/2102695970559467778"
-    },
-    {
-      "author": "sanohayatodazo",
-      "score": 71.3,
-      "likes": 17048,
-      "likes_per_min": 1187.916300496124,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.4,
-      "text": "連投すみません！\n\n佐野勇斗だぞYouTubeシルバーウィーク毎日投稿\nありがとうございました！！\n楽しんでいただけまし",
-      "url": "https://x.com/i/status/2102750932132139244"
+      "age_minutes": 115.3,
+      "text": "私、幼い頃にシンデレラの魔法が0時に解けて強制的に帰宅しなければならない場面を見て、『0時＝夜更かし、舞踏会も終盤の方だ",
+      "url": "https://x.com/i/status/2102746920460677623"
     }
   ]
 }

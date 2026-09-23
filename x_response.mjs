@@ -84,7 +84,9 @@ export function parseTimeline(body, operation) {
 }
 
 // A rate limit stops only that operation. Authentication/account failures stop
-// all operations. A fresh scheduled run can retry; no rapid retry loop here.
+// all operations. Search schema failures stop SearchTimeline, while a single
+// TweetDetail schema failure remains post-local so later watchlist items can run.
+// A fresh scheduled run can retry; no rapid retry loop here.
 export function createRequestGuard() {
   let globalError = null;
   const blocked = new Map();
@@ -98,7 +100,12 @@ export function createRequestGuard() {
     fail(operation, code) {
       failures[code] = (failures[code] || 0) + 1;
       if (['session_expired', 'account_restricted', 'access_denied'].includes(code)) globalError = code;
-      if (['rate_limited', 'schema_changed'].includes(code)) blocked.set(operation, code);
+      // Rate limits apply to the whole operation bucket. A SearchTimeline schema
+      // mismatch also makes later searches unsafe, but TweetDetail can fail for
+      // one deleted/limited post while the next post is still perfectly valid.
+      if (code === 'rate_limited' || (code === 'schema_changed' && operation === 'SearchTimeline')) {
+        blocked.set(operation, code);
+      }
     },
     get primaryError() {
       return globalError || ['rate_limited', 'schema_changed', 'upstream_error', 'request_failed', 'network_error']

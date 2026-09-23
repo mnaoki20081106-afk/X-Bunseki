@@ -1,0 +1,19 @@
+name: Temporary public X ID probe
+on:
+  push:
+    branches: [fix/query-discovery-diagnostics]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - name: Probe public X operation IDs
+        run: node --input-type=module -e 'import("./x_query_ids.mjs").then(async ({discoverQueryIds}) => { const ids = await discoverQueryIds(); console.log("operation_ids_found=" + Object.keys(ids).sort().join(",")); })'

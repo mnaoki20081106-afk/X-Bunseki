@@ -1,39 +1,37 @@
 {
-  "updated_at": "2026-09-23T12:52:26.124091+00:00",
+  "updated_at": "2026-09-23T13:07:45.382959+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 22,
-    "search_failed": 14,
-    "detail_succeeded": 33,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 30,
     "detail_failed": 0,
-    "detail_skipped": 7,
-    "invalid_tweets": 6,
+    "detail_skipped": 10,
+    "invalid_tweets": 11,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 28,
-      "reset": 1790168796
+      "remaining": 14,
+      "reset": 1790169728
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-23T12:51:35.631494+00:00",
-  "finished_at": "2026-09-23T12:52:26.123040+00:00",
-  "posts_scanned": 443,
-  "posts_with_history": 262,
-  "posts_flagged": 64,
+  "started_at": "2026-09-23T13:07:07.653496+00:00",
+  "finished_at": "2026-09-23T13:07:45.380867+00:00",
+  "posts_scanned": 602,
+  "posts_with_history": 403,
+  "posts_flagged": 122,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 680,
+  "minutes_since_last_notification": 696,
   "reject_reasons": {
-    "古すぎる": 101,
-    "いいね稼ぎ疑い": 2,
+    "古すぎる": 113,
+    "いいね稼ぎ疑い": 5,
+    "いいねが少なすぎる": 260,
     "誘導文パターン": 2,
-    "いいねが少なすぎる": 209,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 3
+    "失速済み": 12,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51264,
-    "posts": 13309,
-    "oldest": "2026-09-22T13:03:34.447946+00:00"
+    "total": 51313,
+    "posts": 13430,
+    "oldest": "2026-09-22T13:17:39.596959+00:00"
   },
-  "viral_discovery_posts": 37,
-  "million_imp_rescued": 3,
-  "watchlist_active": 6050,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 7,
+  "watchlist_active": 6128,
   "top5": [
     {
-      "author": "hayate_lvsk",
-      "score": 79.0,
-      "likes": 9328,
-      "likes_per_min": 280.02,
-      "acceleration": 1.32,
+      "author": "rui912912",
+      "score": 28.1,
+      "likes": 16316,
+      "likes_per_min": 25.36,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 50.1,
+      "age_minutes": 353.1,
+      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
+      "url": "https://x.com/i/status/2102657881619448301"
+    },
+    {
+      "author": "hayate_lvsk",
+      "score": 71.5,
+      "likes": 13295,
+      "likes_per_min": 258.94,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 65.4,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 78.9,
-      "likes": 4492,
-      "likes_per_min": 467.37294234973996,
+      "author": "YahooNewsTopics",
+      "score": 51.9,
+      "likes": 6042,
+      "likes_per_min": 84.21160927052176,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 9.6,
-      "text": "フレッシュな子達が遊びにきてくれる事になりました\n朝5時約束の地で",
-      "url": "https://x.com/i/status/2102740469478564203"
+      "age_minutes": 71.7,
+      "text": "【不明の6歳か 遺体は離島で発見】\nhttps://t.co/GJI5Pr9MCd",
+      "url": "https://x.com/i/status/2102728686323843542"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 61.8,
-      "likes": 5972,
-      "likes_per_min": 233.63564348089392,
+      "author": "sanohayatodazo",
+      "score": 71.3,
+      "likes": 49531,
+      "likes_per_min": 1494.0,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 25.6,
-      "text": "日テレ「歌の感謝祭」\ntimelesz 猪俣周杜の歌割りで花火の夜空が映る",
-      "url": "https://x.com/i/status/2102736454543962425"
-    },
-    {
-      "author": "oniyanogame",
-      "score": 61.1,
-      "likes": 852,
-      "likes_per_min": 16.56153667011081,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 51.4,
-      "text": "【ご報告】おにやからいつも応援してくださる皆様へ、ご報告があります。配信開始しました。よろしくお願い致します。\n\nhtt",
-      "url": "https://x.com/i/status/2102729939607011433"
-    },
-    {
-      "author": "pulsefeed62",
-      "score": 40.8,
-      "likes": 1588,
-      "likes_per_min": 21.6,
-      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 186.4,
-      "text": "人気アイドルグループ「timelesz」のメンバー、猪俣周杜容疑者（25）の逮捕現場を間近で捉えました。 https:/",
-      "url": "https://x.com/i/status/2102695970559467778"
+      "age_minutes": 31.8,
+      "text": "M!LKのミニアルバム「LOVE ENG!NE」がミリオンを達成しました！！\n100万枚ですって。。\nデビューシングル「",
+      "url": "https://x.com/i/status/2102738735804924237"
+    },
+    {
+      "author": "shota201907",
+      "score": 66.3,
+      "likes": 18301,
+      "likes_per_min": 250.15,
+      "acceleration": 1.13,
+      "measured": true,
+      "age_minutes": 122.7,
+      "text": "は？ありえないんだけど、、\n\n渋谷駅で\n警察官に暴行する\nベトナム人がいたらしい。\n\n警察もここまで舐められたもんだね。",
+      "url": "https://x.com/i/status/2102715852198203522"
     }
   ]
 }

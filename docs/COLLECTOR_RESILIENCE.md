@@ -4,7 +4,7 @@ Xの非公開Webインターフェースに依存するため、永久稼働・�
 
 ## 自動対応する範囲
 
-- 各巡回の開始時にXのWeb検索に使う画面と公式CDNのmain bundleから、SearchTimeline / TweetDetailのqueryIdを読み取ります。JavaScriptは実行せず、Cookieも渡しません。全体30秒・サイズ上限つきです。取得不可なら固定SDKの既存IDで実行します。
+- 各巡回の開始時にXのWeb検索に使う画面と公式CDNのmain bundleから、SearchTimeline / TweetDetailのqueryIdを読み取ります。JavaScriptは実行せず、Cookieも渡しません。全体45秒・サイズ上限つきです。取得不可なら固定SDKの既存IDで実行します。失敗時はページ取得かbundle取得かの段階とエラー種別だけを記録します。
 - timelineのentries / entry / items / moduleItemsとtweet / resultラッパーに対応します。未知の構造は取得障害として扱います。引用元を別の観測として誤収集しません。
 - HTTPとGraphQLの両方で認証失効・アカウント制限・アクセス拒否・レート制限・上流エラーを判別します。認証やアクセス拒否では以降の要求を停止します。レート制限は同じ操作への以降の要求をその巡回中停止し、次の定期巡回に持ち越します。並行実行中の要求は完了する場合があります。
 - SDKと間接依存はpackage-lock.jsonで固定し、npm ciで再現します。SDKの更新はテストを通したうえで行います。

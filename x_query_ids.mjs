@@ -47,13 +47,26 @@ async function boundedText(response, limit) {
 export async function discoverQueryIds(fetchImpl = fetch) {
   // The landing page now uses x-web, while the search page still supplies the
   // GraphQL operation bundle. Share a deadline across HTML and bundle reads.
-  const init = { signal: AbortSignal.timeout(30000), redirect: 'error' };
-  const html = await boundedText(await fetchImpl('https://x.com/home', init), 2_000_000);
-  const urls = [...new Set(html.match(/https:\/\/abs\.twimg\.com\/responsive-web\/client-web(?:-legacy)?\/main\.[A-Za-z0-9_-]+\.js/g) || [])].slice(0, 2);
-  for (const url of urls) {
-    const source = await boundedText(await fetchImpl(url, init), 8_000_000);
-    const ids = extractQueryIds(source);
-    if (Object.keys(ids).length) return ids;
+  const init = { signal: AbortSignal.timeout(45000), redirect: 'error' };
+  let stage = 'page';
+  try {
+    const html = await boundedText(await fetchImpl('https://x.com/home', init), 2_000_000);
+    const urls = [...new Set(html.match(/https:\/\/abs\.twimg\.com\/responsive-web\/client-web(?:-legacy)?\/main\.[A-Za-z0-9_-]+\.js/g) || [])].slice(0, 2);
+    stage = 'bundle';
+    for (const url of urls) {
+      const source = await boundedText(await fetchImpl(url, init), 8_000_000);
+      const ids = extractQueryIds(source);
+      if (ids.SearchTimeline && ids.TweetDetail) return ids;
+    }
+    throw new Error('query_ids_not_found');
+  } catch (error) {
+    // Do not log URL, cookies, HTML or response bodies. These two fields are
+    // enough to distinguish a failed asset lookup from a network timeout.
+    const reason = error instanceof Error ? error.name : 'UnknownError';
+    const cause = error instanceof Error && typeof error.cause === 'object' && error.cause !== null
+      ? error.cause.code : undefined;
+    const knownCodes = ['ETIMEDOUT', 'ECONNRESET', 'ENOTFOUND', 'EAI_AGAIN', 'UND_ERR_CONNECT_TIMEOUT'];
+    console.error(`[compat] discovery stage=${stage} kind=${reason} code=${knownCodes.includes(cause) ? cause : 'none'}`);
+    throw error;
   }
-  throw new Error('query_ids_not_found');
 }

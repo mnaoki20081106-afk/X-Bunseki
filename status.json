@@ -1,33 +1,32 @@
 {
-  "updated_at": "2026-09-23T07:47:08.096027+00:00",
+  "updated_at": "2026-09-23T07:55:38.844965+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "rate_limited",
-    "search_succeeded": 14,
-    "search_failed": 14,
+    "error_code": "schema_changed",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "rate_limited": 2,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T07:46:58.860213+00:00",
-  "finished_at": "2026-09-23T07:47:08.094786+00:00",
-  "posts_scanned": 261,
-  "posts_with_history": 179,
-  "posts_flagged": 17,
+  "started_at": "2026-09-23T07:55:17.063985+00:00",
+  "finished_at": "2026-09-23T07:55:38.843469+00:00",
+  "posts_scanned": 544,
+  "posts_with_history": 422,
+  "posts_flagged": 73,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 375,
+  "minutes_since_last_notification": 383,
   "reject_reasons": {
-    "古すぎる": 19,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 157,
-    "失速済み": 1,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 124,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 8,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 202
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +43,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52056,
-    "posts": 11963,
-    "oldest": "2026-09-22T07:47:36.842911+00:00"
+    "total": 52307,
+    "posts": 12024,
+    "oldest": "2026-09-22T08:03:42.060791+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4976,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 5,
+  "watchlist_active": 5030,
   "top5": [
     {
-      "author": "consaofficial",
-      "score": 49.5,
-      "likes": 8549,
-      "likes_per_min": 35.32,
-      "acceleration": 0.94,
+      "author": "yokose_banana",
+      "score": 25.2,
+      "likes": 23222,
+      "likes_per_min": 9.63,
+      "acceleration": 0.4,
       "measured": true,
-      "age_minutes": 148.1,
-      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
-      "url": "https://x.com/i/status/2102628786093129897"
+      "age_minutes": 416.9,
+      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
+      "url": "https://x.com/i/status/2102563273724010845"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 71.6,
-      "likes": 673,
-      "likes_per_min": 21.64,
-      "acceleration": 1.25,
+      "author": "deathdolnote",
+      "score": 59.9,
+      "likes": 5661,
+      "likes_per_min": 23.2,
+      "acceleration": 0.55,
       "measured": true,
-      "age_minutes": 34.4,
-      "text": "山田涼介　アジアツアー（9/26 バンコク）\n《バンコク都庁・気象局公式アラート》\n対象期間： 9月23日〜27日\n警戒",
-      "url": "https://x.com/i/status/2102657404878082334"
+      "age_minutes": 106.1,
+      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
+      "url": "https://x.com/i/status/2102641496474431617"
     },
     {
-      "author": "clip_celsys",
-      "score": 66.8,
-      "likes": 2275,
-      "likes_per_min": 12.37,
-      "acceleration": 0.89,
+      "author": "canyong_1000000",
+      "score": 46.8,
+      "likes": 12398,
+      "likes_per_min": 127.08,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 109.7,
-      "text": "現在、CLIP STUDIO ASSETSでは、一部の素材を非公開にしています。運用方針にそって確認を行う中で、非公開と",
-      "url": "https://x.com/i/status/2102638460188467677"
+      "age_minutes": 105.6,
+      "text": "本当に申し訳ありませんでした。\n\nこれまで私は自分のことを勘違いし、\n「世界一かわいいプリンセス」などと豪語しておりまし",
+      "url": "https://x.com/i/status/2102641632495731113"
     },
     {
-      "author": "frontale_staff",
-      "score": 32.3,
-      "likes": 4047,
-      "likes_per_min": 6.29,
-      "acceleration": 0.84,
-      "measured": true,
-      "age_minutes": 187.2,
-      "text": "本日、麻生グラウンドにて小林悠選手の引退発表会見を行いました。\n\nユウがフロンターレで決めた「184」ゴール。\nそのどれ",
-      "url": "https://x.com/i/status/2102618947451580715"
+      "author": "haru_x2026",
+      "score": 43.0,
+      "likes": 2079,
+      "likes_per_min": 20.28148643480389,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 102.5,
+      "text": "東大→マッキンゼー→VCで横転 https://t.co/Sshom3d8GG",
+      "url": "https://x.com/i/status/2102642403903778939"
     },
     {
-      "author": "houkaistarrail",
-      "score": 42.8,
-      "likes": 397,
-      "likes_per_min": 4.08,
-      "acceleration": 0.7,
+      "author": "chigayahirayama",
+      "score": 41.1,
+      "likes": 9662,
+      "likes_per_min": 93.31,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 47.1,
-      "text": "「結果発表」\nイベントは終了しました。ご参加いただきありがとうございました。見事当選された皆様、おめでとうございます！\n",
-      "url": "https://x.com/i/status/2102654196092698971"
+      "age_minutes": 152.0,
+      "text": "これ見てゲラゲラ笑ってたらタクシーの運転手さんに「えっお前ら日本人！？いや、あの、ああいうこと言うやつめっちゃ少数派だか",
+      "url": "https://x.com/i/status/2102629937891119545"
     }
   ]
 }

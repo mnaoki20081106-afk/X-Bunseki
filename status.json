@@ -1,38 +1,37 @@
 {
-  "updated_at": "2026-09-23T16:06:20.631559+00:00",
+  "updated_at": "2026-09-23T16:21:55.047626+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 26,
-    "search_failed": 10,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
     "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 24,
-      "reset": 1790180449
+      "remaining": 14,
+      "reset": 1790181383
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-23T16:05:48.559566+00:00",
-  "finished_at": "2026-09-23T16:06:20.630456+00:00",
-  "posts_scanned": 479,
-  "posts_with_history": 355,
-  "posts_flagged": 45,
+  "started_at": "2026-09-23T16:21:22.783441+00:00",
+  "finished_at": "2026-09-23T16:21:55.046680+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 495,
+  "posts_flagged": 56,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 148,
+  "minutes_since_last_notification": 163,
   "reject_reasons": {
-    "古すぎる": 153,
-    "初回観測かつ平均速度が低い": 7,
-    "いいねが少なすぎる": 181,
-    "失速済み": 12,
-    "いいね稼ぎ疑い": 2
+    "古すぎる": 165,
+    "いいねが少なすぎる": 239,
+    "失速済み": 13,
+    "いいね稼ぎ疑い": 4,
+    "初回観測かつ平均速度が低い": 4,
+    "誘導文パターン": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,66 +48,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47547,
-    "posts": 13650,
-    "oldest": "2026-09-22T16:17:22.908822+00:00"
+    "total": 47572,
+    "posts": 13695,
+    "oldest": "2026-09-22T16:33:06.436020+00:00"
   },
-  "viral_discovery_posts": 82,
-  "million_imp_rescued": 4,
-  "watchlist_active": 6433,
+  "viral_discovery_posts": 120,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6452,
   "top5": [
     {
-      "author": "dr_chuyan",
-      "score": 23.3,
-      "likes": 67515,
-      "likes_per_min": 113.07736092399011,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 597.1,
-      "text": "【速報！】\n息子の夏休みの力作が市長賞を受賞しました！🙌 https://t.co/VX12b9dXvz",
-      "url": "https://x.com/i/status/2102641428983857298"
-    },
-    {
       "author": "y_llrq",
-      "score": 31.6,
-      "likes": 31508,
-      "likes_per_min": 36.67,
-      "acceleration": 0.82,
+      "score": 30.5,
+      "likes": 31960,
+      "likes_per_min": 29.02,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 604.1,
+      "age_minutes": 619.7,
       "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
       "url": "https://x.com/i/status/2102639649718214672"
     },
     {
-      "author": "S1ster_Morphine",
-      "score": 42.1,
-      "likes": 21477,
-      "likes_per_min": 131.43,
-      "acceleration": 0.79,
+      "author": "MitoTsukino",
+      "score": 65.1,
+      "likes": 20529,
+      "likes_per_min": 404.27,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 177.9,
-      "text": "私、幼い頃にシンデレラの魔法が0時に解けて強制的に帰宅しなければならない場面を見て、『0時＝夜更かし、舞踏会も終盤の方だ",
-      "url": "https://x.com/i/status/2102746920460677623"
+      "age_minutes": 61.0,
+      "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
+      "url": "https://x.com/i/status/2102780251738894502"
     },
     {
-      "author": "haruori85",
-      "score": 38.6,
-      "likes": 10830,
-      "likes_per_min": 85.43,
-      "acceleration": 0.85,
+      "author": "YahooNewsTopics",
+      "score": 59.2,
+      "likes": 2590,
+      "likes_per_min": 31.62025225302848,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 81.9,
+      "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
+      "url": "https://x.com/i/status/2102774991628730557"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 66.2,
+      "likes": 5629,
+      "likes_per_min": 63.22,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 194.7,
-      "text": "韓国に嫁いで3年目、まだこのレベルの衝撃があるとは思わんかったんや https://t.co/8UovEL1TEx",
-      "url": "https://x.com/i/status/2102742683114672248"
+      "age_minutes": 102.2,
+      "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
+      "url": "https://x.com/i/status/2102769895759073722"
     },
     {
       "author": "sukosuko_sukoya",
-      "score": 54.7,
-      "likes": 16549,
-      "likes_per_min": 301.33,
-      "acceleration": 1.52,
+      "score": 46.4,
+      "likes": 20579,
+      "likes_per_min": 258.77,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 89.3,
+      "age_minutes": 104.8,
       "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
       "url": "https://x.com/i/status/2102769226490753454"
     }

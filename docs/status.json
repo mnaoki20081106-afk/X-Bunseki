@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-23T12:36:30.444734+00:00",
+  "updated_at": "2026-09-23T12:52:26.124091+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "schema_changed",
-    "search_succeeded": 16,
-    "search_failed": 20,
+    "search_succeeded": 22,
+    "search_failed": 14,
     "detail_succeeded": 33,
     "detail_failed": 0,
     "detail_skipped": 7,
-    "invalid_tweets": 7,
+    "invalid_tweets": 6,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 34,
-      "reset": 1790167866
+      "remaining": 28,
+      "reset": 1790168796
     },
     "failures": {
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T12:36:05.662145+00:00",
-  "finished_at": "2026-09-23T12:36:30.443555+00:00",
-  "posts_scanned": 340,
-  "posts_with_history": 213,
-  "posts_flagged": 25,
+  "started_at": "2026-09-23T12:51:35.631494+00:00",
+  "finished_at": "2026-09-23T12:52:26.123040+00:00",
+  "posts_scanned": 443,
+  "posts_with_history": 262,
+  "posts_flagged": 64,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 664,
+  "minutes_since_last_notification": 680,
   "reject_reasons": {
-    "古すぎる": 73,
-    "いいねが少なすぎる": 194,
-    "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 3,
-    "失速済み": 2
+    "古すぎる": 101,
+    "いいね稼ぎ疑い": 2,
+    "誘導文パターン": 2,
+    "いいねが少なすぎる": 209,
+    "初回観測かつ平均速度が低い": 2,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51152,
-    "posts": 13192,
-    "oldest": "2026-09-22T12:47:40.846973+00:00"
+    "total": 51264,
+    "posts": 13309,
+    "oldest": "2026-09-22T13:03:34.447946+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 1,
-  "watchlist_active": 5999,
+  "viral_discovery_posts": 37,
+  "million_imp_rescued": 3,
+  "watchlist_active": 6050,
   "top5": [
     {
       "author": "hayate_lvsk",
-      "score": 75.9,
-      "likes": 4868,
-      "likes_per_min": 211.85,
-      "acceleration": null,
+      "score": 79.0,
+      "likes": 9328,
+      "likes_per_min": 280.02,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 34.2,
+      "age_minutes": 50.1,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
-      "author": "Vamp_Kuzu",
-      "score": 81.7,
-      "likes": 4265,
-      "likes_per_min": 364.5223083721182,
+      "author": "Fuwa_Minato",
+      "score": 78.9,
+      "likes": 4492,
+      "likes_per_min": 467.37294234973996,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 11.7,
-      "text": "今日は特定からの解体",
-      "url": "https://x.com/i/status/2102735933183561788"
+      "age_minutes": 9.6,
+      "text": "フレッシュな子達が遊びにきてくれる事になりました\n朝5時約束の地で",
+      "url": "https://x.com/i/status/2102740469478564203"
+    },
+    {
+      "author": "k_maru_dau_baby",
+      "score": 61.8,
+      "likes": 5972,
+      "likes_per_min": 233.63564348089392,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 25.6,
+      "text": "日テレ「歌の感謝祭」\ntimelesz 猪俣周杜の歌割りで花火の夜空が映る",
+      "url": "https://x.com/i/status/2102736454543962425"
+    },
+    {
+      "author": "oniyanogame",
+      "score": 61.1,
+      "likes": 852,
+      "likes_per_min": 16.56153667011081,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 51.4,
+      "text": "【ご報告】おにやからいつも応援してくださる皆様へ、ご報告があります。配信開始しました。よろしくお願い致します。\n\nhtt",
+      "url": "https://x.com/i/status/2102729939607011433"
     },
     {
       "author": "pulsefeed62",
-      "score": 50.8,
-      "likes": 1244,
-      "likes_per_min": 30.88,
-      "acceleration": 1.34,
+      "score": 40.8,
+      "likes": 1588,
+      "likes_per_min": 21.6,
+      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 170.5,
+      "age_minutes": 186.4,
       "text": "人気アイドルグループ「timelesz」のメンバー、猪俣周杜容疑者（25）の逮捕現場を間近で捉えました。 https:/",
       "url": "https://x.com/i/status/2102695970559467778"
-    },
-    {
-      "author": "odeholo",
-      "score": 82.9,
-      "likes": 4473,
-      "likes_per_min": 109.39,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 36.5,
-      "text": "🧳👣┈┈┈┈┈┈┈┈┈┈┈┈\n　TVアニメ『おでかけホロライブ』\n　　ティザービジュアル公開！\n┈┈┈┈┈┈┈┈┈┈┈┈",
-      "url": "https://x.com/i/status/2102729701202792513"
-    },
-    {
-      "author": "modelpress",
-      "score": 49.0,
-      "likes": 155,
-      "likes_per_min": 11.801811074963672,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.1,
-      "text": "「ニカゲーム」放送休止発表\n逮捕報道のtimelesz猪俣周杜がレギュラー出演\nhttps://t.co/n7u4xfX",
-      "url": "https://x.com/i/status/2102735575820415170"
     }
   ]
 }

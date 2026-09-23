@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T18:49:58.194495+00:00",
+  "updated_at": "2026-09-23T19:05:30.139912+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 27,
     "detail_failed": 0,
     "detail_skipped": 13,
-    "invalid_tweets": 10,
+    "invalid_tweets": 11,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790190261
+      "reset": 1790191192
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T18:49:21.047757+00:00",
-  "finished_at": "2026-09-23T18:49:58.193177+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 548,
+  "started_at": "2026-09-23T19:04:51.818947+00:00",
+  "finished_at": "2026-09-23T19:05:30.138725+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 577,
   "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 117,
+  "minutes_since_last_notification": 132,
   "reject_reasons": {
-    "古すぎる": 281,
-    "いいねが少なすぎる": 159,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 6,
-    "初回観測かつ平均速度が低い": 6,
-    "誘導文パターン": 2
+    "古すぎる": 333,
+    "いいねが少なすぎる": 145,
+    "いいね稼ぎ疑い": 3,
+    "誘導文パターン": 2,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46388,
-    "posts": 13736,
-    "oldest": "2026-09-22T19:03:10.089641+00:00"
+    "total": 46434,
+    "posts": 13735,
+    "oldest": "2026-09-22T19:17:25.110633+00:00"
   },
-  "viral_discovery_posts": 124,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6375,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6360,
   "top5": [
     {
       "author": "mask_watermelon",
-      "score": 22.8,
-      "likes": 46767,
-      "likes_per_min": 15.93,
-      "acceleration": 0.47,
+      "score": 23.4,
+      "likes": 46960,
+      "likes_per_min": 12.43,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 858.2,
+      "age_minutes": 873.7,
       "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
       "url": "https://x.com/i/status/2102616899305852990"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 29.7,
-      "likes": 7074,
-      "likes_per_min": 8.7,
-      "acceleration": 0.72,
-      "measured": true,
-      "age_minutes": 230.0,
-      "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
-      "url": "https://x.com/i/status/2102774991628730557"
-    },
-    {
       "author": "MitoTsukino",
-      "score": 29.8,
-      "likes": 38199,
-      "likes_per_min": 42.54,
-      "acceleration": 0.9,
+      "score": 28.3,
+      "likes": 38865,
+      "likes_per_min": 42.88,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 209.1,
+      "age_minutes": 224.6,
       "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
       "url": "https://x.com/i/status/2102780251738894502"
     },
     {
-      "author": "anime_jojo",
-      "score": 31.8,
-      "likes": 9416,
-      "likes_per_min": 7.55,
-      "acceleration": 0.87,
+      "author": "Biju_valo",
+      "score": 23.3,
+      "likes": 2977,
+      "likes_per_min": 5.02,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 229.9,
-      "text": "☆•♢━━━━━━━━━━━━━━━━━━━━\n\nノンクレジットオープニング映像公開スタート！\nCheck the op",
-      "url": "https://x.com/i/status/2102774998364463177"
+      "age_minutes": 215.4,
+      "text": "俺のパフォーマンスは悪くなかったんだけどなぁ😅\nGGでした！ https://t.co/LEQZcv6wxC",
+      "url": "https://x.com/i/status/2102782560086720528"
     },
     {
       "author": "yuzukichococh",
-      "score": 33.3,
-      "likes": 7595,
-      "likes_per_min": 21.75,
-      "acceleration": 0.85,
+      "score": 31.6,
+      "likes": 7921,
+      "likes_per_min": 20.99,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 155.6,
+      "age_minutes": 171.1,
       "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
       "url": "https://x.com/i/status/2102793711025639476"
+    },
+    {
+      "author": "hirox246",
+      "score": 29.6,
+      "likes": 2301,
+      "likes_per_min": 6.31,
+      "acceleration": 1.08,
+      "measured": true,
+      "age_minutes": 198.8,
+      "text": "使わないよ。",
+      "url": "https://x.com/i/status/2102786745641398459"
     }
   ]
 }

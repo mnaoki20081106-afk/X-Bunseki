@@ -1,33 +1,33 @@
 {
-  "updated_at": "2026-09-23T08:03:23.560105+00:00",
+  "updated_at": "2026-09-23T08:17:18.917779+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "rate_limited",
-    "search_succeeded": 14,
-    "search_failed": 22,
+    "error_code": "schema_changed",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "rate_limited": 1,
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T08:03:13.653976+00:00",
-  "finished_at": "2026-09-23T08:03:23.462861+00:00",
-  "posts_scanned": 258,
-  "posts_with_history": 198,
-  "posts_flagged": 16,
+  "started_at": "2026-09-23T08:16:56.421038+00:00",
+  "finished_at": "2026-09-23T08:17:18.915761+00:00",
+  "posts_scanned": 570,
+  "posts_with_history": 430,
+  "posts_flagged": 79,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 391,
+  "minutes_since_last_notification": 405,
   "reject_reasons": {
-    "誘導文パターン": 1,
-    "古すぎる": 20,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 166,
-    "失速済み": 4
+    "古すぎる": 129,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 7,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 207
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52565,
-    "posts": 12084,
-    "oldest": "2026-09-22T08:03:42.060791+00:00"
+    "total": 52554,
+    "posts": 12150,
+    "oldest": "2026-09-22T08:17:43.334826+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 5040,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 4,
+  "watchlist_active": 5115,
   "top5": [
     {
-      "author": "nijisanji_app",
-      "score": 70.4,
-      "likes": 754,
-      "likes_per_min": 150.8,
+      "author": "yokose_banana",
+      "score": 25.5,
+      "likes": 23371,
+      "likes_per_min": 6.88,
+      "acceleration": 0.71,
+      "measured": true,
+      "age_minutes": 438.6,
+      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
+      "url": "https://x.com/i/status/2102563273724010845"
+    },
+    {
+      "author": "haru_x2026",
+      "score": 45.1,
+      "likes": 2536,
+      "likes_per_min": 21.1,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 124.2,
+      "text": "東大→マッキンゼー→VCで横転 https://t.co/Sshom3d8GG",
+      "url": "https://x.com/i/status/2102642403903778939"
+    },
+    {
+      "author": "canyong_1000000",
+      "score": 43.7,
+      "likes": 15057,
+      "likes_per_min": 122.77,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 127.2,
+      "text": "本当に申し訳ありませんでした。\n\nこれまで私は自分のことを勘違いし、\n「世界一かわいいプリンセス」などと豪語しておりまし",
+      "url": "https://x.com/i/status/2102641632495731113"
+    },
+    {
+      "author": "deathdolnote",
+      "score": 53.5,
+      "likes": 6080,
+      "likes_per_min": 19.35,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 127.8,
+      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
+      "url": "https://x.com/i/status/2102641496474431617"
+    },
+    {
+      "author": "rui912912",
+      "score": 51.8,
+      "likes": 3275,
+      "likes_per_min": 52.27539818703529,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 3.1,
-      "text": "／\nにじさんじ WORLD TOUR 2025 Singin’ in the Rainbow！\n東京公演 [Blu-ra",
-      "url": "https://x.com/i/status/2102669375606239306"
-    },
-    {
-      "author": "clip_celsys",
-      "score": 60.1,
-      "likes": 2488,
-      "likes_per_min": 12.4,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 125.9,
-      "text": "現在、CLIP STUDIO ASSETSでは、一部の素材を非公開にしています。運用方針にそって確認を行う中で、非公開と",
-      "url": "https://x.com/i/status/2102638460188467677"
-    },
-    {
-      "author": "consaofficial",
-      "score": 45.5,
-      "likes": 9062,
-      "likes_per_min": 30.35,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 164.4,
-      "text": "#川崎フロンターレ に所属する #小林悠 選手が現役引退を発表しました。\n\n対コンサドーレ戦において、12試合連続15ゴ",
-      "url": "https://x.com/i/status/2102628786093129897"
-    },
-    {
-      "author": "fG5QSgFSsyaOy6D",
-      "score": 62.6,
-      "likes": 711,
-      "likes_per_min": 25.96,
-      "acceleration": 1.11,
-      "measured": true,
-      "age_minutes": 92.8,
-      "text": "戦慄かなの、DJまると破局…母親から「息子の人生めちゃめちゃにした」と怒られ憤慨\n\n戦慄かなのが2024年10月22日の",
-      "url": "https://x.com/i/status/2102646783377821805"
-    },
-    {
-      "author": "frontale_staff",
-      "score": 23.7,
-      "likes": 4146,
-      "likes_per_min": 4.78,
-      "acceleration": 0.66,
-      "measured": true,
-      "age_minutes": 203.5,
-      "text": "本日、麻生グラウンドにて小林悠選手の引退発表会見を行いました。\n\nユウがフロンターレで決めた「184」ゴール。\nそのどれ",
-      "url": "https://x.com/i/status/2102618947451580715"
+      "age_minutes": 62.6,
+      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
+      "url": "https://x.com/i/status/2102657881619448301"
     }
   ]
 }

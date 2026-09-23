@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T19:52:05.834002+00:00",
+  "updated_at": "2026-09-23T20:07:26.584572+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,28 +9,26 @@
     "detail_succeeded": 25,
     "detail_failed": 0,
     "detail_skipped": 15,
-    "invalid_tweets": 13,
+    "invalid_tweets": 11,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790193989
+      "reset": 1790194920
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T19:51:28.645927+00:00",
-  "finished_at": "2026-09-23T19:52:05.832724+00:00",
-  "posts_scanned": 610,
-  "posts_with_history": 543,
-  "posts_flagged": 5,
+  "started_at": "2026-09-23T20:06:59.263893+00:00",
+  "finished_at": "2026-09-23T20:07:26.583210+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 518,
+  "posts_flagged": 8,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 179,
+  "minutes_since_last_notification": 194,
   "reject_reasons": {
-    "古すぎる": 394,
-    "いいねが少なすぎる": 122,
-    "いいね稼ぎ疑い": 3,
+    "古すぎる": 403,
     "初回観測かつ平均速度が低い": 6,
-    "失速済み": 2
+    "いいねが少なすぎる": 122
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +45,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46718,
-    "posts": 13721,
-    "oldest": "2026-09-22T20:03:24.391957+00:00"
+    "total": 46740,
+    "posts": 13711,
+    "oldest": "2026-09-22T20:17:37.793050+00:00"
   },
-  "viral_discovery_posts": 130,
+  "viral_discovery_posts": 131,
   "million_imp_rescued": 1,
-  "watchlist_active": 6317,
+  "watchlist_active": 6303,
   "top5": [
     {
-      "author": "mask_watermelon",
-      "score": 22.8,
-      "likes": 47480,
-      "likes_per_min": 9.95,
-      "acceleration": 0.82,
+      "author": "y_llrq",
+      "score": 24.5,
+      "likes": 35023,
+      "likes_per_min": 5.08,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 920.3,
-      "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
-      "url": "https://x.com/i/status/2102616899305852990"
+      "age_minutes": 845.2,
+      "text": "ダイエットってほんと1番の整形だと思う\n大1→大3\nみんなのモチベになりますように https://t.co/caPRs",
+      "url": "https://x.com/i/status/2102639649718214672"
+    },
+    {
+      "author": "Fuwa_Minato",
+      "score": 92.5,
+      "likes": 897,
+      "likes_per_min": 154.6489868987108,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 5.8,
+      "text": "【APEX】魂の朝活フルパ【不破湊/れお君/レヨンくん/にじさんじ】 https://t.co/WGWzVmf7iE @",
+      "url": "https://x.com/i/status/2102850899475669089"
+    },
+    {
+      "author": "subsugi_warota",
+      "score": 66.5,
+      "likes": 6029,
+      "likes_per_min": 152.88,
+      "acceleration": 1.41,
+      "measured": true,
+      "age_minutes": 115.3,
+      "text": "この時間まで起きてる人で人生が上手くいってる人、見たことないな",
+      "url": "https://x.com/i/status/2102823335386345915"
     },
     {
       "author": "yuzukichococh",
-      "score": 24.0,
-      "likes": 8661,
-      "likes_per_min": 15.34,
-      "acceleration": 0.94,
+      "score": 23.2,
+      "likes": 8916,
+      "likes_per_min": 16.62,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 217.7,
+      "age_minutes": 233.1,
       "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
       "url": "https://x.com/i/status/2102793711025639476"
     },
     {
       "author": "Tigers_140609",
-      "score": 65.6,
-      "likes": 1818,
-      "likes_per_min": 16.17,
-      "acceleration": 0.86,
+      "score": 66.3,
+      "likes": 2103,
+      "likes_per_min": 18.57,
+      "acceleration": 1.15,
       "measured": true,
-      "age_minutes": 88.2,
+      "age_minutes": 103.5,
       "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
       "url": "https://x.com/i/status/2102826309907030122"
-    },
-    {
-      "author": "oozorasubaru",
-      "score": 18.3,
-      "likes": 4824,
-      "likes_per_min": 8.02,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 213.7,
-      "text": "@yuzukichococh お前まじかwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
-      "url": "https://x.com/i/status/2102794717004222803"
-    },
-    {
-      "author": "lazvell",
-      "score": 38.3,
-      "likes": 2255,
-      "likes_per_min": 18.68,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 85.2,
-      "text": "うぉーデン...wて感じでした。ガーディアンでいいorヴァンダルのほうがいいシーンが多すぎた\n\n強い使い方見つけれるとい",
-      "url": "https://x.com/i/status/2102827068337856554"
     }
   ]
 }

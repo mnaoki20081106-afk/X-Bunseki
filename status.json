@@ -1,37 +1,35 @@
 {
-  "updated_at": "2026-09-23T13:23:01.357632+00:00",
+  "updated_at": "2026-09-23T13:38:46.048024+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 16,
-    "search_failed": 20,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 30,
     "detail_failed": 0,
     "detail_skipped": 10,
     "invalid_tweets": 7,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 34,
-      "reset": 1790170658
+      "remaining": 14,
+      "reset": 1790171588
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-23T13:22:37.801239+00:00",
-  "finished_at": "2026-09-23T13:23:01.356461+00:00",
-  "posts_scanned": 336,
-  "posts_with_history": 218,
-  "posts_flagged": 17,
-  "notified_count": 0,
+  "started_at": "2026-09-23T13:38:07.322887+00:00",
+  "finished_at": "2026-09-23T13:38:46.046710+00:00",
+  "posts_scanned": 592,
+  "posts_with_history": 401,
+  "posts_flagged": 104,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 711,
+  "minutes_since_last_notification": 727,
   "reject_reasons": {
-    "古すぎる": 78,
-    "失速済み": 3,
+    "古すぎる": 123,
+    "失速済み": 11,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 186,
+    "いいねが少なすぎる": 241,
     "初回観測かつ平均速度が低い": 5
   },
   "config": {
@@ -49,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51068,
-    "posts": 13456,
-    "oldest": "2026-09-22T13:33:19.554263+00:00"
+    "total": 51107,
+    "posts": 13555,
+    "oldest": "2026-09-22T13:47:22.400164+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6142,
+  "viral_discovery_posts": 112,
+  "million_imp_rescued": 5,
+  "watchlist_active": 6222,
   "top5": [
     {
-      "author": "hayate_lvsk",
-      "score": 69.5,
-      "likes": 16170,
-      "likes_per_min": 188.31,
-      "acceleration": 0.73,
+      "author": "rui912912",
+      "score": 27.7,
+      "likes": 17018,
+      "likes_per_min": 22.64,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 80.7,
+      "age_minutes": 384.1,
+      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
+      "url": "https://x.com/i/status/2102657881619448301"
+    },
+    {
+      "author": "hayate_lvsk",
+      "score": 67.8,
+      "likes": 18219,
+      "likes_per_min": 130.21,
+      "acceleration": 0.69,
+      "measured": true,
+      "age_minutes": 96.4,
       "text": "突然のご報告となってしまい、申し訳ございません。\n\n普段から応援してくださっている皆様、そしてこれまで支えてくれたメンバ",
       "url": "https://x.com/i/status/2102730281535115526"
     },
     {
+      "author": "114514Maaa",
+      "score": 28.8,
+      "likes": 8549,
+      "likes_per_min": 48.05476853177771,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 177.9,
+      "text": "いいですか、落ち着いて聞いてください。\n\n来    年　の     6　  1      歳　は　　　\n\n平    成　",
+      "url": "https://x.com/i/status/2102709773930262853"
+    },
+    {
       "author": "pulsefeed62",
-      "score": 34.5,
-      "likes": 2112,
-      "likes_per_min": 15.2,
-      "acceleration": 0.8,
+      "score": 31.0,
+      "likes": 2309,
+      "likes_per_min": 12.52,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 217.0,
+      "age_minutes": 232.8,
       "text": "人気アイドルグループ「timelesz」のメンバー、猪俣周杜容疑者（25）の逮捕現場を間近で捉えました。 https:/",
       "url": "https://x.com/i/status/2102695970559467778"
     },
     {
-      "author": "UN_NERV",
-      "score": 54.5,
-      "likes": 413,
-      "likes_per_min": 16.57,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 21.0,
-      "text": "【台風第26号実況・予報 2026年09月23日 22:01】\n台風第26号（スリゲ）が発生しました。 https://",
-      "url": "https://x.com/i/status/2102745295440449992"
-    },
-    {
-      "author": "ookamimio",
-      "score": 79.9,
-      "likes": 673,
-      "likes_per_min": 87.60548811023762,
+      "author": "sanohayatodazo",
+      "score": 71.3,
+      "likes": 17048,
+      "likes_per_min": 1187.916300496124,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 7.7,
-      "text": "⏰２３時から⏰\n\n🌟メンバーシップ限定🌟\nのんびり雑談します～～✨✨\nぽやぽやモード🐺\n\nこちら➡ https://t.",
-      "url": "https://x.com/i/status/2102748652959928573"
-    },
-    {
-      "author": "wni_jp",
-      "score": 77.5,
-      "likes": 291,
-      "likes_per_min": 20.375059164544833,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.3,
-      "text": "【台風発生】\n9月23日(水)21時、フィリピンの東で台風26号(スリゲ)が発生しました。\n26日(土)頃に沖縄の南に達",
-      "url": "https://x.com/i/status/2102746990400741871"
+      "age_minutes": 14.4,
+      "text": "連投すみません！\n\n佐野勇斗だぞYouTubeシルバーウィーク毎日投稿\nありがとうございました！！\n楽しんでいただけまし",
+      "url": "https://x.com/i/status/2102750932132139244"
     }
   ]
 }

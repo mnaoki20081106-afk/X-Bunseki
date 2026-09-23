@@ -1,37 +1,39 @@
 {
-  "updated_at": "2026-09-23T10:22:38.305969+00:00",
-  "status": "success",
+  "updated_at": "2026-09-23T10:38:10.960896+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "status": "degraded",
+    "error_code": "schema_changed",
+    "search_succeeded": 31,
+    "search_failed": 5,
     "detail_succeeded": 35,
     "detail_failed": 0,
     "detail_skipped": 5,
-    "invalid_tweets": 5,
+    "invalid_tweets": 8,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790159826
+      "remaining": 19,
+      "reset": 1790160759
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T10:22:05.391480+00:00",
-  "finished_at": "2026-09-23T10:22:38.304888+00:00",
-  "posts_scanned": 606,
-  "posts_with_history": 434,
-  "posts_flagged": 116,
+  "started_at": "2026-09-23T10:37:38.547737+00:00",
+  "finished_at": "2026-09-23T10:38:10.959570+00:00",
+  "posts_scanned": 519,
+  "posts_with_history": 355,
+  "posts_flagged": 109,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 530,
+  "minutes_since_last_notification": 546,
   "reject_reasons": {
-    "古すぎる": 121,
-    "誘導文パターン": 2,
+    "古すぎる": 124,
+    "誘導文パターン": 1,
+    "失速済み": 5,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 232,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 2
+    "いいねが少なすぎる": 193,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51433,
-    "posts": 12611,
-    "oldest": "2026-09-22T10:33:02.443303+00:00"
+    "total": 51352,
+    "posts": 12682,
+    "oldest": "2026-09-22T10:50:26.113367+00:00"
   },
-  "viral_discovery_posts": 131,
+  "viral_discovery_posts": 124,
   "million_imp_rescued": 5,
-  "watchlist_active": 5579,
+  "watchlist_active": 5631,
   "top5": [
     {
       "author": "rui912912",
-      "score": 40.7,
-      "likes": 10856,
-      "likes_per_min": 48.03,
-      "acceleration": 1.05,
+      "score": 36.7,
+      "likes": 11535,
+      "likes_per_min": 43.69,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 188.0,
+      "age_minutes": 203.5,
       "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
       "url": "https://x.com/i/status/2102657881619448301"
     },
     {
-      "author": "jamiereeseee",
-      "score": 57.8,
-      "likes": 2710,
-      "likes_per_min": 28.42,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 163.9,
-      "text": "離婚することにしたー😅\n\nきっかけは\n旦那さんの上司の家に遊びにいき\n奥さまがご不在(ケンカ)で\n変わりに台所仕事したり",
-      "url": "https://x.com/i/status/2102663947887186293"
-    },
-    {
       "author": "k_maru_dau_baby",
-      "score": 69.3,
-      "likes": 8807,
-      "likes_per_min": 100.78,
-      "acceleration": 0.76,
+      "score": 68.9,
+      "likes": 10073,
+      "likes_per_min": 81.45,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 79.7,
+      "age_minutes": 95.2,
       "text": "timelesz 佐藤勝利､寺西拓人､原嘉孝\n「Endless SHOCK」感謝祭への出演が発表\n名義を変えたオタクの皆",
       "url": "https://x.com/i/status/2102685133639918010"
     },
     {
+      "author": "mettyasuki_bot",
+      "score": 23.7,
+      "likes": 5178,
+      "likes_per_min": 22.89394777377735,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 226.2,
+      "text": "鬼悪口で草 https://t.co/9i4gyAYwBn",
+      "url": "https://x.com/i/status/2102652181967155363"
+    },
+    {
       "author": "iON_idol_",
-      "score": 71.8,
-      "likes": 18514,
-      "likes_per_min": 184.82,
-      "acceleration": 0.73,
+      "score": 72.4,
+      "likes": 21086,
+      "likes_per_min": 165.48,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 76.6,
+      "age_minutes": 92.1,
       "text": "【新メンバー公開】\nついに新メンバー公開🩷\n最年少146cmの小さなパワフルガール加入！\n\nそしてこの後公開のアー写ポス",
       "url": "https://x.com/i/status/2102685917265961173"
     },
     {
-      "author": "gkmas_official",
-      "score": 71.5,
-      "likes": 16726,
-      "likes_per_min": 196.22,
-      "acceleration": 0.69,
+      "author": "114514Maaa",
+      "score": 38.4,
+      "likes": 28815,
+      "likes_per_min": 212.13,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 60.8,
-      "text": "✦\n\n⋆⁺₊⋆ 💖 Roar ガシャ 🖤 ⋆⁺₊⋆\n続報をお楽しみに💄\n\n✦\n#学マス標ツアー_岩手公演_DAY2 ht",
-      "url": "https://x.com/i/status/2102689896251207933"
+      "age_minutes": 144.2,
+      "text": "この血筋で妖怪との接触が何も無いこの親父は逆に何なんだよ https://t.co/fcoINQyXCA",
+      "url": "https://x.com/i/status/2102672809956929619"
     }
   ]
 }

@@ -1,36 +1,37 @@
 {
-  "updated_at": "2026-09-23T08:34:03.324891+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-23T08:49:30.937246+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
+    "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
-    "detail_failed": 2,
-    "invalid_tweets": 2,
+    "detail_succeeded": 37,
+    "detail_failed": 0,
+    "detail_skipped": 3,
+    "invalid_tweets": 3,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790153309
+      "reset": 1790154238
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T08:33:28.352389+00:00",
-  "finished_at": "2026-09-23T08:34:03.323656+00:00",
-  "posts_scanned": 598,
-  "posts_with_history": 438,
-  "posts_flagged": 92,
+  "started_at": "2026-09-23T08:48:57.249042+00:00",
+  "finished_at": "2026-09-23T08:49:30.936039+00:00",
+  "posts_scanned": 596,
+  "posts_with_history": 432,
+  "posts_flagged": 93,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 422,
+  "minutes_since_last_notification": 437,
   "reject_reasons": {
-    "古すぎる": 153,
-    "いいね稼ぎ疑い": 5,
-    "誘導文パターン": 3,
-    "失速済み": 5,
-    "いいねが少なすぎる": 211,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 147,
+    "いいね稼ぎ疑い": 3,
+    "誘導文パターン": 4,
+    "いいねが少なすぎる": 216,
+    "初回観測かつ平均速度が低い": 8,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51960,
-    "posts": 12129,
-    "oldest": "2026-09-22T08:48:06.902748+00:00"
+    "total": 51963,
+    "posts": 12211,
+    "oldest": "2026-09-22T09:03:22.955483+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 4,
-  "watchlist_active": 5174,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 5,
+  "watchlist_active": 5223,
   "top5": [
     {
-      "author": "yokose_banana",
-      "score": 25.3,
-      "likes": 23466,
-      "likes_per_min": 5.67,
-      "acceleration": 0.82,
+      "author": "rui912912",
+      "score": 59.7,
+      "likes": 5862,
+      "likes_per_min": 80.32,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 455.3,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/i/status/2102563273724010845"
-    },
-    {
-      "author": "deathdolnote",
-      "score": 51.9,
-      "likes": 6409,
-      "likes_per_min": 19.64,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 144.5,
-      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
-      "url": "https://x.com/i/status/2102641496474431617"
+      "age_minutes": 94.9,
+      "text": "幸せで目つぶっちゃいました。 https://t.co/lFDJL9qBas",
+      "url": "https://x.com/i/status/2102657881619448301"
     },
     {
       "author": "canyong_1000000",
-      "score": 39.7,
-      "likes": 16656,
-      "likes_per_min": 95.47,
-      "acceleration": 0.78,
+      "score": 39.2,
+      "likes": 18140,
+      "likes_per_min": 95.99,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 144.0,
+      "age_minutes": 159.4,
       "text": "本当に申し訳ありませんでした。\n\nこれまで私は自分のことを勘違いし、\n「世界一かわいいプリンセス」などと豪語しておりまし",
       "url": "https://x.com/i/status/2102641632495731113"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 52.1,
-      "likes": 5123,
-      "likes_per_min": 61.32,
-      "acceleration": null,
+      "author": "ntv_baseball",
+      "score": 60.1,
+      "likes": 2698,
+      "likes_per_min": 25.03,
+      "acceleration": 0.64,
       "measured": true,
-      "age_minutes": 112.9,
+      "age_minutes": 71.8,
+      "text": "【広島🆚巨人】\n5回表\n🎦松本剛選手\nキャッチャーエラーの間にランナー2人が生還‼️\n巨人が逆転します👏\n─・─・─・─",
+      "url": "https://x.com/i/status/2102663686288822295"
+    },
+    {
+      "author": "k_maru_dau_baby",
+      "score": 48.0,
+      "likes": 5901,
+      "likes_per_min": 50.32,
+      "acceleration": 0.82,
+      "measured": true,
+      "age_minutes": 128.3,
       "text": "伊集院光（58）\n『クレヨンしんちゃん』ダウ90000蓮見 脚本回\n「見たんだけど、腰が抜けるほどつまんない」\n「勇気い",
       "url": "https://x.com/i/status/2102649456646905873"
     },
     {
-      "author": "milk_info",
-      "score": 67.5,
-      "likes": 10842,
-      "likes_per_min": 790.5557746486955,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.7,
-      "text": "／\n#ときユニ MV2,000万回再生突破🎉🎉🎉\n＼\nみ！るきーずの皆さまのおかげで、\n『時空超えてユニバース』Musi",
-      "url": "https://x.com/i/status/2102674410918551656"
+      "author": "deathdolnote",
+      "score": 45.8,
+      "likes": 6645,
+      "likes_per_min": 15.26,
+      "acceleration": 0.78,
+      "measured": true,
+      "age_minutes": 160.0,
+      "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
+      "url": "https://x.com/i/status/2102641496474431617"
     }
   ]
 }

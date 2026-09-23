@@ -24,6 +24,7 @@ import pushover_notifier
 import watchlist
 import feature_engineering
 import shadow_predictor
+import training_store
 from playwright_collector import CollectionError, SessionExpiredError, fetch_posts
 
 SESSION_ALERT_COOLDOWN_HOURS = 24
@@ -228,18 +229,16 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
     Store enough raw/context data to recompute features later. Do not fabricate
     missing historical snapshots; first-observation metadata comes from watchlist.
     """
-    path = BASE_DIR / "data" / "training_snapshots.jsonl"
     rows = []
     watch_state = watch_state or {}
 
     # Existing raw rows are used only to construct the optional Gen1 shadow
-    # trajectory. If no challenger artifact exists, shadow_predictor is a no-op.
+    # trajectory. Sharded storage keeps every historical row while avoiding
+    # GitHub's per-file size ceiling.
     historical = {}
-    history_path = BASE_DIR / "data" / "training_snapshots.jsonl"
-    if shadow_predictor.ARTIFACT.exists() and history_path.exists():
+    if shadow_predictor.ARTIFACT.exists():
         try:
-            for line in history_path.read_text(encoding="utf-8").splitlines():
-                r = json.loads(line)
+            for r in training_store.iter_snapshot_rows():
                 if r.get("post_id"):
                     historical.setdefault(str(r["post_id"]), []).append(r)
         except Exception as e:
@@ -341,11 +340,11 @@ def _append_training_snapshots(posts: list[dict], observed_at: str, watch_state:
         })
     if not rows:
         return
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as fh:
-        for row in rows:
-            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
-    print(f"学習用スナップショット(v2): {len(rows)}件追記")
+    written, touched = training_store.append_snapshot_rows(rows)
+    print(
+        f"学習用スナップショット(v2): {written}件追記 "
+        f"({', '.join(p.name for p in touched)})"
+    )
 
 def _append_log(rows: list[dict]):
     if not rows:

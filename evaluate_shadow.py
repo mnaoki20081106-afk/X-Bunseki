@@ -4,23 +4,21 @@ import math
 from collections import defaultdict
 from pathlib import Path
 
+import training_store
+
 SNAPSHOTS = Path("data/training_snapshots.jsonl")
 OUTCOMES = Path("data/training_outcomes.json")
 REGISTRY = Path("data/model_registry.json")
 
 
 def main():
-    if not all(p.exists() for p in (SNAPSHOTS, OUTCOMES, REGISTRY)):
+    if not OUTCOMES.exists() or not REGISTRY.exists() or not training_store.snapshot_paths():
         print("[shadow-eval] inputs missing")
         return
     outcomes = json.loads(OUTCOMES.read_text(encoding="utf-8"))
     reg = json.loads(REGISTRY.read_text(encoding="utf-8"))
     groups = defaultdict(list)
-    for line in SNAPSHOTS.read_text(encoding="utf-8").splitlines():
-        try:
-            r = json.loads(line)
-        except Exception:
-            continue
+    for r in training_store.iter_snapshot_rows():
         if r.get("post_id"):
             groups[str(r["post_id"])].append(r)
 

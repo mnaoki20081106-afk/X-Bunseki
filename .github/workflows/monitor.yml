@@ -33,6 +33,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Migrate oversized training snapshots
+        run: python training_store.py --migrate
+
       - name: Pace X collection
         id: pace
         if: github.event.inputs.test_notification != 'true'
@@ -180,11 +183,30 @@ jobs:
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
           # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
           # 混ぜると git add 全体が失敗するため、個別に確認する。
-          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_snapshots.jsonl data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
+          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi
           done
+
+          # Training snapshots used to be one ever-growing JSONL file. Once it
+          # approaches GitHub's 100 MiB per-file ceiling, a single failed push
+          # also prevents status.json (including X rate-limit reset state) from
+          # being persisted. Shards keep every row while making each blob small.
+          if [ -d data/training_snapshots ]; then
+            git add -A -f -- data/training_snapshots
+          fi
+          if [ -e data/training_snapshots.jsonl ]; then
+            snapshot_size=$(stat -c%s data/training_snapshots.jsonl)
+            if [ "$snapshot_size" -lt $((95 * 1024 * 1024)) ]; then
+              git add -f data/training_snapshots.jsonl
+            else
+              echo "::warning::legacy training_snapshots.jsonl is too large; skipping it so status can still be saved"
+            fi
+          else
+            # Stage the legacy-file deletion after a successful shard migration.
+            git add -A -- data/training_snapshots.jsonl 2>/dev/null || true
+          fi
           echo "生成物の差分:"
           git status --short
           if git diff --staged --quiet; then

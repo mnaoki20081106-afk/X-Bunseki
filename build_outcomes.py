@@ -7,6 +7,8 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+import training_store
+
 DATA = Path("data/training_snapshots.jsonl")
 OUT = Path("data/training_outcomes.json")
 HORIZONS = {12: 720, 24: 1440}
@@ -15,13 +17,8 @@ TOLERANCE_MINUTES = {12: 90, 24: 120}
 
 def load_groups(path=DATA):
     groups = defaultdict(list)
-    if not path.exists():
-        return groups
-    for line in path.read_text(encoding="utf-8").splitlines():
-        try:
-            row = json.loads(line)
-        except Exception:
-            continue
+    rows = training_store.iter_snapshot_rows() if path == DATA else training_store._iter_jsonl(path)
+    for row in rows:
         if row.get("post_id") and row.get("age_minutes") is not None:
             groups[str(row["post_id"])].append(row)
     return groups

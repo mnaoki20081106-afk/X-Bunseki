@@ -7,6 +7,8 @@ import json, math
 from collections import defaultdict
 from pathlib import Path
 
+import training_store
+
 DATA=Path("data/training_snapshots.jsonl")
 MODEL=Path("data/impression_model.json")
 MIN_POSTS=120
@@ -14,11 +16,9 @@ BINS=[15,30,45,60,90,120,180,240]
 
 
 def load():
-    if not DATA.exists(): return {}
     d=defaultdict(list)
-    for line in DATA.read_text(encoding="utf-8").splitlines():
+    for r in training_store.iter_snapshot_rows():
         try:
-            r=json.loads(line)
             if r.get("post_id") and r.get("impressions",0)>0 and r.get("age_minutes") is not None:
                 d[r["post_id"]].append(r)
         except Exception:

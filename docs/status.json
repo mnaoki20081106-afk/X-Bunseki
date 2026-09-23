@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T18:34:20.243292+00:00",
+  "updated_at": "2026-09-23T18:49:58.194495+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790189332
+      "reset": 1790190261
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T18:33:51.448485+00:00",
-  "finished_at": "2026-09-23T18:34:20.241872+00:00",
+  "started_at": "2026-09-23T18:49:21.047757+00:00",
+  "finished_at": "2026-09-23T18:49:58.193177+00:00",
   "posts_scanned": 603,
-  "posts_with_history": 546,
-  "posts_flagged": 11,
+  "posts_with_history": 548,
+  "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 101,
+  "minutes_since_last_notification": 117,
   "reject_reasons": {
-    "古すぎる": 255,
-    "失速済み": 7,
-    "いいねが少なすぎる": 164,
+    "古すぎる": 281,
+    "いいねが少なすぎる": 159,
     "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 4
+    "失速済み": 6,
+    "初回観測かつ平均速度が低い": 6,
+    "誘導文パターン": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46939,
-    "posts": 13735,
-    "oldest": "2026-09-22T18:47:56.299949+00:00"
+    "total": 46388,
+    "posts": 13736,
+    "oldest": "2026-09-22T19:03:10.089641+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 4,
-  "watchlist_active": 6390,
+  "viral_discovery_posts": 124,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6375,
   "top5": [
     {
-      "author": "suzuran_www",
-      "score": 23.9,
-      "likes": 14253,
-      "likes_per_min": 11.13,
-      "acceleration": 0.62,
+      "author": "mask_watermelon",
+      "score": 22.8,
+      "likes": 46767,
+      "likes_per_min": 15.93,
+      "acceleration": 0.47,
       "measured": true,
-      "age_minutes": 576.2,
-      "text": "伊能忠敬界隈なら知っておいてほしい事\n\nシルバーウィークにディズニーで合計6万歩歩いても疲れゼロだから絶対試してみてくれ",
-      "url": "https://x.com/i/status/2102683921112785371"
+      "age_minutes": 858.2,
+      "text": "何も分かってねえな\n\n男は晩飯にこっち出てくる方がテンション上がるんだわ https://t.co/C9rwPf9Kon",
+      "url": "https://x.com/i/status/2102616899305852990"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 34.7,
-      "likes": 6938,
-      "likes_per_min": 12.1,
-      "acceleration": 0.96,
+      "score": 29.7,
+      "likes": 7074,
+      "likes_per_min": 8.7,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 214.3,
+      "age_minutes": 230.0,
       "text": "【ANA機が空港に緊急着陸 乗客脱出】\nhttps://t.co/8Vb3Vsk6C3",
       "url": "https://x.com/i/status/2102774991628730557"
     },
     {
-      "author": "sukosuko_sukoya",
-      "score": 23.6,
-      "likes": 33606,
-      "likes_per_min": 40.12,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 237.2,
-      "text": "この前ちょっとだけ肌見せのあるズボンでスタジオ行ったら、オリバーにちょっとちょっとと呼ばれて、小声で「健屋さん、ズボン穴",
-      "url": "https://x.com/i/status/2102769226490753454"
-    },
-    {
-      "author": "info__Johnnys",
-      "score": 28.7,
-      "likes": 8188,
-      "likes_per_min": 8.15,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 234.6,
-      "text": "【遭遇情報】\n\n9/23\n\n東京都\n東京ドーム\n\n(WEST.)\n神山智洋\n小瀧望\n\nSUPER BEAVERさんのライ",
-      "url": "https://x.com/i/status/2102769895759073722"
-    },
-    {
       "author": "MitoTsukino",
-      "score": 31.5,
-      "likes": 37534,
-      "likes_per_min": 47.18,
-      "acceleration": 0.74,
+      "score": 29.8,
+      "likes": 38199,
+      "likes_per_min": 42.54,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 193.4,
+      "age_minutes": 209.1,
       "text": "7歳の時にこの活動を始め、本日16歳になりました！！ありがとうございます！！",
       "url": "https://x.com/i/status/2102780251738894502"
+    },
+    {
+      "author": "anime_jojo",
+      "score": 31.8,
+      "likes": 9416,
+      "likes_per_min": 7.55,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 229.9,
+      "text": "☆•♢━━━━━━━━━━━━━━━━━━━━\n\nノンクレジットオープニング映像公開スタート！\nCheck the op",
+      "url": "https://x.com/i/status/2102774998364463177"
+    },
+    {
+      "author": "yuzukichococh",
+      "score": 33.3,
+      "likes": 7595,
+      "likes_per_min": 21.75,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 155.6,
+      "text": "ん？？？？起きたけど\n…sbって誰だ？？？ https://t.co/xq5OlADJfI",
+      "url": "https://x.com/i/status/2102793711025639476"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T23:31:14.339222+00:00",
+  "updated_at": "2026-09-23T23:46:43.284840+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790207144
+      "reset": 1790208075
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T23:30:44.131696+00:00",
-  "finished_at": "2026-09-23T23:31:14.338111+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 410,
-  "posts_flagged": 50,
-  "notified_count": 0,
+  "started_at": "2026-09-23T23:46:14.336257+00:00",
+  "finished_at": "2026-09-23T23:46:43.283768+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 444,
+  "posts_flagged": 57,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 398,
+  "minutes_since_last_notification": 414,
   "reject_reasons": {
-    "古すぎる": 250,
-    "誘導文パターン": 3,
-    "失速済み": 6,
-    "いいねが少なすぎる": 194,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 13
+    "古すぎる": 240,
+    "誘導文パターン": 5,
+    "初回観測かつ平均速度が低い": 3,
+    "いいねが少なすぎる": 196,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47512,
-    "posts": 13663,
-    "oldest": "2026-09-22T23:32:11.852660+00:00"
+    "total": 47531,
+    "posts": 13688,
+    "oldest": "2026-09-22T23:47:10.312833+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6353,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6387,
   "top5": [
     {
-      "author": "suzuran_www",
-      "score": 21.6,
-      "likes": 16133,
-      "likes_per_min": 6.33,
-      "acceleration": 0.57,
-      "measured": true,
-      "age_minutes": 873.1,
-      "text": "伊能忠敬界隈なら知っておいてほしい事\n\nシルバーウィークにディズニーで合計6万歩歩いても疲れゼロだから絶対試してみてくれ",
-      "url": "https://x.com/i/status/2102683921112785371"
-    },
-    {
-      "author": "nhk_news",
-      "score": 68.3,
-      "likes": 2922,
-      "likes_per_min": 26.81,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 162.2,
-      "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
-      "url": "https://x.com/i/status/2102862833952366993"
+      "author": "Fuwa_Minato",
+      "score": 79.3,
+      "likes": 4258,
+      "likes_per_min": 310.0113385664189,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 13.7,
+      "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
+      "url": "https://x.com/i/status/2102904085741793649"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 58.5,
-      "likes": 2238,
-      "likes_per_min": 18.79,
-      "acceleration": null,
+      "score": 53.9,
+      "likes": 2467,
+      "likes_per_min": 14.8,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 144.2,
+      "age_minutes": 159.7,
       "text": "【DeNA藤浪晋太郎 来季戦力構想外】\nhttps://t.co/e1AbSFp2zR",
       "url": "https://x.com/i/status/2102867349946896681"
     },
     {
       "author": "poke_times",
-      "score": 69.5,
-      "likes": 3231,
-      "likes_per_min": 105.72,
-      "acceleration": null,
+      "score": 70.6,
+      "likes": 5032,
+      "likes_per_min": 116.41,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 31.2,
+      "age_minutes": 46.7,
       "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
       "url": "https://x.com/i/status/2102895793166328280"
     },
     {
       "author": "oliverD_23",
-      "score": 36.5,
-      "likes": 19260,
-      "likes_per_min": 146.56,
-      "acceleration": 0.94,
+      "score": 33.4,
+      "likes": 21090,
+      "likes_per_min": 118.28,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 167.8,
+      "age_minutes": 183.3,
       "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
       "url": "https://x.com/i/status/2102861406941196616"
+    },
+    {
+      "author": "ryujimovie_jp",
+      "score": 71.8,
+      "likes": 9894,
+      "likes_per_min": 46.08,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 106.7,
+      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
+      "url": "https://x.com/i/status/2102880688483520695"
     }
   ]
 }

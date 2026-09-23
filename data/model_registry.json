@@ -7,9 +7,9 @@
   },
   "challenger": null,
   "dataset_stats": {
-    "early_observed_posts": 7523,
+    "early_observed_posts": 7579,
     "completed_24h_posts": 344,
-    "completion_rate": 0.0457,
+    "completion_rate": 0.0454,
     "positive_5m": 11,
     "positive_10m": 5,
     "stalled_under_1_5m": 316

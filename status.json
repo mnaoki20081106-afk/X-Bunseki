@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T05:16:58.933243+00:00",
+  "updated_at": "2026-09-23T05:32:14.153032+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,21 +13,21 @@
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T05:16:38.702415+00:00",
-  "finished_at": "2026-09-23T05:16:58.931809+00:00",
+  "started_at": "2026-09-23T05:31:50.373705+00:00",
+  "finished_at": "2026-09-23T05:32:14.151791+00:00",
   "posts_scanned": 562,
-  "posts_with_history": 449,
-  "posts_flagged": 69,
+  "posts_with_history": 443,
+  "posts_flagged": 73,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 225,
+  "minutes_since_last_notification": 240,
   "reject_reasons": {
-    "古すぎる": 112,
-    "誘導文パターン": 3,
-    "失速済み": 7,
+    "古すぎる": 110,
+    "誘導文パターン": 4,
     "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 225,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 220,
+    "失速済み": 10,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51596,
-    "posts": 11519,
-    "oldest": "2026-09-22T05:17:16.628361+00:00"
+    "total": 51879,
+    "posts": 11597,
+    "oldest": "2026-09-22T05:32:41.802246+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4501,
+  "viral_discovery_posts": 119,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4549,
   "top5": [
     {
-      "author": "cinemastaff_",
-      "score": 59.8,
-      "likes": 15613,
-      "likes_per_min": 67.23,
-      "acceleration": 0.82,
-      "measured": true,
-      "age_minutes": 136.3,
-      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
-      "url": "https://x.com/i/status/2102593976947949919"
-    },
-    {
       "author": "k_maru_dau_baby",
-      "score": 49.9,
-      "likes": 13728,
-      "likes_per_min": 77.95,
+      "score": 46.3,
+      "likes": 14768,
+      "likes_per_min": 68.22,
       "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 128.6,
+      "age_minutes": 143.9,
       "text": "猪俣周杜（25）事件直前の様子が判明\nコンビニ店員「ごく普通のカップルに見えた」https://t.co/NgR6ytn",
       "url": "https://x.com/i/status/2102595903244911002"
     },
     {
-      "author": "abe3326",
-      "score": 35.5,
-      "likes": 8276,
-      "likes_per_min": 37.04143014669608,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 223.4,
-      "text": "日本人さん、手コキ15分間980円に大行列を作ってしまう…  [668024367]\nhttps://t.co/PqJB",
-      "url": "https://x.com/i/status/2102572044542206325"
+      "author": "cinemastaff_",
+      "score": 55.8,
+      "likes": 16470,
+      "likes_per_min": 56.22,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 151.5,
+      "text": "いつもcinema staffを応援してくださる皆様へ\n大切なお知らせ\n\nこの度、cinema staffは\n本年12月",
+      "url": "https://x.com/i/status/2102593976947949919"
     },
     {
       "author": "YahooNewsTopics",
-      "score": 54.5,
-      "likes": 23401,
-      "likes_per_min": 407.14,
-      "acceleration": 0.91,
+      "score": 50.3,
+      "likes": 28245,
+      "likes_per_min": 317.76,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 128.0,
+      "age_minutes": 143.2,
       "text": "【エルニーニョで雨 チリ砂漠に花畑】\nhttps://t.co/VOIGpdrmwQ",
       "url": "https://x.com/i/status/2102596062485828079"
     },
     {
-      "author": "saltfish12",
-      "score": 49.1,
-      "likes": 19037,
-      "likes_per_min": 253.47,
-      "acceleration": 0.92,
+      "author": "pap1yong",
+      "score": 49.2,
+      "likes": 10246,
+      "likes_per_min": 73.08,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 136.9,
-      "text": "#5連休は掘り出し作家大収穫祭\n夏のあの空気感が好き https://t.co/JF0GBuIxkh",
-      "url": "https://x.com/i/status/2102593823235092702"
+      "age_minutes": 135.8,
+      "text": "学生の頃にいた若干周りから浮いていたあいつや、バイト先のこんなキモい人間今までこの街のどこにいたんだよと思わせてくれたあ",
+      "url": "https://x.com/i/status/2102597928607162477"
+    },
+    {
+      "author": "houkaistarrail",
+      "score": 78.2,
+      "likes": 14568,
+      "likes_per_min": 73.08,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 92.2,
+      "text": "【崩壊：スターレイル】 即興芝居PV 「そして、芸術へと至る」\n\n▼キャスト\nパール CV: 安野希世乃\nトパーズ CV",
+      "url": "https://x.com/i/status/2102608902470672496"
     }
   ]
 }

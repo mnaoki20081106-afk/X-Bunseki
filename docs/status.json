@@ -1,30 +1,33 @@
 {
-  "updated_at": "2026-09-23T06:16:43.332103+00:00",
+  "updated_at": "2026-09-23T06:32:21.297019+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "schema_changed",
-    "search_succeeded": 5,
-    "search_failed": 28,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 1,
     "detail_failed": 39,
     "invalid_tweets": 1,
     "failures": {
-      "schema_changed": 2
+      "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T06:16:38.466325+00:00",
-  "finished_at": "2026-09-23T06:16:43.330703+00:00",
-  "posts_scanned": 97,
-  "posts_with_history": 73,
-  "posts_flagged": 6,
+  "started_at": "2026-09-23T06:31:59.955902+00:00",
+  "finished_at": "2026-09-23T06:32:21.295552+00:00",
+  "posts_scanned": 552,
+  "posts_with_history": 377,
+  "posts_flagged": 71,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 285,
+  "minutes_since_last_notification": 300,
   "reject_reasons": {
-    "古すぎる": 1,
-    "いいねが少なすぎる": 64,
-    "失速済み": 1
+    "古すぎる": 116,
+    "いいね稼ぎ疑い": 1,
+    "いいねが少なすぎる": 227,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 10,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -41,68 +44,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51894,
-    "posts": 11667,
-    "oldest": "2026-09-22T06:17:23.805283+00:00"
+    "total": 52163,
+    "posts": 11782,
+    "oldest": "2026-09-22T06:33:09.656412+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4678,
+  "viral_discovery_posts": 124,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4741,
   "top5": [
     {
-      "author": "Kanae_2434",
-      "score": 79.7,
-      "likes": 1416,
-      "likes_per_min": 68.61,
-      "acceleration": null,
+      "author": "YahooNewsTopics",
+      "score": 38.8,
+      "likes": 6852,
+      "likes_per_min": 10.92,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 14.7,
-      "text": "／\n🕺ダンスショート投稿！\n＼\n【練習テイク③】｢にぎにぎにじたうん！｣ #にぎにじダンス 【にじさんじ/叶】\nhttp",
-      "url": "https://x.com/i/status/2102639599369810162"
+      "age_minutes": 481.3,
+      "text": "【AIは「SI」に改称 米大統領宣言】\nhttps://t.co/cqo3WBNSNM",
+      "url": "https://x.com/i/status/2102526101398708595"
     },
     {
-      "author": "tnk0456123789",
-      "score": 47.4,
-      "likes": 1842,
-      "likes_per_min": 29.37,
-      "acceleration": 1.15,
+      "author": "yokose_banana",
+      "score": 29.3,
+      "likes": 22420,
+      "likes_per_min": 24.01,
+      "acceleration": 0.45,
       "measured": true,
-      "age_minutes": 164.9,
-      "text": "「そもそも旦那に興奮しなさ過ぎるし情はあるけど恋はしてないしドキドキもクソもない」って言ってる奥さんが大半だよ。そして旦",
-      "url": "https://x.com/i/status/2102601795575099516"
+      "age_minutes": 333.6,
+      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
+      "url": "https://x.com/i/status/2102563273724010845"
     },
     {
-      "author": "houkaistarrail",
-      "score": 68.7,
-      "likes": 1224,
-      "likes_per_min": 73.2216713546599,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.7,
-      "text": "おったぬげ！？千星シティで異常現象頻発！？\n\n#崩壊スターレイル #月立つ前に獣と踊れ おったぬげ！？ | Ver.4.",
-      "url": "https://x.com/i/status/2102639098322157674"
-    },
-    {
-      "author": "nijisanji_app",
-      "score": 42.6,
-      "likes": 1185,
-      "likes_per_min": 71.81950583616265,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 16.5,
-      "text": "／\n#もじさんじ 立伝都々編！\n👀チラ見せあり👀\n＼\n\nにじさんじ総合ファンクラブにて、#立伝都々(@tctt10_10",
-      "url": "https://x.com/i/status/2102639150524768581"
-    },
-    {
-      "author": "Kanae_2434",
-      "score": 78.5,
-      "likes": 1641,
-      "likes_per_min": 57.69,
-      "acceleration": null,
+      "author": "denfaminicogame",
+      "score": 54.6,
+      "likes": 10324,
+      "likes_per_min": 24.9,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 16.7,
-      "text": "／\n🕺ダンスショート投稿！\n＼\n【練習テイク①】｢にぎにぎにじたうん！｣ #にぎにじダンス 【にじさんじ/叶】\nhttp",
-      "url": "https://x.com/i/status/2102639099899240452"
+      "age_minutes": 210.2,
+      "text": "【毎月23日・電ファミプレゼントの日】\n今月発売されたばかりの最新iPhone\n「iPhone 18 Pro」（2198",
+      "url": "https://x.com/i/status/2102594333027492189"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 77.8,
+      "likes": 6228,
+      "likes_per_min": 92.77,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 76.1,
+      "text": "【Endless SHOCK 全国公演決定】\n\n11/28(土)～2027/2/21(日)\n「Endless SHOCK",
+      "url": "https://x.com/i/status/2102628074617737615"
+    },
+    {
+      "author": "miiitan_n",
+      "score": 51.4,
+      "likes": 3870,
+      "likes_per_min": 24.59,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 196.0,
+      "text": "【 謝罪 】\n\n本日、せっかく店舗様に大きなポスターまでご用意いただいたにもかかわらず、現時点でファンの方からのお声がけ",
+      "url": "https://x.com/i/status/2102597917613949082"
     }
   ]
 }

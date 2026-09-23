@@ -1,33 +1,32 @@
 {
-  "updated_at": "2026-09-23T07:17:29.448717+00:00",
+  "updated_at": "2026-09-23T07:32:40.185773+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "schema_changed",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 1,
-    "detail_failed": 39,
+    "detail_succeeded": 2,
+    "detail_failed": 38,
     "invalid_tweets": 1,
     "failures": {
       "schema_changed": 1
     }
   },
-  "started_at": "2026-09-23T07:17:08.489165+00:00",
-  "finished_at": "2026-09-23T07:17:29.447569+00:00",
-  "posts_scanned": 556,
-  "posts_with_history": 431,
-  "posts_flagged": 71,
+  "started_at": "2026-09-23T07:32:19.123637+00:00",
+  "finished_at": "2026-09-23T07:32:40.184568+00:00",
+  "posts_scanned": 553,
+  "posts_with_history": 430,
+  "posts_flagged": 78,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 345,
+  "minutes_since_last_notification": 361,
   "reject_reasons": {
-    "古すぎる": 128,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 214,
-    "初回観測かつ平均速度が低い": 3,
-    "誘導文パターン": 1,
-    "失速済み": 4
+    "古すぎる": 130,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 206,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -44,68 +43,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51841,
-    "posts": 11844,
+    "total": 52394,
+    "posts": 11967,
     "oldest": "2026-09-22T07:36:31.649839+00:00"
   },
-  "viral_discovery_posts": 123,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4888,
+  "viral_discovery_posts": 118,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4945,
   "top5": [
     {
       "author": "deathdolnote",
-      "score": 72.4,
-      "likes": 4483,
-      "likes_per_min": 67.28,
-      "acceleration": 0.74,
+      "score": 67.9,
+      "likes": 5128,
+      "likes_per_min": 42.49,
+      "acceleration": 0.63,
       "measured": true,
-      "age_minutes": 68.0,
+      "age_minutes": 83.1,
       "text": "オフモード( ᴗ̀ ̫ᴗ́ ) @hiyo_chuLa https://t.co/577SkKQIgJ",
       "url": "https://x.com/i/status/2102641496474431617"
     },
     {
-      "author": "info__Johnnys",
-      "score": 65.0,
-      "likes": 8467,
-      "likes_per_min": 46.81,
-      "acceleration": 0.92,
+      "author": "canyong_1000000",
+      "score": 48.6,
+      "likes": 9478,
+      "likes_per_min": 133.73,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 121.3,
+      "age_minutes": 82.6,
+      "text": "本当に申し訳ありませんでした。\n\nこれまで私は自分のことを勘違いし、\n「世界一かわいいプリンセス」などと豪語しておりまし",
+      "url": "https://x.com/i/status/2102641632495731113"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 58.1,
+      "likes": 8977,
+      "likes_per_min": 33.6,
+      "acceleration": 0.72,
+      "measured": true,
+      "age_minutes": 136.5,
       "text": "【Endless SHOCK 全国公演決定】\n\n11/28(土)～2027/2/21(日)\n「Endless SHOCK",
       "url": "https://x.com/i/status/2102628074617737615"
     },
     {
       "author": "SN__20200122",
-      "score": 60.2,
-      "likes": 26569,
-      "likes_per_min": 127.36,
-      "acceleration": 0.85,
+      "score": 57.4,
+      "likes": 28248,
+      "likes_per_min": 110.61,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 99.6,
+      "age_minutes": 114.8,
       "text": "『カリスマックス』 🕶️\n累積再生数2億回突破ありがとうございマックス‼️\n\n▽Music Video\nhttps://",
       "url": "https://x.com/i/status/2102633531394634017"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 40.7,
-      "likes": 5283,
-      "likes_per_min": 24.01,
-      "acceleration": 0.81,
+      "author": "chigayahirayama",
+      "score": 45.1,
+      "likes": 7518,
+      "likes_per_min": 113.9,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 155.2,
-      "text": "猪俣周杜 \nファミクラ渋谷 個人写真 全種SOLD OUT",
-      "url": "https://x.com/i/status/2102619538273837532"
-    },
-    {
-      "author": "info__Johnnys",
-      "score": 74.8,
-      "likes": 5648,
-      "likes_per_min": 51.8,
-      "acceleration": 1.16,
-      "measured": true,
-      "age_minutes": 103.6,
-      "text": "【Endless SHOCK 全国公演日程】\n\n全国9都市 全49公演の全国ツアー\n「Endless SHOCK Mem",
-      "url": "https://x.com/i/status/2102632515978895757"
+      "age_minutes": 129.1,
+      "text": "これ見てゲラゲラ笑ってたらタクシーの運転手さんに「えっお前ら日本人！？いや、あの、ああいうこと言うやつめっちゃ少数派だか",
+      "url": "https://x.com/i/status/2102629937891119545"
     }
   ]
 }

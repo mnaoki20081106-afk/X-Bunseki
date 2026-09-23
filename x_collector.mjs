@@ -29,6 +29,23 @@ function pageKey(query,product,cursor){ return JSON.stringify([query,product,cur
 function safeError(e){ return e instanceof CollectorError ? e.code : 'request_failed'; }
 let searchResponses=0, searchTweets=0, searchTweetsWithViews=0;
 let rateLimited=0, forbidden=0;
+const searchRateLimit={limit:null,remaining:null,reset:null};
+
+function responseHeaderInt(res,name){
+  const value=res.headers.get(name);
+  if(value===null || value==='') return null;
+  const parsed=Number(value);
+  return Number.isFinite(parsed) && parsed>=0 ? Math.floor(parsed) : null;
+}
+function captureSearchRateLimit(operation,res){
+  if(operation!=='SearchTimeline') return;
+  const limit=responseHeaderInt(res,'x-rate-limit-limit');
+  const remaining=responseHeaderInt(res,'x-rate-limit-remaining');
+  const reset=responseHeaderInt(res,'x-rate-limit-reset');
+  if(limit!==null) searchRateLimit.limit=limit;
+  if(remaining!==null) searchRateLimit.remaining=remaining;
+  if(reset!==null) searchRateLimit.reset=reset;
+}
 
 function sleep(ms){ return new Promise(r=>setTimeout(r,ms)); }
 async function mapLimit(items, limit, fn){
@@ -56,6 +73,7 @@ const trackedFetch=async (url,init={})=>{
     guard.fail(operation,'network_error');
     throw new CollectorError('network_error');
   }
+  captureSearchRateLimit(operation,res);
   if(res.status===429) rateLimited++;
   if(res.status===403) forbidden++;
   const error=responseError(res.status,body);
@@ -64,7 +82,7 @@ const trackedFetch=async (url,init={})=>{
   try { parsed=parseTimeline(body,operation); }
   catch { guard.fail(operation,'schema_changed'); throw new CollectorError('schema_changed'); }
   invalidTweets+=parsed.invalid;
-  if(parsed.candidates>0 && parsed.tweets.length===0){
+  if(operation==='SearchTimeline' && parsed.candidates>0 && parsed.tweets.length===0){
     guard.fail(operation,'schema_changed'); throw new CollectorError('schema_changed');
   }
   if(operation==='SearchTimeline'){
@@ -212,6 +230,7 @@ const health={
   status:all.length===0 && hasFailure ? (error||'collection_failed') : (hasFailure?'degraded':'success'),
   error_code:error, search_succeeded:searchSuccess, search_failed:searchFailed,
   detail_succeeded:detailOk, detail_failed:detailFailed, invalid_tweets:invalidTweets,
+  search_rate_limit:searchRateLimit,
   failures:guard.failures
 };
 process.stdout.write(JSON.stringify({posts:all,health}));

@@ -1,20 +1,19 @@
 {
-  "updated_at": "2026-09-23T03:02:54.217282+00:00",
+  "updated_at": "2026-09-23T03:17:12.464171+00:00",
   "status": "success",
-  "started_at": "2026-09-23T03:02:24.176183+00:00",
-  "finished_at": "2026-09-23T03:02:54.215989+00:00",
-  "posts_scanned": 593,
-  "posts_with_history": 431,
-  "posts_flagged": 70,
+  "started_at": "2026-09-23T03:16:36.813261+00:00",
+  "finished_at": "2026-09-23T03:17:12.463046+00:00",
+  "posts_scanned": 265,
+  "posts_with_history": 159,
+  "posts_flagged": 9,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 91,
+  "minutes_since_last_notification": 105,
   "reject_reasons": {
-    "古すぎる": 169,
-    "誘導文パターン": 5,
-    "いいねが少なすぎる": 233,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 4
+    "古すぎる": 58,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 159,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -31,68 +30,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50298,
-    "posts": 10755,
+    "total": 50563,
+    "posts": 10861,
     "oldest": "2026-09-22T03:53:18.582792+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 8,
-  "watchlist_active": 4060,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4076,
   "top5": [
     {
-      "author": "main_warabi",
-      "score": 28.1,
-      "likes": 125918,
-      "likes_per_min": 126.9,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 863.7,
-      "text": "「コンドームは避妊率100%ではありません」って話を聞くたびに「物理的に遮断しているのになんでだ……？」ってなる",
-      "url": "https://x.com/main_warabi/status/2102377179522949621"
-    },
-    {
-      "author": "nande_otitanda",
-      "score": 32.4,
-      "likes": 74916,
-      "likes_per_min": 100.06,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 947.4,
-      "text": "これ全部アナルにぶち込んだらゲリすごいんだけどほんとに大丈夫？",
-      "url": "https://x.com/nande_otitanda/status/2102356097659187595"
-    },
-    {
-      "author": "yokose_banana",
-      "score": 60.8,
-      "likes": 7808,
-      "likes_per_min": 120.59,
+      "author": "nijisanji_app",
+      "score": 72.6,
+      "likes": 2381,
+      "likes_per_min": 142.26277971266398,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 124.2,
-      "text": "ちいかわの作者、西野カナなんじゃないか説結構ガチじゃない？？？\n筆跡とかほぼ同じやん…歌手引退後ちいかわ作ってるとしたら",
-      "url": "https://x.com/yokose_banana/status/2102563273724010845"
+      "measured": false,
+      "age_minutes": 16.7,
+      "text": "【🎂誕生日グッズ＆ボイス販売決定！】\n\nアンジュ・カトリーナ(@Ange_Katrina_)の誕生日を記念した『誕生日グ",
+      "url": "https://x.com/nijisanji_app/status/2102593917766279565"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 49.8,
-      "likes": 3149,
-      "likes_per_min": 12.18,
-      "acceleration": 1.13,
+      "author": "Pinakano",
+      "score": 55.9,
+      "likes": 485,
+      "likes_per_min": 10.83,
+      "acceleration": 1.25,
       "measured": true,
-      "age_minutes": 221.9,
-      "text": "【とび職に逆風 倒産過去最多ペース】\nhttps://t.co/a4gfcBddia",
-      "url": "https://x.com/YahooNewsTopics/status/2102538684511993941"
+      "age_minutes": 69.0,
+      "text": "以前、DMでSNSとの向き合い方について少し話したことがある。忘れているなら、読み返してほしい。\n\nそのとき、問題意識そ",
+      "url": "https://x.com/Pinakano/status/2102580765620162683"
     },
     {
-      "author": "jcom_support",
-      "score": 92.8,
-      "likes": 5192,
-      "likes_per_min": 50.83,
-      "acceleration": 0.94,
+      "author": "SoccerKingJP",
+      "score": 52.6,
+      "likes": 1107,
+      "likes_per_min": 10.35,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 98.3,
-      "text": "【お知らせ】現在、J:COM NETのインターネット接続がご利用できない状況が発生しております。\nまた各種サポート、カス",
-      "url": "https://x.com/jcom_support/status/2102569778233917483"
+      "age_minutes": 73.5,
+      "text": "⚽️発表⚽️\n川崎Fの元日本代表FW小林悠、39歳誕生日に現役引退を発表…2017年には得点王＆MVPに輝く\nhttps",
+      "url": "https://x.com/SoccerKingJP/status/2102579626396823762"
+    },
+    {
+      "author": "Fooootest",
+      "score": 40.6,
+      "likes": 2251,
+      "likes_per_min": 21.95,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 71.0,
+      "text": "🚨公式発表🚨\n\n小林悠が今年限りで現役引退を発表🐬✨\n\n川崎フロンターレに数々のタイトルをもたらしたレジェンドが引退を決",
+      "url": "https://x.com/Fooootest/status/2102580270398615970"
+    },
+    {
+      "author": "GoalJP_Official",
+      "score": 43.8,
+      "likes": 541,
+      "likes_per_min": 4.96,
+      "acceleration": 1.11,
+      "measured": true,
+      "age_minutes": 115.8,
+      "text": "🇪🇸誤審を認める…🎥\n\nスペイン審判技術委員会、アトレティコvsレアル・マドリー戦で物議を醸した場面の誤審を認める。\n\n",
+      "url": "https://x.com/GoalJP_Official/status/2102568975687430393"
     }
   ]
 }

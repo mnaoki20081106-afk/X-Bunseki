@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T22:20:13.850938+00:00",
+  "updated_at": "2026-09-23T22:35:48.295010+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,23 +13,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790202887
+      "reset": 1790203820
     },
     "failures": {}
   },
-  "started_at": "2026-09-23T22:19:46.310985+00:00",
-  "finished_at": "2026-09-23T22:20:13.849992+00:00",
-  "posts_scanned": 583,
-  "posts_with_history": 428,
-  "posts_flagged": 34,
+  "started_at": "2026-09-23T22:35:19.842839+00:00",
+  "finished_at": "2026-09-23T22:35:48.294050+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 459,
+  "posts_flagged": 31,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 327,
+  "minutes_since_last_notification": 343,
   "reject_reasons": {
-    "古すぎる": 347,
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 156,
-    "失速済み": 2
+    "古すぎる": 339,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 5,
+    "いいねが少なすぎる": 177,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -46,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47156,
-    "posts": 13587,
-    "oldest": "2026-09-22T22:32:38.882692+00:00"
+    "total": 47168,
+    "posts": 13565,
+    "oldest": "2026-09-22T22:47:17.221023+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6283,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6289,
   "top5": [
     {
-      "author": "Ram1ram7",
-      "score": 27.5,
-      "likes": 44422,
-      "likes_per_min": 11.96,
-      "acceleration": 1.39,
-      "measured": true,
-      "age_minutes": 838.4,
-      "text": "これめっちゃ楽しい♡ https://t.co/qxiI21Fdmg",
-      "url": "https://x.com/i/status/2102674781573349631"
-    },
-    {
-      "author": "Tigers_140609",
-      "score": 36.3,
-      "likes": 5610,
-      "likes_per_min": 31.91,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 236.3,
-      "text": "［DeNA］\n藤浪晋太郎   来季構想外\n他球団のオファー待つ   現役続行へ",
-      "url": "https://x.com/i/status/2102826309907030122"
-    },
-    {
       "author": "gnomotoke",
-      "score": 59.5,
-      "likes": 2514,
-      "likes_per_min": 29.05,
-      "acceleration": 1.08,
+      "score": 56.2,
+      "likes": 2970,
+      "likes_per_min": 29.31,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 137.1,
+      "age_minutes": 152.7,
       "text": "DeNA・藤浪晋太郎、来季構想外…加入2年で1勝、制球難で結果残せず　現役続行希望　国内外含め模索（スポニチアネックス）",
       "url": "https://x.com/i/status/2102851270499614740"
     },
     {
-      "author": "nino_honmono",
-      "score": 71.6,
-      "likes": 21678,
-      "likes_per_min": 220.57,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 78.0,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/i/status/2102866142524322020"
-    },
-    {
-      "author": "kp_official0523",
-      "score": 73.0,
-      "likes": 5270,
-      "likes_per_min": 117.69,
+      "author": "ryujimovie_jp",
+      "score": 84.2,
+      "likes": 5028,
+      "likes_per_min": 120.98,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 34.7,
-      "text": "Huluオリジナル\n「King &amp; Prince 髙橋海人\n　in ニュージーランド\n〜僕のやらなくてもいい、や",
-      "url": "https://x.com/i/status/2102877039749709893"
+      "age_minutes": 35.8,
+      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
+      "url": "https://x.com/i/status/2102880688483520695"
+    },
+    {
+      "author": "oliverD_23",
+      "score": 45.7,
+      "likes": 10863,
+      "likes_per_min": 151.84,
+      "acceleration": 1.09,
+      "measured": true,
+      "age_minutes": 112.4,
+      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
+      "url": "https://x.com/i/status/2102861406941196616"
+    },
+    {
+      "author": "oysm_mm",
+      "score": 28.1,
+      "likes": 2264,
+      "likes_per_min": 10.129178109358227,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 223.5,
+      "text": "呟く(※長いよ)。\n私がパリの大学院生だった頃、教授から恐ろしく期限の短い重い課題が出されたことがある。クラス全員が愕然",
+      "url": "https://x.com/i/status/2102833444292325390"
+    },
+    {
+      "author": "nhk_news",
+      "score": 71.6,
+      "likes": 1392,
+      "likes_per_min": 13.042332926014653,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 106.7,
+      "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
+      "url": "https://x.com/i/status/2102862833952366993"
     }
   ]
 }

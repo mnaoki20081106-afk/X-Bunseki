@@ -29,7 +29,7 @@ export function queryIdOverrides(text = '{}') {
 }
 
 async function boundedText(response, limit) {
-  if (!response.ok || !response.body) throw new Error('bundle_unavailable');
+  if (!response.ok || !response.body) throw new Error(`public_http_${response.status}`);
   const reader = response.body.getReader();
   const chunks = []; let bytes = 0;
   try {

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T08:21:53.730074+00:00",
+  "updated_at": "2026-09-24T08:37:37.514660+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790238987
+      "reset": 1790239928
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T08:21:26.653572+00:00",
-  "finished_at": "2026-09-24T08:21:53.728869+00:00",
-  "posts_scanned": 583,
-  "posts_with_history": 425,
-  "posts_flagged": 91,
+  "started_at": "2026-09-24T08:37:06.995273+00:00",
+  "finished_at": "2026-09-24T08:37:37.513439+00:00",
+  "posts_scanned": 563,
+  "posts_with_history": 403,
+  "posts_flagged": 88,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 407,
+  "minutes_since_last_notification": 422,
   "reject_reasons": {
-    "古すぎる": 129,
-    "いいね稼ぎ疑い": 6,
-    "誘導文パターン": 5,
-    "いいねが少なすぎる": 210,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 119,
+    "いいね稼ぎ疑い": 4,
+    "誘導文パターン": 9,
+    "いいねが少なすぎる": 225,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46292,
-    "posts": 12759,
-    "oldest": "2026-09-23T08:34:02.864143+00:00"
+    "total": 46257,
+    "posts": 12716,
+    "oldest": "2026-09-23T08:49:30.490585+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 6,
-  "watchlist_active": 7476,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 5,
+  "watchlist_active": 7519,
   "top5": [
     {
       "author": "_sknKfhK_thx",
       "score": 32.5,
-      "likes": 58649,
-      "likes_per_min": 164.38,
-      "acceleration": 0.96,
+      "likes": 61106,
+      "likes_per_min": 156.2,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 266.6,
+      "age_minutes": 282.3,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "nhk_news",
-      "score": 40.5,
-      "likes": 9527,
-      "likes_per_min": 10.91,
-      "acceleration": 0.75,
+      "author": "su_pa_inusama",
+      "score": 38.5,
+      "likes": 13932,
+      "likes_per_min": 253.34,
+      "acceleration": 1.22,
       "measured": true,
-      "age_minutes": 692.8,
-      "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
-      "url": "https://x.com/i/status/2102862833952366993"
+      "age_minutes": 154.3,
+      "text": "こいつは何も間違っていない",
+      "url": "https://x.com/i/status/2103002329448681747"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 47.2,
-      "likes": 22157,
-      "likes_per_min": 96.65,
-      "acceleration": 0.99,
+      "author": "Runninzin",
+      "score": 79.1,
+      "likes": 5622,
+      "likes_per_min": 62.3,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 204.1,
-      "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
-      "url": "https://x.com/i/status/2102985840897245302"
+      "age_minutes": 106.4,
+      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
+      "url": "https://x.com/i/status/2103014380778733883"
     },
     {
       "author": "livedoornews",
-      "score": 52.2,
-      "likes": 7115,
-      "likes_per_min": 26.67,
-      "acceleration": 1.01,
+      "score": 49.0,
+      "likes": 7546,
+      "likes_per_min": 27.4,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 186.9,
+      "age_minutes": 202.6,
       "text": "【ケガなし】声優・稲田徹、高速道路で追突被害 「前のトラックがゆっくり後退」\nhttps://t.co/NDmoc59f",
       "url": "https://x.com/i/status/2102990159381971415"
     },
     {
-      "author": "Runninzin",
-      "score": 85.7,
-      "likes": 4642,
-      "likes_per_min": 74.41,
-      "acceleration": 1.01,
+      "author": "monst_mixi",
+      "score": 69.9,
+      "likes": 6444,
+      "likes_per_min": 37.25,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 90.6,
-      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
-      "url": "https://x.com/i/status/2103014380778733883"
+      "age_minutes": 95.4,
+      "text": "📺••┈┈┈┈┈┈┈┈••☁︎\n\n#モンストニュースフラッシュ ！\nこのあと18:00頃 公開\n\n☁︎••┈┈┈┈┈┈┈",
+      "url": "https://x.com/i/status/2103017137644486669"
     }
   ]
 }

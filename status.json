@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T01:04:11.828414+00:00",
+  "updated_at": "2026-09-24T01:19:39.838755+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -12,25 +12,25 @@
     "invalid_tweets": 18,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790212723
+      "remaining": 14,
+      "reset": 1790213652
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T01:03:43.047200+00:00",
-  "finished_at": "2026-09-24T01:04:11.826054+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 430,
-  "posts_flagged": 36,
-  "notified_count": 1,
+  "started_at": "2026-09-24T01:19:11.702082+00:00",
+  "finished_at": "2026-09-24T01:19:39.837569+00:00",
+  "posts_scanned": 590,
+  "posts_with_history": 453,
+  "posts_flagged": 40,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 46,
+  "minutes_since_last_notification": 15,
   "reject_reasons": {
-    "古すぎる": 191,
-    "誘導文パターン": 9,
-    "いいねが少なすぎる": 229,
-    "失速済み": 3,
-    "初回観測かつ平均速度が低い": 9
+    "古すぎる": 183,
+    "誘導文パターン": 11,
+    "いいねが少なすぎる": 222,
+    "初回観測かつ平均速度が低い": 10,
+    "失速済み": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46210,
-    "posts": 13287,
-    "oldest": "2026-09-23T01:17:00.566938+00:00"
+    "total": 46510,
+    "posts": 13313,
+    "oldest": "2026-09-23T01:32:08.342883+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6446,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 1,
+  "watchlist_active": 6485,
   "top5": [
     {
       "author": "fuma_ten",
-      "score": 43.1,
-      "likes": 3647,
-      "likes_per_min": 44.36,
-      "acceleration": null,
+      "score": 41.2,
+      "likes": 4359,
+      "likes_per_min": 45.98,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 158.0,
+      "age_minutes": 173.5,
       "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
       "url": "https://x.com/i/status/2102887278712668295"
     },
     {
-      "author": "hanabi_support2",
-      "score": 34.0,
-      "likes": 5036,
-      "likes_per_min": 46.03,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 235.7,
-      "text": "悔しいけど…これが子育てのリアル… https://t.co/lVlkJSyNyB",
-      "url": "https://x.com/i/status/2102867725488193760"
-    },
-    {
       "author": "PokemonTCGP_JP",
-      "score": 77.8,
-      "likes": 4744,
-      "likes_per_min": 91.18,
-      "acceleration": 1.15,
+      "score": 74.6,
+      "likes": 5915,
+      "likes_per_min": 75.62,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 63.9,
+      "age_minutes": 79.4,
       "text": "◢◤◢◤ 今夜、22:00 ◢◤◢◤\n\n最新情報をお知らせします。\n\n#ポケポケ\n\n♪Remix：原口沙輔（ @sasu",
       "url": "https://x.com/i/status/2102910957798183382"
     },
     {
-      "author": "O12O_1O7_929",
-      "score": 43.0,
-      "likes": 5346,
-      "likes_per_min": 49.01,
-      "acceleration": 1.15,
+      "author": "Fuwa_Minato",
+      "score": 60.9,
+      "likes": 23549,
+      "likes_per_min": 151.82,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 162.6,
-      "text": "片親で家庭環境のあまりよろしくないゥチのことを、ゥチが高校生〜25歳くらいまで、旅行や食事に連れて行ってくれる６歳上のお",
-      "url": "https://x.com/i/status/2102886120338133335"
+      "age_minutes": 106.7,
+      "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
+      "url": "https://x.com/i/status/2102904085741793649"
     },
     {
       "author": "korimakorima",
-      "score": 52.7,
-      "likes": 12979,
-      "likes_per_min": 118.69,
-      "acceleration": 0.87,
+      "score": 50.2,
+      "likes": 14663,
+      "likes_per_min": 108.75,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 147.8,
+      "age_minutes": 163.3,
       "text": "子供が中学に入ってから藤井さんがお弁当を作っていらっしゃるんですね、大変なことだと思いますと言われた藤井隆さんが「いや、",
       "url": "https://x.com/i/status/2102889833773588569"
+    },
+    {
+      "author": "soyamanga",
+      "score": 52.1,
+      "likes": 15568,
+      "likes_per_min": 117.59,
+      "acceleration": 1.03,
+      "measured": true,
+      "age_minutes": 121.7,
+      "text": "誕生日です、大きく育ちました。 https://t.co/3IOuShxHQ6",
+      "url": "https://x.com/i/status/2102900310381609318"
     }
   ]
 }

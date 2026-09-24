@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-24T16:03:11.563996+00:00",
+  "updated_at": "2026-09-24T16:18:39.807685+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790266654
+      "remaining": 14,
+      "reset": 1790267588
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T16:02:33.923066+00:00",
-  "finished_at": "2026-09-24T16:03:11.563105+00:00",
-  "posts_scanned": 617,
-  "posts_with_history": 529,
-  "posts_flagged": 61,
+  "started_at": "2026-09-24T16:18:07.172195+00:00",
+  "finished_at": "2026-09-24T16:18:39.806588+00:00",
+  "posts_scanned": 616,
+  "posts_with_history": 534,
+  "posts_flagged": 51,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 133,
+  "minutes_since_last_notification": 148,
   "reject_reasons": {
-    "古すぎる": 164,
-    "初回観測かつ平均速度が低い": 3,
-    "いいね稼ぎ疑い": 3,
-    "失速済み": 11,
-    "誘導文パターン": 3,
-    "いいねが少なすぎる": 234
+    "古すぎる": 174,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 10,
+    "誘導文パターン": 4,
+    "いいねが少なすぎる": 226
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49256,
-    "posts": 12782,
-    "oldest": "2026-09-23T16:06:20.146999+00:00"
+    "total": 49393,
+    "posts": 12777,
+    "oldest": "2026-09-23T16:21:54.571799+00:00"
   },
-  "viral_discovery_posts": 137,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4188,
+  "viral_discovery_posts": 143,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4198,
   "top5": [
     {
       "author": "ngnchiikawa",
-      "score": 29.1,
-      "likes": 387353,
-      "likes_per_min": 210.44,
-      "acceleration": 0.6,
+      "score": 30.5,
+      "likes": 390269,
+      "likes_per_min": 188.53,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 279.2,
+      "age_minutes": 294.7,
       "text": "⭐️ https://t.co/b8u9pqzoD5",
       "url": "https://x.com/i/status/2103083017195684094"
     },
     {
       "author": "JINJIN1027",
-      "score": 54.2,
-      "likes": 8792,
-      "likes_per_min": 41.33,
-      "acceleration": 0.82,
+      "score": 48.8,
+      "likes": 9264,
+      "likes_per_min": 30.52,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 152.1,
+      "age_minutes": 167.6,
       "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
       "url": "https://x.com/i/status/2103115002001698873"
     },
     {
-      "author": "Abhis379",
-      "score": 33.3,
-      "likes": 7586,
-      "likes_per_min": 20.63,
-      "acceleration": 0.86,
+      "author": "p_ka2295079",
+      "score": 42.8,
+      "likes": 22398,
+      "likes_per_min": 82.68,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 204.5,
+      "age_minutes": 174.8,
+      "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
+      "url": "https://x.com/i/status/2103113193136812040"
+    },
+    {
+      "author": "Abhis379",
+      "score": 31.8,
+      "likes": 7906,
+      "likes_per_min": 20.69,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 219.9,
       "text": "今日の有益情報② https://t.co/zG78x3Kas6",
       "url": "https://x.com/i/status/2103101829467054221"
     },
     {
-      "author": "10anj10",
-      "score": 35.6,
-      "likes": 10977,
-      "likes_per_min": 67.41,
-      "acceleration": 0.76,
+      "author": "SAK_SAK_SAKUMA",
+      "score": 78.5,
+      "likes": 34011,
+      "likes_per_min": 193.38,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 235.4,
-      "text": "そう思ってモラハラの女性とモラハラの男性をお見合いさせたことがあるけど、よりモラ度の強いほうが一方的に攻撃を始めて比較的",
-      "url": "https://x.com/i/status/2103094040355049493"
-    },
-    {
-      "author": "vqre5",
-      "score": 26.9,
-      "likes": 39379,
-      "likes_per_min": 278.16,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 226.3,
-      "text": "父親が化粧品売り場を睨んでたから、女はこんなもんにばっか金を使ってどうのこうのとか言い出すんかなって思ってたら「俺が女や",
-      "url": "https://x.com/i/status/2103096334366679526"
+      "age_minutes": 76.2,
+      "text": "アイドル年齢が21歳になりました！！！\nSnow Manの佐久間大介です！\n\nこれからもよろしく (^^) \n\n#佐久間",
+      "url": "https://x.com/i/status/2103137993041281142"
     }
   ]
 }

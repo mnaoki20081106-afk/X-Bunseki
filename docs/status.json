@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-09-24T16:18:39.807685+00:00",
+  "updated_at": "2026-09-24T16:34:09.606903+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790267588
+      "reset": 1790268518
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T16:18:07.172195+00:00",
-  "finished_at": "2026-09-24T16:18:39.806588+00:00",
-  "posts_scanned": 616,
-  "posts_with_history": 534,
-  "posts_flagged": 51,
+  "started_at": "2026-09-24T16:33:37.815930+00:00",
+  "finished_at": "2026-09-24T16:34:09.605611+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 533,
+  "posts_flagged": 48,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 148,
+  "minutes_since_last_notification": 164,
   "reject_reasons": {
-    "古すぎる": 174,
+    "古すぎる": 184,
     "いいね稼ぎ疑い": 5,
-    "失速済み": 10,
+    "失速済み": 12,
     "誘導文パターン": 4,
-    "いいねが少なすぎる": 226
+    "いいねが少なすぎる": 223,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49393,
-    "posts": 12777,
-    "oldest": "2026-09-23T16:21:54.571799+00:00"
+    "total": 49410,
+    "posts": 12733,
+    "oldest": "2026-09-23T16:37:06.271126+00:00"
   },
-  "viral_discovery_posts": 143,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4198,
+  "viral_discovery_posts": 139,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4210,
   "top5": [
     {
-      "author": "ngnchiikawa",
-      "score": 30.5,
-      "likes": 390269,
-      "likes_per_min": 188.53,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 294.7,
-      "text": "⭐️ https://t.co/b8u9pqzoD5",
-      "url": "https://x.com/i/status/2103083017195684094"
-    },
-    {
       "author": "JINJIN1027",
-      "score": 48.8,
-      "likes": 9264,
-      "likes_per_min": 30.52,
-      "acceleration": 0.74,
+      "score": 45.5,
+      "likes": 9655,
+      "likes_per_min": 25.23,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 167.6,
+      "age_minutes": 183.1,
       "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
       "url": "https://x.com/i/status/2103115002001698873"
     },
     {
       "author": "p_ka2295079",
-      "score": 42.8,
-      "likes": 22398,
-      "likes_per_min": 82.68,
-      "acceleration": 0.89,
+      "score": 37.1,
+      "likes": 23295,
+      "likes_per_min": 57.89,
+      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 174.8,
+      "age_minutes": 190.3,
       "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
       "url": "https://x.com/i/status/2103113193136812040"
     },
     {
-      "author": "Abhis379",
-      "score": 31.8,
-      "likes": 7906,
-      "likes_per_min": 20.69,
-      "acceleration": 1.0,
+      "author": "Show_SylveSTAR",
+      "score": 29.5,
+      "likes": 23143,
+      "likes_per_min": 20.2,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 219.9,
-      "text": "今日の有益情報② https://t.co/zG78x3Kas6",
-      "url": "https://x.com/i/status/2103101829467054221"
+      "age_minutes": 226.6,
+      "text": "お休みをお休みすることになりました。",
+      "url": "https://x.com/i/status/2103104047268155824"
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 78.5,
-      "likes": 34011,
-      "likes_per_min": 193.38,
-      "acceleration": 0.73,
+      "author": "CANDY_TUNE_",
+      "score": 66.8,
+      "likes": 3094,
+      "likes_per_min": 15.94,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 76.2,
-      "text": "アイドル年齢が21歳になりました！！！\nSnow Manの佐久間大介です！\n\nこれからもよろしく (^^) \n\n#佐久間",
-      "url": "https://x.com/i/status/2103137993041281142"
+      "age_minutes": 94.1,
+      "text": "📘桐原美月 ソロ表紙&amp;デジタル写真集決定📘\n\n🗓️10/2発売\n「FRIDAY」\n桐原美月「sweet girl",
+      "url": "https://x.com/i/status/2103137390395060229"
+    },
+    {
+      "author": "sekiro_nd_anime",
+      "score": 72.4,
+      "likes": 8558,
+      "likes_per_min": 44.85,
+      "acceleration": 0.7,
+      "measured": true,
+      "age_minutes": 94.1,
+      "text": "TVアニメ「SEKIRO: NO DEFEAT」\n2027年1月より全8話放送決定\n―――――――――――――――\n\nh",
+      "url": "https://x.com/i/status/2103137384757923943"
     }
   ]
 }

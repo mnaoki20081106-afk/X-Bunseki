@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-24T12:47:55.973511+00:00",
+  "updated_at": "2026-09-24T13:03:44.282087+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "schema_changed",
-    "search_succeeded": 7,
-    "search_failed": 28,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 12,
     "detail_failed": 0,
     "detail_skipped": 28,
     "invalid_tweets": 22,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 43,
-      "reset": 1790254963
+      "remaining": 14,
+      "reset": 1790255896
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-24T12:47:42.622762+00:00",
-  "finished_at": "2026-09-24T12:47:55.972325+00:00",
-  "posts_scanned": 150,
-  "posts_with_history": 79,
-  "posts_flagged": 15,
+  "started_at": "2026-09-24T13:03:16.048427+00:00",
+  "finished_at": "2026-09-24T13:03:44.281003+00:00",
+  "posts_scanned": 570,
+  "posts_with_history": 341,
+  "posts_flagged": 113,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 673,
+  "minutes_since_last_notification": 689,
   "reject_reasons": {
-    "古すぎる": 12,
-    "いいねが少なすぎる": 104,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 98,
+    "失速済み": 13,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 8,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 241
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46346,
-    "posts": 12407,
-    "oldest": "2026-09-23T12:52:25.670097+00:00"
+    "total": 46473,
+    "posts": 12493,
+    "oldest": "2026-09-23T13:07:44.869639+00:00"
   },
-  "viral_discovery_posts": 0,
-  "million_imp_rescued": 0,
-  "watchlist_active": 8522,
+  "viral_discovery_posts": 120,
+  "million_imp_rescued": 4,
+  "watchlist_active": 8611,
   "top5": [
     {
-      "author": "pj_sekai",
-      "score": 61.2,
-      "likes": 1236,
-      "likes_per_min": 230.7288948552621,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 5.4,
-      "text": "🎊プロセカ放送局🎊\nご覧いただきありがとうございました💫\n\n#プロセカ6周年直前生放送 https://t.co/qaL",
-      "url": "https://x.com/i/status/2103102795100667961"
+      "author": "ngnchiikawa",
+      "score": 62.4,
+      "likes": 285473,
+      "likes_per_min": 1493.9,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 99.7,
+      "text": "⭐️ https://t.co/b8u9pqzoD5",
+      "url": "https://x.com/i/status/2103083017195684094"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 28.3,
+      "likes": 94870,
+      "likes_per_min": 20.05,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 549.6,
+      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
+      "url": "https://x.com/i/status/2102969804177236087"
+    },
+    {
+      "author": "jfa_samuraiblue",
+      "score": 71.1,
+      "likes": 18051,
+      "likes_per_min": 214.22,
+      "acceleration": 0.56,
+      "measured": true,
+      "age_minutes": 58.2,
+      "text": "🔹試合終了🔹️\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 3-1 ウルグアイ代表🇺🇾\n\n📺フジテ",
+      "url": "https://x.com/i/status/2103093483452154266"
     },
     {
       "author": "pj_sekai",
-      "score": 88.1,
-      "likes": 5089,
-      "likes_per_min": 158.48,
+      "score": 75.4,
+      "likes": 24990,
+      "likes_per_min": 320.38,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 55.7,
+      "text": "㊗️6周年記念\nブルームフェスティバルガチャ\nドリームピック💐\n\nイベントガチャの期間限定メンバーも先行登場✨\n・桃井愛",
+      "url": "https://x.com/i/status/2103094109682782643"
+    },
+    {
+      "author": "cheche_xyz",
+      "score": 53.1,
+      "likes": 9677,
+      "likes_per_min": 299.53,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 22.8,
-      "text": "2026年10月より\n外食チェーンコラボ開催決定🍴\n\n詳細は後日発表しますのでお楽しみに✨\n\n📺番組生配信中：https",
-      "url": "https://x.com/i/status/2103098415823601746"
-    },
-    {
-      "author": "pj_sekai",
-      "score": 65.6,
-      "likes": 2072,
-      "likes_per_min": 57.39,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 21.3,
-      "text": "【#プロセカ6周年直前生放送】39,000ポスト達成🎉\n\n達成報酬の「クリスタル500個」は後日配布を予定しております🎁",
-      "url": "https://x.com/i/status/2103098774537289862"
-    },
-    {
-      "author": "pj_sekai",
-      "score": 80.8,
-      "likes": 3817,
-      "likes_per_min": 113.79,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 21.8,
-      "text": "🎊グッズ情報🎊\n\nおまんじゅうにぎにぎマスコットが新登場🎉\n\nエンスカイショップ及び全国のアニメイト各店＆各種ECサイト",
-      "url": "https://x.com/i/status/2103098653921648924"
-    },
-    {
-      "author": "Kagetsu_2434",
-      "score": 77.2,
-      "likes": 1156,
-      "likes_per_min": 231.2,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 1.4,
-      "text": "【Apex】親指でエーペックスランク w/イブラヒムさん 星導ショウさん【叢雲カゲツ/にじさんじ】 https://t.",
-      "url": "https://x.com/i/status/2103103802132005369"
+      "age_minutes": 39.9,
+      "text": "塩貝が決める ↓ 相手選手が抗議する ↓ 塩貝もその場に入ろうとする ↓ 久保に「お前は来るな」と追いやられる ↓ 素直",
+      "url": "https://x.com/i/status/2103098075824934969"
     }
   ]
 }

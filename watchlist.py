@@ -46,6 +46,49 @@ def _next_due(posted_at: str, age_min: float, now: datetime):
     return (None, None)
 
 
+def _age_minutes(posted_at: str, now: datetime) -> float:
+    return max(0.0, (now - _dt(posted_at)).total_seconds() / 60.0)
+
+
+def mark_detail_skipped(post_ids: list[str], now=None) -> dict:
+    """Advance checkpoints for post-local TweetDetail gaps.
+
+    A deleted/private post or a response missing one learning metric must not stay
+    permanently overdue. Re-requesting the same stale rows every cycle starves
+    newer watchlist entries and incorrectly looks like a global collection failure.
+    """
+    now = now or datetime.now(timezone.utc)
+    state = load()
+    changed = False
+    for raw_pid in dict.fromkeys(str(pid) for pid in post_ids if pid):
+        row = state.get(raw_pid)
+        if not row or row.get("completed"):
+            continue
+        row["last_detail_skip_at"] = now.isoformat()
+        row["consecutive_detail_skips"] = int(row.get("consecutive_detail_skips") or 0) + 1
+        posted_at = row.get("posted_at")
+        if posted_at:
+            try:
+                age = _age_minutes(posted_at, now)
+                ts, target = _next_due(posted_at, age, now)
+                if ts is None:
+                    row["completed"] = True
+                    row["next_due_at"] = None
+                    row["next_target_minutes"] = None
+                else:
+                    row["next_due_at"] = datetime.fromtimestamp(ts, timezone.utc).isoformat()
+                    row["next_target_minutes"] = target
+            except Exception:
+                # Bad legacy metadata should not make the whole monitor fail.
+                row["next_due_at"] = now.isoformat()
+        state[raw_pid] = row
+        changed = True
+    if changed:
+        PATH.parent.mkdir(parents=True, exist_ok=True)
+        PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    return state
+
+
 def update(evaluated: list[dict], now=None) -> dict:
     """Add strong discoveries and advance existing entries to their next checkpoint."""
     now = now or datetime.now(timezone.utc)
@@ -105,6 +148,7 @@ def update(evaluated: list[dict], now=None) -> dict:
             "million_imp_bypass_detail": p.get("million_imp_bypass_detail") or "",
             "last_age_minutes": age,
             "last_seen_at": now.isoformat(),
+            "consecutive_detail_skips": 0,
         })
         if not row.get("added_at"):
             row["added_at"] = now.isoformat()
@@ -125,6 +169,19 @@ def update(evaluated: list[dict], now=None) -> dict:
                 row["next_due_at"] = datetime.fromtimestamp(ts, timezone.utc).isoformat()
                 row["next_target_minutes"] = target
         state[pid] = row
+
+    # Rows that were never observed again after becoming due must still age out.
+    # Otherwise they remain permanently overdue and monopolize due_posts().
+    for row in state.values():
+        if row.get("completed") or not row.get("posted_at"):
+            continue
+        try:
+            if _age_minutes(row["posted_at"], now) > TARGET_MINUTES[-1] + 2:
+                row["completed"] = True
+                row["next_due_at"] = None
+                row["next_target_minutes"] = None
+        except Exception:
+            pass
 
     # Keep completed rows for 7 days for debugging, then compact.
     compact = {}

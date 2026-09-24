@@ -31,7 +31,7 @@ globalThis.fetch = async url => {
   if (mode === 'stale' || mode === 'empty') return Response.json(timeline([], operation));
   const t = tweet(operation === 'TweetDetail' ? variables.focalTweetId : '123');
   if (mode === 'missing_views' ||
-      (mode === 'detail_incomplete' && operation === 'TweetDetail') ||
+      (['detail_incomplete', 'detail_incomplete_many'].includes(mode) && operation === 'TweetDetail') ||
       (mode === 'search_incomplete_then_success' && operation === 'SearchTimeline' && variables.rawQuery === 'second')) {
     delete t.views;
   }

@@ -104,7 +104,9 @@ function collect(scenario) {
     writeFileSync(join(dir, '.x-agent-queries.json'), JSON.stringify(['first', 'second', 'third'].map(query => ({ query, product: 'Latest', limit: 20, source: 'keyword' }))));
     const watchlist = scenario === 'detail_schema_then_success'
       ? [{ post_id: '456', last_impressions: 90000 }, { post_id: '789', last_impressions: 120000 }]
-      : [{ post_id: '456', last_impressions: 90000 }];
+      : scenario === 'detail_incomplete_many'
+        ? Array.from({length: 8}, (_, i) => ({ post_id: String(456 + i), last_impressions: 90000 + i }))
+        : [{ post_id: '456', last_impressions: 90000 }];
     writeFileSync(join(dir, '.x-agent-watchlist.json'), JSON.stringify(watchlist));
     const result = spawnSync(process.execPath, ['--import', fileURLToPath(new URL('./mock-x-transport.mjs', import.meta.url)), fileURLToPath(new URL('../x_collector.mjs', import.meta.url))], {
       cwd: dir, encoding: 'utf8', timeout: 15000,
@@ -156,6 +158,19 @@ test('one incomplete watchlist detail is skipped without degrading healthy searc
   assert.equal(result.health.detail_failed, 0);
   assert.equal(result.health.detail_skipped, 1);
   assert.equal(result.health.invalid_tweets, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123']);
+});
+
+test('many post-local TweetDetail gaps do not degrade a healthy search cycle', () => {
+  const result = collect('detail_incomplete_many');
+  assert.equal(result.health.status, 'success');
+  assert.equal(result.health.error_code, null);
+  assert.equal(result.health.search_succeeded, 3);
+  assert.equal(result.health.detail_succeeded, 0);
+  assert.equal(result.health.detail_failed, 0);
+  assert.equal(result.health.detail_skipped, 8);
+  assert.equal(result.health.detail_incomplete, 8);
+  assert.equal(result.health._detail_skipped_ids.length, 8);
   assert.deepEqual(result.posts.map(p => p.post_id), ['123']);
 });
 

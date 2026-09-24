@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-24T14:21:12.683075+00:00",
+  "updated_at": "2026-09-24T14:36:44.496055+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
     "detail_succeeded": 11,
     "detail_failed": 0,
     "detail_skipped": 29,
@@ -14,24 +14,26 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790260543
+      "reset": 1790261475
     },
-    "failures": {}
+    "failures": {
+      "request_failed": 1
+    }
   },
-  "started_at": "2026-09-24T14:20:42.157400+00:00",
-  "finished_at": "2026-09-24T14:21:12.681557+00:00",
-  "posts_scanned": 575,
-  "posts_with_history": 421,
-  "posts_flagged": 92,
+  "started_at": "2026-09-24T14:36:14.815608+00:00",
+  "finished_at": "2026-09-24T14:36:44.494711+00:00",
+  "posts_scanned": 582,
+  "posts_with_history": 430,
+  "posts_flagged": 71,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 47,
   "reject_reasons": {
-    "古すぎる": 105,
-    "いいね稼ぎ疑い": 4,
-    "いいねが少なすぎる": 255,
-    "失速済み": 7,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 100,
+    "いいね稼ぎ疑い": 5,
+    "いいねが少なすぎる": 275,
+    "誘導文パターン": 1,
+    "失速済み": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47746,
-    "posts": 12552,
+    "total": 48328,
+    "posts": 12704,
     "oldest": "2026-09-23T15:03:42.578015+00:00"
   },
-  "viral_discovery_posts": 118,
-  "million_imp_rescued": 7,
-  "watchlist_active": 8882,
+  "viral_discovery_posts": 111,
+  "million_imp_rescued": 6,
+  "watchlist_active": 8918,
   "top5": [
     {
       "author": "ngnchiikawa",
-      "score": 44.2,
-      "likes": 351028,
-      "likes_per_min": 707.26,
-      "acceleration": 0.73,
+      "score": 41.3,
+      "likes": 359210,
+      "likes_per_min": 526.87,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 177.2,
+      "age_minutes": 192.7,
       "text": "⭐️ https://t.co/b8u9pqzoD5",
       "url": "https://x.com/i/status/2103083017195684094"
     },
     {
       "author": "xn0qh_",
-      "score": 36.5,
-      "likes": 12639,
-      "likes_per_min": 152.7,
-      "acceleration": 1.15,
+      "score": 32.3,
+      "likes": 14693,
+      "likes_per_min": 132.26,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 212.1,
+      "age_minutes": 227.6,
       "text": "金払わずにここから行け\nhttps://t.co/cVLPEOP49J",
       "url": "https://x.com/i/status/2103074253151363453"
     },
     {
+      "author": "milk_info",
+      "score": 59.0,
+      "likes": 3152,
+      "likes_per_min": 468.3656626124828,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.7,
+      "text": "／\n今夜放送📣\n＼\n9月24日(木)26:35～放送\n​日本テレビ「オードリーのNFL倶楽部」に\nM!LKより #吉田仁",
+      "url": "https://x.com/i/status/2103129831911432526"
+    },
+    {
       "author": "p_ka2295079",
-      "score": 62.3,
-      "likes": 6728,
-      "likes_per_min": 249.09,
-      "acceleration": 1.66,
+      "score": 55.4,
+      "likes": 9594,
+      "likes_per_min": 184.55,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 57.3,
+      "age_minutes": 72.8,
       "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
       "url": "https://x.com/i/status/2103113193136812040"
     },
     {
-      "author": "milk_info",
-      "score": 65.9,
-      "likes": 5953,
-      "likes_per_min": 763.1863910007851,
+      "author": "SAK_SAK_SAKUMA",
+      "score": 46.5,
+      "likes": 5945,
+      "likes_per_min": 550.6438996197752,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 7.8,
-      "text": "／\n今夜最終回放送📣\n＼\n👑M!LK冠番組👑\n⏰9月24日(木)25:29～放送\n⚠️いつもと放送時間が異なっております",
-      "url": "https://x.com/i/status/2103125651423371572"
-    },
-    {
-      "author": "miyabnn",
-      "score": 37.5,
-      "likes": 39862,
-      "likes_per_min": 148.95,
-      "acceleration": 0.98,
-      "measured": true,
-      "age_minutes": 205.4,
-      "text": "「友達になってくださーい」 https://t.co/Ur2KdnaPXM",
-      "url": "https://x.com/i/status/2103075921876197493"
+      "age_minutes": 10.8,
+      "text": "オーイシさんのLIVEにてaikoさんと (^^) 📸 https://t.co/8v3V02I8lE",
+      "url": "https://x.com/i/status/2103128805200244871"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T10:03:56.725337+00:00",
+  "updated_at": "2026-09-24T10:19:29.419835+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 15,
     "detail_failed": 0,
     "detail_skipped": 25,
-    "invalid_tweets": 21,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790245110
+      "remaining": 14,
+      "reset": 1790246041
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T10:03:29.080522+00:00",
-  "finished_at": "2026-09-24T10:03:56.723948+00:00",
-  "posts_scanned": 579,
-  "posts_with_history": 390,
-  "posts_flagged": 122,
+  "started_at": "2026-09-24T10:19:00.375316+00:00",
+  "finished_at": "2026-09-24T10:19:29.418309+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 402,
+  "posts_flagged": 120,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 509,
+  "minutes_since_last_notification": 524,
   "reject_reasons": {
-    "古すぎる": 123,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 12,
-    "いいねが少なすぎる": 227,
-    "誘導文パターン": 1,
-    "失速済み": 3
+    "古すぎる": 119,
+    "いいね稼ぎ疑い": 2,
+    "誘導文パターン": 3,
+    "いいねが少なすぎる": 222,
+    "失速済み": 6,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46801,
-    "posts": 12808,
-    "oldest": "2026-09-23T10:07:06.751988+00:00"
+    "total": 46779,
+    "posts": 12780,
+    "oldest": "2026-09-23T10:22:37.844496+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 4,
-  "watchlist_active": 7868,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 6,
+  "watchlist_active": 7930,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.2,
-      "likes": 72595,
-      "likes_per_min": 115.32,
-      "acceleration": 0.93,
+      "score": 31.7,
+      "likes": 74130,
+      "likes_per_min": 98.75,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 368.6,
+      "age_minutes": 384.2,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
       "author": "info__Johnnys",
-      "score": 33.8,
-      "likes": 88678,
-      "likes_per_min": 62.9,
-      "acceleration": 0.87,
+      "score": 33.6,
+      "likes": 89567,
+      "likes_per_min": 57.19,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 369.8,
+      "age_minutes": 385.4,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "anime_chiikawa",
-      "score": 70.6,
-      "likes": 25718,
-      "likes_per_min": 486.24,
-      "acceleration": 0.96,
+      "author": "9taisyo21",
+      "score": 56.1,
+      "likes": 3605,
+      "likes_per_min": 89.03,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 63.9,
-      "text": "⭐️明日放送⭐️\n\nTVアニメちいかわ第381話\n\nフジテレビ系列「めざましテレビ」内にて\n9月25日(金)7時36分頃",
-      "url": "https://x.com/i/status/2103046797304500465"
+      "age_minutes": 99.4,
+      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
+      "url": "https://x.com/i/status/2103041761472135534"
+    },
+    {
+      "author": "Runninzin",
+      "score": 49.1,
+      "likes": 10681,
+      "likes_per_min": 38.47,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 208.2,
+      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
+      "url": "https://x.com/i/status/2103014380778733883"
     },
     {
       "author": "chi_bakun_chiba",
-      "score": 69.9,
-      "likes": 29545,
-      "likes_per_min": 770.09,
-      "acceleration": 1.1,
+      "score": 67.0,
+      "likes": 39185,
+      "likes_per_min": 620.15,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 63.9,
+      "age_minutes": 79.5,
       "text": "お友達のみんなへ\nチーバくんは、しばらくの間、県外での活動をお休みすることになりました。\n今は千葉がたいへんなときだから",
       "url": "https://x.com/i/status/2103046783697862930"
-    },
-    {
-      "author": "jfa_samuraiblue",
-      "score": 73.4,
-      "likes": 13287,
-      "likes_per_min": 191.67,
-      "acceleration": 0.77,
-      "measured": true,
-      "age_minutes": 55.5,
-      "text": "🔹𝗦𝗔𝗠𝗨𝗥𝗔𝗜 𝗕𝗟𝗨𝗘🔹\n📝LINE-UP📝\n\n🏆キリンチャレンジカップ2026\n🆚ウルグアイ代表🇺🇾\n\n23 早川",
-      "url": "https://x.com/i/status/2103048900550803784"
     }
   ]
 }

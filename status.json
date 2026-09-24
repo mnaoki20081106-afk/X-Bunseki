@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T04:51:20.279235+00:00",
+  "updated_at": "2026-09-24T05:06:51.539512+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790226351
+      "reset": 1790227284
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T04:50:50.809494+00:00",
-  "finished_at": "2026-09-24T04:51:20.278023+00:00",
-  "posts_scanned": 582,
-  "posts_with_history": 444,
-  "posts_flagged": 91,
+  "started_at": "2026-09-24T05:06:23.075784+00:00",
+  "finished_at": "2026-09-24T05:06:51.538296+00:00",
+  "posts_scanned": 561,
+  "posts_with_history": 427,
+  "posts_flagged": 84,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 196,
+  "minutes_since_last_notification": 212,
   "reject_reasons": {
-    "古すぎる": 133,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 6,
-    "いいねが少なすぎる": 233,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 129,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 6,
+    "誘導文パターン": 2,
+    "いいねが少なすぎる": 221,
+    "失速済み": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46126,
-    "posts": 12763,
-    "oldest": "2026-09-23T05:03:04.117054+00:00"
+    "total": 46096,
+    "posts": 12754,
+    "oldest": "2026-09-23T05:16:58.529917+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 9,
-  "watchlist_active": 6947,
+  "viral_discovery_posts": 118,
+  "million_imp_rescued": 11,
+  "watchlist_active": 6987,
   "top5": [
     {
       "author": "info__Johnnys",
-      "score": 80.4,
-      "likes": 30708,
-      "likes_per_min": 712.3,
-      "acceleration": 1.04,
+      "score": 73.9,
+      "likes": 39504,
+      "likes_per_min": 566.65,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 57.2,
+      "age_minutes": 72.7,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 69.5,
-      "likes": 26451,
-      "likes_per_min": 309.76,
-      "acceleration": 0.52,
+      "score": 65.7,
+      "likes": 28989,
+      "likes_per_min": 163.5,
+      "acceleration": 0.53,
       "measured": true,
-      "age_minutes": 58.1,
+      "age_minutes": 73.6,
       "text": "WEST. 解散を発表",
       "url": "https://x.com/i/status/2102969587998638398"
     },
     {
       "author": "oricon",
-      "score": 93.7,
-      "likes": 6762,
-      "likes_per_min": 267.71,
-      "acceleration": 2.09,
+      "score": 82.1,
+      "likes": 11063,
+      "likes_per_min": 277.08,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 46.2,
+      "age_minutes": 61.7,
       "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
       "url": "https://x.com/i/status/2102972578017198305"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 56.9,
-      "likes": 6406,
-      "likes_per_min": 34.78,
-      "acceleration": 1.04,
+      "author": "_sknKfhK_thx",
+      "score": 80.2,
+      "likes": 8152,
+      "likes_per_min": 256.85,
+      "acceleration": 3.07,
       "measured": true,
-      "age_minutes": 157.4,
-      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
-      "url": "https://x.com/i/status/2102944592673038481"
+      "age_minutes": 71.5,
+      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
+      "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "modelpress",
-      "score": 84.4,
-      "likes": 3040,
-      "likes_per_min": 80.11,
-      "acceleration": 0.98,
+      "author": "DEATHDOL_NOTE",
+      "score": 53.3,
+      "likes": 6941,
+      "likes_per_min": 34.47,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 47.1,
-      "text": "WEST.、グループ活動終了を発表\nhttps://t.co/gRJOnOESAI",
-      "url": "https://x.com/i/status/2102972356574732344"
+      "age_minutes": 172.9,
+      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
+      "url": "https://x.com/i/status/2102944592673038481"
     }
   ]
 }

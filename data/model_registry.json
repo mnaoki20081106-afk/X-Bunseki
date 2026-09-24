@@ -7,9 +7,9 @@
   },
   "challenger": null,
   "dataset_stats": {
-    "early_observed_posts": 8899,
+    "early_observed_posts": 8951,
     "completed_24h_posts": 351,
-    "completion_rate": 0.0394,
+    "completion_rate": 0.0392,
     "positive_5m": 13,
     "positive_10m": 5,
     "stalled_under_1_5m": 320
@@ -36,7 +36,7 @@
   },
   "gen0_historical_metrics": {
     "posts": 351,
-    "log_mae": 0.936934
+    "log_mae": 0.936954
   },
   "promotion_policy": {
     "automatic": true,

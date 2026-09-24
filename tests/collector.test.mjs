@@ -50,7 +50,7 @@ test('distinguishes auth, restrictions, rate limits and request failures', () =>
   assert.equal(responseError(503, {}), 'upstream_error');
 });
 
-test('rate guard isolates operations; detail schema errors stay post-local; auth stops both', () => {
+test('rate guard isolates operations; schema breaker needs consecutive search mismatches; auth stops both', () => {
   const guard = createRequestGuard();
   guard.fail('SearchTimeline', 'rate_limited');
   assert.throws(() => guard.check('SearchTimeline'), /rate_limited/);
@@ -59,8 +59,16 @@ test('rate guard isolates operations; detail schema errors stay post-local; auth
   const detailGuard = createRequestGuard();
   detailGuard.fail('TweetDetail', 'schema_changed');
   assert.doesNotThrow(() => detailGuard.check('TweetDetail'));
-  detailGuard.fail('SearchTimeline', 'schema_changed');
-  assert.throws(() => detailGuard.check('SearchTimeline'), /schema_changed/);
+
+  const searchGuard = createRequestGuard();
+  searchGuard.fail('SearchTimeline', 'schema_changed');
+  assert.doesNotThrow(() => searchGuard.check('SearchTimeline'));
+  searchGuard.succeed('SearchTimeline');
+  searchGuard.fail('SearchTimeline', 'schema_changed');
+  searchGuard.fail('SearchTimeline', 'schema_changed');
+  assert.doesNotThrow(() => searchGuard.check('SearchTimeline'));
+  searchGuard.fail('SearchTimeline', 'schema_changed');
+  assert.throws(() => searchGuard.check('SearchTimeline'), /schema_changed/);
 
   guard.fail('TweetDetail', 'session_expired');
   assert.throws(() => guard.check('SearchTimeline'), /session_expired/);
@@ -150,7 +158,30 @@ test('one incomplete watchlist detail is skipped without degrading healthy searc
   assert.equal(result.health.invalid_tweets, 1);
   assert.deepEqual(result.posts.map(p => p.post_id), ['123']);
 });
-for (const [scenario, status] of [['auth', 'session_expired'], ['forbidden', 'access_denied'], ['rate', 'rate_limited'], ['schema', 'schema_changed'], ['missing_views', 'schema_changed'], ['network', 'network_error']]) {
+
+test('one incomplete search page does not poison later search pages', () => {
+  const result = collect('search_incomplete_then_success');
+  assert.equal(result.health.status, 'success');
+  assert.equal(result.health.error_code, null);
+  assert.equal(result.health.search_succeeded, 3);
+  assert.equal(result.health.search_failed, 0);
+  assert.equal(result.health.incomplete_search_pages, 1);
+  assert.equal(result.health.invalid_tweets, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+  assert.equal(result.posts[0].discovery_query_hits, 2);
+  assert.equal(result.requests.filter(r => r.operation === 'SearchTimeline').length, 3);
+});
+
+test('one real search schema mismatch is isolated when later responses recover', () => {
+  const result = collect('schema_once_then_success');
+  assert.equal(result.health.status, 'degraded');
+  assert.equal(result.health.error_code, 'request_failed');
+  assert.equal(result.health.search_succeeded, 2);
+  assert.equal(result.health.search_failed, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+  assert.equal(result.requests.filter(r => r.operation === 'SearchTimeline').length, 3);
+});
+for (const [scenario, status] of [['auth', 'session_expired'], ['forbidden', 'access_denied'], ['rate', 'rate_limited'], ['schema', 'schema_changed'], ['missing_views', 'incomplete_observations'], ['network', 'network_error']]) {
   test(`full collector detects ${scenario}`, () => {
     const result = collect(scenario);
     assert.equal(result.health.status, status);

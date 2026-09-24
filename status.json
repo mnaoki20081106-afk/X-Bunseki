@@ -1,40 +1,42 @@
 {
-  "updated_at": "2026-09-24T17:05:27.561360+00:00",
-  "status": "success",
+  "updated_at": "2026-09-24T17:21:00.858305+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 36,
+    "status": "degraded",
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 0,
-    "detail_incomplete": 4,
-    "invalid_tweets": 8,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790270397
+      "reset": 1790271327
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-24T17:04:56.559346+00:00",
-  "finished_at": "2026-09-24T17:05:27.560197+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 533,
-  "posts_flagged": 40,
-  "notified_count": 1,
+  "started_at": "2026-09-24T17:20:27.116240+00:00",
+  "finished_at": "2026-09-24T17:21:00.857255+00:00",
+  "posts_scanned": 584,
+  "posts_with_history": 532,
+  "posts_flagged": 32,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 195,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
     "古すぎる": 195,
-    "失速済み": 12,
-    "いいね稼ぎ疑い": 4,
-    "誘導文パターン": 4,
-    "いいねが少なすぎる": 211,
-    "初回観測かつ平均速度が低い": 1
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 15,
+    "いいねが少なすぎる": 194,
+    "誘導文パターン": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +53,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49908,
-    "posts": 12758,
-    "oldest": "2026-09-23T17:16:49.158413+00:00"
+    "total": 49888,
+    "posts": 12735,
+    "oldest": "2026-09-23T17:32:10.436838+00:00"
   },
-  "viral_discovery_posts": 125,
+  "viral_discovery_posts": 122,
   "million_imp_rescued": 1,
-  "watchlist_active": 4238,
+  "watchlist_active": 4250,
   "top5": [
     {
-      "author": "ngnchiikawa",
-      "score": 29.7,
-      "likes": 396827,
-      "likes_per_min": 140.18,
-      "acceleration": 0.74,
-      "measured": true,
-      "age_minutes": 341.4,
-      "text": "⭐️ https://t.co/b8u9pqzoD5",
-      "url": "https://x.com/i/status/2103083017195684094"
-    },
-    {
-      "author": "yanineko_anime",
-      "score": 80.3,
-      "likes": 10630,
-      "likes_per_min": 173.13,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 65.4,
-      "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
-      "url": "https://x.com/i/status/2103152490820603949"
-    },
-    {
       "author": "Un4v5s8bgsVk9Xp",
-      "score": 80.1,
-      "likes": 12518,
-      "likes_per_min": 482.09,
-      "acceleration": null,
+      "score": 74.4,
+      "likes": 21204,
+      "likes_per_min": 557.9,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 26.4,
+      "age_minutes": 41.9,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
-      "author": "CANDY_TUNE_",
-      "score": 54.5,
-      "likes": 3452,
-      "likes_per_min": 10.54,
-      "acceleration": 0.85,
+      "author": "p_ka2295079",
+      "score": 28.4,
+      "likes": 25250,
+      "likes_per_min": 38.34,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 125.4,
-      "text": "📘桐原美月 ソロ表紙&amp;デジタル写真集決定📘\n\n🗓️10/2発売\n「FRIDAY」\n桐原美月「sweet girl",
-      "url": "https://x.com/i/status/2103137390395060229"
+      "age_minutes": 237.1,
+      "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
+      "url": "https://x.com/i/status/2103113193136812040"
+    },
+    {
+      "author": "yanineko_anime",
+      "score": 79.4,
+      "likes": 12588,
+      "likes_per_min": 125.76,
+      "acceleration": 0.73,
+      "measured": true,
+      "age_minutes": 81.0,
+      "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
+      "url": "https://x.com/i/status/2103152490820603949"
     },
     {
       "author": "sekiro_nd_anime",
-      "score": 59.4,
-      "likes": 9477,
-      "likes_per_min": 25.67,
-      "acceleration": 0.78,
+      "score": 56.7,
+      "likes": 9842,
+      "likes_per_min": 23.44,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 125.4,
+      "age_minutes": 141.0,
       "text": "TVアニメ「SEKIRO: NO DEFEAT」\n2027年1月より全8話放送決定\n―――――――――――――――\n\nh",
       "url": "https://x.com/i/status/2103137384757923943"
+    },
+    {
+      "author": "Daisaku_Love_",
+      "score": 28.9,
+      "likes": 3081,
+      "likes_per_min": 7.26,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 201.6,
+      "text": "コイツら天音の活動休止前まではニコイチくらい仲良かったし、おもろかったのに。\n「混ぜるな危険」ってコンビ名が本当に混ぜる",
+      "url": "https://x.com/i/status/2103122139658530892"
     }
   ]
 }

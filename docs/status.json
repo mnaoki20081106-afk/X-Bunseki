@@ -1,41 +1,39 @@
 {
-  "updated_at": "2026-09-24T17:36:38.691103+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-24T17:52:13.867272+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 40,
     "detail_failed": 0,
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790272261
+      "reset": 1790273198
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-24T17:36:00.824961+00:00",
-  "finished_at": "2026-09-24T17:36:38.549090+00:00",
-  "posts_scanned": 567,
-  "posts_with_history": 528,
-  "posts_flagged": 33,
+  "started_at": "2026-09-24T17:51:37.269786+00:00",
+  "finished_at": "2026-09-24T17:52:13.866386+00:00",
+  "posts_scanned": 608,
+  "posts_with_history": 570,
+  "posts_flagged": 25,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 47,
   "reject_reasons": {
-    "古すぎる": 224,
-    "いいね稼ぎ疑い": 3,
+    "古すぎる": 249,
+    "いいね稼ぎ疑い": 2,
     "失速済み": 6,
+    "いいねが少なすぎる": 184,
     "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 168,
     "誘導文パターン": 3
   },
   "config": {
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49852,
-    "posts": 12703,
-    "oldest": "2026-09-23T17:47:47.767462+00:00"
+    "total": 49859,
+    "posts": 12670,
+    "oldest": "2026-09-23T18:03:11.646614+00:00"
   },
-  "viral_discovery_posts": 123,
+  "viral_discovery_posts": 121,
   "million_imp_rescued": 1,
-  "watchlist_active": 4256,
+  "watchlist_active": 4253,
   "top5": [
     {
       "author": "makotopic",
-      "score": 31.5,
-      "likes": 102454,
-      "likes_per_min": 86.18,
-      "acceleration": 0.54,
+      "score": 27.6,
+      "likes": 103007,
+      "likes_per_min": 35.47,
+      "acceleration": 0.41,
       "measured": true,
-      "age_minutes": 756.0,
+      "age_minutes": 771.6,
       "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
       "url": "https://x.com/i/status/2102986537504035278"
     },
     {
       "author": "Un4v5s8bgsVk9Xp",
-      "score": 68.7,
-      "likes": 27063,
-      "likes_per_min": 374.89,
-      "acceleration": 0.67,
+      "score": 64.9,
+      "likes": 31424,
+      "likes_per_min": 279.69,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 57.6,
+      "age_minutes": 73.2,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
-      "author": "azatokute",
-      "score": 59.2,
-      "likes": 3617,
-      "likes_per_min": 97.19,
-      "acceleration": 1.7,
-      "measured": true,
-      "age_minutes": 77.2,
-      "text": "当番組は本日の放送をもって\n終了いたします。\n番組を愛してくださった皆様、\n本当にありがとうございました。\n「あざとさ」",
-      "url": "https://x.com/i/status/2103157357614424465"
-    },
-    {
       "author": "yanineko_anime",
-      "score": 77.9,
-      "likes": 14128,
-      "likes_per_min": 98.54,
-      "acceleration": 0.78,
+      "score": 74.4,
+      "likes": 15390,
+      "likes_per_min": 80.94,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 96.6,
+      "age_minutes": 112.2,
       "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
       "url": "https://x.com/i/status/2103152490820603949"
     },
     {
-      "author": "Daisaku_Love_",
-      "score": 26.8,
-      "likes": 3186,
-      "likes_per_min": 6.72,
-      "acceleration": 0.93,
+      "author": "2964_KO",
+      "score": 78.3,
+      "likes": 546,
+      "likes_per_min": 13.4,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 217.2,
-      "text": "コイツら天音の活動休止前まではニコイチくらい仲良かったし、おもろかったのに。\n「混ぜるな危険」ってコンビ名が本当に混ぜる",
-      "url": "https://x.com/i/status/2103122139658530892"
+      "age_minutes": 45.7,
+      "text": "内容読みました\nまず田平さんの自殺企図に関して、警察へ通報し安否確認が取れました\n\nマネージャー代や業務に関して、また私",
+      "url": "https://x.com/i/status/2103169221786255436"
+    },
+    {
+      "author": "sekiro_nd_anime",
+      "score": 48.8,
+      "likes": 10438,
+      "likes_per_min": 17.7,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 172.2,
+      "text": "TVアニメ「SEKIRO: NO DEFEAT」\n2027年1月より全8話放送決定\n―――――――――――――――\n\nh",
+      "url": "https://x.com/i/status/2103137384757923943"
     }
   ]
 }

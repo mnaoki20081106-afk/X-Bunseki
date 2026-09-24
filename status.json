@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:46.735613+00:00",
+  "updated_at": "2026-09-24T13:50:12.404799+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -14,23 +14,23 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790257755
+      "reset": 1790258684
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T13:34:14.535928+00:00",
-  "finished_at": "2026-09-24T13:34:46.734087+00:00",
-  "posts_scanned": 563,
-  "posts_with_history": 420,
-  "posts_flagged": 107,
-  "notified_count": 0,
+  "started_at": "2026-09-24T13:49:43.360350+00:00",
+  "finished_at": "2026-09-24T13:50:12.403735+00:00",
+  "posts_scanned": 530,
+  "posts_with_history": 361,
+  "posts_flagged": 105,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 720,
+  "minutes_since_last_notification": 735,
   "reject_reasons": {
-    "古すぎる": 102,
+    "古すぎる": 100,
     "いいね稼ぎ疑い": 3,
-    "失速済み": 10,
-    "いいねが少なすぎる": 237,
+    "いいねが少なすぎる": 219,
+    "失速済み": 5,
     "初回観測かつ平均速度が低い": 1
   },
   "config": {
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46667,
-    "posts": 12445,
-    "oldest": "2026-09-23T13:38:45.070767+00:00"
+    "total": 46605,
+    "posts": 12230,
+    "oldest": "2026-09-23T15:03:42.578015+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 10,
-  "watchlist_active": 8729,
+  "viral_discovery_posts": 117,
+  "million_imp_rescued": 6,
+  "watchlist_active": 8790,
   "top5": [
     {
-      "author": "_sknKfhK_thx",
-      "score": 27.4,
-      "likes": 85283,
-      "likes_per_min": 35.53,
-      "acceleration": 0.68,
-      "measured": true,
-      "age_minutes": 579.5,
-      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
-      "url": "https://x.com/i/status/2102970102455083435"
-    },
-    {
       "author": "info__Johnnys",
-      "score": 28.8,
-      "likes": 95512,
-      "likes_per_min": 19.61,
-      "acceleration": 0.9,
+      "score": 29.0,
+      "likes": 95804,
+      "likes_per_min": 18.93,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 580.7,
+      "age_minutes": 596.1,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "ngnchiikawa",
-      "score": 53.7,
-      "likes": 318188,
-      "likes_per_min": 964.13,
+      "author": "cheche_xyz",
+      "score": 51.6,
+      "likes": 24914,
+      "likes_per_min": 269.49,
       "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 130.8,
-      "text": "⭐️ https://t.co/b8u9pqzoD5",
-      "url": "https://x.com/i/status/2103083017195684094"
+      "age_minutes": 86.4,
+      "text": "塩貝が決める ↓ 相手選手が抗議する ↓ 塩貝もその場に入ろうとする ↓ 久保に「お前は来るな」と追いやられる ↓ 素直",
+      "url": "https://x.com/i/status/2103098075824934969"
     },
     {
-      "author": "0hHHIC6wJ8mD1xI",
-      "score": 28.3,
-      "likes": 85738,
-      "likes_per_min": 173.99,
-      "acceleration": 0.54,
+      "author": "Sakusan_Daaria",
+      "score": 31.5,
+      "likes": 20130,
+      "likes_per_min": 143.57,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 404.5,
-      "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
-      "url": "https://x.com/i/status/2103014139442729284"
+      "age_minutes": 228.2,
+      "text": "運がいい人\n\n男｢中に出すぞ！！｣\n\n女｢出して♡｣\n\nちんぽ汁ﾋﾞｭﾙﾙﾙﾙﾙ\n\n精子3億個排出\n\n3億個の卵子と結び",
+      "url": "https://x.com/i/status/2103062381362569687"
     },
     {
-      "author": "bad_texter",
-      "score": 27.0,
-      "likes": 29706,
-      "likes_per_min": 88.24,
-      "acceleration": 0.94,
+      "author": "konziki_nino",
+      "score": 57.3,
+      "likes": 9447,
+      "likes_per_min": 92.79,
+      "acceleration": 1.11,
       "measured": true,
-      "age_minutes": 429.8,
-      "text": "国よ！気付け！！！ https://t.co/85m9IKSMUl",
-      "url": "https://x.com/i/status/2103007766541643935"
+      "age_minutes": 147.5,
+      "text": "は？？Vtuber？？ま？？ https://t.co/vBfzuPwNRG",
+      "url": "https://x.com/i/status/2103082694838296591"
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "score": 94.5,
+      "likes": 11585,
+      "likes_per_min": 579.5746091130296,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 20.0,
+      "text": "【NEWS🍏】\n⁡\nRingo Jam 10周年を記念して\nRingo Jamの公式キャラクター「#メメル」に、ついに声",
+      "url": "https://x.com/i/status/2103114780831809887"
     }
   ]
 }

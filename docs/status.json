@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T04:04:42.122784+00:00",
+  "updated_at": "2026-09-24T04:20:12.516620+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -12,26 +12,26 @@
     "invalid_tweets": 19,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790223550
+      "remaining": 15,
+      "reset": 1790224486
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T04:04:10.235547+00:00",
-  "finished_at": "2026-09-24T04:04:42.121796+00:00",
-  "posts_scanned": 586,
-  "posts_with_history": 437,
-  "posts_flagged": 106,
+  "started_at": "2026-09-24T04:19:44.922311+00:00",
+  "finished_at": "2026-09-24T04:20:12.515517+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 418,
+  "posts_flagged": 100,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 149,
+  "minutes_since_last_notification": 165,
   "reject_reasons": {
-    "古すぎる": 141,
+    "古すぎる": 144,
+    "いいねが少なすぎる": 220,
+    "失速済み": 8,
     "誘導文パターン": 6,
-    "いいねが少なすぎる": 223,
-    "失速済み": 5,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 4
+    "初回観測かつ平均速度が低い": 5,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 45544,
-    "posts": 12738,
-    "oldest": "2026-09-23T04:17:08.116539+00:00"
+    "total": 45832,
+    "posts": 12785,
+    "oldest": "2026-09-23T04:32:34.235055+00:00"
   },
-  "viral_discovery_posts": 137,
+  "viral_discovery_posts": 146,
   "million_imp_rescued": 8,
-  "watchlist_active": 6834,
+  "watchlist_active": 6872,
   "top5": [
     {
-      "author": "sweetroad5",
-      "score": 52.0,
-      "likes": 7826,
-      "likes_per_min": 21.52,
-      "acceleration": 0.68,
+      "author": "k_maru_dau_baby",
+      "score": 78.0,
+      "likes": 12429,
+      "likes_per_min": 670.15,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 147.9,
-      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
-      "url": "https://x.com/i/status/2102935246929117491"
+      "age_minutes": 26.9,
+      "text": "WEST. 解散を発表",
+      "url": "https://x.com/i/status/2102969587998638398"
     },
     {
-      "author": "sweetroad5",
-      "score": 64.3,
-      "likes": 33931,
-      "likes_per_min": 152.35,
-      "acceleration": 0.79,
+      "author": "info__Johnnys",
+      "score": 85.3,
+      "likes": 9004,
+      "likes_per_min": 494.7,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 133.3,
-      "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
-      "url": "https://x.com/i/status/2102938918010462239"
+      "age_minutes": 26.1,
+      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
+      "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "Starbucks_J",
-      "score": 59.0,
-      "likes": 44540,
-      "likes_per_min": 210.73,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 154.7,
-      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
-      "url": "https://x.com/i/status/2102933541097185783"
-    },
-    {
-      "author": "Pokemon_cojp",
-      "score": 66.5,
-      "likes": 37181,
-      "likes_per_min": 286.26,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 124.7,
-      "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
-      "url": "https://x.com/i/status/2102941089011323205"
+      "author": "pikachu_pcn",
+      "score": 51.6,
+      "likes": 2152,
+      "likes_per_min": 16.17452794474527,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 133.0,
+      "text": "スターバックス × ポケモン\n「ポケモンと一緒に、コーヒーをめぐる冒険の旅へ」　\n\n9月30日（水）より発売\n\n『ピカチ",
+      "url": "https://x.com/i/status/2102942887361253521"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 73.7,
-      "likes": 2036,
-      "likes_per_min": 177.96890262652641,
+      "score": 77.4,
+      "likes": 7020,
+      "likes_per_min": 349.68,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.4,
-      "text": "WEST. 解散を発表",
-      "url": "https://x.com/i/status/2102969587998638398"
+      "measured": true,
+      "age_minutes": 28.5,
+      "text": "WEST.解散へ 今日にも発表",
+      "url": "https://x.com/i/status/2102969205905916134"
+    },
+    {
+      "author": "Pokemon_cojp",
+      "score": 63.6,
+      "likes": 40978,
+      "likes_per_min": 244.83,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 140.2,
+      "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
+      "url": "https://x.com/i/status/2102941089011323205"
     }
   ]
 }

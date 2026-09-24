@@ -1,38 +1,40 @@
 {
-  "updated_at": "2026-09-24T15:16:30.368835+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-24T15:32:07.438640+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "incomplete_observations",
+    "status": "success",
+    "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
     "detail_succeeded": 10,
     "detail_failed": 0,
     "detail_skipped": 30,
-    "invalid_tweets": 25,
+    "detail_unavailable": 6,
+    "detail_incomplete": 24,
+    "invalid_tweets": 24,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790263862
+      "reset": 1790264797
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T15:16:01.896434+00:00",
-  "finished_at": "2026-09-24T15:16:30.250231+00:00",
-  "posts_scanned": 548,
-  "posts_with_history": 360,
-  "posts_flagged": 66,
+  "started_at": "2026-09-24T15:31:36.342515+00:00",
+  "finished_at": "2026-09-24T15:32:07.437573+00:00",
+  "posts_scanned": 574,
+  "posts_with_history": 451,
+  "posts_flagged": 63,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 86,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "古すぎる": 109,
-    "いいね稼ぎ疑い": 6,
-    "失速済み": 11,
-    "いいねが少なすぎる": 243,
-    "初回観測かつ平均速度が低い": 11,
-    "誘導文パターン": 1
+    "古すぎる": 120,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 19,
+    "いいねが少なすぎる": 248,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 48847,
-    "posts": 12879,
-    "oldest": "2026-09-23T15:19:34.040240+00:00"
+    "total": 48805,
+    "posts": 12835,
+    "oldest": "2026-09-23T15:35:16.778677+00:00"
   },
-  "viral_discovery_posts": 117,
-  "million_imp_rescued": 4,
-  "watchlist_active": 9027,
+  "viral_discovery_posts": 118,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4149,
   "top5": [
     {
-      "author": "JINJIN1027",
-      "score": 72.3,
-      "likes": 6570,
-      "likes_per_min": 78.01,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 105.4,
-      "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
-      "url": "https://x.com/i/status/2103115002001698873"
-    },
-    {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 93.7,
-      "likes": 11953,
-      "likes_per_min": 851.142669061598,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.0,
-      "text": "アイドル年齢が21歳になりました！！！\nSnow Manの佐久間大介です！\n\nこれからもよろしく (^^) \n\n#佐久間",
-      "url": "https://x.com/i/status/2103137993041281142"
-    },
-    {
-      "author": "Nui_Sociere",
-      "score": 28.3,
-      "likes": 10357,
-      "likes_per_min": 23.51,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 209.8,
-      "text": "なんでこんな真似すんの？\n姿消されたらお前のこと助けてやれないよ\nもう殺すしかなくなっちゃったよ",
-      "url": "https://x.com/i/status/2103088738264039676"
-    },
-    {
       "author": "p_ka2295079",
-      "score": 53.8,
-      "likes": 16437,
-      "likes_per_min": 165.96,
-      "acceleration": 0.91,
+      "score": 49.8,
+      "likes": 18389,
+      "likes_per_min": 124.85,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 112.6,
+      "age_minutes": 128.2,
       "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
       "url": "https://x.com/i/status/2103113193136812040"
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 68.2,
-      "likes": 5522,
-      "likes_per_min": 396.50149825436665,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.9,
-      "text": "#佐久間のイソスタ 🆙した\n#佐久間大介入所21周年\n https://t.co/DGHnf3Vo5G",
-      "url": "https://x.com/i/status/2103138023559041180"
+      "author": "Nui_Sociere",
+      "score": 26.2,
+      "likes": 10710,
+      "likes_per_min": 22.58,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 225.4,
+      "text": "なんでこんな真似すんの？\n姿消されたらお前のこと助けてやれないよ\nもう殺すしかなくなっちゃったよ",
+      "url": "https://x.com/i/status/2103088738264039676"
+    },
+    {
+      "author": "Abhis379",
+      "score": 41.7,
+      "likes": 6891,
+      "likes_per_min": 31.34,
+      "acceleration": 1.01,
+      "measured": true,
+      "age_minutes": 173.4,
+      "text": "今日の有益情報② https://t.co/zG78x3Kas6",
+      "url": "https://x.com/i/status/2103101829467054221"
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "score": 67.4,
+      "likes": 18367,
+      "likes_per_min": 24.56,
+      "acceleration": 0.69,
+      "measured": true,
+      "age_minutes": 121.9,
+      "text": "【NEWS🍏】\n⁡\nRingo Jam 10周年を記念して\nRingo Jamの公式キャラクター「#メメル」に、ついに声",
+      "url": "https://x.com/i/status/2103114780831809887"
+    },
+    {
+      "author": "Show_SylveSTAR",
+      "score": 41.6,
+      "likes": 21726,
+      "likes_per_min": 41.06,
+      "acceleration": 0.82,
+      "measured": true,
+      "age_minutes": 164.6,
+      "text": "お休みをお休みすることになりました。",
+      "url": "https://x.com/i/status/2103104047268155824"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T19:49:58.239824+00:00",
+  "updated_at": "2026-09-24T20:05:25.396093+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,28 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790280258
+      "reset": 1790281188
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T19:49:17.187320+00:00",
-  "finished_at": "2026-09-24T19:49:58.238415+00:00",
-  "posts_scanned": 610,
-  "posts_with_history": 570,
-  "posts_flagged": 2,
+  "started_at": "2026-09-24T20:04:47.182729+00:00",
+  "finished_at": "2026-09-24T20:05:25.394215+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 565,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 165,
+  "minutes_since_last_notification": 180,
   "reject_reasons": {
-    "古すぎる": 383,
-    "失速済み": 3,
-    "いいねが少なすぎる": 123,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 399,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 1,
+    "いいねが少なすぎる": 119
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49855,
-    "posts": 12570,
-    "oldest": "2026-09-23T19:52:05.275503+00:00"
+    "total": 49852,
+    "posts": 12519,
+    "oldest": "2026-09-23T20:07:26.013919+00:00"
   },
-  "viral_discovery_posts": 121,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4266,
+  "viral_discovery_posts": 120,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4264,
   "top5": [
     {
       "author": "9taisyo21",
-      "score": 22.5,
-      "likes": 35893,
-      "likes_per_min": 14.71,
-      "acceleration": 0.95,
+      "score": 22.3,
+      "likes": 36111,
+      "likes_per_min": 14.11,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 669.9,
+      "age_minutes": 685.4,
       "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
       "url": "https://x.com/i/status/2103041761472135534"
     },
     {
-      "author": "Un4v5s8bgsVk9Xp",
-      "score": 42.8,
-      "likes": 48395,
-      "likes_per_min": 97.41,
-      "acceleration": 0.96,
+      "author": "HI_y_mks",
+      "score": 20.4,
+      "likes": 108025,
+      "likes_per_min": 8.64,
+      "acceleration": 0.19,
       "measured": true,
-      "age_minutes": 190.9,
+      "age_minutes": 927.1,
+      "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
+      "url": "https://x.com/i/status/2102980935943905362"
+    },
+    {
+      "author": "Un4v5s8bgsVk9Xp",
+      "score": 40.4,
+      "likes": 49963,
+      "likes_per_min": 101.49,
+      "acceleration": 1.04,
+      "measured": true,
+      "age_minutes": 206.3,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
-      "author": "yanineko_anime",
-      "score": 40.7,
-      "likes": 20680,
-      "likes_per_min": 32.98,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 229.9,
-      "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
-      "url": "https://x.com/i/status/2103152490820603949"
-    },
-    {
       "author": "azatokute",
-      "score": 28.1,
-      "likes": 10300,
-      "likes_per_min": 26.27,
-      "acceleration": 1.02,
+      "score": 26.9,
+      "likes": 10745,
+      "likes_per_min": 28.8,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 210.6,
+      "age_minutes": 226.0,
       "text": "当番組は本日の放送をもって\n終了いたします。\n番組を愛してくださった皆様、\n本当にありがとうございました。\n「あざとさ」",
       "url": "https://x.com/i/status/2103157357614424465"
     },
     {
-      "author": "Saba_Tigers",
-      "score": 36.0,
-      "likes": 5470,
-      "likes_per_min": 7.09,
-      "acceleration": 1.09,
+      "author": "Tigers_140609",
+      "score": 26.3,
+      "likes": 1849,
+      "likes_per_min": 1.94,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 228.7,
-      "text": "【速報】阪神・西勇輝が今季限りで現役引退　35歳の決断　 https://t.co/0mrU6SkMM0",
-      "url": "https://x.com/i/status/2103152806270210439"
+      "age_minutes": 228.4,
+      "text": "［阪神］\n西勇輝  今季限りで現役引退決断 https://t.co/5QGXB4JSQw",
+      "url": "https://x.com/i/status/2103156768411103421"
     }
   ]
 }

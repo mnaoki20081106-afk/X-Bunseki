@@ -1,37 +1,39 @@
 {
-  "updated_at": "2026-09-24T10:35:03.755526+00:00",
+  "updated_at": "2026-09-24T10:50:30.937983+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 14,
+    "error_code": "schema_changed",
+    "search_succeeded": 30,
+    "search_failed": 6,
+    "detail_succeeded": 13,
     "detail_failed": 0,
-    "detail_skipped": 26,
+    "detail_skipped": 27,
     "invalid_tweets": 21,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790246974
+      "remaining": 19,
+      "reset": 1790247903
     },
-    "failures": {}
+    "failures": {
+      "request_failed": 1,
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-24T10:34:33.974675+00:00",
-  "finished_at": "2026-09-24T10:35:03.754509+00:00",
-  "posts_scanned": 579,
-  "posts_with_history": 403,
-  "posts_flagged": 120,
+  "started_at": "2026-09-24T10:50:02.344179+00:00",
+  "finished_at": "2026-09-24T10:50:30.936730+00:00",
+  "posts_scanned": 500,
+  "posts_with_history": 317,
+  "posts_flagged": 127,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 540,
+  "minutes_since_last_notification": 555,
   "reject_reasons": {
-    "古すぎる": 115,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 2,
-    "失速済み": 8,
-    "いいねが少なすぎる": 225,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 111,
+    "いいねが少なすぎる": 185,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46752,
-    "posts": 12706,
-    "oldest": "2026-09-23T10:38:10.398739+00:00"
+    "total": 46733,
+    "posts": 12677,
+    "oldest": "2026-09-23T11:03:38.104368+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 7999,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 6,
+  "watchlist_active": 8062,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.2,
-      "likes": 75599,
-      "likes_per_min": 94.33,
-      "acceleration": 0.96,
+      "score": 32.0,
+      "likes": 76961,
+      "likes_per_min": 88.14,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 399.8,
+      "age_minutes": 415.2,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "jfa_samuraiblue",
-      "score": 71.1,
-      "likes": 4683,
-      "likes_per_min": 382.7470958611175,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.2,
-      "text": "🔹𝗚𝗢𝗔𝗟🔹️\n\n前半11分\n19 松木玖生\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 1-0 ",
-      "url": "https://x.com/i/status/2103067623072383304"
+      "author": "oricon",
+      "score": 34.9,
+      "likes": 36255,
+      "likes_per_min": 42.32,
+      "acceleration": 0.6,
+      "measured": true,
+      "age_minutes": 405.4,
+      "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
+      "url": "https://x.com/i/status/2102972578017198305"
     },
     {
-      "author": "chi_bakun_chiba",
-      "score": 66.9,
-      "likes": 48682,
-      "likes_per_min": 609.84,
-      "acceleration": 0.98,
+      "author": "takeshibengo",
+      "score": 67.1,
+      "likes": 833,
+      "likes_per_min": 14.24,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 95.1,
-      "text": "お友達のみんなへ\nチーバくんは、しばらくの間、県外での活動をお休みすることになりました。\n今は千葉がたいへんなときだから",
-      "url": "https://x.com/i/status/2103046783697862930"
-    },
-    {
-      "author": "jfa_samuraiblue",
-      "score": 67.6,
-      "likes": 16352,
-      "likes_per_min": 73.14,
-      "acceleration": 0.59,
-      "measured": true,
-      "age_minutes": 86.6,
-      "text": "🔹𝗦𝗔𝗠𝗨𝗥𝗔𝗜 𝗕𝗟𝗨𝗘🔹\n📝LINE-UP📝\n\n🏆キリンチャレンジカップ2026\n🆚ウルグアイ代表🇺🇾\n\n23 早川",
-      "url": "https://x.com/i/status/2103048900550803784"
+      "age_minutes": 113.2,
+      "text": "timeleszの猪俣周杜さんが勾留されている東京湾岸警察署。\n容疑は違うが、これまで沢尻エリカさんも、酒井法子さんも、",
+      "url": "https://x.com/i/status/2103046111355359738"
     },
     {
       "author": "9taisyo21",
-      "score": 51.6,
-      "likes": 4867,
-      "likes_per_min": 81.04,
-      "acceleration": 0.91,
+      "score": 49.7,
+      "likes": 6117,
+      "likes_per_min": 80.89,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 115.0,
+      "age_minutes": 130.5,
       "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
       "url": "https://x.com/i/status/2103041761472135534"
+    },
+    {
+      "author": "Theah058",
+      "score": 28.0,
+      "likes": 5321,
+      "likes_per_min": 26.36918104240327,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 201.8,
+      "text": "寝起きビジュの概念ぶち壊しに来た川口春奈31歳。 https://t.co/g4L9o7g6Lt",
+      "url": "https://x.com/i/status/2103023811818082688"
     }
   ]
 }

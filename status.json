@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T04:35:47.018316+00:00",
+  "updated_at": "2026-09-24T04:51:20.279235+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790225420
+      "reset": 1790226351
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T04:35:19.889323+00:00",
-  "finished_at": "2026-09-24T04:35:47.017003+00:00",
-  "posts_scanned": 594,
-  "posts_with_history": 460,
-  "posts_flagged": 88,
+  "started_at": "2026-09-24T04:50:50.809494+00:00",
+  "finished_at": "2026-09-24T04:51:20.278023+00:00",
+  "posts_scanned": 582,
+  "posts_with_history": 444,
+  "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 181,
+  "minutes_since_last_notification": 196,
   "reject_reasons": {
-    "古すぎる": 130,
-    "いいねが少なすぎる": 237,
+    "古すぎる": 133,
+    "いいね稼ぎ疑い": 1,
     "失速済み": 6,
-    "初回観測かつ平均速度が低い": 7,
-    "誘導文パターン": 5
+    "いいねが少なすぎる": 233,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 45841,
-    "posts": 12728,
-    "oldest": "2026-09-23T04:47:13.039357+00:00"
+    "total": 46126,
+    "posts": 12763,
+    "oldest": "2026-09-23T05:03:04.117054+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 10,
-  "watchlist_active": 6907,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 9,
+  "watchlist_active": 6947,
   "top5": [
     {
-      "author": "k_maru_dau_baby",
-      "score": 73.4,
-      "likes": 21633,
-      "likes_per_min": 590.97,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 42.5,
-      "text": "WEST. 解散を発表",
-      "url": "https://x.com/i/status/2102969587998638398"
-    },
-    {
       "author": "info__Johnnys",
-      "score": 84.3,
-      "likes": 19629,
-      "likes_per_min": 682.21,
-      "acceleration": 1.38,
+      "score": 80.4,
+      "likes": 30708,
+      "likes_per_min": 712.3,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 41.7,
+      "age_minutes": 57.2,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 70.0,
-      "likes": 10500,
-      "likes_per_min": 223.44,
-      "acceleration": 0.64,
+      "score": 69.5,
+      "likes": 26451,
+      "likes_per_min": 309.76,
+      "acceleration": 0.52,
       "measured": true,
-      "age_minutes": 44.0,
-      "text": "WEST.解散へ 今日にも発表",
-      "url": "https://x.com/i/status/2102969205905916134"
+      "age_minutes": 58.1,
+      "text": "WEST. 解散を発表",
+      "url": "https://x.com/i/status/2102969587998638398"
     },
     {
-      "author": "Pokemon_cojp",
-      "score": 59.7,
-      "likes": 44078,
-      "likes_per_min": 199.04,
-      "acceleration": 0.81,
+      "author": "oricon",
+      "score": 93.7,
+      "likes": 6762,
+      "likes_per_min": 267.71,
+      "acceleration": 2.09,
       "measured": true,
-      "age_minutes": 155.8,
-      "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
-      "url": "https://x.com/i/status/2102941089011323205"
+      "age_minutes": 46.2,
+      "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
+      "url": "https://x.com/i/status/2102972578017198305"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 58.5,
-      "likes": 5865,
-      "likes_per_min": 33.39,
-      "acceleration": 0.85,
+      "score": 56.9,
+      "likes": 6406,
+      "likes_per_min": 34.78,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 141.8,
+      "age_minutes": 157.4,
       "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
       "url": "https://x.com/i/status/2102944592673038481"
+    },
+    {
+      "author": "modelpress",
+      "score": 84.4,
+      "likes": 3040,
+      "likes_per_min": 80.11,
+      "acceleration": 0.98,
+      "measured": true,
+      "age_minutes": 47.1,
+      "text": "WEST.、グループ活動終了を発表\nhttps://t.co/gRJOnOESAI",
+      "url": "https://x.com/i/status/2102972356574732344"
     }
   ]
 }

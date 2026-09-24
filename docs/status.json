@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-24T07:19:43.165568+00:00",
+  "updated_at": "2026-09-24T07:35:14.020303+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 16,
+    "detail_succeeded": 15,
     "detail_failed": 0,
-    "detail_skipped": 24,
-    "invalid_tweets": 19,
+    "detail_skipped": 25,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790235257
+      "reset": 1790236186
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T07:19:16.361426+00:00",
-  "finished_at": "2026-09-24T07:19:43.164476+00:00",
-  "posts_scanned": 581,
-  "posts_with_history": 451,
-  "posts_flagged": 70,
+  "started_at": "2026-09-24T07:34:45.264711+00:00",
+  "finished_at": "2026-09-24T07:35:14.019112+00:00",
+  "posts_scanned": 571,
+  "posts_with_history": 437,
+  "posts_flagged": 72,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 345,
+  "minutes_since_last_notification": 360,
   "reject_reasons": {
-    "古すぎる": 138,
-    "いいね稼ぎ疑い": 7,
+    "古すぎる": 139,
+    "いいね稼ぎ疑い": 6,
+    "いいねが少なすぎる": 205,
     "誘導文パターン": 7,
-    "いいねが少なすぎる": 215,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 1
+    "初回観測かつ平均速度が低い": 3,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46188,
-    "posts": 12754,
-    "oldest": "2026-09-23T07:32:39.772010+00:00"
+    "total": 46206,
+    "posts": 12736,
+    "oldest": "2026-09-23T07:47:07.764071+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 11,
-  "watchlist_active": 7300,
+  "viral_discovery_posts": 131,
+  "million_imp_rescued": 10,
+  "watchlist_active": 7334,
   "top5": [
     {
-      "author": "info__Johnnys",
-      "score": 45.3,
-      "likes": 73011,
-      "likes_per_min": 155.6,
-      "acceleration": 0.84,
-      "measured": true,
-      "age_minutes": 205.6,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
-    },
-    {
       "author": "HI_y_mks",
-      "score": 50.3,
-      "likes": 45516,
-      "likes_per_min": 303.0,
-      "acceleration": 0.93,
+      "score": 46.8,
+      "likes": 49750,
+      "likes_per_min": 272.89,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 161.4,
+      "age_minutes": 176.9,
       "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
       "url": "https://x.com/i/status/2102980935943905362"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 60.3,
-      "likes": 15770,
-      "likes_per_min": 110.12,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 141.9,
-      "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
-      "url": "https://x.com/i/status/2102985840897245302"
-    },
-    {
       "author": "9taisyo21",
-      "score": 34.5,
-      "likes": 8058,
-      "likes_per_min": 41.34,
-      "acceleration": 0.94,
+      "score": 31.6,
+      "likes": 8642,
+      "likes_per_min": 37.64,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 184.6,
+      "age_minutes": 200.1,
       "text": "友達がダウンタイム中にマスクして出社したら、同僚が急に「〇〇ちゃん顔腫れてるけど大丈夫〜？私、整形した事ないからダウンタ",
       "url": "https://x.com/i/status/2102975088501100677"
     },
     {
-      "author": "modelpress",
-      "score": 43.7,
-      "likes": 6373,
-      "likes_per_min": 13.22,
-      "acceleration": 0.98,
+      "author": "k_maru_dau_baby",
+      "score": 57.2,
+      "likes": 17456,
+      "likes_per_min": 108.67,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 195.5,
-      "text": "WEST.、グループ活動終了を発表\nhttps://t.co/gRJOnOESAI",
-      "url": "https://x.com/i/status/2102972356574732344"
+      "age_minutes": 157.4,
+      "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
+      "url": "https://x.com/i/status/2102985840897245302"
+    },
+    {
+      "author": "indozou",
+      "score": 40.7,
+      "likes": 8705,
+      "likes_per_min": 44.79,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 173.3,
+      "text": "女勇者、問い詰められる。（1/2） https://t.co/Gi5hkLpcQk",
+      "url": "https://x.com/i/status/2102981837845139489"
+    },
+    {
+      "author": "livedoornews",
+      "score": 60.6,
+      "likes": 5867,
+      "likes_per_min": 26.04,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 140.2,
+      "text": "【ケガなし】声優・稲田徹、高速道路で追突被害 「前のトラックがゆっくり後退」\nhttps://t.co/NDmoc59f",
+      "url": "https://x.com/i/status/2102990159381971415"
     }
   ]
 }

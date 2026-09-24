@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-24T11:37:17.118555+00:00",
+  "updated_at": "2026-09-24T11:52:50.823639+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 13,
     "detail_failed": 0,
     "detail_skipped": 27,
@@ -13,27 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790250708
+      "reset": 1790251643
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-24T11:36:47.363275+00:00",
-  "finished_at": "2026-09-24T11:37:17.117387+00:00",
-  "posts_scanned": 545,
-  "posts_with_history": 367,
-  "posts_flagged": 118,
+  "started_at": "2026-09-24T11:52:22.357427+00:00",
+  "finished_at": "2026-09-24T11:52:50.822629+00:00",
+  "posts_scanned": 580,
+  "posts_with_history": 391,
+  "posts_flagged": 131,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 602,
+  "minutes_since_last_notification": 618,
   "reject_reasons": {
-    "古すぎる": 95,
+    "古すぎる": 111,
+    "いいね稼ぎ疑い": 4,
     "失速済み": 6,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 209,
-    "初回観測かつ平均速度が低い": 5,
-    "誘導文パターン": 1
+    "いいねが少なすぎる": 211,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46623,
-    "posts": 12635,
-    "oldest": "2026-09-23T11:50:11.204606+00:00"
+    "total": 46591,
+    "posts": 12577,
+    "oldest": "2026-09-23T12:05:43.719512+00:00"
   },
-  "viral_discovery_posts": 120,
-  "million_imp_rescued": 3,
-  "watchlist_active": 8272,
+  "viral_discovery_posts": 137,
+  "million_imp_rescued": 11,
+  "watchlist_active": 8348,
   "top5": [
     {
-      "author": "9taisyo21",
-      "score": 42.4,
-      "likes": 10229,
-      "likes_per_min": 89.33,
-      "acceleration": 1.05,
+      "author": "_sknKfhK_thx",
+      "score": 31.0,
+      "likes": 81264,
+      "likes_per_min": 64.46,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 177.2,
-      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
-      "url": "https://x.com/i/status/2103041761472135534"
+      "age_minutes": 477.5,
+      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
+      "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "takeshibengo",
-      "score": 52.4,
-      "likes": 1455,
-      "likes_per_min": 12.62,
-      "acceleration": 1.0,
+      "author": "info__Johnnys",
+      "score": 29.7,
+      "likes": 93316,
+      "likes_per_min": 31.14,
+      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 159.9,
-      "text": "timeleszの猪俣周杜さんが勾留されている東京湾岸警察署。\n容疑は違うが、これまで沢尻エリカさんも、酒井法子さんも、",
-      "url": "https://x.com/i/status/2103046111355359738"
+      "age_minutes": 478.7,
+      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
+      "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "pj_sekai",
-      "score": 76.8,
-      "likes": 3485,
-      "likes_per_min": 270.3660269578901,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.9,
-      "text": "アップデート情報📝\n\n12月中旬より新機能「メモリアル」を追加✨\n特定条件を満たすと、★4メンバーの特訓後イラストがアニ",
-      "url": "https://x.com/i/status/2103083118387400798"
+      "author": "makotopic",
+      "score": 33.6,
+      "likes": 65375,
+      "likes_per_min": 207.72,
+      "acceleration": 0.92,
+      "measured": true,
+      "age_minutes": 412.2,
+      "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
+      "url": "https://x.com/i/status/2102986537504035278"
     },
     {
-      "author": "aobazaka46",
-      "score": 73.2,
-      "likes": 3722,
-      "likes_per_min": 532.4800605030111,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.0,
-      "text": "坂道選抜(乃木坂46×櫻坂46×日向坂46)\n#青葉坂46 オーディションテーマソング「Audition」\n15名フォー",
-      "url": "https://x.com/i/status/2103084601296167021"
+      "author": "oricon",
+      "score": 30.5,
+      "likes": 37151,
+      "likes_per_min": 12.38,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 467.7,
+      "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
+      "url": "https://x.com/i/status/2102972578017198305"
     },
     {
-      "author": "nogizaka46",
-      "score": 68.7,
-      "likes": 2669,
-      "likes_per_min": 424.32883745615675,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.3,
-      "text": "【ニュース更新】 坂道選抜が歌唱！青葉坂46オーディションのテーマソング「Audition」が9月26日(土)にリリース",
-      "url": "https://x.com/i/status/2103084779533168719"
+      "author": "0hHHIC6wJ8mD1xI",
+      "score": 29.6,
+      "likes": 68003,
+      "likes_per_min": 322.58,
+      "acceleration": 0.77,
+      "measured": true,
+      "age_minutes": 302.6,
+      "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
+      "url": "https://x.com/i/status/2103014139442729284"
     }
   ]
 }

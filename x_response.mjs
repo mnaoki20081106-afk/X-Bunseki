@@ -91,6 +91,7 @@ export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
   let globalError = null;
   const blocked = new Map();
   const schemaStreak = new Map();
+  let detailSchemaFailures = 0;
   const failures = {};
   return {
     failures,
@@ -120,6 +121,10 @@ export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
         if (streak >= schemaFailureThreshold) blocked.set(operation, code);
         return;
       }
+      if (code === 'schema_changed' && operation === 'TweetDetail') {
+        detailSchemaFailures++;
+        return;
+      }
       if (code !== 'schema_changed') schemaStreak.set(operation, 0);
     },
     get primaryError() {
@@ -127,12 +132,13 @@ export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
       const blockedCodes = [...blocked.values()];
       if (blockedCodes.includes('rate_limited')) return 'rate_limited';
       if (blockedCodes.includes('schema_changed')) return 'schema_changed';
+      if (detailSchemaFailures) return 'schema_changed';
       const ordinary = ['upstream_error', 'request_failed', 'network_error']
         .find(code => failures[code]);
       if (ordinary) return ordinary;
-      // One isolated shape mismatch is reported as a generic partial request
-      // failure. Calling it a global X schema change after a single response is
-      // misleading when later SearchTimeline responses still parse normally.
+      // One isolated SearchTimeline shape mismatch is reported as a generic
+      // partial request failure. Calling it a global X schema change after one
+      // response is misleading when later search responses still parse normally.
       return failures.schema_changed ? 'request_failed' : null;
     },
   };

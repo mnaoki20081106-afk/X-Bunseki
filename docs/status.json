@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:03:44.282087+00:00",
+  "updated_at": "2026-09-24T13:19:13.405030+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -10,28 +10,28 @@
     "detail_failed": 0,
     "detail_skipped": 28,
     "invalid_tweets": 22,
+    "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790255896
+      "reset": 1790256824
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T13:03:16.048427+00:00",
-  "finished_at": "2026-09-24T13:03:44.281003+00:00",
-  "posts_scanned": 570,
-  "posts_with_history": 341,
-  "posts_flagged": 113,
+  "started_at": "2026-09-24T13:18:43.232667+00:00",
+  "finished_at": "2026-09-24T13:19:13.404067+00:00",
+  "posts_scanned": 569,
+  "posts_with_history": 383,
+  "posts_flagged": 115,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 689,
+  "minutes_since_last_notification": 704,
   "reject_reasons": {
-    "古すぎる": 98,
-    "失速済み": 13,
+    "古すぎる": 91,
+    "失速済み": 8,
     "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 8,
-    "誘導文パターン": 1,
-    "いいねが少なすぎる": 241
+    "いいねが少なすぎる": 251,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46473,
-    "posts": 12493,
-    "oldest": "2026-09-23T13:07:44.869639+00:00"
+    "total": 46440,
+    "posts": 12423,
+    "oldest": "2026-09-23T13:23:00.930027+00:00"
   },
-  "viral_discovery_posts": 120,
-  "million_imp_rescued": 4,
-  "watchlist_active": 8611,
+  "viral_discovery_posts": 114,
+  "million_imp_rescued": 6,
+  "watchlist_active": 8682,
   "top5": [
     {
       "author": "ngnchiikawa",
-      "score": 62.4,
-      "likes": 285473,
-      "likes_per_min": 1493.9,
-      "acceleration": 0.74,
+      "score": 59.5,
+      "likes": 303193,
+      "likes_per_min": 1144.12,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 99.7,
+      "age_minutes": 115.2,
       "text": "⭐️ https://t.co/b8u9pqzoD5",
       "url": "https://x.com/i/status/2103083017195684094"
     },
     {
       "author": "info__Johnnys",
-      "score": 28.3,
-      "likes": 94870,
-      "likes_per_min": 20.05,
-      "acceleration": 0.79,
+      "score": 30.2,
+      "likes": 95207,
+      "likes_per_min": 21.76,
+      "acceleration": 1.09,
       "measured": true,
-      "age_minutes": 549.6,
+      "age_minutes": 565.1,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "jfa_samuraiblue",
-      "score": 71.1,
-      "likes": 18051,
-      "likes_per_min": 214.22,
-      "acceleration": 0.56,
+      "author": "makotopic",
+      "score": 33.4,
+      "likes": 80270,
+      "likes_per_min": 160.26,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 58.2,
-      "text": "🔹試合終了🔹️\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 3-1 ウルグアイ代表🇺🇾\n\n📺フジテ",
-      "url": "https://x.com/i/status/2103093483452154266"
-    },
-    {
-      "author": "pj_sekai",
-      "score": 75.4,
-      "likes": 24990,
-      "likes_per_min": 320.38,
-      "acceleration": 0.74,
-      "measured": true,
-      "age_minutes": 55.7,
-      "text": "㊗️6周年記念\nブルームフェスティバルガチャ\nドリームピック💐\n\nイベントガチャの期間限定メンバーも先行登場✨\n・桃井愛",
-      "url": "https://x.com/i/status/2103094109682782643"
+      "age_minutes": 498.6,
+      "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
+      "url": "https://x.com/i/status/2102986537504035278"
     },
     {
       "author": "cheche_xyz",
-      "score": 53.1,
-      "likes": 9677,
-      "likes_per_min": 299.53,
-      "acceleration": null,
+      "score": 56.2,
+      "likes": 15779,
+      "likes_per_min": 393.99,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 39.9,
+      "age_minutes": 55.4,
       "text": "塩貝が決める ↓ 相手選手が抗議する ↓ 塩貝もその場に入ろうとする ↓ 久保に「お前は来るな」と追いやられる ↓ 素直",
       "url": "https://x.com/i/status/2103098075824934969"
+    },
+    {
+      "author": "jfa_samuraiblue",
+      "score": 67.3,
+      "likes": 19900,
+      "likes_per_min": 119.38,
+      "acceleration": 0.56,
+      "measured": true,
+      "age_minutes": 73.6,
+      "text": "🔹試合終了🔹️\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 3-1 ウルグアイ代表🇺🇾\n\n📺フジテ",
+      "url": "https://x.com/i/status/2103093483452154266"
     }
   ]
 }

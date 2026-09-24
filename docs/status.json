@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-09-24T10:19:29.419835+00:00",
+  "updated_at": "2026-09-24T10:35:03.755526+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 15,
+    "detail_succeeded": 14,
     "detail_failed": 0,
-    "detail_skipped": 25,
-    "invalid_tweets": 20,
+    "detail_skipped": 26,
+    "invalid_tweets": 21,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790246041
+      "reset": 1790246974
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T10:19:00.375316+00:00",
-  "finished_at": "2026-09-24T10:19:29.418309+00:00",
-  "posts_scanned": 581,
-  "posts_with_history": 402,
+  "started_at": "2026-09-24T10:34:33.974675+00:00",
+  "finished_at": "2026-09-24T10:35:03.754509+00:00",
+  "posts_scanned": 579,
+  "posts_with_history": 403,
   "posts_flagged": 120,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 524,
+  "minutes_since_last_notification": 540,
   "reject_reasons": {
-    "古すぎる": 119,
+    "古すぎる": 115,
     "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 3,
-    "いいねが少なすぎる": 222,
-    "失速済み": 6,
+    "誘導文パターン": 2,
+    "失速済み": 8,
+    "いいねが少なすぎる": 225,
     "初回観測かつ平均速度が低い": 5
   },
   "config": {
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46779,
-    "posts": 12780,
-    "oldest": "2026-09-23T10:22:37.844496+00:00"
+    "total": 46752,
+    "posts": 12706,
+    "oldest": "2026-09-23T10:38:10.398739+00:00"
   },
   "viral_discovery_posts": 132,
-  "million_imp_rescued": 6,
-  "watchlist_active": 7930,
+  "million_imp_rescued": 5,
+  "watchlist_active": 7999,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 31.7,
-      "likes": 74130,
-      "likes_per_min": 98.75,
-      "acceleration": 0.86,
+      "score": 32.2,
+      "likes": 75599,
+      "likes_per_min": 94.33,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 384.2,
+      "age_minutes": 399.8,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "info__Johnnys",
-      "score": 33.6,
-      "likes": 89567,
-      "likes_per_min": 57.19,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 385.4,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
-    },
-    {
-      "author": "9taisyo21",
-      "score": 56.1,
-      "likes": 3605,
-      "likes_per_min": 89.03,
-      "acceleration": 1.16,
-      "measured": true,
-      "age_minutes": 99.4,
-      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
-      "url": "https://x.com/i/status/2103041761472135534"
-    },
-    {
-      "author": "Runninzin",
-      "score": 49.1,
-      "likes": 10681,
-      "likes_per_min": 38.47,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 208.2,
-      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
-      "url": "https://x.com/i/status/2103014380778733883"
+      "author": "jfa_samuraiblue",
+      "score": 71.1,
+      "likes": 4683,
+      "likes_per_min": 382.7470958611175,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.2,
+      "text": "🔹𝗚𝗢𝗔𝗟🔹️\n\n前半11分\n19 松木玖生\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 1-0 ",
+      "url": "https://x.com/i/status/2103067623072383304"
     },
     {
       "author": "chi_bakun_chiba",
-      "score": 67.0,
-      "likes": 39185,
-      "likes_per_min": 620.15,
-      "acceleration": 0.81,
+      "score": 66.9,
+      "likes": 48682,
+      "likes_per_min": 609.84,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 79.5,
+      "age_minutes": 95.1,
       "text": "お友達のみんなへ\nチーバくんは、しばらくの間、県外での活動をお休みすることになりました。\n今は千葉がたいへんなときだから",
       "url": "https://x.com/i/status/2103046783697862930"
+    },
+    {
+      "author": "jfa_samuraiblue",
+      "score": 67.6,
+      "likes": 16352,
+      "likes_per_min": 73.14,
+      "acceleration": 0.59,
+      "measured": true,
+      "age_minutes": 86.6,
+      "text": "🔹𝗦𝗔𝗠𝗨𝗥𝗔𝗜 𝗕𝗟𝗨𝗘🔹\n📝LINE-UP📝\n\n🏆キリンチャレンジカップ2026\n🆚ウルグアイ代表🇺🇾\n\n23 早川",
+      "url": "https://x.com/i/status/2103048900550803784"
+    },
+    {
+      "author": "9taisyo21",
+      "score": 51.6,
+      "likes": 4867,
+      "likes_per_min": 81.04,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 115.0,
+      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
+      "url": "https://x.com/i/status/2103041761472135534"
     }
   ]
 }

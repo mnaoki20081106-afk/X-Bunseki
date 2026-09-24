@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-24T22:34:02.523783+00:00",
+  "updated_at": "2026-09-24T22:49:45.536662+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790290113
+      "reset": 1790291051
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T22:33:32.924748+00:00",
-  "finished_at": "2026-09-24T22:34:02.522728+00:00",
-  "posts_scanned": 600,
-  "posts_with_history": 464,
-  "posts_flagged": 35,
+  "started_at": "2026-09-24T22:49:10.319534+00:00",
+  "finished_at": "2026-09-24T22:49:45.535109+00:00",
+  "posts_scanned": 630,
+  "posts_with_history": 490,
+  "posts_flagged": 36,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 329,
+  "minutes_since_last_notification": 344,
   "reject_reasons": {
-    "古すぎる": 325,
-    "いいね稼ぎ疑い": 4,
+    "古すぎる": 321,
+    "いいね稼ぎ疑い": 3,
     "誘導文パターン": 4,
-    "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 173
+    "いいねが少なすぎる": 196,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49974,
-    "posts": 12361,
-    "oldest": "2026-09-23T22:35:46.762308+00:00"
+    "total": 49997,
+    "posts": 12333,
+    "oldest": "2026-09-23T22:51:05.739518+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4239,
+  "viral_discovery_posts": 139,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4237,
   "top5": [
     {
-      "author": "dekiai_mx",
-      "score": 89.2,
-      "likes": 4582,
-      "likes_per_min": 170.11,
-      "acceleration": 1.72,
+      "author": "9taisyo21",
+      "score": 29.8,
+      "likes": 41050,
+      "likes_per_min": 41.18,
+      "acceleration": 1.5,
       "measured": true,
-      "age_minutes": 33.9,
-      "text": "⭐️本日解禁❤️‍🩹追加キャスト⭐️\n『溺愛　〜 実は、最強ヒーロー 〜』\n主人公・真白が愛するヒロイン🌸高原皐月役は ",
-      "url": "https://x.com/i/status/2103243101620064768"
-    },
-    {
-      "author": "30R9gmaMUy3guDJ",
-      "score": 51.9,
-      "likes": 3286,
-      "likes_per_min": 28.79,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 105.2,
-      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
-      "url": "https://x.com/i/status/2103225176305582231"
+      "age_minutes": 849.7,
+      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
+      "url": "https://x.com/i/status/2103041761472135534"
     },
     {
       "author": "oricon_anime_",
-      "score": 73.0,
-      "likes": 6412,
-      "likes_per_min": 137.67,
-      "acceleration": 0.94,
+      "score": 70.7,
+      "likes": 8797,
+      "likes_per_min": 151.78,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 93.0,
+      "age_minutes": 108.7,
       "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
       "url": "https://x.com/i/status/2103228242304057471"
     },
     {
-      "author": "30R9gmaMUy3guDJ",
-      "score": 44.9,
-      "likes": 2826,
-      "likes_per_min": 33.68,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 98.2,
-      "text": "ホワイトソックスが5年ぶりにポストシーズン進出を決める！\n村上宗隆、メジャー1年目でPSへ\n\n【近年のチーム成績】\n23",
-      "url": "https://x.com/i/status/2103226936361374003"
+      "author": "chiikawa_market",
+      "score": 87.5,
+      "likes": 1488,
+      "likes_per_min": 115.23639566843941,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.9,
+      "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
+      "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "kogorousan5563",
-      "score": 38.6,
-      "likes": 303,
-      "likes_per_min": 7.31,
-      "acceleration": 1.1,
+      "author": "30R9gmaMUy3guDJ",
+      "score": 45.5,
+      "likes": 3681,
+      "likes_per_min": 25.14,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 159.5,
-      "text": "Fruit Zipper というグループ名で、過去に櫻井優衣がまなふぃーのスカート捲ってパンツ見えそうになって炎上しまし",
-      "url": "https://x.com/i/status/2103211507438018678"
+      "age_minutes": 120.9,
+      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
+      "url": "https://x.com/i/status/2103225176305582231"
+    },
+    {
+      "author": "dekiai_mx",
+      "score": 82.8,
+      "likes": 7434,
+      "likes_per_min": 181.5,
+      "acceleration": 1.07,
+      "measured": true,
+      "age_minutes": 49.6,
+      "text": "⭐️本日解禁❤️‍🩹追加キャスト⭐️\n『溺愛　〜 実は、最強ヒーロー 〜』\n主人公・真白が愛するヒロイン🌸高原皐月役は ",
+      "url": "https://x.com/i/status/2103243101620064768"
     }
   ]
 }

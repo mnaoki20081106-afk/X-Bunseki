@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T19:18:41.966081+00:00",
+  "updated_at": "2026-09-24T19:34:19.700445+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -15,26 +15,25 @@
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790278392
+      "remaining": 15,
+      "reset": 1790279329
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T19:18:11.371304+00:00",
-  "finished_at": "2026-09-24T19:18:41.964881+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 548,
-  "posts_flagged": 6,
+  "started_at": "2026-09-24T19:33:48.584110+00:00",
+  "finished_at": "2026-09-24T19:34:19.699493+00:00",
+  "posts_scanned": 595,
+  "posts_with_history": 575,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 133,
+  "minutes_since_last_notification": 149,
   "reject_reasons": {
-    "古すぎる": 335,
-    "いいねが少なすぎる": 140,
-    "失速済み": 2,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 2,
-    "誘導文パターン": 3
+    "古すぎる": 356,
+    "失速済み": 5,
+    "いいねが少なすぎる": 127,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49870,
-    "posts": 12622,
-    "oldest": "2026-09-23T19:20:51.345204+00:00"
+    "total": 49855,
+    "posts": 12592,
+    "oldest": "2026-09-23T19:36:30.347826+00:00"
   },
-  "viral_discovery_posts": 117,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4260,
+  "viral_discovery_posts": 111,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4266,
   "top5": [
     {
-      "author": "9taisyo21",
-      "score": 24.6,
-      "likes": 35433,
-      "likes_per_min": 15.43,
-      "acceleration": 1.3,
-      "measured": true,
-      "age_minutes": 638.6,
-      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
-      "url": "https://x.com/i/status/2103041761472135534"
-    },
-    {
       "author": "Un4v5s8bgsVk9Xp",
-      "score": 48.1,
-      "likes": 45293,
-      "likes_per_min": 110.9,
-      "acceleration": 0.85,
+      "score": 45.5,
+      "likes": 46871,
+      "likes_per_min": 100.97,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 159.6,
+      "age_minutes": 175.2,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
       "author": "yanineko_anime",
-      "score": 45.8,
-      "likes": 19633,
-      "likes_per_min": 29.32,
-      "acceleration": 0.81,
+      "score": 45.2,
+      "likes": 20164,
+      "likes_per_min": 33.98,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 198.6,
+      "age_minutes": 214.3,
       "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
       "url": "https://x.com/i/status/2103152490820603949"
     },
     {
       "author": "azatokute",
-      "score": 32.6,
-      "likes": 9488,
-      "likes_per_min": 32.64,
-      "acceleration": 0.9,
+      "score": 28.7,
+      "likes": 9889,
+      "likes_per_min": 25.66,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 179.3,
+      "age_minutes": 194.9,
       "text": "当番組は本日の放送をもって\n終了いたします。\n番組を愛してくださった皆様、\n本当にありがとうございました。\n「あざとさ」",
       "url": "https://x.com/i/status/2103157357614424465"
     },
     {
       "author": "Saba_Tigers",
-      "score": 42.4,
-      "likes": 5257,
-      "likes_per_min": 7.1,
-      "acceleration": 1.17,
+      "score": 37.5,
+      "likes": 5359,
+      "likes_per_min": 6.53,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 197.4,
+      "age_minutes": 213.0,
       "text": "【速報】阪神・西勇輝が今季限りで現役引退　35歳の決断　 https://t.co/0mrU6SkMM0",
       "url": "https://x.com/i/status/2103152806270210439"
+    },
+    {
+      "author": "Tigers_140609",
+      "score": 31.8,
+      "likes": 1788,
+      "likes_per_min": 1.79,
+      "acceleration": 1.2,
+      "measured": true,
+      "age_minutes": 197.3,
+      "text": "［阪神］\n西勇輝  今季限りで現役引退決断 https://t.co/5QGXB4JSQw",
+      "url": "https://x.com/i/status/2103156768411103421"
     }
   ]
 }

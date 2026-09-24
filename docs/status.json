@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T18:32:23.223871+00:00",
+  "updated_at": "2026-09-24T18:47:50.811591+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,29 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "invalid_tweets": 5,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790275598
+      "remaining": 14,
+      "reset": 1790276532
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T18:31:37.247163+00:00",
-  "finished_at": "2026-09-24T18:32:23.222741+00:00",
-  "posts_scanned": 612,
-  "posts_with_history": 571,
-  "posts_flagged": 12,
+  "started_at": "2026-09-24T18:47:11.364683+00:00",
+  "finished_at": "2026-09-24T18:47:50.810494+00:00",
+  "posts_scanned": 606,
+  "posts_with_history": 572,
+  "posts_flagged": 11,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 87,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "古すぎる": 285,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 5,
-    "いいねが少なすぎる": 175,
-    "初回観測かつ平均速度が低い": 4,
+    "古すぎる": 299,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 3,
+    "いいねが少なすぎる": 168,
+    "初回観測かつ平均速度が低い": 6,
     "誘導文パターン": 3
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49900,
-    "posts": 12671,
-    "oldest": "2026-09-23T18:34:19.655394+00:00"
+    "total": 49903,
+    "posts": 12651,
+    "oldest": "2026-09-23T18:49:57.626251+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 0,
-  "watchlist_active": 4257,
+  "viral_discovery_posts": 118,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4253,
   "top5": [
     {
-      "author": "Un4v5s8bgsVk9Xp",
-      "score": 60.0,
-      "likes": 39321,
-      "likes_per_min": 173.25,
+      "author": "makotopic",
+      "score": 28.9,
+      "likes": 104633,
+      "likes_per_min": 29.24,
       "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 113.3,
+      "age_minutes": 827.2,
+      "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
+      "url": "https://x.com/i/status/2102986537504035278"
+    },
+    {
+      "author": "Un4v5s8bgsVk9Xp",
+      "score": 53.9,
+      "likes": 41571,
+      "likes_per_min": 145.54,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 128.8,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
       "author": "yanineko_anime",
-      "score": 58.5,
-      "likes": 17892,
-      "likes_per_min": 51.93,
-      "acceleration": 0.75,
+      "score": 55.3,
+      "likes": 18620,
+      "likes_per_min": 47.09,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 152.3,
+      "age_minutes": 167.8,
       "text": "なんもねえ 〜住人大合唱ver.〜\n￣V￣￣￣￣￣￣￣￣￣￣￣￣￣\n🚬\n\nTVアニメ『#ヤニねこ』最終話放送記念✨\nMV",
       "url": "https://x.com/i/status/2103152490820603949"
     },
     {
-      "author": "azatokute",
-      "score": 38.7,
-      "likes": 7876,
-      "likes_per_min": 45.19,
-      "acceleration": 0.59,
-      "measured": true,
-      "age_minutes": 133.0,
-      "text": "当番組は本日の放送をもって\n終了いたします。\n番組を愛してくださった皆様、\n本当にありがとうございました。\n「あざとさ」",
-      "url": "https://x.com/i/status/2103157357614424465"
-    },
-    {
       "author": "sekiro_nd_anime",
-      "score": 37.0,
-      "likes": 10888,
-      "likes_per_min": 8.76,
-      "acceleration": 0.68,
+      "score": 36.9,
+      "likes": 11037,
+      "likes_per_min": 9.64,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 212.4,
+      "age_minutes": 227.8,
       "text": "TVアニメ「SEKIRO: NO DEFEAT」\n2027年1月より全8話放送決定\n―――――――――――――――\n\nh",
       "url": "https://x.com/i/status/2103137384757923943"
     },
     {
-      "author": "CANDY_TUNE_",
-      "score": 31.7,
-      "likes": 3967,
-      "likes_per_min": 4.41,
-      "acceleration": 0.93,
+      "author": "azatokute",
+      "score": 36.6,
+      "likes": 8422,
+      "likes_per_min": 35.32,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 212.3,
-      "text": "📘桐原美月 ソロ表紙&amp;デジタル写真集決定📘\n\n🗓️10/2発売\n「FRIDAY」\n桐原美月「sweet girl",
-      "url": "https://x.com/i/status/2103137390395060229"
+      "age_minutes": 148.5,
+      "text": "当番組は本日の放送をもって\n終了いたします。\n番組を愛してくださった皆様、\n本当にありがとうございました。\n「あざとさ」",
+      "url": "https://x.com/i/status/2103157357614424465"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T03:49:11.030535+00:00",
+  "updated_at": "2026-09-24T04:04:42.122784+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790222621
+      "reset": 1790223550
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T03:48:40.859827+00:00",
-  "finished_at": "2026-09-24T03:49:11.026693+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 418,
-  "posts_flagged": 108,
+  "started_at": "2026-09-24T04:04:10.235547+00:00",
+  "finished_at": "2026-09-24T04:04:42.121796+00:00",
+  "posts_scanned": 586,
+  "posts_with_history": 437,
+  "posts_flagged": 106,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 134,
+  "minutes_since_last_notification": 149,
   "reject_reasons": {
-    "古すぎる": 140,
-    "いいねが少なすぎる": 230,
-    "初回観測かつ平均速度が低い": 11,
-    "誘導文パターン": 4,
-    "失速済み": 2,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 141,
+    "誘導文パターン": 6,
+    "いいねが少なすぎる": 223,
+    "失速済み": 5,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,67 +49,67 @@
   },
   "observation_db": {
     "total": 45544,
-    "posts": 12809,
-    "oldest": "2026-09-23T04:02:57.398475+00:00"
+    "posts": 12738,
+    "oldest": "2026-09-23T04:17:08.116539+00:00"
   },
-  "viral_discovery_posts": 142,
-  "million_imp_rescued": 9,
-  "watchlist_active": 6796,
+  "viral_discovery_posts": 137,
+  "million_imp_rescued": 8,
+  "watchlist_active": 6834,
   "top5": [
     {
       "author": "sweetroad5",
-      "score": 57.2,
-      "likes": 7492,
-      "likes_per_min": 31.56,
-      "acceleration": 0.66,
+      "score": 52.0,
+      "likes": 7826,
+      "likes_per_min": 21.52,
+      "acceleration": 0.68,
       "measured": true,
-      "age_minutes": 132.4,
+      "age_minutes": 147.9,
       "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
       "url": "https://x.com/i/status/2102935246929117491"
     },
     {
       "author": "sweetroad5",
-      "score": 70.5,
-      "likes": 31567,
-      "likes_per_min": 192.52,
-      "acceleration": 0.73,
+      "score": 64.3,
+      "likes": 33931,
+      "likes_per_min": 152.35,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 117.8,
+      "age_minutes": 133.3,
       "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
       "url": "https://x.com/i/status/2102938918010462239"
     },
     {
-      "author": "Pokemon_cojp",
-      "score": 73.9,
-      "likes": 32739,
-      "likes_per_min": 360.91,
+      "author": "Starbucks_J",
+      "score": 59.0,
+      "likes": 44540,
+      "likes_per_min": 210.73,
       "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 109.2,
+      "age_minutes": 154.7,
+      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
+      "url": "https://x.com/i/status/2102933541097185783"
+    },
+    {
+      "author": "Pokemon_cojp",
+      "score": 66.5,
+      "likes": 37181,
+      "likes_per_min": 286.26,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 124.7,
       "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
       "url": "https://x.com/i/status/2102941089011323205"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 75.9,
-      "likes": 4036,
-      "likes_per_min": 50.07,
-      "acceleration": 0.91,
-      "measured": true,
-      "age_minutes": 95.2,
-      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
-      "url": "https://x.com/i/status/2102944592673038481"
-    },
-    {
-      "author": "Starbucks_J",
-      "score": 63.0,
-      "likes": 41270,
-      "likes_per_min": 246.88,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 139.2,
-      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
-      "url": "https://x.com/i/status/2102933541097185783"
+      "author": "k_maru_dau_baby",
+      "score": 73.7,
+      "likes": 2036,
+      "likes_per_min": 177.96890262652641,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 11.4,
+      "text": "WEST. 解散を発表",
+      "url": "https://x.com/i/status/2102969587998638398"
     }
   ]
 }

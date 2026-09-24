@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:20:52.226027+00:00",
+  "updated_at": "2026-09-24T20:36:33.978142+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,27 +11,27 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790282122
+      "reset": 1790283054
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T20:20:21.089533+00:00",
-  "finished_at": "2026-09-24T20:20:52.224963+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 551,
-  "posts_flagged": 5,
+  "started_at": "2026-09-24T20:35:52.836755+00:00",
+  "finished_at": "2026-09-24T20:36:33.976886+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 546,
+  "posts_flagged": 3,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 195,
+  "minutes_since_last_notification": 211,
   "reject_reasons": {
-    "古すぎる": 410,
-    "いいねが少なすぎる": 115,
-    "初回観測かつ平均速度が低い": 4
+    "古すぎる": 424,
+    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 104
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49856,
-    "posts": 12473,
-    "oldest": "2026-09-23T20:31:41.487888+00:00"
+    "total": 49857,
+    "posts": 12435,
+    "oldest": "2026-09-23T20:47:13.035931+00:00"
   },
   "viral_discovery_posts": 115,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4272,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4269,
   "top5": [
     {
-      "author": "seikeibijo1",
-      "score": 24.4,
-      "likes": 24684,
-      "likes_per_min": 30.436253880416785,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 811.0,
-      "text": "Xありがとう。眉毛上の皮脂ドバ毛穴詰まりも馬鹿みたいに消えて横転。 https://t.co/c5wqKv61bV",
-      "url": "https://x.com/i/status/2103014030772420979"
-    },
-    {
       "author": "Un4v5s8bgsVk9Xp",
-      "score": 37.3,
-      "likes": 51558,
-      "likes_per_min": 103.26,
-      "acceleration": 1.02,
+      "score": 34.2,
+      "likes": 53175,
+      "likes_per_min": 103.01,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 221.8,
+      "age_minutes": 237.5,
       "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
       "url": "https://x.com/i/status/2103162312245076342"
     },
     {
       "author": "daitomidokoro",
-      "score": 47.9,
-      "likes": 14507,
-      "likes_per_min": 58.91,
-      "acceleration": 1.18,
+      "score": 46.1,
+      "likes": 15674,
+      "likes_per_min": 74.34,
+      "acceleration": 1.26,
       "measured": true,
-      "age_minutes": 188.1,
+      "age_minutes": 203.8,
       "text": "『限界突破！やってM!LK』\n\nご視聴ありがとうございました‼️\n\n沢山のコメント感謝です🙇\nあっという間だったなぁ\nや",
       "url": "https://x.com/i/status/2103170788925055035"
     },
     {
       "author": "2964_KO",
-      "score": 31.4,
-      "likes": 478,
-      "likes_per_min": 0.84,
+      "score": 29.7,
+      "likes": 494,
+      "likes_per_min": 1.02,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 194.3,
+      "age_minutes": 210.0,
       "text": "田平さんと連絡を断っていた理由は、\n今年7月末に田平さんから\n私の利き手指数本を、数十分かけて関節と逆方向へ折るという暴",
       "url": "https://x.com/i/status/2103169230762057882"
     },
     {
       "author": "milk_info",
-      "score": 38.6,
-      "likes": 14506,
-      "likes_per_min": 39.88,
-      "acceleration": 1.06,
+      "score": 38.3,
+      "likes": 15324,
+      "likes_per_min": 52.11,
+      "acceleration": 1.31,
       "measured": true,
-      "age_minutes": 200.8,
+      "age_minutes": 216.5,
       "text": "👑M!LK冠番組👑\nTBS「限界突破！やってM!LK」シーズン2 最終回\nご視聴いただきありがとうございました！\n\n#T",
       "url": "https://x.com/i/status/2103167584749384167"
+    },
+    {
+      "author": "ppfuts",
+      "score": 31.0,
+      "likes": 630,
+      "likes_per_min": 16.24,
+      "acceleration": 1.66,
+      "measured": true,
+      "age_minutes": 216.1,
+      "text": "ジャニ辞めてまで依存した10年以上愛の年上女と薬物やって捕まって破局し、最終的に整形して承認欲求モンスター夜職とアラフォ",
+      "url": "https://x.com/i/status/2103167688214560934"
     }
   ]
 }

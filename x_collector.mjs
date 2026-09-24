@@ -25,6 +25,8 @@ const started=Date.now();
 const guard=createRequestGuard();
 const searchPages=new Map();
 let searchSuccess=0, searchFailed=0, detailFailed=0, detailSkipped=0, invalidTweets=0;
+let detailUnavailable=0, detailIncomplete=0;
+const detailSkippedIds=[];
 function pageKey(query,product,cursor){ return JSON.stringify([query,product,cursor||'']); }
 function safeError(e){ return e instanceof CollectorError ? e.code : 'request_failed'; }
 let searchResponses=0, searchTweets=0, searchTweetsWithViews=0, incompleteSearchPages=0;
@@ -202,11 +204,15 @@ for(const w of watch){
 }
 
 function applyDetail(p,d){
-  const result=parseTimeline(d,'TweetDetail').tweets.find(t=>t.post_id===p.post_id);
-  if(!result) return false;
+  const parsed=parseTimeline(d,'TweetDetail');
+  const result=parsed.tweets.find(t=>t.post_id===p.post_id);
+  if(!result){
+    if(parsed.unavailable>0) return {ok:false,reason:'unavailable'};
+    return {ok:false,reason:'incomplete'};
+  }
   // Only confirmed fresh measurements can enter observations and learning.
   seen.set(p.post_id,{...p,...result});
-  return true;
+  return {ok:true,reason:null};
 }
 const detailStart=Date.now();
 let detailOk=0;
@@ -216,8 +222,15 @@ await mapLimit(missingDue,DETAIL_CONCURRENCY,async p=>{
   try {
     guard.check('TweetDetail');
     const d=await x.getTweet(p.post_id);
-    if(applyDetail(p,d)) detailOk++;
-    else detailSkipped++;
+    const outcome=applyDetail(p,d);
+    if(outcome.ok) {
+      detailOk++;
+    } else {
+      detailSkipped++;
+      detailSkippedIds.push(p.post_id);
+      if(outcome.reason==='unavailable') detailUnavailable++;
+      else detailIncomplete++;
+    }
   } catch(e){
     detailFailed++;
     console.error('[detail] '+p.post_id+' failed: '+safeError(e));
@@ -235,23 +248,24 @@ console.error('[collector] posts='+all.length+
   ' skipped='+detailSkipped+' failed='+detailFailed+
   ' 429='+rateLimited+' 403='+forbidden+
   ' elapsed_ms='+(Date.now()-started));
-// A small number of individual posts can legitimately omit views/bookmarks or
-// become unavailable. Skip those observations without declaring the whole
-// collector unhealthy. Escalate only when the loss is material.
-const detailSkipRatio=missingDue.length ? detailSkipped/missingDue.length : 0;
-const materialDetailLoss=detailSkipped>=5 && detailSkipRatio>=0.25;
+// A watchlist TweetDetail can legitimately become unavailable or omit one of
+// the metrics required by the learning pipeline. That is a post-local outcome,
+ // not evidence that the monitor failed to collect current X data. Keep it out
+// of the fresh observation stream and advance its watchlist checkpoint instead
+// of degrading the entire cycle.
 const searchIncompleteRatio=searchResponses ? incompleteSearchPages/searchResponses : 0;
 const materialSearchLoss=incompleteSearchPages>=3 && searchIncompleteRatio>=0.25;
-const incompleteLoss=materialDetailLoss || materialSearchLoss;
-const hasFailure=searchFailed>0 || detailFailed>0 || incompleteLoss;
+const hasFailure=searchFailed>0 || detailFailed>0 || materialSearchLoss;
 const error=guard.primaryError ||
-  (searchSuccess===0 ? 'collection_failed' : (incompleteLoss?'incomplete_observations':null));
+  (searchSuccess===0 ? 'collection_failed' : (materialSearchLoss?'incomplete_observations':null));
 const health={
   status:all.length===0 && hasFailure ? (error||'collection_failed') : (hasFailure?'degraded':'success'),
   error_code:error, search_succeeded:searchSuccess, search_failed:searchFailed,
   detail_succeeded:detailOk, detail_failed:detailFailed, detail_skipped:detailSkipped,
+  detail_unavailable:detailUnavailable, detail_incomplete:detailIncomplete,
   invalid_tweets:invalidTweets, incomplete_search_pages:incompleteSearchPages,
   search_rate_limit:searchRateLimit,
-  failures:guard.failures
+  failures:guard.failures,
+  _detail_skipped_ids:detailSkippedIds
 };
 process.stdout.write(JSON.stringify({posts:all,health}));

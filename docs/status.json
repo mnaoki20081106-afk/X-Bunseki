@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T03:18:05.854921+00:00",
+  "updated_at": "2026-09-24T03:33:33.859297+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,23 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790220756
+      "reset": 1790221685
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T03:17:35.969509+00:00",
-  "finished_at": "2026-09-24T03:18:05.853239+00:00",
-  "posts_scanned": 577,
-  "posts_with_history": 299,
-  "posts_flagged": 92,
+  "started_at": "2026-09-24T03:33:04.722991+00:00",
+  "finished_at": "2026-09-24T03:33:33.855647+00:00",
+  "posts_scanned": 593,
+  "posts_with_history": 402,
+  "posts_flagged": 105,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 103,
+  "minutes_since_last_notification": 118,
   "reject_reasons": {
-    "古すぎる": 158,
-    "いいねが少なすぎる": 218,
-    "誘導文パターン": 2,
-    "初回観測かつ平均速度が低い": 27,
-    "失速済み": 2
+    "古すぎる": 141,
+    "いいねが少なすぎる": 222,
+    "誘導文パターン": 6,
+    "初回観測かつ平均速度が低い": 11
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +46,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 45313,
-    "posts": 12778,
-    "oldest": "2026-09-23T03:32:11.907878+00:00"
+    "total": 45305,
+    "posts": 12751,
+    "oldest": "2026-09-23T03:46:55.920972+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 5,
-  "watchlist_active": 6659,
+  "viral_discovery_posts": 142,
+  "million_imp_rescued": 7,
+  "watchlist_active": 6741,
   "top5": [
     {
       "author": "sweetroad5",
-      "score": 71.5,
-      "likes": 6263,
-      "likes_per_min": 58.7,
-      "acceleration": 0.68,
+      "score": 73.8,
+      "likes": 28560,
+      "likes_per_min": 262.39,
+      "acceleration": 0.69,
       "measured": true,
-      "age_minutes": 101.3,
-      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
-      "url": "https://x.com/i/status/2102935246929117491"
-    },
-    {
-      "author": "sweetroad5",
-      "score": 86.6,
-      "likes": 24502,
-      "likes_per_min": 377.95,
-      "acceleration": 2.06,
-      "measured": true,
-      "age_minutes": 86.7,
+      "age_minutes": 102.2,
       "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
       "url": "https://x.com/i/status/2102938918010462239"
     },
     {
-      "author": "theGazettESTAFF",
-      "score": 93.0,
-      "likes": 7763,
-      "likes_per_min": 115.14,
-      "acceleration": 2.06,
+      "author": "sweetroad5",
+      "score": 67.6,
+      "likes": 6999,
+      "likes_per_min": 47.59,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 78.1,
-      "text": "【ご報告】 \n\n日頃より、the GazettEをご支援いただき、誠にありがとうございます。\n\n 昨日9月23日、Vo.",
-      "url": "https://x.com/i/status/2102941088717631822"
+      "age_minutes": 116.8,
+      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
+      "url": "https://x.com/i/status/2102935246929117491"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 81.9,
+      "likes": 3254,
+      "likes_per_min": 54.96,
+      "acceleration": 1.33,
+      "measured": true,
+      "age_minutes": 79.6,
+      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
+      "url": "https://x.com/i/status/2102944592673038481"
     },
     {
       "author": "Pokemon_cojp",
-      "score": 86.9,
-      "likes": 20571,
-      "likes_per_min": 320.77,
-      "acceleration": 2.59,
+      "score": 81.8,
+      "likes": 27102,
+      "likes_per_min": 422.29,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 78.1,
+      "age_minutes": 93.5,
       "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
       "url": "https://x.com/i/status/2102941089011323205"
     },
     {
-      "author": "akindosushiroco",
-      "score": 86.9,
-      "likes": 17057,
-      "likes_per_min": 252.36,
-      "acceleration": 1.78,
+      "author": "Starbucks_J",
+      "score": 67.7,
+      "likes": 37414,
+      "likes_per_min": 277.71,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 78.1,
-      "text": "🍮🍀🍣\n🍀予告🍀\n🍣🍀🍮\n\n10/7(水)から！\n#スシロー × #ポムポムプリン\nコラボ決定～～～！！🍮\n\nみんなで楽",
-      "url": "https://x.com/i/status/2102941091397844995"
+      "age_minutes": 123.5,
+      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
+      "url": "https://x.com/i/status/2102933541097185783"
     }
   ]
 }

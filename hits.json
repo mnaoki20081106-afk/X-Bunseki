@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-24T21:31:36.725546+00:00",
+  "updated_at": "2026-09-24T21:47:05.583570+00:00",
   "surviving": 53,
-  "candidates": 12,
+  "candidates": 9,
   "notify_score": 55,
   "trending_posts": [
     {
@@ -1306,6 +1306,60 @@
       "url": "https://x.com/i/status/2102613930288013449"
     }
   ],
-  "early_posts": [],
-  "posts": []
+  "early_posts": [
+    {
+      "post_id": "2103182737607885278",
+      "author": "niyabero",
+      "author_name": "にやべろ",
+      "posted_at": "2026-09-24T18:00:14+00:00",
+      "score": 33.9,
+      "likes": 3542,
+      "impressions": 672293,
+      "predicted_final_impressions": 1004115,
+      "prediction_confidence": "medium",
+      "impressions_per_min": 12152.17,
+      "impressions_acceleration": 1.04,
+      "replies": 70,
+      "retweets": 119,
+      "quotes": 12,
+      "bookmarks": 1716,
+      "likes_per_min": 49.35,
+      "acceleration": 1.04,
+      "age_minutes": 227.5,
+      "candidate": false,
+      "discovery_source": "viral_search",
+      "million_imp_bypass": false,
+      "million_imp_bypass_detail": "",
+      "text": "悪の幹部は圧縮しちゃおうね～♪ https://t.co/VSxjtX0NhL",
+      "url": "https://x.com/i/status/2103182737607885278"
+    }
+  ],
+  "posts": [
+    {
+      "post_id": "2103182737607885278",
+      "author": "niyabero",
+      "author_name": "にやべろ",
+      "posted_at": "2026-09-24T18:00:14+00:00",
+      "score": 33.9,
+      "likes": 3542,
+      "impressions": 672293,
+      "predicted_final_impressions": 1004115,
+      "prediction_confidence": "medium",
+      "impressions_per_min": 12152.17,
+      "impressions_acceleration": 1.04,
+      "replies": 70,
+      "retweets": 119,
+      "quotes": 12,
+      "bookmarks": 1716,
+      "likes_per_min": 49.35,
+      "acceleration": 1.04,
+      "age_minutes": 227.5,
+      "candidate": false,
+      "discovery_source": "viral_search",
+      "million_imp_bypass": false,
+      "million_imp_bypass_detail": "",
+      "text": "悪の幹部は圧縮しちゃおうね～♪ https://t.co/VSxjtX0NhL",
+      "url": "https://x.com/i/status/2103182737607885278"
+    }
+  ]
 }

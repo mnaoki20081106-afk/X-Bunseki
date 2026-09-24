@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T09:17:22.555927+00:00",
+  "updated_at": "2026-09-24T09:32:57.019312+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,28 +9,28 @@
     "detail_succeeded": 15,
     "detail_failed": 0,
     "detail_skipped": 25,
-    "invalid_tweets": 22,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790242314
+      "reset": 1790243246
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T09:16:52.967857+00:00",
-  "finished_at": "2026-09-24T09:17:22.551540+00:00",
-  "posts_scanned": 563,
-  "posts_with_history": 360,
-  "posts_flagged": 103,
+  "started_at": "2026-09-24T09:32:25.842244+00:00",
+  "finished_at": "2026-09-24T09:32:57.017212+00:00",
+  "posts_scanned": 593,
+  "posts_with_history": 413,
+  "posts_flagged": 124,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 462,
+  "minutes_since_last_notification": 478,
   "reject_reasons": {
-    "古すぎる": 124,
-    "誘導文パターン": 5,
-    "初回観測かつ平均速度が低い": 10,
-    "いいねが少なすぎる": 233,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 126,
+    "誘導文パターン": 4,
+    "いいねが少なすぎる": 229,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46232,
-    "posts": 12629,
+    "total": 46825,
+    "posts": 12809,
     "oldest": "2026-09-23T09:36:04.310345+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 5,
-  "watchlist_active": 7654,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 4,
+  "watchlist_active": 7745,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.4,
-      "likes": 66879,
-      "likes_per_min": 142.79,
-      "acceleration": 0.97,
+      "score": 32.1,
+      "likes": 68882,
+      "likes_per_min": 128.62,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 322.1,
+      "age_minutes": 337.6,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "hex6u",
-      "score": 48.4,
-      "likes": 12784,
-      "likes_per_min": 185.35,
-      "acceleration": 1.53,
-      "measured": true,
-      "age_minutes": 204.2,
-      "text": "【悲報】大阪・道頓堀にて、配信中の女性に対し外国人観光客がカメラ前で堂々と「ツリ目ポーズ」を披露\n↓\n配信者女性、顔色ひ",
-      "url": "https://x.com/i/status/2102999765499982071"
-    },
-    {
-      "author": "su_pa_inusama",
-      "score": 30.9,
-      "likes": 23995,
-      "likes_per_min": 235.59,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 194.0,
-      "text": "こいつは何も間違っていない",
-      "url": "https://x.com/i/status/2103002329448681747"
-    },
-    {
-      "author": "0hHHIC6wJ8mD1xI",
-      "score": 46.6,
-      "likes": 17852,
-      "likes_per_min": 417.48,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 147.1,
-      "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
-      "url": "https://x.com/i/status/2103014139442729284"
-    },
-    {
       "author": "Runninzin",
-      "score": 65.5,
-      "likes": 7831,
-      "likes_per_min": 51.91,
-      "acceleration": 0.9,
+      "score": 61.8,
+      "likes": 8592,
+      "likes_per_min": 48.87,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 146.1,
+      "age_minutes": 161.7,
       "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
       "url": "https://x.com/i/status/2103014380778733883"
+    },
+    {
+      "author": "jfa_samuraiblue",
+      "score": 79.1,
+      "likes": 6448,
+      "likes_per_min": 266.8,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 24.5,
+      "text": "🔹𝗦𝗔𝗠𝗨𝗥𝗔𝗜 𝗕𝗟𝗨𝗘🔹\n📝LINE-UP📝\n\n🏆キリンチャレンジカップ2026\n🆚ウルグアイ代表🇺🇾\n\n23 早川",
+      "url": "https://x.com/i/status/2103048900550803784"
+    },
+    {
+      "author": "u6hafy",
+      "score": 43.7,
+      "likes": 12475,
+      "likes_per_min": 135.1,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 147.3,
+      "text": "正直ジャイアンなら大人になってもノリノリで着そう https://t.co/3B8eF5MpkW",
+      "url": "https://x.com/i/status/2103017995585126436"
+    },
+    {
+      "author": "nijisanji_app",
+      "score": 69.9,
+      "likes": 599,
+      "likes_per_min": 119.8,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 2.5,
+      "text": "／\n#SitR広島 #Idios_1stLIVE Blu-ray\nオリコン週間Blu-rayランキング\nランクイン！\n＼",
+      "url": "https://x.com/i/status/2103054444590149679"
     }
   ]
 }

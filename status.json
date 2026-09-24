@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T06:17:47.542285+00:00",
+  "updated_at": "2026-09-24T06:33:12.839915+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,28 +9,29 @@
     "detail_succeeded": 16,
     "detail_failed": 0,
     "detail_skipped": 24,
-    "invalid_tweets": 19,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790231537
+      "reset": 1790232466
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T06:17:16.492430+00:00",
-  "finished_at": "2026-09-24T06:17:47.540827+00:00",
-  "posts_scanned": 583,
-  "posts_with_history": 428,
-  "posts_flagged": 81,
+  "started_at": "2026-09-24T06:32:45.479052+00:00",
+  "finished_at": "2026-09-24T06:33:12.838763+00:00",
+  "posts_scanned": 585,
+  "posts_with_history": 446,
+  "posts_flagged": 68,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 283,
+  "minutes_since_last_notification": 298,
   "reject_reasons": {
-    "古すぎる": 128,
+    "古すぎる": 124,
+    "失速済み": 7,
     "いいね稼ぎ疑い": 7,
-    "いいねが少なすぎる": 220,
-    "初回観測かつ平均速度が低い": 8,
-    "誘導文パターン": 3
+    "いいねが少なすぎる": 230,
+    "初回観測かつ平均速度が低い": 2,
+    "誘導文パターン": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 45806,
-    "posts": 12735,
-    "oldest": "2026-09-23T06:32:20.857816+00:00"
+    "total": 45839,
+    "posts": 12719,
+    "oldest": "2026-09-23T06:46:56.781889+00:00"
   },
-  "viral_discovery_posts": 137,
-  "million_imp_rescued": 16,
-  "watchlist_active": 7155,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 13,
+  "watchlist_active": 7196,
   "top5": [
     {
-      "author": "info__Johnnys",
-      "score": 59.6,
-      "likes": 62457,
-      "likes_per_min": 246.25,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 143.7,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
-    },
-    {
       "author": "_sknKfhK_thx",
-      "score": 56.2,
-      "likes": 33812,
-      "likes_per_min": 321.29,
-      "acceleration": 0.97,
+      "score": 51.8,
+      "likes": 37935,
+      "likes_per_min": 267.37,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 142.5,
+      "age_minutes": 157.9,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 56.2,
-      "likes": 35203,
-      "likes_per_min": 79.92,
-      "acceleration": 1.12,
-      "measured": true,
-      "age_minutes": 144.5,
-      "text": "WEST. 解散を発表",
-      "url": "https://x.com/i/status/2102969587998638398"
-    },
-    {
       "author": "oricon",
-      "score": 68.4,
-      "likes": 22843,
-      "likes_per_min": 134.89,
-      "acceleration": 1.0,
+      "score": 62.6,
+      "likes": 24372,
+      "likes_per_min": 99.15,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 132.6,
+      "age_minutes": 148.1,
       "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
       "url": "https://x.com/i/status/2102972578017198305"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 48.7,
-      "likes": 15648,
-      "likes_per_min": 34.98,
-      "acceleration": 1.08,
+      "author": "HI_y_mks",
+      "score": 59.1,
+      "likes": 30314,
+      "likes_per_min": 407.37,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 146.0,
-      "text": "WEST.解散へ 今日にも発表",
-      "url": "https://x.com/i/status/2102969205905916134"
+      "age_minutes": 114.9,
+      "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
+      "url": "https://x.com/i/status/2102980935943905362"
+    },
+    {
+      "author": "modelpress",
+      "score": 53.2,
+      "likes": 5754,
+      "likes_per_min": 15.24,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 149.0,
+      "text": "WEST.、グループ活動終了を発表\nhttps://t.co/gRJOnOESAI",
+      "url": "https://x.com/i/status/2102972356574732344"
+    },
+    {
+      "author": "info__Johnnys",
+      "score": 56.2,
+      "likes": 12294,
+      "likes_per_min": 27.04,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 149.6,
+      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループ活動を終了することが発表されました。\n\n10⽉1⽇以降も",
+      "url": "https://x.com/i/status/2102972195282796627"
     }
   ]
 }

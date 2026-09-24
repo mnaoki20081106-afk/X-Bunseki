@@ -1,37 +1,36 @@
 {
-  "updated_at": "2026-09-24T12:17:03.568877+00:00",
+  "updated_at": "2026-09-24T12:32:39.179326+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 13,
+    "detail_succeeded": 12,
     "detail_failed": 0,
-    "detail_skipped": 27,
-    "invalid_tweets": 21,
+    "detail_skipped": 28,
+    "invalid_tweets": 22,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790253096
+      "reset": 1790254032
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T12:16:35.794184+00:00",
-  "finished_at": "2026-09-24T12:17:03.567368+00:00",
-  "posts_scanned": 571,
-  "posts_with_history": 335,
-  "posts_flagged": 149,
+  "started_at": "2026-09-24T12:32:11.118410+00:00",
+  "finished_at": "2026-09-24T12:32:39.178148+00:00",
+  "posts_scanned": 554,
+  "posts_with_history": 361,
+  "posts_flagged": 136,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 642,
+  "minutes_since_last_notification": 657,
   "reject_reasons": {
-    "古すぎる": 100,
-    "いいね稼ぎ疑い": 3,
-    "失速済み": 5,
-    "いいねが少なすぎる": 223,
-    "初回観測かつ平均速度が低い": 8,
-    "誘導文パターン": 1
+    "古すぎる": 101,
+    "失速済み": 6,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 220,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46572,
-    "posts": 12592,
-    "oldest": "2026-09-23T12:21:12.933195+00:00"
+    "total": 46536,
+    "posts": 12472,
+    "oldest": "2026-09-23T12:36:30.014648+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 10,
-  "watchlist_active": 8442,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 9,
+  "watchlist_active": 8520,
   "top5": [
     {
-      "author": "_sknKfhK_thx",
-      "score": 29.6,
-      "likes": 82522,
-      "likes_per_min": 51.96,
-      "acceleration": 0.81,
-      "measured": true,
-      "age_minutes": 501.7,
-      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
-      "url": "https://x.com/i/status/2102970102455083435"
-    },
-    {
       "author": "ngnchiikawa",
-      "score": 63.5,
-      "likes": 207441,
-      "likes_per_min": 3909.2270522155386,
+      "score": 66.4,
+      "likes": 239035,
+      "likes_per_min": 2026.09,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 53.1,
+      "measured": true,
+      "age_minutes": 68.7,
       "text": "⭐️ https://t.co/b8u9pqzoD5",
       "url": "https://x.com/i/status/2103083017195684094"
     },
     {
       "author": "makotopic",
-      "score": 33.6,
-      "likes": 70109,
-      "likes_per_min": 195.52,
-      "acceleration": 0.94,
+      "score": 33.2,
+      "likes": 72806,
+      "likes_per_min": 172.96,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 436.4,
+      "age_minutes": 452.0,
       "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
       "url": "https://x.com/i/status/2102986537504035278"
     },
     {
-      "author": "info__Johnnys",
-      "score": 29.5,
-      "likes": 93934,
-      "likes_per_min": 25.52,
-      "acceleration": 0.82,
+      "author": "pj_sekai",
+      "score": 80.4,
+      "likes": 42953,
+      "likes_per_min": 906.46,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 502.9,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
+      "age_minutes": 53.0,
+      "text": "【重要なお知らせ】\n2028年頭を目途に、各ユニットのメインストーリーが一度完結します。\nその後、ストーリーは終了せず、",
+      "url": "https://x.com/i/status/2103086961233977391"
     },
     {
-      "author": "jfa_samuraiblue",
-      "score": 73.4,
-      "likes": 5474,
-      "likes_per_min": 476.7827155273663,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.5,
-      "text": "🔹試合終了🔹️\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 3-1 ウルグアイ代表🇺🇾\n\n📺フジテ",
-      "url": "https://x.com/i/status/2103093483452154266"
+      "author": "takeshibengo",
+      "score": 40.1,
+      "likes": 2033,
+      "likes_per_min": 9.94,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 215.3,
+      "text": "timeleszの猪俣周杜さんが勾留されている東京湾岸警察署。\n容疑は違うが、これまで沢尻エリカさんも、酒井法子さんも、",
+      "url": "https://x.com/i/status/2103046111355359738"
+    },
+    {
+      "author": "hypergameinfo",
+      "score": 67.7,
+      "likes": 5405,
+      "likes_per_min": 59.67,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 79.7,
+      "text": "⚔️━━━━━━━━━━━━━━\n　HYG REVENGERS 結成\n━━━━━━━━━━━━━━⚔️\n\n第5勢力「HY",
+      "url": "https://x.com/i/status/2103080243896742385"
     }
   ]
 }

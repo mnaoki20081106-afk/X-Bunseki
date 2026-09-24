@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T07:50:53.308629+00:00",
+  "updated_at": "2026-09-24T08:06:20.105034+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790237122
+      "reset": 1790238051
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T07:50:21.924358+00:00",
-  "finished_at": "2026-09-24T07:50:53.302174+00:00",
-  "posts_scanned": 567,
-  "posts_with_history": 450,
-  "posts_flagged": 73,
+  "started_at": "2026-09-24T08:05:50.930129+00:00",
+  "finished_at": "2026-09-24T08:06:20.092323+00:00",
+  "posts_scanned": 569,
+  "posts_with_history": 418,
+  "posts_flagged": 86,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 376,
+  "minutes_since_last_notification": 391,
   "reject_reasons": {
-    "古すぎる": 142,
-    "いいね稼ぎ疑い": 5,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 5,
-    "誘導文パターン": 4,
-    "いいねが少なすぎる": 206
+    "古すぎる": 133,
+    "いいね稼ぎ疑い": 7,
+    "誘導文パターン": 5,
+    "いいねが少なすぎる": 207,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,66 +48,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46512,
-    "posts": 12795,
-    "oldest": "2026-09-23T07:55:38.436774+00:00"
+    "total": 46279,
+    "posts": 12765,
+    "oldest": "2026-09-23T08:17:17.938369+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 8,
-  "watchlist_active": 7369,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 10,
+  "watchlist_active": 7411,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 36.5,
-      "likes": 53447,
-      "likes_per_min": 191.5,
-      "acceleration": 0.95,
+      "score": 32.3,
+      "likes": 56091,
+      "likes_per_min": 171.14,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 235.6,
+      "age_minutes": 251.0,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
       "author": "HI_y_mks",
-      "score": 43.4,
-      "likes": 53308,
-      "likes_per_min": 227.35,
-      "acceleration": 0.83,
+      "score": 41.1,
+      "likes": 56692,
+      "likes_per_min": 219.03,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 192.5,
+      "age_minutes": 208.0,
       "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
       "url": "https://x.com/i/status/2102980935943905362"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 53.9,
-      "likes": 19152,
-      "likes_per_min": 108.37,
-      "acceleration": 1.0,
+      "score": 49.8,
+      "likes": 20653,
+      "likes_per_min": 97.15,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 173.0,
+      "age_minutes": 188.5,
       "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
       "url": "https://x.com/i/status/2102985840897245302"
     },
     {
-      "author": "modelpress",
-      "score": 39.6,
-      "likes": 6863,
-      "likes_per_min": 15.72,
-      "acceleration": 1.19,
+      "author": "I125608I",
+      "score": 29.3,
+      "likes": 14592,
+      "likes_per_min": 72.32,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 226.6,
-      "text": "WEST.、グループ活動終了を発表\nhttps://t.co/gRJOnOESAI",
-      "url": "https://x.com/i/status/2102972356574732344"
+      "age_minutes": 235.1,
+      "text": "え？なんでこの場に2人も立たせてんの？\nてか戦犯睨んでんじゃねえよ",
+      "url": "https://x.com/i/status/2102974098800508940"
     },
     {
       "author": "indozou",
-      "score": 37.9,
-      "likes": 9400,
-      "likes_per_min": 44.41,
-      "acceleration": 0.99,
+      "score": 33.3,
+      "likes": 9958,
+      "likes_per_min": 36.12,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 188.9,
+      "age_minutes": 204.4,
       "text": "女勇者、問い詰められる。（1/2） https://t.co/Gi5hkLpcQk",
       "url": "https://x.com/i/status/2102981837845139489"
     }

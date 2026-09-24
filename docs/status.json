@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T01:19:39.838755+00:00",
+  "updated_at": "2026-09-24T01:35:12.287646+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790213652
+      "reset": 1790214582
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T01:19:11.702082+00:00",
-  "finished_at": "2026-09-24T01:19:39.837569+00:00",
-  "posts_scanned": 590,
-  "posts_with_history": 453,
-  "posts_flagged": 40,
-  "notified_count": 0,
+  "started_at": "2026-09-24T01:34:41.705230+00:00",
+  "finished_at": "2026-09-24T01:35:12.286357+00:00",
+  "posts_scanned": 598,
+  "posts_with_history": 468,
+  "posts_flagged": 46,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 183,
+    "古すぎる": 176,
     "誘導文パターン": 11,
-    "いいねが少なすぎる": 222,
-    "初回観測かつ平均速度が低い": 10,
-    "失速済み": 5
+    "いいねが少なすぎる": 229,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46510,
-    "posts": 13313,
-    "oldest": "2026-09-23T01:32:08.342883+00:00"
+    "total": 46505,
+    "posts": 13286,
+    "oldest": "2026-09-23T01:46:58.229532+00:00"
   },
-  "viral_discovery_posts": 135,
+  "viral_discovery_posts": 141,
   "million_imp_rescued": 1,
-  "watchlist_active": 6485,
+  "watchlist_active": 6509,
   "top5": [
     {
       "author": "fuma_ten",
-      "score": 41.2,
-      "likes": 4359,
-      "likes_per_min": 45.98,
-      "acceleration": 1.04,
+      "score": 35.8,
+      "likes": 4938,
+      "likes_per_min": 37.27,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 173.5,
+      "age_minutes": 189.0,
       "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
       "url": "https://x.com/i/status/2102887278712668295"
     },
     {
-      "author": "PokemonTCGP_JP",
-      "score": 74.6,
-      "likes": 5915,
-      "likes_per_min": 75.62,
-      "acceleration": 0.83,
+      "author": "dangan_official",
+      "score": 94.7,
+      "likes": 4110,
+      "likes_per_min": 197.12,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 79.4,
-      "text": "◢◤◢◤ 今夜、22:00 ◢◤◢◤\n\n最新情報をお知らせします。\n\n#ポケポケ\n\n♪Remix：原口沙輔（ @sasu",
-      "url": "https://x.com/i/status/2102910957798183382"
+      "age_minutes": 26.2,
+      "text": "『スーパーダンガンロンパ２×２』\nキョウキモードで新キャラクター登場‼️\n\n「東 才空太郎(ひがし さくたろう)」\nCV",
+      "url": "https://x.com/i/status/2102928249840181506"
+    },
+    {
+      "author": "denfaminicogame",
+      "score": 92.7,
+      "likes": 1825,
+      "likes_per_min": 57.75,
+      "acceleration": 1.43,
+      "measured": true,
+      "age_minutes": 44.5,
+      "text": "『逆転裁判5 VR』がいきなり発表！！2027年にMeta VR Glasses、Quest3/3s、Quest Pro",
+      "url": "https://x.com/i/status/2102923642065891610"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 60.9,
-      "likes": 23549,
-      "likes_per_min": 151.82,
-      "acceleration": 0.87,
+      "score": 55.3,
+      "likes": 25911,
+      "likes_per_min": 152.06,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 106.7,
+      "age_minutes": 122.2,
       "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
       "url": "https://x.com/i/status/2102904085741793649"
     },
     {
-      "author": "korimakorima",
-      "score": 50.2,
-      "likes": 14663,
-      "likes_per_min": 108.75,
-      "acceleration": 0.92,
+      "author": "kurikoma_komaru",
+      "score": 58.2,
+      "likes": 2178,
+      "likes_per_min": 17.55,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 163.3,
-      "text": "子供が中学に入ってから藤井さんがお弁当を作っていらっしゃるんですね、大変なことだと思いますと言われた藤井隆さんが「いや、",
-      "url": "https://x.com/i/status/2102889833773588569"
-    },
-    {
-      "author": "soyamanga",
-      "score": 52.1,
-      "likes": 15568,
-      "likes_per_min": 117.59,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 121.7,
-      "text": "誕生日です、大きく育ちました。 https://t.co/3IOuShxHQ6",
-      "url": "https://x.com/i/status/2102900310381609318"
+      "age_minutes": 126.9,
+      "text": "⁉️⁉️⁉️\n……前代未聞の顔バレスクワット開幕！\n\n▼23:30-誕生日カウントダウン▼\nhttps://t.co/F",
+      "url": "https://x.com/i/status/2102902912725012983"
     }
   ]
 }

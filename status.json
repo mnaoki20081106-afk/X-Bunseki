@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T06:48:42.032298+00:00",
+  "updated_at": "2026-09-24T07:04:15.833074+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790233393
+      "reset": 1790234325
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T06:48:13.071597+00:00",
-  "finished_at": "2026-09-24T06:48:42.031359+00:00",
-  "posts_scanned": 567,
-  "posts_with_history": 451,
-  "posts_flagged": 66,
+  "started_at": "2026-09-24T07:03:44.289464+00:00",
+  "finished_at": "2026-09-24T07:04:15.831838+00:00",
+  "posts_scanned": 585,
+  "posts_with_history": 457,
+  "posts_flagged": 65,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 313,
+  "minutes_since_last_notification": 329,
   "reject_reasons": {
-    "古すぎる": 116,
-    "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 230,
-    "誘導文パターン": 7,
-    "初回観測かつ平均速度が低い": 3,
+    "古すぎる": 132,
+    "いいね稼ぎ疑い": 6,
+    "いいねが少なすぎる": 217,
+    "初回観測かつ平均速度が低い": 5,
+    "誘導文パターン": 5,
     "失速済み": 2
   },
   "config": {
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46145,
-    "posts": 12767,
-    "oldest": "2026-09-23T07:03:28.074180+00:00"
+    "total": 46163,
+    "posts": 12751,
+    "oldest": "2026-09-23T07:17:29.006038+00:00"
   },
-  "viral_discovery_posts": 122,
-  "million_imp_rescued": 14,
-  "watchlist_active": 7222,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 11,
+  "watchlist_active": 7264,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 48.6,
-      "likes": 41379,
-      "likes_per_min": 222.35,
-      "acceleration": 0.83,
+      "score": 45.9,
+      "likes": 44519,
+      "likes_per_min": 201.79,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 173.4,
+      "age_minutes": 189.0,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "info__Johnnys",
-      "score": 51.3,
-      "likes": 68185,
-      "likes_per_min": 185.31,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 174.6,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
-    },
-    {
       "author": "oricon",
-      "score": 59.3,
-      "likes": 25587,
-      "likes_per_min": 78.44,
-      "acceleration": 0.79,
+      "score": 56.0,
+      "likes": 26681,
+      "likes_per_min": 70.31,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 163.6,
+      "age_minutes": 179.1,
       "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
       "url": "https://x.com/i/status/2102972578017198305"
     },
     {
-      "author": "info__Johnnys",
-      "score": 51.6,
-      "likes": 12642,
-      "likes_per_min": 22.47,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 165.1,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループ活動を終了することが発表されました。\n\n10⽉1⽇以降も",
-      "url": "https://x.com/i/status/2102972195282796627"
-    },
-    {
       "author": "HI_y_mks",
-      "score": 56.2,
-      "likes": 35744,
-      "likes_per_min": 350.57,
-      "acceleration": 0.86,
+      "score": 53.6,
+      "likes": 40833,
+      "likes_per_min": 327.05,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 130.3,
+      "age_minutes": 145.9,
       "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
       "url": "https://x.com/i/status/2102980935943905362"
+    },
+    {
+      "author": "9taisyo21",
+      "score": 36.6,
+      "likes": 7419,
+      "likes_per_min": 44.09,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 169.1,
+      "text": "友達がダウンタイム中にマスクして出社したら、同僚が急に「〇〇ちゃん顔腫れてるけど大丈夫〜？私、整形した事ないからダウンタ",
+      "url": "https://x.com/i/status/2102975088501100677"
+    },
+    {
+      "author": "k_maru_dau_baby",
+      "score": 64.4,
+      "likes": 14068,
+      "likes_per_min": 116.39,
+      "acceleration": 1.03,
+      "measured": true,
+      "age_minutes": 126.4,
+      "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
+      "url": "https://x.com/i/status/2102985840897245302"
     }
   ]
 }

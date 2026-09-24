@@ -1,37 +1,36 @@
 {
-  "updated_at": "2026-09-24T02:21:51.589107+00:00",
+  "updated_at": "2026-09-24T02:46:00.000576+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "error_code": "schema_changed",
+    "search_succeeded": 4,
+    "search_failed": 28,
     "detail_succeeded": 16,
     "detail_failed": 0,
     "detail_skipped": 24,
-    "invalid_tweets": 19,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790217382
+      "remaining": 45,
+      "reset": 1790218848
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-24T02:21:21.776609+00:00",
-  "finished_at": "2026-09-24T02:21:51.587743+00:00",
-  "posts_scanned": 591,
-  "posts_with_history": 460,
-  "posts_flagged": 62,
+  "started_at": "2026-09-24T02:45:47.677060+00:00",
+  "finished_at": "2026-09-24T02:45:59.999296+00:00",
+  "posts_scanned": 94,
+  "posts_with_history": 57,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 47,
+  "minutes_since_last_notification": 71,
   "reject_reasons": {
-    "古すぎる": 178,
-    "誘導文パターン": 8,
-    "いいねが少なすぎる": 225,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 6,
-    "失速済み": 2
+    "古すぎる": 16,
+    "いいねが少なすぎる": 58,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46479,
-    "posts": 13150,
-    "oldest": "2026-09-23T02:32:17.139870+00:00"
+    "total": 45986,
+    "posts": 13003,
+    "oldest": "2026-09-23T02:47:02.976643+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 2,
-  "watchlist_active": 6586,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6579,
   "top5": [
     {
-      "author": "fuma_ten",
-      "score": 27.5,
-      "likes": 6465,
-      "likes_per_min": 28.09,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 235.7,
-      "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
-      "url": "https://x.com/i/status/2102887278712668295"
-    },
-    {
-      "author": "Starbucks_J",
-      "score": 81.3,
-      "likes": 17931,
-      "likes_per_min": 430.92,
-      "acceleration": 0.84,
-      "measured": true,
-      "age_minutes": 51.8,
-      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
-      "url": "https://x.com/i/status/2102933541097185783"
-    },
-    {
-      "author": "dangan_official",
-      "score": 84.0,
-      "likes": 12928,
-      "likes_per_min": 131.77,
-      "acceleration": 0.67,
-      "measured": true,
-      "age_minutes": 72.9,
-      "text": "『スーパーダンガンロンパ２×２』\nキョウキモードで新キャラクター登場‼️\n\n「東 才空太郎(ひがし さくたろう)」\nCV",
-      "url": "https://x.com/i/status/2102928249840181506"
-    },
-    {
-      "author": "sweetroad5",
-      "score": 80.1,
-      "likes": 2962,
-      "likes_per_min": 86.23,
+      "author": "hanisahharris",
+      "score": 34.6,
+      "likes": 101,
+      "likes_per_min": 0.75,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 45.1,
-      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
-      "url": "https://x.com/i/status/2102935246929117491"
+      "age_minutes": 115.7,
+      "text": "【知名度SSS】\n\n星野リア　　ライブチャット疑惑\n\n備考: おじさんからの密告\n詳細: https://t.co/dv",
+      "url": "https://x.com/i/status/2102923542715396575"
     },
     {
-      "author": "miniminikawatin",
-      "score": 23.3,
-      "likes": 3355,
-      "likes_per_min": 15.202716280329014,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 220.7,
-      "text": "昨日のマチアプ男、奢ってくれたと思ってたのにこれきて無理WWW https://t.co/3MjzmttK96",
-      "url": "https://x.com/i/status/2102891049580720474"
+      "author": "nenemapp",
+      "score": 29.7,
+      "likes": 152,
+      "likes_per_min": 1.74,
+      "acceleration": 1.44,
+      "measured": true,
+      "age_minutes": 158.8,
+      "text": "ゲーム破局ってあるんだᐡඉ́ ̫ ඉ̀ᐡ https://t.co/dcmSt6u32B",
+      "url": "https://x.com/i/status/2102912709897703437"
+    },
+    {
+      "author": "azabu_food",
+      "score": 29.0,
+      "likes": 375,
+      "likes_per_min": 2.28,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 152.6,
+      "text": "「つついたから、死文化しかけた敵国条項が復活した」というのは、国際法が記者会見の一言でオン・オフできると思っているのでし",
+      "url": "https://x.com/i/status/2102914255888757106"
+    },
+    {
+      "author": "G_T_S_ultra",
+      "score": 24.2,
+      "likes": 137,
+      "likes_per_min": 1.2,
+      "acceleration": 0.73,
+      "measured": true,
+      "age_minutes": 109.0,
+      "text": "マオウドライバー、明らかに胸ベルトもいける構造なのに腰での使用だけしか解禁されてないのが非常に匂う\n絶対強化かなんかで胸",
+      "url": "https://x.com/i/status/2102925230847185388"
+    },
+    {
+      "author": "gokurakuyu_spa",
+      "score": 37.8,
+      "likes": 245,
+      "likes_per_min": 1.49,
+      "acceleration": 1.23,
+      "measured": true,
+      "age_minutes": 106.0,
+      "text": "【#ホロライブ×極楽湯 RAKUSPA】\n～ふためぐり～\n\n／\n9月24日(木)～9月27日(日)\n#風真いろは の湯を",
+      "url": "https://x.com/i/status/2102925993786716302"
     }
   ]
 }

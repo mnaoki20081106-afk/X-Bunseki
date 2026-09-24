@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:50:12.404799+00:00",
+  "updated_at": "2026-09-24T14:05:43.451684+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 12,
     "detail_failed": 0,
     "detail_skipped": 28,
-    "invalid_tweets": 22,
+    "invalid_tweets": 23,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790258684
+      "reset": 1790259614
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T13:49:43.360350+00:00",
-  "finished_at": "2026-09-24T13:50:12.403735+00:00",
-  "posts_scanned": 530,
-  "posts_with_history": 361,
-  "posts_flagged": 105,
-  "notified_count": 1,
+  "started_at": "2026-09-24T14:05:13.302451+00:00",
+  "finished_at": "2026-09-24T14:05:43.450502+00:00",
+  "posts_scanned": 566,
+  "posts_with_history": 398,
+  "posts_flagged": 94,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 735,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
     "古すぎる": 100,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 219,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 1
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 4,
+    "いいねが少なすぎる": 253,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46605,
-    "posts": 12230,
+    "total": 47171,
+    "posts": 12398,
     "oldest": "2026-09-23T15:03:42.578015+00:00"
   },
-  "viral_discovery_posts": 117,
-  "million_imp_rescued": 6,
-  "watchlist_active": 8790,
+  "viral_discovery_posts": 116,
+  "million_imp_rescued": 7,
+  "watchlist_active": 8835,
   "top5": [
     {
       "author": "info__Johnnys",
-      "score": 29.0,
-      "likes": 95804,
-      "likes_per_min": 18.93,
-      "acceleration": 0.97,
+      "score": 28.5,
+      "likes": 96078,
+      "likes_per_min": 17.65,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 596.1,
+      "age_minutes": 611.6,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "cheche_xyz",
-      "score": 51.6,
-      "likes": 24914,
-      "likes_per_min": 269.49,
-      "acceleration": 0.84,
+      "author": "moyoribiyori",
+      "score": 24.5,
+      "likes": 10118,
+      "likes_per_min": 35.56,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 86.4,
-      "text": "塩貝が決める ↓ 相手選手が抗議する ↓ 塩貝もその場に入ろうとする ↓ 久保に「お前は来るな」と追いやられる ↓ 素直",
-      "url": "https://x.com/i/status/2103098075824934969"
-    },
-    {
-      "author": "Sakusan_Daaria",
-      "score": 31.5,
-      "likes": 20130,
-      "likes_per_min": 143.57,
-      "acceleration": 1.01,
-      "measured": true,
-      "age_minutes": 228.2,
-      "text": "運がいい人\n\n男｢中に出すぞ！！｣\n\n女｢出して♡｣\n\nちんぽ汁ﾋﾞｭﾙﾙﾙﾙﾙ\n\n精子3億個排出\n\n3億個の卵子と結び",
-      "url": "https://x.com/i/status/2103062381362569687"
-    },
-    {
-      "author": "konziki_nino",
-      "score": 57.3,
-      "likes": 9447,
-      "likes_per_min": 92.79,
-      "acceleration": 1.11,
-      "measured": true,
-      "age_minutes": 147.5,
-      "text": "は？？Vtuber？？ま？？ https://t.co/vBfzuPwNRG",
-      "url": "https://x.com/i/status/2103082694838296591"
+      "age_minutes": 239.5,
+      "text": "前に描いたお気に入りの４コマ「元気の出ないバー」\n\n癒されたい時は、この店に来てください。 https://t.co/t",
+      "url": "https://x.com/i/status/2103063449123291386"
     },
     {
       "author": "AORINGOHUZIN",
-      "score": 94.5,
-      "likes": 11585,
-      "likes_per_min": 579.5746091130296,
+      "score": 96.8,
+      "likes": 13877,
+      "likes_per_min": 147.65,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 20.0,
+      "measured": true,
+      "age_minutes": 35.5,
       "text": "【NEWS🍏】\n⁡\nRingo Jam 10周年を記念して\nRingo Jamの公式キャラクター「#メメル」に、ついに声",
       "url": "https://x.com/i/status/2103114780831809887"
+    },
+    {
+      "author": "PokemonTCGP_JP",
+      "score": 72.4,
+      "likes": 10111,
+      "likes_per_min": 80.98,
+      "acceleration": 0.62,
+      "measured": true,
+      "age_minutes": 64.9,
+      "text": "◤￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣\n  拡張パック「#ハイクラスパックMEGA」\n    　9月30日（水）10:0",
+      "url": "https://x.com/i/status/2103107393261281605"
+    },
+    {
+      "author": "Nui_Sociere",
+      "score": 41.2,
+      "likes": 8382,
+      "likes_per_min": 41.87,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 139.0,
+      "text": "なんでこんな真似すんの？\n姿消されたらお前のこと助けてやれないよ\nもう殺すしかなくなっちゃったよ",
+      "url": "https://x.com/i/status/2103088738264039676"
     }
   ]
 }

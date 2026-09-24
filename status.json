@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T08:37:37.514660+00:00",
+  "updated_at": "2026-09-24T09:01:46.119248+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 15,
     "detail_failed": 0,
     "detail_skipped": 25,
-    "invalid_tweets": 21,
+    "invalid_tweets": 20,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790239928
+      "reset": 1790241379
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T08:37:06.995273+00:00",
-  "finished_at": "2026-09-24T08:37:37.513439+00:00",
-  "posts_scanned": 563,
-  "posts_with_history": 403,
-  "posts_flagged": 88,
+  "started_at": "2026-09-24T09:01:19.023919+00:00",
+  "finished_at": "2026-09-24T09:01:46.118418+00:00",
+  "posts_scanned": 587,
+  "posts_with_history": 372,
+  "posts_flagged": 90,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 422,
+  "minutes_since_last_notification": 447,
   "reject_reasons": {
-    "古すぎる": 119,
-    "いいね稼ぎ疑い": 4,
-    "誘導文パターン": 9,
-    "いいねが少なすぎる": 225,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 1
+    "古すぎる": 125,
+    "いいね稼ぎ疑い": 3,
+    "誘導文パターン": 5,
+    "いいねが少なすぎる": 245,
+    "失速済み": 3,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46257,
-    "posts": 12716,
-    "oldest": "2026-09-23T08:49:30.490585+00:00"
+    "total": 46248,
+    "posts": 12714,
+    "oldest": "2026-09-23T09:05:00.318718+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 5,
-  "watchlist_active": 7519,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 6,
+  "watchlist_active": 7591,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.5,
-      "likes": 61106,
-      "likes_per_min": 156.2,
-      "acceleration": 0.95,
+      "score": 32.3,
+      "likes": 64651,
+      "likes_per_min": 146.81,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 282.3,
+      "age_minutes": 306.5,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "su_pa_inusama",
-      "score": 38.5,
-      "likes": 13932,
-      "likes_per_min": 253.34,
-      "acceleration": 1.22,
+      "author": "info__Johnnys",
+      "score": 34.1,
+      "likes": 84337,
+      "likes_per_min": 110.98,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 154.3,
+      "age_minutes": 307.6,
+      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
+      "url": "https://x.com/i/status/2102969804177236087"
+    },
+    {
+      "author": "su_pa_inusama",
+      "score": 33.9,
+      "likes": 20319,
+      "likes_per_min": 264.5,
+      "acceleration": 1.04,
+      "measured": true,
+      "age_minutes": 178.4,
       "text": "こいつは何も間違っていない",
       "url": "https://x.com/i/status/2103002329448681747"
     },
     {
       "author": "Runninzin",
-      "score": 79.1,
-      "likes": 5622,
-      "likes_per_min": 62.3,
-      "acceleration": 0.84,
+      "score": 70.3,
+      "likes": 7021,
+      "likes_per_min": 57.94,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 106.4,
+      "age_minutes": 130.5,
       "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
       "url": "https://x.com/i/status/2103014380778733883"
     },
     {
-      "author": "livedoornews",
-      "score": 49.0,
-      "likes": 7546,
-      "likes_per_min": 27.4,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 202.6,
-      "text": "【ケガなし】声優・稲田徹、高速道路で追突被害 「前のトラックがゆっくり後退」\nhttps://t.co/NDmoc59f",
-      "url": "https://x.com/i/status/2102990159381971415"
-    },
-    {
-      "author": "monst_mixi",
-      "score": 69.9,
-      "likes": 6444,
-      "likes_per_min": 37.25,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 95.4,
-      "text": "📺••┈┈┈┈┈┈┈┈••☁︎\n\n#モンストニュースフラッシュ ！\nこのあと18:00頃 公開\n\n☁︎••┈┈┈┈┈┈┈",
-      "url": "https://x.com/i/status/2103017137644486669"
+      "author": "0hHHIC6wJ8mD1xI",
+      "score": 43.7,
+      "likes": 11338,
+      "likes_per_min": 86.2346994563949,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 131.5,
+      "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
+      "url": "https://x.com/i/status/2103014139442729284"
     }
   ]
 }

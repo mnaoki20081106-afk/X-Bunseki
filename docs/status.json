@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-09-24T00:33:14.790541+00:00",
+  "updated_at": "2026-09-24T00:48:29.965225+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 19,
+    "error_code": "schema_changed",
+    "search_succeeded": 8,
+    "search_failed": 28,
+    "detail_succeeded": 18,
     "detail_failed": 0,
-    "detail_skipped": 21,
-    "invalid_tweets": 16,
+    "detail_skipped": 22,
+    "invalid_tweets": 17,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790210864
+      "remaining": 42,
+      "reset": 1790211795
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-24T00:32:43.215051+00:00",
-  "finished_at": "2026-09-24T00:33:14.789611+00:00",
-  "posts_scanned": 602,
-  "posts_with_history": 481,
-  "posts_flagged": 46,
+  "started_at": "2026-09-24T00:48:14.648478+00:00",
+  "finished_at": "2026-09-24T00:48:29.963459+00:00",
+  "posts_scanned": 173,
+  "posts_with_history": 97,
+  "posts_flagged": 2,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 16,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 207,
-    "誘導文パターン": 9,
-    "いいねが少なすぎる": 223,
-    "失速済み": 3,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 21,
+    "いいねが少なすぎる": 119,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46644,
-    "posts": 13406,
-    "oldest": "2026-09-23T00:47:08.800643+00:00"
+    "total": 46216,
+    "posts": 13320,
+    "oldest": "2026-09-23T01:02:32.237885+00:00"
   },
-  "viral_discovery_posts": 139,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6427,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 6421,
   "top5": [
     {
-      "author": "fuma_ten",
+      "author": "Suzuna_Nanase",
       "score": 38.7,
-      "likes": 2275,
-      "likes_per_min": 17.905339639443888,
+      "likes": 195,
+      "likes_per_min": 35.750907804926435,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 127.1,
-      "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
-      "url": "https://x.com/i/status/2102887278712668295"
+      "age_minutes": 5.5,
+      "text": "おはすずありがとうございました！\n開始遅れてしまってごめんない😭\n今日も一日やるぞーーーーー！！！！！！！！！！",
+      "url": "https://x.com/i/status/2102921717073269098"
     },
     {
-      "author": "oliverD_23",
-      "score": 27.8,
-      "likes": 25444,
-      "likes_per_min": 87.88,
-      "acceleration": 0.98,
-      "measured": true,
-      "age_minutes": 229.9,
-      "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
-      "url": "https://x.com/i/status/2102861406941196616"
+      "author": "108_towasama",
+      "score": 76.9,
+      "likes": 535,
+      "likes_per_min": 37.27078393858689,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 14.4,
+      "text": "はやおきっ！\n今日は収録だーーーっ",
+      "url": "https://x.com/i/status/2102919479718207508"
     },
     {
-      "author": "poke_times",
-      "score": 60.8,
-      "likes": 8143,
-      "likes_per_min": 54.79,
-      "acceleration": 0.86,
+      "author": "zibumitunari",
+      "score": 29.7,
+      "likes": 1666,
+      "likes_per_min": 4.92,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 93.2,
-      "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
-      "url": "https://x.com/i/status/2102895793166328280"
+      "age_minutes": 138.3,
+      "text": "本日9月24日。捕縛された儂は大津城に護送されて城の門前で生き曝しになりました。曝された上での諸将からの罵詈雑言の嵐…。",
+      "url": "https://x.com/i/status/2102888290945028220"
     },
     {
-      "author": "ryujimovie_jp",
-      "score": 55.3,
-      "likes": 11260,
-      "likes_per_min": 25.04,
-      "acceleration": 0.85,
+      "author": "oricon",
+      "score": 49.4,
+      "likes": 150,
+      "likes_per_min": 2.69,
+      "acceleration": 1.61,
       "measured": true,
-      "age_minutes": 153.2,
-      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
-      "url": "https://x.com/i/status/2102880688483520695"
+      "age_minutes": 78.5,
+      "text": "有村架純、“連絡先全消去”の真相を明かす\n写真も全消去…“おちゃめな素顔”\nhttps://t.co/kWJsbtjTf",
+      "url": "https://x.com/i/status/2102903338840781047"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 65.9,
-      "likes": 15821,
-      "likes_per_min": 212.27,
-      "acceleration": 0.84,
+      "author": "p_ka2295079",
+      "score": 50.1,
+      "likes": 341,
+      "likes_per_min": 2.62,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 60.3,
-      "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
-      "url": "https://x.com/i/status/2102904085741793649"
+      "age_minutes": 105.1,
+      "text": "意味がわからない🥹🥹\n\n質問者さんがここに挙げてる例は離婚する理由にはなるけど不倫する理由にはならなくない？？🥹🥹当たり",
+      "url": "https://x.com/i/status/2102896640525045863"
     }
   ]
 }

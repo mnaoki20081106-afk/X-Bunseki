@@ -1,37 +1,39 @@
 {
-  "updated_at": "2026-09-23T23:46:43.284840+00:00",
+  "updated_at": "2026-09-24T00:02:10.735114+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "incomplete_observations",
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 22,
+    "error_code": "schema_changed",
+    "search_succeeded": 35,
+    "search_failed": 1,
+    "detail_succeeded": 21,
     "detail_failed": 0,
-    "detail_skipped": 18,
-    "invalid_tweets": 13,
+    "detail_skipped": 19,
+    "invalid_tweets": 14,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790208075
+      "remaining": 15,
+      "reset": 1790209005
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-23T23:46:14.336257+00:00",
-  "finished_at": "2026-09-23T23:46:43.283768+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 444,
-  "posts_flagged": 57,
-  "notified_count": 1,
+  "started_at": "2026-09-24T00:01:45.068106+00:00",
+  "finished_at": "2026-09-24T00:02:10.733898+00:00",
+  "posts_scanned": 581,
+  "posts_with_history": 446,
+  "posts_flagged": 44,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 414,
+  "minutes_since_last_notification": 15,
   "reject_reasons": {
-    "古すぎる": 240,
-    "誘導文パターン": 5,
-    "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 196,
+    "古すぎる": 229,
+    "誘導文パターン": 6,
+    "いいねが少なすぎる": 194,
     "いいね稼ぎ疑い": 1,
-    "失速済み": 4
+    "失速済み": 9,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 47531,
-    "posts": 13688,
-    "oldest": "2026-09-22T23:47:10.312833+00:00"
+    "total": 47519,
+    "posts": 13662,
+    "oldest": "2026-09-23T00:02:43.411292+00:00"
   },
-  "viral_discovery_posts": 134,
+  "viral_discovery_posts": 139,
   "million_imp_rescued": 0,
-  "watchlist_active": 6387,
+  "watchlist_active": 6398,
   "top5": [
     {
-      "author": "Fuwa_Minato",
-      "score": 79.3,
-      "likes": 4258,
-      "likes_per_min": 310.0113385664189,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 13.7,
-      "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
-      "url": "https://x.com/i/status/2102904085741793649"
-    },
-    {
-      "author": "YahooNewsTopics",
-      "score": 53.9,
-      "likes": 2467,
-      "likes_per_min": 14.8,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 159.7,
-      "text": "【DeNA藤浪晋太郎 来季戦力構想外】\nhttps://t.co/e1AbSFp2zR",
-      "url": "https://x.com/i/status/2102867349946896681"
-    },
-    {
-      "author": "poke_times",
-      "score": 70.6,
-      "likes": 5032,
-      "likes_per_min": 116.41,
-      "acceleration": 1.1,
-      "measured": true,
-      "age_minutes": 46.7,
-      "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
-      "url": "https://x.com/i/status/2102895793166328280"
-    },
-    {
       "author": "oliverD_23",
-      "score": 33.4,
-      "likes": 21090,
-      "likes_per_min": 118.28,
-      "acceleration": 0.81,
+      "score": 31.5,
+      "likes": 22689,
+      "likes_per_min": 103.38,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 183.3,
+      "age_minutes": 198.8,
       "text": "おしゃれ番長一生の不覚。\n違うんだ、自分の目線から見た時一部がしか見えなかったのと位置的に破れているように見えたんだ..",
       "url": "https://x.com/i/status/2102861406941196616"
     },
     {
-      "author": "ryujimovie_jp",
-      "score": 71.8,
-      "likes": 9894,
-      "likes_per_min": 46.08,
-      "acceleration": 0.79,
+      "author": "happylin15",
+      "score": 27.4,
+      "likes": 2907,
+      "likes_per_min": 15.545257550187209,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 187.0,
+      "text": "流石に2度見した😅 https://t.co/lLZWEgPCU5",
+      "url": "https://x.com/i/status/2102864372163138002"
+    },
+    {
+      "author": "hanabi_support2",
+      "score": 35.3,
+      "likes": 2182,
+      "likes_per_min": 12.56292234463577,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 173.7,
+      "text": "悔しいけど…これが子育てのリアル… https://t.co/lVlkJSyNyB",
+      "url": "https://x.com/i/status/2102867725488193760"
+    },
+    {
+      "author": "Fuwa_Minato",
+      "score": 79.7,
+      "likes": 8608,
+      "likes_per_min": 281.24,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 106.7,
-      "text": "◤ 本編挿入歌「メロディー」版 特別予告 解禁 ◢\n\n玉置浩二さんの名曲「メロディー」。\n\n竜二にとって大切な“家族”の",
-      "url": "https://x.com/i/status/2102880688483520695"
+      "age_minutes": 29.2,
+      "text": "れお君、レヨン君\n最高の朝をありがとう忘れられない朝になったよ\nそんで俺の髪は何があった https://t.co/vv",
+      "url": "https://x.com/i/status/2102904085741793649"
+    },
+    {
+      "author": "poke_times",
+      "score": 63.0,
+      "likes": 6299,
+      "likes_per_min": 81.91,
+      "acceleration": 0.7,
+      "measured": true,
+      "age_minutes": 62.2,
+      "text": "#シルバーウィーク 明けました https://t.co/ROrJb83MJW",
+      "url": "https://x.com/i/status/2102895793166328280"
     }
   ]
 }

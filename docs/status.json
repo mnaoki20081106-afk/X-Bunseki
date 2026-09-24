@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-24T21:47:42.584335+00:00",
+  "updated_at": "2026-09-24T22:03:06.903916+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790287326
+      "remaining": 14,
+      "reset": 1790288257
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T21:47:05.583570+00:00",
-  "finished_at": "2026-09-24T21:47:42.583328+00:00",
-  "posts_scanned": 614,
-  "posts_with_history": 501,
-  "posts_flagged": 9,
+  "started_at": "2026-09-24T22:02:36.289183+00:00",
+  "finished_at": "2026-09-24T22:03:06.902511+00:00",
+  "posts_scanned": 625,
+  "posts_with_history": 496,
+  "posts_flagged": 21,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 282,
+  "minutes_since_last_notification": 298,
   "reject_reasons": {
-    "古すぎる": 408,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 145,
+    "古すぎる": 403,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 149,
     "初回観測かつ平均速度が低い": 6
   },
   "config": {
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49926,
-    "posts": 12402,
-    "oldest": "2026-09-23T21:49:23.419979+00:00"
+    "total": 49945,
+    "posts": 12383,
+    "oldest": "2026-09-23T22:04:50.138698+00:00"
   },
-  "viral_discovery_posts": 129,
+  "viral_discovery_posts": 138,
   "million_imp_rescued": 0,
-  "watchlist_active": 4244,
+  "watchlist_active": 4232,
   "top5": [
     {
-      "author": "niyabero",
-      "score": 33.9,
-      "likes": 3542,
-      "likes_per_min": 49.35,
-      "acceleration": 1.04,
+      "author": "30R9gmaMUy3guDJ",
+      "score": 56.7,
+      "likes": 2331,
+      "likes_per_min": 35.78,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 227.5,
-      "text": "悪の幹部は圧縮しちゃおうね～♪ https://t.co/VSxjtX0NhL",
-      "url": "https://x.com/i/status/2103182737607885278"
+      "age_minutes": 74.2,
+      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
+      "url": "https://x.com/i/status/2103225176305582231"
+    },
+    {
+      "author": "30R9gmaMUy3guDJ",
+      "score": 43.7,
+      "likes": 2205,
+      "likes_per_min": 20.26,
+      "acceleration": 1.61,
+      "measured": true,
+      "age_minutes": 135.5,
+      "text": "鈴木誠也が第26号ホームラン🔥\n\n左中間スタンドに同点弾を放つ！\n①空三振②左安③本塁打\n\n【シーズン成績】\n打率.27",
+      "url": "https://x.com/i/status/2103209754181108020"
     },
     {
       "author": "anime_chiikawa",
-      "score": 80.7,
-      "likes": 2759,
-      "likes_per_min": 78.26,
-      "acceleration": 1.32,
+      "score": 71.8,
+      "likes": 3788,
+      "likes_per_min": 66.79,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 47.7,
+      "age_minutes": 63.1,
       "text": "／\n #アニメちいかわ \n10月2日(金)からリバイバル放送が決定✨\n ＼\n\n地上波×配信で人気のシリーズ回を\n一気にお",
       "url": "https://x.com/i/status/2103227986782863371"
     },
     {
       "author": "30R9gmaMUy3guDJ",
       "score": 32.3,
-      "likes": 3381,
-      "likes_per_min": 28.97,
-      "acceleration": 1.12,
+      "likes": 3949,
+      "likes_per_min": 36.87,
+      "acceleration": 1.27,
       "measured": true,
-      "age_minutes": 188.2,
+      "age_minutes": 203.6,
       "text": "PCAが史上7人目の「40-40」達成🔥\n\n今季40個目の盗塁成功！\n\n【シーズン成績】\n打率.280  45本塁打 1",
       "url": "https://x.com/i/status/2103192612224237624"
     },
     {
-      "author": "wni_jp",
-      "score": 72.6,
-      "likes": 910,
-      "likes_per_min": 19.6,
-      "acceleration": 0.97,
+      "author": "k_maru_dau_baby",
+      "score": 50.0,
+      "likes": 2699,
+      "likes_per_min": 31.55,
+      "acceleration": 2.87,
       "measured": true,
-      "age_minutes": 51.6,
-      "text": "【台風情報】\n9月25日(金)3時現在、台風26号(スリゲ)はフィリピンの東を西寄りに進んでいます。今後は発達しながら進",
-      "url": "https://x.com/i/status/2103227004925706430"
-    },
-    {
-      "author": "Kanae_2434",
-      "score": 27.7,
-      "likes": 2556,
-      "likes_per_min": 15.13,
-      "acceleration": 1.13,
-      "measured": true,
-      "age_minutes": 227.5,
-      "text": "1赴き https://t.co/yjr0o5lomP",
-      "url": "https://x.com/i/status/2103182732247634197"
+      "age_minutes": 119.5,
+      "text": "藤井流星＆小瀧望、ユニット結成が浮上\n複数のレコード会社が興味を示している\nhttps://t.co/077456nk0",
+      "url": "https://x.com/i/status/2103213798173921382"
     }
   ]
 }

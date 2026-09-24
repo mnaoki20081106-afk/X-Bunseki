@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T23:36:21.649532+00:00",
+  "updated_at": "2026-09-24T23:51:51.432373+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_unavailable": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790293848
+      "remaining": 15,
+      "reset": 1790294779
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T23:35:46.863147+00:00",
-  "finished_at": "2026-09-24T23:36:21.648495+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 486,
-  "posts_flagged": 44,
-  "notified_count": 0,
+  "started_at": "2026-09-24T23:51:19.069461+00:00",
+  "finished_at": "2026-09-24T23:51:51.431411+00:00",
+  "posts_scanned": 599,
+  "posts_with_history": 494,
+  "posts_flagged": 46,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 391,
+  "minutes_since_last_notification": 406,
   "reject_reasons": {
-    "古すぎる": 258,
-    "誘導文パターン": 7,
-    "いいねが少なすぎる": 211,
-    "初回観測かつ平均速度が低い": 6,
-    "失速済み": 7,
+    "古すぎる": 240,
+    "誘導文パターン": 9,
+    "いいねが少なすぎる": 200,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 6,
     "いいね稼ぎ疑い": 1
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50320,
-    "posts": 12349,
-    "oldest": "2026-09-23T23:46:42.098890+00:00"
+    "total": 50322,
+    "posts": 12340,
+    "oldest": "2026-09-24T00:02:10.142184+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4224,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4233,
   "top5": [
     {
-      "author": "9taisyo21",
-      "score": 25.8,
-      "likes": 42740,
-      "likes_per_min": 36.26,
-      "acceleration": 0.88,
+      "author": "JINJIN1027",
+      "score": 33.2,
+      "likes": 15610,
+      "likes_per_min": 17.87,
+      "acceleration": 1.43,
       "measured": true,
-      "age_minutes": 896.3,
-      "text": "友達の旦那が「出張」って偽って不倫相手と高級温泉旅館に行ってたらしいのね。友達は泳がせてて、旦那が旅館の部屋で寛いでる時",
-      "url": "https://x.com/i/status/2103041761472135534"
+      "age_minutes": 620.8,
+      "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
+      "url": "https://x.com/i/status/2103115002001698873"
     },
     {
       "author": "tkzwgrs",
-      "score": 58.2,
-      "likes": 24038,
-      "likes_per_min": 445.48,
-      "acceleration": 0.87,
+      "score": 58.1,
+      "likes": 29958,
+      "likes_per_min": 382.16,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 66.6,
+      "age_minutes": 82.1,
       "text": "解説「ヤバいヤバいヤバいｗｗｗうぉおおおおおおおお！！！！」\n\n【朗報】現役高校生・大橋信(17)さん、200m平泳ぎで",
       "url": "https://x.com/i/status/2103250564960444657"
     },
     {
       "author": "nigeyama369",
-      "score": 57.1,
-      "likes": 3678,
-      "likes_per_min": 40.77,
-      "acceleration": 0.85,
+      "score": 54.2,
+      "likes": 4330,
+      "likes_per_min": 42.09,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 159.5,
+      "age_minutes": 175.0,
       "text": "これが厳しいリアル… https://t.co/QA7f7iiiZU",
       "url": "https://x.com/i/status/2103227175206084619"
     },
     {
-      "author": "oricon_anime_",
-      "score": 55.4,
-      "likes": 13125,
-      "likes_per_min": 73.15,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 155.3,
-      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
-      "url": "https://x.com/i/status/2103228242304057471"
-    },
-    {
       "author": "chiikawa_market",
-      "score": 88.8,
-      "likes": 12388,
-      "likes_per_min": 206.61,
-      "acceleration": 0.76,
+      "score": 84.4,
+      "likes": 14684,
+      "likes_per_min": 148.22,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 59.5,
+      "age_minutes": 75.0,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
+    },
+    {
+      "author": "oricon_anime_",
+      "score": 50.8,
+      "likes": 14031,
+      "likes_per_min": 58.49,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 170.8,
+      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
+      "url": "https://x.com/i/status/2103228242304057471"
     }
   ]
 }

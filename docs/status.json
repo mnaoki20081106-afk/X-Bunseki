@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:19:13.405030+00:00",
+  "updated_at": "2026-09-24T13:34:46.735613+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -14,24 +14,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790256824
+      "reset": 1790257755
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T13:18:43.232667+00:00",
-  "finished_at": "2026-09-24T13:19:13.404067+00:00",
-  "posts_scanned": 569,
-  "posts_with_history": 383,
-  "posts_flagged": 115,
+  "started_at": "2026-09-24T13:34:14.535928+00:00",
+  "finished_at": "2026-09-24T13:34:46.734087+00:00",
+  "posts_scanned": 563,
+  "posts_with_history": 420,
+  "posts_flagged": 107,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 704,
+  "minutes_since_last_notification": 720,
   "reject_reasons": {
-    "古すぎる": 91,
-    "失速済み": 8,
+    "古すぎる": 102,
     "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 251,
-    "初回観測かつ平均速度が低い": 7
+    "失速済み": 10,
+    "いいねが少なすぎる": 237,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46440,
-    "posts": 12423,
-    "oldest": "2026-09-23T13:23:00.930027+00:00"
+    "total": 46667,
+    "posts": 12445,
+    "oldest": "2026-09-23T13:38:45.070767+00:00"
   },
-  "viral_discovery_posts": 114,
-  "million_imp_rescued": 6,
-  "watchlist_active": 8682,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 10,
+  "watchlist_active": 8729,
   "top5": [
     {
-      "author": "ngnchiikawa",
-      "score": 59.5,
-      "likes": 303193,
-      "likes_per_min": 1144.12,
-      "acceleration": 0.77,
+      "author": "_sknKfhK_thx",
+      "score": 27.4,
+      "likes": 85283,
+      "likes_per_min": 35.53,
+      "acceleration": 0.68,
       "measured": true,
-      "age_minutes": 115.2,
-      "text": "⭐️ https://t.co/b8u9pqzoD5",
-      "url": "https://x.com/i/status/2103083017195684094"
+      "age_minutes": 579.5,
+      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
+      "url": "https://x.com/i/status/2102970102455083435"
     },
     {
       "author": "info__Johnnys",
-      "score": 30.2,
-      "likes": 95207,
-      "likes_per_min": 21.76,
-      "acceleration": 1.09,
+      "score": 28.8,
+      "likes": 95512,
+      "likes_per_min": 19.61,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 565.1,
+      "age_minutes": 580.7,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
-      "author": "makotopic",
-      "score": 33.4,
-      "likes": 80270,
-      "likes_per_min": 160.26,
-      "acceleration": 0.93,
+      "author": "ngnchiikawa",
+      "score": 53.7,
+      "likes": 318188,
+      "likes_per_min": 964.13,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 498.6,
-      "text": "K-POPのイベントの大トリにAdoさんが呼ばれたせいで撮影禁止になった上にK-POPのみなさんの出番が減り、しかもAd",
-      "url": "https://x.com/i/status/2102986537504035278"
+      "age_minutes": 130.8,
+      "text": "⭐️ https://t.co/b8u9pqzoD5",
+      "url": "https://x.com/i/status/2103083017195684094"
     },
     {
-      "author": "cheche_xyz",
-      "score": 56.2,
-      "likes": 15779,
-      "likes_per_min": 393.99,
-      "acceleration": 1.32,
+      "author": "0hHHIC6wJ8mD1xI",
+      "score": 28.3,
+      "likes": 85738,
+      "likes_per_min": 173.99,
+      "acceleration": 0.54,
       "measured": true,
-      "age_minutes": 55.4,
-      "text": "塩貝が決める ↓ 相手選手が抗議する ↓ 塩貝もその場に入ろうとする ↓ 久保に「お前は来るな」と追いやられる ↓ 素直",
-      "url": "https://x.com/i/status/2103098075824934969"
+      "age_minutes": 404.5,
+      "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
+      "url": "https://x.com/i/status/2103014139442729284"
     },
     {
-      "author": "jfa_samuraiblue",
-      "score": 67.3,
-      "likes": 19900,
-      "likes_per_min": 119.38,
-      "acceleration": 0.56,
+      "author": "bad_texter",
+      "score": 27.0,
+      "likes": 29706,
+      "likes_per_min": 88.24,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 73.6,
-      "text": "🔹試合終了🔹️\n\n🏆キリンチャレンジカップ2026\n🇯🇵#SAMURAIBLUE 3-1 ウルグアイ代表🇺🇾\n\n📺フジテ",
-      "url": "https://x.com/i/status/2103093483452154266"
+      "age_minutes": 429.8,
+      "text": "国よ！気付け！！！ https://t.co/85m9IKSMUl",
+      "url": "https://x.com/i/status/2103007766541643935"
     }
   ]
 }

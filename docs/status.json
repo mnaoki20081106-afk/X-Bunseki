@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T09:01:46.119248+00:00",
+  "updated_at": "2026-09-24T09:17:22.555927+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,28 @@
     "detail_succeeded": 15,
     "detail_failed": 0,
     "detail_skipped": 25,
-    "invalid_tweets": 20,
+    "invalid_tweets": 22,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790241379
+      "reset": 1790242314
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T09:01:19.023919+00:00",
-  "finished_at": "2026-09-24T09:01:46.118418+00:00",
-  "posts_scanned": 587,
-  "posts_with_history": 372,
-  "posts_flagged": 90,
+  "started_at": "2026-09-24T09:16:52.967857+00:00",
+  "finished_at": "2026-09-24T09:17:22.551540+00:00",
+  "posts_scanned": 563,
+  "posts_with_history": 360,
+  "posts_flagged": 103,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 447,
+  "minutes_since_last_notification": 462,
   "reject_reasons": {
-    "古すぎる": 125,
-    "いいね稼ぎ疑い": 3,
+    "古すぎる": 124,
     "誘導文パターン": 5,
-    "いいねが少なすぎる": 245,
-    "失速済み": 3,
-    "初回観測かつ平均速度が低い": 7
+    "初回観測かつ平均速度が低い": 10,
+    "いいねが少なすぎる": 233,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +47,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46248,
-    "posts": 12714,
-    "oldest": "2026-09-23T09:05:00.318718+00:00"
+    "total": 46232,
+    "posts": 12629,
+    "oldest": "2026-09-23T09:36:04.310345+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 6,
-  "watchlist_active": 7591,
+  "viral_discovery_posts": 125,
+  "million_imp_rescued": 5,
+  "watchlist_active": 7654,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.3,
-      "likes": 64651,
-      "likes_per_min": 146.81,
-      "acceleration": 0.94,
+      "score": 32.4,
+      "likes": 66879,
+      "likes_per_min": 142.79,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 306.5,
+      "age_minutes": 322.1,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "info__Johnnys",
-      "score": 34.1,
-      "likes": 84337,
-      "likes_per_min": 110.98,
-      "acceleration": 0.71,
+      "author": "hex6u",
+      "score": 48.4,
+      "likes": 12784,
+      "likes_per_min": 185.35,
+      "acceleration": 1.53,
       "measured": true,
-      "age_minutes": 307.6,
-      "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
-      "url": "https://x.com/i/status/2102969804177236087"
+      "age_minutes": 204.2,
+      "text": "【悲報】大阪・道頓堀にて、配信中の女性に対し外国人観光客がカメラ前で堂々と「ツリ目ポーズ」を披露\n↓\n配信者女性、顔色ひ",
+      "url": "https://x.com/i/status/2102999765499982071"
     },
     {
       "author": "su_pa_inusama",
-      "score": 33.9,
-      "likes": 20319,
-      "likes_per_min": 264.5,
-      "acceleration": 1.04,
+      "score": 30.9,
+      "likes": 23995,
+      "likes_per_min": 235.59,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 178.4,
+      "age_minutes": 194.0,
       "text": "こいつは何も間違っていない",
       "url": "https://x.com/i/status/2103002329448681747"
     },
     {
-      "author": "Runninzin",
-      "score": 70.3,
-      "likes": 7021,
-      "likes_per_min": 57.94,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 130.5,
-      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
-      "url": "https://x.com/i/status/2103014380778733883"
-    },
-    {
       "author": "0hHHIC6wJ8mD1xI",
-      "score": 43.7,
-      "likes": 11338,
-      "likes_per_min": 86.2346994563949,
+      "score": 46.6,
+      "likes": 17852,
+      "likes_per_min": 417.48,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 131.5,
+      "measured": true,
+      "age_minutes": 147.1,
       "text": "絶対こうだよね？\n\n#WEST解散 https://t.co/1F1nTtwuYr",
       "url": "https://x.com/i/status/2103014139442729284"
+    },
+    {
+      "author": "Runninzin",
+      "score": 65.5,
+      "likes": 7831,
+      "likes_per_min": 51.91,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 146.1,
+      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
+      "url": "https://x.com/i/status/2103014380778733883"
     }
   ]
 }

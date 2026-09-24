@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T05:46:41.368853+00:00",
+  "updated_at": "2026-09-24T06:02:14.415857+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,24 +13,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790229674
+      "reset": 1790230606
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T05:46:13.310890+00:00",
-  "finished_at": "2026-09-24T05:46:41.367569+00:00",
-  "posts_scanned": 571,
-  "posts_with_history": 434,
-  "posts_flagged": 60,
+  "started_at": "2026-09-24T06:01:45.172267+00:00",
+  "finished_at": "2026-09-24T06:02:14.414271+00:00",
+  "posts_scanned": 575,
+  "posts_with_history": 448,
+  "posts_flagged": 73,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 251,
+  "minutes_since_last_notification": 267,
   "reject_reasons": {
-    "古すぎる": 124,
-    "いいね稼ぎ疑い": 6,
-    "いいねが少なすぎる": 231,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 127,
+    "失速済み": 4,
+    "いいねが少なすぎる": 232,
+    "いいね稼ぎ疑い": 5,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -47,66 +47,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46115,
-    "posts": 12808,
-    "oldest": "2026-09-23T05:47:21.249004+00:00"
+    "total": 45873,
+    "posts": 12784,
+    "oldest": "2026-09-23T06:03:26.252481+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 11,
-  "watchlist_active": 7061,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 14,
+  "watchlist_active": 7100,
   "top5": [
     {
-      "author": "_sknKfhK_thx",
-      "score": 66.4,
-      "likes": 23679,
-      "likes_per_min": 379.11,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 111.4,
-      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
-      "url": "https://x.com/i/status/2102970102455083435"
-    },
-    {
       "author": "info__Johnnys",
-      "score": 68.1,
-      "likes": 54689,
-      "likes_per_min": 317.6,
-      "acceleration": 0.75,
+      "score": 61.5,
+      "likes": 58627,
+      "likes_per_min": 253.24,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 112.6,
+      "age_minutes": 128.1,
       "text": "【WEST. 解散】\n\nWEST.が9月30日をもって、グループを解散することが発表されました。",
       "url": "https://x.com/i/status/2102969804177236087"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 63.6,
-      "likes": 32847,
-      "likes_per_min": 85.28,
-      "acceleration": 0.82,
+      "score": 56.2,
+      "likes": 33960,
+      "likes_per_min": 71.57,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 113.4,
+      "age_minutes": 129.0,
       "text": "WEST. 解散を発表",
       "url": "https://x.com/i/status/2102969587998638398"
     },
     {
-      "author": "oricon",
-      "score": 76.5,
-      "likes": 18651,
-      "likes_per_min": 154.56,
-      "acceleration": 0.72,
+      "author": "_sknKfhK_thx",
+      "score": 58.7,
+      "likes": 28815,
+      "likes_per_min": 330.28,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 101.5,
+      "age_minutes": 126.9,
+      "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
+      "url": "https://x.com/i/status/2102970102455083435"
+    },
+    {
+      "author": "oricon",
+      "score": 74.3,
+      "likes": 20745,
+      "likes_per_min": 134.66,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 117.1,
       "text": "WEST.、9/30で活動終了【報告全文】\nhttps://t.co/xd8zxo2U3U\n⠀\n重岡大毅、桐山照史、中間",
       "url": "https://x.com/i/status/2102972578017198305"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 56.0,
-      "likes": 14600,
-      "likes_per_min": 36.13,
-      "acceleration": 0.82,
+      "score": 49.4,
+      "likes": 15104,
+      "likes_per_min": 32.41,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 114.9,
+      "age_minutes": 130.5,
       "text": "WEST.解散へ 今日にも発表",
       "url": "https://x.com/i/status/2102969205905916134"
     }

@@ -20,6 +20,9 @@ globalThis.fetch = async url => {
     return Response.json({}, { status: 429, headers: { 'retry-after': '900' } });
   }
   if (mode === 'schema') return Response.json({ data: { new_schema: [] } });
+  if (mode === 'schema_once_then_success' && operation === 'SearchTimeline' && variables.rawQuery === 'second') {
+    return Response.json({ data: { new_schema: [] } });
+  }
   if (mode === 'detail_schema_then_success' && operation === 'TweetDetail' && variables.focalTweetId === '456') {
     return Response.json({ data: { new_schema: [] } });
   }
@@ -27,6 +30,10 @@ globalThis.fetch = async url => {
   if (mode === 'stale' && operation === 'TweetDetail') return Response.json({}, { status: 503 });
   if (mode === 'stale' || mode === 'empty') return Response.json(timeline([], operation));
   const t = tweet(operation === 'TweetDetail' ? variables.focalTweetId : '123');
-  if (mode === 'missing_views' || (mode === 'detail_incomplete' && operation === 'TweetDetail')) delete t.views;
+  if (mode === 'missing_views' ||
+      (mode === 'detail_incomplete' && operation === 'TweetDetail') ||
+      (mode === 'search_incomplete_then_success' && operation === 'SearchTimeline' && variables.rawQuery === 'second')) {
+    delete t.views;
+  }
   return Response.json(timeline([t], operation));
 };

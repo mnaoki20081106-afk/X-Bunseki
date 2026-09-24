@@ -27,7 +27,7 @@ const searchPages=new Map();
 let searchSuccess=0, searchFailed=0, detailFailed=0, detailSkipped=0, invalidTweets=0;
 function pageKey(query,product,cursor){ return JSON.stringify([query,product,cursor||'']); }
 function safeError(e){ return e instanceof CollectorError ? e.code : 'request_failed'; }
-let searchResponses=0, searchTweets=0, searchTweetsWithViews=0;
+let searchResponses=0, searchTweets=0, searchTweetsWithViews=0, incompleteSearchPages=0;
 let rateLimited=0, forbidden=0;
 const searchRateLimit={limit:null,remaining:null,reset:null};
 
@@ -80,15 +80,25 @@ const trackedFetch=async (url,init={})=>{
   if(error){ guard.fail(operation,error); throw new CollectorError(error); }
   let parsed;
   try { parsed=parseTimeline(body,operation); }
-  catch { guard.fail(operation,'schema_changed'); throw new CollectorError('schema_changed'); }
-  invalidTweets+=parsed.invalid;
-  if(operation==='SearchTimeline' && parsed.candidates>0 && parsed.tweets.length===0){
-    guard.fail(operation,'schema_changed'); throw new CollectorError('schema_changed');
+  catch {
+    guard.fail(operation,'schema_changed');
+    throw new CollectorError('schema_changed');
   }
+  guard.succeed(operation);
+  invalidTweets+=parsed.invalid;
   if(operation==='SearchTimeline'){
     searchResponses++;
     searchTweets+=parsed.tweets.length;
     searchTweetsWithViews+=parsed.tweets.filter(t=>t.impressions>0).length;
+    if(parsed.candidates>0 && parsed.tweets.length===0){
+      // This is not proof that X changed its response schema. Some search pages
+      // can contain only visibility-limited or otherwise incomplete tweets
+      // (for example missing views/bookmarks). Skip that page, keep the rest of
+      // the breadth-first search alive, and escalate only if the loss is material.
+      incompleteSearchPages++;
+      console.error('[compat] incomplete search page candidates='+parsed.candidates+
+        ' invalid='+parsed.invalid+' unavailable='+parsed.unavailable);
+    }
     const vars=JSON.parse(parsedUrl.searchParams.get('variables')||'{}');
     searchPages.set(pageKey(vars.rawQuery,vars.product,vars.cursor),parsed.tweets);
   }
@@ -230,14 +240,17 @@ console.error('[collector] posts='+all.length+
 // collector unhealthy. Escalate only when the loss is material.
 const detailSkipRatio=missingDue.length ? detailSkipped/missingDue.length : 0;
 const materialDetailLoss=detailSkipped>=5 && detailSkipRatio>=0.25;
-const hasFailure=searchFailed>0 || detailFailed>0 || materialDetailLoss;
+const searchIncompleteRatio=searchResponses ? incompleteSearchPages/searchResponses : 0;
+const materialSearchLoss=incompleteSearchPages>=3 && searchIncompleteRatio>=0.25;
+const incompleteLoss=materialDetailLoss || materialSearchLoss;
+const hasFailure=searchFailed>0 || detailFailed>0 || incompleteLoss;
 const error=guard.primaryError ||
-  (searchSuccess===0 ? 'collection_failed' : (materialDetailLoss?'incomplete_observations':null));
+  (searchSuccess===0 ? 'collection_failed' : (incompleteLoss?'incomplete_observations':null));
 const health={
   status:all.length===0 && hasFailure ? (error||'collection_failed') : (hasFailure?'degraded':'success'),
   error_code:error, search_succeeded:searchSuccess, search_failed:searchFailed,
   detail_succeeded:detailOk, detail_failed:detailFailed, detail_skipped:detailSkipped,
-  invalid_tweets:invalidTweets,
+  invalid_tweets:invalidTweets, incomplete_search_pages:incompleteSearchPages,
   search_rate_limit:searchRateLimit,
   failures:guard.failures
 };

@@ -87,9 +87,11 @@ export function parseTimeline(body, operation) {
 // all operations. Search schema failures stop SearchTimeline, while a single
 // TweetDetail schema failure remains post-local so later watchlist items can run.
 // A fresh scheduled run can retry; no rapid retry loop here.
-export function createRequestGuard() {
+export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
   let globalError = null;
   const blocked = new Map();
+  const schemaStreak = new Map();
+  let detailSchemaFailures = 0;
   const failures = {};
   return {
     failures,
@@ -97,19 +99,47 @@ export function createRequestGuard() {
       const code = globalError || blocked.get(operation);
       if (code) throw new CollectorError(code);
     },
+    succeed(operation) {
+      // A valid response between mismatches is strong evidence that X has not
+      // globally changed the operation schema. Only consecutive mismatches are
+      // allowed to trip the circuit breaker.
+      schemaStreak.set(operation, 0);
+    },
     fail(operation, code) {
       failures[code] = (failures[code] || 0) + 1;
-      if (['session_expired', 'account_restricted', 'access_denied'].includes(code)) globalError = code;
-      // Rate limits apply to the whole operation bucket. A SearchTimeline schema
-      // mismatch also makes later searches unsafe, but TweetDetail can fail for
-      // one deleted/limited post while the next post is still perfectly valid.
-      if (code === 'rate_limited' || (code === 'schema_changed' && operation === 'SearchTimeline')) {
-        blocked.set(operation, code);
+      if (['session_expired', 'account_restricted', 'access_denied'].includes(code)) {
+        globalError = code;
+        return;
       }
+      if (code === 'rate_limited') {
+        blocked.set(operation, code);
+        return;
+      }
+      if (code === 'schema_changed' && operation === 'SearchTimeline') {
+        const streak = (schemaStreak.get(operation) || 0) + 1;
+        schemaStreak.set(operation, streak);
+        if (streak >= schemaFailureThreshold) blocked.set(operation, code);
+        return;
+      }
+      if (code === 'schema_changed' && operation === 'TweetDetail') {
+        detailSchemaFailures++;
+        return;
+      }
+      if (code !== 'schema_changed') schemaStreak.set(operation, 0);
     },
     get primaryError() {
-      return globalError || ['rate_limited', 'schema_changed', 'upstream_error', 'request_failed', 'network_error']
-        .find(code => failures[code]) || null;
+      if (globalError) return globalError;
+      const blockedCodes = [...blocked.values()];
+      if (blockedCodes.includes('rate_limited')) return 'rate_limited';
+      if (blockedCodes.includes('schema_changed')) return 'schema_changed';
+      if (detailSchemaFailures) return 'schema_changed';
+      const ordinary = ['upstream_error', 'request_failed', 'network_error']
+        .find(code => failures[code]);
+      if (ordinary) return ordinary;
+      // One isolated SearchTimeline shape mismatch is reported as a generic
+      // partial request failure. Calling it a global X schema change after one
+      // response is misleading when later search responses still parse normally.
+      return failures.schema_changed ? 'request_failed' : null;
     },
   };
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:36:33.978142+00:00",
+  "updated_at": "2026-09-24T20:52:14.420117+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,27 +11,28 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790283054
+      "reset": 1790283991
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T20:35:52.836755+00:00",
-  "finished_at": "2026-09-24T20:36:33.976886+00:00",
-  "posts_scanned": 597,
+  "started_at": "2026-09-24T20:51:30.122402+00:00",
+  "finished_at": "2026-09-24T20:52:14.418023+00:00",
+  "posts_scanned": 609,
   "posts_with_history": 546,
-  "posts_flagged": 3,
+  "posts_flagged": 1,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 211,
+  "minutes_since_last_notification": 227,
   "reject_reasons": {
-    "古すぎる": 424,
+    "古すぎる": 433,
     "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 104
+    "いいねが少なすぎる": 109,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49857,
-    "posts": 12435,
-    "oldest": "2026-09-23T20:47:13.035931+00:00"
+    "total": 49881,
+    "posts": 12420,
+    "oldest": "2026-09-23T21:02:53.370937+00:00"
   },
-  "viral_discovery_posts": 115,
+  "viral_discovery_posts": 121,
   "million_imp_rescued": 0,
-  "watchlist_active": 4269,
+  "watchlist_active": 4268,
   "top5": [
     {
-      "author": "Un4v5s8bgsVk9Xp",
-      "score": 34.2,
-      "likes": 53175,
-      "likes_per_min": 103.01,
-      "acceleration": 1.0,
-      "measured": true,
-      "age_minutes": 237.5,
-      "text": "単行本表紙カラー完了。 https://t.co/6uk1kpADZf",
-      "url": "https://x.com/i/status/2103162312245076342"
-    },
-    {
       "author": "daitomidokoro",
-      "score": 46.1,
-      "likes": 15674,
-      "likes_per_min": 74.34,
-      "acceleration": 1.26,
+      "score": 42.8,
+      "likes": 17148,
+      "likes_per_min": 94.08,
+      "acceleration": 1.27,
       "measured": true,
-      "age_minutes": 203.8,
+      "age_minutes": 219.5,
       "text": "『限界突破！やってM!LK』\n\nご視聴ありがとうございました‼️\n\n沢山のコメント感謝です🙇\nあっという間だったなぁ\nや",
       "url": "https://x.com/i/status/2103170788925055035"
     },
     {
-      "author": "2964_KO",
-      "score": 29.7,
-      "likes": 494,
-      "likes_per_min": 1.02,
-      "acceleration": null,
+      "author": "ppfuts",
+      "score": 30.7,
+      "likes": 971,
+      "likes_per_min": 21.77,
+      "acceleration": 1.34,
       "measured": true,
-      "age_minutes": 210.0,
+      "age_minutes": 231.8,
+      "text": "ジャニ辞めてまで依存した10年以上愛の年上女と薬物やって捕まって破局し、最終的に整形して承認欲求モンスター夜職とアラフォ",
+      "url": "https://x.com/i/status/2103167688214560934"
+    },
+    {
+      "author": "30R9gmaMUy3guDJ",
+      "score": 36.4,
+      "likes": 2008,
+      "likes_per_min": 14.44,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 132.8,
+      "text": "PCAが史上7人目の「40-40」達成🔥\n\n今季40個目の盗塁成功！\n\n【シーズン成績】\n打率.280  45本塁打 1",
+      "url": "https://x.com/i/status/2103192612224237624"
+    },
+    {
+      "author": "2964_KO",
+      "score": 30.1,
+      "likes": 514,
+      "likes_per_min": 1.28,
+      "acceleration": 1.25,
+      "measured": true,
+      "age_minutes": 225.7,
       "text": "田平さんと連絡を断っていた理由は、\n今年7月末に田平さんから\n私の利き手指数本を、数十分かけて関節と逆方向へ折るという暴",
       "url": "https://x.com/i/status/2103169230762057882"
     },
     {
       "author": "milk_info",
-      "score": 38.3,
-      "likes": 15324,
-      "likes_per_min": 52.11,
-      "acceleration": 1.31,
+      "score": 36.5,
+      "likes": 16412,
+      "likes_per_min": 69.44,
+      "acceleration": 1.33,
       "measured": true,
-      "age_minutes": 216.5,
+      "age_minutes": 232.2,
       "text": "👑M!LK冠番組👑\nTBS「限界突破！やってM!LK」シーズン2 最終回\nご視聴いただきありがとうございました！\n\n#T",
       "url": "https://x.com/i/status/2103167584749384167"
-    },
-    {
-      "author": "ppfuts",
-      "score": 31.0,
-      "likes": 630,
-      "likes_per_min": 16.24,
-      "acceleration": 1.66,
-      "measured": true,
-      "age_minutes": 216.1,
-      "text": "ジャニ辞めてまで依存した10年以上愛の年上女と薬物やって捕まって破局し、最終的に整形して承認欲求モンスター夜職とアラフォ",
-      "url": "https://x.com/i/status/2103167688214560934"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T03:33:33.859297+00:00",
+  "updated_at": "2026-09-24T03:49:11.030535+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,23 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790221685
+      "reset": 1790222621
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T03:33:04.722991+00:00",
-  "finished_at": "2026-09-24T03:33:33.855647+00:00",
-  "posts_scanned": 593,
-  "posts_with_history": 402,
-  "posts_flagged": 105,
+  "started_at": "2026-09-24T03:48:40.859827+00:00",
+  "finished_at": "2026-09-24T03:49:11.026693+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 418,
+  "posts_flagged": 108,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 118,
+  "minutes_since_last_notification": 134,
   "reject_reasons": {
-    "古すぎる": 141,
-    "いいねが少なすぎる": 222,
-    "誘導文パターン": 6,
-    "初回観測かつ平均速度が低い": 11
+    "古すぎる": 140,
+    "いいねが少なすぎる": 230,
+    "初回観測かつ平均速度が低い": 11,
+    "誘導文パターン": 4,
+    "失速済み": 2,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -46,66 +48,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 45305,
-    "posts": 12751,
-    "oldest": "2026-09-23T03:46:55.920972+00:00"
+    "total": 45544,
+    "posts": 12809,
+    "oldest": "2026-09-23T04:02:57.398475+00:00"
   },
   "viral_discovery_posts": 142,
-  "million_imp_rescued": 7,
-  "watchlist_active": 6741,
+  "million_imp_rescued": 9,
+  "watchlist_active": 6796,
   "top5": [
     {
       "author": "sweetroad5",
-      "score": 73.8,
-      "likes": 28560,
-      "likes_per_min": 262.39,
-      "acceleration": 0.69,
+      "score": 57.2,
+      "likes": 7492,
+      "likes_per_min": 31.56,
+      "acceleration": 0.66,
       "measured": true,
-      "age_minutes": 102.2,
-      "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
-      "url": "https://x.com/i/status/2102938918010462239"
-    },
-    {
-      "author": "sweetroad5",
-      "score": 67.6,
-      "likes": 6999,
-      "likes_per_min": 47.59,
-      "acceleration": 0.81,
-      "measured": true,
-      "age_minutes": 116.8,
+      "age_minutes": 132.4,
       "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
       "url": "https://x.com/i/status/2102935246929117491"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 81.9,
-      "likes": 3254,
-      "likes_per_min": 54.96,
-      "acceleration": 1.33,
+      "author": "sweetroad5",
+      "score": 70.5,
+      "likes": 31567,
+      "likes_per_min": 192.52,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 79.6,
-      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
-      "url": "https://x.com/i/status/2102944592673038481"
+      "age_minutes": 117.8,
+      "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
+      "url": "https://x.com/i/status/2102938918010462239"
     },
     {
       "author": "Pokemon_cojp",
-      "score": 81.8,
-      "likes": 27102,
-      "likes_per_min": 422.29,
-      "acceleration": 1.32,
+      "score": 73.9,
+      "likes": 32739,
+      "likes_per_min": 360.91,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 93.5,
+      "age_minutes": 109.2,
       "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
       "url": "https://x.com/i/status/2102941089011323205"
     },
     {
-      "author": "Starbucks_J",
-      "score": 67.7,
-      "likes": 37414,
-      "likes_per_min": 277.71,
-      "acceleration": 1.03,
+      "author": "DEATHDOL_NOTE",
+      "score": 75.9,
+      "likes": 4036,
+      "likes_per_min": 50.07,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 123.5,
+      "age_minutes": 95.2,
+      "text": "【知名度C】\n\n元STARTO ENTERTAINMENTジュニア\n千田琥太朗 @BAKUCHUofficial \n\n備",
+      "url": "https://x.com/i/status/2102944592673038481"
+    },
+    {
+      "author": "Starbucks_J",
+      "score": 63.0,
+      "likes": 41270,
+      "likes_per_min": 246.88,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 139.2,
       "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
       "url": "https://x.com/i/status/2102933541097185783"
     }

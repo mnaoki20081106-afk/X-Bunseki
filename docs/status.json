@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T02:06:09.582465+00:00",
+  "updated_at": "2026-09-24T02:21:51.589107+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -13,25 +13,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790216441
+      "reset": 1790217382
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T02:05:40.314491+00:00",
-  "finished_at": "2026-09-24T02:06:09.581272+00:00",
-  "posts_scanned": 598,
-  "posts_with_history": 473,
-  "posts_flagged": 59,
+  "started_at": "2026-09-24T02:21:21.776609+00:00",
+  "finished_at": "2026-09-24T02:21:51.587743+00:00",
+  "posts_scanned": 591,
+  "posts_with_history": 460,
+  "posts_flagged": 62,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 47,
   "reject_reasons": {
-    "古すぎる": 183,
+    "古すぎる": 178,
     "誘導文パターン": 8,
+    "いいねが少なすぎる": 225,
     "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 5,
-    "いいねが少なすぎる": 231,
-    "失速済み": 3
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46484,
-    "posts": 13182,
-    "oldest": "2026-09-23T02:17:09.126163+00:00"
+    "total": 46479,
+    "posts": 13150,
+    "oldest": "2026-09-23T02:32:17.139870+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 1,
-  "watchlist_active": 6554,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 2,
+  "watchlist_active": 6586,
   "top5": [
     {
       "author": "fuma_ten",
-      "score": 31.3,
-      "likes": 6024,
-      "likes_per_min": 33.74,
-      "acceleration": 0.93,
+      "score": 27.5,
+      "likes": 6465,
+      "likes_per_min": 28.09,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 220.0,
+      "age_minutes": 235.7,
       "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
       "url": "https://x.com/i/status/2102887278712668295"
     },
     {
       "author": "Starbucks_J",
-      "score": 81.9,
-      "likes": 11165,
-      "likes_per_min": 511.95,
-      "acceleration": null,
+      "score": 81.3,
+      "likes": 17931,
+      "likes_per_min": 430.92,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 36.1,
+      "age_minutes": 51.8,
       "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
       "url": "https://x.com/i/status/2102933541097185783"
     },
     {
       "author": "dangan_official",
-      "score": 89.5,
-      "likes": 10859,
-      "likes_per_min": 196.22,
-      "acceleration": 0.82,
+      "score": 84.0,
+      "likes": 12928,
+      "likes_per_min": 131.77,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 57.2,
+      "age_minutes": 72.9,
       "text": "『スーパーダンガンロンパ２×２』\nキョウキモードで新キャラクター登場‼️\n\n「東 才空太郎(ひがし さくたろう)」\nCV",
       "url": "https://x.com/i/status/2102928249840181506"
     },
     {
-      "author": "nijisanji_app",
-      "score": 75.3,
-      "likes": 1341,
-      "likes_per_min": 230.55904286694366,
+      "author": "sweetroad5",
+      "score": 80.1,
+      "likes": 2962,
+      "likes_per_min": 86.23,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 5.8,
-      "text": "【#NØVA -Cosmic Stage- 販売決定！】\n\n9/25(金)11:00より にじストア にて、\nサニー・ブ",
-      "url": "https://x.com/i/status/2102941170183852425"
+      "measured": true,
+      "age_minutes": 45.1,
+      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
+      "url": "https://x.com/i/status/2102935246929117491"
     },
     {
-      "author": "PokemonTCGP_JP",
-      "score": 59.6,
-      "likes": 8351,
-      "likes_per_min": 45.76,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 125.9,
-      "text": "◢◤◢◤ 今夜、22:00 ◢◤◢◤\n\n最新情報をお知らせします。\n\n#ポケポケ\n\n♪Remix：原口沙輔（ @sasu",
-      "url": "https://x.com/i/status/2102910957798183382"
+      "author": "miniminikawatin",
+      "score": 23.3,
+      "likes": 3355,
+      "likes_per_min": 15.202716280329014,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 220.7,
+      "text": "昨日のマチアプ男、奢ってくれたと思ってたのにこれきて無理WWW https://t.co/3MjzmttK96",
+      "url": "https://x.com/i/status/2102891049580720474"
     }
   ]
 }

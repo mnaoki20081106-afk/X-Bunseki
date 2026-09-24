@@ -1,25 +1,114 @@
 {
-  "updated_at": "2026-09-24T03:01:21.338105+00:00",
-  "status": "error",
-  "started_at": "2026-09-24T03:01:17.084642+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "collection_failed",
+  "updated_at": "2026-09-24T03:18:05.854921+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "collection_failed",
-    "error_code": "collection_failed",
-    "search_succeeded": 0,
-    "search_failed": 28,
-    "detail_succeeded": 0,
-    "detail_failed": 40,
-    "detail_skipped": 0,
-    "invalid_tweets": 0,
+    "status": "degraded",
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 16,
+    "detail_failed": 0,
+    "detail_skipped": 24,
+    "invalid_tweets": 19,
     "search_rate_limit": {
-      "limit": null,
-      "remaining": null,
-      "reset": null
+      "limit": 50,
+      "remaining": 14,
+      "reset": 1790220756
     },
     "failures": {}
-  }
+  },
+  "started_at": "2026-09-24T03:17:35.969509+00:00",
+  "finished_at": "2026-09-24T03:18:05.853239+00:00",
+  "posts_scanned": 577,
+  "posts_with_history": 299,
+  "posts_flagged": 92,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 103,
+  "reject_reasons": {
+    "古すぎる": 158,
+    "いいねが少なすぎる": 218,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 27,
+    "失速済み": 2
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 45313,
+    "posts": 12778,
+    "oldest": "2026-09-23T03:32:11.907878+00:00"
+  },
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 5,
+  "watchlist_active": 6659,
+  "top5": [
+    {
+      "author": "sweetroad5",
+      "score": 71.5,
+      "likes": 6263,
+      "likes_per_min": 58.7,
+      "acceleration": 0.68,
+      "measured": true,
+      "age_minutes": 101.3,
+      "text": "９月３０日(水)よりスターバックスから、ピカチュウをイメージしたはちみつとキャラメルがエスプレッソの余韻を引き立てる「ピ",
+      "url": "https://x.com/i/status/2102935246929117491"
+    },
+    {
+      "author": "sweetroad5",
+      "score": 86.6,
+      "likes": 24502,
+      "likes_per_min": 377.95,
+      "acceleration": 2.06,
+      "measured": true,
+      "age_minutes": 86.7,
+      "text": "９月３０日よりスターバックスでは、Pokémon と STARBUCKS のコラボレーションのために一乗ひかるさんが描き",
+      "url": "https://x.com/i/status/2102938918010462239"
+    },
+    {
+      "author": "theGazettESTAFF",
+      "score": 93.0,
+      "likes": 7763,
+      "likes_per_min": 115.14,
+      "acceleration": 2.06,
+      "measured": true,
+      "age_minutes": 78.1,
+      "text": "【ご報告】 \n\n日頃より、the GazettEをご支援いただき、誠にありがとうございます。\n\n 昨日9月23日、Vo.",
+      "url": "https://x.com/i/status/2102941088717631822"
+    },
+    {
+      "author": "Pokemon_cojp",
+      "score": 86.9,
+      "likes": 20571,
+      "likes_per_min": 320.77,
+      "acceleration": 2.59,
+      "measured": true,
+      "age_minutes": 78.1,
+      "text": "9月30日（水）より、スターバックスからポケモンのドリンクとグッズが登場！\nピカチュウをイメージしたドリンクをはじめ、ポ",
+      "url": "https://x.com/i/status/2102941089011323205"
+    },
+    {
+      "author": "akindosushiroco",
+      "score": 86.9,
+      "likes": 17057,
+      "likes_per_min": 252.36,
+      "acceleration": 1.78,
+      "measured": true,
+      "age_minutes": 78.1,
+      "text": "🍮🍀🍣\n🍀予告🍀\n🍣🍀🍮\n\n10/7(水)から！\n#スシロー × #ポムポムプリン\nコラボ決定～～～！！🍮\n\nみんなで楽",
+      "url": "https://x.com/i/status/2102941091397844995"
+    }
+  ]
 }

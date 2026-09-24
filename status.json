@@ -1,39 +1,37 @@
 {
-  "updated_at": "2026-09-24T14:36:44.496055+00:00",
+  "updated_at": "2026-09-24T14:52:14.860856+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "error_code": "incomplete_observations",
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 11,
     "detail_failed": 0,
     "detail_skipped": 29,
-    "invalid_tweets": 23,
+    "invalid_tweets": 24,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790261475
+      "reset": 1790262406
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-24T14:36:14.815608+00:00",
-  "finished_at": "2026-09-24T14:36:44.494711+00:00",
-  "posts_scanned": 582,
-  "posts_with_history": 430,
-  "posts_flagged": 71,
+  "started_at": "2026-09-24T14:51:45.672728+00:00",
+  "finished_at": "2026-09-24T14:52:14.859544+00:00",
+  "posts_scanned": 584,
+  "posts_with_history": 432,
+  "posts_flagged": 82,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 47,
+  "minutes_since_last_notification": 62,
   "reject_reasons": {
-    "古すぎる": 100,
-    "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 275,
-    "誘導文パターン": 1,
-    "失速済み": 8
+    "古すぎる": 111,
+    "いいね稼ぎ疑い": 7,
+    "いいねが少なすぎる": 254,
+    "失速済み": 7,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 48328,
-    "posts": 12704,
+    "total": 48912,
+    "posts": 12856,
     "oldest": "2026-09-23T15:03:42.578015+00:00"
   },
-  "viral_discovery_posts": 111,
-  "million_imp_rescued": 6,
-  "watchlist_active": 8918,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 5,
+  "watchlist_active": 8968,
   "top5": [
     {
-      "author": "ngnchiikawa",
-      "score": 41.3,
-      "likes": 359210,
-      "likes_per_min": 526.87,
-      "acceleration": 0.74,
-      "measured": true,
-      "age_minutes": 192.7,
-      "text": "⭐️ https://t.co/b8u9pqzoD5",
-      "url": "https://x.com/i/status/2103083017195684094"
-    },
-    {
-      "author": "xn0qh_",
-      "score": 32.3,
-      "likes": 14693,
-      "likes_per_min": 132.26,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 227.6,
-      "text": "金払わずにここから行け\nhttps://t.co/cVLPEOP49J",
-      "url": "https://x.com/i/status/2103074253151363453"
-    },
-    {
-      "author": "milk_info",
-      "score": 59.0,
-      "likes": 3152,
-      "likes_per_min": 468.3656626124828,
+      "author": "JINJIN1027",
+      "score": 67.6,
+      "likes": 4679,
+      "likes_per_min": 57.65712185477384,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 6.7,
-      "text": "／\n今夜放送📣\n＼\n9月24日(木)26:35～放送\n​日本テレビ「オードリーのNFL倶楽部」に\nM!LKより #吉田仁",
-      "url": "https://x.com/i/status/2103129831911432526"
+      "age_minutes": 81.2,
+      "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
+      "url": "https://x.com/i/status/2103115002001698873"
+    },
+    {
+      "author": "hera3_youtube",
+      "score": 31.3,
+      "likes": 5137,
+      "likes_per_min": 26.253543180321323,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 195.7,
+      "text": "まりな、胸デカくなりすぎでは？？\nhttps://t.co/FP6cnRbbVo https://t.co/k0qNH8",
+      "url": "https://x.com/i/status/2103086186512384011"
     },
     {
       "author": "p_ka2295079",
-      "score": 55.4,
-      "likes": 9594,
-      "likes_per_min": 184.55,
-      "acceleration": 0.74,
+      "score": 58.4,
+      "likes": 12414,
+      "likes_per_min": 181.87,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 72.8,
+      "age_minutes": 88.4,
       "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
       "url": "https://x.com/i/status/2103113193136812040"
     },
     {
-      "author": "SAK_SAK_SAKUMA",
-      "score": 46.5,
-      "likes": 5945,
-      "likes_per_min": 550.6438996197752,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 10.8,
-      "text": "オーイシさんのLIVEにてaikoさんと (^^) 📸 https://t.co/8v3V02I8lE",
-      "url": "https://x.com/i/status/2103128805200244871"
+      "author": "Nui_Sociere",
+      "score": 31.7,
+      "likes": 9787,
+      "likes_per_min": 25.8,
+      "acceleration": 0.88,
+      "measured": true,
+      "age_minutes": 185.5,
+      "text": "なんでこんな真似すんの？\n姿消されたらお前のこと助けてやれないよ\nもう殺すしかなくなっちゃったよ",
+      "url": "https://x.com/i/status/2103088738264039676"
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "score": 85.1,
+      "likes": 17118,
+      "likes_per_min": 48.69,
+      "acceleration": 0.72,
+      "measured": true,
+      "age_minutes": 82.0,
+      "text": "【NEWS🍏】\n⁡\nRingo Jam 10周年を記念して\nRingo Jamの公式キャラクター「#メメル」に、ついに声",
+      "url": "https://x.com/i/status/2103114780831809887"
     }
   ]
 }

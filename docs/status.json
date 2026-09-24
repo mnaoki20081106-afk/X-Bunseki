@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-24T15:47:38.223396+00:00",
+  "updated_at": "2026-09-24T16:03:11.563996+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 2,
-    "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790265726
+      "remaining": 15,
+      "reset": 1790266654
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T15:47:05.231872+00:00",
-  "finished_at": "2026-09-24T15:47:38.222265+00:00",
-  "posts_scanned": 608,
-  "posts_with_history": 489,
-  "posts_flagged": 69,
+  "started_at": "2026-09-24T16:02:33.923066+00:00",
+  "finished_at": "2026-09-24T16:03:11.563105+00:00",
+  "posts_scanned": 617,
+  "posts_with_history": 529,
+  "posts_flagged": 61,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 117,
+  "minutes_since_last_notification": 133,
   "reject_reasons": {
-    "古すぎる": 152,
-    "失速済み": 5,
-    "いいねが少なすぎる": 241,
+    "古すぎる": 164,
+    "初回観測かつ平均速度が低い": 3,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 11,
     "誘導文パターン": 3,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 4
+    "いいねが少なすぎる": 234
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 48819,
-    "posts": 12756,
-    "oldest": "2026-09-23T15:50:31.599589+00:00"
+    "total": 49256,
+    "posts": 12782,
+    "oldest": "2026-09-23T16:06:20.146999+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4168,
+  "viral_discovery_posts": 137,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4188,
   "top5": [
     {
       "author": "ngnchiikawa",
-      "score": 29.5,
-      "likes": 384079,
-      "likes_per_min": 350.78,
-      "acceleration": 0.67,
+      "score": 29.1,
+      "likes": 387353,
+      "likes_per_min": 210.44,
+      "acceleration": 0.6,
       "measured": true,
-      "age_minutes": 263.6,
+      "age_minutes": 279.2,
       "text": "⭐️ https://t.co/b8u9pqzoD5",
       "url": "https://x.com/i/status/2103083017195684094"
     },
     {
       "author": "JINJIN1027",
-      "score": 57.3,
-      "likes": 8149,
-      "likes_per_min": 50.69,
-      "acceleration": 0.65,
+      "score": 54.2,
+      "likes": 8792,
+      "likes_per_min": 41.33,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 136.5,
+      "age_minutes": 152.1,
       "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
       "url": "https://x.com/i/status/2103115002001698873"
     },
     {
-      "author": "p_ka2295079",
-      "score": 47.1,
-      "likes": 19833,
-      "likes_per_min": 93.07,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 143.7,
-      "text": "縁切り神社で推しが逮捕された方🥹🥹 https://t.co/qFQysBq0AO",
-      "url": "https://x.com/i/status/2103113193136812040"
-    },
-    {
       "author": "Abhis379",
-      "score": 35.8,
-      "likes": 7265,
-      "likes_per_min": 24.11,
-      "acceleration": 0.77,
+      "score": 33.3,
+      "likes": 7586,
+      "likes_per_min": 20.63,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 188.9,
+      "age_minutes": 204.5,
       "text": "今日の有益情報② https://t.co/zG78x3Kas6",
       "url": "https://x.com/i/status/2103101829467054221"
     },
     {
-      "author": "AORINGOHUZIN",
-      "score": 61.6,
-      "likes": 18634,
-      "likes_per_min": 17.21,
-      "acceleration": 0.7,
+      "author": "10anj10",
+      "score": 35.6,
+      "likes": 10977,
+      "likes_per_min": 67.41,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 137.4,
-      "text": "【NEWS🍏】\n⁡\nRingo Jam 10周年を記念して\nRingo Jamの公式キャラクター「#メメル」に、ついに声",
-      "url": "https://x.com/i/status/2103114780831809887"
+      "age_minutes": 235.4,
+      "text": "そう思ってモラハラの女性とモラハラの男性をお見合いさせたことがあるけど、よりモラ度の強いほうが一方的に攻撃を始めて比較的",
+      "url": "https://x.com/i/status/2103094040355049493"
+    },
+    {
+      "author": "vqre5",
+      "score": 26.9,
+      "likes": 39379,
+      "likes_per_min": 278.16,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 226.3,
+      "text": "父親が化粧品売り場を睨んでたから、女はこんなもんにばっか金を使ってどうのこうのとか言い出すんかなって思ってたら「俺が女や",
+      "url": "https://x.com/i/status/2103096334366679526"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:52:14.420117+00:00",
+  "updated_at": "2026-09-24T21:16:46.443871+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,28 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790283991
+      "reset": 1790285463
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T20:51:30.122402+00:00",
-  "finished_at": "2026-09-24T20:52:14.418023+00:00",
-  "posts_scanned": 609,
-  "posts_with_history": 546,
-  "posts_flagged": 1,
+  "started_at": "2026-09-24T21:16:02.193784+00:00",
+  "finished_at": "2026-09-24T21:16:46.442639+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 488,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 227,
+  "minutes_since_last_notification": 251,
   "reject_reasons": {
     "古すぎる": 433,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 109,
-    "失速済み": 1
+    "いいねが少なすぎる": 122,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 49881,
-    "posts": 12420,
-    "oldest": "2026-09-23T21:02:53.370937+00:00"
+    "total": 49892,
+    "posts": 12429,
+    "oldest": "2026-09-23T21:18:16.029283+00:00"
   },
-  "viral_discovery_posts": 121,
+  "viral_discovery_posts": 129,
   "million_imp_rescued": 0,
-  "watchlist_active": 4268,
+  "watchlist_active": 4258,
   "top5": [
     {
-      "author": "daitomidokoro",
-      "score": 42.8,
-      "likes": 17148,
-      "likes_per_min": 94.08,
-      "acceleration": 1.27,
-      "measured": true,
-      "age_minutes": 219.5,
-      "text": "『限界突破！やってM!LK』\n\nご視聴ありがとうございました‼️\n\n沢山のコメント感謝です🙇\nあっという間だったなぁ\nや",
-      "url": "https://x.com/i/status/2103170788925055035"
-    },
-    {
-      "author": "ppfuts",
-      "score": 30.7,
-      "likes": 971,
-      "likes_per_min": 21.77,
-      "acceleration": 1.34,
-      "measured": true,
-      "age_minutes": 231.8,
-      "text": "ジャニ辞めてまで依存した10年以上愛の年上女と薬物やって捕まって破局し、最終的に整形して承認欲求モンスター夜職とアラフォ",
-      "url": "https://x.com/i/status/2103167688214560934"
-    },
-    {
       "author": "30R9gmaMUy3guDJ",
-      "score": 36.4,
-      "likes": 2008,
-      "likes_per_min": 14.44,
-      "acceleration": 1.12,
+      "score": 37.9,
+      "likes": 2532,
+      "likes_per_min": 21.35,
+      "acceleration": 1.48,
       "measured": true,
-      "age_minutes": 132.8,
+      "age_minutes": 157.3,
       "text": "PCAが史上7人目の「40-40」達成🔥\n\n今季40個目の盗塁成功！\n\n【シーズン成績】\n打率.280  45本塁打 1",
       "url": "https://x.com/i/status/2103192612224237624"
     },
     {
-      "author": "2964_KO",
-      "score": 30.1,
-      "likes": 514,
-      "likes_per_min": 1.28,
-      "acceleration": 1.25,
-      "measured": true,
-      "age_minutes": 225.7,
-      "text": "田平さんと連絡を断っていた理由は、\n今年7月末に田平さんから\n私の利き手指数本を、数十分かけて関節と逆方向へ折るという暴",
-      "url": "https://x.com/i/status/2103169230762057882"
+      "author": "niyabero",
+      "score": 26.6,
+      "likes": 2045,
+      "likes_per_min": 10.405645398967895,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 196.5,
+      "text": "悪の幹部は圧縮しちゃおうね～♪ https://t.co/VSxjtX0NhL",
+      "url": "https://x.com/i/status/2103182737607885278"
     },
     {
-      "author": "milk_info",
-      "score": 36.5,
-      "likes": 16412,
-      "likes_per_min": 69.44,
-      "acceleration": 1.33,
+      "author": "30R9gmaMUy3guDJ",
+      "score": 60.4,
+      "likes": 673,
+      "likes_per_min": 24.126532225618792,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 27.9,
+      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
+      "url": "https://x.com/i/status/2103225176305582231"
+    },
+    {
+      "author": "5diva_san",
+      "score": 22.0,
+      "likes": 2023,
+      "likes_per_min": 10.92,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 232.2,
-      "text": "👑M!LK冠番組👑\nTBS「限界突破！やってM!LK」シーズン2 最終回\nご視聴いただきありがとうございました！\n\n#T",
-      "url": "https://x.com/i/status/2103167584749384167"
+      "age_minutes": 213.2,
+      "text": "ここ数年で叶さんが「活動してきて一番焦った」と話した出来事\n・りりむちゃんとの北海道ロケで羽田と成田を間違えた時\n・さっ",
+      "url": "https://x.com/i/status/2103178535221489707"
+    },
+    {
+      "author": "kotomica_r",
+      "score": 36.5,
+      "likes": 4194,
+      "likes_per_min": 36.96,
+      "acceleration": 1.63,
+      "measured": true,
+      "age_minutes": 209.5,
+      "text": "5年早く生まれたのに負けたJK https://t.co/CVG8PewYg4",
+      "url": "https://x.com/i/status/2103179462640853323"
     }
   ]
 }

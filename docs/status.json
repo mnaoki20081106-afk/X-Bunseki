@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T08:06:20.105034+00:00",
+  "updated_at": "2026-09-24T08:21:53.730074+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
@@ -9,29 +9,29 @@
     "detail_succeeded": 15,
     "detail_failed": 0,
     "detail_skipped": 25,
-    "invalid_tweets": 20,
+    "invalid_tweets": 21,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790238051
+      "reset": 1790238987
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T08:05:50.930129+00:00",
-  "finished_at": "2026-09-24T08:06:20.092323+00:00",
-  "posts_scanned": 569,
-  "posts_with_history": 418,
-  "posts_flagged": 86,
+  "started_at": "2026-09-24T08:21:26.653572+00:00",
+  "finished_at": "2026-09-24T08:21:53.728869+00:00",
+  "posts_scanned": 583,
+  "posts_with_history": 425,
+  "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 391,
+  "minutes_since_last_notification": 407,
   "reject_reasons": {
-    "古すぎる": 133,
-    "いいね稼ぎ疑い": 7,
+    "古すぎる": 129,
+    "いいね稼ぎ疑い": 6,
     "誘導文パターン": 5,
-    "いいねが少なすぎる": 207,
+    "いいねが少なすぎる": 210,
     "失速済み": 2,
-    "初回観測かつ平均速度が低い": 4
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46279,
-    "posts": 12765,
-    "oldest": "2026-09-23T08:17:17.938369+00:00"
+    "total": 46292,
+    "posts": 12759,
+    "oldest": "2026-09-23T08:34:02.864143+00:00"
   },
-  "viral_discovery_posts": 133,
-  "million_imp_rescued": 10,
-  "watchlist_active": 7411,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 6,
+  "watchlist_active": 7476,
   "top5": [
     {
       "author": "_sknKfhK_thx",
-      "score": 32.3,
-      "likes": 56091,
-      "likes_per_min": 171.14,
-      "acceleration": 0.89,
+      "score": 32.5,
+      "likes": 58649,
+      "likes_per_min": 164.38,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 251.0,
+      "age_minutes": 266.6,
       "text": "WEST.解散 https://t.co/9wKBiZ5Pmv",
       "url": "https://x.com/i/status/2102970102455083435"
     },
     {
-      "author": "HI_y_mks",
-      "score": 41.1,
-      "likes": 56692,
-      "likes_per_min": 219.03,
-      "acceleration": 0.96,
+      "author": "nhk_news",
+      "score": 40.5,
+      "likes": 9527,
+      "likes_per_min": 10.91,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 208.0,
-      "text": "てか今気づいたけど何❓ｗｗｗｗｗｗ\n解散(脱退)発表するとき用のスーツ(?)があるの❓ｗｗｗｗｗｗヤバいｗｗｗｗｗｗ今ゲ",
-      "url": "https://x.com/i/status/2102980935943905362"
+      "age_minutes": 692.8,
+      "text": "ジャングリア沖縄 親会社が173億円余の赤字\nhttps://t.co/EPw1LJn8C4 #nhk_news",
+      "url": "https://x.com/i/status/2102862833952366993"
     },
     {
       "author": "k_maru_dau_baby",
-      "score": 49.8,
-      "likes": 20653,
-      "likes_per_min": 97.15,
-      "acceleration": 0.9,
+      "score": 47.2,
+      "likes": 22157,
+      "likes_per_min": 96.65,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 188.5,
+      "age_minutes": 204.1,
       "text": "元ジュニア 千田琥太朗（17）流出\n「20前半のやつが俺にリア恋なんだぜ」\n「ばかだよな」",
       "url": "https://x.com/i/status/2102985840897245302"
     },
     {
-      "author": "I125608I",
-      "score": 29.3,
-      "likes": 14592,
-      "likes_per_min": 72.32,
-      "acceleration": null,
+      "author": "livedoornews",
+      "score": 52.2,
+      "likes": 7115,
+      "likes_per_min": 26.67,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 235.1,
-      "text": "え？なんでこの場に2人も立たせてんの？\nてか戦犯睨んでんじゃねえよ",
-      "url": "https://x.com/i/status/2102974098800508940"
+      "age_minutes": 186.9,
+      "text": "【ケガなし】声優・稲田徹、高速道路で追突被害 「前のトラックがゆっくり後退」\nhttps://t.co/NDmoc59f",
+      "url": "https://x.com/i/status/2102990159381971415"
     },
     {
-      "author": "indozou",
-      "score": 33.3,
-      "likes": 9958,
-      "likes_per_min": 36.12,
-      "acceleration": 0.81,
+      "author": "Runninzin",
+      "score": 85.7,
+      "likes": 4642,
+      "likes_per_min": 74.41,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 204.4,
-      "text": "女勇者、問い詰められる。（1/2） https://t.co/Gi5hkLpcQk",
-      "url": "https://x.com/i/status/2102981837845139489"
+      "age_minutes": 90.6,
+      "text": "台風26号の予報円曲がった https://t.co/veCjiJaQfB",
+      "url": "https://x.com/i/status/2103014380778733883"
     }
   ]
 }

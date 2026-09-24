@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-24T01:50:41.258240+00:00",
+  "updated_at": "2026-09-24T02:06:09.582465+00:00",
   "status": "degraded",
   "collection_health": {
     "status": "degraded",
     "error_code": "incomplete_observations",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 17,
+    "detail_succeeded": 16,
     "detail_failed": 0,
-    "detail_skipped": 23,
-    "invalid_tweets": 18,
+    "detail_skipped": 24,
+    "invalid_tweets": 19,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790215512
+      "reset": 1790216441
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T01:50:11.445669+00:00",
-  "finished_at": "2026-09-24T01:50:41.257048+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 478,
-  "posts_flagged": 51,
+  "started_at": "2026-09-24T02:05:40.314491+00:00",
+  "finished_at": "2026-09-24T02:06:09.581272+00:00",
+  "posts_scanned": 598,
+  "posts_with_history": 473,
+  "posts_flagged": 59,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 185,
-    "誘導文パターン": 10,
-    "いいねが少なすぎる": 224,
+    "古すぎる": 183,
+    "誘導文パターン": 8,
     "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 3,
-    "失速済み": 1
+    "初回観測かつ平均速度が低い": 5,
+    "いいねが少なすぎる": 231,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 46494,
-    "posts": 13242,
-    "oldest": "2026-09-23T02:02:42.557883+00:00"
+    "total": 46484,
+    "posts": 13182,
+    "oldest": "2026-09-23T02:17:09.126163+00:00"
   },
-  "viral_discovery_posts": 134,
+  "viral_discovery_posts": 135,
   "million_imp_rescued": 1,
-  "watchlist_active": 6532,
+  "watchlist_active": 6554,
   "top5": [
     {
       "author": "fuma_ten",
-      "score": 34.5,
-      "likes": 5502,
-      "likes_per_min": 36.41,
-      "acceleration": 0.98,
+      "score": 31.3,
+      "likes": 6024,
+      "likes_per_min": 33.74,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 204.5,
+      "age_minutes": 220.0,
       "text": "1年分の家賃を一気に払う人って、私だけですか？￼ https://t.co/TFNa5Vwgx8",
       "url": "https://x.com/i/status/2102887278712668295"
     },
     {
-      "author": "dangan_official",
-      "score": 93.5,
-      "likes": 7823,
-      "likes_per_min": 239.7,
-      "acceleration": 1.22,
+      "author": "Starbucks_J",
+      "score": 81.9,
+      "likes": 11165,
+      "likes_per_min": 511.95,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 41.7,
+      "age_minutes": 36.1,
+      "text": "⚡ 9/30(水) START☕\n#ピカチュウハニークリームラテ\n\nピカチュウをイメージした\nはちみつとキャラメルが\nエ",
+      "url": "https://x.com/i/status/2102933541097185783"
+    },
+    {
+      "author": "dangan_official",
+      "score": 89.5,
+      "likes": 10859,
+      "likes_per_min": 196.22,
+      "acceleration": 0.82,
+      "measured": true,
+      "age_minutes": 57.2,
       "text": "『スーパーダンガンロンパ２×２』\nキョウキモードで新キャラクター登場‼️\n\n「東 才空太郎(ひがし さくたろう)」\nCV",
       "url": "https://x.com/i/status/2102928249840181506"
     },
     {
-      "author": "AORINGOHUZIN",
-      "score": 90.4,
-      "likes": 5002,
-      "likes_per_min": 243.27732985767423,
+      "author": "nijisanji_app",
+      "score": 75.3,
+      "likes": 1341,
+      "likes_per_min": 230.55904286694366,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 20.6,
-      "text": "═════════════\n     🍏POPS POP UP🍏\n💡全国9箇所ヒント解禁💡\n═════════════\n",
-      "url": "https://x.com/i/status/2102933566367883481"
+      "age_minutes": 5.8,
+      "text": "【#NØVA -Cosmic Stage- 販売決定！】\n\n9/25(金)11:00より にじストア にて、\nサニー・ブ",
+      "url": "https://x.com/i/status/2102941170183852425"
     },
     {
       "author": "PokemonTCGP_JP",
-      "score": 67.2,
-      "likes": 7643,
-      "likes_per_min": 51.9,
-      "acceleration": 0.87,
+      "score": 59.6,
+      "likes": 8351,
+      "likes_per_min": 45.76,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 110.4,
+      "age_minutes": 125.9,
       "text": "◢◤◢◤ 今夜、22:00 ◢◤◢◤\n\n最新情報をお知らせします。\n\n#ポケポケ\n\n♪Remix：原口沙輔（ @sasu",
       "url": "https://x.com/i/status/2102910957798183382"
-    },
-    {
-      "author": "denfaminicogame",
-      "score": 89.0,
-      "likes": 2745,
-      "likes_per_min": 59.39,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 60.0,
-      "text": "『逆転裁判5 VR』がいきなり発表！！2027年にMeta VR Glasses、Quest3/3s、Quest Pro",
-      "url": "https://x.com/i/status/2102923642065891610"
     }
   ]
 }

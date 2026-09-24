@@ -179,6 +179,13 @@ def fetch_posts():
                 raise SessionExpiredError(msg)
             raise RuntimeError(msg)
         posts = decode_collection(r.stdout)
+        skipped_detail_ids = posts.health.pop("_detail_skipped_ids", [])
+        if skipped_detail_ids:
+            try:
+                watchlist.mark_detail_skipped(skipped_detail_ids)
+                print(f"watchlist詳細欠損を次のチェックポイントへ進めました: {len(skipped_detail_ids)}件")
+            except Exception as e:
+                print(f"[WARN] watchlist詳細欠損の再スケジュールに失敗: {e}")
         for post in posts:
             post["posted_at"] = _normalize_created_at(post.get("posted_at"))
         print(f"x-agent収集完了: {len(posts)}件")

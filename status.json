@@ -1,37 +1,38 @@
 {
-  "updated_at": "2026-09-25T22:31:13.717198+00:00",
+  "updated_at": "2026-09-25T22:46:45.710578+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 36,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_skipped": 4,
+    "detail_unavailable": 3,
+    "detail_incomplete": 1,
+    "invalid_tweets": 7,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790376343
+      "reset": 1790377272
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T22:30:43.043887+00:00",
-  "finished_at": "2026-09-25T22:31:13.716322+00:00",
-  "posts_scanned": 609,
-  "posts_with_history": 501,
-  "posts_flagged": 29,
+  "started_at": "2026-09-25T22:46:10.964995+00:00",
+  "finished_at": "2026-09-25T22:46:45.709359+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 494,
+  "posts_flagged": 34,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 312,
+  "minutes_since_last_notification": 327,
   "reject_reasons": {
-    "古すぎる": 387,
-    "いいねが少なすぎる": 149,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 361,
+    "いいね稼ぎ疑い": 1,
+    "いいねが少なすぎる": 159,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52193,
-    "posts": 13738,
-    "oldest": "2026-09-24T22:34:01.933309+00:00"
+    "total": 52196,
+    "posts": 13716,
+    "oldest": "2026-09-24T22:49:44.755228+00:00"
   },
-  "viral_discovery_posts": 136,
+  "viral_discovery_posts": 130,
   "million_imp_rescued": 1,
-  "watchlist_active": 4398,
+  "watchlist_active": 4376,
   "top5": [
     {
       "author": "Qchan_biyou",
-      "score": 24.8,
-      "likes": 14196,
-      "likes_per_min": 11.57,
-      "acceleration": 1.19,
+      "score": 24.7,
+      "likes": 14392,
+      "likes_per_min": 12.62,
+      "acceleration": 1.09,
       "measured": true,
-      "age_minutes": 832.4,
+      "age_minutes": 847.9,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
-      "author": "nino_honmono",
-      "score": 75.0,
-      "likes": 15065,
-      "likes_per_min": 191.6,
-      "acceleration": 0.8,
+      "author": "Vau875",
+      "score": 100.0,
+      "likes": 2475,
+      "likes_per_min": 69.94,
+      "acceleration": 2.16,
       "measured": true,
-      "age_minutes": 57.9,
+      "age_minutes": 55.0,
+      "text": "起きんよ普通に",
+      "url": "https://x.com/i/status/2103603391914246578"
+    },
+    {
+      "author": "nino_honmono",
+      "score": 72.6,
+      "likes": 17961,
+      "likes_per_min": 186.5,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 73.4,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2103598763898286220"
     },
     {
-      "author": "yukihanalamy",
-      "score": 78.8,
-      "likes": 623,
-      "likes_per_min": 92.9704752557426,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.7,
-      "text": "お天気悪めだね～😢ねぽっくすで吹き飛ばすぞ！！！！👊✨\n\n会場来られる方はお足元に注意して来てね！みんなに会えるの楽しみ",
-      "url": "https://x.com/i/status/2103611632559743266"
+      "author": "wni_jp",
+      "score": 53.0,
+      "likes": 1913,
+      "likes_per_min": 13.46,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 136.9,
+      "text": "【台風情報】9月26日(土)3時現在、台風26号(スリゲ)は沖縄の南に位置し、北北西に進んでいます。明日には強い勢力まで",
+      "url": "https://x.com/i/status/2103582777178534106"
     },
     {
-      "author": "kazamairohach",
-      "score": 79.2,
-      "likes": 761,
-      "likes_per_min": 87.79703391661528,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.7,
-      "text": "ねぽっくす当日の\n\nあっとうてきあさ＼( 'ω')／",
-      "url": "https://x.com/i/status/2103611139120840783"
-    },
-    {
-      "author": "momosuzunene",
-      "score": 74.5,
-      "likes": 440,
-      "likes_per_min": 51.55614338932863,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.5,
-      "text": "てん、、さい、、、？！",
-      "url": "https://x.com/i/status/2103611172599758954"
+      "author": "takuya_hyon",
+      "score": 32.8,
+      "likes": 2568,
+      "likes_per_min": 20.09,
+      "acceleration": 1.41,
+      "measured": true,
+      "age_minutes": 172.9,
+      "text": "どうしても\nカレー食べたい\nと思って某大手カレー屋で頼んだら\n\n絶対に ネギ豚バラ丼 が届いて\n\n今、ひとりで爆笑してる",
+      "url": "https://x.com/i/status/2103573711756693955"
     }
   ]
 }

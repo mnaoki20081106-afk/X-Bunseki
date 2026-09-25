@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T03:37:57.796683+00:00",
+  "updated_at": "2026-09-25T04:02:48.252239+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,30 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790308348
+      "remaining": 15,
+      "reset": 1790309837
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T03:37:27.902969+00:00",
-  "finished_at": "2026-09-25T03:37:57.795356+00:00",
-  "posts_scanned": 602,
-  "posts_with_history": 427,
+  "started_at": "2026-09-25T04:02:17.132543+00:00",
+  "finished_at": "2026-09-25T04:02:48.250970+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 413,
   "posts_flagged": 110,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 109,
+  "minutes_since_last_notification": 133,
   "reject_reasons": {
-    "古すぎる": 158,
-    "誘導文パターン": 8,
-    "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 227
+    "古すぎる": 151,
+    "失速済み": 11,
+    "いいね稼ぎ疑い": 1,
+    "いいねが少なすぎる": 214,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 9
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52103,
-    "posts": 12805,
-    "oldest": "2026-09-24T03:49:10.367781+00:00"
+    "total": 52115,
+    "posts": 12891,
+    "oldest": "2026-09-24T04:04:41.412054+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4264,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4273,
   "top5": [
     {
       "author": "mofjd",
-      "score": 29.5,
-      "likes": 65257,
-      "likes_per_min": 98.31,
-      "acceleration": 1.0,
+      "score": 29.4,
+      "likes": 67617,
+      "likes_per_min": 95.01,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 838.9,
+      "age_minutes": 863.8,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
-      "author": "nishinoakihiro",
-      "score": 43.1,
-      "likes": 5826,
-      "likes_per_min": 37.29,
-      "acceleration": 1.0,
-      "measured": true,
-      "age_minutes": 192.0,
-      "text": "【お詫びとご報告】\n　\n平素より弊社ならびに弊社関係者を応援いただき、誠にありがとうございます。 https://t.c",
-      "url": "https://x.com/i/status/2103279798793765235"
-    },
-    {
       "author": "DEATHDOL_NOTE",
-      "score": 45.2,
-      "likes": 18179,
-      "likes_per_min": 112.64,
-      "acceleration": 1.11,
+      "score": 38.9,
+      "likes": 20763,
+      "likes_per_min": 104.02,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 210.6,
+      "age_minutes": 235.5,
       "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
       "url": "https://x.com/i/status/2103275120102158457"
     },
     {
       "author": "nenemapp",
-      "score": 59.8,
-      "likes": 10505,
-      "likes_per_min": 107.33,
-      "acceleration": 0.79,
+      "score": 55.5,
+      "likes": 12837,
+      "likes_per_min": 93.88,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 139.6,
+      "age_minutes": 164.5,
       "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
       "url": "https://x.com/i/status/2103292984854978846"
     },
     {
-      "author": "MotokiOhmoriMGA",
-      "score": 81.3,
-      "likes": 6540,
-      "likes_per_min": 600.0504547011536,
+      "author": "parade_capsule",
+      "score": 80.1,
+      "likes": 23640,
+      "likes_per_min": 544.67,
+      "acceleration": 1.06,
+      "measured": true,
+      "age_minutes": 62.1,
+      "text": "📣9月カプセルトイ新情報！\n\n＃映画ちいかわ 人魚の島のひみつ \nデスクトップフィギュア\nが登場🏝️\n\n映画のワンシーン",
+      "url": "https://x.com/i/status/2103318741685801283"
+    },
+    {
+      "author": "houkaistarrail",
+      "score": 71.3,
+      "likes": 1292,
+      "likes_per_min": 258.4,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 10.9,
-      "text": "私はフェイラーさんとコラボ。\n豪華。手に入れろください。",
-      "url": "https://x.com/i/status/2103325379931107520"
+      "age_minutes": 2.8,
+      "text": "星旅の記念写真 | 「他に用がないのであれば、共に秋の月を眺めないか？」\n\n「かつては恨みにとらわれ、立ち止まる余裕など",
+      "url": "https://x.com/i/status/2103333672346619986"
     }
   ]
 }

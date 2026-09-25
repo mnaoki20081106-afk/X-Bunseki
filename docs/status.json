@@ -1,29 +1,118 @@
 {
-  "updated_at": "2026-09-25T10:02:08.672043+00:00",
-  "status": "error",
-  "started_at": "2026-09-25T10:02:03.648399+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "collection_failed",
+  "updated_at": "2026-09-25T10:18:55.484918+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "collection_failed",
-    "error_code": "collection_failed",
-    "search_succeeded": 0,
-    "search_failed": 28,
-    "detail_succeeded": 0,
-    "detail_failed": 40,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 39,
+    "detail_failed": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
-      "limit": null,
-      "remaining": null,
-      "reset": null
+      "limit": 50,
+      "remaining": 15,
+      "reset": 1790332399
     },
-    "failures": {},
-    "_detail_skipped_ids": []
-  }
+    "failures": {}
+  },
+  "started_at": "2026-09-25T10:18:18.704836+00:00",
+  "finished_at": "2026-09-25T10:18:55.483831+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 320,
+  "posts_flagged": 118,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 509,
+  "reject_reasons": {
+    "古すぎる": 134,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 23,
+    "いいねが少なすぎる": 219,
+    "失速済み": 12,
+    "誘導文パターン": 1
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 51955,
+    "posts": 13693,
+    "oldest": "2026-09-24T10:19:28.732039+00:00"
+  },
+  "viral_discovery_posts": 131,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4246,
+  "top5": [
+    {
+      "author": "Tama_chan0317_",
+      "score": 34.8,
+      "likes": 13401,
+      "likes_per_min": 11.6,
+      "acceleration": 0.64,
+      "measured": true,
+      "age_minutes": 396.8,
+      "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
+      "url": "https://x.com/i/status/2103329166611620294"
+    },
+    {
+      "author": "rekishichosadan",
+      "score": 71.7,
+      "likes": 7678,
+      "likes_per_min": 78.7400788833794,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 97.5,
+      "text": "2026年10月より、マクドナルドが一部メニューの見直しを実施します\nhttps://t.co/VsegOT3xMD\n■",
+      "url": "https://x.com/i/status/2103404489600622988"
+    },
+    {
+      "author": "gourmetroad5",
+      "score": 82.8,
+      "likes": 8104,
+      "likes_per_min": 140.66,
+      "acceleration": 1.27,
+      "measured": true,
+      "age_minutes": 79.3,
+      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
+      "url": "https://x.com/i/status/2103409064474755518"
+    },
+    {
+      "author": "TarataTragedy",
+      "score": 52.5,
+      "likes": 33503,
+      "likes_per_min": 145.64,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 160.8,
+      "text": "速報\ntimelesz 猪俣周杜　釈放 https://t.co/RcQDfqUKSR",
+      "url": "https://x.com/i/status/2103388568702058663"
+    },
+    {
+      "author": "oricon",
+      "score": 53.8,
+      "likes": 27055,
+      "likes_per_min": 90.75,
+      "acceleration": 0.73,
+      "measured": true,
+      "age_minutes": 188.9,
+      "text": "マクドナルド「チキチー」「倍チキチー」\n10/20販売終了\nhttps://t.co/gZJlO5R93I\n⠀\nマクドナ",
+      "url": "https://x.com/i/status/2103381492189839815"
+    }
+  ]
 }

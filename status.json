@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T12:31:35.671202+00:00",
+  "updated_at": "2026-09-25T12:47:06.710545+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,30 @@
     "detail_skipped": 1,
     "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790340363
+      "reset": 1790341290
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T12:31:02.893444+00:00",
-  "finished_at": "2026-09-25T12:31:35.669731+00:00",
-  "posts_scanned": 608,
-  "posts_with_history": 369,
-  "posts_flagged": 126,
+  "started_at": "2026-09-25T12:46:30.091523+00:00",
+  "finished_at": "2026-09-25T12:47:06.709431+00:00",
+  "posts_scanned": 606,
+  "posts_with_history": 433,
+  "posts_flagged": 128,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 642,
+  "minutes_since_last_notification": 658,
   "reject_reasons": {
-    "古すぎる": 123,
+    "古すぎる": 122,
     "いいね稼ぎ疑い": 3,
-    "失速済み": 4,
-    "いいねが少なすぎる": 242,
-    "初回観測かつ平均速度が低い": 12
+    "失速済み": 7,
+    "いいねが少なすぎる": 234,
+    "初回観測かつ平均速度が低い": 2,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51750,
-    "posts": 14002,
-    "oldest": "2026-09-24T12:32:38.482329+00:00"
+    "total": 51802,
+    "posts": 13997,
+    "oldest": "2026-09-24T12:47:55.416180+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4238,
+  "viral_discovery_posts": 138,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4270,
   "top5": [
     {
       "author": "ninjin301417",
-      "score": 29.4,
-      "likes": 77408,
-      "likes_per_min": 210.1,
-      "acceleration": 1.05,
+      "score": 28.9,
+      "likes": 80488,
+      "likes_per_min": 198.4,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 533.3,
+      "age_minutes": 548.8,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "nenemapp",
-      "score": 30.6,
-      "likes": 31688,
-      "likes_per_min": 28.25,
-      "acceleration": 0.78,
+      "author": "ChugokuShimbun",
+      "score": 100.0,
+      "likes": 6081,
+      "likes_per_min": 240.21,
+      "acceleration": 2.57,
       "measured": true,
-      "age_minutes": 673.3,
-      "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
-      "url": "https://x.com/i/status/2103292984854978846"
+      "age_minutes": 45.5,
+      "text": "【事件】カープの2選手を書類送検　ゾンビたばこを巡る容疑\nhttps://t.co/Qe4u95oYsp",
+      "url": "https://x.com/i/status/2103454885828333948"
     },
     {
       "author": "Kanaria390",
-      "score": 57.3,
-      "likes": 109827,
-      "likes_per_min": 457.86,
-      "acceleration": 0.7,
+      "score": 54.3,
+      "likes": 115220,
+      "likes_per_min": 347.4,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 150.0,
+      "age_minutes": 165.6,
       "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
       "url": "https://x.com/i/status/2103424657454244298"
     },
     {
-      "author": "gourmetroad5",
-      "score": 43.0,
-      "likes": 15283,
-      "likes_per_min": 42.47,
-      "acceleration": 0.48,
-      "measured": true,
-      "age_minutes": 212.0,
-      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
-      "url": "https://x.com/i/status/2103409064474755518"
+      "author": "78milktea1",
+      "score": 33.0,
+      "likes": 8629,
+      "likes_per_min": 46.70170651368603,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 184.8,
+      "text": "ラランド西田って相当良い匂いらしいね...\n推してた柔軟剤がち家中良い匂いなるし服に住み着いてるｵｼﾞ臭も消えるこの匂い",
+      "url": "https://x.com/i/status/2103419826463244553"
     },
     {
-      "author": "kusuriya_PR",
-      "score": 72.3,
-      "likes": 32646,
-      "likes_per_min": 271.08,
-      "acceleration": 0.75,
+      "author": "gourmetroad5",
+      "score": 37.6,
+      "likes": 15638,
+      "likes_per_min": 22.87,
+      "acceleration": 0.54,
       "measured": true,
-      "age_minutes": 91.5,
-      "text": "◈──────────────◈\n TVアニメ『#薬屋のひとりごと』\n　  🍃第3期 第2弾PV解禁🍃\n◈───────",
-      "url": "https://x.com/i/status/2103439386448908527"
+      "age_minutes": 227.5,
+      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
+      "url": "https://x.com/i/status/2103409064474755518"
     }
   ]
 }

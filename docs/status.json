@@ -1,38 +1,39 @@
 {
-  "updated_at": "2026-09-25T11:21:33.263300+00:00",
+  "updated_at": "2026-09-25T11:37:08.206764+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790336163
+      "remaining": 14,
+      "reset": 1790337095
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T11:21:02.615498+00:00",
-  "finished_at": "2026-09-25T11:21:33.262247+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 350,
-  "posts_flagged": 134,
+  "started_at": "2026-09-25T11:36:34.336392+00:00",
+  "finished_at": "2026-09-25T11:37:08.205648+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 444,
+  "posts_flagged": 136,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 572,
+  "minutes_since_last_notification": 588,
   "reject_reasons": {
-    "古すぎる": 127,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 14,
-    "いいねが少なすぎる": 230
+    "古すぎる": 124,
+    "失速済み": 4,
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 235,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51580,
-    "posts": 13813,
-    "oldest": "2026-09-24T11:21:44.746260+00:00"
+    "total": 51616,
+    "posts": 13856,
+    "oldest": "2026-09-24T11:37:16.395986+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4244,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 9,
+  "watchlist_active": 4239,
   "top5": [
     {
-      "author": "Kanaria390",
-      "score": 73.6,
-      "likes": 74653,
-      "likes_per_min": 1038.74,
-      "acceleration": 0.71,
+      "author": "Tama_chan0317_",
+      "score": 36.9,
+      "likes": 14340,
+      "likes_per_min": 12.01,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 80.0,
-      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
-      "url": "https://x.com/i/status/2103424657454244298"
+      "age_minutes": 475.0,
+      "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
+      "url": "https://x.com/i/status/2103329166611620294"
+    },
+    {
+      "author": "AI_kenky",
+      "score": 34.3,
+      "likes": 31164,
+      "likes_per_min": 68.24,
+      "acceleration": 1.05,
+      "measured": true,
+      "age_minutes": 713.9,
+      "text": "うちの学校の文化祭でやる担任をコスプレさせるイベント\n毎年一番盛り上がる https://t.co/9Q6eOAztYu",
+      "url": "https://x.com/i/status/2103269064785428794"
     },
     {
       "author": "livedoornews",
-      "score": 89.1,
-      "likes": 6560,
-      "likes_per_min": 166.33,
-      "acceleration": null,
+      "score": 89.8,
+      "likes": 9022,
+      "likes_per_min": 158.04,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 61.5,
+      "age_minutes": 77.1,
       "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
       "url": "https://x.com/i/status/2103429303098589483"
     },
     {
-      "author": "milk_info",
-      "score": 78.8,
-      "likes": 38962,
-      "likes_per_min": 335.84,
-      "acceleration": 0.81,
+      "author": "Kanaria390",
+      "score": 71.8,
+      "likes": 84894,
+      "likes_per_min": 657.39,
+      "acceleration": 0.63,
       "measured": true,
-      "age_minutes": 81.5,
-      "text": "❤️‍🔥❤️‍🔥❤️‍🔥\nM!LK ARENA TOUR 2026-2027「シャカリキレボリューション」\nご来場のお客",
-      "url": "https://x.com/i/status/2103424278989508932"
+      "age_minutes": 95.6,
+      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
+      "url": "https://x.com/i/status/2103424657454244298"
     },
     {
-      "author": "bad_texter",
-      "score": 32.1,
-      "likes": 16883,
-      "likes_per_min": 100.49,
-      "acceleration": 1.14,
-      "measured": true,
-      "age_minutes": 222.7,
-      "text": "江頭2:50のマナー https://t.co/ZmDi479FHX",
-      "url": "https://x.com/i/status/2103388740467270005"
-    },
-    {
-      "author": "mijinko01417",
-      "score": 55.2,
-      "likes": 13929,
-      "likes_per_min": 358.73,
+      "author": "modelpress",
+      "score": 32.6,
+      "likes": 5195,
+      "likes_per_min": 30.53385320768784,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 70.4,
-      "text": "先生の秘密(1/2) #創作BL https://t.co/iQ2VUDNlf1",
-      "url": "https://x.com/i/status/2103427070814752769"
+      "measured": false,
+      "age_minutes": 170.1,
+      "text": "松岡茉優、初挑戦の仕事で涙\n今後オファーは「受けない」\nhttps://t.co/wPPTU88o2V\n\n「恥ずかしいし",
+      "url": "https://x.com/i/status/2103405895044759834"
     }
   ]
 }

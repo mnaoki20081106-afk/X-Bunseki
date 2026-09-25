@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T19:32:34.605046+00:00",
+  "updated_at": "2026-09-25T19:48:07.074106+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 35,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 5,
-    "detail_unavailable": 3,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790365626
+      "reset": 1790366559
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T19:32:05.948284+00:00",
-  "finished_at": "2026-09-25T19:32:34.601367+00:00",
-  "posts_scanned": 624,
-  "posts_with_history": 591,
-  "posts_flagged": 7,
+  "started_at": "2026-09-25T19:47:38.255490+00:00",
+  "finished_at": "2026-09-25T19:48:07.073029+00:00",
+  "posts_scanned": 628,
+  "posts_with_history": 588,
+  "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 133,
+  "minutes_since_last_notification": 149,
   "reject_reasons": {
-    "古すぎる": 369,
-    "いいね稼ぎ疑い": 5,
-    "いいねが少なすぎる": 136,
-    "失速済み": 3,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 387,
+    "いいね稼ぎ疑い": 4,
+    "初回観測かつ平均速度が低い": 5,
+    "いいねが少なすぎる": 139,
+    "失速済み": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52059,
-    "posts": 14165,
-    "oldest": "2026-09-24T19:34:18.903907+00:00"
+    "total": 52092,
+    "posts": 14134,
+    "oldest": "2026-09-24T19:49:57.594793+00:00"
   },
-  "viral_discovery_posts": 147,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4473,
+  "viral_discovery_posts": 146,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4471,
   "top5": [
     {
-      "author": "ninjin301417",
-      "score": 13.2,
-      "likes": 104566,
-      "likes_per_min": 0.9,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 954.2,
-      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
-      "url": "https://x.com/i/status/2103328215913861451"
-    },
-    {
       "author": "DEATHDOL_NOTE",
-      "score": 28.2,
-      "likes": 33549,
-      "likes_per_min": 4.96,
-      "acceleration": 1.17,
+      "score": 27.0,
+      "likes": 33623,
+      "likes_per_min": 4.76,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 819.6,
+      "age_minutes": 835.2,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
       "author": "subarashiiasa",
-      "score": 47.8,
-      "likes": 3125,
-      "likes_per_min": 12.73,
-      "acceleration": 0.9,
+      "score": 42.3,
+      "likes": 3271,
+      "likes_per_min": 9.39,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 153.3,
+      "age_minutes": 168.8,
       "text": "帰ってこなくていまこれ https://t.co/jh2Zorr9C1",
       "url": "https://x.com/i/status/2103529783770656858"
     },
     {
       "author": "anabolicspace",
-      "score": 36.2,
-      "likes": 4102,
-      "likes_per_min": 13.97,
-      "acceleration": 0.84,
+      "score": 34.9,
+      "likes": 4311,
+      "likes_per_min": 13.45,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 142.6,
+      "age_minutes": 158.1,
       "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
       "url": "https://x.com/i/status/2103532478497787936"
     },
     {
       "author": "ota324",
-      "score": 27.8,
-      "likes": 2298,
-      "likes_per_min": 6.66,
-      "acceleration": 1.14,
+      "score": 25.1,
+      "likes": 2404,
+      "likes_per_min": 6.82,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 214.7,
+      "age_minutes": 230.2,
       "text": "だから帰宅したくなかったんだよね。嫌な予感的中。また喧嘩した。そして、いつも疑問なんだけど。なんで喧嘩してる最中に眠れる",
       "url": "https://x.com/i/status/2103514330721550750"
+    },
+    {
+      "author": "ryomikk_a",
+      "score": 30.2,
+      "likes": 8280,
+      "likes_per_min": 47.74,
+      "acceleration": 0.95,
+      "measured": true,
+      "age_minutes": 229.5,
+      "text": "ニトクリスだったころの写真。またやりたいな https://t.co/VIH8xBINqx",
+      "url": "https://x.com/i/status/2103514520371228988"
     }
   ]
 }

@@ -1,118 +1,29 @@
 {
-  "updated_at": "2026-09-25T18:21:30.241817+00:00",
-  "status": "success",
+  "updated_at": "2026-09-25T18:36:28.990225+00:00",
+  "status": "error",
+  "started_at": "2026-09-25T18:36:24.670835+00:00",
+  "posts_scanned": 0,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "error_message": "collection_failed",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 38,
-    "detail_failed": 0,
-    "detail_skipped": 2,
-    "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "status": "collection_failed",
+    "error_code": "collection_failed",
+    "search_succeeded": 0,
+    "search_failed": 28,
+    "detail_succeeded": 0,
+    "detail_failed": 40,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
-      "limit": 50,
-      "remaining": 14,
-      "reset": 1790361356
+      "limit": null,
+      "remaining": null,
+      "reset": null
     },
-    "failures": {}
-  },
-  "started_at": "2026-09-25T18:20:55.189382+00:00",
-  "finished_at": "2026-09-25T18:21:30.240728+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 572,
-  "posts_flagged": 6,
-  "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 62,
-  "reject_reasons": {
-    "古すぎる": 262,
-    "いいね稼ぎ疑い": 6,
-    "失速済み": 7,
-    "誘導文パターン": 2,
-    "いいねが少なすぎる": 173,
-    "初回観測かつ平均速度が低い": 4
-  },
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 100,
-    "MAX_AGE_MINUTES": 240,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
-    "RELEVANCE_FLOOR": 0.9,
-    "EARLY_LPM_AT_30": 18,
-    "EARLY_BONUS_AT_30": 18,
-    "EARLY_LPM_AT_15": 18,
-    "EARLY_BURST_BONUS": 18
-  },
-  "observation_db": {
-    "total": 52597,
-    "posts": 14284,
-    "oldest": "2026-09-24T18:32:22.448100+00:00"
-  },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4461,
-  "top5": [
-    {
-      "author": "yori_youtube",
-      "score": 35.2,
-      "likes": 8907,
-      "likes_per_min": 19.04,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 196.2,
-      "text": "【ご報告】\nエレメちゃんが9月19日に亡くなりました。\nエレメちゃんのアカウントから報告したかったのですがエレメちゃんの",
-      "url": "https://x.com/i/status/2103501106546667786"
-    },
-    {
-      "author": "anabolicspace",
-      "score": 54.9,
-      "likes": 2655,
-      "likes_per_min": 48.11,
-      "acceleration": 1.08,
-      "measured": true,
-      "age_minutes": 71.5,
-      "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
-      "url": "https://x.com/i/status/2103532478497787936"
-    },
-    {
-      "author": "jingisu_jin",
-      "score": 40.4,
-      "likes": 5777,
-      "likes_per_min": 20.59,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 182.6,
-      "text": "チーバくんいじめた人、並んで。\n1人づつ鍋で焼いていくからね ξ(*･ω･*)3 \n#頑張って千葉",
-      "url": "https://x.com/i/status/2103504523742601338"
-    },
-    {
-      "author": "ten_sura_anime",
-      "score": 30.0,
-      "likes": 18847,
-      "likes_per_min": 16.01,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 231.5,
-      "text": "◤◢◤◢◤◢◤◢◤◢◤◢◤◢ 　\n　TVアニメ第4期第3クール\n　  🦋2027年7月放送🦋\n ◤◢◤◢◤◢◤◢◤◢◤◢",
-      "url": "https://x.com/i/status/2103492218610741481"
-    },
-    {
-      "author": "ten_sura_anime",
-      "score": 31.8,
-      "likes": 8794,
-      "likes_per_min": 8.26,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 230.5,
-      "text": "◤◢◤◢◤◢◤◢◤◢◤◢◤◢\n  転生したらスライムだった件 \n　　 クレイマンREVENGE\n　        TVア",
-      "url": "https://x.com/i/status/2103492469228970240"
-    }
-  ]
+    "failures": {},
+    "_detail_skipped_ids": []
+  }
 }

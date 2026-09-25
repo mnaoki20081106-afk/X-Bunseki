@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T05:36:03.075078+00:00",
+  "updated_at": "2026-09-25T05:51:33.104172+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 2,
+    "detail_incomplete": 1,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790315431
+      "reset": 1790316361
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T05:35:30.078449+00:00",
-  "finished_at": "2026-09-25T05:36:03.074015+00:00",
-  "posts_scanned": 593,
-  "posts_with_history": 497,
-  "posts_flagged": 69,
+  "started_at": "2026-09-25T05:51:00.871031+00:00",
+  "finished_at": "2026-09-25T05:51:33.103049+00:00",
+  "posts_scanned": 590,
+  "posts_with_history": 490,
+  "posts_flagged": 59,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 227,
+  "minutes_since_last_notification": 242,
   "reject_reasons": {
-    "古すぎる": 150,
-    "いいねが少なすぎる": 194,
+    "古すぎる": 147,
     "誘導文パターン": 2,
+    "いいねが少なすぎる": 211,
     "初回観測かつ平均速度が低い": 3,
-    "失速済み": 3,
-    "いいね稼ぎ疑い": 1
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52182,
-    "posts": 12984,
-    "oldest": "2026-09-24T05:46:40.753314+00:00"
+    "total": 52201,
+    "posts": 13000,
+    "oldest": "2026-09-24T06:02:13.770580+00:00"
   },
-  "viral_discovery_posts": 124,
+  "viral_discovery_posts": 123,
   "million_imp_rescued": 5,
-  "watchlist_active": 4269,
+  "watchlist_active": 4272,
   "top5": [
     {
-      "author": "papapaan2",
-      "score": 26.7,
-      "likes": 61138,
-      "likes_per_min": 138.64,
-      "acceleration": 0.63,
-      "measured": true,
-      "age_minutes": 742.0,
-      "text": "夫氏がしんでしまいました\n昨日までヤンニョムチキン食べてワイワイしてたのに\n11月に大型の旅行計画立ててたのに\n\n朝ベッ",
-      "url": "https://x.com/i/status/2103171114335916097"
-    },
-    {
       "author": "Tama_chan0317_",
-      "score": 79.8,
-      "likes": 5436,
-      "likes_per_min": 71.12,
-      "acceleration": 0.9,
+      "score": 72.4,
+      "likes": 6439,
+      "likes_per_min": 64.71,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 114.0,
+      "age_minutes": 129.5,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "yukitichqn",
-      "score": 57.0,
-      "likes": 21553,
-      "likes_per_min": 269.82,
-      "acceleration": 0.96,
+      "score": 53.8,
+      "likes": 25527,
+      "likes_per_min": 256.39,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 132.5,
+      "age_minutes": 148.0,
       "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
       "url": "https://x.com/i/status/2103324506651771298"
     },
     {
-      "author": "kb_dn_",
-      "score": 42.9,
-      "likes": 27039,
-      "likes_per_min": 132.6,
-      "acceleration": 0.86,
+      "author": "tkzwgrs",
+      "score": 57.2,
+      "likes": 5493,
+      "likes_per_min": 36.78,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 164.4,
+      "age_minutes": 115.8,
+      "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
+      "url": "https://x.com/i/status/2103332591583822181"
+    },
+    {
+      "author": "kb_dn_",
+      "score": 41.1,
+      "likes": 29078,
+      "likes_per_min": 131.55,
+      "acceleration": 0.99,
+      "measured": true,
+      "age_minutes": 179.9,
       "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
       "url": "https://x.com/i/status/2103316478632358315"
     },
     {
-      "author": "tkzwgrs",
-      "score": 63.3,
-      "likes": 4923,
-      "likes_per_min": 50.17,
-      "acceleration": 0.82,
+      "author": "cho3li4",
+      "score": 50.6,
+      "likes": 14163,
+      "likes_per_min": 281.75,
+      "acceleration": 2.66,
       "measured": true,
-      "age_minutes": 100.3,
-      "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
-      "url": "https://x.com/i/status/2103332591583822181"
+      "age_minutes": 158.9,
+      "text": "俺が働く会社では3分おきにおしっこするジジイ、4分おきにおしっこするジジイ、5分おきにおしっこするジジイがいて、3人が同",
+      "url": "https://x.com/i/status/2103321750012674352"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T03:22:32.593631+00:00",
+  "updated_at": "2026-09-25T03:37:57.796683+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,25 +16,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790307418
+      "reset": 1790308348
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T03:21:57.013666+00:00",
-  "finished_at": "2026-09-25T03:22:32.592380+00:00",
-  "posts_scanned": 623,
-  "posts_with_history": 438,
-  "posts_flagged": 101,
+  "started_at": "2026-09-25T03:37:27.902969+00:00",
+  "finished_at": "2026-09-25T03:37:57.795356+00:00",
+  "posts_scanned": 602,
+  "posts_with_history": 427,
+  "posts_flagged": 110,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 93,
+  "minutes_since_last_notification": 109,
   "reject_reasons": {
-    "古すぎる": 176,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 16,
-    "誘導文パターン": 2,
-    "いいねが少なすぎる": 226,
-    "失速済み": 4
+    "古すぎる": 158,
+    "誘導文パターン": 8,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 3,
+    "いいねが少なすぎる": 227
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52094,
-    "posts": 12725,
-    "oldest": "2026-09-24T03:33:33.230731+00:00"
+    "total": 52103,
+    "posts": 12805,
+    "oldest": "2026-09-24T03:49:10.367781+00:00"
   },
-  "viral_discovery_posts": 144,
+  "viral_discovery_posts": 132,
   "million_imp_rescued": 5,
-  "watchlist_active": 4249,
+  "watchlist_active": 4264,
   "top5": [
     {
       "author": "mofjd",
-      "score": 31.2,
-      "likes": 63741,
-      "likes_per_min": 98.74,
-      "acceleration": 1.31,
+      "score": 29.5,
+      "likes": 65257,
+      "likes_per_min": 98.31,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 823.5,
+      "age_minutes": 838.9,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
       "author": "nishinoakihiro",
-      "score": 46.0,
-      "likes": 5251,
-      "likes_per_min": 37.43,
-      "acceleration": 1.03,
+      "score": 43.1,
+      "likes": 5826,
+      "likes_per_min": 37.29,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 176.6,
+      "age_minutes": 192.0,
       "text": "【お詫びとご報告】\n　\n平素より弊社ならびに弊社関係者を応援いただき、誠にありがとうございます。 https://t.c",
       "url": "https://x.com/i/status/2103279798793765235"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 48.7,
-      "likes": 16442,
-      "likes_per_min": 101.06,
-      "acceleration": 1.13,
+      "score": 45.2,
+      "likes": 18179,
+      "likes_per_min": 112.64,
+      "acceleration": 1.11,
       "measured": true,
-      "age_minutes": 195.2,
+      "age_minutes": 210.6,
       "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
       "url": "https://x.com/i/status/2103275120102158457"
     },
     {
       "author": "nenemapp",
-      "score": 65.1,
-      "likes": 8850,
-      "likes_per_min": 136.3,
-      "acceleration": 1.1,
+      "score": 59.8,
+      "likes": 10505,
+      "likes_per_min": 107.33,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 124.2,
+      "age_minutes": 139.6,
       "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
       "url": "https://x.com/i/status/2103292984854978846"
     },
     {
-      "author": "AI_kenky",
-      "score": 39.1,
-      "likes": 9089,
-      "likes_per_min": 54.83,
-      "acceleration": 1.22,
-      "measured": true,
-      "age_minutes": 219.3,
-      "text": "うちの学校の文化祭でやる担任をコスプレさせるイベント\n毎年一番盛り上がる https://t.co/9Q6eOAztYu",
-      "url": "https://x.com/i/status/2103269064785428794"
+      "author": "MotokiOhmoriMGA",
+      "score": 81.3,
+      "likes": 6540,
+      "likes_per_min": 600.0504547011536,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 10.9,
+      "text": "私はフェイラーさんとコラボ。\n豪華。手に入れろください。",
+      "url": "https://x.com/i/status/2103325379931107520"
     }
   ]
 }

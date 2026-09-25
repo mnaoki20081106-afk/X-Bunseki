@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T09:07:04.102370+00:00",
+  "updated_at": "2026-09-25T09:22:41.825601+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,32 @@
     "detail_succeeded": 38,
     "detail_failed": 0,
     "detail_skipped": 2,
-    "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_unavailable": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 15,
-      "reset": 1790328094
+      "reset": 1790329021
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T09:06:33.475027+00:00",
-  "finished_at": "2026-09-25T09:07:04.101228+00:00",
-  "posts_scanned": 580,
-  "posts_with_history": 391,
-  "posts_flagged": 105,
+  "started_at": "2026-09-25T09:22:00.708806+00:00",
+  "finished_at": "2026-09-25T09:22:41.824608+00:00",
+  "posts_scanned": 604,
+  "posts_with_history": 431,
+  "posts_flagged": 106,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 438,
+  "minutes_since_last_notification": 453,
   "reject_reasons": {
-    "古すぎる": 127,
+    "古すぎる": 134,
+    "失速済み": 4,
     "誘導文パターン": 4,
-    "いいねが少なすぎる": 233,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 2
+    "いいねが少なすぎる": 236,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52463,
-    "posts": 13524,
-    "oldest": "2026-09-24T09:17:21.890727+00:00"
+    "total": 52504,
+    "posts": 13604,
+    "oldest": "2026-09-24T09:32:56.281830+00:00"
   },
-  "viral_discovery_posts": 133,
+  "viral_discovery_posts": 132,
   "million_imp_rescued": 9,
-  "watchlist_active": 4284,
+  "watchlist_active": 4288,
   "top5": [
     {
-      "author": "tkzwgrs",
-      "score": 42.4,
-      "likes": 42902,
-      "likes_per_min": 329.52,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 186.8,
-      "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
-      "url": "https://x.com/i/status/2103363940436848651"
-    },
-    {
-      "author": "oricon",
-      "score": 74.8,
-      "likes": 19205,
-      "likes_per_min": 172.14,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 117.0,
-      "text": "マクドナルド「チキチー」「倍チキチー」\n10/20販売終了\nhttps://t.co/gZJlO5R93I\n⠀\nマクドナ",
-      "url": "https://x.com/i/status/2103381492189839815"
-    },
-    {
       "author": "livedoornews",
-      "score": 80.1,
-      "likes": 13357,
-      "likes_per_min": 137.29,
-      "acceleration": 0.86,
+      "score": 78.2,
+      "likes": 15133,
+      "likes_per_min": 113.61,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 81.8,
+      "age_minutes": 97.5,
       "text": "【処分保留】timelesz・猪俣周杜が釈放 「この度は大変申し訳ございませんでした」\nhttps://t.co/BgO",
       "url": "https://x.com/i/status/2103390354695389251"
     },
     {
-      "author": "TarataTragedy",
-      "score": 71.6,
-      "likes": 21111,
-      "likes_per_min": 263.16,
-      "acceleration": 0.74,
+      "author": "oricon",
+      "score": 69.0,
+      "likes": 4276,
+      "likes_per_min": 16.5,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 88.9,
+      "age_minutes": 105.9,
+      "text": "timelesz猪俣周杜、釈放\nhttps://t.co/r8cGkm6Pei\n⠀\n湾岸署の前に現れた猪俣は「このたびは",
+      "url": "https://x.com/i/status/2103388242280431917"
+    },
+    {
+      "author": "TarataTragedy",
+      "score": 68.8,
+      "likes": 24526,
+      "likes_per_min": 218.45,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 104.6,
       "text": "速報\ntimelesz 猪俣周杜　釈放 https://t.co/RcQDfqUKSR",
       "url": "https://x.com/i/status/2103388568702058663"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 59.9,
-      "likes": 16566,
-      "likes_per_min": 57.64,
-      "acceleration": 0.72,
+      "author": "oricon",
+      "score": 67.0,
+      "likes": 21427,
+      "likes_per_min": 142.14,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 89.0,
-      "text": "顔が良い https://t.co/cCSXTCyXNz",
-      "url": "https://x.com/i/status/2103388555729146034"
+      "age_minutes": 132.7,
+      "text": "マクドナルド「チキチー」「倍チキチー」\n10/20販売終了\nhttps://t.co/gZJlO5R93I\n⠀\nマクドナ",
+      "url": "https://x.com/i/status/2103381492189839815"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 48.1,
+      "likes": 13040,
+      "likes_per_min": 85.77,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 209.7,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
     }
   ]
 }

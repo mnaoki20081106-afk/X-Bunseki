@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T06:22:35.028756+00:00",
+  "updated_at": "2026-09-25T06:38:06.860653+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,23 +16,23 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790318223
+      "reset": 1790319153
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T06:22:03.031401+00:00",
-  "finished_at": "2026-09-25T06:22:35.027321+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 489,
-  "posts_flagged": 69,
+  "started_at": "2026-09-25T06:37:32.278473+00:00",
+  "finished_at": "2026-09-25T06:38:06.859818+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 510,
+  "posts_flagged": 65,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 273,
+  "minutes_since_last_notification": 289,
   "reject_reasons": {
-    "古すぎる": 149,
-    "いいねが少なすぎる": 217,
-    "誘導文パターン": 5,
+    "古すぎる": 145,
     "失速済み": 3,
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 226,
     "初回観測かつ平均速度が低い": 5,
     "いいね稼ぎ疑い": 1
   },
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52226,
-    "posts": 13058,
-    "oldest": "2026-09-24T06:33:12.197681+00:00"
+    "total": 52250,
+    "posts": 13082,
+    "oldest": "2026-09-24T06:48:41.541957+00:00"
   },
-  "viral_discovery_posts": 140,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4274,
+  "viral_discovery_posts": 141,
+  "million_imp_rescued": 6,
+  "watchlist_active": 4269,
   "top5": [
     {
       "author": "Tama_chan0317_",
-      "score": 67.5,
-      "likes": 8570,
-      "likes_per_min": 74.08,
-      "acceleration": 1.17,
+      "score": 58.6,
+      "likes": 9385,
+      "likes_per_min": 52.47,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 160.5,
+      "age_minutes": 176.0,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "kb_dn_",
-      "score": 36.2,
-      "likes": 33331,
-      "likes_per_min": 139.83,
-      "acceleration": 1.04,
+      "score": 32.7,
+      "likes": 35241,
+      "likes_per_min": 122.97,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 210.9,
+      "age_minutes": 226.4,
       "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
       "url": "https://x.com/i/status/2103316478632358315"
     },
     {
       "author": "tkzwgrs",
-      "score": 52.5,
-      "likes": 6618,
-      "likes_per_min": 35.75,
-      "acceleration": 0.97,
+      "score": 46.0,
+      "likes": 7029,
+      "likes_per_min": 26.46,
+      "acceleration": 0.74,
       "measured": true,
-      "age_minutes": 146.9,
+      "age_minutes": 162.4,
       "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
       "url": "https://x.com/i/status/2103332591583822181"
     },
     {
-      "author": "snsnokyoufu",
-      "score": 51.6,
-      "likes": 2265,
-      "likes_per_min": 59.24,
-      "acceleration": 1.42,
+      "author": "tjmr75",
+      "score": 42.7,
+      "likes": 10129,
+      "likes_per_min": 53.44,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 181.9,
-      "text": "【悲報】Ado、K-POPイベントになぜかサプライズで大トリ出演し大大大炎上してしまうｗｗｗｗｗ\n\nadoかわいそうだな",
-      "url": "https://x.com/i/status/2103323787152576601"
+      "age_minutes": 188.6,
+      "text": "わ、私でもいい……？",
+      "url": "https://x.com/i/status/2103326002848096375"
     },
     {
-      "author": "SizmaRei",
-      "score": 56.6,
-      "likes": 4991,
-      "likes_per_min": 95.05,
-      "acceleration": 1.45,
+      "author": "Hayato_Onozuka",
+      "score": 56.2,
+      "likes": 31550,
+      "likes_per_min": 150.14,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 95.1,
-      "text": "気持ち伝わったよありがとう、でもこれ第三者目線だとたまきくんが企業コラボする話にしか見えなくない？",
-      "url": "https://x.com/i/status/2103345630085292257"
+      "age_minutes": 151.2,
+      "text": "10年前と10年後。\n\n先日ご飯食べてきました！\nエグゼイド10周年！！\n大人になったなと思いつつも結局話してるとあの時",
+      "url": "https://x.com/i/status/2103335411812880764"
     }
   ]
 }

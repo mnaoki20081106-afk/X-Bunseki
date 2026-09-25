@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T07:33:42.429867+00:00",
+  "updated_at": "2026-09-25T07:49:15.192227+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,25 +16,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790322491
+      "reset": 1790323421
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T07:33:10.440381+00:00",
-  "finished_at": "2026-09-25T07:33:42.428047+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 475,
-  "posts_flagged": 86,
+  "started_at": "2026-09-25T07:48:40.568744+00:00",
+  "finished_at": "2026-09-25T07:49:15.190437+00:00",
+  "posts_scanned": 604,
+  "posts_with_history": 486,
+  "posts_flagged": 85,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 344,
+  "minutes_since_last_notification": 360,
   "reject_reasons": {
-    "古すぎる": 155,
-    "失速済み": 2,
-    "いいね稼ぎ疑い": 4,
-    "いいねが少なすぎる": 213,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 165,
+    "いいねが少なすぎる": 209,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 3,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52315,
-    "posts": 13211,
-    "oldest": "2026-09-24T07:35:13.404131+00:00"
+    "total": 52348,
+    "posts": 13262,
+    "oldest": "2026-09-24T07:50:52.385157+00:00"
   },
-  "viral_discovery_posts": 118,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4265,
+  "viral_discovery_posts": 139,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4279,
   "top5": [
     {
       "author": "Tama_chan0317_",
-      "score": 41.4,
-      "likes": 10729,
-      "likes_per_min": 15.24,
-      "acceleration": 0.87,
+      "score": 37.0,
+      "likes": 10959,
+      "likes_per_min": 14.79,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 231.6,
+      "age_minutes": 247.2,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "tkzwgrs",
-      "score": 63.8,
-      "likes": 13993,
-      "likes_per_min": 195.79,
-      "acceleration": 1.14,
+      "score": 60.8,
+      "likes": 17703,
+      "likes_per_min": 238.64,
+      "acceleration": 1.22,
       "measured": true,
-      "age_minutes": 93.4,
+      "age_minutes": 109.0,
       "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
       "url": "https://x.com/i/status/2103363940436848651"
     },
     {
       "author": "akiman7",
-      "score": 47.1,
-      "likes": 7093,
-      "likes_per_min": 81.71,
-      "acceleration": 1.09,
+      "score": 43.0,
+      "likes": 8302,
+      "likes_per_min": 77.77,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 167.1,
+      "age_minutes": 182.6,
       "text": "ドラマ版フォールアウトでも思ったけど外人って核兵器の描写に対する解像度が低い気がする",
       "url": "https://x.com/i/status/2103345402758262859"
     },
     {
       "author": "tkzwgrs",
-      "score": 35.9,
-      "likes": 8106,
-      "likes_per_min": 18.02,
-      "acceleration": 1.03,
+      "score": 32.4,
+      "likes": 8368,
+      "likes_per_min": 16.85,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 218.0,
+      "age_minutes": 233.5,
       "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
       "url": "https://x.com/i/status/2103332591583822181"
     },
     {
-      "author": "Hayato_Onozuka",
-      "score": 45.1,
-      "likes": 38562,
-      "likes_per_min": 114.85,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 206.8,
-      "text": "10年前と10年後。\n\n先日ご飯食べてきました！\nエグゼイド10周年！！\n大人になったなと思いつつも結局話してるとあの時",
-      "url": "https://x.com/i/status/2103335411812880764"
+      "author": "k_maru_dau_baby",
+      "score": 62.8,
+      "likes": 1151,
+      "likes_per_min": 89.76694870117845,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 12.8,
+      "text": "猪俣周杜 釈放",
+      "url": "https://x.com/i/status/2103388135455629482"
     }
   ]
 }

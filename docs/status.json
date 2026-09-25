@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T01:02:39.891316+00:00",
+  "updated_at": "2026-09-25T01:18:23.750616+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_skipped": 2,
+    "detail_unavailable": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 4,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790299030
+      "reset": 1790299970
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T01:02:09.768108+00:00",
-  "finished_at": "2026-09-25T01:02:39.890108+00:00",
-  "posts_scanned": 613,
+  "started_at": "2026-09-25T01:17:48.010507+00:00",
+  "finished_at": "2026-09-25T01:18:23.747865+00:00",
+  "posts_scanned": 620,
   "posts_with_history": 500,
-  "posts_flagged": 45,
-  "notified_count": 0,
+  "posts_flagged": 52,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 40,
+  "minutes_since_last_notification": 55,
   "reject_reasons": {
-    "古すぎる": 207,
-    "誘導文パターン": 11,
+    "古すぎる": 208,
+    "誘導文パターン": 9,
+    "初回観測かつ平均速度が低い": 13,
     "いいねが少なすぎる": 223,
-    "失速済み": 1,
-    "初回観測かつ平均速度が低い": 6
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50816,
-    "posts": 12422,
-    "oldest": "2026-09-24T01:04:10.118897+00:00"
+    "total": 50844,
+    "posts": 12450,
+    "oldest": "2026-09-24T01:19:39.251375+00:00"
   },
   "viral_discovery_posts": 135,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4220,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4235,
   "top5": [
     {
       "author": "mofjd",
-      "score": 29.4,
-      "likes": 52022,
-      "likes_per_min": 122.57,
-      "acceleration": 0.98,
+      "score": 28.9,
+      "likes": 53750,
+      "likes_per_min": 109.97,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 683.6,
+      "age_minutes": 699.3,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 76.0,
-      "likes": 3915,
-      "likes_per_min": 104.6,
-      "acceleration": 1.35,
+      "score": 72.8,
+      "likes": 5647,
+      "likes_per_min": 110.22,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 55.3,
+      "age_minutes": 71.0,
       "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
       "url": "https://x.com/i/status/2103275120102158457"
     },
     {
-      "author": "chiikawa_market",
-      "score": 69.2,
-      "likes": 22893,
-      "likes_per_min": 113.43,
-      "acceleration": 1.0,
+      "author": "nishinoakihiro",
+      "score": 85.7,
+      "likes": 639,
+      "likes_per_min": 26.54,
+      "acceleration": 2.77,
       "measured": true,
-      "age_minutes": 145.8,
+      "age_minutes": 52.4,
+      "text": "【お詫びとご報告】\n　\n平素より弊社ならびに弊社関係者を応援いただき、誠にありがとうございます。 https://t.c",
+      "url": "https://x.com/i/status/2103279798793765235"
+    },
+    {
+      "author": "chiikawa_market",
+      "score": 64.7,
+      "likes": 24547,
+      "likes_per_min": 105.26,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 161.5,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "orca_109",
-      "score": 32.0,
-      "likes": 34217,
-      "likes_per_min": 169.2222148049268,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 202.2,
-      "text": "覚えてても 忘れそうでさ #ちいかわ #ちいかわファンアートㅤ https://t.co/Z00XT4psze",
-      "url": "https://x.com/i/status/2103238158125326811"
-    },
-    {
-      "author": "anime_chiikawa",
-      "score": 59.8,
-      "likes": 8817,
-      "likes_per_min": 31.59,
-      "acceleration": 0.91,
+      "author": "McDonaldsJapan",
+      "score": 46.9,
+      "likes": 34374,
+      "likes_per_min": 218.98,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 122.6,
-      "text": "／\n TVアニメちいかわ 第381話\n見逃し配信スタート📺\n ＼\n\n第381話「パラレルワールド⑦」の1週間限定見逃し配",
-      "url": "https://x.com/i/status/2103258185469743287"
+      "age_minutes": 168.4,
+      "text": "今年も、この季節です。 https://t.co/Bsxe8g1Ddf",
+      "url": "https://x.com/i/status/2103250625009959353"
     }
   ]
 }

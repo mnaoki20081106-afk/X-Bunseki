@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-25T00:47:01.452919+00:00",
+  "updated_at": "2026-09-25T01:02:39.891316+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790298092
+      "reset": 1790299030
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T00:46:31.871499+00:00",
-  "finished_at": "2026-09-25T00:47:01.451749+00:00",
-  "posts_scanned": 607,
-  "posts_with_history": 459,
-  "posts_flagged": 46,
+  "started_at": "2026-09-25T01:02:09.768108+00:00",
+  "finished_at": "2026-09-25T01:02:39.890108+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 500,
+  "posts_flagged": 45,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 24,
+  "minutes_since_last_notification": 40,
   "reject_reasons": {
-    "古すぎる": 206,
-    "誘導文パターン": 10,
+    "古すぎる": 207,
+    "誘導文パターン": 11,
     "いいねが少なすぎる": 223,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 8,
-    "いいね稼ぎ疑い": 1
+    "失速済み": 1,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50376,
-    "posts": 12372,
-    "oldest": "2026-09-24T00:48:29.264417+00:00"
+    "total": 50816,
+    "posts": 12422,
+    "oldest": "2026-09-24T01:04:10.118897+00:00"
   },
-  "viral_discovery_posts": 131,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4239,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4220,
   "top5": [
     {
       "author": "mofjd",
-      "score": 29.6,
-      "likes": 50105,
-      "likes_per_min": 125.36,
-      "acceleration": 1.03,
+      "score": 29.4,
+      "likes": 52022,
+      "likes_per_min": 122.57,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 668.0,
+      "age_minutes": 683.6,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
-      "author": "tkzwgrs",
-      "score": 51.2,
-      "likes": 47620,
-      "likes_per_min": 313.43,
-      "acceleration": 1.03,
+      "author": "DEATHDOL_NOTE",
+      "score": 76.0,
+      "likes": 3915,
+      "likes_per_min": 104.6,
+      "acceleration": 1.35,
       "measured": true,
-      "age_minutes": 137.3,
-      "text": "解説「ヤバいヤバいヤバいｗｗｗうぉおおおおおおおお！！！！」\n\n【朗報】現役高校生・大橋信(17)さん、200m平泳ぎで",
-      "url": "https://x.com/i/status/2103250564960444657"
+      "age_minutes": 55.3,
+      "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
+      "url": "https://x.com/i/status/2103275120102158457"
     },
     {
       "author": "chiikawa_market",
-      "score": 73.3,
-      "likes": 21119,
-      "likes_per_min": 113.14,
-      "acceleration": 1.02,
+      "score": 69.2,
+      "likes": 22893,
+      "likes_per_min": 113.43,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 130.2,
+      "age_minutes": 145.8,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "nigeyama369",
-      "score": 38.6,
-      "likes": 6121,
-      "likes_per_min": 28.97,
-      "acceleration": 0.82,
-      "measured": true,
-      "age_minutes": 230.2,
-      "text": "これが厳しいリアル… https://t.co/QA7f7iiiZU",
-      "url": "https://x.com/i/status/2103227175206084619"
+      "author": "orca_109",
+      "score": 32.0,
+      "likes": 34217,
+      "likes_per_min": 169.2222148049268,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 202.2,
+      "text": "覚えてても 忘れそうでさ #ちいかわ #ちいかわファンアートㅤ https://t.co/Z00XT4psze",
+      "url": "https://x.com/i/status/2103238158125326811"
     },
     {
-      "author": "oricon_anime_",
-      "score": 41.0,
-      "likes": 16653,
-      "likes_per_min": 48.8,
-      "acceleration": 1.13,
+      "author": "anime_chiikawa",
+      "score": 59.8,
+      "likes": 8817,
+      "likes_per_min": 31.59,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 226.0,
-      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
-      "url": "https://x.com/i/status/2103228242304057471"
+      "age_minutes": 122.6,
+      "text": "／\n TVアニメちいかわ 第381話\n見逃し配信スタート📺\n ＼\n\n第381話「パラレルワールド⑦」の1週間限定見逃し配",
+      "url": "https://x.com/i/status/2103258185469743287"
     }
   ]
 }

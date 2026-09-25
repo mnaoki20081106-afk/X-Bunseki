@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T19:48:07.074106+00:00",
+  "updated_at": "2026-09-25T20:03:48.574394+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 38,
     "detail_failed": 0,
     "detail_skipped": 2,
-    "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 3,
+    "detail_unavailable": 2,
+    "detail_incomplete": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790366559
+      "reset": 1790367490
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T19:47:38.255490+00:00",
-  "finished_at": "2026-09-25T19:48:07.073029+00:00",
+  "started_at": "2026-09-25T20:03:09.629540+00:00",
+  "finished_at": "2026-09-25T20:03:48.573088+00:00",
   "posts_scanned": 628,
-  "posts_with_history": 588,
+  "posts_with_history": 569,
   "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 149,
+  "minutes_since_last_notification": 164,
   "reject_reasons": {
-    "古すぎる": 387,
-    "いいね稼ぎ疑い": 4,
-    "初回観測かつ平均速度が低い": 5,
-    "いいねが少なすぎる": 139,
-    "失速済み": 4
+    "古すぎる": 404,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 2,
+    "いいねが少なすぎる": 130,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52092,
-    "posts": 14134,
-    "oldest": "2026-09-24T19:49:57.594793+00:00"
+    "total": 52110,
+    "posts": 14120,
+    "oldest": "2026-09-24T20:05:24.594603+00:00"
   },
-  "viral_discovery_posts": 146,
+  "viral_discovery_posts": 144,
   "million_imp_rescued": 2,
-  "watchlist_active": 4471,
+  "watchlist_active": 4466,
   "top5": [
     {
       "author": "DEATHDOL_NOTE",
-      "score": 27.0,
-      "likes": 33623,
-      "likes_per_min": 4.76,
-      "acceleration": 0.96,
+      "score": 25.6,
+      "likes": 33685,
+      "likes_per_min": 3.95,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 835.2,
+      "age_minutes": 850.8,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
       "author": "subarashiiasa",
-      "score": 42.3,
-      "likes": 3271,
-      "likes_per_min": 9.39,
-      "acceleration": 0.74,
+      "score": 40.8,
+      "likes": 3413,
+      "likes_per_min": 9.05,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 168.8,
+      "age_minutes": 184.5,
       "text": "帰ってこなくていまこれ https://t.co/jh2Zorr9C1",
       "url": "https://x.com/i/status/2103529783770656858"
     },
     {
       "author": "anabolicspace",
-      "score": 34.9,
-      "likes": 4311,
-      "likes_per_min": 13.45,
-      "acceleration": 0.96,
+      "score": 31.8,
+      "likes": 4501,
+      "likes_per_min": 12.11,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 158.1,
+      "age_minutes": 173.8,
       "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
       "url": "https://x.com/i/status/2103532478497787936"
     },
     {
-      "author": "ota324",
-      "score": 25.1,
-      "likes": 2404,
-      "likes_per_min": 6.82,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 230.2,
-      "text": "だから帰宅したくなかったんだよね。嫌な予感的中。また喧嘩した。そして、いつも疑問なんだけど。なんで喧嘩してる最中に眠れる",
-      "url": "https://x.com/i/status/2103514330721550750"
+      "author": "Fuwa_Minato",
+      "score": 93.8,
+      "likes": 657,
+      "likes_per_min": 131.4,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 4.6,
+      "text": "【APEX】私が健康界隈の者です【不破湊/にじさんじ】 https://t.co/qexuAF8hmR @YouTube",
+      "url": "https://x.com/i/status/2103575063358497272"
     },
     {
-      "author": "ryomikk_a",
-      "score": 30.2,
-      "likes": 8280,
-      "likes_per_min": 47.74,
-      "acceleration": 0.95,
+      "author": "kikiraravivi",
+      "score": 31.6,
+      "likes": 3132,
+      "likes_per_min": 4.01,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 229.5,
-      "text": "ニトクリスだったころの写真。またやりたいな https://t.co/VIH8xBINqx",
-      "url": "https://x.com/i/status/2103514520371228988"
+      "age_minutes": 220.9,
+      "text": "浮気したらあかんで / #綺々羅々ヴィヴィ （cover） https://t.co/LO8by7vcNt @YouTu",
+      "url": "https://x.com/i/status/2103520624161468659"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T20:03:48.574394+00:00",
+  "updated_at": "2026-09-25T20:19:21.943085+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 38,
     "detail_failed": 0,
     "detail_skipped": 2,
-    "detail_unavailable": 2,
-    "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 4,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790367490
+      "reset": 1790368421
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T20:03:09.629540+00:00",
-  "finished_at": "2026-09-25T20:03:48.573088+00:00",
-  "posts_scanned": 628,
-  "posts_with_history": 569,
+  "started_at": "2026-09-25T20:18:40.395515+00:00",
+  "finished_at": "2026-09-25T20:19:21.941877+00:00",
+  "posts_scanned": 630,
+  "posts_with_history": 582,
   "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 164,
+  "minutes_since_last_notification": 180,
   "reject_reasons": {
-    "古すぎる": 404,
+    "古すぎる": 418,
     "いいね稼ぎ疑い": 2,
-    "失速済み": 2,
-    "いいねが少なすぎる": 130,
-    "初回観測かつ平均速度が低い": 8
+    "いいねが少なすぎる": 125,
+    "初回観測かつ平均速度が低い": 7,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52110,
-    "posts": 14120,
-    "oldest": "2026-09-24T20:05:24.594603+00:00"
+    "total": 52133,
+    "posts": 14080,
+    "oldest": "2026-09-24T20:20:51.390527+00:00"
   },
-  "viral_discovery_posts": 144,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4466,
+  "viral_discovery_posts": 147,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4470,
   "top5": [
     {
       "author": "DEATHDOL_NOTE",
-      "score": 25.6,
-      "likes": 33685,
-      "likes_per_min": 3.95,
-      "acceleration": 0.83,
+      "score": 26.1,
+      "likes": 33744,
+      "likes_per_min": 3.79,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 850.8,
+      "age_minutes": 866.4,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
-      "author": "subarashiiasa",
-      "score": 40.8,
-      "likes": 3413,
-      "likes_per_min": 9.05,
-      "acceleration": 0.96,
+      "author": "livedoornews",
+      "score": 38.1,
+      "likes": 42529,
+      "likes_per_min": 41.83,
+      "acceleration": 0.4,
       "measured": true,
-      "age_minutes": 184.5,
+      "age_minutes": 599.3,
+      "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
+      "url": "https://x.com/i/status/2103429303098589483"
+    },
+    {
+      "author": "subarashiiasa",
+      "score": 39.4,
+      "likes": 3569,
+      "likes_per_min": 10.03,
+      "acceleration": 1.11,
+      "measured": true,
+      "age_minutes": 200.1,
       "text": "帰ってこなくていまこれ https://t.co/jh2Zorr9C1",
       "url": "https://x.com/i/status/2103529783770656858"
     },
     {
       "author": "anabolicspace",
-      "score": 31.8,
-      "likes": 4501,
-      "likes_per_min": 12.11,
-      "acceleration": 0.9,
+      "score": 31.4,
+      "likes": 4709,
+      "likes_per_min": 13.37,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 173.8,
+      "age_minutes": 189.4,
       "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
       "url": "https://x.com/i/status/2103532478497787936"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 93.8,
-      "likes": 657,
-      "likes_per_min": 131.4,
+      "score": 94.7,
+      "likes": 1119,
+      "likes_per_min": 29.7,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 4.6,
+      "measured": true,
+      "age_minutes": 20.1,
       "text": "【APEX】私が健康界隈の者です【不破湊/にじさんじ】 https://t.co/qexuAF8hmR @YouTube",
       "url": "https://x.com/i/status/2103575063358497272"
-    },
-    {
-      "author": "kikiraravivi",
-      "score": 31.6,
-      "likes": 3132,
-      "likes_per_min": 4.01,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 220.9,
-      "text": "浮気したらあかんで / #綺々羅々ヴィヴィ （cover） https://t.co/LO8by7vcNt @YouTu",
-      "url": "https://x.com/i/status/2103520624161468659"
     }
   ]
 }

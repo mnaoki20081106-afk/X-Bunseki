@@ -1,37 +1,37 @@
 {
-  "updated_at": "2026-09-25T21:05:48.718488+00:00",
+  "updated_at": "2026-09-25T21:21:27.422729+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 37,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
+    "detail_skipped": 3,
+    "detail_unavailable": 3,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790371219
+      "reset": 1790372148
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T21:05:18.361617+00:00",
-  "finished_at": "2026-09-25T21:05:48.717301+00:00",
-  "posts_scanned": 619,
-  "posts_with_history": 543,
+  "started_at": "2026-09-25T21:20:46.968594+00:00",
+  "finished_at": "2026-09-25T21:21:27.421472+00:00",
+  "posts_scanned": 618,
+  "posts_with_history": 535,
   "posts_flagged": 8,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 226,
+  "minutes_since_last_notification": 242,
   "reject_reasons": {
-    "古すぎる": 439,
-    "初回観測かつ平均速度が低い": 8,
-    "いいねが少なすぎる": 120
+    "古すぎる": 432,
+    "いいねが少なすぎる": 129,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -48,9 +48,9 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52192,
-    "posts": 13938,
-    "oldest": "2026-09-24T21:16:45.676085+00:00"
+    "total": 52197,
+    "posts": 13884,
+    "oldest": "2026-09-24T21:32:14.088171+00:00"
   },
   "viral_discovery_posts": 140,
   "million_imp_rescued": 1,
@@ -58,56 +58,56 @@
   "top5": [
     {
       "author": "DEATHDOL_NOTE",
-      "score": 28.4,
-      "likes": 33971,
-      "likes_per_min": 5.29,
-      "acceleration": 1.14,
+      "score": 27.1,
+      "likes": 34050,
+      "likes_per_min": 5.05,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 912.8,
+      "age_minutes": 928.5,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
-      "author": "anabolicspace",
-      "score": 26.6,
-      "likes": 5406,
-      "likes_per_min": 17.96,
-      "acceleration": 1.24,
-      "measured": true,
-      "age_minutes": 235.8,
-      "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
-      "url": "https://x.com/i/status/2103532478497787936"
-    },
-    {
       "author": "KoikoiKokoa_734",
-      "score": 16.2,
-      "likes": 125,
-      "likes_per_min": 0.91,
-      "acceleration": 0.79,
+      "score": 16.6,
+      "likes": 143,
+      "likes_per_min": 1.15,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 118.0,
+      "age_minutes": 133.7,
       "text": "@kazahana1109 クレカの情報入れたんなら止めて再発行しないと不正利用されますが…",
       "url": "https://x.com/i/status/2103562123943256198"
     },
     {
-      "author": "shiromanta_rec",
-      "score": 43.7,
-      "likes": 7091,
-      "likes_per_min": 32.92,
-      "acceleration": 1.22,
+      "author": "wni_jp",
+      "score": 70.2,
+      "likes": 703,
+      "likes_per_min": 13.61,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 188.0,
+      "age_minutes": 51.6,
+      "text": "【台風情報】9月26日(土)3時現在、台風26号(スリゲ)は沖縄の南に位置し、北北西に進んでいます。明日には強い勢力まで",
+      "url": "https://x.com/i/status/2103582777178534106"
+    },
+    {
+      "author": "shiromanta_rec",
+      "score": 40.6,
+      "likes": 7667,
+      "likes_per_min": 36.81,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 203.7,
       "text": "作業配信見てくれてありがとう～\nこれは顔がいい男を練習するために描かせていただいたロレ https://t.co/lSB",
       "url": "https://x.com/i/status/2103544501180805208"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 73.2,
-      "likes": 2160,
-      "likes_per_min": 19.99,
-      "acceleration": 0.9,
+      "score": 70.7,
+      "likes": 2449,
+      "likes_per_min": 18.47,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 66.6,
+      "age_minutes": 82.2,
       "text": "【APEX】私が健康界隈の者です【不破湊/にじさんじ】 https://t.co/qexuAF8hmR @YouTube",
       "url": "https://x.com/i/status/2103575063358497272"
     }

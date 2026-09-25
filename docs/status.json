@@ -1,38 +1,39 @@
 {
-  "updated_at": "2026-09-25T22:46:45.710578+00:00",
+  "updated_at": "2026-09-25T23:02:15.562564+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 3,
-    "detail_incomplete": 1,
-    "invalid_tweets": 7,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790377272
+      "reset": 1790378201
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T22:46:10.964995+00:00",
-  "finished_at": "2026-09-25T22:46:45.709359+00:00",
-  "posts_scanned": 603,
-  "posts_with_history": 494,
-  "posts_flagged": 34,
+  "started_at": "2026-09-25T23:01:40.592365+00:00",
+  "finished_at": "2026-09-25T23:02:15.561343+00:00",
+  "posts_scanned": 593,
+  "posts_with_history": 461,
+  "posts_flagged": 27,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 327,
+  "minutes_since_last_notification": 343,
   "reject_reasons": {
-    "古すぎる": 361,
+    "古すぎる": 330,
+    "初回観測かつ平均速度が低い": 5,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 159,
-    "初回観測かつ平均速度が低い": 2
+    "いいねが少なすぎる": 174,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52196,
-    "posts": 13716,
-    "oldest": "2026-09-24T22:49:44.755228+00:00"
+    "total": 52159,
+    "posts": 13697,
+    "oldest": "2026-09-24T23:05:10.558018+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4376,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4356,
   "top5": [
     {
-      "author": "Qchan_biyou",
-      "score": 24.7,
-      "likes": 14392,
-      "likes_per_min": 12.62,
-      "acceleration": 1.09,
+      "author": "FRUITS_ZIPPER",
+      "score": 29.1,
+      "likes": 31376,
+      "likes_per_min": 24.68,
+      "acceleration": 0.23,
       "measured": true,
-      "age_minutes": 847.9,
+      "age_minutes": 586.9,
+      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
+      "url": "https://x.com/i/status/2103473432625381433"
+    },
+    {
+      "author": "Qchan_biyou",
+      "score": 25.2,
+      "likes": 14612,
+      "likes_per_min": 14.2,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 863.4,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
       "author": "Vau875",
-      "score": 100.0,
-      "likes": 2475,
-      "likes_per_min": 69.94,
-      "acceleration": 2.16,
+      "score": 95.6,
+      "likes": 4154,
+      "likes_per_min": 108.34,
+      "acceleration": 1.55,
       "measured": true,
-      "age_minutes": 55.0,
+      "age_minutes": 70.5,
       "text": "起きんよ普通に",
       "url": "https://x.com/i/status/2103603391914246578"
     },
     {
+      "author": "Lauren_iroas",
+      "score": 78.4,
+      "likes": 2292,
+      "likes_per_min": 172.85786397991413,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 13.3,
+      "text": "ナイ盛りですな\nおやすみなさい",
+      "url": "https://x.com/i/status/2103617790687232303"
+    },
+    {
       "author": "nino_honmono",
-      "score": 72.6,
-      "likes": 17961,
-      "likes_per_min": 186.5,
-      "acceleration": 0.97,
+      "score": 71.8,
+      "likes": 20523,
+      "likes_per_min": 165.32,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 73.4,
+      "age_minutes": 88.9,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2103598763898286220"
-    },
-    {
-      "author": "wni_jp",
-      "score": 53.0,
-      "likes": 1913,
-      "likes_per_min": 13.46,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 136.9,
-      "text": "【台風情報】9月26日(土)3時現在、台風26号(スリゲ)は沖縄の南に位置し、北北西に進んでいます。明日には強い勢力まで",
-      "url": "https://x.com/i/status/2103582777178534106"
-    },
-    {
-      "author": "takuya_hyon",
-      "score": 32.8,
-      "likes": 2568,
-      "likes_per_min": 20.09,
-      "acceleration": 1.41,
-      "measured": true,
-      "age_minutes": 172.9,
-      "text": "どうしても\nカレー食べたい\nと思って某大手カレー屋で頼んだら\n\n絶対に ネギ豚バラ丼 が届いて\n\n今、ひとりで爆笑してる",
-      "url": "https://x.com/i/status/2103573711756693955"
     }
   ]
 }

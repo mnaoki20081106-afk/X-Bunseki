@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T09:22:41.825601+00:00",
+  "updated_at": "2026-09-25T09:38:09.240610+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,32 +9,32 @@
     "detail_succeeded": 38,
     "detail_failed": 0,
     "detail_skipped": 2,
-    "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 3,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790329021
+      "remaining": 14,
+      "reset": 1790329953
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T09:22:00.708806+00:00",
-  "finished_at": "2026-09-25T09:22:41.824608+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 431,
-  "posts_flagged": 106,
+  "started_at": "2026-09-25T09:37:32.254698+00:00",
+  "finished_at": "2026-09-25T09:38:09.239409+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 449,
+  "posts_flagged": 121,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 453,
+  "minutes_since_last_notification": 469,
   "reject_reasons": {
-    "古すぎる": 134,
-    "失速済み": 4,
-    "誘導文パターン": 4,
-    "いいねが少なすぎる": 236,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 137,
+    "誘導文パターン": 2,
+    "いいねが少なすぎる": 230,
+    "初回観測かつ平均速度が低い": 6,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52504,
-    "posts": 13604,
-    "oldest": "2026-09-24T09:32:56.281830+00:00"
+    "total": 52520,
+    "posts": 13654,
+    "oldest": "2026-09-24T09:48:27.872122+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 9,
-  "watchlist_active": 4288,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 8,
+  "watchlist_active": 4299,
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 78.2,
-      "likes": 15133,
-      "likes_per_min": 113.61,
-      "acceleration": 0.83,
+      "author": "Tama_chan0317_",
+      "score": 38.4,
+      "likes": 12928,
+      "likes_per_min": 18.23,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 97.5,
-      "text": "【処分保留】timelesz・猪俣周杜が釈放 「この度は大変申し訳ございませんでした」\nhttps://t.co/BgO",
-      "url": "https://x.com/i/status/2103390354695389251"
-    },
-    {
-      "author": "oricon",
-      "score": 69.0,
-      "likes": 4276,
-      "likes_per_min": 16.5,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 105.9,
-      "text": "timelesz猪俣周杜、釈放\nhttps://t.co/r8cGkm6Pei\n⠀\n湾岸署の前に現れた猪俣は「このたびは",
-      "url": "https://x.com/i/status/2103388242280431917"
+      "age_minutes": 356.1,
+      "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
+      "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "TarataTragedy",
-      "score": 68.8,
-      "likes": 24526,
-      "likes_per_min": 218.45,
-      "acceleration": 0.83,
+      "score": 65.8,
+      "likes": 27565,
+      "likes_per_min": 196.69,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 104.6,
+      "age_minutes": 120.0,
       "text": "速報\ntimelesz 猪俣周杜　釈放 https://t.co/RcQDfqUKSR",
       "url": "https://x.com/i/status/2103388568702058663"
     },
     {
       "author": "oricon",
-      "score": 67.0,
-      "likes": 21427,
-      "likes_per_min": 142.14,
-      "acceleration": 0.83,
+      "score": 64.1,
+      "likes": 23355,
+      "likes_per_min": 124.78,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 132.7,
+      "age_minutes": 148.1,
       "text": "マクドナルド「チキチー」「倍チキチー」\n10/20販売終了\nhttps://t.co/gZJlO5R93I\n⠀\nマクドナ",
       "url": "https://x.com/i/status/2103381492189839815"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 48.1,
-      "likes": 13040,
-      "likes_per_min": 85.77,
-      "acceleration": 0.86,
+      "author": "livedoornews",
+      "score": 73.8,
+      "likes": 16441,
+      "likes_per_min": 84.65,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 209.7,
-      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
-      "url": "https://x.com/i/status/2103362098235691057"
+      "age_minutes": 112.9,
+      "text": "【処分保留】timelesz・猪俣周杜が釈放 「この度は大変申し訳ございませんでした」\nhttps://t.co/BgO",
+      "url": "https://x.com/i/status/2103390354695389251"
+    },
+    {
+      "author": "k_maru_dau_baby",
+      "score": 48.7,
+      "likes": 17792,
+      "likes_per_min": 35.27,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 120.1,
+      "text": "顔が良い https://t.co/cCSXTCyXNz",
+      "url": "https://x.com/i/status/2103388555729146034"
     }
   ]
 }

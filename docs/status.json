@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T23:51:51.432373+00:00",
+  "updated_at": "2026-09-25T00:07:19.289671+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,32 +9,32 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_unavailable": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 7,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790294779
+      "remaining": 14,
+      "reset": 1790295710
     },
     "failures": {}
   },
-  "started_at": "2026-09-24T23:51:19.069461+00:00",
-  "finished_at": "2026-09-24T23:51:51.431411+00:00",
-  "posts_scanned": 599,
-  "posts_with_history": 494,
-  "posts_flagged": 46,
-  "notified_count": 1,
+  "started_at": "2026-09-25T00:06:49.178328+00:00",
+  "finished_at": "2026-09-25T00:07:19.288423+00:00",
+  "posts_scanned": 612,
+  "posts_with_history": 492,
+  "posts_flagged": 40,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 406,
+  "minutes_since_last_notification": 15,
   "reject_reasons": {
-    "古すぎる": 240,
+    "古すぎる": 233,
     "誘導文パターン": 9,
-    "いいねが少なすぎる": 200,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 6,
-    "いいね稼ぎ疑い": 1
+    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 225,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50322,
-    "posts": 12340,
-    "oldest": "2026-09-24T00:02:10.142184+00:00"
+    "total": 50353,
+    "posts": 12349,
+    "oldest": "2026-09-24T00:17:42.494896+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4233,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4219,
   "top5": [
     {
-      "author": "JINJIN1027",
-      "score": 33.2,
-      "likes": 15610,
-      "likes_per_min": 17.87,
-      "acceleration": 1.43,
-      "measured": true,
-      "age_minutes": 620.8,
-      "text": "我慢の限界です。\n僕は本気で歌って曲を作ってるのに\nみなさんに冷笑されるのが悲しいです。\n他にも僕が本気で歌った曲がたく",
-      "url": "https://x.com/i/status/2103115002001698873"
-    },
-    {
       "author": "tkzwgrs",
-      "score": 58.1,
-      "likes": 29958,
-      "likes_per_min": 382.16,
-      "acceleration": 0.86,
+      "score": 57.2,
+      "likes": 35335,
+      "likes_per_min": 347.53,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 82.1,
+      "age_minutes": 97.6,
       "text": "解説「ヤバいヤバいヤバいｗｗｗうぉおおおおおおおお！！！！」\n\n【朗報】現役高校生・大橋信(17)さん、200m平泳ぎで",
       "url": "https://x.com/i/status/2103250564960444657"
     },
     {
-      "author": "nigeyama369",
-      "score": 54.2,
-      "likes": 4330,
-      "likes_per_min": 42.09,
-      "acceleration": 1.03,
+      "author": "oricon_anime_",
+      "score": 47.3,
+      "likes": 14802,
+      "likes_per_min": 49.83,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 175.0,
-      "text": "これが厳しいリアル… https://t.co/QA7f7iiiZU",
-      "url": "https://x.com/i/status/2103227175206084619"
+      "age_minutes": 186.3,
+      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
+      "url": "https://x.com/i/status/2103228242304057471"
     },
     {
       "author": "chiikawa_market",
-      "score": 84.4,
-      "likes": 14684,
-      "likes_per_min": 148.22,
-      "acceleration": 0.72,
+      "score": 85.7,
+      "likes": 16655,
+      "likes_per_min": 127.39,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 75.0,
+      "age_minutes": 90.5,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "oricon_anime_",
-      "score": 50.8,
-      "likes": 14031,
-      "likes_per_min": 58.49,
-      "acceleration": 0.8,
+      "author": "30R9gmaMUy3guDJ",
+      "score": 30.5,
+      "likes": 5107,
+      "likes_per_min": 15.99,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 170.8,
-      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
-      "url": "https://x.com/i/status/2103228242304057471"
+      "age_minutes": 198.4,
+      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
+      "url": "https://x.com/i/status/2103225176305582231"
+    },
+    {
+      "author": "dekiai_mx",
+      "score": 60.9,
+      "likes": 14256,
+      "likes_per_min": 52.74,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 127.2,
+      "text": "⭐️本日解禁❤️‍🩹追加キャスト⭐️\n『溺愛　〜 実は、最強ヒーロー 〜』\n主人公・真白が愛するヒロイン🌸高原皐月役は ",
+      "url": "https://x.com/i/status/2103243101620064768"
     }
   ]
 }

@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T13:18:03.706058+00:00",
+  "updated_at": "2026-09-25T13:33:37.894922+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 35,
     "detail_failed": 0,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_skipped": 5,
+    "detail_unavailable": 2,
+    "detail_incomplete": 3,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790343151
+      "reset": 1790344081
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T13:17:30.820673+00:00",
-  "finished_at": "2026-09-25T13:18:03.704838+00:00",
-  "posts_scanned": 608,
-  "posts_with_history": 419,
-  "posts_flagged": 132,
+  "started_at": "2026-09-25T13:33:00.200668+00:00",
+  "finished_at": "2026-09-25T13:33:37.893715+00:00",
+  "posts_scanned": 589,
+  "posts_with_history": 435,
+  "posts_flagged": 126,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 689,
+  "minutes_since_last_notification": 704,
   "reject_reasons": {
-    "古すぎる": 125,
-    "失速済み": 3,
-    "誘導文パターン": 2,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 246,
-    "初回観測かつ平均速度が低い": 7
+    "古すぎる": 122,
+    "失速済み": 7,
+    "いいねが少なすぎる": 238,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 4,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52290,
-    "posts": 14180,
-    "oldest": "2026-09-24T13:19:12.859964+00:00"
+    "total": 52310,
+    "posts": 14210,
+    "oldest": "2026-09-24T13:34:46.035144+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4288,
+  "viral_discovery_posts": 124,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4301,
   "top5": [
     {
       "author": "ninjin301417",
-      "score": 29.0,
-      "likes": 86023,
-      "likes_per_min": 177.67,
-      "acceleration": 0.99,
+      "score": 28.7,
+      "likes": 88600,
+      "likes_per_min": 165.51,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 579.7,
+      "age_minutes": 595.3,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 36.1,
-      "likes": 27209,
-      "likes_per_min": 44.69,
-      "acceleration": 0.96,
+      "author": "Kanaria390",
+      "score": 45.5,
+      "likes": 127381,
+      "likes_per_min": 229.29,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 445.1,
-      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
-      "url": "https://x.com/i/status/2103362098235691057"
+      "age_minutes": 212.1,
+      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
+      "url": "https://x.com/i/status/2103424657454244298"
     },
     {
       "author": "ChugokuShimbun",
-      "score": 88.2,
-      "likes": 11965,
-      "likes_per_min": 168.1,
-      "acceleration": 0.79,
+      "score": 86.8,
+      "likes": 13852,
+      "likes_per_min": 121.2,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 76.4,
+      "age_minutes": 92.0,
       "text": "【事件】カープの2選手を書類送検　ゾンビたばこを巡る容疑\nhttps://t.co/Qe4u95oYsp",
       "url": "https://x.com/i/status/2103454885828333948"
     },
     {
-      "author": "livedoornews",
-      "score": 62.0,
-      "likes": 22918,
-      "likes_per_min": 132.93,
-      "acceleration": 0.81,
+      "author": "iLiFE_wakaba",
+      "score": 64.4,
+      "likes": 12189,
+      "likes_per_min": 514.2,
+      "acceleration": 2.45,
       "measured": true,
-      "age_minutes": 178.0,
-      "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
-      "url": "https://x.com/i/status/2103429303098589483"
+      "age_minutes": 37.3,
+      "text": "美容院とかでアイドルなのバレたくなくてよくミスドバイトっていう設定でやってるんだけど、\nお姉さん芸能とかやった方がいいで",
+      "url": "https://x.com/i/status/2103468637290127381"
     },
     {
-      "author": "Kanaria390",
-      "score": 48.1,
-      "likes": 123811,
-      "likes_per_min": 247.67,
-      "acceleration": 0.81,
+      "author": "bad_texter",
+      "score": 45.4,
+      "likes": 12617,
+      "likes_per_min": 108.22,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 196.5,
-      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
-      "url": "https://x.com/i/status/2103424657454244298"
+      "age_minutes": 147.8,
+      "text": "ダイアンとヨガ https://t.co/K5J06MbxQJ",
+      "url": "https://x.com/i/status/2103440820108218853"
     }
   ]
 }

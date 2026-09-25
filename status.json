@@ -1,40 +1,38 @@
 {
-  "updated_at": "2026-09-25T02:20:22.052075+00:00",
+  "updated_at": "2026-09-25T02:35:56.897786+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 1,
-    "detail_incomplete": 3,
-    "invalid_tweets": 4,
+    "detail_skipped": 1,
+    "detail_unavailable": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790303694
+      "remaining": 15,
+      "reset": 1790304624
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T02:19:53.925716+00:00",
-  "finished_at": "2026-09-25T02:20:22.050882+00:00",
-  "posts_scanned": 611,
-  "posts_with_history": 497,
-  "posts_flagged": 61,
+  "started_at": "2026-09-25T02:35:23.157898+00:00",
+  "finished_at": "2026-09-25T02:35:56.896457+00:00",
+  "posts_scanned": 601,
+  "posts_with_history": 496,
+  "posts_flagged": 59,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 47,
   "reject_reasons": {
     "古すぎる": 191,
-    "誘導文パターン": 10,
-    "失速済み": 2,
-    "いいねが少なすぎる": 233,
-    "初回観測かつ平均速度が低い": 8,
-    "いいね稼ぎ疑い": 1
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 225,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50930,
-    "posts": 12523,
-    "oldest": "2026-09-24T02:21:51.054841+00:00"
+    "total": 50940,
+    "posts": 12428,
+    "oldest": "2026-09-24T02:45:59.570776+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4261,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4289,
   "top5": [
     {
       "author": "mofjd",
-      "score": 28.3,
-      "likes": 58826,
-      "likes_per_min": 70.38,
-      "acceleration": 0.89,
+      "score": 29.2,
+      "likes": 59949,
+      "likes_per_min": 72.08,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 761.3,
+      "age_minutes": 776.9,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 60.3,
-      "likes": 10856,
-      "likes_per_min": 75.35,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 133.0,
-      "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
-      "url": "https://x.com/i/status/2103275120102158457"
-    },
-    {
       "author": "nishinoakihiro",
-      "score": 56.8,
-      "likes": 3096,
-      "likes_per_min": 39.84,
-      "acceleration": 0.94,
+      "score": 52.7,
+      "likes": 3619,
+      "likes_per_min": 33.57,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 114.4,
+      "age_minutes": 130.0,
       "text": "【お詫びとご報告】\n　\n平素より弊社ならびに弊社関係者を応援いただき、誠にありがとうございます。 https://t.c",
       "url": "https://x.com/i/status/2103279798793765235"
     },
     {
-      "author": "chiikawa_market",
-      "score": 49.1,
-      "likes": 29348,
-      "likes_per_min": 73.35,
-      "acceleration": 0.94,
+      "author": "DEATHDOL_NOTE",
+      "score": 58.4,
+      "likes": 12088,
+      "likes_per_min": 79.07,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 223.5,
+      "age_minutes": 148.6,
+      "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
+      "url": "https://x.com/i/status/2103275120102158457"
+    },
+    {
+      "author": "chiikawa_market",
+      "score": 45.2,
+      "likes": 30445,
+      "likes_per_min": 70.41,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 239.1,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "McDonaldsJapan",
-      "score": 34.3,
-      "likes": 47942,
-      "likes_per_min": 195.13,
-      "acceleration": 0.79,
+      "author": "AI_kenky",
+      "score": 43.3,
+      "likes": 6860,
+      "likes_per_min": 57.96,
+      "acceleration": 0.48,
       "measured": true,
-      "age_minutes": 230.4,
-      "text": "今年も、この季節です。 https://t.co/Bsxe8g1Ddf",
-      "url": "https://x.com/i/status/2103250625009959353"
+      "age_minutes": 172.7,
+      "text": "うちの学校の文化祭でやる担任をコスプレさせるイベント\n毎年一番盛り上がる https://t.co/9Q6eOAztYu",
+      "url": "https://x.com/i/status/2103269064785428794"
     }
   ]
 }

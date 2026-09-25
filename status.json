@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T07:18:13.499887+00:00",
+  "updated_at": "2026-09-25T07:33:42.429867+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 2,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790321561
+      "remaining": 14,
+      "reset": 1790322491
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T07:17:40.565939+00:00",
-  "finished_at": "2026-09-25T07:18:13.498856+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 477,
-  "posts_flagged": 69,
+  "started_at": "2026-09-25T07:33:10.440381+00:00",
+  "finished_at": "2026-09-25T07:33:42.428047+00:00",
+  "posts_scanned": 592,
+  "posts_with_history": 475,
+  "posts_flagged": 86,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 329,
+  "minutes_since_last_notification": 344,
   "reject_reasons": {
-    "古すぎる": 153,
-    "失速済み": 4,
+    "古すぎる": 155,
+    "失速済み": 2,
     "いいね稼ぎ疑い": 4,
-    "初回観測かつ平均速度が低い": 8,
     "いいねが少なすぎる": 213,
-    "誘導文パターン": 4
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52304,
-    "posts": 13191,
-    "oldest": "2026-09-24T07:19:42.492643+00:00"
+    "total": 52315,
+    "posts": 13211,
+    "oldest": "2026-09-24T07:35:13.404131+00:00"
   },
-  "viral_discovery_posts": 129,
+  "viral_discovery_posts": 118,
   "million_imp_rescued": 6,
-  "watchlist_active": 4272,
+  "watchlist_active": 4265,
   "top5": [
     {
-      "author": "papapaan2",
-      "score": 27.9,
-      "likes": 73238,
-      "likes_per_min": 118.43,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 844.2,
-      "text": "夫氏がしんでしまいました\n昨日までヤンニョムチキン食べてワイワイしてたのに\n11月に大型の旅行計画立ててたのに\n\n朝ベッ",
-      "url": "https://x.com/i/status/2103171114335916097"
-    },
-    {
       "author": "Tama_chan0317_",
-      "score": 43.4,
-      "likes": 10493,
-      "likes_per_min": 17.61,
-      "acceleration": 0.52,
+      "score": 41.4,
+      "likes": 10729,
+      "likes_per_min": 15.24,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 216.1,
+      "age_minutes": 231.6,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
-      "author": "akiman7",
-      "score": 59.6,
-      "likes": 5828,
-      "likes_per_min": 75.15,
-      "acceleration": 2.35,
+      "author": "tkzwgrs",
+      "score": 63.8,
+      "likes": 13993,
+      "likes_per_min": 195.79,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 151.6,
+      "age_minutes": 93.4,
+      "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
+      "url": "https://x.com/i/status/2103363940436848651"
+    },
+    {
+      "author": "akiman7",
+      "score": 47.1,
+      "likes": 7093,
+      "likes_per_min": 81.71,
+      "acceleration": 1.09,
+      "measured": true,
+      "age_minutes": 167.1,
       "text": "ドラマ版フォールアウトでも思ったけど外人って核兵器の描写に対する解像度が低い気がする",
       "url": "https://x.com/i/status/2103345402758262859"
     },
     {
-      "author": "snsnokyoufu",
-      "score": 35.7,
-      "likes": 4881,
-      "likes_per_min": 41.78,
-      "acceleration": 0.9,
+      "author": "tkzwgrs",
+      "score": 35.9,
+      "likes": 8106,
+      "likes_per_min": 18.02,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 237.5,
-      "text": "【悲報】Ado、K-POPイベントになぜかサプライズで大トリ出演し大大大炎上してしまうｗｗｗｗｗ\n\nadoかわいそうだな",
-      "url": "https://x.com/i/status/2103323787152576601"
+      "age_minutes": 218.0,
+      "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
+      "url": "https://x.com/i/status/2103332591583822181"
     },
     {
-      "author": "tkzwgrs",
-      "score": 63.7,
-      "likes": 10962,
-      "likes_per_min": 171.02,
-      "acceleration": 0.99,
+      "author": "Hayato_Onozuka",
+      "score": 45.1,
+      "likes": 38562,
+      "likes_per_min": 114.85,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 77.9,
-      "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
-      "url": "https://x.com/i/status/2103363940436848651"
+      "age_minutes": 206.8,
+      "text": "10年前と10年後。\n\n先日ご飯食べてきました！\nエグゼイド10周年！！\n大人になったなと思いつつも結局話してるとあの時",
+      "url": "https://x.com/i/status/2103335411812880764"
     }
   ]
 }

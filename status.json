@@ -1,29 +1,118 @@
 {
-  "updated_at": "2026-09-25T18:36:28.990225+00:00",
-  "status": "error",
-  "started_at": "2026-09-25T18:36:24.670835+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "collection_failed",
+  "updated_at": "2026-09-25T19:01:30.324987+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "collection_failed",
-    "error_code": "collection_failed",
-    "search_succeeded": 0,
-    "search_failed": 28,
-    "detail_succeeded": 0,
-    "detail_failed": 40,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 39,
+    "detail_failed": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 7,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
-      "limit": null,
-      "remaining": null,
-      "reset": null
+      "limit": 50,
+      "remaining": 14,
+      "reset": 1790363761
     },
-    "failures": {},
-    "_detail_skipped_ids": []
-  }
+    "failures": {}
+  },
+  "started_at": "2026-09-25T19:01:00.771196+00:00",
+  "finished_at": "2026-09-25T19:01:30.323618+00:00",
+  "posts_scanned": 622,
+  "posts_with_history": 524,
+  "posts_flagged": 5,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 102,
+  "reject_reasons": {
+    "古すぎる": 319,
+    "失速済み": 9,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 156,
+    "初回観測かつ平均速度が低い": 15,
+    "誘導文パターン": 1
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 52001,
+    "posts": 14240,
+    "oldest": "2026-09-24T19:03:20.344199+00:00"
+  },
+  "viral_discovery_posts": 145,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4461,
+  "top5": [
+    {
+      "author": "ninjin301417",
+      "score": 11.2,
+      "likes": 104538,
+      "likes_per_min": 0.74,
+      "acceleration": 0.57,
+      "measured": true,
+      "age_minutes": 923.2,
+      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
+      "url": "https://x.com/i/status/2103328215913861451"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 27.2,
+      "likes": 33406,
+      "likes_per_min": 5.6,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 788.5,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
+    },
+    {
+      "author": "subarashiiasa",
+      "score": 52.3,
+      "likes": 2707,
+      "likes_per_min": 22.14816502081212,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 122.2,
+      "text": "帰ってこなくていまこれ https://t.co/jh2Zorr9C1",
+      "url": "https://x.com/i/status/2103529783770656858"
+    },
+    {
+      "author": "yori_youtube",
+      "score": 27.6,
+      "likes": 9487,
+      "likes_per_min": 14.5,
+      "acceleration": 0.76,
+      "measured": true,
+      "age_minutes": 236.2,
+      "text": "【ご報告】\nエレメちゃんが9月19日に亡くなりました。\nエレメちゃんのアカウントから報告したかったのですがエレメちゃんの",
+      "url": "https://x.com/i/status/2103501106546667786"
+    },
+    {
+      "author": "jingisu_jin",
+      "score": 31.6,
+      "likes": 6443,
+      "likes_per_min": 16.65,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 222.6,
+      "text": "チーバくんいじめた人、並んで。\n1人づつ鍋で焼いていくからね ξ(*･ω･*)3 \n#頑張って千葉",
+      "url": "https://x.com/i/status/2103504523742601338"
+    }
+  ]
 }

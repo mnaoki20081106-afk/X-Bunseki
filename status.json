@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T19:01:30.324987+00:00",
+  "updated_at": "2026-09-25T19:17:15.139733+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 37,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 7,
+    "detail_skipped": 3,
+    "detail_unavailable": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 9,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790363761
+      "reset": 1790364692
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T19:01:00.771196+00:00",
-  "finished_at": "2026-09-25T19:01:30.323618+00:00",
-  "posts_scanned": 622,
-  "posts_with_history": 524,
+  "started_at": "2026-09-25T19:16:31.509295+00:00",
+  "finished_at": "2026-09-25T19:17:15.138528+00:00",
+  "posts_scanned": 624,
+  "posts_with_history": 599,
   "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 102,
+  "minutes_since_last_notification": 118,
   "reject_reasons": {
-    "古すぎる": 319,
-    "失速済み": 9,
-    "いいね稼ぎ疑い": 4,
-    "いいねが少なすぎる": 156,
-    "初回観測かつ平均速度が低い": 15,
-    "誘導文パターン": 1
+    "古すぎる": 354,
+    "いいね稼ぎ疑い": 6,
+    "失速済み": 8,
+    "いいねが少なすぎる": 142,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52001,
-    "posts": 14240,
-    "oldest": "2026-09-24T19:03:20.344199+00:00"
+    "total": 52027,
+    "posts": 14189,
+    "oldest": "2026-09-24T19:18:41.210886+00:00"
   },
   "viral_discovery_posts": 145,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4461,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4468,
   "top5": [
     {
-      "author": "ninjin301417",
-      "score": 11.2,
-      "likes": 104538,
-      "likes_per_min": 0.74,
-      "acceleration": 0.57,
-      "measured": true,
-      "age_minutes": 923.2,
-      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
-      "url": "https://x.com/i/status/2103328215913861451"
-    },
-    {
       "author": "DEATHDOL_NOTE",
-      "score": 27.2,
-      "likes": 33406,
-      "likes_per_min": 5.6,
-      "acceleration": 0.89,
+      "score": 25.5,
+      "likes": 33473,
+      "likes_per_min": 4.25,
+      "acceleration": 0.76,
       "measured": true,
-      "age_minutes": 788.5,
+      "age_minutes": 804.3,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
       "author": "subarashiiasa",
-      "score": 52.3,
-      "likes": 2707,
-      "likes_per_min": 22.14816502081212,
+      "score": 51.0,
+      "likes": 2930,
+      "likes_per_min": 14.16,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 122.2,
+      "measured": true,
+      "age_minutes": 138.0,
       "text": "帰ってこなくていまこれ https://t.co/jh2Zorr9C1",
       "url": "https://x.com/i/status/2103529783770656858"
     },
     {
-      "author": "yori_youtube",
-      "score": 27.6,
-      "likes": 9487,
-      "likes_per_min": 14.5,
-      "acceleration": 0.76,
-      "measured": true,
-      "age_minutes": 236.2,
-      "text": "【ご報告】\nエレメちゃんが9月19日に亡くなりました。\nエレメちゃんのアカウントから報告したかったのですがエレメちゃんの",
-      "url": "https://x.com/i/status/2103501106546667786"
-    },
-    {
       "author": "jingisu_jin",
-      "score": 31.6,
-      "likes": 6443,
-      "likes_per_min": 16.65,
-      "acceleration": 0.81,
+      "score": 30.4,
+      "likes": 6715,
+      "likes_per_min": 17.27,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 222.6,
+      "age_minutes": 238.3,
       "text": "チーバくんいじめた人、並んで。\n1人づつ鍋で焼いていくからね ξ(*･ω･*)3 \n#頑張って千葉",
       "url": "https://x.com/i/status/2103504523742601338"
+    },
+    {
+      "author": "anabolicspace",
+      "score": 38.2,
+      "likes": 3888,
+      "likes_per_min": 16.57,
+      "acceleration": 0.68,
+      "measured": true,
+      "age_minutes": 127.3,
+      "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
+      "url": "https://x.com/i/status/2103532478497787936"
+    },
+    {
+      "author": "ota324",
+      "score": 27.8,
+      "likes": 2196,
+      "likes_per_min": 5.84,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 199.4,
+      "text": "だから帰宅したくなかったんだよね。嫌な予感的中。また喧嘩した。そして、いつも疑問なんだけど。なんで喧嘩してる最中に眠れる",
+      "url": "https://x.com/i/status/2103514330721550750"
     }
   ]
 }

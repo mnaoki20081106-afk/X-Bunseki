@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T18:06:00.504963+00:00",
+  "updated_at": "2026-09-25T18:21:30.241817+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 34,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 6,
-    "detail_unavailable": 4,
-    "detail_incomplete": 2,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790360426
+      "reset": 1790361356
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T18:05:24.984054+00:00",
-  "finished_at": "2026-09-25T18:06:00.503908+00:00",
-  "posts_scanned": 620,
-  "posts_with_history": 567,
-  "posts_flagged": 12,
+  "started_at": "2026-09-25T18:20:55.189382+00:00",
+  "finished_at": "2026-09-25T18:21:30.240728+00:00",
+  "posts_scanned": 615,
+  "posts_with_history": 572,
+  "posts_flagged": 6,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 46,
+  "minutes_since_last_notification": 62,
   "reject_reasons": {
-    "古すぎる": 238,
-    "いいね稼ぎ疑い": 5,
+    "古すぎる": 262,
+    "いいね稼ぎ疑い": 6,
     "失速済み": 7,
-    "いいねが少なすぎる": 185,
     "誘導文パターン": 2,
-    "初回観測かつ平均速度が低い": 7
+    "いいねが少なすぎる": 173,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52584,
-    "posts": 14313,
-    "oldest": "2026-09-24T18:16:30.426145+00:00"
+    "total": 52597,
+    "posts": 14284,
+    "oldest": "2026-09-24T18:32:22.448100+00:00"
   },
-  "viral_discovery_posts": 142,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4452,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4461,
   "top5": [
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 26.9,
-      "likes": 33095,
-      "likes_per_min": 6.32,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 733.0,
-      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
-      "url": "https://x.com/i/status/2103362098235691057"
-    },
-    {
-      "author": "ninjin301417",
-      "score": 12.8,
-      "likes": 104497,
-      "likes_per_min": 1.29,
-      "acceleration": 0.66,
-      "measured": true,
-      "age_minutes": 867.7,
-      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
-      "url": "https://x.com/i/status/2103328215913861451"
-    },
-    {
-      "author": "yukitichqn",
-      "score": 28.1,
-      "likes": 99032,
-      "likes_per_min": 26.69,
-      "acceleration": 0.5,
-      "measured": true,
-      "age_minutes": 882.4,
-      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
-      "url": "https://x.com/i/status/2103324506651771298"
-    },
-    {
       "author": "yori_youtube",
-      "score": 39.6,
-      "likes": 8612,
-      "likes_per_min": 22.94,
-      "acceleration": 0.96,
+      "score": 35.2,
+      "likes": 8907,
+      "likes_per_min": 19.04,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 180.7,
+      "age_minutes": 196.2,
       "text": "【ご報告】\nエレメちゃんが9月19日に亡くなりました。\nエレメちゃんのアカウントから報告したかったのですがエレメちゃんの",
       "url": "https://x.com/i/status/2103501106546667786"
     },
     {
-      "author": "mimi_meriru",
-      "score": 29.8,
-      "likes": 11897,
-      "likes_per_min": 28.49,
-      "acceleration": 1.01,
+      "author": "anabolicspace",
+      "score": 54.9,
+      "likes": 2655,
+      "likes_per_min": 48.11,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 229.1,
-      "text": "有岡大貴って男から加害性抜いた生き物だからね。台パンでこれ",
-      "url": "https://x.com/i/status/2103488915013574903"
+      "age_minutes": 71.5,
+      "text": "横川😭😭😭😭😭\nキーオン😭😭😭😭😭\n日本一VS世界一の並び😭😭😭😭 https://t.co/QUAayZ245E",
+      "url": "https://x.com/i/status/2103532478497787936"
+    },
+    {
+      "author": "jingisu_jin",
+      "score": 40.4,
+      "likes": 5777,
+      "likes_per_min": 20.59,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 182.6,
+      "text": "チーバくんいじめた人、並んで。\n1人づつ鍋で焼いていくからね ξ(*･ω･*)3 \n#頑張って千葉",
+      "url": "https://x.com/i/status/2103504523742601338"
+    },
+    {
+      "author": "ten_sura_anime",
+      "score": 30.0,
+      "likes": 18847,
+      "likes_per_min": 16.01,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 231.5,
+      "text": "◤◢◤◢◤◢◤◢◤◢◤◢◤◢ 　\n　TVアニメ第4期第3クール\n　  🦋2027年7月放送🦋\n ◤◢◤◢◤◢◤◢◤◢◤◢",
+      "url": "https://x.com/i/status/2103492218610741481"
+    },
+    {
+      "author": "ten_sura_anime",
+      "score": 31.8,
+      "likes": 8794,
+      "likes_per_min": 8.26,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 230.5,
+      "text": "◤◢◤◢◤◢◤◢◤◢◤◢◤◢\n  転生したらスライムだった件 \n　　 クレイマンREVENGE\n　        TVア",
+      "url": "https://x.com/i/status/2103492469228970240"
     }
   ]
 }

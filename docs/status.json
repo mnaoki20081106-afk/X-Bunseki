@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T04:02:48.252239+00:00",
+  "updated_at": "2026-09-25T04:18:17.823422+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 15,
-      "reset": 1790309837
+      "reset": 1790310767
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T04:02:17.132543+00:00",
-  "finished_at": "2026-09-25T04:02:48.250970+00:00",
-  "posts_scanned": 609,
-  "posts_with_history": 413,
-  "posts_flagged": 110,
+  "started_at": "2026-09-25T04:17:46.781106+00:00",
+  "finished_at": "2026-09-25T04:18:17.822460+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 468,
+  "posts_flagged": 93,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 133,
+  "minutes_since_last_notification": 149,
   "reject_reasons": {
-    "古すぎる": 151,
-    "失速済み": 11,
+    "古すぎる": 152,
+    "失速済み": 20,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 214,
     "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 9
+    "いいねが少なすぎる": 211,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52115,
-    "posts": 12891,
-    "oldest": "2026-09-24T04:04:41.412054+00:00"
+    "total": 52126,
+    "posts": 12916,
+    "oldest": "2026-09-24T04:20:11.922311+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4273,
+  "viral_discovery_posts": 125,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4281,
   "top5": [
     {
       "author": "mofjd",
-      "score": 29.4,
-      "likes": 67617,
-      "likes_per_min": 95.01,
-      "acceleration": 0.97,
+      "score": 27.4,
+      "likes": 68686,
+      "likes_per_min": 68.99,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 863.8,
+      "age_minutes": 879.3,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 38.9,
-      "likes": 20763,
-      "likes_per_min": 104.02,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 235.5,
-      "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
-      "url": "https://x.com/i/status/2103275120102158457"
-    },
-    {
-      "author": "nenemapp",
-      "score": 55.5,
-      "likes": 12837,
-      "likes_per_min": 93.88,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 164.5,
-      "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
-      "url": "https://x.com/i/status/2103292984854978846"
-    },
-    {
-      "author": "parade_capsule",
-      "score": 80.1,
-      "likes": 23640,
-      "likes_per_min": 544.67,
-      "acceleration": 1.06,
-      "measured": true,
-      "age_minutes": 62.1,
-      "text": "📣9月カプセルトイ新情報！\n\n＃映画ちいかわ 人魚の島のひみつ \nデスクトップフィギュア\nが登場🏝️\n\n映画のワンシーン",
-      "url": "https://x.com/i/status/2103318741685801283"
-    },
-    {
-      "author": "houkaistarrail",
-      "score": 71.3,
-      "likes": 1292,
-      "likes_per_min": 258.4,
+      "author": "kb_dn_",
+      "score": 55.6,
+      "likes": 13832,
+      "likes_per_min": 230.26,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 2.8,
-      "text": "星旅の記念写真 | 「他に用がないのであれば、共に秋の月を眺めないか？」\n\n「かつては恨みにとらわれ、立ち止まる余裕など",
-      "url": "https://x.com/i/status/2103333672346619986"
+      "measured": true,
+      "age_minutes": 86.6,
+      "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
+      "url": "https://x.com/i/status/2103316478632358315"
+    },
+    {
+      "author": "AORINGOHUZIN",
+      "score": 73.8,
+      "likes": 7164,
+      "likes_per_min": 59.31,
+      "acceleration": 0.88,
+      "measured": true,
+      "age_minutes": 77.3,
+      "text": "【FC NEWS🍏】\n⁡\nMrs. GREEN APPLE OFFICIAL FAN CLUB「Ringo Jam」発足",
+      "url": "https://x.com/i/status/2103318826364575869"
+    },
+    {
+      "author": "heroaca_anime",
+      "score": 71.9,
+      "likes": 5138,
+      "likes_per_min": 46.81,
+      "acceleration": 0.56,
+      "measured": true,
+      "age_minutes": 78.2,
+      "text": "◤ コラボが来た! ◢\n\n#ヒロアカ × 日清どん兵衛・U.F.O.\nコラボが10月5日(月)より開催決定!\n描き下ろし",
+      "url": "https://x.com/i/status/2103318589994410150"
+    },
+    {
+      "author": "sweetroad5",
+      "score": 47.7,
+      "likes": 23864,
+      "likes_per_min": 73.76,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 184.6,
+      "text": "９月３０日(水)よりミスタードーナツから、人気のもちもち食感のポン・デ・リング生地をショコラ風味に仕上げた『ポン・デ・シ",
+      "url": "https://x.com/i/status/2103291821841682804"
     }
   ]
 }

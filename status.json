@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T00:07:19.289671+00:00",
+  "updated_at": "2026-09-25T00:22:58.835817+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,30 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 7,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790295710
+      "reset": 1790296647
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T00:06:49.178328+00:00",
-  "finished_at": "2026-09-25T00:07:19.288423+00:00",
-  "posts_scanned": 612,
-  "posts_with_history": 492,
-  "posts_flagged": 40,
-  "notified_count": 0,
+  "started_at": "2026-09-25T00:22:26.434054+00:00",
+  "finished_at": "2026-09-25T00:22:58.834728+00:00",
+  "posts_scanned": 618,
+  "posts_with_history": 508,
+  "posts_flagged": 41,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 233,
-    "誘導文パターン": 9,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 225,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 2
+    "古すぎる": 224,
+    "誘導文パターン": 10,
+    "いいねが少なすぎる": 226,
+    "失速済み": 6,
+    "初回観測かつ平均速度が低い": 5,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50353,
-    "posts": 12349,
-    "oldest": "2026-09-24T00:17:42.494896+00:00"
+    "total": 50371,
+    "posts": 12362,
+    "oldest": "2026-09-24T00:33:14.424227+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4219,
+  "viral_discovery_posts": 137,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4231,
   "top5": [
     {
       "author": "tkzwgrs",
-      "score": 57.2,
-      "likes": 35335,
-      "likes_per_min": 347.53,
-      "acceleration": 0.91,
+      "score": 54.1,
+      "likes": 40079,
+      "likes_per_min": 303.31,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 97.6,
+      "age_minutes": 113.2,
       "text": "解説「ヤバいヤバいヤバいｗｗｗうぉおおおおおおおお！！！！」\n\n【朗報】現役高校生・大橋信(17)さん、200m平泳ぎで",
       "url": "https://x.com/i/status/2103250564960444657"
     },
     {
-      "author": "oricon_anime_",
-      "score": 47.3,
-      "likes": 14802,
-      "likes_per_min": 49.83,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 186.3,
-      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
-      "url": "https://x.com/i/status/2103228242304057471"
-    },
-    {
       "author": "chiikawa_market",
-      "score": 85.7,
-      "likes": 16655,
-      "likes_per_min": 127.39,
-      "acceleration": 0.86,
+      "score": 81.7,
+      "likes": 18397,
+      "likes_per_min": 111.37,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 90.5,
+      "age_minutes": 106.1,
       "text": "🌼月曜日から 予約開始🌼\n\n『パラレルワールド！？ マスコット（全4種）』\nなんかちが🐝うグッズたちの 受注生産が決定🌀",
       "url": "https://x.com/i/status/2103252345006268861"
     },
     {
-      "author": "30R9gmaMUy3guDJ",
-      "score": 30.5,
-      "likes": 5107,
-      "likes_per_min": 15.99,
-      "acceleration": 0.75,
+      "author": "nigeyama369",
+      "score": 44.8,
+      "likes": 5424,
+      "likes_per_min": 35.16,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 198.4,
-      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
-      "url": "https://x.com/i/status/2103225176305582231"
+      "age_minutes": 206.1,
+      "text": "これが厳しいリアル… https://t.co/QA7f7iiiZU",
+      "url": "https://x.com/i/status/2103227175206084619"
     },
     {
-      "author": "dekiai_mx",
-      "score": 60.9,
-      "likes": 14256,
-      "likes_per_min": 52.74,
-      "acceleration": 0.83,
+      "author": "oricon_anime_",
+      "score": 43.8,
+      "likes": 15479,
+      "likes_per_min": 43.28,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 127.2,
-      "text": "⭐️本日解禁❤️‍🩹追加キャスト⭐️\n『溺愛　〜 実は、最強ヒーロー 〜』\n主人公・真白が愛するヒロイン🌸高原皐月役は ",
-      "url": "https://x.com/i/status/2103243101620064768"
+      "age_minutes": 201.9,
+      "text": "『ちいかわ』新作アニメ放送一時休止へ　再開は来年1月　10月からリバイバル放送（写真 全3枚）\nhttps://t.co",
+      "url": "https://x.com/i/status/2103228242304057471"
+    },
+    {
+      "author": "30R9gmaMUy3guDJ",
+      "score": 26.8,
+      "likes": 5290,
+      "likes_per_min": 11.7,
+      "acceleration": 0.73,
+      "measured": true,
+      "age_minutes": 214.1,
+      "text": "ホワイトソックス、ポストシーズン進出決定🔥\n\nホワイトソックスが9-1で勝利\n3年連続100敗以上しているホワイトソック",
+      "url": "https://x.com/i/status/2103225176305582231"
     }
   ]
 }

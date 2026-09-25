@@ -1,38 +1,37 @@
 {
-  "updated_at": "2026-09-25T22:15:45.552211+00:00",
+  "updated_at": "2026-09-25T22:31:13.717198+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790375416
+      "reset": 1790376343
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T22:15:15.641612+00:00",
-  "finished_at": "2026-09-25T22:15:45.550887+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 461,
-  "posts_flagged": 28,
+  "started_at": "2026-09-25T22:30:43.043887+00:00",
+  "finished_at": "2026-09-25T22:31:13.716322+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 501,
+  "posts_flagged": 29,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 296,
+  "minutes_since_last_notification": 312,
   "reject_reasons": {
-    "古すぎる": 389,
-    "いいねが少なすぎる": 152,
-    "初回観測かつ平均速度が低い": 3,
-    "いいね稼ぎ疑い": 2
+    "古すぎる": 387,
+    "いいねが少なすぎる": 149,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +48,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52196,
-    "posts": 13789,
-    "oldest": "2026-09-24T22:18:42.754397+00:00"
+    "total": 52193,
+    "posts": 13738,
+    "oldest": "2026-09-24T22:34:01.933309+00:00"
   },
-  "viral_discovery_posts": 129,
+  "viral_discovery_posts": 136,
   "million_imp_rescued": 1,
-  "watchlist_active": 4386,
+  "watchlist_active": 4398,
   "top5": [
     {
       "author": "Qchan_biyou",
-      "score": 25.2,
-      "likes": 14017,
-      "likes_per_min": 9.75,
-      "acceleration": 1.4,
+      "score": 24.8,
+      "likes": 14196,
+      "likes_per_min": 11.57,
+      "acceleration": 1.19,
       "measured": true,
-      "age_minutes": 816.9,
+      "age_minutes": 832.4,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
       "author": "nino_honmono",
-      "score": 75.9,
-      "likes": 12100,
-      "likes_per_min": 238.35,
-      "acceleration": null,
+      "score": 75.0,
+      "likes": 15065,
+      "likes_per_min": 191.6,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 42.4,
+      "age_minutes": 57.9,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2103598763898286220"
     },
     {
-      "author": "HashimotoKotoe",
-      "score": 63.5,
-      "likes": 4455,
-      "likes_per_min": 81.45,
-      "acceleration": 1.32,
-      "measured": true,
-      "age_minutes": 88.3,
-      "text": "習近平氏歓迎レセプションで台湾（中華民国）の名曲流したり、香港の件で中国で禁止されたレミゼラブル歌ったり、トランプ節炸裂",
-      "url": "https://x.com/i/status/2103587213774880984"
+      "author": "yukihanalamy",
+      "score": 78.8,
+      "likes": 623,
+      "likes_per_min": 92.9704752557426,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.7,
+      "text": "お天気悪めだね～😢ねぽっくすで吹き飛ばすぞ！！！！👊✨\n\n会場来られる方はお足元に注意して来てね！みんなに会えるの楽しみ",
+      "url": "https://x.com/i/status/2103611632559743266"
     },
     {
-      "author": "wni_jp",
-      "score": 67.0,
-      "likes": 1462,
-      "likes_per_min": 14.84,
-      "acceleration": 1.24,
-      "measured": true,
-      "age_minutes": 105.9,
-      "text": "【台風情報】9月26日(土)3時現在、台風26号(スリゲ)は沖縄の南に位置し、北北西に進んでいます。明日には強い勢力まで",
-      "url": "https://x.com/i/status/2103582777178534106"
+      "author": "kazamairohach",
+      "score": 79.2,
+      "likes": 761,
+      "likes_per_min": 87.79703391661528,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.7,
+      "text": "ねぽっくす当日の\n\nあっとうてきあさ＼( 'ω')／",
+      "url": "https://x.com/i/status/2103611139120840783"
     },
     {
-      "author": "P6AX3Er3HqoQynY",
-      "score": 43.3,
-      "likes": 8144,
-      "likes_per_min": 85.67,
-      "acceleration": 1.21,
-      "measured": true,
-      "age_minutes": 224.2,
-      "text": "中国で禁止されているミュージカルの曲がホワイトハウスの習近平国賓晩餐会で歌われました。レ・ミゼラブルの劇中歌は民衆の反権",
-      "url": "https://x.com/i/status/2103553003546681483"
+      "author": "momosuzunene",
+      "score": 74.5,
+      "likes": 440,
+      "likes_per_min": 51.55614338932863,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.5,
+      "text": "てん、、さい、、、？！",
+      "url": "https://x.com/i/status/2103611172599758954"
     }
   ]
 }

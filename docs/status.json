@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T17:50:29.506711+00:00",
+  "updated_at": "2026-09-25T18:06:00.504963+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 34,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 3,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_skipped": 6,
+    "detail_unavailable": 4,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790359495
+      "remaining": 14,
+      "reset": 1790360426
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T17:49:54.956884+00:00",
-  "finished_at": "2026-09-25T17:50:29.505651+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 572,
-  "posts_flagged": 10,
+  "started_at": "2026-09-25T18:05:24.984054+00:00",
+  "finished_at": "2026-09-25T18:06:00.503908+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 567,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 46,
   "reject_reasons": {
-    "古すぎる": 216,
-    "いいね稼ぎ疑い": 6,
-    "いいねが少なすぎる": 195,
-    "誘導文パターン": 3,
-    "失速済み": 11,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 238,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 7,
+    "いいねが少なすぎる": 185,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52572,
-    "posts": 14350,
-    "oldest": "2026-09-24T17:52:13.367731+00:00"
+    "total": 52584,
+    "posts": 14313,
+    "oldest": "2026-09-24T18:16:30.426145+00:00"
   },
-  "viral_discovery_posts": 139,
+  "viral_discovery_posts": 142,
   "million_imp_rescued": 5,
-  "watchlist_active": 4442,
+  "watchlist_active": 4452,
   "top5": [
     {
-      "author": "ninjin301417",
-      "score": 16.8,
-      "likes": 104477,
-      "likes_per_min": 1.95,
-      "acceleration": 1.26,
-      "measured": true,
-      "age_minutes": 852.2,
-      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
-      "url": "https://x.com/i/status/2103328215913861451"
-    },
-    {
       "author": "DEATHDOL_NOTE",
-      "score": 28.6,
-      "likes": 32997,
-      "likes_per_min": 8.43,
-      "acceleration": 0.85,
+      "score": 26.9,
+      "likes": 33095,
+      "likes_per_min": 6.32,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 717.5,
+      "age_minutes": 733.0,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
-      "author": "ytranking",
-      "score": 38.7,
-      "likes": 23259,
-      "likes_per_min": 28.49,
-      "acceleration": 0.88,
+      "author": "ninjin301417",
+      "score": 12.8,
+      "likes": 104497,
+      "likes_per_min": 1.29,
+      "acceleration": 0.66,
       "measured": true,
-      "age_minutes": 235.3,
-      "text": "インフルエンサー・えれめんたるひーろーさんが19歳で死去　よりひとが涙で報告\n\n▼記事\nhttps://t.co/wA5",
-      "url": "https://x.com/i/status/2103483453765570877"
+      "age_minutes": 867.7,
+      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
+      "url": "https://x.com/i/status/2103328215913861451"
+    },
+    {
+      "author": "yukitichqn",
+      "score": 28.1,
+      "likes": 99032,
+      "likes_per_min": 26.69,
+      "acceleration": 0.5,
+      "measured": true,
+      "age_minutes": 882.4,
+      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
+      "url": "https://x.com/i/status/2103324506651771298"
     },
     {
       "author": "yori_youtube",
-      "score": 41.2,
-      "likes": 8256,
-      "likes_per_min": 23.87,
-      "acceleration": 0.86,
+      "score": 39.6,
+      "likes": 8612,
+      "likes_per_min": 22.94,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 165.2,
+      "age_minutes": 180.7,
       "text": "【ご報告】\nエレメちゃんが9月19日に亡くなりました。\nエレメちゃんのアカウントから報告したかったのですがエレメちゃんの",
       "url": "https://x.com/i/status/2103501106546667786"
     },
     {
-      "author": "kyokohamaguchi",
-      "score": 29.7,
-      "likes": 23885,
-      "likes_per_min": 47.8,
-      "acceleration": 1.11,
+      "author": "mimi_meriru",
+      "score": 29.8,
+      "likes": 11897,
+      "likes_per_min": 28.49,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 224.8,
-      "text": "今日の私服です。デニム大好きです♡ https://t.co/yBW17QCSlK",
-      "url": "https://x.com/i/status/2103486094172152119"
+      "age_minutes": 229.1,
+      "text": "有岡大貴って男から加害性抜いた生き物だからね。台パンでこれ",
+      "url": "https://x.com/i/status/2103488915013574903"
     }
   ]
 }

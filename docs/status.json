@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T14:04:43.543694+00:00",
+  "updated_at": "2026-09-25T14:20:14.842199+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_unavailable": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790345949
+      "reset": 1790346877
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T14:04:09.060073+00:00",
-  "finished_at": "2026-09-25T14:04:43.542521+00:00",
-  "posts_scanned": 589,
-  "posts_with_history": 423,
-  "posts_flagged": 115,
-  "notified_count": 1,
+  "started_at": "2026-09-25T14:19:36.343900+00:00",
+  "finished_at": "2026-09-25T14:20:14.841116+00:00",
+  "posts_scanned": 586,
+  "posts_with_history": 436,
+  "posts_flagged": 109,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 735,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
-    "古すぎる": 116,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 239,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 130,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 8,
+    "いいねが少なすぎる": 220,
+    "初回観測かつ平均速度が低い": 7,
     "誘導文パターン": 1
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52398,
-    "posts": 14287,
-    "oldest": "2026-09-24T14:05:42.710748+00:00"
+    "total": 52418,
+    "posts": 14318,
+    "oldest": "2026-09-24T14:21:12.011490+00:00"
   },
-  "viral_discovery_posts": 115,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4318,
+  "viral_discovery_posts": 122,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4335,
   "top5": [
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 86.8,
-      "likes": 9950,
-      "likes_per_min": 271.22,
-      "acceleration": 1.53,
-      "measured": true,
-      "age_minutes": 49.4,
-      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
-      "url": "https://x.com/i/status/2103473432625381433"
-    },
-    {
       "author": "ninjin301417",
-      "score": 29.3,
-      "likes": 93764,
-      "likes_per_min": 170.92,
-      "acceleration": 1.06,
+      "score": 28.8,
+      "likes": 96287,
+      "likes_per_min": 162.45,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 626.4,
+      "age_minutes": 641.9,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "yukitichqn",
-      "score": 34.3,
-      "likes": 89176,
-      "likes_per_min": 108.15,
-      "acceleration": 0.82,
+      "author": "FRUITS_ZIPPER",
+      "score": 77.9,
+      "likes": 13459,
+      "likes_per_min": 225.94,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 641.1,
-      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
-      "url": "https://x.com/i/status/2103324506651771298"
+      "age_minutes": 64.9,
+      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
+      "url": "https://x.com/i/status/2103473432625381433"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 34.4,
-      "likes": 28890,
-      "likes_per_min": 36.03,
-      "acceleration": 0.81,
+      "score": 33.9,
+      "likes": 29368,
+      "likes_per_min": 30.78,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 491.8,
+      "age_minutes": 507.3,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
-      "author": "amane_fz1026",
-      "score": 53.7,
-      "likes": 18705,
-      "likes_per_min": 311.52,
-      "acceleration": 0.95,
+      "author": "yukitichqn",
+      "score": 32.8,
+      "likes": 90248,
+      "likes_per_min": 69.03,
+      "acceleration": 0.64,
       "measured": true,
-      "age_minutes": 60.1,
-      "text": "愛知ありがとうございました！ https://t.co/UE39ud6Ne1",
-      "url": "https://x.com/i/status/2103470720181506391"
+      "age_minutes": 656.7,
+      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
+      "url": "https://x.com/i/status/2103324506651771298"
+    },
+    {
+      "author": "denpa893",
+      "score": 42.3,
+      "likes": 3823,
+      "likes_per_min": 17.129376087683923,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 223.2,
+      "text": "え、これいいの? https://t.co/ivWSFTtRN2",
+      "url": "https://x.com/i/status/2103433595096551855"
     }
   ]
 }

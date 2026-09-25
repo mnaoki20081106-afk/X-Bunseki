@@ -1,41 +1,39 @@
 {
-  "updated_at": "2026-09-25T08:51:29.398245+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-25T09:07:04.102370+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 38,
     "detail_failed": 0,
     "detail_skipped": 2,
-    "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_unavailable": 1,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790327159
+      "remaining": 15,
+      "reset": 1790328094
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-25T08:50:58.926884+00:00",
-  "finished_at": "2026-09-25T08:51:29.396242+00:00",
-  "posts_scanned": 589,
-  "posts_with_history": 425,
-  "posts_flagged": 94,
+  "started_at": "2026-09-25T09:06:33.475027+00:00",
+  "finished_at": "2026-09-25T09:07:04.101228+00:00",
+  "posts_scanned": 580,
+  "posts_with_history": 391,
+  "posts_flagged": 105,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 422,
+  "minutes_since_last_notification": 438,
   "reject_reasons": {
-    "古すぎる": 145,
-    "失速済み": 1,
-    "いいねが少なすぎる": 228,
-    "初回観測かつ平均速度が低い": 8,
-    "誘導文パターン": 2
+    "古すぎる": 127,
+    "誘導文パターン": 4,
+    "いいねが少なすぎる": 233,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -52,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52470,
-    "posts": 13477,
-    "oldest": "2026-09-24T09:01:45.703785+00:00"
+    "total": 52463,
+    "posts": 13524,
+    "oldest": "2026-09-24T09:17:21.890727+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 8,
-  "watchlist_active": 4317,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 9,
+  "watchlist_active": 4284,
   "top5": [
     {
       "author": "tkzwgrs",
-      "score": 46.6,
-      "likes": 37768,
-      "likes_per_min": 356.35,
-      "acceleration": 1.1,
+      "score": 42.4,
+      "likes": 42902,
+      "likes_per_min": 329.52,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 171.2,
+      "age_minutes": 186.8,
       "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
       "url": "https://x.com/i/status/2103363940436848651"
     },
     {
-      "author": "k_maru_dau_baby",
-      "score": 72.3,
-      "likes": 3955,
-      "likes_per_min": 120.2,
-      "acceleration": 1.11,
-      "measured": true,
-      "age_minutes": 37.1,
-      "text": "猪俣周杜（25）女性と示談が成立\nhttps://t.co/Al8gkhrl4q",
-      "url": "https://x.com/i/status/2103397701450903982"
-    },
-    {
-      "author": "livedoornews",
-      "score": 78.6,
-      "likes": 11218,
-      "likes_per_min": 160.01,
-      "acceleration": 0.67,
-      "measured": true,
-      "age_minutes": 66.2,
-      "text": "【処分保留】timelesz・猪俣周杜が釈放 「この度は大変申し訳ございませんでした」\nhttps://t.co/BgO",
-      "url": "https://x.com/i/status/2103390354695389251"
-    },
-    {
       "author": "oricon",
-      "score": 77.9,
-      "likes": 16523,
-      "likes_per_min": 184.83,
-      "acceleration": 0.88,
+      "score": 74.8,
+      "likes": 19205,
+      "likes_per_min": 172.14,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 101.5,
+      "age_minutes": 117.0,
       "text": "マクドナルド「チキチー」「倍チキチー」\n10/20販売終了\nhttps://t.co/gZJlO5R93I\n⠀\nマクドナ",
       "url": "https://x.com/i/status/2103381492189839815"
     },
     {
-      "author": "TarataTragedy",
-      "score": 74.2,
-      "likes": 17011,
-      "likes_per_min": 353.7,
-      "acceleration": 0.97,
+      "author": "livedoornews",
+      "score": 80.1,
+      "likes": 13357,
+      "likes_per_min": 137.29,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 73.3,
+      "age_minutes": 81.8,
+      "text": "【処分保留】timelesz・猪俣周杜が釈放 「この度は大変申し訳ございませんでした」\nhttps://t.co/BgO",
+      "url": "https://x.com/i/status/2103390354695389251"
+    },
+    {
+      "author": "TarataTragedy",
+      "score": 71.6,
+      "likes": 21111,
+      "likes_per_min": 263.16,
+      "acceleration": 0.74,
+      "measured": true,
+      "age_minutes": 88.9,
       "text": "速報\ntimelesz 猪俣周杜　釈放 https://t.co/RcQDfqUKSR",
       "url": "https://x.com/i/status/2103388568702058663"
+    },
+    {
+      "author": "k_maru_dau_baby",
+      "score": 59.9,
+      "likes": 16566,
+      "likes_per_min": 57.64,
+      "acceleration": 0.72,
+      "measured": true,
+      "age_minutes": 89.0,
+      "text": "顔が良い https://t.co/cCSXTCyXNz",
+      "url": "https://x.com/i/status/2103388555729146034"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T03:06:58.028492+00:00",
+  "updated_at": "2026-09-25T03:22:32.593631+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -15,24 +15,26 @@
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790306486
+      "remaining": 14,
+      "reset": 1790307418
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T03:06:25.680787+00:00",
-  "finished_at": "2026-09-25T03:06:58.027382+00:00",
-  "posts_scanned": 612,
-  "posts_with_history": 473,
-  "posts_flagged": 94,
+  "started_at": "2026-09-25T03:21:57.013666+00:00",
+  "finished_at": "2026-09-25T03:22:32.592380+00:00",
+  "posts_scanned": 623,
+  "posts_with_history": 438,
+  "posts_flagged": 101,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 78,
+  "minutes_since_last_notification": 93,
   "reject_reasons": {
-    "古すぎる": 183,
-    "初回観測かつ平均速度が低い": 6,
-    "誘導文パターン": 6,
-    "いいねが少なすぎる": 220
+    "古すぎる": 176,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 16,
+    "誘導文パターン": 2,
+    "いいねが少なすぎる": 226,
+    "失速済み": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,66 +51,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52048,
-    "posts": 12659,
-    "oldest": "2026-09-24T03:18:05.290682+00:00"
+    "total": 52094,
+    "posts": 12725,
+    "oldest": "2026-09-24T03:33:33.230731+00:00"
   },
-  "viral_discovery_posts": 132,
+  "viral_discovery_posts": 144,
   "million_imp_rescued": 5,
-  "watchlist_active": 4243,
+  "watchlist_active": 4249,
   "top5": [
     {
       "author": "mofjd",
-      "score": 29.6,
-      "likes": 62203,
-      "likes_per_min": 75.28,
-      "acceleration": 1.07,
+      "score": 31.2,
+      "likes": 63741,
+      "likes_per_min": 98.74,
+      "acceleration": 1.31,
       "measured": true,
-      "age_minutes": 807.9,
+      "age_minutes": 823.5,
       "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
       "url": "https://x.com/i/status/2103117001128612029"
     },
     {
       "author": "nishinoakihiro",
-      "score": 49.7,
-      "likes": 4668,
-      "likes_per_min": 36.36,
-      "acceleration": 1.16,
+      "score": 46.0,
+      "likes": 5251,
+      "likes_per_min": 37.43,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 161.0,
+      "age_minutes": 176.6,
       "text": "【お詫びとご報告】\n　\n平素より弊社ならびに弊社関係者を応援いただき、誠にありがとうございます。 https://t.c",
       "url": "https://x.com/i/status/2103279798793765235"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 51.1,
-      "likes": 14868,
-      "likes_per_min": 89.38,
-      "acceleration": 0.99,
+      "score": 48.7,
+      "likes": 16442,
+      "likes_per_min": 101.06,
+      "acceleration": 1.13,
       "measured": true,
-      "age_minutes": 179.6,
+      "age_minutes": 195.2,
       "text": "【知名度A】\n\nFRUITS ZIPPER\n仲川瑠夏💜\n\n備考 : ❤️(右から二番目)を省いて炎上中 https://",
       "url": "https://x.com/i/status/2103275120102158457"
     },
     {
       "author": "nenemapp",
-      "score": 68.8,
-      "likes": 6727,
-      "likes_per_min": 124.12,
-      "acceleration": 0.91,
+      "score": 65.1,
+      "likes": 8850,
+      "likes_per_min": 136.3,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 108.6,
+      "age_minutes": 124.2,
       "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
       "url": "https://x.com/i/status/2103292984854978846"
     },
     {
       "author": "AI_kenky",
-      "score": 39.8,
-      "likes": 8235,
-      "likes_per_min": 44.91,
-      "acceleration": 1.03,
+      "score": 39.1,
+      "likes": 9089,
+      "likes_per_min": 54.83,
+      "acceleration": 1.22,
       "measured": true,
-      "age_minutes": 203.7,
+      "age_minutes": 219.3,
       "text": "うちの学校の文化祭でやる担任をコスプレさせるイベント\n毎年一番盛り上がる https://t.co/9Q6eOAztYu",
       "url": "https://x.com/i/status/2103269064785428794"
     }

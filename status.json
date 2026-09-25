@@ -1,118 +1,29 @@
 {
-  "updated_at": "2026-09-25T10:49:55.734169+00:00",
-  "status": "success",
+  "updated_at": "2026-09-25T11:04:54.673360+00:00",
+  "status": "error",
+  "started_at": "2026-09-25T11:04:50.014021+00:00",
+  "posts_scanned": 0,
+  "posts_flagged": 0,
+  "notified_count": 0,
+  "error_message": "collection_failed",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 39,
-    "detail_failed": 0,
-    "detail_skipped": 1,
+    "status": "collection_failed",
+    "error_code": "collection_failed",
+    "search_succeeded": 0,
+    "search_failed": 28,
+    "detail_succeeded": 0,
+    "detail_failed": 40,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
-      "limit": 50,
-      "remaining": 14,
-      "reset": 1790334259
+      "limit": null,
+      "remaining": null,
+      "reset": null
     },
-    "failures": {}
-  },
-  "started_at": "2026-09-25T10:49:18.311093+00:00",
-  "finished_at": "2026-09-25T10:49:55.732165+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 446,
-  "posts_flagged": 122,
-  "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 540,
-  "reject_reasons": {
-    "古すぎる": 133,
-    "いいね稼ぎ疑い": 1,
-    "失速済み": 6,
-    "初回観測かつ平均速度が低い": 2,
-    "いいねが少なすぎる": 225,
-    "誘導文パターン": 1
-  },
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 100,
-    "MAX_AGE_MINUTES": 240,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
-    "RELEVANCE_FLOOR": 0.9,
-    "EARLY_LPM_AT_30": 18,
-    "EARLY_BONUS_AT_30": 18,
-    "EARLY_LPM_AT_15": 18,
-    "EARLY_BURST_BONUS": 18
-  },
-  "observation_db": {
-    "total": 52018,
-    "posts": 13786,
-    "oldest": "2026-09-24T10:50:30.315714+00:00"
-  },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4298,
-  "top5": [
-    {
-      "author": "TarataTragedy",
-      "score": 46.8,
-      "likes": 36519,
-      "likes_per_min": 89.45,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 191.8,
-      "text": "速報\ntimelesz 猪俣周杜　釈放 https://t.co/RcQDfqUKSR",
-      "url": "https://x.com/i/status/2103388568702058663"
-    },
-    {
-      "author": "Kanaria390",
-      "score": 84.9,
-      "likes": 41797,
-      "likes_per_min": 1459.96,
-      "acceleration": 1.53,
-      "measured": true,
-      "age_minutes": 48.4,
-      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
-      "url": "https://x.com/i/status/2103424657454244298"
-    },
-    {
-      "author": "gourmetroad5",
-      "score": 74.8,
-      "likes": 10965,
-      "likes_per_min": 87.66,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 110.3,
-      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
-      "url": "https://x.com/i/status/2103409064474755518"
-    },
-    {
-      "author": "milk_info",
-      "score": 82.0,
-      "likes": 28339,
-      "likes_per_min": 414.75,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 49.9,
-      "text": "❤️‍🔥❤️‍🔥❤️‍🔥\nM!LK ARENA TOUR 2026-2027「シャカリキレボリューション」\nご来場のお客",
-      "url": "https://x.com/i/status/2103424278989508932"
-    },
-    {
-      "author": "nijisanji_app",
-      "score": 62.7,
-      "likes": 1731,
-      "likes_per_min": 117.11685118673148,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 14.8,
-      "text": "中華料理が食べたくなる『音速飯店』！\n気になる人は動画をチェック！\n\nhttps://t.co/LuMuhXr3Z8\n#",
-      "url": "https://x.com/i/status/2103433112424509869"
-    }
-  ]
+    "failures": {},
+    "_detail_skipped_ids": []
+  }
 }

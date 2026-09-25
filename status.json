@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-09-25T15:22:11.493464+00:00",
+  "updated_at": "2026-09-25T15:46:28.952029+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 36,
+    "detail_succeeded": 33,
     "detail_failed": 0,
-    "detail_skipped": 4,
-    "detail_unavailable": 1,
-    "detail_incomplete": 3,
-    "invalid_tweets": 3,
+    "detail_skipped": 7,
+    "detail_unavailable": 5,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790350595
+      "remaining": 15,
+      "reset": 1790352052
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T15:21:34.550503+00:00",
-  "finished_at": "2026-09-25T15:22:11.492552+00:00",
-  "posts_scanned": 593,
-  "posts_with_history": 457,
-  "posts_flagged": 85,
+  "started_at": "2026-09-25T15:45:51.924738+00:00",
+  "finished_at": "2026-09-25T15:46:28.950976+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 453,
+  "posts_flagged": 72,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 77,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "古すぎる": 122,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 13,
-    "いいねが少なすぎる": 229,
-    "初回観測かつ平均速度が低い": 7
+    "古すぎる": 129,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 15,
+    "いいねが少なすぎる": 231,
+    "初回観測かつ平均速度が低い": 6,
+    "誘導文パターン": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52504,
-    "posts": 14398,
-    "oldest": "2026-09-24T15:32:06.695121+00:00"
+    "total": 52527,
+    "posts": 14443,
+    "oldest": "2026-09-24T15:47:37.587029+00:00"
   },
-  "viral_discovery_posts": 123,
+  "viral_discovery_posts": 125,
   "million_imp_rescued": 4,
   "watchlist_active": 4379,
   "top5": [
     {
       "author": "ninjin301417",
-      "score": 24.9,
-      "likes": 103656,
-      "likes_per_min": 58.5,
-      "acceleration": 0.44,
+      "score": 19.4,
+      "likes": 104074,
+      "likes_per_min": 17.21,
+      "acceleration": 0.29,
       "measured": true,
-      "age_minutes": 703.9,
+      "age_minutes": 728.1,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 32.7,
-      "likes": 30918,
-      "likes_per_min": 21.9,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 569.2,
-      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
-      "url": "https://x.com/i/status/2103362098235691057"
-    },
-    {
       "author": "ytranking",
-      "score": 80.9,
-      "likes": 12377,
-      "likes_per_min": 223.94,
-      "acceleration": 0.93,
+      "score": 74.2,
+      "likes": 16561,
+      "likes_per_min": 172.28,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 87.0,
+      "age_minutes": 111.3,
       "text": "インフルエンサー・えれめんたるひーろーさんが19歳で死去　よりひとが涙で報告\n\n▼記事\nhttps://t.co/wA5",
       "url": "https://x.com/i/status/2103483453765570877"
     },
     {
       "author": "iLiFE_wakaba",
-      "score": 42.3,
-      "likes": 61545,
-      "likes_per_min": 252.18,
-      "acceleration": 0.84,
+      "score": 38.2,
+      "likes": 66473,
+      "likes_per_min": 202.92,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 145.9,
+      "age_minutes": 170.2,
       "text": "美容院とかでアイドルなのバレたくなくてよくミスドバイトっていう設定でやってるんだけど、\nお姉さん芸能とかやった方がいいで",
       "url": "https://x.com/i/status/2103468637290127381"
     },
     {
-      "author": "sxzBST",
-      "score": 56.2,
-      "likes": 24136,
-      "likes_per_min": 375.13,
-      "acceleration": 0.82,
+      "author": "yori_youtube",
+      "score": 57.8,
+      "likes": 2936,
+      "likes_per_min": 22.29,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 125.6,
-      "text": "今月、名古屋で記録的な大雨になった日、平屋造りのたかなしの森保育園の保育士が、隣のビルの会社・五幸電設に園児たちを避難さ",
-      "url": "https://x.com/i/status/2103473743125475537"
+      "age_minutes": 137.5,
+      "text": "エレメちゃんが亡くなりました\n\nhttps://t.co/4IAmUE1k48 https://t.co/HH3T0Hg",
+      "url": "https://x.com/i/status/2103476851889123767"
+    },
+    {
+      "author": "kyokohamaguchi",
+      "score": 56.6,
+      "likes": 10877,
+      "likes_per_min": 223.1,
+      "acceleration": 1.5,
+      "measured": true,
+      "age_minutes": 100.8,
+      "text": "今日の私服です。デニム大好きです♡ https://t.co/yBW17QCSlK",
+      "url": "https://x.com/i/status/2103486094172152119"
     }
   ]
 }

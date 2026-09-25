@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T12:08:13.394044+00:00",
+  "updated_at": "2026-09-25T12:31:35.671202+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,29 @@
     "detail_skipped": 1,
     "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790338955
+      "reset": 1790340363
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T12:07:34.696552+00:00",
-  "finished_at": "2026-09-25T12:08:13.392708+00:00",
-  "posts_scanned": 611,
-  "posts_with_history": 432,
-  "posts_flagged": 143,
+  "started_at": "2026-09-25T12:31:02.893444+00:00",
+  "finished_at": "2026-09-25T12:31:35.669731+00:00",
+  "posts_scanned": 608,
+  "posts_with_history": 369,
+  "posts_flagged": 126,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 619,
+  "minutes_since_last_notification": 642,
   "reject_reasons": {
-    "古すぎる": 122,
+    "古すぎる": 123,
     "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 6,
-    "失速済み": 5,
-    "いいねが少なすぎる": 213
+    "失速済み": 4,
+    "いいねが少なすぎる": 242,
+    "初回観測かつ平均速度が低い": 12
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51713,
-    "posts": 13922,
-    "oldest": "2026-09-24T12:17:02.867254+00:00"
+    "total": 51750,
+    "posts": 14002,
+    "oldest": "2026-09-24T12:32:38.482329+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4278,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4238,
   "top5": [
     {
-      "author": "modelpress",
-      "score": 32.9,
-      "likes": 6432,
-      "likes_per_min": 35.95,
-      "acceleration": 0.82,
+      "author": "ninjin301417",
+      "score": 29.4,
+      "likes": 77408,
+      "likes_per_min": 210.1,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 201.2,
-      "text": "松岡茉優、初挑戦の仕事で涙\n今後オファーは「受けない」\nhttps://t.co/wPPTU88o2V\n\n「恥ずかしいし",
-      "url": "https://x.com/i/status/2103405895044759834"
+      "age_minutes": 533.3,
+      "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
+      "url": "https://x.com/i/status/2103328215913861451"
+    },
+    {
+      "author": "nenemapp",
+      "score": 30.6,
+      "likes": 31688,
+      "likes_per_min": 28.25,
+      "acceleration": 0.78,
+      "measured": true,
+      "age_minutes": 673.3,
+      "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
+      "url": "https://x.com/i/status/2103292984854978846"
+    },
+    {
+      "author": "Kanaria390",
+      "score": 57.3,
+      "likes": 109827,
+      "likes_per_min": 457.86,
+      "acceleration": 0.7,
+      "measured": true,
+      "age_minutes": 150.0,
+      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
+      "url": "https://x.com/i/status/2103424657454244298"
+    },
+    {
+      "author": "gourmetroad5",
+      "score": 43.0,
+      "likes": 15283,
+      "likes_per_min": 42.47,
+      "acceleration": 0.48,
+      "measured": true,
+      "age_minutes": 212.0,
+      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
+      "url": "https://x.com/i/status/2103409064474755518"
     },
     {
       "author": "kusuriya_PR",
-      "score": 74.9,
-      "likes": 26311,
-      "likes_per_min": 361.55,
-      "acceleration": 0.89,
+      "score": 72.3,
+      "likes": 32646,
+      "likes_per_min": 271.08,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 68.1,
+      "age_minutes": 91.5,
       "text": "◈──────────────◈\n TVアニメ『#薬屋のひとりごと』\n　  🍃第3期 第2弾PV解禁🍃\n◈───────",
       "url": "https://x.com/i/status/2103439386448908527"
-    },
-    {
-      "author": "Vamp_Kuzu",
-      "score": 66.4,
-      "likes": 32766,
-      "likes_per_min": 337.39,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 74.8,
-      "text": "よければ聴いてください",
-      "url": "https://x.com/i/status/2103437699705409570"
-    },
-    {
-      "author": "milk_info",
-      "score": 45.1,
-      "likes": 2693,
-      "likes_per_min": 329.43652683457566,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.2,
-      "text": "❤️‍🔥❤️‍🔥❤️‍🔥\nM!LK ARENA TOUR 2026-2027「シャカリキレボリューション」\n\n9月26日",
-      "url": "https://x.com/i/status/2103454477583831263"
-    },
-    {
-      "author": "KamenRiderStore",
-      "score": 76.9,
-      "likes": 6498,
-      "likes_per_min": 77.57,
-      "acceleration": 0.7,
-      "measured": true,
-      "age_minutes": 68.2,
-      "text": "【#仮面ライダーストア 新商品情報】\n／\nGAME START🎮LEVEL UP‼\n＼\n㊗#仮面ライダーエグゼイド 10",
-      "url": "https://x.com/i/status/2103439370673885274"
     }
   ]
 }

@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-25T05:51:33.104172+00:00",
+  "updated_at": "2026-09-25T06:07:05.206786+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_incomplete": 2,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790316361
+      "reset": 1790317294
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T05:51:00.871031+00:00",
-  "finished_at": "2026-09-25T05:51:33.103049+00:00",
-  "posts_scanned": 590,
-  "posts_with_history": 490,
-  "posts_flagged": 59,
+  "started_at": "2026-09-25T06:06:33.656660+00:00",
+  "finished_at": "2026-09-25T06:07:05.205842+00:00",
+  "posts_scanned": 570,
+  "posts_with_history": 457,
+  "posts_flagged": 78,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 242,
+  "minutes_since_last_notification": 258,
   "reject_reasons": {
-    "古すぎる": 147,
-    "誘導文パターン": 2,
-    "いいねが少なすぎる": 211,
+    "古すぎる": 138,
+    "誘導文パターン": 3,
+    "失速済み": 2,
+    "いいねが少なすぎる": 206,
     "初回観測かつ平均速度が低い": 3,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 4
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52201,
-    "posts": 13000,
-    "oldest": "2026-09-24T06:02:13.770580+00:00"
+    "total": 52196,
+    "posts": 13017,
+    "oldest": "2026-09-24T06:17:46.951112+00:00"
   },
   "viral_discovery_posts": 123,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4272,
+  "million_imp_rescued": 6,
+  "watchlist_active": 4245,
   "top5": [
     {
       "author": "Tama_chan0317_",
-      "score": 72.4,
-      "likes": 6439,
-      "likes_per_min": 64.71,
-      "acceleration": 0.91,
+      "score": 69.1,
+      "likes": 7422,
+      "likes_per_min": 63.28,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 129.5,
+      "age_minutes": 145.0,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "yukitichqn",
-      "score": 53.8,
-      "likes": 25527,
-      "likes_per_min": 256.39,
-      "acceleration": 0.95,
+      "score": 50.9,
+      "likes": 29432,
+      "likes_per_min": 251.37,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 148.0,
+      "age_minutes": 163.5,
       "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
       "url": "https://x.com/i/status/2103324506651771298"
     },
     {
       "author": "tkzwgrs",
-      "score": 57.2,
-      "likes": 5493,
-      "likes_per_min": 36.78,
-      "acceleration": 0.73,
+      "score": 56.1,
+      "likes": 6064,
+      "likes_per_min": 36.76,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 115.8,
+      "age_minutes": 131.4,
       "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
       "url": "https://x.com/i/status/2103332591583822181"
     },
     {
-      "author": "kb_dn_",
-      "score": 41.1,
-      "likes": 29078,
-      "likes_per_min": 131.55,
-      "acceleration": 0.99,
+      "author": "SizmaRei",
+      "score": 59.2,
+      "likes": 3518,
+      "likes_per_min": 65.73,
+      "acceleration": 3.83,
       "measured": true,
-      "age_minutes": 179.9,
-      "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
-      "url": "https://x.com/i/status/2103316478632358315"
+      "age_minutes": 79.6,
+      "text": "気持ち伝わったよありがとう、でもこれ第三者目線だとたまきくんが企業コラボする話にしか見えなくない？",
+      "url": "https://x.com/i/status/2103345630085292257"
     },
     {
-      "author": "cho3li4",
-      "score": 50.6,
-      "likes": 14163,
-      "likes_per_min": 281.75,
-      "acceleration": 2.66,
+      "author": "kb_dn_",
+      "score": 38.7,
+      "likes": 31164,
+      "likes_per_min": 134.28,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 158.9,
-      "text": "俺が働く会社では3分おきにおしっこするジジイ、4分おきにおしっこするジジイ、5分おきにおしっこするジジイがいて、3人が同",
-      "url": "https://x.com/i/status/2103321750012674352"
+      "age_minutes": 195.4,
+      "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
+      "url": "https://x.com/i/status/2103316478632358315"
     }
   ]
 }

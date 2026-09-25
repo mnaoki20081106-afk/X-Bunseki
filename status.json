@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T12:47:06.710545+00:00",
+  "updated_at": "2026-09-25T13:02:41.358681+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 37,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 3,
     "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790341290
+      "reset": 1790342221
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T12:46:30.091523+00:00",
-  "finished_at": "2026-09-25T12:47:06.709431+00:00",
-  "posts_scanned": 606,
-  "posts_with_history": 433,
-  "posts_flagged": 128,
+  "started_at": "2026-09-25T13:02:00.171508+00:00",
+  "finished_at": "2026-09-25T13:02:41.357677+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 435,
+  "posts_flagged": 126,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 658,
+  "minutes_since_last_notification": 673,
   "reject_reasons": {
-    "古すぎる": 122,
+    "古すぎる": 121,
     "いいね稼ぎ疑い": 3,
-    "失速済み": 7,
-    "いいねが少なすぎる": 234,
-    "初回観測かつ平均速度が低い": 2,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 4,
+    "いいねが少なすぎる": 240,
     "誘導文パターン": 1
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51802,
-    "posts": 13997,
-    "oldest": "2026-09-24T12:47:55.416180+00:00"
+    "total": 52252,
+    "posts": 14127,
+    "oldest": "2026-09-24T13:03:43.587841+00:00"
   },
-  "viral_discovery_posts": 138,
-  "million_imp_rescued": 7,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 6,
   "watchlist_active": 4270,
   "top5": [
     {
       "author": "ninjin301417",
-      "score": 28.9,
-      "likes": 80488,
-      "likes_per_min": 198.4,
-      "acceleration": 0.94,
+      "score": 28.7,
+      "likes": 83292,
+      "likes_per_min": 180.05,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 548.8,
+      "age_minutes": 564.4,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "ChugokuShimbun",
-      "score": 100.0,
-      "likes": 6081,
-      "likes_per_min": 240.21,
-      "acceleration": 2.57,
+      "author": "LindenMesicku",
+      "score": 29.5,
+      "likes": 32343,
+      "likes_per_min": 78.98,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 45.5,
-      "text": "【事件】カープの2選手を書類送検　ゾンビたばこを巡る容疑\nhttps://t.co/Qe4u95oYsp",
-      "url": "https://x.com/i/status/2103454885828333948"
+      "age_minutes": 619.4,
+      "text": "高市さんすごい。\n日本を世界全部の敵国に戻した。",
+      "url": "https://x.com/i/status/2103314359649030263"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 36.0,
+      "likes": 26522,
+      "likes_per_min": 46.6,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 429.7,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
     },
     {
       "author": "Kanaria390",
-      "score": 54.3,
-      "likes": 115220,
-      "likes_per_min": 347.4,
-      "acceleration": 0.76,
+      "score": 51.9,
+      "likes": 120004,
+      "likes_per_min": 307.2,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 165.6,
+      "age_minutes": 181.1,
       "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
       "url": "https://x.com/i/status/2103424657454244298"
     },
     {
-      "author": "78milktea1",
-      "score": 33.0,
-      "likes": 8629,
-      "likes_per_min": 46.70170651368603,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 184.8,
-      "text": "ラランド西田って相当良い匂いらしいね...\n推してた柔軟剤がち家中良い匂いなるし服に住み着いてるｵｼﾞ臭も消えるこの匂い",
-      "url": "https://x.com/i/status/2103419826463244553"
-    },
-    {
-      "author": "gourmetroad5",
-      "score": 37.6,
-      "likes": 15638,
-      "likes_per_min": 22.87,
-      "acceleration": 0.54,
+      "author": "ChugokuShimbun",
+      "score": 89.3,
+      "likes": 9381,
+      "likes_per_min": 211.9,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 227.5,
-      "text": "10月より順次マクドナルドでは「チキンフィレオ」や「シャカチキ」、「チキチー」などのメニューの販売を終了します！\nhtt",
-      "url": "https://x.com/i/status/2103409064474755518"
+      "age_minutes": 61.0,
+      "text": "【事件】カープの2選手を書類送検　ゾンビたばこを巡る容疑\nhttps://t.co/Qe4u95oYsp",
+      "url": "https://x.com/i/status/2103454885828333948"
     }
   ]
 }

@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T23:02:15.562564+00:00",
+  "updated_at": "2026-09-25T23:17:43.443949+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
+    "detail_incomplete": 1,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790378201
+      "reset": 1790379131
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T23:01:40.592365+00:00",
-  "finished_at": "2026-09-25T23:02:15.561343+00:00",
-  "posts_scanned": 593,
-  "posts_with_history": 461,
-  "posts_flagged": 27,
+  "started_at": "2026-09-25T23:17:10.571830+00:00",
+  "finished_at": "2026-09-25T23:17:43.442894+00:00",
+  "posts_scanned": 597,
+  "posts_with_history": 473,
+  "posts_flagged": 43,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 343,
+  "minutes_since_last_notification": 358,
   "reject_reasons": {
-    "古すぎる": 330,
-    "初回観測かつ平均速度が低い": 5,
+    "古すぎる": 298,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 174,
-    "失速済み": 1
+    "いいねが少なすぎる": 178,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52159,
-    "posts": 13697,
-    "oldest": "2026-09-24T23:05:10.558018+00:00"
+    "total": 52140,
+    "posts": 13674,
+    "oldest": "2026-09-24T23:20:50.755656+00:00"
   },
   "viral_discovery_posts": 128,
   "million_imp_rescued": 2,
-  "watchlist_active": 4356,
+  "watchlist_active": 4361,
   "top5": [
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 29.1,
-      "likes": 31376,
-      "likes_per_min": 24.68,
-      "acceleration": 0.23,
-      "measured": true,
-      "age_minutes": 586.9,
-      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
-      "url": "https://x.com/i/status/2103473432625381433"
-    },
-    {
       "author": "Qchan_biyou",
-      "score": 25.2,
-      "likes": 14612,
-      "likes_per_min": 14.2,
-      "acceleration": 1.12,
+      "score": 24.4,
+      "likes": 14823,
+      "likes_per_min": 13.64,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 863.4,
+      "age_minutes": 878.9,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
-      "author": "Vau875",
-      "score": 95.6,
-      "likes": 4154,
-      "likes_per_min": 108.34,
-      "acceleration": 1.55,
+      "author": "nabicochan",
+      "score": 31.4,
+      "likes": 12582,
+      "likes_per_min": 44.55,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 70.5,
-      "text": "起きんよ普通に",
-      "url": "https://x.com/i/status/2103603391914246578"
+      "age_minutes": 647.2,
+      "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
+      "url": "https://x.com/i/status/2103462135674323029"
     },
     {
-      "author": "Lauren_iroas",
-      "score": 78.4,
-      "likes": 2292,
-      "likes_per_min": 172.85786397991413,
+      "author": "number_i_offic",
+      "score": 70.3,
+      "likes": 2189,
+      "likes_per_min": 300.922353131694,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 13.3,
-      "text": "ナイ盛りですな\nおやすみなさい",
-      "url": "https://x.com/i/status/2103617790687232303"
+      "age_minutes": 7.3,
+      "text": "📝掲載情報 / Magazine Appearance 📝\n \n｢オリコンニュース｣のWEB記事に\nインタビューが掲載さ",
+      "url": "https://x.com/i/status/2103623188106363186"
     },
     {
-      "author": "nino_honmono",
-      "score": 71.8,
-      "likes": 20523,
-      "likes_per_min": 165.32,
-      "acceleration": 0.89,
+      "author": "tomisakae411",
+      "score": 55.0,
+      "likes": 6236,
+      "likes_per_min": 132.62,
+      "acceleration": 1.5,
       "measured": true,
-      "age_minutes": 88.9,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/i/status/2103598763898286220"
+      "age_minutes": 67.7,
+      "text": "今日は #VIVANT チョッキー役のOHMさん（29歳）のお誕生日です🎂🇹🇭✨\n博多で海鮮料理や串焼き、ラーメンを食べ",
+      "url": "https://x.com/i/status/2103607983372738957"
+    },
+    {
+      "author": "orix_crazy",
+      "score": 42.1,
+      "likes": 3441,
+      "likes_per_min": 54.38,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 125.5,
+      "text": "平野佳寿の好きなやつ。プロ初勝利のボールをスタンドに投げ入れるフリをする。\n https://t.co/7sQSiXeR",
+      "url": "https://x.com/i/status/2103593427204276615"
     }
   ]
 }

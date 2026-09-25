@@ -1,42 +1,40 @@
 {
-  "updated_at": "2026-09-25T04:49:24.656986+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-25T05:05:01.934266+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
-    "detail_succeeded": 40,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790312637
+      "reset": 1790313570
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-25T04:48:56.107497+00:00",
-  "finished_at": "2026-09-25T04:49:24.655854+00:00",
-  "posts_scanned": 576,
-  "posts_with_history": 446,
-  "posts_flagged": 75,
+  "started_at": "2026-09-25T05:04:29.855704+00:00",
+  "finished_at": "2026-09-25T05:05:01.933304+00:00",
+  "posts_scanned": 573,
+  "posts_with_history": 482,
+  "posts_flagged": 81,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 180,
+  "minutes_since_last_notification": 196,
   "reject_reasons": {
-    "古すぎる": 145,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 8,
+    "古すぎる": 149,
+    "失速済み": 5,
     "誘導文パターン": 4,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 232
+    "初回観測かつ平均速度が低い": 7,
+    "いいねが少なすぎる": 206,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52140,
-    "posts": 12987,
-    "oldest": "2026-09-24T04:51:19.617612+00:00"
+    "total": 52131,
+    "posts": 12985,
+    "oldest": "2026-09-24T05:06:50.987974+00:00"
   },
-  "viral_discovery_posts": 112,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4249,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 9,
+  "watchlist_active": 4246,
   "top5": [
     {
+      "author": "papapaan2",
+      "score": 28.1,
+      "likes": 56838,
+      "likes_per_min": 221.23,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 711.0,
+      "text": "夫氏がしんでしまいました\n昨日までヤンニョムチキン食べてワイワイしてたのに\n11月に大型の旅行計画立ててたのに\n\n朝ベッ",
+      "url": "https://x.com/i/status/2103171114335916097"
+    },
+    {
+      "author": "mofjd",
+      "score": 27.5,
+      "likes": 71523,
+      "likes_per_min": 57.81,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 926.0,
+      "text": "先日、おそらく暴力団員かなと思われる人が携帯電話を落としたことに気づかずに歩いて行ったので拾って後ろからあのぁと言ったら",
+      "url": "https://x.com/i/status/2103117001128612029"
+    },
+    {
+      "author": "nenemapp",
+      "score": 39.3,
+      "likes": 16133,
+      "likes_per_min": 45.51,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 226.7,
+      "text": "姉の結婚式と高校最後の文化祭が被ってしまった方🥹 https://t.co/dlprmUiq1y",
+      "url": "https://x.com/i/status/2103292984854978846"
+    },
+    {
       "author": "Tama_chan0317_",
-      "score": 67.0,
-      "likes": 2012,
-      "likes_per_min": 29.890064432153917,
+      "score": 82.9,
+      "likes": 3105,
+      "likes_per_min": 69.95,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 67.3,
+      "measured": true,
+      "age_minutes": 82.9,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
-      "author": "parade_capsule",
-      "score": 73.4,
-      "likes": 32614,
-      "likes_per_min": 142.43,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 108.7,
-      "text": "📣9月カプセルトイ新情報！\n\n＃映画ちいかわ 人魚の島のひみつ \nデスクトップフィギュア\nが登場🏝️\n\n映画のワンシーン",
-      "url": "https://x.com/i/status/2103318741685801283"
-    },
-    {
       "author": "tkzwgrs",
-      "score": 77.7,
-      "likes": 1880,
-      "likes_per_min": 53.72,
-      "acceleration": 1.37,
+      "score": 78.8,
+      "likes": 3195,
+      "likes_per_min": 84.16,
+      "acceleration": 1.57,
       "measured": true,
-      "age_minutes": 53.7,
+      "age_minutes": 69.3,
       "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
       "url": "https://x.com/i/status/2103332591583822181"
-    },
-    {
-      "author": "kb_dn_",
-      "score": 51.0,
-      "likes": 19912,
-      "likes_per_min": 185.37,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 117.7,
-      "text": "三十路お姉さんビフォアフ！ https://t.co/0BmI7HqPdO",
-      "url": "https://x.com/i/status/2103316478632358315"
-    },
-    {
-      "author": "tamika47488",
-      "score": 42.0,
-      "likes": 16300,
-      "likes_per_min": 180.75,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 215.6,
-      "text": "この黒人さんかなり良いこと言うじゃない\n蛙化って勝手に相手を良いよにとらえて\nそれより悪いと冷められるってそんな酷い話な",
-      "url": "https://x.com/i/status/2103291841160613998"
     }
   ]
 }

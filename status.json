@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T13:49:29.041029+00:00",
+  "updated_at": "2026-09-25T14:04:43.543694+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790345018
+      "reset": 1790345949
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T13:48:36.212562+00:00",
-  "finished_at": "2026-09-25T13:49:29.039707+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 432,
-  "posts_flagged": 121,
-  "notified_count": 0,
+  "started_at": "2026-09-25T14:04:09.060073+00:00",
+  "finished_at": "2026-09-25T14:04:43.542521+00:00",
+  "posts_scanned": 589,
+  "posts_with_history": 423,
+  "posts_flagged": 115,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 720,
+  "minutes_since_last_notification": 735,
   "reject_reasons": {
-    "古すぎる": 126,
-    "失速済み": 7,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 233,
-    "初回観測かつ平均速度が低い": 4,
+    "古すぎる": 116,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 239,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 2,
     "誘導文パターン": 1
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52339,
-    "posts": 14239,
-    "oldest": "2026-09-24T13:50:11.327902+00:00"
+    "total": 52398,
+    "posts": 14287,
+    "oldest": "2026-09-24T14:05:42.710748+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4315,
+  "viral_discovery_posts": 115,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4318,
   "top5": [
     {
-      "author": "ninjin301417",
-      "score": 29.0,
-      "likes": 91160,
-      "likes_per_min": 161.49,
-      "acceleration": 0.98,
+      "author": "FRUITS_ZIPPER",
+      "score": 86.8,
+      "likes": 9950,
+      "likes_per_min": 271.22,
+      "acceleration": 1.53,
       "measured": true,
-      "age_minutes": 611.2,
+      "age_minutes": 49.4,
+      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
+      "url": "https://x.com/i/status/2103473432625381433"
+    },
+    {
+      "author": "ninjin301417",
+      "score": 29.3,
+      "likes": 93764,
+      "likes_per_min": 170.92,
+      "acceleration": 1.06,
+      "measured": true,
+      "age_minutes": 626.4,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "livedoornews",
-      "score": 53.9,
-      "likes": 26219,
-      "likes_per_min": 105.05,
-      "acceleration": 0.79,
+      "author": "yukitichqn",
+      "score": 34.3,
+      "likes": 89176,
+      "likes_per_min": 108.15,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 209.5,
-      "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
-      "url": "https://x.com/i/status/2103429303098589483"
+      "age_minutes": 641.1,
+      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
+      "url": "https://x.com/i/status/2103324506651771298"
+    },
+    {
+      "author": "DEATHDOL_NOTE",
+      "score": 34.4,
+      "likes": 28890,
+      "likes_per_min": 36.03,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 491.8,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
     },
     {
       "author": "amane_fz1026",
-      "score": 56.7,
-      "likes": 13959,
-      "likes_per_min": 327.59,
-      "acceleration": 1.01,
+      "score": 53.7,
+      "likes": 18705,
+      "likes_per_min": 311.52,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 44.9,
+      "age_minutes": 60.1,
       "text": "愛知ありがとうございました！ https://t.co/UE39ud6Ne1",
       "url": "https://x.com/i/status/2103470720181506391"
-    },
-    {
-      "author": "iLiFE_wakaba",
-      "score": 58.2,
-      "likes": 23470,
-      "likes_per_min": 711.63,
-      "acceleration": 1.38,
-      "measured": true,
-      "age_minutes": 53.2,
-      "text": "美容院とかでアイドルなのバレたくなくてよくミスドバイトっていう設定でやってるんだけど、\nお姉さん芸能とかやった方がいいで",
-      "url": "https://x.com/i/status/2103468637290127381"
-    },
-    {
-      "author": "FRUITS_ZIPPER",
-      "score": 80.3,
-      "likes": 5818,
-      "likes_per_min": 176.95,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 34.1,
-      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
-      "url": "https://x.com/i/status/2103473432625381433"
     }
   ]
 }

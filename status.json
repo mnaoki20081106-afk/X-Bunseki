@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T15:46:28.952029+00:00",
+  "updated_at": "2026-09-25T16:01:54.747308+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,30 @@
     "detail_skipped": 7,
     "detail_unavailable": 5,
     "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790352052
+      "remaining": 14,
+      "reset": 1790352983
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T15:45:51.924738+00:00",
-  "finished_at": "2026-09-25T15:46:28.950976+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 453,
-  "posts_flagged": 72,
+  "started_at": "2026-09-25T16:01:22.279526+00:00",
+  "finished_at": "2026-09-25T16:01:54.746284+00:00",
+  "posts_scanned": 610,
+  "posts_with_history": 496,
+  "posts_flagged": 55,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 102,
+  "minutes_since_last_notification": 117,
   "reject_reasons": {
-    "古すぎる": 129,
-    "いいね稼ぎ疑い": 4,
-    "失速済み": 15,
-    "いいねが少なすぎる": 231,
-    "初回観測かつ平均速度が低い": 6,
-    "誘導文パターン": 2
+    "古すぎる": 140,
+    "いいね稼ぎ疑い": 5,
+    "失速済み": 17,
+    "いいねが少なすぎる": 240,
+    "初回観測かつ平均速度が低い": 4,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52527,
-    "posts": 14443,
-    "oldest": "2026-09-24T15:47:37.587029+00:00"
+    "total": 52529,
+    "posts": 14461,
+    "oldest": "2026-09-24T16:03:11.068154+00:00"
   },
-  "viral_discovery_posts": 125,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4379,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 9,
+  "watchlist_active": 4387,
   "top5": [
     {
       "author": "ninjin301417",
-      "score": 19.4,
-      "likes": 104074,
-      "likes_per_min": 17.21,
+      "score": 14.9,
+      "likes": 104152,
+      "likes_per_min": 5.06,
       "acceleration": 0.29,
       "measured": true,
-      "age_minutes": 728.1,
+      "age_minutes": 743.6,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
-      "author": "ytranking",
-      "score": 74.2,
-      "likes": 16561,
-      "likes_per_min": 172.28,
-      "acceleration": 0.77,
+      "author": "DEATHDOL_NOTE",
+      "score": 32.4,
+      "likes": 31713,
+      "likes_per_min": 20.02,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 111.3,
+      "age_minutes": 608.9,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
+    },
+    {
+      "author": "yukitichqn",
+      "score": 32.3,
+      "likes": 95720,
+      "likes_per_min": 53.83,
+      "acceleration": 0.78,
+      "measured": true,
+      "age_minutes": 758.3,
+      "text": "クソ客すぎる https://t.co/ok6SoVdhoH",
+      "url": "https://x.com/i/status/2103324506651771298"
+    },
+    {
+      "author": "ytranking",
+      "score": 65.9,
+      "likes": 18209,
+      "likes_per_min": 106.8,
+      "acceleration": 0.62,
+      "measured": true,
+      "age_minutes": 126.7,
       "text": "インフルエンサー・えれめんたるひーろーさんが19歳で死去　よりひとが涙で報告\n\n▼記事\nhttps://t.co/wA5",
       "url": "https://x.com/i/status/2103483453765570877"
     },
     {
-      "author": "iLiFE_wakaba",
-      "score": 38.2,
-      "likes": 66473,
-      "likes_per_min": 202.92,
-      "acceleration": 0.8,
-      "measured": true,
-      "age_minutes": 170.2,
-      "text": "美容院とかでアイドルなのバレたくなくてよくミスドバイトっていう設定でやってるんだけど、\nお姉さん芸能とかやった方がいいで",
-      "url": "https://x.com/i/status/2103468637290127381"
-    },
-    {
-      "author": "yori_youtube",
-      "score": 57.8,
-      "likes": 2936,
-      "likes_per_min": 22.29,
+      "author": "nknhlv",
+      "score": 35.8,
+      "likes": 52512,
+      "likes_per_min": 220.2102383248718,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 137.5,
-      "text": "エレメちゃんが亡くなりました\n\nhttps://t.co/4IAmUE1k48 https://t.co/HH3T0Hg",
-      "url": "https://x.com/i/status/2103476851889123767"
-    },
-    {
-      "author": "kyokohamaguchi",
-      "score": 56.6,
-      "likes": 10877,
-      "likes_per_min": 223.1,
-      "acceleration": 1.5,
-      "measured": true,
-      "age_minutes": 100.8,
-      "text": "今日の私服です。デニム大好きです♡ https://t.co/yBW17QCSlK",
-      "url": "https://x.com/i/status/2103486094172152119"
+      "measured": false,
+      "age_minutes": 238.5,
+      "text": "ぼくが好きなソーラン節踊ってみた2選 https://t.co/Ck3fDUR9H3",
+      "url": "https://x.com/i/status/2103455334530773163"
     }
   ]
 }

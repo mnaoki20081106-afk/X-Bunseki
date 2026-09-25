@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-25T14:51:09.807944+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-25T15:06:45.582482+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 40,
     "detail_failed": 0,
     "detail_skipped": 0,
@@ -16,27 +16,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790348736
+      "reset": 1790349667
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-25T14:50:35.772499+00:00",
-  "finished_at": "2026-09-25T14:51:09.806662+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 474,
-  "posts_flagged": 95,
+  "started_at": "2026-09-25T15:06:06.587331+00:00",
+  "finished_at": "2026-09-25T15:06:45.581441+00:00",
+  "posts_scanned": 584,
+  "posts_with_history": 450,
+  "posts_flagged": 87,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 46,
+  "minutes_since_last_notification": 62,
   "reject_reasons": {
-    "古すぎる": 124,
-    "いいね稼ぎ疑い": 7,
-    "いいねが少なすぎる": 224,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 7,
-    "誘導文パターン": 1
+    "古すぎる": 127,
+    "いいね稼ぎ疑い": 3,
+    "失速済み": 11,
+    "いいねが少なすぎる": 218,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -54,67 +51,67 @@
   },
   "observation_db": {
     "total": 52459,
-    "posts": 14361,
-    "oldest": "2026-09-24T14:52:14.129623+00:00"
+    "posts": 14347,
+    "oldest": "2026-09-24T15:16:28.608444+00:00"
   },
-  "viral_discovery_posts": 121,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4367,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4363,
   "top5": [
     {
       "author": "ninjin301417",
       "score": 28.7,
-      "likes": 100696,
-      "likes_per_min": 139.78,
-      "acceleration": 0.96,
+      "likes": 102753,
+      "likes_per_min": 131.91,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 672.8,
+      "age_minutes": 688.4,
       "text": "ピザまんこんなに美味しいんだから\n1年中出してくれればいいのにと思いますな😀",
       "url": "https://x.com/i/status/2103328215913861451"
     },
     {
       "author": "DEATHDOL_NOTE",
-      "score": 33.7,
-      "likes": 30192,
-      "likes_per_min": 26.03,
-      "acceleration": 0.95,
+      "score": 33.6,
+      "likes": 30580,
+      "likes_per_min": 24.88,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 538.2,
+      "age_minutes": 553.8,
       "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
       "url": "https://x.com/i/status/2103362098235691057"
     },
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 75.5,
-      "likes": 18000,
-      "likes_per_min": 131.99,
-      "acceleration": 0.82,
+      "author": "ytranking",
+      "score": 89.6,
+      "likes": 8920,
+      "likes_per_min": 241.44,
+      "acceleration": 2.19,
       "measured": true,
-      "age_minutes": 95.8,
+      "age_minutes": 71.6,
+      "text": "インフルエンサー・えれめんたるひーろーさんが19歳で死去　よりひとが涙で報告\n\n▼記事\nhttps://t.co/wA5",
+      "url": "https://x.com/i/status/2103483453765570877"
+    },
+    {
+      "author": "FRUITS_ZIPPER",
+      "score": 72.0,
+      "likes": 19643,
+      "likes_per_min": 105.36,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 111.4,
       "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
       "url": "https://x.com/i/status/2103473432625381433"
     },
     {
-      "author": "nihonnomanga",
-      "score": 47.7,
-      "likes": 8456,
-      "likes_per_min": 111.47,
-      "acceleration": 1.12,
+      "author": "iLiFE_wakaba",
+      "score": 44.4,
+      "likes": 57652,
+      "likes_per_min": 301.21,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 132.9,
-      "text": "緒方恵美さんが完全におかしくなる前にエヴァが終わってくれて良かったです。",
-      "url": "https://x.com/i/status/2103464103251681332"
-    },
-    {
-      "author": "amane_fz1026",
-      "score": 47.5,
-      "likes": 29813,
-      "likes_per_min": 211.46,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 106.6,
-      "text": "愛知ありがとうございました！ https://t.co/UE39ud6Ne1",
-      "url": "https://x.com/i/status/2103470720181506391"
+      "age_minutes": 130.4,
+      "text": "美容院とかでアイドルなのバレたくなくてよくミスドバイトっていう設定でやってるんだけど、\nお姉さん芸能とかやった方がいいで",
+      "url": "https://x.com/i/status/2103468637290127381"
     }
   ]
 }

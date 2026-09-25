@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-25T07:49:15.192227+00:00",
+  "updated_at": "2026-09-25T08:04:50.111313+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 1,
-    "detail_incomplete": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790323421
+      "reset": 1790324355
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T07:48:40.568744+00:00",
-  "finished_at": "2026-09-25T07:49:15.190437+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 486,
-  "posts_flagged": 85,
+  "started_at": "2026-09-25T08:04:14.650288+00:00",
+  "finished_at": "2026-09-25T08:04:50.110019+00:00",
+  "posts_scanned": 609,
+  "posts_with_history": 469,
+  "posts_flagged": 80,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 360,
+  "minutes_since_last_notification": 375,
   "reject_reasons": {
-    "古すぎる": 165,
-    "いいねが少なすぎる": 209,
-    "いいね稼ぎ疑い": 5,
-    "失速済み": 3,
+    "古すぎる": 172,
+    "いいねが少なすぎる": 227,
+    "初回観測かつ平均速度が低い": 4,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 5
+    "いいね稼ぎ疑い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52348,
-    "posts": 13262,
-    "oldest": "2026-09-24T07:50:52.385157+00:00"
+    "total": 52390,
+    "posts": 13302,
+    "oldest": "2026-09-24T08:06:19.362151+00:00"
   },
-  "viral_discovery_posts": 139,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4279,
+  "viral_discovery_posts": 131,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4252,
   "top5": [
     {
       "author": "Tama_chan0317_",
-      "score": 37.0,
-      "likes": 10959,
-      "likes_per_min": 14.79,
-      "acceleration": 0.97,
+      "score": 38.6,
+      "likes": 11227,
+      "likes_per_min": 17.2,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 247.2,
+      "age_minutes": 262.7,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
       "author": "tkzwgrs",
-      "score": 60.8,
-      "likes": 17703,
-      "likes_per_min": 238.64,
-      "acceleration": 1.22,
+      "score": 57.8,
+      "likes": 22476,
+      "likes_per_min": 306.32,
+      "acceleration": 1.28,
       "measured": true,
-      "age_minutes": 109.0,
+      "age_minutes": 124.6,
       "text": "【朗報】小島よしお(45)さん、キッズから「どうして女性は歌舞伎俳優になれないの？」と難問を投げ掛けられるも華麗な回答で",
       "url": "https://x.com/i/status/2103363940436848651"
     },
     {
-      "author": "akiman7",
-      "score": 43.0,
-      "likes": 8302,
-      "likes_per_min": 77.77,
-      "acceleration": 0.95,
+      "author": "k_maru_dau_baby",
+      "score": 72.5,
+      "likes": 6989,
+      "likes_per_min": 371.53,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 182.6,
+      "age_minutes": 26.7,
+      "text": "顔が良い https://t.co/cCSXTCyXNz",
+      "url": "https://x.com/i/status/2103388555729146034"
+    },
+    {
+      "author": "akiman7",
+      "score": 39.2,
+      "likes": 9407,
+      "likes_per_min": 70.92,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 198.2,
       "text": "ドラマ版フォールアウトでも思ったけど外人って核兵器の描写に対する解像度が低い気がする",
       "url": "https://x.com/i/status/2103345402758262859"
     },
     {
-      "author": "tkzwgrs",
-      "score": 32.4,
-      "likes": 8368,
-      "likes_per_min": 16.85,
-      "acceleration": 0.94,
+      "author": "DEATHDOL_NOTE",
+      "score": 69.9,
+      "likes": 5764,
+      "likes_per_min": 91.2,
+      "acceleration": 1.33,
       "measured": true,
-      "age_minutes": 233.5,
-      "text": "【悲報】駆け出し配信者さん、藪から棒にフル火力で焼き殺される\n\n@mugichimu0602\n@Gardenrn9130",
-      "url": "https://x.com/i/status/2103332591583822181"
-    },
-    {
-      "author": "k_maru_dau_baby",
-      "score": 62.8,
-      "likes": 1151,
-      "likes_per_min": 89.76694870117845,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 12.8,
-      "text": "猪俣周杜 釈放",
-      "url": "https://x.com/i/status/2103388135455629482"
+      "age_minutes": 131.9,
+      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
+      "url": "https://x.com/i/status/2103362098235691057"
     }
   ]
 }

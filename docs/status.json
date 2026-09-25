@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-09-25T23:17:43.443949+00:00",
+  "updated_at": "2026-09-25T23:33:12.366217+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 0,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
     "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790379131
+      "reset": 1790380061
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T23:17:10.571830+00:00",
-  "finished_at": "2026-09-25T23:17:43.442894+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 473,
-  "posts_flagged": 43,
+  "started_at": "2026-09-25T23:32:40.910724+00:00",
+  "finished_at": "2026-09-25T23:33:12.365198+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 491,
+  "posts_flagged": 46,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 358,
+  "minutes_since_last_notification": 374,
   "reject_reasons": {
-    "古すぎる": 298,
+    "古すぎる": 280,
     "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 178,
+    "初回観測かつ平均速度が低い": 9,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 5
+    "いいねが少なすぎる": 197,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52140,
-    "posts": 13674,
-    "oldest": "2026-09-24T23:20:50.755656+00:00"
+    "total": 52138,
+    "posts": 13646,
+    "oldest": "2026-09-24T23:36:20.891802+00:00"
   },
-  "viral_discovery_posts": 128,
+  "viral_discovery_posts": 129,
   "million_imp_rescued": 2,
-  "watchlist_active": 4361,
+  "watchlist_active": 4350,
   "top5": [
     {
       "author": "Qchan_biyou",
-      "score": 24.4,
-      "likes": 14823,
-      "likes_per_min": 13.64,
-      "acceleration": 0.96,
+      "score": 24.8,
+      "likes": 15040,
+      "likes_per_min": 14.02,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 878.9,
+      "age_minutes": 894.4,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
       "author": "nabicochan",
-      "score": 31.4,
-      "likes": 12582,
-      "likes_per_min": 44.55,
-      "acceleration": 1.02,
+      "score": 31.1,
+      "likes": 13266,
+      "likes_per_min": 44.18,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 647.2,
+      "age_minutes": 662.7,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
-      "author": "number_i_offic",
-      "score": 70.3,
-      "likes": 2189,
-      "likes_per_min": 300.922353131694,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.3,
-      "text": "📝掲載情報 / Magazine Appearance 📝\n \n｢オリコンニュース｣のWEB記事に\nインタビューが掲載さ",
-      "url": "https://x.com/i/status/2103623188106363186"
-    },
-    {
-      "author": "tomisakae411",
-      "score": 55.0,
-      "likes": 6236,
-      "likes_per_min": 132.62,
-      "acceleration": 1.5,
-      "measured": true,
-      "age_minutes": 67.7,
-      "text": "今日は #VIVANT チョッキー役のOHMさん（29歳）のお誕生日です🎂🇹🇭✨\n博多で海鮮料理や串焼き、ラーメンを食べ",
-      "url": "https://x.com/i/status/2103607983372738957"
-    },
-    {
       "author": "orix_crazy",
-      "score": 42.1,
-      "likes": 3441,
-      "likes_per_min": 54.38,
-      "acceleration": null,
+      "score": 39.8,
+      "likes": 4230,
+      "likes_per_min": 50.96,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 125.5,
+      "age_minutes": 141.0,
       "text": "平野佳寿の好きなやつ。プロ初勝利のボールをスタンドに投げ入れるフリをする。\n https://t.co/7sQSiXeR",
       "url": "https://x.com/i/status/2103593427204276615"
+    },
+    {
+      "author": "Fuwa_Minato",
+      "score": 76.7,
+      "likes": 2012,
+      "likes_per_min": 205.51785827102378,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 9.8,
+      "text": "げんちゃんありがとう\n朝食べるちゃんぽんは別格だ\nきょうは髪が荒ぶらなくてよかった",
+      "url": "https://x.com/i/status/2103626452826755560"
+    },
+    {
+      "author": "Vau875",
+      "score": 84.9,
+      "likes": 6720,
+      "likes_per_min": 73.57,
+      "acceleration": 0.8,
+      "measured": true,
+      "age_minutes": 101.4,
+      "text": "起きんよ普通に",
+      "url": "https://x.com/i/status/2103603391914246578"
     }
   ]
 }

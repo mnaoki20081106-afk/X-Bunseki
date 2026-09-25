@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T11:37:08.206764+00:00",
+  "updated_at": "2026-09-25T11:52:42.016146+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790337095
+      "reset": 1790338026
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T11:36:34.336392+00:00",
-  "finished_at": "2026-09-25T11:37:08.205648+00:00",
-  "posts_scanned": 609,
-  "posts_with_history": 444,
-  "posts_flagged": 136,
+  "started_at": "2026-09-25T11:52:05.794624+00:00",
+  "finished_at": "2026-09-25T11:52:42.014946+00:00",
+  "posts_scanned": 611,
+  "posts_with_history": 450,
+  "posts_flagged": 119,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 588,
+  "minutes_since_last_notification": 603,
   "reject_reasons": {
-    "古すぎる": 124,
-    "失速済み": 4,
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 235,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 130,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 237,
+    "失速済み": 2,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51616,
-    "posts": 13856,
-    "oldest": "2026-09-24T11:37:16.395986+00:00"
+    "total": 51682,
+    "posts": 13894,
+    "oldest": "2026-09-24T11:52:50.110473+00:00"
   },
-  "viral_discovery_posts": 129,
-  "million_imp_rescued": 9,
-  "watchlist_active": 4239,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 6,
+  "watchlist_active": 4258,
   "top5": [
     {
       "author": "Tama_chan0317_",
-      "score": 36.9,
-      "likes": 14340,
-      "likes_per_min": 12.01,
-      "acceleration": 1.03,
+      "score": 36.5,
+      "likes": 14522,
+      "likes_per_min": 11.69,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 475.0,
+      "age_minutes": 490.6,
       "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
       "url": "https://x.com/i/status/2103329166611620294"
     },
     {
-      "author": "AI_kenky",
-      "score": 34.3,
-      "likes": 31164,
-      "likes_per_min": 68.24,
-      "acceleration": 1.05,
-      "measured": true,
-      "age_minutes": 713.9,
-      "text": "うちの学校の文化祭でやる担任をコスプレさせるイベント\n毎年一番盛り上がる https://t.co/9Q6eOAztYu",
-      "url": "https://x.com/i/status/2103269064785428794"
-    },
-    {
       "author": "livedoornews",
-      "score": 89.8,
-      "likes": 9022,
-      "likes_per_min": 158.04,
-      "acceleration": 0.95,
+      "score": 89.6,
+      "likes": 11571,
+      "likes_per_min": 163.78,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 77.1,
+      "age_minutes": 92.7,
       "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
       "url": "https://x.com/i/status/2103429303098589483"
     },
     {
-      "author": "Kanaria390",
-      "score": 71.8,
-      "likes": 84894,
-      "likes_per_min": 657.39,
-      "acceleration": 0.63,
-      "measured": true,
-      "age_minutes": 95.6,
-      "text": "【Kanaria×葛葉】アイデンティティ【セルフカバー】\n\nよろしくお願いします。\n\nhttps://t.co/dLdN",
-      "url": "https://x.com/i/status/2103424657454244298"
-    },
-    {
       "author": "modelpress",
-      "score": 32.6,
-      "likes": 5195,
-      "likes_per_min": 30.53385320768784,
+      "score": 36.6,
+      "likes": 5874,
+      "likes_per_min": 43.63,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 170.1,
+      "measured": true,
+      "age_minutes": 185.7,
       "text": "松岡茉優、初挑戦の仕事で涙\n今後オファーは「受けない」\nhttps://t.co/wPPTU88o2V\n\n「恥ずかしいし",
       "url": "https://x.com/i/status/2103405895044759834"
+    },
+    {
+      "author": "WsNinonjin30",
+      "score": 25.5,
+      "likes": 16694,
+      "likes_per_min": 61.3,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 238.9,
+      "text": "ジャニーズがこういうとこから出てきた時顔とスタイルの良さに驚愕するんだけど、なんというか、ふつうすぎて。",
+      "url": "https://x.com/i/status/2103392519765836219"
+    },
+    {
+      "author": "yukaric03886076",
+      "score": 30.6,
+      "likes": 18257,
+      "likes_per_min": 100.55,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 210.8,
+      "text": "旦那へ。\nいつもは絶対やらないアイロンがけを気まぐれでやってくれたんだね。\nあなたが「ゆゆかりちゃごごごごめんなさい」と",
+      "url": "https://x.com/i/status/2103399582491365830"
     }
   ]
 }

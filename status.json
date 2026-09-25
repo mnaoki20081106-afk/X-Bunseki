@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T21:52:34.579729+00:00",
+  "updated_at": "2026-09-25T22:15:45.552211+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,28 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 3,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790374014
+      "reset": 1790375416
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T21:51:52.899741+00:00",
-  "finished_at": "2026-09-25T21:52:34.578746+00:00",
-  "posts_scanned": 614,
-  "posts_with_history": 509,
-  "posts_flagged": 12,
+  "started_at": "2026-09-25T22:15:15.641612+00:00",
+  "finished_at": "2026-09-25T22:15:45.550887+00:00",
+  "posts_scanned": 604,
+  "posts_with_history": 461,
+  "posts_flagged": 28,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 273,
+  "minutes_since_last_notification": 296,
   "reject_reasons": {
-    "古すぎる": 405,
-    "いいねが少なすぎる": 150,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 389,
+    "いいねが少なすぎる": 152,
+    "初回観測かつ平均速度が低い": 3,
+    "いいね稼ぎ疑い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,66 +49,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52217,
-    "posts": 13802,
-    "oldest": "2026-09-24T22:03:06.132632+00:00"
+    "total": 52196,
+    "posts": 13789,
+    "oldest": "2026-09-24T22:18:42.754397+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4435,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4386,
   "top5": [
     {
-      "author": "DEATHDOL_NOTE",
-      "score": 29.8,
-      "likes": 34233,
-      "likes_per_min": 6.55,
-      "acceleration": 1.26,
-      "measured": true,
-      "age_minutes": 959.6,
-      "text": "【害悪度C】\n\nジャニオタ(玉森担)\n玉森あや子 @Tama_chan0317_ \n\n備考 : 玉森裕太と結婚 http",
-      "url": "https://x.com/i/status/2103362098235691057"
-    },
-    {
       "author": "Qchan_biyou",
-      "score": 21.1,
-      "likes": 13791,
-      "likes_per_min": 6.94,
-      "acceleration": 0.81,
+      "score": 25.2,
+      "likes": 14017,
+      "likes_per_min": 9.75,
+      "acceleration": 1.4,
       "measured": true,
-      "age_minutes": 793.8,
+      "age_minutes": 816.9,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
       "author": "nino_honmono",
-      "score": 72.7,
-      "likes": 6575,
-      "likes_per_min": 342.53067439681905,
+      "score": 75.9,
+      "likes": 12100,
+      "likes_per_min": 238.35,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 19.2,
+      "measured": true,
+      "age_minutes": 42.4,
       "text": "皆ーおはよー",
       "url": "https://x.com/i/status/2103598763898286220"
     },
     {
-      "author": "KoikoiKokoa_734",
-      "score": 14.4,
-      "likes": 180,
-      "likes_per_min": 1.14,
-      "acceleration": 0.93,
+      "author": "HashimotoKotoe",
+      "score": 63.5,
+      "likes": 4455,
+      "likes_per_min": 81.45,
+      "acceleration": 1.32,
       "measured": true,
-      "age_minutes": 164.8,
-      "text": "@kazahana1109 クレカの情報入れたんなら止めて再発行しないと不正利用されますが…",
-      "url": "https://x.com/i/status/2103562123943256198"
+      "age_minutes": 88.3,
+      "text": "習近平氏歓迎レセプションで台湾（中華民国）の名曲流したり、香港の件で中国で禁止されたレミゼラブル歌ったり、トランプ節炸裂",
+      "url": "https://x.com/i/status/2103587213774880984"
+    },
+    {
+      "author": "wni_jp",
+      "score": 67.0,
+      "likes": 1462,
+      "likes_per_min": 14.84,
+      "acceleration": 1.24,
+      "measured": true,
+      "age_minutes": 105.9,
+      "text": "【台風情報】9月26日(土)3時現在、台風26号(スリゲ)は沖縄の南に位置し、北北西に進んでいます。明日には強い勢力まで",
+      "url": "https://x.com/i/status/2103582777178534106"
     },
     {
       "author": "P6AX3Er3HqoQynY",
-      "score": 46.6,
-      "likes": 6158,
-      "likes_per_min": 71.06,
-      "acceleration": 1.0,
+      "score": 43.3,
+      "likes": 8144,
+      "likes_per_min": 85.67,
+      "acceleration": 1.21,
       "measured": true,
-      "age_minutes": 201.0,
+      "age_minutes": 224.2,
       "text": "中国で禁止されているミュージカルの曲がホワイトハウスの習近平国賓晩餐会で歌われました。レ・ミゼラブルの劇中歌は民衆の反権",
       "url": "https://x.com/i/status/2103553003546681483"
     }

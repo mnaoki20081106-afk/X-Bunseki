@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-25T11:52:42.016146+00:00",
+  "updated_at": "2026-09-25T12:08:13.394044+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790338026
+      "reset": 1790338955
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T11:52:05.794624+00:00",
-  "finished_at": "2026-09-25T11:52:42.014946+00:00",
+  "started_at": "2026-09-25T12:07:34.696552+00:00",
+  "finished_at": "2026-09-25T12:08:13.392708+00:00",
   "posts_scanned": 611,
-  "posts_with_history": 450,
-  "posts_flagged": 119,
+  "posts_with_history": 432,
+  "posts_flagged": 143,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 603,
+  "minutes_since_last_notification": 619,
   "reject_reasons": {
-    "古すぎる": 130,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 237,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 122,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 5,
+    "いいねが少なすぎる": 213
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51682,
-    "posts": 13894,
-    "oldest": "2026-09-24T11:52:50.110473+00:00"
+    "total": 51713,
+    "posts": 13922,
+    "oldest": "2026-09-24T12:17:02.867254+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4258,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4278,
   "top5": [
     {
-      "author": "Tama_chan0317_",
-      "score": 36.5,
-      "likes": 14522,
-      "likes_per_min": 11.69,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 490.6,
-      "text": "【ご報告】\n\n遅くなって申し訳ありません🙇‍♀️\n長年お付き合いを続けておりましたKis-My-Ft2の玉森裕太さん（3",
-      "url": "https://x.com/i/status/2103329166611620294"
-    },
-    {
-      "author": "livedoornews",
-      "score": 89.6,
-      "likes": 11571,
-      "likes_per_min": 163.78,
-      "acceleration": 1.04,
-      "measured": true,
-      "age_minutes": 92.7,
-      "text": "【発表】マクドナルド、「チキチー」「チキンフィレオ」など販売終了へ\nhttps://t.co/giNXUQMzqU\n\n■",
-      "url": "https://x.com/i/status/2103429303098589483"
-    },
-    {
       "author": "modelpress",
-      "score": 36.6,
-      "likes": 5874,
-      "likes_per_min": 43.63,
-      "acceleration": null,
+      "score": 32.9,
+      "likes": 6432,
+      "likes_per_min": 35.95,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 185.7,
+      "age_minutes": 201.2,
       "text": "松岡茉優、初挑戦の仕事で涙\n今後オファーは「受けない」\nhttps://t.co/wPPTU88o2V\n\n「恥ずかしいし",
       "url": "https://x.com/i/status/2103405895044759834"
     },
     {
-      "author": "WsNinonjin30",
-      "score": 25.5,
-      "likes": 16694,
-      "likes_per_min": 61.3,
-      "acceleration": null,
+      "author": "kusuriya_PR",
+      "score": 74.9,
+      "likes": 26311,
+      "likes_per_min": 361.55,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 238.9,
-      "text": "ジャニーズがこういうとこから出てきた時顔とスタイルの良さに驚愕するんだけど、なんというか、ふつうすぎて。",
-      "url": "https://x.com/i/status/2103392519765836219"
+      "age_minutes": 68.1,
+      "text": "◈──────────────◈\n TVアニメ『#薬屋のひとりごと』\n　  🍃第3期 第2弾PV解禁🍃\n◈───────",
+      "url": "https://x.com/i/status/2103439386448908527"
     },
     {
-      "author": "yukaric03886076",
-      "score": 30.6,
-      "likes": 18257,
-      "likes_per_min": 100.55,
-      "acceleration": null,
+      "author": "Vamp_Kuzu",
+      "score": 66.4,
+      "likes": 32766,
+      "likes_per_min": 337.39,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 210.8,
-      "text": "旦那へ。\nいつもは絶対やらないアイロンがけを気まぐれでやってくれたんだね。\nあなたが「ゆゆかりちゃごごごごめんなさい」と",
-      "url": "https://x.com/i/status/2103399582491365830"
+      "age_minutes": 74.8,
+      "text": "よければ聴いてください",
+      "url": "https://x.com/i/status/2103437699705409570"
+    },
+    {
+      "author": "milk_info",
+      "score": 45.1,
+      "likes": 2693,
+      "likes_per_min": 329.43652683457566,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.2,
+      "text": "❤️‍🔥❤️‍🔥❤️‍🔥\nM!LK ARENA TOUR 2026-2027「シャカリキレボリューション」\n\n9月26日",
+      "url": "https://x.com/i/status/2103454477583831263"
+    },
+    {
+      "author": "KamenRiderStore",
+      "score": 76.9,
+      "likes": 6498,
+      "likes_per_min": 77.57,
+      "acceleration": 0.7,
+      "measured": true,
+      "age_minutes": 68.2,
+      "text": "【#仮面ライダーストア 新商品情報】\n／\nGAME START🎮LEVEL UP‼\n＼\n㊗#仮面ライダーエグゼイド 10",
+      "url": "https://x.com/i/status/2103439370673885274"
     }
   ]
 }

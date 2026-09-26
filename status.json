@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T02:01:47.389147+00:00",
+  "updated_at": "2026-09-26T02:17:19.991451+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,31 +9,31 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 3,
+    "detail_unavailable": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 5,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790388976
+      "remaining": 14,
+      "reset": 1790389908
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T02:01:15.406590+00:00",
-  "finished_at": "2026-09-26T02:01:47.387999+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 425,
-  "posts_flagged": 56,
-  "notified_count": 1,
+  "started_at": "2026-09-26T02:16:47.359451+00:00",
+  "finished_at": "2026-09-26T02:17:19.990484+00:00",
+  "posts_scanned": 617,
+  "posts_with_history": 476,
+  "posts_flagged": 69,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 40,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
-    "古すぎる": 164,
-    "いいねが少なすぎる": 230,
-    "誘導文パターン": 6,
-    "失速済み": 7,
-    "初回観測かつ平均速度が低い": 11
+    "古すぎる": 169,
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 5,
+    "いいねが少なすぎる": 228,
+    "誘導文パターン": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51985,
-    "posts": 13715,
-    "oldest": "2026-09-25T02:04:52.007538+00:00"
+    "total": 51980,
+    "posts": 13742,
+    "oldest": "2026-09-25T02:20:21.218464+00:00"
   },
-  "viral_discovery_posts": 124,
+  "viral_discovery_posts": 135,
   "million_imp_rescued": 3,
-  "watchlist_active": 4440,
+  "watchlist_active": 4456,
   "top5": [
     {
       "author": "nabicochan",
-      "score": 30.6,
-      "likes": 19228,
-      "likes_per_min": 41.55,
-      "acceleration": 0.94,
+      "score": 30.3,
+      "likes": 19831,
+      "likes_per_min": 38.76,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 811.3,
+      "age_minutes": 826.9,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
-      "author": "boketezizou",
-      "score": 40.2,
-      "likes": 24179,
-      "likes_per_min": 34.76,
-      "acceleration": 1.11,
+      "author": "TBS_VIVANT",
+      "score": 53.7,
+      "likes": 4506,
+      "likes_per_min": 55.73,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 955.9,
-      "text": "なぜかフルネームで呼んでしまうもの。\n\n他にある？ https://t.co/GM8OsqQzWA",
-      "url": "https://x.com/i/status/2103425754629546207"
-    },
-    {
-      "author": "ytranking",
-      "score": 31.4,
-      "likes": 32092,
-      "likes_per_min": 14.56,
-      "acceleration": 0.78,
-      "measured": true,
-      "age_minutes": 726.6,
-      "text": "インフルエンサー・えれめんたるひーろーさんが19歳で死去　よりひとが涙で報告\n\n▼記事\nhttps://t.co/wA5",
-      "url": "https://x.com/i/status/2103483453765570877"
+      "age_minutes": 93.8,
+      "text": "ネットは怖いものですね。\n\n見つかっていないのに、まるで見つかったかのようにされている文字が存在しています。本当に文字を",
+      "url": "https://x.com/i/status/2103646628003651833"
     },
     {
       "author": "livedoornews",
-      "score": 100.0,
-      "likes": 2210,
-      "likes_per_min": 42.53,
-      "acceleration": 1.14,
+      "score": 96.7,
+      "likes": 2805,
+      "likes_per_min": 38.25,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 81.5,
+      "age_minutes": 97.1,
       "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
       "url": "https://x.com/i/status/2103645791537754582"
     },
     {
-      "author": "TBS_VIVANT",
-      "score": 53.1,
-      "likes": 3639,
-      "likes_per_min": 54.79,
-      "acceleration": null,
+      "author": "milk_info",
+      "score": 59.0,
+      "likes": 19531,
+      "likes_per_min": 68.01,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 78.2,
-      "text": "ネットは怖いものですね。\n\n見つかっていないのに、まるで見つかったかのようにされている文字が存在しています。本当に文字を",
-      "url": "https://x.com/i/status/2103646628003651833"
+      "age_minutes": 137.3,
+      "text": "／   \nシャカレボグッズ、新アイテム\n『M!LKの楽屋ミニチュア』登場🎉\n＼\n\nM!LK ARENA TOUR 202",
+      "url": "https://x.com/i/status/2103635664453398557"
+    },
+    {
+      "author": "30R9gmaMUy3guDJ",
+      "score": 40.7,
+      "likes": 11067,
+      "likes_per_min": 33.23,
+      "acceleration": 0.6,
+      "measured": true,
+      "age_minutes": 136.1,
+      "text": "村上宗隆が第34号ホームラン🔥\n\n菅野智之から本塁打を放つ！\n「村上宗隆vs菅野智之」日本人対決\n\n【シーズン成績】\n打",
+      "url": "https://x.com/i/status/2103635966435237923"
     }
   ]
 }

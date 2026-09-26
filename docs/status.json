@@ -1,39 +1,43 @@
 {
-  "updated_at": "2026-09-26T10:06:01.075747+00:00",
-  "status": "success",
+  "updated_at": "2026-09-26T10:21:29.922037+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "status": "degraded",
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
     "detail_succeeded": 39,
-    "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_failed": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790418023
+      "reset": 1790418955
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1,
+      "request_failed": 1
+    }
   },
-  "started_at": "2026-09-26T10:05:22.471239+00:00",
-  "finished_at": "2026-09-26T10:06:01.074517+00:00",
-  "posts_scanned": 618,
-  "posts_with_history": 452,
-  "posts_flagged": 100,
+  "started_at": "2026-09-26T10:20:54.446763+00:00",
+  "finished_at": "2026-09-26T10:21:29.920836+00:00",
+  "posts_scanned": 600,
+  "posts_with_history": 434,
+  "posts_flagged": 93,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 484,
+  "minutes_since_last_notification": 500,
   "reject_reasons": {
-    "古すぎる": 163,
+    "古すぎる": 160,
     "いいね稼ぎ疑い": 2,
+    "失速済み": 3,
+    "誘導文パターン": 2,
     "いいねが少なすぎる": 223,
-    "失速済み": 4,
-    "初回観測かつ平均速度が低い": 2
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +54,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51317,
-    "posts": 14282,
-    "oldest": "2026-09-25T10:18:54.641840+00:00"
+    "total": 51308,
+    "posts": 14310,
+    "oldest": "2026-09-25T10:34:14.340506+00:00"
   },
-  "viral_discovery_posts": 127,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4374,
+  "viral_discovery_posts": 131,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4384,
   "top5": [
     {
+      "author": "ndahoFischers",
+      "score": 42.7,
+      "likes": 6185,
+      "likes_per_min": 70.89063323469038,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 87.2,
+      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
+      "url": "https://x.com/i/status/2103770109697487067"
+    },
+    {
       "author": "iLiFE_official",
-      "score": 49.4,
-      "likes": 19132,
-      "likes_per_min": 50.1,
+      "score": 45.5,
+      "likes": 19801,
+      "likes_per_min": 43.22,
       "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 155.5,
+      "age_minutes": 170.9,
       "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
       "url": "https://x.com/i/status/2103749047148491248"
     },
     {
-      "author": "sd_bt",
-      "score": 71.6,
-      "likes": 3808,
-      "likes_per_min": 638.1225843706603,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.0,
-      "text": "／\n15th Anniversary Special Event\n「超特急×DISH//」開催決定！✨\n＼\n\nトークやラ",
-      "url": "https://x.com/i/status/2103786667760873839"
-    },
-    {
-      "author": "rearea_7777",
-      "score": 53.7,
-      "likes": 17849,
-      "likes_per_min": 227.42,
-      "acceleration": 1.05,
+      "author": "GoAkashin",
+      "score": 27.5,
+      "likes": 20440,
+      "likes_per_min": 75.06,
+      "acceleration": 1.04,
       "measured": true,
-      "age_minutes": 105.9,
-      "text": "お知らせ\n『逃げ上手の若様』23話にて、ちょっと怖いシーンで参加させていただきました！\n\n#逃げ上手の若君　#逃げ若 h",
-      "url": "https://x.com/i/status/2103761527144960156"
+      "age_minutes": 238.0,
+      "text": "奴が来る1/2 https://t.co/SCoP1mAQyG",
+      "url": "https://x.com/i/status/2103732164223524866"
     },
     {
       "author": "Takagi_Progamer",
-      "score": 72.9,
-      "likes": 6328,
-      "likes_per_min": 49.97,
-      "acceleration": 0.87,
+      "score": 69.1,
+      "likes": 6933,
+      "likes_per_min": 39.08,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 78.6,
+      "age_minutes": 94.0,
       "text": "12月末までの期間、海底摸月の活動をサポートすることになりました！\n\n国内大会での活動を中心にサポートしつつ、本人へのイ",
       "url": "https://x.com/i/status/2103768400032079907"
     },
     {
-      "author": "Key4pso2",
-      "score": 33.3,
-      "likes": 11961,
-      "likes_per_min": 64.61,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 223.3,
-      "text": "ちっぱい https://t.co/WzNjy1RZyf",
-      "url": "https://x.com/i/status/2103731970190790932"
+      "author": "DAZNJPNBaseball",
+      "score": 79.2,
+      "likes": 2353,
+      "likes_per_min": 343.6506702480594,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.8,
+      "text": "19歳の強竜\n\n昇格即結果を出した\n森駿太 プロ初ホームラン㊗️\n\n⚾️ヤクルト×中日\n#dragons #だったらDA",
+      "url": "https://x.com/i/status/2103790338985148770"
     }
   ]
 }

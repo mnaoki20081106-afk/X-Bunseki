@@ -1,40 +1,42 @@
 {
-  "updated_at": "2026-09-26T10:52:42.445199+00:00",
-  "status": "success",
+  "updated_at": "2026-09-26T11:08:12.176025+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
+    "status": "degraded",
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
     "detail_succeeded": 40,
     "detail_failed": 0,
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790420825
+      "reset": 1790421759
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-26T10:52:03.850772+00:00",
-  "finished_at": "2026-09-26T10:52:42.443806+00:00",
-  "posts_scanned": 630,
-  "posts_with_history": 468,
-  "posts_flagged": 109,
+  "started_at": "2026-09-26T11:07:38.804596+00:00",
+  "finished_at": "2026-09-26T11:08:12.174745+00:00",
+  "posts_scanned": 605,
+  "posts_with_history": 435,
+  "posts_flagged": 108,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 531,
+  "minutes_since_last_notification": 546,
   "reject_reasons": {
-    "古すぎる": 153,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 229,
+    "古すぎる": 148,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 6,
-    "失速済み": 4
+    "失速済み": 7,
+    "いいねが少なすぎる": 235,
+    "初回観測かつ平均速度が低い": 2,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +53,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51312,
-    "posts": 14277,
+    "total": 51917,
+    "posts": 14447,
     "oldest": "2026-09-25T11:21:32.647872+00:00"
   },
-  "viral_discovery_posts": 142,
+  "viral_discovery_posts": 130,
   "million_imp_rescued": 3,
-  "watchlist_active": 4408,
+  "watchlist_active": 4396,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 45.7,
-      "likes": 9886,
-      "likes_per_min": 110.0,
-      "acceleration": 0.86,
+      "score": 45.1,
+      "likes": 11827,
+      "likes_per_min": 125.25,
+      "acceleration": 1.14,
       "measured": true,
-      "age_minutes": 118.5,
+      "age_minutes": 134.0,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "iLiFE_official",
-      "score": 38.9,
-      "likes": 20909,
-      "likes_per_min": 33.55,
-      "acceleration": 0.9,
+      "score": 35.9,
+      "likes": 21389,
+      "likes_per_min": 30.97,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 202.1,
+      "age_minutes": 217.6,
       "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
       "url": "https://x.com/i/status/2103749047148491248"
     },
     {
-      "author": "rearea_7777",
-      "score": 43.3,
-      "likes": 25316,
-      "likes_per_min": 159.93,
-      "acceleration": 0.7,
-      "measured": true,
-      "age_minutes": 152.6,
-      "text": "お知らせ\n『逃げ上手の若様』23話にて、ちょっと怖いシーンで参加させていただきました！\n\n#逃げ上手の若君　#逃げ若 h",
-      "url": "https://x.com/i/status/2103761527144960156"
-    },
-    {
-      "author": "Junior_Ch_X",
-      "score": 68.9,
-      "likes": 1602,
-      "likes_per_min": 260.93744252036385,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.1,
-      "text": "【お知らせ📢】\nACEes「Colors」Music Video\n\n＼このあと⏰20:00 プレミア公開／\n\n生配信終了",
-      "url": "https://x.com/i/status/2103798374923444439"
-    },
-    {
-      "author": "oricon",
-      "score": 65.0,
-      "likes": 5171,
-      "likes_per_min": 63.49,
+      "author": "hirox246",
+      "score": 64.6,
+      "likes": 5455,
+      "likes_per_min": 53.65,
       "acceleration": null,
       "measured": true,
-      "age_minutes": 107.7,
-      "text": "町田啓太＆玄理、第1子誕生👶\n「かけがえのない存在が増え、身の引き締まる思いです」\nhttps://t.co/E6CL1",
-      "url": "https://x.com/i/status/2103772806953730241"
+      "age_minutes": 115.9,
+      "text": "ジャングリア173億円の赤字。\nクールジャパン（税金）から80億円出資。\n沖縄公庫（税金）の追加融資30億円。\n他人事だ",
+      "url": "https://x.com/i/status/2103774653105799304"
+    },
+    {
+      "author": "sd_bt",
+      "score": 70.0,
+      "likes": 15810,
+      "likes_per_min": 116.54,
+      "acceleration": 0.71,
+      "measured": true,
+      "age_minutes": 68.2,
+      "text": "／\n15th Anniversary Special Event\n「超特急×DISH//」開催決定！✨\n＼\n\nトークやラ",
+      "url": "https://x.com/i/status/2103786667760873839"
+    },
+    {
+      "author": "oricon_anime_",
+      "score": 71.6,
+      "likes": 5268,
+      "likes_per_min": 102.0,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 79.7,
+      "text": "杉田智和を銀時役に選んだ理由は？\n『銀魂』空知先生、選考理由を初告白\nhttps://t.co/apzu9EOOQ6\n⠀",
+      "url": "https://x.com/i/status/2103783763813773741"
     }
   ]
 }

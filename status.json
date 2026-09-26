@@ -1,39 +1,38 @@
 {
-  "updated_at": "2026-09-26T22:20:21.921416+00:00",
+  "updated_at": "2026-09-26T22:35:49.020306+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790462084
+      "reset": 1790463014
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T22:19:43.703965+00:00",
-  "finished_at": "2026-09-26T22:20:21.920335+00:00",
+  "started_at": "2026-09-26T22:35:12.826569+00:00",
+  "finished_at": "2026-09-26T22:35:49.019046+00:00",
   "posts_scanned": 618,
-  "posts_with_history": 506,
-  "posts_flagged": 26,
+  "posts_with_history": 508,
+  "posts_flagged": 19,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 288,
+  "minutes_since_last_notification": 304,
   "reject_reasons": {
-    "古すぎる": 402,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 129,
-    "失速済み": 1,
-    "初回観測かつ平均速度が低い": 4
+    "古すぎる": 393,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 145,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52812,
-    "posts": 14212,
-    "oldest": "2026-09-25T22:31:13.063127+00:00"
+    "total": 52821,
+    "posts": 14180,
+    "oldest": "2026-09-25T22:46:44.738280+00:00"
   },
   "viral_discovery_posts": 132,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4433,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4426,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 21.0,
-      "likes": 41036,
-      "likes_per_min": 10.73,
-      "acceleration": 1.33,
-      "measured": true,
-      "age_minutes": 806.1,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 29.4,
-      "likes": 289569,
-      "likes_per_min": 170.83,
-      "acceleration": 1.02,
+      "score": 29.8,
+      "likes": 292476,
+      "likes_per_min": 188.13,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 620.0,
+      "age_minutes": 635.4,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "s_ss_123_",
-      "score": 76.6,
-      "likes": 216,
-      "likes_per_min": 5.53,
-      "acceleration": 1.7,
-      "measured": true,
-      "age_minutes": 90.3,
-      "text": "イオンの駐車場で、妊娠8ヶ月の妻が車いすマークに停めた。\n\n降りた瞬間、隣の車のおじさんが窓を開けた。\n\n「そこ障害者用",
-      "url": "https://x.com/i/status/2103950243666833514"
-    },
-    {
       "author": "30R9gmaMUy3guDJ",
-      "score": 48.1,
-      "likes": 2040,
-      "likes_per_min": 20.84,
-      "acceleration": 1.12,
+      "score": 46.1,
+      "likes": 2399,
+      "likes_per_min": 23.23,
+      "acceleration": 1.11,
       "measured": true,
-      "age_minutes": 115.2,
+      "age_minutes": 130.7,
       "text": "今季限りで引退のバーランダー\n最後は娘がマウンドへ\n↓\n43歳バーランダー、6回途中2失点で最後の登板を終える。最速は1",
       "url": "https://x.com/i/status/2103943975703064730"
     },
     {
       "author": "Koyota0",
-      "score": 43.4,
-      "likes": 13457,
-      "likes_per_min": 24.7,
-      "acceleration": 1.01,
+      "score": 40.6,
+      "likes": 13861,
+      "likes_per_min": 26.15,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 202.4,
+      "age_minutes": 217.9,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
+    },
+    {
+      "author": "wni_jp",
+      "score": 73.3,
+      "likes": 1122,
+      "likes_per_min": 23.3,
+      "acceleration": 0.9,
+      "measured": true,
+      "age_minutes": 55.8,
+      "text": "＜台風情報＞\n9月27日(日)3時現在、台風26号(スリゲ)は強い勢力になり、那覇市の南約250kmを暴風域を伴いながら",
+      "url": "https://x.com/i/status/2103962817988558981"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 49.2,
+      "likes": 391,
+      "likes_per_min": 16.53506290749177,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 23.6,
+      "text": "【注意喚起】現在、「自分が何人からブロックされているかを調べられるサイト」の利用者がアカウントを乗っ取られる現象が確認さ",
+      "url": "https://x.com/i/status/2103970911179374701"
     }
   ]
 }

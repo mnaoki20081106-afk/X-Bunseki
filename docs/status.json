@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-26T19:20:34.386014+00:00",
+  "updated_at": "2026-09-26T19:35:58.817621+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
-    "detail_unavailable": 0,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
     "detail_incomplete": 0,
-    "invalid_tweets": 4,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790451296
+      "reset": 1790452229
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T19:19:55.155590+00:00",
-  "finished_at": "2026-09-26T19:20:34.384871+00:00",
-  "posts_scanned": 624,
-  "posts_with_history": 580,
-  "posts_flagged": 13,
+  "started_at": "2026-09-26T19:35:27.950416+00:00",
+  "finished_at": "2026-09-26T19:35:58.816432+00:00",
+  "posts_scanned": 617,
+  "posts_with_history": 581,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 109,
+  "minutes_since_last_notification": 124,
   "reject_reasons": {
-    "古すぎる": 357,
+    "古すぎる": 374,
     "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 5,
-    "いいねが少なすぎる": 134,
-    "失速済み": 2
+    "いいねが少なすぎる": 124,
+    "失速済み": 4,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52841,
-    "posts": 14662,
-    "oldest": "2026-09-25T19:32:33.616845+00:00"
+    "total": 52834,
+    "posts": 14630,
+    "oldest": "2026-09-25T19:48:06.087185+00:00"
   },
-  "viral_discovery_posts": 137,
+  "viral_discovery_posts": 132,
   "million_imp_rescued": 2,
   "watchlist_active": 4455,
   "top5": [
     {
-      "author": "nigo__zyu",
-      "score": 30.6,
-      "likes": 264783,
-      "likes_per_min": 174.01,
-      "acceleration": 1.23,
+      "author": "9taisyo21",
+      "score": 21.8,
+      "likes": 99111,
+      "likes_per_min": 35.25,
+      "acceleration": 0.61,
       "measured": true,
-      "age_minutes": 440.2,
+      "age_minutes": 905.9,
+      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
+      "url": "https://x.com/i/status/2103703617014493460"
+    },
+    {
+      "author": "nigo__zyu",
+      "score": 28.8,
+      "likes": 267099,
+      "likes_per_min": 150.32,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 455.6,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "ndahoFischers",
-      "score": 18.3,
-      "likes": 39717,
-      "likes_per_min": 9.8,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 626.3,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
       "author": "denfaminicogame",
-      "score": 79.4,
-      "likes": 4215,
-      "likes_per_min": 97.44,
-      "acceleration": 0.95,
+      "score": 79.1,
+      "likes": 5610,
+      "likes_per_min": 90.54,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 71.6,
+      "age_minutes": 87.0,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
-      "author": "Chiiwaresagi",
-      "score": 26.8,
-      "likes": 7566,
-      "likes_per_min": 14.95,
-      "acceleration": 0.89,
+      "author": "Koyota0",
+      "score": 83.9,
+      "likes": 7133,
+      "likes_per_min": 128.77,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 235.0,
-      "text": "帰ってきた怪物(1/3)\n#ちいかわファンアート #Chiikawa #먼작귀 #ちいかわ https://t.co/1",
-      "url": "https://x.com/i/status/2103868592077078645"
+      "age_minutes": 38.1,
+      "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
+      "url": "https://x.com/i/status/2103922026142630048"
     },
     {
-      "author": "milk_info",
-      "score": 24.8,
-      "likes": 26052,
-      "likes_per_min": 16.24,
-      "acceleration": 0.89,
+      "author": "gokiburichance",
+      "score": 33.0,
+      "likes": 7098,
+      "likes_per_min": 21.81,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 237.6,
-      "text": "NHK「Venue101 EXTRA」WEEK1\nご視聴いただきありがとうございました！\n\n「時空超えてユニバース」を披",
-      "url": "https://x.com/i/status/2103867941876072882"
+      "age_minutes": 159.8,
+      "text": "むたみわとまいちゃん https://t.co/PeczMiHWlB",
+      "url": "https://x.com/i/status/2103891391512527255"
     }
   ]
 }

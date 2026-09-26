@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T12:34:21.386867+00:00",
+  "updated_at": "2026-09-26T12:49:50.909819+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,29 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790426926
+      "reset": 1790427858
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T12:33:45.760820+00:00",
-  "finished_at": "2026-09-26T12:34:21.385628+00:00",
-  "posts_scanned": 627,
-  "posts_with_history": 439,
-  "posts_flagged": 133,
+  "started_at": "2026-09-26T12:49:17.303854+00:00",
+  "finished_at": "2026-09-26T12:49:50.908915+00:00",
+  "posts_scanned": 626,
+  "posts_with_history": 444,
+  "posts_flagged": 118,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 633,
+  "minutes_since_last_notification": 648,
   "reject_reasons": {
-    "古すぎる": 142,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 253,
-    "初回観測かつ平均速度が低い": 2,
+    "古すぎる": 135,
+    "いいね稼ぎ疑い": 2,
     "誘導文パターン": 1,
+    "いいねが少なすぎる": 264,
+    "初回観測かつ平均速度が低い": 5,
     "失速済み": 3
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51917,
-    "posts": 14636,
-    "oldest": "2026-09-25T12:47:06.104527+00:00"
+    "total": 51937,
+    "posts": 14672,
+    "oldest": "2026-09-25T13:02:40.489275+00:00"
   },
-  "viral_discovery_posts": 134,
+  "viral_discovery_posts": 129,
   "million_imp_rescued": 4,
-  "watchlist_active": 4405,
+  "watchlist_active": 4410,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 30.2,
-      "likes": 21438,
-      "likes_per_min": 96.59,
-      "acceleration": 0.97,
+      "score": 27.6,
+      "likes": 22821,
+      "likes_per_min": 89.21,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 220.1,
+      "age_minutes": 235.6,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "shevaballey",
-      "score": 45.2,
-      "likes": 9002,
-      "likes_per_min": 52.53,
+      "score": 41.7,
+      "likes": 9756,
+      "likes_per_min": 48.64,
       "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 201.2,
+      "age_minutes": 216.7,
       "text": "ダサすぎる",
       "url": "https://x.com/i/status/2103774863488078313"
     },
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 70.7,
-      "likes": 9893,
-      "likes_per_min": 80.56,
-      "acceleration": 0.9,
+      "author": "livedoornews",
+      "score": 75.7,
+      "likes": 4433,
+      "likes_per_min": 45.82,
+      "acceleration": 2.18,
       "measured": true,
-      "age_minutes": 94.3,
-      "text": "【ご案内】\n\n仲川瑠夏につきまして、体調不良のため、明日出演予定の「NHKのど自慢」を欠席させていただきます。\n\nファン",
-      "url": "https://x.com/i/status/2103801769671471572"
+      "age_minutes": 124.8,
+      "text": "【注意】台風26号、あす27日から沖縄に接近か 来週後半は本州接近へ\nhttps://t.co/EORl68I5oG\n\n",
+      "url": "https://x.com/i/status/2103797982093361430"
+    },
+    {
+      "author": "iLiFE_official",
+      "score": 68.1,
+      "likes": 8275,
+      "likes_per_min": 115.79,
+      "acceleration": 0.75,
+      "measured": true,
+      "age_minutes": 49.6,
+      "text": "明日の若葉のあ生誕祭2026「若葉のあちゃんはぴっちぴちの18さい！♡」ですが、虹羽みにが体調不良の為、ライブおよび特典",
+      "url": "https://x.com/i/status/2103816910051950936"
     },
     {
       "author": "YokokawaNaotaka",
-      "score": 50.9,
-      "likes": 26901,
-      "likes_per_min": 461.09,
-      "acceleration": 0.92,
+      "score": 50.0,
+      "likes": 32956,
+      "likes_per_min": 390.59,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 63.0,
+      "age_minutes": 78.5,
       "text": "オリンピア7位でした。\nみんなごめん俺まけた\n\n目からプロテインがずっと溢れてくる\nこんな心の奥底から悔しいと思える出来",
       "url": "https://x.com/i/status/2103809638810669157"
-    },
-    {
-      "author": "jfa_samuraiblue",
-      "score": 77.3,
-      "likes": 1790,
-      "likes_per_min": 161.25146680842823,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 11.1,
-      "text": "🔹️試合終了🔹️\n\n🏆第20回アジア競技大会（2026／愛知・名古屋）\n⚔️準々決勝\n🇯🇵#U21日本代表 1-0 朝鮮",
-      "url": "https://x.com/i/status/2103822703774011513"
     }
   ]
 }

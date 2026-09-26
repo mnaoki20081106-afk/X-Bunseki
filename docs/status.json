@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T05:17:28.195614+00:00",
+  "updated_at": "2026-09-26T05:32:56.212099+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -9,32 +9,32 @@
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
-    "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790400714
+      "reset": 1790401643
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T05:16:53.088497+00:00",
-  "finished_at": "2026-09-26T05:17:28.194439+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 483,
-  "posts_flagged": 82,
+  "started_at": "2026-09-26T05:32:22.960542+00:00",
+  "finished_at": "2026-09-26T05:32:56.210905+00:00",
+  "posts_scanned": 583,
+  "posts_with_history": 462,
+  "posts_flagged": 67,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 196,
+  "minutes_since_last_notification": 211,
   "reject_reasons": {
-    "古すぎる": 162,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 2,
-    "いいねが少なすぎる": 229,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 159,
+    "いいね稼ぎ疑い": 1,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 6,
+    "いいねが少なすぎる": 203,
+    "失速済み": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52171,
-    "posts": 13966,
-    "oldest": "2026-09-25T05:20:28.299142+00:00"
+    "total": 52163,
+    "posts": 14000,
+    "oldest": "2026-09-25T05:36:02.270148+00:00"
   },
-  "viral_discovery_posts": 137,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4444,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4463,
   "top5": [
     {
       "author": "livedoornews",
-      "score": 39.6,
-      "likes": 6895,
-      "likes_per_min": 9.83,
-      "acceleration": 0.71,
+      "score": 38.4,
+      "likes": 7004,
+      "likes_per_min": 7.05,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 277.2,
+      "age_minutes": 292.7,
       "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
       "url": "https://x.com/i/status/2103645791537754582"
     },
     {
       "author": "tkzwgrs",
-      "score": 89.3,
-      "likes": 6111,
-      "likes_per_min": 90.3,
-      "acceleration": 0.83,
+      "score": 88.6,
+      "likes": 7479,
+      "likes_per_min": 88.44,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 82.5,
+      "age_minutes": 97.9,
       "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
       "url": "https://x.com/i/status/2103694802676285942"
     },
     {
       "author": "nhk_chubu",
-      "score": 67.5,
-      "likes": 8186,
-      "likes_per_min": 60.35,
-      "acceleration": 0.7,
+      "score": 59.6,
+      "likes": 8883,
+      "likes_per_min": 45.06,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 117.5,
+      "age_minutes": 133.0,
       "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
       "url": "https://x.com/i/status/2103685978368213045"
     },
     {
-      "author": "twf003",
-      "score": 39.2,
-      "likes": 12799,
-      "likes_per_min": 73.42,
-      "acceleration": 0.99,
+      "author": "yellow_skrt",
+      "score": 43.5,
+      "likes": 36435,
+      "likes_per_min": 194.09,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 200.9,
-      "text": "どう考えてもあなたがおかしいですよ。\n友達がいる時に絶対出さないでしょ… https://t.co/44gbluutFF",
-      "url": "https://x.com/i/status/2103664989676745030"
+      "age_minutes": 141.8,
+      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
+      "url": "https://x.com/i/status/2103683750882377784"
     },
     {
-      "author": "TAXI_56390208",
-      "score": 30.6,
-      "likes": 3287,
-      "likes_per_min": 13.88,
-      "acceleration": 0.93,
-      "measured": true,
-      "age_minutes": 232.5,
-      "text": "FRUITSZIPPER 仲川瑠夏　月足天音\n不仲疑惑はこれが原因？\n「さん」MV撮影中に月足天音の手が仲川瑠夏の歯に直",
-      "url": "https://x.com/i/status/2103657044427637224"
+      "author": "patch_ai",
+      "score": 39.8,
+      "likes": 3253,
+      "likes_per_min": 22.374941955336094,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 145.4,
+      "text": "これは悪いカメラマンだわ https://t.co/t2IS9lSr4S",
+      "url": "https://x.com/i/status/2103682857113940248"
     }
   ]
 }

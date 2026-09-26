@@ -1,29 +1,118 @@
 {
-  "updated_at": "2026-09-26T06:34:47.569967+00:00",
-  "status": "error",
-  "started_at": "2026-09-26T06:34:41.313075+00:00",
-  "posts_scanned": 0,
-  "posts_flagged": 0,
-  "notified_count": 0,
-  "error_message": "collection_failed",
+  "updated_at": "2026-09-26T06:51:32.536591+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "collection_failed",
-    "error_code": "collection_failed",
-    "search_succeeded": 0,
-    "search_failed": 28,
-    "detail_succeeded": 0,
-    "detail_failed": 40,
-    "detail_skipped": 0,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 38,
+    "detail_failed": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
-      "limit": null,
-      "remaining": null,
-      "reset": null
+      "limit": 50,
+      "remaining": 14,
+      "reset": 1790406359
     },
-    "failures": {},
-    "_detail_skipped_ids": []
-  }
+    "failures": {}
+  },
+  "started_at": "2026-09-26T06:50:58.574803+00:00",
+  "finished_at": "2026-09-26T06:51:32.535387+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 407,
+  "posts_flagged": 69,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 290,
+  "reject_reasons": {
+    "古すぎる": 167,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 7,
+    "いいねが少なすぎる": 225,
+    "初回観測かつ平均速度が低い": 10,
+    "誘導文パターン": 3
+  },
+  "config": {
+    "NOTIFY_SCORE": 55,
+    "MIN_LIKES_FLOOR": 100,
+    "MAX_AGE_MINUTES": 240,
+    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
+    "NOTIFY_MAX_PER_RUN": 1,
+    "NOTIFY_MAX_PER_DAY": 6,
+    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
+    "RELEVANCE_FLOOR": 0.9,
+    "EARLY_LPM_AT_30": 18,
+    "EARLY_BONUS_AT_30": 18,
+    "EARLY_LPM_AT_15": 18,
+    "EARLY_BURST_BONUS": 18
+  },
+  "observation_db": {
+    "total": 51665,
+    "posts": 14054,
+    "oldest": "2026-09-25T07:02:32.119175+00:00"
+  },
+  "viral_discovery_posts": 138,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4464,
+  "top5": [
+    {
+      "author": "tkzwgrs",
+      "score": 61.5,
+      "likes": 13759,
+      "likes_per_min": 76.67,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 176.5,
+      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
+      "url": "https://x.com/i/status/2103694802676285942"
+    },
+    {
+      "author": "wni_jp",
+      "score": 92.8,
+      "likes": 5627,
+      "likes_per_min": 142.41,
+      "acceleration": 3.06,
+      "measured": true,
+      "age_minutes": 65.3,
+      "text": "＜東京都心は31日連続で雨＞\n東京都心は今日も降水を観測し、これで8月27日から続く連続の降水観測は31日となりました。",
+      "url": "https://x.com/i/status/2103722790079881441"
+    },
+    {
+      "author": "ishyageinin",
+      "score": 35.6,
+      "likes": 25672,
+      "likes_per_min": 183.6,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 164.0,
+      "text": "へえこんなの出るんだ。",
+      "url": "https://x.com/i/status/2103697960227803432"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 64.2,
+      "likes": 2885,
+      "likes_per_min": 248.88661199575324,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 11.6,
+      "text": "今日か！！！楽しみー！！！！！ (^^) \n#風を継ぐもの \n#甲斐田晴",
+      "url": "https://x.com/i/status/2103736309068280141"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 51.8,
+      "likes": 6868,
+      "likes_per_min": 48.15,
+      "acceleration": 0.82,
+      "measured": true,
+      "age_minutes": 115.0,
+      "text": "【話題】米津玄師さん＆川谷絵音さん、偶然同じYouTubeチャンネルに激ハマりする\n\n■『内見ゴリラの珍賃貸』\n・ゴリラ",
+      "url": "https://x.com/i/status/2103710289409843408"
+    }
+  ]
 }

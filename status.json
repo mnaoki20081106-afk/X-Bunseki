@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-09-26T21:49:18.281220+00:00",
+  "updated_at": "2026-09-26T22:04:58.711312+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 2,
-    "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
+    "detail_incomplete": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790460220
+      "remaining": 14,
+      "reset": 1790461155
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T21:48:39.544404+00:00",
-  "finished_at": "2026-09-26T21:49:18.279022+00:00",
-  "posts_scanned": 594,
-  "posts_with_history": 529,
-  "posts_flagged": 5,
+  "started_at": "2026-09-26T22:04:14.061013+00:00",
+  "finished_at": "2026-09-26T22:04:58.683117+00:00",
+  "posts_scanned": 611,
+  "posts_with_history": 512,
+  "posts_flagged": 13,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 257,
+  "minutes_since_last_notification": 273,
   "reject_reasons": {
-    "古すぎる": 419,
-    "失速済み": 2,
-    "いいねが少なすぎる": 108,
-    "初回観測かつ平均速度が低い": 9
+    "古すぎる": 415,
+    "いいねが少なすぎる": 123,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 8
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52801,
-    "posts": 14306,
-    "oldest": "2026-09-25T21:52:33.721669+00:00"
+    "total": 52798,
+    "posts": 14230,
+    "oldest": "2026-09-25T22:15:44.560757+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4459,
+  "viral_discovery_posts": 129,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4439,
   "top5": [
     {
-      "author": "nigo__zyu",
-      "score": 29.7,
-      "likes": 284307,
-      "likes_per_min": 146.82,
-      "acceleration": 1.06,
+      "author": "ndahoFischers",
+      "score": 18.9,
+      "likes": 40871,
+      "likes_per_min": 8.07,
+      "acceleration": 1.11,
       "measured": true,
-      "age_minutes": 588.9,
+      "age_minutes": 790.7,
+      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
+      "url": "https://x.com/i/status/2103770109697487067"
+    },
+    {
+      "author": "nigo__zyu",
+      "score": 30.0,
+      "likes": 286941,
+      "likes_per_min": 168.02,
+      "acceleration": 1.14,
+      "measured": true,
+      "age_minutes": 604.6,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "denfaminicogame",
-      "score": 46.1,
-      "likes": 13285,
-      "likes_per_min": 64.13,
-      "acceleration": 1.16,
+      "score": 42.3,
+      "likes": 14354,
+      "likes_per_min": 68.19,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 220.4,
+      "age_minutes": 236.0,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
       "author": "Koyota0",
-      "score": 48.7,
-      "likes": 12695,
-      "likes_per_min": 22.5,
-      "acceleration": 0.89,
+      "score": 46.9,
+      "likes": 13077,
+      "likes_per_min": 24.37,
+      "acceleration": 1.08,
       "measured": true,
-      "age_minutes": 171.4,
+      "age_minutes": 187.1,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 75.3,
-      "likes": 1773,
-      "likes_per_min": 19.71,
-      "acceleration": 0.83,
+      "author": "s_ss_123_",
+      "score": 70.2,
+      "likes": 131,
+      "likes_per_min": 3.25,
+      "acceleration": 1.48,
       "measured": true,
-      "age_minutes": 53.6,
-      "text": "【APEX】極上のフィジカル練習【不破湊/かいくん/くりくん/にじさんじ】 https://t.co/OfjtxV7Ku",
-      "url": "https://x.com/i/status/2103951665842040877"
-    },
-    {
-      "author": "bouncewear",
-      "score": 40.6,
-      "likes": 945,
-      "likes_per_min": 6.23,
-      "acceleration": 1.24,
-      "measured": true,
-      "age_minutes": 96.1,
-      "text": "行列できます https://t.co/lO69X2bd6P",
-      "url": "https://x.com/i/status/2103940976951898258"
+      "age_minutes": 74.9,
+      "text": "イオンの駐車場で、妊娠8ヶ月の妻が車いすマークに停めた。\n\n降りた瞬間、隣の車のおじさんが窓を開けた。\n\n「そこ障害者用",
+      "url": "https://x.com/i/status/2103950243666833514"
     }
   ]
 }

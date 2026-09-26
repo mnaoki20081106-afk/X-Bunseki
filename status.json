@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T03:03:49.589683+00:00",
+  "updated_at": "2026-09-26T03:19:23.016644+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,30 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 6,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790392697
+      "reset": 1790393628
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T03:03:16.755211+00:00",
-  "finished_at": "2026-09-26T03:03:49.587940+00:00",
-  "posts_scanned": 616,
-  "posts_with_history": 459,
-  "posts_flagged": 73,
+  "started_at": "2026-09-26T03:18:47.758213+00:00",
+  "finished_at": "2026-09-26T03:19:23.015252+00:00",
+  "posts_scanned": 633,
+  "posts_with_history": 451,
+  "posts_flagged": 93,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 62,
+  "minutes_since_last_notification": 78,
   "reject_reasons": {
-    "古すぎる": 178,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 220,
-    "誘導文パターン": 5
+    "古すぎる": 167,
+    "誘導文パターン": 6,
+    "いいねが少なすぎる": 219,
+    "初回観測かつ平均速度が低い": 10,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52009,
-    "posts": 13801,
-    "oldest": "2026-09-25T03:06:57.189989+00:00"
+    "total": 52030,
+    "posts": 13841,
+    "oldest": "2026-09-25T03:22:31.730287+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4438,
+  "viral_discovery_posts": 149,
+  "million_imp_rescued": 6,
+  "watchlist_active": 4434,
   "top5": [
     {
       "author": "nabicochan",
-      "score": 31.4,
-      "likes": 21539,
-      "likes_per_min": 39.06,
-      "acceleration": 1.15,
+      "score": 30.0,
+      "likes": 22105,
+      "likes_per_min": 36.38,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 873.3,
+      "age_minutes": 888.9,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
-      "author": "livedoornews",
-      "score": 74.9,
-      "likes": 4250,
-      "likes_per_min": 27.42,
-      "acceleration": 0.83,
+      "author": "sxzBST",
+      "score": 77.0,
+      "likes": 7269,
+      "likes_per_min": 275.57,
+      "acceleration": 3.37,
       "measured": true,
-      "age_minutes": 143.6,
-      "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
-      "url": "https://x.com/i/status/2103645791537754582"
+      "age_minutes": 91.4,
+      "text": "これ警察めっちゃグッジョブじゃん。夫婦喧嘩で妻が110番通報し、警察が事情を聞きに行ったところ三浦友和容疑者（25）が部",
+      "url": "https://x.com/i/status/2103662843971387707"
     },
     {
-      "author": "talk_Nobu",
-      "score": 59.3,
-      "likes": 8817,
-      "likes_per_min": 85.6,
-      "acceleration": 1.65,
+      "author": "livedoornews",
+      "score": 72.5,
+      "likes": 7512,
+      "likes_per_min": 72.51,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 190.6,
-      "text": "商業施設が中学生を出禁に\nhttps://t.co/QSpqOPCGmK\nフードコートで中学生が騒音\n→注意した一般客へ",
-      "url": "https://x.com/i/status/2103633966234575324"
+      "age_minutes": 121.1,
+      "text": "【新制度】「こどもNISA」スタートへ、心配される若者の“絶望的な格差”\nhttps://t.co/5aLXXzsui8",
+      "url": "https://x.com/i/status/2103655368174051766"
     },
     {
       "author": "TBS_VIVANT",
-      "score": 41.1,
-      "likes": 6327,
-      "likes_per_min": 35.3,
-      "acceleration": 0.75,
+      "score": 39.1,
+      "likes": 6820,
+      "likes_per_min": 31.69,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 140.2,
+      "age_minutes": 155.8,
       "text": "ネットは怖いものですね。\n\n見つかっていないのに、まるで見つかったかのようにされている文字が存在しています。本当に文字を",
       "url": "https://x.com/i/status/2103646628003651833"
     },
     {
-      "author": "sxzBST",
-      "score": 77.8,
-      "likes": 2982,
-      "likes_per_min": 81.83,
-      "acceleration": 5.86,
-      "measured": true,
-      "age_minutes": 75.8,
-      "text": "これ警察めっちゃグッジョブじゃん。夫婦喧嘩で妻が110番通報し、警察が事情を聞きに行ったところ三浦友和容疑者（25）が部",
-      "url": "https://x.com/i/status/2103662843971387707"
+      "author": "milk_info",
+      "score": 75.9,
+      "likes": 17354,
+      "likes_per_min": 896.8800213919892,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 19.3,
+      "text": "／\nM!LK 冠バラエティ番組\n2番組放送決定🎉\n＼\n\n👑日本テレビ「M!LKに言ってみ？」\n🗓️放送日時\n10月5日(",
+      "url": "https://x.com/i/status/2103680968053629248"
     }
   ]
 }

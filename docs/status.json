@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-26T19:35:58.817621+00:00",
+  "updated_at": "2026-09-26T19:51:28.479580+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 8,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790452229
+      "reset": 1790453160
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T19:35:27.950416+00:00",
-  "finished_at": "2026-09-26T19:35:58.816432+00:00",
-  "posts_scanned": 617,
+  "started_at": "2026-09-26T19:50:59.453276+00:00",
+  "finished_at": "2026-09-26T19:51:28.478573+00:00",
+  "posts_scanned": 621,
   "posts_with_history": 581,
-  "posts_flagged": 12,
+  "posts_flagged": 7,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 124,
+  "minutes_since_last_notification": 139,
   "reject_reasons": {
-    "古すぎる": 374,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 124,
-    "失速済み": 4,
-    "初回観測かつ平均速度が低い": 6
+    "古すぎる": 396,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 4,
+    "失速済み": 2,
+    "いいねが少なすぎる": 121
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52834,
-    "posts": 14630,
-    "oldest": "2026-09-25T19:48:06.087185+00:00"
+    "total": 52827,
+    "posts": 14586,
+    "oldest": "2026-09-25T20:03:47.579431+00:00"
   },
-  "viral_discovery_posts": 132,
+  "viral_discovery_posts": 135,
   "million_imp_rescued": 2,
-  "watchlist_active": 4455,
+  "watchlist_active": 4451,
   "top5": [
-    {
-      "author": "9taisyo21",
-      "score": 21.8,
-      "likes": 99111,
-      "likes_per_min": 35.25,
-      "acceleration": 0.61,
-      "measured": true,
-      "age_minutes": 905.9,
-      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
-      "url": "https://x.com/i/status/2103703617014493460"
-    },
     {
       "author": "nigo__zyu",
       "score": 28.8,
-      "likes": 267099,
-      "likes_per_min": 150.32,
+      "likes": 269102,
+      "likes_per_min": 129.27,
       "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 455.6,
+      "age_minutes": 471.1,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "denfaminicogame",
-      "score": 79.1,
-      "likes": 5610,
-      "likes_per_min": 90.54,
-      "acceleration": 0.93,
+      "author": "ndahoFischers",
+      "score": 17.7,
+      "likes": 39975,
+      "likes_per_min": 8.35,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 87.0,
+      "age_minutes": 657.2,
+      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
+      "url": "https://x.com/i/status/2103770109697487067"
+    },
+    {
+      "author": "denfaminicogame",
+      "score": 75.6,
+      "likes": 6850,
+      "likes_per_min": 80.03,
+      "acceleration": 0.88,
+      "measured": true,
+      "age_minutes": 102.5,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
       "author": "Koyota0",
-      "score": 83.9,
-      "likes": 7133,
-      "likes_per_min": 128.77,
-      "acceleration": 0.71,
+      "score": 82.8,
+      "likes": 8566,
+      "likes_per_min": 92.49,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 38.1,
+      "age_minutes": 53.6,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
     },
     {
-      "author": "gokiburichance",
-      "score": 33.0,
-      "likes": 7098,
-      "likes_per_min": 21.81,
-      "acceleration": 0.77,
+      "author": "FortniteJP",
+      "score": 19.2,
+      "likes": 2919,
+      "likes_per_min": 4.45,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 159.8,
-      "text": "むたみわとまいちゃん https://t.co/PeczMiHWlB",
-      "url": "https://x.com/i/status/2103891391512527255"
+      "age_minutes": 218.7,
+      "text": "ついに届きました！！！\n世界大会ビクロイ！！！🎊",
+      "url": "https://x.com/i/status/2103880469603385549"
     }
   ]
 }

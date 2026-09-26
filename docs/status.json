@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T21:02:25.089360+00:00",
+  "updated_at": "2026-09-26T21:17:59.592974+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,28 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790457408
+      "reset": 1790458341
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T21:01:47.714777+00:00",
-  "finished_at": "2026-09-26T21:02:25.088262+00:00",
+  "started_at": "2026-09-26T21:17:19.982697+00:00",
+  "finished_at": "2026-09-26T21:17:59.591622+00:00",
   "posts_scanned": 624,
-  "posts_with_history": 564,
-  "posts_flagged": 9,
+  "posts_with_history": 559,
+  "posts_flagged": 12,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 210,
+  "minutes_since_last_notification": 226,
   "reject_reasons": {
-    "古すぎる": 434,
-    "失速済み": 2,
-    "いいねが少なすぎる": 123,
-    "初回観測かつ平均速度が低い": 5
+    "古すぎる": 441,
+    "いいねが少なすぎる": 117,
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52814,
-    "posts": 14460,
-    "oldest": "2026-09-25T21:05:47.746878+00:00"
+    "total": 52819,
+    "posts": 14416,
+    "oldest": "2026-09-25T21:21:26.608721+00:00"
   },
-  "viral_discovery_posts": 131,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4458,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4459,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 18.5,
-      "likes": 40401,
-      "likes_per_min": 6.02,
-      "acceleration": 1.24,
+      "score": 18.1,
+      "likes": 40504,
+      "likes_per_min": 6.61,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 728.2,
+      "age_minutes": 743.7,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "denfaminicogame",
-      "score": 54.2,
-      "likes": 10592,
-      "likes_per_min": 48.07,
-      "acceleration": 1.0,
+      "author": "nigo__zyu",
+      "score": 30.3,
+      "likes": 279848,
+      "likes_per_min": 137.89,
+      "acceleration": 1.18,
       "measured": true,
-      "age_minutes": 173.5,
+      "age_minutes": 557.6,
+      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
+      "url": "https://x.com/i/status/2103816946953417023"
+    },
+    {
+      "author": "denfaminicogame",
+      "score": 52.1,
+      "likes": 11421,
+      "likes_per_min": 53.23,
+      "acceleration": 1.11,
+      "measured": true,
+      "age_minutes": 189.0,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
-      "author": "Fuwa_Minato",
-      "score": 94.2,
-      "likes": 556,
-      "likes_per_min": 82.80369560339854,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.7,
-      "text": "【APEX】極上のフィジカル練習【不破湊/かいくん/くりくん/にじさんじ】 https://t.co/OfjtxV7Ku",
-      "url": "https://x.com/i/status/2103951665842040877"
-    },
-    {
       "author": "Koyota0",
-      "score": 61.0,
-      "likes": 11502,
-      "likes_per_min": 32.84,
-      "acceleration": 0.85,
+      "score": 56.7,
+      "likes": 11946,
+      "likes_per_min": 28.51,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 124.5,
+      "age_minutes": 140.1,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
     },
     {
-      "author": "yumafv",
-      "score": 54.8,
-      "likes": 4539,
-      "likes_per_min": 9.61,
-      "acceleration": 0.88,
+      "author": "Fuwa_Minato",
+      "score": 92.3,
+      "likes": 1090,
+      "likes_per_min": 34.29,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 125.0,
-      "text": "世界大会1日目3位!\n明日頑張ります😈 https://t.co/X8pa6fCJsa",
-      "url": "https://x.com/i/status/2103921888024297488"
+      "age_minutes": 22.3,
+      "text": "【APEX】極上のフィジカル練習【不破湊/かいくん/くりくん/にじさんじ】 https://t.co/OfjtxV7Ku",
+      "url": "https://x.com/i/status/2103951665842040877"
     }
   ]
 }

@@ -1,39 +1,38 @@
 {
-  "updated_at": "2026-09-26T09:03:52.846212+00:00",
-  "status": "success",
+  "updated_at": "2026-09-26T09:19:08.982443+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 36,
+    "status": "degraded",
+    "error_code": "schema_changed",
+    "search_succeeded": 1,
+    "search_failed": 28,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 4,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 4,
-    "invalid_tweets": 4,
+    "detail_incomplete": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790414300
+      "remaining": 49,
+      "reset": 1790415231
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 3
+    }
   },
-  "started_at": "2026-09-26T09:03:18.693869+00:00",
-  "finished_at": "2026-09-26T09:03:52.844905+00:00",
-  "posts_scanned": 605,
-  "posts_with_history": 456,
-  "posts_flagged": 97,
+  "started_at": "2026-09-26T09:18:50.097752+00:00",
+  "finished_at": "2026-09-26T09:19:08.981413+00:00",
+  "posts_scanned": 59,
+  "posts_with_history": 54,
+  "posts_flagged": 0,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 422,
+  "minutes_since_last_notification": 437,
   "reject_reasons": {
-    "古すぎる": 153,
-    "いいねが少なすぎる": 244,
-    "失速済み": 5,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 39,
+    "いいねが少なすぎる": 14
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51217,
-    "posts": 14206,
-    "oldest": "2026-09-25T09:07:03.312032+00:00"
+    "total": 50696,
+    "posts": 14063,
+    "oldest": "2026-09-25T09:22:41.274708+00:00"
   },
-  "viral_discovery_posts": 121,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4373,
+  "viral_discovery_posts": 0,
+  "million_imp_rescued": 0,
+  "watchlist_active": 4305,
   "top5": [
     {
-      "author": "iLiFE_official",
-      "score": 69.1,
-      "likes": 15251,
-      "likes_per_min": 102.52,
+      "author": "chimwo_chimko",
+      "score": 39.2,
+      "likes": 290,
+      "likes_per_min": 3.01,
       "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 93.3,
-      "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
-      "url": "https://x.com/i/status/2103749047148491248"
+      "age_minutes": 91.9,
+      "text": "炎上必至だからぼかすけど、教育困難校の先生に早生まれの不都合な真実を聞いてしまい、もう今更誕生日は変えてあげられないので",
+      "url": "https://x.com/i/status/2103753238227128353"
     },
     {
-      "author": "_maru_oo00",
-      "score": 32.8,
-      "likes": 16286,
-      "likes_per_min": 98.37,
-      "acceleration": 0.95,
+      "author": "K962398418",
+      "score": 36.7,
+      "likes": 168,
+      "likes_per_min": 2.36,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 233.6,
-      "text": "これは性暴力すぎてやばいなと読んでいたら最後の私19歳旦那42歳で完全アウト https://t.co/lMR9MK9h",
-      "url": "https://x.com/i/status/2103713731666665622"
+      "age_minutes": 74.5,
+      "text": "伊藤　『マダックスか…』\n柳川　『マダックスか…』\n山田　『マダックスか…』\n西野　『マダックスか…』\nオリファン『マダ",
+      "url": "https://x.com/i/status/2103757615117242848"
     },
     {
-      "author": "GoAkashin",
-      "score": 39.1,
-      "likes": 14465,
-      "likes_per_min": 98.94,
-      "acceleration": 1.0,
-      "measured": true,
-      "age_minutes": 160.4,
-      "text": "奴が来る1/2 https://t.co/SCoP1mAQyG",
-      "url": "https://x.com/i/status/2103732164223524866"
-    },
-    {
-      "author": "nzmchqn",
-      "score": 39.4,
-      "likes": 20667,
-      "likes_per_min": 71.84,
+      "author": "masa_chi",
+      "score": 28.0,
+      "likes": 269,
+      "likes_per_min": 2.03,
       "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 221.0,
-      "text": "Discordの顔認証、INMU KING0.25倍で通るWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
-      "url": "https://x.com/i/status/2103716921594331156"
+      "age_minutes": 88.1,
+      "text": "この3日間はがっつり沼と川でスズキ釣りをしてました。釣り場で会う人会う人みんなTwitterの話された😅。炎上と言うけれ",
+      "url": "https://x.com/i/status/2103754210294534393"
     },
     {
-      "author": "takaichi_sanae",
-      "score": 61.2,
-      "likes": 14051,
-      "likes_per_min": 65.26,
-      "acceleration": 0.91,
+      "author": "yuki_arareyane",
+      "score": 37.0,
+      "likes": 346,
+      "likes_per_min": 8.25,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 155.2,
-      "text": "「競馬」が、実は「食料安全保障」に大きく貢献しているというお話です。 https://t.co/U20GZmiQgv",
-      "url": "https://x.com/i/status/2103733476184969279"
+      "age_minutes": 55.8,
+      "text": "どうかしてる先生たち\n\n問題発言集(1/3) https://t.co/8KIT75e9X8",
+      "url": "https://x.com/i/status/2103762341938843679"
+    },
+    {
+      "author": "i_saichi",
+      "score": 41.6,
+      "likes": 382,
+      "likes_per_min": 6.55,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 64.1,
+      "text": "失言 https://t.co/sELmLekf8a",
+      "url": "https://x.com/i/status/2103760242286961021"
     }
   ]
 }

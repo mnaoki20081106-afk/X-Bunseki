@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T03:50:41.025942+00:00",
+  "updated_at": "2026-09-26T04:06:08.090428+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 4,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790395505
+      "reset": 1790396433
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T03:50:03.899609+00:00",
-  "finished_at": "2026-09-26T03:50:41.024567+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 456,
-  "posts_flagged": 93,
+  "started_at": "2026-09-26T04:05:32.928897+00:00",
+  "finished_at": "2026-09-26T04:06:08.089069+00:00",
+  "posts_scanned": 622,
+  "posts_with_history": 508,
+  "posts_flagged": 102,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 109,
+  "minutes_since_last_notification": 124,
   "reject_reasons": {
-    "古すぎる": 158,
-    "いいね稼ぎ疑い": 2,
+    "古すぎる": 155,
+    "いいね稼ぎ疑い": 4,
     "誘導文パターン": 7,
-    "初回観測かつ平均速度が低い": 10,
-    "いいねが少なすぎる": 221,
-    "失速済み": 1
+    "いいねが少なすぎる": 224,
+    "失速済み": 3,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52042,
-    "posts": 13834,
-    "oldest": "2026-09-25T04:02:47.384285+00:00"
+    "total": 52055,
+    "posts": 13838,
+    "oldest": "2026-09-25T04:18:17.131972+00:00"
   },
-  "viral_discovery_posts": 140,
+  "viral_discovery_posts": 137,
   "million_imp_rescued": 7,
-  "watchlist_active": 4473,
+  "watchlist_active": 4441,
   "top5": [
     {
       "author": "nabicochan",
-      "score": 30.1,
-      "likes": 23330,
-      "likes_per_min": 37.97,
-      "acceleration": 0.94,
+      "score": 29.5,
+      "likes": 23854,
+      "likes_per_min": 33.91,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 920.2,
+      "age_minutes": 935.7,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
       "author": "sxzBST",
-      "score": 52.5,
-      "likes": 16515,
-      "likes_per_min": 288.15,
-      "acceleration": 0.95,
+      "score": 49.4,
+      "likes": 20579,
+      "likes_per_min": 262.97,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 122.7,
+      "age_minutes": 138.1,
       "text": "これ警察めっちゃグッジョブじゃん。夫婦喧嘩で妻が110番通報し、警察が事情を聞きに行ったところ三浦友和容疑者（25）が部",
       "url": "https://x.com/i/status/2103662843971387707"
     },
     {
-      "author": "ponini_66",
-      "score": 38.6,
-      "likes": 27629,
-      "likes_per_min": 213.62,
-      "acceleration": 1.06,
+      "author": "yellow_skrt",
+      "score": 59.9,
+      "likes": 13407,
+      "likes_per_min": 408.43,
+      "acceleration": 1.9,
       "measured": true,
-      "age_minutes": 162.7,
+      "age_minutes": 55.0,
+      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
+      "url": "https://x.com/i/status/2103683750882377784"
+    },
+    {
+      "author": "ponini_66",
+      "score": 34.9,
+      "likes": 30408,
+      "likes_per_min": 179.82,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 178.1,
       "text": "無事見れたようです https://t.co/sR6T1ODlO9",
       "url": "https://x.com/i/status/2103652770675098077"
     },
     {
       "author": "milk_info",
-      "score": 78.1,
-      "likes": 32892,
-      "likes_per_min": 438.62,
-      "acceleration": 0.79,
+      "score": 74.2,
+      "likes": 38195,
+      "likes_per_min": 343.14,
+      "acceleration": 0.78,
       "measured": true,
-      "age_minutes": 50.6,
+      "age_minutes": 66.1,
       "text": "／\nM!LK 冠バラエティ番組\n2番組放送決定🎉\n＼\n\n👑日本テレビ「M!LKに言ってみ？」\n🗓️放送日時\n10月5日(",
       "url": "https://x.com/i/status/2103680968053629248"
-    },
-    {
-      "author": "otsukinomonoga",
-      "score": 31.9,
-      "likes": 6878,
-      "likes_per_min": 43.568654623197055,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 157.9,
-      "text": "&gt;「不測の事態に備え、下にマットを敷いたり大勢の警察官が待機したりしていましたが」\n\nこんなありえん事態本当に不測",
-      "url": "https://x.com/i/status/2103653983122509874"
     }
   ]
 }

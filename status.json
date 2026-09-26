@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T22:04:58.711312+00:00",
+  "updated_at": "2026-09-26T22:20:21.921416+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,28 +11,29 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 2,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790461155
+      "reset": 1790462084
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T22:04:14.061013+00:00",
-  "finished_at": "2026-09-26T22:04:58.683117+00:00",
-  "posts_scanned": 611,
-  "posts_with_history": 512,
-  "posts_flagged": 13,
+  "started_at": "2026-09-26T22:19:43.703965+00:00",
+  "finished_at": "2026-09-26T22:20:21.920335+00:00",
+  "posts_scanned": 618,
+  "posts_with_history": 506,
+  "posts_flagged": 26,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 273,
+  "minutes_since_last_notification": 288,
   "reject_reasons": {
-    "古すぎる": 415,
-    "いいねが少なすぎる": 123,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 8
+    "古すぎる": 402,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 129,
+    "失速済み": 1,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52798,
-    "posts": 14230,
-    "oldest": "2026-09-25T22:15:44.560757+00:00"
+    "total": 52812,
+    "posts": 14212,
+    "oldest": "2026-09-25T22:31:13.063127+00:00"
   },
-  "viral_discovery_posts": 129,
+  "viral_discovery_posts": 132,
   "million_imp_rescued": 2,
-  "watchlist_active": 4439,
+  "watchlist_active": 4433,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 18.9,
-      "likes": 40871,
-      "likes_per_min": 8.07,
-      "acceleration": 1.11,
+      "score": 21.0,
+      "likes": 41036,
+      "likes_per_min": 10.73,
+      "acceleration": 1.33,
       "measured": true,
-      "age_minutes": 790.7,
+      "age_minutes": 806.1,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "nigo__zyu",
-      "score": 30.0,
-      "likes": 286941,
-      "likes_per_min": 168.02,
-      "acceleration": 1.14,
+      "score": 29.4,
+      "likes": 289569,
+      "likes_per_min": 170.83,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 604.6,
+      "age_minutes": 620.0,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "denfaminicogame",
-      "score": 42.3,
-      "likes": 14354,
-      "likes_per_min": 68.19,
-      "acceleration": 1.06,
+      "author": "s_ss_123_",
+      "score": 76.6,
+      "likes": 216,
+      "likes_per_min": 5.53,
+      "acceleration": 1.7,
       "measured": true,
-      "age_minutes": 236.0,
-      "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
-      "url": "https://x.com/i/status/2103909701713010963"
+      "age_minutes": 90.3,
+      "text": "イオンの駐車場で、妊娠8ヶ月の妻が車いすマークに停めた。\n\n降りた瞬間、隣の車のおじさんが窓を開けた。\n\n「そこ障害者用",
+      "url": "https://x.com/i/status/2103950243666833514"
+    },
+    {
+      "author": "30R9gmaMUy3guDJ",
+      "score": 48.1,
+      "likes": 2040,
+      "likes_per_min": 20.84,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 115.2,
+      "text": "今季限りで引退のバーランダー\n最後は娘がマウンドへ\n↓\n43歳バーランダー、6回途中2失点で最後の登板を終える。最速は1",
+      "url": "https://x.com/i/status/2103943975703064730"
     },
     {
       "author": "Koyota0",
-      "score": 46.9,
-      "likes": 13077,
-      "likes_per_min": 24.37,
-      "acceleration": 1.08,
+      "score": 43.4,
+      "likes": 13457,
+      "likes_per_min": 24.7,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 187.1,
+      "age_minutes": 202.4,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
-    },
-    {
-      "author": "s_ss_123_",
-      "score": 70.2,
-      "likes": 131,
-      "likes_per_min": 3.25,
-      "acceleration": 1.48,
-      "measured": true,
-      "age_minutes": 74.9,
-      "text": "イオンの駐車場で、妊娠8ヶ月の妻が車いすマークに停めた。\n\n降りた瞬間、隣の車のおじさんが窓を開けた。\n\n「そこ障害者用",
-      "url": "https://x.com/i/status/2103950243666833514"
     }
   ]
 }

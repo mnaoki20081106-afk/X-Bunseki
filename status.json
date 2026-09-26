@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T04:21:35.841075+00:00",
+  "updated_at": "2026-09-26T04:37:10.138098+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
+    "detail_incomplete": 1,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790397364
+      "remaining": 15,
+      "reset": 1790398297
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T04:21:03.006190+00:00",
-  "finished_at": "2026-09-26T04:21:35.839791+00:00",
+  "started_at": "2026-09-26T04:36:36.640196+00:00",
+  "finished_at": "2026-09-26T04:37:10.136918+00:00",
   "posts_scanned": 621,
-  "posts_with_history": 492,
+  "posts_with_history": 495,
   "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 140,
+  "minutes_since_last_notification": 155,
   "reject_reasons": {
-    "古すぎる": 159,
-    "いいね稼ぎ疑い": 4,
-    "失速済み": 6,
-    "いいねが少なすぎる": 225,
-    "誘導文パターン": 5,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 165,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 4,
+    "いいねが少なすぎる": 229,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52079,
-    "posts": 13859,
-    "oldest": "2026-09-25T04:33:49.018398+00:00"
+    "total": 52087,
+    "posts": 13847,
+    "oldest": "2026-09-25T04:49:23.800260+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4439,
+  "viral_discovery_posts": 142,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4454,
   "top5": [
     {
-      "author": "nabicochan",
-      "score": 29.6,
-      "likes": 24355,
-      "likes_per_min": 32.41,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 951.1,
-      "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
-      "url": "https://x.com/i/status/2103462135674323029"
-    },
-    {
       "author": "livedoornews",
-      "score": 51.6,
-      "likes": 6169,
-      "likes_per_min": 21.99,
-      "acceleration": 0.77,
+      "score": 45.4,
+      "likes": 6399,
+      "likes_per_min": 14.77,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 221.3,
+      "age_minutes": 236.9,
       "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
       "url": "https://x.com/i/status/2103645791537754582"
     },
     {
-      "author": "sxzBST",
-      "score": 46.7,
-      "likes": 24248,
-      "likes_per_min": 237.35,
-      "acceleration": 0.9,
+      "author": "TAXI_56390208",
+      "score": 45.0,
+      "likes": 2701,
+      "likes_per_min": 25.48,
+      "acceleration": 1.57,
       "measured": true,
-      "age_minutes": 153.6,
-      "text": "これ警察めっちゃグッジョブじゃん。夫婦喧嘩で妻が110番通報し、警察が事情を聞きに行ったところ三浦友和容疑者（25）が部",
-      "url": "https://x.com/i/status/2103662843971387707"
+      "age_minutes": 192.2,
+      "text": "FRUITSZIPPER 仲川瑠夏　月足天音\n不仲疑惑はこれが原因？\n「さん」MV撮影中に月足天音の手が仲川瑠夏の歯に直",
+      "url": "https://x.com/i/status/2103657044427637224"
     },
     {
-      "author": "ramen_hime_max",
-      "score": 28.0,
-      "likes": 5816,
-      "likes_per_min": 30.86,
-      "acceleration": 0.84,
+      "author": "nhk_chubu",
+      "score": 78.2,
+      "likes": 5117,
+      "likes_per_min": 134.91,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 233.6,
-      "text": "これは？！そうゆう事でしょうか？！\n中村敬斗選手！！ https://t.co/ijjIjO43ai",
-      "url": "https://x.com/i/status/2103642706933375479"
+      "age_minutes": 77.2,
+      "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
+      "url": "https://x.com/i/status/2103685978368213045"
     },
     {
       "author": "milk_info",
-      "score": 74.6,
-      "likes": 42562,
-      "likes_per_min": 282.51,
-      "acceleration": 0.82,
+      "score": 73.5,
+      "likes": 46481,
+      "likes_per_min": 251.65,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 81.6,
+      "age_minutes": 97.1,
       "text": "／\nM!LK 冠バラエティ番組\n2番組放送決定🎉\n＼\n\n👑日本テレビ「M!LKに言ってみ？」\n🗓️放送日時\n10月5日(",
       "url": "https://x.com/i/status/2103680968053629248"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 100.0,
+      "likes": 2000,
+      "likes_per_min": 76.61,
+      "acceleration": 1.94,
+      "measured": true,
+      "age_minutes": 42.2,
+      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
+      "url": "https://x.com/i/status/2103694802676285942"
     }
   ]
 }

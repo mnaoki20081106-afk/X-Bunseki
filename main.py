@@ -74,6 +74,27 @@ def _validate_session_file() -> str | None:
     return None
 
 
+def _age_minutes_at(posted_at: str | None, reference_iso: str) -> float | None:
+    """Return post age at the feed generation time.
+
+    Watchlist's last_age_minutes is the age at the last successful observation,
+    so it can become stale when TweetDetail stops refreshing. Trending freshness
+    must be derived from posted_at instead.
+    """
+    if not posted_at:
+        return None
+    try:
+        posted = datetime.fromisoformat(str(posted_at).replace("Z", "+00:00"))
+        reference = datetime.fromisoformat(str(reference_iso).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+    if posted.tzinfo is None:
+        posted = posted.replace(tzinfo=timezone.utc)
+    if reference.tzinfo is None:
+        reference = reference.replace(tzinfo=timezone.utc)
+    return max(0.0, (reference - posted).total_seconds() / 60.0)
+
+
 def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str, watch_state: dict | None = None):
     lines = [
         "# 条件通過ポスト一覧",
@@ -144,12 +165,16 @@ def _write_hits(surviving: list[dict], candidates: list[dict], started_iso: str,
 
     trending = []
     for row in (watch_state or {}).values():
-        age = float(row.get("last_age_minutes") or 0)
+        # Recompute age from the original post timestamp. last_age_minutes can be
+        # hours or days stale when an old Watchlist row stops refreshing.
+        age = _age_minutes_at(row.get("posted_at"), started_iso)
+        if age is None:
+            continue
         imp = int(row.get("last_impressions") or 0)
         ipm = float(row.get("last_impressions_per_min") or 0)
         mega = age <= 960 and imp >= 8_500_000
-        # "Trending" is deliberately selective: velocity alone must not promote
-        # sub-million posts. Early-stage fast growers belong in Early Discovery.
+        # "Trending" only contains posts that are actually 4-24 hours old at
+        # this monitor run, regardless of when the row was last observed.
         if not (240 < age <= 1440 and imp >= 1_500_000):
             continue
         trending.append({

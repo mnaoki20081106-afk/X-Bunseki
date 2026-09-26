@@ -234,14 +234,27 @@ function showFeed(name){
   $('feed-trending').classList.toggle('active',name==='trending');
   renderHits();
 }
+function currentAgeMinutes(post){
+  const ts=Date.parse(post&&post.posted_at||'');
+  if(!Number.isFinite(ts))return null;
+  return Math.max(0,(Date.now()-ts)/60000);
+}
+function freshTrendingPosts(){
+  return H.trending.filter(p=>{
+    const age=currentAgeMinutes(p);
+    return age!==null&&age<=1440;
+  });
+}
 function renderHits(){
-  const posts=(H.feed==='trending'?H.trending:H.early).slice();
+  const posts=(H.feed==='trending'?freshTrendingPosts():H.early).slice();
   posts.sort(H.feed==='trending'
     ? (a,b)=>(b.impressions_per_min||0)-(a.impressions_per_min||0)||(b.impressions||0)-(a.impressions||0)
     : (a,b)=>(b.predicted_final_impressions||0)-(a.predicted_final_impressions||0));
   if(!posts.length){$('hits').innerHTML='<div class="empty">'+(H.feed==='trending'?'現在表示する大バズ投稿はありません':'早期発見投稿はありません')+'</div>';return}
   $('hits').innerHTML=posts.map(p=>{
-    const sc=p.score??p.buzz_score;const age=p.age_minutes!=null?Math.round(p.age_minutes)+'m':'—';
+    const sc=p.score??p.buzz_score;
+    const liveAge=H.feed==='trending'?currentAgeMinutes(p):p.age_minutes;
+    const age=liveAge!=null?Math.round(liveAge)+'m':'—';
     const lpm=p.likes_per_min!=null?Number(p.likes_per_min).toFixed(1):'—';
     const pred=p.predicted_final_impressions;
     const predText=pred!=null?(pred>=1000000?(pred/1000000).toFixed(1)+'M':Math.round(pred/1000)+'K'):'予測待ち';
@@ -280,7 +293,7 @@ async function loadHits(){
     $('hSur').textContent=H.early.length;
     renderHits();
     live(status==='session_expired'||status==='error'?'err':'live');
-    $('conn').textContent=`早期 ${H.early.length}件 · バズ中 ${H.trending.length}件`;
+    $('conn').textContent=`早期 ${H.early.length}件 · バズ中 ${freshTrendingPosts().length}件`;
   }catch(e){live('err');$('hits').innerHTML='<div class="empty">失敗</div>';$('hLog').className='log show err';$('hLog').textContent='❌ '+e.message}
 }
 $('pat').value=localStorage.getItem(PAT_KEY)||'';

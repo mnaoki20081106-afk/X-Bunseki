@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T21:17:59.592974+00:00",
+  "updated_at": "2026-09-26T21:33:52.853848+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,27 +11,27 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790458341
+      "reset": 1790459291
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T21:17:19.982697+00:00",
-  "finished_at": "2026-09-26T21:17:59.591622+00:00",
-  "posts_scanned": 624,
-  "posts_with_history": 559,
-  "posts_flagged": 12,
+  "started_at": "2026-09-26T21:33:10.359374+00:00",
+  "finished_at": "2026-09-26T21:33:52.852514+00:00",
+  "posts_scanned": 633,
+  "posts_with_history": 541,
+  "posts_flagged": 10,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 226,
+  "minutes_since_last_notification": 242,
   "reject_reasons": {
-    "古すぎる": 441,
-    "いいねが少なすぎる": 117,
-    "初回観測かつ平均速度が低い": 6,
+    "古すぎる": 442,
+    "いいねが少なすぎる": 123,
+    "初回観測かつ平均速度が低い": 10,
     "失速済み": 1
   },
   "config": {
@@ -49,66 +49,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52819,
-    "posts": 14416,
-    "oldest": "2026-09-25T21:21:26.608721+00:00"
+    "total": 52834,
+    "posts": 14386,
+    "oldest": "2026-09-25T21:36:49.768590+00:00"
   },
-  "viral_discovery_posts": 136,
+  "viral_discovery_posts": 144,
   "million_imp_rescued": 2,
   "watchlist_active": 4459,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 18.1,
-      "likes": 40504,
-      "likes_per_min": 6.61,
+      "score": 18.4,
+      "likes": 40620,
+      "likes_per_min": 7.3,
       "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 743.7,
+      "age_minutes": 759.6,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "nigo__zyu",
-      "score": 30.3,
-      "likes": 279848,
-      "likes_per_min": 137.89,
-      "acceleration": 1.18,
+      "score": 29.4,
+      "likes": 282043,
+      "likes_per_min": 138.13,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 557.6,
+      "age_minutes": 573.5,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "denfaminicogame",
-      "score": 52.1,
-      "likes": 11421,
-      "likes_per_min": 53.23,
-      "acceleration": 1.11,
+      "score": 48.2,
+      "likes": 12296,
+      "likes_per_min": 55.06,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 189.0,
+      "age_minutes": 204.9,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
       "author": "Koyota0",
-      "score": 56.7,
-      "likes": 11946,
-      "likes_per_min": 28.51,
-      "acceleration": 0.87,
+      "score": 52.5,
+      "likes": 12348,
+      "likes_per_min": 25.3,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 140.1,
+      "age_minutes": 156.0,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 92.3,
-      "likes": 1090,
-      "likes_per_min": 34.29,
-      "acceleration": null,
+      "score": 78.6,
+      "likes": 1469,
+      "likes_per_min": 23.85,
+      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 22.3,
+      "age_minutes": 38.2,
       "text": "【APEX】極上のフィジカル練習【不破湊/かいくん/くりくん/にじさんじ】 https://t.co/OfjtxV7Ku",
       "url": "https://x.com/i/status/2103951665842040877"
     }

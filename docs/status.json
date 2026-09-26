@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-09-26T16:36:19.699117+00:00",
+  "updated_at": "2026-09-26T16:51:49.713533+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 2,
-    "detail_unavailable": 2,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790441448
+      "reset": 1790442378
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T16:35:47.154384+00:00",
-  "finished_at": "2026-09-26T16:36:19.698280+00:00",
-  "posts_scanned": 602,
-  "posts_with_history": 522,
-  "posts_flagged": 53,
+  "started_at": "2026-09-26T16:51:17.721746+00:00",
+  "finished_at": "2026-09-26T16:51:49.712327+00:00",
+  "posts_scanned": 621,
+  "posts_with_history": 535,
+  "posts_flagged": 42,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 149,
+  "minutes_since_last_notification": 164,
   "reject_reasons": {
-    "古すぎる": 174,
-    "いいね稼ぎ疑い": 5,
-    "失速済み": 16,
-    "いいねが少なすぎる": 230,
-    "誘導文パターン": 4
+    "古すぎる": 185,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 7,
+    "いいねが少なすぎる": 242,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52194,
+    "total": 52208,
     "posts": 14828,
-    "oldest": "2026-09-25T16:48:26.133409+00:00"
+    "oldest": "2026-09-25T17:04:03.840169+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4430,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4433,
   "top5": [
     {
-      "author": "nigo__zyu",
-      "score": 29.1,
-      "likes": 225903,
-      "likes_per_min": 435.0,
-      "acceleration": 0.9,
+      "author": "9taisyo21",
+      "score": 25.9,
+      "likes": 91737,
+      "likes_per_min": 70.79,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 276.0,
-      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
-      "url": "https://x.com/i/status/2103816946953417023"
+      "age_minutes": 741.8,
+      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
+      "url": "https://x.com/i/status/2103703617014493460"
     },
     {
       "author": "ndahoFischers",
-      "score": 23.9,
-      "likes": 36533,
-      "likes_per_min": 45.49,
-      "acceleration": 0.79,
+      "score": 22.1,
+      "likes": 37033,
+      "likes_per_min": 32.27,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 462.1,
+      "age_minutes": 477.6,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "j8au7h",
-      "score": 29.8,
-      "likes": 38832,
-      "likes_per_min": 192.94,
-      "acceleration": 0.87,
+      "author": "eniraka80",
+      "score": 56.2,
+      "likes": 5087,
+      "likes_per_min": 50.58,
+      "acceleration": 4.82,
       "measured": true,
-      "age_minutes": 207.7,
+      "age_minutes": 152.8,
+      "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
+      "url": "https://x.com/i/status/2103851838022037548"
+    },
+    {
+      "author": "j8au7h",
+      "score": 27.5,
+      "likes": 41316,
+      "likes_per_min": 160.33,
+      "acceleration": 0.83,
+      "measured": true,
+      "age_minutes": 223.2,
       "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
       "url": "https://x.com/i/status/2103834126533193958"
     },
     {
-      "author": "8_rivi",
-      "score": 51.8,
-      "likes": 3885,
-      "likes_per_min": 41.35,
-      "acceleration": 0.85,
+      "author": "mst_hide",
+      "score": 68.4,
+      "likes": 2721,
+      "likes_per_min": 23.47,
+      "acceleration": 1.59,
       "measured": true,
-      "age_minutes": 93.4,
-      "text": "今もたまに見に行ってる..\n両家顔合わせのレベルも高い🥲🥲✨ https://t.co/V6vDXjP3G4",
-      "url": "https://x.com/i/status/2103862877170123234"
-    },
-    {
-      "author": "nhk_venue101",
-      "score": 49.8,
-      "likes": 5673,
-      "likes_per_min": 11.52,
-      "acceleration": 0.99,
-      "measured": true,
-      "age_minutes": 126.3,
-      "text": "🎫#Venue101EXTRA WEEK1 記念写真📸\n\nこんやの放送は\n見逃し配信で何度でも📱👇\nhttps://t.",
-      "url": "https://x.com/i/status/2103854620703617374"
+      "age_minutes": 157.5,
+      "text": "恵庭 戸磯 国道36号 事故\n所轄、交機臨場なるも、事故がヤバすぎて本部交通課待ちの状態。長い夜になる。 https:/",
+      "url": "https://x.com/i/status/2103850648349639057"
     }
   ]
 }

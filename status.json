@@ -1,39 +1,38 @@
 {
-  "updated_at": "2026-09-26T22:51:12.043832+00:00",
+  "updated_at": "2026-09-26T23:06:40.146925+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
+    "detail_incomplete": 1,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790463942
+      "remaining": 15,
+      "reset": 1790464872
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T22:50:41.732974+00:00",
-  "finished_at": "2026-09-26T22:51:12.042833+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 506,
-  "posts_flagged": 24,
+  "started_at": "2026-09-26T23:06:11.535531+00:00",
+  "finished_at": "2026-09-26T23:06:40.145823+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 504,
+  "posts_flagged": 28,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 319,
+  "minutes_since_last_notification": 335,
   "reject_reasons": {
-    "古すぎる": 374,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 155,
-    "初回観測かつ平均速度が低い": 2,
-    "失速済み": 1
+    "古すぎる": 361,
+    "いいね稼ぎ疑い": 4,
+    "いいねが少なすぎる": 157,
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52831,
-    "posts": 14134,
-    "oldest": "2026-09-25T23:02:14.566929+00:00"
+    "total": 52858,
+    "posts": 14108,
+    "oldest": "2026-09-25T23:17:42.458105+00:00"
   },
-  "viral_discovery_posts": 126,
+  "viral_discovery_posts": 127,
   "million_imp_rescued": 1,
-  "watchlist_active": 4418,
+  "watchlist_active": 4385,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 29.0,
-      "likes": 295208,
-      "likes_per_min": 177.57,
-      "acceleration": 0.94,
+      "score": 29.3,
+      "likes": 297954,
+      "likes_per_min": 177.53,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 650.8,
+      "age_minutes": 666.3,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "t_kumasan1446",
-      "score": 47.0,
-      "likes": 2710,
-      "likes_per_min": 38.48,
-      "acceleration": null,
+      "score": 51.3,
+      "likes": 3552,
+      "likes_per_min": 54.44,
+      "acceleration": 1.41,
       "measured": true,
-      "age_minutes": 105.7,
+      "age_minutes": 121.2,
       "text": "①盗聴盗撮で知ったパターン\n※user父セリフあり\n\n #ぎなさんに描いたよ https://t.co/1B87O4Pk",
       "url": "https://x.com/i/status/2103954136215814418"
     },
     {
       "author": "30R9gmaMUy3guDJ",
-      "score": 40.9,
-      "likes": 2726,
-      "likes_per_min": 21.25,
-      "acceleration": 0.91,
+      "score": 41.3,
+      "likes": 3088,
+      "likes_per_min": 23.4,
+      "acceleration": 1.1,
       "measured": true,
-      "age_minutes": 146.1,
+      "age_minutes": 161.5,
       "text": "今季限りで引退のバーランダー\n最後は娘がマウンドへ\n↓\n43歳バーランダー、6回途中2失点で最後の登板を終える。最速は1",
       "url": "https://x.com/i/status/2103943975703064730"
     },
     {
-      "author": "Koyota0",
-      "score": 36.6,
-      "likes": 14244,
-      "likes_per_min": 24.89,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 233.3,
-      "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
-      "url": "https://x.com/i/status/2103922026142630048"
-    },
-    {
       "author": "wni_jp",
-      "score": 70.1,
-      "likes": 1459,
-      "likes_per_min": 21.9,
-      "acceleration": 0.94,
+      "score": 71.2,
+      "likes": 1798,
+      "likes_per_min": 21.92,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 71.2,
+      "age_minutes": 86.7,
       "text": "＜台風情報＞\n9月27日(日)3時現在、台風26号(スリゲ)は強い勢力になり、那覇市の南約250kmを暴風域を伴いながら",
       "url": "https://x.com/i/status/2103962817988558981"
+    },
+    {
+      "author": "makotokawazu",
+      "score": 72.6,
+      "likes": 1037,
+      "likes_per_min": 21.59,
+      "acceleration": 1.23,
+      "measured": true,
+      "age_minutes": 70.6,
+      "text": "台風26号は強い勢力になりました https://t.co/iNCQq0WrmR",
+      "url": "https://x.com/i/status/2103966868134609339"
     }
   ]
 }

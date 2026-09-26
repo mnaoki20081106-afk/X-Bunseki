@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-26T05:32:56.212099+00:00",
+  "updated_at": "2026-09-26T05:48:27.393155+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790401643
+      "reset": 1790402577
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T05:32:22.960542+00:00",
-  "finished_at": "2026-09-26T05:32:56.210905+00:00",
-  "posts_scanned": 583,
-  "posts_with_history": 462,
-  "posts_flagged": 67,
+  "started_at": "2026-09-26T05:47:56.619004+00:00",
+  "finished_at": "2026-09-26T05:48:27.391899+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 473,
+  "posts_flagged": 69,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 211,
+  "minutes_since_last_notification": 227,
   "reject_reasons": {
-    "古すぎる": 159,
-    "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 6,
-    "いいねが少なすぎる": 203,
-    "失速済み": 6
+    "古すぎる": 153,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 7,
+    "いいねが少なすぎる": 227,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52163,
-    "posts": 14000,
-    "oldest": "2026-09-25T05:36:02.270148+00:00"
+    "total": 52177,
+    "posts": 14040,
+    "oldest": "2026-09-25T05:51:32.244882+00:00"
   },
-  "viral_discovery_posts": 135,
+  "viral_discovery_posts": 141,
   "million_imp_rescued": 5,
-  "watchlist_active": 4463,
+  "watchlist_active": 4473,
   "top5": [
     {
       "author": "livedoornews",
-      "score": 38.4,
-      "likes": 7004,
-      "likes_per_min": 7.05,
-      "acceleration": 0.72,
+      "score": 39.8,
+      "likes": 7112,
+      "likes_per_min": 6.96,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 292.7,
+      "age_minutes": 308.2,
       "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
       "url": "https://x.com/i/status/2103645791537754582"
     },
     {
       "author": "tkzwgrs",
-      "score": 88.6,
-      "likes": 7479,
-      "likes_per_min": 88.44,
-      "acceleration": 0.98,
+      "score": 83.1,
+      "likes": 8757,
+      "likes_per_min": 82.35,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 97.9,
+      "age_minutes": 113.4,
       "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
       "url": "https://x.com/i/status/2103694802676285942"
     },
     {
       "author": "nhk_chubu",
-      "score": 59.6,
-      "likes": 8883,
-      "likes_per_min": 45.06,
-      "acceleration": 0.75,
+      "score": 58.0,
+      "likes": 9565,
+      "likes_per_min": 43.95,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 133.0,
+      "age_minutes": 148.5,
       "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
       "url": "https://x.com/i/status/2103685978368213045"
     },
     {
-      "author": "yellow_skrt",
-      "score": 43.5,
-      "likes": 36435,
-      "likes_per_min": 194.09,
-      "acceleration": 0.87,
+      "author": "twf003",
+      "score": 32.9,
+      "likes": 14923,
+      "likes_per_min": 68.55,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 141.8,
-      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
-      "url": "https://x.com/i/status/2103683750882377784"
+      "age_minutes": 231.9,
+      "text": "どう考えてもあなたがおかしいですよ。\n友達がいる時に絶対出さないでしょ… https://t.co/44gbluutFF",
+      "url": "https://x.com/i/status/2103664989676745030"
     },
     {
-      "author": "patch_ai",
-      "score": 39.8,
-      "likes": 3253,
-      "likes_per_min": 22.374941955336094,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 145.4,
-      "text": "これは悪いカメラマンだわ https://t.co/t2IS9lSr4S",
-      "url": "https://x.com/i/status/2103682857113940248"
+      "author": "yellow_skrt",
+      "score": 41.3,
+      "likes": 39174,
+      "likes_per_min": 176.49,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 157.4,
+      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
+      "url": "https://x.com/i/status/2103683750882377784"
     }
   ]
 }

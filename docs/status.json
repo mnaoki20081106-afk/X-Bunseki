@@ -1,39 +1,38 @@
 {
-  "updated_at": "2026-09-25T23:48:45.292113+00:00",
+  "updated_at": "2026-09-26T00:04:19.518612+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 1,
-    "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "detail_incomplete": 0,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790380997
+      "reset": 1790381927
     },
     "failures": {}
   },
-  "started_at": "2026-09-25T23:48:16.396933+00:00",
-  "finished_at": "2026-09-25T23:48:45.290211+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 464,
-  "posts_flagged": 46,
-  "notified_count": 0,
+  "started_at": "2026-09-26T00:03:46.062228+00:00",
+  "finished_at": "2026-09-26T00:04:19.517606+00:00",
+  "posts_scanned": 596,
+  "posts_with_history": 485,
+  "posts_flagged": 51,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 389,
+  "minutes_since_last_notification": 405,
   "reject_reasons": {
-    "古すぎる": 259,
-    "いいね稼ぎ疑い": 1,
+    "古すぎる": 246,
     "誘導文パターン": 5,
-    "いいねが少なすぎる": 205,
-    "初回観測かつ平均速度が低い": 1
+    "初回観測かつ平均速度が低い": 1,
+    "いいねが少なすぎる": 210
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52126,
-    "posts": 13646,
-    "oldest": "2026-09-24T23:51:50.338285+00:00"
+    "total": 52123,
+    "posts": 13637,
+    "oldest": "2026-09-25T00:07:18.660781+00:00"
   },
-  "viral_discovery_posts": 123,
+  "viral_discovery_posts": 119,
   "million_imp_rescued": 2,
-  "watchlist_active": 4370,
+  "watchlist_active": 4362,
   "top5": [
     {
-      "author": "nabicochan",
-      "score": 31.5,
-      "likes": 13980,
-      "likes_per_min": 45.92,
-      "acceleration": 1.04,
-      "measured": true,
-      "age_minutes": 678.3,
-      "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
-      "url": "https://x.com/i/status/2103462135674323029"
-    },
-    {
       "author": "Qchan_biyou",
-      "score": 23.8,
-      "likes": 15236,
-      "likes_per_min": 12.61,
-      "acceleration": 0.9,
+      "score": 24.7,
+      "likes": 15441,
+      "likes_per_min": 13.17,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 909.9,
+      "age_minutes": 925.5,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
-      "author": "Vau875",
-      "score": 81.5,
-      "likes": 7794,
-      "likes_per_min": 69.08,
-      "acceleration": 0.94,
+      "author": "nabicochan",
+      "score": 30.3,
+      "likes": 14614,
+      "likes_per_min": 40.75,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 117.0,
+      "age_minutes": 693.8,
+      "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
+      "url": "https://x.com/i/status/2103462135674323029"
+    },
+    {
+      "author": "livedoornews",
+      "score": 92.7,
+      "likes": 1204,
+      "likes_per_min": 42.61,
+      "acceleration": 1.67,
+      "measured": true,
+      "age_minutes": 53.6,
+      "text": "【判決】スタバで射殺、64歳男に懲役28年\nhttps://t.co/gEnLgaPgfl\n\n2024年、愛媛県四国中央",
+      "url": "https://x.com/i/status/2103623255605354910"
+    },
+    {
+      "author": "orix_crazy",
+      "score": 35.1,
+      "likes": 5758,
+      "likes_per_min": 49.12,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 172.1,
+      "text": "平野佳寿の好きなやつ。プロ初勝利のボールをスタンドに投げ入れるフリをする。\n https://t.co/7sQSiXeR",
+      "url": "https://x.com/i/status/2103593427204276615"
+    },
+    {
+      "author": "Vau875",
+      "score": 74.4,
+      "likes": 8835,
+      "likes_per_min": 66.9,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 132.5,
       "text": "起きんよ普通に",
       "url": "https://x.com/i/status/2103603391914246578"
-    },
-    {
-      "author": "nino_honmono",
-      "score": 58.7,
-      "likes": 27019,
-      "likes_per_min": 124.0,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 135.4,
-      "text": "皆ーおはよー",
-      "url": "https://x.com/i/status/2103598763898286220"
-    },
-    {
-      "author": "HashimotoKotoe",
-      "score": 40.1,
-      "likes": 11602,
-      "likes_per_min": 65.54,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 181.3,
-      "text": "習近平氏歓迎レセプションで台湾（中華民国）の名曲流したり、香港の件で中国で禁止されたレミゼラブル歌ったり、トランプ節炸裂",
-      "url": "https://x.com/i/status/2103587213774880984"
     }
   ]
 }

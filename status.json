@@ -1,39 +1,42 @@
 {
-  "updated_at": "2026-09-26T13:20:51.100363+00:00",
-  "status": "success",
+  "updated_at": "2026-09-26T13:36:22.924752+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 38,
+    "status": "degraded",
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790429716
+      "reset": 1790430647
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-26T13:20:15.331064+00:00",
-  "finished_at": "2026-09-26T13:20:51.099197+00:00",
-  "posts_scanned": 616,
-  "posts_with_history": 446,
-  "posts_flagged": 128,
+  "started_at": "2026-09-26T13:35:46.543805+00:00",
+  "finished_at": "2026-09-26T13:36:22.923608+00:00",
+  "posts_scanned": 586,
+  "posts_with_history": 438,
+  "posts_flagged": 114,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 679,
+  "minutes_since_last_notification": 695,
   "reject_reasons": {
-    "古すぎる": 128,
-    "失速済み": 5,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 244,
-    "初回観測かつ平均速度が低い": 9
+    "古すぎる": 125,
+    "いいね稼ぎ疑い": 4,
+    "誘導文パターン": 1,
+    "いいねが少なすぎる": 231,
+    "失速済み": 7,
+    "初回観測かつ平均速度が低い": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +53,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51964,
-    "posts": 14709,
-    "oldest": "2026-09-25T13:33:36.963711+00:00"
+    "total": 51961,
+    "posts": 14719,
+    "oldest": "2026-09-25T13:49:28.103706+00:00"
   },
-  "viral_discovery_posts": 128,
-  "million_imp_rescued": 8,
-  "watchlist_active": 4407,
+  "viral_discovery_posts": 119,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4396,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 26.9,
-      "likes": 25643,
-      "likes_per_min": 87.26,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 266.6,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
       "author": "9taisyo21",
-      "score": 26.2,
-      "likes": 70592,
-      "likes_per_min": 169.82,
-      "acceleration": 0.8,
+      "score": 26.1,
+      "likes": 72666,
+      "likes_per_min": 133.54,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 530.8,
+      "age_minutes": 546.3,
       "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
       "url": "https://x.com/i/status/2103703617014493460"
     },
     {
-      "author": "nigo__zyu",
-      "score": 56.3,
-      "likes": 54378,
-      "likes_per_min": 1594.38,
-      "acceleration": 1.25,
+      "author": "ndahoFischers",
+      "score": 26.9,
+      "likes": 26891,
+      "likes_per_min": 80.35,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 80.5,
+      "age_minutes": 282.1,
+      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
+      "url": "https://x.com/i/status/2103770109697487067"
+    },
+    {
+      "author": "nigo__zyu",
+      "score": 53.1,
+      "likes": 79589,
+      "likes_per_min": 1623.22,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 96.0,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "iLiFE_official",
-      "score": 60.7,
-      "likes": 10708,
-      "likes_per_min": 67.22,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 80.6,
-      "text": "明日の若葉のあ生誕祭2026「若葉のあちゃんはぴっちぴちの18さい！♡」ですが、虹羽みにが体調不良の為、ライブおよび特典",
-      "url": "https://x.com/i/status/2103816910051950936"
+      "author": "ensemble_stars",
+      "score": 71.3,
+      "likes": 4005,
+      "likes_per_min": 575.0895007266805,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 7.0,
+      "text": "(9/9)【お知らせ】\n\n『ＭＭ』では各ユニットの課題曲MVが登場！\n\nアプリでの登場に先行して『MaM VS fine",
+      "url": "https://x.com/i/status/2103839354271711607"
     },
     {
-      "author": "lIbertAs_717",
-      "score": 33.7,
-      "likes": 5827,
-      "likes_per_min": 17.59,
+      "author": "ensemble_stars",
+      "score": 68.9,
+      "likes": 2297,
+      "likes_per_min": 322.8783986535872,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 197.0,
-      "text": "これのフル探してる",
-      "url": "https://x.com/i/status/2103787632866283539"
+      "measured": false,
+      "age_minutes": 7.1,
+      "text": "(8/9)【お知らせ】\n\n9月30日 15時〜\nツアーイベント【ワールドツアー編／AREA06 MaMVSfine】\nを",
+      "url": "https://x.com/i/status/2103839319131861144"
     }
   ]
 }

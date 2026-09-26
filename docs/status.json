@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T15:02:57.260092+00:00",
+  "updated_at": "2026-09-26T15:18:34.507315+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_incomplete": 2,
     "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790435845
+      "reset": 1790436780
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T15:02:24.606890+00:00",
-  "finished_at": "2026-09-26T15:02:57.258887+00:00",
-  "posts_scanned": 618,
-  "posts_with_history": 467,
-  "posts_flagged": 108,
+  "started_at": "2026-09-26T15:17:58.950058+00:00",
+  "finished_at": "2026-09-26T15:18:34.506162+00:00",
+  "posts_scanned": 630,
+  "posts_with_history": 486,
+  "posts_flagged": 94,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 56,
+  "minutes_since_last_notification": 71,
   "reject_reasons": {
     "古すぎる": 142,
     "いいね稼ぎ疑い": 1,
-    "失速済み": 6,
-    "いいねが少なすぎる": 242,
-    "誘導文パターン": 2,
-    "初回観測かつ平均速度が低い": 1
+    "失速済み": 16,
+    "いいねが少なすぎる": 247,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52046,
-    "posts": 14772,
-    "oldest": "2026-09-25T15:06:44.631546+00:00"
+    "total": 52092,
+    "posts": 14791,
+    "oldest": "2026-09-25T15:22:10.860015+00:00"
   },
-  "viral_discovery_posts": 147,
-  "million_imp_rescued": 10,
-  "watchlist_active": 4377,
+  "viral_discovery_posts": 143,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4390,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 25.8,
-      "likes": 32285,
-      "likes_per_min": 57.49,
-      "acceleration": 0.99,
-      "measured": true,
-      "age_minutes": 368.7,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
-      "author": "blacklago_n",
-      "score": 27.0,
-      "likes": 109412,
-      "likes_per_min": 81.87,
-      "acceleration": 0.99,
-      "measured": true,
-      "age_minutes": 775.7,
-      "text": "担当者呼んでこい。全く足りない。 https://t.co/T0DAkxxaHC",
-      "url": "https://x.com/i/status/2103667687004197239"
-    },
-    {
-      "author": "9taisyo21",
-      "score": 26.5,
-      "likes": 82832,
-      "likes_per_min": 117.42,
-      "acceleration": 0.88,
-      "measured": true,
-      "age_minutes": 632.9,
-      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
-      "url": "https://x.com/i/status/2103703617014493460"
-    },
-    {
-      "author": "YahooNewsTopics",
-      "score": 32.7,
-      "likes": 13141,
-      "likes_per_min": 34.316145104694854,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 382.9,
-      "text": "【ぷよぷよ栗原 報奨金出ない見通し】\nhttps://t.co/kJ640glb9i",
-      "url": "https://x.com/i/status/2103766525727678780"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 38.1,
-      "likes": 172564,
-      "likes_per_min": 783.42,
-      "acceleration": 0.87,
+      "score": 36.2,
+      "likes": 184303,
+      "likes_per_min": 751.75,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 182.6,
+      "age_minutes": 198.2,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
+    },
+    {
+      "author": "YokokawaNaotaka",
+      "score": 28.8,
+      "likes": 64032,
+      "likes_per_min": 121.54,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 227.2,
+      "text": "オリンピア7位でした。\nみんなごめん俺まけた\n\n目からプロテインがずっと溢れてくる\nこんな心の奥底から悔しいと思える出来",
+      "url": "https://x.com/i/status/2103809638810669157"
+    },
+    {
+      "author": "j8au7h",
+      "score": 42.1,
+      "likes": 19582,
+      "likes_per_min": 328.0,
+      "acceleration": 1.09,
+      "measured": true,
+      "age_minutes": 129.9,
+      "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
+      "url": "https://x.com/i/status/2103834126533193958"
+    },
+    {
+      "author": "takaichi_sanae",
+      "score": 67.3,
+      "likes": 24282,
+      "likes_per_min": 136.21,
+      "acceleration": 0.77,
+      "measured": true,
+      "age_minutes": 107.8,
+      "text": "先ほど、午後9時から、トランプ大統領と電話会談を行いました。\n\nトランプ大統領からは、習近平国家主席の訪米直後というタイ",
+      "url": "https://x.com/i/status/2103839703808229871"
+    },
+    {
+      "author": "takurouband",
+      "score": 47.9,
+      "likes": 23329,
+      "likes_per_min": 245.84,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 104.2,
+      "text": "信じられません。\n記憶ぶっ飛ぶほどに嬉しかったです。\n木村さん。\n生きていてくれてありがとうございます。\n母ちゃん。産ん",
+      "url": "https://x.com/i/status/2103840593608949899"
     }
   ]
 }

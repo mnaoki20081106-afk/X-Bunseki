@@ -7,12 +7,12 @@
   },
   "challenger": null,
   "dataset_stats": {
-    "early_observed_posts": 16600,
-    "completed_24h_posts": 1988,
-    "completion_rate": 0.1198,
+    "early_observed_posts": 16656,
+    "completed_24h_posts": 1993,
+    "completion_rate": 0.1197,
     "positive_5m": 37,
     "positive_10m": 16,
-    "stalled_under_1_5m": 1864
+    "stalled_under_1_5m": 1869
   },
   "readiness": {
     "regression_ready": false,
@@ -28,15 +28,15 @@
       "minimum_completion_rate": 0.7
     }
   },
-  "dataset_posts": 1988,
+  "dataset_posts": 1993,
   "split_posts": {
-    "train": 1391,
-    "validation": 298,
+    "train": 1395,
+    "validation": 299,
     "test": 299
   },
   "gen0_historical_metrics": {
-    "posts": 1988,
-    "log_mae": 0.934863
+    "posts": 1993,
+    "log_mae": 0.934722
   },
   "promotion_policy": {
     "automatic": true,

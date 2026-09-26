@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T10:36:59.955461+00:00",
+  "updated_at": "2026-09-26T10:52:42.445199+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,30 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 5,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790419885
+      "remaining": 14,
+      "reset": 1790420825
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T10:36:24.584416+00:00",
-  "finished_at": "2026-09-26T10:36:59.954240+00:00",
-  "posts_scanned": 597,
-  "posts_with_history": 446,
-  "posts_flagged": 108,
+  "started_at": "2026-09-26T10:52:03.850772+00:00",
+  "finished_at": "2026-09-26T10:52:42.443806+00:00",
+  "posts_scanned": 630,
+  "posts_with_history": 468,
+  "posts_flagged": 109,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 515,
+  "minutes_since_last_notification": 531,
   "reject_reasons": {
-    "古すぎる": 156,
-    "いいね稼ぎ疑い": 1,
-    "いいねが少なすぎる": 215,
+    "古すぎる": 153,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 229,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 1
+    "初回観測かつ平均速度が低い": 6,
+    "失速済み": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51295,
-    "posts": 14327,
-    "oldest": "2026-09-25T10:49:54.806629+00:00"
+    "total": 51312,
+    "posts": 14277,
+    "oldest": "2026-09-25T11:21:32.647872+00:00"
   },
-  "viral_discovery_posts": 121,
+  "viral_discovery_posts": 142,
   "million_imp_rescued": 3,
-  "watchlist_active": 4395,
+  "watchlist_active": 4408,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 48.6,
-      "likes": 8158,
-      "likes_per_min": 127.29,
-      "acceleration": null,
+      "score": 45.7,
+      "likes": 9886,
+      "likes_per_min": 110.0,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 102.7,
+      "age_minutes": 118.5,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "iLiFE_official",
-      "score": 42.1,
-      "likes": 20382,
-      "likes_per_min": 37.48,
-      "acceleration": 0.87,
+      "score": 38.9,
+      "likes": 20909,
+      "likes_per_min": 33.55,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 186.4,
+      "age_minutes": 202.1,
       "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
       "url": "https://x.com/i/status/2103749047148491248"
     },
     {
-      "author": "Takagi_Progamer",
-      "score": 65.4,
-      "likes": 7450,
-      "likes_per_min": 33.35,
-      "acceleration": 0.85,
+      "author": "rearea_7777",
+      "score": 43.3,
+      "likes": 25316,
+      "likes_per_min": 159.93,
+      "acceleration": 0.7,
       "measured": true,
-      "age_minutes": 109.5,
-      "text": "12月末までの期間、海底摸月の活動をサポートすることになりました！\n\n国内大会での活動を中心にサポートしつつ、本人へのイ",
-      "url": "https://x.com/i/status/2103768400032079907"
+      "age_minutes": 152.6,
+      "text": "お知らせ\n『逃げ上手の若様』23話にて、ちょっと怖いシーンで参加させていただきました！\n\n#逃げ上手の若君　#逃げ若 h",
+      "url": "https://x.com/i/status/2103761527144960156"
     },
     {
-      "author": "sd_bt",
-      "score": 76.0,
-      "likes": 11425,
-      "likes_per_min": 237.67,
-      "acceleration": 0.94,
-      "measured": true,
-      "age_minutes": 36.9,
-      "text": "／\n15th Anniversary Special Event\n「超特急×DISH//」開催決定！✨\n＼\n\nトークやラ",
-      "url": "https://x.com/i/status/2103786667760873839"
-    },
-    {
-      "author": "gorilla_saurus",
-      "score": 32.1,
-      "likes": 8317,
-      "likes_per_min": 36.74169745997139,
+      "author": "Junior_Ch_X",
+      "score": 68.9,
+      "likes": 1602,
+      "likes_per_min": 260.93744252036385,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 226.4,
-      "text": "全然いらんアドバイスかもしれないですが、こういうプリントされてるコップなどは、買った時にピッチンを張っておくと、絵が保護",
-      "url": "https://x.com/i/status/2103738997713588228"
+      "age_minutes": 6.1,
+      "text": "【お知らせ📢】\nACEes「Colors」Music Video\n\n＼このあと⏰20:00 プレミア公開／\n\n生配信終了",
+      "url": "https://x.com/i/status/2103798374923444439"
+    },
+    {
+      "author": "oricon",
+      "score": 65.0,
+      "likes": 5171,
+      "likes_per_min": 63.49,
+      "acceleration": null,
+      "measured": true,
+      "age_minutes": 107.7,
+      "text": "町田啓太＆玄理、第1子誕生👶\n「かけがえのない存在が増え、身の引き締まる思いです」\nhttps://t.co/E6CL1",
+      "url": "https://x.com/i/status/2103772806953730241"
     }
   ]
 }

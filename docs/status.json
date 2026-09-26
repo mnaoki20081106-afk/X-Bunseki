@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-26T23:22:20.421021+00:00",
+  "updated_at": "2026-09-26T23:46:43.627651+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 2,
+    "invalid_tweets": 4,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790465804
+      "remaining": 14,
+      "reset": 1790467270
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T23:21:43.240274+00:00",
-  "finished_at": "2026-09-26T23:22:20.419902+00:00",
-  "posts_scanned": 619,
-  "posts_with_history": 505,
-  "posts_flagged": 30,
+  "started_at": "2026-09-26T23:46:09.011829+00:00",
+  "finished_at": "2026-09-26T23:46:43.626488+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 451,
+  "posts_flagged": 39,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 350,
+  "minutes_since_last_notification": 375,
   "reject_reasons": {
-    "古すぎる": 348,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 152,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 4
+    "古すぎる": 306,
+    "いいねが少なすぎる": 170,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 9,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52880,
-    "posts": 14094,
-    "oldest": "2026-09-25T23:33:11.394210+00:00"
+    "total": 52886,
+    "posts": 14119,
+    "oldest": "2026-09-25T23:48:44.263609+00:00"
   },
-  "viral_discovery_posts": 130,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4390,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4374,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 30.7,
-      "likes": 301543,
-      "likes_per_min": 229.05,
-      "acceleration": 1.29,
+      "score": 28.9,
+      "likes": 306721,
+      "likes_per_min": 212.32,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 682.0,
+      "age_minutes": 706.4,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "t_kumasan1446",
-      "score": 46.0,
-      "likes": 4427,
-      "likes_per_min": 55.84,
-      "acceleration": 1.03,
+      "score": 43.0,
+      "likes": 5854,
+      "likes_per_min": 58.51,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 136.8,
+      "age_minutes": 161.2,
       "text": "①盗聴盗撮で知ったパターン\n※user父セリフあり\n\n #ぎなさんに描いたよ https://t.co/1B87O4Pk",
       "url": "https://x.com/i/status/2103954136215814418"
     },
     {
-      "author": "30R9gmaMUy3guDJ",
-      "score": 37.6,
-      "likes": 3429,
-      "likes_per_min": 21.76,
-      "acceleration": 0.93,
+      "author": "daiantsuda",
+      "score": 41.8,
+      "likes": 9551,
+      "likes_per_min": 89.35,
+      "acceleration": 1.05,
       "measured": true,
-      "age_minutes": 177.2,
-      "text": "今季限りで引退のバーランダー\n最後は娘がマウンドへ\n↓\n43歳バーランダー、6回途中2失点で最後の登板を終える。最速は1",
-      "url": "https://x.com/i/status/2103943975703064730"
+      "age_minutes": 128.7,
+      "text": "娘がレンタルのモバイルバッテリーを返すのを忘れてて1週間借りていた。ゾッとした。昔のレンタルビデオとかの感じ。久々にぞっ",
+      "url": "https://x.com/i/status/2103962305608499633"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 84.5,
+      "likes": 202,
+      "likes_per_min": 22.42753420824884,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 9.0,
+      "text": "【悲報】ホームセンター コーナンさん、園芸情報サイト上でさらっと“大麻の写真”を使用\n多幸感も楽しくDIYへ\n\nhttp",
+      "url": "https://x.com/i/status/2103992437605826996"
     },
     {
       "author": "makotokawazu",
-      "score": 72.8,
-      "likes": 1440,
-      "likes_per_min": 25.72,
-      "acceleration": 1.19,
+      "score": 69.6,
+      "likes": 2140,
+      "likes_per_min": 28.7,
+      "acceleration": 1.12,
       "measured": true,
-      "age_minutes": 86.2,
+      "age_minutes": 110.6,
       "text": "台風26号は強い勢力になりました https://t.co/iNCQq0WrmR",
       "url": "https://x.com/i/status/2103966868134609339"
-    },
-    {
-      "author": "f_mona_new_kaii",
-      "score": 51.3,
-      "likes": 2441,
-      "likes_per_min": 33.02239305832953,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 73.9,
-      "text": "ファミクラストア\n「猪俣周杜」写真、全削除される",
-      "url": "https://x.com/i/status/2103969968262128042"
     }
   ]
 }

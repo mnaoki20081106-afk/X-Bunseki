@@ -1,42 +1,40 @@
 {
-  "updated_at": "2026-09-26T16:05:09.834198+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-26T16:20:52.779285+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
-    "detail_succeeded": 40,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 5,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790439576
+      "reset": 1790440520
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-26T16:04:35.888074+00:00",
-  "finished_at": "2026-09-26T16:05:09.832875+00:00",
-  "posts_scanned": 627,
-  "posts_with_history": 494,
-  "posts_flagged": 65,
+  "started_at": "2026-09-26T16:20:19.426649+00:00",
+  "finished_at": "2026-09-26T16:20:52.774970+00:00",
+  "posts_scanned": 611,
+  "posts_with_history": 496,
+  "posts_flagged": 58,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 118,
+  "minutes_since_last_notification": 134,
   "reject_reasons": {
-    "古すぎる": 165,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 8,
-    "いいねが少なすぎる": 267,
-    "初回観測かつ平均速度が低い": 2,
-    "誘導文パターン": 1
+    "古すぎる": 168,
+    "いいね稼ぎ疑い": 4,
+    "失速済み": 7,
+    "初回観測かつ平均速度が低い": 4,
+    "いいねが少なすぎる": 248,
+    "誘導文パターン": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52167,
-    "posts": 14817,
-    "oldest": "2026-09-25T16:17:26.955282+00:00"
+    "total": 52180,
+    "posts": 14836,
+    "oldest": "2026-09-25T16:33:01.232785+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4418,
+  "viral_discovery_posts": 123,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4421,
   "top5": [
     {
       "author": "9taisyo21",
-      "score": 26.9,
-      "likes": 88275,
-      "likes_per_min": 86.53,
-      "acceleration": 0.98,
+      "score": 26.7,
+      "likes": 89546,
+      "likes_per_min": 80.87,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 695.1,
+      "age_minutes": 710.8,
       "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
       "url": "https://x.com/i/status/2103703617014493460"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 32.6,
-      "likes": 14143,
-      "likes_per_min": 16.11,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 445.1,
-      "text": "【ぷよぷよ栗原 報奨金出ない見通し】\nhttps://t.co/kJ640glb9i",
-      "url": "https://x.com/i/status/2103766525727678780"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 29.2,
-      "likes": 211599,
-      "likes_per_min": 546.1,
-      "acceleration": 0.91,
+      "score": 29.0,
+      "likes": 219180,
+      "likes_per_min": 482.35,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 244.8,
+      "age_minutes": 260.5,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "j8au7h",
-      "score": 34.5,
-      "likes": 32348,
-      "likes_per_min": 261.66,
-      "acceleration": 0.93,
+      "author": "8_rivi",
+      "score": 53.9,
+      "likes": 3246,
+      "likes_per_min": 48.48,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 176.5,
+      "age_minutes": 78.0,
+      "text": "今もたまに見に行ってる..\n両家顔合わせのレベルも高い🥲🥲✨ https://t.co/V6vDXjP3G4",
+      "url": "https://x.com/i/status/2103862877170123234"
+    },
+    {
+      "author": "j8au7h",
+      "score": 31.8,
+      "likes": 35850,
+      "likes_per_min": 222.82,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 192.2,
       "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
       "url": "https://x.com/i/status/2103834126533193958"
     },
     {
-      "author": "8_rivi",
-      "score": 46.6,
-      "likes": 2484,
-      "likes_per_min": 39.88640437672595,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 62.3,
-      "text": "今もたまに見に行ってる..\n両家顔合わせのレベルも高い🥲🥲✨ https://t.co/V6vDXjP3G4",
-      "url": "https://x.com/i/status/2103862877170123234"
+      "author": "kb_dn_",
+      "score": 26.6,
+      "likes": 30320,
+      "likes_per_min": 93.34,
+      "acceleration": 1.05,
+      "measured": true,
+      "age_minutes": 228.2,
+      "text": "このたわけ https://t.co/vIXquAUVVl",
+      "url": "https://x.com/i/status/2103825072721100871"
     }
   ]
 }

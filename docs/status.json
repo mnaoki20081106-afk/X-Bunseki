@@ -1,38 +1,40 @@
 {
-  "updated_at": "2026-09-26T06:03:58.693999+00:00",
+  "updated_at": "2026-09-26T06:19:38.374270+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790403507
+      "reset": 1790404448
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T06:03:25.923414+00:00",
-  "finished_at": "2026-09-26T06:03:58.692760+00:00",
-  "posts_scanned": 629,
-  "posts_with_history": 516,
-  "posts_flagged": 69,
+  "started_at": "2026-09-26T06:19:07.341635+00:00",
+  "finished_at": "2026-09-26T06:19:38.373306+00:00",
+  "posts_scanned": 621,
+  "posts_with_history": 493,
+  "posts_flagged": 68,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 242,
+  "minutes_since_last_notification": 258,
   "reject_reasons": {
-    "古すぎる": 155,
-    "いいね稼ぎ疑い": 3,
+    "古すぎる": 151,
+    "誘導文パターン": 3,
     "いいねが少なすぎる": 223,
-    "失速済み": 5
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 6,
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52216,
-    "posts": 14044,
-    "oldest": "2026-09-25T06:07:04.344146+00:00"
+    "total": 52267,
+    "posts": 14076,
+    "oldest": "2026-09-25T06:22:34.187643+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4464,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4466,
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 38.7,
-      "likes": 7207,
-      "likes_per_min": 6.12,
-      "acceleration": 0.88,
+      "author": "sachi_202606",
+      "score": 26.3,
+      "likes": 7212,
+      "likes_per_min": 28.16,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 323.7,
-      "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
-      "url": "https://x.com/i/status/2103645791537754582"
+      "age_minutes": 439.6,
+      "text": "鎌倉パスタでランチしてたら、隣のカップルの女の子が「ヤダ、髪の毛入ってる」って言ったの。そしたら彼氏が、「これは一言言わ",
+      "url": "https://x.com/i/status/2103620564808053093"
     },
     {
       "author": "tkzwgrs",
-      "score": 75.2,
-      "likes": 9987,
-      "likes_per_min": 79.24,
-      "acceleration": 0.96,
+      "score": 71.7,
+      "likes": 11313,
+      "likes_per_min": 84.66,
+      "acceleration": 1.07,
       "measured": true,
-      "age_minutes": 129.0,
+      "age_minutes": 144.6,
       "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
       "url": "https://x.com/i/status/2103694802676285942"
     },
     {
-      "author": "soudemarspiguet",
-      "score": 33.8,
-      "likes": 2990,
-      "likes_per_min": 14.869931807569433,
+      "author": "ishyageinin",
+      "score": 40.3,
+      "likes": 19815,
+      "likes_per_min": 218.09,
+      "acceleration": 0.86,
+      "measured": true,
+      "age_minutes": 132.1,
+      "text": "へえこんなの出るんだ。",
+      "url": "https://x.com/i/status/2103697960227803432"
+    },
+    {
+      "author": "yu_h0ng",
+      "score": 40.1,
+      "likes": 7898,
+      "likes_per_min": 110.9,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 201.1,
-      "text": "昨日、家族でフェラーリのディーラーに行った時のこと。\n\n会計が60,001,000円だったので、担当の営業さんに「6,0",
-      "url": "https://x.com/i/status/2103676655898390971"
+      "measured": true,
+      "age_minutes": 164.8,
+      "text": "ほむらに顔を覚えられている\n中沢くんっていったい…… https://t.co/Cwu3wV6VEj",
+      "url": "https://x.com/i/status/2103689719205020126"
     },
     {
-      "author": "nhk_chubu",
-      "score": 51.3,
-      "likes": 10073,
-      "likes_per_min": 32.73,
-      "acceleration": 0.74,
+      "author": "travelingwasabi",
+      "score": 41.7,
+      "likes": 3051,
+      "likes_per_min": 34.8,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 164.0,
-      "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
-      "url": "https://x.com/i/status/2103685978368213045"
-    },
-    {
-      "author": "yellow_skrt",
-      "score": 38.5,
-      "likes": 41558,
-      "likes_per_min": 153.59,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 172.9,
-      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
-      "url": "https://x.com/i/status/2103683750882377784"
+      "age_minutes": 146.4,
+      "text": "いる。ワイ。 https://t.co/z2SSIDt4pK",
+      "url": "https://x.com/i/status/2103694350215729243"
     }
   ]
 }

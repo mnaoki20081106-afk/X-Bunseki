@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-26T13:36:22.924752+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-26T13:51:53.098813+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
@@ -16,27 +16,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790430647
+      "reset": 1790431577
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-26T13:35:46.543805+00:00",
-  "finished_at": "2026-09-26T13:36:22.923608+00:00",
-  "posts_scanned": 586,
-  "posts_with_history": 438,
-  "posts_flagged": 114,
+  "started_at": "2026-09-26T13:51:16.752608+00:00",
+  "finished_at": "2026-09-26T13:51:53.097762+00:00",
+  "posts_scanned": 607,
+  "posts_with_history": 458,
+  "posts_flagged": 108,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 695,
+  "minutes_since_last_notification": 710,
   "reject_reasons": {
-    "古すぎる": 125,
+    "古すぎる": 133,
     "いいね稼ぎ疑い": 4,
     "誘導文パターン": 1,
-    "いいねが少なすぎる": 231,
-    "失速済み": 7,
-    "初回観測かつ平均速度が低い": 2
+    "失速済み": 3,
+    "いいねが少なすぎる": 237,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51961,
-    "posts": 14719,
-    "oldest": "2026-09-25T13:49:28.103706+00:00"
+    "total": 51976,
+    "posts": 14699,
+    "oldest": "2026-09-25T14:04:42.197321+00:00"
   },
-  "viral_discovery_posts": 119,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4396,
+  "viral_discovery_posts": 121,
+  "million_imp_rescued": 6,
+  "watchlist_active": 4409,
   "top5": [
     {
-      "author": "9taisyo21",
-      "score": 26.1,
-      "likes": 72666,
-      "likes_per_min": 133.54,
-      "acceleration": 0.79,
+      "author": "blacklago_n",
+      "score": 25.7,
+      "likes": 103576,
+      "likes_per_min": 151.12,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 546.3,
-      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
-      "url": "https://x.com/i/status/2103703617014493460"
+      "age_minutes": 704.6,
+      "text": "担当者呼んでこい。全く足りない。 https://t.co/T0DAkxxaHC",
+      "url": "https://x.com/i/status/2103667687004197239"
     },
     {
       "author": "ndahoFischers",
       "score": 26.9,
-      "likes": 26891,
-      "likes_per_min": 80.35,
-      "acceleration": 0.92,
+      "likes": 28071,
+      "likes_per_min": 76.12,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 282.1,
+      "age_minutes": 297.6,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
       "author": "nigo__zyu",
-      "score": 53.1,
-      "likes": 79589,
-      "likes_per_min": 1623.22,
-      "acceleration": 1.02,
+      "score": 49.3,
+      "likes": 101585,
+      "likes_per_min": 1418.94,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 96.0,
+      "age_minutes": 111.5,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "ensemble_stars",
-      "score": 71.3,
-      "likes": 4005,
-      "likes_per_min": 575.0895007266805,
+      "author": "mozuku_zqu",
+      "score": 40.7,
+      "likes": 11325,
+      "likes_per_min": 52.91,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.0,
-      "text": "(9/9)【お知らせ】\n\n『ＭＭ』では各ユニットの課題曲MVが登場！\n\nアプリでの登場に先行して『MaM VS fine",
-      "url": "https://x.com/i/status/2103839354271711607"
+      "measured": true,
+      "age_minutes": 186.5,
+      "text": "吐きたくても吐けない時\n※ちょっと汚い話です\n\n(1/2) https://t.co/Dh5T3xYl3v",
+      "url": "https://x.com/i/status/2103798061839573111"
     },
     {
-      "author": "ensemble_stars",
-      "score": 68.9,
-      "likes": 2297,
-      "likes_per_min": 322.8783986535872,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 7.1,
-      "text": "(8/9)【お知らせ】\n\n9月30日 15時〜\nツアーイベント【ワールドツアー編／AREA06 MaMVSfine】\nを",
-      "url": "https://x.com/i/status/2103839319131861144"
+      "author": "iLiFE_mini",
+      "score": 52.7,
+      "likes": 11145,
+      "likes_per_min": 80.7,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 98.4,
+      "text": "こちらご確認の程よろしくお願いいたします。\n明日のライブと特典会を体調不良のためお休みさせて頂くことになりました。\n直前",
+      "url": "https://x.com/i/status/2103820235895681297"
     }
   ]
 }

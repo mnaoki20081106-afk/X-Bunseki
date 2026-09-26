@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T04:37:10.138098+00:00",
+  "updated_at": "2026-09-26T05:01:54.438780+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -15,26 +15,26 @@
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790398297
+      "remaining": 14,
+      "reset": 1790399779
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T04:36:36.640196+00:00",
-  "finished_at": "2026-09-26T04:37:10.136918+00:00",
-  "posts_scanned": 621,
-  "posts_with_history": 495,
-  "posts_flagged": 91,
+  "started_at": "2026-09-26T05:01:18.460133+00:00",
+  "finished_at": "2026-09-26T05:01:54.437782+00:00",
+  "posts_scanned": 618,
+  "posts_with_history": 437,
+  "posts_flagged": 71,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 155,
+  "minutes_since_last_notification": 180,
   "reject_reasons": {
-    "古すぎる": 165,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 4,
-    "いいねが少なすぎる": 229,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 162,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 8,
+    "失速済み": 9,
+    "いいねが少なすぎる": 233,
+    "誘導文パターン": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52087,
-    "posts": 13847,
-    "oldest": "2026-09-25T04:49:23.800260+00:00"
+    "total": 52129,
+    "posts": 13917,
+    "oldest": "2026-09-25T05:05:01.316623+00:00"
   },
-  "viral_discovery_posts": 142,
+  "viral_discovery_posts": 140,
   "million_imp_rescued": 5,
-  "watchlist_active": 4454,
+  "watchlist_active": 4450,
   "top5": [
     {
-      "author": "livedoornews",
-      "score": 45.4,
-      "likes": 6399,
-      "likes_per_min": 14.77,
-      "acceleration": 0.67,
+      "author": "tkzwgrs",
+      "score": 94.4,
+      "likes": 4706,
+      "likes_per_min": 109.38,
+      "acceleration": 1.43,
       "measured": true,
-      "age_minutes": 236.9,
-      "text": "【搬送】6階から女児2人投げ落とした疑い 父親逮捕\nhttps://t.co/elxn5WIw5S\n\n26日、マンション",
-      "url": "https://x.com/i/status/2103645791537754582"
-    },
-    {
-      "author": "TAXI_56390208",
-      "score": 45.0,
-      "likes": 2701,
-      "likes_per_min": 25.48,
-      "acceleration": 1.57,
-      "measured": true,
-      "age_minutes": 192.2,
-      "text": "FRUITSZIPPER 仲川瑠夏　月足天音\n不仲疑惑はこれが原因？\n「さん」MV撮影中に月足天音の手が仲川瑠夏の歯に直",
-      "url": "https://x.com/i/status/2103657044427637224"
-    },
-    {
-      "author": "nhk_chubu",
-      "score": 78.2,
-      "likes": 5117,
-      "likes_per_min": 134.91,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 77.2,
-      "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
-      "url": "https://x.com/i/status/2103685978368213045"
+      "age_minutes": 66.9,
+      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
+      "url": "https://x.com/i/status/2103694802676285942"
     },
     {
       "author": "milk_info",
-      "score": 73.5,
-      "likes": 46481,
-      "likes_per_min": 251.65,
-      "acceleration": 0.89,
+      "score": 63.3,
+      "likes": 50936,
+      "likes_per_min": 180.07,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 97.1,
+      "age_minutes": 121.9,
       "text": "／\nM!LK 冠バラエティ番組\n2番組放送決定🎉\n＼\n\n👑日本テレビ「M!LKに言ってみ？」\n🗓️放送日時\n10月5日(",
       "url": "https://x.com/i/status/2103680968053629248"
     },
     {
-      "author": "tkzwgrs",
-      "score": 100.0,
-      "likes": 2000,
-      "likes_per_min": 76.61,
-      "acceleration": 1.94,
+      "author": "nhk_chubu",
+      "score": 72.9,
+      "likes": 7247,
+      "likes_per_min": 86.09,
+      "acceleration": 0.64,
       "measured": true,
-      "age_minutes": 42.2,
-      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
-      "url": "https://x.com/i/status/2103694802676285942"
+      "age_minutes": 102.0,
+      "text": "名古屋 ランドマークのテレビ塔の展望台付近から火 https://t.co/74CgoIQvrU https://t.c",
+      "url": "https://x.com/i/status/2103685978368213045"
+    },
+    {
+      "author": "TAXI_56390208",
+      "score": 31.4,
+      "likes": 3071,
+      "likes_per_min": 14.96,
+      "acceleration": 0.59,
+      "measured": true,
+      "age_minutes": 216.9,
+      "text": "FRUITSZIPPER 仲川瑠夏　月足天音\n不仲疑惑はこれが原因？\n「さん」MV撮影中に月足天音の手が仲川瑠夏の歯に直",
+      "url": "https://x.com/i/status/2103657044427637224"
+    },
+    {
+      "author": "yellow_skrt",
+      "score": 48.1,
+      "likes": 29972,
+      "likes_per_min": 256.38,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 110.8,
+      "text": "そちらはどうですか？今タイは激しい洪水で大変ですね。みなさんもどうか気をつけてくださいね。💕💕🙏🏻 https://t.",
+      "url": "https://x.com/i/status/2103683750882377784"
     }
   ]
 }

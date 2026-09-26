@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T09:34:57.493089+00:00",
+  "updated_at": "2026-09-26T09:50:30.583413+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,29 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790416161
+      "reset": 1790417093
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T09:34:20.354320+00:00",
-  "finished_at": "2026-09-26T09:34:57.491622+00:00",
-  "posts_scanned": 613,
-  "posts_with_history": 378,
-  "posts_flagged": 90,
+  "started_at": "2026-09-26T09:49:52.922837+00:00",
+  "finished_at": "2026-09-26T09:50:30.582339+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 449,
+  "posts_flagged": 83,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 453,
+  "minutes_since_last_notification": 469,
   "reject_reasons": {
-    "古すぎる": 159,
+    "古すぎる": 165,
+    "いいね稼ぎ疑い": 2,
     "失速済み": 7,
-    "いいねが少なすぎる": 229,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 17
+    "いいねが少なすぎる": 227,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 50705,
-    "posts": 14162,
-    "oldest": "2026-09-25T09:38:08.333325+00:00"
+    "total": 50699,
+    "posts": 14116,
+    "oldest": "2026-09-25T10:18:54.641840+00:00"
   },
-  "viral_discovery_posts": 124,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4332,
+  "viral_discovery_posts": 117,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4377,
   "top5": [
     {
       "author": "iLiFE_official",
-      "score": 56.3,
-      "likes": 17453,
-      "likes_per_min": 70.86,
-      "acceleration": 0.69,
+      "score": 53.0,
+      "likes": 18355,
+      "likes_per_min": 58.0,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 124.4,
+      "age_minutes": 139.9,
       "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
       "url": "https://x.com/i/status/2103749047148491248"
     },
     {
       "author": "GoAkashin",
-      "score": 33.4,
-      "likes": 16989,
-      "likes_per_min": 81.22,
-      "acceleration": 0.82,
+      "score": 31.1,
+      "likes": 18114,
+      "likes_per_min": 72.34,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 191.5,
+      "age_minutes": 207.0,
       "text": "奴が来る1/2 https://t.co/SCoP1mAQyG",
       "url": "https://x.com/i/status/2103732164223524866"
     },
     {
-      "author": "p_ka2295079",
-      "score": 46.1,
-      "likes": 3068,
-      "likes_per_min": 23.45,
-      "acceleration": 1.14,
-      "measured": true,
-      "age_minutes": 162.2,
-      "text": "妊娠をきっかけに奥さんがおかしくなってしまった方からです🥹🥹 https://t.co/s1OmAQ1Cy8",
-      "url": "https://x.com/i/status/2103739521938628630"
-    },
-    {
-      "author": "Lauren_iroas",
-      "score": 80.8,
-      "likes": 2177,
-      "likes_per_min": 233.92429010801192,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 9.3,
-      "text": "【APEX】じゃすぱーさんRASさんよろしくお願いします【ローレン・イロアス/にじさんじ】 https://t.co/E",
-      "url": "https://x.com/i/status/2103778009052516561"
-    },
-    {
       "author": "rearea_7777",
-      "score": 48.2,
-      "likes": 10947,
-      "likes_per_min": 146.33768807723737,
+      "score": 55.3,
+      "likes": 14322,
+      "likes_per_min": 217.01,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 74.8,
+      "measured": true,
+      "age_minutes": 90.4,
       "text": "お知らせ\n『逃げ上手の若様』23話にて、ちょっと怖いシーンで参加させていただきました！\n\n#逃げ上手の若君　#逃げ若 h",
       "url": "https://x.com/i/status/2103761527144960156"
+    },
+    {
+      "author": "Key4pso2",
+      "score": 36.0,
+      "likes": 10959,
+      "likes_per_min": 67.13,
+      "acceleration": 0.93,
+      "measured": true,
+      "age_minutes": 207.8,
+      "text": "ちっぱい https://t.co/WzNjy1RZyf",
+      "url": "https://x.com/i/status/2103731970190790932"
+    },
+    {
+      "author": "UN_NERV",
+      "score": 51.4,
+      "likes": 97,
+      "likes_per_min": 10.928803602875776,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.9,
+      "text": "【台風第26号実況・予報 2026年09月26日 18:41】\n台風第26号（スリゲ）は、沖縄の南を1時間に10キロの速",
+      "url": "https://x.com/i/status/2103782032241537393"
     }
   ]
 }

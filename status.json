@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T14:31:57.619928+00:00",
+  "updated_at": "2026-09-26T14:47:38.661272+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790433980
+      "reset": 1790434917
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T14:31:18.543648+00:00",
-  "finished_at": "2026-09-26T14:31:57.618905+00:00",
-  "posts_scanned": 598,
-  "posts_with_history": 417,
-  "posts_flagged": 80,
+  "started_at": "2026-09-26T14:46:55.815273+00:00",
+  "finished_at": "2026-09-26T14:47:38.660116+00:00",
+  "posts_scanned": 617,
+  "posts_with_history": 453,
+  "posts_flagged": 92,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 25,
+  "minutes_since_last_notification": 40,
   "reject_reasons": {
-    "古すぎる": 147,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 252,
-    "失速済み": 10,
+    "古すぎる": 146,
+    "いいね稼ぎ疑い": 2,
+    "失速済み": 6,
+    "いいねが少なすぎる": 248,
     "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 6
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52009,
-    "posts": 14741,
-    "oldest": "2026-09-25T14:35:44.846009+00:00"
+    "total": 52020,
+    "posts": 14761,
+    "oldest": "2026-09-25T14:51:09.012759+00:00"
   },
-  "viral_discovery_posts": 118,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4356,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4383,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 25.4,
-      "likes": 30503,
-      "likes_per_min": 58.15,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 337.7,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 42.6,
-      "likes": 146508,
-      "likes_per_min": 1030.97,
-      "acceleration": 0.82,
+      "score": 40.5,
+      "likes": 160566,
+      "likes_per_min": 896.34,
+      "acceleration": 0.87,
       "measured": true,
-      "age_minutes": 151.6,
+      "age_minutes": 167.3,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "wni_jp",
-      "score": 37.1,
-      "likes": 26765,
-      "likes_per_min": 23.59,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 525.7,
-      "text": "＜東京都心は31日連続で雨＞\n東京都心は今日も降水を観測し、これで8月27日から続く連続の降水観測は31日となりました。",
-      "url": "https://x.com/i/status/2103722790079881441"
-    },
-    {
       "author": "YokokawaNaotaka",
-      "score": 36.0,
-      "likes": 57658,
-      "likes_per_min": 183.94,
-      "acceleration": 0.92,
+      "score": 33.0,
+      "likes": 60003,
+      "likes_per_min": 149.52,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 180.6,
+      "age_minutes": 196.3,
       "text": "オリンピア7位でした。\nみんなごめん俺まけた\n\n目からプロテインがずっと溢れてくる\nこんな心の奥底から悔しいと思える出来",
       "url": "https://x.com/i/status/2103809638810669157"
     },
     {
+      "author": "818hiroharu214",
+      "score": 26.0,
+      "likes": 10552,
+      "likes_per_min": 50.33766400782373,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 209.6,
+      "text": "草彅剛謹慎の時 一切電話に出ないで連絡を絶った中居正広と木村拓哉 2回だけうなぎを持って自宅を訪れて一緒に食べて帰った稲",
+      "url": "https://x.com/i/status/2103806286739464524"
+    },
+    {
       "author": "takaichi_sanae",
-      "score": 70.5,
-      "likes": 16327,
-      "likes_per_min": 273.25,
-      "acceleration": 0.81,
+      "score": 70.4,
+      "likes": 19456,
+      "likes_per_min": 199.51,
+      "acceleration": 0.73,
       "measured": true,
-      "age_minutes": 61.2,
+      "age_minutes": 76.8,
       "text": "先ほど、午後9時から、トランプ大統領と電話会談を行いました。\n\nトランプ大統領からは、習近平国家主席の訪米直後というタイ",
       "url": "https://x.com/i/status/2103839703808229871"
+    },
+    {
+      "author": "ohmyhiroto",
+      "score": 72.6,
+      "likes": 9463,
+      "likes_per_min": 180.31,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 71.5,
+      "text": "お！やばいむり爆笑ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ可愛いから大丈夫だよ https:",
+      "url": "https://x.com/i/status/2103841049831690404"
     }
   ]
 }

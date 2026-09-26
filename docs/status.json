@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-26T11:32:14.695540+00:00",
+  "updated_at": "2026-09-26T11:47:45.035621+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 5,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790423203
+      "reset": 1790424133
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T11:31:41.943650+00:00",
-  "finished_at": "2026-09-26T11:32:14.694433+00:00",
-  "posts_scanned": 627,
-  "posts_with_history": 384,
-  "posts_flagged": 122,
+  "started_at": "2026-09-26T11:47:12.121655+00:00",
+  "finished_at": "2026-09-26T11:47:45.034563+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 430,
+  "posts_flagged": 107,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 570,
+  "minutes_since_last_notification": 586,
   "reject_reasons": {
-    "古すぎる": 156,
-    "いいねが少なすぎる": 223,
-    "初回観測かつ平均速度が低い": 10,
-    "失速済み": 7,
-    "誘導文パターン": 1,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 149,
+    "失速済み": 6,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 237,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51929,
-    "posts": 14543,
-    "oldest": "2026-09-25T11:37:07.341472+00:00"
+    "total": 51933,
+    "posts": 14594,
+    "oldest": "2026-09-25T11:52:41.144573+00:00"
   },
-  "viral_discovery_posts": 145,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4393,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 2,
+  "watchlist_active": 4416,
   "top5": [
     {
-      "author": "9taisyo21",
-      "score": 27.2,
-      "likes": 52148,
-      "likes_per_min": 211.71,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 422.2,
-      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
-      "url": "https://x.com/i/status/2103703617014493460"
-    },
-    {
       "author": "ndahoFischers",
-      "score": 40.1,
-      "likes": 14854,
-      "likes_per_min": 125.92,
-      "acceleration": 1.01,
+      "score": 37.3,
+      "likes": 16755,
+      "likes_per_min": 122.6,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 158.0,
+      "age_minutes": 173.5,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 96.3,
-      "likes": 9090,
-      "likes_per_min": 225.29,
-      "acceleration": 1.23,
+      "author": "amane_fz1026",
+      "score": 53.6,
+      "likes": 6134,
+      "likes_per_min": 84.31,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 41.4,
+      "age_minutes": 67.0,
+      "text": "明日！ちょめでた！のど自慢！よろしくお願いします！",
+      "url": "https://x.com/i/status/2103796904673124460"
+    },
+    {
+      "author": "FRUITS_ZIPPER",
+      "score": 92.6,
+      "likes": 12066,
+      "likes_per_min": 191.93,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 56.9,
       "text": "FRUITS ZIPPERに対する迷惑行為に関するお願い\n\n平素より、アソビシステム株式会社（以下「当社」）所属タレント",
       "url": "https://x.com/i/status/2103799452272152597"
     },
     {
-      "author": "shevaballey",
-      "score": 44.2,
-      "likes": 5201,
-      "likes_per_min": 37.3922463042405,
+      "author": "FRUITS_ZIPPER",
+      "score": 77.6,
+      "likes": 5715,
+      "likes_per_min": 118.28,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 139.1,
-      "text": "ダサすぎる",
-      "url": "https://x.com/i/status/2103774863488078313"
+      "measured": true,
+      "age_minutes": 47.7,
+      "text": "【ご案内】\n\n仲川瑠夏につきまして、体調不良のため、明日出演予定の「NHKのど自慢」を欠席させていただきます。\n\nファン",
+      "url": "https://x.com/i/status/2103801769671471572"
     },
     {
-      "author": "monst_mixi",
-      "score": 79.3,
-      "likes": 1849,
-      "likes_per_min": 309.38663230048815,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.0,
-      "text": "⚡️ ━━━━━━━ ⚡️\n　　💥大黒天💥\n　　 獣神化決定\n⚡️ ━━━━━━━ ⚡️\n\n詳細は10月中旬の\nモンスト",
-      "url": "https://x.com/i/status/2103808365684285907"
+      "author": "Rkun_pixiv",
+      "score": 55.8,
+      "likes": 10460,
+      "likes_per_min": 149.75,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 80.7,
+      "text": "ハー○ムに抗う話(1/2) https://t.co/a58phiw7hw",
+      "url": "https://x.com/i/status/2103793471807226270"
     }
   ]
 }

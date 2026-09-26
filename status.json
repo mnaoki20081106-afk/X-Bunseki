@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-09-26T21:33:52.853848+00:00",
+  "updated_at": "2026-09-26T21:49:18.281220+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 0,
+    "detail_skipped": 2,
+    "detail_unavailable": 1,
     "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790459291
+      "remaining": 15,
+      "reset": 1790460220
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T21:33:10.359374+00:00",
-  "finished_at": "2026-09-26T21:33:52.852514+00:00",
-  "posts_scanned": 633,
-  "posts_with_history": 541,
-  "posts_flagged": 10,
+  "started_at": "2026-09-26T21:48:39.544404+00:00",
+  "finished_at": "2026-09-26T21:49:18.279022+00:00",
+  "posts_scanned": 594,
+  "posts_with_history": 529,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 242,
+  "minutes_since_last_notification": 257,
   "reject_reasons": {
-    "古すぎる": 442,
-    "いいねが少なすぎる": 123,
-    "初回観測かつ平均速度が低い": 10,
-    "失速済み": 1
+    "古すぎる": 419,
+    "失速済み": 2,
+    "いいねが少なすぎる": 108,
+    "初回観測かつ平均速度が低い": 9
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52834,
-    "posts": 14386,
-    "oldest": "2026-09-25T21:36:49.768590+00:00"
+    "total": 52801,
+    "posts": 14306,
+    "oldest": "2026-09-25T21:52:33.721669+00:00"
   },
-  "viral_discovery_posts": 144,
-  "million_imp_rescued": 2,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 1,
   "watchlist_active": 4459,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 18.4,
-      "likes": 40620,
-      "likes_per_min": 7.3,
-      "acceleration": 1.1,
-      "measured": true,
-      "age_minutes": 759.6,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 29.4,
-      "likes": 282043,
-      "likes_per_min": 138.13,
-      "acceleration": 1.0,
+      "score": 29.7,
+      "likes": 284307,
+      "likes_per_min": 146.82,
+      "acceleration": 1.06,
       "measured": true,
-      "age_minutes": 573.5,
+      "age_minutes": 588.9,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "denfaminicogame",
-      "score": 48.2,
-      "likes": 12296,
-      "likes_per_min": 55.06,
-      "acceleration": 1.03,
+      "score": 46.1,
+      "likes": 13285,
+      "likes_per_min": 64.13,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 204.9,
+      "age_minutes": 220.4,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
       "author": "Koyota0",
-      "score": 52.5,
-      "likes": 12348,
-      "likes_per_min": 25.3,
+      "score": 48.7,
+      "likes": 12695,
+      "likes_per_min": 22.5,
       "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 156.0,
+      "age_minutes": 171.4,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
     },
     {
       "author": "Fuwa_Minato",
-      "score": 78.6,
-      "likes": 1469,
-      "likes_per_min": 23.85,
-      "acceleration": 0.7,
+      "score": 75.3,
+      "likes": 1773,
+      "likes_per_min": 19.71,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 38.2,
+      "age_minutes": 53.6,
       "text": "【APEX】極上のフィジカル練習【不破湊/かいくん/くりくん/にじさんじ】 https://t.co/OfjtxV7Ku",
       "url": "https://x.com/i/status/2103951665842040877"
+    },
+    {
+      "author": "bouncewear",
+      "score": 40.6,
+      "likes": 945,
+      "likes_per_min": 6.23,
+      "acceleration": 1.24,
+      "measured": true,
+      "age_minutes": 96.1,
+      "text": "行列できます https://t.co/lO69X2bd6P",
+      "url": "https://x.com/i/status/2103940976951898258"
     }
   ]
 }

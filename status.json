@@ -1,41 +1,39 @@
 {
-  "updated_at": "2026-09-26T11:08:12.176025+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-26T11:32:14.695540+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
-    "detail_succeeded": 40,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
+    "detail_incomplete": 1,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790421759
+      "reset": 1790423203
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-26T11:07:38.804596+00:00",
-  "finished_at": "2026-09-26T11:08:12.174745+00:00",
-  "posts_scanned": 605,
-  "posts_with_history": 435,
-  "posts_flagged": 108,
+  "started_at": "2026-09-26T11:31:41.943650+00:00",
+  "finished_at": "2026-09-26T11:32:14.694433+00:00",
+  "posts_scanned": 627,
+  "posts_with_history": 384,
+  "posts_flagged": 122,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 546,
+  "minutes_since_last_notification": 570,
   "reject_reasons": {
-    "古すぎる": 148,
-    "誘導文パターン": 1,
+    "古すぎる": 156,
+    "いいねが少なすぎる": 223,
+    "初回観測かつ平均速度が低い": 10,
     "失速済み": 7,
-    "いいねが少なすぎる": 235,
-    "初回観測かつ平均速度が低い": 2,
+    "誘導文パターン": 1,
     "いいね稼ぎ疑い": 1
   },
   "config": {
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51917,
-    "posts": 14447,
-    "oldest": "2026-09-25T11:21:32.647872+00:00"
+    "total": 51929,
+    "posts": 14543,
+    "oldest": "2026-09-25T11:37:07.341472+00:00"
   },
-  "viral_discovery_posts": 130,
+  "viral_discovery_posts": 145,
   "million_imp_rescued": 3,
-  "watchlist_active": 4396,
+  "watchlist_active": 4393,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 45.1,
-      "likes": 11827,
-      "likes_per_min": 125.25,
-      "acceleration": 1.14,
+      "author": "9taisyo21",
+      "score": 27.2,
+      "likes": 52148,
+      "likes_per_min": 211.71,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 134.0,
+      "age_minutes": 422.2,
+      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
+      "url": "https://x.com/i/status/2103703617014493460"
+    },
+    {
+      "author": "ndahoFischers",
+      "score": 40.1,
+      "likes": 14854,
+      "likes_per_min": 125.92,
+      "acceleration": 1.01,
+      "measured": true,
+      "age_minutes": 158.0,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "iLiFE_official",
-      "score": 35.9,
-      "likes": 21389,
-      "likes_per_min": 30.97,
-      "acceleration": 0.92,
+      "author": "FRUITS_ZIPPER",
+      "score": 96.3,
+      "likes": 9090,
+      "likes_per_min": 225.29,
+      "acceleration": 1.23,
       "measured": true,
-      "age_minutes": 217.6,
-      "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
-      "url": "https://x.com/i/status/2103749047148491248"
+      "age_minutes": 41.4,
+      "text": "FRUITS ZIPPERに対する迷惑行為に関するお願い\n\n平素より、アソビシステム株式会社（以下「当社」）所属タレント",
+      "url": "https://x.com/i/status/2103799452272152597"
     },
     {
-      "author": "hirox246",
-      "score": 64.6,
-      "likes": 5455,
-      "likes_per_min": 53.65,
+      "author": "shevaballey",
+      "score": 44.2,
+      "likes": 5201,
+      "likes_per_min": 37.3922463042405,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 115.9,
-      "text": "ジャングリア173億円の赤字。\nクールジャパン（税金）から80億円出資。\n沖縄公庫（税金）の追加融資30億円。\n他人事だ",
-      "url": "https://x.com/i/status/2103774653105799304"
+      "measured": false,
+      "age_minutes": 139.1,
+      "text": "ダサすぎる",
+      "url": "https://x.com/i/status/2103774863488078313"
     },
     {
-      "author": "sd_bt",
-      "score": 70.0,
-      "likes": 15810,
-      "likes_per_min": 116.54,
-      "acceleration": 0.71,
-      "measured": true,
-      "age_minutes": 68.2,
-      "text": "／\n15th Anniversary Special Event\n「超特急×DISH//」開催決定！✨\n＼\n\nトークやラ",
-      "url": "https://x.com/i/status/2103786667760873839"
-    },
-    {
-      "author": "oricon_anime_",
-      "score": 71.6,
-      "likes": 5268,
-      "likes_per_min": 102.0,
+      "author": "monst_mixi",
+      "score": 79.3,
+      "likes": 1849,
+      "likes_per_min": 309.38663230048815,
       "acceleration": null,
-      "measured": true,
-      "age_minutes": 79.7,
-      "text": "杉田智和を銀時役に選んだ理由は？\n『銀魂』空知先生、選考理由を初告白\nhttps://t.co/apzu9EOOQ6\n⠀",
-      "url": "https://x.com/i/status/2103783763813773741"
+      "measured": false,
+      "age_minutes": 6.0,
+      "text": "⚡️ ━━━━━━━ ⚡️\n　　💥大黒天💥\n　　 獣神化決定\n⚡️ ━━━━━━━ ⚡️\n\n詳細は10月中旬の\nモンスト",
+      "url": "https://x.com/i/status/2103808365684285907"
     }
   ]
 }

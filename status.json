@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T00:35:21.826150+00:00",
+  "updated_at": "2026-09-26T00:50:51.954601+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 35,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 5,
+    "detail_skipped": 5,
+    "detail_unavailable": 2,
+    "detail_incomplete": 3,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790383791
+      "remaining": 15,
+      "reset": 1790384720
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T00:34:50.823921+00:00",
-  "finished_at": "2026-09-26T00:35:21.824771+00:00",
-  "posts_scanned": 604,
-  "posts_with_history": 481,
+  "started_at": "2026-09-26T00:50:19.749726+00:00",
+  "finished_at": "2026-09-26T00:50:51.953364+00:00",
+  "posts_scanned": 594,
+  "posts_with_history": 470,
   "posts_flagged": 49,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
-    "古すぎる": 216,
-    "いいね稼ぎ疑い": 3,
-    "誘導文パターン": 9,
-    "いいねが少なすぎる": 229,
+    "古すぎる": 196,
+    "いいね稼ぎ疑い": 2,
+    "誘導文パターン": 10,
+    "いいねが少なすぎる": 217,
     "失速済み": 3,
-    "初回観測かつ平均速度が低い": 2
+    "初回観測かつ平均速度が低い": 6
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52108,
-    "posts": 13605,
-    "oldest": "2026-09-25T00:47:00.695530+00:00"
+    "total": 52095,
+    "posts": 13601,
+    "oldest": "2026-09-25T01:02:39.095082+00:00"
   },
   "viral_discovery_posts": 128,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4389,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4412,
   "top5": [
     {
-      "author": "FRUITS_ZIPPER",
-      "score": 33.0,
-      "likes": 33709,
-      "likes_per_min": 25.06,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 680.0,
-      "text": "メンバーの仲川瑠夏ですが、本日場内アナウンスにてお知らせさせていただきました通り、体調不良のため、一部のみの出演となりま",
-      "url": "https://x.com/i/status/2103473432625381433"
-    },
-    {
       "author": "nabicochan",
-      "score": 29.2,
-      "likes": 15638,
-      "likes_per_min": 30.78,
-      "acceleration": 0.87,
+      "score": 30.9,
+      "likes": 16172,
+      "likes_per_min": 34.42,
+      "acceleration": 1.12,
       "measured": true,
-      "age_minutes": 724.9,
+      "age_minutes": 740.4,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
-      "author": "milk_info",
-      "score": 78.6,
-      "likes": 9331,
-      "likes_per_min": 191.87,
-      "acceleration": null,
+      "author": "livedoornews",
+      "score": 75.1,
+      "likes": 2464,
+      "likes_per_min": 22.3,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 35.3,
+      "age_minutes": 100.1,
+      "text": "【判決】スタバで射殺、64歳男に懲役28年\nhttps://t.co/gEnLgaPgfl\n\n2024年、愛媛県四国中央",
+      "url": "https://x.com/i/status/2103623255605354910"
+    },
+    {
+      "author": "milk_info",
+      "score": 77.0,
+      "likes": 11669,
+      "likes_per_min": 150.7,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 50.8,
       "text": "／   \nシャカレボグッズ、新アイテム\n『M!LKの楽屋ミニチュア』登場🎉\n＼\n\nM!LK ARENA TOUR 202",
       "url": "https://x.com/i/status/2103635664453398557"
     },
     {
-      "author": "orix_crazy",
-      "score": 29.5,
-      "likes": 7095,
-      "likes_per_min": 40.47,
-      "acceleration": 0.89,
+      "author": "30R9gmaMUy3guDJ",
+      "score": 65.0,
+      "likes": 5334,
+      "likes_per_min": 126.72,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 203.2,
-      "text": "平野佳寿の好きなやつ。プロ初勝利のボールをスタンドに投げ入れるフリをする。\n https://t.co/7sQSiXeR",
-      "url": "https://x.com/i/status/2103593427204276615"
+      "age_minutes": 49.6,
+      "text": "村上宗隆が第34号ホームラン🔥\n\n菅野智之から本塁打を放つ！\n「村上宗隆vs菅野智之」日本人対決\n\n【シーズン成績】\n打",
+      "url": "https://x.com/i/status/2103635966435237923"
     },
     {
-      "author": "livedoornews",
-      "score": 75.7,
-      "likes": 2118,
-      "likes_per_min": 24.85,
-      "acceleration": 0.73,
-      "measured": true,
-      "age_minutes": 84.6,
-      "text": "【判決】スタバで射殺、64歳男に懲役28年\nhttps://t.co/gEnLgaPgfl\n\n2024年、愛媛県四国中央",
-      "url": "https://x.com/i/status/2103623255605354910"
+      "author": "SAK_SAK_SAKUMA",
+      "score": 61.3,
+      "likes": 2042,
+      "likes_per_min": 252.1223409460582,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.1,
+      "text": "#佐久間のイソスタ 🆙した\n#ベビーワセリンリップ 新CM🎥\n https://t.co/fM03O0bxTk",
+      "url": "https://x.com/i/status/2103646419886518547"
     }
   ]
 }

@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-09-26T13:05:19.738485+00:00",
+  "updated_at": "2026-09-26T13:20:51.100363+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 38,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 2,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790428785
+      "reset": 1790429716
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T13:04:44.615207+00:00",
-  "finished_at": "2026-09-26T13:05:19.737596+00:00",
-  "posts_scanned": 619,
-  "posts_with_history": 434,
-  "posts_flagged": 127,
+  "started_at": "2026-09-26T13:20:15.331064+00:00",
+  "finished_at": "2026-09-26T13:20:51.099197+00:00",
+  "posts_scanned": 616,
+  "posts_with_history": 446,
+  "posts_flagged": 128,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 664,
+  "minutes_since_last_notification": 679,
   "reject_reasons": {
-    "古すぎる": 134,
-    "いいね稼ぎ疑い": 5,
-    "誘導文パターン": 1,
-    "失速済み": 9,
-    "いいねが少なすぎる": 255,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 128,
+    "失速済み": 5,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 244,
+    "初回観測かつ平均速度が低い": 9
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51956,
-    "posts": 14689,
-    "oldest": "2026-09-25T13:18:02.775825+00:00"
+    "total": 51964,
+    "posts": 14709,
+    "oldest": "2026-09-25T13:33:36.963711+00:00"
   },
-  "viral_discovery_posts": 126,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4423,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 8,
+  "watchlist_active": 4407,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 27.6,
-      "likes": 24289,
-      "likes_per_min": 94.83,
-      "acceleration": 1.06,
+      "score": 26.9,
+      "likes": 25643,
+      "likes_per_min": 87.26,
+      "acceleration": 0.92,
       "measured": true,
-      "age_minutes": 251.1,
+      "age_minutes": 266.6,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "tkzwgrs",
-      "score": 35.6,
-      "likes": 28404,
-      "likes_per_min": 39.18,
-      "acceleration": 0.51,
+      "author": "9taisyo21",
+      "score": 26.2,
+      "likes": 70592,
+      "likes_per_min": 169.82,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 550.3,
-      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
-      "url": "https://x.com/i/status/2103694802676285942"
+      "age_minutes": 530.8,
+      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
+      "url": "https://x.com/i/status/2103703617014493460"
     },
     {
-      "author": "shevaballey",
-      "score": 38.0,
-      "likes": 10432,
-      "likes_per_min": 43.67,
-      "acceleration": 0.9,
+      "author": "nigo__zyu",
+      "score": 56.3,
+      "likes": 54378,
+      "likes_per_min": 1594.38,
+      "acceleration": 1.25,
       "measured": true,
-      "age_minutes": 232.2,
-      "text": "ダサすぎる",
-      "url": "https://x.com/i/status/2103774863488078313"
+      "age_minutes": 80.5,
+      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
+      "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "iLiFE_official",
-      "score": 63.1,
-      "likes": 9665,
-      "likes_per_min": 89.79,
-      "acceleration": 0.78,
+      "score": 60.7,
+      "likes": 10708,
+      "likes_per_min": 67.22,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 65.1,
+      "age_minutes": 80.6,
       "text": "明日の若葉のあ生誕祭2026「若葉のあちゃんはぴっちぴちの18さい！♡」ですが、虹羽みにが体調不良の為、ライブおよび特典",
       "url": "https://x.com/i/status/2103816910051950936"
     },
     {
-      "author": "YokokawaNaotaka",
-      "score": 49.4,
-      "likes": 38411,
-      "likes_per_min": 352.39,
-      "acceleration": 0.9,
+      "author": "lIbertAs_717",
+      "score": 33.7,
+      "likes": 5827,
+      "likes_per_min": 17.59,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 94.0,
-      "text": "オリンピア7位でした。\nみんなごめん俺まけた\n\n目からプロテインがずっと溢れてくる\nこんな心の奥底から悔しいと思える出来",
-      "url": "https://x.com/i/status/2103809638810669157"
+      "age_minutes": 197.0,
+      "text": "これのフル探してる",
+      "url": "https://x.com/i/status/2103787632866283539"
     }
   ]
 }

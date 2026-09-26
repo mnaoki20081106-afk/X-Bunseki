@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-09-26T08:32:42.731289+00:00",
+  "updated_at": "2026-09-26T08:48:14.097905+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
+    "detail_incomplete": 0,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790412427
+      "reset": 1790413359
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T08:32:06.149325+00:00",
-  "finished_at": "2026-09-26T08:32:42.730222+00:00",
-  "posts_scanned": 628,
-  "posts_with_history": 403,
-  "posts_flagged": 90,
+  "started_at": "2026-09-26T08:47:38.341506+00:00",
+  "finished_at": "2026-09-26T08:48:14.096874+00:00",
+  "posts_scanned": 608,
+  "posts_with_history": 455,
+  "posts_flagged": 89,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 391,
+  "minutes_since_last_notification": 406,
   "reject_reasons": {
-    "古すぎる": 171,
-    "いいねが少なすぎる": 239,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 14,
-    "失速済み": 7
+    "古すぎる": 154,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 243,
+    "失速済み": 5,
+    "誘導文パターン": 1,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51192,
-    "posts": 14187,
-    "oldest": "2026-09-25T08:36:00.087543+00:00"
+    "total": 51201,
+    "posts": 14213,
+    "oldest": "2026-09-25T08:51:28.501877+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4407,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4424,
   "top5": [
     {
-      "author": "iLiFE_official",
-      "score": 70.8,
-      "likes": 11902,
-      "likes_per_min": 168.74,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 62.1,
-      "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
-      "url": "https://x.com/i/status/2103749047148491248"
-    },
-    {
-      "author": "modelpress",
-      "score": 65.9,
-      "likes": 2503,
-      "likes_per_min": 55.71,
-      "acceleration": 1.86,
-      "measured": true,
-      "age_minutes": 65.2,
-      "text": "「ミスセブンティーン2026」4人決定\n「今日好き」多田梨音ら新専属モデルに✨️\nhttps://t.co/R2XuGn",
-      "url": "https://x.com/i/status/2103748282292039915"
-    },
-    {
-      "author": "wni_jp",
-      "score": 61.7,
-      "likes": 13917,
-      "likes_per_min": 64.46,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 166.5,
-      "text": "＜東京都心は31日連続で雨＞\n東京都心は今日も降水を観測し、これで8月27日から続く連続の降水観測は31日となりました。",
-      "url": "https://x.com/i/status/2103722790079881441"
-    },
-    {
       "author": "_maru_oo00",
-      "score": 37.9,
-      "likes": 13142,
-      "likes_per_min": 101.3,
-      "acceleration": 0.9,
+      "score": 36.0,
+      "likes": 14747,
+      "likes_per_min": 103.39,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 202.5,
+      "age_minutes": 218.0,
       "text": "これは性暴力すぎてやばいなと読んでいたら最後の私19歳旦那42歳で完全アウト https://t.co/lMR9MK9h",
       "url": "https://x.com/i/status/2103713731666665622"
     },
     {
-      "author": "GoAkashin",
-      "score": 42.6,
-      "likes": 11382,
-      "likes_per_min": 97.1,
-      "acceleration": 0.84,
+      "author": "iLiFE_official",
+      "score": 68.2,
+      "likes": 13647,
+      "likes_per_min": 112.41,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 129.2,
+      "age_minutes": 77.7,
+      "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
+      "url": "https://x.com/i/status/2103749047148491248"
+    },
+    {
+      "author": "GoAkashin",
+      "score": 41.6,
+      "likes": 12917,
+      "likes_per_min": 98.88,
+      "acceleration": 1.02,
+      "measured": true,
+      "age_minutes": 144.8,
       "text": "奴が来る1/2 https://t.co/SCoP1mAQyG",
       "url": "https://x.com/i/status/2103732164223524866"
+    },
+    {
+      "author": "takaharu_ooi",
+      "score": 37.4,
+      "likes": 4962,
+      "likes_per_min": 19.13,
+      "acceleration": 0.85,
+      "measured": true,
+      "age_minutes": 154.9,
+      "text": "いえ\n彼は僕にも関係会社にも謝罪してます\n僕は彼の麻雀と配信の才能を高く評価しており、引退する時は僕の仕事を彼に託したい",
+      "url": "https://x.com/i/status/2103729606918570412"
+    },
+    {
+      "author": "nzmchqn",
+      "score": 42.0,
+      "likes": 19543,
+      "likes_per_min": 74.92,
+      "acceleration": 0.84,
+      "measured": true,
+      "age_minutes": 205.3,
+      "text": "Discordの顔認証、INMU KING0.25倍で通るWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+      "url": "https://x.com/i/status/2103716921594331156"
     }
   ]
 }

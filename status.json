@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T15:34:04.628016+00:00",
+  "updated_at": "2026-09-26T15:49:42.733345+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 38,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 2,
-    "detail_unavailable": 0,
-    "detail_incomplete": 2,
-    "invalid_tweets": 2,
+    "detail_skipped": 1,
+    "detail_unavailable": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790437710
+      "remaining": 15,
+      "reset": 1790438646
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T15:33:29.392312+00:00",
-  "finished_at": "2026-09-26T15:34:04.626993+00:00",
+  "started_at": "2026-09-26T15:49:05.030688+00:00",
+  "finished_at": "2026-09-26T15:49:42.732245+00:00",
   "posts_scanned": 624,
-  "posts_with_history": 502,
-  "posts_flagged": 88,
+  "posts_with_history": 503,
+  "posts_flagged": 77,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 87,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "古すぎる": 151,
-    "いいね稼ぎ疑い": 2,
-    "いいねが少なすぎる": 251,
-    "誘導文パターン": 1,
-    "初回観測かつ平均速度が低い": 7,
-    "失速済み": 2
+    "古すぎる": 161,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 10,
+    "いいねが少なすぎる": 252,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52123,
-    "posts": 14777,
-    "oldest": "2026-09-25T15:46:27.980555+00:00"
+    "total": 52150,
+    "posts": 14784,
+    "oldest": "2026-09-25T16:01:53.781618+00:00"
   },
-  "viral_discovery_posts": 137,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4394,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4400,
   "top5": [
     {
-      "author": "blacklago_n",
-      "score": 25.9,
-      "likes": 111603,
-      "likes_per_min": 70.41,
-      "acceleration": 0.86,
-      "measured": true,
-      "age_minutes": 806.8,
-      "text": "担当者呼んでこい。全く足りない。 https://t.co/T0DAkxxaHC",
-      "url": "https://x.com/i/status/2103667687004197239"
-    },
-    {
-      "author": "9taisyo21",
-      "score": 25.8,
-      "likes": 85585,
-      "likes_per_min": 88.47,
-      "acceleration": 0.75,
-      "measured": true,
-      "age_minutes": 664.0,
-      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
-      "url": "https://x.com/i/status/2103703617014493460"
-    },
-    {
       "author": "nigo__zyu",
-      "score": 32.8,
-      "likes": 193792,
-      "likes_per_min": 612.1,
-      "acceleration": 0.81,
+      "score": 31.2,
+      "likes": 203161,
+      "likes_per_min": 599.24,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 213.7,
+      "age_minutes": 229.3,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "Arie_SwAl",
-      "score": 52.7,
-      "likes": 5068,
-      "likes_per_min": 55.52,
-      "acceleration": 6.23,
+      "author": "j8au7h",
+      "score": 36.1,
+      "likes": 28305,
+      "likes_per_min": 280.15,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 115.9,
-      "text": "【お知らせ】\n桜空ちゅいんちゃん(@para_chuin)に靴をお返ししてきました🙇🏼‍♂️\n\n29歳と17歳、同じ干支",
-      "url": "https://x.com/i/status/2103841571284377950"
+      "age_minutes": 161.1,
+      "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
+      "url": "https://x.com/i/status/2103834126533193958"
     },
     {
-      "author": "takaichi_sanae",
-      "score": 61.9,
-      "likes": 26231,
-      "likes_per_min": 125.72,
-      "acceleration": 0.92,
+      "author": "UN_NERV",
+      "score": 50.4,
+      "likes": 75,
+      "likes_per_min": 9.604491418755089,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 7.8,
+      "text": "【台風第26号実況・予報 2026年09月27日 00:41】\n台風第26号（スリゲ）は、沖縄の南をゆっくりと北に進んで",
+      "url": "https://x.com/i/status/2103872697457623065"
+    },
+    {
+      "author": "kb_dn_",
+      "score": 29.5,
+      "likes": 27484,
+      "likes_per_min": 95.81,
+      "acceleration": 0.83,
       "measured": true,
-      "age_minutes": 123.3,
-      "text": "先ほど、午後9時から、トランプ大統領と電話会談を行いました。\n\nトランプ大統領からは、習近平国家主席の訪米直後というタイ",
-      "url": "https://x.com/i/status/2103839703808229871"
+      "age_minutes": 197.0,
+      "text": "このたわけ https://t.co/vIXquAUVVl",
+      "url": "https://x.com/i/status/2103825072721100871"
+    },
+    {
+      "author": "SAK_SAK_SAKUMA",
+      "score": 49.3,
+      "likes": 749,
+      "likes_per_min": 121.28546562506364,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.2,
+      "text": "クロスケ可愛い (^^) \n #風を継ぐもの\n #かぜつぐ",
+      "url": "https://x.com/i/status/2103873107950010816"
     }
   ]
 }

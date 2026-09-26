@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T07:22:34.404691+00:00",
+  "updated_at": "2026-09-26T07:38:03.189413+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,29 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "invalid_tweets": 8,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790408223
+      "remaining": 14,
+      "reset": 1790409151
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T07:22:02.473247+00:00",
-  "finished_at": "2026-09-26T07:22:34.403562+00:00",
-  "posts_scanned": 615,
-  "posts_with_history": 491,
-  "posts_flagged": 73,
+  "started_at": "2026-09-26T07:37:30.394750+00:00",
+  "finished_at": "2026-09-26T07:38:03.188384+00:00",
+  "posts_scanned": 620,
+  "posts_with_history": 486,
+  "posts_flagged": 72,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 321,
+  "minutes_since_last_notification": 336,
   "reject_reasons": {
-    "古すぎる": 180,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 224,
-    "失速済み": 2,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 4
+    "古すぎる": 179,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 233,
+    "誘導文パターン": 2,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,66 +50,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 51690,
-    "posts": 14101,
-    "oldest": "2026-09-25T07:33:41.554704+00:00"
+    "total": 51718,
+    "posts": 14131,
+    "oldest": "2026-09-25T07:49:14.325470+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 2,
-  "watchlist_active": 4473,
+  "viral_discovery_posts": 133,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4489,
   "top5": [
     {
-      "author": "sachi_202606",
-      "score": 25.2,
-      "likes": 8929,
-      "likes_per_min": 24.54,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 502.6,
-      "text": "鎌倉パスタでランチしてたら、隣のカップルの女の子が「ヤダ、髪の毛入ってる」って言ったの。そしたら彼氏が、「これは一言言わ",
-      "url": "https://x.com/i/status/2103620564808053093"
-    },
-    {
-      "author": "Mllkwalkee",
-      "score": 27.5,
-      "likes": 19826,
-      "likes_per_min": 233.75,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 236.9,
-      "text": "「パパ〜捕まった人たちが演奏してるの？」\n\n「うん、そうだよ〜」 https://t.co/9OxIFvMwqB",
-      "url": "https://x.com/i/status/2103687407917048138"
-    },
-    {
-      "author": "_maru_oo00",
-      "score": 58.5,
-      "likes": 5559,
-      "likes_per_min": 130.8,
-      "acceleration": 1.78,
-      "measured": true,
-      "age_minutes": 132.3,
-      "text": "これは性暴力すぎてやばいなと読んでいたら最後の私19歳旦那42歳で完全アウト https://t.co/lMR9MK9h",
-      "url": "https://x.com/i/status/2103713731666665622"
-    },
-    {
       "author": "wni_jp",
-      "score": 82.6,
-      "likes": 9021,
-      "likes_per_min": 97.52,
-      "acceleration": 0.8,
+      "score": 78.5,
+      "likes": 10218,
+      "likes_per_min": 77.27,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 96.3,
+      "age_minutes": 111.8,
       "text": "＜東京都心は31日連続で雨＞\n東京都心は今日も降水を観測し、これで8月27日から続く連続の降水観測は31日となりました。",
       "url": "https://x.com/i/status/2103722790079881441"
     },
     {
-      "author": "tkzwgrs",
-      "score": 46.0,
-      "likes": 8104,
-      "likes_per_min": 38.08,
-      "acceleration": 0.92,
+      "author": "DAZNJPNBaseball",
+      "score": 76.1,
+      "likes": 2544,
+      "likes_per_min": 240.2032013333443,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 10.6,
+      "text": "すべて、手に入れる\n\n佐藤輝明 第37号ホームラン\n球団史上4人目の2年連続100打点\n\n⚾️DeNA×阪神\n#阪神タイ",
+      "url": "https://x.com/i/status/2103748266508816871"
+    },
+    {
+      "author": "iLiFE_official",
+      "score": 80.5,
+      "likes": 2309,
+      "likes_per_min": 308.2351981493108,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 7.5,
+      "text": "【若葉のあ生誕祭2026】\n\nのあ生誕祭のグッズメニュー公開🍀🐈\n\nこちらが2026年生誕祭グッズです 🌟⋆꙳ 全部げっ",
+      "url": "https://x.com/i/status/2103749047148491248"
+    },
+    {
+      "author": "ishyageinin",
+      "score": 36.6,
+      "likes": 8208,
+      "likes_per_min": 57.9,
+      "acceleration": 0.77,
       "measured": true,
-      "age_minutes": 146.0,
+      "age_minutes": 135.2,
+      "text": "私は飛行機に偽名で乗らざるを得ない https://t.co/qWo6LE8DR9",
+      "url": "https://x.com/i/status/2103716900446568570"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 43.2,
+      "likes": 8671,
+      "likes_per_min": 36.6,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 161.5,
       "text": "【話題】米津玄師さん＆川谷絵音さん、偶然同じYouTubeチャンネルに激ハマりする\n\n■『内見ゴリラの珍賃貸』\n・ゴリラ",
       "url": "https://x.com/i/status/2103710289409843408"
     }

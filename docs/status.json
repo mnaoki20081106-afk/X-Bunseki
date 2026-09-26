@@ -1,41 +1,38 @@
 {
-  "updated_at": "2026-09-26T20:07:13.337530+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-26T20:22:41.828029+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
-    "detail_succeeded": 37,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 3,
-    "detail_unavailable": 2,
+    "detail_skipped": 1,
+    "detail_unavailable": 0,
     "detail_incomplete": 1,
     "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790454094
+      "reset": 1790455024
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-26T20:06:33.922767+00:00",
-  "finished_at": "2026-09-26T20:07:13.336300+00:00",
-  "posts_scanned": 607,
-  "posts_with_history": 560,
-  "posts_flagged": 6,
+  "started_at": "2026-09-26T20:22:03.252124+00:00",
+  "finished_at": "2026-09-26T20:22:41.826877+00:00",
+  "posts_scanned": 632,
+  "posts_with_history": 578,
+  "posts_flagged": 5,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 155,
+  "minutes_since_last_notification": 171,
   "reject_reasons": {
-    "古すぎる": 406,
+    "古すぎる": 427,
     "いいね稼ぎ疑い": 1,
-    "失速済み": 5,
-    "いいねが少なすぎる": 112,
-    "初回観測かつ平均速度が低い": 9
+    "初回観測かつ平均速度が低い": 9,
+    "いいねが少なすぎる": 117
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -52,68 +49,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52806,
-    "posts": 14549,
-    "oldest": "2026-09-25T20:19:20.972612+00:00"
+    "total": 52808,
+    "posts": 14518,
+    "oldest": "2026-09-25T20:34:56.166880+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4445,
+  "viral_discovery_posts": 139,
+  "million_imp_rescued": 1,
+  "watchlist_active": 4455,
   "top5": [
     {
       "author": "ndahoFischers",
-      "score": 17.1,
-      "likes": 40087,
-      "likes_per_min": 7.11,
-      "acceleration": 0.85,
+      "score": 14.9,
+      "likes": 40162,
+      "likes_per_min": 4.85,
+      "acceleration": 0.68,
       "measured": true,
-      "age_minutes": 673.0,
+      "age_minutes": 688.4,
       "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
       "url": "https://x.com/i/status/2103770109697487067"
     },
     {
-      "author": "nigo__zyu",
-      "score": 28.9,
-      "likes": 270916,
-      "likes_per_min": 115.2,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 486.9,
-      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
-      "url": "https://x.com/i/status/2103816946953417023"
-    },
-    {
-      "author": "osasimikuwasero",
-      "score": 22.3,
-      "likes": 49585,
-      "likes_per_min": 23.58,
-      "acceleration": 0.52,
-      "measured": true,
-      "age_minutes": 865.4,
-      "text": "まさにこれ。\n\nしかも珍しくないんですよ。\n\n私が中学の時にも起きました。\nしかも1人1000円。クラスの2、3人の女の",
-      "url": "https://x.com/i/status/2103721689695871163"
-    },
-    {
       "author": "denfaminicogame",
-      "score": 69.9,
-      "likes": 7868,
-      "likes_per_min": 64.65,
+      "score": 61.9,
+      "likes": 8682,
+      "likes_per_min": 52.6,
       "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 118.3,
+      "age_minutes": 133.7,
       "text": "『マイクラ』新たなディメンション「ザ・シフト」が来年追加へ。「ネザー」「ジ・エンド」に続く14年ぶりの新たな世界\nhtt",
       "url": "https://x.com/i/status/2103909701713010963"
     },
     {
       "author": "Koyota0",
-      "score": 74.1,
-      "likes": 9392,
-      "likes_per_min": 52.46,
-      "acceleration": 0.57,
+      "score": 74.5,
+      "likes": 10052,
+      "likes_per_min": 42.65,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 69.3,
+      "age_minutes": 84.8,
       "text": "GLOBAL CHAMPIONSHIP\nDay 3rd 🥉\n明日マジ頑張ります https://t.co/nogkDpj",
       "url": "https://x.com/i/status/2103922026142630048"
+    },
+    {
+      "author": "Johndophoenix",
+      "score": 24.1,
+      "likes": 3159,
+      "likes_per_min": 8.79,
+      "acceleration": 1.0,
+      "measured": true,
+      "age_minutes": 228.7,
+      "text": "子供は親を手本に育つTS三コマ https://t.co/kGn99rqa4w",
+      "url": "https://x.com/i/status/2103885805169365324"
+    },
+    {
+      "author": "gokiburichance",
+      "score": 26.7,
+      "likes": 7838,
+      "likes_per_min": 15.06,
+      "acceleration": 0.98,
+      "measured": true,
+      "age_minutes": 206.5,
+      "text": "むたみわとまいちゃん https://t.co/PeczMiHWlB",
+      "url": "https://x.com/i/status/2103891391512527255"
     }
   ]
 }

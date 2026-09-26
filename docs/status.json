@@ -1,38 +1,40 @@
 {
-  "updated_at": "2026-09-26T00:04:19.518612+00:00",
+  "updated_at": "2026-09-26T00:19:51.425586+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 36,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 4,
     "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 1,
+    "detail_incomplete": 3,
+    "invalid_tweets": 3,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790381927
+      "reset": 1790382859
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T00:03:46.062228+00:00",
-  "finished_at": "2026-09-26T00:04:19.517606+00:00",
-  "posts_scanned": 596,
-  "posts_with_history": 485,
-  "posts_flagged": 51,
-  "notified_count": 1,
+  "started_at": "2026-09-26T00:19:17.981505+00:00",
+  "finished_at": "2026-09-26T00:19:51.424604+00:00",
+  "posts_scanned": 611,
+  "posts_with_history": 472,
+  "posts_flagged": 46,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 405,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
-    "古すぎる": 246,
+    "古すぎる": 240,
+    "いいね稼ぎ疑い": 1,
     "誘導文パターン": 5,
-    "初回観測かつ平均速度が低い": 1,
-    "いいねが少なすぎる": 210
+    "いいねが少なすぎる": 214,
+    "初回観測かつ平均速度が低い": 7,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -49,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52123,
-    "posts": 13637,
-    "oldest": "2026-09-25T00:07:18.660781+00:00"
+    "total": 52122,
+    "posts": 13652,
+    "oldest": "2026-09-25T00:22:57.117510+00:00"
   },
-  "viral_discovery_posts": 119,
+  "viral_discovery_posts": 131,
   "million_imp_rescued": 2,
-  "watchlist_active": 4362,
+  "watchlist_active": 4386,
   "top5": [
     {
       "author": "Qchan_biyou",
-      "score": 24.7,
-      "likes": 15441,
-      "likes_per_min": 13.17,
-      "acceleration": 1.05,
+      "score": 23.3,
+      "likes": 15622,
+      "likes_per_min": 11.65,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 925.5,
+      "age_minutes": 941.0,
       "text": "ほんとだ…\nえなこも同じこと言ってる。\nXマジ感謝 https://t.co/3ykCxBkkWX",
       "url": "https://x.com/i/status/2103403837013016850"
     },
     {
       "author": "nabicochan",
-      "score": 30.3,
-      "likes": 14614,
-      "likes_per_min": 40.75,
-      "acceleration": 0.89,
+      "score": 29.7,
+      "likes": 15161,
+      "likes_per_min": 35.19,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 693.8,
+      "age_minutes": 709.4,
       "text": "セッ〇スが上手い男は最初に触る場所でわかる\n\n🥉下手くそ\n・おっぱい\n・唇\n・股間\nすぐ本番に入ろうとする\n\n🥈ちょい上",
       "url": "https://x.com/i/status/2103462135674323029"
     },
     {
+      "author": "milk_info",
+      "score": 75.0,
+      "likes": 6358,
+      "likes_per_min": 320.45289250791365,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 19.8,
+      "text": "／   \nシャカレボグッズ、新アイテム\n『M!LKの楽屋ミニチュア』登場🎉\n＼\n\nM!LK ARENA TOUR 202",
+      "url": "https://x.com/i/status/2103635664453398557"
+    },
+    {
       "author": "livedoornews",
-      "score": 92.7,
-      "likes": 1204,
-      "likes_per_min": 42.61,
-      "acceleration": 1.67,
+      "score": 78.0,
+      "likes": 1733,
+      "likes_per_min": 34.03,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 53.6,
+      "age_minutes": 69.1,
       "text": "【判決】スタバで射殺、64歳男に懲役28年\nhttps://t.co/gEnLgaPgfl\n\n2024年、愛媛県四国中央",
       "url": "https://x.com/i/status/2103623255605354910"
     },
     {
       "author": "orix_crazy",
-      "score": 35.1,
-      "likes": 5758,
-      "likes_per_min": 49.12,
-      "acceleration": 0.96,
+      "score": 32.4,
+      "likes": 6468,
+      "likes_per_min": 45.68,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 172.1,
+      "age_minutes": 187.7,
       "text": "平野佳寿の好きなやつ。プロ初勝利のボールをスタンドに投げ入れるフリをする。\n https://t.co/7sQSiXeR",
       "url": "https://x.com/i/status/2103593427204276615"
-    },
-    {
-      "author": "Vau875",
-      "score": 74.4,
-      "likes": 8835,
-      "likes_per_min": 66.9,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 132.5,
-      "text": "起きんよ普通に",
-      "url": "https://x.com/i/status/2103603391914246578"
     }
   ]
 }

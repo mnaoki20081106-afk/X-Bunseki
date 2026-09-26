@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-26T17:47:23.407689+00:00",
+  "updated_at": "2026-09-26T18:02:56.930823+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 37,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 3,
     "detail_unavailable": 1,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 2,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790445713
+      "remaining": 15,
+      "reset": 1790446642
     },
     "failures": {}
   },
-  "started_at": "2026-09-26T17:46:52.606542+00:00",
-  "finished_at": "2026-09-26T17:47:23.406419+00:00",
-  "posts_scanned": 622,
-  "posts_with_history": 563,
-  "posts_flagged": 12,
+  "started_at": "2026-09-26T18:02:21.634110+00:00",
+  "finished_at": "2026-09-26T18:02:56.928862+00:00",
+  "posts_scanned": 611,
+  "posts_with_history": 564,
+  "posts_flagged": 14,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 212,
-    "いいね稼ぎ疑い": 6,
-    "失速済み": 13,
-    "いいねが少なすぎる": 214,
-    "誘導文パターン": 4,
-    "初回観測かつ平均速度が低い": 1
+    "古すぎる": 236,
+    "いいね稼ぎ疑い": 5,
+    "いいねが少なすぎる": 182,
+    "失速済み": 5,
+    "初回観測かつ平均速度が低い": 1,
+    "誘導文パターン": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52223,
-    "posts": 14800,
-    "oldest": "2026-09-25T17:50:28.579464+00:00"
+    "total": 52219,
+    "posts": 14782,
+    "oldest": "2026-09-25T18:05:59.573849+00:00"
   },
-  "viral_discovery_posts": 131,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4433,
+  "viral_discovery_posts": 138,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4439,
   "top5": [
     {
-      "author": "ndahoFischers",
-      "score": 20.9,
-      "likes": 38459,
-      "likes_per_min": 21.53,
-      "acceleration": 0.79,
+      "author": "9taisyo21",
+      "score": 24.8,
+      "likes": 95832,
+      "likes_per_min": 57.58,
+      "acceleration": 0.81,
       "measured": true,
-      "age_minutes": 533.1,
-      "text": "サイゼリヤの炭酸水って無料で飲んでいいの？　ドリンクバー頼まないとダメだと思ってた、\n教えて詳しい人ーーーー！",
-      "url": "https://x.com/i/status/2103770109697487067"
+      "age_minutes": 812.9,
+      "text": "友達が1年前に別れた元カレにNetflixをずっとタダ見されてて、一旦放置してたらしく。ある日普通にログインしたら、アカ",
+      "url": "https://x.com/i/status/2103703617014493460"
     },
     {
       "author": "nigo__zyu",
-      "score": 28.7,
-      "likes": 247661,
-      "likes_per_min": 245.12,
-      "acceleration": 0.84,
+      "score": 29.5,
+      "likes": 251471,
+      "likes_per_min": 244.89,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 347.0,
+      "age_minutes": 362.6,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "8_rivi",
-      "score": 35.4,
-      "likes": 5461,
-      "likes_per_min": 16.57,
-      "acceleration": 0.7,
+      "author": "tkzwgrs",
+      "score": 28.7,
+      "likes": 31834,
+      "likes_per_min": 11.53,
+      "acceleration": 0.29,
       "measured": true,
-      "age_minutes": 164.5,
+      "age_minutes": 847.9,
+      "text": "【警察GJ】DVパパさん、マンション6階から娘2人を投げ落とすも警察の機転で娘の命に別状なし @岐阜\n\n■三浦友和(25",
+      "url": "https://x.com/i/status/2103694802676285942"
+    },
+    {
+      "author": "8_rivi",
+      "score": 33.8,
+      "likes": 5685,
+      "likes_per_min": 14.4,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 180.1,
       "text": "今もたまに見に行ってる..\n両家顔合わせのレベルも高い🥲🥲✨ https://t.co/V6vDXjP3G4",
       "url": "https://x.com/i/status/2103862877170123234"
     },
     {
-      "author": "MOM_JP_koho",
-      "score": 52.2,
-      "likes": 10051,
-      "likes_per_min": 103.8,
-      "acceleration": 1.09,
+      "author": "eniraka80",
+      "score": 29.4,
+      "likes": 6392,
+      "likes_per_min": 16.56,
+      "acceleration": 0.67,
       "measured": true,
-      "age_minutes": 165.4,
-      "text": "本日9月27日（日）は満月です。狼人間の方などは注意をお願いします。",
-      "url": "https://x.com/i/status/2103862658428813761"
-    },
-    {
-      "author": "High28Hutaba",
-      "score": 38.3,
-      "likes": 14713,
-      "likes_per_min": 56.11,
-      "acceleration": 0.74,
-      "measured": true,
-      "age_minutes": 187.7,
-      "text": "下手くそだなぁ～。 https://t.co/pZIuXaSWGc",
-      "url": "https://x.com/i/status/2103857032344502375"
+      "age_minutes": 223.9,
+      "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
+      "url": "https://x.com/i/status/2103851838022037548"
     }
   ]
 }

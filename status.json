@@ -1,42 +1,40 @@
 {
-  "updated_at": "2026-09-27T01:50:44.074663+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-27T02:06:16.682933+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 18,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790474711
+      "reset": 1790475643
     },
-    "failures": {
-      "schema_changed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-27T01:50:10.761599+00:00",
-  "finished_at": "2026-09-27T01:50:44.073337+00:00",
-  "posts_scanned": 592,
-  "posts_with_history": 482,
-  "posts_flagged": 71,
-  "notified_count": 0,
+  "started_at": "2026-09-27T02:05:42.003889+00:00",
+  "finished_at": "2026-09-27T02:06:16.681163+00:00",
+  "posts_scanned": 603,
+  "posts_with_history": 481,
+  "posts_flagged": 79,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 193,
-    "初回観測かつ平均速度が低い": 3,
-    "誘導文パターン": 11,
-    "いいねが少なすぎる": 195,
-    "失速済み": 1,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 201,
+    "いいねが少なすぎる": 191,
+    "失速済み": 4,
+    "誘導文パターン": 8,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 7
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52990,
-    "posts": 14048,
-    "oldest": "2026-09-26T02:01:45.877319+00:00"
+    "total": 52992,
+    "posts": 14051,
+    "oldest": "2026-09-26T02:17:19.327591+00:00"
   },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4371,
+  "viral_discovery_posts": 137,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4366,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 29.5,
-      "likes": 332418,
-      "likes_per_min": 208.78,
-      "acceleration": 1.07,
+      "score": 29.7,
+      "likes": 336036,
+      "likes_per_min": 233.0,
+      "acceleration": 1.12,
       "measured": true,
-      "age_minutes": 830.4,
+      "age_minutes": 845.9,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
       "author": "koba200x1",
-      "score": 57.3,
-      "likes": 8139,
-      "likes_per_min": 107.36,
-      "acceleration": 0.85,
+      "score": 54.5,
+      "likes": 9636,
+      "likes_per_min": 96.41,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 143.9,
+      "age_minutes": 159.5,
       "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
       "url": "https://x.com/i/status/2103989691490156721"
     },
     {
-      "author": "tkzwgrs",
-      "score": 49.3,
-      "likes": 8898,
-      "likes_per_min": 50.0,
-      "acceleration": 0.94,
+      "author": "unachanpp",
+      "score": 41.9,
+      "likes": 5788,
+      "likes_per_min": 127.77,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 161.6,
-      "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
-      "url": "https://x.com/i/status/2103985256349221170"
-    },
-    {
-      "author": "f_mona_new_kaii",
-      "score": 32.1,
-      "likes": 9809,
-      "likes_per_min": 35.79,
-      "acceleration": 0.9,
-      "measured": true,
-      "age_minutes": 222.3,
-      "text": "ファミクラストア\n「猪俣周杜」写真、全削除される",
-      "url": "https://x.com/i/status/2103969968262128042"
+      "age_minutes": 121.2,
+      "text": "仲里依紗ちゃんが乗せてくれたダウンタイムのオフショット、凛先生とのギャップ大きくて最高ｗｗｗｗｗｗｗ https://t",
+      "url": "https://x.com/i/status/2103999316323102918"
     },
     {
       "author": "NEWS_0915_0502",
-      "score": 24.6,
-      "likes": 6227,
-      "likes_per_min": 31.23384674908428,
+      "score": 31.4,
+      "likes": 7672,
+      "likes_per_min": 93.06,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 199.4,
+      "measured": true,
+      "age_minutes": 214.9,
       "text": "写真が無くなるってことはまだ発表がないだけで脱退、退所だね、きっと。",
       "url": "https://x.com/i/status/2103975743063830657"
+    },
+    {
+      "author": "omegudayon",
+      "score": 39.6,
+      "likes": 6773,
+      "likes_per_min": 69.87,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 150.5,
+      "text": "きっしょ🤢🤮\nこれ娘目当てじゃないの🤢🤮 https://t.co/IBDX3ld3AD",
+      "url": "https://x.com/i/status/2103991938089415146"
     }
   ]
 }

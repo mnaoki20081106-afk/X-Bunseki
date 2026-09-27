@@ -201,6 +201,20 @@ jobs:
             -H "Authorization: Bearer $id_token" \
             -H "Content-Type: application/json" \
             --data-binary @x-monitor-private-snapshot.json
+          mkdir -p data
+          python3 - << 'PY'
+          import json, os
+          from datetime import datetime, timezone
+          payload = {
+              "synced_at": datetime.now(timezone.utc).isoformat(),
+              "source_sha": os.environ.get("GITHUB_SHA", ""),
+              "event_name": os.environ.get("GITHUB_EVENT_NAME", ""),
+              "target": "post-link-private-storage",
+          }
+          with open("data/private_sync_status.json", "w", encoding="utf-8") as handle:
+              json.dump(payload, handle, ensure_ascii=False, indent=2)
+              handle.write("\n")
+          PY
           echo "private monitor snapshot synced"
 
       - name: Sanitize public status
@@ -221,7 +235,7 @@ jobs:
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
           # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
           # 混ぜると git add 全体が失敗するため、個別に確認する。
-          for p in status.json data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
+          for p in status.json data/private_sync_status.json data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

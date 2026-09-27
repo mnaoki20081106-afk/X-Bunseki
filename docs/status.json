@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-27T06:07:31.819132+00:00",
+  "updated_at": "2026-09-27T06:23:01.871309+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
     "detail_incomplete": 0,
     "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790490120
+      "reset": 1790491050
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T06:06:59.666640+00:00",
-  "finished_at": "2026-09-27T06:07:31.817587+00:00",
-  "posts_scanned": 591,
-  "posts_with_history": 450,
-  "posts_flagged": 78,
+  "started_at": "2026-09-27T06:22:29.111288+00:00",
+  "finished_at": "2026-09-27T06:23:01.870087+00:00",
+  "posts_scanned": 605,
+  "posts_with_history": 456,
+  "posts_flagged": 74,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 241,
+  "minutes_since_last_notification": 257,
   "reject_reasons": {
-    "古すぎる": 168,
-    "いいねが少なすぎる": 212,
+    "古すぎる": 163,
+    "いいねが少なすぎる": 228,
+    "失速済み": 3,
+    "初回観測かつ平均速度が低い": 7,
     "誘導文パターン": 2,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 6,
     "いいね稼ぎ疑い": 2
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53029,
-    "posts": 14271,
-    "oldest": "2026-09-26T06:19:37.395059+00:00"
+    "total": 53013,
+    "posts": 14251,
+    "oldest": "2026-09-26T06:51:31.497434+00:00"
   },
-  "viral_discovery_posts": 131,
+  "viral_discovery_posts": 127,
   "million_imp_rescued": 2,
-  "watchlist_active": 4346,
+  "watchlist_active": 4362,
   "top5": [
     {
       "author": "3_syouktaro",
-      "score": 54.1,
-      "likes": 2774,
-      "likes_per_min": 15.53,
-      "acceleration": 0.9,
+      "score": 51.3,
+      "likes": 3010,
+      "likes_per_min": 15.22,
+      "acceleration": 0.98,
       "measured": true,
-      "age_minutes": 152.9,
+      "age_minutes": 168.4,
       "text": "離婚しました🤩✨",
       "url": "https://x.com/i/status/2104052051273748721"
     },
     {
-      "author": "TO_RYOO",
-      "score": 42.2,
-      "likes": 24890,
-      "likes_per_min": 110.41,
-      "acceleration": 0.9,
+      "author": "kenshiro_ytb",
+      "score": 46.8,
+      "likes": 489,
+      "likes_per_min": 73.60202621812545,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.6,
+      "text": "スプリンターズS GⅠ\n\n最終結論\n【◎⑦ペアポルックス】\n\n◯⑪ルガル\n▲⑬パンジャタワー\n☆⑭ウインカーネリアン\n\n",
+      "url": "https://x.com/i/status/2104092767966134773"
+    },
+    {
+      "author": "FRUITS_ZIPPER",
+      "score": 48.0,
+      "likes": 6652,
+      "likes_per_min": 41.67,
+      "acceleration": 0.84,
       "measured": true,
-      "age_minutes": 152.0,
+      "age_minutes": 88.6,
+      "text": "✨🎤『NHKのど自慢』 ありがとうございました！🎤✨\n\n🗓9月27日(日) 12:15〜 生放送\nNHK総合「NHKのど",
+      "url": "https://x.com/i/status/2104072135773917348"
+    },
+    {
+      "author": "TO_RYOO",
+      "score": 39.9,
+      "likes": 26501,
+      "likes_per_min": 103.92,
+      "acceleration": 0.94,
+      "measured": true,
+      "age_minutes": 167.5,
       "text": "13年間のYouTube人生の中でも、最高の思い出になる動画になりました！\nたくさんの方が応援に来てくれて、本当に心の支",
       "url": "https://x.com/i/status/2104052294287519877"
     },
     {
-      "author": "houkaistarrail",
-      "score": 63.7,
-      "likes": 909,
-      "likes_per_min": 121.05853046326271,
+      "author": "salmomomon",
+      "score": 63.8,
+      "likes": 2352,
+      "likes_per_min": 24.846687513199473,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 7.5,
-      "text": "Ver.4.6イベント跳躍・その1\n\n親愛なる開拓者様へ https://t.co/t2ZzCKYUBv",
-      "url": "https://x.com/i/status/2104088648480137494"
-    },
-    {
-      "author": "ensemble_stars",
-      "score": 66.3,
-      "likes": 1355,
-      "likes_per_min": 205.54913282638563,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.6,
-      "text": "【メインストーリー予告】\n\n9月30日〜\n第六章【ワールドツアー編／AREA06 MaM VS fine】\nを公開予定で",
-      "url": "https://x.com/i/status/2104088880203100304"
-    },
-    {
-      "author": "FRUITS_ZIPPER",
-      "score": 48.2,
-      "likes": 6006,
-      "likes_per_min": 49.46,
-      "acceleration": 0.7,
-      "measured": true,
-      "age_minutes": 73.1,
-      "text": "✨🎤『NHKのど自慢』 ありがとうございました！🎤✨\n\n🗓9月27日(日) 12:15〜 生放送\nNHK総合「NHKのど",
-      "url": "https://x.com/i/status/2104072135773917348"
+      "age_minutes": 94.7,
+      "text": "マジで注意喚起なんですが、インスタで『ぷにコーン』と検索して調べないでください\n無関係のショッキングな画像が大量に流れて",
+      "url": "https://x.com/i/status/2104070617779847461"
     }
   ]
 }

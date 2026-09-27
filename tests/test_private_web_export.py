@@ -51,6 +51,8 @@ def test_workflow_private_sync_contract():
     assert "ACTIONS_ID_TOKEN_REQUEST_TOKEN" in text
     assert "ACTIONS_ID_TOKEN_REQUEST_URL" in text
     assert "x-monitor-private-snapshot.json" in text
+    assert "data/private_sync_status.json" in text
+    assert '"target": "post-link-private-storage"' in text
     assert "--bootstrap-history" in text
     assert "github.event_name == 'push' || steps.pace.outputs.skip != 'true'" in text
 

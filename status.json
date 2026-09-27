@@ -1,6 +1,17 @@
 {
   "updated_at": "2026-09-27T08:51:10.617591+00:00",
   "status": "success",
+  "started_at": "2026-09-27T08:50:39.634981+00:00",
+  "finished_at": "2026-09-27T08:51:10.616174+00:00",
+  "posts_scanned": 616,
+  "posts_with_history": 458,
+  "posts_flagged": 103,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 405,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4460,
   "collection_health": {
     "status": "success",
     "error_code": null,
@@ -17,102 +28,11 @@
       "limit": 50,
       "remaining": 14,
       "reset": 1790499940
-    },
-    "failures": {}
-  },
-  "started_at": "2026-09-27T08:50:39.634981+00:00",
-  "finished_at": "2026-09-27T08:51:10.616174+00:00",
-  "posts_scanned": 616,
-  "posts_with_history": 458,
-  "posts_flagged": 103,
-  "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 405,
-  "reject_reasons": {
-    "古すぎる": 170,
-    "いいねが少なすぎる": 211,
-    "いいね稼ぎ疑い": 2,
-    "誘導文パターン": 1,
-    "失速済み": 5,
-    "初回観測かつ平均速度が低い": 5
-  },
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 100,
-    "MAX_AGE_MINUTES": 240,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
-    "RELEVANCE_FLOOR": 0.9,
-    "EARLY_LPM_AT_30": 18,
-    "EARLY_BONUS_AT_30": 18,
-    "EARLY_LPM_AT_15": 18,
-    "EARLY_BURST_BONUS": 18
+    }
   },
   "observation_db": {
     "total": 54075,
     "posts": 14477,
     "oldest": "2026-09-26T09:03:51.766087+00:00"
-  },
-  "viral_discovery_posts": 132,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4460,
-  "top5": [
-    {
-      "author": "iewori",
-      "score": 26.1,
-      "likes": 53810,
-      "likes_per_min": 141.68,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 422.2,
-      "text": "すごい…\n\nじゃ、こするね…",
-      "url": "https://x.com/i/status/2104025471046574203"
-    },
-    {
-      "author": "aigare01",
-      "score": 62.6,
-      "likes": 2120,
-      "likes_per_min": 48.76,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 80.9,
-      "text": "FRUITS ZIPPERの事務所が\n中傷だ憶測だの言ってるけどさ、\n\nいじめを疑われて\"仲川瑠夏\"が大炎上してる中、\n",
-      "url": "https://x.com/i/status/2104111366240174400"
-    },
-    {
-      "author": "NN_Second",
-      "score": 38.8,
-      "likes": 20767,
-      "likes_per_min": 106.77,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 210.8,
-      "text": "【悲報】瀬戸環奈えぐいマン屁を公開 https://t.co/Mcpsy5o1vS",
-      "url": "https://x.com/i/status/2104078682717638720"
-    },
-    {
-      "author": "or_maynotknowtm",
-      "score": 56.5,
-      "likes": 5713,
-      "likes_per_min": 37.03229414920944,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 154.3,
-      "text": "向かいの家、駐車場がないので、いつもうちの真向かいに路駐してる。\n出入りできないわけじゃない。 でも、うちに車を入れる時",
-      "url": "https://x.com/i/status/2104092895246537181"
-    },
-    {
-      "author": "shoutube1217",
-      "score": 49.2,
-      "likes": 27537,
-      "likes_per_min": 543.24,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 77.5,
-      "text": "イタリア滞在1日目\n携帯をスられる\n\n〜完〜",
-      "url": "https://x.com/i/status/2104112211832795544"
-    }
-  ]
+  }
 }

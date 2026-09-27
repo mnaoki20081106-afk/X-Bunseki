@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T02:21:43.151821+00:00",
+  "updated_at": "2026-09-27T02:37:17.040715+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,30 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 3,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790476573
+      "reset": 1790477505
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T02:21:12.135592+00:00",
-  "finished_at": "2026-09-27T02:21:43.150724+00:00",
-  "posts_scanned": 623,
-  "posts_with_history": 495,
-  "posts_flagged": 75,
+  "started_at": "2026-09-27T02:36:44.742954+00:00",
+  "finished_at": "2026-09-27T02:37:17.039708+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 487,
+  "posts_flagged": 70,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 15,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 205,
-    "いいねが少なすぎる": 205,
-    "失速済み": 2,
+    "古すぎる": 197,
+    "いいねが少なすぎる": 209,
+    "失速済み": 7,
     "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 10,
-    "初回観測かつ平均速度が低い": 13
+    "誘導文パターン": 9,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52998,
-    "posts": 14057,
-    "oldest": "2026-09-26T02:32:47.557964+00:00"
+    "total": 53000,
+    "posts": 14069,
+    "oldest": "2026-09-26T02:48:20.675390+00:00"
   },
-  "viral_discovery_posts": 151,
+  "viral_discovery_posts": 134,
   "million_imp_rescued": 6,
-  "watchlist_active": 4370,
+  "watchlist_active": 4364,
   "top5": [
     {
       "author": "eniraka80",
-      "score": 29.8,
-      "likes": 15840,
-      "likes_per_min": 24.69,
-      "acceleration": 0.87,
+      "score": 28.8,
+      "likes": 16166,
+      "likes_per_min": 20.94,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 722.7,
+      "age_minutes": 738.3,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
       "author": "___mobko____",
-      "score": 39.0,
-      "likes": 5237,
-      "likes_per_min": 29.908980880303236,
+      "score": 41.9,
+      "likes": 5893,
+      "likes_per_min": 42.15,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 175.1,
+      "measured": true,
+      "age_minutes": 190.7,
       "text": "30手前女、ステージ4の癌でした\n彼氏の振り方を教えてください https://t.co/PifYMLQO5v",
       "url": "https://x.com/i/status/2103989645700939826"
     },
     {
-      "author": "koba200x1",
-      "score": 50.7,
-      "likes": 10874,
-      "likes_per_min": 80.12,
-      "acceleration": 0.83,
-      "measured": true,
-      "age_minutes": 174.9,
-      "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
-      "url": "https://x.com/i/status/2103989691490156721"
-    },
-    {
       "author": "unachanpp",
-      "score": 39.7,
-      "likes": 7482,
-      "likes_per_min": 109.62,
-      "acceleration": 0.86,
+      "score": 38.5,
+      "likes": 9078,
+      "likes_per_min": 102.54,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 136.7,
+      "age_minutes": 152.2,
       "text": "仲里依紗ちゃんが乗せてくれたダウンタイムのオフショット、凛先生とのギャップ大きくて最高ｗｗｗｗｗｗｗ https://t",
       "url": "https://x.com/i/status/2103999316323102918"
     },
     {
-      "author": "tkzwgrs",
-      "score": 43.7,
-      "likes": 10399,
-      "likes_per_min": 48.99,
-      "acceleration": 1.02,
+      "author": "koba200x1",
+      "score": 47.1,
+      "likes": 11980,
+      "likes_per_min": 71.06,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 192.5,
-      "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
-      "url": "https://x.com/i/status/2103985256349221170"
+      "age_minutes": 190.5,
+      "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
+      "url": "https://x.com/i/status/2103989691490156721"
+    },
+    {
+      "author": "nijisanji_app",
+      "score": 75.2,
+      "likes": 1708,
+      "likes_per_min": 242.9783097616,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 7.0,
+      "text": "／\n#MECHATUA_1stライブ\nチケットリセール情報！\n＼\n\nMECHATU-A 1st LIVE “Over D",
+      "url": "https://x.com/i/status/2104035858961879150"
     }
   ]
 }

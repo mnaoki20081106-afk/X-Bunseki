@@ -1,42 +1,40 @@
 {
-  "updated_at": "2026-09-27T08:35:42.707867+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-27T08:51:10.617591+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
-    "detail_succeeded": 39,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790499009
+      "reset": 1790499940
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-27T08:35:08.083052+00:00",
-  "finished_at": "2026-09-27T08:35:42.706466+00:00",
-  "posts_scanned": 588,
-  "posts_with_history": 442,
-  "posts_flagged": 93,
+  "started_at": "2026-09-27T08:50:39.634981+00:00",
+  "finished_at": "2026-09-27T08:51:10.616174+00:00",
+  "posts_scanned": 616,
+  "posts_with_history": 458,
+  "posts_flagged": 103,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 389,
+  "minutes_since_last_notification": 405,
   "reject_reasons": {
-    "古すぎる": 165,
-    "失速済み": 7,
-    "誘導文パターン": 1,
-    "いいねが少なすぎる": 206,
+    "古すぎる": 170,
+    "いいねが少なすぎる": 211,
     "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 4
+    "誘導文パターン": 1,
+    "失速済み": 5,
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 54067,
-    "posts": 14448,
-    "oldest": "2026-09-26T08:48:13.053590+00:00"
+    "total": 54075,
+    "posts": 14477,
+    "oldest": "2026-09-26T09:03:51.766087+00:00"
   },
-  "viral_discovery_posts": 117,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4427,
+  "viral_discovery_posts": 132,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4460,
   "top5": [
     {
-      "author": "aigare01",
-      "score": 72.4,
-      "likes": 1366,
-      "likes_per_min": 51.15,
-      "acceleration": 1.86,
+      "author": "iewori",
+      "score": 26.1,
+      "likes": 53810,
+      "likes_per_min": 141.68,
+      "acceleration": 0.79,
       "measured": true,
-      "age_minutes": 65.4,
+      "age_minutes": 422.2,
+      "text": "すごい…\n\nじゃ、こするね…",
+      "url": "https://x.com/i/status/2104025471046574203"
+    },
+    {
+      "author": "aigare01",
+      "score": 62.6,
+      "likes": 2120,
+      "likes_per_min": 48.76,
+      "acceleration": 0.95,
+      "measured": true,
+      "age_minutes": 80.9,
       "text": "FRUITS ZIPPERの事務所が\n中傷だ憶測だの言ってるけどさ、\n\nいじめを疑われて\"仲川瑠夏\"が大炎上してる中、\n",
       "url": "https://x.com/i/status/2104111366240174400"
     },
     {
-      "author": "salmomomon",
-      "score": 40.1,
-      "likes": 9859,
-      "likes_per_min": 40.22,
-      "acceleration": 0.93,
+      "author": "NN_Second",
+      "score": 38.8,
+      "likes": 20767,
+      "likes_per_min": 106.77,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 227.3,
-      "text": "マジで注意喚起なんですが、インスタで『ぷにコーン』と検索して調べないでください\n無関係のショッキングな画像が大量に流れて",
-      "url": "https://x.com/i/status/2104070617779847461"
+      "age_minutes": 210.8,
+      "text": "【悲報】瀬戸環奈えぐいマン屁を公開 https://t.co/Mcpsy5o1vS",
+      "url": "https://x.com/i/status/2104078682717638720"
     },
     {
-      "author": "amane_fz1026",
-      "score": 60.7,
-      "likes": 8295,
-      "likes_per_min": 279.15,
-      "acceleration": 1.53,
-      "measured": true,
-      "age_minutes": 36.6,
-      "text": "NHKのど自慢、\nありがとうございました！\n\n音楽、想いのこもった歌の力は本当にすごいです。楽しかったり、嬉しかったり、",
-      "url": "https://x.com/i/status/2104118609069105513"
+      "author": "or_maynotknowtm",
+      "score": 56.5,
+      "likes": 5713,
+      "likes_per_min": 37.03229414920944,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 154.3,
+      "text": "向かいの家、駐車場がないので、いつもうちの真向かいに路駐してる。\n出入りできないわけじゃない。 でも、うちに車を入れる時",
+      "url": "https://x.com/i/status/2104092895246537181"
     },
     {
       "author": "shoutube1217",
-      "score": 63.3,
-      "likes": 19136,
-      "likes_per_min": 569.49,
-      "acceleration": 1.42,
+      "score": 49.2,
+      "likes": 27537,
+      "likes_per_min": 543.24,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 62.1,
+      "age_minutes": 77.5,
       "text": "イタリア滞在1日目\n携帯をスられる\n\n〜完〜",
       "url": "https://x.com/i/status/2104112211832795544"
-    },
-    {
-      "author": "D8L5d",
-      "score": 36.7,
-      "likes": 10008,
-      "likes_per_min": 82.96,
-      "acceleration": 0.92,
-      "measured": true,
-      "age_minutes": 199.7,
-      "text": "←豪国のダウン症、時給2500円\n→日本のダウン症、時給100円\nもう終わりだよ日本 https://t.co/3i7v",
-      "url": "https://x.com/i/status/2104077583482851765"
     }
   ]
 }

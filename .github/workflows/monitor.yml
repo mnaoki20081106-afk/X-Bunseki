@@ -1,6 +1,12 @@
 name: SNS Buzz Monitor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/monitor.yml"
+      - "tools/build_private_web_snapshot.py"
+      - "tools/sanitize_public_status.py"
   schedule:
     # 主系はCloudflare Cron (*/15)。GitHub scheduleは非常用バックアップのみ。
     # Cloudflareの :00/:15/:30/:45 と衝突しにくい毎時08分に1回実行する。

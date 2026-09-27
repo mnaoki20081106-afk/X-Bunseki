@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-09-27T10:08:44.886027+00:00",
+  "updated_at": "2026-09-27T10:32:51.572693+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790504591
+      "reset": 1790506035
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T10:08:10.383578+00:00",
-  "finished_at": "2026-09-27T10:08:44.884822+00:00",
-  "posts_scanned": 618,
-  "posts_with_history": 449,
-  "posts_flagged": 130,
+  "started_at": "2026-09-27T10:32:14.573495+00:00",
+  "finished_at": "2026-09-27T10:32:51.570870+00:00",
+  "posts_scanned": 601,
+  "posts_with_history": 390,
+  "posts_flagged": 124,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 482,
+  "minutes_since_last_notification": 507,
   "reject_reasons": {
-    "古すぎる": 160,
-    "初回観測かつ平均速度が低い": 5,
-    "いいね稼ぎ疑い": 7,
-    "いいねが少なすぎる": 227,
-    "失速済み": 2
+    "古すぎる": 150,
+    "初回観測かつ平均速度が低い": 9,
+    "いいね稼ぎ疑い": 1,
+    "失速済み": 4,
+    "いいねが少なすぎる": 217
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +50,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 54637,
-    "posts": 14675,
-    "oldest": "2026-09-26T10:21:28.824166+00:00"
+    "total": 54638,
+    "posts": 14740,
+    "oldest": "2026-09-26T10:36:58.843913+00:00"
   },
-  "viral_discovery_posts": 134,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4437,
+  "viral_discovery_posts": 127,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4417,
   "top5": [
     {
-      "author": "ranpan21",
-      "score": 56.6,
-      "likes": 4095,
-      "likes_per_min": 92.61,
-      "acceleration": null,
+      "author": "nep_irumakun",
+      "score": 91.1,
+      "likes": 17849,
+      "likes_per_min": 450.7,
+      "acceleration": 1.34,
       "measured": true,
-      "age_minutes": 59.9,
+      "age_minutes": 47.8,
+      "text": "─────────\n   😈重大発表!!!!\n─────────\n\n『魔入りました！入間くん』 \n劇場版プロジェクト、始",
+      "url": "https://x.com/i/status/2104145270288392251"
+    },
+    {
+      "author": "syounen_t_sako",
+      "score": 91.4,
+      "likes": 11878,
+      "likes_per_min": 341.12,
+      "acceleration": 1.79,
+      "measured": true,
+      "age_minutes": 54.6,
+      "text": "【大切なお知らせ】\n\n本日をもちまして少年Tは\n活動休止とさせていただきます。\n\n突然の発表となり、\n申し訳ございません",
+      "url": "https://x.com/i/status/2104143581669994804"
+    },
+    {
+      "author": "ranpan21",
+      "score": 54.7,
+      "likes": 5858,
+      "likes_per_min": 73.12,
+      "acceleration": 0.79,
+      "measured": true,
+      "age_minutes": 84.1,
       "text": "映画紹介マンガ\n【フィーリング・スルー】\n（1/2）再掲 https://t.co/ukcK4taefn",
       "url": "https://x.com/i/status/2104136158078972394"
     },
     {
-      "author": "nijisanji_app",
-      "score": 44.1,
-      "likes": 698,
-      "likes_per_min": 105.34448571233342,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.6,
-      "text": "✥♦️━━━━━━━━━━♦️✥ \n　　#葛葉ワンマンライブ \n　　物販整理券の抽選申込\n✥♦️━━━━━━━━━━♦️",
-      "url": "https://x.com/i/status/2104149573652631985"
-    },
-    {
       "author": "Megumi_Ogata",
-      "score": 73.7,
-      "likes": 13463,
-      "likes_per_min": 209.21,
-      "acceleration": 0.91,
+      "score": 71.5,
+      "likes": 17480,
+      "likes_per_min": 166.6,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 71.2,
+      "age_minutes": 95.3,
       "text": "皆様へ。【長文超注意⚠️】\n\n大概激動の人生を送ってまいりましたが、特にここ数日、仕事周り他で「特濃」な日々を送っており",
       "url": "https://x.com/i/status/2104133333068464530"
     },
     {
-      "author": "or_maynotknowtm",
-      "score": 41.7,
-      "likes": 9377,
-      "likes_per_min": 39.15,
-      "acceleration": 0.82,
+      "author": "kou88450",
+      "score": 55.9,
+      "likes": 10439,
+      "likes_per_min": 131.35,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 231.8,
-      "text": "向かいの家、駐車場がないので、いつもうちの真向かいに路駐してる。\n出入りできないわけじゃない。 でも、うちに車を入れる時",
-      "url": "https://x.com/i/status/2104092895246537181"
-    },
-    {
-      "author": "nijisanji_app",
-      "score": 66.8,
-      "likes": 974,
-      "likes_per_min": 117.45486049828537,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.3,
-      "text": "／\n#MECHATUA_1stライブ\n物販整理券の抽選申込\n【本日9/27(日)23:59】まで！\n＼\n\n会場物販では混",
-      "url": "https://x.com/i/status/2104149154608140529"
+      "age_minutes": 89.8,
+      "text": "惚れ薬を飲ませるのは（1/2） https://t.co/VqsZzNBHhu",
+      "url": "https://x.com/i/status/2104134709827805685"
     }
   ]
 }

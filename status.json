@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-27T01:19:49.137035+00:00",
+  "updated_at": "2026-09-27T01:35:15.448967+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790472854
+      "reset": 1790473782
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T01:19:13.851702+00:00",
-  "finished_at": "2026-09-27T01:19:49.135778+00:00",
-  "posts_scanned": 622,
+  "started_at": "2026-09-27T01:34:41.441320+00:00",
+  "finished_at": "2026-09-27T01:35:15.448060+00:00",
+  "posts_scanned": 619,
   "posts_with_history": 491,
-  "posts_flagged": 76,
-  "notified_count": 0,
+  "posts_flagged": 73,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 46,
   "reject_reasons": {
-    "古すぎる": 228,
+    "古すぎる": 206,
+    "いいねが少なすぎる": 211,
+    "初回観測かつ平均速度が低い": 7,
     "失速済み": 3,
-    "誘導文パターン": 6,
-    "いいねが少なすぎる": 194,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 9
+    "いいね稼ぎ疑い": 1,
+    "誘導文パターン": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52961,
-    "posts": 14094,
-    "oldest": "2026-09-26T01:21:48.309328+00:00"
+    "total": 53012,
+    "posts": 14096,
+    "oldest": "2026-09-26T01:37:18.555951+00:00"
   },
-  "viral_discovery_posts": 144,
-  "million_imp_rescued": 6,
+  "viral_discovery_posts": 135,
+  "million_imp_rescued": 5,
   "watchlist_active": 4370,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 29.4,
-      "likes": 326179,
-      "likes_per_min": 201.84,
-      "acceleration": 1.05,
+      "score": 28.9,
+      "likes": 329186,
+      "likes_per_min": 194.77,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 799.4,
+      "age_minutes": 814.9,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "shivanillaitame",
-      "score": 33.1,
-      "likes": 94427,
-      "likes_per_min": 250.16,
-      "acceleration": 1.11,
-      "measured": true,
-      "age_minutes": 774.1,
-      "text": "前に見た物件とは違うけど、名古屋で部屋の中にミニシアターがついてるやつ見つけた。滅茶苦茶良い。 https://t.co",
-      "url": "https://x.com/i/status/2103823312149426424"
-    },
-    {
-      "author": "eniraka80",
-      "score": 31.4,
-      "likes": 14312,
-      "likes_per_min": 28.31,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 660.8,
-      "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
-      "url": "https://x.com/i/status/2103851838022037548"
-    },
-    {
       "author": "daiantsuda",
-      "score": 27.8,
-      "likes": 17683,
-      "likes_per_min": 82.15,
-      "acceleration": 0.95,
+      "score": 25.2,
+      "likes": 18834,
+      "likes_per_min": 74.55,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 221.8,
+      "age_minutes": 237.3,
       "text": "娘がレンタルのモバイルバッテリーを返すのを忘れてて1週間借りていた。ゾッとした。昔のレンタルビデオとかの感じ。久々にぞっ",
       "url": "https://x.com/i/status/2103962305608499633"
     },
     {
       "author": "f_mona_new_kaii",
-      "score": 36.8,
-      "likes": 8638,
-      "likes_per_min": 39.27,
-      "acceleration": 0.8,
+      "score": 35.7,
+      "likes": 9255,
+      "likes_per_min": 39.97,
+      "acceleration": 1.02,
       "measured": true,
-      "age_minutes": 191.4,
+      "age_minutes": 206.8,
       "text": "ファミクラストア\n「猪俣周杜」写真、全削除される",
       "url": "https://x.com/i/status/2103969968262128042"
+    },
+    {
+      "author": "koba200x1",
+      "score": 60.7,
+      "likes": 6477,
+      "likes_per_min": 126.11,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 128.5,
+      "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
+      "url": "https://x.com/i/status/2103989691490156721"
+    },
+    {
+      "author": "tkzwgrs",
+      "score": 52.5,
+      "likes": 8124,
+      "likes_per_min": 53.31,
+      "acceleration": 0.97,
+      "measured": true,
+      "age_minutes": 146.1,
+      "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
+      "url": "https://x.com/i/status/2103985256349221170"
     }
   ]
 }

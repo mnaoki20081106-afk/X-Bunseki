@@ -1,40 +1,41 @@
 {
-  "updated_at": "2026-09-27T03:32:20.395437+00:00",
-  "status": "success",
+  "updated_at": "2026-09-27T03:47:54.310613+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
-    "search_succeeded": 36,
-    "search_failed": 0,
-    "detail_succeeded": 39,
+    "status": "degraded",
+    "error_code": "request_failed",
+    "search_succeeded": 35,
+    "search_failed": 1,
+    "detail_succeeded": 40,
     "detail_failed": 0,
-    "detail_skipped": 1,
+    "detail_skipped": 0,
     "detail_unavailable": 0,
-    "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "detail_incomplete": 0,
+    "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 15,
-      "reset": 1790480809
+      "remaining": 14,
+      "reset": 1790481742
     },
-    "failures": {}
+    "failures": {
+      "schema_changed": 1
+    }
   },
-  "started_at": "2026-09-27T03:31:48.768421+00:00",
-  "finished_at": "2026-09-27T03:32:20.394325+00:00",
-  "posts_scanned": 642,
-  "posts_with_history": 450,
-  "posts_flagged": 88,
+  "started_at": "2026-09-27T03:47:21.275174+00:00",
+  "finished_at": "2026-09-27T03:47:54.309492+00:00",
+  "posts_scanned": 623,
+  "posts_with_history": 478,
+  "posts_flagged": 76,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 86,
+  "minutes_since_last_notification": 102,
   "reject_reasons": {
-    "古すぎる": 203,
-    "初回観測かつ平均速度が低い": 15,
-    "いいねが少なすぎる": 216,
-    "誘導文パターン": 6,
-    "失速済み": 5,
-    "いいね稼ぎ疑い": 1
+    "古すぎる": 195,
+    "誘導文パターン": 15,
+    "いいねが少なすぎる": 234,
+    "失速済み": 3,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +52,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53023,
-    "posts": 14146,
-    "oldest": "2026-09-26T03:35:01.269782+00:00"
+    "total": 53024,
+    "posts": 14158,
+    "oldest": "2026-09-26T03:50:39.947288+00:00"
   },
-  "viral_discovery_posts": 150,
-  "million_imp_rescued": 5,
-  "watchlist_active": 4271,
+  "viral_discovery_posts": 114,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4270,
   "top5": [
     {
       "author": "eniraka80",
-      "score": 30.9,
-      "likes": 17389,
-      "likes_per_min": 22.7,
-      "acceleration": 1.16,
+      "score": 27.1,
+      "likes": 17640,
+      "likes_per_min": 16.13,
+      "acceleration": 0.71,
       "measured": true,
-      "age_minutes": 793.3,
+      "age_minutes": 808.9,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
-      "author": "unachanpp",
-      "score": 31.6,
-      "likes": 13570,
-      "likes_per_min": 84.23,
-      "acceleration": 1.13,
+      "author": "j8au7h",
+      "score": 25.7,
+      "likes": 101502,
+      "likes_per_min": 95.47,
+      "acceleration": 0.93,
       "measured": true,
-      "age_minutes": 207.3,
-      "text": "仲里依紗ちゃんが乗せてくれたダウンタイムのオフショット、凛先生とのギャップ大きくて最高ｗｗｗｗｗｗｗ https://t",
-      "url": "https://x.com/i/status/2103999316323102918"
+      "age_minutes": 879.3,
+      "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
+      "url": "https://x.com/i/status/2103834126533193958"
     },
     {
       "author": "hamusoku",
-      "score": 81.0,
-      "likes": 2178,
-      "likes_per_min": 50.6,
-      "acceleration": 9.04,
+      "score": 71.4,
+      "likes": 4050,
+      "likes_per_min": 120.27,
+      "acceleration": 2.38,
       "measured": true,
-      "age_minutes": 87.1,
+      "age_minutes": 102.7,
       "text": "Adoのおどるポンポコリン事件に大して事務所から声明出てるけど\nこの件、K-POPファンでもAdoファンでも無いワイから",
       "url": "https://x.com/i/status/2104029561839342008"
     },
     {
-      "author": "livedoornews",
-      "score": 74.4,
-      "likes": 3640,
-      "likes_per_min": 45.57,
-      "acceleration": 0.56,
+      "author": "Genshin_7",
+      "score": 71.5,
+      "likes": 34309,
+      "likes_per_min": 711.14,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 77.7,
-      "text": "【言及】timelesz菊池風磨、猪俣周杜の逮捕に「今までにないほど残念」\nhttps://t.co/YJFvPpkYG",
-      "url": "https://x.com/i/status/2104031938168356966"
+      "age_minutes": 47.8,
+      "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
+      "url": "https://x.com/i/status/2104043362051616970"
     },
     {
-      "author": "TOBA_AQUARIUM",
-      "score": 49.4,
-      "likes": 12737,
-      "likes_per_min": 54.34,
-      "acceleration": 0.91,
+      "author": "threenotes_jp",
+      "score": 34.1,
+      "likes": 12798,
+      "likes_per_min": 148.77,
+      "acceleration": 1.09,
       "measured": true,
-      "age_minutes": 181.2,
-      "text": "【ラッコ水槽 見学中止のお知らせ】\n本日、ラッコ体調不良のため、ラッコ水槽の見学を終日中止いたします。\n現時点では、展示",
-      "url": "https://x.com/i/status/2104005872796246380"
+      "age_minutes": 230.5,
+      "text": "フランス人にいきなり、\n\n「ニーハオ」って挨拶された時、\n\n「グーテンターク」って返すの、\n\nちょっとおすすめ。\n\nたぶ",
+      "url": "https://x.com/i/status/2103997384753885206"
     }
   ]
 }

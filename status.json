@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T07:02:43.826140+00:00",
+  "updated_at": "2026-09-27T07:18:12.896347+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,30 +11,30 @@
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790493428
+      "reset": 1790494358
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T07:02:07.933655+00:00",
-  "finished_at": "2026-09-27T07:02:43.824701+00:00",
-  "posts_scanned": 618,
-  "posts_with_history": 478,
-  "posts_flagged": 80,
+  "started_at": "2026-09-27T07:17:37.533523+00:00",
+  "finished_at": "2026-09-27T07:18:12.895147+00:00",
+  "posts_scanned": 596,
+  "posts_with_history": 490,
+  "posts_flagged": 78,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 296,
+  "minutes_since_last_notification": 312,
   "reject_reasons": {
-    "古すぎる": 171,
-    "いいね稼ぎ疑い": 3,
-    "初回観測かつ平均速度が低い": 4,
-    "いいねが少なすぎる": 224,
-    "失速済み": 5,
-    "誘導文パターン": 6
+    "古すぎる": 175,
+    "失速済み": 10,
+    "いいね稼ぎ疑い": 4,
+    "初回観測かつ平均速度が低い": 3,
+    "いいねが少なすぎる": 204,
+    "誘導文パターン": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53601,
-    "posts": 14445,
-    "oldest": "2026-09-26T07:07:06.425718+00:00"
+    "total": 53581,
+    "posts": 14438,
+    "oldest": "2026-09-26T07:22:33.000045+00:00"
   },
-  "viral_discovery_posts": 134,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4380,
+  "viral_discovery_posts": 128,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4372,
   "top5": [
     {
       "author": "salmomomon",
-      "score": 62.8,
-      "likes": 5167,
-      "likes_per_min": 70.91,
-      "acceleration": null,
+      "score": 58.1,
+      "likes": 6137,
+      "likes_per_min": 62.64,
+      "acceleration": 0.88,
       "measured": true,
-      "age_minutes": 134.4,
+      "age_minutes": 149.8,
       "text": "マジで注意喚起なんですが、インスタで『ぷにコーン』と検索して調べないでください\n無関係のショッキングな画像が大量に流れて",
       "url": "https://x.com/i/status/2104070617779847461"
     },
     {
       "author": "NN_Second",
-      "score": 59.1,
-      "likes": 9068,
-      "likes_per_min": 128.39,
-      "acceleration": 1.0,
+      "score": 55.4,
+      "likes": 10874,
+      "likes_per_min": 116.63,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 102.3,
+      "age_minutes": 117.8,
       "text": "【悲報】瀬戸環奈えぐいマン屁を公開 https://t.co/Mcpsy5o1vS",
       "url": "https://x.com/i/status/2104078682717638720"
     },
     {
       "author": "FRUITS_ZIPPER",
-      "score": 38.6,
-      "likes": 7688,
-      "likes_per_min": 23.44,
-      "acceleration": 0.84,
+      "score": 37.9,
+      "likes": 8056,
+      "likes_per_min": 23.77,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 128.3,
+      "age_minutes": 143.8,
       "text": "✨🎤『NHKのど自慢』 ありがとうございました！🎤✨\n\n🗓9月27日(日) 12:15〜 生放送\nNHK総合「NHKのど",
       "url": "https://x.com/i/status/2104072135773917348"
     },
     {
       "author": "netkeiba",
-      "score": 70.8,
-      "likes": 824,
-      "likes_per_min": 131.31316144141257,
+      "score": 71.2,
+      "likes": 3350,
+      "likes_per_min": 52.83,
       "acceleration": null,
-      "measured": false,
-      "age_minutes": 6.3,
-      "text": "【#スプリンターズステークス 結果】\n1着 16 ピューロマジック 9人気\n2着 6 ワールズエンド 5人気\n3着 5 ",
-      "url": "https://x.com/i/status/2104102851991769566"
-    },
-    {
-      "author": "netkeiba",
-      "score": 70.3,
-      "likes": 2532,
-      "likes_per_min": 146.28727728928374,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 17.3,
+      "measured": true,
+      "age_minutes": 32.8,
       "text": "【#スプリンターズステークス 入線速報】\n1位入線 16 ピューロマジック 9人気\n2着は3枠2頭による争い…！\n\n自慢",
       "url": "https://x.com/i/status/2104100072380322269"
+    },
+    {
+      "author": "livedoornews",
+      "score": 94.9,
+      "likes": 1826,
+      "likes_per_min": 34.55,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 64.0,
+      "text": "【発表】群馬・太田市女性殺害事件、長女の元夫を逮捕 パチンコ店で発見\nhttps://t.co/PHLaHaE3Tx\n\n",
+      "url": "https://x.com/i/status/2104092211830980755"
     }
   ]
 }

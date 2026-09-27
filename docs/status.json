@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T00:33:17.603139+00:00",
+  "updated_at": "2026-09-27T00:48:51.026660+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,25 +16,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790470065
+      "reset": 1790470995
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T00:32:44.106739+00:00",
-  "finished_at": "2026-09-27T00:33:17.601975+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 473,
-  "posts_flagged": 49,
-  "notified_count": 0,
+  "started_at": "2026-09-27T00:48:14.068824+00:00",
+  "finished_at": "2026-09-27T00:48:51.025675+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 471,
+  "posts_flagged": 61,
+  "notified_count": 1,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 16,
+  "minutes_since_last_notification": 31,
   "reject_reasons": {
-    "古すぎる": 253,
-    "誘導文パターン": 6,
-    "いいねが少なすぎる": 193,
-    "失速済み": 2,
-    "いいね稼ぎ疑い": 1,
-    "初回観測かつ平均速度が低い": 3
+    "古すぎる": 247,
+    "誘導文パターン": 7,
+    "いいねが少なすぎる": 198,
+    "いいね稼ぎ疑い": 2,
+    "初回観測かつ平均速度が低い": 7,
+    "失速済み": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52887,
-    "posts": 14076,
-    "oldest": "2026-09-26T00:35:20.117465+00:00"
+    "total": 52896,
+    "posts": 14074,
+    "oldest": "2026-09-26T00:50:50.954555+00:00"
   },
-  "viral_discovery_posts": 136,
-  "million_imp_rescued": 4,
-  "watchlist_active": 4357,
+  "viral_discovery_posts": 130,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4362,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 28.7,
-      "likes": 317089,
-      "likes_per_min": 216.27,
-      "acceleration": 0.9,
+      "score": 28.6,
+      "likes": 320070,
+      "likes_per_min": 191.71,
+      "acceleration": 0.89,
       "measured": true,
-      "age_minutes": 752.9,
+      "age_minutes": 768.5,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "YahooNewsTopics",
-      "score": 25.1,
-      "likes": 16771,
-      "likes_per_min": 5.17,
-      "acceleration": 0.32,
+      "author": "shivanillaitame",
+      "score": 32.1,
+      "likes": 86678,
+      "likes_per_min": 226.07,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 953.3,
-      "text": "【ぷよぷよ栗原 報奨金出ない見通し】\nhttps://t.co/kJ640glb9i",
-      "url": "https://x.com/i/status/2103766525727678780"
+      "age_minutes": 743.2,
+      "text": "前に見た物件とは違うけど、名古屋で部屋の中にミニシアターがついてるやつ見つけた。滅茶苦茶良い。 https://t.co",
+      "url": "https://x.com/i/status/2103823312149426424"
+    },
+    {
+      "author": "eniraka80",
+      "score": 30.9,
+      "likes": 13435,
+      "likes_per_min": 27.55,
+      "acceleration": 0.95,
+      "measured": true,
+      "age_minutes": 629.8,
+      "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
+      "url": "https://x.com/i/status/2103851838022037548"
     },
     {
       "author": "t_kumasan1446",
-      "score": 37.1,
-      "likes": 8953,
-      "likes_per_min": 73.93,
-      "acceleration": 1.12,
+      "score": 33.6,
+      "likes": 10103,
+      "likes_per_min": 73.96,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 207.8,
+      "age_minutes": 223.3,
       "text": "①盗聴盗撮で知ったパターン\n※user父セリフあり\n\n #ぎなさんに描いたよ https://t.co/1B87O4Pk",
       "url": "https://x.com/i/status/2103954136215814418"
     },
     {
       "author": "daiantsuda",
-      "score": 34.3,
-      "likes": 13676,
-      "likes_per_min": 88.33,
-      "acceleration": 0.96,
+      "score": 32.4,
+      "likes": 15069,
+      "likes_per_min": 89.58,
+      "acceleration": 1.01,
       "measured": true,
-      "age_minutes": 175.3,
+      "age_minutes": 190.9,
       "text": "娘がレンタルのモバイルバッテリーを返すのを忘れてて1週間借りていた。ゾッとした。昔のレンタルビデオとかの感じ。久々にぞっ",
       "url": "https://x.com/i/status/2103962305608499633"
-    },
-    {
-      "author": "tkzwgrs",
-      "score": 69.8,
-      "likes": 4342,
-      "likes_per_min": 84.22,
-      "acceleration": 1.03,
-      "measured": true,
-      "age_minutes": 84.1,
-      "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
-      "url": "https://x.com/i/status/2103985256349221170"
     }
   ]
 }

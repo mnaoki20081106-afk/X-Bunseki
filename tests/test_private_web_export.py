@@ -44,6 +44,9 @@ def test_status_sanitizer():
 def test_workflow_private_sync_contract():
     text = (ROOT / ".github" / "workflows" / "monitor.yml").read_text(encoding="utf-8")
     assert "id-token: write" in text
+    assert "push:" in text
+    assert 'branches: [main]' in text
+    assert '"tools/build_private_web_snapshot.py"' in text
     assert "https://post-link.net/api/internal/x-monitor-sync" in text
     assert "ACTIONS_ID_TOKEN_REQUEST_TOKEN" in text
     assert "ACTIONS_ID_TOKEN_REQUEST_URL" in text

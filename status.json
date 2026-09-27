@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-27T05:05:27.133705+00:00",
-  "status": "success",
+  "updated_at": "2026-09-27T05:20:56.444177+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
+    "status": "degraded",
+    "error_code": "request_failed",
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
-    "detail_failed": 0,
+    "detail_succeeded": 39,
+    "detail_failed": 1,
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
@@ -16,25 +16,27 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790486394
+      "reset": 1790487324
     },
-    "failures": {}
+    "failures": {
+      "request_failed": 1
+    }
   },
-  "started_at": "2026-09-27T05:04:52.858416+00:00",
-  "finished_at": "2026-09-27T05:05:27.132585+00:00",
+  "started_at": "2026-09-27T05:20:22.890182+00:00",
+  "finished_at": "2026-09-27T05:20:56.443090+00:00",
   "posts_scanned": 614,
-  "posts_with_history": 485,
-  "posts_flagged": 63,
+  "posts_with_history": 492,
+  "posts_flagged": 72,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 179,
+  "minutes_since_last_notification": 195,
   "reject_reasons": {
-    "古すぎる": 171,
-    "いいねが少なすぎる": 220,
-    "いいね稼ぎ疑い": 1,
-    "誘導文パターン": 5,
-    "失速済み": 2,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 175,
+    "いいねが少なすぎる": 217,
+    "誘導文パターン": 4,
+    "失速済み": 7,
+    "いいね稼ぎ疑い": 3,
+    "初回観測かつ平均速度が低い": 4
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +53,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53033,
-    "posts": 14211,
-    "oldest": "2026-09-26T05:17:27.105453+00:00"
+    "total": 53032,
+    "posts": 14212,
+    "oldest": "2026-09-26T05:32:55.151121+00:00"
   },
-  "viral_discovery_posts": 133,
-  "million_imp_rescued": 1,
-  "watchlist_active": 4306,
+  "viral_discovery_posts": 138,
+  "million_imp_rescued": 3,
+  "watchlist_active": 4316,
   "top5": [
     {
       "author": "eniraka80",
-      "score": 27.9,
-      "likes": 18812,
-      "likes_per_min": 15.11,
-      "acceleration": 0.94,
+      "score": 25.4,
+      "likes": 18980,
+      "likes_per_min": 10.85,
+      "acceleration": 0.72,
       "measured": true,
-      "age_minutes": 886.4,
+      "age_minutes": 901.9,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
+      "author": "iewori",
+      "score": 26.0,
+      "likes": 16499,
+      "likes_per_min": 77.83668987432593,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 212.0,
+      "text": "すごい…\n\nじゃ、こするね…",
+      "url": "https://x.com/i/status/2104025471046574203"
+    },
+    {
       "author": "Genshin_7",
-      "score": 56.1,
-      "likes": 66070,
-      "likes_per_min": 264.34,
-      "acceleration": 0.84,
+      "score": 53.5,
+      "likes": 69572,
+      "likes_per_min": 226.14,
+      "acceleration": 0.86,
       "measured": true,
-      "age_minutes": 125.4,
+      "age_minutes": 140.9,
       "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
       "url": "https://x.com/i/status/2104043362051616970"
     },
     {
       "author": "3_syouktaro",
-      "score": 77.2,
-      "likes": 1686,
-      "likes_per_min": 25.9,
-      "acceleration": 0.99,
+      "score": 68.2,
+      "likes": 1985,
+      "likes_per_min": 19.31,
+      "acceleration": 0.75,
       "measured": true,
-      "age_minutes": 90.9,
+      "age_minutes": 106.3,
       "text": "離婚しました🤩✨",
       "url": "https://x.com/i/status/2104052051273748721"
     },
     {
       "author": "TO_RYOO",
-      "score": 52.0,
-      "likes": 16823,
-      "likes_per_min": 155.6,
-      "acceleration": 0.92,
+      "score": 49.4,
+      "likes": 19026,
+      "likes_per_min": 142.26,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 89.9,
+      "age_minutes": 105.4,
       "text": "13年間のYouTube人生の中でも、最高の思い出になる動画になりました！\nたくさんの方が応援に来てくれて、本当に心の支",
       "url": "https://x.com/i/status/2104052294287519877"
-    },
-    {
-      "author": "MIKITO_777",
-      "score": 39.3,
-      "likes": 6668,
-      "likes_per_min": 51.48,
-      "acceleration": 0.76,
-      "measured": true,
-      "age_minutes": 155.0,
-      "text": "それなりに……",
-      "url": "https://x.com/i/status/2104035900326068623"
     }
   ]
 }

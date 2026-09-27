@@ -165,16 +165,8 @@ jobs:
         if: always()
         run: rm -f storage_state.json
 
-      - name: Sync docs for GitHub Pages
-        if: always()
-        run: |
-          mkdir -p docs
-          cp -f status.json docs/status.json 2>/dev/null || true
-          cp -f hits.json docs/hits.json 2>/dev/null || true
-          cp -f hits.md docs/hits.md 2>/dev/null || true
-          cp -f keywords.txt docs/keywords.txt 2>/dev/null || true
 
-      - name: Commit status.json・hits・docs
+      - name: Commit monitor runtime results
         if: always()
         run: |
           set -e
@@ -183,7 +175,7 @@ jobs:
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
           # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
           # 混ぜると git add 全体が失敗するため、個別に確認する。
-          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
+          for p in status.json hits.md hits.json data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

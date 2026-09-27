@@ -289,13 +289,24 @@ python3 tests/test_pipeline.py
 ## Parent Web integration
 
 This repository remains the independent X monitoring / prediction engine. The parent Web app
-`mnaoki20081106-afk/Tiktok-generater-Public` consumes it as a Git submodule for source/model
-sharing while runtime monitoring results remain owned here.
+`mnaoki20081106-afk/Tiktok-generater-Public` consumes source/model code through the existing
+Git submodule, but the **premium monitor feed is no longer published as a public GitHub file**.
 
-The parent reads the public result contract from `hits.json`, `status.json`,
-`data/model_registry.json`, and `data/impression_model.json`. Runtime observation commits
-(hits/status/watchlist/training snapshots) do not need to advance the parent submodule pointer;
-source, workflow, test, and model-artifact changes do.
+After each successful collection, `.github/workflows/monitor.yml`:
 
-Keep parent-specific UI and authentication logic out of X-Bunseki.
+1. builds `x-monitor-private-snapshot.json` from `hits.json`, `status.json` and model metadata,
+2. requests a short-lived GitHub Actions OIDC token (`id-token: write`),
+3. POSTs the snapshot to `https://post-link.net/api/internal/x-monitor-sync`,
+4. lets the parent verify the token's repository/ref/workflow claims before storing it in private Supabase Storage,
+5. removes the temporary snapshot and commits only the engine state that still needs repository persistence.
 
+`hits.json` and `hits.md` are runtime-only and are not committed. `status.json` is sanitized before
+commit so it keeps pacing/health counters but does not expose the premium top-post list or post text.
+The legacy GitHub Pages dashboard is a locked migration notice and no longer publishes monitor JSON.
+
+The parent Web app reads the latest premium feed from its server-only private storage **after** checking
+the signed-in user's X-monitor entitlement. No Stripe key or Supabase service-role key is copied into
+this repository; GitHub OIDC supplies the short-lived workflow identity used for synchronization.
+
+Runtime observation/training state remains owned by this engine. Changes to source, workflow, tests,
+or model artifacts can still advance the parent submodule pointer independently of runtime collection.

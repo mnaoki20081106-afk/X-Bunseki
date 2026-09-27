@@ -1,6 +1,12 @@
 name: SNS Buzz Monitor
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/monitor.yml"
+      - "tools/build_private_web_snapshot.py"
+      - "tools/sanitize_public_status.py"
   schedule:
     # 主系はCloudflare Cron (*/15)。GitHub scheduleは非常用バックアップのみ。
     # Cloudflareの :00/:15/:30/:45 と衝突しにくい毎時08分に1回実行する。
@@ -14,6 +20,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 concurrency:
   group: sns-buzz-monitor
@@ -161,9 +168,43 @@ jobs:
           fi
           exit $code
 
+      - name: Build private web snapshot
+        if: github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'
+        run: python tools/build_private_web_snapshot.py
+
+      - name: Sync premium monitor snapshot privately
+        if: github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'
+        env:
+          X_MONITOR_SYNC_URL: https://post-link.net/api/internal/x-monitor-sync
+          X_MONITOR_SYNC_AUDIENCE: https://post-link.net/api/internal/x-monitor-sync
+        run: |
+          set -euo pipefail
+          if [ ! -s x-monitor-private-snapshot.json ]; then
+            echo "::error::private monitor snapshot was not created"
+            exit 1
+          fi
+          oidc_json="$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=${X_MONITOR_SYNC_AUDIENCE}")"
+          id_token="$(printf '%s' "$oidc_json" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("value", ""))')"
+          if [ -z "$id_token" ]; then
+            echo "::error::GitHub OIDC token was empty"
+            exit 1
+          fi
+          curl --fail --silent --show-error \
+            -X POST "$X_MONITOR_SYNC_URL" \
+            -H "Authorization: Bearer $id_token" \
+            -H "Content-Type: application/json" \
+            --data-binary @x-monitor-private-snapshot.json
+          echo "private monitor snapshot synced"
+
+      - name: Sanitize public status
+        if: always()
+        run: python tools/sanitize_public_status.py
+
       - name: Clean up session file
         if: always()
-        run: rm -f storage_state.json
+        run: rm -f storage_state.json x-monitor-private-snapshot.json
 
 
       - name: Commit monitor runtime results
@@ -175,7 +216,7 @@ jobs:
           # mainの最新状態を基準にしつつ、このrunで生成したファイルを確実に保持する。
           # 存在する生成物だけをstageする。存在しない任意ファイルをpathspecに
           # 混ぜると git add 全体が失敗するため、個別に確認する。
-          for p in status.json hits.md hits.json data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
+          for p in status.json data/log data/notify_state.json data/training_outcomes.json data/impression_model.json data/model_registry.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

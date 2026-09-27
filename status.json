@@ -1,6 +1,17 @@
 {
   "updated_at": "2026-09-27T11:19:35.635099+00:00",
   "status": "degraded",
+  "started_at": "2026-09-27T11:18:59.189555+00:00",
+  "finished_at": "2026-09-27T11:19:35.633914+00:00",
+  "posts_scanned": 621,
+  "posts_with_history": 422,
+  "posts_flagged": 150,
+  "notified_count": 0,
+  "notified_last_24h": 6,
+  "minutes_since_last_notification": 553,
+  "viral_discovery_posts": 147,
+  "million_imp_rescued": 8,
+  "watchlist_active": 4467,
   "collection_health": {
     "status": "degraded",
     "error_code": "request_failed",
@@ -17,104 +28,11 @@
       "limit": 50,
       "remaining": 14,
       "reset": 1790508840
-    },
-    "failures": {
-      "request_failed": 1
     }
-  },
-  "started_at": "2026-09-27T11:18:59.189555+00:00",
-  "finished_at": "2026-09-27T11:19:35.633914+00:00",
-  "posts_scanned": 621,
-  "posts_with_history": 422,
-  "posts_flagged": 150,
-  "notified_count": 0,
-  "notified_last_24h": 6,
-  "minutes_since_last_notification": 553,
-  "reject_reasons": {
-    "古すぎる": 131,
-    "いいね稼ぎ疑い": 3,
-    "いいねが少なすぎる": 210,
-    "誘導文パターン": 3,
-    "初回観測かつ平均速度が低い": 5,
-    "失速済み": 2
-  },
-  "config": {
-    "NOTIFY_SCORE": 55,
-    "MIN_LIKES_FLOOR": 100,
-    "MAX_AGE_MINUTES": 240,
-    "FIRST_SIGHT_MIN_LIKES_PER_MIN": 10,
-    "NOTIFY_MAX_PER_RUN": 1,
-    "NOTIFY_MAX_PER_DAY": 6,
-    "NOTIFY_MIN_INTERVAL_MINUTES": 45,
-    "RELEVANCE_FLOOR": 0.9,
-    "EARLY_LPM_AT_30": 18,
-    "EARLY_BONUS_AT_30": 18,
-    "EARLY_LPM_AT_15": 18,
-    "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
     "total": 54616,
     "posts": 14817,
     "oldest": "2026-09-26T11:32:13.580457+00:00"
-  },
-  "viral_discovery_posts": 147,
-  "million_imp_rescued": 8,
-  "watchlist_active": 4467,
-  "top5": [
-    {
-      "author": "cocoRagdoll",
-      "score": 44.8,
-      "likes": 18604,
-      "likes_per_min": 276.48,
-      "acceleration": 0.99,
-      "measured": true,
-      "age_minutes": 197.1,
-      "text": "猪俣周杜Timelesz無期限休業を発表！\n\n菊池風磨『切り捨てるのは簡単ですが彼をもう一度信じたい！チャンスをあげてく",
-      "url": "https://x.com/i/status/2104119472227549524"
-    },
-    {
-      "author": "Megumi_Ogata",
-      "score": 59.9,
-      "likes": 23886,
-      "likes_per_min": 130.86,
-      "acceleration": 1.0,
-      "measured": true,
-      "age_minutes": 142.0,
-      "text": "皆様へ。【長文超注意⚠️】\n\n大概激動の人生を送ってまいりましたが、特にここ数日、仕事周り他で「特濃」な日々を送っており",
-      "url": "https://x.com/i/status/2104133333068464530"
-    },
-    {
-      "author": "nep_irumakun",
-      "score": 81.2,
-      "likes": 31981,
-      "likes_per_min": 255.97,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 94.6,
-      "text": "─────────\n   😈重大発表!!!!\n─────────\n\n『魔入りました！入間くん』 \n劇場版プロジェクト、始",
-      "url": "https://x.com/i/status/2104145270288392251"
-    },
-    {
-      "author": "syounen_t_sako",
-      "score": 72.0,
-      "likes": 23459,
-      "likes_per_min": 210.25,
-      "acceleration": 0.87,
-      "measured": true,
-      "age_minutes": 101.3,
-      "text": "【大切なお知らせ】\n\n本日をもちまして少年Tは\n活動休止とさせていただきます。\n\n突然の発表となり、\n申し訳ございません",
-      "url": "https://x.com/i/status/2104143581669994804"
-    },
-    {
-      "author": "shisou_",
-      "score": 35.0,
-      "likes": 11863,
-      "likes_per_min": 80.94,
-      "acceleration": 1.18,
-      "measured": true,
-      "age_minutes": 214.7,
-      "text": "AV観てたら女優の腕に小さく「Love yourself」ってタトゥー入っててこれ https://t.co/tEEYM",
-      "url": "https://x.com/i/status/2104115030220488769"
-    }
-  ]
+  }
 }

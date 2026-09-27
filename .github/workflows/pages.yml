@@ -7,9 +7,6 @@ on:
       - "docs/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
-  workflow_run:
-    workflows: ["SNS Buzz Monitor"]
-    types: [completed]
 
 permissions:
   contents: read
@@ -22,9 +19,6 @@ concurrency:
 
 jobs:
   deploy:
-    # push/docs更新、手動実行、または監視完了後にデプロイ。
-    # workflow_runでは監視成功時のみ公開する。
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

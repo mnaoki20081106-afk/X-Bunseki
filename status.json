@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T09:53:14.501656+00:00",
+  "updated_at": "2026-09-27T10:08:44.886027+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,24 +16,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790503662
+      "reset": 1790504591
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T09:52:41.533629+00:00",
-  "finished_at": "2026-09-27T09:53:14.500637+00:00",
-  "posts_scanned": 619,
-  "posts_with_history": 457,
-  "posts_flagged": 117,
+  "started_at": "2026-09-27T10:08:10.383578+00:00",
+  "finished_at": "2026-09-27T10:08:44.884822+00:00",
+  "posts_scanned": 618,
+  "posts_with_history": 449,
+  "posts_flagged": 130,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 467,
+  "minutes_since_last_notification": 482,
   "reject_reasons": {
-    "古すぎる": 169,
-    "いいね稼ぎ疑い": 2,
-    "失速済み": 9,
-    "いいねが少なすぎる": 229,
-    "初回観測かつ平均速度が低い": 2
+    "古すぎる": 160,
+    "初回観測かつ平均速度が低い": 5,
+    "いいね稼ぎ疑い": 7,
+    "いいねが少なすぎる": 227,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,67 +51,67 @@
   },
   "observation_db": {
     "total": 54637,
-    "posts": 14644,
-    "oldest": "2026-09-26T10:06:00.050327+00:00"
+    "posts": 14675,
+    "oldest": "2026-09-26T10:21:28.824166+00:00"
   },
-  "viral_discovery_posts": 132,
+  "viral_discovery_posts": 134,
   "million_imp_rescued": 3,
-  "watchlist_active": 4464,
+  "watchlist_active": 4437,
   "top5": [
     {
-      "author": "aigare01",
-      "score": 50.5,
-      "likes": 4438,
-      "likes_per_min": 34.37,
-      "acceleration": 0.98,
+      "author": "ranpan21",
+      "score": 56.6,
+      "likes": 4095,
+      "likes_per_min": 92.61,
+      "acceleration": null,
       "measured": true,
-      "age_minutes": 143.0,
-      "text": "FRUITS ZIPPERの事務所が\n中傷だ憶測だの言ってるけどさ、\n\nいじめを疑われて\"仲川瑠夏\"が大炎上してる中、\n",
-      "url": "https://x.com/i/status/2104111366240174400"
+      "age_minutes": 59.9,
+      "text": "映画紹介マンガ\n【フィーリング・スルー】\n（1/2）再掲 https://t.co/ukcK4taefn",
+      "url": "https://x.com/i/status/2104136158078972394"
+    },
+    {
+      "author": "nijisanji_app",
+      "score": 44.1,
+      "likes": 698,
+      "likes_per_min": 105.34448571233342,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 6.6,
+      "text": "✥♦️━━━━━━━━━━♦️✥ \n　　#葛葉ワンマンライブ \n　　物販整理券の抽選申込\n✥♦️━━━━━━━━━━♦️",
+      "url": "https://x.com/i/status/2104149573652631985"
     },
     {
       "author": "Megumi_Ogata",
-      "score": 76.6,
-      "likes": 10219,
-      "likes_per_min": 230.39,
-      "acceleration": 0.87,
+      "score": 73.7,
+      "likes": 13463,
+      "likes_per_min": 209.21,
+      "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 55.7,
+      "age_minutes": 71.2,
       "text": "皆様へ。【長文超注意⚠️】\n\n大概激動の人生を送ってまいりましたが、特にここ数日、仕事周り他で「特濃」な日々を送っており",
       "url": "https://x.com/i/status/2104133333068464530"
     },
     {
-      "author": "amane_fz1026",
-      "score": 46.7,
-      "likes": 22524,
-      "likes_per_min": 140.28,
-      "acceleration": 0.97,
-      "measured": true,
-      "age_minutes": 114.2,
-      "text": "NHKのど自慢、\nありがとうございました！\n\n音楽、想いのこもった歌の力は本当にすごいです。楽しかったり、嬉しかったり、",
-      "url": "https://x.com/i/status/2104118609069105513"
-    },
-    {
       "author": "or_maynotknowtm",
-      "score": 46.7,
-      "likes": 8770,
-      "likes_per_min": 47.5,
-      "acceleration": 0.87,
+      "score": 41.7,
+      "likes": 9377,
+      "likes_per_min": 39.15,
+      "acceleration": 0.82,
       "measured": true,
-      "age_minutes": 216.3,
+      "age_minutes": 231.8,
       "text": "向かいの家、駐車場がないので、いつもうちの真向かいに路駐してる。\n出入りできないわけじゃない。 でも、うちに車を入れる時",
       "url": "https://x.com/i/status/2104092895246537181"
     },
     {
-      "author": "ranpan21",
-      "score": 48.3,
-      "likes": 2659,
-      "likes_per_min": 59.83763841075121,
+      "author": "nijisanji_app",
+      "score": 66.8,
+      "likes": 974,
+      "likes_per_min": 117.45486049828537,
       "acceleration": null,
       "measured": false,
-      "age_minutes": 44.4,
-      "text": "映画紹介マンガ\n【フィーリング・スルー】\n（1/2）再掲 https://t.co/ukcK4taefn",
-      "url": "https://x.com/i/status/2104136158078972394"
+      "age_minutes": 8.3,
+      "text": "／\n#MECHATUA_1stライブ\n物販整理券の抽選申込\n【本日9/27(日)23:59】まで！\n＼\n\n会場物販では混",
+      "url": "https://x.com/i/status/2104149154608140529"
     }
   ]
 }

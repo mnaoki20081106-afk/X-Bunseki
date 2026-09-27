@@ -1,40 +1,42 @@
 {
-  "updated_at": "2026-09-27T11:04:04.986629+00:00",
-  "status": "success",
+  "updated_at": "2026-09-27T11:19:35.635099+00:00",
+  "status": "degraded",
   "collection_health": {
-    "status": "success",
-    "error_code": null,
+    "status": "degraded",
+    "error_code": "request_failed",
     "search_succeeded": 36,
     "search_failed": 0,
     "detail_succeeded": 39,
-    "detail_failed": 0,
-    "detail_skipped": 1,
-    "detail_unavailable": 1,
+    "detail_failed": 1,
+    "detail_skipped": 0,
+    "detail_unavailable": 0,
     "detail_incomplete": 0,
     "invalid_tweets": 0,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790507910
+      "reset": 1790508840
     },
-    "failures": {}
+    "failures": {
+      "request_failed": 1
+    }
   },
-  "started_at": "2026-09-27T11:03:29.153165+00:00",
-  "finished_at": "2026-09-27T11:04:04.984956+00:00",
-  "posts_scanned": 595,
-  "posts_with_history": 431,
-  "posts_flagged": 133,
+  "started_at": "2026-09-27T11:18:59.189555+00:00",
+  "finished_at": "2026-09-27T11:19:35.633914+00:00",
+  "posts_scanned": 621,
+  "posts_with_history": 422,
+  "posts_flagged": 150,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 538,
+  "minutes_since_last_notification": 553,
   "reject_reasons": {
-    "古すぎる": 130,
-    "いいね稼ぎ疑い": 4,
-    "いいねが少なすぎる": 214,
-    "失速済み": 6,
-    "初回観測かつ平均速度が低い": 6,
-    "誘導文パターン": 3
+    "古すぎる": 131,
+    "いいね稼ぎ疑い": 3,
+    "いいねが少なすぎる": 210,
+    "誘導文パターン": 3,
+    "初回観測かつ平均速度が低い": 5,
+    "失速済み": 2
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +53,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 54600,
-    "posts": 14812,
-    "oldest": "2026-09-26T11:08:11.194088+00:00"
+    "total": 54616,
+    "posts": 14817,
+    "oldest": "2026-09-26T11:32:13.580457+00:00"
   },
-  "viral_discovery_posts": 124,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4439,
+  "viral_discovery_posts": 147,
+  "million_imp_rescued": 8,
+  "watchlist_active": 4467,
   "top5": [
     {
-      "author": "nep_irumakun",
-      "score": 81.3,
-      "likes": 28012,
-      "likes_per_min": 287.07,
-      "acceleration": 0.79,
-      "measured": true,
-      "age_minutes": 79.1,
-      "text": "─────────\n   😈重大発表!!!!\n─────────\n\n『魔入りました！入間くん』 \n劇場版プロジェクト、始",
-      "url": "https://x.com/i/status/2104145270288392251"
-    },
-    {
       "author": "cocoRagdoll",
-      "score": 49.5,
-      "likes": 14317,
-      "likes_per_min": 279.79,
-      "acceleration": 1.14,
+      "score": 44.8,
+      "likes": 18604,
+      "likes_per_min": 276.48,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 181.6,
+      "age_minutes": 197.1,
       "text": "猪俣周杜Timelesz無期限休業を発表！\n\n菊池風磨『切り捨てるのは簡単ですが彼をもう一度信じたい！チャンスをあげてく",
       "url": "https://x.com/i/status/2104119472227549524"
     },
     {
-      "author": "epichan77",
-      "score": 30.3,
-      "likes": 20275,
-      "likes_per_min": 159.36,
-      "acceleration": 1.02,
-      "measured": true,
-      "age_minutes": 202.5,
-      "text": "いや、どう見ても忙しいとか超えて奥さん限界迎えてるじゃん https://t.co/fA8yWyAAeQ",
-      "url": "https://x.com/i/status/2104114208556425278"
-    },
-    {
       "author": "Megumi_Ogata",
-      "score": 62.1,
-      "likes": 21857,
-      "likes_per_min": 130.88,
-      "acceleration": 0.87,
+      "score": 59.9,
+      "likes": 23886,
+      "likes_per_min": 130.86,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 126.5,
+      "age_minutes": 142.0,
       "text": "皆様へ。【長文超注意⚠️】\n\n大概激動の人生を送ってまいりましたが、特にここ数日、仕事周り他で「特濃」な日々を送っており",
       "url": "https://x.com/i/status/2104133333068464530"
     },
     {
-      "author": "yuipis18",
-      "score": 63.7,
-      "likes": 3307,
-      "likes_per_min": 38.195032851552185,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 86.6,
-      "text": "まじでわかりすぎてやばい\n自分より寝る男本当に恋愛対象外",
-      "url": "https://x.com/i/status/2104143378011349280"
+      "author": "nep_irumakun",
+      "score": 81.2,
+      "likes": 31981,
+      "likes_per_min": 255.97,
+      "acceleration": 0.89,
+      "measured": true,
+      "age_minutes": 94.6,
+      "text": "─────────\n   😈重大発表!!!!\n─────────\n\n『魔入りました！入間くん』 \n劇場版プロジェクト、始",
+      "url": "https://x.com/i/status/2104145270288392251"
+    },
+    {
+      "author": "syounen_t_sako",
+      "score": 72.0,
+      "likes": 23459,
+      "likes_per_min": 210.25,
+      "acceleration": 0.87,
+      "measured": true,
+      "age_minutes": 101.3,
+      "text": "【大切なお知らせ】\n\n本日をもちまして少年Tは\n活動休止とさせていただきます。\n\n突然の発表となり、\n申し訳ございません",
+      "url": "https://x.com/i/status/2104143581669994804"
+    },
+    {
+      "author": "shisou_",
+      "score": 35.0,
+      "likes": 11863,
+      "likes_per_min": 80.94,
+      "acceleration": 1.18,
+      "measured": true,
+      "age_minutes": 214.7,
+      "text": "AV観てたら女優の腕に小さく「Love yourself」ってタトゥー入っててこれ https://t.co/tEEYM",
+      "url": "https://x.com/i/status/2104115030220488769"
     }
   ]
 }

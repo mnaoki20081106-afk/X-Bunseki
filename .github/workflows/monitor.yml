@@ -163,11 +163,11 @@ jobs:
           exit $code
 
       - name: Build private web snapshot
-        if: steps.pace.outputs.skip != 'true'
+        if: github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'
         run: python tools/build_private_web_snapshot.py
 
       - name: Sync premium monitor snapshot privately
-        if: steps.pace.outputs.skip != 'true'
+        if: github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'
         env:
           X_MONITOR_SYNC_URL: https://post-link.net/api/internal/x-monitor-sync
           X_MONITOR_SYNC_AUDIENCE: https://post-link.net/api/internal/x-monitor-sync

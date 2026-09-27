@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T03:08:17.056391+00:00",
+  "updated_at": "2026-09-27T03:32:20.395437+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -11,29 +11,29 @@
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 2,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
-      "remaining": 14,
-      "reset": 1790479364
+      "remaining": 15,
+      "reset": 1790480809
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T03:07:43.168169+00:00",
-  "finished_at": "2026-09-27T03:08:17.055275+00:00",
-  "posts_scanned": 629,
-  "posts_with_history": 473,
-  "posts_flagged": 91,
+  "started_at": "2026-09-27T03:31:48.768421+00:00",
+  "finished_at": "2026-09-27T03:32:20.394325+00:00",
+  "posts_scanned": 642,
+  "posts_with_history": 450,
+  "posts_flagged": 88,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 62,
+  "minutes_since_last_notification": 86,
   "reject_reasons": {
-    "古すぎる": 199,
-    "初回観測かつ平均速度が低い": 3,
-    "いいねが少なすぎる": 215,
-    "失速済み": 4,
+    "古すぎる": 203,
+    "初回観測かつ平均速度が低い": 15,
+    "いいねが少なすぎる": 216,
     "誘導文パターン": 6,
+    "失速済み": 5,
     "いいね稼ぎ疑い": 1
   },
   "config": {
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53014,
-    "posts": 14076,
-    "oldest": "2026-09-26T03:19:21.957960+00:00"
+    "total": 53023,
+    "posts": 14146,
+    "oldest": "2026-09-26T03:35:01.269782+00:00"
   },
-  "viral_discovery_posts": 144,
-  "million_imp_rescued": 7,
-  "watchlist_active": 4283,
+  "viral_discovery_posts": 150,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4271,
   "top5": [
     {
-      "author": "nigo__zyu",
-      "score": 28.4,
-      "likes": 348266,
-      "likes_per_min": 197.19,
-      "acceleration": 0.85,
-      "measured": true,
-      "age_minutes": 907.9,
-      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
-      "url": "https://x.com/i/status/2103816946953417023"
-    },
-    {
       "author": "eniraka80",
-      "score": 28.4,
-      "likes": 16843,
-      "likes_per_min": 19.54,
-      "acceleration": 0.81,
+      "score": 30.9,
+      "likes": 17389,
+      "likes_per_min": 22.7,
+      "acceleration": 1.16,
       "measured": true,
-      "age_minutes": 769.3,
+      "age_minutes": 793.3,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
-      "author": "koba200x1",
-      "score": 40.9,
-      "likes": 14108,
-      "likes_per_min": 66.9,
-      "acceleration": 0.95,
+      "author": "unachanpp",
+      "score": 31.6,
+      "likes": 13570,
+      "likes_per_min": 84.23,
+      "acceleration": 1.13,
       "measured": true,
-      "age_minutes": 221.5,
-      "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
-      "url": "https://x.com/i/status/2103989691490156721"
+      "age_minutes": 207.3,
+      "text": "仲里依紗ちゃんが乗せてくれたダウンタイムのオフショット、凛先生とのギャップ大きくて最高ｗｗｗｗｗｗｗ https://t",
+      "url": "https://x.com/i/status/2103999316323102918"
     },
     {
-      "author": "Genshin_7",
-      "score": 68.0,
-      "likes": 5261,
-      "likes_per_min": 640.2854107817017,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 8.2,
-      "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
-      "url": "https://x.com/i/status/2104043362051616970"
+      "author": "hamusoku",
+      "score": 81.0,
+      "likes": 2178,
+      "likes_per_min": 50.6,
+      "acceleration": 9.04,
+      "measured": true,
+      "age_minutes": 87.1,
+      "text": "Adoのおどるポンポコリン事件に大して事務所から声明出てるけど\nこの件、K-POPファンでもAdoファンでも無いワイから",
+      "url": "https://x.com/i/status/2104029561839342008"
     },
     {
       "author": "livedoornews",
-      "score": 90.5,
-      "likes": 2544,
-      "likes_per_min": 80.87,
-      "acceleration": 1.26,
+      "score": 74.4,
+      "likes": 3640,
+      "likes_per_min": 45.57,
+      "acceleration": 0.56,
       "measured": true,
-      "age_minutes": 53.6,
+      "age_minutes": 77.7,
       "text": "【言及】timelesz菊池風磨、猪俣周杜の逮捕に「今までにないほど残念」\nhttps://t.co/YJFvPpkYG",
       "url": "https://x.com/i/status/2104031938168356966"
+    },
+    {
+      "author": "TOBA_AQUARIUM",
+      "score": 49.4,
+      "likes": 12737,
+      "likes_per_min": 54.34,
+      "acceleration": 0.91,
+      "measured": true,
+      "age_minutes": 181.2,
+      "text": "【ラッコ水槽 見学中止のお知らせ】\n本日、ラッコ体調不良のため、ラッコ水槽の見学を終日中止いたします。\n現時点では、展示",
+      "url": "https://x.com/i/status/2104005872796246380"
     }
   ]
 }

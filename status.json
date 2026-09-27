@@ -1,42 +1,40 @@
 {
-  "updated_at": "2026-09-27T02:52:49.739510+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-27T03:08:17.056391+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 39,
     "detail_failed": 0,
     "detail_skipped": 1,
     "detail_unavailable": 0,
     "detail_incomplete": 1,
-    "invalid_tweets": 1,
+    "invalid_tweets": 2,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790478435
+      "reset": 1790479364
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-27T02:52:14.443602+00:00",
-  "finished_at": "2026-09-27T02:52:49.738340+00:00",
-  "posts_scanned": 605,
-  "posts_with_history": 466,
-  "posts_flagged": 75,
+  "started_at": "2026-09-27T03:07:43.168169+00:00",
+  "finished_at": "2026-09-27T03:08:17.055275+00:00",
+  "posts_scanned": 629,
+  "posts_with_history": 473,
+  "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 47,
+  "minutes_since_last_notification": 62,
   "reject_reasons": {
-    "古すぎる": 188,
-    "いいねが少なすぎる": 213,
-    "初回観測かつ平均速度が低い": 5,
-    "いいね稼ぎ疑い": 1,
+    "古すぎる": 199,
+    "初回観測かつ平均速度が低い": 3,
+    "いいねが少なすぎる": 215,
+    "失速済み": 4,
     "誘導文パターン": 6,
-    "失速済み": 1
+    "いいね稼ぎ疑い": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -53,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53001,
-    "posts": 14058,
-    "oldest": "2026-09-26T03:03:48.538689+00:00"
+    "total": 53014,
+    "posts": 14076,
+    "oldest": "2026-09-26T03:19:21.957960+00:00"
   },
-  "viral_discovery_posts": 142,
-  "million_imp_rescued": 6,
-  "watchlist_active": 4362,
+  "viral_discovery_posts": 144,
+  "million_imp_rescued": 7,
+  "watchlist_active": 4283,
   "top5": [
     {
-      "author": "eniraka80",
-      "score": 31.2,
-      "likes": 16541,
-      "likes_per_min": 24.12,
-      "acceleration": 1.15,
+      "author": "nigo__zyu",
+      "score": 28.4,
+      "likes": 348266,
+      "likes_per_min": 197.19,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 753.8,
+      "age_minutes": 907.9,
+      "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
+      "url": "https://x.com/i/status/2103816946953417023"
+    },
+    {
+      "author": "eniraka80",
+      "score": 28.4,
+      "likes": 16843,
+      "likes_per_min": 19.54,
+      "acceleration": 0.81,
+      "measured": true,
+      "age_minutes": 769.3,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
-      "author": "___mobko____",
-      "score": 38.8,
-      "likes": 6478,
-      "likes_per_min": 37.63,
-      "acceleration": 0.89,
-      "measured": true,
-      "age_minutes": 206.2,
-      "text": "30手前女、ステージ4の癌でした\n彼氏の振り方を教えてください https://t.co/PifYMLQO5v",
-      "url": "https://x.com/i/status/2103989645700939826"
-    },
-    {
       "author": "koba200x1",
-      "score": 44.6,
-      "likes": 13074,
-      "likes_per_min": 70.37,
-      "acceleration": 0.99,
+      "score": 40.9,
+      "likes": 14108,
+      "likes_per_min": 66.9,
+      "acceleration": 0.95,
       "measured": true,
-      "age_minutes": 206.0,
+      "age_minutes": 221.5,
       "text": "そう思うでしょ？\n\nところが世の中にはアニオリ展開の\n完成度が高過ぎてファンはおろか\n原作者も賞賛してしまい\nそこで出来",
       "url": "https://x.com/i/status/2103989691490156721"
     },
     {
-      "author": "tkzwgrs",
-      "score": 38.6,
-      "likes": 12010,
-      "likes_per_min": 54.09,
-      "acceleration": 1.09,
-      "measured": true,
-      "age_minutes": 223.7,
-      "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
-      "url": "https://x.com/i/status/2103985256349221170"
+      "author": "Genshin_7",
+      "score": 68.0,
+      "likes": 5261,
+      "likes_per_min": 640.2854107817017,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 8.2,
+      "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
+      "url": "https://x.com/i/status/2104043362051616970"
     },
     {
-      "author": "unachanpp",
-      "score": 35.5,
-      "likes": 10389,
-      "likes_per_min": 84.32,
-      "acceleration": 0.82,
+      "author": "livedoornews",
+      "score": 90.5,
+      "likes": 2544,
+      "likes_per_min": 80.87,
+      "acceleration": 1.26,
       "measured": true,
-      "age_minutes": 167.8,
-      "text": "仲里依紗ちゃんが乗せてくれたダウンタイムのオフショット、凛先生とのギャップ大きくて最高ｗｗｗｗｗｗｗ https://t",
-      "url": "https://x.com/i/status/2103999316323102918"
+      "age_minutes": 53.6,
+      "text": "【言及】timelesz菊池風磨、猪俣周杜の逮捕に「今までにないほど残念」\nhttps://t.co/YJFvPpkYG",
+      "url": "https://x.com/i/status/2104031938168356966"
     }
   ]
 }

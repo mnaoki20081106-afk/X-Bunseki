@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-27T00:48:51.026660+00:00",
+  "updated_at": "2026-09-27T01:04:17.208045+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
     "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 40,
+    "detail_succeeded": 39,
     "detail_failed": 0,
-    "detail_skipped": 0,
+    "detail_skipped": 1,
     "detail_unavailable": 0,
-    "detail_incomplete": 0,
-    "invalid_tweets": 0,
+    "detail_incomplete": 1,
+    "invalid_tweets": 1,
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790470995
+      "reset": 1790471924
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T00:48:14.068824+00:00",
-  "finished_at": "2026-09-27T00:48:51.025675+00:00",
+  "started_at": "2026-09-27T01:03:43.425187+00:00",
+  "finished_at": "2026-09-27T01:04:17.206703+00:00",
   "posts_scanned": 613,
-  "posts_with_history": 471,
-  "posts_flagged": 61,
-  "notified_count": 1,
+  "posts_with_history": 480,
+  "posts_flagged": 70,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 31,
+  "minutes_since_last_notification": 15,
   "reject_reasons": {
-    "古すぎる": 247,
-    "誘導文パターン": 7,
-    "いいねが少なすぎる": 198,
+    "古すぎる": 239,
+    "誘導文パターン": 6,
+    "いいねが少なすぎる": 197,
     "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 7,
-    "失速済み": 3
+    "初回観測かつ平均速度が低い": 2,
+    "失速済み": 1
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52896,
-    "posts": 14074,
-    "oldest": "2026-09-26T00:50:50.954555+00:00"
+    "total": 52915,
+    "posts": 14073,
+    "oldest": "2026-09-26T01:06:19.754141+00:00"
   },
-  "viral_discovery_posts": 130,
+  "viral_discovery_posts": 133,
   "million_imp_rescued": 5,
-  "watchlist_active": 4362,
+  "watchlist_active": 4342,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 28.6,
-      "likes": 320070,
-      "likes_per_min": 191.71,
-      "acceleration": 0.89,
+      "score": 29.2,
+      "likes": 323044,
+      "likes_per_min": 192.57,
+      "acceleration": 1.0,
       "measured": true,
-      "age_minutes": 768.5,
+      "age_minutes": 783.9,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "shivanillaitame",
-      "score": 32.1,
-      "likes": 86678,
-      "likes_per_min": 226.07,
-      "acceleration": null,
-      "measured": true,
-      "age_minutes": 743.2,
-      "text": "前に見た物件とは違うけど、名古屋で部屋の中にミニシアターがついてるやつ見つけた。滅茶苦茶良い。 https://t.co",
-      "url": "https://x.com/i/status/2103823312149426424"
-    },
-    {
-      "author": "eniraka80",
-      "score": 30.9,
-      "likes": 13435,
-      "likes_per_min": 27.55,
-      "acceleration": 0.95,
-      "measured": true,
-      "age_minutes": 629.8,
-      "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
-      "url": "https://x.com/i/status/2103851838022037548"
-    },
-    {
       "author": "t_kumasan1446",
-      "score": 33.6,
-      "likes": 10103,
-      "likes_per_min": 73.96,
-      "acceleration": 1.0,
+      "score": 30.9,
+      "likes": 11235,
+      "likes_per_min": 73.3,
+      "acceleration": 0.99,
       "measured": true,
-      "age_minutes": 223.3,
+      "age_minutes": 238.8,
       "text": "①盗聴盗撮で知ったパターン\n※user父セリフあり\n\n #ぎなさんに描いたよ https://t.co/1B87O4Pk",
       "url": "https://x.com/i/status/2103954136215814418"
     },
     {
       "author": "daiantsuda",
-      "score": 32.4,
-      "likes": 15069,
-      "likes_per_min": 89.58,
-      "acceleration": 1.01,
+      "score": 30.1,
+      "likes": 16407,
+      "likes_per_min": 86.64,
+      "acceleration": 0.97,
       "measured": true,
-      "age_minutes": 190.9,
+      "age_minutes": 206.3,
       "text": "娘がレンタルのモバイルバッテリーを返すのを忘れてて1週間借りていた。ゾッとした。昔のレンタルビデオとかの感じ。久々にぞっ",
       "url": "https://x.com/i/status/2103962305608499633"
+    },
+    {
+      "author": "FIRE_07141866",
+      "score": 47.3,
+      "likes": 2067,
+      "likes_per_min": 9.646892788092792,
+      "acceleration": null,
+      "measured": false,
+      "age_minutes": 214.3,
+      "text": "【悲報】\nGackt様\nNISAは正しくない\n何となくやってる奴はただのバカ https://t.co/hb5PPPjd",
+      "url": "https://x.com/i/status/2103960303041908972"
+    },
+    {
+      "author": "f_mona_new_kaii",
+      "score": 41.9,
+      "likes": 8028,
+      "likes_per_min": 49.34,
+      "acceleration": 1.01,
+      "measured": true,
+      "age_minutes": 175.9,
+      "text": "ファミクラストア\n「猪俣周杜」写真、全削除される",
+      "url": "https://x.com/i/status/2103969968262128042"
     }
   ]
 }

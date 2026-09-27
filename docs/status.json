@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T04:18:55.589152+00:00",
+  "updated_at": "2026-09-27T04:34:22.601949+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,25 +16,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790483603
+      "reset": 1790484531
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T04:18:22.183267+00:00",
-  "finished_at": "2026-09-27T04:18:55.587972+00:00",
-  "posts_scanned": 632,
-  "posts_with_history": 481,
-  "posts_flagged": 95,
+  "started_at": "2026-09-27T04:33:50.180497+00:00",
+  "finished_at": "2026-09-27T04:34:22.600968+00:00",
+  "posts_scanned": 617,
+  "posts_with_history": 496,
+  "posts_flagged": 91,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 133,
+  "minutes_since_last_notification": 148,
   "reject_reasons": {
-    "古すぎる": 187,
+    "古すぎる": 176,
+    "いいねが少なすぎる": 207,
+    "誘導文パターン": 4,
     "失速済み": 3,
-    "誘導文パターン": 8,
-    "いいねが少なすぎる": 199,
     "いいね稼ぎ疑い": 2,
-    "初回観測かつ平均速度が低い": 8
+    "初回観測かつ平均速度が低い": 5
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -51,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53037,
-    "posts": 14215,
-    "oldest": "2026-09-26T04:21:34.676546+00:00"
+    "total": 53033,
+    "posts": 14226,
+    "oldest": "2026-09-26T04:37:09.072687+00:00"
   },
-  "viral_discovery_posts": 152,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4287,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 5,
+  "watchlist_active": 4296,
   "top5": [
     {
-      "author": "j8au7h",
-      "score": 25.9,
-      "likes": 104343,
-      "likes_per_min": 91.58,
-      "acceleration": 0.96,
-      "measured": true,
-      "age_minutes": 910.3,
-      "text": "ずっと前から思ってたんだけど、夜の23時くらいに生理が来てもそれって生理1日目にカウントされるの？",
-      "url": "https://x.com/i/status/2103834126533193958"
-    },
-    {
-      "author": "modelpress",
-      "score": 52.7,
-      "likes": 3725,
-      "likes_per_min": 45.36,
-      "acceleration": 2.59,
-      "measured": true,
-      "age_minutes": 131.7,
-      "text": "かとゆり（26）、第1子妊娠を報告 \n2025年に競輪選手との結婚を発表\nhttps://t.co/S8OW3U0coc",
-      "url": "https://x.com/i/status/2104030057224454544"
-    },
-    {
-      "author": "livedoornews",
-      "score": 43.8,
-      "likes": 7005,
-      "likes_per_min": 58.32,
+      "author": "Nickel_Bouya28",
+      "score": 24.6,
+      "likes": 20908,
+      "likes_per_min": 26.62,
       "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 133.9,
-      "text": "【SNS更新】やす子、子ども食堂の月間費用を報告\nhttps://t.co/HvzjL904Dt\n\n「9月は180食を無",
-      "url": "https://x.com/i/status/2104029507837702384"
+      "age_minutes": 874.4,
+      "text": "もはやPayPayって、「現金かPayPayしか選択肢がない店での支払い」以外で積極的に使う意味完全になくなったよな",
+      "url": "https://x.com/i/status/2103847055324319935"
     },
     {
       "author": "hamusoku",
-      "score": 55.2,
-      "likes": 7391,
-      "likes_per_min": 95.98,
-      "acceleration": 0.8,
+      "score": 52.3,
+      "likes": 8659,
+      "likes_per_min": 82.04,
+      "acceleration": 0.85,
       "measured": true,
-      "age_minutes": 133.7,
+      "age_minutes": 149.1,
       "text": "Adoのおどるポンポコリン事件に大して事務所から声明出てるけど\nこの件、K-POPファンでもAdoファンでも無いワイから",
       "url": "https://x.com/i/status/2104029561839342008"
     },
     {
-      "author": "Genshin_7",
-      "score": 66.2,
-      "likes": 51162,
-      "likes_per_min": 475.88,
-      "acceleration": 0.78,
+      "author": "livedoornews",
+      "score": 40.1,
+      "likes": 7728,
+      "likes_per_min": 46.78,
+      "acceleration": 0.8,
       "measured": true,
-      "age_minutes": 78.9,
-      "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
-      "url": "https://x.com/i/status/2104043362051616970"
+      "age_minutes": 149.4,
+      "text": "【SNS更新】やす子、子ども食堂の月間費用を報告\nhttps://t.co/HvzjL904Dt\n\n「9月は180食を無",
+      "url": "https://x.com/i/status/2104029507837702384"
+    },
+    {
+      "author": "3_syouktaro",
+      "score": 92.6,
+      "likes": 879,
+      "likes_per_min": 31.83,
+      "acceleration": 1.81,
+      "measured": true,
+      "age_minutes": 59.8,
+      "text": "離婚しました🤩✨",
+      "url": "https://x.com/i/status/2104052051273748721"
+    },
+    {
+      "author": "McDonaldsJapan",
+      "score": 63.2,
+      "likes": 22672,
+      "likes_per_min": 123.64,
+      "acceleration": 0.96,
+      "measured": true,
+      "age_minutes": 124.3,
+      "text": "今日は、ダンスのレッスン！ https://t.co/EBLE6jQf8M",
+      "url": "https://x.com/i/status/2104035802820841732"
     }
   ]
 }

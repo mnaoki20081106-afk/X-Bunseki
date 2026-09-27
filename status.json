@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T00:17:45.099416+00:00",
+  "updated_at": "2026-09-27T00:33:17.603139+00:00",
   "status": "success",
   "collection_health": {
     "status": "success",
@@ -16,24 +16,25 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790469132
+      "reset": 1790470065
     },
     "failures": {}
   },
-  "started_at": "2026-09-27T00:17:10.964740+00:00",
-  "finished_at": "2026-09-27T00:17:45.098285+00:00",
-  "posts_scanned": 601,
-  "posts_with_history": 481,
+  "started_at": "2026-09-27T00:32:44.106739+00:00",
+  "finished_at": "2026-09-27T00:33:17.601975+00:00",
+  "posts_scanned": 595,
+  "posts_with_history": 473,
   "posts_flagged": 49,
-  "notified_count": 1,
+  "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 406,
+  "minutes_since_last_notification": 16,
   "reject_reasons": {
-    "古すぎる": 277,
-    "いいねが少なすぎる": 176,
-    "誘導文パターン": 5,
-    "初回観測かつ平均速度が低い": 4,
-    "失速済み": 1
+    "古すぎる": 253,
+    "誘導文パターン": 6,
+    "いいねが少なすぎる": 193,
+    "失速済み": 2,
+    "いいね稼ぎ疑い": 1,
+    "初回観測かつ平均速度が低い": 3
   },
   "config": {
     "NOTIFY_SCORE": 55,
@@ -50,68 +51,68 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 52903,
-    "posts": 14094,
-    "oldest": "2026-09-26T00:19:50.440183+00:00"
+    "total": 52887,
+    "posts": 14076,
+    "oldest": "2026-09-26T00:35:20.117465+00:00"
   },
-  "viral_discovery_posts": 135,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4371,
+  "viral_discovery_posts": 136,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4357,
   "top5": [
     {
       "author": "nigo__zyu",
-      "score": 29.9,
-      "likes": 313725,
-      "likes_per_min": 240.82,
-      "acceleration": 1.14,
+      "score": 28.7,
+      "likes": 317089,
+      "likes_per_min": 216.27,
+      "acceleration": 0.9,
       "measured": true,
-      "age_minutes": 737.4,
+      "age_minutes": 752.9,
       "text": "中二の時のバク転練習して気絶してたことに気付かず元気に起き上がる私\nマジでおもろい https://t.co/iPqSP",
       "url": "https://x.com/i/status/2103816946953417023"
     },
     {
-      "author": "t_kumasan1446",
-      "score": 38.9,
-      "likes": 7803,
-      "likes_per_min": 65.82,
-      "acceleration": 1.1,
+      "author": "YahooNewsTopics",
+      "score": 25.1,
+      "likes": 16771,
+      "likes_per_min": 5.17,
+      "acceleration": 0.32,
       "measured": true,
-      "age_minutes": 192.2,
+      "age_minutes": 953.3,
+      "text": "【ぷよぷよ栗原 報奨金出ない見通し】\nhttps://t.co/kJ640glb9i",
+      "url": "https://x.com/i/status/2103766525727678780"
+    },
+    {
+      "author": "t_kumasan1446",
+      "score": 37.1,
+      "likes": 8953,
+      "likes_per_min": 73.93,
+      "acceleration": 1.12,
+      "measured": true,
+      "age_minutes": 207.8,
       "text": "①盗聴盗撮で知ったパターン\n※user父セリフあり\n\n #ぎなさんに描いたよ https://t.co/1B87O4Pk",
       "url": "https://x.com/i/status/2103954136215814418"
     },
     {
       "author": "daiantsuda",
-      "score": 37.3,
-      "likes": 12302,
-      "likes_per_min": 91.69,
-      "acceleration": 1.07,
+      "score": 34.3,
+      "likes": 13676,
+      "likes_per_min": 88.33,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 159.8,
+      "age_minutes": 175.3,
       "text": "娘がレンタルのモバイルバッテリーを返すのを忘れてて1週間借りていた。ゾッとした。昔のレンタルビデオとかの感じ。久々にぞっ",
       "url": "https://x.com/i/status/2103962305608499633"
     },
     {
       "author": "tkzwgrs",
-      "score": 74.3,
-      "likes": 3032,
-      "likes_per_min": 81.95,
-      "acceleration": 1.33,
+      "score": 69.8,
+      "likes": 4342,
+      "likes_per_min": 84.22,
+      "acceleration": 1.03,
       "measured": true,
-      "age_minutes": 68.6,
+      "age_minutes": 84.1,
       "text": "【話題】ヤバそうなプロフィールの人に絡まれた人、ヤバそうなプロフィールを晒すも、よくよく読むとヤバくないと話題に\n\n#再",
       "url": "https://x.com/i/status/2103985256349221170"
-    },
-    {
-      "author": "tkzwgrs",
-      "score": 90.7,
-      "likes": 1320,
-      "likes_per_min": 41.62,
-      "acceleration": 1.37,
-      "measured": true,
-      "age_minutes": 40.0,
-      "text": "【悲報】ホームセンター コーナンさん、園芸情報サイト上でさらっと“大麻の写真”を使用\n多幸感も楽しくDIYへ\n\nhttp",
-      "url": "https://x.com/i/status/2103992437605826996"
     }
   ]
 }

@@ -27,6 +27,8 @@ jobs:
           npm test
           python -m unittest discover -s tests -p "test_collector*.py"
       - name: Compile Python sources
-        run: python -m py_compile *.py
+        run: python -m py_compile *.py tools/*.py
+      - name: Test private web export
+        run: python tests/test_private_web_export.py
       - name: Run logic tests
         run: python tests/test_pipeline.py

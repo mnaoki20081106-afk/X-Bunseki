@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-27T05:20:56.444177+00:00",
-  "status": "degraded",
+  "updated_at": "2026-09-27T05:36:28.654343+00:00",
+  "status": "success",
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
+    "status": "success",
+    "error_code": null,
     "search_succeeded": 36,
     "search_failed": 0,
-    "detail_succeeded": 39,
-    "detail_failed": 1,
+    "detail_succeeded": 40,
+    "detail_failed": 0,
     "detail_skipped": 0,
     "detail_unavailable": 0,
     "detail_incomplete": 0,
@@ -16,26 +16,24 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1790487324
+      "reset": 1790488256
     },
-    "failures": {
-      "request_failed": 1
-    }
+    "failures": {}
   },
-  "started_at": "2026-09-27T05:20:22.890182+00:00",
-  "finished_at": "2026-09-27T05:20:56.443090+00:00",
-  "posts_scanned": 614,
-  "posts_with_history": 492,
-  "posts_flagged": 72,
+  "started_at": "2026-09-27T05:35:55.202786+00:00",
+  "finished_at": "2026-09-27T05:36:28.653096+00:00",
+  "posts_scanned": 613,
+  "posts_with_history": 484,
+  "posts_flagged": 67,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 195,
+  "minutes_since_last_notification": 210,
   "reject_reasons": {
-    "古すぎる": 175,
-    "いいねが少なすぎる": 217,
+    "古すぎる": 177,
+    "いいね稼ぎ疑い": 2,
+    "いいねが少なすぎる": 219,
     "誘導文パターン": 4,
-    "失速済み": 7,
-    "いいね稼ぎ疑い": 3,
+    "失速済み": 4,
     "初回観測かつ平均速度が低い": 4
   },
   "config": {
@@ -53,66 +51,66 @@
     "EARLY_BURST_BONUS": 18
   },
   "observation_db": {
-    "total": 53032,
-    "posts": 14212,
-    "oldest": "2026-09-26T05:32:55.151121+00:00"
+    "total": 53062,
+    "posts": 14230,
+    "oldest": "2026-09-26T05:48:26.315046+00:00"
   },
-  "viral_discovery_posts": 138,
-  "million_imp_rescued": 3,
-  "watchlist_active": 4316,
+  "viral_discovery_posts": 134,
+  "million_imp_rescued": 4,
+  "watchlist_active": 4331,
   "top5": [
     {
       "author": "eniraka80",
-      "score": 25.4,
-      "likes": 18980,
-      "likes_per_min": 10.85,
-      "acceleration": 0.72,
+      "score": 26.5,
+      "likes": 19141,
+      "likes_per_min": 10.36,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 901.9,
+      "age_minutes": 917.5,
       "text": "今日の笑ってコラえて、鴨川の男女カップルに取材して1年後どうなってるか？って企画だったんだけど、元野球部彼氏と清楚彼女っ",
       "url": "https://x.com/i/status/2103851838022037548"
     },
     {
-      "author": "iewori",
-      "score": 26.0,
-      "likes": 16499,
-      "likes_per_min": 77.83668987432593,
-      "acceleration": null,
-      "measured": false,
-      "age_minutes": 212.0,
-      "text": "すごい…\n\nじゃ、こするね…",
-      "url": "https://x.com/i/status/2104025471046574203"
-    },
-    {
       "author": "Genshin_7",
-      "score": 53.5,
-      "likes": 69572,
-      "likes_per_min": 226.14,
-      "acceleration": 0.86,
+      "score": 51.2,
+      "likes": 72941,
+      "likes_per_min": 216.85,
+      "acceleration": 0.96,
       "measured": true,
-      "age_minutes": 140.9,
+      "age_minutes": 156.4,
       "text": "【#原神六周年 お祝いイラスト③】 \n原神祝六周年！ありがとうございます！\nイラストレーターの #赤倉 先生（ @aka",
       "url": "https://x.com/i/status/2104043362051616970"
     },
     {
       "author": "3_syouktaro",
-      "score": 68.2,
-      "likes": 1985,
-      "likes_per_min": 19.31,
-      "acceleration": 0.75,
+      "score": 62.4,
+      "likes": 2266,
+      "likes_per_min": 18.09,
+      "acceleration": 0.94,
       "measured": true,
-      "age_minutes": 106.3,
+      "age_minutes": 121.9,
       "text": "離婚しました🤩✨",
       "url": "https://x.com/i/status/2104052051273748721"
     },
     {
-      "author": "TO_RYOO",
-      "score": 49.4,
-      "likes": 19026,
-      "likes_per_min": 142.26,
+      "author": "FRUITS_ZIPPER",
+      "score": 55.0,
+      "likes": 4143,
+      "likes_per_min": 88.18,
       "acceleration": 0.91,
       "measured": true,
-      "age_minutes": 105.4,
+      "age_minutes": 42.1,
+      "text": "✨🎤『NHKのど自慢』 ありがとうございました！🎤✨\n\n🗓9月27日(日) 12:15〜 生放送\nNHK総合「NHKのど",
+      "url": "https://x.com/i/status/2104072135773917348"
+    },
+    {
+      "author": "TO_RYOO",
+      "score": 47.9,
+      "likes": 21268,
+      "likes_per_min": 144.31,
+      "acceleration": 1.01,
+      "measured": true,
+      "age_minutes": 120.9,
       "text": "13年間のYouTube人生の中でも、最高の思い出になる動画になりました！\nたくさんの方が応援に来てくれて、本当に心の支",
       "url": "https://x.com/i/status/2104052294287519877"
     }

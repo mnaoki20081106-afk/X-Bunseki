@@ -4,6 +4,7 @@ import { XClient, QID } from 'x-agent-sdk';
 import { appendFileSync } from 'node:fs';
 import { tweet, timeline } from './collector-fixtures.mjs';
 XClient.prototype.request = async function(method, action, variables) {
+  if(process.env.TEST_SCENARIO === 'bootstrap') throw new Error('could not locate ondemand.s index in home HTML');
   const url = new URL(`https://x.com/i/api/graphql/${QID[action]}/${action}`);
   url.searchParams.set('variables', JSON.stringify(variables));
   return (await this.fetchWithTracking(url.toString(), { method })).json();

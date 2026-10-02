@@ -178,7 +178,13 @@ def fetch_posts():
             if "SESSION_EXPIRED" in msg:
                 raise SessionExpiredError(msg)
             raise RuntimeError(msg)
-        posts = decode_collection(r.stdout)
+        result = json.loads(r.stdout)
+        if result.get('health', {}).get('error_code') == 'bootstrap_incompatible':
+            print('[compat] SDK bootstrap incompatible; collecting through X web app')
+            from browser_collector import collect_browser
+            posts = decode_collection(collect_browser(payload, due, _session_path()))
+        else:
+            posts = decode_collection(r.stdout)
         skipped_detail_ids = posts.health.pop("_detail_skipped_ids", [])
         if skipped_detail_ids:
             try:

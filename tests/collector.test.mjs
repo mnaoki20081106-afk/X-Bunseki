@@ -98,6 +98,7 @@ test('discovers bounded read-only query IDs without executing bundle or forwardi
 function collect(scenario) {
   const dir = mkdtempSync(join(tmpdir(), 'x-collector-'));
   try {
+    writeFileSync(join(dir, 'requests.jsonl'), '');
     writeFileSync(join(dir, 'storage_state.json'), JSON.stringify({ cookies: [
       { name: 'auth_token', value: 'FAKE_TOKEN' }, { name: 'ct0', value: 'FAKE_CSRF' },
     ] }));
@@ -115,7 +116,7 @@ function collect(scenario) {
     });
     assert.equal(result.status, 0, result.stderr);
     assert.doesNotMatch(result.stderr, /SENSITIVE_VALUE|FAKE_TOKEN|FAKE_CSRF/);
-    return { ...JSON.parse(result.stdout), requests: readFileSync(join(dir, 'requests.jsonl'), 'utf8').trim().split('\n').map(JSON.parse) };
+    return { ...JSON.parse(result.stdout), requests: readFileSync(join(dir, 'requests.jsonl'), 'utf8').trim().split('\n').filter(Boolean).map(JSON.parse) };
   } finally { rmSync(dir, { recursive: true, force: true }); }
 }
 
@@ -125,6 +126,11 @@ test('full collector keeps successful search + fresh watchlist metrics', () => {
   assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
   assert.equal(result.posts[0].discovery_query_hits, 3);
   assert.equal(result.posts[1].impressions, 50000, 'fresh value replaces watchlist history');
+});
+test('SDK transaction bootstrap failures select browser fallback without exposing credentials',()=>{
+  const result=collect('bootstrap');
+  assert.equal(result.health.error_code,'bootstrap_incompatible');
+  assert.equal(result.posts.length,0);
 });
 test('failed detail never emits stale watchlist observation', () => {
   const result = collect('stale');

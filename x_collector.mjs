@@ -28,7 +28,16 @@ let searchSuccess=0, searchFailed=0, detailFailed=0, detailSkipped=0, invalidTwe
 let detailUnavailable=0, detailIncomplete=0;
 const detailSkippedIds=[];
 function pageKey(query,product,cursor){ return JSON.stringify([query,product,cursor||'']); }
-function safeError(e){ return e instanceof CollectorError ? e.code : 'request_failed'; }
+let bootstrapIncompatible=false;
+function safeError(e){
+  if(e instanceof CollectorError) return e.code;
+  // These are fixed SDK messages, never print response text or cookies.
+  if(/could not locate ondemand\.s|Couldn't get KEY_BYTE indices|no twitter-site-verification meta|animation path not found/.test(e?.message||'')){
+    bootstrapIncompatible=true;
+    return 'bootstrap_incompatible';
+  }
+  return 'request_failed';
+}
 let searchResponses=0, searchTweets=0, searchTweetsWithViews=0, incompleteSearchPages=0;
 let rateLimited=0, forbidden=0;
 const searchRateLimit={limit:null,remaining:null,reset:null};
@@ -257,7 +266,8 @@ const searchIncompleteRatio=searchResponses ? incompleteSearchPages/searchRespon
 const materialSearchLoss=incompleteSearchPages>=3 && searchIncompleteRatio>=0.25;
 const hasFailure=searchFailed>0 || detailFailed>0 || materialSearchLoss;
 const error=guard.primaryError ||
-  (searchSuccess===0 ? 'collection_failed' : (materialSearchLoss?'incomplete_observations':null));
+  (bootstrapIncompatible ? 'bootstrap_incompatible' :
+  (searchSuccess===0 ? 'collection_failed' : (materialSearchLoss?'incomplete_observations':null)));
 const health={
   status:all.length===0 && hasFailure ? (error||'collection_failed') : (hasFailure?'degraded':'success'),
   error_code:error, search_succeeded:searchSuccess, search_failed:searchFailed,

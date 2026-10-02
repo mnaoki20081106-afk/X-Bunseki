@@ -65,6 +65,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           npm ci --ignore-scripts
+          python -m playwright install --with-deps chromium
 
       - name: Restore DB
         if: steps.pace.outputs.skip != 'true'
@@ -156,9 +157,6 @@ jobs:
           set +e
           python main.py
           code=$?
-          python build_outcomes.py || true
-          python auto_train.py || true
-          python gen1_controller.py || true
           if [ -f status.json ]; then
             st=$(python3 -c "import json; print(json.load(open('status.json')).get('status',''))" 2>/dev/null || true)
             if [ "$st" = "session_expired" ] || [ "$st" = "error" ]; then
@@ -174,7 +172,7 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ] && [ "${{ steps.pace.outputs.skip }}" = "true" ]; then
             python tools/build_private_web_snapshot.py --bootstrap-history
           else
-            python tools/build_private_web_snapshot.py
+            python tools/build_private_web_snapshot.py --bootstrap-history
           fi
 
       - name: Sync premium monitor snapshot privately
@@ -212,6 +210,15 @@ jobs:
             exit 1
           fi
           echo "private monitor snapshot synced (HTTP 204)"
+
+      - name: Update learning state after feed delivery
+        if: steps.pace.outputs.skip != 'true'
+        timeout-minutes: 3
+        continue-on-error: true
+        run: |
+          python build_outcomes.py
+          python auto_train.py
+          python gen1_controller.py
 
       - name: Sanitize public status
         if: always()

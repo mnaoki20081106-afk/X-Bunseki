@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import importlib.util
+import os
+import subprocess
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -73,11 +76,54 @@ def test_premium_feed_files_are_not_tracked_source_inputs():
     assert not (ROOT / "hits.md").exists()
 
 
+def test_private_sync_requires_storage_confirmation():
+    text = (ROOT / ".github/workflows/monitor.yml").read_text(encoding="utf-8")
+    step = text.split("      - name: Sync premium monitor snapshot privately\n", 1)[1]
+    step = step.split("\n      - name:", 1)[0]
+    assert "X_MONITOR_SYNC_URL: https://www.post-link.net/api/internal/x-monitor-sync" in step
+    assert "X_MONITOR_SYNC_AUDIENCE: https://post-link.net/api/internal/x-monitor-sync" in step
+    script = "\n".join(line[10:] for line in step.split("        run: |\n", 1)[1].splitlines())
+    subprocess.run(["bash", "-n"], input=script, text=True, check=True)
+    with tempfile.TemporaryDirectory() as directory:
+        root = Path(directory)
+        (root / "x-monitor-private-snapshot.json").write_text("{}", encoding="utf-8")
+        curl = root / "curl"
+        curl.write_text(
+            '#!/bin/bash\n'
+            'if [[ "$*" == *mock-oidc-endpoint* ]]; then\n'
+            '  printf \'{"value":"test-token"}\'\n'
+            'else\n'
+            '  printf "%s" "$MOCK_STATUS"\n'
+            '  exit "$MOCK_EXIT"\n'
+            'fi\n',
+            encoding="utf-8",
+        )
+        curl.chmod(0o755)
+        for status, exit_code in [("204", "0"), ("308", "0"), ("200", "0"), ("000", "7"), ("401", "22")]:
+            result = subprocess.run(
+                ["bash", "-c", script], cwd=root, text=True, capture_output=True,
+                env={
+                    **os.environ,
+                    "PATH": directory + os.pathsep + os.environ["PATH"],
+                    "ACTIONS_ID_TOKEN_REQUEST_TOKEN": "test",
+                    "ACTIONS_ID_TOKEN_REQUEST_URL": "https://mock-oidc-endpoint?test=1",
+                    "X_MONITOR_SYNC_URL": "https://www.post-link.net/api/internal/x-monitor-sync",
+                    "X_MONITOR_SYNC_AUDIENCE": "https://post-link.net/api/internal/x-monitor-sync",
+                    "MOCK_STATUS": status,
+                    "MOCK_EXIT": exit_code,
+                },
+            )
+            expected_success = status == "204" and exit_code == "0"
+            assert (result.returncode == 0) == expected_success, (status, result.stderr)
+            assert ("private monitor snapshot synced (HTTP 204)" in result.stdout) == expected_success
+
+
 if __name__ == "__main__":
     tests = [
         test_status_sanitizer,
         test_workflow_private_sync_contract,
         test_premium_feed_files_are_not_tracked_source_inputs,
+        test_private_sync_requires_storage_confirmation,
     ]
     for test in tests:
         test()

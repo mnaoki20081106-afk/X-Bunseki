@@ -66,6 +66,10 @@ def main() -> int:
 
     hits = load_json("hits.json")
     if args.bootstrap_history and not hits:
+        # A successful newer cycle may have delivered a private feed already.
+        # Never replace it with the older public-history bootstrap on a skipped run.
+        if load_json("status.json").get("status") in {"success", "degraded"}:
+            raise SystemExit("collection skipped; preserving the newer private feed")
         hits = load_latest_historical_json("hits.json")
 
     if not hits:

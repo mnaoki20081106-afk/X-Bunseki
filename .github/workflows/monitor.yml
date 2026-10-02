@@ -180,7 +180,7 @@ jobs:
       - name: Sync premium monitor snapshot privately
         if: github.event.inputs.test_notification != 'true' && (github.event_name == 'push' || steps.pace.outputs.skip != 'true')
         env:
-          X_MONITOR_SYNC_URL: https://post-link.net/api/internal/x-monitor-sync
+          X_MONITOR_SYNC_URL: https://www.post-link.net/api/internal/x-monitor-sync
           X_MONITOR_SYNC_AUDIENCE: https://post-link.net/api/internal/x-monitor-sync
         run: |
           set -euo pipefail
@@ -196,12 +196,22 @@ jobs:
             echo "::error::GitHub OIDC token was empty"
             exit 1
           fi
-          curl --fail --silent --show-error \
+          # curl --fail accepts 3xx. Only the API's 204 confirms storage completed.
+          # Keep the OIDC audience unchanged: the receiver validates this exact value.
+          response_file="$(mktemp)"
+          trap 'rm -f "$response_file"' EXIT
+          http_status="$(curl --fail --silent --show-error \
+            --connect-timeout 15 --max-time 90 \
+            --output "$response_file" --write-out '%{http_code}' \
             -X POST "$X_MONITOR_SYNC_URL" \
             -H "Authorization: Bearer $id_token" \
             -H "Content-Type: application/json" \
-            --data-binary @x-monitor-private-snapshot.json
-          echo "private monitor snapshot synced"
+            --data-binary @x-monitor-private-snapshot.json)"
+          if [ "$http_status" != "204" ]; then
+            echo "::error::private monitor sync did not confirm storage (HTTP $http_status; expected 204)"
+            exit 1
+          fi
+          echo "private monitor snapshot synced (HTTP 204)"
 
       - name: Sanitize public status
         if: always()

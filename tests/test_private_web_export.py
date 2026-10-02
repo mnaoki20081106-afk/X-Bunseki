@@ -55,7 +55,8 @@ def test_workflow_private_sync_contract():
     assert "ACTIONS_ID_TOKEN_REQUEST_URL" in text
     assert "x-monitor-private-snapshot.json" in text
     assert "--bootstrap-history" in text
-    assert "github.event_name == 'push' || steps.pace.outputs.skip != 'true'" in text
+    assert "github.event.inputs.test_notification != 'true' && steps.pace.outputs.skip != 'true'" in text
+    assert "github.event_name == 'push' || steps.pace.outputs.skip != 'true'" not in text
 
     builder = (ROOT / "tools" / "build_private_web_snapshot.py").read_text(encoding="utf-8")
     assert "load_latest_historical_json" in builder

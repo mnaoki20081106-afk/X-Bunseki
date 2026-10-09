@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-10-09T16:33:42.433588+00:00",
-  "status": "degraded",
-  "started_at": "2026-10-09T16:33:04.178852+00:00",
-  "finished_at": "2026-10-09T16:33:42.432722+00:00",
-  "posts_scanned": 610,
-  "posts_with_history": 426,
-  "posts_flagged": 34,
+  "updated_at": "2026-10-09T16:50:20.405153+00:00",
+  "status": "success",
+  "started_at": "2026-10-09T16:49:40.266777+00:00",
+  "finished_at": "2026-10-09T16:50:20.404015+00:00",
+  "posts_scanned": 629,
+  "posts_with_history": 550,
+  "posts_flagged": 27,
   "notified_count": 0,
   "notified_last_24h": 6,
-  "minutes_since_last_notification": 19,
-  "viral_discovery_posts": 142,
-  "million_imp_rescued": 0,
-  "watchlist_active": 3983,
+  "minutes_since_last_notification": 36,
+  "viral_discovery_posts": 141,
+  "million_imp_rescued": 1,
+  "watchlist_active": 3997,
   "collection_health": {
-    "status": "degraded",
-    "error_code": "request_failed",
-    "search_succeeded": 35,
-    "search_failed": 1,
+    "status": "success",
+    "error_code": null,
+    "search_succeeded": 36,
+    "search_failed": 0,
     "detail_succeeded": 40,
     "detail_failed": 0,
     "detail_skipped": 0,
@@ -27,12 +27,12 @@
     "search_rate_limit": {
       "limit": 50,
       "remaining": 14,
-      "reset": 1791564485
+      "reset": 1791565481
     }
   },
   "observation_db": {
-    "total": 44608,
-    "posts": 13213,
-    "oldest": "2026-10-08T16:39:00.176996+00:00"
+    "total": 44620,
+    "posts": 13130,
+    "oldest": "2026-10-08T17:19:16.228950+00:00"
   }
 }

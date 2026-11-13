@@ -7,10 +7,11 @@ on:
       - ".github/workflows/monitor.yml"
       - "tools/build_private_web_snapshot.py"
       - "tools/sanitize_public_status.py"
-  schedule:
-    # 主系はCloudflare Cron (*/15)。GitHub scheduleは非常用バックアップのみ。
-    # Cloudflareの :00/:15/:30/:45 と衝突しにくい毎時08分に1回実行する。
-    - cron: "8 * * * *"
+  # 定期実行は停止中。復旧するには下記4行のコメントを外す。
+  # schedule:
+  #   # 主系はCloudflare Cron (*/15)。GitHub scheduleは非常用バックアップのみ。
+  #   # Cloudflareの :00/:15/:30/:45 と衝突しにくい毎時08分に1回実行する。
+  #   - cron: "8 * * * *"
   workflow_dispatch:
     inputs:
       test_notification:

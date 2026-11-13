@@ -1,9 +1,10 @@
 name: Gen1 Model Training
 
 on:
-  schedule:
-    # Learning is isolated from the 15-minute discovery monitor.
-    - cron: "37 18 * * *"
+  # 定期実行は停止中。復旧するには下記3行のコメントを外す。
+  # schedule:
+  #   # Learning is isolated from the 15-minute discovery monitor.
+  #   - cron: "37 18 * * *"
   workflow_dispatch:
 
 permissions:

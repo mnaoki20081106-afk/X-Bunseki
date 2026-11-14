@@ -286,6 +286,19 @@ python3 tests/test_pipeline.py
 ここが全部通っていれば、判定ロジックは正常です。
 それでも通知が来ない場合は、原因は収集側(Xの画面構造の変化など)です。
 
+## Cloudflare Workers(2026-11-14 再作成)
+
+Cloudflare 側で消えていた Worker を repo 管理に戻しました。コードは repo 内のファイルが正。
+
+| Worker 名 | ファイル | 役割 |
+|---|---|---|
+| `x-bunseki-monitor-cron` | `cloudflare_cron_worker.js` | 15分おき(`*/15 * * * *`)に GitHub Actions の monitor.yml を `workflow_dispatch` で起動する主系トリガー |
+| `x-bunseki-direct-link` | `cloudflare_ogp_redirect_worker.js` | X に貼る「直接発火」URL。クローラには post-link.net ページの OGP、人間には埋め込みリンクへ 302 |
+
+- `x-bunseki-monitor-cron` は Secret `GITHUB_TOKEN`(Fine-grained PAT、X-Bunseki の Actions: Read and write)を設定するまで何も起動しません。Worker の URL を GET すると `problems` に未設定項目が出ます。
+- `x-bunseki-direct-link` の URL 形式: `https://x-bunseki-direct-link.<subdomain>.workers.dev/?p=<post-link.netのページURL>&u=<埋め込んだリンク>`。転送先を絞るなら Variables に `DEST_ALLOWLIST` を設定。
+- テスト: `node --test tests/cloudflare-workers.test.mjs`(ネットワーク不要)。
+
 ## Parent Web integration
 
 This repository remains the independent X monitoring / prediction engine. The parent Web app

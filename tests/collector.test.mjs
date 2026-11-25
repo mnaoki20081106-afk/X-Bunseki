@@ -127,6 +127,22 @@ test('full collector keeps successful search + fresh watchlist metrics', () => {
   assert.equal(result.posts[0].discovery_query_hits, 3);
   assert.equal(result.posts[1].impressions, 50000, 'fresh value replaces watchlist history');
 });
+test('SearchTimeline is sent as POST while TweetDetail stays GET', () => {
+  const result = collect('search_get_404');
+  assert.equal(result.health.status, 'success');
+  const search = result.requests.filter(r => r.operation === 'SearchTimeline');
+  assert.equal(search.length, 3);
+  assert.ok(search.every(r => r.method === 'POST'));
+  assert.ok(result.requests.filter(r => r.operation === 'TweetDetail').every(r => r.method === 'GET'));
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+});
+test('first SearchTimeline schema failure flips the method once', () => {
+  const result = collect('search_post_404');
+  assert.equal(result.health.status, 'success');
+  const methods = result.requests.filter(r => r.operation === 'SearchTimeline').map(r => r.method);
+  assert.deepEqual(methods, ['POST', 'GET', 'GET', 'GET']);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+});
 test('SDK transaction bootstrap failures select browser fallback without exposing credentials',()=>{
   const result=collect('bootstrap');
   assert.equal(result.health.error_code,'bootstrap_incompatible');

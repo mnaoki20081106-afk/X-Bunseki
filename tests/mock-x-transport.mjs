@@ -6,15 +6,28 @@ import { tweet, timeline } from './collector-fixtures.mjs';
 XClient.prototype.request = async function(method, action, variables) {
   if(process.env.TEST_SCENARIO === 'bootstrap') throw new Error('could not locate ondemand.s index in home HTML');
   const url = new URL(`https://x.com/i/api/graphql/${QID[action]}/${action}`);
+  // Mirror the SDK: POST sends a JSON body, GET sends URL parameters.
+  if (method === 'POST') {
+    const body = JSON.stringify({ variables, queryId: QID[action] });
+    return (await this.fetchWithTracking(url.toString(), { method, body })).json();
+  }
   url.searchParams.set('variables', JSON.stringify(variables));
   return (await this.fetchWithTracking(url.toString(), { method })).json();
 };
-globalThis.fetch = async url => {
+globalThis.fetch = async (url, init = {}) => {
   const parsed = new URL(url);
   const operation = parsed.pathname.split('/').at(-1);
-  const variables = JSON.parse(parsed.searchParams.get('variables'));
-  appendFileSync('requests.jsonl', JSON.stringify({ operation, variables }) + '\n');
+  const method = init.method || 'GET';
+  const variables = parsed.searchParams.has('variables')
+    ? JSON.parse(parsed.searchParams.get('variables'))
+    : JSON.parse(init.body).variables;
+  appendFileSync('requests.jsonl', JSON.stringify({ operation, method, variables }) + '\n');
   const mode = process.env.TEST_SCENARIO;
+  // X now 404s SearchTimeline over GET; the reverse case checks the fallback.
+  if (operation === 'SearchTimeline' &&
+      ((mode === 'search_get_404' && method === 'GET') || (mode === 'search_post_404' && method === 'POST'))) {
+    return new Response('', { status: 404 });
+  }
   if (mode === 'auth') return Response.json({ errors: [{ code: 89, message: 'SENSITIVE_VALUE' }] });
   if (mode === 'forbidden') return Response.json({}, { status: 403 });
   if (mode === 'rate' || (mode === 'partial' && variables.rawQuery === 'second')) {

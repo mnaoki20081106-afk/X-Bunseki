@@ -70,6 +70,17 @@ async function mapLimit(items, limit, fn){
   await Promise.all(Array.from({length:Math.min(limit,items.length)},()=>worker()));
   return out;
 }
+// SearchTimeline: X began rejecting GET (HTTP 404 -> schema_changed) while
+// TweetDetail GET kept working with the same session. Default to POST with a
+// JSON body; X_SEARCH_METHOD overrides, and the first schema failure before any
+// search success flips the method once so a wrong guess cannot stall a cycle.
+let searchMethod=(process.env.X_SEARCH_METHOD||'POST').toUpperCase()==='GET'?'GET':'POST';
+let searchMethodFallbackUsed=false;
+function searchVariables(parsedUrl,init){
+  const fromUrl=parsedUrl.searchParams.get('variables');
+  if(fromUrl) return JSON.parse(fromUrl);
+  try { return JSON.parse(String(init.body||'{}')).variables||{}; } catch { return {}; }
+}
 const trackedFetch=async (url,init={})=>{
   const parsedUrl=new URL(String(url));
   const operation=parsedUrl.pathname.endsWith('/SearchTimeline')?'SearchTimeline':'TweetDetail';
@@ -110,7 +121,7 @@ const trackedFetch=async (url,init={})=>{
       console.error('[compat] incomplete search page candidates='+parsed.candidates+
         ' invalid='+parsed.invalid+' unavailable='+parsed.unavailable);
     }
-    const vars=JSON.parse(parsedUrl.searchParams.get('variables')||'{}');
+    const vars=searchVariables(parsedUrl,init);
     searchPages.set(pageKey(vars.rawQuery,vars.product,vars.cursor),parsed.tweets);
   }
   return res;
@@ -121,6 +132,10 @@ const x=new XClient({
   // With retries=1 that only stalls this cycle, so cap it and let the next cycle retry.
   sleep:ms=>sleep(Math.min(ms,2000))
 });
+
+const sdkRequest=x.request.bind(x);
+x.request=(method,action,...rest)=>sdkRequest(action==='SearchTimeline'?searchMethod:method,action,...rest);
+console.error('[compat] SearchTimeline method='+searchMethod);
 
 const seen=new Map();
 function mergeTweet(tweet,spec){
@@ -139,7 +154,17 @@ async function searchOne(spec,cursor){
   guard.check('SearchTimeline');
   await sleep(100+Math.floor(Math.random()*301));
   guard.check('SearchTimeline');
-  const r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
+  let r;
+  try {
+    r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
+  } catch(e){
+    if(!(e instanceof CollectorError && e.code==='schema_changed') || searchSuccess>0 || searchMethodFallbackUsed) throw e;
+    searchMethodFallbackUsed=true;
+    searchMethod=searchMethod==='POST'?'GET':'POST';
+    console.error('[compat] SearchTimeline schema_changed; retrying with '+searchMethod);
+    guard.check('SearchTimeline');
+    r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
+  }
   const key=pageKey(spec.query,spec.product,cursor);
   const tweets=searchPages.get(key);
   if(!tweets) throw new CollectorError('schema_changed');

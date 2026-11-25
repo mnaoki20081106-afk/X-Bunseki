@@ -136,6 +136,23 @@ test('SearchTimeline is sent as POST while TweetDetail stays GET', () => {
   assert.ok(result.requests.filter(r => r.operation === 'TweetDetail').every(r => r.method === 'GET'));
   assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
 });
+test('search probe finds a rotated queryId and keeps it for the cycle', () => {
+  const result = collect('search_qid_rotated');
+  assert.equal(result.health.status, 'success');
+  const search = result.requests.filter(r => r.operation === 'SearchTimeline');
+  const accepted = search.findIndex(r => r.queryId === '3fEctOs2-FvTB7_mvm1hrQ' && r.method === 'POST');
+  assert.ok(accepted > 0);
+  assert.ok(search.slice(accepted).every(r => r.queryId === '3fEctOs2-FvTB7_mvm1hrQ' && r.method === 'POST'));
+  assert.equal(search.length - accepted, 3, 'first query is not repeated after a successful probe');
+  assert.equal(result.health.search_succeeded, 3);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+});
+test('search probe is bounded and still reports schema_changed when nothing works', () => {
+  const result = collect('search_all_404');
+  assert.equal(result.health.error_code, 'schema_changed');
+  assert.ok(result.requests.filter(r => r.operation === 'SearchTimeline').length <= 8 + 3);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['456'], 'watchlist detail still collected');
+});
 test('first SearchTimeline schema failure flips the method once', () => {
   const result = collect('search_post_404');
   assert.equal(result.health.status, 'success');

@@ -70,12 +70,22 @@ async function mapLimit(items, limit, fn){
   await Promise.all(Array.from({length:Math.min(limit,items.length)},()=>worker()));
   return out;
 }
-// SearchTimeline: X began rejecting GET (HTTP 404 -> schema_changed) while
-// TweetDetail GET kept working with the same session. Default to POST with a
-// JSON body; X_SEARCH_METHOD overrides, and the first schema failure before any
-// search success flips the method once so a wrong guess cannot stall a cycle.
+// SearchTimeline: since mid-November 2026 every search failed as schema_changed
+// (404) while TweetDetail GET kept working with the same session. Public
+// scrapers disagree on the fix (POST vs GET, several rotated queryIds), so the
+// first query probes method x queryId variants and the rest of the cycle uses
+// the first variant X accepts. X_SEARCH_METHOD sets the preferred method.
 let searchMethod=(process.env.X_SEARCH_METHOD||'POST').toUpperCase()==='GET'?'GET':'POST';
-let searchMethodFallbackUsed=false;
+let searchProbing=false;
+// Candidates observed in maintained scrapers (Nov 2026); unverified until a
+// live probe accepts one. Order = likelihood; the configured/pinned ID is kept.
+const SEARCH_QID_CANDIDATES=[
+  'vLHjqbDv7TPFMBkIIO1nOA', // crossbar #2 / twscrape main (Nov 2026)
+  '3fEctOs2-FvTB7_mvm1hrQ', // twitter-cli v0.8.6 "live"
+  'gkjsKepM6gl_HmFWoWKfgg', // XActions 603abce (POST)
+  'flaR-PUMshxFWZWPNpq4zA', // twikit / XActions 3.5.0
+];
+const SEARCH_PROBE_MAX=Math.max(1,Number(process.env.X_SEARCH_PROBE_MAX||8));
 function searchVariables(parsedUrl,init){
   const fromUrl=parsedUrl.searchParams.get('variables');
   if(fromUrl) return JSON.parse(fromUrl);
@@ -99,11 +109,14 @@ const trackedFetch=async (url,init={})=>{
   if(res.status===429) rateLimited++;
   if(res.status===403) forbidden++;
   const error=responseError(res.status,body);
-  if(error){ guard.fail(operation,error); throw new CollectorError(error); }
+  // While probing SearchTimeline variants, a shape/404 mismatch is the expected
+  // signal for "wrong variant" and must not trip the schema circuit breaker.
+  const probeMiss=code=>searchProbing && operation==='SearchTimeline' && code==='schema_changed';
+  if(error){ if(!probeMiss(error)) guard.fail(operation,error); throw new CollectorError(error); }
   let parsed;
   try { parsed=parseTimeline(body,operation); }
   catch {
-    guard.fail(operation,'schema_changed');
+    if(!probeMiss('schema_changed')) guard.fail(operation,'schema_changed');
     throw new CollectorError('schema_changed');
   }
   guard.succeed(operation);
@@ -154,17 +167,7 @@ async function searchOne(spec,cursor){
   guard.check('SearchTimeline');
   await sleep(100+Math.floor(Math.random()*301));
   guard.check('SearchTimeline');
-  let r;
-  try {
-    r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
-  } catch(e){
-    if(!(e instanceof CollectorError && e.code==='schema_changed') || searchSuccess>0 || searchMethodFallbackUsed) throw e;
-    searchMethodFallbackUsed=true;
-    searchMethod=searchMethod==='POST'?'GET':'POST';
-    console.error('[compat] SearchTimeline schema_changed; retrying with '+searchMethod);
-    guard.check('SearchTimeline');
-    r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
-  }
+  const r=await x.searchPage(spec.query,Math.min(20,spec.limit),spec.product,cursor);
   const key=pageKey(spec.query,spec.product,cursor);
   const tweets=searchPages.get(key);
   if(!tweets) throw new CollectorError('schema_changed');
@@ -174,9 +177,45 @@ async function searchOne(spec,cursor){
   return {spec,cursor:r.next_cursor||undefined,count:tweets.length};
 }
 
+// Probe: find a SearchTimeline variant X accepts, using the first query.
+async function probeSearch(spec){
+  const configured=QID.SearchTimeline;
+  const other=searchMethod==='POST'?'GET':'POST';
+  const variants=[];
+  for(const qid of [...new Set([configured,...SEARCH_QID_CANDIDATES])]){
+    variants.push([searchMethod,qid],[other,qid]);
+  }
+  searchProbing=true;
+  try {
+    for(const [method,qid] of variants.slice(0,SEARCH_PROBE_MAX)){
+      searchMethod=method; QID.SearchTimeline=qid;
+      try {
+        const r=await searchOne(spec,undefined);
+        console.error('[compat] SearchTimeline accepted method='+method+' queryId='+qid);
+        return r;
+      } catch(e){
+        if(!(e instanceof CollectorError && e.code==='schema_changed')) throw e;
+        console.error('[compat] SearchTimeline rejected method='+method+' queryId='+qid);
+      }
+    }
+  } finally { searchProbing=false; }
+  console.error('[compat] no SearchTimeline variant accepted; set X_GRAPHQL_QUERY_IDS / X_SEARCH_METHOD');
+  searchMethod=variants[0][0]; QID.SearchTimeline=variants[0][1];
+  return null;
+}
+let probed=null;
+if(queries.length && process.env.X_SEARCH_PROBE!=='off'){
+  try { probed=await probeSearch(queries[0]); }
+  catch(e){ console.error('[compat] search probe stopped: '+safeError(e)); }
+}
+
 // Phase 1: breadth-first. Every query gets page 1 before any deep paging.
 console.error('[search] phase1 queries='+queries.length+' concurrency='+SEARCH_CONCURRENCY);
-const first=await mapLimit(queries,SEARCH_CONCURRENCY,async spec=>{
+const first=await mapLimit(queries,SEARCH_CONCURRENCY,async (spec,i)=>{
+  if(i===0 && probed){
+    console.error('[search] p1 '+spec.product+' '+spec.query.slice(0,75)+' -> '+probed.count);
+    return probed;
+  }
   if(Date.now()-started>SEARCH_BUDGET_MS){ searchFailed++; throw new CollectorError('budget_exhausted'); }
   try {
     const r=await searchOne(spec,undefined);

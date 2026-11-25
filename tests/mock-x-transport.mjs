@@ -21,11 +21,14 @@ globalThis.fetch = async (url, init = {}) => {
   const variables = parsed.searchParams.has('variables')
     ? JSON.parse(parsed.searchParams.get('variables'))
     : JSON.parse(init.body).variables;
-  appendFileSync('requests.jsonl', JSON.stringify({ operation, method, variables }) + '\n');
+  const queryId = parsed.pathname.split('/').at(-2);
+  appendFileSync('requests.jsonl', JSON.stringify({ operation, method, queryId, variables }) + '\n');
   const mode = process.env.TEST_SCENARIO;
   // X now 404s SearchTimeline over GET; the reverse case checks the fallback.
   if (operation === 'SearchTimeline' &&
-      ((mode === 'search_get_404' && method === 'GET') || (mode === 'search_post_404' && method === 'POST'))) {
+      ((mode === 'search_get_404' && method === 'GET') || (mode === 'search_post_404' && method === 'POST') ||
+       (mode === 'search_qid_rotated' && !(method === 'POST' && queryId === '3fEctOs2-FvTB7_mvm1hrQ')) ||
+       mode === 'search_all_404')) {
     return new Response('', { status: 404 });
   }
   if (mode === 'auth') return Response.json({ errors: [{ code: 89, message: 'SENSITIVE_VALUE' }] });

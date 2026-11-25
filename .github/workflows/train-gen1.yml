@@ -49,7 +49,7 @@ jobs:
           set -e
           git config user.name "sns-model-bot"
           git config user.email "actions@github.com"
-          for p in data/training_outcomes.json data/model_registry.json data/gen1_challenger.json data/gen1_challenger_model.json data/gen1_promotion.json; do
+          for p in data/model_registry.json data/gen1_challenger.json data/gen1_challenger_model.json data/gen1_promotion.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

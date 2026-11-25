@@ -70,7 +70,9 @@ def build_outcomes(groups):
 def main():
     outcomes = build_outcomes(load_groups())
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(outcomes, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Derived from the committed snapshot shards on every run; not committed
+    # itself (it outgrew GitHub's 100 MB per-file limit). Compact to save disk.
+    OUT.write_text(json.dumps(outcomes, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     completed = sum(1 for x in outcomes.values() if x.get("imp_24h") is not None)
     print(f"[outcomes] posts={len(outcomes)} 24h_complete={completed}")
 

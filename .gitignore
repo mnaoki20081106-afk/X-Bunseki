@@ -6,3 +6,6 @@ _playwright_collector_impl.py
 
 node_modules/
 .x-agent-*.json
+
+# Rebuilt from data/training_snapshots/ by build_outcomes.py each run (>100 MB)
+data/training_outcomes.json

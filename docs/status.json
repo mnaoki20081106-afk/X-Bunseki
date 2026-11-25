@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-25T13:04:57.136266+00:00",
+  "updated_at": "2026-11-25T13:20:48.982987+00:00",
   "status": "error",
-  "started_at": "2026-11-25T13:04:51.204478+00:00",
+  "started_at": "2026-11-25T13:20:40.638711+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
@@ -19,8 +19,8 @@
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 187,
-      "remaining": 158,
-      "reset": 1795612792
+      "remaining": 155,
+      "reset": 1795613741
     }
   }
 }

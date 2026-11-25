@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-25T13:20:48.982987+00:00",
+  "updated_at": "2026-11-25T22:31:27.379760+00:00",
   "status": "error",
-  "started_at": "2026-11-25T13:20:40.638711+00:00",
+  "started_at": "2026-11-25T22:31:25.894083+00:00",
   "posts_scanned": 0,
   "posts_flagged": 0,
   "notified_count": 0,
   "collection_health": {
-    "status": "request_failed",
-    "error_code": "request_failed",
+    "status": "account_restricted",
+    "error_code": "account_restricted",
     "search_succeeded": 0,
     "search_failed": 28,
     "detail_succeeded": 0,
@@ -19,8 +19,8 @@
     "incomplete_search_pages": 0,
     "search_rate_limit": {
       "limit": 187,
-      "remaining": 155,
-      "reset": 1795613741
+      "remaining": 186,
+      "reset": 1795646786
     }
   }
 }

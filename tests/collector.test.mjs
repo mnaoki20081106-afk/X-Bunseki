@@ -44,6 +44,7 @@ test('distinguishes auth, restrictions, rate limits and request failures', () =>
   assert.equal(responseError(200, { errors: [{ code: 89 }] }), 'session_expired');
   assert.equal(responseError(403, {}), 'access_denied');
   assert.equal(responseError(200, { errors: [{ code: 326 }] }), 'account_restricted');
+  assert.equal(responseError(200, { errors: [{ message: 'InvalidArgument: ProductDisabled: Closed gate stopped execution of the pipeline (LatestTabSrpDenySuspendedUsers)' }] }), 'account_restricted');
   assert.equal(responseError(429, {}), 'rate_limited');
   assert.equal(responseError(200, { errors: [{ code: 88 }] }), 'rate_limited');
   assert.equal(responseError(404, {}), 'schema_changed');
@@ -154,6 +155,12 @@ test('search probe treats error payloads as misses and logs why', () => {
   assert.equal(search.at(-1).queryId, 'gkjsKepM6gl_HmFWoWKfgg');
   assert.equal(result.health.search_succeeded, 3);
   assert.match(result.stderr, /search rejected http=200 codes=0 msg=Query: Unspecified/);
+});
+test('suspended-account search gate stops search but keeps watchlist details', () => {
+  const result = collect('search_suspended');
+  assert.equal(result.health.error_code, 'account_restricted');
+  assert.equal(result.requests.filter(r => r.operation === 'SearchTimeline').length, 1);
+  assert.deepEqual(result.posts.map(p => p.post_id), ['456']);
 });
 test('search probe is bounded and still reports schema_changed when nothing works', () => {
   const result = collect('search_all_404');

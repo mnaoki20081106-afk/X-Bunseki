@@ -8,6 +8,10 @@ export function responseError(status, body) {
   const codes = (Array.isArray(body?.errors) ? body.errors : []).map(e => Number(e.code));
   if (status === 401 || codes.some(c => [32, 89, 215].includes(c))) return 'session_expired';
   if (codes.some(c => [64, 326].includes(c))) return 'account_restricted';
+  // X answers search for a suspended/limited account with HTTP 200 and e.g.
+  // "ProductDisabled: Closed gate ... (LatestTabSrpDenySuspendedUsers)".
+  const messages = (Array.isArray(body?.errors) ? body.errors : []).map(e => String(e?.message || ''));
+  if (messages.some(m => /DenySuspendedUsers/.test(m))) return 'account_restricted';
   if (status === 429 || codes.includes(88)) return 'rate_limited';
   if (status === 403) return 'access_denied';
   if ([400, 404, 410, 422].includes(status)) return 'schema_changed';
@@ -107,6 +111,12 @@ export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
     },
     fail(operation, code) {
       failures[code] = (failures[code] || 0) + 1;
+      // Search-only suspension gate: TweetDetail keeps working for the same
+      // session, so block search instead of every operation.
+      if (code === 'account_restricted' && operation === 'SearchTimeline') {
+        blocked.set(operation, code);
+        return;
+      }
       if (['session_expired', 'account_restricted', 'access_denied'].includes(code)) {
         globalError = code;
         return;
@@ -130,6 +140,7 @@ export function createRequestGuard({ schemaFailureThreshold = 3 } = {}) {
     get primaryError() {
       if (globalError) return globalError;
       const blockedCodes = [...blocked.values()];
+      if (blockedCodes.includes('account_restricted')) return 'account_restricted';
       if (blockedCodes.includes('rate_limited')) return 'rate_limited';
       if (blockedCodes.includes('schema_changed')) return 'schema_changed';
       if (detailSchemaFailures) return 'schema_changed';

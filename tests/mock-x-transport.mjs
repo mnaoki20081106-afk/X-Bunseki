@@ -31,6 +31,9 @@ globalThis.fetch = async (url, init = {}) => {
        mode === 'search_all_404')) {
     return new Response('', { status: 404 });
   }
+  if (mode === 'search_suspended' && operation === 'SearchTimeline') {
+    return Response.json({ errors: [{ message: 'InvalidArgument: ProductDisabled: Closed gate stopped execution of the pipeline (LatestTabSrpDenySuspendedUsers)' }] });
+  }
   // POST accepted only with one queryId; others answer 200 + error payload.
   if (mode === 'search_error_payload' && operation === 'SearchTimeline' &&
       !(method === 'POST' && queryId === 'gkjsKepM6gl_HmFWoWKfgg')) {

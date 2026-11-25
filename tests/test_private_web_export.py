@@ -68,13 +68,23 @@ def test_workflow_private_sync_contract():
         line for line in text.splitlines()
         if "for p in status.json" in line
     )
-    assert "hits.json" not in commit_line
-    assert "hits.md" not in commit_line
+    # The public GitHub Pages dashboard reads these committed copies.
+    for path in ("hits.json", "hits.md", "docs/hits.json", "docs/status.json", "docs/keywords.txt"):
+        assert path in commit_line, path
 
 
-def test_premium_feed_files_are_not_tracked_source_inputs():
-    assert not (ROOT / "hits.json").exists()
-    assert not (ROOT / "hits.md").exists()
+def test_public_pages_dashboard_contract():
+    text = (ROOT / ".github/workflows/monitor.yml").read_text(encoding="utf-8")
+    sync = text.index("      - name: Sync docs for GitHub Pages\n")
+    # docs/status.json must be copied only after the public sanitizer ran.
+    assert text.index("      - name: Sanitize public status\n") < sync
+    assert sync < text.index("      - name: Commit monitor runtime results\n")
+    pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+    assert 'workflows: ["SNS Buzz Monitor"]' in pages
+    assert "github.event.workflow_run.conclusion == 'success'" in pages
+    page = (ROOT / "docs/index.html").read_text(encoding="utf-8")
+    assert "hits.json" in page and "status.json" in page
+    assert "公開ページは終了しました" not in page
 
 
 def test_private_sync_requires_storage_confirmation():
@@ -123,7 +133,7 @@ if __name__ == "__main__":
     tests = [
         test_status_sanitizer,
         test_workflow_private_sync_contract,
-        test_premium_feed_files_are_not_tracked_source_inputs,
+        test_public_pages_dashboard_contract,
         test_private_sync_requires_storage_confirmation,
     ]
     for test in tests:

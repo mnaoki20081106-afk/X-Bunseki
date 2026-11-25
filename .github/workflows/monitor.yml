@@ -228,6 +228,15 @@ jobs:
         if: always()
         run: rm -f storage_state.json x-monitor-private-snapshot.json
 
+      - name: Sync docs for GitHub Pages
+        if: always()
+        run: |
+          # 公開ダッシュボード (docs/index.html) 用。status.json は前段でサニタイズ済み。
+          mkdir -p docs
+          cp -f status.json docs/status.json 2>/dev/null || true
+          cp -f hits.json docs/hits.json 2>/dev/null || true
+          cp -f hits.md docs/hits.md 2>/dev/null || true
+          cp -f keywords.txt docs/keywords.txt 2>/dev/null || true
 
       - name: Commit monitor runtime results
         if: always()
@@ -240,7 +249,7 @@ jobs:
           # 混ぜると git add 全体が失敗するため、個別に確認する。
           # data/training_outcomes.json は毎回 build_outcomes.py がスナップショットから
           # 再生成する派生物。100MB上限を超えてpush全体が拒否されたためコミットしない。
-          for p in status.json data/log data/notify_state.json data/impression_model.json data/model_registry.json data/watchlist.json; do
+          for p in status.json hits.md hits.json docs/status.json docs/hits.json docs/hits.md docs/keywords.txt data/log data/notify_state.json data/impression_model.json data/model_registry.json data/watchlist.json; do
             if [ -e "$p" ]; then
               git add -f "$p"
             fi

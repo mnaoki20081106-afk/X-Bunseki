@@ -85,6 +85,19 @@ const SEARCH_QID_CANDIDATES=[
   'gkjsKepM6gl_HmFWoWKfgg', // XActions 603abce (POST)
   'flaR-PUMshxFWZWPNpq4zA', // twikit / XActions 3.5.0
 ];
+// Both mean "X did not accept this request variant": 400/404/422 or an error
+// payload. Session, restriction and rate-limit codes are never probe misses.
+const PROBE_MISS_CODES=['schema_changed','request_failed'];
+let searchRejectionsLogged=0;
+function logSearchRejection(status,body){
+  // Diagnostics only: HTTP status, X error codes and a short message prefix.
+  // No URL, headers, cookies or variables are logged.
+  if(searchRejectionsLogged++>=12) return;
+  const errors=Array.isArray(body?.errors)?body.errors:[];
+  const codes=errors.map(e=>Number(e?.code)).filter(Number.isFinite).join(',')||'-';
+  const msg=String(errors[0]?.message||'').replace(/[^\x20-\x7e]/g,'?').slice(0,140)||'-';
+  console.error('[compat] search rejected http='+status+' codes='+codes+' msg='+msg);
+}
 const SEARCH_PROBE_MAX=Math.max(1,Number(process.env.X_SEARCH_PROBE_MAX||8));
 function searchVariables(parsedUrl,init){
   const fromUrl=parsedUrl.searchParams.get('variables');
@@ -111,7 +124,8 @@ const trackedFetch=async (url,init={})=>{
   const error=responseError(res.status,body);
   // While probing SearchTimeline variants, a shape/404 mismatch is the expected
   // signal for "wrong variant" and must not trip the schema circuit breaker.
-  const probeMiss=code=>searchProbing && operation==='SearchTimeline' && code==='schema_changed';
+  const probeMiss=code=>searchProbing && operation==='SearchTimeline' && PROBE_MISS_CODES.includes(code);
+  if(error && operation==='SearchTimeline' && PROBE_MISS_CODES.includes(error)) logSearchRejection(res.status,body);
   if(error){ if(!probeMiss(error)) guard.fail(operation,error); throw new CollectorError(error); }
   let parsed;
   try { parsed=parseTimeline(body,operation); }
@@ -194,7 +208,7 @@ async function probeSearch(spec){
         console.error('[compat] SearchTimeline accepted method='+method+' queryId='+qid);
         return r;
       } catch(e){
-        if(!(e instanceof CollectorError && e.code==='schema_changed')) throw e;
+        if(!(e instanceof CollectorError && PROBE_MISS_CODES.includes(e.code))) throw e;
         console.error('[compat] SearchTimeline rejected method='+method+' queryId='+qid);
       }
     }

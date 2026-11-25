@@ -31,6 +31,11 @@ globalThis.fetch = async (url, init = {}) => {
        mode === 'search_all_404')) {
     return new Response('', { status: 404 });
   }
+  // POST accepted only with one queryId; others answer 200 + error payload.
+  if (mode === 'search_error_payload' && operation === 'SearchTimeline' &&
+      !(method === 'POST' && queryId === 'gkjsKepM6gl_HmFWoWKfgg')) {
+    return Response.json({ errors: [{ code: 0, message: 'Query: Unspecified' }] });
+  }
   if (mode === 'auth') return Response.json({ errors: [{ code: 89, message: 'SENSITIVE_VALUE' }] });
   if (mode === 'forbidden') return Response.json({}, { status: 403 });
   if (mode === 'rate' || (mode === 'partial' && variables.rawQuery === 'second')) {

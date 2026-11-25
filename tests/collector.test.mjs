@@ -116,7 +116,7 @@ function collect(scenario) {
     });
     assert.equal(result.status, 0, result.stderr);
     assert.doesNotMatch(result.stderr, /SENSITIVE_VALUE|FAKE_TOKEN|FAKE_CSRF/);
-    return { ...JSON.parse(result.stdout), requests: readFileSync(join(dir, 'requests.jsonl'), 'utf8').trim().split('\n').filter(Boolean).map(JSON.parse) };
+    return { ...JSON.parse(result.stdout), stderr: result.stderr, requests: readFileSync(join(dir, 'requests.jsonl'), 'utf8').trim().split('\n').filter(Boolean).map(JSON.parse) };
   } finally { rmSync(dir, { recursive: true, force: true }); }
 }
 
@@ -146,6 +146,14 @@ test('search probe finds a rotated queryId and keeps it for the cycle', () => {
   assert.equal(search.length - accepted, 3, 'first query is not repeated after a successful probe');
   assert.equal(result.health.search_succeeded, 3);
   assert.deepEqual(result.posts.map(p => p.post_id), ['123', '456']);
+});
+test('search probe treats error payloads as misses and logs why', () => {
+  const result = collect('search_error_payload');
+  assert.equal(result.health.status, 'success');
+  const search = result.requests.filter(r => r.operation === 'SearchTimeline');
+  assert.equal(search.at(-1).queryId, 'gkjsKepM6gl_HmFWoWKfgg');
+  assert.equal(result.health.search_succeeded, 3);
+  assert.match(result.stderr, /search rejected http=200 codes=0 msg=Query: Unspecified/);
 });
 test('search probe is bounded and still reports schema_changed when nothing works', () => {
   const result = collect('search_all_404');
